@@ -17,3 +17,53 @@ volume rooms
 book bane be sane see
 
 Bane Be Sane See is a room. printed name is "Bane Be Sane, See?".
+
+book Hun Harm Fun Farm
+
+Hun Harm Fun Farm is a room.
+
+book No Nudge Slow Sludge
+
+No Nudge Slow Sludge is a room.
+
+book Trick Trail
+
+Trick Trail is a room.
+
+Trailing Tree is a thing in Trick Trail.
+
+volume meta-verbs
+
+chapter abouting
+
+abouting is an action out of world.
+
+understand the command "about" as something new.
+
+understand "about" as abouting.
+
+carry out abouting:
+	the rule succeeds;
+
+chapter creditsing
+
+creditsing is an action out of world.
+
+understand the command "credits" as something new.
+
+understand "credits" as creditsing.
+
+carry out creditsing:
+	the rule succeeds;
+
+chapter verbsing
+
+verbsing is an action out of world.
+
+understand the command "verbs" as something new.
+
+understand "verbs" as verbsing.
+
+carry out verbsing:
+	the rule succeeds;
+
