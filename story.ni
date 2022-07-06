@@ -12,6 +12,28 @@ release along with a website.
 
 release along with the "Parchment" interpreter.
 
+include Trivial Niceties by Andrew Schultz.
+
+include Jest Jokes Pest Pokes Universal by Andrew Schultz.
+
+include Jest Jokes Pest Pokes Common by Andrew Schultz.
+
+include Low Key Learny Jokey Journey Tables by Andrew Schultz.
+
+include Low Key Learny Jokey Journey Mistakes by Andrew Schultz.
+
+entry-in-series is 3.
+
+a thing is usually not boring.
+
+chapter offshoots from common file
+
+to decide whether force-partminus of (th - a thing):
+	no;
+
+this is the game-specific-ll-direction rule:
+	do nothing;
+
 volume rooms
 
 book bane be sane see
@@ -31,6 +53,8 @@ book Trick Trail
 Trick Trail is a room.
 
 Trailing Tree is a thing in Trick Trail.
+
+volume main engine
 
 volume meta-verbs
 
