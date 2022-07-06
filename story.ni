@@ -54,6 +54,16 @@ book bane be sane see
 
 Bane Be Sane See is a room. printed name is "Bane Be Sane, See?".
 
+the player is in Bane Be Sane See.
+
+book Roaring Rocks
+
+Roaring Rocks is a room. "The only way out is north.". printed name of Roaring Rocks is "[if sco-boring-box is true]Storing Stocks[else]Roaring Rocks[end if]"
+
+chapter boring box
+
+the boring box is a thing.
+
 book Hun Harm Fun Farm
 
 Hun Harm Fun Farm is a room.
