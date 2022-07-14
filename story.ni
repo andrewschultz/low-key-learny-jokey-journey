@@ -14,9 +14,9 @@ release along with the "Parchment" interpreter.
 
 include Trivial Niceties by Andrew Schultz.
 
-include Jest Jokes Pest Pokes Universal by Andrew Schultz.
+include Civil Seeming Drivel Dreaming Universal by Andrew Schultz.
 
-include Jest Jokes Pest Pokes Common by Andrew Schultz.
+include Civil Seeming Drivel Dreaming Common by Andrew Schultz.
 
 include Low Key Learny Jokey Journey Tables by Andrew Schultz.
 
@@ -201,38 +201,42 @@ Rule for printing a parser error (this is the clue half right words rule):
 	abide by the verb-checker rule;
 	abide by the rhyme-guess-checker rule for table of general good guesses;
 
+volume verbs
+
+the block listening rule is not listed in any rulebook.
+
+check listening:
+	if player is in Roaring Rocks and sco-boring-box is false, say "'Poring Pox!' the roaring rocks, uh, roar." instead;
+
 volume meta-verbs
 
 chapter abouting
 
-abouting is an action out of world.
-
-understand the command "about" as something new.
-
-understand "about" as abouting.
-
 carry out abouting:
+	say "FILL THIS IN.";
 	the rule succeeds;
 
 chapter creditsing
 
-creditsing is an action out of world.
-
-understand the command "credits" as something new.
-
-understand "credits" as creditsing.
-
 carry out creditsing:
+	say "FILL THIS IN.";
 	the rule succeeds;
+
+chapter exitsing
+
+[ needed for the core, where VVFF north in Fun Fen is originally blocked ]
+
+to decide whether (di - a direction) is blocked:
+	no;
 
 chapter verbsing
 
-verbsing is an action out of world.
-
-understand the command "verbs" as something new.
-
-understand "verbs" as verbsing.
-
 carry out verbsing:
+	say "FILL THIS IN.";
 	the rule succeeds;
 
+chapter xyzzying
+
+carry out xyzzying:
+	say "A hollow voice booms incredulously, 'Easter egg bestir-beg?!'";
+	the rule succeeds;
