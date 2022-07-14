@@ -31,12 +31,15 @@ other stuff that may be added is best-room though I may have divided room-specif
 
 table of verb checks
 w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	idid	check-rule	run-rule	wfull (topic)	think-advice (text)
-"dane|jane|lane|wayne"	"d|dee|g|gee|lee|whee"	--	--	false	true	true	false	vc-in-bane rule	vr-choose-name rule	"d/dee dane" or "dane dee/d" or "jane g/gee" or "gee/g jane" or "wayne whee" or "whee wayne"
+"dane|jane|lane|wayne"	"d|dee|g|gee|lee|whee"	--	--	false	false	true	false	vc-in-bane rule	vr-choose-name rule	"d/dee dane" or "dane dee/d" or "jane g/gee" or "gee/g jane" or "wayne whee" or "whee wayne"	--
+"plain"	"plea"	--	--	false	true	false	false	vc-plain-plea rule	vr-plain-plea rule	--	--
 "boring"	"box"	--	--	false	true	true	false	vc-boring-box rule	vr-boring-box rule	--	--
 
-this is the vc-in-bane rule: if player is not in Bane Be Sane See, unavailable;
+a goodrhyme rule (this is the vc-in-bane rule):
+	if player is not in Bane Be Sane See, unavailable;
+	ready;
 
-a goodrhyme rule (this is the vr-choose-name rule):
+this is the vr-choose-name rule:
 	if the player's command includes "jane":
 		now the player is female;
 	else if the player's command includes "wayne":
@@ -46,6 +49,19 @@ a goodrhyme rule (this is the vr-choose-name rule):
 	increment the turn count;
 	say "You walk through the door and tumble down to...";
 	move the player to Roaring Rocks;
+	the rule succeeds;
+
+a goodrhyme rule (this is the vc-plain-plea rule):
+	if player is not in Bane Be Sane See, unavailable;
+	if sco-plain-plea is true:
+		say "You already made a plain plea.";
+		already-done;
+	ready;
+
+this is the vr-plain-plea rule:
+	say "Your plain plea seems perfect for the situation. The train tree grows brighter. It pervades the air for a bit, then dissipates.";
+	now sco-plain-plea is true;
+	the rule succeeds;
 
 a goodrhyme rule (this is the vc-boring-box rule):
 	if player is not in Roaring Rocks, unavailable;

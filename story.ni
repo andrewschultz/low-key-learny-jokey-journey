@@ -24,6 +24,8 @@ entry-in-series is 3.
 
 a thing is usually not boring.
 
+the maximum score is 3.
+
 chapter offshoots from common file
 
 to decide whether force-partminus of (th - a thing): [whether to force certain leet learner readings]
@@ -243,6 +245,11 @@ chapter xyzzying
 carry out xyzzying:
 	say "A hollow voice booms incredulously, 'Easter egg bestir-beg?!'";
 	the rule succeeds;
+
+volume when play begins
+
+when play begins:
+	now core-score is 2.
 
 volume internal map
 
