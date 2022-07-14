@@ -95,6 +95,10 @@ there is thing called No Nudge Slow Sludge. It is scenery. It is in NNSS.
 
 sco-grow-grudge is a truth state that varies.
 
+after printing the locale description for NNSS when NNSS is unvisited:
+	say "[i][bracket][b]NOTE:[r] [i]you don't need to go back to Roaring Rocks/Storing Stocks again. If you wish to track this sort of thing, [b]GUIDE GONG[r][i] will shut you out of completed areas, [b]STRIDE STRONG[r][i] will remove these restrictions, and [b]PRIDE PRONG[r][i] is like the gong, except it will give you a poke to visit rooms where you can still get a bonus point.[close bracket][r][line break]";
+	continue the action;
+
 book Hun Harm Fun Farm
 
 Hun Harm Fun Farm is west of NNSS.
@@ -210,7 +214,7 @@ volume unsorted locations
 
 book Trust Track
 
-Trust Track is a room.
+Trust Track is east of NNSS.
 
 Just Jack is a rhymable in Trust Track.
 
@@ -247,6 +251,77 @@ the block listening rule is not listed in any rulebook.
 
 check listening:
 	if player is in Roaring Rocks and sco-boring-box is false, say "'Poring Pox!' the roaring rocks, uh, roar." instead;
+
+volume room restrictions
+
+a room-hint-state is a kind of value. The room-hint-states are points-left, bonus-left, and nothing-left.
+
+player-room-allow-threshold is a room-hint-state that varies. player-room-allow-threshold is nothing-left.
+
+roomblocking is a rulebook producing a room-hint-state.
+
+roomblocking (this is the default roomblocking rule):
+	rule succeeds with result points-left;
+
+roomblocking when room gone to is roaring rocks:
+	rule succeeds with result nothing-left;
+
+[temporary rule to test that, indeed, pride-prong does work!]
+[roomblocking when room gone to is trust track:
+	rule succeeds with result bonus-left;]
+
+check going when player-room-allow-threshold is not nothing-left:
+	let cur-block-level be the room-hint-state produced by the roomblocking rules;
+	if cur-block-level is points-left, continue the action;
+	if cur-block-level is bonus-left and player-room-allow-threshold is bonus-left:
+		say "[that-prong] to try and go see what's there in [room gone to], even though it might not be necessary.";
+		continue the action;
+	if player-room-allow-threshold is bonus-left:
+		say "[that-prong] ";
+	else:
+		say "[one of]A guide gong[or]That guide gong, again,[stopping] rings ";
+	say "to notify you that you don't need to go back to [room gone to]." instead;
+
+to say that-prong: say "The pride-prong you summoned earlier pokes you"
+
+chapter guide-gonging
+
+guide-gonging is an action out of world.
+
+understand the command "guide gong" as something new.
+
+understand "guide gong" as guide-gonging.
+
+carry out guide-gonging:
+	say "You [if player-room-allow-threshold is points-left]already[else]now[end if] will be repelled by a guide gong if you try to enter a location where you have nothing game-critical to do.";
+	now player-room-allow-threshold is points-left;
+	the rule succeeds;
+
+chapter stride-stronging
+
+stride-stronging is an action out of world.
+
+understand the command "stride strong" as something new.
+
+understand "stride strong" as stride-stronging.
+
+carry out stride-stronging:
+	say "You [if player-room-allow-threshold is nothing-left]already[else]now[end if] will move freely between locations, even ones with nothing left to do.";
+	now player-room-allow-threshold is points-left;
+	the rule succeeds;
+
+chapter pride-pronging
+
+pride-pronging is an action out of world.
+
+understand the command "pride prong" as something new.
+
+understand "pride prong" as pride-pronging.
+
+carry out pride-pronging:
+	say "You [if player-room-allow-threshold is bonus-left]already[else]now[end if] will be blocked from locations with nothing left to do and be warned if there is a bonus point in a location you are about to visit.";
+	now player-room-allow-threshold is bonus-left;
+	the rule succeeds;
 
 volume meta-verbs
 
@@ -289,3 +364,5 @@ when play begins:
 volume internal map
 
 index map with Roaring Rocks mapped east of Bane Be Sane See.
+
+test ocome with "jane g/boring box/open box/n/guide gong/s/e/pride prong/s/e".
