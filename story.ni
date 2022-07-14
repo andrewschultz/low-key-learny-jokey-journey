@@ -24,7 +24,15 @@ entry-in-series is 3.
 
 a thing is usually not boring.
 
-the maximum score is 3.
+section scoring
+
+core-max is 3.
+
+min-needed is 3.
+
+max-bonus is 1.
+
+cur-bonus is 0.
 
 chapter offshoots from common file
 
@@ -56,25 +64,40 @@ Bane Be Sane See is a room. printed name is "Bane Be Sane, See?". "The train tre
 
 the player is in Bane Be Sane See.
 
+sco-plain-plea is a truth state that varies.
+
 book Roaring Rocks
 
 Roaring Rocks is a room. "[if sco-boring-box is false]The roaring is too loud here. You feel as if you'd be chased down if you ran away[else]Things are quieter now. You can go [back-n-farm]north[end if].". printed name of Roaring Rocks is "[if sco-boring-box is true]Storing Stocks[else]Roaring Rocks[end if]"
 
-to say back-n-farm: if hun harm fun farm is visited, say "back to ";
+to say back-n-farm: if Nudge Slow Sludge is visited, say "back to ";
 
-check going north in Roaring Rocks: if sco-boring-box is false, say "The roaring seems to pull you back." instead;
+check going north in Roaring Rocks:
+	if sco-boring-box is false, say "The roaring seems to pull you back." instead;
+	if boring box is not moot, say "You figure you should open the boring box before moving on." instead;
 
 chapter boring box
 
 the boring box is a thing.
 
-book Hun Harm Fun Farm
-
-Hun Harm Fun Farm is north of Roaring Rocks.
+check opening boring box:
+	say "You open the boring box, and out pops a leet learner!";
+	moot boring box;
+	now player has leet learner instead;
 
 book No Nudge Slow Sludge
 
-No Nudge Slow Sludge is a room.
+NNSS is north of Roaring Rocks. printed name is "No-Nudge Slow Sludge".
+
+there is thing called No Nudge Slow Sludge. It is scenery. It is in NNSS.
+
+sco-grow-grudge is a truth state that varies.
+
+"[if sco-grow-grudge is false]some no-nudge slow sludge bubbles almost all around, blocking passage west, south and north[else]The slow sludge to the west, north and south no longer seems intimidating[end if]. There's passage back south[if sco-grow-grudge is true] as well[end if], though you reckon you're done there."
+
+book Hun Harm Fun Farm
+
+Hun Harm Fun Farm is west of NNSS.
 
 book Trick Trail
 
