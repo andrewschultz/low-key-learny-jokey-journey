@@ -6,15 +6,13 @@ the release number is 1.
 
 the story description is "Am (Oh!) Sham-Show".
 
-the story headline is "Jest, Jokes, Pest-Pokes entry #3".
+the story headline is "Civil Seeming Drivel Dreaming entry 3".
 
 release along with a website.
 
 release along with the "Parchment" interpreter.
 
 include Trivial Niceties by Andrew Schultz.
-
-include Civil Seeming Drivel Dreaming Universal by Andrew Schultz.
 
 include Civil Seeming Drivel Dreaming Common by Andrew Schultz.
 
@@ -52,13 +50,17 @@ volume rooms
 
 book bane be sane see
 
-Bane Be Sane See is a room. printed name is "Bane Be Sane, See?".
+Bane Be Sane See is a room. printed name is "Bane Be Sane, See?". "The train tree that brought you here has gotten outrageously large. You can enter either of its three doors: WAYNE (WHEE), JANE G, or DANE D/LANE LEE. Nothing seems too critical, just standards.[paragraph break]It's also kind of noisy and distracting here, but that shouldn't be too big of a deal, you think. You hope."
 
 the player is in Bane Be Sane See.
 
 book Roaring Rocks
 
-Roaring Rocks is a room. "The only way out is north.". printed name of Roaring Rocks is "[if sco-boring-box is true]Storing Stocks[else]Roaring Rocks[end if]"
+Roaring Rocks is a room. "[if sco-boring-box is false]The roaring is too loud here. You feel as if you'd be chased down if you ran away[else]Things are quieter now. You can go [back-n-farm]north[end if].". printed name of Roaring Rocks is "[if sco-boring-box is true]Storing Stocks[else]Roaring Rocks[end if]"
+
+to say back-n-farm: if hun harm fun farm is visited, say "back to ";
+
+check going north in Roaring Rocks: if sco-boring-box is false, say "The roaring seems to pull you back." instead;
 
 chapter boring box
 
@@ -66,7 +68,7 @@ the boring box is a thing.
 
 book Hun Harm Fun Farm
 
-Hun Harm Fun Farm is a room.
+Hun Harm Fun Farm is north of Roaring Rocks.
 
 book No Nudge Slow Sludge
 
@@ -200,6 +202,7 @@ Rule for printing a parser error (this is the clue half right words rule):
 		abide by the rhyme-guess-checker rule for cur-guess-table;
 	abide by the verb-checker rule;
 	abide by the rhyme-guess-checker rule for table of general good guesses;
+	continue the action;
 
 volume verbs
 
@@ -240,3 +243,7 @@ chapter xyzzying
 carry out xyzzying:
 	say "A hollow voice booms incredulously, 'Easter egg bestir-beg?!'";
 	the rule succeeds;
+
+volume internal map
+
+index map with Roaring Rocks mapped east of Bane Be Sane See.
