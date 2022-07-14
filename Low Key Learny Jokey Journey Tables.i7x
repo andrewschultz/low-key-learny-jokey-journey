@@ -28,13 +28,13 @@ think-advice =
 other stuff that may be added is best-room though I may have divided room-specific points.
 ]
 
-
 table of verb checks
 w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	idid	check-rule	run-rule	wfull (topic)	think-advice (text)
 "dane|jane|lane|wayne"	"d|dee|g|gee|lee|whee"	--	--	false	false	true	false	vc-in-bane rule	vr-choose-name rule	"d/dee dane" or "dane dee/d" or "jane g/gee" or "gee/g jane" or "wayne whee" or "whee wayne"	--
 "plain"	"plea"	--	--	false	true	false	false	vc-plain-plea rule	vr-plain-plea rule	--	--
 "boring"	"box"	--	--	false	true	true	false	vc-boring-box rule	vr-boring-box rule	--	--
 "grow"	"grudge"	--	--	false	false	true	false	vc-grow-grudge rule	vr-grow-grudge rule
+"bussed"	"back"	--	--	false	false	true	false	vc-bussed-back rule	vr-bussed-back rule
 
 a goodrhyme rule (this is the vc-in-bane rule):
 	if player is not in Bane Be Sane See, unavailable;
@@ -50,6 +50,7 @@ this is the vr-choose-name rule:
 	increment the turn count;
 	say "You walk through the door and tumble down to...";
 	move the player to Roaring Rocks;
+	if sco-plain-plea is false, 
 	the rule succeeds;
 
 a goodrhyme rule (this is the vc-plain-plea rule):
@@ -79,7 +80,7 @@ this is the vr-boring-box rule:
 a goodrhyme rule (this is the vc-grow-grudge rule):
 	if player is not in NNSS, unavailable;
 	if sco-grow-grudge is true:
-		say "You already neutralized [the sludge].";
+		vcp "You already neutralized [the sludge].";
 		already-done;
 	ready;
 
@@ -87,13 +88,23 @@ this is the vr-grow-grudge rule:
 	say "The sludge hardens! You feel good about not being perfect and not trying to be. It's opened up possibilities, for sure.";
 	now sco-grow-grudge is true;
 
+a goodrhyme rule (this is the vc-bussed-back rule):
+	if player does not carry sussed sack and location of player is not trust track, unavailable;
+	if sco-bussed-back is true:
+		say "Just Jack has already been bussed back.";
+		already-done;
+	ready;
+
+this is the vr-bussed-back rule:
+	say "Just Jack knows his time is up. He takes off. Behind them, you find something ... a sussed sack!";
+	now sco-bussed-back is true;
+	now player has sussed sack;
+
 volume guesses
 
 book guesses by item, alphabetized
 
 section known rules, alphabetized
-
-this is the lump-known rule: if lurking lump is not off-stage, the rule succeeds;
 
 Low Key Learny Jokey Journey Tables ends here.
 

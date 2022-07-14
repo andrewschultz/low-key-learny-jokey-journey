@@ -26,13 +26,15 @@ a thing is usually not boring.
 
 section scoring
 
-core-max is 3.
+core-max is 4.
 
-min-needed is 3.
+min-needed is 4.
 
 max-bonus is 1.
 
 cur-bonus is 0.
+
+when play begins: now max-poss is max-overall;
 
 chapter offshoots from common file
 
@@ -87,13 +89,11 @@ check opening boring box:
 
 book No Nudge Slow Sludge
 
-NNSS is north of Roaring Rocks. printed name is "No-Nudge Slow Sludge".
+NNSS is north of Roaring Rocks. printed name is "No-Nudge Slow Sludge". "[if sco-grow-grudge is false]some no-nudge slow sludge bubbles almost all around, blocking passage west, south and north[else]The slow sludge to the west, north and south no longer seems intimidating[end if]. There's passage back south[if sco-grow-grudge is true] as well[end if], though you reckon you're done there."
 
 there is thing called No Nudge Slow Sludge. It is scenery. It is in NNSS.
 
 sco-grow-grudge is a truth state that varies.
-
-"[if sco-grow-grudge is false]some no-nudge slow sludge bubbles almost all around, blocking passage west, south and north[else]The slow sludge to the west, north and south no longer seems intimidating[end if]. There's passage back south[if sco-grow-grudge is true] as well[end if], though you reckon you're done there."
 
 book Hun Harm Fun Farm
 
@@ -205,6 +205,18 @@ this is the verb-checker rule:
 			abide by the hom-txt-rule entry;
 		say "The Leet Learner shakes back and forth. Something you said sounded right, but maybe you didn't THINK it right.";
 		the rule succeeds;
+
+volume unsorted locations
+
+book Trust Track
+
+Trust Track is a room.
+
+Just Jack is a rhymable in Trust Track.
+
+the sussed sack is a thing.
+
+sco-bussed-back is a truth state that varies.
 
 volume parser rules
 
