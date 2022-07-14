@@ -31,9 +31,7 @@ other stuff that may be added is best-room though I may have divided room-specif
 
 table of verb checks
 w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	idid	check-rule	run-rule	wfull (topic)	think-advice (text)
-"jane"	"gee"	--	--	false	true	true	false	vc-in-bane rule	vr-choose-name rule	"jane gee" or "wayne whee" or "dane dee/d" or "gee jane" or "whee wayne" or "d/dee dane"
-"wayne"	"whee"	--	--	false	true	true	false	vc-in-bane rule	vr-choose-name rule	"jane gee" or "wayne whee" or "dane dee/d" or "gee jane" or "whee wayne" or "d/dee dane"
-"dane"	"dee|d"	--	--	false	true	true	false	vc-in-bane rule	vr-choose-name rule	"jane gee" or "wayne whee" or "dane dee/d" or "gee jane" or "whee wayne" or "d/dee dane"
+"dane|jane|lane|wayne"	"d|dee|g|gee|lee|whee"	--	--	false	true	true	false	vc-in-bane rule	vr-choose-name rule	"d/dee dane" or "dane dee/d" or "jane g/gee" or "gee/g jane" or "wayne whee" or "whee wayne"
 "boring"	"box"	--	--	false	true	true	false	vc-boring-box rule	vr-boring-box rule	--	--
 
 this is the vc-in-bane rule: if player is not in Bane Be Sane See, unavailable;
@@ -45,6 +43,7 @@ a goodrhyme rule (this is the vr-choose-name rule):
 		now the player is male;
 	else:
 		now the player is neuter;
+	increment the turn count;
 	say "You walk through the door and tumble down to...";
 	move the player to Roaring Rocks;
 
