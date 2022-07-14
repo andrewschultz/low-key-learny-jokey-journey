@@ -34,6 +34,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "dane|jane|lane|wayne"	"d|dee|g|gee|lee|whee"	--	--	false	false	true	false	vc-in-bane rule	vr-choose-name rule	"d/dee dane" or "dane dee/d" or "jane g/gee" or "gee/g jane" or "wayne whee" or "whee wayne"	--
 "plain"	"plea"	--	--	false	true	false	false	vc-plain-plea rule	vr-plain-plea rule	--	--
 "boring"	"box"	--	--	false	true	true	false	vc-boring-box rule	vr-boring-box rule	--	--
+"grow"	"grudge"	--	--	false	false	true	false	vc-grow-grudge rule	vr-grow-grudge rule
 
 a goodrhyme rule (this is the vc-in-bane rule):
 	if player is not in Bane Be Sane See, unavailable;
@@ -65,24 +66,30 @@ this is the vr-plain-plea rule:
 
 a goodrhyme rule (this is the vc-boring-box rule):
 	if player is not in Roaring Rocks, unavailable;
-	if boring box is not off-stage:
-		say "You already got the boring box.";
+	if sco-boring-box is true:
+		say "You already uncovered the boring box.";
 		already-done;
+	ready;
 
 this is the vr-boring-box rule:
 	say "The roaring rocks crumble, leaving behind storing stocks and ... the boring box you'd hoped for. You totally want to open it!";
 	now player has boring box;
 	now sco-boring-box is true;
 
+a goodrhyme rule (this is the vc-grow-grudge rule):
+	if player is not in NNSS, unavailable;
+	if sco-grow-grudge is true:
+		say "You already neutralized [the sludge].";
+		already-done;
+	ready;
+
+this is the vr-grow-grudge rule:
+	say "The sludge hardens! You feel good about not being perfect and not trying to be. It's opened up possibilities, for sure.";
+	now sco-grow-grudge is true;
+
 volume guesses
 
 book guesses by item, alphabetized
-
-[this could technically go in the common file, but it would create so many problems with test verification.]
-
-table of lurking lump guesses
-mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
-"perking pump"	lump-known rule	false	--	--	"I don't want to know."
 
 section known rules, alphabetized
 
