@@ -24,6 +24,10 @@ entry-in-series is 3.
 
 a thing is usually not boring.
 
+section test module(s) - not for release
+
+include Low Key Learny Jokey Journey Tests by Andrew Schultz.
+
 section scoring
 
 core-max is 4.
@@ -365,4 +369,3 @@ volume internal map
 
 index map with Roaring Rocks mapped east of Bane Be Sane See.
 
-test ocome with "jane g/boring box/open box/n/guide gong/s/e/pride prong/s/e".
