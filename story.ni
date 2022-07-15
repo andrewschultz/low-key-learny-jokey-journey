@@ -74,7 +74,7 @@ sco-plain-plea is a truth state that varies.
 
 book Roaring Rocks
 
-Roaring Rocks is a room. "[if sco-boring-box is false]The roaring is too loud here. You feel as if you'd be chased down if you ran away[else]Things are quieter now. You can go [back-n-farm]north[end if].". printed name of Roaring Rocks is "[if sco-boring-box is true]Storing Stocks[else]Roaring Rocks[end if]"
+Roaring Rocks is a room. "This is a dead end. The only passage out is north. [if sco-boring-box is false]The roaring is too loud right now, though. You feel as if you'd be chased down if you ran away[else]Things are quieter now. There's nothing left to do here, you're pretty sure[end if].". printed name of Roaring Rocks is "[if sco-boring-box is true]Storing Stocks[else]Roaring Rocks[end if]"
 
 to say back-n-farm: if Nudge Slow Sludge is visited, say "back to ";
 
@@ -225,6 +225,11 @@ Just Jack is a rhymable in Trust Track.
 the sussed sack is a thing.
 
 sco-bussed-back is a truth state that varies.
+sco-crust-crack is a truth state that varies.
+
+book Shore Shoals
+
+Shore Shoals is a room. "The only way out is back north to Trust Track."
 
 volume parser rules
 

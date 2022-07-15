@@ -35,6 +35,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "boring"	"box"	--	--	false	true	true	false	vc-boring-box rule	vr-boring-box rule	--	--
 "grow"	"grudge"	--	--	false	false	true	false	vc-grow-grudge rule	vr-grow-grudge rule
 "bussed"	"back"	--	--	false	false	true	false	vc-bussed-back rule	vr-bussed-back rule
+"crust"	"crack"	--	--	false	true	true	false	vc-crust-crack rule	vr-crust-crack rule	--	"You need to get rid of [jack] before you can make the [b]CRUST CRACK[r]."
 
 a goodrhyme rule (this is the vc-in-bane rule):
 	if player is not in Bane Be Sane See, unavailable;
@@ -98,7 +99,24 @@ a goodrhyme rule (this is the vc-bussed-back rule):
 this is the vr-bussed-back rule:
 	say "Just Jack knows his time is up. He takes off. Behind them, you find something ... a sussed sack!";
 	now sco-bussed-back is true;
+	moot Just Jack;
 	now player has sussed sack;
+
+a goodrhyme rule (this is the vc-crust-crack rule):
+	if player is not in trust track, unavailable;
+	if sco-crust-crack is true:
+		say "You already found a crack in the crust.";
+		already-done;
+	if sco-bussed-back is false:
+		say "Under Just Jack's watchful eye, you don't feel like you could precipitate such changes. How to get rid of him?";
+		not-yet;
+	ready;
+
+this is the vr-crust-crack rule:
+	say "A rumbling. Passage opens to the south.";
+	now shore shoals is mapped south of trust track;
+	now trust track is mapped north of shore shoals;
+	now sco-crust-crack is true;
 
 volume guesses
 
