@@ -119,6 +119,13 @@ this is the vr-crust-crack rule:
 	now trust track is mapped north of shore shoals;
 	now sco-crust-crack is true;
 
+volume no-way text
+
+table of noways
+noway-rm	noway-txt
+Bane Be Sane See	"Cardinal directions don't mean much here, yet. Besides, there's no way back. You can only just enter the Train Tree one of three ways."
+Roaring Rocks	"The rocks block every way except [if nnss is visited]back [end if]north."
+
 volume guesses
 
 book guesses by item, alphabetized

@@ -72,7 +72,14 @@ this is the narrative-checking rule: [in VVFF been-buggin blocks you from seeing
 
 to say optional-hint-think-item: say "";
 
-section viability
+section viability and gotoing
+
+this is the flag bad goto to rule:
+	if noun is location of player, say "You're already there! Well, here." instead;
+	if noun is Bane Be Sane See, say "There's no way back to where you started." instead;
+
+this is the flag bad goto from rule:
+	do nothing;
 
 definition: a direction (called d) is viable:
 	if the room d of location of the player is nowhere, no;
@@ -102,7 +109,7 @@ sco-plain-plea is a truth state that varies.
 
 chapter train tree
 
-the train tree is scenery in Bane Be Sane See. "There are three ways to enter the train tree: under writing saying WAYNE (WHEE), JANE G, or DANE D/LANE LEE. They all look about the same."
+the train tree is scenery in Bane Be Sane See. "There are three ways to enter the train tree: under writing saying [b]WAYNE (WHEE)[r], [b]JANE G[r], or [b]DANE D/LANE LEE[r]. They all look about the same."
 
 check entering train tree: say "Which way? Examine the tree." instead;
 
@@ -435,8 +442,11 @@ carry out xyzzying:
 
 volume when play begins
 
-when play begins:
-	now core-score is 2.
+rule for printing a parser error when the latest parser error is the noun did not make sense in that context error:
+	if word number 1 in the player's command is "gt" or word number 1 in the player's command is "goto" or (word number 1 in the player's command is "go" and word number 2 in the player's command is "to"):
+		say "That location or thing doesn't exist or isn't known to you yet.";
+		the rule succeeds;
+	continue the action;
 
 volume end of game
 
