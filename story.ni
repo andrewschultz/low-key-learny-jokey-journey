@@ -38,9 +38,9 @@ Poppin' Part is a region.
 
 section scoring
 
-core-max is 4.
+core-max is 5.
 
-min-needed is 4.
+min-needed is 5.
 
 max-bonus is 1.
 
@@ -94,24 +94,33 @@ book Roaring Rocks
 
 Roaring Rocks is a room in Stoppin' Start. "This is a dead end. The only passage out is north. [if sco-boring-box is false]The roaring is too loud right now, though. You feel as if you'd be chased down if you ran away[else]Things are quieter now. There's nothing left to do here, you're pretty sure[end if].". printed name of Roaring Rocks is "[if sco-boring-box is true]Storing Stocks[else]Roaring Rocks[end if]"
 
+understand "storing/stocks" and "storing stocks" as roaring rocks when sco-boring-box is true.
+
 to say back-n-farm: if Nudge Slow Sludge is visited, say "back to ";
 
 check going north in Roaring Rocks:
 	if sco-boring-box is false, say "The roaring seems to pull you back." instead;
-	if boring box is not moot, say "You figure you should open the boring box before moving on." instead;
+	if boring box is not moot:
+		set the pronoun it to boring box;
+		say "You figure you should open the boring box before moving on." instead;
 
 chapter boring box
 
 the boring box is a thing.
 
 check opening boring box:
-	say "You open the boring box, and out pops a leet learner!";
+	say "You open the boring box, and you see a metal gadget that doesn't look very interesting at first. It's labeled as a Leet Learner. You can probably [b]READ[r] it for instructions.";
+	say "[line break][i][bracket][b]NOTE:[r][i] for those who played [b][vvff][i], this is the same device you got back then. But if not, you may wish to look into it.[close bracket][line break]";
 	moot boring box;
 	now player has leet learner instead;
 
 book No Nudge Slow Sludge
 
 NNSS is north of Roaring Rocks. it is in Hoppin' Heart. printed name is "No-Nudge Slow Sludge". "[if sco-grow-grudge is false]some no-nudge slow sludge bubbles almost all around, blocking passage west, south and north[else]The slow sludge to the west, north and south no longer seems intimidating[end if]. There's passage back south[if sco-grow-grudge is true] as well[end if], though you reckon you're done there."
+
+check going in nnss:
+	if sco-grow-grudge is false and noun is not south:
+		say "The [sludge] slows you up, which makes you mad, but not mad enough to trek through it." instead;
 
 there is thing called No Nudge Slow Sludge. It is scenery. It is in NNSS.
 
@@ -277,7 +286,8 @@ volume verbs
 the block listening rule is not listed in any rulebook.
 
 check listening:
-	if player is in Roaring Rocks and sco-boring-box is false, say "'Poring Pox!' the roaring rocks, uh, roar." instead;
+	if player is in Roaring Rocks, say "[if sco-boring-box is false]'Poring Pox!' the roaring rocks, uh, roar[else]The roaring is exciting. Too exciting. You don't need that right now[end if]." instead;
+	say "Quite quiet site. Sigh, it ..." instead;
 
 volume room restrictions
 

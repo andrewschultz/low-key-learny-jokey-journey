@@ -51,7 +51,7 @@ this is the vr-choose-name rule:
 	increment the turn count;
 	say "You walk through the door and tumble down to...";
 	move the player to Roaring Rocks;
-	if sco-plain-plea is false, 
+	if sco-plain-plea is false, max-down; [no way back to PLAIN PLEA]
 	the rule succeeds;
 
 a goodrhyme rule (this is the vc-plain-plea rule):
@@ -77,6 +77,7 @@ this is the vr-boring-box rule:
 	say "The roaring rocks crumble, leaving behind storing stocks and ... the boring box you'd hoped for. You totally want to open it!";
 	now player has boring box;
 	now sco-boring-box is true;
+	set the pronoun it to boring box;
 
 a goodrhyme rule (this is the vc-grow-grudge rule):
 	if player is not in NNSS, unavailable;
