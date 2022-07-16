@@ -306,33 +306,28 @@ this is the roaring rocks gong rule: completed;
 [roomblocking when room gone to is trust track:
 	llp-remaining;]
 
-check going when player-room-allow-threshold is not nothing-left:
-	process the this-gong-rule of room gone to;
+the go-goto rules are a room based rulebook.
+
+a go-goto rule for a room (called rm) (this is the gong may ring rule):
+	process the this-gong-rule of rm;
 	let room-done be the outcome of the rulebook;
 	if room-done is the uncompleted outcome, continue the action;
 	if room-done is the llp-remaining outcome and player-room-allow-threshold is bonus-left:
-		say "[that-prong] to try and go see what's there in [room gone to], even though it might not be necessary.";
+		say "[that-prong] to try and go see what's there in [rm], even though it might not be necessary.";
 		continue the action;
 	if player-room-allow-threshold is bonus-left:
 		say "[that-prong] ";
 	else:
 		say "[one of]A guide gong[or]That guide gong, again,[stopping] rings ";
-	say "to notify you that you don't need to go back to [room gone to]." instead;
+	say "to notify you that you don't need to go back to [rm]." instead;
+
+check going when player-room-allow-threshold is not nothing-left:
+	abide by the gong may ring rule for room gone to;
 
 to say that-prong: say "The pride-prong you summoned earlier pokes you"
 
 check gotoing when player-room-allow-threshold is not nothing-left:
-	process the this-gong-rule of noun;
-	let room-done be the outcome of the rulebook;
-	if room-done is the uncompleted outcome, continue the action;
-	if room-done is the llp-remaining outcome and player-room-allow-threshold is bonus-left:
-		say "[that-prong] to try and go see what's there in [room gone to], even though it might not be necessary.";
-		continue the action;
-	if player-room-allow-threshold is bonus-left:
-		say "[that-prong] ";
-	else:
-		say "[one of]A guide gong[or]That guide gong, again,[stopping] rings ";
-	say "to notify you that you don't need to go back to [room gone to]." instead;
+	abide by the gong may ring rule for noun;
 
 chapter guide-gonging
 
