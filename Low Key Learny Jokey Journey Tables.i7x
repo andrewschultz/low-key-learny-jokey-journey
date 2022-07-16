@@ -57,7 +57,7 @@ this is the vr-choose-name rule:
 a goodrhyme rule (this is the vc-plain-plea rule):
 	if player is not in Bane Be Sane See, unavailable;
 	if sco-plain-plea is true:
-		say "You already made a plain plea.";
+		vcal "You already made a plain plea.";
 		already-done;
 	ready;
 
@@ -69,7 +69,7 @@ this is the vr-plain-plea rule:
 a goodrhyme rule (this is the vc-boring-box rule):
 	if player is not in Roaring Rocks, unavailable;
 	if sco-boring-box is true:
-		say "You already uncovered the boring box.";
+		vcal "You already uncovered the boring box.";
 		already-done;
 	ready;
 
@@ -81,7 +81,7 @@ this is the vr-boring-box rule:
 a goodrhyme rule (this is the vc-grow-grudge rule):
 	if player is not in NNSS, unavailable;
 	if sco-grow-grudge is true:
-		vcp "You already neutralized [the sludge].";
+		vcal "You already neutralized [the sludge].";
 		already-done;
 	ready;
 
@@ -92,7 +92,7 @@ this is the vr-grow-grudge rule:
 a goodrhyme rule (this is the vc-bussed-back rule):
 	if player does not carry sussed sack and location of player is not trust track, unavailable;
 	if sco-bussed-back is true:
-		say "Just Jack has already been bussed back.";
+		vcal "Just Jack has already been bussed back.";
 		already-done;
 	ready;
 
@@ -105,10 +105,10 @@ this is the vr-bussed-back rule:
 a goodrhyme rule (this is the vc-crust-crack rule):
 	if player is not in trust track, unavailable;
 	if sco-crust-crack is true:
-		say "You already found a crack in the crust.";
+		vcal "You already found a crack in the crust.";
 		already-done;
 	if sco-bussed-back is false:
-		say "Under Just Jack's watchful eye, you don't feel like you could precipitate such changes. How to get rid of him?";
+		vcp "Under Just Jack's watchful eye, you don't feel like you could precipitate such changes. How to get rid of him?";
 		not-yet;
 	ready;
 
