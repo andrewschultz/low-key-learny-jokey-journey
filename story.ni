@@ -28,6 +28,14 @@ section test module(s) - not for release
 
 include Low Key Learny Jokey Journey Tests by Andrew Schultz.
 
+section regions
+
+Stoppin' Start is a region.
+
+Hoppin' Heart is a region.
+
+Poppin' Part is a region.
+
 section scoring
 
 core-max is 4.
@@ -76,7 +84,7 @@ volume rooms
 
 book bane be sane see
 
-Bane Be Sane See is a room. printed name is "Bane Be Sane, See?". "The train tree that brought you here has gotten outrageously large. You can enter either of its three doors: WAYNE (WHEE), JANE G, or DANE D/LANE LEE. Nothing seems too critical, just standards.[paragraph break]It's also kind of noisy and distracting here, but that shouldn't be too big of a deal, you think. You hope."
+Bane Be Sane See is a room.  it is in Stoppin' Start. printed name is "Bane Be Sane, See?". "The train tree that brought you here has gotten outrageously large. You can enter either of its three doors: WAYNE (WHEE), JANE G, or DANE D/LANE LEE. Nothing seems too critical, just standards.[paragraph break]It's also kind of noisy and distracting here, but that shouldn't be too big of a deal, you think. You hope."
 
 the player is in Bane Be Sane See.
 
@@ -84,7 +92,7 @@ sco-plain-plea is a truth state that varies.
 
 book Roaring Rocks
 
-Roaring Rocks is a room. "This is a dead end. The only passage out is north. [if sco-boring-box is false]The roaring is too loud right now, though. You feel as if you'd be chased down if you ran away[else]Things are quieter now. There's nothing left to do here, you're pretty sure[end if].". printed name of Roaring Rocks is "[if sco-boring-box is true]Storing Stocks[else]Roaring Rocks[end if]"
+Roaring Rocks is a room in Stoppin' Start. "This is a dead end. The only passage out is north. [if sco-boring-box is false]The roaring is too loud right now, though. You feel as if you'd be chased down if you ran away[else]Things are quieter now. There's nothing left to do here, you're pretty sure[end if].". printed name of Roaring Rocks is "[if sco-boring-box is true]Storing Stocks[else]Roaring Rocks[end if]"
 
 to say back-n-farm: if Nudge Slow Sludge is visited, say "back to ";
 
@@ -103,7 +111,7 @@ check opening boring box:
 
 book No Nudge Slow Sludge
 
-NNSS is north of Roaring Rocks. printed name is "No-Nudge Slow Sludge". "[if sco-grow-grudge is false]some no-nudge slow sludge bubbles almost all around, blocking passage west, south and north[else]The slow sludge to the west, north and south no longer seems intimidating[end if]. There's passage back south[if sco-grow-grudge is true] as well[end if], though you reckon you're done there."
+NNSS is north of Roaring Rocks. it is in Hoppin' Heart. printed name is "No-Nudge Slow Sludge". "[if sco-grow-grudge is false]some no-nudge slow sludge bubbles almost all around, blocking passage west, south and north[else]The slow sludge to the west, north and south no longer seems intimidating[end if]. There's passage back south[if sco-grow-grudge is true] as well[end if], though you reckon you're done there."
 
 there is thing called No Nudge Slow Sludge. It is scenery. It is in NNSS.
 
@@ -115,13 +123,13 @@ after printing the locale description for NNSS when NNSS is unvisited:
 
 book Hun Harm Fun Farm
 
-Hun Harm Fun Farm is west of NNSS.
+Hun Harm Fun Farm is west of NNSS. it is in Hoppin' Heart.
 
 book Trick Trail
 
 [last room]
 
-Trick Trail is a room.
+Trick Trail is a room. it is in Poppin' Part.
 
 Trailing Tree is a thing in Trick Trail.
 
@@ -228,7 +236,7 @@ volume unsorted locations
 
 book Trust Track
 
-Trust Track is east of NNSS.
+Trust Track is east of NNSS. it is in Hoppin' Heart.
 
 Just Jack is a rhymable in Trust Track.
 
@@ -239,7 +247,7 @@ sco-crust-crack is a truth state that varies.
 
 book Shore Shoals
 
-Shore Shoals is a room. "The only way out is back north to Trust Track."
+Shore Shoals is a room. it is in Hoppin' Heart. "The only way out is back north to Trust Track."
 
 volume parser rules
 
@@ -383,4 +391,6 @@ when play begins:
 volume internal map
 
 index map with Roaring Rocks mapped east of Bane Be Sane See.
+
+index map with Shore Shoals mapped south of Trust Track.
 
