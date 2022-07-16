@@ -45,11 +45,29 @@ TSV:## minimum walkthrough	## walkthrough with all points	## walkthrough with al
 >plain plea
 by one point
 
+@gt
+>gt tree
+DEBUG: train tree is in Bane Be Sane, See?, so gotoing there.
+You're already there! Well, here.
+\\
+>gt bane
+You're already there! Well, here.
+\\
+>n
+Cardinal directions don't mean much here, yet. Besides, there's no way back. You can only just enter the Train Tree one of three ways.
+
 >jane g
 by one point
 
 @min
 /^Roaring Rocks
+
+@gt
+>n
+The roaring seems to pull you back.
+\\
+>gt bane
+There's no way back to where you started.
 
 >boring box
 by one point
@@ -57,6 +75,27 @@ by one point
 >open box
 
 >n
+
+@min
+/^No-Nudge Slow Sludge
+
+@gt
+>w
+The no-nudge slow sludge slows you up, which makes you mad, but not mad enough to trek through it.
+\\
+>n
+The no-nudge slow sludge slows you up, which makes you mad, but not mad enough to trek through it.
+\\
+>e
+The no-nudge slow sludge slows you up, which makes you mad, but not mad enough to trek through it.
+\\
+>gt just jack
+That location or thing doesn't exist or isn't known to you yet.
+!You can't walk to Trust Track from here.
+\\
+>gt trust track
+That location or thing doesn't exist or isn't known to you yet.
+!You can't walk to Trust Track from here.
 
 >grow grudge
 by one point
