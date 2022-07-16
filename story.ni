@@ -281,26 +281,36 @@ check listening:
 
 volume room restrictions
 
+definition: a room (called rm) is available-from-here:
+	if rm is unvisited, no;
+	if rm is bane be sane see and player is not in bane be sane see, no;
+	yes;
+
+[this may be moved to CSDD common later]
+
+the gong rules are a rulebook. the gong rules have outcomes completed, llp-remaining, and uncompleted.
+
+a room has a rule called this-gong-rule. this-gong-rule of a room is usually the default roomblocking rule.
+
 a room-hint-state is a kind of value. The room-hint-states are points-left, bonus-left, and nothing-left.
 
 player-room-allow-threshold is a room-hint-state that varies. player-room-allow-threshold is nothing-left.
 
-roomblocking is a rulebook producing a room-hint-state.
+this is the default roomblocking rule: uncompleted;
 
-roomblocking (this is the default roomblocking rule):
-	rule succeeds with result points-left;
+this-gong-rule of roaring rocks is the roaring rocks gong rule.
 
-roomblocking when room gone to is roaring rocks:
-	rule succeeds with result nothing-left;
+this is the roaring rocks gong rule: completed;
 
 [temporary rule to test that, indeed, pride-prong does work!]
 [roomblocking when room gone to is trust track:
-	rule succeeds with result bonus-left;]
+	llp-remaining;]
 
 check going when player-room-allow-threshold is not nothing-left:
-	let cur-block-level be the room-hint-state produced by the roomblocking rules;
-	if cur-block-level is points-left, continue the action;
-	if cur-block-level is bonus-left and player-room-allow-threshold is bonus-left:
+	process the this-gong-rule of room gone to;
+	let room-done be the outcome of the rulebook;
+	if room-done is the uncompleted outcome, continue the action;
+	if room-done is the llp-remaining outcome and player-room-allow-threshold is bonus-left:
 		say "[that-prong] to try and go see what's there in [room gone to], even though it might not be necessary.";
 		continue the action;
 	if player-room-allow-threshold is bonus-left:
@@ -310,6 +320,19 @@ check going when player-room-allow-threshold is not nothing-left:
 	say "to notify you that you don't need to go back to [room gone to]." instead;
 
 to say that-prong: say "The pride-prong you summoned earlier pokes you"
+
+check gotoing when player-room-allow-threshold is not nothing-left:
+	process the this-gong-rule of noun;
+	let room-done be the outcome of the rulebook;
+	if room-done is the uncompleted outcome, continue the action;
+	if room-done is the llp-remaining outcome and player-room-allow-threshold is bonus-left:
+		say "[that-prong] to try and go see what's there in [room gone to], even though it might not be necessary.";
+		continue the action;
+	if player-room-allow-threshold is bonus-left:
+		say "[that-prong] ";
+	else:
+		say "[one of]A guide gong[or]That guide gong, again,[stopping] rings ";
+	say "to notify you that you don't need to go back to [room gone to]." instead;
 
 chapter guide-gonging
 
