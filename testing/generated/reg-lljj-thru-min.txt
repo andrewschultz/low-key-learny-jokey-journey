@@ -1,0 +1,37 @@
+## reg-lljj-thru-min.txt
+## GENERATOR FILE: rbr-lljj-thru.txt
+
+## minimum walkthrough
+
+** game: /home/andrew/prt/debug-low-key-learny-jokey-journey.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main-thru
+
+/^Bane Be Sane, See?
+
+>jane g
+by one point
+
+/^Roaring Rocks
+
+>boring box
+by one point
+
+>open box
+
+>n
+
+>grow grudge
+by one point
+
+>e
+
+/^Trust Track
+
+>bussed back
+by one point
+
+>crust crack
+by one point
+

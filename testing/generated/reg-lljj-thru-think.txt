@@ -1,0 +1,50 @@
+## reg-lljj-thru-think.txt
+## GENERATOR FILE: rbr-lljj-thru.txt
+
+## walkthrough with all out-of-order possibilities
+
+** game: /home/andrew/prt/debug-low-key-learny-jokey-journey.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main-thru
+
+>plain plea
+by one point
+
+>jane g
+by one point
+
+>boring box
+by one point
+
+>open box
+
+>n
+
+>grow grudge
+by one point
+
+>e
+
+>crust crack
+Under Just Jack's watchful eye, you don't feel like you could precipitate such changes. How to get rid of him?
+
+NOTE: this command will be useful later, but you aren't ready to use it, yet. You can track commands like this by typing THINK, which will also clue you if they now work.
+
+>think
+You think about more specific challenges you've encountered and not solved, and what you've done and tried, and what you can do.
+
+You need to get rid of Just Jack before you can make the CRUST CRACK.
+
+NOTE: The game will indicate when one command you found early will be applicable. An asterisk or (+) will also appear in the score in the upper right. Until then, you can THINK to see things you figured but aren't quite ready to do yet.
+
+>bussed back
+by one point
+
+>crust crack
+by one point
+
+>think
+You think about more specific challenges you've encountered and not solved, and what you've done and tried, and what you can do.
+
+But you don't have leads for any puzzles right now.

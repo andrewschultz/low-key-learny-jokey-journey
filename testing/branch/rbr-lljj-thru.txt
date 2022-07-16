@@ -1,0 +1,92 @@
+#-- rbr-lljj-thru.txt
+#-- main branch file for Low-Key Learny Jokey Journey walkthroughs
+#
+#-- use HHV.PY to verify ha-half
+#-- use MCH.PY to verify mistake checking code
+#-- use SCT.PY to verify alternate verb solutions
+#-- use HCH.PY to verify room/thing homonyms
+#--
+
+# for when we hit glulx:
+# glulx-game: /home/andrew/prt/debug-low-key-learny-jokey-journey.ulx
+# glulx-interpreter: /home/andrew/prt/glulxe -q
+
+files=reg-lljj-thru-min.txt,reg-lljj-thru-all.txt,reg-lljj-thru-think.txt,reg-lljj-thru-alt-verbs.txt,reg-lljj-thru-fake-deaths.txt,reg-lljj-thru-mistakes.txt,reg-lljj-thru-ha-half.txt,reg-lljj-thru-homonyms.txt,reg-lljj-thru-verbs.txt,reg-lljj-thru-goto.txt,reg-lljj-thru-vc.txt
+~	min	t0
+~	all	t1
+~	thi	t2
+~	alt	t3
+~	gong	t4
+~	mis	t5
+~	ha	t6
+~	hom	t7
+~	ver	t8
+~	goto,gt,go	t9
+~	vc	t10
+#--stacle-file: this eventually says that the project is stable, and I shouldn't change the main/minimal file unless I really need to.
+#--strict-file: this says that the project requires strict section marking e.g. @all instead of ==t1.
+
+}$REJECT=Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+
+## *FILE
+## *FORK
+
+TSV:## minimum walkthrough	## walkthrough with all points	## walkthrough with all out-of-order possibilities	## walkthrough with altverb tests	## walkthrough with fake deaths	## walkthrough testing all mistakes	## walkthrough testing half-right cases	## walkthrough testing homonyms	##walkthrough testing special verbs	## walkthrough testing GOTO	## walkthrough with pre-right command testing
+
+** game: /home/andrew/prt/debug-low-key-learny-jokey-journey.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main-thru
+
+@min
+/^Bane Be Sane, See?
+
+@!min
+>plain plea
+by one point
+
+>jane g
+by one point
+
+@min
+/^Roaring Rocks
+
+>boring box
+by one point
+
+>open box
+
+>n
+
+>grow grudge
+by one point
+
+>e
+
+@min
+/^Trust Track
+
+@thi
+>crust crack
+Under Just Jack's watchful eye, you don't feel like you could precipitate such changes. How to get rid of him?
+\\
+NOTE: this command will be useful later, but you aren't ready to use it, yet. You can track commands like this by typing THINK, which will also clue you if they now work.
+\\
+>think
+You think about more specific challenges you've encountered and not solved, and what you've done and tried, and what you can do.
+\\
+You need to get rid of Just Jack before you can make the CRUST CRACK.
+\\
+NOTE: The game will indicate when one command you found early will be applicable. An asterisk or (+) will also appear in the score in the upper right. Until then, you can THINK to see things you figured but aren't quite ready to do yet.
+
+>bussed back
+by one point
+
+>crust crack
+by one point
+
+@thi
+>think
+You think about more specific challenges you've encountered and not solved, and what you've done and tried, and what you can do.
+\\
+But you don't have leads for any puzzles right now.

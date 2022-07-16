@@ -1,0 +1,34 @@
+## reg-lljj-thru-fake-deaths.txt
+## GENERATOR FILE: rbr-lljj-thru.txt
+
+## walkthrough with fake deaths
+
+** game: /home/andrew/prt/debug-low-key-learny-jokey-journey.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main-thru
+
+>plain plea
+by one point
+
+>jane g
+by one point
+
+>boring box
+by one point
+
+>open box
+
+>n
+
+>grow grudge
+by one point
+
+>e
+
+>bussed back
+by one point
+
+>crust crack
+by one point
+
