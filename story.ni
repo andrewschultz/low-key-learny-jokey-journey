@@ -416,6 +416,20 @@ volume when play begins
 when play begins:
 	now core-score is 2.
 
+volume end of game
+
+to win-the-game:
+	if score is maximum score:
+		choose row with final response rule of show-misses rule in the Table of Final Question Options;
+		blank out the whole row; [don't let the player see MISSED if they got everything]
+
+Table of Final Question Options (continued)
+final question wording	only if victorious	topic		final response rule		final response activity
+"see the points you [b]MISSED[r]"	true	"missed"	show-misses rule	--
+
+this is the show-misses rule:
+	if sco-plain-plea is false, say "You could've made a [b]PLAIN PLEA[r] back at the start in [sane see]";
+
 volume internal map
 
 index map with Roaring Rocks mapped east of Bane Be Sane See.
