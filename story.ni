@@ -58,6 +58,16 @@ to decide which number is variable-scan-length of (mynum - a number): [if we hav
 this is the narrative-checking rule: [in VVFF been-buggin blocks you from seeing narrative]
 	do nothing;
 
+to say optional-hint-think-item: say "";
+
+section "too-distracted" determines if we should reject THINK
+
+to decide whether too-distracted:
+	no;
+
+to decide whether immediate-attention of (ru - a rule):
+	no;
+
 chapter offshoots from the universal file
 
 to decide whether vcp-ignore: decide no; [When do we block check-text? In VVFF, when we have Been Buggin]

@@ -29,13 +29,13 @@ other stuff that may be added is best-room though I may have divided room-specif
 ]
 
 table of verb checks
-w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	idid	check-rule	run-rule	wfull (topic)	think-advice (text)
-"dane|jane|lane|wayne"	"d|dee|g|gee|lee|whee"	--	--	false	false	true	false	vc-in-bane rule	vr-choose-name rule	"d/dee dane" or "dane dee/d" or "jane g/gee" or "gee/g jane" or "wayne whee" or "whee wayne"	--
-"plain"	"plea"	--	--	false	true	false	false	vc-plain-plea rule	vr-plain-plea rule	--	--
-"boring"	"box"	--	--	false	true	true	false	vc-boring-box rule	vr-boring-box rule	--	--
-"grow"	"grudge"	--	--	false	false	true	false	vc-grow-grudge rule	vr-grow-grudge rule
-"bussed"	"back"	--	--	false	false	true	false	vc-bussed-back rule	vr-bussed-back rule
-"crust"	"crack"	--	--	false	true	true	false	vc-crust-crack rule	vr-crust-crack rule	--	"You need to get rid of [jack] before you can make the [b]CRUST CRACK[r]."
+w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	idid	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
+"dane|jane|lane|wayne"	"d|dee|g|gee|lee|whee"	--	--	false	false	true	false	--	vc-in-bane rule	vr-choose-name rule	"d/dee dane" or "dane dee/d" or "jane g/gee" or "gee/g jane" or "wayne whee" or "whee wayne"	--
+"plain"	"plea"	--	--	false	true	false	false	--	vc-plain-plea rule	vr-plain-plea rule	--	--
+"boring"	"box"	--	--	false	true	true	false	--	vc-boring-box rule	vr-boring-box rule	--	--
+"grow"	"grudge"	--	--	false	false	true	false	--	vc-grow-grudge rule	vr-grow-grudge rule
+"bussed"	"back"	--	--	false	false	true	false	--	vc-bussed-back rule	vr-bussed-back rule
+"crust"	"crack"	--	--	false	true	true	false	Trust Track	vc-crust-crack rule	vr-crust-crack rule	--	"You need to get rid of [jack] before you can make the [b]CRUST CRACK[r]."
 
 a goodrhyme rule (this is the vc-in-bane rule):
 	if player is not in Bane Be Sane See, unavailable;
