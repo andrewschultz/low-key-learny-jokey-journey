@@ -14,11 +14,15 @@ release along with the "Parchment" interpreter.
 
 include Trivial Niceties by Andrew Schultz.
 
+include Bold Final Question Rows by Andrew Schultz.
+
 include Civil Seeming Drivel Dreaming Common by Andrew Schultz.
 
 include Low Key Learny Jokey Journey Tables by Andrew Schultz.
 
 include Low Key Learny Jokey Journey Mistakes by Andrew Schultz.
+
+include Old School Verb Total Carnage by Andrew Schultz.
 
 entry-in-series is 3.
 
@@ -48,7 +52,7 @@ cur-bonus is 0.
 
 when play begins: now max-poss is max-overall;
 
-chapter offshoots from common file
+chapter offshoots relying on CSDD common file or CSDD universal file
 
 to decide whether force-partminus of (th - a thing): [whether to force certain leet learner readings]
 	no;
@@ -68,6 +72,12 @@ this is the narrative-checking rule: [in VVFF been-buggin blocks you from seeing
 
 to say optional-hint-think-item: say "";
 
+section viability
+
+definition: a direction (called d) is viable:
+	if the room d of location of the player is nowhere, no;
+	yes;
+
 section "too-distracted" determines if we should reject THINK
 
 to decide whether too-distracted:
@@ -84,11 +94,19 @@ volume rooms
 
 book bane be sane see
 
-Bane Be Sane See is a room.  it is in Stoppin' Start. printed name is "Bane Be Sane, See?". "The train tree that brought you here has gotten outrageously large. You can enter either of its three doors: WAYNE (WHEE), JANE G, or DANE D/LANE LEE. Nothing seems too critical, just standards.[paragraph break]It's also kind of noisy and distracting here, but that shouldn't be too big of a deal, you think. You hope."
+Bane Be Sane See is a room.  it is in Stoppin' Start. printed name is "Bane Be Sane, See?". "The train tree that brought you here has gotten outrageously large. It can be entered three ways. You just need to [b]READ[r] it.[paragraph break][if sco-plain-plea is true]Now you gave a plain plee, you feel more comfortable here and fully ready to move on[else]It's a bit noisy here, but maybe if you said things right, you could feel a bit more comfortable. It's probably not critical, though[end if]."
 
 the player is in Bane Be Sane See.
 
 sco-plain-plea is a truth state that varies.
+
+chapter train tree
+
+the train tree is scenery in Bane Be Sane See. "There are three ways to enter the train tree: under writing saying WAYNE (WHEE), JANE G, or DANE D/LANE LEE. They all look about the same."
+
+check entering train tree: say "Which way? Examine the tree." instead;
+
+check opening train tree: say "You should be able to enter the tree as you please." instead;
 
 book Roaring Rocks
 
@@ -116,13 +134,13 @@ check opening boring box:
 
 book No Nudge Slow Sludge
 
-NNSS is north of Roaring Rocks. it is in Hoppin' Heart. printed name is "No-Nudge Slow Sludge". "[if sco-grow-grudge is false]some no-nudge slow sludge bubbles almost all around, blocking passage west, south and north[else]The slow sludge to the west, north and south no longer seems intimidating[end if]. There's passage back south[if sco-grow-grudge is true] as well[end if], though you reckon you're done there."
+NNSS is north of Roaring Rocks. it is in Hoppin' Heart. printed name is "No-Nudge Slow Sludge". "[if sco-grow-grudge is false]Some [sludge] bubbles almost all around, blocking passage west, south and north[else]The [sludge] to the west, north and south no longer seems intimidating[end if]. There's passage back south[if sco-grow-grudge is true] as well[end if], though you reckon you're done there."
 
 check going in nnss:
 	if sco-grow-grudge is false and noun is not south:
 		say "The [sludge] slows you up, which makes you mad, but not mad enough to trek through it." instead;
 
-there is thing called No Nudge Slow Sludge. It is scenery. It is in NNSS.
+there is thing called no nudge slow sludge. It is scenery. It is in NNSS. printed name is "no-nudge slow sludge".
 
 sco-grow-grudge is a truth state that varies.
 
@@ -377,6 +395,10 @@ carry out pride-pronging:
 	say "You [if player-room-allow-threshold is bonus-left]already[else]now[end if] will be blocked from locations with nothing left to do and be warned if there is a bonus point in a location you are about to visit.";
 	now player-room-allow-threshold is bonus-left;
 	the rule succeeds;
+
+volume standard verbs
+
+[just in case, so far]
 
 volume meta-verbs
 
