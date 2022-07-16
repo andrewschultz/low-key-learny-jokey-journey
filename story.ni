@@ -152,7 +152,9 @@ there is thing called no nudge slow sludge. It is scenery. It is in NNSS. printe
 sco-grow-grudge is a truth state that varies.
 
 after printing the locale description for NNSS when NNSS is unvisited:
-	say "[i][bracket][b]NOTE:[r] [i]you don't need to go back to Roaring Rocks/Storing Stocks again. If you wish to track this sort of thing, [b]GUIDE GONG[r][i] will shut you out of completed areas, [b]STRIDE STRONG[r][i] will remove these restrictions, and [b]PRIDE PRONG[r][i] is like the gong, except it will give you a poke to visit rooms where you can still get a bonus point.[close bracket][r][line break]";
+	if guide-gong-warn is false:
+		say "[i][bracket][b]NOTE:[r] [i]you don't need to go back to Roaring Rocks/Storing Stocks again. If you wish to track this sort of thing, [b]GUIDE GONG[r][i] will shut you out of completed areas, [b]STRIDE STRONG[r][i] will remove these restrictions, and [b]PRIDE PRONG[r][i] is like the gong, except it will give you a poke to visit rooms where you can still get a bonus point.[close bracket][r][line break]";
+		now guide-gong-warn is true;
 	continue the action;
 
 book Hun Harm Fun Farm
@@ -373,9 +375,16 @@ understand the command "guide gong" as something new.
 understand "guide gong" as guide-gonging.
 
 carry out guide-gonging:
-	say "You [if player-room-allow-threshold is points-left]already[else]now[end if] will be repelled by a guide gong if you try to enter a location where you have nothing game-critical to do.";
+	follow the know-ide-ong rule;
+	say "You will [if player-room-allow-threshold is points-left]already[else]now[end if] be repelled by a guide gong if you try to enter a location where you have nothing game-critical to do.";
 	now player-room-allow-threshold is points-left;
 	the rule succeeds;
+
+guide-gong-warn is a truth state that varies.
+this is the know-ide-ong rule:
+	if guide-gong-warn is false:
+		now guide-gong-warn is true;
+		say "(disabling later explanation of [b]GUIDE GONG[r], etc., but it will still be in [b]VERBS[r])";
 
 chapter stride-stronging
 
@@ -386,8 +395,9 @@ understand the command "stride strong" as something new.
 understand "stride strong" as stride-stronging.
 
 carry out stride-stronging:
-	say "You [if player-room-allow-threshold is nothing-left]already[else]now[end if] will move freely between locations, even ones with nothing left to do.";
-	now player-room-allow-threshold is points-left;
+	follow the know-ide-ong rule;
+	say "You are [if player-room-allow-threshold is nothing-left]already[else]now[end if] able to move freely between locations, even ones with nothing left to do.";
+	now player-room-allow-threshold is nothing-left;
 	the rule succeeds;
 
 chapter pride-pronging
@@ -399,7 +409,8 @@ understand the command "pride prong" as something new.
 understand "pride prong" as pride-pronging.
 
 carry out pride-pronging:
-	say "You [if player-room-allow-threshold is bonus-left]already[else]now[end if] will be blocked from locations with nothing left to do and be warned if there is a bonus point in a location you are about to visit.";
+	follow the know-ide-ong rule;
+	say "You will [if player-room-allow-threshold is bonus-left]already[else]now[end if] be blocked from locations with nothing left to do and be warned if there is a bonus point in a location you are about to visit.";
 	now player-room-allow-threshold is bonus-left;
 	the rule succeeds;
 
@@ -427,6 +438,12 @@ chapter exitsing
 
 to decide whether (di - a direction) is blocked:
 	no;
+
+chapter optsing
+
+carry out optsing:
+	if guide-gong-warn is true, say "[b]GUIDE GONG[r] will restrict you from solved rooms, [b]PRIDE PRONG[r] will notify you of rooms with just LLPs left, and [b]STRIDE STRONG[r] will remove these bumpers. Currently this is set to [b][if player-room-allow-threshold is bonus-left]PRIDE PRONG[else if player-room-allow-threshold is bonus-left]GUIDE GONE[else]player-room-allow-threshold is bonus-left[end if][r].";
+	the rule succeeds;
 
 chapter verbsing
 
