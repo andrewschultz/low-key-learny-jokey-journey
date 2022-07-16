@@ -1,0 +1,50 @@
+## reg-lljj-lone-options.txt
+## STANDALONE FILE
+
+## tests options
+
+** game: /home/andrew/prt/debug-low-key-learny-jokey-journey.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main-thru
+
+>jane g
+by one point
+
+>boring box
+by one point
+
+>open box
+
+>n
+NOTE: you don't need to go back to Roaring Rocks/Storing Stocks again. If you wish to track this sort of thing, GUIDE GONG will shut you out of completed areas, STRIDE STRONG will remove these restrictions, and PRIDE PRONG is like the gong, except it will give you a poke to visit rooms where you can still get a bonus point.
+
+>undo
+
+#check default
+>stride strong
+(disabling later explanation of GUIDE GONG, etc., but it will still be in VERBS)
+You are already able to move freely between locations, even ones with nothing left to do.
+
+>n
+!don't need to go back
+
+>pride prong
+You will now be blocked from locations with nothing left to do and be warned if there is a bonus point in a location you are about to visit.
+
+>pride prong
+You will already be blocked from locations with nothing left to do and be warned if there is a bonus point in a location you are about to visit.
+
+>stride strong
+You are now able to move freely between locations, even ones with nothing left to do.
+
+>stride strong
+You are already able to move freely between locations, even ones with nothing left to do.
+
+>guide gong
+You will now be repelled by a guide gong if you try to enter a location where you have nothing game-critical to do.
+
+>guide gong
+You will already be repelled by a guide gong if you try to enter a location where you have nothing game-critical to do.
+
+>

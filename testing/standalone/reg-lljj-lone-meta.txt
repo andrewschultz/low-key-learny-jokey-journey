@@ -1,0 +1,23 @@
+## reg-lljj-thru-all.txt
+## GENERATOR FILE: rbr-lljj-thru.txt
+
+## walkthrough with all points
+
+** game: /home/andrew/prt/debug-low-key-learny-jokey-journey.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main-thru
+
+>xyzzy
+A hollow voice booms incredulously, "Easter egg bestir-beg?!"
+(Cross-promotion: why, yes, Very Vile Fairy File and Quite Queer Night Near, the other two entries in Civil Seeming Drivel Dreaming, have different and equally "witty" XYZZY responses. Of course they do!)
+
+>xyzzy
+A hollow voice booms incredulously, "Easter egg bestir-beg?!"
+!Cross-promotion
+
+>about
+!FILL THIS IN
+
+>credits
+!FILL THIS IN
