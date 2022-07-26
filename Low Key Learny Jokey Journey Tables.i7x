@@ -119,6 +119,36 @@ this is the vr-crust-crack rule:
 	now trust track is mapped north of shore shoals;
 	now sco-crust-crack is true;
 
+volume homonym rejections
+
+chapter thing homonyms
+
+[this should not be alphabetized as otherwise Inform will assume from the first entry, the Bot Board, that everything is a person.]
+[the fixfirst= in talf.txt makes sure that a regular item comes first.]
+
+table of thing homonyms
+mything	hom-rule (a rule)	myhom (topic)	custom-msg (text)
+pear peach	--	"pair/pare"	"You don't need to reduce or duplicate the pear peach. It has a much bigger purpose."
+
+section thing homonym rules [xxthr]
+
+chapter room homonyms
+
+[the room homonyms work as follows: if we have a rule with multiple room states/possibilities and no topic, then we skip the topic. If we have a rule and a topic, we print the custom-msg if the rule and topic match. Otherwise, we print the custom-msg for a generic error if the topic matches. So that is why the topic or rule can be blank.]
+
+table of room homonyms
+loc	hom-rule (a rule)	myhom (topic)	custom-msg (text)
+bane be sane see	hom-bane-be-sane-see rule	--	--
+trust track	--	"trussed"	"You [if sco-crust-crack is true]already opened things up[else]don't need to restrict things here but open them up[end if]."
+
+this is the hom-bane-be-sane-see rule:
+	if the player's command includes "bee":
+		say "Homonyms aren't the way here. Look at the train tree for clues. A bee would provide nature and all but nothing staying.";
+		the rule succeeds;
+	else if the player's command includes "sea":
+		say "Homonyms aren't the way here. Look at the train tree for clues. There will be large bodies of water elsewhere.";
+		the rule succeeds;
+
 volume no-way text
 
 table of noways

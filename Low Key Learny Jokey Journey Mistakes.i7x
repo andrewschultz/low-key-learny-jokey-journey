@@ -11,17 +11,24 @@ mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 
 book guesses by room, alphabetical
 
+table of bane be sane see guesses
+mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
+"cane key"	--	false	--	--	"You don't need any key to unlock the tree."
+"feign fee"	--	false	--	--	"You whine about how [this-game] costs money on top of being a waste of time. Nobody listens."
+"main me"	--	false	--	--	"You are the main character in this adventure, but don't let it go to your head."
+"pain p/pee"	--	false	--	--	"[this-game] is nonviolent and hopefully devoid of bathroom humor."
+"vain v"	--	false	--	--	"You come to grips with how you are not as humble as you should be."
+
 table of roaring rocks good guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "poring/pouring pox"	--	false	--	--	"You don't need to catch anything, and denting the rocks would not reveal anything[if sco-boring-box is true] further[end if]."
 
 book guesses by item, alphabetical
 
-[this could technically go in the common file, but it would create so many problems with test verification.]
+[template until I get an item]
 
-table of lurking lump guesses
-mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
-"perking pump"	lump-known rule	false	--	--	"I don't want to know."
+[table of lurking lump guesses
+mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt]
 
 book miscellaneous guesses
 
