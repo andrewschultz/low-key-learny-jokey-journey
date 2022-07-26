@@ -314,6 +314,7 @@ the block listening rule is not listed in any rulebook.
 
 check listening:
 	if player is in Roaring Rocks, say "[if sco-boring-box is false]'Poring Pox!' the roaring rocks, uh, roar[else]The roaring is exciting. Too exciting. You don't need that right now[end if]." instead;
+	if player is in Bane Be Sane See, say "[if sco-plain-plea is false]You get the feeling your voice could add constructively to the noises, somehow, but it's not critical[else]You still think you hear echoes of your plain plea[end if]." instead;
 	say "Quite quiet site. Sigh, it ..." instead;
 
 volume room restrictions
@@ -423,13 +424,19 @@ volume meta-verbs
 chapter abouting
 
 carry out abouting:
-	say "FILL THIS IN.";
+	say "[this-game] is the third entry in the [csdd] series. You do not need experience [series-names] to get through succesfully.";
+	say "[line break]It felt like something that'd never get created, but it was fun to dream about. Then I had an idea about [if nnss is unvisited]the third room[else][NNSS][end if] offering another LLP in [vvff], but I wanted to move on. Then an idea for one room came, then another, and suddenly I had a game for IFComp 2022, which was nice, as the one I'd had on reserve since 2018 had dried up.";
+	say "[line break]I was able to re-use and fine-tune and fix bugs in a lot of code from [vvff], and I even managed to create some code I backported. And I started using Zarf's regression scripts earlier, to catch bugs well before the deadline and free my mind up for bigger-picture things. So it feels like the user experience should be smoother, although the story might be weaker.";
+	say "[line break]While my code for [vvff] wasn't perfect, it gave me a boost so I didn't have to rewrite a lot. I'd also become more comfortable with rules and rule ordering since then, so I was able to make the code more portable.";
 	the rule succeeds;
 
 chapter creditsing
 
 carry out creditsing:
-	say "FILL THIS IN.";
+	say "Thanks to many people on the I7 board at Intfiction.org. This includes, in alphabetical order, Draconis, otistdog, Zarf and ZedLopez.";
+	say "[line break]Thanks to all involved in IFComp, whether administering, programming, judging, or reviewing.";
+	say "Thanks to GitHub for allowing free hosting, public or private.";
+	say "Thanks to you for playing.";
 	the rule succeeds;
 
 chapter exitsing
@@ -448,7 +455,8 @@ carry out optsing:
 chapter verbsing
 
 carry out verbsing:
-	say "FILL THIS IN.";
+	say "[this-game] doesn't have many custom verbs that are used regularly. However, you need to guess the right words to advance.";
+	say "[b]OPTS[r] gives options, and [b]CREDITS[r] and [b]ABOUT[r] give general information.";
 	the rule succeeds;
 
 chapter xyzzying
@@ -460,7 +468,7 @@ carry out xyzzying:
 volume when play begins
 
 rule for printing a parser error when the latest parser error is the noun did not make sense in that context error:
-	if word number 1 in the player's command is "gt" or word number 1 in the player's command is "goto" or (word number 1 in the player's command is "go" and word number 2 in the player's command is "to"):
+	if action-to-be is the gotothinging action or action-to-be is the gotoing action:
 		say "That location or thing doesn't exist or isn't known to you yet.";
 		the rule succeeds;
 	continue the action;
