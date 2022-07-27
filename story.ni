@@ -103,6 +103,8 @@ book bane be sane see
 
 Bane Be Sane See is a room.  it is in Stoppin' Start. printed name is "Bane Be Sane, See?". "The train tree that brought you here has gotten outrageously large. It can be entered three ways. You just need to [b]READ[r] it.[paragraph break][if sco-plain-plea is true]Now you gave a plain plee, you feel more comfortable here and fully ready to move on[else]It's a bit noisy here, but maybe if you said things right, you could feel a bit more comfortable. It's probably not critical, though[end if]."
 
+guess-table of Bane Be Sane See is table of Bane Be Sane See guesses.
+
 the player is in Bane Be Sane See.
 
 sco-plain-plea is a truth state that varies.
@@ -118,6 +120,8 @@ check opening train tree: say "You should be able to enter the tree as you pleas
 book Roaring Rocks
 
 Roaring Rocks is a room in Stoppin' Start. "This is a dead end. The only passage out is north. [if sco-boring-box is false]The roaring is too loud right now, though. You feel as if you'd be chased down if you ran away[else]Things are quieter now. There's nothing left to do here, you're pretty sure[end if].". printed name of Roaring Rocks is "[if sco-boring-box is true]Storing Stocks[else]Roaring Rocks[end if]"
+
+guess-table of Roaring Rocks is table of Roaring Rocks guesses.
 
 understand "storing/stocks" and "storing stocks" as roaring rocks when sco-boring-box is true.
 
@@ -142,6 +146,8 @@ check opening boring box:
 book No Nudge Slow Sludge
 
 NNSS is north of Roaring Rocks. it is in Hoppin' Heart. printed name is "No-Nudge Slow Sludge". "[if sco-grow-grudge is false]Some [sludge] bubbles almost all around, blocking passage west, south and north[else]The [sludge] to the west, north and south no longer seems intimidating[end if]. There's passage back south[if sco-grow-grudge is true] as well[end if], though you reckon you're done there."
+
+guess-table of NNSS is table of no nudge slow sludge guesses.
 
 check going in nnss:
 	if sco-grow-grudge is false and noun is not south:
@@ -274,9 +280,11 @@ book Trust Track
 
 Trust Track is east of NNSS. it is in Hoppin' Heart.
 
+guess-table of trust track is table of trust track guesses.
+
 Just Jack is a rhymable in Trust Track.
 
-the sussed sack is a thing.
+the sussed sack is a rhymable. guess-table of sussed sack is table of trust track guesses.
 
 sco-bussed-back is a truth state that varies.
 sco-crust-crack is a truth state that varies.

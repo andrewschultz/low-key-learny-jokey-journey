@@ -6,8 +6,8 @@ volume all kinds of guesses
 
 table of general good guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
-"tokey tourney"	--	false	--	--	"That could potentially be very relaxed and low-key, indeed. I guess."
 "okie ernie/earnie/earny"	--	false	--	--	"No stereotypical rural fellow pops up with down-home advice."
+"tokey tourney"	--	false	--	--	"That could potentially be very relaxed and low-key, indeed. I guess."
 
 book guesses by room, alphabetical
 
@@ -19,9 +19,32 @@ mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "pain p/pee"	--	false	--	--	"[this-game] is nonviolent and hopefully devoid of bathroom humor."
 "vain v"	--	false	--	--	"You come to grips with how you are not as humble as you should be."
 
-table of roaring rocks good guesses
+table of roaring rocks guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
+"flooring flocks"	--	false	--	--	"You don't need to be dive-bombed by aerial predators. And I don't have the artistic ability to show you majestic birds, either. Sorry."
 "poring/pouring pox"	--	false	--	--	"You don't need to catch anything, and denting the rocks would not reveal anything[if sco-boring-box is true] further[end if]."
+"storing stocks"	--	false	--	--	"That's what the rocks will become, but you want something simpler and smaller and shorter."
+
+this is the box-hidden rule:
+	if boring box is off-stage, the rule succeeds;
+	the rule fails;
+
+table of no nudge slow sludge guesses
+mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
+"fo/foe fudge"	--	false	--	--	"This isn't Willy Wonka's Chocolate Factory. Err, Charlie's."
+"joe judge"	--	false	--	--	"No former New York Giants head football coach appears."
+"po/poe pudge"	--	false	--	--	"Weight gain won't help here."
+
+table of trust track guesses
+mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
+"must mack"	jack-gone rule	false	--	--	"You don't need memories of Just Jack."
+"cussed cack"	--	false	--	--	"[if player has sussed sack]No, the sack will be worthwhile[else]There's a useful item here[end if]."
+"lust lack"	--	false	--	--	"[if just jack is fungible]Jack would still be bugging you in that state[else]You continue to put impure thoughts aside to focus on a really cool text adventure[end if]."
+"rust rack"	--	false	--	--	"That would be a useless item."
+
+this is the jack-gone rule:
+	if Just Jack is moot, the rule succeeds;
+	the rule fails;
 
 book guesses by item, alphabetical
 
