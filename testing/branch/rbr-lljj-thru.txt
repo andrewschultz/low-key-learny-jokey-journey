@@ -45,6 +45,49 @@ TSV:## minimum walkthrough	## walkthrough with all points	## walkthrough with al
 >listen
 You get the feeling your voice could add constructively to the noises, somehow, but it's not critical.
 
+@mis
+#ttc-table-of-bane-be-sane-see-guesses-cane-key
+>cane key
+You don't need any key to unlock the tree.
+\\
+#ttc-table-of-bane-be-sane-see-guesses-feign-fee
+>feign fee
+You whine about how Low-Key Learny Jokey Journey costs money on top of being a waste of time. Nobody listens.
+\\
+#ttc-table-of-bane-be-sane-see-guesses-main-me
+>main me
+You are the main character in this adventure, but don't let it go to your head.
+\\
+#ttc-table-of-bane-be-sane-see-guesses-pain-p-pee
+>pain p
+Low-Key Learny Jokey Journey is nonviolent and hopefully devoid of bathroom humor.
+\\
+#ttc-table-of-bane-be-sane-see-guesses-pain-p-pee
+>pain pee
+Low-Key Learny Jokey Journey is nonviolent and hopefully devoid of bathroom humor.
+!lurking lump
+\\
+#ttc-table-of-bane-be-sane-see-guesses-vain-v
+>vain v
+You come to grips with how you are not as humble as you should be.
+lurking lump
+\\
+#ttc-table-of-general-good-guesses-okie-ernie-earnie-earny
+>okie ernie
+No stereotypical rural fellow pops up with down-home advice.
+\\
+#ttc-table-of-general-good-guesses-tokey-tourney
+>tokey tourney
+That could potentially be very relaxed and low-key, indeed. I guess.
+\\
+#ttc-table-of-lurking-lump-guesses-clerking-clump
+>clerking clump
+The lump can't keep track of things. That would be the Leet Learner.
+\\
+#ttc-table-of-lurking-lump-guesses-perking-pump
+>perking pump
+I don't want to know.
+
 @!min
 >plain plea
 by one point
@@ -74,6 +117,19 @@ by one point
 >listen
 "Poring Pox!" the roaring rocks, uh, roar.
 
+@mis
+#ttc-table-of-roaring-rocks-guesses-flooring-flocks
+>flooring flocks
+You don't need to be dive-bombed by aerial predators. And I don't have the artistic ability to show you majestic birds, either. Sorry.
+\\
+#ttc-table-of-roaring-rocks-guesses-poring-pouring-pox
+>pouring pox
+You don't need to catch anything, and denting the rocks would not reveal anything.
+\\
+#ttc-table-of-roaring-rocks-guesses-storing-stocks
+>storing stocks
+That's what the rocks will become, but you want something simpler and smaller and shorter.
+
 @gt
 >n
 The roaring seems to pull you back.
@@ -93,7 +149,32 @@ There's no way back to where you started.
 >boring box
 by one point
 
+@mis
+#+ttc-table-of-roaring-rocks-guesses-storing-stocks
+>storing stocks
+riff
+!rocks will become
+\\
+#+ttc-table-of-roaring-rocks-guesses-poring-pouring-pox
+>poring pox
+You don't need to catch anything, and denting the rocks would not reveal anything further.
+
 >open box
+
+@ver
+#ttc-table-of-color-clues---eat-earner--
+#ttc-table-of-color-clues--beat-burner--
+#ttc-table-of-color-clues--cheat-churner-
+#ttc-table-of-color-clues--meet-mourner-
+#ttc-table-of-color-clues-conceit-concerner
+#ttc-table-of-readables-leet-learner
+>read leet learner
+Some text matches up with where the needle nose might spin. It's a bit of a stretch, in some cases, but you figure the more help the better.
+CONCEIT CONCERNER is written to the left.
+  CHEAT CHURNER   is written to the center-left.
+   MEET MOURNER   is written to the center.
+   BEAT BURNER    is written to the center-right.
+    EAT EARNER    is written to the right.
 
 >n
 
@@ -103,6 +184,19 @@ by one point
 @ver
 >listen
 Quite quiet site. Sigh, it ...
+
+@mis
+#ttc-table-of-no-nudge-slow-sludge-guesses-fo-foe-fudge
+>foe fudge
+This isn't Willy Wonka's Chocolate Factory. Err, Charlie's.
+\\
+#ttc-table-of-no-nudge-slow-sludge-guesses-joe-judge
+>joe judge
+No former New York Giants head football coach appears.
+\\
+#ttc-table-of-no-nudge-slow-sludge-guesses-po-poe-pudge
+>po pudge
+Weight gain won't help here.
 
 @gt
 >w
@@ -130,6 +224,19 @@ by one point
 @min
 /^Trust Track
 
+@mis
+#ttc-table-of-trust-track-guesses-cussed-cack
+>cussed cack
+There's a useful item here. More useful than such words!
+\\
+#ttc-table-of-trust-track-guesses-lust-lack
+>lust lack
+Jack would still be bugging you in that state.
+\\
+#ttc-table-of-trust-track-guesses-rust-rack
+>rust rack
+That would be a useless item.
+
 @thi
 >crust crack
 Under Just Jack's watchful eye, you don't feel like you could precipitate such changes. How to get rid of him?
@@ -145,6 +252,19 @@ NOTE: The game will indicate when one command you found early will be applicable
 
 >bussed back
 by one point
+
+@mis
+#ttc-table-of-trust-track-guesses-must-mack
+>must mack
+You don't need memories of Just Jack.
+\\
+#+ttc-table-of-trust-track-guesses-cussed-cack
+>cussed cack
+No, the sack will be worthwhile.
+\\
+#+ttc-table-of-trust-track-guesses-lust-lack
+>lust lack
+You continue to put impure thoughts aside to focus on a really cool text adventure.
 
 @ver
 >n
