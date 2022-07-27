@@ -41,9 +41,17 @@ TSV:## minimum walkthrough	## walkthrough with all points	## walkthrough with al
 @min
 /^Bane Be Sane, See?
 
+@ver
+>listen
+You get the feeling your voice could add constructively to the noises, somehow, but it's not critical.
+
 @!min
 >plain plea
 by one point
+
+@ver
+>listen
+You still think you hear echoes of your plain plea.
 
 @gt
 >gt tree
@@ -62,9 +70,22 @@ by one point
 @min
 /^Roaring Rocks
 
+@ver
+>listen
+"Poring Pox!" the roaring rocks, uh, roar.
+
 @gt
 >n
 The roaring seems to pull you back.
+\\
+>s
+The rocks block every way except north.
+\\
+>e
+The rocks block every way except north.
+\\
+>w
+The rocks block every way except north.
 \\
 >gt bane
 There's no way back to where you started.
@@ -78,6 +99,10 @@ by one point
 
 @min
 /^No-Nudge Slow Sludge
+
+@ver
+>listen
+Quite quiet site. Sigh, it ...
 
 @gt
 >w
@@ -121,8 +146,22 @@ NOTE: The game will indicate when one command you found early will be applicable
 >bussed back
 by one point
 
+@ver
+>n
+The track seems to end here. You can really only go back west, unless you figure something out.
+>e
+The track seems to end here. You can really only go back west, unless you figure something out.
+>s
+The track seems to end here. You can really only go back west, unless you figure something out.
+
 >crust crack
 by one point
+
+@ver
+>n
+The track now runs west-south but not north.
+>e
+The track now runs west-south but not east.
 
 @thi
 >think

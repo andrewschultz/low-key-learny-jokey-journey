@@ -278,11 +278,11 @@ volume unsorted locations
 
 book Trust Track
 
-Trust Track is east of NNSS. it is in Hoppin' Heart.
+Trust Track is east of NNSS. it is in Hoppin' Heart. "You're in a sort of earthy canyon, [if sco-crust-crack is true]though you created a passage south to complement the one west[else if sco-bussed-back is true]and with Just Jack gone, you're wondering if you can create another passage[else]with the only apparent way out being back west[end if]."
 
 guess-table of trust track is table of trust track guesses.
 
-Just Jack is a rhymable in Trust Track.
+Just Jack is a rhymable in Trust Track. "[one of]'Hi! I'm Just Jack. you can totally trust me that there are no other passages here. In fact, I'd be offended if you looked for them while I was still here. Not that you're getting rid of me.'[or]Just Jack waits here, making sure you trust his 'advice' enough not to look for any other passages.[stopping]"
 
 the sussed sack is a rhymable. guess-table of sussed sack is table of trust track guesses.
 

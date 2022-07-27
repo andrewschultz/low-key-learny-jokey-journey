@@ -8,11 +8,20 @@
 
 * main-thru
 
+>listen
+You get the feeling your voice could add constructively to the noises, somehow, but it's not critical.
+
 >plain plea
 by one point
 
+>listen
+You still think you hear echoes of your plain plea.
+
 >jane g
 by one point
+
+>listen
+"Poring Pox!" the roaring rocks, uh, roar.
 
 >boring box
 by one point
@@ -20,6 +29,9 @@ by one point
 >open box
 
 >n
+
+>listen
+Quite quiet site. Sigh, it ...
 
 >grow grudge
 by one point
@@ -29,6 +41,18 @@ by one point
 >bussed back
 by one point
 
+>n
+The track seems to end here. You can really only go back west, unless you figure something out.
+>e
+The track seems to end here. You can really only go back west, unless you figure something out.
+>s
+The track seems to end here. You can really only go back west, unless you figure something out.
+
 >crust crack
 by one point
+
+>n
+The track now runs west-south but not north.
+>e
+The track now runs west-south but not east.
 

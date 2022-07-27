@@ -27,6 +27,15 @@ by one point
 >n
 The roaring seems to pull you back.
 
+>s
+The rocks block every way except north.
+
+>e
+The rocks block every way except north.
+
+>w
+The rocks block every way except north.
+
 >gt bane
 There's no way back to where you started.
 

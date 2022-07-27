@@ -155,6 +155,7 @@ table of noways
 noway-rm	noway-txt
 Bane Be Sane See	"Cardinal directions don't mean much here, yet. Besides, there's no way back. You can only just enter the Train Tree one of three ways."
 Roaring Rocks	"The rocks block every way except [if nnss is visited]back [end if]north."
+Trust Track	"[if sco-crust-crack is false]The track seems to end here. You can really only go back west, unless you figure something out[else]The track now runs west-south but not [noun][end if]."
 
 volume guesses
 
