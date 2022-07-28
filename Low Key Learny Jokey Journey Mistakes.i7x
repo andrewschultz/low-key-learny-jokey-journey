@@ -46,6 +46,10 @@ this is the jack-gone rule:
 	if Just Jack is moot, the rule succeeds;
 	the rule fails;
 
+table of fun farm hun harm guesses
+mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
+"one worm/warm"	--	false	--	--	"That doesn't quite work. Maybe the farm needs worms or warm weather, but its survival isn't as important to you as passage north."
+
 book guesses by item, alphabetical
 
 [template until I get an item]

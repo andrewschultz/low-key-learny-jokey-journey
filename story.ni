@@ -165,11 +165,24 @@ after printing the locale description for NNSS when NNSS is unvisited:
 
 book Hun Harm Fun Farm
 
-Hun Harm Fun Farm is west of NNSS. it is in Hoppin' Heart.
+Hun Harm Fun Farm is west of NNSS. it is in Hoppin' Heart. "The way bends north here[if sco-un-arm is false], though you feel trepidation at the thought of doing so. Maybe you'll be attacked[end if]. You can go back east."
+
+check going north in hun harm fun farm: if sco-un-arm is false, say "Unfortunately, you hear aggressive voices threatening to attack you. They have weapons, and you don't. You're not sure how to change this." instead;
+
+sco-un-arm is a truth state that varies.
 
 book No Noon
 
-there is a room called No Noon in Hoppin' Heart. No Noon is north of Hun Harm Fun Farm.
+there is a room called NoNoon in Hoppin' Heart. NoNoon is north of Hun Harm Fun Farm. printed name of No Noon is "[if cocoon is moot]Show? Shewn![else]No Noon[end if]"
+
+understand "no/noon" and "no noon" as NoNoon.
+understand "show/shewn" and "show shewn" as NoNoon when cocoon is moot.
+
+after printing the locale description when location of player is NoNoon:
+	if Rho Rune is off-stage, say "You feel helpless here.";
+	continue the action;
+
+the cocoon is a thing.
 
 book One Warm Stun Storm
 
@@ -239,6 +252,15 @@ after going to Rare Reach when sco-seep-soon is true and flag-reap-rune is false
 sco-seep-soon is a truth state that varies.
 flag-reap-rune is a truth state that varies.
 sco-reap-rune is a truth state that varies.
+
+chapter deep dune
+
+the deep dune is scenery. "[if rho rune is off-stage]Man! It's so big, you figure something must be hidden in it[else]The deep dune gave you the Rho Rune, and you can't think of anything else to look for[end if]."
+
+chapter Rho Rune
+
+the Rho Rune is a rhymable. description is "It's shaped like the Greek letter Rho."
+
 
 volume main engine
 
@@ -561,13 +583,9 @@ book High Hub
 
 High Hub is a room.
 
-chapter deep dune
+book people
 
-the deep dune is scenery. "[if rho rune is off-stage]Man! It's so big, you figure something must be hidden in it[else]The deep dune gave you the Rho Rune, and you can't think of anything else to look for[end if]."
-
-chapter Rho Rune
-
-the Rho Rune is a rhymable.
+the Frightfully Bright Bully is a person. description is "The [bully] doesn't look especially mean or conniving or thuggish. But you know they just can't stand you. It's time to face up to them."
 
 volume internal map
 

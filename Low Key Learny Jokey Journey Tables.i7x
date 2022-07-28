@@ -49,6 +49,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "bare"	"beach"	--	--	false	true	true	false	Rare Reach	vc-bare-beach rule	vr-bare-beach rule	--	"You can change the Rare Reach to a [b]BARE BEACH[r] once you ."
 "seep"	"soon"	--	--	false	true	true	false	Rare Reach	vc-seep-soon rule	vr-seep-soon rule
 "reap"	"rune"	--	--	false	true	true	false	Rare Reach	vc-reap-rune rule	vr-reap-rune rule	--	"Perhaps some random adventuring would help you to [b]REAP RUNE[r] later."
+"un"	"arm"	--	--	false	false	true	false	Hun Harm Fun Farm	vc-un-arm rule	vr-un-arm rule	"un arm" or "unarm"	--
 
 a goodrhyme rule (this is the vc-in-bane rule):
 	if player is not in Bane Be Sane See, unavailable;
@@ -250,6 +251,19 @@ this is the vc-reap-rune rule:
 this is the vr-reap-rune rule:
 	say "What do you know? You reach in, and there the rune is. It is in the shape of the Greek letter Rho.";
 	now player has Rho Rune;
+
+a goodrhyme rule (this is the vc-un-arm rule):
+	if player is not in Hun Harm Fun Farm, unavailable;
+	if sco-un-arm is true:
+		vcal "You already unarmed the [fun farm]!";
+		already-done;
+	ready;
+
+this is the vr-un-arm rule:
+	now sco-un-arm is true;
+	say "You hear a clattering and screaming. Whoever it was guarding the way north sounds very disappointed that their oppression may now take mental effort! You feel a bit more secure now.";
+
+sco-un-arm is a truth state that varies.
 
 volume homonym rejections
 
