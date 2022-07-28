@@ -42,6 +42,8 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "fun"	"form"	--	--	false	false	true	false	One Warm Stun Storm	vc-fun-form rule	vr-fun-form rule
 "see"	"sunk"	--	--	false	false	true	false	TTTT	vc-see-sunk rule	vr-see-sunk rule	--	--
 "gee"	"junk"	--	--	false	false	true	false	TTTT	vc-gee-junk rule	vr-gee-junk rule	--	--
+"whee"	"woot"	--	--	false	false	true	false	TTTT	vc-whee-woot rule	vr-whee-woot rule	--	--
+"peach"	"pear"	--	--	false	false	true	false	TTTT	vc-peach-pear rule	vr-peach-pear rule	--	--
 "bussed"	"back"	"bust"	--	false	false	true	false	Rare Reach	vc-bussed-back rule	vr-bussed-back rule
 "crust"	"crack"	--	--	false	true	true	false	Trust Track	vc-crust-crack rule	vr-crust-crack rule	--	"You need to get rid of [jack] before you can make the [b]CRUST CRACK[r]."
 "bare"	"beach"	--	--	false	true	true	false	Rare Reach	vc-bare-beach rule	vr-bare-beach rule	--	"You can change the Rare Reach to a [b]BARE BEACH[r] once you ."
@@ -152,6 +154,30 @@ this is the vr-gee-junk rule:
 	now sco-gee-junk is true;
 	say "My goodness, yes! There is something in the tree trunk! It's marked [b]FREE FRUIT[r].";
 	now free fruit is in TTTT;
+
+a goodrhyme rule (this is the vc-whee-woot rule):
+	if player is not in TTTT and free fruit is not in TTTT, unavailable;
+	if sco-whee-woot is true:
+		vcal "You already appreciated the free fruit sufficiently.";
+		already-done;
+	ready;
+
+this is the vr-whee-woot rule:
+	now sco-whee-woot is true;
+	say "The FREE FRUIT seems to glow a bit from your praise.";
+
+a goodrhyme rule (this is the vc-peach-pear rule):
+	if player is not in TTTT, unavailable;
+	if sco-whee-woot is false:
+		vcp "The FREE FRUIT sputters a bit, almost as if it sticks its tongue about you. Weird as it sounds, you may have to show appreciation for it.";
+		not-yet;
+	ready;
+
+this is the vr-peach-pear rule:
+	now sco-peach-pear is true;
+	say "A weird fruit you haven't quite seen before pops into your hand as the FREE FRUIT vanishes. Hooray!";
+	moot free fruit;
+	now player has peach pear;
 
 a goodrhyme rule (this is the vc-bussed-back rule):
 	if player does not carry sussed sack and location of player is not trust track, unavailable;

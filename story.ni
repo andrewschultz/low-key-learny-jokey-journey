@@ -189,13 +189,16 @@ check entering done dorm: say "[if sco-fun-form is false]You must apply correctl
 
 book Tree Trunk
 
-sco-see-sunk is a truth state that varies.
-sco-gee-junk is a truth state that varies.
-
 carry out going to TTTT when TTTT is unvisited:
 	say "You were a bit too pleased you got away from the storm, and you couldn't help looking back to make sure it was over. And as you did, you ran into a rather large tree trunk, with a THUNK. Well, maybe with the way things are here, it was meant to happen.";
 
 TTTT is north of One Warm Stun Storm. printed name is "The (Thunk!) Tree Trunk". it is in Hoppin' Heart. "Passage any way except back south is too dense here. The tree trunk you ran into still stands here, [if sco-see-sunk is true]cut down to size[else]and you wish you could cut it down to size as revenge for running into it[end if]."
+
+sco-see-sunk is a truth state that varies.
+sco-gee-junk is a truth state that varies.
+
+sco-whee-woot is a truth state that varies.
+sco-peach-pear is a truth state that varies.
 
 chapter Tree Trunk
 
