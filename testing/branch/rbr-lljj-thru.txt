@@ -100,6 +100,11 @@ I don't want to know.
 >plain plea
 by one point
 
+@vc
+#testcase-reject-table-of-verb-checks-vc-plain-plea-rule
+>plain plea
+WRONG
+
 @ver
 >listen
 You still think you hear echoes of your plain plea.
@@ -159,6 +164,11 @@ There's no way back to where you started.
 >boring box
 by one point
 
+@vc
+#testcase-reject-table-of-verb-checks-vc-boring-box-rule
+>boring box
+WRONG
+
 @mis
 #+ttc-table-of-roaring-rocks-guesses-storing-stocks
 >storing stocks
@@ -194,6 +204,23 @@ You set the Leet Learner to Ha Half.
 
 @min
 /^No-Nudge Slow Sludge
+
+@vc
+##balance undos
+>gonear no noon
+\\
+#testcase-reject-table-of-verb-checks-vc-go-goon-rule
+>go goon
+WRONG
+>undo
+>undo
+>gonear rare reach
+\\
+#testcase-reject-table-of-verb-checks-vc-bare-beach-rule
+>bare beach
+WRONG
+>undo
+>undo
 
 @gt
 >s
@@ -251,6 +278,11 @@ The HA HALF button lights up on your Leet Learner.
 >grow grudge
 by one point
 
+@vc
+#testcase-reject-table-of-verb-checks-vc-grow-grudge-rule
+>grow grudge
+WRONG
+
 >n
 
 @min
@@ -268,6 +300,7 @@ The passage here is north-south.
 You feel your will sapped as you attempt to go north. You'll need to sit out the storm first.
 
 @thi
+#testcase-reject-table-of-verb-checks-vc-fun-form-rule
 >fun form
 WRONG
 \\
@@ -285,6 +318,11 @@ The HA HALF button lights up on your Leet Learner.
 
 >done dorm
 by one point
+
+@vc
+#testcase-reject-table-of-verb-checks-vc-done-dorm-rule
+>done dorm
+WRONG
 
 @gt
 >n
@@ -317,6 +355,7 @@ The HA HALF button lights up on your Leet Learner.
 The HA HALF button lights up on your Leet Learner.
 
 @thi
+#testcase-reject-table-of-verb-checks-vc-gee-junk-rule
 >gee junk
 WRONG
 \\
@@ -325,6 +364,11 @@ WRONG
 
 >see sunk
 by one point
+
+@vc
+#testcase-reject-table-of-verb-checks-vc-see-sunk-rule
+>see sunk
+WRONG
 
 @ha
 #ttc-table-of-verb-checks-8-gee
@@ -339,6 +383,7 @@ The HA HALF button lights up on your Leet Learner.
 by one point
 
 @thi
+#testcase-reject-table-of-verb-checks-vc-pear-peach-rule
 >pear peach
 WRONG
 \\
@@ -356,6 +401,11 @@ The HA HALF button lights up on your Leet Learner.
 
 >whee woot
 by one point
+
+@vc
+#testcase-reject-table-of-verb-checks-vc-whee-woot-rule
+>whee woot
+WRONG
 
 @hom
 #ttc-table-of-thing-homonyms-pear-peach-pair-pare
@@ -398,6 +448,7 @@ Jack would still be bugging you in that state.
 That would be a useless item.
 
 @thi
+#testcase-reject-table-of-verb-checks-vc-crust-crack-rule
 >crust crack
 Under Just Jack's watchful eye, you don't feel like you could precipitate such changes. How to get rid of him?
 \\
@@ -421,6 +472,11 @@ The HA HALF button lights up on your Leet Learner.
 
 >bussed back
 by one point
+
+@vc
+#testcase-reject-table-of-verb-checks-vc-bussed-back-rule
+>bussed back
+WRONG
 
 @mis
 #ttc-table-of-trust-track-guesses-must-mack
@@ -504,6 +560,7 @@ Alas, nobody odd comes by and dives into the deep dune. Nobody at all.
 Low-Key Learny Jokey Journey is the wrong environment for that, and not just because it's text-based.
 
 @thi
+#testcase-reject-table-of-verb-checks-vc-reap-rune-rule
 >reap rune
 WRONG
 \\
@@ -521,6 +578,11 @@ The HA HALF button lights up on your Leet Learner.
 
 >seep soon
 by one point
+
+@vc
+#testcase-reject-table-of-verb-checks-vc-seep-soon-rule
+>seep soon
+WRONG
 
 >s
 >n
@@ -570,10 +632,32 @@ The HA HALF button lights up on your Leet Learner.
 >unarm
 by one point
 
+@vc
+#testcase-reject-table-of-verb-checks-vc-un-arm-rule
+>unarm
+WRONG
+
 >n
 
 @min
 /^No Noon
+
+@vc
+#testcase-reject-table-of-verb-checks-vc-co-coon-rule
+>cocoon
+WRONG
+\\
+#testcase-reject-table-of-verb-checks-vc-crow-croon-rule
+>crow croon
+WRONG
+\\
+#testcase-reject-table-of-verb-checks-vc-mo-moon-rule
+>mo moon
+WRONG
+\\
+#testcase-reject-table-of-verb-checks-vc-so-soon-rule
+>so soon
+WRONG
 
 @ha
 #ttc-table-of-verb-checks-17-go

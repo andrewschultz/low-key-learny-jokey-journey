@@ -43,7 +43,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "see"	"sunk"	--	--	false	true	true	false	TTTT	vc-see-sunk rule	vr-see-sunk rule	--	--
 "gee"	"junk"	--	--	false	true	true	false	TTTT	vc-gee-junk rule	vr-gee-junk rule	--	--
 "whee"	"woot"	--	--	false	true	true	false	TTTT	vc-whee-woot rule	vr-whee-woot rule	--	--
-"pear"	"peach"	--	--	false	true	true	false	TTTT	vc-peach-pear rule	vr-peach-pear rule	--	--
+"pear"	"peach"	--	--	false	true	true	false	TTTT	vc-pear-peach rule	vr-pear-peach rule	--	--
 "bussed"	"back"	"bust"	--	false	false	true	false	Rare Reach	vc-bussed-back rule	vr-bussed-back rule
 "crust"	"crack"	--	--	false	true	true	false	Trust Track	vc-crust-crack rule	vr-crust-crack rule	--	"You need to get rid of [jack] before you can make the [b]CRUST CRACK[r]."
 "bare"	"beach"	--	--	false	true	true	false	Rare Reach	vc-bare-beach rule	vr-bare-beach rule	--	"You can change the Rare Reach to a [b]BARE BEACH[r] once you ."
@@ -172,15 +172,15 @@ this is the vr-whee-woot rule:
 	now sco-whee-woot is true;
 	say "The FREE FRUIT seems to glow a bit from your praise.";
 
-a goodrhyme rule (this is the vc-peach-pear rule):
+a goodrhyme rule (this is the vc-pear-peach rule):
 	if player is not in TTTT, unavailable;
 	if sco-whee-woot is false:
 		vcp "The FREE FRUIT sputters a bit, almost as if it sticks its tongue about you. Weird as it sounds, you may have to show appreciation for it.";
 		not-yet;
 	ready;
 
-this is the vr-peach-pear rule:
-	now sco-peach-pear is true;
+this is the vr-pear-peach rule:
+	now sco-pear-peach is true;
 	say "A weird fruit you haven't quite seen before pops into your hand as the FREE FRUIT vanishes. Hooray!";
 	moot free fruit;
 	now player has peach pear;
