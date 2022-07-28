@@ -22,7 +22,7 @@ mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 table of roaring rocks guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "flooring flocks"	--	false	--	--	"You don't need to be dive-bombed by aerial predators. And I don't have the artistic ability to show you majestic birds, either. Sorry."
-"poring/pouring pox"	--	false	--	--	"You don't need to catch anything, and denting the rocks would not reveal anything[if sco-boring-box is true] further[end if]."
+"poring/pouring pox"	--	false	--	--	"You don't need to catch anything, and denting the rocks would not reveal anything[furthers of sco-boring-box]."
 "storing stocks"	--	false	--	--	"That's what the rocks will become, but you want something simpler and smaller and shorter."
 
 this is the box-hidden rule:
@@ -52,10 +52,14 @@ mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 
 book guesses by item, alphabetical
 
-[template until I get an item]
+to say furthers of (ts - a truth state): if ts is true, say " further"
 
-[table of lurking lump guesses
-mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt]
+table of deep dune guesses
+mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
+"beep boon"	--	false	44	--	"No, you don't a Geiger counter to search[furthers of sco-reap-rune] through the dune."
+"creep croon"	--	false	44	--	"Alas, R. Kelly can't show up. He's still in jail."
+"leap loon"	--	false	44	--	"Alas, nobody odd comes by and dives into the deep dune. Nobody at all."
+"peep poon"	--	false	44	--	"[this-game] is the wrong environment for that, and not just because it's text-based."
 
 book miscellaneous guesses
 
