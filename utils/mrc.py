@@ -1,4 +1,7 @@
+#
 # mrc.py: make rhyme code for CSDD-ish games
+#
+# it prints a table of verbchecker line, prints the vc- and vr- rules, and guesses at the boolearn variable.
 
 import re
 import sys
@@ -13,9 +16,28 @@ def usage(my_word = ""):
         print("WARNING {} was not a valid word. You need something of the form letters-letters.").format(my_word)
     print("Options: f / nf / fn specify exporting to a file. NF/FN means don't open post-run.")
     print("r= specifies the room name, which is THISROOM by default.")
+    print("The order matters, but you can also switch room names in the middle.")
+    print("appending | clip sends stuff to the clipboard.")
+    sys.exit()
 
 def valid_word_clump(arg):
     return re.search("^[a-z]+-[a-z]+$", arg)
+
+def add_basic_rules(w):
+    print("a goodrhyme rule (this is the vc-{} rule):".format(w))
+    print("\tif player is not in {}, unavailable;".format(this_room))
+    print("\tif sco-{} is false:".format(w))
+    print("\t\tvcal \"You still need to do something!\";")
+    print("\t\tnot-yet;")
+    print("\tif sco-{} is true:".format(w))
+    print("\t\tvcal \"You already did this!\";")
+    print("\t\talready-done;")
+    print("\tready;")
+    print()
+    print("this is the vr-{} rule:".format(w))
+    print("\tnow sco-{} is true;".format(w))
+    print("\tsay \"Hooray! You figured what to do! You get a point!\";")
+    print()
 
 def print_verbcheck_line(my_word_pair):
     word_pair_array = my_word_pair.split('-')
@@ -38,7 +60,7 @@ while cmd_count < len(sys.argv):
     arg = argr.lower()
     arg2 = sys.argv[cmd_count+1].lower() if cmd_count + 1 < len(sys.argv) else ''
     if arg.startswith("r="):
-        this_room = argr[2:]
+        this_room = argr[2:].replace('.', ' ').replace('-', ' ')
         print("New room", this_room)
     elif arg == 'f':
         direct_to_file = True
@@ -68,19 +90,6 @@ if direct_to_file:
 for w in words_to_proc:
     print_verbcheck_line(w)
 print()
-
-def add_basic_rules(w):
-    print("a goodrhyme rule (this is the vc-{} rule):".format(w))
-    print("\tif player is not in {}, unavailable;".format(this_room))
-    print("\tif sco-{} is true:".format(w))
-    print("\t\tvcal \"You already did this!\";")
-    print("\t\talready-done;")
-    print("\tready;")
-    print()
-    print("this is the vr-{} rule:".format(w))
-    print("\tnow sco-{} is true;".format(w))
-    print("\tsay \"Hooray! You figured what to do! You get a point!\";")
-    print()
 
 for w in words_to_proc:
     add_basic_rules(w)
