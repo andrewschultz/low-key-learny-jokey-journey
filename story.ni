@@ -42,11 +42,11 @@ Poppin' Part is a region.
 
 section scoring
 
-core-max is 5.
+core-max is 21.
 
-min-needed is 5.
+min-needed is 21.
 
-max-bonus is 1.
+max-bonus is 3.
 
 cur-bonus is 0.
 
@@ -217,7 +217,7 @@ sco-see-sunk is a truth state that varies.
 sco-gee-junk is a truth state that varies.
 
 sco-whee-woot is a truth state that varies.
-sco-peach-pear is a truth state that varies.
+sco-pear-peach is a truth state that varies.
 
 chapter Tree Trunk
 
@@ -267,6 +267,24 @@ chapter Rho Rune
 
 the Rho Rune is a rhymable. description is "It's shaped like the Greek letter Rho."
 
+book Jotty Jail
+
+Jotty Jail is a room in Hoppin' Heart. "Well, the walls are scribbled-over here. The way out is guarded by a snotty snail. It looks pretty well-kept-up here, so it's tricky to get out, unless you know what to look for. [jotty-bonus]."
+
+to say jotty-bonus:
+	if jail-bonus is 2:
+		say "You've probably found enough odd stuff";
+	else if jail-bonus is 1:
+		say "Maybe there's something else neat, but maybe you can discover something else";
+	else:
+		say "You bet there's some stuff to find that doesn't help you, but it might be good for practice";
+
+to decide what number is jail-bonus:
+	decide on boolval of sco-potty-pail + boolval of sco-grotty-grail;
+
+sco-grotty-grail is a truth state that varies.
+sco-potty-pail is a truth state that varies.
+sco-knotty-nail is a truth state that varies.
 
 volume main engine
 
@@ -406,7 +424,24 @@ Rule for printing a parser error (this is the clue half right words rule):
 
 the clue half right words rule is listed first in the for printing a parser error rulebook. [note: this caused a speedup when I first tried it. I'm not sure if this would last, so I'll need to do testing with this line vs with it commented out. ?? ]
 
+volume options
+
+book leet learner options
+
+hutcaning is leetsetting.
+shutscaning is leetsetting.
+hahalfing is leetsetting.
+nahnaffing is leetsetting.
+helphowing is leetsetting.
+welpwowing is leetsetting.
+bluebleahing is leetsetting.
+hoohehing is leetsetting.
+
+before leetsetting when player does not have the leet learner: say "You don't have the Leet Learner yet, so you can't set this option." instead;
+
 volume verbs
+
+book listening
 
 the block listening rule is not listed in any rulebook.
 
@@ -586,8 +621,14 @@ final question wording	only if victorious	topic		final response rule		final resp
 
 this is the show-misses rule:
 	if sco-plain-plea is false, say "You could've made a [b]PLAIN PLEA[r] back at the start in [sane see]";
+	if sco-grotty-grail is false, say "You could've discovered a [b]GROTTY GRAIL[r] back in [jotty jail]";
+	if sco-potty-pail is false, say "You could've discovered a [b]POTTY PAIL[r] back in [jotty jail]";
 
 volume unsorted
+
+book Locking Lift
+
+Locking Lift is a room in Hoppin' Heart.
 
 book High Hub
 
@@ -601,5 +642,7 @@ volume internal map
 
 index map with Roaring Rocks mapped east of Bane Be Sane See.
 
-index map with Shore Shoals mapped south of Trust Track.
+index map with Jotty Jail mapped south of Trust Track.
+
+[index map with Shore Shoals mapped south of Trust Track.]
 

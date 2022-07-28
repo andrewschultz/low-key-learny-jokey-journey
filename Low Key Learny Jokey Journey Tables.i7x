@@ -55,6 +55,9 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "mo"	"moon"	--	--	false	true	true	false	NoNoon	vc-mo-moon rule	vr-mo-moon rule	--	--
 "so"	"soon"	--	--	false	true	true	false	NoNoon	vc-so-soon rule	vr-so-soon rule	--	--
 "crow"	"croon"	--	--	false	true	true	false	NoNoon	vc-crow-croon rule	vr-crow-croon rule	--	--
+"grotty"	"grail"	--	--	false	true	false	false	jotty jail	vc-grotty-grail rule	vr-grotty-grail rule	--	--
+"potty"	"pail"	--	--	false	true	false	false	jotty jail	vc-potty-pail rule	vr-potty-pail rule	--	--
+"knotty"	"nail"	--	--	false	true	true	false	jotty jail	vc-knotty-nail rule	vr-knotty-nail rule	--	--
 
 a goodrhyme rule (this is the vc-in-bane rule):
 	if player is not in Bane Be Sane See, unavailable;
@@ -272,6 +275,7 @@ a goodrhyme rule (this is the vc-go-goon rule):
 	if player is not in NoNoon, unavailable;
 	if Rho Rune is off-stage:
 		vcp "You try to form the words, but you don't feel brave enough. Perhaps the right sort of relic would help you.";
+		not-yet;
 	if sco-go-goon is true:
 		vcal "You already dispelled the goon!";
 		already-done;
@@ -335,8 +339,42 @@ a goodrhyme rule (this is the vc-crow-croon rule):
 
 this is the vr-crow-croon rule:
 	now sco-crow-croon is true;
-	say "The crow croons! The cocoon busts out.";
+	say "The crow croons! The cocoon busts out.[paragraph break]Unfortunately, the commotion brings a few henchmen to where you are. You are arrested and dumped in...";
+	move player to Jotty Jail;
 	moot cocoon;
+
+a goodrhyme rule (this is the vc-grotty-grail rule):
+	if player is not in jotty jail, unavailable;
+	if sco-grotty-grail is true:
+		vcal "No. The grotty grail was nice to find, but enough of past discoveries. You need to get out of here.";
+		already-done;
+	ready;
+
+this is the vr-grotty-grail rule:
+	now sco-grotty-grail is true;
+	say "My goodness! Look what you uncovered! A grail is useless in your current reduced circumstances, but it's a morale boost, because everyone knows bad guys just don't go finding grails. Well, maybe they find obscenely rich cursed ones, but this is about as ordinary as a grail can be. Still, yay grails.";
+
+a goodrhyme rule (this is the vc-potty-pail rule):
+	if player is not in jotty jail, unavailable;
+	if sco-potty-pail is true:
+		vcal "No. The potty pail was a relief to find, but enough of past discoveries. You need to get out of here.";
+		already-done;
+	ready;
+
+this is the vr-potty-pail rule:
+	now sco-potty-pail is true;
+	say "While you don't plan to be here long enough to use the pail, you're glad to have found it and proven your, uh, emergency preparedness. Perhaps the next soul stuck in here, without your abilities, will appreciate it. Or perhaps you'll figure what to do so nobody is stuck here again.";
+
+a goodrhyme rule (this is the vc-knotty-nail rule):
+	if player is not in jotty jail, unavailable;
+	ready;
+
+this is the vr-knotty-nail rule:
+	now sco-knotty-nail is true;
+	say "Aha! There's something flawed. A knotty nail. You pull at it, and slowly it comes loose. It's surprisingly sharp. Then you start chipping away at various cracks until they grow bigger and crumble. The snotty snail is alerted, but by then you've got enough debris in your cell to fend it off. You flee, not caring where you're going...";
+	if sco-potty-pail is false, max-down;
+	if sco-grotty-grail is false, max-down;
+	move player to Locking Lift;
 
 volume homonym rejections
 
