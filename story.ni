@@ -173,7 +173,13 @@ sco-un-arm is a truth state that varies.
 
 book No Noon
 
-there is a room called NoNoon in Hoppin' Heart. NoNoon is north of Hun Harm Fun Farm. printed name of No Noon is "[if cocoon is moot]Show? Shewn![else]No Noon[end if]"
+there is a room called NoNoon in Hoppin' Heart. NoNoon is north of Hun Harm Fun Farm. printed name of NoNoon is "[if cocoon is moot]Show? Shewn![else]No Noon[end if]". "The sky is completely dark here. Even a sliver of light would be helpful."
+
+sco-go-goon is a truth state that varies.
+sco-co-coon is a truth state that varies.
+sco-mo-moon is a truth state that varies.
+sco-so-soon is a truth state that varies.
+sco-crow-croon is a truth state that varies.
 
 understand "no/noon" and "no noon" as NoNoon.
 understand "show/shewn" and "show shewn" as NoNoon when cocoon is moot.
@@ -398,6 +404,8 @@ Rule for printing a parser error (this is the clue half right words rule):
 	abide by the rhyme-guess-checker rule for table of general good guesses;
 	continue the action;
 
+the clue half right words rule is listed first in the for printing a parser error rulebook. [note: this caused a speedup when I first tried it. I'm not sure if this would last, so I'll need to do testing with this line vs with it commented out. ?? ]
+
 volume verbs
 
 the block listening rule is not listed in any rulebook.
@@ -557,11 +565,13 @@ carry out xyzzying:
 
 volume when play begins
 
-rule for printing a parser error when the latest parser error is the noun did not make sense in that context error:
+rule for printing a parser error when the latest parser error is the noun did not make sense in that context error (this is the goto reject rule):
 	if action-to-be is the gotothinging action or action-to-be is the gotoing action:
 		say "That location or thing doesn't exist or isn't known to you yet.";
 		the rule succeeds;
 	continue the action;
+
+the goto reject rule is listed after the clue half right words rule in the for printing a parser error rulebook.
 
 volume end of game
 

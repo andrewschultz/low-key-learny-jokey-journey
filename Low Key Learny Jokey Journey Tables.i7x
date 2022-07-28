@@ -37,19 +37,24 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "dane|jane|lane|wayne"	"d|dee|g|gee|lee|whee"	--	--	false	false	true	false	Bane Be Sane See	vc-in-bane rule	vr-choose-name rule	"d/dee dane" or "dane dee/d" or "jane g/gee" or "gee/g jane" or "wayne whee" or "whee wayne"	--
 "plain"	"plea"	--	--	false	true	false	false	Bane Be Sane See	vc-plain-plea rule	vr-plain-plea rule	--	--
 "boring"	"box"	--	--	false	true	true	false	Roaring Rocks	vc-boring-box rule	vr-boring-box rule	--	--
-"grow"	"grudge"	--	--	false	false	true	false	NNSS	vc-grow-grudge rule	vr-grow-grudge rule
-"done"	"dorm"	--	--	false	false	true	false	One Warm Stun Storm	vc-done-dorm rule	vr-done-dorm rule
-"fun"	"form"	--	--	false	false	true	false	One Warm Stun Storm	vc-fun-form rule	vr-fun-form rule
-"see"	"sunk"	--	--	false	false	true	false	TTTT	vc-see-sunk rule	vr-see-sunk rule	--	--
-"gee"	"junk"	--	--	false	false	true	false	TTTT	vc-gee-junk rule	vr-gee-junk rule	--	--
-"whee"	"woot"	--	--	false	false	true	false	TTTT	vc-whee-woot rule	vr-whee-woot rule	--	--
-"peach"	"pear"	--	--	false	false	true	false	TTTT	vc-peach-pear rule	vr-peach-pear rule	--	--
+"grow"	"grudge"	--	--	false	true	true	false	NNSS	vc-grow-grudge rule	vr-grow-grudge rule
+"done"	"dorm"	--	--	false	true	true	false	One Warm Stun Storm	vc-done-dorm rule	vr-done-dorm rule
+"fun"	"form"	--	--	false	true	true	false	One Warm Stun Storm	vc-fun-form rule	vr-fun-form rule
+"see"	"sunk"	--	--	false	true	true	false	TTTT	vc-see-sunk rule	vr-see-sunk rule	--	--
+"gee"	"junk"	--	--	false	true	true	false	TTTT	vc-gee-junk rule	vr-gee-junk rule	--	--
+"whee"	"woot"	--	--	false	true	true	false	TTTT	vc-whee-woot rule	vr-whee-woot rule	--	--
+"pear"	"peach"	--	--	false	true	true	false	TTTT	vc-peach-pear rule	vr-peach-pear rule	--	--
 "bussed"	"back"	"bust"	--	false	false	true	false	Rare Reach	vc-bussed-back rule	vr-bussed-back rule
 "crust"	"crack"	--	--	false	true	true	false	Trust Track	vc-crust-crack rule	vr-crust-crack rule	--	"You need to get rid of [jack] before you can make the [b]CRUST CRACK[r]."
 "bare"	"beach"	--	--	false	true	true	false	Rare Reach	vc-bare-beach rule	vr-bare-beach rule	--	"You can change the Rare Reach to a [b]BARE BEACH[r] once you ."
 "seep"	"soon"	--	--	false	true	true	false	Rare Reach	vc-seep-soon rule	vr-seep-soon rule
 "reap"	"rune"	--	--	false	true	true	false	Rare Reach	vc-reap-rune rule	vr-reap-rune rule	--	"Perhaps some random adventuring would help you to [b]REAP RUNE[r] later."
-"un"	"arm"	--	--	false	false	true	false	Hun Harm Fun Farm	vc-un-arm rule	vr-un-arm rule	"un arm" or "unarm"	--
+"un"	"arm"	--	--	false	true	true	false	Hun Harm Fun Farm	vc-un-arm rule	vr-un-arm rule	"un arm" or "unarm"	--
+"go"	"goon"	--	--	false	true	true	false	NoNoon	vc-go-goon rule	vr-go-goon rule	--	--
+"co"	"coon"	--	--	false	true	true	false	NoNoon	vc-co-coon rule	vr-co-coon rule	"cocoon"	--
+"mo"	"moon"	--	--	false	true	true	false	NoNoon	vc-mo-moon rule	vr-mo-moon rule	--	--
+"so"	"soon"	--	--	false	true	true	false	NoNoon	vc-so-soon rule	vr-so-soon rule	--	--
+"crow"	"croon"	--	--	false	true	true	false	NoNoon	vc-crow-croon rule	vr-crow-croon rule	--	--
 
 a goodrhyme rule (this is the vc-in-bane rule):
 	if player is not in Bane Be Sane See, unavailable;
@@ -263,7 +268,75 @@ this is the vr-un-arm rule:
 	now sco-un-arm is true;
 	say "You hear a clattering and screaming. Whoever it was guarding the way north sounds very disappointed that their oppression may now take mental effort! You feel a bit more secure now.";
 
-sco-un-arm is a truth state that varies.
+a goodrhyme rule (this is the vc-go-goon rule):
+	if player is not in NoNoon, unavailable;
+	if Rho Rune is off-stage:
+		vcp "You try to form the words, but you don't feel brave enough. Perhaps the right sort of relic would help you.";
+	if sco-go-goon is true:
+		vcal "You already dispelled the goon!";
+		already-done;
+	ready;
+
+this is the vr-go-goon rule:
+	now sco-go-goon is true;
+	say "The Rho Rune glows, and you feel confidence as at least the first of the enemies fled. But it's so empty here. What could grow?";
+
+a goodrhyme rule (this is the vc-co-coon rule):
+	if player is not in NoNoon, unavailable;
+	if sco-co-coon is true:
+		vcal "You already placed the cocoon.";
+		already-done;
+	if sco-go-goon is false:
+		vcp "You can't do anything while oppressed by enemies. How to call them off?";
+		not-yet;
+	ready;
+
+this is the vr-co-coon rule:
+	now sco-co-coon is true;
+	say "A cocoon appears! It's not ready to hatch yet. Maybe not for a while. Perhaps you could get time to move in weird ways.";
+
+a goodrhyme rule (this is the vc-mo-moon rule):
+	if player is not in NoNoon, unavailable;
+	if sco-mo-moon is true:
+		vcal "The moon has already appeared!";
+		already-done;
+	if sco-co-coon is false:
+		vcp "It's scary the sky's so dark, but you sense someone, or something, might need the moon and such to reach its potential. But what, or who?";
+		not-yet;
+	ready;
+
+this is the vr-mo-moon rule:
+	now sco-mo-moon is true;
+	say "A moon appears in the night-ish sky.";
+
+a goodrhyme rule (this is the vc-so-soon rule):
+	if player is not in NoNoon, unavailable;
+	if sco-so-soon is true:
+		vcal "You already sped time up.";
+		already-done;
+	if sco-mo-moon is false:
+		vcp "You would like time to speed up and dawn to break. But something's missing from the sky.";
+		not-yet;
+	ready;
+
+this is the vr-so-soon rule:
+	now sco-so-soon is true;
+	say "You sensed time speeding up. The cocoon rustles. Perhaps one more sign signifying daytime will cause it to bust out.";
+
+a goodrhyme rule (this is the vc-crow-croon rule):
+	if player is not in NoNoon, unavailable;
+	if sco-crow-croon is true:
+		vcal "You already had the crow croon!";
+		already-done;
+	if sco-co-coon is false:
+		vcp "The crow can't croon until it's ready. And it's not time yet. How could you make time advance, right here, right now?";
+		not-yet;
+	ready;
+
+this is the vr-crow-croon rule:
+	now sco-crow-croon is true;
+	say "The crow croons! The cocoon busts out.";
+	moot cocoon;
 
 volume homonym rejections
 
