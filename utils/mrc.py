@@ -2,8 +2,11 @@
 
 import re
 import sys
+import mytools as mt
 
-# "dane|jane|lane|wayne"	"d|dee|g|gee|lee|whee"	--	--	false	false	true	false	Bane Be Sane See	vc-in-bane rule	vr-choose-name rule	"d/dee dane" or "dane dee/d" or "jane g/gee" or "gee/g jane" or "wayne whee" or "whee wayne"	--
+out_file = "mrc.txt"
+
+# "word 1"	"word 2"	--	--	false	false	true	false	(Room where action happens)	checking rule	running rule	specific topic, if needed e.g. "a/b" "c/d" can only be a c or b d 	THINK text (probably blank)
 
 def valid_word_clump(arg):
     return re.search("^[a-z]+-[a-z]+$", arg)
@@ -20,10 +23,21 @@ def print_verbcheck_line(my_word_pair):
 
 cmd_count = 1
 words_to_proc = []
+direct_to_file = False
+open_file_after = False
 
 while cmd_count < len(sys.argv):
     arg = sys.argv[cmd_count].lower()
     arg2 = sys.argv[cmd_count+1].lower() if cmd_count + 1 < len(sys.argv) else ''
+    if arg == 'f':
+        direct_to_file = True
+        open_file_after = True
+        cmd_count += 1
+        continue
+    if arg in ( 'nf', 'fn' ):
+        direct_to_file = True
+        cmd_count += 1
+        continue
     if re.search("^[a-z]+$", arg) and re.search("^[a-z]+$", arg2):
         words_to_proc.append("{}-{}".format(arg, arg2))
         cmd_count += 2
@@ -37,11 +51,15 @@ while cmd_count < len(sys.argv):
 if not len(words_to_proc):
     sys.exit("No word pairs were found to process. Bailing.")
 
+if direct_to_file:
+    old_stdout = sys.stdout
+    sys.stdout = open(out_file, "w")
+
 for w in words_to_proc:
     print_verbcheck_line(w)
 print()
 
-for w in words_to_proc:
+def add_basic_rules(w):
     print("a goodrhyme rule (this is the vc-{} rule):".format(w))
     print("\tif player is not in THISROOM, unavailable;")
     print("\tif sco-{} is true:".format(w))
@@ -49,13 +67,20 @@ for w in words_to_proc:
     print("\t\talready-done;")
     print("\tready;")
     print()
-
-for w in words_to_proc:
     print("this is the vr-{} rule:".format(w))
     print("\tnow sco-{} is true;".format(w))
     print("\tsay \"Hooray! You figured what to do! You get a point!\";")
     print()
 
 for w in words_to_proc:
+    add_basic_rules(w)
+
+for w in words_to_proc:
     print("sco-{} is a truth state that varies.".format(w))
 
+if direct_to_file:
+    sys.stdout.close()
+
+if open_file_after:
+    sys.stdout = old_stdout
+    mt.npo(out_file)
