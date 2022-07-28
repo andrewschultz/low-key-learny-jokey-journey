@@ -66,7 +66,7 @@ The track seems to end here. You can really only go back west, unless you figure
 by one point
 
 >n
-The track now runs west-south but not north.
+The track now runs west-north but not south.
 >e
-The track now runs west-south but not east.
+The track now runs west-north but not east.
 

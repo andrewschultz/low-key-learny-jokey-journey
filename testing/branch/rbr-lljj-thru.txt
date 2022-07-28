@@ -279,9 +279,9 @@ by one point
 
 @ver
 >n
-The track now runs west-south but not north.
+The track now runs west-north but not south.
 >e
-The track now runs west-south but not east.
+The track now runs west-north but not east.
 
 @thi
 >think
