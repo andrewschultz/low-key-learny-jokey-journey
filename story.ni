@@ -167,13 +167,20 @@ book Hun Harm Fun Farm
 
 Hun Harm Fun Farm is west of NNSS. it is in Hoppin' Heart.
 
-book Trick Trail
+book Rare Reach
 
-[last room]
+Rare Reach is north of Trust Track. it is in Hoppin' Heart. printed name of Rare Reach is "[if sco-bare-beach is true]Bare Beach[else]Rare Reach[end if]".
 
-Trick Trail is a room. it is in Poppin' Part.
+sco-bare-beach is a truth state that varies.
 
-Trailing Tree is a thing in Trick Trail.
+after going to Rare Reach when sco-seep-soon is true and flag-reap-rune is false:
+	now flag-reap-rune is true;
+	say "The deep dune seems to have shifted a bit. Maybe you can find something in the middle of it.";
+	continue the action;
+
+sco-seep-soon is a truth state that varies.
+flag-reap-rune is a truth state that varies.
+sco-reap-rune is a truth state that varies.
 
 volume main engine
 
@@ -275,6 +282,14 @@ this is the verb-checker rule:
 		the rule succeeds;
 
 volume unsorted locations
+
+book Trick Trail
+
+[last room]
+
+Trick Trail is a room. it is in Poppin' Part.
+
+Trailing Tree is a thing in Trick Trail.
 
 book Trust Track
 
@@ -497,9 +512,21 @@ this is the show-misses rule:
 
 volume unsorted
 
+book High Hub
+
+High Hub is a room.
+
 Free Fruit is scenery.
 
 the pear peach is a thing.
+
+chapter deep dune
+
+the deep dune is scenery. "[if rho rune is off-stage]Man! It's so big, you figure something must be hidden in it[else]The deep dune gave you the Rho Rune, and you can't think of anything else to look for[end if]."
+
+chapter Rho Rune
+
+the Rho Rune is a rhymable.
 
 volume internal map
 

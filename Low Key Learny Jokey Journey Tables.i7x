@@ -2,6 +2,10 @@ Version 1/220704 of Low Key Learny Jokey Journey Tables by Andrew Schultz begins
 
 "This should briefly describe the purpose of Low Key Learny Jokey Journey Tables."
 
+[UTILITIES:
+rhyru.py checks to make sure the rhyme-rules have the right print stubs.
+]
+
 volume core tables
 
 section variables by tables
@@ -17,7 +21,7 @@ w1 = word 1
 w2 = word 2
 posthom = check for homonyms post-completed
 hom-txt-rule = check for homonym text
-think-cue = is this command cued by "think," e.g. did you use it bfore you were ready?
+think-cue = is this command cued by "think," e.g. did you use it before you were ready?
 okflip = A B and B A both work
 core = is this part of the core quest?
 idid = was this action done yet?
@@ -34,8 +38,11 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "plain"	"plea"	--	--	false	true	false	false	--	vc-plain-plea rule	vr-plain-plea rule	--	--
 "boring"	"box"	--	--	false	true	true	false	--	vc-boring-box rule	vr-boring-box rule	--	--
 "grow"	"grudge"	--	--	false	false	true	false	--	vc-grow-grudge rule	vr-grow-grudge rule
-"bussed"	"back"	--	--	false	false	true	false	--	vc-bussed-back rule	vr-bussed-back rule
+"bussed"	"back"	"bust"	--	false	false	true	false	--	vc-bussed-back rule	vr-bussed-back rule
 "crust"	"crack"	--	--	false	true	true	false	Trust Track	vc-crust-crack rule	vr-crust-crack rule	--	"You need to get rid of [jack] before you can make the [b]CRUST CRACK[r]."
+"bare"	"beach"	"bear"	--	false	true	true	false	Rare Reach	vc-bare-beach rule	vr-bare-beach rule	--	"You can change the Rare Reach to a [b]BARE BEACH[r] once you ."
+"seep"	"soon"	--	--	false	true	true	false	Rare Reach	vc-seep-soon rule	vr-seep-soon rule
+"reap"	"rune"	--	--	false	true	true	false	Rare Reach	vc-reap-rune rule	vr-reap-rune rule	--	"Perhaps some random adventuring would help you to [b]REAP RUNE[r] later."
 
 a goodrhyme rule (this is the vc-in-bane rule):
 	if player is not in Bane Be Sane See, unavailable;
@@ -118,6 +125,49 @@ this is the vr-crust-crack rule:
 	now shore shoals is mapped south of trust track;
 	now trust track is mapped north of shore shoals;
 	now sco-crust-crack is true;
+
+this is the vc-bare-beach rule:
+	if player is not in rare reach, unavailable;
+	if sco-bare-beach is true:
+		vcal "You already changed the Rare Reach.";
+		already-done;
+	if player does not have pear peach:
+		vcp "You should be able to do that, but you lack the necessary implement.";
+		not-yet;
+	ready;
+
+this is the vr-bare-beach rule:
+	say "The rare reach fills out a bit. There is now a bare beach. But it's not completely bare! You see a deep dune rise up.";
+	move deep dune to rare reach;
+	now sco-bare-beach is true;
+
+this is the vc-seep-soon rule:
+	if player is not in rare reach or sco-bare-beach is false, unavailable;
+	if sco-seep-soon is true:
+		vcal "You already doomed the dune to collapsing slightly.";
+		already-done;
+	ready;
+
+this is the vr-seep-soon rule:
+	say "The deep dune shifts a bit. Sand starts leaking a bit. Not enough for you to sit and wait and watch. You have other stuff to do.";
+	now sco-seep-soon is true;
+
+this is the vc-reap-rune rule:
+	if player is not in rare reach or sco-bare-beach is false, unavailable;
+	if sco-seep-soon is false:
+		vcp "The dune is a bit too big now. Maybe you could find a way to reduce it, over time.";
+		not-yet;
+	if flag-reap-rune is false:
+		vcp "The dune has started seeping, but not enough. Maybe you'll need to come back later.";
+		not-yet;
+	if sco-reap-rune is true:
+		vcal "You already reaped a rune.";
+		already-done;
+	ready;
+
+this is the vr-reap-rune rule:
+	say "What do you know? You reach in, and there the rune is. It is in the shape of the Greek letter Rho.";
+	now player has Rho Rune;
 
 volume homonym rejections
 
