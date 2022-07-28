@@ -173,7 +173,7 @@ there is a room called No Noon in Hoppin' Heart. No Noon is north of Hun Harm Fu
 
 book One Warm Stun Storm
 
-there is a room calle One Warm Stun Storm in Hoppin' Heart. It is north of NNSS. "[if sco-fun-form is true]It's calm here now. You can go north and south[else]A storm is raging ahead to the north, though it's all very calm to the south[end if]."
+there is a room called One Warm Stun Storm in Hoppin' Heart. It is north of NNSS. "[if sco-fun-form is true]It's calm here now. You can go north and south[else]A storm is raging ahead to the north, though it's all very calm to the south[end if]. [if sco-done-dorm is false]And you don't even have a prospect of shelter. Yet[else if sco-fun-form is false]At least the done dorm could give shelter[else]You also note the done dorm that helped you stay out the storm[end if]."
 
 sco-done-dorm is a truth state that varies.
 sco-fun-form is a truth state that varies.
@@ -185,7 +185,7 @@ chapter done dorm
 
 the done dorm is scenery. "It's impressive it was built so quickly! [if sco-fun-form is true]It was fun to stay in during the storm, as well, but you don't need it any more[else]Perhaps it could provide shelter from the storm, if you apply for residence correctly[end if]."
 
-check entering done dorm: say "[if sco-fun-form is true]You must apply correctly to enter[else]You already spent enough time there[end if]." instead;
+check entering done dorm: say "[if sco-fun-form is false]You must apply correctly to enter[else]You already spent enough time there[end if]." instead;
 
 book Tree Trunk
 
@@ -199,7 +199,15 @@ TTTT is north of One Warm Stun Storm. printed name is "The (Thunk!) Tree Trunk".
 
 chapter Tree Trunk
 
-the Tree Trunk is scenery
+the Tree Trunk is scenery in TTTT. "[if sco-gee-junk is true]Nothing besides the [FRUIT] is in the tree trunk[else if sco-see-sunk is true]You get the feeling something semi-valuable could be in the tree trunk, if you just asked right[else]The tree trunk is tough to climb, but it's wide. Perhaps you could make it a little less intimidating[end if]."
+
+chapter Free Fruit
+
+Free Fruit is scenery. "Whatever the FREE FRUIT is, you get no signs of it. Perhaps the free fruit you need will pop up elsewhere."
+
+check taking free fruit: say "Best to figure out what's in it, or what it can produce." instead;
+
+the pear peach is a thing.
 
 book Trust Track
 
@@ -549,10 +557,6 @@ volume unsorted
 book High Hub
 
 High Hub is a room.
-
-Free Fruit is scenery.
-
-the pear peach is a thing.
 
 chapter deep dune
 

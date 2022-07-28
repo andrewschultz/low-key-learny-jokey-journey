@@ -40,6 +40,8 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "grow"	"grudge"	--	--	false	false	true	false	NNSS	vc-grow-grudge rule	vr-grow-grudge rule
 "done"	"dorm"	--	--	false	false	true	false	One Warm Stun Storm	vc-done-dorm rule	vr-done-dorm rule
 "fun"	"form"	--	--	false	false	true	false	One Warm Stun Storm	vc-fun-form rule	vr-fun-form rule
+"see"	"sunk"	--	--	false	false	true	false	TTTT	vc-see-sunk rule	vr-see-sunk rule	--	--
+"gee"	"junk"	--	--	false	false	true	false	TTTT	vc-gee-junk rule	vr-gee-junk rule	--	--
 "bussed"	"back"	"bust"	--	false	false	true	false	Rare Reach	vc-bussed-back rule	vr-bussed-back rule
 "crust"	"crack"	--	--	false	true	true	false	Trust Track	vc-crust-crack rule	vr-crust-crack rule	--	"You need to get rid of [jack] before you can make the [b]CRUST CRACK[r]."
 "bare"	"beach"	--	--	false	true	true	false	Rare Reach	vc-bare-beach rule	vr-bare-beach rule	--	"You can change the Rare Reach to a [b]BARE BEACH[r] once you ."
@@ -124,6 +126,32 @@ a goodrhyme rule (this is the vc-fun-form rule):
 this is the vr-fun-form rule:
 	say "You actually, well, have fun saying why you should be certified to stay in the done dorm until enough time has passed.";
 	now sco-fun-form is true;
+
+a goodrhyme rule (this is the vc-see-sunk rule):
+	if player is not in TTTT, unavailable;
+	if sco-see-sunk is true:
+		vcal "You already sunk the tree trunk!";
+		already-done;
+	ready;
+
+this is the vr-see-sunk rule:
+	now sco-see-sunk is true;
+	say "The tree trunk recedes slightly. It seems to be hollow on top. Perhaps there is something in the tree trunk. But what?";
+
+a goodrhyme rule (this is the vc-gee-junk rule):
+	if player is not in TTTT, unavailable;
+	if sco-gee-junk is true:
+		vcal "You already did this!";
+		already-done;
+	if sco-see-sunk is false:
+		vcp "If there were junk in the tree trunk, you couldn't see it. It's way too tall!";
+		not-yet;
+	ready;
+
+this is the vr-gee-junk rule:
+	now sco-gee-junk is true;
+	say "My goodness, yes! There is something in the tree trunk! It's marked [b]FREE FRUIT[r].";
+	now free fruit is in TTTT;
 
 a goodrhyme rule (this is the vc-bussed-back rule):
 	if player does not carry sussed sack and location of player is not trust track, unavailable;
