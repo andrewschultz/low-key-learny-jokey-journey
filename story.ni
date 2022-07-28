@@ -167,6 +167,53 @@ book Hun Harm Fun Farm
 
 Hun Harm Fun Farm is west of NNSS. it is in Hoppin' Heart.
 
+book No Noon
+
+there is a room called No Noon in Hoppin' Heart. No Noon is north of Hun Harm Fun Farm.
+
+book One Warm Stun Storm
+
+there is a room calle One Warm Stun Storm in Hoppin' Heart. It is north of NNSS. "[if sco-fun-form is true]It's calm here now. You can go north and south[else]A storm is raging ahead to the north, though it's all very calm to the south[end if]."
+
+sco-done-dorm is a truth state that varies.
+sco-fun-form is a truth state that varies.
+
+check going north in One Warm Stun Storm:
+	if sco-fun-form is false, say "You feel your will sapped as you attempt to go north. You'll need to sit out the storm first." instead;
+
+chapter done dorm
+
+the done dorm is scenery. "It's impressive it was built so quickly! [if sco-fun-form is true]It was fun to stay in during the storm, as well, but you don't need it any more[else]Perhaps it could provide shelter from the storm, if you apply for residence correctly[end if]."
+
+check entering done dorm: say "[if sco-fun-form is true]You must apply correctly to enter[else]You already spent enough time there[end if]." instead;
+
+book Tree Trunk
+
+sco-see-sunk is a truth state that varies.
+sco-gee-junk is a truth state that varies.
+
+carry out going to TTTT when TTTT is unvisited:
+	say "You were a bit too pleased you got away from the storm, and you couldn't help looking back to make sure it was over. And as you did, you ran into a rather large tree trunk, with a THUNK. Well, maybe with the way things are here, it was meant to happen.";
+
+TTTT is north of One Warm Stun Storm. printed name is "The (Thunk!) Tree Trunk". it is in Hoppin' Heart. "Passage any way except back south is too dense here. The tree trunk you ran into still stands here, [if sco-see-sunk is true]cut down to size[else]and you wish you could cut it down to size as revenge for running into it[end if]."
+
+chapter Tree Trunk
+
+the Tree Trunk is scenery
+
+book Trust Track
+
+Trust Track is east of NNSS. it is in Hoppin' Heart. "You're in a sort of earthy canyon, [if sco-crust-crack is true]though you created a passage south to complement the one west[else if sco-bussed-back is true]and with Just Jack gone, you're wondering if you can create another passage[else]with the only apparent way out being back west[end if]."
+
+guess-table of trust track is table of trust track guesses.
+
+Just Jack is a rhymable in Trust Track. "[one of]'Hi! I'm Just Jack. you can totally trust me that there are no other passages here. In fact, I'd be offended if you looked for them while I was still here. Not that you're getting rid of me.'[or]Just Jack waits here, making sure you trust his 'advice' enough not to look for any other passages.[stopping]"
+
+the sussed sack is a rhymable. guess-table of sussed sack is table of trust track guesses.
+
+sco-bussed-back is a truth state that varies.
+sco-crust-crack is a truth state that varies.
+
 book Rare Reach
 
 Rare Reach is north of Trust Track. it is in Hoppin' Heart. printed name of Rare Reach is "[if sco-bare-beach is true]Bare Beach[else]Rare Reach[end if]".
@@ -290,19 +337,6 @@ book Trick Trail
 Trick Trail is a room. it is in Poppin' Part.
 
 Trailing Tree is a thing in Trick Trail.
-
-book Trust Track
-
-Trust Track is east of NNSS. it is in Hoppin' Heart. "You're in a sort of earthy canyon, [if sco-crust-crack is true]though you created a passage south to complement the one west[else if sco-bussed-back is true]and with Just Jack gone, you're wondering if you can create another passage[else]with the only apparent way out being back west[end if]."
-
-guess-table of trust track is table of trust track guesses.
-
-Just Jack is a rhymable in Trust Track. "[one of]'Hi! I'm Just Jack. you can totally trust me that there are no other passages here. In fact, I'd be offended if you looked for them while I was still here. Not that you're getting rid of me.'[or]Just Jack waits here, making sure you trust his 'advice' enough not to look for any other passages.[stopping]"
-
-the sussed sack is a rhymable. guess-table of sussed sack is table of trust track guesses.
-
-sco-bussed-back is a truth state that varies.
-sco-crust-crack is a truth state that varies.
 
 book Shore Shoals
 

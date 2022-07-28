@@ -34,13 +34,15 @@ other stuff that may be added is best-room though I may have divided room-specif
 
 table of verb checks
 w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	idid	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
-"dane|jane|lane|wayne"	"d|dee|g|gee|lee|whee"	--	--	false	false	true	false	--	vc-in-bane rule	vr-choose-name rule	"d/dee dane" or "dane dee/d" or "jane g/gee" or "gee/g jane" or "wayne whee" or "whee wayne"	--
-"plain"	"plea"	--	--	false	true	false	false	--	vc-plain-plea rule	vr-plain-plea rule	--	--
-"boring"	"box"	--	--	false	true	true	false	--	vc-boring-box rule	vr-boring-box rule	--	--
-"grow"	"grudge"	--	--	false	false	true	false	--	vc-grow-grudge rule	vr-grow-grudge rule
-"bussed"	"back"	"bust"	--	false	false	true	false	--	vc-bussed-back rule	vr-bussed-back rule
+"dane|jane|lane|wayne"	"d|dee|g|gee|lee|whee"	--	--	false	false	true	false	Bane Be Sane See	vc-in-bane rule	vr-choose-name rule	"d/dee dane" or "dane dee/d" or "jane g/gee" or "gee/g jane" or "wayne whee" or "whee wayne"	--
+"plain"	"plea"	--	--	false	true	false	false	Bane Be Sane See	vc-plain-plea rule	vr-plain-plea rule	--	--
+"boring"	"box"	--	--	false	true	true	false	Roaring Rocks	vc-boring-box rule	vr-boring-box rule	--	--
+"grow"	"grudge"	--	--	false	false	true	false	NNSS	vc-grow-grudge rule	vr-grow-grudge rule
+"done"	"dorm"	--	--	false	false	true	false	One Warm Stun Storm	vc-done-dorm rule	vr-done-dorm rule
+"fun"	"form"	--	--	false	false	true	false	One Warm Stun Storm	vc-fun-form rule	vr-fun-form rule
+"bussed"	"back"	"bust"	--	false	false	true	false	Rare Reach	vc-bussed-back rule	vr-bussed-back rule
 "crust"	"crack"	--	--	false	true	true	false	Trust Track	vc-crust-crack rule	vr-crust-crack rule	--	"You need to get rid of [jack] before you can make the [b]CRUST CRACK[r]."
-"bare"	"beach"	"bear"	--	false	true	true	false	Rare Reach	vc-bare-beach rule	vr-bare-beach rule	--	"You can change the Rare Reach to a [b]BARE BEACH[r] once you ."
+"bare"	"beach"	--	--	false	true	true	false	Rare Reach	vc-bare-beach rule	vr-bare-beach rule	--	"You can change the Rare Reach to a [b]BARE BEACH[r] once you ."
 "seep"	"soon"	--	--	false	true	true	false	Rare Reach	vc-seep-soon rule	vr-seep-soon rule
 "reap"	"rune"	--	--	false	true	true	false	Rare Reach	vc-reap-rune rule	vr-reap-rune rule	--	"Perhaps some random adventuring would help you to [b]REAP RUNE[r] later."
 
@@ -96,6 +98,32 @@ a goodrhyme rule (this is the vc-grow-grudge rule):
 this is the vr-grow-grudge rule:
 	say "The sludge hardens! You feel good about not being perfect and not trying to be. It's opened up possibilities, for sure.";
 	now sco-grow-grudge is true;
+
+a goodrhyme rule (this is the vc-done-dorm rule):
+	if player is not in One Warm Stun Storm, unavailable;
+	if sco-done-dorm is true:
+		vcal "You already summoned the done dorm.";
+		already-done;
+	ready;
+
+this is the vr-done-dorm rule:
+	say "A done dorm pops up out of nowhere! You probably can't just go entering it, though. A nice, exclusive place like that probably requires documentation of worth and being an interesting person to hang around and stuff. All sorts of bureaucracy, don't you know.";
+	now sco-done-dorm is true;
+	move done dorm to One Warm Stun Storm;
+
+a goodrhyme rule (this is the vc-fun-form rule):
+	if player is not in One Warm Stun Storm, unavailable;
+	if sco-fun-form is true:
+		vcal "You already filled out the fun form.";
+		already-done;
+	if sco-done-dorm is false:
+		vcp "Perhaps you will need a fun form in a bit. But no entity requires it right now.";
+		not-yet;
+	ready;
+
+this is the vr-fun-form rule:
+	say "You actually, well, have fun saying why you should be certified to stay in the done dorm until enough time has passed.";
+	now sco-fun-form is true;
 
 a goodrhyme rule (this is the vc-bussed-back rule):
 	if player does not carry sussed sack and location of player is not trust track, unavailable;
@@ -206,6 +234,7 @@ noway-rm	noway-txt
 Bane Be Sane See	"Cardinal directions don't mean much here, yet. Besides, there's no way back. You can only just enter the Train Tree one of three ways."
 Roaring Rocks	"The rocks block every way except [if nnss is visited]back [end if]north."
 Trust Track	"[if sco-crust-crack is false]The track seems to end here. You can really only go back west, unless you figure something out[else]The track now runs west-north but not [noun][end if]."
+Warm Stun Storm	"The passage here is north-south."
 
 volume guesses
 
