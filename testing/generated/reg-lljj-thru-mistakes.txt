@@ -24,7 +24,7 @@ You are the main character in this adventure, but don't let it go to your head.
 >pain p
 Low-Key Learny Jokey Journey is nonviolent and hopefully devoid of bathroom humor.
 
-#ttc-table-of-bane-be-sane-see-guesses-pain-p-pee
+#+ttc-table-of-bane-be-sane-see-guesses-pain-p-pee
 >pain pee
 Low-Key Learny Jokey Journey is nonviolent and hopefully devoid of bathroom humor.
 !lurking lump
@@ -99,6 +99,30 @@ Weight gain won't help here.
 >grow grudge
 by one point
 
+>n
+
+>done dorm
+by one point
+
+>fun form
+by one point
+
+>n
+
+>see sunk
+by one point
+
+>gee junk
+by one point
+
+>whee woot
+by one point
+
+>pear peach
+by one point
+
+>s
+>s
 >e
 
 #ttc-table-of-trust-track-guesses-cussed-cack
@@ -129,5 +153,67 @@ No, the sack will be worthwhile.
 You continue to put impure thoughts aside to focus on a really cool text adventure.
 
 >crust crack
+by one point
+
+>n
+
+>bare beach
+by one point
+
+#ttc-table-of-deep-dune-guesses-beep-boon
+>beep boon
+No, you don't a Geiger counter to search through the dune.
+
+#ttc-table-of-deep-dune-guesses-creep-croon
+>creep croon
+Alas, R. Kelly can't show up. He's still in jail.
+
+#ttc-table-of-deep-dune-guesses-leap-loon
+>leap loon
+Alas, nobody odd comes by and dives into the deep dune. Nobody at all.
+
+#ttc-table-of-deep-dune-guesses-peep-poon
+>peep poon
+Low-Key Learny Jokey Journey is the wrong environment for that, and not just because it's text-based.
+
+>seep soon
+by one point
+
+>s
+>n
+
+>reap rune
+by one point
+
+#+ttc-table-of-deep-dune-guesses-beep-boon
+>beep boon
+No, you don't a Geiger counter to search further through the dune.
+
+>s
+>w
+>w
+
+#ttc-table-of-fun-farm-hun-harm-guesses-one-worm-warm
+>one worm
+That doesn't quite work. Maybe the farm needs worms or warm weather, but its survival isn't as important to you as passage north.
+
+>unarm
+by one point
+
+>n
+
+>go goon
+by one point
+
+>cocoon
+by one point
+
+>mo moon
+by one point
+
+>so soon
+by one point
+
+>crow croon
 by one point
 

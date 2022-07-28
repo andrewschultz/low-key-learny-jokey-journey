@@ -45,6 +45,14 @@ TSV:## minimum walkthrough	## walkthrough with all points	## walkthrough with al
 >listen
 You get the feeling your voice could add constructively to the noises, somehow, but it's not critical.
 
+@hom
+#ttc-table-of-room-homonyms-bane-be-sane-see-hom-bane-be-sane-see-rule
+>sea
+WRONG
+\\
+>bee
+WRONG
+
 @mis
 #ttc-table-of-bane-be-sane-see-guesses-cane-key
 >cane key
@@ -62,7 +70,7 @@ You are the main character in this adventure, but don't let it go to your head.
 >pain p
 Low-Key Learny Jokey Journey is nonviolent and hopefully devoid of bathroom humor.
 \\
-#ttc-table-of-bane-be-sane-see-guesses-pain-p-pee
+#+ttc-table-of-bane-be-sane-see-guesses-pain-p-pee
 >pain pee
 Low-Key Learny Jokey Journey is nonviolent and hopefully devoid of bathroom humor.
 !lurking lump
@@ -104,6 +112,7 @@ You're already there! Well, here.
 >gt bane
 You're already there! Well, here.
 \\
+#ttc-table-of-noways-bane-be-sane-see
 >n
 Cardinal directions don't mean much here, yet. Besides, there's no way back. You can only just enter the Train Tree one of three ways.
 
@@ -134,6 +143,7 @@ That's what the rocks will become, but you want something simpler and smaller an
 >n
 The roaring seems to pull you back.
 \\
+#ttc-table-of-noways-roaring-rocks
 >s
 The rocks block every way except north.
 \\
@@ -181,6 +191,15 @@ CONCEIT CONCERNER is written to the left.
 @min
 /^No-Nudge Slow Sludge
 
+@gt
+>s
+>s
+\\
+#+ttc-table-of-noways-roaring-rocks
+The rocks block every way except back north.
+\\
+>n
+
 @ver
 >listen
 Quite quiet site. Sigh, it ...
@@ -219,6 +238,80 @@ That location or thing doesn't exist or isn't known to you yet.
 >grow grudge
 by one point
 
+>n
+
+@min
+/^One Warm Stun Storm
+
+@gt
+#ttc-table-of-noways-warm-stun-storm
+>w
+The passage here is north-south.
+\\
+>e
+The passage here is north-south.
+\\
+>n
+You feel your will sapped as you attempt to go north. You'll need to sit out the storm first.
+
+@thi
+>fun form
+WRONG
+\\
+>think
+WRONG
+
+>done dorm
+by one point
+
+@gt
+>n
+You feel your will sapped as you attempt to go north. You'll need to sit out the storm first.
+
+>fun form
+by one point
+
+>n
+
+@min
+/^The \(Thunk!\) Tree Trunk
+
+@thi
+>gee junk
+WRONG
+\\
+>think
+WRONG
+
+>see sunk
+by one point
+
+>gee junk
+by one point
+
+@thi
+>pear peach
+WRONG
+\\
+>think
+WRONG
+
+>whee woot
+by one point
+
+@hom
+#ttc-table-of-thing-homonyms-pear-peach-pair-pare
+>pair peech
+You don't need to reduce or duplicate the pear peach. It has a much bigger purpose.
+\\
+>pare peech
+You don't need to reduce or duplicate the pear peach. It has a much bigger purpose.
+
+>pear peach
+by one point
+
+>s
+>s
 >e
 
 @min
@@ -266,7 +359,8 @@ No, the sack will be worthwhile.
 >lust lack
 You continue to put impure thoughts aside to focus on a really cool text adventure.
 
-@ver
+@gt
+#ttc-table-of-noways-trust-track
 >n
 The track seems to end here. You can really only go back west, unless you figure something out.
 >e
@@ -277,7 +371,8 @@ The track seems to end here. You can really only go back west, unless you figure
 >crust crack
 by one point
 
-@ver
+@gt
+#+ttc-table-of-noways-trust-track
 >n
 The track now runs west-north but not south.
 >e
@@ -288,3 +383,92 @@ The track now runs west-north but not east.
 You think about more specific challenges you've encountered and not solved, and what you've done and tried, and what you can do.
 \\
 But you don't have leads for any puzzles right now.
+
+>n
+
+@min
+/^Rare Reach
+
+>bare beach
+by one point
+
+@mis
+#ttc-table-of-deep-dune-guesses-beep-boon
+>beep boon
+No, you don't a Geiger counter to search through the dune.
+\\
+#ttc-table-of-deep-dune-guesses-creep-croon
+>creep croon
+Alas, R. Kelly can't show up. He's still in jail.
+\\
+#ttc-table-of-deep-dune-guesses-leap-loon
+>leap loon
+Alas, nobody odd comes by and dives into the deep dune. Nobody at all.
+\\
+#ttc-table-of-deep-dune-guesses-peep-poon
+>peep poon
+Low-Key Learny Jokey Journey is the wrong environment for that, and not just because it's text-based.
+
+@thi
+>reap rune
+WRONG
+\\
+>think
+WRONG
+
+>seep soon
+by one point
+
+>s
+>n
+
+@min
+The deep dune seems to have shifted a bit. Maybe you can find something in the middle of it.
+
+>reap rune
+by one point
+
+@mis
+#+ttc-table-of-deep-dune-guesses-beep-boon
+>beep boon
+No, you don't a Geiger counter to search further through the dune.
+
+>s
+>w
+>w
+
+@gt
+>n
+WRONG
+
+@mis
+#ttc-table-of-fun-farm-hun-harm-guesses-one-worm-warm
+>one worm
+That doesn't quite work. Maybe the farm needs worms or warm weather, but its survival isn't as important to you as passage north.
+
+>unarm
+by one point
+
+>n
+
+@min
+/^No Noon
+
+>go goon
+by one point
+
+>cocoon
+by one point
+
+>mo moon
+by one point
+
+>so soon
+by one point
+
+>crow croon
+by one point
+
+@min
+>score
+WRONG

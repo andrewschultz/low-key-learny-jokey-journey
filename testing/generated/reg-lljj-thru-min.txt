@@ -27,6 +27,34 @@ by one point
 >grow grudge
 by one point
 
+>n
+
+/^One Warm Stun Storm
+
+>done dorm
+by one point
+
+>fun form
+by one point
+
+>n
+
+/^The \(Thunk!\) Tree Trunk
+
+>see sunk
+by one point
+
+>gee junk
+by one point
+
+>whee woot
+by one point
+
+>pear peach
+by one point
+
+>s
+>s
 >e
 
 /^Trust Track
@@ -37,3 +65,49 @@ by one point
 >crust crack
 by one point
 
+>n
+
+/^Rare Reach
+
+>bare beach
+by one point
+
+>seep soon
+by one point
+
+>s
+>n
+
+The deep dune seems to have shifted a bit. Maybe you can find something in the middle of it.
+
+>reap rune
+by one point
+
+>s
+>w
+>w
+
+>unarm
+by one point
+
+>n
+
+/^No Noon
+
+>go goon
+by one point
+
+>cocoon
+by one point
+
+>mo moon
+by one point
+
+>so soon
+by one point
+
+>crow croon
+by one point
+
+>score
+WRONG

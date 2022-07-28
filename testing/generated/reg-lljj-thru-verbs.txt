@@ -50,23 +50,73 @@ Quite quiet site. Sigh, it ...
 >grow grudge
 by one point
 
+>n
+
+>done dorm
+by one point
+
+>fun form
+by one point
+
+>n
+
+>see sunk
+by one point
+
+>gee junk
+by one point
+
+>whee woot
+by one point
+
+>pear peach
+by one point
+
+>s
+>s
 >e
 
 >bussed back
 by one point
 
->n
-The track seems to end here. You can really only go back west, unless you figure something out.
->e
-The track seems to end here. You can really only go back west, unless you figure something out.
->s
-The track seems to end here. You can really only go back west, unless you figure something out.
-
 >crust crack
 by one point
 
 >n
-The track now runs west-north but not south.
->e
-The track now runs west-north but not east.
+
+>bare beach
+by one point
+
+>seep soon
+by one point
+
+>s
+>n
+
+>reap rune
+by one point
+
+>s
+>w
+>w
+
+>unarm
+by one point
+
+>n
+
+>go goon
+by one point
+
+>cocoon
+by one point
+
+>mo moon
+by one point
+
+>so soon
+by one point
+
+>crow croon
+by one point
 

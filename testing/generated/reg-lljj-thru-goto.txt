@@ -18,6 +18,7 @@ You're already there! Well, here.
 >gt bane
 You're already there! Well, here.
 
+#ttc-table-of-noways-bane-be-sane-see
 >n
 Cardinal directions don't mean much here, yet. Besides, there's no way back. You can only just enter the Train Tree one of three ways.
 
@@ -27,6 +28,7 @@ by one point
 >n
 The roaring seems to pull you back.
 
+#ttc-table-of-noways-roaring-rocks
 >s
 The rocks block every way except north.
 
@@ -43,6 +45,14 @@ There's no way back to where you started.
 by one point
 
 >open box
+
+>n
+
+>s
+>s
+
+#+ttc-table-of-noways-roaring-rocks
+The rocks block every way except back north.
 
 >n
 
@@ -66,11 +76,103 @@ That location or thing doesn't exist or isn't known to you yet.
 >grow grudge
 by one point
 
+>n
+
+#ttc-table-of-noways-warm-stun-storm
+>w
+The passage here is north-south.
+
+>e
+The passage here is north-south.
+
+>n
+You feel your will sapped as you attempt to go north. You'll need to sit out the storm first.
+
+>done dorm
+by one point
+
+>n
+You feel your will sapped as you attempt to go north. You'll need to sit out the storm first.
+
+>fun form
+by one point
+
+>n
+
+>see sunk
+by one point
+
+>gee junk
+by one point
+
+>whee woot
+by one point
+
+>pear peach
+by one point
+
+>s
+>s
 >e
 
 >bussed back
 by one point
 
+#ttc-table-of-noways-trust-track
+>n
+The track seems to end here. You can really only go back west, unless you figure something out.
+>e
+The track seems to end here. You can really only go back west, unless you figure something out.
+>s
+The track seems to end here. You can really only go back west, unless you figure something out.
+
 >crust crack
+by one point
+
+#+ttc-table-of-noways-trust-track
+>n
+The track now runs west-north but not south.
+>e
+The track now runs west-north but not east.
+
+>n
+
+>bare beach
+by one point
+
+>seep soon
+by one point
+
+>s
+>n
+
+>reap rune
+by one point
+
+>s
+>w
+>w
+
+>n
+WRONG
+
+>unarm
+by one point
+
+>n
+
+>go goon
+by one point
+
+>cocoon
+by one point
+
+>mo moon
+by one point
+
+>so soon
+by one point
+
+>crow croon
 by one point
 
