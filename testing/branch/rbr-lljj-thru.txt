@@ -186,6 +186,10 @@ CONCEIT CONCERNER is written to the left.
    BEAT BURNER    is written to the center-right.
     EAT EARNER    is written to the right.
 
+@ha
+>ha half
+You set the Leet Learner to Ha Half.
+
 >n
 
 @min
@@ -235,6 +239,15 @@ That location or thing doesn't exist or isn't known to you yet.
 That location or thing doesn't exist or isn't known to you yet.
 !You can't walk to Trust Track from here.
 
+@ha
+#ttc-table-of-verb-checks-4-grow
+>grow zgrudge
+The HA HALF button lights up on your Leet Learner.
+\\
+#ttc-table-of-verb-checks-4-grudge
+>zgrow grudge
+The HA HALF button lights up on your Leet Learner.
+
 >grow grudge
 by one point
 
@@ -261,12 +274,30 @@ WRONG
 >think
 WRONG
 
+@ha
+#ttc-table-of-verb-checks-5-done
+>done zdorm
+The HA HALF button lights up on your Leet Learner.
+\\
+#ttc-table-of-verb-checks-5-dorm
+>zdone dorm
+The HA HALF button lights up on your Leet Learner.
+
 >done dorm
 by one point
 
 @gt
 >n
 You feel your will sapped as you attempt to go north. You'll need to sit out the storm first.
+
+@ha
+#ttc-table-of-verb-checks-6-fun
+>zform fun
+The HA HALF button lights up on your Leet Learner.
+\\
+#ttc-table-of-verb-checks-6-form
+>form zfun
+The HA HALF button lights up on your Leet Learner.
 
 >fun form
 by one point
@@ -275,6 +306,15 @@ by one point
 
 @min
 /^The \(Thunk!\) Tree Trunk
+
+@ha
+#ttc-table-of-verb-checks-7-see
+>zsee sunk
+The HA HALF button lights up on your Leet Learner.
+\\
+#ttc-table-of-verb-checks-7-sunk
+>see zsunk
+The HA HALF button lights up on your Leet Learner.
 
 @thi
 >gee junk
@@ -286,6 +326,15 @@ WRONG
 >see sunk
 by one point
 
+@ha
+#ttc-table-of-verb-checks-8-gee
+>gee zjunk
+The HA HALF button lights up on your Leet Learner.
+\\
+#ttc-table-of-verb-checks-8-junk
+>zgee junk
+The HA HALF button lights up on your Leet Learner.
+
 >gee junk
 by one point
 
@@ -295,6 +344,15 @@ WRONG
 \\
 >think
 WRONG
+
+@ha
+#ttc-table-of-verb-checks-9-whee
+>whee zwoot
+The HA HALF button lights up on your Leet Learner.
+\\
+#ttc-table-of-verb-checks-9-woot
+>zwhee woot
+The HA HALF button lights up on your Leet Learner.
 
 >whee woot
 by one point
@@ -306,6 +364,15 @@ You don't need to reduce or duplicate the pear peach. It has a much bigger purpo
 \\
 >pare peech
 You don't need to reduce or duplicate the pear peach. It has a much bigger purpose.
+
+@ha
+#ttc-table-of-verb-checks-10-peach
+>zpear peach
+The HA HALF button lights up on your Leet Learner.
+\\
+#ttc-table-of-verb-checks-10-pear
+>pear zpeach
+The HA HALF button lights up on your Leet Learner.
 
 >pear peach
 by one point
@@ -343,6 +410,15 @@ You need to get rid of Just Jack before you can make the CRUST CRACK.
 \\
 NOTE: The game will indicate when one command you found early will be applicable. An asterisk or (+) will also appear in the score in the upper right. Until then, you can THINK to see things you figured but aren't quite ready to do yet.
 
+@ha
+#ttc-table-of-verb-checks-11-back
+>zbussed back
+The HA HALF button lights up on your Leet Learner.
+\\
+#ttc-table-of-verb-checks-11-bussed
+>bussed zback
+The HA HALF button lights up on your Leet Learner.
+
 >bussed back
 by one point
 
@@ -368,6 +444,15 @@ The track seems to end here. You can really only go back west, unless you figure
 >s
 The track seems to end here. You can really only go back west, unless you figure something out.
 
+@ha
+#ttc-table-of-verb-checks-12-crack
+>zcrust crack
+The HA HALF button lights up on your Leet Learner.
+\\
+#ttc-table-of-verb-checks-12-crust
+>crust zcrack
+The HA HALF button lights up on your Leet Learner.
+
 >crust crack
 by one point
 
@@ -388,6 +473,15 @@ But you don't have leads for any puzzles right now.
 
 @min
 /^Rare Reach
+
+@ha
+#ttc-table-of-verb-checks-13-bare
+>bare zbeach
+The HA HALF button lights up on your Leet Learner.
+\\
+#ttc-table-of-verb-checks-13-beach
+>zbare beach
+The HA HALF button lights up on your Leet Learner.
 
 >bare beach
 by one point
@@ -416,6 +510,15 @@ WRONG
 >think
 WRONG
 
+@ha
+#ttc-table-of-verb-checks-14-seep
+>seep zsoon
+The HA HALF button lights up on your Leet Learner.
+\\
+#ttc-table-of-verb-checks-14-soon
+>zseep soon
+The HA HALF button lights up on your Leet Learner.
+
 >seep soon
 by one point
 
@@ -424,6 +527,15 @@ by one point
 
 @min
 The deep dune seems to have shifted a bit. Maybe you can find something in the middle of it.
+
+@ha
+#ttc-table-of-verb-checks-15-reap
+>reap zrune
+The HA HALF button lights up on your Leet Learner.
+\\
+#ttc-table-of-verb-checks-15-rune
+>zreap rune
+The HA HALF button lights up on your Leet Learner.
 
 >reap rune
 by one point
@@ -446,6 +558,15 @@ WRONG
 >one worm
 That doesn't quite work. Maybe the farm needs worms or warm weather, but its survival isn't as important to you as passage north.
 
+@ha
+#ttc-table-of-verb-checks-16-un
+>un zarm
+The HA HALF button lights up on your Leet Learner.
+\\
+#ttc-table-of-verb-checks-16-arm
+>zun arm
+The HA HALF button lights up on your Leet Learner.
+
 >unarm
 by one point
 
@@ -454,17 +575,62 @@ by one point
 @min
 /^No Noon
 
+@ha
+#ttc-table-of-verb-checks-17-go
+>go zgoon
+The HA HALF button lights up on your Leet Learner.
+\\
+#ttc-table-of-verb-checks-17-goon
+>zgo goon
+The HA HALF button lights up on your Leet Learner.
+
 >go goon
 by one point
+
+@ha
+#ttc-table-of-verb-checks-18-co
+>co zcoon
+The HA HALF button lights up on your Leet Learner.
+\\
+#ttc-table-of-verb-checks-18-coon
+>zco coon
+The HA HALF button lights up on your Leet Learner.
 
 >cocoon
 by one point
 
+@ha
+#ttc-table-of-verb-checks-19-mo
+>mo zmoon
+The HA HALF button lights up on your Leet Learner.
+\\
+#ttc-table-of-verb-checks-19-moon
+>zmo moon
+The HA HALF button lights up on your Leet Learner.
+
 >mo moon
 by one point
 
+@ha
+#ttc-table-of-verb-checks-20-so
+>so zsoon
+The HA HALF button lights up on your Leet Learner.
+\\
+#ttc-table-of-verb-checks-20-soon
+>zso soon
+The HA HALF button lights up on your Leet Learner.
+
 >so soon
 by one point
+
+@ha
+#ttc-table-of-verb-checks-21-crow
+>crow zcroon
+The HA HALF button lights up on your Leet Learner.
+\\
+#ttc-table-of-verb-checks-21-croon
+>zcrow croon
+The HA HALF button lights up on your Leet Learner.
 
 >crow croon
 by one point

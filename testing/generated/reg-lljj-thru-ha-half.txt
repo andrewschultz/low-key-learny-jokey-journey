@@ -8,6 +8,9 @@
 
 * main-thru
 
+>ha half
+The Leet Learner is already set to Ha Half.
+
 >plain plea
 by one point
 
@@ -21,27 +24,83 @@ by one point
 
 >n
 
+#ttc-table-of-verb-checks-4-grow
+>grow zgrudge
+The HA HALF button lights up on your Leet Learner.
+
+#ttc-table-of-verb-checks-4-grudge
+>zgrow grudge
+The HA HALF button lights up on your Leet Learner.
+
 >grow grudge
 by one point
 
 >n
 
+#ttc-table-of-verb-checks-5-done
+>done zdorm
+The HA HALF button lights up on your Leet Learner.
+
+#ttc-table-of-verb-checks-5-dorm
+>zdone dorm
+The HA HALF button lights up on your Leet Learner.
+
 >done dorm
 by one point
+
+#ttc-table-of-verb-checks-6-fun
+>zform fun
+The HA HALF button lights up on your Leet Learner.
+
+#ttc-table-of-verb-checks-6-form
+>form zfun
+The HA HALF button lights up on your Leet Learner.
 
 >fun form
 by one point
 
 >n
 
+#ttc-table-of-verb-checks-7-see
+>zsee sunk
+The HA HALF button lights up on your Leet Learner.
+
+#ttc-table-of-verb-checks-7-sunk
+>see zsunk
+The HA HALF button lights up on your Leet Learner.
+
 >see sunk
 by one point
+
+#ttc-table-of-verb-checks-8-gee
+>gee zjunk
+The HA HALF button lights up on your Leet Learner.
+
+#ttc-table-of-verb-checks-8-junk
+>zgee junk
+The HA HALF button lights up on your Leet Learner.
 
 >gee junk
 by one point
 
+#ttc-table-of-verb-checks-9-whee
+>whee zwoot
+The HA HALF button lights up on your Leet Learner.
+
+#ttc-table-of-verb-checks-9-woot
+>zwhee woot
+The HA HALF button lights up on your Leet Learner.
+
 >whee woot
 by one point
+
+#ttc-table-of-verb-checks-10-peach
+>zpear peach
+The HA HALF button lights up on your Leet Learner.
+
+#ttc-table-of-verb-checks-10-pear
+>pear zpeach
+The HA HALF button lights up on your Leet Learner.
 
 >pear peach
 by one point
@@ -50,22 +109,62 @@ by one point
 >s
 >e
 
+#ttc-table-of-verb-checks-11-back
+>zbussed back
+The HA HALF button lights up on your Leet Learner.
+
+#ttc-table-of-verb-checks-11-bussed
+>bussed zback
+The HA HALF button lights up on your Leet Learner.
+
 >bussed back
 by one point
+
+#ttc-table-of-verb-checks-12-crack
+>zcrust crack
+The HA HALF button lights up on your Leet Learner.
+
+#ttc-table-of-verb-checks-12-crust
+>crust zcrack
+The HA HALF button lights up on your Leet Learner.
 
 >crust crack
 by one point
 
 >n
 
+#ttc-table-of-verb-checks-13-bare
+>bare zbeach
+The HA HALF button lights up on your Leet Learner.
+
+#ttc-table-of-verb-checks-13-beach
+>zbare beach
+The HA HALF button lights up on your Leet Learner.
+
 >bare beach
 by one point
+
+#ttc-table-of-verb-checks-14-seep
+>seep zsoon
+The HA HALF button lights up on your Leet Learner.
+
+#ttc-table-of-verb-checks-14-soon
+>zseep soon
+The HA HALF button lights up on your Leet Learner.
 
 >seep soon
 by one point
 
 >s
 >n
+
+#ttc-table-of-verb-checks-15-reap
+>reap zrune
+The HA HALF button lights up on your Leet Learner.
+
+#ttc-table-of-verb-checks-15-rune
+>zreap rune
+The HA HALF button lights up on your Leet Learner.
 
 >reap rune
 by one point
@@ -74,22 +173,70 @@ by one point
 >w
 >w
 
+#ttc-table-of-verb-checks-16-un
+>un zarm
+The HA HALF button lights up on your Leet Learner.
+
+#ttc-table-of-verb-checks-16-arm
+>zun arm
+The HA HALF button lights up on your Leet Learner.
+
 >unarm
 by one point
 
 >n
 
+#ttc-table-of-verb-checks-17-go
+>go zgoon
+The HA HALF button lights up on your Leet Learner.
+
+#ttc-table-of-verb-checks-17-goon
+>zgo goon
+The HA HALF button lights up on your Leet Learner.
+
 >go goon
 by one point
+
+#ttc-table-of-verb-checks-18-co
+>co zcoon
+The HA HALF button lights up on your Leet Learner.
+
+#ttc-table-of-verb-checks-18-coon
+>zco coon
+The HA HALF button lights up on your Leet Learner.
 
 >cocoon
 by one point
 
+#ttc-table-of-verb-checks-19-mo
+>mo zmoon
+The HA HALF button lights up on your Leet Learner.
+
+#ttc-table-of-verb-checks-19-moon
+>zmo moon
+The HA HALF button lights up on your Leet Learner.
+
 >mo moon
 by one point
 
+#ttc-table-of-verb-checks-20-so
+>so zsoon
+The HA HALF button lights up on your Leet Learner.
+
+#ttc-table-of-verb-checks-20-soon
+>zso soon
+The HA HALF button lights up on your Leet Learner.
+
 >so soon
 by one point
+
+#ttc-table-of-verb-checks-21-crow
+>crow zcroon
+The HA HALF button lights up on your Leet Learner.
+
+#ttc-table-of-verb-checks-21-croon
+>zcrow croon
+The HA HALF button lights up on your Leet Learner.
 
 >crow croon
 by one point
