@@ -37,9 +37,9 @@ mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 
 table of trust track guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
-"must mack"	jack-gone rule	false	--	--	"You don't need memories of Just Jack."
 "cussed cack"	--	false	--	--	"[if player has sussed sack]No, the sack will be worthwhile.[else]There's a useful item here. More useful than such words![end if]"
 "lust lack"	--	false	--	--	"[if just jack is fungible]Jack would still be bugging you in that state[else]You continue to put impure thoughts aside to focus on a really cool text adventure[end if]."
+"must mack"	jack-gone rule	false	--	--	"You don't need memories of Just Jack."
 "rust rack"	--	false	--	--	"That would be a useless item."
 
 this is the jack-gone rule:

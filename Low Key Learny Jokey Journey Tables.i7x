@@ -483,7 +483,8 @@ a goodrhyme rule (this is the vc-glow-glue rule):
 
 this is the vr-glow-glue rule:
 	now sco-glow-glue is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "A rather large tube of Glow Glue drops by near you.";
+	abide by the flue-and-glue rule;
 
 a goodrhyme rule (this is the vc-go-goo rule):
 	if player is not in show shoe, unavailable;
@@ -514,7 +515,7 @@ this is the vr-bro-brew rule:
 a goodrhyme rule (this is the vc-stow-stew rule):
 	if player is not in show shoe, unavailable;
 	if sco-flow-flue is false or sco-glow-glue is false:
-		vcal "That's a good idea, but you have nowhere reliable to store something to eat! Well, not yet.";
+		vcp "That's a good idea, but you have nowhere reliable to store something to eat! Well, not yet.";
 		not-yet;
 	if sco-stow-stew is true:
 		vcal "You already put stew in the flue.";
@@ -602,7 +603,7 @@ this is the stew-and-brew rule:
 
 a goodrhyme rule (this is the shoe-food-drink rule):
 	if not shoe-food-drink:
-		vcal "There's no crowd to call out to to get them hyped, but if there were, that'd be great!";
+		vcp "There's no crowd to call out to to get them hyped, but if there were, that'd be great!";
 		not-yet;
 
 volume homonym rejections

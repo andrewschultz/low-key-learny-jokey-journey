@@ -6,9 +6,21 @@ volume IDE tests
 
 test ocome with "jane g/boring box/open box/n/guide gong/s/e/pride prong/s/e".
 
-test w1 with "jane g/boring box/open box/n/grow grudge"
+test w1 with "plain plea/jane g/boring box/open box/n/grow grudge"
 
-test thru with "jane g/boring box/open box/n/grow grudge/e/crust crack/think/bussed back/crust crack"
+test w2 with "test w1/n/done dorm/fun form/n/see sunk/gee junk/whee woot/pear peach/s/s"
+
+test w3 with "e/bussed back/crust crack/n/bare beach/seep soon/s/n/reap rune/s/w"
+
+test w4 with "w/unarm/n/go goon/cocoon/mo moon/so soon/crow croon"
+
+test w5 with "potty pail/grotty grail/knotty nail"
+
+test w6 with "grokking grift/flow flue/glow glue/go goo/bro brew/stow stew/crow crew/ho who/yo you/throw through"
+
+test w7 with "rocking rift/shocking shift/stocking stiffed/docking diffed/mocking miffed"
+
+test wa with "test w1/test w2/test w3/test w4/test w5/test w6/test w7"
 
 volume diagnostics
 
