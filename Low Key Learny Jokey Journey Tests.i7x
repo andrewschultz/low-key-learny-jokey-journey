@@ -33,7 +33,7 @@ when play begins:
 	let needs be 0;
 	say "[b]Checking rhymable rooms ...[r]";
 	repeat with myrm running through rooms:
-		if myrm is in unrhymable, next;
+		if myrm is unrhymable, next;
 		if guess-table of myrm is table of no good guesses:
 			say "[myrm] needs a good-guess table.";
 			increment needs;

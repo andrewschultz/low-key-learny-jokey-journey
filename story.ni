@@ -93,6 +93,20 @@ to decide whether too-distracted:
 to decide whether immediate-attention of (ru - a rule):
 	no;
 
+section clue numbers
+
+to decide which number is variable-scan-length of (mynum - a number):
+	if mynum is 100: [show shoe]
+		if sco-yo-you is true, decide on 57; [THROW THROUGH]
+		if sco-stow-stew is true and sco-bro-brew is false, decide on 34; [BRO BREW must be next]
+		if sco-crow-crew is true, decide on 23; [HO WHO or YO YOU]
+		decide on 44; [most others are 4-4]
+	else if mynum is 101: [Trust Track]
+		if sco-bussed-back is false, decide on 64; [BUSSED BACK]
+		decide on 55; [CRUST CRACK]
+	say "[b]BUG[r]: no variable-scan-length for [mynum]. Please let me know what you typed.";
+	decide on 44;
+
 chapter offshoots from the universal file
 
 to decide whether vcp-ignore: decide no; [When do we block check-text? In VVFF, when we have Been Buggin]
@@ -176,6 +190,8 @@ sco-un-arm is a truth state that varies.
 book No Noon
 
 there is a room called NoNoon in Hoppin' Heart. NoNoon is north of Hun Harm Fun Farm. printed name of NoNoon is "[if cocoon is moot]Show? Shewn![else]No Noon[end if]". "The sky is completely dark here. Even a sliver of light would be helpful."
+
+[guess-table of nonoon is the table of nonoon guesses.]
 
 sco-go-goon is a truth state that varies.
 sco-co-coon is a truth state that varies.
@@ -291,6 +307,8 @@ sco-knotty-nail is a truth state that varies.
 book Locking Lift
 
 Locking Lift is a room in Hoppin' Heart.
+
+guess-table of locking lift is the table of locking lift guesses.
 
 sco-docking-diffed is a truth state that varies.
 sco-rocking-rift is a truth state that varies.

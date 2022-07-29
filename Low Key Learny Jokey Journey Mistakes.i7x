@@ -11,7 +11,7 @@ mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 
 book guesses by room, alphabetical
 
-table of bane be sane see guesses
+table of bane be sane see guesses [note: you don't have the leet learner here, so MAGICNUM can't be filled in, and even if it could, it would be a mess]
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "cane key"	--	false	--	--	"You don't need any key to unlock the tree."
 "feign fee"	--	false	--	--	"You whine about how [this-game] costs money on top of being a waste of time. Nobody listens."
@@ -19,11 +19,11 @@ mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "pain p/pee"	--	false	--	--	"[this-game] is nonviolent and hopefully devoid of bathroom humor."
 "vain v"	--	false	--	--	"You come to grips with how you are not as humble as you should be."
 
-table of roaring rocks guesses
+table of roaring rocks guesses [note: MAGICNUM doesn't really apply here since you get the leet learner after]
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
-"flooring flocks"	--	false	--	--	"You don't need to be dive-bombed by aerial predators. And I don't have the artistic ability to show you majestic birds, either. Sorry."
-"poring/pouring pox"	--	false	--	--	"You don't need to catch anything, and denting the rocks would not reveal anything[furthers of sco-boring-box]."
-"storing stocks"	--	false	--	--	"That's what the rocks will become, but you want something simpler and smaller and shorter."
+"flooring flocks"	--	false	63	--	"You don't need to be dive-bombed by aerial predators. And I don't have the artistic ability to show you majestic birds, either. Sorry."
+"poring/pouring pox"	--	false	63	--	"You don't need to catch anything, and denting the rocks would not reveal anything[furthers of sco-boring-box]."
+"storing stocks"	--	false	63	--	"That's what the rocks will become, but you want something simpler and smaller and shorter."
 
 this is the box-hidden rule:
 	if boring box is off-stage, the rule succeeds;
@@ -31,16 +31,16 @@ this is the box-hidden rule:
 
 table of no nudge slow sludge guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
-"fo/foe fudge"	--	false	--	--	"This isn't Willy Wonka's Chocolate Factory. Err, Charlie's."
-"joe judge"	--	false	--	--	"No former New York Giants head football coach appears."
-"po/poe pudge"	--	false	--	--	"Weight gain won't help here."
+"fo/foe fudge"	--	false	46	--	"This isn't Willy Wonka's Chocolate Factory. Err, Charlie's."
+"joe judge"	--	false	46	--	"No former New York Giants head football coach appears."
+"po/poe pudge"	--	false	46	--	"Weight gain won't help here."
 
 table of trust track guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
-"cussed cack"	--	false	--	--	"[if player has sussed sack]No, the sack will be worthwhile.[else]There's a useful item here. More useful than such words![end if]"
-"lust lack"	--	false	--	--	"[if just jack is fungible]Jack would still be bugging you in that state[else]You continue to put impure thoughts aside to focus on a really cool text adventure[end if]."
-"must mack"	jack-gone rule	false	--	--	"You don't need memories of Just Jack."
-"rust rack"	--	false	--	--	"That would be a useless item."
+"cussed cack"	--	false	101	--	"[if player has sussed sack]No, the sack will be worthwhile.[else]There's a useful item here. More useful than such words![end if]"
+"lust lack"	--	false	101	--	"[if just jack is fungible]Jack would still be bugging you in that state[else]You continue to put impure thoughts aside to focus on a really cool text adventure[end if]."
+"must mack"	jack-gone rule	false	101	--	"You don't need memories of Just Jack."
+"rust rack"	--	false	101	--	"That would be a useless item."
 
 this is the jack-gone rule:
 	if Just Jack is moot, the rule succeeds;
@@ -48,23 +48,28 @@ this is the jack-gone rule:
 
 table of fun farm hun harm guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
-"one worm/warm"	--	false	--	--	"That doesn't quite work. Maybe the farm needs worms or warm weather, but its survival isn't as important to you as passage north."
+"one worm/warm"	--	false	23	--	"That doesn't quite work. Maybe the farm needs worms or warm weather, but its survival isn't as important to you as passage north."
+
+table of locking lift guesses
+mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
+"socking sift"	--	false	--	--	"<REJECT TEXT>"
+"whocking whiffed"	--	false	--	--	"<REJECT TEXT>"
 
 table of no new show shoe guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
-"blow blew/blue"	--	false	--	--	"You blow off steam that you haven't quite revitalized the [show shoe] yet."
-"cocu"	--	false	--	--	"Your knowledge of former footballers is impressive. (So is mine, since I caught this, eh?)"
-"doh do/due"	--	false	--	--	"There is talking about action or deserving stuff, and there is doing it."
-"fo/foe foo/phoo"	--	false	--	--	"You don't need to be expressing contempt here."
-"grow grue"	--	false	--	--	"You want entertainers who crave the spotlight, not avoid it. Also, you'd prefer them less predatory, too."
-"lo/low lew/lou"	--	false	--	--	"You don't need to call out anyone by name."
-"mo moo"	--	false	--	--	"Cows would not make very exciting performers, [if sco-crow-crew is false]but another animal, or people named after them, might[else]unlike the Crow Crew[end if]."
-"oh oo/ooh"	--	false	--	--	"That's a bit too generic a sound to make, [if sco-yo-you is false]but it gives you ideas[else]and you've already made the right ones, anyway[end if]."
-"po poo/pooh"	--	false	--	--	"There is underpromising and overdelivering, but that's a bit too much. Way too much."
-"row rue"	--	false	--	--	"No, we want a positive environment, here."
-"slow slue/slew"	--	false	--	--	"But this place was a backwater when you got here."
-"so sue"	--	false	--	--	"You don't want to either take or face legal action, which is a lot less exciting than how it's presented in most TV dramas."
-"toe two/too"	--	false	--	--	"Counting your digits would be exciting for nobody."
+"blow blew/blue"	--	false	100	--	"You blow off steam that you haven't quite revitalized the [show shoe] yet."
+"cocu"	--	false	100	--	"Your knowledge of former footballers is impressive. (So is mine, since I caught this, eh?)"
+"doh do/due"	--	false	100	--	"There is talking about action or deserving stuff, and there is doing it."
+"fo/foe foo/phoo"	--	false	100	--	"You don't need to be expressing contempt here."
+"grow grue"	--	false	100	--	"You want entertainers who crave the spotlight, not avoid it. Also, you'd prefer them less predatory, too."
+"lo/low lew/lou"	--	false	100	--	"You don't need to call out anyone by name."
+"mo moo"	--	false	100	--	"Cows would not make very exciting performers, [if sco-crow-crew is false]but another animal, or people named after them, might[else]unlike the Crow Crew[end if]."
+"oh oo/ooh"	--	false	100	--	"That's a bit too generic a sound to make, [if sco-yo-you is false]but it gives you ideas[else]and you've already made the right ones, anyway[end if]."
+"po poo/pooh"	--	false	100	--	"There is underpromising and overdelivering, but that's a bit too much. Way too much."
+"row rue"	--	false	100	--	"No, we want a positive environment, here."
+"slow slue/slew"	--	false	100	--	"But this place was a backwater when you got here."
+"so sue"	--	false	100	--	"You don't want to either take or face legal action, which is a lot less exciting than how it's presented in most TV dramas."
+"toe two/too"	--	false	100	--	"Counting your digits would be exciting for nobody."
 
 book guesses by item, alphabetical
 
