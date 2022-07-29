@@ -41,6 +41,83 @@ TSV:## minimum walkthrough	## walkthrough with all points	## walkthrough with al
 @min
 /^Bane Be Sane, See?
 
+@vc
+#testcase-unavailable-table-of-verb-checks-vc-bare-beach-rule
+>bare beach
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-boring-box-rule
+>boring box
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-bussed-back-rule
+>bussed back
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-co-coon-rule
+>co coon
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-crow-croon-rule
+>crow croon
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-crust-crack-rule
+>crust crack
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-done-dorm-rule
+>done dorm
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-fun-form-rule
+>fun form
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-gee-junk-rule
+>gee junk
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-go-goon-rule
+>go goon
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-grow-grudge-rule
+>grow grudge
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-mo-moon-rule
+>mo moon
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-pear-peach-rule
+>pear peach
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-reap-rune-rule
+>reap rune
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-see-sunk-rule
+>see sunk
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-seep-soon-rule
+>seep soon
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-so-soon-rule
+>so soon
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-un-arm-rule
+>un arm
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-whee-woot-rule
+>whee woot
+{$REJECT}
+
 @ver
 >listen
 You get the feeling your voice could add constructively to the noises, somehow, but it's not critical.
@@ -722,3 +799,90 @@ by one point
 @min
 >score
 WRONG
+
+@vc
+>gonear trick trail
+\\
+#testcase-moot-table-of-verb-checks-vc-bare-beach-rule
+>bare beach
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-boring-box-rule
+>boring box
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-bussed-back-rule
+>bussed back
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-co-coon-rule
+>co coon
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-crow-croon-rule
+>crow croon
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-crust-crack-rule
+>crust crack
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-done-dorm-rule
+>done dorm
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-fun-form-rule
+>fun form
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-gee-junk-rule
+>gee junk
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-go-goon-rule
+>go goon
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-grow-grudge-rule
+>grow grudge
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-in-bane-rule
+>dane d
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-mo-moon-rule
+>mo moon
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-pear-peach-rule
+>pear peach
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-plain-plea-rule
+>plain plea
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-reap-rune-rule
+>reap rune
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-see-sunk-rule
+>see sunk
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-seep-soon-rule
+>seep soon
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-so-soon-rule
+>so soon
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-un-arm-rule
+>un arm
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-whee-woot-rule
+>whee woot
+{$REJECT}

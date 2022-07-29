@@ -8,9 +8,6 @@
 
 * main-thru
 
->ha half
-The Leet Learner is already set to Ha Half.
-
 >plain plea
 by one point
 
@@ -21,6 +18,9 @@ by one point
 by one point
 
 >open box
+
+>ha half
+You set the Leet Learner to Ha Half.
 
 >n
 

@@ -26,6 +26,7 @@ by one point
 
 >n
 
+#testcase-reject-table-of-verb-checks-vc-fun-form-rule
 >fun form
 WRONG
 
@@ -40,6 +41,7 @@ by one point
 
 >n
 
+#testcase-reject-table-of-verb-checks-vc-gee-junk-rule
 >gee junk
 WRONG
 
@@ -52,6 +54,7 @@ by one point
 >gee junk
 by one point
 
+#testcase-reject-table-of-verb-checks-vc-pear-peach-rule
 >pear peach
 WRONG
 
@@ -68,6 +71,7 @@ by one point
 >s
 >e
 
+#testcase-reject-table-of-verb-checks-vc-crust-crack-rule
 >crust crack
 Under Just Jack's watchful eye, you don't feel like you could precipitate such changes. How to get rid of him?
 
@@ -96,6 +100,7 @@ But you don't have leads for any puzzles right now.
 >bare beach
 by one point
 
+#testcase-reject-table-of-verb-checks-vc-reap-rune-rule
 >reap rune
 WRONG
 
