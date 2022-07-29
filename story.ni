@@ -125,7 +125,7 @@ guess-table of Roaring Rocks is table of Roaring Rocks guesses.
 
 understand "storing/stocks" and "storing stocks" as roaring rocks when sco-boring-box is true.
 
-to say back-n-farm: if Nudge Slow Sludge is visited, say "back to ";
+to say back-n-farm: if NNSS is visited, say "back to ";
 
 check going north in Roaring Rocks:
 	if sco-boring-box is false, say "The roaring seems to pull you back." instead;
@@ -301,7 +301,9 @@ sco-mocking-miffed is a truth state that varies.
 
 volume rooms (end)
 
-There is a room called No New Show Shoe in Poppin' Part. "This isn't actually a shoe, of course. It's an area for performances, shaped like a horseshoe. But of course the shape doesn't matter. You need to make it viable! It's a bit worn down.". guess-table of Show Shoe is table of no new show shoe guesses.
+There is a room called No New Show Shoe in Poppin' Part. "This isn't actually a shoe, of course. It's an area for performances, shaped like a horseshoe. But of course the shape doesn't matter. You need to make it viable! It's a bit worn down.". guess-table of Show Shoe is table of no new show shoe guesses. printed name of No New Show Shoe is "[if sco-crow-crew is false]No-New-Show Shoe[else]Whoah-Woo-Show Shoe[end if]".
+
+understand "whoah/woo show/shoe" and "whoah/woo show shoe" and "whoah/woo" and "whoah woo show/shoe" and "whoah woo show shoe" as show shoe when sco-crow-crew is true.
 
 sco-flow-flue is a truth state that varies.
 sco-glow-glue is a truth state that varies.
@@ -634,6 +636,10 @@ rule for printing a parser error when the latest parser error is the noun did no
 	continue the action;
 
 the goto reject rule is listed after the clue half right words rule in the for printing a parser error rulebook.
+
+rule for printing a parser error (this is the default parser error notification rule):
+	say "Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But [b]VERBS[r] will show what you can use.";
+	the rule succeeds;
 
 volume end of game
 

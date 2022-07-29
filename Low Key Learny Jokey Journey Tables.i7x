@@ -119,7 +119,7 @@ this is the vr-boring-box rule:
 a goodrhyme rule (this is the vc-grow-grudge rule):
 	if player is not in NNSS, unavailable;
 	if sco-grow-grudge is true:
-		vcal "You already neutralized [the sludge].";
+		vcal "You already neutralized the [sludge].";
 		already-done;
 	ready;
 
@@ -465,7 +465,7 @@ this is the vr-mocking-miffed rule:
 a goodrhyme rule (this is the vc-flow-flue rule):
 	if player is not in show shoe, unavailable;
 	if sco-flow-flue is true:
-		vcal "You already did this!";
+		vcal "The flow flue is already present!";
 		already-done;
 	ready;
 
@@ -489,7 +489,7 @@ this is the vr-glow-glue rule:
 a goodrhyme rule (this is the vc-go-goo rule):
 	if player is not in show shoe, unavailable;
 	if sco-go-goo is true:
-		vcal "You already did this!";
+		vcal "There's more than enough Go Goo for whoever actually wants it or just fools themselves into thinking they want it.";
 		already-done;
 	ready;
 
@@ -530,8 +530,9 @@ this is the vr-stow-stew rule:
 a goodrhyme rule (this is the vc-ho-who rule):
 	if player is not in show shoe, unavailable;
 	abide by the shoe-food-drink rule;
+	abide by the complete-hype rule;
 	if sco-ho-who is true:
-		vcal "You already did this!";
+		vcal "You already started to hype up the crowd.";
 		already-done;
 	ready;
 
@@ -545,9 +546,7 @@ a goodrhyme rule (this is the vc-yo-you rule):
 		abide by the shoe-food-drink rule;
 		vcp "The crowd isn't quite wound up enough to appreciate it. That sounds like a good answer to a question, though.";
 		not-yet;
-	if sco-yo-you is true:
-		vcal "You already hyped the crowd up completely!";
-		already-done;
+	abide by the complete-hype rule;
 	ready;
 
 this is the vr-yo-you rule:
@@ -605,6 +604,11 @@ a goodrhyme rule (this is the shoe-food-drink rule):
 	if not shoe-food-drink:
 		vcp "There's no crowd to call out to to get them hyped, but if there were, that'd be great!";
 		not-yet;
+
+a goodrhyme rule (this is the complete-hype rule):
+	if sco-yo-you is true:
+		vcal "You already hyped the crowd up completely. Time to give them a show!";
+		already-done;
 
 volume homonym rejections
 
