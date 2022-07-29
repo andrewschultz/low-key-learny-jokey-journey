@@ -80,7 +80,7 @@ TSV:## minimum walkthrough	## walkthrough with all points	## walkthrough with al
 \\
 #testcase-unavailable-table-of-verb-checks-vc-go-goon-rule
 >go goon
-{$REJECT}
+That location or thing doesn't exist or isn't known to you yet.
 \\
 #testcase-unavailable-table-of-verb-checks-vc-grow-grudge-rule
 >grow grudge
@@ -100,7 +100,7 @@ TSV:## minimum walkthrough	## walkthrough with all points	## walkthrough with al
 \\
 #testcase-unavailable-table-of-verb-checks-vc-see-sunk-rule
 >see sunk
-{$REJECT}
+It looks like you may have tried to refer to the room name, or part of it. You often need to riff on the room name, but you never need to use the room name directly.
 \\
 #testcase-unavailable-table-of-verb-checks-vc-seep-soon-rule
 >seep soon
@@ -116,6 +116,78 @@ TSV:## minimum walkthrough	## walkthrough with all points	## walkthrough with al
 \\
 #testcase-unavailable-table-of-verb-checks-vc-whee-woot-rule
 >whee woot
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-bro-brew-rule
+>bro brew
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-crow-crew-rule
+>crow crew
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-docking-diffed-rule
+>docking diffed
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-flow-flue-rule
+>flow flue
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-glow-glue-rule
+>glow glue
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-go-goo-rule
+>go goo
+That location or thing doesn't exist or isn't known to you yet.
+\\
+#testcase-unavailable-table-of-verb-checks-vc-grokking-grift-rule
+>grokking grift
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-grotty-grail-rule
+>grotty grail
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-ho-who-rule
+>ho who
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-knotty-nail-rule
+>knotty nail
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-mocking-miffed-rule
+>mocking miffed
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-potty-pail-rule
+>potty pail
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-rocking-rift-rule
+>rocking rift
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-shocking-shift-rule
+>shocking shift
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-stocking-stiffed-rule
+>stocking stiffed
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-stow-stew-rule
+>stow stew
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-throw-through-rule
+>throw through
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-yo-you-rule
+>yo you
 {$REJECT}
 
 @ver
@@ -180,7 +252,7 @@ by one point
 @vc
 #testcase-reject-table-of-verb-checks-vc-plain-plea-rule
 >plain plea
-WRONG
+You already made a plain plea.
 
 @ver
 >listen
@@ -244,7 +316,7 @@ by one point
 @vc
 #testcase-reject-table-of-verb-checks-vc-boring-box-rule
 >boring box
-WRONG
+You already uncovered the boring box.
 
 @mis
 #+ttc-table-of-roaring-rocks-guesses-storing-stocks
@@ -288,14 +360,14 @@ You set the Leet Learner to Ha Half.
 \\
 #testcase-reject-table-of-verb-checks-vc-go-goon-rule
 >go goon
-WRONG
+You try to form the words, but you don't feel brave enough. Perhaps the right sort of relic would help you.
 >undo
 >undo
 >gonear rare reach
 \\
 #testcase-reject-table-of-verb-checks-vc-bare-beach-rule
 >bare beach
-WRONG
+You should be able to do that, but you lack the necessary implement.
 >undo
 >undo
 
@@ -358,7 +430,7 @@ by one point
 @vc
 #testcase-reject-table-of-verb-checks-vc-grow-grudge-rule
 >grow grudge
-WRONG
+You already neutralized the no-nudge slow sludge.
 
 >n
 
@@ -553,7 +625,7 @@ by one point
 @vc
 #testcase-reject-table-of-verb-checks-vc-bussed-back-rule
 >bussed back
-WRONG
+Just Jack has already been bussed back.
 
 @mis
 #ttc-table-of-trust-track-guesses-must-mack
@@ -797,12 +869,294 @@ The HA HALF button lights up on your Leet Learner.
 by one point
 
 @min
->score
-WRONG
+/^Jotty Jail
+
+@ha
+#ttc-table-of-verb-checks-22-grail
+>zgrotty grail
+The HA HALF button lights up on your Leet Learner, but dimly--perhaps this is a rhyme you don't strictly need to figure to win.
+\\
+#ttc-table-of-verb-checks-22-grotty
+>zgrotty grail
+The HA HALF button lights up on your Leet Learner, but dimly--perhaps this is a rhyme you don't strictly need to figure to win.
+\\
+#ttc-table-of-verb-checks-23-potty
+>potty zpail
+The HA HALF button lights up on your Leet Learner, but dimly--perhaps this is a rhyme you don't strictly need to figure to win.
+\\
+#ttc-table-of-verb-checks-23-pail
+>zpotty pail
+The HA HALF button lights up on your Leet Learner, but dimly--perhaps this is a rhyme you don't strictly need to figure to win.
+\\
+#ttc-table-of-verb-checks-24-knotty
+>knotty znail
+The HA HALF button lights up on your Leet Learner.
+\\
+#ttc-table-of-verb-checks-24-nail
+>zknotty nail
+The HA HALF button lights up on your Leet Learner.
+
+@!min
+>grotty grail
+by one point
+\\
+>potty pail
+by one point
 
 @vc
->gonear trick trail
+#testcase-reject-table-of-verb-checks-vc-grotty-grail-rule
+>grotty grail
+No. The grotty grail was nice to find, but enough of past discoveries. You need to get out of here.
 \\
+#testcase-reject-table-of-verb-checks-vc-potty-pail-rule
+>potty pail
+No. The potty pail was a relief to find, but enough of past discoveries. You need to get out of here.
+
+>knotty nail
+by one point
+
+@min
+/^Locking Lift
+
+@ha
+#ttc-table-of-verb-checks-25-docking
+>docking zdiffed
+The HA HALF button lights up on your Leet Learner.
+\\
+#ttc-table-of-verb-checks-25-diffed
+>zdocking diffed
+The HA HALF button lights up on your Leet Learner.
+\\
+#ttc-table-of-verb-checks-26-rocking
+>rocking zrift
+The HA HALF button lights up on your Leet Learner.
+\\
+#ttc-table-of-verb-checks-26-rift
+>zrocking rift
+The HA HALF button lights up on your Leet Learner.
+\\
+#ttc-table-of-verb-checks-27-grokking
+>grokking zgrift
+The HA HALF button lights up on your Leet Learner.
+\\
+#ttc-table-of-verb-checks-27-grift
+>zgrokking grift
+The HA HALF button lights up on your Leet Learner.
+\\
+#ttc-table-of-verb-checks-28-shocking
+>shocking zshift
+The HA HALF button lights up on your Leet Learner.
+\\
+#ttc-table-of-verb-checks-28-shift
+>zshocking shift
+The HA HALF button lights up on your Leet Learner.
+\\
+#ttc-table-of-verb-checks-29-stocking
+>stocking zstiffed
+The HA HALF button lights up on your Leet Learner.
+\\
+#ttc-table-of-verb-checks-29-stiffed
+>zstocking stiffed
+The HA HALF button lights up on your Leet Learner.
+\\
+#ttc-table-of-verb-checks-30-mocking
+>mocking zmiffed
+The HA HALF button lights up on your Leet Learner.
+\\
+#ttc-table-of-verb-checks-30-miffed
+>zmocking miffed
+The HA HALF button lights up on your Leet Learner.
+
+>grokking grift
+by one point
+
+@min
+/^No New Show Shoe
+
+@ha
+#ttc-table-of-verb-checks-31-flow
+>flow zflue
+The HA HALF button lights up on your Leet Learner.
+\\
+#ttc-table-of-verb-checks-31-flue
+>zflow flue
+The HA HALF button lights up on your Leet Learner.
+\\
+#ttc-table-of-verb-checks-32-glow
+>glow zglue
+The HA HALF button lights up on your Leet Learner.
+\\
+#ttc-table-of-verb-checks-32-glue
+>zglow glue
+The HA HALF button lights up on your Leet Learner.
+\\
+#ttc-table-of-verb-checks-33-go
+>go zgoo
+The HA HALF button lights up on your Leet Learner, but dimly--perhaps this is a rhyme you don't strictly need to figure to win.
+\\
+#ttc-table-of-verb-checks-33-goo
+>zgo goo
+The HA HALF button lights up on your Leet Learner, but dimly--perhaps this is a rhyme you don't strictly need to figure to win.
+\\
+#ttc-table-of-verb-checks-34-brew
+>bro zbrew
+The HA HALF button lights up on your Leet Learner.
+\\
+#ttc-table-of-verb-checks-34-bro
+>zbro brew
+The HA HALF button lights up on your Leet Learner.
+\\
+#ttc-table-of-verb-checks-35-stew
+>stow zstew
+The HA HALF button lights up on your Leet Learner.
+\\
+#ttc-table-of-verb-checks-35-stow
+>zstow stew
+The HA HALF button lights up on your Leet Learner.
+\\
+#ttc-table-of-verb-checks-36-ho
+>ho zwho
+The HA HALF button lights up on your Leet Learner.
+\\
+#ttc-table-of-verb-checks-36-who
+>zho who
+The HA HALF button lights up on your Leet Learner.
+\\
+#ttc-table-of-verb-checks-37-yo
+>yo zyou
+The HA HALF button lights up on your Leet Learner.
+\\
+#ttc-table-of-verb-checks-37-you
+>zyo you
+The HA HALF button lights up on your Leet Learner.
+\\
+#ttc-table-of-verb-checks-38-crow
+>crow zcrew
+The HA HALF button lights up on your Leet Learner.
+\\
+#ttc-table-of-verb-checks-38-crew
+>zcrow crew
+The HA HALF button lights up on your Leet Learner.
+\\
+#ttc-table-of-verb-checks-39-throw
+>throw zthrough
+The HA HALF button lights up on your Leet Learner.
+\\
+#ttc-table-of-verb-checks-39-through
+>zthrow through
+The HA HALF button lights up on your Leet Learner.
+
+@!min
+>go goo
+by one point
+
+@vc
+#testcase-reject-table-of-verb-checks-vc-go-goo-rule
+>go goo
+There's more than enough Go Goo for whoever actually wants it or just fools themselves into thinking they want it.
+
+>flow flue
+by one point
+
+@vc
+#testcase-reject-table-of-verb-checks-vc-flow-flue-rule
+>flow flue
+The flow flue is already present!
+
+>glow glue
+by one point
+
+@vc
+#testcase-reject-table-of-verb-checks-vc-glow-glue-rule
+>glow glue
+You already acquired Glow Glue.
+
+>bro brew
+by one point
+
+@vc
+#testcase-reject-table-of-verb-checks-vc-bro-brew-rule
+>bro brew
+You already have a nice store of Bro Brew.
+
+>stow stew
+by one point
+
+@vc
+#testcase-reject-table-of-verb-checks-vc-stow-stew-rule
+>stow stew
+You already put stew in the flue.
+
+>crow crew
+by one point
+
+@vc
+#testcase-reject-table-of-verb-checks-vc-crow-crew-rule
+>crow crew
+{$REJECT}
+
+>ho who
+by one point
+
+@vc
+#testcase-reject-table-of-verb-checks-vc-ho-who-rule
+>ho who
+You already started to hype up the crowd.
+
+>yo you
+by one point
+
+@vc
+#testcase-reject-table-of-verb-checks-vc-yo-you-rule
+>yo you
+You already hyped the crowd up completely. Time to give them a show!
+
+>throw through
+by one point
+
+@vc
+#testcase-reject-table-of-verb-checks-vc-grokking-grift-rule
+>grokking grift
+You already brought life back to the Whoah-Woo Show Shoe. You don't need to go back.
+
+>docking diffed
+by one point
+
+@vc
+#testcase-reject-table-of-verb-checks-vc-docking-diffed-rule
+>docking diffed
+WRONG
+
+>rocking rift
+by one point
+
+@vc
+#testcase-reject-table-of-verb-checks-vc-rocking-rift-rule
+>rocking rift
+WRONG
+
+>shocking shift
+by one point
+
+@vc
+#testcase-reject-table-of-verb-checks-vc-shocking-shift-rule
+>shocking shift
+WRONG
+
+>stocking stiffed
+by one point
+
+@vc
+#testcase-reject-table-of-verb-checks-vc-stocking-stiffed-rule
+>stocking stiffed
+WRONG
+
+>mocking miffed
+by one point
+
+/^Trick Trail
+
+@vc
 #testcase-moot-table-of-verb-checks-vc-bare-beach-rule
 >bare beach
 {$REJECT}
@@ -885,4 +1239,76 @@ WRONG
 \\
 #testcase-moot-table-of-verb-checks-vc-whee-woot-rule
 >whee woot
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-bro-brew-rule
+>bro brew
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-crow-crew-rule
+>crow crew
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-docking-diffed-rule
+>docking diffed
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-flow-flue-rule
+>flow flue
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-glow-glue-rule
+>glow glue
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-go-goo-rule
+>go goo
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-grokking-grift-rule
+>grokking grift
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-grotty-grail-rule
+>grotty grail
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-ho-who-rule
+>ho who
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-knotty-nail-rule
+>knotty nail
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-mocking-miffed-rule
+>mocking miffed
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-potty-pail-rule
+>potty pail
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-rocking-rift-rule
+>rocking rift
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-shocking-shift-rule
+>shocking shift
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-stocking-stiffed-rule
+>stocking stiffed
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-stow-stew-rule
+>stow stew
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-throw-through-rule
+>throw through
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-yo-you-rule
+>yo you
 {$REJECT}

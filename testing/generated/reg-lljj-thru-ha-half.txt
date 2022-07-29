@@ -241,3 +241,203 @@ The HA HALF button lights up on your Leet Learner.
 >crow croon
 by one point
 
+#ttc-table-of-verb-checks-22-grail
+>zgrotty grail
+The HA HALF button lights up on your Leet Learner, but dimly--perhaps this is a rhyme you don't strictly need to figure to win.
+
+#ttc-table-of-verb-checks-22-grotty
+>zgrotty grail
+The HA HALF button lights up on your Leet Learner, but dimly--perhaps this is a rhyme you don't strictly need to figure to win.
+
+#ttc-table-of-verb-checks-23-potty
+>potty zpail
+The HA HALF button lights up on your Leet Learner, but dimly--perhaps this is a rhyme you don't strictly need to figure to win.
+
+#ttc-table-of-verb-checks-23-pail
+>zpotty pail
+The HA HALF button lights up on your Leet Learner, but dimly--perhaps this is a rhyme you don't strictly need to figure to win.
+
+#ttc-table-of-verb-checks-24-knotty
+>knotty znail
+The HA HALF button lights up on your Leet Learner.
+
+#ttc-table-of-verb-checks-24-nail
+>zknotty nail
+The HA HALF button lights up on your Leet Learner.
+
+>grotty grail
+by one point
+
+>potty pail
+by one point
+
+>knotty nail
+by one point
+
+#ttc-table-of-verb-checks-25-docking
+>docking zdiffed
+The HA HALF button lights up on your Leet Learner.
+
+#ttc-table-of-verb-checks-25-diffed
+>zdocking diffed
+The HA HALF button lights up on your Leet Learner.
+
+#ttc-table-of-verb-checks-26-rocking
+>rocking zrift
+The HA HALF button lights up on your Leet Learner.
+
+#ttc-table-of-verb-checks-26-rift
+>zrocking rift
+The HA HALF button lights up on your Leet Learner.
+
+#ttc-table-of-verb-checks-27-grokking
+>grokking zgrift
+The HA HALF button lights up on your Leet Learner.
+
+#ttc-table-of-verb-checks-27-grift
+>zgrokking grift
+The HA HALF button lights up on your Leet Learner.
+
+#ttc-table-of-verb-checks-28-shocking
+>shocking zshift
+The HA HALF button lights up on your Leet Learner.
+
+#ttc-table-of-verb-checks-28-shift
+>zshocking shift
+The HA HALF button lights up on your Leet Learner.
+
+#ttc-table-of-verb-checks-29-stocking
+>stocking zstiffed
+The HA HALF button lights up on your Leet Learner.
+
+#ttc-table-of-verb-checks-29-stiffed
+>zstocking stiffed
+The HA HALF button lights up on your Leet Learner.
+
+#ttc-table-of-verb-checks-30-mocking
+>mocking zmiffed
+The HA HALF button lights up on your Leet Learner.
+
+#ttc-table-of-verb-checks-30-miffed
+>zmocking miffed
+The HA HALF button lights up on your Leet Learner.
+
+>grokking grift
+by one point
+
+#ttc-table-of-verb-checks-31-flow
+>flow zflue
+The HA HALF button lights up on your Leet Learner.
+
+#ttc-table-of-verb-checks-31-flue
+>zflow flue
+The HA HALF button lights up on your Leet Learner.
+
+#ttc-table-of-verb-checks-32-glow
+>glow zglue
+The HA HALF button lights up on your Leet Learner.
+
+#ttc-table-of-verb-checks-32-glue
+>zglow glue
+The HA HALF button lights up on your Leet Learner.
+
+#ttc-table-of-verb-checks-33-go
+>go zgoo
+The HA HALF button lights up on your Leet Learner, but dimly--perhaps this is a rhyme you don't strictly need to figure to win.
+
+#ttc-table-of-verb-checks-33-goo
+>zgo goo
+The HA HALF button lights up on your Leet Learner, but dimly--perhaps this is a rhyme you don't strictly need to figure to win.
+
+#ttc-table-of-verb-checks-34-brew
+>bro zbrew
+The HA HALF button lights up on your Leet Learner.
+
+#ttc-table-of-verb-checks-34-bro
+>zbro brew
+The HA HALF button lights up on your Leet Learner.
+
+#ttc-table-of-verb-checks-35-stew
+>stow zstew
+The HA HALF button lights up on your Leet Learner.
+
+#ttc-table-of-verb-checks-35-stow
+>zstow stew
+The HA HALF button lights up on your Leet Learner.
+
+#ttc-table-of-verb-checks-36-ho
+>ho zwho
+The HA HALF button lights up on your Leet Learner.
+
+#ttc-table-of-verb-checks-36-who
+>zho who
+The HA HALF button lights up on your Leet Learner.
+
+#ttc-table-of-verb-checks-37-yo
+>yo zyou
+The HA HALF button lights up on your Leet Learner.
+
+#ttc-table-of-verb-checks-37-you
+>zyo you
+The HA HALF button lights up on your Leet Learner.
+
+#ttc-table-of-verb-checks-38-crow
+>crow zcrew
+The HA HALF button lights up on your Leet Learner.
+
+#ttc-table-of-verb-checks-38-crew
+>zcrow crew
+The HA HALF button lights up on your Leet Learner.
+
+#ttc-table-of-verb-checks-39-throw
+>throw zthrough
+The HA HALF button lights up on your Leet Learner.
+
+#ttc-table-of-verb-checks-39-through
+>zthrow through
+The HA HALF button lights up on your Leet Learner.
+
+>go goo
+by one point
+
+>flow flue
+by one point
+
+>glow glue
+by one point
+
+>bro brew
+by one point
+
+>stow stew
+by one point
+
+>crow crew
+by one point
+
+>ho who
+by one point
+
+>yo you
+by one point
+
+>throw through
+by one point
+
+>docking diffed
+by one point
+
+>rocking rift
+by one point
+
+>shocking shift
+by one point
+
+>stocking stiffed
+by one point
+
+>mocking miffed
+by one point
+
+/^Trick Trail
+
