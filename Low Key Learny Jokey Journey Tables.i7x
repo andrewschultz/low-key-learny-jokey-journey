@@ -58,6 +58,12 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "grotty"	"grail"	--	--	false	true	false	false	jotty jail	vc-grotty-grail rule	vr-grotty-grail rule	--	--
 "potty"	"pail"	--	--	false	true	false	false	jotty jail	vc-potty-pail rule	vr-potty-pail rule	--	--
 "knotty"	"nail"	--	--	false	true	true	false	jotty jail	vc-knotty-nail rule	vr-knotty-nail rule	--	--
+"docking"	"diffed"	--	--	false	true	true	false	locking lift	vc-docking-diffed rule	vr-docking-diffed rule	--	--
+"rocking"	"rift"	--	--	false	true	true	false	locking lift	vc-rocking-rift rule	vr-rocking-rift rule	--	--
+"grokking"	"grift"	--	--	false	true	true	false	locking lift	vc-grokking-grift rule	vr-grokking-grift rule	--	--
+"shocking"	"shift"	--	--	false	true	true	false	locking lift	vc-shocking-shift rule	vr-shocking-shift rule	--	--
+"stocking"	"stiffed"	--	--	false	true	true	false	locking lift	vc-stocking-stiffed rule	vr-stocking-stiffed rule	--	--
+"mocking"	"miffed"	--	--	false	true	true	false	locking lift	vc-mocking-miffed rule	vr-mocking-miffed rule	--	--
 
 a goodrhyme rule (this is the vc-in-bane rule):
 	if player is not in Bane Be Sane See, unavailable;
@@ -375,6 +381,76 @@ this is the vr-knotty-nail rule:
 	if sco-potty-pail is false, max-down;
 	if sco-grotty-grail is false, max-down;
 	move player to Locking Lift;
+
+a goodrhyme rule (this is the vc-docking-diffed rule):
+	if player is not in locking lift, unavailable;
+	if sco-docking-diffed is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-docking-diffed rule:
+	now sco-docking-diffed is true;
+	say "Hooray! You figured what to do! You get a point!";
+
+a goodrhyme rule (this is the vc-rocking-rift rule):
+	if player is not in locking lift, unavailable;
+	if sco-rocking-rift is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-rocking-rift rule:
+	now sco-rocking-rift is true;
+	say "Hooray! You figured what to do! You get a point!";
+
+a goodrhyme rule (this is the vc-grokking-grift rule):
+	if player is not in locking lift, unavailable;
+	if sco-grokking-grift is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-grokking-grift rule:
+	now sco-grokking-grift is true;
+	say "Hooray! You figured what to do! You get a point!";
+
+a goodrhyme rule (this is the vc-shocking-shift rule):
+	if player is not in locking lift, unavailable;
+	if sco-shocking-shift is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-shocking-shift rule:
+	now sco-shocking-shift is true;
+	say "Hooray! You figured what to do! You get a point!";
+
+a goodrhyme rule (this is the vc-stocking-stiffed rule):
+	if player is not in locking lift, unavailable;
+	if sco-stocking-stiffed is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-stocking-stiffed rule:
+	now sco-stocking-stiffed is true;
+	say "Hooray! You figured what to do! You get a point!";
+
+a goodrhyme rule (this is the vc-mocking-miffed rule):
+	if player is not in locking lift, unavailable;
+	if sco-docking-diffed is false or sco-rocking-rift is false or sco-grokking-grift is false or sco-shocking-shift is false or sco-stocking-stiffed is false:
+		vcal "You still need to see all the other ways through the lift.";
+		not-yet;
+	if sco-mocking-miffed is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-mocking-miffed rule:
+	now sco-mocking-miffed is true;
+	say "You are on your way to the final!";
+	move player to trick trail;
 
 volume homonym rejections
 

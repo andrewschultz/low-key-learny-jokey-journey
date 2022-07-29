@@ -42,9 +42,9 @@ Poppin' Part is a region.
 
 section scoring
 
-core-max is 21.
+core-max is 27.
 
-min-needed is 21.
+min-needed is 27.
 
 max-bonus is 3.
 
@@ -97,7 +97,7 @@ chapter offshoots from the universal file
 
 to decide whether vcp-ignore: decide no; [When do we block check-text? In VVFF, when we have Been Buggin]
 
-volume rooms
+volume rooms (intro)
 
 book bane be sane see
 
@@ -142,6 +142,8 @@ check opening boring box:
 	say "[line break][i][bracket][b]NOTE:[r][i] for those who played [b][vvff][i], this is the same device you got back then. But if not, you may wish to look into it.[close bracket][line break]";
 	moot boring box;
 	now player has leet learner instead;
+
+volume rooms (mid)
 
 book No Nudge Slow Sludge
 
@@ -285,6 +287,19 @@ to decide what number is jail-bonus:
 sco-grotty-grail is a truth state that varies.
 sco-potty-pail is a truth state that varies.
 sco-knotty-nail is a truth state that varies.
+
+book Locking Lift
+
+Locking Lift is a room in Hoppin' Heart.
+
+sco-docking-diffed is a truth state that varies.
+sco-rocking-rift is a truth state that varies.
+sco-grokking-grift is a truth state that varies.
+sco-shocking-shift is a truth state that varies.
+sco-stocking-stiffed is a truth state that varies.
+sco-mocking-miffed is a truth state that varies.
+
+volume rooms (end)
 
 volume main engine
 
@@ -625,10 +640,6 @@ this is the show-misses rule:
 	if sco-potty-pail is false, say "You could've discovered a [b]POTTY PAIL[r] back in [jotty jail]";
 
 volume unsorted
-
-book Locking Lift
-
-Locking Lift is a room in Hoppin' Heart.
 
 book High Hub
 
