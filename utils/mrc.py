@@ -57,16 +57,21 @@ direct_to_file = False
 open_file_after = False
 this_room = "THISROOM"
 this_vcal = True
+this_vcp = True
 
 add_vcal = defaultdict(bool)
+add_vcp = defaultdict(bool)
 
 while cmd_count < len(sys.argv):
     argr = sys.argv[cmd_count]
     arg = argr.lower()
     arg2 = sys.argv[cmd_count+1].lower() if cmd_count + 1 < len(sys.argv) else ''
-    if '=' in arg:
+    if '=' in arg and not arg.startswith("r="):
         this_vcal = False
         arg = arg.replace('=', '')
+    if '`' in arg:
+        this_vcp = False
+        arg = arg.replace('`', '')
     if arg.startswith("r="):
         this_room = argr[2:].replace('.', ' ').replace('-', ' ')
         print("New room", this_room)
@@ -82,7 +87,7 @@ while cmd_count < len(sys.argv):
         my_words = "{}-{}".format(arg, arg2)
         words_to_proc.append(my_words)
         add_vcal[my_words] = this_vcal
-        this_vcal = True
+        this_vcal = this_vcp = True
         cmd_count += 2
         continue
     elif not valid_word_clump(arg):
@@ -93,7 +98,8 @@ while cmd_count < len(sys.argv):
         arg = re.sub("[^a-z]", "-", arg)
         words_to_proc.append(arg)
         add_vcal[arg] = this_vcal
-        this_vcal = True
+        add_vcp[arg] = this_vcp
+        this_vcal = this_vcp = True
     cmd_count += 1
 
 if not len(words_to_proc):
