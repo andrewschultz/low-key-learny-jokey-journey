@@ -42,11 +42,11 @@ Poppin' Part is a region.
 
 section scoring
 
-core-max is 27.
+core-max is 35.
 
-min-needed is 27.
+min-needed is 35.
 
-max-bonus is 3.
+max-bonus is 4.
 
 cur-bonus is 0.
 
@@ -300,6 +300,18 @@ sco-stocking-stiffed is a truth state that varies.
 sco-mocking-miffed is a truth state that varies.
 
 volume rooms (end)
+
+There is a room called No New Show Shoe in Poppin' Part. "This isn't actually a shoe, of course. It's an area for performances, shaped like a horseshoe. But of course the shape doesn't matter. You need to make it viable! It's a bit worn down.". guess-table of Show Shoe is table of no new show shoe guesses.
+
+sco-flow-flue is a truth state that varies.
+sco-glow-glue is a truth state that varies.
+sco-go-goo is a truth state that varies.
+sco-bro-brew is a truth state that varies.
+sco-stow-stew is a truth state that varies.
+sco-ho-who is a truth state that varies.
+sco-yo-you is a truth state that varies.
+sco-crow-crew is a truth state that varies.
+sco-throw-through is a truth state that varies.
 
 volume main engine
 
@@ -638,6 +650,7 @@ this is the show-misses rule:
 	if sco-plain-plea is false, say "You could've made a [b]PLAIN PLEA[r] back at the start in [sane see]";
 	if sco-grotty-grail is false, say "You could've discovered a [b]GROTTY GRAIL[r] back in [jotty jail]";
 	if sco-potty-pail is false, say "You could've discovered a [b]POTTY PAIL[r] back in [jotty jail]";
+	if sco-go-goo is false, say "You could've made [b]GO GOO[r] in [show shoe].";
 
 volume unsorted
 

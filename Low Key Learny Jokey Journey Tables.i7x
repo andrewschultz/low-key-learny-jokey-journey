@@ -64,6 +64,15 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "shocking"	"shift"	--	--	false	true	true	false	locking lift	vc-shocking-shift rule	vr-shocking-shift rule	--	--
 "stocking"	"stiffed"	--	--	false	true	true	false	locking lift	vc-stocking-stiffed rule	vr-stocking-stiffed rule	--	--
 "mocking"	"miffed"	--	--	false	true	true	false	locking lift	vc-mocking-miffed rule	vr-mocking-miffed rule	--	--
+"flow"	"flue"	--	--	false	true	true	false	show shoe	vc-flow-flue rule	vr-flow-flue rule	--	--
+"glow"	"glue"	--	--	false	true	true	false	show shoe	vc-glow-glue rule	vr-glow-glue rule	--	--
+"go"	"goo"	--	--	false	true	false	false	show shoe	vc-go-goo rule	vr-go-goo rule	--	--
+"bro"	"brew"	--	--	false	true	true	false	show shoe	vc-bro-brew rule	vr-bro-brew rule	--	--
+"stow"	"stew"	--	--	false	true	true	false	show shoe	vc-stow-stew rule	vr-stow-stew rule	--	--
+"ho"	"who"	--	--	false	true	true	false	show shoe	vc-ho-who rule	vr-ho-who rule	--	--
+"yo"	"you"	--	--	false	true	true	false	show shoe	vc-yo-you rule	vr-yo-you rule	--	--
+"crow"	"crew"	--	--	false	true	true	false	show shoe	vc-crow-crew rule	vr-crow-crew rule	--	--
+"throw"	"through"	--	--	false	true	true	false	show shoe	vc-throw-through rule	vr-throw-through rule	--	--
 
 a goodrhyme rule (this is the vc-in-bane rule):
 	if player is not in Bane Be Sane See, unavailable;
@@ -407,13 +416,14 @@ this is the vr-rocking-rift rule:
 a goodrhyme rule (this is the vc-grokking-grift rule):
 	if player is not in locking lift, unavailable;
 	if sco-grokking-grift is true:
-		vcal "You already did this!";
+		vcal "You already brought life back to the [show shoe]. You don't need to go back.";
 		already-done;
 	ready;
 
 this is the vr-grokking-grift rule:
+	say "[if sco-grokking-grift is false]You enter the Locking Lift and wind up in what seems to be a large amphitheater. It's empty, but it could put on a decent show[else]Back to the [show shoe].";
 	now sco-grokking-grift is true;
-	say "Hooray! You figured what to do! You get a point!";
+	move player to New Show Shoe;
 
 a goodrhyme rule (this is the vc-shocking-shift rule):
 	if player is not in locking lift, unavailable;
@@ -440,7 +450,7 @@ this is the vr-stocking-stiffed rule:
 a goodrhyme rule (this is the vc-mocking-miffed rule):
 	if player is not in locking lift, unavailable;
 	if sco-docking-diffed is false or sco-rocking-rift is false or sco-grokking-grift is false or sco-shocking-shift is false or sco-stocking-stiffed is false:
-		vcal "You still need to see all the other ways through the lift.";
+		vcp "You still need to see all the other ways through the lift.";
 		not-yet;
 	if sco-mocking-miffed is true:
 		vcal "You already did this!";
@@ -451,6 +461,149 @@ this is the vr-mocking-miffed rule:
 	now sco-mocking-miffed is true;
 	say "You are on your way to the final!";
 	move player to trick trail;
+
+a goodrhyme rule (this is the vc-flow-flue rule):
+	if player is not in show shoe, unavailable;
+	if sco-flow-flue is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-flow-flue rule:
+	now sco-flow-flue is true;
+	say "A whole mess of tubes appears! Stuff could totally zoom through it. But many of them look badly damaged.";
+	abide by the flue-and-glue rule;
+
+a goodrhyme rule (this is the vc-glow-glue rule):
+	if player is not in show shoe, unavailable;
+	if sco-glow-glue is true:
+		vcal "You already acquired Glow Glue[if sco-flow-flue is true]. In fact, you already used it to prepare the flow flue[end if].";
+		already-done;
+	ready;
+
+this is the vr-glow-glue rule:
+	now sco-glow-glue is true;
+	say "Hooray! You figured what to do! You get a point!";
+
+a goodrhyme rule (this is the vc-go-goo rule):
+	if player is not in show shoe, unavailable;
+	if sco-go-goo is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-go-goo rule:
+	now sco-go-goo is true;
+	say "A huge pile of weird 'energy burst' snacks appears at your feet. You have no idea whether or not they're nutritious, but with that colorful packaging, they can be sold for a markup during and after the performance, to ensure the viability of the [show shoe]. Yay, commerce![paragraph break]You put them off to the side. They'll be useful once the show gets rocking.";
+
+a goodrhyme rule (this is the vc-bro-brew rule):
+	if player is not in show shoe, unavailable;
+	if sco-flow-flue is false or sco-glow-glue is false:
+		vcp "That's a good idea, but you have nowhere reliable to store such a beverage! Well, not yet.";
+		not-yet;
+	if sco-bro-brew is true:
+		vcal "You already have a nice store of Bro Brew.";
+		already-done;
+	ready;
+
+this is the vr-bro-brew rule:
+	now sco-bro-brew is true;
+	say "Through half of the Flow Flue, you watch as Bro Brew is pumped in.";
+	abide by the stew-and-brew rule;
+
+a goodrhyme rule (this is the vc-stow-stew rule):
+	if player is not in show shoe, unavailable;
+	if sco-flow-flue is false or sco-glow-glue is false:
+		vcal "That's a good idea, but you have nowhere reliable to store something to eat! Well, not yet.";
+		not-yet;
+	if sco-stow-stew is true:
+		vcal "You already put stew in the flue.";
+		already-done;
+	ready;
+
+this is the vr-stow-stew rule:
+	now sco-stow-stew is true;
+	say "Some stew starts flowing through some of the flues.";
+	abide by the stew-and-brew rule;
+
+a goodrhyme rule (this is the vc-ho-who rule):
+	if player is not in show shoe, unavailable;
+	abide by the shoe-food-drink rule;
+	if sco-ho-who is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-ho-who rule:
+	now sco-ho-who is true;
+	say "'Ho! WHO?' you call out. The crowd seems to react favorably, waiting for the right phrase to go totally crazy.";
+
+a goodrhyme rule (this is the vc-yo-you rule):
+	if player is not in show shoe, unavailable;
+	if sco-ho-who is false:
+		abide by the shoe-food-drink rule;
+		vcp "The crowd isn't quite wound up enough to appreciate it. That sounds like a good answer to a question, though.";
+		not-yet;
+	if sco-yo-you is true:
+		vcal "You already hyped the crowd up completely!";
+		already-done;
+	ready;
+
+this is the vr-yo-you rule:
+	now sco-yo-you is true;
+	say "'Yo! YOU!' you cry, and there's a slightly undignified call-and-response, featuring both you and the crowd asking 'Ho! Who?' and responding. It's not brilliant discourse, but everyone's all jazzed for a bigger show now.";
+
+a goodrhyme rule (this is the vc-crow-crew rule):
+	if player is not in show shoe, unavailable;
+	unless shoe-food-drink:
+		vcp "Without reliable food and drink to support the Crow Crew, who would be ideal performers here, it's a no-go. So you need to do a bit more.";
+		not-yet;
+	if sco-crow-crew is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-crow-crew rule:
+	now sco-crow-crew is true;
+	say "The Crow Crew appears! They look ready to give a performance replete with humor, wit, song, pyrotechnics, and so forth. You just need to find a way to make a grand entrance.";
+
+a goodrhyme rule (this is the vc-throw-through rule):
+	if player is not in show shoe, unavailable;
+	if sco-crow-crew is false:
+		vcp "You have no performers to (figuratively) throw through and present to a crowd! Well, not yet.";
+		not-yet;
+	if sco-yo-you is false:
+		vcp "You haven't properly hyped the Crow Crew yet! That's got to be easier than a tough phrase like 'throw through,' though.";
+		not-yet;
+	if sco-throw-through is true:
+		vcal "You already hyped the crowd! You shouldn't be able to do this, but I want this warning in just in case.";
+		already-done;
+	ready;
+
+this is the vr-throw-through rule:
+	now sco-throw-through is true;
+	say "The Crow Crew makes a dramatic entrance, thanks to your planning! The show is a big success. Everyone congratulates you. Your job here done, you return back...";
+	move player to Locking Lift;
+	if sco-go-goo is false, max-down;
+
+section auxiliary rules
+
+to decide whether shoe-food-drink:
+	if sco-stow-stew is true and sco-bro-brew is true, yes;
+	no;
+
+this is the flue-and-glue rule:
+	if sco-flow-flue is true and sco-glow-glue is true:
+		say "With the Glow Glue, you patch up the flow flue as best you can. Surprisingly, you find some hoses to rinse them so they're clean enough that food and drink can go through them."
+
+this is the stew-and-brew rule:
+	if sco-bro-brew is true and sco-stow-stew is true:
+		say "With a reliable source of food and drink (which, man, they smell pretty good) a crowd starts to gather. You can't do any rhyming stuff to them directly, but perhaps there's some general stuff you can shout.";
+
+a goodrhyme rule (this is the shoe-food-drink rule):
+	if not shoe-food-drink:
+		vcal "There's no crowd to call out to to get them hyped, but if there were, that'd be great!";
+		not-yet;
 
 volume homonym rejections
 

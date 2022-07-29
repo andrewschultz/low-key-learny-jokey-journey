@@ -50,6 +50,22 @@ table of fun farm hun harm guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "one worm/warm"	--	false	--	--	"That doesn't quite work. Maybe the farm needs worms or warm weather, but its survival isn't as important to you as passage north."
 
+table of no new show shoe guesses
+mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
+"blow blew/blue"	--	false	--	--	"You blow off steam that you haven't quite revitalized the [show shoe] yet."
+"cocu"	--	false	--	--	"Your knowledge of former footballers is impressive. (So is mine, since I caught this, eh?)"
+"doh do/due"	--	false	--	--	"There is talking about action or deserving stuff, and there is doing it."
+"fo/foe foo/phoo"	--	false	--	--	"You don't need to be expressing contempt here."
+"grow grue"	--	false	--	--	"You want entertainers who crave the spotlight, not avoid it. Also, you'd prefer them less predatory, too."
+"lo/low lew/lou"	--	false	--	--	"You don't need to call out anyone by name."
+"mo moo"	--	false	--	--	"Cows would not make very exciting performers, [if sco-crow-crew is false]but another animal, or people named after them, might[else]unlike the Crow Crew[end if]."
+"oh oo/ooh"	--	false	--	--	"That's a bit too generic a sound to make, [if sco-yo-you is false]but it gives you ideas[else]and you've already made the right ones, anyway[end if]."
+"po poo/pooh"	--	false	--	--	"There is underpromising and overdelivering, but that's a bit too much. Way too much."
+"row rue"	--	false	--	--	"No, we want a positive environment, here."
+"slow slue/slew"	--	false	--	--	"But this place was a backwater when you got here."
+"so sue"	--	false	--	--	"You don't want to either take or face legal action, which is a lot less exciting than how it's presented in most TV dramas."
+"toe two/too"	--	false	--	--	"Counting your digits would be exciting for nobody."
+
 book guesses by item, alphabetical
 
 to say furthers of (ts - a truth state): if ts is true, say " further"
