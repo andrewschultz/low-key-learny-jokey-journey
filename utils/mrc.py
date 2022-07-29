@@ -5,6 +5,7 @@
 
 import re
 import sys
+from collections import defaultdict
 import mytools as mt
 
 out_file = "mrc.txt"
@@ -21,14 +22,15 @@ def usage(my_word = ""):
     sys.exit()
 
 def valid_word_clump(arg):
-    return re.search("^[a-z]+-[a-z]+$", arg)
+    return re.search("^[a-z]+[/. -][a-z]+$", arg)
 
 def add_basic_rules(w):
     print("a goodrhyme rule (this is the vc-{} rule):".format(w))
     print("\tif player is not in {}, unavailable;".format(this_room))
-    print("\tif sco-{} is false:".format(w))
-    print("\t\tvcal \"You still need to do something!\";")
-    print("\t\tnot-yet;")
+    if w in add_vcal and add_vcal[w]:
+        print("\tif sco-{} is false:".format(w))
+        print("\t\tvcal \"You still need to do something!\";")
+        print("\t\tnot-yet;")
     print("\tif sco-{} is true:".format(w))
     print("\t\tvcal \"You already did this!\";")
     print("\t\talready-done;")
@@ -54,14 +56,22 @@ words_to_proc = []
 direct_to_file = False
 open_file_after = False
 this_room = "THISROOM"
+this_vcal = True
+
+add_vcal = defaultdict(bool)
 
 while cmd_count < len(sys.argv):
     argr = sys.argv[cmd_count]
     arg = argr.lower()
     arg2 = sys.argv[cmd_count+1].lower() if cmd_count + 1 < len(sys.argv) else ''
+    if '=' in arg:
+        this_vcal = False
+        arg = arg.replace('=', '')
     if arg.startswith("r="):
         this_room = argr[2:].replace('.', ' ').replace('-', ' ')
         print("New room", this_room)
+    elif arg == '/':
+        pass
     elif arg == 'f':
         direct_to_file = True
         open_file_after = True
@@ -69,7 +79,10 @@ while cmd_count < len(sys.argv):
         direct_to_file = True
         continue
     elif re.search("^[a-z]+$", arg) and re.search("^[a-z]+$", arg2):
-        words_to_proc.append("{}-{}".format(arg, arg2))
+        my_words = "{}-{}".format(arg, arg2)
+        words_to_proc.append(my_words)
+        add_vcal[my_words] = this_vcal
+        this_vcal = True
         cmd_count += 2
         continue
     elif not valid_word_clump(arg):
@@ -77,7 +90,10 @@ while cmd_count < len(sys.argv):
     elif arg == '':
         usage()
     else:
+        arg = re.sub("[^a-z]", "-", arg)
         words_to_proc.append(arg)
+        add_vcal[arg] = this_vcal
+        this_vcal = True
     cmd_count += 1
 
 if not len(words_to_proc):
