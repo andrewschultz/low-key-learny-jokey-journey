@@ -46,7 +46,7 @@ core-max is 35.
 
 min-needed is 35.
 
-max-bonus is 4.
+max-bonus is 5.
 
 cur-bonus is 0.
 
@@ -161,13 +161,15 @@ volume rooms (mid)
 
 book No Nudge Slow Sludge
 
-NNSS is north of Roaring Rocks. it is in Hoppin' Heart. printed name is "No-Nudge Slow Sludge". "[if sco-grow-grudge is false]Some [sludge] bubbles almost all around, blocking passage west, south and north[else]The [sludge] to the west, north and south no longer seems intimidating[end if]. There's passage back south[if sco-grow-grudge is true] as well[end if], though you reckon you're done there."
+NNSS is north of Roaring Rocks. it is in Hoppin' Heart. printed name is "No-Nudge Slow Sludge". "[if sco-grow-grudge is false]Some [sludge] bubbles almost all around, blocking passage west, south and north[else]The [sludge] to the west, north and south no longer seems intimidating[end if]. There's passage back south[if sco-grow-grudge is true] as well[end if], though you reckon you're done there[if sturdy stalk is in NNSS]. The sturdy stalk leads back up to High Hub, as well[end if]."
 
 guess-table of NNSS is table of no nudge slow sludge guesses.
 
 check going in nnss:
 	if sco-grow-grudge is false and noun is not south:
 		say "The [sludge] slows you up, which makes you mad, but not mad enough to trek through it." instead;
+
+chapter no nudge slow sludge (scenery)
 
 there is thing called no nudge slow sludge. It is scenery. It is in NNSS. printed name is "no-nudge slow sludge".
 
@@ -178,6 +180,10 @@ after printing the locale description for NNSS when NNSS is unvisited:
 		say "[i][bracket][b]NOTE:[r] [i]you don't need to go back to Roaring Rocks/Storing Stocks again. If you wish to track this sort of thing, [b]GUIDE GONG[r][i] will shut you out of completed areas, [b]STRIDE STRONG[r][i] will remove these restrictions, and [b]PRIDE PRONG[r][i] is like the gong, except it will give you a poke to visit rooms where you can still get a bonus point.[close bracket][r][line break]";
 		now guide-gong-warn is true;
 	continue the action;
+
+chapter sturdy stalk
+
+the sturdy stalk is scenery. "You can climb back up.".
 
 book Hun Harm Fun Farm
 
@@ -304,11 +310,15 @@ sco-grotty-grail is a truth state that varies.
 sco-potty-pail is a truth state that varies.
 sco-knotty-nail is a truth state that varies.
 
-book Locking Lift
+book High Hub
 
-Locking Lift is a room in Hoppin' Heart.
+High Hub is a room in Hoppin' Heart. "A locking lift offers transport, but to where? Well, you have to ask it. [if sco-sigh-sub is true]You can go back down to make more good guesses and get more clues, if you want[else]It seems like you're stuck up here with the lift, which may or may not be too cryptic. Or are you? Perhaps you can resign yourself to going back down and making good guesses and getting more clues along the way[end if]."
 
-guess-table of locking lift is the table of locking lift guesses.
+The locking lift is a rhymable in High Hub. It is scenery. "The locking lift seems to have a list of places it can go, or emotions you can express to see a new place. The unvisited ones are blurred out, of course." [?? if you got MOCKING MIFFED first, then you are in luck]
+
+guess-table of High Hub is the table of High Hub guesses.
+
+sco-sigh-sub is a truth state that varies.
 
 sco-docking-diffed is a truth state that varies.
 sco-rocking-rift is a truth state that varies.
@@ -677,10 +687,6 @@ this is the show-misses rule:
 	if sco-go-goo is false, say "You could've made [b]GO GOO[r] in [show shoe].";
 
 volume unsorted
-
-book High Hub
-
-High Hub is a room.
 
 book people
 

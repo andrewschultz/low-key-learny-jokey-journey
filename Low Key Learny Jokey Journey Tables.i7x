@@ -58,12 +58,13 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "grotty"	"grail"	--	--	false	true	false	false	jotty jail	vc-grotty-grail rule	vr-grotty-grail rule	--	--
 "potty"	"pail"	--	--	false	true	false	false	jotty jail	vc-potty-pail rule	vr-potty-pail rule	--	--
 "knotty"	"nail"	--	--	false	true	true	false	jotty jail	vc-knotty-nail rule	vr-knotty-nail rule	--	--
-"docking"	"diffed"	--	--	false	true	true	false	locking lift	vc-docking-diffed rule	vr-docking-diffed rule	--	--
-"rocking"	"rift"	--	--	false	true	true	false	locking lift	vc-rocking-rift rule	vr-rocking-rift rule	--	--
-"grokking"	"grift"	--	--	false	true	true	false	locking lift	vc-grokking-grift rule	vr-grokking-grift rule	--	--
-"shocking"	"shift"	--	--	false	true	true	false	locking lift	vc-shocking-shift rule	vr-shocking-shift rule	--	--
-"stocking"	"stiffed"	--	--	false	true	true	false	locking lift	vc-stocking-stiffed rule	vr-stocking-stiffed rule	--	--
-"mocking"	"miffed"	--	--	false	true	true	false	locking lift	vc-mocking-miffed rule	vr-mocking-miffed rule	--	--
+"sigh"	"sub"	--	--	false	true	false	false	high hub	vc-sigh-sub rule	vr-sigh-sub rule	--	--
+"docking"	"diffed"	--	--	false	true	true	false	High Hub	vc-docking-diffed rule	vr-docking-diffed rule	--	--
+"grokking"	"grift"	--	--	false	true	true	false	High Hub	vc-grokking-grift rule	vr-grokking-grift rule	--	--
+"rocking"	"rift"	--	--	false	true	true	false	High Hub	vc-rocking-rift rule	vr-rocking-rift rule	--	--
+"shocking"	"shift"	--	--	false	true	true	false	High Hub	vc-shocking-shift rule	vr-shocking-shift rule	--	--
+"stocking"	"stiffed"	--	--	false	true	true	false	High Hub	vc-stocking-stiffed rule	vr-stocking-stiffed rule	--	--
+"mocking"	"miffed"	--	--	false	true	true	false	High Hub	vc-mocking-miffed rule	vr-mocking-miffed rule	--	--
 "flow"	"flue"	--	--	false	true	true	false	show shoe	vc-flow-flue rule	vr-flow-flue rule	--	--
 "glow"	"glue"	--	--	false	true	true	false	show shoe	vc-glow-glue rule	vr-glow-glue rule	--	--
 "go"	"goo"	--	--	false	true	false	false	show shoe	vc-go-goo rule	vr-go-goo rule	--	--
@@ -389,10 +390,25 @@ this is the vr-knotty-nail rule:
 	say "Aha! There's something flawed. A knotty nail. You pull at it, and slowly it comes loose. It's surprisingly sharp. Then you start chipping away at various cracks until they grow bigger and crumble. The snotty snail is alerted, but by then you've got enough debris in your cell to fend it off. You flee, not caring where you're going...";
 	if sco-potty-pail is false, max-down;
 	if sco-grotty-grail is false, max-down;
-	move player to Locking Lift;
+	move player to High Hub;
+
+a goodrhyme rule (this is the vc-sigh-sub rule):
+	if player is not in high hub, unavailable;
+	if sco-sigh-sub is true:
+		vcal "No need to sigh twice. It will save emotional energy and keystrokes if you just type [b]DOWN[r] or [b]D[r].";
+		already-done;
+	ready;
+
+this is the vr-sigh-sub rule:
+	say "You give up, well, sort of ... with the [if sco-sigh-sub is true]knowledge[else]hope[end if] that there's something below. [one of]Strangely, a[or]That same old[stopping] sturdy stalk appears for you to climb down, and you do, back to [nnss].";
+	move sturdy stalk to NNSS;
+	now High Hub is mapped above NNSS;
+	now NNSS is mapped below HigH Hub;
+	now sco-sigh-sub is true;
+	move player to NNSS;
 
 a goodrhyme rule (this is the vc-docking-diffed rule):
-	if player is not in locking lift, unavailable;
+	if player is not in High Hub, unavailable;
 	if sco-docking-diffed is true:
 		vcal "You already did this!";
 		already-done;
@@ -403,7 +419,7 @@ this is the vr-docking-diffed rule:
 	say "Hooray! You figured what to do! You get a point!";
 
 a goodrhyme rule (this is the vc-rocking-rift rule):
-	if player is not in locking lift, unavailable;
+	if player is not in High Hub, unavailable;
 	if sco-rocking-rift is true:
 		vcal "You already did this!";
 		already-done;
@@ -414,7 +430,7 @@ this is the vr-rocking-rift rule:
 	say "Hooray! You figured what to do! You get a point!";
 
 a goodrhyme rule (this is the vc-grokking-grift rule):
-	if player is not in locking lift, unavailable;
+	if player is not in High Hub, unavailable;
 	if sco-grokking-grift is true:
 		vcal "You already brought life back to the [show shoe]. You don't need to go back.";
 		already-done;
@@ -426,7 +442,7 @@ this is the vr-grokking-grift rule:
 	move player to New Show Shoe;
 
 a goodrhyme rule (this is the vc-shocking-shift rule):
-	if player is not in locking lift, unavailable;
+	if player is not in High Hub, unavailable;
 	if sco-shocking-shift is true:
 		vcal "You already did this!";
 		already-done;
@@ -437,7 +453,7 @@ this is the vr-shocking-shift rule:
 	say "Hooray! You figured what to do! You get a point!";
 
 a goodrhyme rule (this is the vc-stocking-stiffed rule):
-	if player is not in locking lift, unavailable;
+	if player is not in High Hub, unavailable;
 	if sco-stocking-stiffed is true:
 		vcal "You already did this!";
 		already-done;
@@ -448,7 +464,7 @@ this is the vr-stocking-stiffed rule:
 	say "Hooray! You figured what to do! You get a point!";
 
 a goodrhyme rule (this is the vc-mocking-miffed rule):
-	if player is not in locking lift, unavailable;
+	if player is not in High Hub, unavailable;
 	if sco-docking-diffed is false or sco-rocking-rift is false or sco-grokking-grift is false or sco-shocking-shift is false or sco-stocking-stiffed is false:
 		vcp "You still need to see all the other ways through the lift.";
 		not-yet;
@@ -583,7 +599,7 @@ a goodrhyme rule (this is the vc-throw-through rule):
 this is the vr-throw-through rule:
 	now sco-throw-through is true;
 	say "The Crow Crew makes a dramatic entrance, thanks to your planning! The show is a big success. Everyone congratulates you. Your job here done, you return back...";
-	move player to Locking Lift;
+	move player to High Hub;
 	if sco-go-goo is false, max-down;
 
 section auxiliary rules
