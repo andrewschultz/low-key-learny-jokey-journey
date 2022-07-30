@@ -211,7 +211,7 @@ book No Noon
 
 there is a room called NoNoon in Hoppin' Heart. NoNoon is north of Hun Harm Fun Farm. printed name of NoNoon is "[if cocoon is moot]Show? Shewn![else]No Noon[end if]". "The sky is completely dark here. Even a sliver of light would be helpful."
 
-[guess-table of nonoon is the table of nonoon guesses.]
+guess-table of nonoon is the table of nonoon guesses.
 
 sco-go-goon is a truth state that varies.
 sco-co-coon is a truth state that varies.
@@ -251,6 +251,8 @@ carry out going to TTTT when TTTT is unvisited:
 
 TTTT is north of One Warm Stun Storm. printed name is "The (Thunk!) Tree Trunk". it is in Hoppin' Heart. "Passage any way except back south is too dense here. The tree trunk you ran into still stands here, [if sco-see-sunk is true]cut down to size[else]and you wish you could cut it down to size as revenge for running into it[end if]."
 
+guess-table of TTTT is table of Thunk Tree Trunk guesses.
+
 sco-see-sunk is a truth state that varies.
 sco-gee-junk is a truth state that varies.
 
@@ -259,13 +261,17 @@ sco-pear-peach is a truth state that varies.
 
 chapter Tree Trunk
 
-the Tree Trunk is scenery in TTTT. "[if sco-gee-junk is true]Nothing besides the [FRUIT] is in the tree trunk[else if sco-see-sunk is true]You get the feeling something semi-valuable could be in the tree trunk, if you just asked right[else]The tree trunk is tough to climb, but it's wide. Perhaps you could make it a little less intimidating[end if]."
+the Thunk Tree Trunk is scenery in TTTT. "[if sco-gee-junk is true]Nothing besides the [FRUIT] is in the tree trunk[else if sco-see-sunk is true]You get the feeling something semi-valuable could be in the tree trunk, if you just asked right[else]The tree trunk is tough to climb, but it's wide. Perhaps you could make it a little less intimidating[end if].". printed name of Thunk Tree Trunk is "(thunk) tree trunk".
 
 chapter Free Fruit
 
-Free Fruit is scenery. "Whatever the FREE FRUIT is, you get no signs of it. Perhaps the free fruit you need will pop up elsewhere."
+Free Fruit is a rhymable. it is scenery. "Whatever the FREE FRUIT is, you get no signs of it. Perhaps the free fruit you need will pop up elsewhere."
 
 check taking free fruit: say "Best to figure out what's in it, or what it can produce." instead;
+
+guess-table of free fruit is the table of free fruit guesses.
+
+chapter pear peach
 
 the pear peach is a thing.
 
@@ -285,6 +291,8 @@ sco-crust-crack is a truth state that varies.
 book Rare Reach
 
 Rare Reach is north of Trust Track. it is in Hoppin' Heart. printed name of Rare Reach is "[if sco-bare-beach is true]Bare Beach[else]Rare Reach[end if]".
+
+guess-table of rare reach is the table of rare reach guesses.
 
 sco-bare-beach is a truth state that varies.
 
@@ -309,6 +317,8 @@ book Jotty Jail
 
 Jotty Jail is a room in Hoppin' Heart. "Well, the walls are scribbled-over here. The way out is guarded by a snotty snail. It looks pretty well-kept-up here, so it's tricky to get out, unless you know what to look for. [jotty-bonus]."
 
+guess-table of jotty jail is the table of jotty jail guesses.
+
 to say jotty-bonus:
 	if jail-bonus is 2:
 		say "You've probably found enough odd stuff";
@@ -328,8 +338,6 @@ book High Hub
 
 High Hub is a room in Hoppin' Heart. "A locking lift offers transport, but to where? Well, you have to ask it. [if sco-sigh-sub is true]You can go back down to make more good guesses and get more clues, if you want[else]It seems like you're stuck up here with the lift, which may or may not be too cryptic. Or are you? Perhaps you can resign yourself to going back down and making good guesses and getting more clues along the way[end if]."
 
-The locking lift is a rhymable in High Hub. It is scenery. "The locking lift seems to have a list of places it can go, or emotions you can express to see a new place. The unvisited ones are blurred out, of course." [?? if you got MOCKING MIFFED first, then you are in luck]
-
 guess-table of High Hub is the table of High Hub guesses.
 
 sco-sigh-sub is a truth state that varies.
@@ -340,6 +348,12 @@ sco-grokking-grift is a truth state that varies.
 sco-shocking-shift is a truth state that varies.
 sco-stocking-stiffed is a truth state that varies.
 sco-mocking-miffed is a truth state that varies.
+
+chapter locking lift
+
+The locking lift is a rhymable in High Hub. It is scenery. "The locking lift seems to have a list of places it can go, or emotions you can express to see a new place. The unvisited ones are blurred out, of course." [?? if you got MOCKING MIFFED first, then you are in luck]
+
+guess-table of locking lift is the table of locking lift guesses.
 
 volume rooms (end)
 
