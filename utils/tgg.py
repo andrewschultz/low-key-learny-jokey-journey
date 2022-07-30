@@ -4,17 +4,18 @@
 
 import sys
 import re
-from collections import defaultdict
 
+rows = 0
 cmd_count = 1
 my_room_or_thing = "unnamed room"
 
-string_array = []
+base_string_array = []
+out_string_array = []
 
-rule_creation_dict = defaultdict(bool)
+rule_creation_list = []
 
-leet_rule = '--'
-general_rule = '--'
+this_leet_rule = '--'
+this_general_rule = '--'
 default_leet_rule = '--'
 magic_number = '--'
 
@@ -30,8 +31,20 @@ def usage():
     print("Sample usage: tgg.py t=tttt me-monk be-bunk de-dunk fee/phi-funk l=free-fruit-found")
     sys.exit()
 
-def strip_equals(my_string):
-    return re.sub("^.*?=", "", my_string)
+def print_rules_of(my_list):
+    for r in my_list:
+        print()
+        print("this is the {}:".format(r))
+        print("\tif CONDITION, the rule succeeds;")
+        print("\tthe rule fails;")
+
+def strip_equals(my_string, add_rule = True):
+    temp = re.sub("^.*?=", "", my_string)
+    if not temp:
+        return '--'
+    if add_rule:
+        temp += ' rule'
+    return temp
 
 def to_topic(my_string):
     temp = my_string.replace('-', ' ')
@@ -40,42 +53,50 @@ def to_topic(my_string):
 
 while cmd_count < len(sys.argv):
     arg = sys.argv[cmd_count]
-    if arg.startswith("t="):
+    if arg == 'a':
+        alphabetize = True
+    elif arg in ( 'na', 'an' ):
+        alphabetize = False
+    elif arg.startswith("t="):
         my_room_or_thing = arg[2:].replace('-', ' ')
-    elif arg.startswith("l=") or arg.startswith("l="):
-        leet_rule = strip_equals(arg) + " rule"
-        rule_creation_dict[leet_rule] = True
+        if cmd_count != 1:
+            sys.exit("Room/thing specification must be at the start!")
     elif arg.startswith("r="):
-        general_rule = strip_equals(arg) + " rule"
-        rule_creation_dict[general_rule] = True
-    elif arg.isdigit():
-        magic_number = arg
+        this_general_rule = strip_equals(arg)
+        if this_general_rule in rule_creation_list:
+            print("Duplicate general rule", this_general_rule, "but this may not matter as leet/mistake rules can cross")
+        else:
+            rule_creation_list.append(this_general_rule)
+    elif arg.startswith("l="):
+        this_leet_rule = strip_equals(arg)
+        if this_leet_rule in rule_creation_list:
+            print("Duplicate leet rule", this_leet_rule, "but this may not matter as leet/mistake rules can cross")
+        else:
+            rule_creation_list.append(this_leet_rule)
+    elif arg.isdigit() or arg == '--':
+        magic_number = strip_equals(arg, add_rule = False)
     elif '-' not in arg or '=' in arg:
         usage()
     else:
         ttarg = to_topic(arg)
-        if ttarg in string_array:
+        if ttarg in base_string_array:
             print("WARNING duplicate string specified:", ttarg)
         else:
-            string_array.append(to_topic(arg))
+            base_string_array.append(ttarg)
+            out_string_array.append('"{}"\t{}\tfalse\t{}\t{}\t"<REJECT TEXT>"'.format(ttarg, this_general_rule, magic_number, this_leet_rule))
     cmd_count += 1
 
-if not len(string_array):
+if not len(base_string_array):
     sys.exit("You didn't specify any strings!")
 
 if alphabetize:
-    string_array = sorted(string_array)
+    out_string_array = sorted(out_string_array)
+    rule_creation_list = sorted(rule_creation_list)
 
-print("guess-table of {} is the table of {} guesses.".format(my_room_or_thing, my_room_or_thing))
-print()
-print("table of {} guesses".format(my_room_or_thing))
-print("mist-cmd(topic)\tmist-rule\tgot-yet\tmagicnum\tleet-rule\tmist-txt")
+output_string = 'guess-table of {} is the table of {} guesses.\n\n'.format(my_room_or_thing, my_room_or_thing) + 'table of {} guesses\n'.format(my_room_or_thing) + 'mist-cmd(topic)\tmist-rule\tgot-yet\tmagicnum\tleet-rule\tmist-txt'
 
-for s in string_array:
-    print('"{}"\t{}\tfalse\t{}\t{}\t"<REJECT TEXT>"'.format(s, general_rule, magic_number, leet_rule))
+print(output_string)
+for o in out_string_array:
+    print(o)
 
-for r in rule_creation_dict:
-    print()
-    print("this is the {} rule:".format(r))
-    print("\tif CONDITION, the rule succeeds;")
-    print("\tthe rule fails;")
+print_rules_of(rule_creation_list)
