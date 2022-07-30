@@ -19,6 +19,24 @@ mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "pain p/pee"	--	false	--	--	"[this-game] is nonviolent and hopefully devoid of bathroom humor."
 "vain v"	--	false	--	--	"You come to grips with how you are not as humble as you should be."
 
+table of high hub guesses
+mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
+"sly slub"	--	false	43	sigh-sub-yet rule	"You have no need to spin yarn out or be sneaky doing so."
+"nigh nub"	--	false	43	sigh-sub-yet rule	"You suspect some small stuff or other is around."
+"bye bub"	--	false	43	sigh-sub-yet rule	"[if sco-sigh-sub is false]There's another way down. Be more resigned and more tuned to the location name[else]You do want to say good-bye to whomever put you here[end if]."
+"rye rub"	--	false	43	sigh-sub-yet rule	"You aren't sure whether you mean a rub of alcohol or bread. You're not sure what it will do. But you consider the possibility."
+"die/dye dub"	--	false	43	sigh-sub-yet rule	"Whether you want to die or dye for a win or just for a double something, you consider the possibilities. Hey, you may need all the clue points you can get, here."
+"tie tub"	--	false	43	sigh-sub-yet rule	"Alas, there is no tub to tie."
+"cly club"	--	false	43	sigh-sub-yet rule	"You try to go old-school finding an so-old-school-schools-didn't-exist weapon, but alas, it doesn't work."
+"dry drub"	--	false	43	sigh-sub-yet rule	"You mentally make fun of someone you disliked, using phrases like 'I won't even raise my voice' or 'I'm sure you're nice and all.'"
+"fly flub"	--	false	43	sigh-sub-yet rule	"You consider making a mistake to impress someone. After all, being too perfect makes you dislikable. Then you realize there is nobody to impress."
+"sty stub"	--	false	43	sigh-sub-yet rule	"You search for a ticket that would admit you to a barn. There is none."
+"try trub"	--	false	43	sigh-sub-yet rule	"You'll have to look harder than that to find trouble. But it is close."
+
+this is the sigh-sub-yet rule:
+	if sco-sigh-sub is true, the rule fails;
+	the rule succeeds;
+
 table of roaring rocks guesses [note: MAGICNUM doesn't really apply here since you get the leet learner after]
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "flooring flocks"	--	false	63	--	"You don't need to be dive-bombed by aerial predators. And I don't have the artistic ability to show you majestic birds, either. Sorry."
@@ -50,11 +68,6 @@ table of fun farm hun harm guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "one worm/warm"	--	false	23	--	"That doesn't quite work. Maybe the farm needs worms or warm weather, but its survival isn't as important to you as passage north."
 
-table of locking lift guesses
-mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
-"socking sift"	--	false	--	--	"<REJECT TEXT>"
-"whocking whiffed"	--	false	--	--	"<REJECT TEXT>"
-
 table of no new show shoe guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "blow blew/blue"	--	false	100	--	"You blow off steam that you haven't quite revitalized the [show shoe] yet."
@@ -71,6 +84,17 @@ mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "so sue"	--	false	100	--	"You don't want to either take or face legal action, which is a lot less exciting than how it's presented in most TV dramas."
 "toe two/too"	--	false	100	--	"Counting your digits would be exciting for nobody."
 
+table of nonoon guesses
+mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
+"bow boon"	--	false	102	--	"You require no ranged weapon."
+"doe/doh/dough dune"	--	false	102	--	"The [if sco-bare-beach is false]prospective [end if]dune is elsewhere in this game."
+"jo/joe june"	--	false	102	--	"You call for old or new friends, who do not appear."
+"lo/low loon"	--	false	102	--	"That is the wrong sort of bird."
+"po poon"	--	false	102	--	"The only thing po['] is your dirty mind."
+"row/rho ruin/rune"	--	false	102	--	"[if player has rho rune]But you already have the rune[else]You are on the right track for what you need[end if]."
+"toe tune"	--	false	102	--	"Nothing toe-tapping starts playing."
+"pro prune"	--	false	102	--	"You come out mentally in favor of a high-fiber diet."
+
 book guesses by item, alphabetical
 
 to say furthers of (ts - a truth state): if ts is true, say " further"
@@ -81,6 +105,12 @@ mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "creep croon"	--	false	44	--	"Alas, R. Kelly can't show up. He's still in jail."
 "leap loon"	--	false	44	--	"Alas, nobody odd comes by and dives into the deep dune. Nobody at all."
 "peep poon"	--	false	44	--	"[this-game] is the wrong environment for that, and not just because it's text-based."
+
+table of locking lift guesses
+mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
+"knocking niffed"	--	false	103	--	"Smells and knocking aren't the way to go here."
+"socking sift"	--	false	103	--	"You wouldn't want to sift through punches to receive."
+"whocking whiffed"	--	false	103	--	"You wouldn't want to attack someone and miss."
 
 book miscellaneous guesses
 

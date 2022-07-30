@@ -100,10 +100,24 @@ to decide which number is variable-scan-length of (mynum - a number):
 		if sco-yo-you is true, decide on 57; [THROW THROUGH]
 		if sco-stow-stew is true and sco-bro-brew is false, decide on 34; [BRO BREW must be next]
 		if sco-crow-crew is true, decide on 23; [HO WHO or YO YOU]
+		if sco-throw-through is true, decide on 0;
 		decide on 44; [most others are 4-4]
 	else if mynum is 101: [Trust Track]
 		if sco-bussed-back is false, decide on 64; [BUSSED BACK]
-		decide on 55; [CRUST CRACK]
+		if sco-crust-crack is false, decide on 55; [CRUST CRACK]
+		decide on 0;
+	else if mynum is 102:
+		if sco-crow-croon is true, decide on 0;
+		if sco-so-soon is true, decide on 45; [CROW CROON]
+		decide on 24; [everything before is 2-4]
+	else if mynum is 103: [high hub/locking lift]
+		if sco-docking-diffed is false, decide on 76;
+		if sco-grokking-grift is false, decide on 85;
+		if sco-rocking-rift is false, decide on 74;
+		if sco-shocking-shift is false, decide on 75;
+		if sco-stocking-stiffed is false, decide on 87;
+		if sco-mocking-miffed is false, decide on 76;
+		decide on 0;
 	say "[b]BUG[r]: no variable-scan-length for [mynum]. Please let me know what you typed.";
 	decide on 44;
 
