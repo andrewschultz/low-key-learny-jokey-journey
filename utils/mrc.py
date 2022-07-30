@@ -43,7 +43,7 @@ def add_basic_rules(w):
 
 def print_verbcheck_line(my_word_pair):
     word_pair_array = my_word_pair.split('-')
-    default_verb_check = [ '""', '""', '--', '--', 'false', 'true', 'true', 'false', this_room, 'vc rule', 'vr rule', '--', '--' ]
+    default_verb_check = [ '""', '""', '--', '--', 'false', 'true', 'true' if add_core[my_word_pair] else 'false', 'false', this_room, 'vc rule', 'vr rule', '--', '--' ]
     default_verb_check[0] = '"{}"'.format(word_pair_array[0])
     default_verb_check[1] = '"{}"'.format(word_pair_array[1])
     default_verb_check[9] = 'vc-{} rule'.format(my_word_pair)
@@ -58,9 +58,11 @@ open_file_after = False
 this_room = "THISROOM"
 this_vcal = True
 this_vcp = True
+this_core = True
 
 add_vcal = defaultdict(bool)
 add_vcp = defaultdict(bool)
+add_core = defaultdict(bool)
 
 while cmd_count < len(sys.argv):
     argr = sys.argv[cmd_count]
@@ -72,6 +74,9 @@ while cmd_count < len(sys.argv):
     if '`' in arg:
         this_vcp = False
         arg = arg.replace('`', '')
+    if '0' in arg:
+        this_core = False
+        arg = arg.replace('0', '')
     if arg.startswith("r="):
         this_room = argr[2:].replace('.', ' ').replace('-', ' ')
         print("New room", this_room)
@@ -87,7 +92,9 @@ while cmd_count < len(sys.argv):
         my_words = "{}-{}".format(arg, arg2)
         words_to_proc.append(my_words)
         add_vcal[my_words] = this_vcal
-        this_vcal = this_vcp = True
+        add_vcp[my_words] = this_vcp
+        add_core[my_words] = this_core
+        this_vcal = this_vcp = this_core = True
         cmd_count += 2
         continue
     elif not valid_word_clump(arg):
@@ -99,7 +106,8 @@ while cmd_count < len(sys.argv):
         words_to_proc.append(arg)
         add_vcal[arg] = this_vcal
         add_vcp[arg] = this_vcp
-        this_vcal = this_vcp = True
+        add_core[arg] = this_core
+        this_vcal = this_vcp = this_core = True
     cmd_count += 1
 
 if not len(words_to_proc):
@@ -115,6 +123,9 @@ print()
 
 for w in words_to_proc:
     add_basic_rules(w)
+
+print("===============for main story.ni file===============")
+print()
 
 for w in words_to_proc:
     print("sco-{} is a truth state that varies.".format(w))
