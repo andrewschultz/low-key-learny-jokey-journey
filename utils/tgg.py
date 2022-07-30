@@ -16,9 +16,13 @@ rule_creation_dict = defaultdict(bool)
 leet_rule = '--'
 general_rule = '--'
 default_leet_rule = '--'
+magic_number = '--'
+
+alphabetize = True
 
 def usage():
     print("All arguments need dashes. They are converted to spaces. Put a dash at the end if there is a one-word mistake.")
+    print("a/an/na = alphabetize table entries (or not) with default ON")
     print("t=room or thing that needs guesses")
     print("l=leet rule, for if you may set off the leet learner")
     print("r=rule for if the special text should apply")
@@ -49,11 +53,18 @@ while cmd_count < len(sys.argv):
     elif '-' not in arg or '=' in arg:
         usage()
     else:
-        string_array.append(to_topic(arg))
+        ttarg = to_topic(arg)
+        if ttarg in string_array:
+            print("WARNING duplicate string specified:", ttarg)
+        else:
+            string_array.append(to_topic(arg))
     cmd_count += 1
 
 if not len(string_array):
     sys.exit("You didn't specify any strings!")
+
+if alphabetize:
+    string_array = sorted(string_array)
 
 print("guess-table of {} is the table of {} guesses.".format(my_room_or_thing, my_room_or_thing))
 print()
