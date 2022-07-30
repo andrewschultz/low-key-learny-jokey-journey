@@ -99,6 +99,18 @@ mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "swotty swale"	--	false	--	--	"You focus on what sort of land is outside, ignoring how you might actually get out."
 "trotty trail"	--	false	--	--	"No trail opens up, but even if it did, the snotty snail would push you back from it."
 
+table of mad most cad coast guesses
+mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
+"gad ghost"	--	false	35	no-roast-yet rule	"<REJECT TEXT>"
+"grad grossed"	--	false	35	no-roast-yet rule	"<REJECT TEXT>"
+"had host"	--	false	35	no-roast-yet rule	"<REJECT TEXT>"
+"pad post"	--	false	35	no-roast-yet rule	"<REJECT TEXT>"
+"tad toast"	--	false	35	no-roast-yet rule	"<REJECT TEXT>"
+
+this is the no-roast-yet rule:
+	if sco-rad-roast is false, the rule succeeds;
+	the rule fails;
+
 table of no new show shoe guesses [ you can't go back to the show shoe after you THROW THROUGH, so there is no leet-rule ]
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "blow blew/blue"	--	false	100	--	"You blow off steam that you haven't quite revitalized the [show shoe] yet."

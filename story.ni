@@ -371,6 +371,18 @@ sco-yo-you is a truth state that varies.
 sco-crow-crew is a truth state that varies.
 sco-throw-through is a truth state that varies.
 
+book mad most cad coast
+
+Mad Most Cad Coast is a room in Poppin' Part.
+
+check going west in Mad Most Cad Coast: if sco-rad-roast is false, say "You can't go west with all the madness. Well, not yet." instead;
+
+guess-table of mad most cad coast is the table of mad most cad coast guesses.
+
+book Shore Shoals
+
+Shore Shoals is west of Mad Most Cad Coast. It is in Poppin' Part. "The only way out is back east to [cad coast]."
+
 volume main engine
 
 this is the situational-cuing-reject rule: do nothing;
@@ -479,10 +491,6 @@ book Trick Trail
 Trick Trail is a room. it is in Poppin' Part.
 
 Trailing Tree is a thing in Trick Trail.
-
-book Shore Shoals
-
-Shore Shoals is a room. it is in Hoppin' Heart. "The only way out is back north to Trust Track."
 
 volume parser rules
 
