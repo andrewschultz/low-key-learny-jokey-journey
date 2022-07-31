@@ -74,6 +74,10 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "yo"	"you"	--	--	false	true	true	false	show shoe	vc-yo-you rule	vr-yo-you rule	--	--
 "crow"	"crew"	--	--	false	true	true	false	show shoe	vc-crow-crew rule	vr-crow-crew rule	--	--
 "throw"	"through"	--	--	false	true	true	false	show shoe	vc-throw-through rule	vr-throw-through rule	--	--
+"bad"	"boast"	--	--	false	true	true	false	Mad Most Cad Coast	vc-bad-boast rule	vr-bad-boast rule	--	--
+"rad"	"roast"	--	--	false	true	true	false	Mad Most Cad Coast	vc-rad-roast rule	vr-rad-roast rule	--	--
+
+[xxvcvr]
 
 a goodrhyme rule (this is the vc-in-bane rule):
 	if player is not in Bane Be Sane See, unavailable;
@@ -602,6 +606,31 @@ this is the vr-throw-through rule:
 	move player to High Hub;
 	if sco-go-goo is false, max-down;
 
+a goodrhyme rule (this is the vc-bad-boast rule):
+	if player is not in Mad Most Cad Coast, unavailable;
+	if sco-bad-boast is true:
+		vcal "But you already cut the voice down to size.";
+		already-done;
+	ready;
+
+this is the vr-bad-boast rule:
+	now sco-bad-boast is true;
+	say "The voice grows softer as you note the insult is not effective. Perhaps you just need to go on the offensive now.";
+
+a goodrhyme rule (this is the vc-rad-roast rule):
+	if player is not in Mad Most Cad Coast, unavailable;
+	if sco-bad-boast is false:
+		vcp "You need to put the current insults in check before doing that.";
+		not-yet;
+	if sco-rad-roast is true:
+		vcal "You already won the insult war!";
+		already-done;
+	ready;
+
+this is the vr-rad-roast rule:
+	now sco-rad-roast is true;
+	say "You strike back to show you know what's what. The voice goes away.!";
+
 section auxiliary rules
 
 to decide whether shoe-food-drink:
@@ -625,6 +654,8 @@ a goodrhyme rule (this is the complete-hype rule):
 	if sco-yo-you is true:
 		vcal "You already hyped the crowd up completely. Time to give them a show!";
 		already-done;
+
+[zzvcvr]
 
 volume homonym rejections
 

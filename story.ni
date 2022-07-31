@@ -42,9 +42,9 @@ Poppin' Part is a region.
 
 section scoring
 
-core-max is 35.
+core-max is 37.
 
-min-needed is 35.
+min-needed is 37.
 
 max-bonus is 5.
 
@@ -336,7 +336,7 @@ sco-knotty-nail is a truth state that varies.
 
 book High Hub
 
-High Hub is a room in Hoppin' Heart. "A locking lift offers transport, but to where? Well, you have to ask it. [if sco-sigh-sub is true]You can go back down to make more good guesses and get more clues, if you want[else]It seems like you're stuck up here with the lift, which may or may not be too cryptic. Or are you? Perhaps you can resign yourself to going back down and making good guesses and getting more clues along the way[end if]."
+High Hub is a room in Poppin' Part. "A locking lift offers transport, but to where? Well, you have to ask it. [if sco-sigh-sub is true]You can go back down to make more good guesses and get more clues, if you want[else]It seems like you're stuck up here with the lift, which may or may not be too cryptic. Or are you? Perhaps you can resign yourself to going back down and making good guesses and getting more clues along the way[end if]."
 
 guess-table of High Hub is the table of High Hub guesses.
 
@@ -356,6 +356,8 @@ The locking lift is a rhymable in High Hub. It is scenery. "The locking lift see
 guess-table of locking lift is the table of locking lift guesses.
 
 volume rooms (end)
+
+book no new show shoe
 
 There is a room called No New Show Shoe in Poppin' Part. "This isn't actually a shoe, of course. It's an area for performances, shaped like a horseshoe. But of course the shape doesn't matter. You need to make it viable! It's a bit worn down.". guess-table of Show Shoe is table of no new show shoe guesses. printed name of No New Show Shoe is "[if sco-crow-crew is false]No-New-Show Shoe[else]Whoah-Woo-Show Shoe[end if]".
 
@@ -378,6 +380,9 @@ Mad Most Cad Coast is a room in Poppin' Part.
 check going west in Mad Most Cad Coast: if sco-rad-roast is false, say "You can't go west with all the madness. Well, not yet." instead;
 
 guess-table of mad most cad coast is the table of mad most cad coast guesses.
+
+sco-rad-roast is a truth state that varies.
+sco-bad-boast is a truth state that varies.
 
 book Shore Shoals
 
@@ -730,9 +735,23 @@ the Frightfully Bright Bully is a person. description is "The [bully] doesn't lo
 
 volume internal map
 
+index map with Show Shoe mapped east of TTTT.
+
 index map with Roaring Rocks mapped east of Bane Be Sane See.
 
 index map with Jotty Jail mapped south of Trust Track.
+
+Index map with No New Show Shoe mapped east of TTTT.
+
+index map with High Hub mapped east of No New Show Shoe.
+index map with Trick Trail mapped southeast of High Hub.
+index map with Mad Most Cad Coast mapped northwest of High Hub.
+
+chapter meta stuff can go wherever
+
+index map with Hidey House mapped north of NoNoon.
+
+index map with Gazy Gap mapped north of Hidey House.
 
 [index map with Shore Shoals mapped south of Trust Track.]
 

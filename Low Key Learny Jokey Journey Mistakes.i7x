@@ -95,6 +95,7 @@ mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "foughty fail"	--	false	--	--	"Don't give up! I believe in you!"
 "hottie/hotty hail/hale"	--	false	--	--	"Such thoughts at a time like this won't help you get out."
 "scotty scale"	--	false	--	--	"No spaceship engineer comes to rescue you."
+"soddy sail"	--	false	--	--	"Having a sail of any material wouldn't help. You're landlocked."
 "stottie stale"	--	false	--	--	"Stale bread won't help you here."
 "swotty swale"	--	false	--	--	"You focus on what sort of land is outside, ignoring how you might actually get out."
 "trotty trail"	--	false	--	--	"No trail opens up, but even if it did, the snotty snail would push you back from it."
