@@ -42,9 +42,9 @@ Poppin' Part is a region.
 
 section scoring
 
-core-max is 37.
+core-max is 42.
 
-min-needed is 37.
+min-needed is 42.
 
 max-bonus is 5.
 
@@ -110,7 +110,7 @@ to decide which number is variable-scan-length of (mynum - a number):
 		if sco-crow-croon is true, decide on 0;
 		if sco-so-soon is true, decide on 45; [CROW CROON]
 		decide on 24; [everything before is 2-4]
-	else if mynum is 103: [high hub/locking lift]
+	else if mynum is 103: [high hub/locking lift: this may be reordered ]
 		if sco-docking-diffed is false, decide on 76;
 		if sco-grokking-grift is false, decide on 85;
 		if sco-rocking-rift is false, decide on 74;
@@ -118,6 +118,11 @@ to decide which number is variable-scan-length of (mynum - a number):
 		if sco-stocking-stiffed is false, decide on 87;
 		if sco-mocking-miffed is false, decide on 76;
 		decide on 0;
+	else if mynum is 104: [ trite trail: note we have some tricky stuff here because we have a pool of 4 things, of which 3 are 54 and 1 is 65 ]
+		if sco-excite-exhale is true, decide on 0;
+		if whale-hunt-ready, decide on 66;
+		if sco-flight-flail is false and sco-might-mail is true and sco-sight-sail is true and sco-right-rail is true, decide on 65;
+		decide on 54;
 	say "[b]BUG[r]: no variable-scan-length for [mynum]. Please let me know what you typed.";
 	decide on 44;
 
@@ -281,7 +286,7 @@ Trust Track is east of NNSS. it is in Hoppin' Heart. "You're in a sort of earthy
 
 guess-table of trust track is table of trust track guesses.
 
-Just Jack is a rhymable in Trust Track. "[one of]'Hi! I'm Just Jack. you can totally trust me that there are no other passages here. In fact, I'd be offended if you looked for them while I was still here. Not that you're getting rid of me.'[or]Just Jack waits here, making sure you trust his 'advice' enough not to look for any other passages.[stopping]"
+Just Jack is a person in Trust Track. "[one of]'Hi! I'm Just Jack. you can totally trust me that there are no other passages here. In fact, I'd be offended if you looked for them while I was still here. Not that you're getting rid of me.'[or]Just Jack waits here, making sure you trust his 'advice' enough not to look for any other passages.[stopping]"
 
 the sussed sack is a rhymable. guess-table of sussed sack is table of trust track guesses.
 
@@ -312,6 +317,8 @@ the deep dune is a rhymable. it is scenery. "[if rho rune is off-stage]Man! It's
 chapter Rho Rune
 
 the Rho Rune is a rhymable. description is "It's shaped like the Greek letter Rho."
+
+guess-table of Rho Rune is table of nonoon guesses.
 
 book Jotty Jail
 
@@ -384,9 +391,23 @@ guess-table of mad most cad coast is the table of mad most cad coast guesses.
 sco-rad-roast is a truth state that varies.
 sco-bad-boast is a truth state that varies.
 
+book Trite Trail
+
+Trite Trail is west of Mad Most Cad Coast. It is in Poppin' Part. "A trite trail ends at a large body of water here. The only exit is back east to [cad coast][if white whale is in trite trail]. A tight-tail white whale seems to be taunting you in the distance. Perhaps you can go all Captain Ahab on it[end if]."
+
+guess-table of Trite Trail is table of trite trail guesses.
+
+the tight tale white whale is scenery in Trite Trail.
+
+sco-sight-sail is a truth state that varies.
+sco-might-mail is a truth state that varies.
+sco-flight-flail is a truth state that varies.
+sco-right-rail is a truth state that varies.
+sco-excite-exhale is a truth state that varies.
+
 book Shore Shoals
 
-Shore Shoals is west of Mad Most Cad Coast. It is in Poppin' Part. "The only way out is back east to [cad coast]."
+Shore Shoals is a room in Poppin' Part. "The lift leads back to High Hub."
 
 volume main engine
 
@@ -733,6 +754,10 @@ book people
 
 the Frightfully Bright Bully is a person. description is "The [bully] doesn't look especially mean or conniving or thuggish. But you know they just can't stand you. It's time to face up to them."
 
+book places
+
+Shore Shoals is a room in Poppin' Part.
+
 volume internal map
 
 index map with Show Shoe mapped east of TTTT.
@@ -743,9 +768,13 @@ index map with Jotty Jail mapped south of Trust Track.
 
 Index map with No New Show Shoe mapped east of TTTT.
 
+chapter hub-ish era
+
 index map with High Hub mapped east of No New Show Shoe.
 index map with Trick Trail mapped southeast of High Hub.
 index map with Mad Most Cad Coast mapped northwest of High Hub.
+
+index map with Shore Shoals mapped south of High Hub.
 
 chapter meta stuff can go wherever
 
@@ -753,5 +782,4 @@ index map with Hidey House mapped north of NoNoon.
 
 index map with Gazy Gap mapped north of Hidey House.
 
-[index map with Shore Shoals mapped south of Trust Track.]
 

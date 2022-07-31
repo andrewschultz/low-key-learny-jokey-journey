@@ -76,6 +76,11 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "throw"	"through"	--	--	false	true	true	false	show shoe	vc-throw-through rule	vr-throw-through rule	--	--
 "bad"	"boast"	--	--	false	true	true	false	Mad Most Cad Coast	vc-bad-boast rule	vr-bad-boast rule	--	--
 "rad"	"roast"	--	--	false	true	true	false	Mad Most Cad Coast	vc-rad-roast rule	vr-rad-roast rule	--	--
+"sight"	"sail"	--	--	false	true	true	false	Trite Trail	vc-sight-sail rule	vr-sight-sail rule	--	--
+"might"	"mail"	--	--	false	true	true	false	Trite Trail	vc-might-mail rule	vr-might-mail rule	--	--
+"flight"	"flail"	--	--	false	true	true	false	Trite Trail	vc-flight-flail rule	vr-flight-flail rule	--	--
+"right"	"rail"	--	--	false	true	true	false	Trite Trail	vc-right-rail rule	vr-right-rail rule	--	--
+"excite"	"exhale"	--	--	false	true	true	false	Trite Trail	vc-excite-exhale rule	vr-excite-exhale rule	--	--
 
 [xxvcvr]
 
@@ -631,7 +636,89 @@ this is the vr-rad-roast rule:
 	now sco-rad-roast is true;
 	say "You strike back to show you know what's what. The voice goes away.!";
 
+a goodrhyme rule (this is the vc-sight-sail rule):
+	if player is not in Trite Trail, unavailable;
+	if sco-sight-sail is true:
+		vcal "You already summoned the sight sail. It's not going anywhere.";
+		already-done;
+	ready;
+
+this is the vr-sight-sail rule:
+	now sco-sight-sail is true;
+	say "A watercraft drifts into view. Yes, indeed, it is the sight sail. It should help you track down [the whale] very nicely, when you're prepared.";
+	follow the notify-final-whale rule;
+
+a goodrhyme rule (this is the vc-might-mail rule):
+	if player is not in Trite Trail, unavailable;
+	if sco-might-mail is true:
+		vcal "You already found armor to wear to fight [the whale]!";
+		already-done;
+	ready;
+
+this is the vr-might-mail rule:
+	now sco-might-mail is true;
+	say "A suit of armor appears nearby! You don't want to put it on until you fight [the whale], but it's there when you need it.";
+	follow the notify-final-whale rule;
+
+a goodrhyme rule (this is the vc-flight-flail rule):
+	if player is not in Trite Trail, unavailable;
+	if sco-flight-flail is true:
+		vcal "You already found a weapon that will be useful to fight [the whale]!";
+		already-done;
+	ready;
+
+this is the vr-flight-flail rule:
+	now sco-flight-flail is true;
+	say "A translucent flail appears. You grab it, worrying it is too heavy. But as you do, it is easy to swing, and you feel faster. It will be a good weapon to use against the white whale.";
+	follow the notify-final-whale rule;
+
+a goodrhyme rule (this is the vc-right-rail rule):
+	if player is not in Trite Trail, unavailable;
+	if sco-sight-sail is false:
+		vcp "You might need a rail to grab, but not out here. Maybe if you're on some sort of vessel.";
+		not-yet;
+	if sco-right-rail is true:
+		vcal "You already figured the right rail to grab to be stable on the sight sail.";
+		already-done;
+	ready;
+
+this is the vr-right-rail rule:
+	now sco-right-rail is true;
+	say "You inspect the sight sail, and you realize that, yes, there are rails to help you keep your balance and gain your sea legs as you hunt [the whale].";
+	follow the notify-final-whale rule;
+
+a goodrhyme rule (this is the vc-excite-exhale rule):
+	if player is not in Trite Trail, unavailable;
+	unless whale-hunt-ready:
+		vcp "Man! That'd be a good idea, but you aren't quite ready to hunt the whale, yet.";
+		not-yet;
+	if sco-excite-exhale is true:
+		vcal "No, hunting the whale was exciting enough.";
+		already-done;
+	ready;
+
+this is the vr-excite-exhale rule:
+	now sco-excite-exhale is true;
+	say "You get all jazzed up to fight [the whale], believing you can do it. Then you calm down and figure strategy. You make sure the mail is comfortable and you can swing the flail well, and you use the rail until you're able to balance easily.[paragraph break]You conquer the white whale! After doing so, you head back to High Hub.";
+	take-lift High Hub;
+
+[zzvcvr]
+
 section auxiliary rules
+
+this is the notify-final-whale rule:
+	if sco-sight-sail is false, continue the action;
+	if sco-might-mail is false, continue the action;
+	if sco-flight-flail is false, continue the action;
+	if sco-right-rail is false, continue the action;
+	say "The last step will be something else! It will probably require, like, extra syllables in what you want to do. Both with psyching yourself up and then taking a step back and achieving mindfulness, or whatever.";
+
+to decide whether whale-hunt-ready:
+	if sco-sight-sail is false, no;
+	if sco-might-mail is false, no;
+	if sco-flight-flail is false, no;
+	if sco-right-rail is false, no;
+	yes;
 
 to decide whether shoe-food-drink:
 	if sco-stow-stew is true and sco-bro-brew is true, yes;
@@ -654,8 +741,6 @@ a goodrhyme rule (this is the complete-hype rule):
 	if sco-yo-you is true:
 		vcal "You already hyped the crowd up completely. Time to give them a show!";
 		already-done;
-
-[zzvcvr]
 
 volume homonym rejections
 

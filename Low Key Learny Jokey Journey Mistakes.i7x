@@ -161,6 +161,21 @@ this is the need-bare-beach rule:
 	if sco-bare-beach is false, the rule succeeds;
 	the rule fails;
 
+table of trite trail guesses
+mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
+"bite bail/bale"	--	false	104	no-excite-exhale-rule rule	"There is no bale to bite, and if you want to bail, you can just go back east."
+"bright braille"	--	false	104	no-excite-exhale-rule rule	"There is no braille here."
+"fight fail"	--	false	104	no-excite-exhale-rule rule	"[desp-gloat]!"
+"fright frail"	--	false	104	no-excite-exhale-rule rule	"[desp-gloat]!"
+"quite quail"	--	false	104	no-excite-exhale-rule rule	"A quail would not [if sco-excite-exhale is true]have helped[else]help[end if] much against [the whale]."
+"shite shale"	--	false	104	no-excite-exhale-rule rule	"Well, that would certainly make the trite trail less trite, in its own way."
+
+to say desp-gloat: say "Don't [if sco-excite-exhale is true]despair[else]gloat[end if]"
+
+this is the no-excite-exhale-rule rule:
+	if sco-excite-exhale is false, the rule succeeds;
+	the rule fails;
+
 book guesses by item, alphabetical
 
 to say furthers of (ts - a truth state): if ts is true, say " further"
