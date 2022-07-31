@@ -177,7 +177,7 @@ this is the vr-see-sunk rule:
 a goodrhyme rule (this is the vc-gee-junk rule):
 	if player is not in TTTT, unavailable;
 	if sco-gee-junk is true:
-		vcal "You already did this!";
+		vcal "You already discovered useful junk in the form of FREE FRUIT.";
 		already-done;
 	if sco-see-sunk is false:
 		vcp "If there were junk in the tree trunk, you couldn't see it. It's way too tall!";
@@ -418,8 +418,8 @@ this is the vr-sigh-sub rule:
 
 a goodrhyme rule (this is the vc-docking-diffed rule):
 	if player is not in High Hub, unavailable;
-	if sco-docking-diffed is true:
-		vcal "You already did this!";
+	if sco-excite-exhale is true:
+		vcal "You already conquered [the whale]. No need to go back.";
 		already-done;
 	ready;
 
@@ -454,7 +454,7 @@ this is the vr-grokking-grift rule:
 a goodrhyme rule (this is the vc-shocking-shift rule):
 	if player is not in High Hub, unavailable;
 	if sco-shocking-shift is true:
-		vcal "You already did this!";
+		vcal "You already took care of the shocking shift!";
 		already-done;
 	ready;
 
@@ -465,7 +465,7 @@ this is the vr-shocking-shift rule:
 a goodrhyme rule (this is the vc-stocking-stiffed rule):
 	if player is not in High Hub, unavailable;
 	if sco-stocking-stiffed is true:
-		vcal "You already did this!";
+		vcal "You already took care of the stiffed stocking!";
 		already-done;
 	ready;
 
@@ -478,9 +478,6 @@ a goodrhyme rule (this is the vc-mocking-miffed rule):
 	if sco-docking-diffed is false or sco-rocking-rift is false or sco-grokking-grift is false or sco-shocking-shift is false or sco-stocking-stiffed is false:
 		vcp "You still need to see all the other ways through the lift.";
 		not-yet;
-	if sco-mocking-miffed is true:
-		vcal "You already did this!";
-		already-done;
 	ready;
 
 this is the vr-mocking-miffed rule:
@@ -585,7 +582,7 @@ a goodrhyme rule (this is the vc-crow-crew rule):
 		vcp "Without reliable food and drink to support the Crow Crew, who would be ideal performers here, it's a no-go. So you need to do a bit more.";
 		not-yet;
 	if sco-crow-crew is true:
-		vcal "You already did this!";
+		vcal "You already summoned the Crow Crew!";
 		already-done;
 	ready;
 

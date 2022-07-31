@@ -90,23 +90,23 @@ this is the need-unarm rule:
 
 table of jotty jail guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
-"botty/bawdy bail/bale"	--	false	--	--	"You don't need a dirty story, and money won't get you out of here."
-"dotty/doughty dale"	--	false	--	--	"Perhaps there is a dale beyond, but going dotty or staying doughty isn't the way to go find it."
-"foughty fail"	--	false	--	--	"Don't give up! I believe in you!"
-"hottie/hotty hail/hale"	--	false	--	--	"Such thoughts at a time like this won't help you get out."
-"scotty scale"	--	false	--	--	"No spaceship engineer comes to rescue you."
-"soddy sail"	--	false	--	--	"Having a sail of any material wouldn't help. You're landlocked."
-"stottie stale"	--	false	--	--	"Stale bread won't help you here."
-"swotty swale"	--	false	--	--	"You focus on what sort of land is outside, ignoring how you might actually get out."
-"trotty trail"	--	false	--	--	"No trail opens up, but even if it did, the snotty snail would push you back from it."
+"botty/bawdy bail/bale"	--	false	74	--	"You don't need a dirty story, and money won't get you out of here."
+"dotty/doughty dale"	--	false	74	--	"Perhaps there is a dale beyond, but going dotty or staying doughty isn't the way to go find it."
+"foughty fail"	--	false	74	--	"Don't give up! I believe in you!"
+"hottie/hotty hail/hale"	--	false	74	--	"Such thoughts at a time like this won't help you get out."
+"scotty scale"	--	false	74	--	"No spaceship engineer comes to rescue you."
+"soddy sail"	--	false	74	--	"Having a sail of any material wouldn't help. You're landlocked."
+"stottie stale"	--	false	74	--	"Stale bread won't help you here."
+"swotty swale"	--	false	74	--	"You focus on what sort of land is outside, ignoring how you might actually get out."
+"trotty trail"	--	false	74	--	"No trail opens up, but even if it did, the snotty snail would push you back from it."
 
 table of mad most cad coast guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
-"gad ghost"	--	false	35	no-roast-yet rule	"<REJECT TEXT>"
-"grad grossed"	--	false	35	no-roast-yet rule	"<REJECT TEXT>"
-"had host"	--	false	35	no-roast-yet rule	"<REJECT TEXT>"
-"pad post"	--	false	35	no-roast-yet rule	"<REJECT TEXT>"
-"tad toast"	--	false	35	no-roast-yet rule	"<REJECT TEXT>"
+"gad ghost"	--	false	35	no-roast-yet rule	"You fail to scare anyone with this[if sco-rad-roast is true], not that you need to, any more[end if]."
+"grad grossed"	--	false	35	no-roast-yet rule	"You think of the most sophisticated disgusting joke you've ever heard."
+"had host"	no-roast-yet rule	false	35	no-roast-yet rule	"Once the insults are gone, this will be true."
+"pad post"	no-roast-yet rule	false	35	no-roast-yet rule	"A post would offer scant protection against insults."
+"tad toast"	--	false	35	no-roast-yet rule	"There's no such thing as toasting someone with an insult halfway."
 
 this is the no-roast-yet rule:
 	if sco-rad-roast is false, the rule succeeds;
