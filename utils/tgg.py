@@ -4,6 +4,9 @@
 
 import sys
 import re
+import ljver
+
+verify_code = True
 
 rows = 0
 cmd_count = 1
@@ -57,6 +60,10 @@ while cmd_count < len(sys.argv):
         alphabetize = True
     elif arg in ( 'na', 'an' ):
         alphabetize = False
+    elif arg == 'v':
+        verify_code = True
+    elif arg in ( 'nv', 'vn' ):
+        verify_code = False
     elif arg.startswith("t="):
         my_room_or_thing = arg[2:].replace('-', ' ')
         if cmd_count != 1:
@@ -87,16 +94,19 @@ while cmd_count < len(sys.argv):
     cmd_count += 1
 
 if not len(base_string_array):
-    sys.exit("No word pairs were found to process. Bailing. Remember, MRC is for make-rhyme-code, TGG for good guesses.")
+    sys.stderr.write("No word pairs were found to process. Bailing. Remember, MRC is for make-rhyme-code, TGG for good guesses.\n")
 
 if alphabetize:
     out_string_array = sorted(out_string_array)
     rule_creation_list = sorted(rule_creation_list)
 
-output_string = 'guess-table of {} is the table of {} guesses.\n\n'.format(my_room_or_thing, my_room_or_thing) + 'table of {} guesses\n'.format(my_room_or_thing) + 'mist-cmd(topic)\tmist-rule\tgot-yet\tmagicnum\tleet-rule\tmist-txt'
 
-print(output_string)
-for o in out_string_array:
-    print(o)
+if len(base_string_array):
+    output_string = 'guess-table of {} is the table of {} guesses.\n\n'.format(my_room_or_thing, my_room_or_thing) + 'table of {} guesses\n'.format(my_room_or_thing) + 'mist-cmd(topic)\tmist-rule\tgot-yet\tmagicnum\tleet-rule\tmist-txt'
+    print(output_string)
+    for o in out_string_array:
+        print(o)
+    print_rules_of(rule_creation_list)
 
-print_rules_of(rule_creation_list)
+if verify_code:
+    ljver.verify_both()

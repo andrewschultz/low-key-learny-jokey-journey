@@ -7,8 +7,11 @@ import re
 import sys
 from collections import defaultdict
 import mytools as mt
+import ljver
 
 out_file = "mrc.txt"
+
+verify_code = True
 
 # "word 1"	"word 2"	--	--	false	true	true	false	(Room where action happens)	checking rule	running rule	specific topic, if needed e.g. "a/b" "c/d" can only be a c or b d 	THINK text (probably blank)
 
@@ -109,6 +112,10 @@ while cmd_count < len(sys.argv):
         this_vcal = this_vcp = this_core = True
         cmd_count += 2
         continue
+    elif arg == 'v':
+        verify_code = True
+    elif arg in ( 'nv', 'vn' ):
+        verify_code = False
     elif arg == '?':
         usage()
     elif arg == '??':
@@ -125,7 +132,7 @@ while cmd_count < len(sys.argv):
     cmd_count += 1
 
 if not len(words_to_proc):
-    sys.exit("No word pairs were found to process. Bailing. Remember, MRC is for make-rhyme-code, TGG for good guesses.")
+    sys.stderr.write("No word pairs were found to process. Remember, MRC is for make-rhyme-code, TGG for good guesses.\n")
 
 if direct_to_file:
     old_stdout = sys.stdout
@@ -133,13 +140,16 @@ if direct_to_file:
 
 for w in words_to_proc:
     print_verbcheck_line(w)
-print()
+
+if len(words_to_proc):
+    print()
 
 for w in words_to_proc:
     add_basic_rules(w)
 
-print("===============for main story.ni file===============")
-print()
+if len(words_to_proc):
+    print("===============for main story.ni file===============")
+    print()
 
 for w in words_to_proc:
     print("sco-{} is a truth state that varies.".format(w))
@@ -150,3 +160,6 @@ if direct_to_file:
 if open_file_after:
     sys.stdout = old_stdout
     mt.npo(out_file)
+
+if verify_code:
+    ljver.verify_both()
