@@ -42,9 +42,9 @@ Poppin' Part is a region.
 
 section scoring
 
-core-max is 42.
+core-max is 44.
 
-min-needed is 42.
+min-needed is 44.
 
 max-bonus is 5.
 
@@ -409,6 +409,21 @@ book Shore Shoals
 
 Shore Shoals is a room in Poppin' Part. "The lift leads back to High Hub."
 
+book Slight Sleaze / Grokking Grift
+
+Slight Sleaze is a room in Poppin' Part. "You feel a fright-freeze preventing you from going south.".
+
+book Old End
+
+Old End is a room in Poppin' Part. printed name is "[if sco-bold-bend is true]Bold Bend[else]Old End[end if]". understand ["bold/bend" and] "bold bend" as Old End when sco-bold-bend is true.
+
+sco-bold-bend is a truth state that varies.
+sco-trolled-trend is a truth state that varies.
+
+book Drain Drat Vain Vat
+
+Drain Drat Vain Vat is south of Old End. It is in Poppin' Part. printed name of Vain Vat is "Drain (Drat!) Vain Vat".
+
 volume main engine
 
 this is the situational-cuing-reject rule: do nothing;
@@ -509,14 +524,6 @@ this is the verb-checker rule:
 		the rule succeeds;
 
 volume unsorted locations
-
-book Trick Trail
-
-[last room]
-
-Trick Trail is a room. it is in Poppin' Part.
-
-Trailing Tree is a thing in Trick Trail.
 
 volume parser rules
 
@@ -756,8 +763,6 @@ the Frightfully Bright Bully is a person. description is "The [bully] doesn't lo
 
 book places
 
-Shore Shoals is a room in Poppin' Part.
-
 volume internal map
 
 index map with Show Shoe mapped east of TTTT.
@@ -771,10 +776,11 @@ Index map with No New Show Shoe mapped east of TTTT.
 chapter hub-ish era
 
 index map with High Hub mapped east of No New Show Shoe.
-index map with Trick Trail mapped southeast of High Hub.
 index map with Mad Most Cad Coast mapped northwest of High Hub.
 
-index map with Shore Shoals mapped south of High Hub.
+index map with Shore Shoals mapped east of High Hub.
+index map with Old End mapped southeast of High Hub.
+index map with Slight Sleaze mapped south of High Hub.
 
 chapter meta stuff can go wherever
 

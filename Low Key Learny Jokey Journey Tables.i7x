@@ -81,6 +81,8 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "flight"	"flail"	--	--	false	true	true	false	Trite Trail	vc-flight-flail rule	vr-flight-flail rule	--	--
 "right"	"rail"	--	--	false	true	true	false	Trite Trail	vc-right-rail rule	vr-right-rail rule	--	--
 "excite"	"exhale"	--	--	false	true	true	false	Trite Trail	vc-excite-exhale rule	vr-excite-exhale rule	--	--
+"bold"	"bend"	--	--	false	true	true	false	old end	vc-bold-bend rule	vr-bold-bend rule	--	-- [this is the endgame sequence, so maybe put stuff in before here]
+"trolled"	"trend"	--	--	false	true	true	false	old end	vc-trolled-trend rule	vr-trolled-trend rule	--	--
 
 [xxvcvr]
 
@@ -483,7 +485,7 @@ a goodrhyme rule (this is the vc-mocking-miffed rule):
 this is the vr-mocking-miffed rule:
 	now sco-mocking-miffed is true;
 	say "You are on your way to the final!";
-	take-lift trick trail;
+	take-lift Old End;
 
 a goodrhyme rule (this is the vc-flow-flue rule):
 	if player is not in show shoe, unavailable;
@@ -699,6 +701,32 @@ this is the vr-excite-exhale rule:
 	now sco-excite-exhale is true;
 	say "You get all jazzed up to fight [the whale], believing you can do it. Then you calm down and figure strategy. You make sure the mail is comfortable and you can swing the flail well, and you use the rail until you're able to balance easily.[paragraph break]You conquer the white whale! After doing so, you head back to High Hub.";
 	take-lift High Hub;
+
+a goodrhyme rule (this is the vc-bold-bend rule):
+	if player is not in old end, unavailable;
+	if sco-bold-bend is true:
+		vcal "You already changed the old end into something more navigable.";
+		already-done;
+	ready;
+
+this is the vr-bold-bend rule:
+	now sco-bold-bend is true;
+	say "Hooray! You figured what to do! You get a point!";
+
+a goodrhyme rule (this is the vc-trolled-trend rule):
+	if player is not in old end, unavailable;
+	if sco-bold-bend is false:
+		vcp "But you have nowhere to go if trolling would trend. Fortunately, that's the easier of your two tasks here, compared to this.";
+		not-yet;
+	if sco-trolled-trend is true:
+		vcal "You can only deal with so much trolling!";
+		already-done;
+	ready;
+
+this is the vr-trolled-trend rule:
+	now sco-trolled-trend is true;
+	say "You feel malevolence from the south. It is where you must go next, you are pretty sure. You're also pretty sure there'll be no way back.";
+	now nowhere is mapped north of Drain Drat Vain Vat;
 
 [zzvcvr]
 
