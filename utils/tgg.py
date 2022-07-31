@@ -83,11 +83,11 @@ while cmd_count < len(sys.argv):
             print("WARNING duplicate string specified:", ttarg)
         else:
             base_string_array.append(ttarg)
-            out_string_array.append('"{}"\t{}\tfalse\t{}\t{}\t"<REJECT TEXT>"'.format(ttarg, this_general_rule, magic_number, this_leet_rule))
+            out_string_array.append('"{}"\t{}\tfalse\t{}\t{}\t"<CLEVER REJECT TEXT>"'.format(ttarg, this_general_rule, magic_number, this_leet_rule))
     cmd_count += 1
 
 if not len(base_string_array):
-    sys.exit("You didn't specify any strings!")
+    sys.exit("No word pairs were found to process. Bailing. Remember, MRC is for make-rhyme-code, TGG for good guesses.")
 
 if alphabetize:
     out_string_array = sorted(out_string_array)

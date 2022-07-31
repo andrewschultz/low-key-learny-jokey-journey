@@ -12,13 +12,25 @@ out_file = "mrc.txt"
 
 # "word 1"	"word 2"	--	--	false	true	true	false	(Room where action happens)	checking rule	running rule	specific topic, if needed e.g. "a/b" "c/d" can only be a c or b d 	THINK text (probably blank)
 
+def show_examples():
+    print("mrc.py r=mad-most-cad-coast `bad-boast =rad-roast would scrub the VCAL for rad-roast and VCP for bad-boast.")
+    print("mrc.py r=bane-be-sane-see 0plain-plea =`jane-g =`wayne-whee =`dane-d is the opening.")
+    print("mrc.py r=rare-reach bare-beach reap-rune would establish the Bare Beach and Reap Rune points.")
+    sys.exit()
+
 def usage(my_word = ""):
     if my_word:
         print("WARNING {} was not a valid word. You need something of the form letters-letters.").format(my_word)
-    print("Options: f / nf / fn specify exporting to a file. NF/FN means don't open post-run.")
+    print("Options:")
+    print("f / nf / fn specify exporting to a file. NF/FN means don't open post-run.")
+    print()
+    print("Parameters:")
     print("r= specifies the room name, which is THISROOM by default.")
-    print("The order matters, but you can also switch room names in the middle.")
+    print("The order matters, but you can also switch room names in the middle, though that may be too much to juggle.")
     print("appending | clip sends stuff to the clipboard.")
+    print("= at the start disabled vcal (already-done check) and ` disables vcp (not-ready) and 0 means a not-core point.")
+    print("The default is to allow all rules.")
+    print("?? shows examples")
     sys.exit()
 
 def valid_word_clump(arg):
@@ -29,7 +41,7 @@ def add_basic_rules(w):
     print("\tif player is not in {}, unavailable;".format(this_room))
     if w in add_vcal and add_vcal[w]:
         print("\tif sco-{} is false:".format(w))
-        print("\t\tvcal \"You still need to do something!\";")
+        print("\t\tvcp \"You still need to do something!\";")
         print("\t\tnot-yet;")
     print("\tif sco-{} is true:".format(w))
     print("\t\tvcal \"You already did this!\";")
@@ -97,10 +109,12 @@ while cmd_count < len(sys.argv):
         this_vcal = this_vcp = this_core = True
         cmd_count += 2
         continue
+    elif arg == '?':
+        usage()
+    elif arg == '??':
+        show_examples()
     elif not valid_word_clump(arg):
         usage(arg)
-    elif arg == '':
-        usage()
     else:
         arg = re.sub("[^a-z]", "-", arg)
         words_to_proc.append(arg)
@@ -111,7 +125,7 @@ while cmd_count < len(sys.argv):
     cmd_count += 1
 
 if not len(words_to_proc):
-    sys.exit("No word pairs were found to process. Bailing.")
+    sys.exit("No word pairs were found to process. Bailing. Remember, MRC is for make-rhyme-code, TGG for good guesses.")
 
 if direct_to_file:
     old_stdout = sys.stdout
