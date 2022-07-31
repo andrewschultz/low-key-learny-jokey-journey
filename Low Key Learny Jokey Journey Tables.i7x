@@ -399,7 +399,7 @@ this is the vr-knotty-nail rule:
 	say "Aha! There's something flawed. A knotty nail. You pull at it, and slowly it comes loose. It's surprisingly sharp. Then you start chipping away at various cracks until they grow bigger and crumble. The snotty snail is alerted, but by then you've got enough debris in your cell to fend it off. You flee, not caring where you're going...";
 	if sco-potty-pail is false, max-down;
 	if sco-grotty-grail is false, max-down;
-	move player to High Hub;
+	take-lift High Hub;
 
 a goodrhyme rule (this is the vc-sigh-sub rule):
 	if player is not in high hub, unavailable;
@@ -425,30 +425,31 @@ a goodrhyme rule (this is the vc-docking-diffed rule):
 
 this is the vr-docking-diffed rule:
 	now sco-docking-diffed is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "The locking lift leads you [one of]to a shore where you'd expect a watercraft, but there is none[or]back to the [cad coast][stopping].";
+	take-lift mad most cad coast;
 
 a goodrhyme rule (this is the vc-rocking-rift rule):
 	if player is not in High Hub, unavailable;
 	if sco-rocking-rift is true:
-		vcal "You already did this!";
+		vcal "You already brought life back to the [show shoe]. You don't need to go back.";
 		already-done;
 	ready;
 
 this is the vr-rocking-rift rule:
 	now sco-rocking-rift is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "[if sco-rocking-rift is false]You enter the Locking Lift and wind up in what seems to be a large amphitheater. It's empty, but it could put on a decent show[else]Back to the [show shoe].";
+	take-lift Show Shoe;
 
 a goodrhyme rule (this is the vc-grokking-grift rule):
 	if player is not in High Hub, unavailable;
 	if sco-grokking-grift is true:
-		vcal "You already brought life back to the [show shoe]. You don't need to go back.";
+		vcal "You already figured everything about grokking grift.";
 		already-done;
 	ready;
 
 this is the vr-grokking-grift rule:
-	say "[if sco-grokking-grift is false]You enter the Locking Lift and wind up in what seems to be a large amphitheater. It's empty, but it could put on a decent show[else]Back to the [show shoe].";
+	say "You wonder if you are up to understanding seediness. But it is too late, by the time you're in the lift.";
 	now sco-grokking-grift is true;
-	move player to New Show Shoe;
 
 a goodrhyme rule (this is the vc-shocking-shift rule):
 	if player is not in High Hub, unavailable;
@@ -485,7 +486,7 @@ a goodrhyme rule (this is the vc-mocking-miffed rule):
 this is the vr-mocking-miffed rule:
 	now sco-mocking-miffed is true;
 	say "You are on your way to the final!";
-	move player to trick trail;
+	take-lift trick trail;
 
 a goodrhyme rule (this is the vc-flow-flue rule):
 	if player is not in show shoe, unavailable;
@@ -608,7 +609,7 @@ a goodrhyme rule (this is the vc-throw-through rule):
 this is the vr-throw-through rule:
 	now sco-throw-through is true;
 	say "The Crow Crew makes a dramatic entrance, thanks to your planning! The show is a big success. Everyone congratulates you. Your job here done, you return back...";
-	move player to High Hub;
+	take-lift High Hub;
 	if sco-go-goo is false, max-down;
 
 a goodrhyme rule (this is the vc-bad-boast rule):
@@ -705,6 +706,10 @@ this is the vr-excite-exhale rule:
 [zzvcvr]
 
 section auxiliary rules
+
+to take-lift (rm - a room):
+	move locking lift to rm;
+	move the player to rm;
 
 this is the notify-final-whale rule:
 	if sco-sight-sail is false, continue the action;
