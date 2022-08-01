@@ -83,6 +83,48 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "excite"	"exhale"	--	--	false	true	true	false	Trite Trail	vc-excite-exhale rule	vr-excite-exhale rule	--	--
 "bold"	"bend"	--	--	false	true	true	false	old end	vc-bold-bend rule	vr-bold-bend rule	--	-- [this is the endgame sequence, so maybe put stuff in before here]
 "trolled"	"trend"	--	--	false	true	true	false	old end	vc-trolled-trend rule	vr-trolled-trend rule	--	--
+"mold"	"mend"	--	--	false	true	true	false	old end	vc-mold-mend rule	vr-mold-mend rule	--	--
+"bane"	"bat"	--	--	false	true	true	false	drain drat vain vat	vc-bane-bat rule	vr-bane-bat rule	--	--
+"flain"	"flat"	--	--	false	true	true	false	drain drat vain vat	vc-flain-flat rule	vr-flain-flat rule	--	--
+"splain"	"splat"	--	--	false	true	true	false	drain drat vain vat	vc-splain-splat rule	vr-splain-splat rule	--	--
+
+a goodrhyme rule (this is the vc-bane-bat rule):
+	if player is not in drain drat vain vat, unavailable;
+	if sco-bane-bat is true:
+		vcal "No, you don't need additional firepower.";
+		already-done;
+	ready;
+
+this is the vr-bane-bat rule:
+	now sco-bane-bat is true;
+	say "A gat appears in your hands! It may or may not be loaded. But anyone who is hostile to you might not know this.";
+
+a goodrhyme rule (this is the vc-flain-flat rule):
+	if player is not in drain drat vain vat, unavailable;
+	if sco-bane-bat is false:
+		vcp "There is nothing to leave the vat flain flat with.";
+		already-done;
+	if sco-flain-flat is true:
+		vcal "No, you already trashed the (ex-)vat.";
+	ready;
+
+this is the vr-flain-flat rule:
+	now sco-flain-flat is true;
+	say "A gat appears in your hands! It may or may not be loaded. But anyone who is hostile to you might not know this.";
+
+a goodrhyme rule (this is the vc-splain-splat rule):
+	if player is not in drain drat vain vat, unavailable;
+	if sco-flain-flat is false:
+		vcp "You're not in a position to explain yourself. Well, not a position of enough power.";
+		not-yet;
+	if sco-splain-splat is true:
+		vcal "With the splaining you do, you're ready to move on.";
+		already-done;
+	ready;
+
+this is the vr-splain-splat rule:
+	now sco-splain-splat is true;
+	say "Now that you're armed, threats work! Hooray!";
 
 [xxvcvr]
 
@@ -462,7 +504,7 @@ a goodrhyme rule (this is the vc-shocking-shift rule):
 
 this is the vr-shocking-shift rule:
 	now sco-shocking-shift is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "The locking lift lurches with what is indeed a shocking shift...";
 
 a goodrhyme rule (this is the vc-stocking-stiffed rule):
 	if player is not in High Hub, unavailable;
@@ -473,7 +515,7 @@ a goodrhyme rule (this is the vc-stocking-stiffed rule):
 
 this is the vr-stocking-stiffed rule:
 	now sco-stocking-stiffed is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "You see a vision of kids ripped off during the holidays.";
 
 a goodrhyme rule (this is the vc-mocking-miffed rule):
 	if player is not in High Hub, unavailable;
@@ -711,7 +753,7 @@ a goodrhyme rule (this is the vc-bold-bend rule):
 
 this is the vr-bold-bend rule:
 	now sco-bold-bend is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "Of course the old end was too simplistic. You feel a bit of courage now. But the question is: courage to face what? It's probably something abstract.";
 
 a goodrhyme rule (this is the vc-trolled-trend rule):
 	if player is not in old end, unavailable;
@@ -725,7 +767,21 @@ a goodrhyme rule (this is the vc-trolled-trend rule):
 
 this is the vr-trolled-trend rule:
 	now sco-trolled-trend is true;
-	say "You feel malevolence from the south. It is where you must go next, you are pretty sure. You're also pretty sure there'll be no way back.";
+	say "You feel malevolence from the south. It is where you must go next, you are pretty sure. You're also pretty sure there'll be no way back. The thought depresses you a bit. You need a way to pull out of your doldrums.";
+
+a goodrhyme rule (this is the vc-mold-mend rule):
+	if player is not in old end, unavailable;
+	if sco-trolled-trend is false:
+		vcp "That might be good later, but currently, you have nothing to mend from and to mold a future mindset.";
+		not-yet;
+	if sco-mold-mend is true:
+		vcal "You already set your mind straight. You're able to move on.";
+		already-done;
+	ready;
+
+this is the vr-mold-mend rule:
+	now sco-mold-mend is true;
+	say "You feel emotionally ready to go forward, and what's more, you feel robust enough to push back against any temporary setbacks.";
 	now nowhere is mapped north of Drain Drat Vain Vat;
 
 [zzvcvr]

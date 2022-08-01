@@ -42,9 +42,9 @@ Poppin' Part is a region.
 
 section scoring
 
-core-max is 44.
+core-max is 48.
 
-min-needed is 44.
+min-needed is 48.
 
 max-bonus is 5.
 
@@ -123,6 +123,10 @@ to decide which number is variable-scan-length of (mynum - a number):
 		if whale-hunt-ready, decide on 66;
 		if sco-flight-flail is false and sco-might-mail is true and sco-sight-sail is true and sco-right-rail is true, decide on 65;
 		decide on 54;
+	else if mynum is 105:
+		if sco-bane-bat is false, decide on 43;
+		if sco-flain-flat is false, decide on 54;
+		if sco-splain-splat is false, decide on 65;
 	say "[b]BUG[r]: no variable-scan-length for [mynum]. Please let me know what you typed.";
 	decide on 44;
 
@@ -419,10 +423,17 @@ Old End is a room in Poppin' Part. printed name is "[if sco-bold-bend is true]Bo
 
 sco-bold-bend is a truth state that varies.
 sco-trolled-trend is a truth state that varies.
+sco-mold-mend is a truth state that varies.
 
 book Drain Drat Vain Vat
 
-Drain Drat Vain Vat is south of Old End. It is in Poppin' Part. printed name of Vain Vat is "Drain (Drat!) Vain Vat".
+Drain Drat Vain Vat is south of Old End. It is in Poppin' Part. printed name of Vain Vat is "[if sco-splain-splat is false]Drain (Drat!) Vain Vat[else]Main Mat[end if]". understand "main mat" as Drain Drat Vain Vat when sco-splain-splat is true.
+
+guess-table of drain drat vain vat is the table of drain drat vain vat guesses.
+
+sco-bane-bat is a truth state that varies.
+sco-flain-flat is a truth state that varies.
+sco-splain-splat is a truth state that varies.
 
 volume main engine
 
