@@ -81,50 +81,15 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "flight"	"flail"	--	--	false	true	true	false	Trite Trail	vc-flight-flail rule	vr-flight-flail rule	--	--
 "right"	"rail"	--	--	false	true	true	false	Trite Trail	vc-right-rail rule	vr-right-rail rule	--	--
 "excite"	"exhale"	--	--	false	true	true	false	Trite Trail	vc-excite-exhale rule	vr-excite-exhale rule	--	--
+"tight"	"tease|tees"	--	--	false	true	false	false	slight sleaze	vc-tight-tease rule	vr-tight-tease rule	--	--
+"bright"	"breeze"	--	--	false	true	true	false	slight sleaze	vc-bright-breeze rule	vr-bright-breeze rule	--	--
+"plight"	"please"	--	--	false	true	true	false	slight sleaze	vc-plight-please rule	vr-plight-please rule	--	--
 "bold"	"bend"	--	--	false	true	true	false	old end	vc-bold-bend rule	vr-bold-bend rule	--	-- [this is the endgame sequence, so maybe put stuff in before here]
 "trolled"	"trend"	--	--	false	true	true	false	old end	vc-trolled-trend rule	vr-trolled-trend rule	--	--
 "mold"	"mend"	--	--	false	true	true	false	old end	vc-mold-mend rule	vr-mold-mend rule	--	--
 "bane"	"bat"	--	--	false	true	true	false	drain drat vain vat	vc-bane-bat rule	vr-bane-bat rule	--	--
 "flain"	"flat"	--	--	false	true	true	false	drain drat vain vat	vc-flain-flat rule	vr-flain-flat rule	--	--
 "splain"	"splat"	--	--	false	true	true	false	drain drat vain vat	vc-splain-splat rule	vr-splain-splat rule	--	--
-
-a goodrhyme rule (this is the vc-bane-bat rule):
-	if player is not in drain drat vain vat, unavailable;
-	if sco-bane-bat is true:
-		vcal "No, you don't need additional firepower.";
-		already-done;
-	ready;
-
-this is the vr-bane-bat rule:
-	now sco-bane-bat is true;
-	say "A gat appears in your hands! It may or may not be loaded. But anyone who is hostile to you might not know this.";
-
-a goodrhyme rule (this is the vc-flain-flat rule):
-	if player is not in drain drat vain vat, unavailable;
-	if sco-bane-bat is false:
-		vcp "There is nothing to leave the vat flain flat with.";
-		already-done;
-	if sco-flain-flat is true:
-		vcal "No, you already trashed the (ex-)vat.";
-	ready;
-
-this is the vr-flain-flat rule:
-	now sco-flain-flat is true;
-	say "A gat appears in your hands! It may or may not be loaded. But anyone who is hostile to you might not know this.";
-
-a goodrhyme rule (this is the vc-splain-splat rule):
-	if player is not in drain drat vain vat, unavailable;
-	if sco-flain-flat is false:
-		vcp "You're not in a position to explain yourself. Well, not a position of enough power.";
-		not-yet;
-	if sco-splain-splat is true:
-		vcal "With the splaining you do, you're ready to move on.";
-		already-done;
-	ready;
-
-this is the vr-splain-splat rule:
-	now sco-splain-splat is true;
-	say "Now that you're armed, threats work! Hooray!";
 
 [xxvcvr]
 
@@ -494,6 +459,7 @@ a goodrhyme rule (this is the vc-grokking-grift rule):
 this is the vr-grokking-grift rule:
 	say "You wonder if you are up to understanding seediness. But it is too late, by the time you're in the lift.";
 	now sco-grokking-grift is true;
+	take-lift Slight Sleaze;
 
 a goodrhyme rule (this is the vc-shocking-shift rule):
 	if player is not in High Hub, unavailable;
@@ -744,6 +710,42 @@ this is the vr-excite-exhale rule:
 	say "You get all jazzed up to fight [the whale], believing you can do it. Then you calm down and figure strategy. You make sure the mail is comfortable and you can swing the flail well, and you use the rail until you're able to balance easily.[paragraph break]You conquer the white whale! After doing so, you head back to High Hub.";
 	take-lift High Hub;
 
+a goodrhyme rule (this is the vc-tight-tease rule):
+	if player is not in slight sleaze, unavailable;
+	if sco-tight-tease is true:
+		vcal "You already poked the slight sleaze back. You don't get double credit for that.";
+		already-done;
+	ready;
+
+this is the vr-tight-tease rule:
+	now sco-tight-tease is true;
+	say "You figure, if you can't beat [']em, join [']em, or just pretend to. You demand something more risque, which the slight sleaze is unable to provide. This doesn't win the war, but it wins a small, satisfying pointless side battle.";
+
+a goodrhyme rule (this is the vc-bright-breeze rule):
+	if player is not in slight sleaze, unavailable;
+	if sco-bright-breeze is true:
+		vcal "The bright breeze is already blowing!";
+		already-done;
+	ready;
+
+this is the vr-bright-breeze rule:
+	now sco-bright-breeze is true;
+	say "The local weather shifts slightly but for the better. You feel cheerier and more open to foisting sarcasm on those that deserve it.";
+
+a goodrhyme rule (this is the vc-plight-please rule):
+	if player is not in slight sleaze, unavailable;
+	if sco-bright-breeze is false:
+		vcp "You'd like to be that dismissive ('Plight? PLEASE!') but you aren't feeling positive enough for that. Perhaps a slight change in the weather...";
+		not-yet;
+	if sco-plight-please is true:
+		vcal "You already pushed back against the slight sleaze.";
+		already-done;
+	ready;
+
+this is the vr-plight-please rule:
+	now sco-plight-please is true;
+	say "'Plight? PLEASE!' you laugh. The sleaze lessens. The flight-flees you feel disappear.";
+
 a goodrhyme rule (this is the vc-bold-bend rule):
 	if player is not in old end, unavailable;
 	if sco-bold-bend is true:
@@ -783,6 +785,44 @@ this is the vr-mold-mend rule:
 	now sco-mold-mend is true;
 	say "You feel emotionally ready to go forward, and what's more, you feel robust enough to push back against any temporary setbacks.";
 	now nowhere is mapped north of Drain Drat Vain Vat;
+
+a goodrhyme rule (this is the vc-bane-bat rule):
+	if player is not in drain drat vain vat, unavailable;
+	if sco-bane-bat is true:
+		vcal "No, you don't need additional firepower.";
+		already-done;
+	ready;
+
+this is the vr-bane-bat rule:
+	now sco-bane-bat is true;
+	say "A particularly lethal bat appears in your hands! It looks like it could really destroy stuff. In particular, this vat. But how?";
+
+a goodrhyme rule (this is the vc-flain-flat rule):
+	if player is not in drain drat vain vat, unavailable;
+	if sco-bane-bat is false:
+		vcp "There is nothing to leave the vat flain flat with.";
+		already-done;
+	if sco-flain-flat is true:
+		vcal "No, you already trashed the (ex-)vat.";
+	ready;
+
+this is the vr-flain-flat rule:
+	now sco-flain-flat is true;
+	say "Wham! Wham! You take the bane bat to the vat, and it makes all kinds of dents, before it falls over. It disintegrates once it does, leaving you standing on a main mat, which also feels welcoming. But you have a feeling you still need to give a reason to enter.";
+
+a goodrhyme rule (this is the vc-splain-splat rule):
+	if player is not in drain drat vain vat, unavailable;
+	if sco-flain-flat is false:
+		vcp "You're not in a position to explain yourself. Well, not a position of enough power.";
+		not-yet;
+	if sco-splain-splat is true:
+		vcal "With the splaining you do, you're ready to move on.";
+		already-done;
+	ready;
+
+this is the vr-splain-splat rule:
+	now sco-splain-splat is true;
+	say "Now that you're armed, threats work! Hooray!";
 
 [zzvcvr]
 

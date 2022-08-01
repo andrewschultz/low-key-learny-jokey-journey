@@ -42,11 +42,11 @@ Poppin' Part is a region.
 
 section scoring
 
-core-max is 48.
+core-max is 50.
 
-min-needed is 48.
+min-needed is 50.
 
-max-bonus is 5.
+max-bonus is 6.
 
 cur-bonus is 0.
 
@@ -417,7 +417,13 @@ book Slight Sleaze / Grokking Grift
 
 Slight Sleaze is a room in Poppin' Part. "You feel a fright-freeze preventing you from going south.".
 
-book Old End
+check going south in Slight Sleaze when sco-plight-please is false: say "The fright-freeze pushes you back. You need to find a way to talk it down, somehow.";
+
+sco-tight-tease is a truth state that varies.
+sco-bright-breeze is a truth state that varies.
+sco-plight-please is a truth state that varies.
+
+book Old End / Mocking Miffed
 
 Old End is a room in Poppin' Part. printed name is "[if sco-bold-bend is true]Bold Bend[else]Old End[end if]". understand ["bold/bend" and] "bold bend" as Old End when sco-bold-bend is true.
 
