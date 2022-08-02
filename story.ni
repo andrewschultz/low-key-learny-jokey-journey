@@ -42,11 +42,11 @@ Poppin' Part is a region.
 
 section scoring
 
-core-max is 50.
+core-max is 52.
 
-min-needed is 50.
+min-needed is 52.
 
-max-bonus is 6.
+max-bonus is 7.
 
 cur-bonus is 0.
 
@@ -123,10 +123,16 @@ to decide which number is variable-scan-length of (mynum - a number):
 		if whale-hunt-ready, decide on 66;
 		if sco-flight-flail is false and sco-might-mail is true and sco-sight-sail is true and sco-right-rail is true, decide on 65;
 		decide on 54;
-	else if mynum is 105:
+	else if mynum is 105: [ drain/drat vain vat ]
 		if sco-bane-bat is false, decide on 43;
 		if sco-flain-flat is false, decide on 54;
 		if sco-splain-splat is false, decide on 65;
+		decide on 0;
+	else if mynum is 106: [ freak framing: CLIQUE CLAIMING is LLP ]
+		if sco-bleak-blaming is false, decide on 57;
+		if sco-chic-shaming is false, decide on 47;
+		if sco-clique-claiming is false, decide on -68;
+		decide on 0;
 	say "[b]BUG[r]: no variable-scan-length for [mynum]. Please let me know what you typed.";
 	decide on 44;
 
@@ -422,6 +428,14 @@ check going south in Slight Sleaze when sco-plight-please is false: say "The fri
 sco-tight-tease is a truth state that varies.
 sco-bright-breeze is a truth state that varies.
 sco-plight-please is a truth state that varies.
+
+book Freak Framing Seek-Sameing
+
+Freak Framing Seek Sameing is south of Slight Sleaze. It is in Poppin' Part. printed name is "[if sco-chic-shaming is true]Eek! Aiming![else]Freak-Framing Seek-Sameing[end if]".
+
+sco-bleak-blaming is a truth state that varies.
+sco-chic-shaming is a truth state that varies.
+sco-clique-claiming is a truth state that varies.
 
 book Old End / Mocking Miffed
 

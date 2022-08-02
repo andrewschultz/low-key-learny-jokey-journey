@@ -84,6 +84,9 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "tight"	"tease|tees"	--	--	false	true	false	false	slight sleaze	vc-tight-tease rule	vr-tight-tease rule	--	--
 "bright"	"breeze"	--	--	false	true	true	false	slight sleaze	vc-bright-breeze rule	vr-bright-breeze rule	--	--
 "plight"	"please"	--	--	false	true	true	false	slight sleaze	vc-plight-please rule	vr-plight-please rule	--	--
+"bleak"	"blaming"	--	--	false	true	true	false	freak framing seek sameing	vc-bleak-blaming rule	vr-bleak-blaming rule	--	--
+"chic"	"shaming"	--	--	false	true	true	false	freak framing seek sameing	vc-chic-shaming rule	vr-chic-shaming rule	--	--
+"clique"	"claiming"	--	--	false	true	false	false	freak framing seek sameing	vc-clique-claiming rule	vr-clique-claiming rule	--	--
 "bold"	"bend"	--	--	false	true	true	false	old end	vc-bold-bend rule	vr-bold-bend rule	--	-- [this is the endgame sequence, so maybe put stuff in before here]
 "trolled"	"trend"	--	--	false	true	true	false	old end	vc-trolled-trend rule	vr-trolled-trend rule	--	--
 "mold"	"mend"	--	--	false	true	true	false	old end	vc-mold-mend rule	vr-mold-mend rule	--	--
@@ -710,6 +713,41 @@ this is the vr-excite-exhale rule:
 	say "You get all jazzed up to fight [the whale], believing you can do it. Then you calm down and figure strategy. You make sure the mail is comfortable and you can swing the flail well, and you use the rail until you're able to balance easily.[paragraph break]You conquer the white whale! After doing so, you head back to High Hub.";
 	take-lift High Hub;
 
+a goodrhyme rule (this is the vc-bleak-blaming rule):
+	if player is not in freak framing seek sameing, unavailable;
+	abide by the did-i-shame rule;
+	if sco-bleak-blaming is true:
+		vcal "You already showed the worst-case. Now you need to rise above it with humor, and stuff!";
+		already-done;
+	ready;
+
+this is the vr-bleak-blaming rule:
+	now sco-bleak-blaming is true;
+	say "You get into the groove with some general complaining.";
+
+a goodrhyme rule (this is the vc-chic-shaming rule):
+	if player is not in freak framing seek sameing, unavailable;
+	abide by the did-i-shame rule;
+	if sco-bleak-blaming is false:
+		vcp "You can't jump into such cleverness. You have to bring people down so that they will be glad you picked them up.";
+		not-yet;
+	ready;
+
+this is the vr-chic-shaming rule:
+	now sco-chic-shaming is true;
+	say "You segue from bleak blaming to an effortless, unavoidable, flowing conclusion, your voice rising to a crescendo for your main point. Bam!";
+
+a goodrhyme rule (this is the vc-clique-claiming rule):
+	if player is not in freak framing seek sameing, unavailable;
+	if sco-clique-claiming is true:
+		vcal "Clique claiming would not have nearly as much mileage the second time around.";
+		already-done;
+	ready;
+
+this is the vr-clique-claiming rule:
+	now sco-clique-claiming is true;
+	say "Well, claiming that cliques exist and we aren't in it always works, even though we deserve to be, and even if we don't really want to be in good with the leaders. It's not practical, but boy, is it cathartic!";
+
 a goodrhyme rule (this is the vc-tight-tease rule):
 	if player is not in slight sleaze, unavailable;
 	if sco-tight-tease is true:
@@ -827,6 +865,11 @@ this is the vr-splain-splat rule:
 [zzvcvr]
 
 section auxiliary rules
+
+this is the did-i-shame rule:
+	if sco-chic-shaming is true:
+		vcal "The chic shaming complete, you're done here. No need to repeat what you did.";
+		already-done;
 
 to take-lift (rm - a room):
 	move locking lift to rm;
