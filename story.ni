@@ -437,6 +437,13 @@ sco-bleak-blaming is a truth state that varies.
 sco-chic-shaming is a truth state that varies.
 sco-clique-claiming is a truth state that varies.
 
+book Rum Route
+
+Rum Route is a room in Poppin' Part.
+
+sco-umm-out is a truth state that varies.
+sco-dumb-doubt is a truth state that varies.
+
 book Old End / Mocking Miffed
 
 Old End is a room in Poppin' Part. printed name is "[if sco-bold-bend is true]Bold Bend[else]Old End[end if]". understand ["bold/bend" and] "bold bend" as Old End when sco-bold-bend is true.

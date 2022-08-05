@@ -62,10 +62,10 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "docking"	"diffed"	--	--	false	true	true	false	High Hub	vc-docking-diffed rule	vr-docking-diffed rule	--	--
 "grokking"	"grift"	--	--	false	true	true	false	High Hub	vc-grokking-grift rule	vr-grokking-grift rule	--	--
 "rocking"	"rift"	--	--	false	true	true	false	High Hub	vc-rocking-rift rule	vr-rocking-rift rule	--	--
-"shocking"	"shift"	--	--	false	true	true	false	High Hub	vc-shocking-shift rule	vr-shocking-shift rule	--	--
-"stocking"	"stiffed"	--	--	false	true	true	false	High Hub	vc-stocking-stiffed rule	vr-stocking-stiffed rule	--	--
+"shocking"	"shift"	--	--	false	true	true	false	High Hub	vc-shocking-shift rule	vr-shocking-shift rule	--	-- [unclaimed]
+"stocking"	"stiffed"	--	--	false	true	true	false	High Hub	vc-stocking-stiffed rule	vr-stocking-stiffed rule	--	-- [unclaimed]
 "mocking"	"miffed"	--	--	false	true	true	false	High Hub	vc-mocking-miffed rule	vr-mocking-miffed rule	--	--
-"flow"	"flue"	--	--	false	true	true	false	show shoe	vc-flow-flue rule	vr-flow-flue rule	--	--
+"flow"	"flue"	--	--	false	true	true	false	show shoe	vc-flow-flue rule	vr-flow-flue rule	--	-- [start no new show shoe/rocking rift]
 "glow"	"glue"	--	--	false	true	true	false	show shoe	vc-glow-glue rule	vr-glow-glue rule	--	--
 "go"	"goo"	--	--	false	true	false	false	show shoe	vc-go-goo rule	vr-go-goo rule	--	--
 "bro"	"brew"	--	--	false	true	true	false	show shoe	vc-bro-brew rule	vr-bro-brew rule	--	--
@@ -74,20 +74,22 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "yo"	"you"	--	--	false	true	true	false	show shoe	vc-yo-you rule	vr-yo-you rule	--	--
 "crow"	"crew"	--	--	false	true	true	false	show shoe	vc-crow-crew rule	vr-crow-crew rule	--	--
 "throw"	"through"	--	--	false	true	true	false	show shoe	vc-throw-through rule	vr-throw-through rule	--	--
-"bad"	"boast"	--	--	false	true	true	false	Mad Most Cad Coast	vc-bad-boast rule	vr-bad-boast rule	--	--
+"dumb"	"doubt"	--	--	false	true	true	false	rum route	vc-dumb-doubt rule	vr-dumb-doubt rule	--	-- [start rum route]
+"umm"	"out"	--	--	false	true	true	false	rum route	vc-umm-out rule	vr-umm-out rule	--	--
+"bad"	"boast"	--	--	false	true	true	false	Mad Most Cad Coast	vc-bad-boast rule	vr-bad-boast rule	--	-- [start docking diffed/white whale]
 "rad"	"roast"	--	--	false	true	true	false	Mad Most Cad Coast	vc-rad-roast rule	vr-rad-roast rule	--	--
 "sight"	"sail"	--	--	false	true	true	false	Trite Trail	vc-sight-sail rule	vr-sight-sail rule	--	--
 "might"	"mail"	--	--	false	true	true	false	Trite Trail	vc-might-mail rule	vr-might-mail rule	--	--
 "flight"	"flail"	--	--	false	true	true	false	Trite Trail	vc-flight-flail rule	vr-flight-flail rule	--	--
 "right"	"rail"	--	--	false	true	true	false	Trite Trail	vc-right-rail rule	vr-right-rail rule	--	--
 "excite"	"exhale"	--	--	false	true	true	false	Trite Trail	vc-excite-exhale rule	vr-excite-exhale rule	--	--
-"tight"	"tease|tees"	--	--	false	true	false	false	slight sleaze	vc-tight-tease rule	vr-tight-tease rule	--	--
+"tight"	"tease|tees"	--	--	false	true	false	false	slight sleaze	vc-tight-tease rule	vr-tight-tease rule	--	-- [start grokking grift]
 "bright"	"breeze"	--	--	false	true	true	false	slight sleaze	vc-bright-breeze rule	vr-bright-breeze rule	--	--
 "plight"	"please"	--	--	false	true	true	false	slight sleaze	vc-plight-please rule	vr-plight-please rule	--	--
 "bleak"	"blaming"	--	--	false	true	true	false	freak framing seek sameing	vc-bleak-blaming rule	vr-bleak-blaming rule	--	--
 "chic"	"shaming"	--	--	false	true	true	false	freak framing seek sameing	vc-chic-shaming rule	vr-chic-shaming rule	--	--
 "clique"	"claiming"	--	--	false	true	false	false	freak framing seek sameing	vc-clique-claiming rule	vr-clique-claiming rule	--	--
-"bold"	"bend"	--	--	false	true	true	false	old end	vc-bold-bend rule	vr-bold-bend rule	--	-- [this is the endgame sequence, so maybe put stuff in before here]
+"bold"	"bend"	--	--	false	true	true	false	old end	vc-bold-bend rule	vr-bold-bend rule	--	-- [mocking miffed: this is the endgame sequence, so put nothing after it]
 "trolled"	"trend"	--	--	false	true	true	false	old end	vc-trolled-trend rule	vr-trolled-trend rule	--	--
 "mold"	"mend"	--	--	false	true	true	false	old end	vc-mold-mend rule	vr-mold-mend rule	--	--
 "bane"	"bat"	--	--	false	true	true	false	drain drat vain vat	vc-bane-bat rule	vr-bane-bat rule	--	--
@@ -477,14 +479,39 @@ this is the vr-shocking-shift rule:
 
 a goodrhyme rule (this is the vc-stocking-stiffed rule):
 	if player is not in High Hub, unavailable;
-	if sco-stocking-stiffed is true:
-		vcal "You already took care of the stiffed stocking!";
+	if sco-umm-out is true:
+		vcal "You already took care of the Rum Route!";
 		already-done;
 	ready;
 
 this is the vr-stocking-stiffed rule:
 	now sco-stocking-stiffed is true;
-	say "You see a vision of kids ripped off during the holidays.";
+	say "You see a vision of kids ripped off during the holidays. You wind up [one of]back [or][stopping] in...";
+	take-lift Rum Route;
+
+a goodrhyme rule (this is the vc-dumb-doubt rule):
+	if player is not in rum route, unavailable;
+	abide by the rum-route-blanket-check rule;
+	if sco-dumb-doubt is true:
+		vcal "You already spread dumb doubt! If you try to spread more, you may wind up believing it yourself.";
+		already-done;
+	ready;
+
+this is the vr-dumb-doubt rule:
+	now sco-dumb-doubt is true;
+	say "Hooray! You figured what to do! You get a point!";
+
+a goodrhyme rule (this is the vc-umm-out rule):
+	if player is not in rum route, unavailable;
+	abide by the rum-route-blanket-check rule;
+	if sco-dumb-doubt is false:
+		vcp "You can't just come in here cold like that! Maybe with the right preparation, an 'umm, out' would be more forceful.";
+		not-yet;
+	ready;
+
+this is the vr-umm-out rule:
+	now sco-umm-out is true;
+	say "Hooray! You figured what to do! You get a point!";
 
 a goodrhyme rule (this is the vc-mocking-miffed rule):
 	if player is not in High Hub, unavailable;
@@ -865,6 +892,11 @@ this is the vr-splain-splat rule:
 [zzvcvr]
 
 section auxiliary rules
+
+this is the rum-route-blanket-check rule:
+	if sco-umm-out is true:
+		vcal "You've cleared the Rum Route. No need to overdo things.";
+		already-done;
 
 this is the did-i-shame rule:
 	if sco-chic-shaming is true:
