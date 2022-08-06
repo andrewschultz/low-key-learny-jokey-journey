@@ -209,6 +209,21 @@ mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "socking sift"	--	false	103	--	"You wouldn't want to sift through punches to receive."
 "whocking whiffed"	--	false	103	--	"You wouldn't want to attack someone and miss."
 
+guess-table of red rose is the table of red rose guesses.
+
+table of red rose guesses
+mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
+"bed bows"	--	false	--	--	"<CLEVER REJECT TEXT>"
+"bled blows"	--	false	--	--	"You do not need to incite violence."
+"dead does/dohs"	--	false	--	--	"You aren't here to kill animals or utter a Simpsonesque epithet."
+"fed foes/phos"	--	false	--	--	"You don't need to feed your enemies."
+"fled flows"	--	false	--	--	"Nobody and nothing flees at your proclamation."
+"ed ohs/os"	--	false	--	--	"No larger-than-life football coach with a thick Cajun accent appears. He is probably out driving that Hummer he bought in that one commercial."
+"jed joes"	--	false	--	--	"No 'charmingly-named' rustic diner appears."
+"led/lead lows"	--	false	--	--	"You have no need to go low or be laid low."
+"ned knows"	--	false	--	--	"There is nobody named Ned around."
+"sled slows"	--	false	--	--	"There are no sleds that need slowing."
+
 book miscellaneous guesses
 
 [this is for cases that may conflict with actual puzzles. Homonyms may apply as well.]

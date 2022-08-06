@@ -42,9 +42,9 @@ Poppin' Part is a region.
 
 section scoring
 
-core-max is 52.
+core-max is 54.
 
-min-needed is 52.
+min-needed is 54.
 
 max-bonus is 7.
 
@@ -370,6 +370,12 @@ chapter locking lift
 
 The locking lift is a rhymable in High Hub. It is scenery. "The locking lift seems to have a list of places it can go, or emotions you can express to see a new place. The unvisited ones are blurred out, of course." [?? if you got MOCKING MIFFED first, then you are in luck]
 
+check entering lift:
+	if player is in high hub, say "You need to decide where to go in the lift.";
+	say "You take the lift back to High Hub...";
+	move player to High Hub;
+	the rule succeeds;
+
 guess-table of locking lift is the table of locking lift guesses.
 
 volume rooms (end)
@@ -392,7 +398,7 @@ sco-throw-through is a truth state that varies.
 
 book mad most cad coast
 
-Mad Most Cad Coast is a room in Poppin' Part.
+Mad Most Cad Coast is a room in Poppin' Part. printed name is "[if sco-rad-roast is true]Had-Host Pad/Post[else]Mad-Most-Cad Coast[end if]".
 
 check going west in Mad Most Cad Coast: if sco-rad-roast is false, say "You can't go west with all the madness. Well, not yet." instead;
 
@@ -792,6 +798,9 @@ this is the show-misses rule:
 	if sco-grotty-grail is false, say "You could've discovered a [b]GROTTY GRAIL[r] back in [jotty jail]";
 	if sco-potty-pail is false, say "You could've discovered a [b]POTTY PAIL[r] back in [jotty jail]";
 	if sco-go-goo is false, say "You could've made [b]GO GOO[r] in [show shoe].";
+	if sco-sigh-sub is false, say "You could've said [b]SIGH SUB[r] in [high hub] to revisit the first rooms and pick up clue-points for good guesses.";
+	if sco-tight-tease is false, say "You could've summoned [b]TIGHT TEES[r] or a [b]TIGHT TEASE[r] in [slight sleaze].";
+	if sco-clique-claiming is false, say "You could've performed [b]CLIQUE CLAIMING[r] in [freak framing].";
 
 volume unsorted
 
@@ -800,6 +809,19 @@ book people
 the Frightfully Bright Bully is a person. description is "The [bully] doesn't look especially mean or conniving or thuggish. But you know they just can't stand you. It's time to face up to them."
 
 book places
+
+book things
+
+the red rose is a rhymable. "It's a lovely generic red rose. It can probably help you do things. It has [rose-petals] petals left.".
+
+sco-said-sos is a truth state that varies.
+sco-head-hose is a truth state that varies.
+sco-ned-knows is a truth state that varies.
+
+To decide which number is rose-petals:
+	let temp be boolval of sco-said-sos;
+
+guess-table of red rose is the table of red rose guesses.
 
 volume internal map
 
@@ -819,6 +841,7 @@ index map with Mad Most Cad Coast mapped northwest of High Hub.
 index map with Shore Shoals mapped east of High Hub.
 index map with Old End mapped southeast of High Hub.
 index map with Slight Sleaze mapped south of High Hub.
+index map with Rum Route mapped north of High Hub.
 
 chapter meta stuff can go wherever
 
