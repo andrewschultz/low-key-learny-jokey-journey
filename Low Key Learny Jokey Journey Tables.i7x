@@ -63,7 +63,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "grokking"	"grift"	--	--	false	true	true	false	High Hub	vc-grokking-grift rule	vr-grokking-grift rule	--	--
 "rocking"	"rift"	--	--	false	true	true	false	High Hub	vc-rocking-rift rule	vr-rocking-rift rule	--	--
 "shocking"	"shift"	--	--	false	true	true	false	High Hub	vc-shocking-shift rule	vr-shocking-shift rule	--	-- [unclaimed]
-"stocking"	"stiffed"	--	--	false	true	true	false	High Hub	vc-stocking-stiffed rule	vr-stocking-stiffed rule	--	-- [unclaimed]
+"stocking"	"stiffed"	--	--	false	true	true	false	High Hub	vc-stocking-stiffed rule	vr-stocking-stiffed rule	--	--
 "mocking"	"miffed"	--	--	false	true	true	false	High Hub	vc-mocking-miffed rule	vr-mocking-miffed rule	--	--
 "flow"	"flue"	--	--	false	true	true	false	show shoe	vc-flow-flue rule	vr-flow-flue rule	--	-- [start no new show shoe/rocking rift]
 "glow"	"glue"	--	--	false	true	true	false	show shoe	vc-glow-glue rule	vr-glow-glue rule	--	--
@@ -76,6 +76,8 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "throw"	"through"	--	--	false	true	true	false	show shoe	vc-throw-through rule	vr-throw-through rule	--	--
 "dumb"	"doubt"	--	--	false	true	true	false	rum route	vc-dumb-doubt rule	vr-dumb-doubt rule	--	-- [start rum route]
 "umm"	"out"	--	--	false	true	true	false	rum route	vc-umm-out rule	vr-umm-out rule	--	--
+"hey"	"hope"	--	--	false	true	true	false	Nay Nope Slay Slope	vc-hey-hope rule	vr-hey-hope rule	--	--
+"k"	"cope"	--	--	false	true	true	false	Nay Nope Slay Slope	vc-k-cope rule	vr-k-cope rule	--	--
 "bad"	"boast"	--	--	false	true	true	false	Mad Most Cad Coast	vc-bad-boast rule	vr-bad-boast rule	--	-- [start docking diffed/white whale]
 "rad"	"roast"	--	--	false	true	true	false	Mad Most Cad Coast	vc-rad-roast rule	vr-rad-roast rule	--	--
 "sight"	"sail"	--	--	false	true	true	false	Trite Trail	vc-sight-sail rule	vr-sight-sail rule	--	--
@@ -512,12 +514,39 @@ a goodrhyme rule (this is the vc-umm-out rule):
 
 this is the vr-umm-out rule:
 	now sco-umm-out is true;
-	say "With the confidence instilled by instilling dumb doubt, you finish the deal.";
+	say "With the confidence instilled by instilling dumb doubt, you finish the deal. You notice a valley below. You should go down when you are ready.";
+	now Slay Slope is mapped below Rum Route;
+	now Rum Route is mapped above Slay Slope;
+
+a goodrhyme rule (this is the vc-hey-hope rule):
+	if player is not in Nay Nope Slay Slope, unavailable;
+	abide by the coped-in-slope rule;
+	if sco-hey-hope is true:
+		vcal "You already got hope started! Now to adjust fully.";
+		already-done;
+	ready;
+
+this is the vr-hey-hope rule:
+	now sco-hey-hope is true;
+	say "How exhilarating! The hope is real! With that, a pall lifts over your depression. You take the lift back to the [hub].";
+	take-lift High Hub;
+
+a goodrhyme rule (this is the vc-k-cope rule):
+	if player is not in Nay Nope Slay Slope, unavailable;
+	abide by the coped-in-slope rule;
+	if sco-hey-hope is false:
+		vcal "You will be able to cope soon, but there is an intermediate step.";
+		not-yet;
+	ready;
+
+this is the vr-k-cope rule:
+	now sco-k-cope is true;
+	say "Hooray! You figured what to do! You get a point!";
 
 a goodrhyme rule (this is the vc-mocking-miffed rule):
 	if player is not in High Hub, unavailable;
-	if sco-docking-diffed is false or sco-rocking-rift is false or sco-grokking-grift is false or sco-shocking-shift is false or sco-stocking-stiffed is false:
-		vcp "You still need to see all the other ways through the lift.";
+	if hub-score < 5:
+		vcp "The mocking, miffed--well, it is there, but you don't quite have the confidence yet to face it. You've only fully tackled [if hub-score is 0]none[else][hub-score in words][end if] of the other five areas the locking lift can access.";
 		not-yet;
 	ready;
 
@@ -894,6 +923,11 @@ this is the vr-splain-splat rule:
 
 section auxiliary rules
 
+this is the coped-in-slope rule:
+	if sco-k-cope is true:
+		vcp "You have managed to deal with everything here.";
+		not-yet;
+
 this is the rum-route-blanket-check rule:
 	if sco-umm-out is true:
 		vcal "You've cleared the Rum Route. No need to overdo things.";
@@ -952,6 +986,9 @@ locking lift	"You see [lift-score] of 6 settings filled in:[paragraph break][fix
 
 to decide which number is lift-score:
 	decide on boolval of sco-docking-diffed + boolval of sco-grokking-grift + boolval of sco-mocking-miffed + boolval of sco-rocking-rift + boolval of sco-shocking-shift + boolval of sco-stocking-stiffed;
+
+to decide which number is hub-score: [rocking rift/throw through, docking diffed / excite-exhale, grokking grift/chic shaming, stocking stiffed/k cope, shocking shift = still needs a final command ]
+	decide on boolval of sco-throw-through + boolval of sco-excite-exhale + boolval of sco-chic-shaming + boolval of sco-k-cope + 1;
 
 to say lift-stuff:
 	say "[if sco-docking-diffed is true]DOCKING DIFFED[else]------- ------[end if].";

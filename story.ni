@@ -42,9 +42,9 @@ Poppin' Part is a region.
 
 section scoring
 
-core-max is 54.
+core-max is 56.
 
-min-needed is 54.
+min-needed is 56.
 
 max-bonus is 7.
 
@@ -132,6 +132,10 @@ to decide which number is variable-scan-length of (mynum - a number):
 		if sco-bleak-blaming is false, decide on 57;
 		if sco-chic-shaming is false, decide on 47;
 		if sco-clique-claiming is false, decide on -68;
+		decide on 0;
+	else if mynum is 107: [ nay nope slay slope ]
+		if sco-hey-hope is false, decide on 34;
+		if sco-k-cope is false, decide on 14;
 		decide on 0;
 	say "[b]BUG[r]: no variable-scan-length for [mynum]. Please let me know what you typed.";
 	decide on 44;
@@ -455,6 +459,9 @@ sco-dumb-doubt is a truth state that varies.
 book Nay Nope Slay Slope
 
 Nay Nope Slay Slope is a room in Poppin' Part.
+
+sco-k-cope is a truth state that varies.
+sco-hey-hope is a truth state that varies.
 
 book Old End / Mocking Miffed
 
@@ -852,14 +859,14 @@ index map with High Hub mapped east of No New Show Shoe.
 index map with Mad Most Cad Coast mapped northwest of High Hub.
 
 index map with Shore Shoals mapped east of High Hub.
-index map with Old End mapped southeast of High Hub.
-index map with Slight Sleaze mapped south of High Hub.
 index map with Rum Route mapped north of High Hub.
+index map with Slay Slope mapped east of Rum Route.
+
+index map with Old End mapped south of High Hub.
+index map with Slight Sleaze mapped east of Vain Vat.
 
 chapter meta stuff can go wherever
 
 index map with Hidey House mapped north of NoNoon.
 
 index map with Gazy Gap mapped north of Hidey House.
-
-
