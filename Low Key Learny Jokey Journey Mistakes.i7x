@@ -8,6 +8,8 @@ table of general good guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "okie ernie/earnie/earny"	--	false	--	--	"No stereotypical rural fellow pops up with down-home advice."
 "tokey tourney"	--	false	--	--	"That could potentially be very relaxed and low-key, indeed. I guess."
+"choppin chart"	--	false	--	--	"There are only three regions, and the name isn't really important."
+"mopping mart"	--	false	--	--	"Surely this is more exciting than a trip for cleaning supplies."
 
 book guesses by room, alphabetical
 
@@ -45,8 +47,6 @@ this is the in-vat rule:
 	if sco-flain-flat is false, the rule succeeds;
 	the rule fails;
 
-guess-table of freak framing seek sameing is the table of freak framing seek sameing guesses.
-
 table of freak framing seek sameing guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "eek aiming"	no-eek-aim rule	false	106	--	"Yes, you do need to aim barbs at people."
@@ -56,6 +56,14 @@ mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 
 this is the no-eek-aim rule:
 	if sco-chic-shaming is false, the rule succeeds;
+	the rule fails;
+
+table of fun farm hun harm guesses
+mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
+"one worm/warm"	--	false	23	need-unarm rule	"That doesn't quite work. Maybe the farm needs worms or warm weather, but its survival isn't as important to you as passage north."
+
+this is the need-unarm rule:
+	if sco-un-arm is false, the rule succeeds;
 	the rule fails;
 
 table of high hub guesses
@@ -76,56 +84,11 @@ this is the sigh-sub-yet rule:
 	if sco-sigh-sub is true, the rule fails;
 	the rule succeeds;
 
-table of roaring rocks guesses [note: MAGICNUM doesn't really apply here since you get the leet learner after]
-mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
-"flooring flocks"	--	false	63	--	"You don't need to be dive-bombed by aerial predators. And I don't have the artistic ability to show you majestic birds, either. Sorry."
-"poring/pouring pox"	--	false	63	--	"You don't need to catch anything, and denting the rocks would not reveal anything[furthers of sco-boring-box]."
-"storing stocks"	--	false	63	--	"That's what the rocks will become, but you want something simpler and smaller and shorter."
-
-this is the box-hidden rule:
-	if boring box is off-stage, the rule succeeds;
-	the rule fails;
-
 table of no nudge slow sludge guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "fo/foe fudge"	--	false	46	--	"This isn't Willy Wonka's Chocolate Factory. Err, Charlie's."
 "joe judge"	--	false	46	--	"No former New York Giants head football coach appears."
 "po/poe pudge"	--	false	46	--	"Weight gain won't help here."
-
-table of Thunk Tree Trunk guesses
-mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
-"be bunk"	--	false	34	free-fruit-offstage rule	"You crave neither a tall bed nor outright lies."
-"de dunk"	--	false	34	free-fruit-offstage rule	"Your mind flashes back to an 80s-era DePaul basketball commercial. Okay, maybe it doesn't, but mine did when I thought of this."
-"fee/phi funk"	--	false	34	free-fruit-offstage rule	""
-"flee flunk"	--	false	34	free-fruit-offstage rule	"Aw, c'mon, you've gotten pretty far. You shouldn't need to run in shame."
-"me monk"	--	false	34	free-fruit-offstage rule	"Alas, there is no monastery nearby to retreat to."
-"pee punk"	--	false	34	free-fruit-offstage rule	"Micturation is unnecessary to complete [this-game]."
-"plea plunk"	--	false	34	free-fruit-offstage rule	"The time for a plea that landed for a bonus point is passed, and you [if sco-plain-plea is true]took[else]missed[end if] it."
-"ski skunk"	--	false	34	free-fruit-offstage rule	"The weather is not cold enough, and there's no snow."
-"whee whunk"	--	false	34	free-fruit-offstage rule	"You shouldn't be thrilled to go around socking stuff."
-
-this is the free-fruit-offstage rule:
-	if sco-gee-junk is false, the rule succeeds;
-	the rule fails;
-
-table of trust track guesses
-mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
-"cussed cack"	--	false	101	--	"[if player has sussed sack]No, the sack will be worthwhile.[else]There's a useful item here. More useful than such words![end if]"
-"lust lack"	--	false	101	--	"[if just jack is fungible]Jack would still be bugging you in that state[else]You continue to put impure thoughts aside to focus on a really cool text adventure[end if]."
-"must mack"	jack-gone rule	false	101	--	"You don't need memories of Just Jack."
-"rust rack"	--	false	101	--	"That would be a useless item."
-
-this is the jack-gone rule:
-	if Just Jack is moot, the rule succeeds;
-	the rule fails;
-
-table of fun farm hun harm guesses
-mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
-"one worm/warm"	--	false	23	need-unarm rule	"That doesn't quite work. Maybe the farm needs worms or warm weather, but its survival isn't as important to you as passage north."
-
-this is the need-unarm rule:
-	if sco-un-arm is false, the rule succeeds;
-	the rule fails;
 
 table of jotty jail guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
@@ -182,8 +145,6 @@ this is the need-crow-croon rule:
 	if sco-crow-croon is false, the rule succeeds;
 	the rule fails;
 
-guess-table of old end is the table of old end guesses.
-
 table of old end guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "fold fend"	--	false	105	untrolled-yet rule	"Folding and fending are contradictory."
@@ -213,8 +174,35 @@ this is the need-bare-beach rule:
 	if sco-bare-beach is false, the rule succeeds;
 	the rule fails;
 
+table of roaring rocks guesses [note: MAGICNUM doesn't really apply here since you get the leet learner after]
+mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
+"flooring flocks"	--	false	63	--	"You don't need to be dive-bombed by aerial predators. And I don't have the artistic ability to show you majestic birds, either. Sorry."
+"poring/pouring pox"	--	false	63	--	"You don't need to catch anything, and denting the rocks would not reveal anything[furthers of sco-boring-box]."
+"storing stocks"	--	false	63	--	"That's what the rocks will become, but you want something simpler and smaller and shorter."
+
+this is the box-hidden rule:
+	if boring box is off-stage, the rule succeeds;
+	the rule fails;
+
+table of Thunk Tree Trunk guesses
+mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
+"be bunk"	--	false	34	free-fruit-offstage rule	"You crave neither a tall bed nor outright lies."
+"de dunk"	--	false	34	free-fruit-offstage rule	"Your mind flashes back to an 80s-era DePaul basketball commercial. Okay, maybe it doesn't, but mine did when I thought of this."
+"fee/phi funk"	--	false	34	free-fruit-offstage rule	""
+"flee flunk"	--	false	34	free-fruit-offstage rule	"Aw, c'mon, you've gotten pretty far. You shouldn't need to run in shame."
+"me monk"	--	false	34	free-fruit-offstage rule	"Alas, there is no monastery nearby to retreat to."
+"pee punk"	--	false	34	free-fruit-offstage rule	"Micturation is unnecessary to complete [this-game]."
+"plea plunk"	--	false	34	free-fruit-offstage rule	"The time for a plea that landed for a bonus point is passed, and you [if sco-plain-plea is true]took[else]missed[end if] it."
+"ski skunk"	--	false	34	free-fruit-offstage rule	"The weather is not cold enough, and there's no snow."
+"whee whunk"	--	false	34	free-fruit-offstage rule	"You shouldn't be thrilled to go around socking stuff."
+
+this is the free-fruit-offstage rule:
+	if sco-gee-junk is false, the rule succeeds;
+	the rule fails;
+
 table of trite trail guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
+"aight ail"	--	false	104	no-excite-exhale-rule rule	"You resort to the vernacular to express your displeasure with enemies, real or imagined."
 "bite bail/bale"	--	false	104	no-excite-exhale-rule rule	"There is no bale to bite, and if you want to bail, you can just go back east."
 "bright braille"	--	false	104	no-excite-exhale-rule rule	"There is no braille here."
 "fight fail"	--	false	104	no-excite-exhale-rule rule	"[desp-gloat]!"
@@ -226,6 +214,17 @@ to say desp-gloat: say "Don't [if sco-excite-exhale is true]despair[else]gloat[e
 
 this is the no-excite-exhale-rule rule:
 	if sco-excite-exhale is false, the rule succeeds;
+	the rule fails;
+
+table of trust track guesses
+mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
+"cussed cack"	--	false	101	--	"[if player has sussed sack]No, the sack will be worthwhile.[else]There's a useful item here. More useful than such words![end if]"
+"lust lack"	--	false	101	--	"[if just jack is fungible]Jack would still be bugging you in that state[else]You continue to put impure thoughts aside to focus on a really cool text adventure[end if]."
+"must mack"	jack-gone rule	false	101	--	"You don't need memories of Just Jack."
+"rust rack"	--	false	101	--	"That would be a useless item."
+
+this is the jack-gone rule:
+	if Just Jack is moot, the rule succeeds;
 	the rule fails;
 
 book guesses by item, alphabetical
@@ -253,6 +252,7 @@ mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "pee poot"	--	false	44	--	"A good guess, technically, I suppose."
 "re root" or "reroot"	--	false	44	--	"The free fruit dispenser is not broken. No need to start it up again."
 "see soot/suit"	--	false	44	--	"The free fruit dispenses fruit, not clothes or coal."
+"ski scoot"	--	false	44	--	"You can just walk to get around."
 "tea toot/tout"	--	false	44	--	"Perhaps the tea would be fruit-flavored and refreshing, but it wouldn't be useful."
 
 table of locking lift guesses [ leet-rule is always true, since MOCKING MIFFED sends you to the final area ]

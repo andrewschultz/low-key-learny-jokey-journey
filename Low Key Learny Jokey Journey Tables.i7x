@@ -948,7 +948,7 @@ volume readables
 
 table of readables (continued)
 read-thing	read-txt
-locking lift	"You see [lift-score] of 6 destinations filled in:[paragraph break][fixed letter spacing][lift-stuff].[variable letter spacing]"
+locking lift	"You see [lift-score] of 6 settings filled in:[paragraph break][fixed letter spacing][lift-stuff].[variable letter spacing]"
 
 to decide which number is lift-score:
 	decide on boolval of sco-docking-diffed + boolval of sco-grokking-grift + boolval of sco-mocking-miffed + boolval of sco-rocking-rift + boolval of sco-shocking-shift + boolval of sco-stocking-stiffed;

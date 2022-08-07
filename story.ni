@@ -439,6 +439,8 @@ book Freak Framing Seek-Sameing
 
 Freak Framing Seek Sameing is south of Slight Sleaze. It is in Poppin' Part. printed name is "[if sco-chic-shaming is true]Eek! Aiming![else]Freak-Framing Seek-Sameing[end if]".
 
+guess-table of freak framing seek sameing is the table of freak framing seek sameing guesses.
+
 sco-bleak-blaming is a truth state that varies.
 sco-chic-shaming is a truth state that varies.
 sco-clique-claiming is a truth state that varies.
@@ -450,9 +452,15 @@ Rum Route is a room in Poppin' Part.
 sco-umm-out is a truth state that varies.
 sco-dumb-doubt is a truth state that varies.
 
+book Nay Nope Slay Slope
+
+Nay Nope Slay Slope is a room in Poppin' Part.
+
 book Old End / Mocking Miffed
 
 Old End is a room in Poppin' Part. printed name is "[if sco-bold-bend is true]Bold Bend[else]Old End[end if]". understand ["bold/bend" and] "bold bend" as Old End when sco-bold-bend is true.
+
+guess-table of old end is the table of old end guesses.
 
 sco-bold-bend is a truth state that varies.
 sco-trolled-trend is a truth state that varies.
