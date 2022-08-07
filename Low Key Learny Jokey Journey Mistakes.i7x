@@ -19,6 +19,45 @@ mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "pain p/pee"	--	false	--	--	"[this-game] is nonviolent and hopefully devoid of bathroom humor."
 "vain v"	--	false	--	--	"You come to grips with how you are not as humble as you should be."
 
+table of drain drat vain vat guesses
+mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
+"brain brat"	--	false	105	splat-splained rule	"You don't want to fight annoying people with violence. Inanimate obstacles, yes. People, no."
+"cane cat"	--	false	105	splat-splained rule	"Cats don't deserve to be caned. Dogs don't, either."
+"chain chat"	--	false	105	splat-splained rule	"More forceful talking [if sco-splain-splat is true]was[else]is[end if] necessary here."
+"feign fat"	--	false	105	splat-splained rule	"You don't need to cry about being a few pounds overweight."
+"gain gat"	--	false	105	splat-splained rule	"A gun would be too much here."
+"main mat"	in-vat rule	false	105	splat-splained rule	"Perhaps that will be laid out once you have figured how to get out of the vat."
+"pain pat"	--	false	105	splat-splained rule	"You feel an intense pain."
+"plain plat"	--	false	105	splat-splained rule	"The terrain is already pretty flat."
+"rain rat"	--	false	105	splat-splained rule	"You don't need an animal friend."
+"sane sat"	--	false	105	splat-splained rule	"You convince yourself the vain vat[if sco-flain-flat is false]is[else]was[end if] a great place to sort out your emotions."
+"slain slat"	--	false	105	splat-splained rule	"There is no slat to slay, alas."
+"spain spat"	--	false	105	splat-splained rule	"You make up reasons to complain about Spain, for whatever good that does."
+"sprain sprat"	--	false	105	splat-splained rule	"You find no fish to torment."
+"stain stat"	--	false	105	splat-splained rule	"Alas, you have nothing to vandalize the premises with."
+"strain strat"	--	false	105	splat-splained rule	"You contemplate a way to put your ultimate enemy under pressure."
+
+this is the splat-splained rule:
+	if sco-splain-splat is true, the rule succeeds;
+	the rule fails;
+
+this is the in-vat rule:
+	if sco-flain-flat is false, the rule succeeds;
+	the rule fails;
+
+guess-table of freak framing seek sameing is the table of freak framing seek sameing guesses.
+
+table of freak framing seek sameing guesses
+mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
+"eek aiming"	no-eek-aim rule	false	106	--	"Yes, you do need to aim barbs at people."
+"geek gaming"	--	false	106	--	"Geek gaming, I suppose, has its own brand of conformism and conventions, so you can't quite use it as a shelter."
+"meek maiming"	--	false	106	--	"Unfortunately, in trying to start soft or end strong, you achieve neither."
+"teak/tique taming"	--	false	106	--	"You need neither wood nor a boutique nor a critique."
+
+this is the no-eek-aim rule:
+	if sco-chic-shaming is false, the rule succeeds;
+	the rule fails;
+
 table of high hub guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "bye bub"	--	false	43	sigh-sub-yet rule	"[if sco-sigh-sub is false]There's another way down. Be more resigned and more tuned to the location name[else]You do want to say good-bye to whomever put you here[end if]."
@@ -141,6 +180,19 @@ mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 
 this is the need-crow-croon rule:
 	if sco-crow-croon is false, the rule succeeds;
+	the rule fails;
+
+guess-table of old end is the table of old end guesses.
+
+table of old end guesses
+mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
+"fold fend"	--	false	105	untrolled-yet rule	"Folding and fending are contradictory."
+"rolled rend"	--	false	105	untrolled-yet rule	"But if you got rolled, you wouldn't be able to rend."
+"sold send"	--	false	105	untrolled-yet rule	"Not quite. Commerce isn't at the end of all this."
+"told tend"	--	false	105	untrolled-yet rule	"Not quite. You weren't given instructions how to take care of things, and you probably can't pass them on."
+
+this is the untrolled-yet rule:
+	if sco-trolled-trend is false, the rule succeeds;
 	the rule fails;
 
 table of rare reach guesses
