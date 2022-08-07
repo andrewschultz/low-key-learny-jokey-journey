@@ -378,7 +378,8 @@ a goodrhyme rule (this is the vc-crow-croon rule):
 
 this is the vr-crow-croon rule:
 	now sco-crow-croon is true;
-	say "The crow croons! The cocoon busts out.[paragraph break]Unfortunately, the commotion brings a few henchmen to where you are. You are arrested and dumped in...";
+	say "The crow croons! Your [rune] glows, then bursts in unison with the cocoon. A ... well, not quite a monster, but no animal you've seen before ... busts out.[paragraph break]Unfortunately, the commotion brings a few henchmen to where you are.
+ You are arrested and dumped in...";
 	move player to Jotty Jail;
 	moot cocoon;
 
@@ -499,7 +500,7 @@ a goodrhyme rule (this is the vc-dumb-doubt rule):
 
 this is the vr-dumb-doubt rule:
 	now sco-dumb-doubt is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "You create dumb doubt in the mind of your adversaries. This would be rude if they weren't mean, but they are, so it all feels creative and appropriate.";
 
 a goodrhyme rule (this is the vc-umm-out rule):
 	if player is not in rum route, unavailable;
@@ -511,7 +512,7 @@ a goodrhyme rule (this is the vc-umm-out rule):
 
 this is the vr-umm-out rule:
 	now sco-umm-out is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "With the confidence instilled by instilling dumb doubt, you finish the deal.";
 
 a goodrhyme rule (this is the vc-mocking-miffed rule):
 	if player is not in High Hub, unavailable;

@@ -755,6 +755,11 @@ carry out optsing:
 	if guide-gong-warn is true, say "[b]GUIDE GONG[r] will restrict you from solved rooms, [b]PRIDE PRONG[r] will notify you of rooms with just LLPs left, and [b]STRIDE STRONG[r] will remove these bumpers. Currently this is set to [b][if player-room-allow-threshold is bonus-left]PRIDE PRONG[else if player-room-allow-threshold is bonus-left]GUIDE GONE[else]player-room-allow-threshold is bonus-left[end if][r].";
 	the rule succeeds;
 
+chapter swearing
+
+check swearing obscenely: say "[one of]A[or]Another[stopping] worst-word-burst bird flies by and puts your efforts to utter shame." instead;
+check swearing mildly: try swearing obscenely instead;
+
 chapter verbsing
 
 carry out verbsing:
