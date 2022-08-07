@@ -37,7 +37,7 @@ def usage(my_word = ""):
     sys.exit()
 
 def valid_word_clump(arg):
-    return re.search("^[a-z]+[/. -][a-z]+$", arg)
+    return re.search("^[a-z/]+[/. -][a-z/]+$", arg)
 
 def add_basic_rules(w):
     print("a goodrhyme rule (this is the vc-{} rule):".format(w))
@@ -94,7 +94,6 @@ while cmd_count < len(sys.argv):
         arg = arg.replace('0', '')
     if arg.startswith("r="):
         this_room = argr[2:].replace('.', ' ').replace('-', ' ')
-        print("New room", this_room)
     elif arg == '/':
         pass
     elif arg == 'f':
@@ -103,7 +102,7 @@ while cmd_count < len(sys.argv):
     elif arg in ( 'nf', 'fn' ):
         direct_to_file = True
         continue
-    elif re.search("^[a-z]+$", arg) and re.search("^[a-z]+$", arg2):
+    elif re.search("^[a-z/]+$", arg) and re.search("^[a-z/]+$", arg2):
         my_words = "{}-{}".format(arg, arg2)
         words_to_proc.append(my_words)
         add_vcal[my_words] = this_vcal
@@ -123,7 +122,7 @@ while cmd_count < len(sys.argv):
     elif not valid_word_clump(arg):
         usage(arg)
     else:
-        arg = re.sub("[^a-z]", "-", arg)
+        arg = re.sub("[^a-z/]", "-", arg)
         words_to_proc.append(arg)
         add_vcal[arg] = this_vcal
         add_vcp[arg] = this_vcp
@@ -137,6 +136,8 @@ if not len(words_to_proc):
 if direct_to_file:
     old_stdout = sys.stdout
     sys.stdout = open(out_file, "w")
+
+words_to_proc = [ x.replace("/", "|") for x in words_to_proc ]
 
 for w in words_to_proc:
     print_verbcheck_line(w)

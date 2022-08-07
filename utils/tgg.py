@@ -38,15 +38,15 @@ def print_rules_of(my_list):
     for r in my_list:
         print()
         print("this is the {}:".format(r))
-        print("\tif CONDITION, the rule succeeds;")
+        print("\tif {}, the rule succeeds;".format(condition))
         print("\tthe rule fails;")
 
-def strip_equals(my_string, add_rule = True):
+def strip_equals(my_string, add_string = ''):
     temp = re.sub("^.*?=", "", my_string)
     if not temp:
         return '--'
-    if add_rule:
-        temp += ' rule'
+    if not my_string.endswith(add_string.strip()):
+        temp += add_string
     return temp
 
 def to_topic(my_string):
@@ -64,24 +64,28 @@ while cmd_count < len(sys.argv):
         verify_code = True
     elif arg in ( 'nv', 'vn' ):
         verify_code = False
+    elif arg.startswith("c="):
+        condition = strip_equals(arg, " is true")
+    elif arg.startswith("cf=") or arg.startswith("fc="):
+        condition = strip_equals(arg, " is false")
     elif arg.startswith("t="):
         my_room_or_thing = arg[2:].replace('-', ' ')
         if cmd_count != 1:
             sys.exit("Room/thing specification must be at the start!")
     elif arg.startswith("r="):
-        this_general_rule = strip_equals(arg)
+        this_general_rule = strip_equals(arg, " rule")
         if this_general_rule in rule_creation_list:
             print("Duplicate general rule", this_general_rule, "but this may not matter as leet/mistake rules can cross")
         else:
             rule_creation_list.append(this_general_rule)
     elif arg.startswith("l="):
-        this_leet_rule = strip_equals(arg)
+        this_leet_rule = strip_equals(arg, " rule")
         if this_leet_rule in rule_creation_list:
             print("Duplicate leet rule", this_leet_rule, "but this may not matter as leet/mistake rules can cross")
         else:
             rule_creation_list.append(this_leet_rule)
     elif arg.isdigit() or arg == '--':
-        magic_number = strip_equals(arg, add_rule = False)
+        magic_number = strip_equals(arg)
     elif '-' not in arg or '=' in arg:
         usage()
     else:
