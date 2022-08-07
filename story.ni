@@ -368,7 +368,7 @@ sco-mocking-miffed is a truth state that varies.
 
 chapter locking lift
 
-The locking lift is a rhymable in High Hub. It is scenery. "The locking lift seems to have a list of places it can go, or emotions you can express to see a new place. The unvisited ones are blurred out, of course." [?? if you got MOCKING MIFFED first, then you are in luck]
+The locking lift is a rhymable in High Hub. It is scenery. "The locking lift seems to have a list of places it can go, or emotions you can express to see a new place. The unvisited ones are blurred out, of course. You can [b]READ[r] your progress so far." [?? if you got MOCKING MIFFED first, then you are in luck]
 
 check entering lift:
 	if player is in high hub, say "You need to decide where to go in the lift.";

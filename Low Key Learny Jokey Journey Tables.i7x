@@ -944,6 +944,23 @@ a goodrhyme rule (this is the complete-hype rule):
 		vcal "You already hyped the crowd up completely. Time to give them a show!";
 		already-done;
 
+volume readables
+
+table of readables (continued)
+read-thing	read-txt
+locking lift	"You see [lift-score] of 6 destinations filled in:[paragraph break][fixed letter spacing][lift-stuff].[variable letter spacing]"
+
+to decide which number is lift-score:
+	decide on boolval of sco-docking-diffed + boolval of sco-grokking-grift + boolval of sco-mocking-miffed + boolval of sco-rocking-rift + boolval of sco-shocking-shift + boolval of sco-stocking-stiffed;
+
+to say lift-stuff:
+	say "[if sco-docking-diffed is true]DOCKING DIFFED[else]------- ------[end if].";
+	say "[if sco-grokking-grift is true]GROKKING GRIFT[else]------- ------[end if].";
+	say "[if sco-mocking-miffed is true]MOCKING MIFFED[else]------- ------[end if].";
+	say "[if sco-rocking-rift is true]ROCKING RIFT[else]------ ----[end if].";
+	say "[if sco-shocking-shift is true]SHOCKING SHIFT[else]-------- -----[end if].";
+	say "[if sco-stocking-stiffed is true]STOCKING STIFFED[else]-------- -------[end if]";
+
 volume homonym rejections
 
 chapter thing homonyms
