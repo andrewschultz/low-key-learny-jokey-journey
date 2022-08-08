@@ -58,7 +58,8 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "grotty"	"grail"	--	--	false	true	false	false	jotty jail	vc-grotty-grail rule	vr-grotty-grail rule	--	--
 "potty"	"pail"	--	--	false	true	false	false	jotty jail	vc-potty-pail rule	vr-potty-pail rule	--	--
 "knotty"	"nail"	--	--	false	true	true	false	jotty jail	vc-knotty-nail rule	vr-knotty-nail rule	--	--
-"sigh"	"sub"	--	--	false	true	false	false	high hub	vc-sigh-sub rule	vr-sigh-sub rule	--	--
+"piss"	"poor"	--	--	false	true	false	false	--	vc-piss-poor rule	vr-piss-poor rule	--	--
+"sigh"	"sub"	--	--	false	true	false	false	high hub	vc-sigh-sub rule	vr-sigh-sub rule	--	-- [start hub]
 "docking"	"diffed"	--	--	false	true	true	false	High Hub	vc-docking-diffed rule	vr-docking-diffed rule	--	--
 "grokking"	"grift"	--	--	false	true	true	false	High Hub	vc-grokking-grift rule	vr-grokking-grift rule	--	--
 "rocking"	"rift"	--	--	false	true	true	false	High Hub	vc-rocking-rift rule	vr-rocking-rift rule	--	--
@@ -97,6 +98,16 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "bane"	"bat"	--	--	false	true	true	false	drain drat vain vat	vc-bane-bat rule	vr-bane-bat rule	--	--
 "flain"	"flat"	--	--	false	true	true	false	drain drat vain vat	vc-flain-flat rule	vr-flain-flat rule	--	--
 "splain"	"splat"	--	--	false	true	true	false	drain drat vain vat	vc-splain-splat rule	vr-splain-splat rule	--	--
+
+
+a goodrhyme rule (this is the vc-piss-poor rule):
+	if miss more diss door is not fungible, unavailable;
+	ready;
+
+this is the vr-piss-poor rule:
+	now sco-piss-poor is true;
+	say "The wood grains in the door almost seem to frown, and it morphs into an almost human form before shambling away at such an apt blow-off. Not really vulgar, but showing you can hang around, and you don't need to waste the really spicy stuff on it. Go, you!";
+	moot miss more diss door;
 
 [xxvcvr]
 

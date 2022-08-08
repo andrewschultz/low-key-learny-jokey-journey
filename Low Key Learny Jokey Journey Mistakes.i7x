@@ -304,6 +304,19 @@ mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "socking sift"	--	false	103	--	"You wouldn't want to sift through punches to receive."
 "whocking whiffed"	--	false	103	--	"You wouldn't want to attack someone and miss."
 
+guess-table of miss more diss door is the table of miss more diss door guesses.
+
+table of miss more diss door guesses
+mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
+"chiz chore"	--	false	44	--	"You get your Molesworth on briefly."
+"his/hiss whore"	--	false	44	--	"No, nothing tasteless."
+"is or"	--	false	44	--	"Too simple."
+"kiss cor/core"	--	false	44	--	"Potentially scandalous, but there's 'better.'"
+"sis soar/sore"	--	false	44	--	"No, family praise or squabbles aren't it."
+"this thor"	--	false	44	--	"Thor is more about actions than words."
+"tis tore"	--	false	44	--	"The [diss door] remains intact."
+"wiz war"	--	false	44	--	"No lightning bolt spell blasts the door."
+
 guess-table of red rose is the table of red rose guesses.
 
 table of red rose guesses

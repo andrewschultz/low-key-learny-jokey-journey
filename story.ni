@@ -46,7 +46,7 @@ core-max is 56.
 
 min-needed is 56.
 
-max-bonus is 7.
+max-bonus is 8.
 
 cur-bonus is 0.
 
@@ -780,7 +780,28 @@ carry out optsing:
 
 chapter swearing
 
-check swearing obscenely: say "[one of]A[or]Another[stopping] worst-word-burst bird flies by and puts your efforts to utter shame." instead;
+after printing the locale description:
+	if miss more diss door is fungible, say "Oh. The [diss door] is there. You may want to dispose of it somehow.";
+	continue the action;
+
+the miss more diss door is a rhymable. it is scenery. printed name is "miss-more-diss door".
+
+guess-table of miss more diss door is table of miss more diss door guesses.
+
+sco-piss-poor is a truth state that varies.
+
+check entering miss more diss door: say "Looking for arguments right now is pointless." instead;
+
+check swearing obscenely:
+	if roaring rocks is unvisited, say "Wait until you've moved out of here. Then, cursing will give you a bonus point." instead;
+	if miss more diss door is moot, say "With the [diss door] gone, [one of]a[or]another[stopping] worst-word-burst bird flies by and puts your efforts to utter shame." instead;
+	if miss more diss door is fungible, say "The [diss door] rattles a menacing challenge." instead;
+	if miss more diss door is off-stage:
+		say "You hear a whooshing as a door swings in from nowhere. It doesn't seem to lead anywhere. Voices from behind it, though, assure you you are missing something. Using your logical skills, you deduce it is a [diss door]. While it's not going to jump you if your back is turned, it might be nice to get rid of.";
+	else:
+		say "The [diss door] whooshes into view again." instead;
+	move miss more diss door to location of player instead;
+
 check swearing mildly: try swearing obscenely instead;
 
 chapter verbsing
@@ -822,9 +843,10 @@ final question wording	only if victorious	topic		final response rule		final resp
 "see the points you [b]MISSED[r]"	true	"missed"	show-misses rule	--
 
 this is the show-misses rule:
-	if sco-plain-plea is false, say "You could've made a [b]PLAIN PLEA[r] back at the start in [sane see]";
-	if sco-grotty-grail is false, say "You could've discovered a [b]GROTTY GRAIL[r] back in [jotty jail]";
-	if sco-potty-pail is false, say "You could've discovered a [b]POTTY PAIL[r] back in [jotty jail]";
+	if sco-plain-plea is false, say "You could've made a [b]PLAIN PLEA[r] back at the start in [sane see].";
+	if sco-plain-plea is false, say "You could've used a minor profanity ([b]BOTHER[r]) and said [b]PISS POOR[r] to [the diss door].";
+	if sco-grotty-grail is false, say "You could've discovered a [b]GROTTY GRAIL[r] back in [jotty jail].";
+	if sco-potty-pail is false, say "You could've discovered a [b]POTTY PAIL[r] back in [jotty jail].";
 	if sco-go-goo is false, say "You could've made [b]GO GOO[r] in [show shoe].";
 	if sco-sigh-sub is false, say "You could've said [b]SIGH SUB[r] in [high hub] to revisit the first rooms and pick up clue-points for good guesses.";
 	if sco-tight-tease is false, say "You could've summoned [b]TIGHT TEES[r] or a [b]TIGHT TEASE[r] in [slight sleaze].";
