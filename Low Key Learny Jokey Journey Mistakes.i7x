@@ -114,6 +114,20 @@ this is the no-roast-yet rule:
 	if sco-rad-roast is false, the rule succeeds;
 	the rule fails;
 
+guess-table of nay nope slay slope is the table of nay nope slay slope guesses.
+
+table of nay nope slay slope guesses
+mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
+"day dope"	--	false	107	--	"Reaffirming every day is dope is pretty positive and all, but you [if sco-k-cope is true]did[else]can do[end if] better."
+"gray grope"	--	false	107	--	"[no-mope-grope]."
+"may mope"	--	false	107	--	"[no-mope-grope]."
+"pay pope"	--	false	107	--	"Don't surrender to religious corruption!"
+"ray rope"	--	false	107	--	"The right sort of ray? Yes. Rope to pull you back? No."
+"say soap"	--	false	107	--	"I suppose I should put in a cliche about cleansing one's soul here."
+"tray/tres trope"	--	false	107	--	"You recognize a trope or twelve at play during your journeys."
+
+to say no-mope-grope: say "The object is not to be consumed by depression but to reduce its influence"
+
 table of no new show shoe guesses [ you can't go back to the show shoe after you THROW THROUGH, so there is no leet-rule ]
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "blow blew/blue"	--	false	100	--	"You blow off steam that you haven't quite revitalized the [show shoe] yet."
@@ -182,6 +196,35 @@ mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 
 this is the box-hidden rule:
 	if boring box is off-stage, the rule succeeds;
+	the rule fails;
+
+table of rum route guesses
+mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
+"bum bout"	--	false	108	no-umm-out rule	"You should have more focus than to bum [']bout."
+"drum drought"	--	false	108	no-umm-out rule	"Thankfully, there's no percussion in the background."
+"gum gout"	--	false	108	no-umm-out rule	"But gout is in the toes, not the mouth."
+
+this is the no-umm-out rule:
+	if sco-umm-out is false, the rule succeeds;
+	the rule fails;
+
+table of slight sleaze guesses
+mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
+"bite bees"	--	false	66	sleaze-undone rule	"Those wouldn't taste very good."
+"fight fees"	--	false	66	sleaze-undone rule	"Yes, it's important to fight unfairly sleazy fees, but not here and now."
+"flight flees/fleas"	--	false	66	sleaze-undone rule	"You need to feel less scared, not more."
+"fright frees/freeze"	--	false	66	sleaze-undone rule	"You need to feel more active, not less."
+"kite keys"	--	false	66	sleaze-undone rule	"That would be electrifying if it were possible."
+"knight/night knees/nis"	--	false	66	sleaze-undone rule	"This rhyme was accidental, but since you found it, I'll say [i]Life of Brian[r] was a better movie. And I'll die on that hill."
+"light lease/lees"	--	false	66	sleaze-undone rule	"Lees may be sleazy in their own way."
+"might mes"	--	false	66	sleaze-undone rule	"Bad grammar is pretty neutral on the sleaze scale."
+"sight sees/seize"	--	false	66	sleaze-undone rule	"There is enough to see, and seizing anything would be, uh, sleazy."
+"sprite sprees"	--	false	66	sleaze-undone rule	"Well, guzzling a two-liter pop bottle is less sleazy than doing the same with alcohol."
+"trite trees"	sleaze-undone rule	false	66	--	"They will pop up once you removed the sleaze."
+"white whees/wheeze"	--	false	66	sleaze-undone rule	"Such sentiments are not strong enough to dispel sleaze."
+
+this is the sleaze-undone rule:
+	if sco-plight-please is false, the rule succeeds;
 	the rule fails;
 
 table of Thunk Tree Trunk guesses
@@ -265,7 +308,7 @@ guess-table of red rose is the table of red rose guesses.
 
 table of red rose guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
-"bed bows"	--	false	--	--	"<CLEVER REJECT TEXT>"
+"bed bows"	--	false	--	--	"You need no fancy place to sleep."
 "bled blows"	--	false	--	--	"You do not need to incite violence."
 "dead does/dohs"	--	false	--	--	"You aren't here to kill animals or utter a Simpsonesque epithet."
 "fed foes/phos"	--	false	--	--	"You don't need to feed your enemies."

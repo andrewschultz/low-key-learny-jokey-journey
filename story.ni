@@ -137,6 +137,10 @@ to decide which number is variable-scan-length of (mynum - a number):
 		if sco-hey-hope is false, decide on 34;
 		if sco-k-cope is false, decide on 14;
 		decide on 0;
+	else if mynum is 108: [ rum route ]
+		if sco-dumb-doubt is false, decide on 45;
+		if sco-umm-out is false, decide on 33;
+		decide on 0;
 	say "[b]BUG[r]: no variable-scan-length for [mynum]. Please let me know what you typed.";
 	decide on 44;
 
@@ -433,6 +437,8 @@ book Slight Sleaze / Grokking Grift
 
 Slight Sleaze is a room in Poppin' Part. "You feel a fright-freeze preventing you from going south.".
 
+guess-table of slight sleaze is the table of slight sleaze guesses.
+
 check going south in Slight Sleaze when sco-plight-please is false: say "The fright-freeze pushes you back. You need to find a way to talk it down, somehow.";
 
 sco-tight-tease is a truth state that varies.
@@ -452,6 +458,8 @@ sco-clique-claiming is a truth state that varies.
 book Rum Route
 
 Rum Route is a room in Poppin' Part.
+
+guess-table of rum route is the table of rum route guesses.
 
 sco-umm-out is a truth state that varies.
 sco-dumb-doubt is a truth state that varies.
