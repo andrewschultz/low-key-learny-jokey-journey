@@ -63,7 +63,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "docking"	"diffed"	--	--	false	true	true	false	High Hub	vc-docking-diffed rule	vr-docking-diffed rule	--	--
 "grokking"	"grift"	--	--	false	true	true	false	High Hub	vc-grokking-grift rule	vr-grokking-grift rule	--	--
 "rocking"	"rift"	--	--	false	true	true	false	High Hub	vc-rocking-rift rule	vr-rocking-rift rule	--	--
-"shocking"	"shift"	--	--	false	true	true	false	High Hub	vc-shocking-shift rule	vr-shocking-shift rule	--	-- [unclaimed]
+"shocking"	"shift"	--	--	false	true	true	false	High Hub	vc-shocking-shift rule	vr-shocking-shift rule	--	--
 "stocking"	"stiffed"	--	--	false	true	true	false	High Hub	vc-stocking-stiffed rule	vr-stocking-stiffed rule	--	--
 "mocking"	"miffed"	--	--	false	true	true	false	High Hub	vc-mocking-miffed rule	vr-mocking-miffed rule	--	--
 "flow"	"flue"	--	--	false	true	true	false	show shoe	vc-flow-flue rule	vr-flow-flue rule	--	-- [start no new show shoe/rocking rift]
@@ -92,22 +92,15 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "bleak"	"blaming"	--	--	false	true	true	false	freak framing seek sameing	vc-bleak-blaming rule	vr-bleak-blaming rule	--	--
 "chic"	"shaming"	--	--	false	true	true	false	freak framing seek sameing	vc-chic-shaming rule	vr-chic-shaming rule	--	--
 "clique"	"claiming"	--	--	false	true	false	false	freak framing seek sameing	vc-clique-claiming rule	vr-clique-claiming rule	--	--
+"shore"	"shoals"	--	--	false	true	true	false	sore souls' gore goals	vc-shore-shoals rule	vr-shore-shoals rule	--	-- [start shocking shift / sore souls' gore goals]
+"four"	"foals"	--	--	false	true	true	false	sore souls' gore goals	vc-four-foals rule	vr-four-foals rule	--	--
+"more"	"moles"	--	--	false	true	true	false	sore souls' gore goals	vc-more-moles rule	vr-more-moles rule	--	--
 "bold"	"bend"	--	--	false	true	true	false	old end	vc-bold-bend rule	vr-bold-bend rule	--	-- [mocking miffed: this is the endgame sequence, so put nothing after it]
 "trolled"	"trend"	--	--	false	true	true	false	old end	vc-trolled-trend rule	vr-trolled-trend rule	--	--
 "mold"	"mend"	--	--	false	true	true	false	old end	vc-mold-mend rule	vr-mold-mend rule	--	--
 "bane"	"bat"	--	--	false	true	true	false	drain drat vain vat	vc-bane-bat rule	vr-bane-bat rule	--	--
 "flain"	"flat"	--	--	false	true	true	false	drain drat vain vat	vc-flain-flat rule	vr-flain-flat rule	--	--
 "splain"	"splat"	--	--	false	true	true	false	drain drat vain vat	vc-splain-splat rule	vr-splain-splat rule	--	--
-
-
-a goodrhyme rule (this is the vc-piss-poor rule):
-	if miss more diss door is not fungible, unavailable;
-	ready;
-
-this is the vr-piss-poor rule:
-	now sco-piss-poor is true;
-	say "The wood grains in the door almost seem to frown, and it morphs into an almost human form before shambling away at such an apt blow-off. Not really vulgar, but showing you can hang around, and you don't need to waste the really spicy stuff on it. Go, you!";
-	moot miss more diss door;
 
 [xxvcvr]
 
@@ -264,9 +257,7 @@ a goodrhyme rule (this is the vc-crust-crack rule):
 	ready;
 
 this is the vr-crust-crack rule:
-	say "A rumbling. Passage opens to the south.";
-	now shore shoals is mapped south of trust track;
-	now trust track is mapped north of shore shoals;
+	say "A rumbling. Passage opens to the north.";
 	now sco-crust-crack is true;
 
 this is the vc-bare-beach rule:
@@ -429,6 +420,15 @@ this is the vr-knotty-nail rule:
 	if sco-grotty-grail is false, max-down;
 	take-lift High Hub;
 
+a goodrhyme rule (this is the vc-piss-poor rule):
+	if miss more diss door is not fungible, unavailable;
+	ready;
+
+this is the vr-piss-poor rule:
+	now sco-piss-poor is true;
+	say "The wood grains in the door almost seem to frown, and it morphs into an almost human form before shambling away at such an apt blow-off. Not really vulgar, but showing you can hang around, and you don't need to waste the really spicy stuff on it. Go, you!";
+	moot miss more diss door;
+
 a goodrhyme rule (this is the vc-sigh-sub rule):
 	if player is not in high hub, unavailable;
 	if sco-sigh-sub is true:
@@ -482,7 +482,7 @@ this is the vr-grokking-grift rule:
 
 a goodrhyme rule (this is the vc-shocking-shift rule):
 	if player is not in High Hub, unavailable;
-	if sco-shocking-shift is true:
+	if shoal-score is 2:
 		vcal "You already took care of the shocking shift!";
 		already-done;
 	ready;
@@ -490,6 +490,7 @@ a goodrhyme rule (this is the vc-shocking-shift rule):
 this is the vr-shocking-shift rule:
 	now sco-shocking-shift is true;
 	say "The locking lift lurches with what is indeed a shocking shift...";
+	take-lift Sore Souls' Gore Goals;
 
 a goodrhyme rule (this is the vc-stocking-stiffed rule):
 	if player is not in High Hub, unavailable;
@@ -539,8 +540,7 @@ a goodrhyme rule (this is the vc-hey-hope rule):
 
 this is the vr-hey-hope rule:
 	now sco-hey-hope is true;
-	say "How exhilarating! The hope is real! With that, a pall lifts over your depression. You take the lift back to the [hub].";
-	take-lift High Hub;
+	say "How exhilarating! The hope is real! With that, a pall lifts over your depression. But not enough. Yet. You must finish the job.";
 
 a goodrhyme rule (this is the vc-k-cope rule):
 	if player is not in Nay Nope Slay Slope, unavailable;
@@ -552,17 +552,20 @@ a goodrhyme rule (this is the vc-k-cope rule):
 
 this is the vr-k-cope rule:
 	now sco-k-cope is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "The hope that started turns into coping, with a bit of slang. You feel spiritually refreshed. You take the lift back to the [hub].";
+	take-lift High Hub;
 
 a goodrhyme rule (this is the vc-mocking-miffed rule):
 	if player is not in High Hub, unavailable;
 	if hub-score < 5:
 		vcp "The mocking, miffed--well, it is there, but you don't quite have the confidence yet to face it. You've only fully tackled [if hub-score is 0]none[else][hub-score in words][end if] of the other five areas the locking lift can access.";
+		now tried-mocking-miffed is true;
 		not-yet;
 	ready;
 
 this is the vr-mocking-miffed rule:
 	now sco-mocking-miffed is true;
+	now tried-mocking-miffed is false;
 	say "You are on your way to the final!";
 	take-lift Old End;
 
@@ -823,6 +826,43 @@ a goodrhyme rule (this is the vc-tight-tease rule):
 		already-done;
 	ready;
 
+a goodrhyme rule (this is the vc-shore-shoals rule):
+	if player is not in sore souls' gore goals, unavailable;
+	if sco-shore-shoals is true:
+		vcal "You have already rehabilitated the sore souls['] gore goals!";
+		already-done;
+	ready;
+
+this is the vr-shore-shoals rule:
+	now sco-shore-shoals is true;
+	say "Hooray! You figured what to do! You get a point!";
+
+a goodrhyme rule (this is the vc-four-foals rule):
+	if player is not in sore souls' gore goals, unavailable;
+	abide by the animals-need-shoals rule;
+	if sco-four-foals is true:
+		vcal "You already populated the area with foals!";
+		already-done;
+	ready;
+
+this is the vr-four-foals rule:
+	now sco-four-foals is true;
+	say "Four foals begin frolicking! They thank you briefly before running away. They've made things a big cheerier.";
+	check-red-rose;
+
+a goodrhyme rule (this is the vc-more-moles rule):
+	if player is not in sore souls' gore goals, unavailable;
+	abide by the animals-need-shoals rule;
+	if sco-more-moles is true:
+		vcal "You don't need even more moles!";
+		already-done;
+	ready;
+
+this is the vr-more-moles rule:
+	now sco-more-moles is true;
+	say "Since the ground's slightly holey here, you surmise the existence of moles and suggest there should be more.";
+	check-red-rose;
+
 this is the vr-tight-tease rule:
 	now sco-tight-tease is true;
 	say "You figure, if you can't beat [']em, join [']em, or just pretend to. You demand something more risque, which the slight sleaze is unable to provide. This doesn't win the war, but it wins a small, satisfying pointless side battle.";
@@ -932,7 +972,26 @@ this is the vr-splain-splat rule:
 
 [zzvcvr]
 
-section auxiliary rules
+section auxiliary rules and definitions
+
+tried-mocking-miffed is a truth state that varies.
+
+to decide which number is shoal-score:
+	decide on boolval of sco-four-foals + boolval of sco-more-moles;
+
+to check-red-rose:
+	say "[line break]";
+	if shoal-score is 2:
+		say "Things are livelier now. Plants come into bloom, etc. Of course, there is a red rose, because there always is one. You take it. Who knows where it may come in handy?";
+		now player has red rose;
+		take-lift high hub;
+	else:
+		say "You've almost filled this area's potential. Just a little more life...";
+
+this is the animals-need-shoals rule:
+	if sco-shore-shoals is false:
+		vcp "Such animals would make this area nicer, but it's too desolate for them right now.";
+		not-yet;
 
 this is the coped-in-slope rule:
 	if sco-k-cope is true:
@@ -944,7 +1003,7 @@ this is the rum-route-blanket-check rule:
 		vcal "You've cleared the Rum Route. No need to overdo things.";
 		already-done;
 
-this is the did-i-shame rule:
+a goodrhyme rule (this is the did-i-shame rule):
 	if sco-chic-shaming is true:
 		vcal "The chic shaming complete, you're done here. No need to repeat what you did.";
 		already-done;

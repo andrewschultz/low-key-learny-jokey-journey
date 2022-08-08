@@ -42,9 +42,9 @@ Poppin' Part is a region.
 
 section scoring
 
-core-max is 56.
+core-max is 59.
 
-min-needed is 56.
+min-needed is 59.
 
 max-bonus is 8.
 
@@ -379,7 +379,7 @@ chapter locking lift
 The locking lift is a rhymable in High Hub. It is scenery. "The locking lift seems to have a list of places it can go, or emotions you can express to see a new place. The unvisited ones are blurred out, of course. You can [b]READ[r] your progress so far." [?? if you got MOCKING MIFFED first, then you are in luck]
 
 check entering lift:
-	if player is in high hub, say "You need to decide where to go in the lift.";
+	if player is in high hub, say "You need to decide where to go in the lift." instead;
 	say "You take the lift back to High Hub...";
 	move player to High Hub;
 	the rule succeeds;
@@ -429,9 +429,13 @@ sco-flight-flail is a truth state that varies.
 sco-right-rail is a truth state that varies.
 sco-excite-exhale is a truth state that varies.
 
-book Shore Shoals
+book Sore Souls Gore Goals / Shocking Shift
 
-Shore Shoals is a room in Poppin' Part. "The lift leads back to High Hub."
+Sore Souls' Gore Goals is a room in Poppin' Part. "Desolation and stuff."
+
+sco-four-foals is a truth state that varies.
+sco-more-moles is a truth state that varies.
+sco-shore-shoals is a truth state that varies.
 
 book Slight Sleaze / Grokking Grift
 
@@ -467,6 +471,8 @@ sco-dumb-doubt is a truth state that varies.
 book Nay Nope Slay Slope
 
 Nay Nope Slay Slope is a room in Poppin' Part.
+
+guess-table of nay nope slay slope is the table of nay nope slay slope guesses.
 
 sco-k-cope is a truth state that varies.
 sco-hey-hope is a truth state that varies.
@@ -888,7 +894,7 @@ chapter hub-ish era
 index map with High Hub mapped east of No New Show Shoe.
 index map with Mad Most Cad Coast mapped northwest of High Hub.
 
-index map with Shore Shoals mapped east of High Hub.
+index map with Gore Goals mapped east of High Hub.
 index map with Rum Route mapped north of High Hub.
 index map with Slay Slope mapped east of Rum Route.
 
