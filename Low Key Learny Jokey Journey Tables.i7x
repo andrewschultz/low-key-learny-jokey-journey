@@ -1052,21 +1052,21 @@ volume readables
 
 table of readables (continued)
 read-thing	read-txt
-locking lift	"You see [lift-score] of 6 settings filled in:[paragraph break][fixed letter spacing][lift-stuff].[variable letter spacing]"
+locking lift	"You see [lift-score] of 6 settings filled in:[paragraph break][fixed letter spacing][lift-stuff].[variable letter spacing][paragraph break]You've completed [hub-score in words] areas beyond the [high hub]."
 
 to decide which number is lift-score:
 	decide on boolval of sco-docking-diffed + boolval of sco-grokking-grift + boolval of sco-mocking-miffed + boolval of sco-rocking-rift + boolval of sco-shocking-shift + boolval of sco-stocking-stiffed;
 
-to decide which number is hub-score: [rocking rift/throw through, docking diffed / excite-exhale, grokking grift/chic shaming, stocking stiffed/k cope, shocking shift = still needs a final command ]
-	decide on boolval of sco-throw-through + boolval of sco-excite-exhale + boolval of sco-chic-shaming + boolval of sco-k-cope + 1;
+to decide which number is hub-score: [rocking rift/throw through, docking diffed / excite-exhale, grokking grift/chic shaming, stocking stiffed/k cope, shocking shift/3 gore-goals points ]
+	decide on boolval of sco-throw-through + boolval of sco-excite-exhale + boolval of sco-chic-shaming + boolval of sco-k-cope + boolval of (whether or not shoal-score is 2);
 
 to say lift-stuff:
-	say "[if sco-docking-diffed is true]DOCKING DIFFED[else]------- ------[end if].";
-	say "[if sco-grokking-grift is true]GROKKING GRIFT[else]------- ------[end if].";
-	say "[if sco-mocking-miffed is true]MOCKING MIFFED[else]------- ------[end if].";
-	say "[if sco-rocking-rift is true]ROCKING RIFT[else]------ ----[end if].";
-	say "[if sco-shocking-shift is true]SHOCKING SHIFT[else]-------- -----[end if].";
-	say "[if sco-stocking-stiffed is true]STOCKING STIFFED[else]-------- -------[end if]";
+	say "[if sco-docking-diffed is true]DOCKING DIFFED[else]------- ------[end if][if sco-excite-exhale is true] (done)[end if].";
+	say "[if sco-grokking-grift is true]GROKKING GRIFT[else]------- ------[end if][if sco-chic-shaming is true] (done)[end if].";
+	say "[if tried-mocking-miffed is true or sco-mocking-miffed is true]MOCKING MIFFED[else]------- ------[end if][if hub-score < 5] (not yet)[end if]."; [ no (done) case since it is the final one ]
+	say "[if sco-rocking-rift is true]ROCKING RIFT[else]------ ----[end if][if sco-throw-through is true] (done)[end if].";
+	say "[if sco-shocking-shift is true]SHOCKING SHIFT[else]-------- -----[end if][if sco-throw-through is true] (done)[end if].";
+	say "[if sco-stocking-stiffed is true]STOCKING STIFFED[else]-------- -------[end if][if sco-k-cope is true] (done)[end if]";
 
 volume homonym rejections
 
