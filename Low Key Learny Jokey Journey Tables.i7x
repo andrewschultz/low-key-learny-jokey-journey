@@ -1022,11 +1022,64 @@ this is the vr-sad-sunk rule:
 	now sco-sad-sunk is true;
 	examine-monk;
 
+a goodrhyme rule (this is the vc-fret-free rule):
+	if player is not in threat three met me, unavailable;
+	abide by the marquee-there rule;
+	if sco-fret-free is true:
+		vcal "You don't want to force too much cheeriness.";
+		already-done;
+	ready;
+
+this is the vr-fret-free rule:
+	now sco-fret-free is true;
+	say "You feel cheerier. Perhaps there is stuff to fret about, but you recognize it'd be a waste of energy, and you're pleased you got this far.";
+	abide by the marquee-change rule;
+
+a goodrhyme rule (this is the vc-set-see rule):
+	if player is not in threat three met me, unavailable;
+	abide by the marquee-there rule;
+	if sco-set-see is true:
+		vcal "You already struck a confident pose. You don't want to freeze there.";
+		already-done;
+	ready;
+
+this is the vr-set-see rule:
+	now sco-set-see is true;
+	say "You stand tall and confident. You won't be easily pushed around!";
+	abide by the marquee-change rule;
+
+a goodrhyme rule (this is the vc-jet-gee rule):
+	if player is not in threat three met me, unavailable;
+	abide by the marquee-there rule;
+	if sco-jet-gee is true:
+		vcal "You already let wack punks and suckers know they'd best get to stepping.";
+		already-done;
+	ready;
+
+this is the vr-jet-gee rule:
+	now sco-jet-gee is true;
+	say "You give a gesture as if to say, anyone who doesn't like you can leave. It feels effective without being obnoxious.";
+	abide by the marquee-change rule;
+
 [zzvcvr]
 
 section auxiliary rules and definitions
 
 tried-mocking-miffed is a truth state that varies.
+
+a goodrhyme rule (this is the marquee-there rule):
+	if marquee-score < 3, continue the action;
+	vcal "You already prepped yourself for the final fight. Now it is upon you.";
+	already-done;
+
+this is the marquee-change rule:
+	if marquee-score is 3:
+		say "The marquee crumbles, revealing your nemesis ... the Frightfully Bright Bully!";
+		move Frightfully Bright Bully to Threat Three Met Me;
+	else if marquee-score is 2:
+		say "The marquee turns more pronouncedly cracked as some of the text rubs off.";
+	else:
+		say "The marquee shakes slightly as some of the text is rubbed off."
 
 to decide which number is monk-score:
 	decide on boolval of sco-bad-bunk + boolval of sco-sad-sunk;

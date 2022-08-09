@@ -42,9 +42,9 @@ Poppin' Part is a region.
 
 section scoring
 
-core-max is 61.
+core-max is 64.
 
-min-needed is 61.
+min-needed is 64.
 
 max-bonus is 10.
 
@@ -439,7 +439,7 @@ sco-excite-exhale is a truth state that varies.
 
 book Sore Souls Gore Goals / Shocking Shift
 
-Sore Souls' Gore Goals is a room in Poppin' Part. "[if sco-shore-shoals is false]Desolation and stuff[else]A bit more lively now[end if]."
+Sore Souls' Gore Goals is a room in Poppin' Part. "[if sco-shore-shoals is false]Desolation and stuff[else]A bit more lively now[end if].". printed name is "[if sco-shore-shoals is false]Sore Souls['] Gore Goals[else]Shore Shoals[end if]". understand "shore/shoals" and "shore shoals" as Gore Goals when sco-shore-shoals is true.
 
 sco-four-foals is a truth state that varies.
 sco-more-moles is a truth state that varies.
@@ -514,6 +514,20 @@ the Mad Monk is a rhymable. description is "A mad monk raves here. They're prett
 
 sco-bad-bunk is a truth state that varies.
 sco-sad-sunk is a truth state that varies.
+
+book Threat Three Met ME
+
+Threat Three Met Me is south of Drain Drat Vain Vat. It is in Poppin' Part.
+
+for printing the name of Threat Three Met Me when marquee-score < 3:
+	say "Market Marquee";
+
+to decide which number is marquee-score:
+	decide on boolval of sco-fret-free + boolval of sco-set-see + boolval of sco-jet-gee;
+
+sco-fret-free is a truth state that varies.
+sco-set-see is a truth state that varies.
+sco-jet-gee is a truth state that varies.
 
 volume main engine
 
