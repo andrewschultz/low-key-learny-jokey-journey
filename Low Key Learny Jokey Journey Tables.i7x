@@ -93,6 +93,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "chic"	"shaming"	--	--	false	true	true	false	freak framing seek sameing	vc-chic-shaming rule	vr-chic-shaming rule	--	--
 "clique"	"claiming"	--	--	false	true	false	false	freak framing seek sameing	vc-clique-claiming rule	vr-clique-claiming rule	--	--
 "shore"	"shoals"	--	--	false	true	true	false	sore souls' gore goals	vc-shore-shoals rule	vr-shore-shoals rule	--	-- [start shocking shift / sore souls' gore goals]
+"lore"	"lols"	--	--	false	true	false	false	sore souls' gore goals	vc-lore-lols rule	vr-lore-lols rule	--	--
 "four"	"foals"	--	--	false	true	true	false	sore souls' gore goals	vc-four-foals rule	vr-four-foals rule	--	--
 "more"	"moles"	--	--	false	true	true	false	sore souls' gore goals	vc-more-moles rule	vr-more-moles rule	--	--
 "bold"	"bend"	--	--	false	true	true	false	old end	vc-bold-bend rule	vr-bold-bend rule	--	-- [mocking miffed: this is the endgame sequence, so put nothing after it]
@@ -835,7 +836,7 @@ a goodrhyme rule (this is the vc-shore-shoals rule):
 
 this is the vr-shore-shoals rule:
 	now sco-shore-shoals is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "The area is much less desolate now. It feels like it could be inhabited.";
 
 a goodrhyme rule (this is the vc-four-foals rule):
 	if player is not in sore souls' gore goals, unavailable;
@@ -862,6 +863,17 @@ this is the vr-more-moles rule:
 	now sco-more-moles is true;
 	say "Since the ground's slightly holey here, you surmise the existence of moles and suggest there should be more.";
 	check-red-rose;
+
+a goodrhyme rule (this is the vc-lore-lols rule):
+	if player is not in sore souls' gore goals, unavailable;
+	if sco-lore-lols is true:
+		vcal "You recount the myths you started to create, just to make sure they're not lost.";
+		already-done;
+	ready;
+
+this is the vr-lore-lols rule:
+	now sco-lore-lols is true;
+	say "Why, yes, this place could use myths of creation and so forth[if sco-shore-shoals is false] for when it becomes habitable[end if].";
 
 this is the vr-tight-tease rule:
 	now sco-tight-tease is true;

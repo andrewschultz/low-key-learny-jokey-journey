@@ -66,6 +66,16 @@ this is the need-unarm rule:
 	if sco-un-arm is false, the rule succeeds;
 	the rule fails;
 
+table of sore souls' gore goals guesses
+mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
+"bore bowls"	--	false	109	--	"You're trying to bring life here, not drain it."
+"door doles"	--	false	109	--	"No, this place doesn't need more doors."
+"poor poles"	--	false	109	--	"Those would hardly liven the place up."
+"roar rolls/roles"	--	false	109	--	"Perhaps the roaring would be lively. Perhaps it wouldn't. But it might not add anything."
+"score skols"	--	false	109	--	"Perhaps Vikings will discover this land and conquer it some day. But why speed things up?"
+"store stoles"	--	false	109	--	"[if shoal-score < 0]Before you have animal pelts, you'll need animals living in peace[else]Bringing animal pelts into a place coming to live doesn't quite work[end if]."
+"whore holes"	--	false	109	--	"Now, now, this isn't that sort of game."
+
 table of high hub guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "bye bub"	--	false	43	sigh-sub-yet rule	"[if sco-sigh-sub is false]There's another way down. Be more resigned and more tuned to the location name[else]You do want to say good-bye to whomever put you here[end if]."
@@ -113,8 +123,6 @@ mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 this is the no-roast-yet rule:
 	if sco-rad-roast is false, the rule succeeds;
 	the rule fails;
-
-guess-table of nay nope slay slope is the table of nay nope slay slope guesses.
 
 table of nay nope slay slope guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt

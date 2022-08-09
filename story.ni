@@ -46,7 +46,7 @@ core-max is 59.
 
 min-needed is 59.
 
-max-bonus is 8.
+max-bonus is 9.
 
 cur-bonus is 0.
 
@@ -140,6 +140,10 @@ to decide which number is variable-scan-length of (mynum - a number):
 	else if mynum is 108: [ rum route ]
 		if sco-dumb-doubt is false, decide on 45;
 		if sco-umm-out is false, decide on 33;
+		decide on 0;
+	else if mynum is 109:
+		if sco-lore-lols is false, decide on -44;
+		if shoal-score < 2, decide on 45;
 		decide on 0;
 	say "[b]BUG[r]: no variable-scan-length for [mynum]. Please let me know what you typed.";
 	decide on 44;
@@ -431,11 +435,14 @@ sco-excite-exhale is a truth state that varies.
 
 book Sore Souls Gore Goals / Shocking Shift
 
-Sore Souls' Gore Goals is a room in Poppin' Part. "Desolation and stuff."
+Sore Souls' Gore Goals is a room in Poppin' Part. "[if sco-shore-shoals is false]Desolation and stuff[else]A bit more lively now[end if]."
 
 sco-four-foals is a truth state that varies.
 sco-more-moles is a truth state that varies.
 sco-shore-shoals is a truth state that varies.
+sco-lore-lols is a truth state that varies.
+
+guess-table of sore souls' gore goals is the table of sore souls' gore goals guesses.
 
 book Slight Sleaze / Grokking Grift
 
@@ -857,6 +864,7 @@ this is the show-misses rule:
 	if sco-sigh-sub is false, say "You could've said [b]SIGH SUB[r] in [high hub] to revisit the first rooms and pick up clue-points for good guesses.";
 	if sco-tight-tease is false, say "You could've summoned [b]TIGHT TEES[r] or a [b]TIGHT TEASE[r] in [slight sleaze].";
 	if sco-clique-claiming is false, say "You could've performed [b]CLIQUE CLAIMING[r] in [freak framing].";
+	if sco-lore-lols is false, say "You could've performed [b]LORE LOLS[r] in [gore goals].";
 
 volume unsorted
 
