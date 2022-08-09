@@ -103,11 +103,13 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "bane"	"bat"	--	--	false	true	true	false	drain drat vain vat	vc-bane-bat rule	vr-bane-bat rule	--	--
 "flain"	"flat"	--	--	false	true	true	false	drain drat vain vat	vc-flain-flat rule	vr-flain-flat rule	--	--
 "splain"	"splat"	--	--	false	true	true	false	drain drat vain vat	vc-splain-splat rule	vr-splain-splat rule	--	--
+"gad"	"gunk"	--	--	false	true	false	false	drain drat vain vat	vc-gad-gunk rule	vr-gad-gunk rule	--	--
 "bad"	"bunk"	--	--	false	true	true	false	drain drat vain vat	vc-bad-bunk rule	vr-bad-bunk rule	--	--
 "sad"	"sunk"	--	--	false	true	true	false	drain drat vain vat	vc-sad-sunk rule	vr-sad-sunk rule	--	--
 "fret"	"free"	--	--	false	true	true	false	threat three met me	vc-fret-free rule	vr-fret-free rule	--	--
 "set"	"see"	--	--	false	true	true	false	threat three met me	vc-set-see rule	vr-set-see rule	--	--
 "jet"	"gee"	--	--	false	true	true	false	threat three met me	vc-jet-gee rule	vr-jet-gee rule	--	--
+"trite"	"tolly|tully|tally|telly|tilly"	--	--	false	true	false	false	threat three met me	vc-t-lly rule	vr-t-lly rule	--	--
 
 [xxvcvr]
 
@@ -1000,6 +1002,17 @@ this is the vr-splain-splat rule:
 	say "Now that you've busted out of the vain vat, you announce yourself! Your nemesis doesn't appear. Just a mere henchman: obviously a mad monk.";
 	move mad monk to Drain Drat Vain Vat;
 
+a goodrhyme rule (this is the vc-gad-gunk rule):
+	if player is not in drain drat vain vat, unavailable;
+	if sco-gad-gunk is true:
+		vcal "You already insulted the mad monk that way.";
+		already-done;
+	ready;
+
+this is the vr-gad-gunk rule:
+	now sco-gad-gunk is true;
+	say "An effective physical insult, but it doesn't really hit at the mad monk's heart.";
+
 a goodrhyme rule (this is the vc-bad-bunk rule):
 	if mad monk is not fungible, unavailable;
 	if sco-bad-bunk is true:
@@ -1060,6 +1073,21 @@ this is the vr-jet-gee rule:
 	now sco-jet-gee is true;
 	say "You give a gesture as if to say, anyone who doesn't like you can leave. It feels effective without being obnoxious.";
 	abide by the marquee-change rule;
+
+a goodrhyme rule (this is the vc-t-lly rule):
+	if player is not in threat three met me, unavailable;
+	if sco-t-lly is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-t-lly rule:
+	now sco-t-lly is true;
+	say "You figured your enemy's name! Congratulations! You have won!";
+	end the game in victory;
+
+
+sco-trite-t-lly is a truth state that varies.
 
 [zzvcvr]
 

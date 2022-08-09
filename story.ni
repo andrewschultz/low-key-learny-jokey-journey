@@ -46,7 +46,7 @@ core-max is 64.
 
 min-needed is 64.
 
-max-bonus is 10.
+max-bonus is 11.
 
 cur-bonus is 0.
 
@@ -512,6 +512,9 @@ chapter Mad Monk
 
 the Mad Monk is a rhymable. description is "A mad monk raves here. They're pretty obviously a simple henchman, but they are still blocking the way. Perhaps they can be used as practice for the final fight, to get that one last hint, if you need it."
 
+guess-table of mad monk is the table of mad monk guesses.
+
+sco-gad-gunk is a truth state that varies.
 sco-bad-bunk is a truth state that varies.
 sco-sad-sunk is a truth state that varies.
 
@@ -896,6 +899,8 @@ volume unsorted
 book people
 
 the Frightfully Bright Bully is a person. description is "The [bully] doesn't look especially mean or conniving or thuggish. But you know they just can't stand you. It's time to face up to them."
+
+sco-t-lly is a truth state that varies.
 
 book places
 
