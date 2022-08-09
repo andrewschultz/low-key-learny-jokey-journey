@@ -103,6 +103,11 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "bane"	"bat"	--	--	false	true	true	false	drain drat vain vat	vc-bane-bat rule	vr-bane-bat rule	--	--
 "flain"	"flat"	--	--	false	true	true	false	drain drat vain vat	vc-flain-flat rule	vr-flain-flat rule	--	--
 "splain"	"splat"	--	--	false	true	true	false	drain drat vain vat	vc-splain-splat rule	vr-splain-splat rule	--	--
+"bad"	"bunk"	--	--	false	true	true	false	drain drat vain vat	vc-bad-bunk rule	vr-bad-bunk rule	--	--
+"sad"	"sunk"	--	--	false	true	true	false	drain drat vain vat	vc-sad-sunk rule	vr-sad-sunk rule	--	--
+"fret"	"free"	--	--	false	true	true	false	threat three met me	vc-fret-free rule	vr-fret-free rule	--	--
+"set"	"see"	--	--	false	true	true	false	threat three met me	vc-set-see rule	vr-set-see rule	--	--
+"jet"	"gee"	--	--	false	true	true	false	threat three met me	vc-jet-gee rule	vr-jet-gee rule	--	--
 
 [xxvcvr]
 
@@ -992,13 +997,46 @@ a goodrhyme rule (this is the vc-splain-splat rule):
 
 this is the vr-splain-splat rule:
 	now sco-splain-splat is true;
-	say "Now that you're armed, threats work! Hooray!";
+	say "Now that you've busted out of the vain vat, you announce yourself! Your nemesis doesn't appear. Just a mere henchman: obviously a mad monk.";
+	move mad monk to Drain Drat Vain Vat;
+
+a goodrhyme rule (this is the vc-bad-bunk rule):
+	if mad monk is not fungible, unavailable;
+	if sco-bad-bunk is true:
+		vcal "You already shamed the mad monk this way!";
+		already-done;
+	ready;
+
+this is the vr-bad-bunk rule:
+	now sco-bad-bunk is true;
+	examine-monk;
+
+a goodrhyme rule (this is the vc-sad-sunk rule):
+	if mad monk is not fungible, unavailable;
+	if sco-sad-sunk is true:
+		vcal "You already shamed the mad monk this way!";
+		already-done;
+	ready;
+
+this is the vr-sad-sunk rule:
+	now sco-sad-sunk is true;
+	examine-monk;
 
 [zzvcvr]
 
 section auxiliary rules and definitions
 
 tried-mocking-miffed is a truth state that varies.
+
+to decide which number is monk-score:
+	decide on boolval of sco-bad-bunk + boolval of sco-sad-sunk;
+
+to examine-monk:
+	if monk-score is 2:
+		say "That's it. The mad monk flees. The path south really is free now.";
+		moot mad monk;
+		continue the action;
+	say "The mad monk blinks a bit. That one hurt. It was pretty simple but effective. Maybe a bit more..."
 
 to decide which number is shoal-score:
 	decide on boolval of sco-four-foals + boolval of sco-more-moles;

@@ -42,9 +42,9 @@ Poppin' Part is a region.
 
 section scoring
 
-core-max is 59.
+core-max is 61.
 
-min-needed is 59.
+min-needed is 61.
 
 max-bonus is 10.
 
@@ -508,6 +508,13 @@ sco-bane-bat is a truth state that varies.
 sco-flain-flat is a truth state that varies.
 sco-splain-splat is a truth state that varies.
 
+chapter Mad Monk
+
+the Mad Monk is a rhymable. description is "A mad monk raves here. They're pretty obviously a simple henchman, but they are still blocking the way. Perhaps they can be used as practice for the final fight, to get that one last hint, if you need it."
+
+sco-bad-bunk is a truth state that varies.
+sco-sad-sunk is a truth state that varies.
+
 volume main engine
 
 this is the situational-cuing-reject rule: do nothing;
@@ -911,7 +918,7 @@ index map with Rum Route mapped north of High Hub.
 index map with Slay Slope mapped east of Rum Route.
 
 index map with Old End mapped south of High Hub.
-index map with Slight Sleaze mapped east of Vain Vat.
+index map with Slight Sleaze mapped east of Old End.
 
 chapter meta stuff can go wherever
 
