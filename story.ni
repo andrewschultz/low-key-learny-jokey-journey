@@ -46,7 +46,7 @@ core-max is 59.
 
 min-needed is 59.
 
-max-bonus is 9.
+max-bonus is 10.
 
 cur-bonus is 0.
 
@@ -224,7 +224,11 @@ after printing the locale description for NNSS when NNSS is unvisited:
 
 chapter sturdy stalk
 
-the sturdy stalk is scenery. "You can climb back up.".
+the sturdy stalk is a rhymable. it is scenery. "You can climb back up it. Apparently, it's artificial, and its creator inscribed their name: Ferdie Falk.".
+
+sco-wordy-walk is a truth state that varies.
+
+guess-table of sturdy stalk is the table of sturdy stalk guesses.
 
 book Hun Harm Fun Farm
 

@@ -340,6 +340,19 @@ mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "ned knows"	--	false	--	--	"There is nobody named Ned around."
 "sled slows"	--	false	--	--	"There are no sleds that need slowing."
 
+table of sturdy stalk guesses
+mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
+"birdy balk"	--	false	54	need-wordy-walk rule	"No bird makes loud noises."
+"curdy caulk/calk"	--	false	54	need-wordy-walk rule	"You don't need to do any construction."
+"dirty doc"	--	false	54	need-wordy-walk rule	"Whether it's a dirty document or people, no."
+"herdy hawk"	--	false	54	need-wordy-walk rule	"You wouldn't want a bunch of hawks to swarm."
+"nerdy knock"	--	false	54	need-wordy-walk rule	"You're not sure how a knock could be nerdy."
+"purdy pock"	--	false	54	need-wordy-walk rule	"No, pock marks wouldn't make the stalk look better."
+
+this is the need-wordy-walk rule:
+	if sco-wordy-walk is false, the rule succeeds;
+	the rule fails;
+
 book miscellaneous guesses
 
 [this is for cases that may conflict with actual puzzles. Homonyms may apply as well.]
