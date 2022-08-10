@@ -42,9 +42,9 @@ Poppin' Part is a region.
 
 section scoring
 
-core-max is 64.
+core-max is 66.
 
-min-needed is 64.
+min-needed is 66.
 
 max-bonus is 11.
 
@@ -314,7 +314,9 @@ guess-table of trust track is table of trust track guesses.
 
 Just Jack is a person in Trust Track. "[one of]'Hi! I'm Just Jack. you can totally trust me that there are no other passages here. In fact, I'd be offended if you looked for them while I was still here. Not that you're getting rid of me.'[or]Just Jack waits here, making sure you trust his 'advice' enough not to look for any other passages.[stopping]"
 
-the sussed sack is a rhymable. guess-table of sussed sack is table of trust track guesses.
+the sus sack is a rhymable. guess-table of sus sack is table of trust track guesses. description is "What could be in it? It feels both light and heavy at the same time, both practical and impractical."
+
+sco-plus-plaque is a truth state that varies.
 
 sco-bussed-back is a truth state that varies.
 sco-crust-crack is a truth state that varies.
@@ -531,6 +533,8 @@ to decide which number is marquee-score:
 sco-fret-free is a truth state that varies.
 sco-set-see is a truth state that varies.
 sco-jet-gee is a truth state that varies.
+
+sco-plus-plaque is a truth state that varies.
 
 volume main engine
 

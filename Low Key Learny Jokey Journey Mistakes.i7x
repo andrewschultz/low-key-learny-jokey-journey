@@ -269,10 +269,14 @@ this is the no-excite-exhale-rule rule:
 
 table of trust track guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
-"cussed cack"	--	false	101	--	"[if player has sussed sack]No, the sack will be worthwhile.[else]There's a useful item here. More useful than such words![end if]"
-"lust lack"	--	false	101	--	"[if just jack is fungible]Jack would still be bugging you in that state[else]You continue to put impure thoughts aside to focus on a really cool text adventure[end if]."
+"cussed/cuss cack"	--	false	101	--	"[if player has sus sack]No, the sack will be worthwhile.[else]There's a useful item here. More useful than such words![end if]"
+"lust lack"	in-trust-track rule	false	101	--	"[if just jack is fungible]Jack would still be bugging you in that state[else]You continue to put impure thoughts aside to focus on a really cool text adventure[end if]."
 "must mack"	jack-gone rule	false	101	--	"You don't need memories of Just Jack."
 "rust rack"	--	false	101	--	"That would be a useless item."
+
+this is the in-trust-track rule:
+	if player is in Trust Track, the rule succeeds;
+	the rule fails;
 
 this is the jack-gone rule:
 	if Just Jack is moot, the rule succeeds;

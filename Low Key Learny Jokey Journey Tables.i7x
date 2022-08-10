@@ -109,7 +109,8 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "fret"	"free"	--	--	false	true	true	false	threat three met me	vc-fret-free rule	vr-fret-free rule	--	--
 "set"	"see"	--	--	false	true	true	false	threat three met me	vc-set-see rule	vr-set-see rule	--	--
 "jet"	"gee"	--	--	false	true	true	false	threat three met me	vc-jet-gee rule	vr-jet-gee rule	--	--
-"trite"	"tolly|tully|tally|telly|tilly"	--	--	false	true	false	false	threat three met me	vc-t-lly rule	vr-t-lly rule	--	--
+"plus"	"plaque"	--	--	false	true	true	false	drain drat vain vat	vc-plus-plaque rule	vr-plus-plaque rule	--	--
+"trite"	"tolly|tully|tally|telly|tilly"	--	--	false	true	true	false	threat three met me	vc-t-lly rule	vr-t-lly rule	--	--
 
 [xxvcvr]
 
@@ -243,17 +244,17 @@ this is the vr-pear-peach rule:
 	now player has peach pear;
 
 a goodrhyme rule (this is the vc-bussed-back rule):
-	if player does not carry sussed sack and location of player is not trust track, unavailable;
+	if location of player is not trust track, unavailable;
 	if sco-bussed-back is true:
 		vcal "Just Jack has already been bussed back.";
 		already-done;
 	ready;
 
 this is the vr-bussed-back rule:
-	say "Just Jack knows his time is up. He takes off. Behind them, you find something ... a sussed sack!";
+	say "Just Jack knows his time is up. He takes off. Behind them, you find something ... a sussed sack! Though looking at it, it's also sus. It's both light and heavy, useful and useless. Perhaps you'll know what to do with it when the time comes.";
 	now sco-bussed-back is true;
 	moot Just Jack;
-	now player has sussed sack;
+	now player has sus sack;
 
 a goodrhyme rule (this is the vc-crust-crack rule):
 	if player is not in trust track, unavailable;
@@ -1074,10 +1075,26 @@ this is the vr-jet-gee rule:
 	say "You give a gesture as if to say, anyone who doesn't like you can leave. It feels effective without being obnoxious.";
 	abide by the marquee-change rule;
 
+a goodrhyme rule (this is the vc-plus-plaque rule):
+	if frightfully bright bully is not fungible:
+		vcp "You consider conjuring up a gaudy, flattering plus-plaque. But you have nobody to give it to, and you'd hate to have to carry it around[if player is not in Threat Three Met Me]. Maybe elsewhere[end if].";
+		not-yet;
+	if sco-plus-plaque is true:
+		vcal "You already made and gave the plus plaque to [the bully]! Now you just have to figure, or riff on, their name!";
+		already-done;
+	ready;
+
+this is the vr-plus-plaque rule:
+	now sco-plus-plaque is true;
+	say "You have summoned a plus plaque! The [bully] accepts it before you can offer it. But then they are upset ... there's no name on it! What could their name be?";
+
 a goodrhyme rule (this is the vc-t-lly rule):
 	if player is not in threat three met me, unavailable;
+	if sco-plus-plaque is false:
+		say "That would be naming [the Bully], but you need to do a bit more.";
+		not-yet;
 	if sco-t-lly is true:
-		vcal "You already did this!";
+		vcal "Somehow, you already managed to win the game. This should not happen.";
 		already-done;
 	ready;
 
@@ -1085,7 +1102,7 @@ this is the vr-t-lly rule:
 	now sco-t-lly is true;
 	say "You figured your enemy's name! Congratulations! You have won!";
 	end the game in victory;
-
+	follow the shutdown rules;
 
 sco-trite-t-lly is a truth state that varies.
 
