@@ -77,6 +77,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "crow"	"crew"	--	--	false	true	true	false	show shoe	vc-crow-crew rule	vr-crow-crew rule	--	--
 "throw"	"through"	--	--	false	true	true	false	show shoe	vc-throw-through rule	vr-throw-through rule	--	--
 "dumb"	"doubt"	--	--	false	true	true	false	rum route	vc-dumb-doubt rule	vr-dumb-doubt rule	--	-- [start rum route]
+"said"	"sos"	--	--	false	true	true	false	rum route	vc-said-sos rule	vr-said-sos rule	--	--
 "umm"	"out"	--	--	false	true	true	false	rum route	vc-umm-out rule	vr-umm-out rule	--	--
 "hey"	"hope"	--	--	false	true	true	false	Nay Nope Slay Slope	vc-hey-hope rule	vr-hey-hope rule	--	--
 "k"	"cope"	--	--	false	true	true	false	Nay Nope Slay Slope	vc-k-cope rule	vr-k-cope rule	--	--
@@ -535,13 +536,33 @@ a goodrhyme rule (this is the vc-dumb-doubt rule):
 
 this is the vr-dumb-doubt rule:
 	now sco-dumb-doubt is true;
-	say "You create dumb doubt in the mind of your adversaries. This would be rude if they weren't mean, but they are, so it all feels creative and appropriate.";
+	say "You create dumb doubt in the mind of your adversaries. This would be rude if they weren't mean, but they are, so it all feels creative and appropriate. How to expand that doubt, now?";
+
+a goodrhyme rule (this is the vc-said-sos rule):
+	if player does not have red rose, unavailable;
+	if player is not in rum route:
+		vcal "No reason to give said-sos here. Maybe elsewhere.";
+		already-done;
+	if sco-dumb-doubt is false:
+		vcp "Your said-sos won't work cold. You need to show confidence and be persuasive.";
+		not-yet;
+	if sco-said-sos is true:
+		vcal "You already gave said-sos!";
+		not-yet;
+	ready;
+
+this is the vr-said-sos rule:
+	now sco-said-sos is true;
+	say "Your said-sos make sense. You're ready for the crescendo.";
 
 a goodrhyme rule (this is the vc-umm-out rule):
 	if player is not in rum route, unavailable;
 	abide by the rum-route-blanket-check rule;
 	if sco-dumb-doubt is false:
 		vcp "You can't just come in here cold like that! Maybe with the right preparation, an 'umm, out' would be more forceful.";
+		not-yet;
+	if sco-said-sos is false:
+		vcp "You've instilled doubt, but you need an argument. Perhaps one that originated somewhere else..";
 		not-yet;
 	ready;
 

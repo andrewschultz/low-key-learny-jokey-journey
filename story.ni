@@ -42,9 +42,9 @@ Poppin' Part is a region.
 
 section scoring
 
-core-max is 66.
+core-max is 67.
 
-min-needed is 66.
+min-needed is 67.
 
 max-bonus is 11.
 
@@ -480,6 +480,8 @@ guess-table of rum route is the table of rum route guesses.
 
 sco-umm-out is a truth state that varies.
 sco-dumb-doubt is a truth state that varies.
+
+sco-said-sos is a truth state that varies.
 
 book Nay Nope Slay Slope
 
