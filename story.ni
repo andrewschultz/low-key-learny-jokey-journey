@@ -526,7 +526,14 @@ sco-sad-sunk is a truth state that varies.
 
 book Threat Three Met ME
 
-Threat Three Met Me is south of Drain Drat Vain Vat. It is in Poppin' Part. printed name is "[if marquee-score < 3]Market Marquee[else]Threat Three Met Me[end if]".
+Threat Three Met Me is south of Drain Drat Vain Vat. It is in Poppin' Part. printed name is "[if marquee-score < 3]Market Marquee[else]Threat Three Met Me[end if]". "[if marquee is moot]The marquee has crumbled. All that's left is desolation and your final enemy[else]A market marquee stands here, maybe giving you some clues as to how to do things[end if]."
+
+the market marquee is scenery in Threat Three Met Me. "It seems to offer some clues:[line break][fixed letter spacing][marquee-clues][run paragraph on][variable letter spacing]"
+
+to say marquee-clues:
+	say "[if sco-fret-free is true]----[line break][else]GLEE?[end if]";
+	say "[if sco-set-see is true]----[line break][else]TREE?[end if]";
+	say "[if sco-jet-gee is true]----[line break][else]FLEE?[end if]";
 
 to decide which number is marquee-score:
 	decide on boolval of sco-fret-free + boolval of sco-set-see + boolval of sco-jet-gee;

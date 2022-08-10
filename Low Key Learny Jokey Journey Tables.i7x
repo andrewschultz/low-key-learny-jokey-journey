@@ -1157,6 +1157,7 @@ this is the marquee-change rule:
 	if marquee-score is 3:
 		say "The marquee crumbles, revealing your nemesis ... the Frightfully Bright Bully!";
 		move Frightfully Bright Bully to Threat Three Met Me;
+		moot marquee;
 	else if marquee-score is 2:
 		say "The marquee turns more pronouncedly cracked as some of the text rubs off.";
 	else:
