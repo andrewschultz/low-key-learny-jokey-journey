@@ -87,10 +87,12 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "might"	"mail"	--	--	false	true	true	false	Trite Trail	vc-might-mail rule	vr-might-mail rule	--	--
 "flight"	"flail"	--	--	false	true	true	false	Trite Trail	vc-flight-flail rule	vr-flight-flail rule	--	--
 "right"	"rail"	--	--	false	true	true	false	Trite Trail	vc-right-rail rule	vr-right-rail rule	--	--
+"mite"	"moot"	--	--	false	true	true	false	Trite Trail	vc-mite-moot rule	vr-mite-moot rule	--	--
 "excite"	"exhale"	--	--	false	true	true	false	Trite Trail	vc-excite-exhale rule	vr-excite-exhale rule	--	--
 "tight"	"tease|tees"	--	--	false	true	false	false	slight sleaze	vc-tight-tease rule	vr-tight-tease rule	--	-- [start grokking grift]
 "bright"	"breeze"	--	--	false	true	true	false	slight sleaze	vc-bright-breeze rule	vr-bright-breeze rule	--	--
 "plight"	"please"	--	--	false	true	true	false	slight sleaze	vc-plight-please rule	vr-plight-please rule	--	--
+"right"	"root"	--	--	false	true	true	false	slight sleaze	vc-right-root rule	vr-right-root rule	--	--
 "bleak"	"blaming"	--	--	false	true	true	false	freak framing seek sameing	vc-bleak-blaming rule	vr-bleak-blaming rule	--	--
 "chic"	"shaming"	--	--	false	true	true	false	freak framing seek sameing	vc-chic-shaming rule	vr-chic-shaming rule	--	--
 "clique"	"claiming"	--	--	false	true	false	false	freak framing seek sameing	vc-clique-claiming rule	vr-clique-claiming rule	--	--
@@ -542,7 +544,7 @@ this is the vr-dumb-doubt rule:
 a goodrhyme rule (this is the vc-said-sos rule):
 	if player does not have red rose, unavailable;
 	if player is not in rum route:
-		vcal "No reason to give said-sos here. Maybe elsewhere.";
+		vcal "Said-sos could hit the spot elsewhere, but not here.";
 		already-done;
 	if sco-dumb-doubt is false:
 		vcp "Your said-sos won't work cold. You need to show confidence and be persuasive.";
@@ -732,9 +734,10 @@ a goodrhyme rule (this is the vc-throw-through rule):
 
 this is the vr-throw-through rule:
 	now sco-throw-through is true;
-	say "The Crow Crew makes a dramatic entrance, thanks to your planning! The show is a big success. Everyone congratulates you. Your job here done, you return back...";
+	say "The Crow Crew makes a dramatic entrance, thanks to your planning! The show is a financial and emotional success. Everyone congratulates you. Surely, you must take a reward! Something![paragraph break]You can't think of anything you really need. Then, something that just wasn't used in the concert. A light lute! It's, well, something. If you were resourceful enough to get things working here, who knows what you can do with it?[paragraph break]Your job here done, you return back...";
 	take-lift High Hub;
 	if sco-go-goo is false, max-down;
+	now player has light lute;
 
 a goodrhyme rule (this is the vc-bad-boast rule):
 	if player is not in Mad Most Cad Coast, unavailable;
@@ -812,10 +815,27 @@ this is the vr-right-rail rule:
 	say "You inspect the sight sail, and you realize that, yes, there are rails to help you keep your balance and gain your sea legs as you hunt [the whale].";
 	follow the notify-final-whale rule;
 
+a goodrhyme rule (this is the vc-mite-moot rule):
+	if player does not have light lute, unavailable;
+	if sco-mite-moot is true:
+		vcal "You already found a battle cry against the white whale.";
+		already-done;
+	if player is not in trite trail:
+		vcal "That would be a great battle cry if a fearsome enemy were around.";
+		not-yet;
+	ready;
+
+this is the vr-mite-moot rule:
+	now sco-mite-moot is true;
+	say "You figure a war cry to attack the white whale. You feel more confidence now.";
+
 a goodrhyme rule (this is the vc-excite-exhale rule):
 	if player is not in Trite Trail, unavailable;
 	unless whale-hunt-ready:
-		vcp "Man! That'd be a good idea, but you aren't quite ready to hunt the whale, yet.";
+		if whale-score is 4 and sco-mite-moot is false:
+			vcp "You feel physically prepared, but you need help from something originally from outside the Trite Trail. A psychological boost. A battle cry.";
+		else:
+			vcp "Man! That'd be a good idea, but you aren't quite ready to hunt the whale, yet.";
 		not-yet;
 	if sco-excite-exhale is true:
 		vcal "No, hunting the whale was exciting enough.";
@@ -937,6 +957,7 @@ this is the vr-tight-tease rule:
 
 a goodrhyme rule (this is the vc-bright-breeze rule):
 	if player is not in slight sleaze, unavailable;
+	abide by the trite-trees-planted rule;
 	if sco-bright-breeze is true:
 		vcal "The bright breeze is already blowing!";
 		already-done;
@@ -948,17 +969,30 @@ this is the vr-bright-breeze rule:
 
 a goodrhyme rule (this is the vc-plight-please rule):
 	if player is not in slight sleaze, unavailable;
+	abide by the trite-trees-planted rule;
 	if sco-bright-breeze is false:
 		vcp "You'd like to be that dismissive ('Plight? PLEASE!') but you aren't feeling positive enough for that. Perhaps a slight change in the weather...";
 		not-yet;
 	if sco-plight-please is true:
-		vcal "You already pushed back against the slight sleaze.";
+		vcal "The slight sleaze is already nearly gone.";
 		already-done;
 	ready;
 
 this is the vr-plight-please rule:
 	now sco-plight-please is true;
 	say "'Plight? PLEASE!' you laugh. The sleaze lessens. The flight-flees you feel disappear.";
+
+a goodrhyme rule (this is the vc-right-root rule):
+	if player does not have light lute, unavailable;
+	abide by the trite-trees-planted rule;
+	if sleaze-score < 2:
+		vcp "That will work when the sleaze is slight enough. Right now, you [if sleaze-score is 1]need to decrease it a bit more[else]haven't started, yet[end if].";
+		not-yet;
+	ready;
+
+this is the vr-right-root rule:
+	now sco-right-root is true;
+	say "The right root takes hold in the ground, and out bloom ... trite trees! No, it's not picturesque, but it's better than what was there before.";
 
 a goodrhyme rule (this is the vc-bold-bend rule):
 	if player is not in old end, unavailable;
@@ -1148,6 +1182,14 @@ section auxiliary rules and definitions
 
 tried-mocking-miffed is a truth state that varies.
 
+a goodrhyme rule (this is the trite-trees-planted rule):
+	if sco-right-root is true:
+		vcal "You already planted the right root to make trite trees. Nothing more to do here.";
+		already-done;
+
+to decide which number is sleaze-score:
+	decide on boolval of sco-bright-breeze + boolval of sco-plight-please;
+
 a goodrhyme rule (this is the marquee-there rule):
 	if marquee-score < 3, continue the action;
 	vcal "You already prepped yourself for the final fight. Now it is upon you.";
@@ -1210,18 +1252,15 @@ to take-lift (rm - a room):
 	move the player to rm;
 
 this is the notify-final-whale rule:
-	if sco-sight-sail is false, continue the action;
-	if sco-might-mail is false, continue the action;
-	if sco-flight-flail is false, continue the action;
-	if sco-right-rail is false, continue the action;
+	unless whale-hunt-ready, continue the action;
 	say "The last step will be something else! It will probably require, like, extra syllables in what you want to do. Both with psyching yourself up and then taking a step back and achieving mindfulness, or whatever.";
 
+to decide what number is whale-score:
+	decide on boolval of sco-sight-sail + boolval of sco-might-mail + boolval of sco-flight-flail + boolval of sco-right-rail + boolval of sco-mite-moot;
+
 to decide whether whale-hunt-ready:
-	if sco-sight-sail is false, no;
-	if sco-might-mail is false, no;
-	if sco-flight-flail is false, no;
-	if sco-right-rail is false, no;
-	yes;
+	if whale-score is 5, yes;
+	no;
 
 to decide whether shoe-food-drink:
 	if sco-stow-stew is true and sco-bro-brew is true, yes;

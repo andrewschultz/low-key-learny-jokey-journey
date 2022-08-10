@@ -42,9 +42,9 @@ Poppin' Part is a region.
 
 section scoring
 
-core-max is 68.
+core-max is 70.
 
-min-needed is 68.
+min-needed is 70.
 
 max-bonus is 11.
 
@@ -414,6 +414,16 @@ sco-yo-you is a truth state that varies.
 sco-crow-crew is a truth state that varies.
 sco-throw-through is a truth state that varies.
 
+chapter light lute
+
+the light lute is a rhymable. "You have no clue how to play it[if lute-strings is 0]. But it has to be useful[end if]. It has two golden strings, of which [lute-strings in words] are broken.";
+
+to decide which number is lute-strings:
+	decide on boolval of sco-right-root + boolval of sco-mite-moot;
+
+sco-mite-moot is a truth state that varies.
+sco-right-root is a truth state that varies.
+
 book mad most cad coast
 
 Mad Most Cad Coast is a room in Poppin' Part. printed name is "[if sco-rad-roast is true]Had-Host Pad/Post[else]Mad-Most-Cad Coast[end if]". understand "had/host pad poast" and "had post" and "had/host pad/poast" and "host pad" as Mad Most Cad Coast when sco-rad-roast is true.
@@ -450,17 +460,33 @@ sco-lore-lols is a truth state that varies.
 
 guess-table of sore souls' gore goals is the table of sore souls' gore goals guesses.
 
+chapter red rose
+
+the red rose is a rhymable. "It's a lovely generic red rose. It can probably help you do things. It has [rose-petals in words] petals left.".
+
+sco-said-sos is a truth state that varies.
+sco-head-hose is a truth state that varies.
+
+To decide which number is rose-petals:
+	decide on boolval of sco-said-sos + boolval of sco-head-hose;
+
+guess-table of red rose is the table of red rose guesses.
+
 book Slight Sleaze / Grokking Grift
 
-Slight Sleaze is a room in Poppin' Part. "You feel a fright-freeze preventing you from going south.".
+Slight Sleaze is a room in Poppin' Part. "[if sco-right-root is false]The trite trees make things feel nicer here, having replaced the fright-freeze that was here[else]You feel a fright-freeze preventing you from going south[end if].". printed name is "[if sco-right-root is false]Slight Sleaze[else]Trite Trees[end if]".
 
 guess-table of slight sleaze is the table of slight sleaze guesses.
 
-check going south in Slight Sleaze when sco-plight-please is false: say "The fright-freeze pushes you back. You need to find a way to talk it down, somehow.";
+check going south in Slight Sleaze when sco-right-root is false: say "The fright-freeze pushes you back. You need to find a way to talk it down, somehow." instead;
 
 sco-tight-tease is a truth state that varies.
 sco-bright-breeze is a truth state that varies.
 sco-plight-please is a truth state that varies.
+
+the fright freeze is boring scenery in slight sleaze. "You can't describe it, but it stops you from going anywhere.".
+
+the trite trees are boring scenery. "Not perfect, but not sleazy, either."
 
 book Freak Framing Seek-Sameing
 
@@ -534,6 +560,13 @@ to say marquee-clues:
 	say "[if sco-fret-free is true]----[line break][else]GLEE?[end if]";
 	say "[if sco-set-see is true]----[line break][else]TREE?[end if]";
 	say "[if sco-jet-gee is true]----[line break][else]FLEE?[end if]";
+
+report examining market marquee for the first time:
+	if sco-fret-free is false, say "GLET. ";
+	if sco-set-see is false, say "TRET. ";
+	if sco-jet-gee is false, say "FLET. ";
+	say "Not [if marquee-score is 2]a word[else]words[end if][if marquee-score > 1]. But what you solved made sense[end if]. There are other possibilities.";
+	continue the action;
 
 to decide which number is marquee-score:
 	decide on boolval of sco-fret-free + boolval of sco-set-see + boolval of sco-jet-gee;
@@ -924,17 +957,6 @@ sco-t-lly is a truth state that varies.
 book places
 
 book things
-
-the red rose is a rhymable. "It's a lovely generic red rose. It can probably help you do things. It has [rose-petals] petals left.".
-
-sco-said-sos is a truth state that varies.
-sco-head-hose is a truth state that varies.
-sco-ned-knows is a truth state that varies.
-
-To decide which number is rose-petals:
-	let temp be boolval of sco-said-sos;
-
-guess-table of red rose is the table of red rose guesses.
 
 volume internal map
 
