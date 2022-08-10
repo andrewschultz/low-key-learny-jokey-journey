@@ -42,9 +42,9 @@ Poppin' Part is a region.
 
 section scoring
 
-core-max is 67.
+core-max is 68.
 
-min-needed is 67.
+min-needed is 68.
 
 max-bonus is 11.
 
@@ -471,6 +471,8 @@ guess-table of freak framing seek sameing is the table of freak framing seek sam
 sco-bleak-blaming is a truth state that varies.
 sco-chic-shaming is a truth state that varies.
 sco-clique-claiming is a truth state that varies.
+
+sco-bred-bros is a truth state that varies.
 
 book Rum Route
 

@@ -94,6 +94,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "bleak"	"blaming"	--	--	false	true	true	false	freak framing seek sameing	vc-bleak-blaming rule	vr-bleak-blaming rule	--	--
 "chic"	"shaming"	--	--	false	true	true	false	freak framing seek sameing	vc-chic-shaming rule	vr-chic-shaming rule	--	--
 "clique"	"claiming"	--	--	false	true	false	false	freak framing seek sameing	vc-clique-claiming rule	vr-clique-claiming rule	--	--
+"bred"	"bros"	--	--	false	true	true	false	freak framing seek sameing	vc-bred-bros rule	vr-bred-bros rule	--	--
 "shore"	"shoals"	--	--	false	true	true	false	sore souls' gore goals	vc-shore-shoals rule	vr-shore-shoals rule	--	-- [start shocking shift / sore souls' gore goals]
 "lore"	"lols"	--	--	false	true	false	false	sore souls' gore goals	vc-lore-lols rule	vr-lore-lols rule	--	--
 "four"	"foals"	--	--	false	true	true	false	sore souls' gore goals	vc-four-foals rule	vr-four-foals rule	--	--
@@ -860,6 +861,20 @@ a goodrhyme rule (this is the vc-clique-claiming rule):
 this is the vr-clique-claiming rule:
 	now sco-clique-claiming is true;
 	say "Well, claiming that cliques exist and we aren't in it always works, even though we deserve to be, and even if we don't really want to be in good with the leaders. It's not practical, but boy, is it cathartic!";
+
+a goodrhyme rule (this is the vc-bred-bros rule):
+	if player is not in freak framing seek sameing, unavailable;
+	if sco-chic-shaming is false:
+		vcp "You haven't done enough so that said bred Bros can continue your work.";
+		not-yet;
+	if sco-bred-bros is true:
+		vcal "There are enough bred Bros to give your message out.";
+		already-done;
+	ready;
+
+this is the vr-bred-bros rule:
+	now sco-bred-bros is true;
+	say "Some bred Bros, more charismatic than you, arrive to disperse your message more charismatically.";
 
 a goodrhyme rule (this is the vc-tight-tease rule):
 	if player is not in slight sleaze, unavailable;
