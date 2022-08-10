@@ -416,7 +416,7 @@ sco-throw-through is a truth state that varies.
 
 book mad most cad coast
 
-Mad Most Cad Coast is a room in Poppin' Part. printed name is "[if sco-rad-roast is true]Had-Host Pad/Post[else]Mad-Most-Cad Coast[end if]".
+Mad Most Cad Coast is a room in Poppin' Part. printed name is "[if sco-rad-roast is true]Had-Host Pad/Post[else]Mad-Most-Cad Coast[end if]". understand "had/host pad poast" and "had post" and "had/host pad/poast" and "host pad" as Mad Most Cad Coast when sco-rad-roast is true.
 
 check going west in Mad Most Cad Coast: if sco-rad-roast is false, say "You can't go west with all the madness. Well, not yet." instead;
 
@@ -526,10 +526,7 @@ sco-sad-sunk is a truth state that varies.
 
 book Threat Three Met ME
 
-Threat Three Met Me is south of Drain Drat Vain Vat. It is in Poppin' Part.
-
-for printing the name of Threat Three Met Me when marquee-score < 3:
-	say "Market Marquee";
+Threat Three Met Me is south of Drain Drat Vain Vat. It is in Poppin' Part. printed name is "[if marquee-score < 3]Market Marquee[else]Threat Three Met Me[end if]".
 
 to decide which number is marquee-score:
 	decide on boolval of sco-fret-free + boolval of sco-set-see + boolval of sco-jet-gee;
@@ -897,10 +894,17 @@ this is the show-misses rule:
 	if sco-grotty-grail is false, say "You could've discovered a [b]GROTTY GRAIL[r] back in [jotty jail].";
 	if sco-potty-pail is false, say "You could've discovered a [b]POTTY PAIL[r] back in [jotty jail].";
 	if sco-go-goo is false, say "You could've made [b]GO GOO[r] in [show shoe].";
-	if sco-sigh-sub is false, say "You could've said [b]SIGH SUB[r] in [high hub] to revisit the first rooms and pick up clue-points for good guesses.";
+	if sco-sigh-sub is false:
+		say "You could've said [b]SIGH SUB[r] in [high hub] to revisit the first rooms and pick up clue-points for good guesses.";
+		say "[one of]There was also a sturdy stalk that would appear in [nnss]. Check [b]MISSES[r] again for the spoiler, if you don't want to replay or guess it[or][ww2][stopping].";
+	else if sco-wordy-walk is false:
+		say "[ww2].";
 	if sco-tight-tease is false, say "You could've summoned [b]TIGHT TEES[r] or a [b]TIGHT TEASE[r] in [slight sleaze].";
 	if sco-clique-claiming is false, say "You could've performed [b]CLIQUE CLAIMING[r] in [freak framing].";
 	if sco-lore-lols is false, say "You could've performed [b]LORE LOLS[r] in [gore goals].";
+	if sco-gad-gunk is false, say "You could've told the Mad Monk [b]GAD GUNK[r] in [threat three].";
+
+to say ww2: say "You could've had a [b]WORDY WALK[r] around the sturdy stalk that appeared in [nnss]"
 
 volume unsorted
 

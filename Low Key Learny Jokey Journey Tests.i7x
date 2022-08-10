@@ -35,16 +35,30 @@ when play begins:
 	repeat with myrm running through rooms:
 		if myrm is unrhymable, next;
 		if guess-table of myrm is table of no good guesses:
-			say "[myrm] needs a good-guess table.";
+			say "[myrm] needs a good-guess table. tgg.py r=[myrm].";
 			increment needs;
 	if needs is 0, say "YAY! All rooms are taken care of!";
 	now needs is 0;
 	say "[b]On to rhymable things or people ...[r]";
 	repeat with myth running through rhymables:
 		if guess-table of myth is table of no good guesses:
-			say "[myth] needs a good-guess table.";
+			say "[myth] needs a good-guess table. tgg.py r=[myth].";
 			increment needs;
 	if needs is 0, say "YAY! All rhymables are taken care of!";
+
+volume ending diagnostics
+
+chapter missesing
+
+missesing is an action out of world.
+
+understand the command "misses" as something new.
+
+understand "misses" as missesing.
+
+carry out missesing:
+	process the show-misses rule;
+	the rule succeeds;
 
 Low Key Learny Jokey Journey Tests ends here.
 
