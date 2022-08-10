@@ -310,13 +310,38 @@ mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "ski scoot"	--	false	44	--	"You can just walk to get around."
 "tea toot/tout"	--	false	44	--	"Perhaps the tea would be fruit-flavored and refreshing, but it wouldn't be useful."
 
+table of light lute guesses
+mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
+"bite boot"	--	false	111	--	"That would be no fun."
+"flight flute"	--	false	111	--	"No, you can't run from your problems."
+"fright fruit"	--	false	111	--	"You already made some fruit for good. You don't need that."
+"height hoot"	--	false	111	--	"Not useful, not even in the High Hub."
+"plight plute"	--	false	111	--	"No, we don't need a potential nuclear disaster on our hands."
+"shite shoot/chute"	--	false	111	--	"Creative, but not terribly helpful."
+"sight/cite/site suit"	--	false	111	--	"The light lute is too artsy to beget a business suit or a lawsuit."
+"tight toot"	--	false	111	--	"You fail to drag that sort of noise from the lute."
+"white woot"	--	false	111	--	"While it's okay to be white, it's not okay to be all IT'S OKAY TO BE WHITE."
+
 table of locking lift guesses [ leet-rule is always true, since MOCKING MIFFED sends you to the final area ]
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "knocking niffed"	--	false	103	--	"Smells and knocking aren't the way to go here."
 "socking sift"	--	false	103	--	"You wouldn't want to sift through punches to receive."
 "whocking whiffed"	--	false	103	--	"You wouldn't want to attack someone and miss."
 
-guess-table of miss more diss door is the table of miss more diss door guesses.
+table of mad monk guesses
+mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
+"brad brunk"	--	false	34	--	"[monk-name]."
+"chad chunk"	--	false	34	--	"You find no ballot or part thereof."
+"dad dunk"	--	false	34	--	"Alas, no middle-aged man soars into the air, basketball in hand."
+"fad funk"	--	false	34	--	"Falling prey to fashion is not one of the mad monk's vices. They're more about violence and intimidation."
+"grad grunk"	--	false	34	--	"The mad monk fails to look for a lost pig or learn anything."
+"had hunk"	--	false	34	--	"You try to claim the mad monk has lost muscle, but the insult doesn't really land."
+"lad lunk"	--	false	34	--	"Both insults are a bit too trivial to land."
+"plaid plunk"	--	false	34	--	"The mad monk's fashion choice will not change."
+"scad skunk"	--	false	34	--	"Alas, a bunch of skunks fail to assault the mad monk."
+"thad thunk"	--	false	34	--	"[monk-name]."
+
+to say monk-name: say "The mad monk needs no name, proper or familiar."
 
 table of miss more diss door guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
@@ -335,14 +360,21 @@ table of red rose guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "bed bows"	--	false	--	--	"You need no fancy place to sleep."
 "bled blows"	--	false	--	--	"You do not need to incite violence."
+"cred crows"	--	false	--	--	"You don't need to brag about street cred, real or imagined."
 "dead does/dohs"	--	false	--	--	"You aren't here to kill animals or utter a Simpsonesque epithet."
 "fed foes/phos"	--	false	--	--	"You don't need to feed your enemies."
 "fled flows"	--	false	--	--	"Nobody and nothing flees at your proclamation."
+"fred froze"	--	false	--	--	"[sad-tale]."
 "ed ohs/os"	--	false	--	--	"No larger-than-life football coach with a thick Cajun accent appears. He is probably out driving that Hummer he bought in that one commercial."
+"head hos/hoes"	--	false	--	--	"That's logical, but it doesn't fit in this game. I think. I hope."
 "jed joes"	--	false	--	--	"No 'charmingly-named' rustic diner appears."
 "led/lead lows"	--	false	--	--	"You have no need to go low or be laid low."
 "ned knows"	--	false	--	--	"There is nobody named Ned around."
 "sled slows"	--	false	--	--	"There are no sleds that need slowing."
+"ted tows/toes"	--	false	--	--	"You recall an add for a towing service."
+"wed woes"	--	false	--	--	"[sad-tale]."
+
+to say sad-tale: say "A sad, succinct tale, indeed"
 
 table of sturdy stalk guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt

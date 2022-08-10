@@ -145,6 +145,18 @@ to decide which number is variable-scan-length of (mynum - a number):
 		if sco-lore-lols is false, decide on -44;
 		if shoal-score < 2, decide on 45;
 		decide on 0;
+	else if mynum is 110:
+		if player is in rum route and sco-said-sos is false, decide on 43;
+		if player is in seek sameing freak framing and sco-bred-bros is false, decide on 44;
+		decide on 0;
+	else if mynum is 111:
+		if player is in slight sleaze and sco-right-root is false, decide on 54;
+		if player is in trite trail and sco-mite-moot is false, decide on 44;
+		if player is in sore souls' gore goals:
+			if sco-kite-coot is false, decide on 44;
+			if sco-night-newt is false, decide on 54;
+			if sco-bright-brute is false, decide on 65;
+		decide on 0;
 	say "[b]BUG[r]: no variable-scan-length for [mynum]. Please let me know what you typed.";
 	decide on 44;
 
@@ -418,11 +430,17 @@ chapter light lute
 
 the light lute is a rhymable. "You have no clue how to play it[if lute-strings is 0]. But it has to be useful[end if]. It has two golden strings, of which [lute-strings in words] are broken.";
 
+guess-table of light lute is the table of light lute guesses.
+
 to decide which number is lute-strings:
 	decide on boolval of sco-right-root + boolval of sco-mite-moot;
 
 sco-mite-moot is a truth state that varies.
 sco-right-root is a truth state that varies.
+
+sco-kite-coot is a truth state that varies.
+sco-night-newt is a truth state that varies.
+sco-bright-brute is a truth state that varies.
 
 book mad most cad coast
 
