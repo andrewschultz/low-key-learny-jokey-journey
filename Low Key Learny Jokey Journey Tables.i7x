@@ -50,6 +50,9 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "seep"	"soon"	--	--	false	true	true	false	Rare Reach	vc-seep-soon rule	vr-seep-soon rule
 "reap"	"rune"	--	--	false	true	true	false	Rare Reach	vc-reap-rune rule	vr-reap-rune rule	--	"Perhaps some random adventuring would help you to [b]REAP RUNE[r] later."
 "un"	"arm"	--	--	false	true	true	false	Hun Harm Fun Farm	vc-un-arm rule	vr-un-arm rule	"un arm" or "unarm"	--
+"gad"	"gunk"	--	--	false	true	false	false	Hun Harm Fun Farm	vc-gad-gunk rule	vr-gad-gunk rule	--	--
+"bad"	"bunk"	--	--	false	true	true	false	Hun Harm Fun Farm	vc-bad-bunk rule	vr-bad-bunk rule	--	--
+"sad"	"sunk"	--	--	false	true	true	false	Hun Harm Fun Farm	vc-sad-sunk rule	vr-sad-sunk rule	--	--
 "go"	"goon"	--	--	false	true	true	false	NoNoon	vc-go-goon rule	vr-go-goon rule	--	--
 "co"	"coon"	--	--	false	true	true	false	NoNoon	vc-co-coon rule	vr-co-coon rule	"cocoon"	--
 "mo"	"moon"	--	--	false	true	true	false	NoNoon	vc-mo-moon rule	vr-mo-moon rule	--	--
@@ -107,9 +110,6 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "bane"	"bat"	--	--	false	true	true	false	drain drat vain vat	vc-bane-bat rule	vr-bane-bat rule	--	--
 "flain"	"flat"	--	--	false	true	true	false	drain drat vain vat	vc-flain-flat rule	vr-flain-flat rule	--	--
 "splain"	"splat"	--	--	false	true	true	false	drain drat vain vat	vc-splain-splat rule	vr-splain-splat rule	--	--
-"gad"	"gunk"	--	--	false	true	false	false	drain drat vain vat	vc-gad-gunk rule	vr-gad-gunk rule	--	--
-"bad"	"bunk"	--	--	false	true	true	false	drain drat vain vat	vc-bad-bunk rule	vr-bad-bunk rule	--	--
-"sad"	"sunk"	--	--	false	true	true	false	drain drat vain vat	vc-sad-sunk rule	vr-sad-sunk rule	--	--
 "fret"	"free"	--	--	false	true	true	false	threat three met me	vc-fret-free rule	vr-fret-free rule	--	--
 "set"	"see"	--	--	false	true	true	false	threat three met me	vc-set-see rule	vr-set-see rule	--	--
 "jet"	"gee"	--	--	false	true	true	false	threat three met me	vc-jet-gee rule	vr-jet-gee rule	--	--
@@ -326,7 +326,8 @@ a goodrhyme rule (this is the vc-un-arm rule):
 
 this is the vr-un-arm rule:
 	now sco-un-arm is true;
-	say "You hear a clattering and screaming. Whoever it was guarding the way north sounds very disappointed that their oppression may now take mental effort! You feel a bit more secure now.";
+	say "You hear a clattering and screaming. Whoever it was guarding the way north sounds very disappointed that their oppression may now take mental effort![paragraph break]You're all set to go north, until who should block your way but a fervent Mad Monk?";
+	move Mad Monk to Hun Harm Fun Farm;
 
 a goodrhyme rule (this is the vc-go-goon rule):
 	if player is not in NoNoon, unavailable;
@@ -1070,11 +1071,10 @@ a goodrhyme rule (this is the vc-splain-splat rule):
 
 this is the vr-splain-splat rule:
 	now sco-splain-splat is true;
-	say "Now that you've busted out of the vain vat, you announce yourself! Your nemesis doesn't appear. Just a mere henchman: obviously a mad monk.";
-	move mad monk to Drain Drat Vain Vat;
+	say "Now that you've busted out of the vain vat, you announce yourself! You're a bit worried a terrible henchman would appear, but none does.";
 
 a goodrhyme rule (this is the vc-gad-gunk rule):
-	if player is not in drain drat vain vat, unavailable;
+	if mad monk is not in location of player, unavailable;
 	if sco-gad-gunk is true:
 		vcal "You already insulted the mad monk that way.";
 		already-done;

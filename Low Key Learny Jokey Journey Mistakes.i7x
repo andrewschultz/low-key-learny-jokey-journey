@@ -332,7 +332,8 @@ table of mad monk guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "brad brunk"	--	false	34	--	"[monk-name]."
 "chad chunk"	--	false	34	--	"You find no ballot or part thereof."
-"dad dunk"	--	false	34	--	"Alas, no middle-aged man soars into the air, basketball in hand."
+"clad clunk"	--	false	34	--	"You disparage the mad monk's outfit. They look slightly wounded."
+"dad dunk"	--	false	34	--	"Alas, no middle-aged man soars into the air, basketball in hand, to posterize the mad monk."
 "fad funk"	--	false	34	--	"Falling prey to fashion is not one of the mad monk's vices. They're more about violence and intimidation."
 "grad grunk"	--	false	34	--	"The mad monk fails to look for a lost pig or learn anything."
 "had hunk"	--	false	34	--	"You try to claim the mad monk has lost muscle, but the insult doesn't really land."

@@ -246,9 +246,21 @@ book Hun Harm Fun Farm
 
 Hun Harm Fun Farm is west of NNSS. it is in Hoppin' Heart. "The way bends north here[if sco-un-arm is false], though you feel trepidation at the thought of doing so. Maybe you'll be attacked[end if]. You can go back east."
 
-check going north in hun harm fun farm: if sco-un-arm is false, say "Unfortunately, you hear aggressive voices threatening to attack you. They have weapons, and you don't. You're not sure how to change this." instead;
+check going north in hun harm fun farm:
+	if sco-un-arm is false, say "Unfortunately, you hear aggressive voices threatening to attack you. They have weapons, and you don't. You're not sure how to change this." instead;
+	if mad monk is in hun harm fun farm, say "The mad monk is blocking the way." instead;
 
 sco-un-arm is a truth state that varies.
+
+chapter Mad Monk
+
+the Mad Monk is a rhymable. "A mad monk raves here, blocking your way north. What with the short name, they're pretty obviously a simple henchman, especially this early in the game. You'd guess there are ways to guess what to do or say that could give you practice or experience for later or [if player has lurking lump]enhance the lurking lump[else]get that stronger help item you read about on the [learner][end if].". description is "Plainly dressed. They seem to have an intense attitude you could cut down, and they'd probably leave you alone."
+
+guess-table of mad monk is the table of mad monk guesses.
+
+sco-gad-gunk is a truth state that varies.
+sco-bad-bunk is a truth state that varies.
+sco-sad-sunk is a truth state that varies.
 
 book No Noon
 
@@ -552,21 +564,15 @@ book Drain Drat Vain Vat
 
 Drain Drat Vain Vat is south of Old End. It is in Poppin' Part. printed name of Vain Vat is "[if sco-splain-splat is false]Drain (Drat!) Vain Vat[else]Main Mat[end if]". understand "main mat" as Drain Drat Vain Vat when sco-splain-splat is true.
 
+check going south in Vain Vat: if sco-splain-splat is false, say "You don't have the confidence yet. You need to make a bold statement." instead;
+
+check going in Vain Vat: if sco-flain-flat is false, say "You're still stuck in the vain vat. You need to get out. But it can't be too bad." instead;
+
 guess-table of drain drat vain vat is the table of drain drat vain vat guesses.
 
 sco-bane-bat is a truth state that varies.
 sco-flain-flat is a truth state that varies.
 sco-splain-splat is a truth state that varies.
-
-chapter Mad Monk
-
-the Mad Monk is a rhymable. description is "A mad monk raves here. They're pretty obviously a simple henchman, but they are still blocking the way. Perhaps they can be used as practice for the final fight, to get that one last hint, if you need it."
-
-guess-table of mad monk is the table of mad monk guesses.
-
-sco-gad-gunk is a truth state that varies.
-sco-bad-bunk is a truth state that varies.
-sco-sad-sunk is a truth state that varies.
 
 book Threat Three Met ME
 
@@ -960,7 +966,7 @@ this is the show-misses rule:
 	if sco-tight-tease is false, say "You could've summoned [b]TIGHT TEES[r] or a [b]TIGHT TEASE[r] in [slight sleaze].";
 	if sco-clique-claiming is false, say "You could've performed [b]CLIQUE CLAIMING[r] in [freak framing].";
 	if sco-lore-lols is false, say "You could've performed [b]LORE LOLS[r] in [gore goals].";
-	if sco-gad-gunk is false, say "You could've told the Mad Monk [b]GAD GUNK[r] in [threat three].";
+	if sco-gad-gunk is false, say "You could've told the Mad Monk [b]GAD GUNK[r] in [hun harm].";
 
 to say ww2: say "You could've had a [b]WORDY WALK[r] around the sturdy stalk that appeared in [nnss]"
 
