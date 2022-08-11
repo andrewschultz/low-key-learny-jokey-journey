@@ -101,9 +101,12 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "clique"	"claiming"	--	--	false	true	false	false	freak framing seek sameing	vc-clique-claiming rule	vr-clique-claiming rule	--	--
 "bred"	"bros"	--	--	false	true	true	false	freak framing seek sameing	vc-bred-bros rule	vr-bred-bros rule	--	--
 "shore"	"shoals"	--	--	false	true	true	false	sore souls' gore goals	vc-shore-shoals rule	vr-shore-shoals rule	--	-- [start shocking shift / sore souls' gore goals]
-"lore"	"lols"	--	--	false	true	false	false	sore souls' gore goals	vc-lore-lols rule	vr-lore-lols rule	--	--
 "four"	"foals"	--	--	false	true	true	false	sore souls' gore goals	vc-four-foals rule	vr-four-foals rule	--	--
 "more"	"moles"	--	--	false	true	true	false	sore souls' gore goals	vc-more-moles rule	vr-more-moles rule	--	--
+"lore"	"lols"	--	--	false	true	false	false	sore souls' gore goals	vc-lore-lols rule	vr-lore-lols rule	--	--
+"night"	"newt"	--	--	false	true	false	false	sore souls' gore goals	vc-night-newt rule	vr-night-newt rule	--	--
+"bright"	"brute"	--	--	false	true	false	false	sore souls' gore goals	vc-bright-brute rule	vr-bright-brute rule	--	--
+"kite"	"coot"	--	--	false	true	false	false	sore souls' gore goals	vc-kite-coot rule	vr-kite-coot rule	--	--
 "bold"	"bend"	--	--	false	true	true	false	old end	vc-bold-bend rule	vr-bold-bend rule	--	-- [mocking miffed: this is the endgame sequence, so put nothing after it]
 "trolled"	"trend"	--	--	false	true	true	false	old end	vc-trolled-trend rule	vr-trolled-trend rule	--	--
 "mold"	"mend"	--	--	false	true	true	false	old end	vc-mold-mend rule	vr-mold-mend rule	--	--
@@ -951,6 +954,45 @@ a goodrhyme rule (this is the vc-lore-lols rule):
 this is the vr-lore-lols rule:
 	now sco-lore-lols is true;
 	say "Why, yes, this place could use myths of creation and so forth[if sco-shore-shoals is false] for when it becomes habitable[end if].";
+
+this is the lute-animal-check rule:
+	if player is not in sore souls' gore goals or player does not have light lute, unavailable;
+	if sco-shore-shoals is false:
+		vcp "The enviroment is too inhospitable for such an animal right now.";
+		not-yet;
+
+a goodrhyme rule (this is the vc-night-newt rule):
+	abide by the lute-animal-check rule;
+	if sco-night-newt is true:
+		vcal "You already populated the area with night newts!";
+		already-done;
+	ready;
+
+this is the vr-night-newt rule:
+	now sco-night-newt is true;
+	say "Hooray! You figured what to do! You get a point!";
+
+a goodrhyme rule (this is the vc-bright-brute rule):
+	abide by the lute-animal-check rule;
+	if sco-bright-brute is true:
+		vcal "More than one bright brute might cause boundary conflicts. One guardian is enough.";
+		already-done;
+	ready;
+
+this is the vr-bright-brute rule:
+	now sco-bright-brute is true;
+	say "Hooray! You figured what to do! You get a point!";
+
+a goodrhyme rule (this is the vc-kite-coot rule):
+	abide by the lute-animal-check rule;
+	if sco-kite-coot is true:
+		vcal "There are enough kite coots here.";
+		already-done;
+	ready;
+
+this is the vr-kite-coot rule:
+	now sco-kite-coot is true;
+	say "Hooray! You figured what to do! You get a point!";
 
 this is the vr-tight-tease rule:
 	now sco-tight-tease is true;

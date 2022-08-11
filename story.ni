@@ -46,7 +46,7 @@ core-max is 70.
 
 min-needed is 70.
 
-max-bonus is 11.
+max-bonus is 14.
 
 cur-bonus is 0.
 
@@ -483,12 +483,20 @@ book Sore Souls Gore Goals / Shocking Shift
 
 Sore Souls' Gore Goals is a room in Poppin' Part. "[if sco-shore-shoals is false]Desolation and stuff[else]A bit more lively now[end if].". printed name is "[if sco-shore-shoals is false]Sore Souls['] Gore Goals[else]Shore Shoals[end if]". understand "shore/shoals" and "shore shoals" as Gore Goals when sco-shore-shoals is true.
 
+guess-table of sore souls' gore goals is the table of sore souls' gore goals guesses.
+
+section needed points
+
 sco-four-foals is a truth state that varies.
 sco-more-moles is a truth state that varies.
 sco-shore-shoals is a truth state that varies.
-sco-lore-lols is a truth state that varies.
 
-guess-table of sore souls' gore goals is the table of sore souls' gore goals guesses.
+section LLPs
+
+sco-lore-lols is a truth state that varies.
+sco-night-newt is a truth state that varies.
+sco-bright-brute is a truth state that varies.
+sco-kite-coot is a truth state that varies.
 
 chapter red rose
 
