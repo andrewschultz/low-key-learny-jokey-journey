@@ -79,21 +79,21 @@ mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 
 table of high hub guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
-"bye bub"	--	false	43	sigh-sub-yet rule	"[if sco-sigh-sub is false]There's another way down. Be more resigned and more tuned to the location name[else]You do want to say good-bye to whomever put you here[end if]."
-"cly club"	--	false	43	sigh-sub-yet rule	"You try to go old-school finding an so-old-school-schools-didn't-exist weapon, but alas, it doesn't work."
-"die/dye dub"	--	false	43	sigh-sub-yet rule	"Whether you want to die or dye for a win or just for a double something, you consider the possibilities. Hey, you may need all the clue points you can get, here."
-"dry drub"	--	false	43	sigh-sub-yet rule	"You mentally make fun of someone you disliked, using phrases like 'I won't even raise my voice' or 'I'm sure you're nice and all.'"
-"fly flub"	--	false	43	sigh-sub-yet rule	"You consider making a mistake to impress someone. After all, being too perfect makes you dislikable. Then you realize there is nobody to impress."
-"nigh nub"	--	false	43	sigh-sub-yet rule	"You suspect some small stuff or other is around."
-"rye rub"	--	false	43	sigh-sub-yet rule	"You aren't sure whether you mean a rub of alcohol or bread. You're not sure what it will do. But you consider the possibility."
-"scry scrub"	--	false	43	sigh-sub-yet rule	"As good-looking as ever."
-"sly slub"	--	false	43	sigh-sub-yet rule	"You have no need to spin yarn out or be sneaky doing so."
-"sty stub"	--	false	43	sigh-sub-yet rule	"You search for a ticket that would admit you to a barn. There is none."
-"tie tub"	--	false	43	sigh-sub-yet rule	"Alas, there is no tub to tie."
-"try trub"	--	false	43	sigh-sub-yet rule	"You'll have to look harder than that to find trouble. But it is close."
+"cly club"	--	false	33	bye-bub-yet rule	"You try to go old-school finding an so-old-school-schools-didn't-exist weapon, but alas, it doesn't work."
+"die/dye dub"	--	false	33	bye-bub-yet rule	"Whether you want to die or dye for a win or just for a double something, you consider the possibilities. Hey, you may need all the clue points you can get, here."
+"dry drub"	--	false	33	bye-bub-yet rule	"You mentally make fun of someone you disliked, using phrases like 'I won't even raise my voice' or 'I'm sure you're nice and all.'"
+"fly flub"	--	false	33	bye-bub-yet rule	"You consider making a mistake to impress someone. After all, being too perfect makes you dislikable. Then you realize there is nobody to impress."
+"nigh nub"	--	false	33	bye-bub-yet rule	"You suspect some small stuff or other is around."
+"rye rub"	--	false	33	bye-bub-yet rule	"You aren't sure whether you mean a rub of alcohol or bread. You're not sure what it will do. But you consider the possibility."
+"scry scrub"	--	false	33	bye-bub-yet rule	"As good-looking as ever."
+"sigh sub"	--	false	33	bye-bub-yet rule	"You sigh at what you did down below, wondering if you [if sco-bye-bub is true]should[else]can[end if] go back."
+"sly slub"	--	false	33	bye-bub-yet rule	"You have no need to spin yarn out or be sneaky doing so."
+"sty stub"	--	false	33	bye-bub-yet rule	"You search for a ticket that would admit you to a barn. There is none."
+"tie tub"	--	false	33	bye-bub-yet rule	"Alas, there is no tub to tie."
+"try trub"	--	false	33	bye-bub-yet rule	"You'll have to look harder than that to find trouble. But it is close."
 
-this is the sigh-sub-yet rule:
-	if sco-sigh-sub is true, the rule fails;
+this is the bye-bub-yet rule:
+	if sco-bye-bub is true, the rule fails;
 	the rule succeeds;
 
 table of no nudge slow sludge guesses

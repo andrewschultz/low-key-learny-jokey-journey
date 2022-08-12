@@ -404,11 +404,11 @@ sco-knotty-nail is a truth state that varies.
 
 book High Hub
 
-High Hub is a room in Poppin' Part. "A locking lift offers transport, but to where? Well, you have to ask it. [if sco-sigh-sub is true]You can go back down to make more good guesses and get more clues, if you want[else]It seems like you're stuck up here with the lift, which may or may not be too cryptic. Or are you? Perhaps you can resign yourself to going back down and making good guesses and getting more clues along the way[end if]."
+High Hub is a room in Poppin' Part. "A locking lift offers transport, but to where? Well, you have to ask it. [if sco-bye-bub is true]You can, if you want, go back [b]DOWN[r] to[else]At first glance, you seem stuck here with the lift, which may or may not be too cryptic. Or are you? Perhaps there's a way to go back down and[end if] make more good guesses and scrounge for more clues."
 
 guess-table of High Hub is the table of High Hub guesses.
 
-sco-sigh-sub is a truth state that varies.
+sco-bye-bub is a truth state that varies.
 
 sco-docking-diffed is a truth state that varies.
 sco-rocking-rift is a truth state that varies.
@@ -896,7 +896,7 @@ this is the got-k-cope rule:
 this is the hub-done rule: [this is a bit off.]
 	if sco-right-root is true and sco-tight-tease is false, llp-remaining;
 	if sco-bred-bros is true and sco-clique-claiming is false, llp-remaining;
-	if sco-sigh-sub is false or sco-wordy-walk is false, llp-remaining;
+	if sco-bye-bub is false or sco-wordy-walk is false, llp-remaining;
 	if player is in old end, completed;
 	uncompleted;
 
@@ -1057,8 +1057,8 @@ this is the show-misses rule:
 	if sco-grotty-grail is false, say "You could've discovered a [b]GROTTY GRAIL[r] back in [jotty jail].";
 	if sco-potty-pail is false, say "You could've discovered a [b]POTTY PAIL[r] back in [jotty jail].";
 	if sco-go-goo is false, say "You could've made [b]GO GOO[r] in [show shoe].";
-	if sco-sigh-sub is false:
-		say "You could've said [b]SIGH SUB[r] in [high hub] to revisit the first rooms and pick up clue-points for good guesses.";
+	if sco-bye-bub is false:
+		say "You could've said [b]BYE BUB[r] in [high hub] to revisit the first rooms and pick up clue-points for good guesses.";
 		say "[one of]There was also a sturdy stalk that would appear in [nnss]. Check [b]MISSES[r] again for the spoiler, if you don't want to replay or guess it[or][ww2][stopping].";
 	else if sco-wordy-walk is false:
 		say "[ww2].";

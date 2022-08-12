@@ -62,7 +62,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "potty"	"pail"	--	--	false	true	false	false	jotty jail	vc-potty-pail rule	vr-potty-pail rule	--	--
 "knotty"	"nail"	--	--	false	true	true	false	jotty jail	vc-knotty-nail rule	vr-knotty-nail rule	--	--
 "piss"	"poor"	--	--	false	true	false	false	--	vc-piss-poor rule	vr-piss-poor rule	--	--
-"sigh"	"sub"	--	--	false	true	false	false	high hub	vc-sigh-sub rule	vr-sigh-sub rule	--	-- [lift llp]
+"bye"	"bub"	--	--	false	true	false	false	high hub	vc-bye-bub rule	vr-bye-bub rule	--	-- [lift llp]
 "wordy"	"walk"	--	--	false	true	false	false	NNSS	vc-wordy-walk rule	vr-wordy-walk rule	--	-- [llp after lift llp]
 "docking"	"diffed"	--	--	false	true	true	false	High Hub	vc-docking-diffed rule	vr-docking-diffed rule	--	-- [start hub]
 "grokking"	"grift"	--	--	false	true	true	false	High Hub	vc-grokking-grift rule	vr-grokking-grift rule	--	--
@@ -447,19 +447,19 @@ this is the vr-piss-poor rule:
 	say "The wood grains in the door almost seem to frown, and it morphs into an almost human form before shambling away at such an apt blow-off. Not really vulgar, but showing you can hang around, and you don't need to waste the really spicy stuff on it. Go, you!";
 	moot miss more diss door;
 
-a goodrhyme rule (this is the vc-sigh-sub rule):
+a goodrhyme rule (this is the vc-bye-bub rule):
 	if player is not in high hub, unavailable;
-	if sco-sigh-sub is true:
-		vcal "No need to sigh twice. It will save emotional energy and keystrokes if you just type [b]DOWN[r] or [b]D[r].";
+	if sco-bye-bub is true:
+		vcal "No need to say good-bye twice. That's just awkward, besides, just typing [b]DOWN[r] or [b]D[r] saves emotional energy and keystrokes.";
 		already-done;
 	ready;
 
-this is the vr-sigh-sub rule:
-	say "You give up, well, sort of ... with the [if sco-sigh-sub is true]knowledge[else]hope[end if] that there's something below. [one of]Strangely, a[or]That same old[stopping] sturdy stalk appears for you to climb down, and you do, back to [nnss]. Perhaps it can be an inspiration.";
+this is the vr-bye-bub rule:
+	say "And just like that, you find the way down. You want to leave, and that's that. You hope something new is below ... and it is! A sturdy stalk pops through for you to climb down, and you do, back to [nnss]. Perhaps you will find additional inspiration.";
 	move sturdy stalk to NNSS;
 	now High Hub is mapped above NNSS;
-	now NNSS is mapped below HigH Hub;
-	now sco-sigh-sub is true;
+	now NNSS is mapped below High Hub;
+	now sco-bye-bub is true;
 	move player to NNSS;
 
 a goodrhyme rule (this is the vc-wordy-walk rule):
