@@ -158,7 +158,8 @@ to decide which number is variable-scan-length of (mynum - a number):
 			if sco-bright-brute is false, decide on 65;
 		decide on 0;
 	else if mynum is 112:
-		if sco-jet-gee is false or sco-set-see is false, decide on 33;
+		if sco-yet-ye is false, decide on 32;
+		if sco-set-see is false, decide on 33;
 		if sco-fret-free is false, decide on 44;
 		decide on 0;
 	say "[b]BUG[r]: no variable-scan-length for [mynum]. Please let me know what you typed.";
@@ -606,21 +607,21 @@ the market marquee is scenery in Threat Three Met Me. "It seems to offer some cl
 to say marquee-clues:
 	say "[if sco-fret-free is true]----[line break][else]GLEE?[end if]";
 	say "[if sco-set-see is true]----[line break][else]TREE?[end if]";
-	say "[if sco-jet-gee is true]----[line break][else]FLEE?[end if]";
+	say "[if sco-yet-ye is true]----[line break][else]TWEE?[end if]";
 
 report examining market marquee for the first time:
 	if sco-fret-free is false, say "GLET. ";
 	if sco-set-see is false, say "TRET. ";
-	if sco-jet-gee is false, say "FLET. ";
+	if sco-yet-ye is false, say "FLET. ";
 	say "Not [if marquee-score is 2]a word[else]words[end if][if marquee-score > 1]. But what you solved made sense[end if]. There are other possibilities.";
 	continue the action;
 
 to decide which number is marquee-score:
-	decide on boolval of sco-fret-free + boolval of sco-set-see + boolval of sco-jet-gee;
+	decide on boolval of sco-fret-free + boolval of sco-set-see + boolval of sco-yet-ye;
 
 sco-fret-free is a truth state that varies.
 sco-set-see is a truth state that varies.
-sco-jet-gee is a truth state that varies.
+sco-yet-ye is a truth state that varies.
 
 sco-plus-plaque is a truth state that varies.
 

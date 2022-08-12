@@ -115,7 +115,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "splain"	"splat"	--	--	false	true	true	false	drain drat vain vat	vc-splain-splat rule	vr-splain-splat rule	--	--
 "fret"	"free"	--	--	false	true	true	false	threat three met me	vc-fret-free rule	vr-fret-free rule	--	--
 "set"	"see"	--	--	false	true	true	false	threat three met me	vc-set-see rule	vr-set-see rule	--	--
-"jet"	"gee"	--	--	false	true	true	false	threat three met me	vc-jet-gee rule	vr-jet-gee rule	--	--
+"yet"	"ye"	--	--	false	true	true	false	threat three met me	vc-yet-ye rule	vr-yet-ye rule	--	--
 "plus"	"plaque"	--	--	false	true	true	false	drain drat vain vat	vc-plus-plaque rule	vr-plus-plaque rule	--	--
 "trite"	"tolly|tully|tally|telly|tilly"	--	--	false	true	true	false	threat three met me	vc-t-lly rule	vr-t-lly rule	--	--
 
@@ -970,7 +970,7 @@ a goodrhyme rule (this is the vc-night-newt rule):
 
 this is the vr-night-newt rule:
 	now sco-night-newt is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "A night newt appears and scurries off. The place feels livelier now.";
 
 a goodrhyme rule (this is the vc-bright-brute rule):
 	abide by the lute-animal-check rule;
@@ -981,7 +981,7 @@ a goodrhyme rule (this is the vc-bright-brute rule):
 
 this is the vr-bright-brute rule:
 	now sco-bright-brute is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "A bright brute appears and seems to salute you before stationing themselves out of sight, ready to attack predators who might sneak in.";
 
 a goodrhyme rule (this is the vc-kite-coot rule):
 	abide by the lute-animal-check rule;
@@ -992,7 +992,7 @@ a goodrhyme rule (this is the vc-kite-coot rule):
 
 this is the vr-kite-coot rule:
 	now sco-kite-coot is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "The kite coot is an odd animal for sure but a worthy addition to the menagerie here.";
 
 this is the vr-tight-tease rule:
 	now sco-tight-tease is true;
@@ -1174,17 +1174,17 @@ this is the vr-set-see rule:
 	say "You stand tall and confident. You won't be easily pushed around!";
 	abide by the marquee-change rule;
 
-a goodrhyme rule (this is the vc-jet-gee rule):
+a goodrhyme rule (this is the vc-yet-ye rule):
 	if player is not in threat three met me, unavailable;
 	abide by the marquee-there rule;
-	if sco-jet-gee is true:
-		vcal "You already let wack punks and suckers know they'd best get to stepping.";
+	if sco-yet-ye is true:
+		vcal "You already got medieval, or at least, you spoke medievally.";
 		already-done;
 	ready;
 
-this is the vr-jet-gee rule:
-	now sco-jet-gee is true;
-	say "You give a gesture as if to say, anyone who doesn't like you can leave. It feels effective without being obnoxious.";
+this is the vr-yet-ye rule:
+	now sco-yet-ye is true;
+	say "You think back to people who helped you in bad faith and realize you have a right to reject 'help' or 'advice' with strings attached and, yes, get under the nerves of people offering said 'services.'";
 	abide by the marquee-change rule;
 
 a goodrhyme rule (this is the vc-plus-plaque rule):
@@ -1213,8 +1213,7 @@ a goodrhyme rule (this is the vc-t-lly rule):
 this is the vr-t-lly rule:
 	now sco-t-lly is true;
 	say "You figured your enemy's name! Congratulations! You have won!";
-	end the game in victory;
-	follow the shutdown rules;
+	win-the-game;
 
 sco-trite-t-lly is a truth state that varies.
 
