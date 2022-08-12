@@ -356,6 +356,13 @@ mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 
 to say monk-name: say "The mad monk needs no name, proper or familiar."
 
+table of market marquee guesses
+mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
+"met me"	--	false	112	--	"You will be met[act-att]."
+"threat three"	--	false	112	--	"Threat three will appear[act-att]."
+
+to say act-att: say ", but you need the right actions and attitude"
+
 table of miss more diss door guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "chiz chore"	--	false	44	--	"You briefly get your Nigel Molesworth on."

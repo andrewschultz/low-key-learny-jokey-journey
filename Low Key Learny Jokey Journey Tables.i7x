@@ -899,6 +899,7 @@ a goodrhyme rule (this is the vc-bred-bros rule):
 this is the vr-bred-bros rule:
 	now sco-bred-bros is true;
 	say "Some bred Bros, more charismatic than you, arrive to disperse your message more charismatically.";
+	take-lift High Hub;
 
 a goodrhyme rule (this is the vc-tight-tease rule):
 	if player is not in slight sleaze, unavailable;
@@ -917,6 +918,7 @@ a goodrhyme rule (this is the vc-shore-shoals rule):
 this is the vr-shore-shoals rule:
 	now sco-shore-shoals is true;
 	say "The area is much less desolate now. It feels like it could be inhabited.";
+	print-the-loc;
 
 a goodrhyme rule (this is the vc-four-foals rule):
 	if player is not in sore souls' gore goals, unavailable;
@@ -1221,6 +1223,8 @@ sco-trite-t-lly is a truth state that varies.
 
 section auxiliary rules and definitions
 
+to print-the-loc: say "[line break][b][location of player][r][line break]" [?? move to universal?]
+
 tried-mocking-miffed is a truth state that varies.
 
 a goodrhyme rule (this is the trite-trees-planted rule):
@@ -1241,6 +1245,7 @@ this is the marquee-change rule:
 		say "The marquee crumbles, revealing your nemesis ... the Frightfully Bright Bully!";
 		move Frightfully Bright Bully to Threat Three Met Me;
 		moot marquee;
+		print-the-loc;
 	else if marquee-score is 2:
 		say "The marquee turns more pronouncedly cracked as some of the text rubs off.";
 	else:

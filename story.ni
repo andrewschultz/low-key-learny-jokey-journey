@@ -1044,6 +1044,7 @@ to win-the-game:
 	if score is maximum score:
 		choose row with final response rule of show-misses rule in the Table of Final Question Options;
 		blank out the whole row; [don't let the player see MISSED if they got everything]
+	follow the notify score changes rule;
 	end the game saying "Me, Major See-Sager";
 	follow the shutdown rules;
 
