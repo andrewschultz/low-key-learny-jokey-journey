@@ -168,6 +168,10 @@ chapter offshoots from the universal file
 
 to decide whether vcp-ignore: decide no; [When do we block check-text? In VVFF, when we have Been Buggin]
 
+chapter instead rules
+
+instead of doing something with a boring thing: say "Most things, you don't need to interact with directly.";
+
 volume rooms (intro)
 
 book bane be sane see
@@ -1039,6 +1043,8 @@ to win-the-game:
 	if score is maximum score:
 		choose row with final response rule of show-misses rule in the Table of Final Question Options;
 		blank out the whole row; [don't let the player see MISSED if they got everything]
+	end the game saying "Me, Major See-Sager";
+	follow the shutdown rules;
 
 Table of Final Question Options (continued)
 final question wording	only if victorious	topic		final response rule		final response activity

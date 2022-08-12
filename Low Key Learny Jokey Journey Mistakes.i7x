@@ -8,6 +8,7 @@ table of general good guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "okie ernie/earnie/earny"	--	false	--	--	"No stereotypical rural fellow pops up with down-home advice."
 "tokey tourney"	--	false	--	--	"That could potentially be very relaxed and low-key, indeed. I guess."
+"coppin cart"	--	false	--	--	"No policemen drive by. They might be corrupt, anyway."
 "choppin chart"	--	false	--	--	"There are only three regions, and the name isn't really important."
 "mopping mart"	--	false	--	--	"Surely this is more exciting than a trip for cleaning supplies."
 
@@ -85,6 +86,7 @@ mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "fly flub"	--	false	43	sigh-sub-yet rule	"You consider making a mistake to impress someone. After all, being too perfect makes you dislikable. Then you realize there is nobody to impress."
 "nigh nub"	--	false	43	sigh-sub-yet rule	"You suspect some small stuff or other is around."
 "rye rub"	--	false	43	sigh-sub-yet rule	"You aren't sure whether you mean a rub of alcohol or bread. You're not sure what it will do. But you consider the possibility."
+"scry scrub"	--	false	43	sigh-sub-yet rule	"As good-looking as ever."
 "sly slub"	--	false	43	sigh-sub-yet rule	"You have no need to spin yarn out or be sneaky doing so."
 "sty stub"	--	false	43	sigh-sub-yet rule	"You search for a ticket that would admit you to a barn. There is none."
 "tie tub"	--	false	43	sigh-sub-yet rule	"Alas, there is no tub to tie."
@@ -356,7 +358,7 @@ to say monk-name: say "The mad monk needs no name, proper or familiar."
 
 table of miss more diss door guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
-"chiz chore"	--	false	44	--	"You get your Molesworth on briefly."
+"chiz chore"	--	false	44	--	"You briefly get your Nigel Molesworth on."
 "his/hiss whore"	--	false	44	--	"No, nothing tasteless."
 "is or"	--	false	44	--	"Too simple."
 "kiss cor/core"	--	false	44	--	"Potentially scandalous, but there's 'better.'"
@@ -393,7 +395,7 @@ mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "curdy caulk/calk"	--	false	54	need-wordy-walk rule	"You don't need to do any construction."
 "dirty doc"	--	false	54	need-wordy-walk rule	"Whether it's a dirty document or people, no."
 "herdy hawk"	--	false	54	need-wordy-walk rule	"You wouldn't want a bunch of hawks to swarm."
-"nerdy knock"	--	false	54	need-wordy-walk rule	"You're not sure how a knock could be nerdy."
+"nerdy knock"	--	false	54	need-wordy-walk rule	"A nerdy knock, whatever it is, wouldn't get a favorable response."
 "purdy pock"	--	false	54	need-wordy-walk rule	"No, pock marks wouldn't make the stalk look better."
 
 this is the need-wordy-walk rule:
