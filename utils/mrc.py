@@ -17,13 +17,16 @@ verify_code = True
 
 def show_examples():
     print("mrc.py r=mad-most-cad-coast `bad-boast =rad-roast would scrub the VCAL for rad-roast and VCP for bad-boast.")
-    print("mrc.py r=bane-be-sane-see 0plain-plea =`jane-g =`wayne-whee =`dane-d is the opening.")
+    print("mrc.py r=bane-be-sane-see 0plain-plea =`jane-g =`wayne-whee =`dane-d is the opening, 0=LLP.")
     print("mrc.py r=rare-reach bare-beach reap-rune would establish the Bare Beach and Reap Rune points.")
     sys.exit()
 
 def usage(my_word = ""):
     if my_word:
-        print("WARNING {} was not a valid word. You need something of the form letters-letters.").format(my_word)
+        if my_word.count('-') > 1:
+            print("WARNING: {} had too many dashes. Use a slash for topics.".format(my_word))
+        else:
+            print("WARNING: {} was not a valid word. You need something of the form letters-letters.".format(my_word))
     print("Options:")
     print("f / nf / fn specify exporting to a file. NF/FN means don't open post-run.")
     print()
@@ -57,12 +60,13 @@ def add_basic_rules(w):
     print()
 
 def print_verbcheck_line(my_word_pair):
+    word_dashed = my_word_pair.replace('|', '-')
     word_pair_array = my_word_pair.split('-')
     default_verb_check = [ '""', '""', '--', '--', 'false', 'true', 'true' if add_core[my_word_pair] else 'false', 'false', this_room, 'vc rule', 'vr rule', '--', '--' ]
     default_verb_check[0] = '"{}"'.format(word_pair_array[0])
     default_verb_check[1] = '"{}"'.format(word_pair_array[1])
-    default_verb_check[9] = 'vc-{} rule'.format(my_word_pair)
-    default_verb_check[10] = 'vr-{} rule'.format(my_word_pair)
+    default_verb_check[9] = 'vc-{} rule'.format(word_dashed)
+    default_verb_check[10] = 'vr-{} rule'.format(word_dashed)
     default_verb_line = '\t'.join(default_verb_check)
     print(default_verb_line)
 
@@ -146,14 +150,14 @@ if len(words_to_proc):
     print()
 
 for w in words_to_proc:
-    add_basic_rules(w)
+    add_basic_rules(w.replace('|', '-'))
 
 if len(words_to_proc):
     print("===============for main story.ni file===============")
     print()
 
 for w in words_to_proc:
-    print("sco-{} is a truth state that varies.".format(w))
+    print("sco-{} is a truth state that varies.".format(w.replace('|', '-')))
 
 if direct_to_file:
     sys.stdout.close()

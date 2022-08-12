@@ -22,6 +22,8 @@ this_general_rule = '--'
 default_leet_rule = '--'
 magic_number = '--'
 
+condition = 'GENERIC is false'
+
 alphabetize = True
 
 def usage():
@@ -70,8 +72,8 @@ while cmd_count < len(sys.argv):
         condition = strip_equals(arg, " is false")
     elif arg.startswith("t="):
         my_room_or_thing = arg[2:].replace('-', ' ')
-        if cmd_count != 1:
-            sys.exit("Room/thing specification must be at the start!")
+        if len(base_string_array) > 0:
+            sys.exit("Room/thing specification must be before any base string definitions!")
     elif arg.startswith("r="):
         this_general_rule = strip_equals(arg, " rule")
         if this_general_rule in rule_creation_list:

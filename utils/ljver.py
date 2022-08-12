@@ -12,7 +12,7 @@ def verify_header(the_file, the_strings, the_err_msg):
         for (line_count, line) in enumerate (file, 1):
             for bad_str in the_strings:
                 if bad_str in line:
-                    sys.stderr.write(the_err_msg.format(line_count, bn))
+                    sys.stderr.write(the_err_msg.format(line_count, bn) + "\n")
                     mt.add_postopen(the_file, line_count)
 
 def verify_both():
