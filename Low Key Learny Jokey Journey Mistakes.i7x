@@ -235,6 +235,16 @@ this is the sleaze-undone rule:
 	if sco-plight-please is false, the rule succeeds;
 	the rule fails;
 
+table of threat three met me guesses
+mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
+"bet be/bee"	--	false	112	--	"You don't need to gamble or bluff right now."
+"het he/hee"	--	false	112	--	"Discussions of sexual orientation won't go over well."
+"let lee"	--	false	112	--	"Whoever Lee is, they're not better-equipped to deal, here."
+"net knee/ni"	--	false	112	--	"No knights appear to say a paralyzing two-letter word."
+"pet pee"	--	false	112	--	"No, you don't need to mess things up that way, here."
+"wet whee"	--	false	112	--	"No cool waterslide or pool appears. You still have business!"
+"yet ye"	--	false	112	--	"You try but fail to make a medieval proclamation."
+
 table of Thunk Tree Trunk guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "be bunk"	--	false	34	free-fruit-offstage rule	"You crave neither a tall bed nor outright lies."

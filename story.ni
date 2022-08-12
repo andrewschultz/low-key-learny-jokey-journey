@@ -157,6 +157,10 @@ to decide which number is variable-scan-length of (mynum - a number):
 			if sco-night-newt is false, decide on 54;
 			if sco-bright-brute is false, decide on 65;
 		decide on 0;
+	else if mynum is 112:
+		if sco-jet-gee is false or sco-set-see is false, decide on 33;
+		if sco-fret-free is false, decide on 44;
+		decide on 0;
 	say "[b]BUG[r]: no variable-scan-length for [mynum]. Please let me know what you typed.";
 	decide on 44;
 
@@ -585,6 +589,10 @@ sco-splain-splat is a truth state that varies.
 book Threat Three Met ME
 
 Threat Three Met Me is south of Drain Drat Vain Vat. It is in Poppin' Part. printed name is "[if marquee-score < 3]Market Marquee[else]Threat Three Met Me[end if]". "[if marquee is moot]The marquee has crumbled. All that's left is desolation and your final enemy[else]A market marquee stands here, maybe giving you some clues as to how to do things[end if]."
+
+guess-table of threat three met me is the table of threat three met me guesses.
+
+chapter market marquee
 
 the market marquee is scenery in Threat Three Met Me. "It seems to offer some clues:[line break][fixed letter spacing][marquee-clues][run paragraph on][variable letter spacing]"
 
