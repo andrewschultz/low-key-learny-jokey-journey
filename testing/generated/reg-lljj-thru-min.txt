@@ -148,6 +148,35 @@ by one point
 >docking diffed
 by one point
 
+/^Mad Most Cad Coast
+
+>bad boast
+by one point
+
+>rad roast
+by one point
+
+>w
+
+^/Trite Trail
+
+>sight sail
+by one point
+
+>flight flail
+by one point
+
+>might mail
+by one point
+
+>right rail
+by one point
+
+>excite exhale
+by one point
+
+/^High Hub
+
 >rocking rift
 by one point
 
@@ -162,3 +191,4 @@ by one point
 
 /^Trick Trail
 
+You have scored a total of 47 out of 47 points and need 40 to win. You have found 5 of 5 optional points so far.

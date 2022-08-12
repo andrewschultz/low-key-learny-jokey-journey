@@ -28,6 +28,18 @@ files=reg-lljj-thru-min.txt,reg-lljj-thru-all.txt,reg-lljj-thru-think.txt,reg-ll
 
 }$REJECT=Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
 
+}}MAX=40
+}}CURMAX=40
+}}SCORE=0
+}}CURMIN=35
+}}CURMINBONUS=0
+}}CURMAXBONUS=5
+}}MAXBONUS=5
+
+}$SCOS=You have scored a total of {SCORE} out of {MAX} points and need {CURMIN} to win. You have found {CURMIN} of {MAXBONUS} optional points so far.
+}$MISSINGONE=1 optional point is no longer available.
+}$MISSING={} optional points are no longer available.
+
 ## *FILE
 ## *FORK
 
@@ -248,6 +260,9 @@ I don't want to know.
 @!min
 >plain plea
 by one point
+}}SCORE++
+}}CURMIN++
+}}CURMINBONUS++
 
 @vc
 #testcase-reject-table-of-verb-checks-vc-plain-plea-rule
@@ -1122,6 +1137,56 @@ You already brought life back to the Whoah-Woo Show Shoe. You don't need to go b
 >docking diffed
 by one point
 
+@min
+/^Mad Most Cad Coast
+
+@thi
+>rad roast
+WRONG
+\\
+>think
+WRONG
+
+>bad boast
+by one point
+
+@vc
+>bad boast
+!by one point
+
+>rad roast
+by one point
+
+>w
+
+@min
+^/Trite Trail
+
+@thi
+>right rail
+WRONG
+\\
+>think
+WRONG
+
+>sight sail
+by one point
+
+>flight flail
+by one point
+
+>might mail
+by one point
+
+>right rail
+by one point
+
+>excite exhale
+by one point
+
+@min
+/^High Hub
+
 @vc
 #testcase-reject-table-of-verb-checks-vc-docking-diffed-rule
 >docking diffed
@@ -1312,3 +1377,8 @@ by one point
 #testcase-moot-table-of-verb-checks-vc-yo-you-rule
 >yo you
 {$REJECT}
+
+@all
+
+@min
+You have scored a total of 47 out of 47 points and need 40 to win. You have found 5 of 5 optional points so far.

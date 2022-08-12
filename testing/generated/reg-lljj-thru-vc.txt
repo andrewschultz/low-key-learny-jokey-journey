@@ -395,6 +395,32 @@ You already brought life back to the Whoah-Woo Show Shoe. You don't need to go b
 >docking diffed
 by one point
 
+>bad boast
+by one point
+
+>bad boast
+!by one point
+
+>rad roast
+by one point
+
+>w
+
+>sight sail
+by one point
+
+>flight flail
+by one point
+
+>might mail
+by one point
+
+>right rail
+by one point
+
+>excite exhale
+by one point
+
 #testcase-reject-table-of-verb-checks-vc-docking-diffed-rule
 >docking diffed
 WRONG
@@ -580,3 +606,4 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 #testcase-moot-table-of-verb-checks-vc-yo-you-rule
 >yo you
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+
