@@ -489,6 +489,9 @@ Sore Souls' Gore Goals is a room in Poppin' Part. "[if sco-shore-shoals is false
 
 guess-table of sore souls' gore goals is the table of sore souls' gore goals guesses.
 
+to decide which number is shoal-extra:
+	decide on boolval of sco-lore-lols + boolval of sco-night-newt + boolval of sco-bright-brute + boolval of sco-kite-coot;
+
 section needed points
 
 sco-four-foals is a truth state that varies.
@@ -780,17 +783,11 @@ definition: a room (called rm) is available-from-here:
 
 the gong rules are a rulebook. the gong rules have outcomes completed, llp-remaining, and uncompleted.
 
-a room has a rule called this-gong-rule. this-gong-rule of a room is usually the default roomblocking rule.
+a room has a rule called this-gong-rule. this-gong-rule of a room is usually the nothing-left gong rule.
 
 a room-hint-state is a kind of value. The room-hint-states are points-left, bonus-left, and nothing-left.
 
 player-room-allow-threshold is a room-hint-state that varies. player-room-allow-threshold is nothing-left.
-
-this is the default roomblocking rule: uncompleted;
-
-this-gong-rule of roaring rocks is the roaring rocks gong rule.
-
-this is the roaring rocks gong rule: completed;
 
 [temporary rule to test that, indeed, pride-prong does work!]
 [roomblocking when room gone to is trust track:
@@ -818,6 +815,85 @@ to say that-prong: say "The pride-prong you summoned earlier pokes you"
 
 check gotoing when player-room-allow-threshold is not nothing-left:
 	abide by the gong may ring rule for noun;
+
+section gong rules
+
+[ trivially completed rooms: Bane Be Sane See, Jotty Jail (both have LLPs but can't go back), Roaring Rocks ]
+
+[ LLPs not llp-remaining are Go Goo and Gad Gunk because it disappears when the monk does ]
+
+this-gong-rule of hun harm fun farm is the got-cocoon rule.
+this-gong-rule of warm stun storm is the got-peach rule.
+this-gong-rule of TTTT is the got-peach rule.
+this-gong-rule of trust track is the got-rune rule.
+this-gong-rule of rare reach is the got-rune rule.
+this-gong-rule of show shoe is the got-lute rule.
+this-gong-rule of nnss is the got-stalk rule.
+this-gong-rule of trite trail is the got-whale rule.
+this-gong-rule of mad most cad coast is the got-whale rule.
+this-gong-rule of sore souls' gore goals is got-shoals rule.
+this-gong-rule of nay nope slay slope is got-k-cope rule.
+this-gong-rule of rum route is got-k-cope rule.
+this-gong-rule of slight sleaze is got-framing-done rule;
+this-gong-rule of freak framing seek sameing is got-framing-done rule;
+
+this is the nothing-left gong rule: completed;
+
+this is the got-cocoon rule:
+	if sco-co-coon is false, uncompleted;
+	completed;
+
+this is the got-peach rule:
+	if sco-pear-peach is false, uncompleted;
+	completed;
+
+this is the got-rune rule:
+	if sco-reap-rune is false, uncompleted;
+	completed;
+
+this is the got-lute rule: [ NOTE this disallows us from getting the Go Goo after the concert ]
+	if light lute is off-stage, uncompleted;
+	completed;
+
+this is the got-whale rule:
+	if sco-excite-exhale is false, uncompleted;
+	completed;
+
+this is the got-shoals rule:
+	if shoal-score is 2:
+		if shoal-extra < 4, llp-remaining;
+		completed;
+	uncompleted;
+
+this is the got-stalk rule:
+	if sco-wordy-walk is true, completed;
+	if high hub is visited, llp-remaining;
+	if player is in hun harm fun farm or player is in nonoon:
+		if sco-reap-rune is true, completed;
+	uncompleted;
+
+this is the got-sleaze rule:
+	if sco-right-root is true:
+		if sco-tight-tease is false, llp-remaining;
+		completed;
+	uncompleted;
+
+this is the got-framing-done rule:
+	if sco-bred-bros is true:
+		if sco-clique-claiming is false, llp-remaining;
+		completed;
+	uncompleted;
+
+this is the got-k-cope rule:
+	if sco-k-cope is true, completed;
+	uncompleted;
+
+this is the hub-done rule: [this is a bit off.]
+	if sco-right-root is true and sco-tight-tease is false, llp-remaining;
+	if sco-bred-bros is true and sco-clique-claiming is false, llp-remaining;
+	if sco-sigh-sub is false or sco-wordy-walk is false, llp-remaining;
+	if player is in old end, completed;
+	uncompleted;
 
 chapter guide-gonging
 
