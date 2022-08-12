@@ -26,6 +26,12 @@ by one point
 
 >n
 
+>bother
+WRONG
+
+>piss poor
+by one point
+
 >done dorm
 by one point
 
@@ -77,6 +83,15 @@ by one point
 >unarm
 by one point
 
+>gad gunk
+by one point
+
+>bad bunk
+by one point
+
+>sad sunk
+by one point
+
 >n
 
 >go goon
@@ -103,7 +118,13 @@ by one point
 >knotty nail
 by one point
 
->grokking grift
+>bye bub
+
+>wordy walk
+
+>u
+
+>rocking rift
 by one point
 
 >go goo
@@ -133,6 +154,18 @@ by one point
 >throw through
 by one point
 
+>shocking shift
+by one point
+
+>shore shoals
+by one point
+
+>four foals
+by one point
+
+>more moles
+by one point
+
 >docking diffed
 by one point
 
@@ -156,20 +189,99 @@ by one point
 >right rail
 by one point
 
+>mite moot
+by one point
+
 >excite exhale
 by one point
 
->rocking rift
+>grokking grift
 by one point
 
->shocking shift
+>tight tees
+by one point
+
+>bright breeze
+by one point
+
+>plight please
+by one point
+
+>right root
+by one point
+
+>s
+
+>clique claiming
+by one point
+
+>bleak blaming
+by one point
+
+>chic shaming
+by one point
+
+>bred bros
 by one point
 
 >stocking stiffed
 by one point
 
+>dumb doubt
+by one point
+
+>said sos
+by one point
+
+>umm out
+by one point
+
+>d
+
+>hey hope
+by one point
+
+>k cope
+by one point
+
 >mocking miffed
 by one point
 
-/^Trick Trail
+/^Old End
 
+>bold bend
+by one point
+
+>trolled trend
+by one point
+
+>mold mend
+by one point
+
+>s
+
+>bane bat
+by one point
+
+>flain flat
+by one point
+
+>splain splat
+by one point
+
+>s
+
+>fret free
+by one point
+
+>yet ye
+by one point
+
+>set see
+by one point
+
+>plus plaque
+by one point
+
+>trite telly
+by one point

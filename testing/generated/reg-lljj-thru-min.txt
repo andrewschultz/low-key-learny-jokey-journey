@@ -90,6 +90,12 @@ by one point
 >unarm
 by one point
 
+>bad bunk
+by one point
+
+>sad sunk
+by one point
+
 >n
 
 /^No Noon
@@ -114,12 +120,12 @@ by one point
 >knotty nail
 by one point
 
-/^Locking Lift
+/^High Hub
 
->grokking grift
+>rocking rift
 by one point
 
-/^No New Show Shoe
+/^No-New-Show Shoe
 
 >flow flue
 by one point
@@ -145,10 +151,36 @@ by one point
 >throw through
 by one point
 
+>shocking shift
+by one point
+
+>shore shoals
+by one point
+
+/^Shore Shoals
+
+>night newt
+by one point
+
+>bright brute
+by one point
+
+>kite coot
+by one point
+
+>lore lols
+by one point
+
+>four foals
+by one point
+
+>more moles
+by one point
+
 >docking diffed
 by one point
 
-/^Mad Most Cad Coast
+/^Mad-Most-Cad Coast
 
 >bad boast
 by one point
@@ -158,7 +190,7 @@ by one point
 
 >w
 
-^/Trite Trail
+/^Trite Trail
 
 >sight sail
 by one point
@@ -172,23 +204,103 @@ by one point
 >right rail
 by one point
 
+>mite moot
+by one point
+
 >excite exhale
 by one point
 
 /^High Hub
 
->rocking rift
+>grokking grift
 by one point
 
->shocking shift
+>bright breeze
+by one point
+
+>plight please
+by one point
+
+>right root
+by one point
+
+>s
+
+>bleak blaming
+by one point
+
+>chic shaming
+by one point
+
+>bred bros
 by one point
 
 >stocking stiffed
 by one point
 
+/^Rum Route
+
+>dumb doubt
+by one point
+
+>said sos
+by one point
+
+>umm out
+by one point
+
+>d
+
+>hey hope
+by one point
+
+>k cope
+by one point
+
 >mocking miffed
 by one point
 
-/^Trick Trail
+/^Old End
 
-You have scored a total of 47 out of 47 points and need 40 to win. You have found 5 of 5 optional points so far.
+>bold bend
+by one point
+
+>trolled trend
+by one point
+
+>mold mend
+by one point
+
+>s
+
+/^Drain \(Drat!\) Vain Vat
+
+>bane bat
+by one point
+
+>flain flat
+by one point
+
+>splain splat
+by one point
+
+>s
+
+/Market Marquee
+
+>fret free
+by one point
+
+>yet ye
+by one point
+
+>set see
+by one point
+
+/^Threat Three Met Me
+
+>plus plaque
+by one point
+
+>trite telly
+by one point
