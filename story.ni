@@ -404,7 +404,7 @@ sco-knotty-nail is a truth state that varies.
 
 book High Hub
 
-High Hub is a room in Poppin' Part. "A locking lift offers transport, but to where? Well, you have to ask it. [if sco-bye-bub is true]You can, if you want, go back [b]DOWN[r] to[else]At first glance, you seem stuck here with the lift, which may or may not be too cryptic. Or are you? Perhaps there's a way to go back down and[end if] make more good guesses and scrounge for more clues."
+High Hub is a room in Poppin' Part. "A locking lift offers transport, but to where? Well, you have to ask it. [if sco-bye-bub is true]You can, if you want, go back [b]DOWN[r] to[else]At first glance, you seem stuck here with the lift, which may or may not be too cryptic. Or are you? Perhaps there's a way to go back down and[end if] make more good guesses and scrounge for more clues[if delight dilute is in high hub].[paragraph break]Oh yes, that can of Delight-Dilute is still leaking slowly here. You don't need to take care of it[end if]."
 
 guess-table of High Hub is the table of High Hub guesses.
 
@@ -428,6 +428,16 @@ check entering lift:
 	the rule succeeds;
 
 guess-table of locking lift is the table of locking lift guesses.
+
+chapter delight dilute
+
+the can of DELIGHT DILUTE is a boring rhymable. "Just staring at it makes you feel you need to trivialize what you've done so far, but you can't explain why. There's a way around it, you're sure, and you could also just move on, but all the same, sometimes you can't help but pick one last useless fight to feel like you really nailed things down."
+
+guess-table of DELIGHT DILUTE is table of light lute guesses.
+
+bore-text of delight dilute is "You'll need something slightly esoteric to get rid of it.".
+
+sco-despite-dispute is a truth state that varies.
 
 volume rooms (end)
 

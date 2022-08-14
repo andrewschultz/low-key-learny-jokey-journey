@@ -69,6 +69,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "rocking"	"rift"	--	--	false	true	true	false	High Hub	vc-rocking-rift rule	vr-rocking-rift rule	--	--
 "shocking"	"shift"	--	--	false	true	true	false	High Hub	vc-shocking-shift rule	vr-shocking-shift rule	--	--
 "stocking"	"stiffed"	--	--	false	true	true	false	High Hub	vc-stocking-stiffed rule	vr-stocking-stiffed rule	--	--
+"despite"	"dispute"	--	--	false	true	false	false	high hub	vc-despite-dispute rule	vr-despite-dispute rule	--	--
 "mocking"	"miffed"	--	--	false	true	true	false	High Hub	vc-mocking-miffed rule	vr-mocking-miffed rule	--	--
 "flow"	"flue"	--	--	false	true	true	false	show shoe	vc-flow-flue rule	vr-flow-flue rule	--	-- [start no new show shoe/rocking rift]
 "glow"	"glue"	--	--	false	true	true	false	show shoe	vc-glow-glue rule	vr-glow-glue rule	--	--
@@ -602,6 +603,21 @@ this is the vr-k-cope rule:
 	now sco-k-cope is true;
 	say "The hope that started turns into coping, with a bit of slang. You feel spiritually refreshed. You take the lift back to the [hub].";
 	take-lift High Hub;
+
+a goodrhyme rule (this is the vc-despite-dispute rule):
+	if player does not have light lute, unavailable;
+	if sco-despite-dispute is true:
+		vcal "You already dispersed the can of DELIGHT-DILUTE!";
+		already-done;
+	if delight dilute is not fungible:
+		vcp "That's interesting and tricky, and it'll come in handy later. Trust me.";
+		not-yet;
+	ready;
+
+this is the vr-despite-dispute rule:
+	now sco-despite-dispute is true;
+	say "The DELIGHT-DILUTE dissolves quickly, and you are back to your old confidence.";
+	moot delight dilute;
 
 a goodrhyme rule (this is the vc-mocking-miffed rule):
 	if player is not in High Hub, unavailable;
@@ -1285,7 +1301,8 @@ to take-lift (rm - a room):
 	move locking lift to rm;
 	move the player to rm;
 	if hub-score is 5 and delight dilute is off-stage:
-		say "Suddenly a huge CLUNK! A small can slowly leaking some sort of gas appears at your feet. It's not lethal or anything. Just a can of DELIGHT-DILUTE. You immediately feel depressed and conflicted. You feel you'll be chickening out if you don't neutralize it, but you're wasting time if you try to. Tricky! What to do?";
+		say "Suddenly your light lute pops and fizzes and springs from your hands! It explodes, and in its place is a can of DELIGHT-DILUTE. You immediately feel depressed and conflicted. You feel you'll be chickening out if you don't neutralize it, but you're wasting time if you try to. Tricky! What to do?";
+		moot light lute;
 		move delight dilute to high hub;
 
 this is the notify-final-whale rule:
@@ -1325,7 +1342,7 @@ volume readables
 
 table of readables (continued)
 read-thing	read-txt
-locking lift	"You see [lift-score] of 6 settings filled in:[paragraph break][fixed letter spacing][lift-stuff].[variable letter spacing][paragraph break]You've completed [hub-score in words] areas beyond the [high hub]."
+locking lift	"You see [lift-score] of six settings filled in:[paragraph break][fixed letter spacing][lift-stuff].[variable letter spacing][paragraph break]You've completed [hub-score in words] areas beyond the [high hub]."
 
 to decide which number is lift-score:
 	decide on boolval of sco-docking-diffed + boolval of sco-grokking-grift + boolval of sco-mocking-miffed + boolval of sco-rocking-rift + boolval of sco-shocking-shift + boolval of sco-stocking-stiffed;

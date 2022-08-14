@@ -328,6 +328,7 @@ mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "flight flute"	--	false	111	--	"No, you can't run from your problems."
 "fright fruit"	--	false	111	--	"You already made some fruit for good. You don't need that."
 "height hoot"	--	false	111	--	"Not useful, not even in the High Hub."
+"mite/might moot"	--	false	111	--	"You aren't powerful enough to cut anything that far down to size."
 "plight plute"	--	false	111	--	"No, we don't need a potential nuclear disaster on our hands."
 "shite shoot/chute"	--	false	111	--	"Creative, but not terribly helpful."
 "sight/cite/site suit"	--	false	111	--	"The light lute is too artsy to beget a business suit or a lawsuit."
