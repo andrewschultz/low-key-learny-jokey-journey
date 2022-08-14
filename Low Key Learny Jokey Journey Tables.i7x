@@ -136,7 +136,6 @@ this is the vr-choose-name rule:
 	say "You walk through the door and tumble down to...";
 	move the player to Roaring Rocks;
 	if sco-plain-plea is false, max-down; [no way back to PLAIN PLEA]
-	the rule succeeds;
 
 a goodrhyme rule (this is the vc-plain-plea rule):
 	if player is not in Bane Be Sane See, unavailable;
@@ -148,7 +147,6 @@ a goodrhyme rule (this is the vc-plain-plea rule):
 this is the vr-plain-plea rule:
 	say "Your plain plea seems perfect for the situation. The train tree grows brighter. It pervades the air for a bit, then dissipates.";
 	now sco-plain-plea is true;
-	the rule succeeds;
 
 a goodrhyme rule (this is the vc-boring-box rule):
 	if player is not in Roaring Rocks, unavailable;
@@ -1130,7 +1128,7 @@ a goodrhyme rule (this is the vc-gad-gunk rule):
 
 this is the vr-gad-gunk rule:
 	now sco-gad-gunk is true;
-	say "An effective physical insult, but it doesn't really hit at the mad monk's heart.";
+	say "Chiding the monk's cleanliness, groundless or otherwise, is an effective insult, though it doesn't win the war. Have a bonus point.";
 
 a goodrhyme rule (this is the vc-bad-bunk rule):
 	if mad monk is not fungible, unavailable;
@@ -1140,8 +1138,8 @@ a goodrhyme rule (this is the vc-bad-bunk rule):
 	ready;
 
 this is the vr-bad-bunk rule:
+	abide by the examine-monk rule;
 	now sco-bad-bunk is true;
-	examine-monk;
 
 a goodrhyme rule (this is the vc-sad-sunk rule):
 	if mad monk is not fungible, unavailable;
@@ -1151,8 +1149,8 @@ a goodrhyme rule (this is the vc-sad-sunk rule):
 	ready;
 
 this is the vr-sad-sunk rule:
+	abide by the examine-monk rule;
 	now sco-sad-sunk is true;
-	examine-monk;
 
 a goodrhyme rule (this is the vc-fret-free rule):
 	if player is not in threat three met me, unavailable;
@@ -1223,8 +1221,6 @@ this is the vr-t-lly rule:
 
 sco-trite-t-lly is a truth state that varies.
 
-[zzvcvr]
-
 section auxiliary rules and definitions
 
 to print-the-loc: say "[line break][b][location of player][r][line break]" [?? move to universal?]
@@ -1258,12 +1254,25 @@ this is the marquee-change rule:
 to decide which number is monk-score:
 	decide on boolval of sco-bad-bunk + boolval of sco-sad-sunk;
 
-to examine-monk:
-	if monk-score is 2:
-		say "That's it. The mad monk flees. The path south really is free now.";
-		moot mad monk;
+warn-monk is a truth state that varies.
+
+this is the examine-monk rule:
+	if monk-score < 1:
+		say "The mad monk blinks a bit. That one hurt. Your attack was simple but effective. Maybe one more...";
 		continue the action;
-	say "The mad monk blinks a bit. That one hurt. It was pretty simple but effective. Maybe a bit more..."
+	if warn-monk is false:
+		now warn-monk is true;
+		let lc be left-count of table of mad monk guesses;
+		if lc > 0 or sco-gad-gunk is false:
+			say "You sense you could practice on the monk for a bit. Specifically, you have ";
+			if lc > 0, say "[lc in words] guess[if lc > 1]es[end if]";
+			if lc > 0 and sco-gad-gunk is false, say " and";
+			if sco-gad-gunk is false, say " one bonus point";
+			say " to help build muscle memory or practice grit or whatever for tougher opponents.[paragraph break]Take down the monk anyway?";
+			say "[i][bracket]NOTE: this nag will not appear again, and if you want to try good guesses against other enemies after they vanish, I have no problems if you [b]UNDO[r][i].[close bracket][i]";
+			unless the player consents, the rule fails;
+	say "That's it. The mad monk flees. The path south really is free now.";
+	moot mad monk;
 
 to decide which number is shoal-score:
 	decide on boolval of sco-four-foals + boolval of sco-more-moles;

@@ -643,10 +643,10 @@ this is the verb-checker rule:
 	let local-post-hom be false;
 	let brightness be false;
 	let new-point-to-get be false;
-	let is-song be false;
 	let global-row-check be 0;
 	let hom-row be 0;
 	let my-count be 0;
+	let nwpc be number of words in the player's command;
 	repeat through the table of verb checks:
 		increment global-row-check;
 		now my-count is 0;
@@ -686,8 +686,9 @@ this is the verb-checker rule:
 				say "Ooh! You're close. You've probably juggled two valid solutions.";
 				the rule succeeds;
 			abide by the situational-cuing-reject rule;
+			abide by the run-rule entry;
 			if there is a core entry and idid entry is false:
-				if core entry is true and number of words in the player's command > 2:
+				if core entry is true and nwpc > 2:
 					say "You may have used too many words. Any necessary command just needs two words, no more, no less. I put this in to make sure you can't just spam guesses. It's a bit strict, but ... I wanted some cursory protection, as well as simple guidance to narrow down what you should guess.";
 					the rule fails;
 				up-which core entry;
@@ -695,11 +696,10 @@ this is the verb-checker rule:
 					increase lump-count by 1;
 			now idid entry is true;
 			now think-cue entry is false;
-			process the run-rule entry;
 			if zap-core-entry is true: [must be after "process the run-rule entry" or next LLP may not register]
 				blank out the core entry;
 				now zap-core-entry is false;
-			process the score and thinking changes rule;
+			follow the score and thinking changes rule;
 			if there is a core entry and core entry is false, check-lump-progress;
 			the rule succeeds;
 		if shut-scan is true, next;
@@ -1073,7 +1073,7 @@ to win-the-game:
 	if score is maximum score:
 		choose row with final response rule of show-misses rule in the Table of Final Question Options;
 		blank out the whole row; [don't let the player see MISSED if they got everything]
-	process the notify score changes rule;
+	process the score and thinking changes rule;
 	end the game saying "Me, Major See-Sager";
 	follow the shutdown rules;
 
