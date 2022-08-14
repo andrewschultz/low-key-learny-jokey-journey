@@ -139,17 +139,17 @@ to decide which number is variable-scan-length of (mynum - a number):
 		if sco-lore-lols is false, decide on -44;
 		if shoal-score < 2, decide on 45;
 		decide on 0;
-	else if mynum is 110:
+	else if mynum is 110: [red rose]
 		if player is in rum route and sco-said-sos is false, decide on 43;
 		if player is in seek sameing freak framing and sco-bred-bros is false, decide on 44;
 		decide on 0;
-	else if mynum is 111:
+	else if mynum is 111: [light lute]
 		if player is in slight sleaze and sco-right-root is false, decide on 54;
 		if player is in trite trail and sco-bright-brute is false, decide on 65;
 		if player is in sore souls' gore goals:
 			if sco-kite-coot is false, decide on 44;
 			if sco-night-newt is false, decide on 54;
-			if sco-bright-brute is false, decide on 65;
+		if delight dilute is fungible, decide on 77;
 		decide on 0;
 	else if mynum is 112:
 		if sco-yet-ye is false, decide on 32;
