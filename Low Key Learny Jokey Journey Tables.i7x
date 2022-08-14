@@ -162,6 +162,39 @@ this is the vr-boring-box rule:
 	now sco-boring-box is true;
 	set the pronoun it to boring box;
 
+a goodrhyme rule (this is the vc-gad-gunk rule):
+	if mad monk is not in location of player, unavailable;
+	if sco-gad-gunk is true:
+		vcal "You already insulted the mad monk that way.";
+		already-done;
+	ready;
+
+this is the vr-gad-gunk rule:
+	now sco-gad-gunk is true;
+	say "Chiding the monk's cleanliness, groundless or otherwise, is an effective insult, though it doesn't win the war. Have a bonus point.";
+
+a goodrhyme rule (this is the vc-bad-bunk rule):
+	if mad monk is not fungible, unavailable;
+	if sco-bad-bunk is true:
+		vcal "You already shamed the mad monk this way!";
+		already-done;
+	ready;
+
+this is the vr-bad-bunk rule:
+	abide by the examine-monk rule;
+	now sco-bad-bunk is true;
+
+a goodrhyme rule (this is the vc-sad-sunk rule):
+	if mad monk is not fungible, unavailable;
+	if sco-sad-sunk is true:
+		vcal "You already shamed the mad monk this way!";
+		already-done;
+	ready;
+
+this is the vr-sad-sunk rule:
+	abide by the examine-monk rule;
+	now sco-sad-sunk is true;
+
 a goodrhyme rule (this is the vc-grow-grudge rule):
 	if player is not in NNSS, unavailable;
 	if sco-grow-grudge is true:
@@ -483,18 +516,6 @@ this is the vr-docking-diffed rule:
 	say "The locking lift leads you [one of]to a shore where you'd expect a watercraft, but there is none[or]back to the [cad coast][stopping].";
 	take-lift mad most cad coast;
 
-a goodrhyme rule (this is the vc-rocking-rift rule):
-	if player is not in High Hub, unavailable;
-	if sco-rocking-rift is true:
-		vcal "You already brought life back to the [show shoe]. You don't need to go back.";
-		already-done;
-	ready;
-
-this is the vr-rocking-rift rule:
-	now sco-rocking-rift is true;
-	say "[if sco-rocking-rift is false]You enter the Locking Lift and wind up in what seems to be a large amphitheater. It's empty, but it could put on a decent show[else]Back to the [show shoe].";
-	take-lift Show Shoe;
-
 a goodrhyme rule (this is the vc-grokking-grift rule):
 	if player is not in High Hub, unavailable;
 	if sco-grokking-grift is true:
@@ -506,6 +527,18 @@ this is the vr-grokking-grift rule:
 	say "You wonder if you are up to understanding seediness. But it is too late, by the time you're in the lift.";
 	now sco-grokking-grift is true;
 	take-lift Slight Sleaze;
+
+a goodrhyme rule (this is the vc-rocking-rift rule):
+	if player is not in High Hub, unavailable;
+	if sco-rocking-rift is true:
+		vcal "You already brought life back to the [show shoe]. You don't need to go back.";
+		already-done;
+	ready;
+
+this is the vr-rocking-rift rule:
+	now sco-rocking-rift is true;
+	say "[if sco-rocking-rift is false]You enter the Locking Lift and wind up in what seems to be a large amphitheater. It's empty, but it could put on a decent show[else]Back to the [show shoe].";
+	take-lift Show Shoe;
 
 a goodrhyme rule (this is the vc-shocking-shift rule):
 	if player is not in High Hub, unavailable;
@@ -530,77 +563,6 @@ this is the vr-stocking-stiffed rule:
 	now sco-stocking-stiffed is true;
 	say "You see a vision of kids ripped off during the holidays. You wind up [one of]back [or][stopping] in...";
 	take-lift Rum Route;
-
-a goodrhyme rule (this is the vc-dumb-doubt rule):
-	if player is not in rum route, unavailable;
-	abide by the rum-route-blanket-check rule;
-	if sco-dumb-doubt is true:
-		vcal "You already spread dumb doubt! If you try to spread more, you may wind up believing it yourself.";
-		already-done;
-	ready;
-
-this is the vr-dumb-doubt rule:
-	now sco-dumb-doubt is true;
-	say "You create dumb doubt in the mind of your adversaries. This would be rude if they weren't mean, but they are, so it all feels creative and appropriate. How to expand that doubt, now?";
-
-a goodrhyme rule (this is the vc-said-sos rule):
-	if player does not have red rose, unavailable;
-	if player is not in rum route:
-		vcal "Said-sos could hit the spot elsewhere, but not here.";
-		already-done;
-	if sco-dumb-doubt is false:
-		vcp "Your said-sos won't work cold. You need to show confidence and be persuasive.";
-		not-yet;
-	if sco-said-sos is true:
-		vcal "You already gave said-sos!";
-		not-yet;
-	ready;
-
-this is the vr-said-sos rule:
-	now sco-said-sos is true;
-	say "Your said-sos make sense. You're ready for the crescendo.";
-
-a goodrhyme rule (this is the vc-umm-out rule):
-	if player is not in rum route, unavailable;
-	abide by the rum-route-blanket-check rule;
-	if sco-dumb-doubt is false:
-		vcp "You can't just come in here cold like that! Maybe with the right preparation, an 'umm, out' would be more forceful.";
-		not-yet;
-	if sco-said-sos is false:
-		vcp "You've instilled doubt, but you need an argument. Perhaps one that originated somewhere else..";
-		not-yet;
-	ready;
-
-this is the vr-umm-out rule:
-	now sco-umm-out is true;
-	say "With the confidence instilled by instilling dumb doubt, you finish the deal. You notice a valley below. You should go down when you are ready.";
-	now Slay Slope is mapped below Rum Route;
-	now Rum Route is mapped above Slay Slope;
-
-a goodrhyme rule (this is the vc-hey-hope rule):
-	if player is not in Nay Nope Slay Slope, unavailable;
-	abide by the coped-in-slope rule;
-	if sco-hey-hope is true:
-		vcal "You already got hope started! Now to adjust fully.";
-		already-done;
-	ready;
-
-this is the vr-hey-hope rule:
-	now sco-hey-hope is true;
-	say "How exhilarating! The hope is real! With that, a pall lifts over your depression. But not enough. Yet. You must finish the job.";
-
-a goodrhyme rule (this is the vc-k-cope rule):
-	if player is not in Nay Nope Slay Slope, unavailable;
-	abide by the coped-in-slope rule;
-	if sco-hey-hope is false:
-		vcal "You will be able to cope soon, but there is an intermediate step.";
-		not-yet;
-	ready;
-
-this is the vr-k-cope rule:
-	now sco-k-cope is true;
-	say "The hope that started turns into coping, with a bit of slang. You feel spiritually refreshed. You take the lift back to the [hub].";
-	take-lift High Hub;
 
 a goodrhyme rule (this is the vc-despite-dispute rule):
 	if delight dilute is not in location of player, unavailable;
@@ -756,6 +718,77 @@ this is the vr-throw-through rule:
 	if sco-go-goo is false, max-down;
 	now player has light lute;
 
+a goodrhyme rule (this is the vc-dumb-doubt rule):
+	if player is not in rum route, unavailable;
+	abide by the rum-route-blanket-check rule;
+	if sco-dumb-doubt is true:
+		vcal "You already spread dumb doubt! If you try to spread more, you may wind up believing it yourself.";
+		already-done;
+	ready;
+
+this is the vr-dumb-doubt rule:
+	now sco-dumb-doubt is true;
+	say "You create dumb doubt in the mind of your adversaries. This would be rude if they weren't mean, but they are, so it all feels creative and appropriate. How to expand that doubt, now?";
+
+a goodrhyme rule (this is the vc-said-sos rule):
+	if player does not have red rose, unavailable;
+	if player is not in rum route:
+		vcal "Said-sos could hit the spot elsewhere, but not here.";
+		already-done;
+	if sco-dumb-doubt is false:
+		vcp "Your said-sos won't work cold. You need to show confidence and be persuasive.";
+		not-yet;
+	if sco-said-sos is true:
+		vcal "You already gave said-sos!";
+		not-yet;
+	ready;
+
+this is the vr-said-sos rule:
+	now sco-said-sos is true;
+	say "Your said-sos make sense. You're ready for the crescendo.";
+
+a goodrhyme rule (this is the vc-umm-out rule):
+	if player is not in rum route, unavailable;
+	abide by the rum-route-blanket-check rule;
+	if sco-dumb-doubt is false:
+		vcp "You can't just come in here cold like that! Maybe with the right preparation, an 'umm, out' would be more forceful.";
+		not-yet;
+	if sco-said-sos is false:
+		vcp "You've instilled doubt, but you need an argument. Perhaps one that originated somewhere else..";
+		not-yet;
+	ready;
+
+this is the vr-umm-out rule:
+	now sco-umm-out is true;
+	say "With the confidence instilled by instilling dumb doubt, you finish the deal. You notice a valley below. You should go down when you are ready.";
+	now Slay Slope is mapped below Rum Route;
+	now Rum Route is mapped above Slay Slope;
+
+a goodrhyme rule (this is the vc-hey-hope rule):
+	if player is not in Nay Nope Slay Slope, unavailable;
+	abide by the coped-in-slope rule;
+	if sco-hey-hope is true:
+		vcal "You already got hope started! Now to adjust fully.";
+		already-done;
+	ready;
+
+this is the vr-hey-hope rule:
+	now sco-hey-hope is true;
+	say "How exhilarating! The hope is real! With that, a pall lifts over your depression. But not enough. Yet. You must finish the job.";
+
+a goodrhyme rule (this is the vc-k-cope rule):
+	if player is not in Nay Nope Slay Slope, unavailable;
+	abide by the coped-in-slope rule;
+	if sco-hey-hope is false:
+		vcal "You will be able to cope soon, but there is an intermediate step.";
+		not-yet;
+	ready;
+
+this is the vr-k-cope rule:
+	now sco-k-cope is true;
+	say "The hope that started turns into coping, with a bit of slang. You feel spiritually refreshed. You take the lift back to the [hub].";
+	take-lift High Hub;
+
 a goodrhyme rule (this is the vc-bad-boast rule):
 	if player is not in Mad Most Cad Coast, unavailable;
 	if sco-bad-boast is true:
@@ -864,6 +897,56 @@ this is the vr-excite-exhale rule:
 	say "You get all jazzed up to fight [the whale], believing you can do it. Then you calm down and figure strategy. You make sure the mail is comfortable and you can swing the flail well, and you use the rail until you're able to balance easily.[paragraph break]You conquer the white whale! After doing so, you head back to High Hub.";
 	take-lift High Hub;
 
+a goodrhyme rule (this is the vc-tight-tease rule):
+	if player is not in slight sleaze, unavailable;
+	if sco-tight-tease is true:
+		vcal "You already poked the slight sleaze back. You don't get double credit for that.";
+		already-done;
+	ready;
+
+this is the vr-tight-tease rule:
+	now sco-tight-tease is true;
+	say "You figure, if you can't beat [']em, join [']em, or just pretend to. You demand something more risque, which the slight sleaze is unable to provide. This doesn't win the war, but it wins a small, satisfying pointless side battle.";
+
+a goodrhyme rule (this is the vc-bright-breeze rule):
+	if player is not in slight sleaze, unavailable;
+	abide by the trite-trees-planted rule;
+	if sco-bright-breeze is true:
+		vcal "The bright breeze is already blowing!";
+		already-done;
+	ready;
+
+this is the vr-bright-breeze rule:
+	now sco-bright-breeze is true;
+	say "The local weather shifts slightly but for the better. You feel cheerier and more open to foisting sarcasm on those that deserve it.";
+
+a goodrhyme rule (this is the vc-plight-please rule):
+	if player is not in slight sleaze, unavailable;
+	abide by the trite-trees-planted rule;
+	if sco-bright-breeze is false:
+		vcp "You'd like to be that dismissive ('Plight? PLEASE!') but you aren't feeling positive enough for that. Perhaps a slight change in the weather...";
+		not-yet;
+	if sco-plight-please is true:
+		vcal "The slight sleaze is already nearly gone.";
+		already-done;
+	ready;
+
+this is the vr-plight-please rule:
+	now sco-plight-please is true;
+	say "'Plight? PLEASE!' you laugh. The sleaze lessens. The flight-flees you feel disappear.";
+
+a goodrhyme rule (this is the vc-right-root rule):
+	if player does not have light lute, unavailable;
+	abide by the trite-trees-planted rule;
+	if sleaze-score < 2:
+		vcp "That will work when the sleaze is slight enough. Right now, you [if sleaze-score is 1]need to decrease it a bit more[else]haven't started, yet[end if].";
+		not-yet;
+	ready;
+
+this is the vr-right-root rule:
+	now sco-right-root is true;
+	say "The right root takes hold in the ground, and out bloom ... trite trees! No, it's not picturesque, but it's better than what was there before.";
+
 a goodrhyme rule (this is the vc-bleak-blaming rule):
 	if player is not in freak framing seek sameing, unavailable;
 	abide by the did-i-shame rule;
@@ -914,13 +997,6 @@ this is the vr-bred-bros rule:
 	say "Some bred Bros, more charismatic than you, arrive to disperse your message more charismatically.";
 	take-lift High Hub;
 
-a goodrhyme rule (this is the vc-tight-tease rule):
-	if player is not in slight sleaze, unavailable;
-	if sco-tight-tease is true:
-		vcal "You already poked the slight sleaze back. You don't get double credit for that.";
-		already-done;
-	ready;
-
 a goodrhyme rule (this is the vc-shore-shoals rule):
 	if player is not in sore souls' gore goals, unavailable;
 	if sco-shore-shoals is true:
@@ -970,12 +1046,6 @@ this is the vr-lore-lols rule:
 	now sco-lore-lols is true;
 	say "Why, yes, this place could use myths of creation and so forth[if sco-shore-shoals is false] for when it becomes habitable[end if].";
 
-this is the lute-animal-check rule:
-	if player is not in sore souls' gore goals or player does not have light lute, unavailable;
-	if sco-shore-shoals is false:
-		vcp "The enviroment is too inhospitable for such an animal right now.";
-		not-yet;
-
 a goodrhyme rule (this is the vc-night-newt rule):
 	abide by the lute-animal-check rule;
 	if sco-night-newt is true:
@@ -997,49 +1067,6 @@ a goodrhyme rule (this is the vc-kite-coot rule):
 this is the vr-kite-coot rule:
 	now sco-kite-coot is true;
 	say "The kite coot is an odd animal for sure but a worthy addition to the menagerie here.";
-
-this is the vr-tight-tease rule:
-	now sco-tight-tease is true;
-	say "You figure, if you can't beat [']em, join [']em, or just pretend to. You demand something more risque, which the slight sleaze is unable to provide. This doesn't win the war, but it wins a small, satisfying pointless side battle.";
-
-a goodrhyme rule (this is the vc-bright-breeze rule):
-	if player is not in slight sleaze, unavailable;
-	abide by the trite-trees-planted rule;
-	if sco-bright-breeze is true:
-		vcal "The bright breeze is already blowing!";
-		already-done;
-	ready;
-
-this is the vr-bright-breeze rule:
-	now sco-bright-breeze is true;
-	say "The local weather shifts slightly but for the better. You feel cheerier and more open to foisting sarcasm on those that deserve it.";
-
-a goodrhyme rule (this is the vc-plight-please rule):
-	if player is not in slight sleaze, unavailable;
-	abide by the trite-trees-planted rule;
-	if sco-bright-breeze is false:
-		vcp "You'd like to be that dismissive ('Plight? PLEASE!') but you aren't feeling positive enough for that. Perhaps a slight change in the weather...";
-		not-yet;
-	if sco-plight-please is true:
-		vcal "The slight sleaze is already nearly gone.";
-		already-done;
-	ready;
-
-this is the vr-plight-please rule:
-	now sco-plight-please is true;
-	say "'Plight? PLEASE!' you laugh. The sleaze lessens. The flight-flees you feel disappear.";
-
-a goodrhyme rule (this is the vc-right-root rule):
-	if player does not have light lute, unavailable;
-	abide by the trite-trees-planted rule;
-	if sleaze-score < 2:
-		vcp "That will work when the sleaze is slight enough. Right now, you [if sleaze-score is 1]need to decrease it a bit more[else]haven't started, yet[end if].";
-		not-yet;
-	ready;
-
-this is the vr-right-root rule:
-	now sco-right-root is true;
-	say "The right root takes hold in the ground, and out bloom ... trite trees! No, it's not picturesque, but it's better than what was there before.";
 
 a goodrhyme rule (this is the vc-bold-bend rule):
 	if player is not in old end, unavailable;
@@ -1120,39 +1147,6 @@ this is the vr-splain-splat rule:
 	say "Now that you've busted out of the vain vat, you announce yourself! You wonder if this was a fit of pride, but it's too late. A bunch of Pred Pros jump and ambush you. Your red rose, in a final blaze of glory, puts up a protective shield. But the Pros still guard the way south.";
 	moot Red Rose;
 	move Pred Pros to Vain Vat;
-
-a goodrhyme rule (this is the vc-gad-gunk rule):
-	if mad monk is not in location of player, unavailable;
-	if sco-gad-gunk is true:
-		vcal "You already insulted the mad monk that way.";
-		already-done;
-	ready;
-
-this is the vr-gad-gunk rule:
-	now sco-gad-gunk is true;
-	say "Chiding the monk's cleanliness, groundless or otherwise, is an effective insult, though it doesn't win the war. Have a bonus point.";
-
-a goodrhyme rule (this is the vc-bad-bunk rule):
-	if mad monk is not fungible, unavailable;
-	if sco-bad-bunk is true:
-		vcal "You already shamed the mad monk this way!";
-		already-done;
-	ready;
-
-this is the vr-bad-bunk rule:
-	abide by the examine-monk rule;
-	now sco-bad-bunk is true;
-
-a goodrhyme rule (this is the vc-sad-sunk rule):
-	if mad monk is not fungible, unavailable;
-	if sco-sad-sunk is true:
-		vcal "You already shamed the mad monk this way!";
-		already-done;
-	ready;
-
-this is the vr-sad-sunk rule:
-	abide by the examine-monk rule;
-	now sco-sad-sunk is true;
 
 a goodrhyme rule (this is the vc-fed-foes rule):
 	if red rose is off-stage or pred pros are moot, unavailable;
