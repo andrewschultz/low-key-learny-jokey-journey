@@ -999,7 +999,7 @@ sco-piss-poor is a truth state that varies.
 check entering miss more diss door: say "Looking for arguments right now is pointless." instead;
 
 check swearing obscenely:
-	if roaring rocks is unvisited, say "Wait until you've moved out of here. Then, cursing will give you a bonus point." instead;
+	if roaring rocks is unvisited, say "Wait until you've moved out of here. Then, cursing will give you a chance for a bonus point." instead;
 	if miss more diss door is moot, say "With the [diss door] gone, [one of]a[or]another[stopping] worst-word-burst bird flies by and puts your efforts to utter shame." instead;
 	if miss more diss door is fungible, say "The [diss door] rattles a menacing challenge." instead;
 	if miss more diss door is off-stage:
@@ -1009,6 +1009,26 @@ check swearing obscenely:
 	move miss more diss door to location of player instead;
 
 check swearing mildly: try swearing obscenely instead;
+
+section swear-swamp-where-womping
+
+swear-swamp-where-womping is an action out of world.
+
+understand the command "swear swamp where womp" as something new.
+
+understand "swear swamp where womp" as swear-swamp-where-womping when player is not in Bane Be Sane See.
+
+carry out swear-swamp-where-womping:
+	repeat through table of verb checks:
+		if check-rule entry is vc-piss-poor rule:
+			if idid entry is true, say "You can only avoid swearing once." instead;
+			up-min;
+			now idid entry is true;
+			say "You bypass any form of profanity, and the [if diss door is off-stage]unsummoned [end if][diss door], to remain above that sort of thing and gain a bonus point for your efforts. You'd have done so even if a bonus point weren't at stake.";
+			follow the score and thinking changes rule;
+			the rule succeeds;
+	say "Oops. You should've gotten a check for a bonus point here.";
+	the rule succeeds;
 
 chapter verbsing
 
@@ -1043,7 +1063,7 @@ to win-the-game:
 	if score is maximum score:
 		choose row with final response rule of show-misses rule in the Table of Final Question Options;
 		blank out the whole row; [don't let the player see MISSED if they got everything]
-	follow the notify score changes rule;
+	process the notify score changes rule;
 	end the game saying "Me, Major See-Sager";
 	follow the shutdown rules;
 
@@ -1053,7 +1073,11 @@ final question wording	only if victorious	topic		final response rule		final resp
 
 this is the show-misses rule:
 	if sco-plain-plea is false, say "You could've made a [b]PLAIN PLEA[r] back at the start in [sane see].";
-	if sco-plain-plea is false, say "You could've used a minor profanity ([b]BOTHER[r]) and said [b]PISS POOR[r] to [the diss door].";
+	if sco-plain-plea is false:
+		if diss door is off-stage:
+			say "At any point, you could've used a minor profanity such as [b]BOTHER[r] to open an item to change. [one of]The solution itself requires slightly off-color language. So if you're averse to swearing, there is another way to get a point. Type [b]MISSES[r] again to see it[or]Without using profanity, you could also have said [b]SWEAR SWAMP WHERE WOMP[r][stopping].";
+		else:
+			say "After you swore, you could've said [b]PISS POOR[r] to [the diss door].";
 	if sco-grotty-grail is false, say "You could've discovered a [b]GROTTY GRAIL[r] back in [jotty jail].";
 	if sco-potty-pail is false, say "You could've discovered a [b]POTTY PAIL[r] back in [jotty jail].";
 	if sco-go-goo is false, say "You could've made [b]GO GOO[r] in [show shoe].";
