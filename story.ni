@@ -16,7 +16,7 @@ include Trivial Niceties by Andrew Schultz.
 
 include Bold Final Question Rows by Andrew Schultz.
 
-include Civil Seeming Drivel Dreaming Common by Andrew Schultz.
+include Prime Pro Rhyme Row Common by Andrew Schultz.
 
 include Low Key Learny Jokey Journey Tables by Andrew Schultz.
 
@@ -52,7 +52,7 @@ cur-bonus is 0.
 
 when play begins: now max-poss is max-overall;
 
-chapter offshoots relying on CSDD common file or CSDD universal file
+chapter offshoots relying on PPRR common file or PPRR universal file
 
 to decide whether force-partminus of (th - a thing): [whether to force certain leet learner readings]
 	no;
@@ -784,7 +784,7 @@ definition: a room (called rm) is available-from-here:
 	if rm is bane be sane see and player is not in bane be sane see, no;
 	yes;
 
-[this may be moved to CSDD common later]
+[this may be moved to PPRR common later]
 
 the gong rules are a rulebook. the gong rules have outcomes completed, llp-remaining, and uncompleted.
 
@@ -957,7 +957,7 @@ volume meta-verbs
 chapter abouting
 
 carry out abouting:
-	say "[this-game] is the third entry in the [csdd] series. You do not need experience [series-names] to get through succesfully.";
+	say "[this-game] is the third entry in the [pprr] series. You do not need experience [series-names] to get through succesfully.";
 	say "[line break]It felt like something that'd never get created, but it was fun to dream about. Then I had an idea about [if nnss is unvisited]the third room[else][NNSS][end if] offering another LLP in [vvff], but I wanted to move on. Then an idea for one room came, then another, and suddenly I had a game for IFComp 2022, which was nice, as the one I'd had on reserve since 2018 had dried up.";
 	say "[line break]I was able to re-use and fine-tune and fix bugs in a lot of code from [vvff], and I even managed to create some code I backported. And I started using Zarf's regression scripts earlier, to catch bugs well before the deadline and free my mind up for bigger-picture things. So it feels like the user experience should be smoother, although the story might be weaker.";
 	say "[line break]While my code for [vvff] wasn't perfect, it gave me a boost so I didn't have to rewrite a lot. I'd also become more comfortable with rules and rule ordering since then, so I was able to make the code more portable.";
