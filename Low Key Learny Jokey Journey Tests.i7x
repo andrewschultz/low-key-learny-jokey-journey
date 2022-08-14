@@ -20,7 +20,7 @@ test w6 with "bye bub/wordy walk/u/rocking rift/flow flue/glow glue/go goo/bro b
 
 test w7 with "shocking shift/shore shoals/night newt/bright brute/kite coot/lore lols/four foals/more moles".
 
-test w8 with "docking diffed/bad boast/rad roast/w/flight flail/might mail/sight sail/right rail/mite moot/excite exhale".
+test w8 with "docking diffed/bad boast/rad roast/w/flight flail/might mail/sight sail/right rail/bright brute/excite exhale".
 
 test w9 with "shocking shift/enter lift"
 

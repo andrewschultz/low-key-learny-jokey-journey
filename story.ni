@@ -151,7 +151,7 @@ to decide which number is variable-scan-length of (mynum - a number):
 		decide on 0;
 	else if mynum is 111:
 		if player is in slight sleaze and sco-right-root is false, decide on 54;
-		if player is in trite trail and sco-mite-moot is false, decide on 44;
+		if player is in trite trail and sco-bright-brute is false, decide on 65;
 		if player is in sore souls' gore goals:
 			if sco-kite-coot is false, decide on 44;
 			if sco-night-newt is false, decide on 54;
@@ -454,14 +454,13 @@ the light lute is a rhymable. "You have no clue how to play it[if lute-strings i
 guess-table of light lute is the table of light lute guesses.
 
 to decide which number is lute-strings:
-	decide on boolval of sco-right-root + boolval of sco-mite-moot;
+	decide on boolval of sco-right-root + boolval of sco-bright-brute;
 
-sco-mite-moot is a truth state that varies.
+sco-bright-brute is a truth state that varies.
 sco-right-root is a truth state that varies.
 
 sco-kite-coot is a truth state that varies.
 sco-night-newt is a truth state that varies.
-sco-bright-brute is a truth state that varies.
 
 book mad most cad coast
 
@@ -495,7 +494,7 @@ Sore Souls' Gore Goals is a room in Poppin' Part. "[if sco-shore-shoals is false
 guess-table of sore souls' gore goals is the table of sore souls' gore goals guesses.
 
 to decide which number is shoal-extra:
-	decide on boolval of sco-lore-lols + boolval of sco-night-newt + boolval of sco-bright-brute + boolval of sco-kite-coot;
+	decide on boolval of sco-lore-lols + boolval of sco-night-newt + boolval of sco-kite-coot;
 
 section needed points
 

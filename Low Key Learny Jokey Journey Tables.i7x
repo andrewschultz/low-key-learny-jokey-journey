@@ -90,7 +90,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "might"	"mail"	--	--	false	true	true	false	Trite Trail	vc-might-mail rule	vr-might-mail rule	--	--
 "flight"	"flail"	--	--	false	true	true	false	Trite Trail	vc-flight-flail rule	vr-flight-flail rule	--	--
 "right"	"rail"	--	--	false	true	true	false	Trite Trail	vc-right-rail rule	vr-right-rail rule	--	--
-"mite"	"moot"	--	--	false	true	true	false	Trite Trail	vc-mite-moot rule	vr-mite-moot rule	--	--
+"bright"	"brute"	--	--	false	true	true	false	Trite Trail	vc-bright-brute rule	vr-bright-brute rule	--	--
 "excite"	"exhale"	--	--	false	true	true	false	Trite Trail	vc-excite-exhale rule	vr-excite-exhale rule	--	--
 "tight"	"tease|tees"	--	--	false	true	false	false	slight sleaze	vc-tight-tease rule	vr-tight-tease rule	--	-- [start grokking grift]
 "bright"	"breeze"	--	--	false	true	true	false	slight sleaze	vc-bright-breeze rule	vr-bright-breeze rule	--	--
@@ -105,7 +105,6 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "more"	"moles"	--	--	false	true	true	false	sore souls' gore goals	vc-more-moles rule	vr-more-moles rule	--	--
 "lore"	"lols"	--	--	false	true	false	false	sore souls' gore goals	vc-lore-lols rule	vr-lore-lols rule	--	--
 "night"	"newt"	--	--	false	true	false	false	sore souls' gore goals	vc-night-newt rule	vr-night-newt rule	--	--
-"bright"	"brute"	--	--	false	true	false	false	sore souls' gore goals	vc-bright-brute rule	vr-bright-brute rule	--	--
 "kite"	"coot"	--	--	false	true	false	false	sore souls' gore goals	vc-kite-coot rule	vr-kite-coot rule	--	--
 "bold"	"bend"	--	--	false	true	true	false	old end	vc-bold-bend rule	vr-bold-bend rule	--	-- [mocking miffed: this is the endgame sequence, so put nothing after it]
 "trolled"	"trend"	--	--	false	true	true	false	old end	vc-trolled-trend rule	vr-trolled-trend rule	--	--
@@ -819,25 +818,25 @@ this is the vr-right-rail rule:
 	say "You inspect the sight sail, and you realize that, yes, there are rails to help you keep your balance and gain your sea legs as you hunt [the whale].";
 	follow the notify-final-whale rule;
 
-a goodrhyme rule (this is the vc-mite-moot rule):
+a goodrhyme rule (this is the vc-bright-brute rule):
 	if player does not have light lute, unavailable;
-	if sco-mite-moot is true:
-		vcal "You already found a battle cry against the white whale.";
+	if sco-bright-brute is true:
+		vcal "You already found an ally against the white whale.";
 		already-done;
 	if player is not in trite trail:
 		vcal "That would be a great battle cry if a fearsome enemy were around.";
 		not-yet;
 	ready;
 
-this is the vr-mite-moot rule:
-	now sco-mite-moot is true;
-	say "You figure a war cry to attack the white whale. You feel more confidence now.";
+this is the vr-bright-brute rule:
+	now sco-bright-brute is true;
+	say "You call on a bright brute, who hides in the shadows to practice their fighting moves until such time as you're ready to attack the white whale. You'll need the muscle in case the whale somehow gets on board.";
 
 a goodrhyme rule (this is the vc-excite-exhale rule):
 	if player is not in Trite Trail, unavailable;
 	unless whale-hunt-ready:
-		if whale-score is 4 and sco-mite-moot is false:
-			vcp "You feel physically prepared, but you need help from something originally from outside the Trite Trail. A psychological boost. A battle cry.";
+		if whale-score is 4 and sco-bright-brute is false:
+			vcp "You feel as physically prepared as you can be, but you'll still need an ally from outside the Trite Trail.";
 		else:
 			vcp "Man! That'd be a good idea, but you aren't quite ready to hunt the whale, yet.";
 		not-yet;
@@ -973,17 +972,6 @@ a goodrhyme rule (this is the vc-night-newt rule):
 this is the vr-night-newt rule:
 	now sco-night-newt is true;
 	say "A night newt appears and scurries off. The place feels livelier now.";
-
-a goodrhyme rule (this is the vc-bright-brute rule):
-	abide by the lute-animal-check rule;
-	if sco-bright-brute is true:
-		vcal "More than one bright brute might cause boundary conflicts. One guardian is enough.";
-		already-done;
-	ready;
-
-this is the vr-bright-brute rule:
-	now sco-bright-brute is true;
-	say "A bright brute appears and seems to salute you before stationing themselves out of sight, ready to attack predators who might sneak in.";
 
 a goodrhyme rule (this is the vc-kite-coot rule):
 	abide by the lute-animal-check rule;
@@ -1296,13 +1284,16 @@ a goodrhyme rule (this is the did-i-shame rule):
 to take-lift (rm - a room):
 	move locking lift to rm;
 	move the player to rm;
+	if hub-score is 5 and delight dilute is off-stage:
+		say "Suddenly a huge CLUNK! A small can slowly leaking some sort of gas appears at your feet. It's not lethal or anything. Just a can of DELIGHT-DILUTE. You immediately feel depressed and conflicted. You feel you'll be chickening out if you don't neutralize it, but you're wasting time if you try to. Tricky! What to do?";
+		move delight dilute to high hub;
 
 this is the notify-final-whale rule:
 	unless whale-hunt-ready, continue the action;
 	say "The last step will be something else! It will probably require, like, extra syllables in what you want to do. Both with psyching yourself up and then taking a step back and achieving mindfulness, or whatever.";
 
 to decide what number is whale-score:
-	decide on boolval of sco-sight-sail + boolval of sco-might-mail + boolval of sco-flight-flail + boolval of sco-right-rail + boolval of sco-mite-moot;
+	decide on boolval of sco-sight-sail + boolval of sco-might-mail + boolval of sco-flight-flail + boolval of sco-right-rail + boolval of sco-bright-brute;
 
 to decide whether whale-hunt-ready:
 	if whale-score is 5, yes;
