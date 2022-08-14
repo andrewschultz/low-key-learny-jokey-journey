@@ -602,7 +602,7 @@ this is the vr-k-cope rule:
 	take-lift High Hub;
 
 a goodrhyme rule (this is the vc-despite-dispute rule):
-	if player does not have light lute, unavailable;
+	if delight dilute is not in location of player, unavailable;
 	if sco-despite-dispute is true:
 		vcal "You already dispersed the can of DELIGHT-DILUTE!";
 		already-done;

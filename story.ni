@@ -44,13 +44,7 @@ section scoring
 
 core-max is 70.
 
-min-needed is 70.
-
 max-bonus is 14.
-
-cur-bonus is 0.
-
-when play begins: now max-poss is max-overall;
 
 chapter offshoots relying on PPRR common file or PPRR universal file
 
@@ -1073,10 +1067,15 @@ rule for printing a parser error (this is the default parser error notification 
 volume end of game
 
 to win-the-game:
-	if score is maximum score:
+	repeat through table of verb checks:
+		if idid entry is false:
+			say "Undone: [check-rule entry] [run-rule entry].";
+	increment core-score;
+	if cur-max-bonus is max-bonus:
 		choose row with final response rule of show-misses rule in the Table of Final Question Options;
 		blank out the whole row; [don't let the player see MISSED if they got everything]
 	process the score and thinking changes rule;
+	force-status;
 	end the game saying "Me, Major See-Sager";
 	follow the shutdown rules;
 
@@ -1086,7 +1085,8 @@ final question wording	only if victorious	topic		final response rule		final resp
 
 this is the show-misses rule:
 	if sco-plain-plea is false, say "You could've made a [b]PLAIN PLEA[r] back at the start in [sane see].";
-	if sco-plain-plea is false:
+	if sco-gad-gunk is false, say "You could've told the Mad Monk [b]GAD GUNK[r] in [roaring rocks].";
+	if sco-piss-poor is false:
 		if diss door is off-stage:
 			say "At any point, you could've used a minor profanity such as [b]BOTHER[r] to open an item to change. [one of]The solution itself requires slightly off-color language. So if you're averse to swearing, there is another way to get a point. Type [b]MISSES[r] again to see it[or]Without using profanity, you could also have said [b]SWEAR SWAMP WHERE WOMP[r][stopping].";
 		else:
@@ -1099,10 +1099,12 @@ this is the show-misses rule:
 		say "[one of]There was also a sturdy stalk that would appear in [nnss]. Check [b]MISSES[r] again for the spoiler, if you don't want to replay or guess it[or][ww2][stopping].";
 	else if sco-wordy-walk is false:
 		say "[ww2].";
+	if sco-night-newt is false, say "You could've summoned a [b]NIGHT NEWT[r] in [gore goals].";
+	if sco-kite-coot is false, say "You could've summoned a [b]KITE COOT[r] in [gore goals].";
 	if sco-tight-tease is false, say "You could've summoned [b]TIGHT TEES[r] or a [b]TIGHT TEASE[r] in [slight sleaze].";
 	if sco-clique-claiming is false, say "You could've performed [b]CLIQUE CLAIMING[r] in [freak framing].";
 	if sco-lore-lols is false, say "You could've performed [b]LORE LOLS[r] in [gore goals].";
-	if sco-gad-gunk is false, say "You could've told the Mad Monk [b]GAD GUNK[r] in [hun harm].";
+	if sco-despite-dispute is false, say "You could've said [b]DESPITE DISPUTE[r] when the light loot became Delight-Dilute."
 
 to say ww2: say "You could've had a [b]WORDY WALK[r] around the sturdy stalk that appeared in [nnss]"
 
