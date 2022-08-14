@@ -384,7 +384,6 @@ mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "bled blows"	--	false	110	--	"You do not need to incite violence."
 "cred crows"	--	false	110	--	"You don't need to brag about street cred, real or imagined."
 "dead does/dohs"	--	false	110	--	"You aren't here to kill animals or utter a Simpsonesque epithet."
-"fed foes/phos"	--	false	110	--	"You don't need to feed your enemies."
 "fled flows"	--	false	110	--	"Nobody and nothing flees at your proclamation."
 "fred froze"	--	false	110	--	"[sad-tale]."
 "ed ohs/os"	--	false	110	--	"No larger-than-life football coach with a thick Cajun accent appears. He is probably out driving that Hummer he bought in that one commercial."

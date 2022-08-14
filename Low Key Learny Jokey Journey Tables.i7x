@@ -113,6 +113,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "bane"	"bat"	--	--	false	true	true	false	drain drat vain vat	vc-bane-bat rule	vr-bane-bat rule	--	--
 "flain"	"flat"	--	--	false	true	true	false	drain drat vain vat	vc-flain-flat rule	vr-flain-flat rule	--	--
 "splain"	"splat"	--	--	false	true	true	false	drain drat vain vat	vc-splain-splat rule	vr-splain-splat rule	--	--
+"fed"	"foes"	--	--	false	true	true	false	drain drat vain vat	vc-fed-foes rule	vr-fed-foes rule	--	--
 "fret"	"free"	--	--	false	true	true	false	threat three met me	vc-fret-free rule	vr-fret-free rule	--	--
 "set"	"see"	--	--	false	true	true	false	threat three met me	vc-set-see rule	vr-set-see rule	--	--
 "yet"	"ye"	--	--	false	true	true	false	threat three met me	vc-yet-ye rule	vr-yet-ye rule	--	--
@@ -1116,7 +1117,9 @@ a goodrhyme rule (this is the vc-splain-splat rule):
 
 this is the vr-splain-splat rule:
 	now sco-splain-splat is true;
-	say "Now that you've busted out of the vain vat, you announce yourself! You're a bit worried a terrible henchman would appear, but none does.";
+	say "Now that you've busted out of the vain vat, you announce yourself! You wonder if this was a fit of pride, but it's too late. A bunch of Pred Pros jump and ambush you. Your red rose, in a final blaze of glory, puts up a protective shield. But the Pros still guard the way south.";
+	moot Red Rose;
+	move Pred Pros to Vain Vat;
 
 a goodrhyme rule (this is the vc-gad-gunk rule):
 	if mad monk is not in location of player, unavailable;
@@ -1150,6 +1153,21 @@ a goodrhyme rule (this is the vc-sad-sunk rule):
 this is the vr-sad-sunk rule:
 	abide by the examine-monk rule;
 	now sco-sad-sunk is true;
+
+a goodrhyme rule (this is the vc-fed-foes rule):
+	if red rose is off-stage or pred pros are moot, unavailable;
+	if Pred Pros are not fungible:
+		vcp "But there are no foes to feed and mollify[if Pred Pros are off-stage], yet[else] here[end if]!";
+		not-yet;
+	if sco-fed-foes is true:
+		vcal "You already fed your foes. This message should not be reachable.";
+		already-done;
+	ready;
+
+this is the vr-fed-foes rule:
+	now sco-fed-foes is true;
+	say "What a feast appears! It looks like the red rose had a bit more something to give. And it keeps giving, until the Fed Foes are full. They nod, gratefully, still wary of the red rose's shield, before heading away. Your destiny awaits!";
+	moot Pred Pros;
 
 a goodrhyme rule (this is the vc-fret-free rule):
 	if player is not in threat three met me, unavailable;

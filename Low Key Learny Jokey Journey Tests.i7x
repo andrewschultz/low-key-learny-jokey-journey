@@ -28,11 +28,11 @@ test w10 with "grokking grift/tight tees/bright breeze/plight please/right root/
 
 test w11 with "stocking stiffed/dumb doubt/said sos/umm out/d/hey hope/k cope/u/enter lift".
 
-test w12 with "mocking miffed/bold bend/trolled trend/mold mend/s".
+test w12 with "despite dispute/mocking miffed/bold bend/trolled trend/mold mend/s".
 
-test w13 with "bane bat/flain flat/splain splat/s".
+test w13 with "bane bat/flain flat/splain splat/fed foes/s".
 
-test w14 with "x marquee/fret free/yet ye/set see/plus plaque/trite telly"
+test w14 with "x marquee/fret free/yet ye/set see/plus plaque/trite telly".
 
 test wa with "test w1/test w2/test w3/test w4/test w5/test w6/test w7/test w8/test w9/test w10/test w11/test w12/test w13/test w14".
 

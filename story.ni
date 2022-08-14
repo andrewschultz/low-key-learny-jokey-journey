@@ -42,7 +42,7 @@ Poppin' Part is a region.
 
 section scoring
 
-core-max is 70.
+core-max is 71.
 
 max-bonus is 14.
 
@@ -590,7 +590,9 @@ book Drain Drat Vain Vat
 
 Drain Drat Vain Vat is south of Old End. It is in Poppin' Part. printed name of Vain Vat is "[if sco-splain-splat is false]Drain (Drat!) Vain Vat[else]Main Mat[end if]". understand "main mat" as Drain Drat Vain Vat when sco-splain-splat is true.
 
-check going south in Vain Vat: if sco-splain-splat is false, say "You don't have the confidence yet. You need to make a bold statement." instead;
+check going south in Vain Vat:
+	if sco-splain-splat is false, say "You don't have the confidence yet. You need to make a bold statement." instead;
+	if sco-fed-foes is false, say "The Pred Pros aren't going to leave without something to show for their work." instead;
 
 check going in Vain Vat: if sco-flain-flat is false, say "You're still stuck in the vain vat. You need to get out. But it can't be too bad." instead;
 
@@ -599,6 +601,12 @@ guess-table of drain drat vain vat is the table of drain drat vain vat guesses.
 sco-bane-bat is a truth state that varies.
 sco-flain-flat is a truth state that varies.
 sco-splain-splat is a truth state that varies.
+
+chapter Pred Pros
+
+the Pred Pros are a plural-named rhymable. guess-table of Pred Pros is table of red rose guesses. "Lean and mean Pred Pros stand here, guarding the way south. Your erstwhile red rose still protects you."
+
+sco-fed-foes is a truth state that varies.
 
 book Threat Three Met ME
 
