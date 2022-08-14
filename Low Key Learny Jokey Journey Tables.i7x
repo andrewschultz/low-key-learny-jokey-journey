@@ -1226,52 +1226,32 @@ a goodrhyme rule (this is the vc-t-lly rule):
 	if sco-plus-plaque is false:
 		say "That would be naming [the Bully], but you need to do a bit more.";
 		not-yet;
-	if sco-t-lly is true:
+	if sco-trite-t-lly is true:
 		vcal "Somehow, you already managed to win the game. This should not happen.";
 		already-done;
 	ready;
 
 this is the vr-t-lly rule:
-	now sco-t-lly is true;
+	now sco-trite-t-lly is true;
 	say "You figured your enemy's name! Congratulations! You have won!";
 	win-the-game;
 
-sco-trite-t-lly is a truth state that varies.
-
-section auxiliary rules and definitions
+section general auxiliary definitions
 
 to print-the-loc: say "[line break][b][location of player][r][line break]" [?? move to universal?]
 
 tried-mocking-miffed is a truth state that varies.
 
-a goodrhyme rule (this is the trite-trees-planted rule):
-	if sco-right-root is true:
-		vcal "You already planted the right root to make trite trees. Nothing more to do here.";
-		already-done;
+warn-monk is a truth state that varies.
 
-to decide which number is sleaze-score:
-	decide on boolval of sco-bright-breeze + boolval of sco-plight-please;
+section auxiliary rules and definitions
 
-a goodrhyme rule (this is the marquee-there rule):
-	if marquee-score < 3, continue the action;
-	vcal "You already prepped yourself for the final fight. Now it is upon you.";
-	already-done;
+[these are ranked by approximate game order SOULS SHOE ROUTE SLEAZE COAST END]
 
-this is the marquee-change rule:
-	if marquee-score is 3:
-		say "The marquee crumbles, revealing your nemesis ... the Frightfully Bright Bully!";
-		move Frightfully Bright Bully to Threat Three Met Me;
-		moot marquee;
-		print-the-loc;
-	else if marquee-score is 2:
-		say "The marquee turns more pronouncedly cracked as some of the text rubs off.";
-	else:
-		say "The marquee shakes slightly as some of the text is rubbed off."
+[rocks, game start]
 
 to decide which number is monk-score:
 	decide on boolval of sco-bad-bunk + boolval of sco-sad-sunk;
-
-warn-monk is a truth state that varies.
 
 this is the examine-monk rule:
 	if monk-score < 1:
@@ -1291,6 +1271,18 @@ this is the examine-monk rule:
 	say "That's it. The mad monk flees. The path south really is free now.";
 	moot mad monk;
 
+[hub 0. transport]
+
+to take-lift (rm - a room):
+	move locking lift to rm;
+	move the player to rm;
+	if hub-score is 5 and delight dilute is off-stage:
+		say "Suddenly your light lute pops and fizzes and springs from your hands! It explodes, and in its place is a can of DELIGHT-DILUTE. You immediately feel depressed and conflicted. You feel you'll be chickening out if you don't neutralize it, but you're wasting time if you try to. Tricky! What to do?";
+		moot light lute;
+		move delight dilute to high hub;
+
+[hub 1. shore]
+
 to decide which number is shoal-score:
 	decide on boolval of sco-four-foals + boolval of sco-more-moles;
 
@@ -1308,39 +1300,7 @@ this is the animals-need-shoals rule:
 		vcp "Such animals would make this area nicer, but it's too desolate for them right now.";
 		not-yet;
 
-this is the coped-in-slope rule:
-	if sco-k-cope is true:
-		vcp "You have managed to deal with everything here.";
-		not-yet;
-
-this is the rum-route-blanket-check rule:
-	if sco-umm-out is true:
-		vcal "You've cleared the Rum Route. No need to overdo things.";
-		already-done;
-
-a goodrhyme rule (this is the did-i-shame rule):
-	if sco-chic-shaming is true:
-		vcal "The chic shaming complete, you're done here. No need to repeat what you did.";
-		already-done;
-
-to take-lift (rm - a room):
-	move locking lift to rm;
-	move the player to rm;
-	if hub-score is 5 and delight dilute is off-stage:
-		say "Suddenly your light lute pops and fizzes and springs from your hands! It explodes, and in its place is a can of DELIGHT-DILUTE. You immediately feel depressed and conflicted. You feel you'll be chickening out if you don't neutralize it, but you're wasting time if you try to. Tricky! What to do?";
-		moot light lute;
-		move delight dilute to high hub;
-
-this is the notify-final-whale rule:
-	unless whale-hunt-ready, continue the action;
-	say "The last step will be something else! It will probably require, like, extra syllables in what you want to do. Both with psyching yourself up and then taking a step back and achieving mindfulness, or whatever.";
-
-to decide what number is whale-score:
-	decide on boolval of sco-sight-sail + boolval of sco-might-mail + boolval of sco-flight-flail + boolval of sco-right-rail + boolval of sco-bright-brute;
-
-to decide whether whale-hunt-ready:
-	if whale-score is 5, yes;
-	no;
+[hub 2. shoe]
 
 to decide whether shoe-food-drink:
 	if sco-stow-stew is true and sco-bro-brew is true, yes;
@@ -1364,17 +1324,79 @@ a goodrhyme rule (this is the complete-hype rule):
 		vcal "You already hyped the crowd up completely. Time to give them a show!";
 		already-done;
 
+[hub 2a. got lute]
+
+this is the lute-animal-check rule:
+	if player is not in sore souls' gore goals or player does not have light lute, unavailable;
+	if sco-shore-shoals is false:
+		vcp "The enviroment is too inhospitable for such an animal right now.";
+		not-yet;
+
+[hub 3. route]
+
+this is the rum-route-blanket-check rule:
+	if sco-umm-out is true:
+		vcal "You've cleared the Rum Route. No need to overdo things.";
+		already-done;
+
+this is the coped-in-slope rule:
+	if sco-k-cope is true:
+		vcp "You have managed to deal with everything here.";
+		not-yet;
+
+[hub 4a. sleaze]
+
+a goodrhyme rule (this is the trite-trees-planted rule):
+	if sco-right-root is true:
+		vcal "You already planted the right root to make trite trees. Nothing more to do here.";
+		already-done;
+
+to decide which number is sleaze-score:
+	decide on boolval of sco-bright-breeze + boolval of sco-plight-please;
+
+[hub 4b. beyond sleaze]
+
+a goodrhyme rule (this is the did-i-shame rule):
+	if sco-chic-shaming is true:
+		vcal "The chic shaming complete, you're done here. No need to repeat what you did.";
+		already-done;
+
+[hub 5. whale]
+
+this is the notify-final-whale rule:
+	unless whale-hunt-ready, continue the action;
+	say "The last step will be something else! It will probably require, like, extra syllables in what you want to do. Both with psyching yourself up and then taking a step back and achieving mindfulness, or whatever.";
+
+to decide what number is whale-score:
+	decide on boolval of sco-sight-sail + boolval of sco-might-mail + boolval of sco-flight-flail + boolval of sco-right-rail + boolval of sco-bright-brute;
+
+to decide whether whale-hunt-ready:
+	if whale-score is 5, yes;
+	no;
+
+[ending sequence]
+
+a goodrhyme rule (this is the marquee-there rule):
+	if marquee-score < 3, continue the action;
+	vcal "You already prepped yourself for the final fight. Now it is upon you.";
+	already-done;
+
+this is the marquee-change rule:
+	if marquee-score is 3:
+		say "The marquee crumbles, revealing your nemesis ... the Frightfully Bright Bully!";
+		move Frightfully Bright Bully to Threat Three Met Me;
+		moot marquee;
+		print-the-loc;
+	else if marquee-score is 2:
+		say "The marquee turns more pronouncedly cracked as some of the text rubs off.";
+	else:
+		say "The marquee shakes slightly as some of the text is rubbed off."
+
 volume readables
 
 table of readables (continued)
 read-thing	read-txt
 locking lift	"You see [lift-score] of six settings filled in:[paragraph break][fixed letter spacing][lift-stuff].[variable letter spacing][paragraph break]You've completed [hub-score in words] areas beyond the [high hub]."
-
-to decide which number is lift-score:
-	decide on boolval of sco-docking-diffed + boolval of sco-grokking-grift + boolval of sco-mocking-miffed + boolval of sco-rocking-rift + boolval of sco-shocking-shift + boolval of sco-stocking-stiffed;
-
-to decide which number is hub-score: [rocking rift/throw through, docking diffed / excite-exhale, grokking grift/chic shaming, stocking stiffed/k cope, shocking shift/3 gore-goals points ]
-	decide on boolval of sco-throw-through + boolval of sco-excite-exhale + boolval of sco-chic-shaming + boolval of sco-k-cope + boolval of (whether or not shoal-score is 2);
 
 to say lift-stuff:
 	say "[if sco-docking-diffed is true]DOCKING DIFFED[else]------- ------[end if][if sco-excite-exhale is true] (done)[end if].";
@@ -1383,6 +1405,12 @@ to say lift-stuff:
 	say "[if sco-rocking-rift is true]ROCKING RIFT[else]------ ----[end if][if sco-throw-through is true] (done)[end if].";
 	say "[if sco-shocking-shift is true]SHOCKING SHIFT[else]-------- -----[end if][if sco-throw-through is true] (done)[end if].";
 	say "[if sco-stocking-stiffed is true]STOCKING STIFFED[else]-------- -------[end if][if sco-k-cope is true] (done)[end if]";
+
+to decide which number is lift-score:
+	decide on boolval of sco-docking-diffed + boolval of sco-grokking-grift + boolval of sco-mocking-miffed + boolval of sco-rocking-rift + boolval of sco-shocking-shift + boolval of sco-stocking-stiffed;
+
+to decide which number is hub-score: [rocking rift/throw through, docking diffed / excite-exhale, grokking grift/chic shaming, stocking stiffed/k cope, shocking shift/3 gore-goals points ]
+	decide on boolval of sco-throw-through + boolval of sco-excite-exhale + boolval of sco-chic-shaming + boolval of sco-k-cope + boolval of (whether or not shoal-score is 2);
 
 volume homonym rejections
 

@@ -165,13 +165,19 @@ to decide whether vcp-ignore: decide no; [When do we block check-text? In VVFF, 
 
 chapter instead rules
 
-instead of doing something with a boring thing: say "Most things, you don't need to interact with directly.";
+to decide whether the action is procedural:
+	if examining, yes;
+	no;
+
+instead of doing something with a boring thing:
+	if action is procedural, continue the action;
+	say "Most things, you don't need to interact with directly.";
 
 volume rooms (intro)
 
 book bane be sane see
 
-Bane Be Sane See is a room.  it is in Stoppin' Start. printed name is "Bane Be Sane, See?". "The train tree that brought you here has gotten outrageously large. It can be entered three ways. You just need to [b]READ[r] it.[paragraph break][if sco-plain-plea is true]Now you gave a plain plee, you feel more comfortable here and fully ready to move on[else]It's a bit noisy here, but maybe if you said things right, you could feel a bit more comfortable. It's probably not critical, though[end if]."
+Bane Be Sane See is a room.  it is in Stoppin' Start. printed name is "Bane Be Sane, See?". "The train tree that brought you here has gotten outrageously large. It can be entered three ways. You just need to [b]READ[r] it.[paragraph break][if sco-plain-plea is true]Now you gave a plain plea, you feel more comfortable here and fully ready to move on[else]It's a bit noisy here, but maybe if you said things right, you could feel a bit more comfortable. It's probably not critical, though[end if]."
 
 guess-table of Bane Be Sane See is table of Bane Be Sane See guesses.
 
@@ -214,7 +220,7 @@ the boring box is a thing.
 
 check opening boring box:
 	say "You open the boring box, and you see a metal gadget that doesn't look very interesting at first. It's labeled as a Leet Learner. You can probably [b]READ[r] it for instructions.";
-	say "[line break][i][bracket][b]NOTE:[r][i] for those who played [b][vvff][i], this is the same device you got back then. But if not, you may wish to look into it.[close bracket][line break]";
+	say "[line break][i][bracket][b]NOTE:[r][i] for those who played [b][vvff][i], this is the same device you got back then. So you can skip looking into it, if you remember how it works.[close bracket][line break]";
 	moot boring box;
 	now player has leet learner instead;
 
@@ -1122,7 +1128,7 @@ book people
 
 the Frightfully Bright Bully is a person. description is "The [bully] doesn't look especially mean or conniving or thuggish. But you know they just can't stand you. It's time to face up to them."
 
-sco-t-lly is a truth state that varies.
+sco-trite-t-lly is a truth state that varies.
 
 book places
 
