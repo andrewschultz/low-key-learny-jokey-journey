@@ -204,10 +204,15 @@ understand "storing/stocks" and "storing stocks" as roaring rocks when sco-borin
 to say back-n-farm: if NNSS is visited, say "back to ";
 
 check going north in Roaring Rocks:
-	if sco-boring-box is false, say "The roaring seems to pull you back." instead;
+	if sco-boring-box is false, say "The roaring seems to pull you back. You have something to do, to quiet it and maybe help yourself." instead;
 	if boring box is not moot:
 		set the pronoun it to boring box;
 		say "You figure you should open the boring box before moving on." instead;
+	if mad monk is off-stage:
+		say "As you go on your way, who should block your way but a fervent Mad Monk? They don't seem that tough, but then again, this is the start of your journey.";
+		move mad monk to roaring rocks;
+		the rule fails;
+	if mad monk is in Roaring Rocks, say "Get by the mad monk first." instead;
 
 chapter boring box
 
@@ -255,15 +260,13 @@ book Hun Harm Fun Farm
 
 Hun Harm Fun Farm is west of NNSS. it is in Hoppin' Heart. "The way bends north here[if sco-un-arm is false], though you feel trepidation at the thought of doing so. Maybe you'll be attacked[end if]. You can go back east."
 
-check going north in hun harm fun farm:
-	if sco-un-arm is false, say "Unfortunately, you hear aggressive voices threatening to attack you. They have weapons, and you don't. You're not sure how to change this." instead;
-	if mad monk is in hun harm fun farm, say "The mad monk is blocking the way." instead;
+check going north in hun harm fun farm when sco-un-arm is false: say "Unfortunately, you hear aggressive voices threatening to attack you. They have weapons, and you don't. You're not sure how to change this." instead;
 
 sco-un-arm is a truth state that varies.
 
 chapter Mad Monk
 
-the Mad Monk is a rhymable. "A mad monk raves here, blocking your way north. What with the short name, they're pretty obviously a simple henchman, especially this early in the game. You'd guess there are ways to guess what to do or say that could give you practice or experience for later or [if player has lurking lump]enhance the lurking lump[else]get that stronger help item you read about on the [learner][end if].". description is "Plainly dressed. They seem to have an intense attitude you could cut down, and they'd probably leave you alone."
+the Mad Monk is a rhymable. "A mad monk raves here, blocking your way north. What with the short name, they're pretty obviously a simple henchman, especially this early in the game. They might be good for rope-a-doping to [if player has lurking lump]enhance the lurking lump[else]get that stronger help item you read about on the [learner][end if].". description is "Plainly dressed. They seem to have an intense attitude you could cut down, and they'd probably leave you alone."
 
 guess-table of mad monk is the table of mad monk guesses.
 

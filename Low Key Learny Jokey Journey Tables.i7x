@@ -37,6 +37,9 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "dane|jane|lane|wayne"	"d|dee|g|gee|lee|whee"	--	--	false	false	true	false	Bane Be Sane See	vc-in-bane rule	vr-choose-name rule	"d/dee dane" or "dane dee/d" or "jane g/gee" or "gee/g jane" or "wayne whee" or "whee wayne"	--
 "plain"	"plea"	--	--	false	true	false	false	Bane Be Sane See	vc-plain-plea rule	vr-plain-plea rule	--	--
 "boring"	"box"	--	--	false	true	true	false	Roaring Rocks	vc-boring-box rule	vr-boring-box rule	--	--
+"gad"	"gunk"	--	--	false	true	false	false	Roaring Rocks	vc-gad-gunk rule	vr-gad-gunk rule	--	--
+"bad"	"bunk"	--	--	false	true	true	false	Roaring Rocks	vc-bad-bunk rule	vr-bad-bunk rule	--	--
+"sad"	"sunk"	--	--	false	true	true	false	Roaring Rocks	vc-sad-sunk rule	vr-sad-sunk rule	--	--
 "grow"	"grudge"	--	--	false	true	true	false	NNSS	vc-grow-grudge rule	vr-grow-grudge rule
 "done"	"dorm"	--	--	false	true	true	false	One Warm Stun Storm	vc-done-dorm rule	vr-done-dorm rule
 "fun"	"form"	--	--	false	true	true	false	One Warm Stun Storm	vc-fun-form rule	vr-fun-form rule
@@ -50,9 +53,6 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "seep"	"soon"	--	--	false	true	true	false	Rare Reach	vc-seep-soon rule	vr-seep-soon rule
 "reap"	"rune"	--	--	false	true	true	false	Rare Reach	vc-reap-rune rule	vr-reap-rune rule	--	"Perhaps some random adventuring would help you to [b]REAP RUNE[r] later."
 "un"	"arm"	--	--	false	true	true	false	Hun Harm Fun Farm	vc-un-arm rule	vr-un-arm rule	"un arm" or "unarm"	--
-"gad"	"gunk"	--	--	false	true	false	false	Hun Harm Fun Farm	vc-gad-gunk rule	vr-gad-gunk rule	--	--
-"bad"	"bunk"	--	--	false	true	true	false	Hun Harm Fun Farm	vc-bad-bunk rule	vr-bad-bunk rule	--	--
-"sad"	"sunk"	--	--	false	true	true	false	Hun Harm Fun Farm	vc-sad-sunk rule	vr-sad-sunk rule	--	--
 "go"	"goon"	--	--	false	true	true	false	NoNoon	vc-go-goon rule	vr-go-goon rule	--	--
 "co"	"coon"	--	--	false	true	true	false	NoNoon	vc-co-coon rule	vr-co-coon rule	"cocoon"	--
 "mo"	"moon"	--	--	false	true	true	false	NoNoon	vc-mo-moon rule	vr-mo-moon rule	--	--
@@ -327,8 +327,7 @@ a goodrhyme rule (this is the vc-un-arm rule):
 
 this is the vr-un-arm rule:
 	now sco-un-arm is true;
-	say "You hear a clattering and screaming. Whoever it was guarding the way north sounds very disappointed that their oppression may now take mental effort![paragraph break]You're all set to go north, until who should block your way but a fervent Mad Monk?";
-	move Mad Monk to Hun Harm Fun Farm;
+	say "That wasn't too bad. Whoever it was guarding the way north sounds very disappointed that their oppression may now take actual effort!";
 
 a goodrhyme rule (this is the vc-go-goon rule):
 	if player is not in NoNoon, unavailable;
@@ -1270,7 +1269,7 @@ this is the examine-monk rule:
 			if sco-gad-gunk is false, say " one bonus point";
 			say " to help build muscle memory or practice grit or whatever for tougher opponents.[paragraph break]Take down the monk anyway?";
 			say "[i][bracket]NOTE: this nag will not appear again, and if you want to try good guesses against other enemies after they vanish, I have no problems if you [b]UNDO[r][i].[close bracket][i]";
-			unless the player consents, the rule fails;
+			unless the player yes-consents, the rule fails;
 	say "That's it. The mad monk flees. The path south really is free now.";
 	moot mad monk;
 
@@ -1378,7 +1377,7 @@ table of thing homonyms
 mything	hom-rule (a rule)	myhom (topic)	custom-msg (text)
 pear peach	--	"pair/pare"	"You don't need to reduce or duplicate the pear peach. It has a much bigger purpose."
 
-section thing homonym rules [xxthr]
+section thing homonym rules
 
 chapter room homonyms
 

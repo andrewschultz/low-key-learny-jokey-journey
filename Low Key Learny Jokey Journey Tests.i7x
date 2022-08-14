@@ -6,19 +6,19 @@ volume IDE tests
 
 test ocome with "jane g/boring box/open box/n/guide gong/s/e/pride prong/s/e".
 
-test w1 with "plain plea/jane g/boring box/open box/n/grow grudge/bother/piss poor".
+test w1 with "au 2/plain plea/jane g/boring box/open box/n/gad gunk/bad bunk/sad sunk/n".
 
-test w2 with "n/done dorm/fun form/n/see sunk/gee junk/whee woot/pear peach/s/s".
+test w2 with "grow grudge/bother/piss poor/n/done dorm/fun form/n/see sunk/gee junk/whee woot/pear peach/s/s".
 
 test w3 with "e/bussed back/crust crack/n/bare beach/seep soon/s/n/reap rune/s/w".
 
-test w4 with "w/unarm/gad gunk/bad bunk/sad sunk/n/go goon/cocoon/mo moon/so soon/crow croon".
+test w4 with "w/unarm/n/go goon/cocoon/mo moon/so soon/crow croon".
 
 test w5 with "potty pail/grotty grail/knotty nail".
 
 test w6 with "bye bub/wordy walk/u/rocking rift/flow flue/glow glue/go goo/bro brew/stow stew/crow crew/ho who/yo you/throw through".
 
-test w7 with "shocking shift/shore shoals/night newt/bright brute/kite coot/lore lols/four foals/more moles".
+test w7 with "shocking shift/shore shoals/night newt/kite coot/lore lols/four foals/more moles".
 
 test w8 with "docking diffed/bad boast/rad roast/w/flight flail/might mail/sight sail/right rail/bright brute/excite exhale".
 
