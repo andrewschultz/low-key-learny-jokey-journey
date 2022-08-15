@@ -177,6 +177,21 @@ You already uncovered the boring box.
 
 >n
 
+>gad gunk
+by one point
+
+>gad gunk
+WRONG
+!by one point
+
+>bad bunk
+by one point
+
+>sad sunk
+by one point
+
+>n
+
 >gonear no noon
 
 #testcase-reject-table-of-verb-checks-vc-go-goon-rule
@@ -202,7 +217,7 @@ You already neutralized the no-nudge slow sludge.
 >n
 
 >bother
-WRONG
+You hear a whooshing as a door swings in from nowhere. It doesn't seem to lead anywhere. Voices from behind it, though, assure you you are missing something. Using your logical skills, you deduce it is a miss-more-diss door. While it's not going to jump you if your back is turned, it might be nice to get rid of.
 
 >piss poor
 by one point
@@ -281,19 +296,6 @@ by one point
 #testcase-reject-table-of-verb-checks-vc-un-arm-rule
 >unarm
 WRONG
-
->gad gunk
-by one point
-
->gad gunk
-WRONG
-!by one point
-
->bad bunk
-by one point
-
->sad sunk
-by one point
 
 >n
 
@@ -423,6 +425,15 @@ by one point
 >shore shoals
 by one point
 
+>night newt
+by one point
+
+>kite coot
+by one point
+
+>lore lols
+by one point
+
 >four foals
 by one point
 
@@ -455,7 +466,7 @@ by one point
 >right rail
 by one point
 
->mite moot
+>bright brute
 by one point
 
 >excite exhale
@@ -522,6 +533,9 @@ by one point
 >stocking stiffed
 WRONG
 
+>despite dispute
+by one point
+
 >mocking miffed
 by one point
 
@@ -545,6 +559,9 @@ by one point
 by one point
 
 >splain splat
+by one point
+
+>fed foes
 by one point
 
 >s
@@ -717,5 +734,9 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 >yo you
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
 
+>score
+
 >trite telly
 by one point
+
+>quit

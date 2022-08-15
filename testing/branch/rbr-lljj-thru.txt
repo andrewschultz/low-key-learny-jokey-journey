@@ -51,7 +51,7 @@ TSV:## minimum walkthrough	## walkthrough with all points	## walkthrough with al
 * main-thru
 
 @min
-/^Bane Be Sane, See?
+/^Bane Be Sane, See/?
 
 @vc
 #testcase-unavailable-table-of-verb-checks-vc-bare-beach-rule
@@ -368,6 +368,28 @@ You set the Leet Learner to Ha Half.
 
 >n
 
+@!min
+>gad gunk
+by one point
+}}SCORE++
+}}CURMIN++
+}}CURMINBONUS++
+
+@vc
+>gad gunk
+WRONG
+!by one point
+
+>bad bunk
+by one point
+}}SCORE++
+
+>sad sunk
+by one point
+}}SCORE++
+
+>n
+
 @min
 /^No-Nudge Slow Sludge
 
@@ -468,7 +490,7 @@ You feel your will sapped as you attempt to go north. You'll need to sit out the
 
 @!min
 >bother
-WRONG
+You hear a whooshing as a door swings in from nowhere. It doesn't seem to lead anywhere. Voices from behind it, though, assure you you are missing something. Using your logical skills, you deduce it is a miss-more-diss door. While it's not going to jump you if your back is turned, it might be nice to get rid of.
 \\
 >piss poor
 by one point
@@ -825,26 +847,6 @@ by one point
 #testcase-reject-table-of-verb-checks-vc-un-arm-rule
 >unarm
 WRONG
-
-@!min
->gad gunk
-by one point
-}}SCORE++
-}}CURMIN++
-}}CURMINBONUS++
-
-@vc
->gad gunk
-WRONG
-!by one point
-
->bad bunk
-by one point
-}}SCORE++
-
->sad sunk
-by one point
-}}SCORE++
 
 >n
 
@@ -1229,14 +1231,8 @@ by one point
 @min
 /^Shore Shoals
 
-@min
+@!min
 >night newt
-by one point
-}}SCORE++
-}}CURMIN++
-}}CURMINBONUS++
-\\
->bright brute
 by one point
 }}SCORE++
 }}CURMIN++
@@ -1316,7 +1312,7 @@ by one point
 by one point
 }}SCORE++
 
->mite moot
+>bright brute
 by one point
 }}SCORE++
 
@@ -1415,6 +1411,13 @@ by one point
 >stocking stiffed
 WRONG
 
+@!min
+>despite dispute
+by one point
+}}SCORE++
+}}CURMIN++
+}}CURMINBONUS++
+
 >mocking miffed
 by one point
 }}SCORE++
@@ -1447,6 +1450,10 @@ by one point
 }}SCORE++
 
 >splain splat
+by one point
+}}SCORE++
+
+>fed foes
 by one point
 }}SCORE++
 
@@ -1631,6 +1638,16 @@ by one point
 >yo you
 {$REJECT}
 
+>score
+
+@min
+70 out of 85
+
+@all
+84 out of 85
+
 >trite telly
 by one point
 }}SCORE++
+
+>quit

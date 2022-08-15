@@ -8,7 +8,7 @@
 
 * main-thru
 
-/^Bane Be Sane, See?
+/^Bane Be Sane, See/?
 
 >jane g
 by one point
@@ -19,6 +19,14 @@ by one point
 by one point
 
 >open box
+
+>n
+
+>bad bunk
+by one point
+
+>sad sunk
+by one point
 
 >n
 
@@ -90,12 +98,6 @@ by one point
 >unarm
 by one point
 
->bad bunk
-by one point
-
->sad sunk
-by one point
-
 >n
 
 /^No Noon
@@ -159,18 +161,6 @@ by one point
 
 /^Shore Shoals
 
->night newt
-by one point
-
->bright brute
-by one point
-
->kite coot
-by one point
-
->lore lols
-by one point
-
 >four foals
 by one point
 
@@ -204,7 +194,7 @@ by one point
 >right rail
 by one point
 
->mite moot
+>bright brute
 by one point
 
 >excite exhale
@@ -284,6 +274,9 @@ by one point
 >splain splat
 by one point
 
+>fed foes
+by one point
+
 >s
 
 /Market Marquee
@@ -302,5 +295,11 @@ by one point
 >plus plaque
 by one point
 
+>score
+
+70 out of 85
+
 >trite telly
 by one point
+
+>quit

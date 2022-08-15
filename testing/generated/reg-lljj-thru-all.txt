@@ -21,13 +21,24 @@ by one point
 
 >n
 
+>gad gunk
+by one point
+
+>bad bunk
+by one point
+
+>sad sunk
+by one point
+
+>n
+
 >grow grudge
 by one point
 
 >n
 
 >bother
-WRONG
+You hear a whooshing as a door swings in from nowhere. It doesn't seem to lead anywhere. Voices from behind it, though, assure you you are missing something. Using your logical skills, you deduce it is a miss-more-diss door. While it's not going to jump you if your back is turned, it might be nice to get rid of.
 
 >piss poor
 by one point
@@ -81,15 +92,6 @@ by one point
 >w
 
 >unarm
-by one point
-
->gad gunk
-by one point
-
->bad bunk
-by one point
-
->sad sunk
 by one point
 
 >n
@@ -160,6 +162,15 @@ by one point
 >shore shoals
 by one point
 
+>night newt
+by one point
+
+>kite coot
+by one point
+
+>lore lols
+by one point
+
 >four foals
 by one point
 
@@ -189,7 +200,7 @@ by one point
 >right rail
 by one point
 
->mite moot
+>bright brute
 by one point
 
 >excite exhale
@@ -244,6 +255,9 @@ by one point
 >k cope
 by one point
 
+>despite dispute
+by one point
+
 >mocking miffed
 by one point
 
@@ -269,6 +283,9 @@ by one point
 >splain splat
 by one point
 
+>fed foes
+by one point
+
 >s
 
 >fret free
@@ -283,5 +300,11 @@ by one point
 >plus plaque
 by one point
 
+>score
+
+84 out of 85
+
 >trite telly
 by one point
+
+>quit
