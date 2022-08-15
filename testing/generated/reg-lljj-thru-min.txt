@@ -124,6 +124,22 @@ by one point
 
 /^High Hub
 
+>shocking shift
+by one point
+
+/^Sore Souls' Gore Goals
+
+>shore shoals
+by one point
+
+/^Shore Shoals
+
+>four foals
+by one point
+
+>more moles
+by one point
+
 >rocking rift
 by one point
 
@@ -151,20 +167,6 @@ by one point
 by one point
 
 >throw through
-by one point
-
->shocking shift
-by one point
-
->shore shoals
-by one point
-
-/^Shore Shoals
-
->four foals
-by one point
-
->more moles
 by one point
 
 >docking diffed

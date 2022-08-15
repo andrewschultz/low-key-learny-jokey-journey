@@ -353,6 +353,27 @@ by one point
 
 >u
 
+>shocking shift
+by one point
+
+>shore shoals
+by one point
+
+>night newt
+by one point
+
+>kite coot
+by one point
+
+>lore lols
+by one point
+
+>four foals
+by one point
+
+>more moles
+by one point
+
 >rocking rift
 by one point
 
@@ -418,27 +439,6 @@ by one point
 #testcase-reject-table-of-verb-checks-vc-rocking-rift-rule
 >rocking rift
 You already brought life back to the Whoah-Woo Show Shoe. You don't need to go back.
-
->shocking shift
-by one point
-
->shore shoals
-by one point
-
->night newt
-by one point
-
->kite coot
-by one point
-
->lore lols
-by one point
-
->four foals
-by one point
-
->more moles
-by one point
 
 >docking diffed
 by one point
