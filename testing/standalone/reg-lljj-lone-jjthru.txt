@@ -1,0 +1,258 @@
+# reg-lljj-lone-jjthru.txt
+
+## reg-lljj-lone-jjthru.txt
+## NO GENERATOR FILE, THOUGH I ORIGINALLY GOT THIS FROM THE FULL WALKTHROUGHT.
+## it roughly corresponds to reg-lljj-min-thru.txt.
+
+## walkthrough with no bonus points, jumping everywhere
+** game: /home/andrew/prt/debug-low-key-learny-jokey-journey.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main-thru
+
+>z
+> jj
+After some thought, you consider the right way forward: DANE D...
+
+> jj
+After some thought, you consider the right way forward: BORING BOX...
+
+>open box
+
+>n
+
+> jj
+After some thought, you consider the right way forward: BAD BUNK...
+
+> jj
+After some thought, you consider the right way forward: SAD SUNK...
+
+>n
+
+>jj
+After some thought, you consider the right way forward: GROW GRUDGE...
+
+>n
+
+>jj
+After some thought, you consider the right way forward: DONE DORM...
+
+>jj
+After some thought, you consider the right way forward: FUN FORM...
+
+>n
+>jj
+After some thought, you consider the right way forward: SEE SUNK...
+
+>jj
+After some thought, you consider the right way forward: GEE JUNK...
+
+>jj
+After some thought, you consider the right way forward: WHEE WOOT...
+
+>jj
+After some thought, you consider the right way forward: PEAR PEACH...
+
+>s
+>s
+>e
+
+>jj
+After some thought, you consider the right way forward: BUSSED BACK...
+
+>jj
+After some thought, you consider the right way forward: CRUST CRACK...
+
+>n
+>jj
+After some thought, you consider the right way forward: BARE BEACH...
+
+>jj
+After some thought, you consider the right way forward: SEEP SOON...
+
+>s
+>n
+
+>jj
+After some thought, you consider the right way forward: REAP RUNE...
+
+>s
+>w
+>w
+
+>jj
+After some thought, you consider the right way forward: UNARM...
+
+>n
+
+>jj
+After some thought, you consider the right way forward: GO GOON...
+
+>jj
+After some thought, you consider the right way forward: COCOON...
+
+>jj
+After some thought, you consider the right way forward: MO MOON...
+
+>jj
+After some thought, you consider the right way forward: SO SOON...
+
+>jj
+After some thought, you consider the right way forward: CROW CROON...
+
+>jj
+After some thought, you consider the right way forward: KNOTTY NAIL...
+
+>jj
+After some thought, you consider the right way forward: ROCKING RIFT...
+
+>jj
+After some thought, you consider the right way forward: FLOW FLUE...
+
+>jj
+After some thought, you consider the right way forward: GLOW GLUE...
+
+>jj
+After some thought, you consider the right way forward: BRO BREW...
+
+>jj
+After some thought, you consider the right way forward: STOW STEW...
+
+>jj
+After some thought, you consider the right way forward: HO WHO...
+
+>jj
+After some thought, you consider the right way forward: YO YOU...
+
+>jj
+After some thought, you consider the right way forward: CROW CREW...
+
+>jj
+After some thought, you consider the right way forward: THROW THROUGH...
+
+>jj
+After some thought, you consider the right way forward: SHOCKING SHIFT...
+
+>jj
+After some thought, you consider the right way forward: SHORE SHOALS...
+
+>jj
+After some thought, you consider the right way forward: FOUR FOALS...
+
+>jj
+After some thought, you consider the right way forward: MORE MOLES...
+
+>jj
+After some thought, you consider the right way forward: STOCKING STIFFED...
+
+>jj
+After some thought, you consider the right way forward: DUMB DOUBT...
+
+>jj
+After some thought, you consider the right way forward: SAID SOS...
+
+>jj
+After some thought, you consider the right way forward: UMM OUT...
+
+>d
+
+>jj
+After some thought, you consider the right way forward: HEY HOPE...
+
+>jj
+After some thought, you consider the right way forward: K COPE...
+
+>jj
+After some thought, you consider the right way forward: GROKKING GRIFT...
+
+>jj
+After some thought, you consider the right way forward: BRIGHT BREEZE...
+
+>jj
+After some thought, you consider the right way forward: PLIGHT PLEASE...
+
+>jj
+After some thought, you consider the right way forward: RIGHT ROOT...
+
+>s
+
+>jj
+After some thought, you consider the right way forward: BLEAK BLAMING...
+
+>jj
+After some thought, you consider the right way forward: CHIC SHAMING...
+
+>jj
+After some thought, you consider the right way forward: BRED BROS...
+
+>jj
+After some thought, you consider the right way forward: DOCKING DIFFED...
+
+>jj
+After some thought, you consider the right way forward: BAD BOAST...
+
+>jj
+After some thought, you consider the right way forward: RAD ROAST...
+
+>w
+
+>jj
+After some thought, you consider the right way forward: SIGHT SAIL...
+
+>jj
+After some thought, you consider the right way forward: MIGHT MAIL...
+
+>jj
+After some thought, you consider the right way forward: FLIGHT FLAIL...
+
+>jj
+After some thought, you consider the right way forward: RIGHT RAIL...
+
+>jj
+After some thought, you consider the right way forward: BRIGHT BRUTE...
+
+>jj
+After some thought, you consider the right way forward: EXCITE EXHALE...
+
+>jj
+After some thought, you consider the right way forward: MOCKING MIFFED...
+
+>jj
+After some thought, you consider the right way forward: BOLD BEND...
+
+>jj
+After some thought, you consider the right way forward: TROLLED TREND...
+
+>jj
+After some thought, you consider the right way forward: MOLD MEND...
+
+>s
+
+>jj
+After some thought, you consider the right way forward: BANE BAT...
+
+>jj
+After some thought, you consider the right way forward: FLAIN FLAT...
+
+>jj
+After some thought, you consider the right way forward: SPLAIN SPLAT...
+
+>jj
+After some thought, you consider the right way forward: FED FOES...
+
+>s
+
+>jj
+After some thought, you consider the right way forward: FRET FREE...
+
+>jj
+After some thought, you consider the right way forward: SET SEE...
+
+>jj
+After some thought, you consider the right way forward: YET YE...
+
+>jj
+After some thought, you consider the right way forward: PLUS PLAQUE...
+
+>jj
+After some thought, you consider the right way forward: TRITE TULLY...
