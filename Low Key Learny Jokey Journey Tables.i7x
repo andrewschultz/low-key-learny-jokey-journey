@@ -69,14 +69,14 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "stocking"	"stiffed"	--	--	false	true	true	false	High Hub	vc-stocking-stiffed rule	vr-stocking-stiffed rule	--	--
 "grokking"	"grift"	--	--	false	true	true	false	High Hub	vc-grokking-grift rule	vr-grokking-grift rule	--	--
 "docking"	"diffed"	--	--	false	true	true	false	High Hub	vc-docking-diffed rule	vr-docking-diffed rule	--	-- [in approximate order of difficulty above, then the LLP and the final room]
-"despite"	"dispute"	--	--	false	true	false	false	high hub	vc-despite-dispute rule	vr-despite-dispute rule	--	--
-"mocking"	"miffed"	--	--	false	true	true	false	High Hub	vc-mocking-miffed rule	vr-mocking-miffed rule	--	--
+"despite"	"dispute"	--	--	false	true	false	false	high hub	vc-despite-dispute rule	vr-despite-dispute rule	--	"You can reason [b]DESPITE DISPUTE[r] [if light lute is moot]now[else]once[end if] there's something that makes you depressed."
+"mocking"	"miffed"	--	--	false	true	true	false	High Hub	vc-mocking-miffed rule	vr-mocking-miffed rule	--	"You can search for [b]MOCKING MIFFED[r] [if hub-score is 5]now[else]once[end if] you've solved all the other hub areas."
 "flow"	"flue"	--	--	false	true	true	false	show shoe	vc-flow-flue rule	vr-flow-flue rule	--	-- [start no new show shoe/rocking rift]
 "glow"	"glue"	--	--	false	true	true	false	show shoe	vc-glow-glue rule	vr-glow-glue rule	--	--
 "go"	"goo"	--	--	false	true	false	false	show shoe	vc-go-goo rule	vr-go-goo rule	--	--
 "bro"	"brew"	--	--	false	true	true	false	show shoe	vc-bro-brew rule	vr-bro-brew rule	--	"You can call for [b]BRO BREW[r] [once-now of vc-bro-brew rule] you have a reliable place to store it."
 "stow"	"stew"	--	--	false	true	true	false	show shoe	vc-stow-stew rule	vr-stow-stew rule	--	"You can [b]STOW STEW[r] [once-now of vc-bro-brew rule] you have a reliable place to store it."
-"ho"	"who"	--	--	false	true	true	false	show shoe	vc-ho-who rule	vr-ho-who rule	--	"You can call [b]HO WHO[r] [once-now of vc-ho-who rule] you have refreshments for a crowd."
+"ho"	"who"	--	--	false	true	true	false	show shoe	vc-ho-who rule	vr-ho-who rule	--	"You can call [b]HO WHO[r] [once-now of vc-ho-who rule] you have a crowd to call to."
 "yo"	"you"	--	--	false	true	true	false	show shoe	vc-yo-you rule	vr-yo-you rule	--	"You can call [b]YO YOU[r] [once-now of vc-yo-you rule] you have a partially hyped-up crowd."
 "crow"	"crew"	--	--	false	true	true	false	show shoe	vc-crow-crew rule	vr-crow-crew rule	--	"You can call the [b]CROW CREW[r] as performers [once-now of vc-crow-crew rule] you have food and drink for a crowd."
 "throw"	"through"	--	--	false	true	true	false	show shoe	vc-throw-through rule	vr-throw-through rule	--	"You can [b]THROW THROUGH[r] the main act [once-now of vc-throw-through rule] they're here and you have a hyped-up, well-fed crowd in place."
@@ -91,11 +91,11 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "might"	"mail"	--	--	false	true	true	false	Trite Trail	vc-might-mail rule	vr-might-mail rule	--	--
 "flight"	"flail"	--	--	false	true	true	false	Trite Trail	vc-flight-flail rule	vr-flight-flail rule	--	--
 "right"	"rail"	--	--	false	true	true	false	Trite Trail	vc-right-rail rule	vr-right-rail rule	--	"You can try to grab the [b]RIGHT RAIL[r] [once-now of vc-right-rail rule] you've got a vessel."
-"bright"	"brute"	--	--	false	true	true	false	Trite Trail	vc-bright-brute rule	vr-bright-brute rule	--	--
+"bright"	"brute"	--	--	false	true	true	false	Trite Trail	vc-bright-brute rule	vr-bright-brute rule	--	"You can summon a [b]BRIGHT BRUTE[r] [once-now of vc-bright-brute rule] you need an ally."
 "excite"	"exhale"	--	--	false	true	true	false	Trite Trail	vc-excite-exhale rule	vr-excite-exhale rule	--	"You can [b]EXCITE EXHALE[r] to go out and fight once you have an ally, fighting equipment, transport and stability."
 "tight"	"tease|tees"	--	--	false	true	false	false	slight sleaze	vc-tight-tease rule	vr-tight-tease rule	--	-- [start grokking grift]
 "bright"	"breeze"	--	--	false	true	true	false	slight sleaze	vc-bright-breeze rule	vr-bright-breeze rule	--	--
-"plight"	"please"	--	--	false	true	true	false	slight sleaze	vc-plight-please rule	vr-plight-please rule	--	--
+"plight"	"please"	--	--	false	true	true	false	slight sleaze	vc-plight-please rule	vr-plight-please rule	--	"You can explain [b]PLIGHT PLEASE[r] [once-now of vc-plight-please rule] you've started to  chip away at the slight sleaze."
 "right"	"root"	--	--	false	true	true	false	slight sleaze	vc-right-root rule	vr-right-root rule	--	"You can grow trite trees with the [b]RIGHT ROOT[r] [once-now of vc-right-root rule] you've fought back against the slight sleaze."
 "bleak"	"blaming"	--	--	false	true	true	false	freak framing seek sameing	vc-bleak-blaming rule	vr-bleak-blaming rule	--	--
 "chic"	"shaming"	--	--	false	true	true	false	freak framing seek sameing	vc-chic-shaming rule	vr-chic-shaming rule	--	"You can go full-in for [b]CHIC SHAMING[r] [once-now of vc-chic-shaming rule] you've re-framed the freak framing."
@@ -270,7 +270,7 @@ this is the vr-whee-woot rule:
 a goodrhyme rule (this is the vc-pear-peach rule):
 	if player is not in TTTT, unavailable;
 	if sco-whee-woot is false:
-		vcp "The FREE FRUIT sputters a bit, almost as if it sticks its tongue about you. Weird as it sounds, you may have to show appreciation for it.";
+		vcp "The [b]FREE FRUIT[r] sputters a bit, almost as if it sticks its tongue about you. Weird as it sounds, you may have to show appreciation for it.";
 		not-yet;
 	ready;
 
@@ -318,9 +318,10 @@ this is the vc-bare-beach rule:
 	ready;
 
 this is the vr-bare-beach rule:
-	say "The rare reach fills out a bit. There is now a bare beach. But it's not completely bare! You see a deep dune rise up.";
+	say "The rare reach fills out a bit, sucking the pear peach into it. There is now a bare beach. But it's not completely bare! You see a deep dune rise up.";
 	move deep dune to rare reach;
 	now sco-bare-beach is true;
+	moot pear peach;
 
 this is the vc-seep-soon rule:
 	if player is not in rare reach or sco-bare-beach is false, unavailable;
@@ -429,10 +430,10 @@ a goodrhyme rule (this is the vc-crow-croon rule):
 
 this is the vr-crow-croon rule:
 	now sco-crow-croon is true;
-	say "The crow croons! Your [rune] glows, then bursts in unison with the cocoon. A ... well, not quite a monster, but no animal you've seen before ... busts out.[paragraph break]Unfortunately, the commotion brings a few henchmen to where you are.
- You are arrested and dumped in...";
+	say "The crow croons! Your [rune] glows, then bursts in unison with the cocoon. A ... well, not quite a monster, but no animal you've seen before ... busts out.[paragraph break]Unfortunately, the commotion brings a few henchmen to where you are.[paragraph break]You are arrested and dumped in...";
 	move player to Jotty Jail;
 	moot cocoon;
+	moot rho rune;
 
 a goodrhyme rule (this is the vc-grotty-grail rule):
 	if player is not in jotty jail, unavailable;
@@ -559,7 +560,7 @@ a goodrhyme rule (this is the vc-stocking-stiffed rule):
 
 this is the vr-stocking-stiffed rule:
 	now sco-stocking-stiffed is true;
-	say "You see a vision of kids ripped off during the holidays. You wind up [one of]back [or][stopping] in...";
+	say "You see a vision of kids ripped off during the holidays. You wind up [one of][or]back [stopping]in...";
 	take-lift Rum Route;
 
 a goodrhyme rule (this is the vc-despite-dispute rule):
@@ -624,7 +625,7 @@ a goodrhyme rule (this is the vc-go-goo rule):
 
 this is the vr-go-goo rule:
 	now sco-go-goo is true;
-	say "A huge pile of weird 'energy burst' snacks appears at your feet. You have no idea whether or not they're nutritious, but with that colorful packaging, they can be sold for a markup during and after the performance, to ensure the viability of the [show shoe]. Yay, commerce![paragraph break]You put them off to the side. They'll be useful once the show gets rocking.";
+	say "A huge pile of weird 'energy burst' snacks appears at your feet. You have no idea whether or not they're nutritious, but with that colorful packaging, they can be sold for a markup during and after the performance, to ensure the viability of the [show shoe]. Yay, commerce[if sco-flow-flue is false or sco-glow-glue is false], and you don't even need any climate-controlled storage[end if]![paragraph break]You put them off to the side. They'll be useful once the show gets rocking.";
 
 a goodrhyme rule (this is the vc-bro-brew rule):
 	if player is not in show shoe, unavailable;
@@ -658,7 +659,7 @@ this is the vr-stow-stew rule:
 
 a goodrhyme rule (this is the vc-ho-who rule):
 	if player is not in show shoe, unavailable;
-	abide by the shoe-food-drink rule;
+	abide by the shoe-crowd-yet rule;
 	abide by the complete-hype rule;
 	if sco-ho-who is true:
 		vcal "You already started to hype up the crowd.";
@@ -672,7 +673,7 @@ this is the vr-ho-who rule:
 a goodrhyme rule (this is the vc-yo-you rule):
 	if player is not in show shoe, unavailable;
 	if sco-ho-who is false:
-		abide by the shoe-food-drink rule;
+		abide by the shoe-crowd-yet rule;
 		vcp "The crowd isn't quite wound up enough to appreciate it. That sounds like a good answer to a question, though.";
 		not-yet;
 	abide by the complete-hype rule;
@@ -730,14 +731,14 @@ this is the vr-dumb-doubt rule:
 
 a goodrhyme rule (this is the vc-said-sos rule):
 	if player does not have red rose, unavailable;
-	if player is not in rum route:
-		vcal "Said-sos could hit the spot elsewhere, but not here.";
-		already-done;
-	if sco-dumb-doubt is false:
-		vcp "Your said-sos won't work cold. You need to show confidence and be persuasive.";
-		not-yet;
 	if sco-said-sos is true:
 		vcal "You already gave said-sos!";
+		already-done;
+	if player is not in rum route:
+		vcal "Said-sos could hit the spot elsewhere, but not here.";
+		not-yet;
+	if sco-dumb-doubt is false:
+		vcp "Your said-sos won't work cold. You need to show confidence and be persuasive.";
 		not-yet;
 	ready;
 
@@ -851,7 +852,7 @@ this is the vr-flight-flail rule:
 a goodrhyme rule (this is the vc-right-rail rule):
 	if player is not in Trite Trail, unavailable;
 	if sco-sight-sail is false:
-		vcp "You might need a rail to grab, but not out here. Maybe if you're on some sort of vessel.";
+		vcp "You might need a rail to grab, but not out here. Maybe if you've got some sort of vessel.";
 		not-yet;
 	if sco-right-rail is true:
 		vcal "You already figured the right rail to grab to be stable on the sight sail.";
@@ -1124,6 +1125,7 @@ a goodrhyme rule (this is the vc-flain-flat rule):
 		already-done;
 	if sco-flain-flat is true:
 		vcal "No, you already trashed the (ex-)vat.";
+		not-yet;
 	ready;
 
 this is the vr-flain-flat rule:
@@ -1306,7 +1308,7 @@ this is the stew-and-brew rule:
 	if sco-bro-brew is true and sco-stow-stew is true:
 		say "With a reliable source of food and drink (which, man, they smell pretty good) a crowd starts to gather. You can't do any rhyming stuff to them directly, but perhaps there's some general stuff you can shout.";
 
-a goodrhyme rule (this is the shoe-food-drink rule):
+a goodrhyme rule (this is the shoe-crowd-yet rule):
 	if not shoe-food-drink:
 		vcp "There's no crowd to call out to to get them hyped, but if there were, that'd be great!";
 		not-yet;
@@ -1380,7 +1382,7 @@ this is the marquee-change rule:
 		moot marquee;
 		print-the-loc;
 	else if marquee-score is 2:
-		say "The marquee turns more pronouncedly cracked as some of the text rubs off.";
+		say "The marquee turns more pronouncedly cracked as some more text rubs off.";
 	else:
 		say "The marquee shakes slightly as some of the text is rubbed off."
 
@@ -1395,7 +1397,7 @@ to say lift-stuff:
 	say "[if sco-grokking-grift is true]GROKKING GRIFT[else]------- ------[end if][if sco-chic-shaming is true] (done)[end if].";
 	say "[if tried-mocking-miffed is true or sco-mocking-miffed is true]MOCKING MIFFED[else]------- ------[end if][if hub-score < 5] (not yet)[end if]."; [ no (done) case since it is the final one ]
 	say "[if sco-rocking-rift is true]ROCKING RIFT[else]------ ----[end if][if sco-throw-through is true] (done)[end if].";
-	say "[if sco-shocking-shift is true]SHOCKING SHIFT[else]-------- -----[end if][if sco-throw-through is true] (done)[end if].";
+	say "[if sco-shocking-shift is true]SHOCKING SHIFT[else]-------- -----[end if][if shoal-score is 2] (done)[end if].";
 	say "[if sco-stocking-stiffed is true]STOCKING STIFFED[else]-------- -------[end if][if sco-k-cope is true] (done)[end if]";
 
 to decide which number is lift-score:
