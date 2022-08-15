@@ -80,6 +80,8 @@ by one point
 >bare beach
 by one point
 
+^/Bare Beach
+
 >seep soon
 by one point
 
@@ -207,6 +209,8 @@ by one point
 >grokking grift
 by one point
 
+/^Slight Sleaze
+
 >bright breeze
 by one point
 
@@ -217,6 +221,8 @@ by one point
 by one point
 
 >s
+
+/^Freak Framing Seek Saming
 
 >bleak blaming
 by one point
@@ -242,6 +248,8 @@ by one point
 by one point
 
 >d
+
+/^Nay-Nope-Slay Slope
 
 >hey hope
 by one point
