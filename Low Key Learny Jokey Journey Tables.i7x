@@ -40,87 +40,85 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "gad"	"gunk"	--	--	false	true	false	false	Roaring Rocks	vc-gad-gunk rule	vr-gad-gunk rule	--	--
 "bad"	"bunk"	--	--	false	true	true	false	Roaring Rocks	vc-bad-bunk rule	vr-bad-bunk rule	--	--
 "sad"	"sunk"	--	--	false	true	true	false	Roaring Rocks	vc-sad-sunk rule	vr-sad-sunk rule	--	--
-"grow"	"grudge"	--	--	false	true	true	false	NNSS	vc-grow-grudge rule	vr-grow-grudge rule
-"done"	"dorm"	--	--	false	true	true	false	One Warm Stun Storm	vc-done-dorm rule	vr-done-dorm rule
-"fun"	"form"	--	--	false	true	true	false	One Warm Stun Storm	vc-fun-form rule	vr-fun-form rule
+"grow"	"grudge"	--	--	false	true	true	false	NNSS	vc-grow-grudge rule	vr-grow-grudge rule	--	--
+"done"	"dorm"	--	--	false	true	true	false	One Warm Stun Storm	vc-done-dorm rule	vr-done-dorm rule	--	--
+"fun"	"form"	--	--	false	true	true	false	One Warm Stun Storm	vc-fun-form rule	vr-fun-form rule	--	"You can fill out a [b]FUN FORM[r] [once-now of vc-fun-form rule] you have somewhere to enter."
 "see"	"sunk"	--	--	false	true	true	false	TTTT	vc-see-sunk rule	vr-see-sunk rule	--	--
-"gee"	"junk"	--	--	false	true	true	false	TTTT	vc-gee-junk rule	vr-gee-junk rule	--	--
+"gee"	"junk"	--	--	false	true	true	false	TTTT	vc-gee-junk rule	vr-gee-junk rule	--	"You can say [b]GEE JUNK[r] [once-now of vc-see-sunk rule] more of the trunk is visible."
 "whee"	"woot"	--	--	false	true	true	false	TTTT	vc-whee-woot rule	vr-whee-woot rule	--	--
-"pear"	"peach"	--	--	false	true	true	false	TTTT	vc-pear-peach rule	vr-pear-peach rule	--	--
-"bussed"	"back"	"bust"	--	false	false	true	false	Rare Reach	vc-bussed-back rule	vr-bussed-back rule
-"crust"	"crack"	--	--	false	true	true	false	Trust Track	vc-crust-crack rule	vr-crust-crack rule	--	"You need to get rid of [jack] before you can make the [b]CRUST CRACK[r]."
-"bare"	"beach"	--	--	false	true	true	false	Rare Reach	vc-bare-beach rule	vr-bare-beach rule	--	"You can change the Rare Reach to a [b]BARE BEACH[r] once you ."
-"seep"	"soon"	--	--	false	true	true	false	Rare Reach	vc-seep-soon rule	vr-seep-soon rule
-"reap"	"rune"	--	--	false	true	true	false	Rare Reach	vc-reap-rune rule	vr-reap-rune rule	--	"Perhaps some random adventuring would help you to [b]REAP RUNE[r] later."
+"pear"	"peach"	--	--	false	true	true	false	TTTT	vc-pear-peach rule	vr-pear-peach rule	--	"You can make a [b]PEAR PEACH[r] [once-now of vr-pear-peach rule] you're happy enough to receive free fruit."
+"bussed"	"back"	"bust"	--	false	false	true	false	Rare Reach	vc-bussed-back rule	vr-bussed-back rule	--	--
+"crust"	"crack"	--	--	false	true	true	false	Trust Track	vc-crust-crack rule	vr-crust-crack rule	--	"You can make the [b]CRUST CRACK[r] [once-now of vc-crust-crack rule] [jack] is gone."
+"bare"	"beach"	--	--	false	true	true	false	Rare Reach	vc-bare-beach rule	vr-bare-beach rule	--	"You can change the Rare Reach to a [b]BARE BEACH[r] [once-now of vc-bare-beach rule] you have a life-generating item."
+"seep"	"soon"	--	--	false	true	true	false	Rare Reach	vc-seep-soon rule	vr-seep-soon rule	--	--
+"reap"	"rune"	--	--	false	true	true	false	Rare Reach	vc-reap-rune rule	vr-reap-rune rule	--	"You can [b]REAP RUNE[r] [once-now of vc-reap-rune rule] you have spent time adventuring."
 "un"	"arm"	--	--	false	true	true	false	Hun Harm Fun Farm	vc-un-arm rule	vr-un-arm rule	"un arm" or "unarm"	--
-"go"	"goon"	--	--	false	true	true	false	NoNoon	vc-go-goon rule	vr-go-goon rule	--	--
-"co"	"coon"	--	--	false	true	true	false	NoNoon	vc-co-coon rule	vr-co-coon rule	"cocoon"	--
-"mo"	"moon"	--	--	false	true	true	false	NoNoon	vc-mo-moon rule	vr-mo-moon rule	--	--
-"so"	"soon"	--	--	false	true	true	false	NoNoon	vc-so-soon rule	vr-so-soon rule	--	--
-"crow"	"croon"	--	--	false	true	true	false	NoNoon	vc-crow-croon rule	vr-crow-croon rule	--	--
+"go"	"goon"	--	--	false	true	true	false	NoNoon	vc-go-goon rule	vr-go-goon rule	--	"You can say [b]GO GOON[r] to dispel an enemy [once-now of vc-go-goon rule] you have a token of power."
+"co"	"coon"	--	--	false	true	true	false	NoNoon	vc-co-coon rule	vr-co-coon rule	"cocoon"	"You can create a [b]COCOON[r] [once-now of vc-co-coon rule] you feel less watched."
+"mo"	"moon"	--	--	false	true	true	false	NoNoon	vc-mo-moon rule	vr-mo-moon rule	--	"You can call for [b]MO MOON[r] [once-now of vc-mo-moon rule] you have something else that needs light."
+"so"	"soon"	--	--	false	true	true	false	NoNoon	vc-so-soon rule	vr-so-soon rule	--	"You can speed up time with [b]SO SOON[r] [once-now of vc-so-soon rule] the darkness is alleviated."
+"crow"	"croon"	--	--	false	true	true	false	NoNoon	vc-crow-croon rule	vr-crow-croon rule	--	"You can cause daybreak with [b]CROW CROON[r] [once-now of vc-so-soon rule] it's close to daybreak."
 "grotty"	"grail"	--	--	false	true	false	false	jotty jail	vc-grotty-grail rule	vr-grotty-grail rule	--	--
 "potty"	"pail"	--	--	false	true	false	false	jotty jail	vc-potty-pail rule	vr-potty-pail rule	--	--
 "knotty"	"nail"	--	--	false	true	true	false	jotty jail	vc-knotty-nail rule	vr-knotty-nail rule	--	--
 "piss"	"poor"	--	--	false	true	false	false	--	vc-piss-poor rule	vr-piss-poor rule	--	--
 "bye"	"bub"	--	--	false	true	false	false	high hub	vc-bye-bub rule	vr-bye-bub rule	--	-- [lift llp]
 "wordy"	"walk"	--	--	false	true	false	false	NNSS	vc-wordy-walk rule	vr-wordy-walk rule	--	-- [llp after lift llp]
-"docking"	"diffed"	--	--	false	true	true	false	High Hub	vc-docking-diffed rule	vr-docking-diffed rule	--	-- [start hub]
-"grokking"	"grift"	--	--	false	true	true	false	High Hub	vc-grokking-grift rule	vr-grokking-grift rule	--	--
-"rocking"	"rift"	--	--	false	true	true	false	High Hub	vc-rocking-rift rule	vr-rocking-rift rule	--	--
-"shocking"	"shift"	--	--	false	true	true	false	High Hub	vc-shocking-shift rule	vr-shocking-shift rule	--	--
+"rocking"	"rift"	--	--	false	true	true	false	High Hub	vc-rocking-rift rule	vr-rocking-rift rule	--	-- [start hub] [remember these aren't alphabetized since some need to be completed before others]
+"shocking"	"shift"	--	--	false	true	true	false	High Hub	vc-shocking-shift rule	vr-shocking-shift rule	--	-- [2nd necessary item]
 "stocking"	"stiffed"	--	--	false	true	true	false	High Hub	vc-stocking-stiffed rule	vr-stocking-stiffed rule	--	--
+"grokking"	"grift"	--	--	false	true	true	false	High Hub	vc-grokking-grift rule	vr-grokking-grift rule	--	--
+"docking"	"diffed"	--	--	false	true	true	false	High Hub	vc-docking-diffed rule	vr-docking-diffed rule	--	-- [in approximate order of difficulty above, then the LLP and the final room]
 "despite"	"dispute"	--	--	false	true	false	false	high hub	vc-despite-dispute rule	vr-despite-dispute rule	--	--
 "mocking"	"miffed"	--	--	false	true	true	false	High Hub	vc-mocking-miffed rule	vr-mocking-miffed rule	--	--
 "flow"	"flue"	--	--	false	true	true	false	show shoe	vc-flow-flue rule	vr-flow-flue rule	--	-- [start no new show shoe/rocking rift]
 "glow"	"glue"	--	--	false	true	true	false	show shoe	vc-glow-glue rule	vr-glow-glue rule	--	--
 "go"	"goo"	--	--	false	true	false	false	show shoe	vc-go-goo rule	vr-go-goo rule	--	--
-"bro"	"brew"	--	--	false	true	true	false	show shoe	vc-bro-brew rule	vr-bro-brew rule	--	--
-"stow"	"stew"	--	--	false	true	true	false	show shoe	vc-stow-stew rule	vr-stow-stew rule	--	--
-"ho"	"who"	--	--	false	true	true	false	show shoe	vc-ho-who rule	vr-ho-who rule	--	--
-"yo"	"you"	--	--	false	true	true	false	show shoe	vc-yo-you rule	vr-yo-you rule	--	--
-"crow"	"crew"	--	--	false	true	true	false	show shoe	vc-crow-crew rule	vr-crow-crew rule	--	--
-"throw"	"through"	--	--	false	true	true	false	show shoe	vc-throw-through rule	vr-throw-through rule	--	--
+"bro"	"brew"	--	--	false	true	true	false	show shoe	vc-bro-brew rule	vr-bro-brew rule	--	"You can call for [b]BRO BREW[r] [once-now of vc-bro-brew rule] you have a reliable place to store it."
+"stow"	"stew"	--	--	false	true	true	false	show shoe	vc-stow-stew rule	vr-stow-stew rule	--	"You can [b]STOW STEW[r] [once-now of vc-bro-brew rule] you have a reliable place to store it."
+"ho"	"who"	--	--	false	true	true	false	show shoe	vc-ho-who rule	vr-ho-who rule	--	"You can call [b]HO WHO[r] [once-now of vc-ho-who rule] you have refreshments for a crowd."
+"yo"	"you"	--	--	false	true	true	false	show shoe	vc-yo-you rule	vr-yo-you rule	--	"You can call [b]YO YOU[r] [once-now of vc-yo-you rule] you have a partially hyped-up crowd."
+"crow"	"crew"	--	--	false	true	true	false	show shoe	vc-crow-crew rule	vr-crow-crew rule	--	"You can call the [b]CROW CREW[r] as performers [once-now of vc-crow-crew rule] you have food and drink for a crowd."
+"throw"	"through"	--	--	false	true	true	false	show shoe	vc-throw-through rule	vr-throw-through rule	--	"You can [b]THROW THROUGH[r] the main act [once-now of vc-throw-through rule] they're here and you have a hyped-up, well-fed crowd in place."
 "dumb"	"doubt"	--	--	false	true	true	false	rum route	vc-dumb-doubt rule	vr-dumb-doubt rule	--	-- [start rum route]
-"said"	"sos"	--	--	false	true	true	false	rum route	vc-said-sos rule	vr-said-sos rule	--	--
-"umm"	"out"	--	--	false	true	true	false	rum route	vc-umm-out rule	vr-umm-out rule	--	--
+"said"	"sos"	--	--	false	true	true	false	rum route	vc-said-sos rule	vr-said-sos rule	--	"You can say [b]SAID SOS[r] [once-now of vc-said-sos rule] you've got a foothold in an argument."
+"umm"	"out"	--	--	false	true	true	false	rum route	vc-umm-out rule	vr-umm-out rule	--	"You can say [b]UMM OUT[r] once you're on a roll arguing."
 "hey"	"hope"	--	--	false	true	true	false	Nay Nope Slay Slope	vc-hey-hope rule	vr-hey-hope rule	--	--
-"k"	"cope"	--	--	false	true	true	false	Nay Nope Slay Slope	vc-k-cope rule	vr-k-cope rule	--	--
+"k"	"cope"	--	--	false	true	true	false	Nay Nope Slay Slope	vc-k-cope rule	vr-k-cope rule	--	"You can say [b]K COPE[r] [once-now of vc-k-cope rule] once you're able to cope fully."
 "bad"	"boast"	--	--	false	true	true	false	Mad Most Cad Coast	vc-bad-boast rule	vr-bad-boast rule	--	-- [start docking diffed/white whale]
-"rad"	"roast"	--	--	false	true	true	false	Mad Most Cad Coast	vc-rad-roast rule	vr-rad-roast rule	--	--
+"rad"	"roast"	--	--	false	true	true	false	Mad Most Cad Coast	vc-rad-roast rule	vr-rad-roast rule	--	"You can try a [b]RAD ROAST[r] [once-now of vc-bad-boast rule] you've hit back a bit against the madness."
 "sight"	"sail"	--	--	false	true	true	false	Trite Trail	vc-sight-sail rule	vr-sight-sail rule	--	--
 "might"	"mail"	--	--	false	true	true	false	Trite Trail	vc-might-mail rule	vr-might-mail rule	--	--
 "flight"	"flail"	--	--	false	true	true	false	Trite Trail	vc-flight-flail rule	vr-flight-flail rule	--	--
-"right"	"rail"	--	--	false	true	true	false	Trite Trail	vc-right-rail rule	vr-right-rail rule	--	--
+"right"	"rail"	--	--	false	true	true	false	Trite Trail	vc-right-rail rule	vr-right-rail rule	--	"You can try to grab the [b]RIGHT RAIL[r] [once-now of vc-right-rail rule] you've got a vessel."
 "bright"	"brute"	--	--	false	true	true	false	Trite Trail	vc-bright-brute rule	vr-bright-brute rule	--	--
-"excite"	"exhale"	--	--	false	true	true	false	Trite Trail	vc-excite-exhale rule	vr-excite-exhale rule	--	--
+"excite"	"exhale"	--	--	false	true	true	false	Trite Trail	vc-excite-exhale rule	vr-excite-exhale rule	--	"You can [b]EXCITE EXHALE[r] to go out and fight once you have an ally, fighting equipment, transport and stability."
 "tight"	"tease|tees"	--	--	false	true	false	false	slight sleaze	vc-tight-tease rule	vr-tight-tease rule	--	-- [start grokking grift]
 "bright"	"breeze"	--	--	false	true	true	false	slight sleaze	vc-bright-breeze rule	vr-bright-breeze rule	--	--
 "plight"	"please"	--	--	false	true	true	false	slight sleaze	vc-plight-please rule	vr-plight-please rule	--	--
-"right"	"root"	--	--	false	true	true	false	slight sleaze	vc-right-root rule	vr-right-root rule	--	--
+"right"	"root"	--	--	false	true	true	false	slight sleaze	vc-right-root rule	vr-right-root rule	--	"You can grow trite trees with the [b]RIGHT ROOT[r] [once-now of vc-right-root rule] you've fought back against the slight sleaze."
 "bleak"	"blaming"	--	--	false	true	true	false	freak framing seek sameing	vc-bleak-blaming rule	vr-bleak-blaming rule	--	--
-"chic"	"shaming"	--	--	false	true	true	false	freak framing seek sameing	vc-chic-shaming rule	vr-chic-shaming rule	--	--
+"chic"	"shaming"	--	--	false	true	true	false	freak framing seek sameing	vc-chic-shaming rule	vr-chic-shaming rule	--	"You can go full-in for [b]CHIC SHAMING[r] [once-now of vc-chic-shaming rule] you've re-framed the freak framing."
 "clique"	"claiming"	--	--	false	true	false	false	freak framing seek sameing	vc-clique-claiming rule	vr-clique-claiming rule	--	--
-"bred"	"bros"	--	--	false	true	true	false	freak framing seek sameing	vc-bred-bros rule	vr-bred-bros rule	--	--
+"bred"	"bros"	--	--	false	true	true	false	freak framing seek sameing	vc-bred-bros rule	vr-bred-bros rule	--	"You can summon [b]BRED BROS[r] [once-now of vc-bred-bros rule] you've managed to dismantle the freak framing."
 "shore"	"shoals"	--	--	false	true	true	false	sore souls' gore goals	vc-shore-shoals rule	vr-shore-shoals rule	--	-- [start shocking shift / sore souls' gore goals]
-"four"	"foals"	--	--	false	true	true	false	sore souls' gore goals	vc-four-foals rule	vr-four-foals rule	--	--
-"more"	"moles"	--	--	false	true	true	false	sore souls' gore goals	vc-more-moles rule	vr-more-moles rule	--	--
+"four"	"foals"	--	--	false	true	true	false	sore souls' gore goals	vc-four-foals rule	vr-four-foals rule	--	"You can summon [b]FOUR FOALS[r] [once-now of vc-four-foals rule] the area is more hospitable."
+"more"	"moles"	--	--	false	true	true	false	sore souls' gore goals	vc-more-moles rule	vr-more-moles rule	--	"You can summon [b]MORE MOLES[r] [once-now of vc-more-moles rule] the area is more hospitable."
 "lore"	"lols"	--	--	false	true	false	false	sore souls' gore goals	vc-lore-lols rule	vr-lore-lols rule	--	--
 "night"	"newt"	--	--	false	true	false	false	sore souls' gore goals	vc-night-newt rule	vr-night-newt rule	--	--
 "kite"	"coot"	--	--	false	true	false	false	sore souls' gore goals	vc-kite-coot rule	vr-kite-coot rule	--	--
 "bold"	"bend"	--	--	false	true	true	false	old end	vc-bold-bend rule	vr-bold-bend rule	--	-- [mocking miffed: this is the endgame sequence, so put nothing after it]
-"trolled"	"trend"	--	--	false	true	true	false	old end	vc-trolled-trend rule	vr-trolled-trend rule	--	--
-"mold"	"mend"	--	--	false	true	true	false	old end	vc-mold-mend rule	vr-mold-mend rule	--	--
+"trolled"	"trend"	--	--	false	true	true	false	old end	vc-trolled-trend rule	vr-trolled-trend rule	--	"You can find a [b]TROLLED TREND[r] [once-now of vc-trolled-trend rule] the Old End is revealed as something more."
+"mold"	"mend"	--	--	false	true	true	false	old end	vc-mold-mend rule	vr-mold-mend rule	--	"You can [b]MOLD MEND[r] [once-now of vc-mold-mend rule] you know what's disturbing, where."
 "bane"	"bat"	--	--	false	true	true	false	drain drat vain vat	vc-bane-bat rule	vr-bane-bat rule	--	--
-"flain"	"flat"	--	--	false	true	true	false	drain drat vain vat	vc-flain-flat rule	vr-flain-flat rule	--	--
-"splain"	"splat"	--	--	false	true	true	false	drain drat vain vat	vc-splain-splat rule	vr-splain-splat rule	--	--
-"fed"	"foes"	--	--	false	true	true	false	drain drat vain vat	vc-fed-foes rule	vr-fed-foes rule	--	--
+"flain"	"flat"	--	--	false	true	true	false	drain drat vain vat	vc-flain-flat rule	vr-flain-flat rule	--	"The vat can be [b]FLAIN FLAT[r] [once-now of vc-flain-flat rule] you have a suitable weapon."
+"splain"	"splat"	--	--	false	true	true	false	drain drat vain vat	vc-splain-splat rule	vr-splain-splat rule	--	"You can [b]SPLAIN SPLAT[r] [once-now of vc-splain-splat rule] you're free of the vat."
+"fed"	"foes"	--	--	false	true	true	false	drain drat vain vat	vc-fed-foes rule	vr-fed-foes rule	--	"You can make [b]FED FOES[r] [once-now of vc-fed-foes rule] there are hungry foes to feed."
 "fret"	"free"	--	--	false	true	true	false	threat three met me	vc-fret-free rule	vr-fret-free rule	--	--
 "set"	"see"	--	--	false	true	true	false	threat three met me	vc-set-see rule	vr-set-see rule	--	--
 "yet"	"ye"	--	--	false	true	true	false	threat three met me	vc-yet-ye rule	vr-yet-ye rule	--	--
-"plus"	"plaque"	--	--	false	true	true	false	drain drat vain vat	vc-plus-plaque rule	vr-plus-plaque rule	--	--
-"trite"	"tolly|tully|tally|telly|tilly"	--	--	false	true	true	false	threat three met me	vc-t-lly rule	vr-t-lly rule	--	--
-
-[xxvcvr]
+"plus"	"plaque"	--	--	false	true	true	false	drain drat vain vat	vc-plus-plaque rule	vr-plus-plaque rule	--	"You can make a heavy [b]PLUS PLAQUE[r] [once-now of vc-plus-plaque rule] you have someone to dump it off on right away."
+"trite"	"tolly|tully|tally|telly|tilly"	--	--	false	true	true	false	threat three met me	vc-t-lly rule	vr-t-lly rule	--	"You can name [the bully] [once-now of vc-t-lly rule] they have an 'award' of sorts to write their name on."
 
 a goodrhyme rule (this is the vc-in-bane rule):
 	if player is not in Bane Be Sane See, unavailable;
