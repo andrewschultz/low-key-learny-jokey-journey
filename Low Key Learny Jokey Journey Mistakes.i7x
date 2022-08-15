@@ -273,7 +273,7 @@ mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "quite quail"	--	false	104	no-excite-exhale-rule rule	"A quail would not [if sco-excite-exhale is true]have helped[else]help[end if] much against [the whale]."
 "shite shale"	--	false	104	no-excite-exhale-rule rule	"Well, that would certainly make the trite trail less trite, in its own way."
 
-to say desp-gloat: say "Don't [if sco-excite-exhale is true]despair[else]gloat[end if]"
+to say desp-gloat: say "Don't [if sco-excite-exhale is false]despair[else]gloat[end if]"
 
 this is the no-excite-exhale-rule rule:
 	if sco-excite-exhale is false, the rule succeeds;

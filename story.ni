@@ -87,6 +87,12 @@ to decide whether too-distracted:
 to decide whether immediate-attention of (ru - a rule):
 	no;
 
+section spacing for Lurking Lump
+
+to decide whether (ru - a rule) is spaceable:
+	if ru is vc-co-coon rule or ru is vc-un-arm rule, no;
+	yes;
+
 section clue numbers
 
 to decide which number is variable-scan-length of (mynum - a number):
@@ -524,7 +530,7 @@ sco-kite-coot is a truth state that varies.
 
 chapter red rose
 
-the red rose is a rhymable. "It's a lovely generic red rose. It can probably help you do things. It has [rose-petals in words] petals left.".
+a red rose is a rhymable. description is "It's a lovely generic red rose. It can probably help you do things. It has [rose-petals in words] petals left.".
 
 sco-said-sos is a truth state that varies.
 sco-head-hose is a truth state that varies.
@@ -632,7 +638,7 @@ to say marquee-clues:
 report examining market marquee for the first time:
 	if sco-fret-free is false, say "GLET. ";
 	if sco-set-see is false, say "TRET. ";
-	if sco-yet-ye is false, say "FLET. ";
+	if sco-yet-ye is false, say "TWET. ";
 	say "Not [if marquee-score is 2]a word[else]words[end if][if marquee-score > 1]. But what you solved made sense[end if]. There are other possibilities.";
 	continue the action;
 
@@ -1081,14 +1087,15 @@ rule for printing a parser error (this is the default parser error notification 
 volume end of game
 
 to win-the-game:
-	repeat through table of verb checks:
-		if idid entry is false:
-			say "Undone: [check-rule entry] [run-rule entry].";
+[	if debug-state is true:
+		repeat through table of verb checks:
+			if idid entry is false:
+				say "[w1 entry] [w2 entry] undone.";]
 	increment core-score;
 	if cur-max-bonus is max-bonus:
 		choose row with final response rule of show-misses rule in the Table of Final Question Options;
 		blank out the whole row; [don't let the player see MISSED if they got everything]
-	process the score and thinking changes rule;
+	follow the score and thinking changes rule;
 	force-status;
 	end the game saying "Me, Major See-Sager";
 	follow the shutdown rules;
