@@ -8,12 +8,16 @@
 
 * main-thru
 
+>two too
+You set homonym detection to on.
+
 #ttc-table-of-room-homonyms-bane-be-sane-see-hom-bane-be-sane-see-rule
 >sea
-WRONG
+Homonyms aren't the way here. Look at the train tree for clues. A bee would provide nature and all but nothing staying.
 
+#+ttc-table-of-room-homonyms-bane-be-sane-see-hom-bane-be-sane-see-rule
 >bee
-WRONG
+Homonyms aren't the way here. Look at the train tree for clues. A bee would provide nature and all but nothing staying.
 
 >plain plea
 by one point
@@ -85,6 +89,10 @@ by one point
 >trussed
 You don't need to restrict things here but open them up.
 
+#testcase-homonym-table-of-verb-checks-bust
+>bust back
+The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right.
+
 >bussed back
 by one point
 
@@ -92,6 +100,10 @@ by one point
 by one point
 
 >n
+
+#testcase-homonym-table-of-verb-checks-bear
+>bear beach
+The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right.
 
 >bare beach
 by one point

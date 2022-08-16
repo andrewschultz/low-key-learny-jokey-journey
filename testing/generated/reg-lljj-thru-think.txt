@@ -43,33 +43,31 @@ WRONG
 >think
 You can dismiss the miss-more-diss door with PISS POOR once you can see it again.
 
->grow grudge
-by one point
+>gonear no noon
 
->e
+>go goon
+You try to form the words, but you don't feel brave enough. Perhaps the right sort of relic would help you.
 
->bussed back
-by one point
-
->crust crack
-by one point
-
->n
+#testcase-think-table-of-verb-checks-vc-go-goon-rule
+>think
+WRONG
+>undo
+>undo
+>undo
+>gonear rare reach
 
 >bare beach
-WRONG
+You should be able to do that, but you lack the necessary implement.
 
 #testcase-think-table-of-verb-checks-vc-bare-beach-rule
 >think
-You can change the Rare Reach to a BARE BEACH once you have a life-generating item.
+WRONG
+>undo
+>undo
+>undo
 
->undo
-
->undo
->undo
->undo
->undo
->undo
+>grow grudge
+by one point
 
 >n
 
@@ -185,15 +183,25 @@ by one point
 
 >n
 
+>cocoon
+WRONG
+
+>crow croon
+WRONG
+
+>mo moon
+WRONG
+
+>so soon
+WRONG
+
 #testcase-think-table-of-verb-checks-vc-co-coon-rule
 #testcase-think-table-of-verb-checks-vc-crow-croon-rule
-#testcase-think-table-of-verb-checks-vc-go-goon-rule
 #testcase-think-table-of-verb-checks-vc-mo-moon-rule
 #testcase-think-table-of-verb-checks-vc-so-soon-rule
 >think
 You can create a COCOON once you feel less watched.
 You can cause daybreak with CROW CROON once it's close to daybreak.
-You can say GO GOON to dispel an enemy once you have a token of power.
 You can speed up time with SO SOON once the darkness is alleviated.
 You can call for MO MOON once you have something else that needs light.
 
@@ -240,10 +248,16 @@ by one point
 >bro brew
 WRONG
 
->stow stew
+>crow crew
 WRONG
 
 >ho who
+WRONG
+
+>stow stew
+WRONG
+
+>throw through
 WRONG
 
 >yo you
@@ -310,6 +324,18 @@ You can grow trite trees with the RIGHT ROOT once you've fought back against the
 >shocking shift
 by one point
 
+>night newt
+WRONG
+
+>kite coot
+WRONG
+
+>four foals
+WRONG
+
+>more moles
+WRONG
+
 #testcase-think-table-of-verb-checks-vc-four-foals-rule
 #testcase-think-table-of-verb-checks-vc-kite-coot-rule
 #testcase-think-table-of-verb-checks-vc-more-moles-rule
@@ -348,6 +374,7 @@ WRONG
 WRONG
 
 #testcase-think-table-of-verb-checks-vc-umm-out-rule
+#testcase-think-table-of-verb-checks-vc-said-sos-rule
 >think
 You can say UMM OUT once you're on a roll arguing.
 You can say SAID SOS once you've got a foothold in an argument.

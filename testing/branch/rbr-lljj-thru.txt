@@ -50,6 +50,10 @@ TSV:## minimum walkthrough	## walkthrough with all points	## walkthrough with al
 
 * main-thru
 
+@hom
+>two too
+You set homonym detection to on.
+
 @min
 /^Bane Be Sane, See/?
 
@@ -408,10 +412,11 @@ You get the feeling your voice could add constructively to the noises, somehow, 
 @hom
 #ttc-table-of-room-homonyms-bane-be-sane-see-hom-bane-be-sane-see-rule
 >sea
-WRONG
+Homonyms aren't the way here. Look at the train tree for clues. A bee would provide nature and all but nothing staying.
 \\
+#+ttc-table-of-room-homonyms-bane-be-sane-see-hom-bane-be-sane-see-rule
 >bee
-WRONG
+Homonyms aren't the way here. Look at the train tree for clues. A bee would provide nature and all but nothing staying.
 
 @mis
 #ttc-table-of-bane-be-sane-see-guesses-cane-key
@@ -464,7 +469,7 @@ by one point
 }}CURMINBONUS++
 
 @vc
-#testcase-reject-table-of-verb-checks-vc-plain-plea-rule
+#testcase-postreject-table-of-verb-checks-vc-plain-plea-rule
 >plain plea
 You already made a plain plea.
 
@@ -530,7 +535,7 @@ by one point
 }}SCORE++
 
 @vc
-#testcase-reject-table-of-verb-checks-vc-boring-box-rule
+#testcase-postreject-table-of-verb-checks-vc-boring-box-rule
 >boring box
 You already uncovered the boring box.
 
@@ -645,7 +650,7 @@ by one point
 }}CURMINBONUS++
 
 @vc
-#testcase-reject-table-of-verb-checks-vc-gad-gunk-rule
+#testcase-postreject-table-of-verb-checks-vc-gad-gunk-rule
 >gad gunk
 You already insulted the mad monk's cleanliness.
 !by one point
@@ -664,12 +669,12 @@ by one point
 door
 
 @vc
-#testcase-reject-table-of-verb-checks-vc-bad-bunk-rule
+#testcase-postreject-table-of-verb-checks-vc-bad-bunk-rule
 >bad bunk
 You already insulted the mad monk's truthfulness.
 !by one point
 \\
-#testcase-reject-table-of-verb-checks-vc-sad-sunk-rule
+#testcase-postreject-table-of-verb-checks-vc-sad-sunk-rule
 >sad sunk
 You already insulted the mad monk's serenity.
 !by one point
@@ -677,7 +682,7 @@ You already insulted the mad monk's serenity.
 >n
 
 @thi,vc
-{--vc}#testcase-reject-table-of-verb-checks-vc-piss-poor-rule
+{--vc}#testcase-prereject-table-of-verb-checks-vc-piss-poor-rule
 >piss poor
 WRONG
 
@@ -689,20 +694,30 @@ You can dismiss the miss-more-diss door with PISS POOR once you can see it again
 @min
 /^No-Nudge Slow Sludge
 
-@vc
+@thi,vc
 ##balance undos
 >gonear no noon
 \\
-#testcase-reject-table-of-verb-checks-vc-go-goon-rule
+{--vc}#testcase-prereject-table-of-verb-checks-vc-go-goon-rule
 >go goon
 You try to form the words, but you don't feel brave enough. Perhaps the right sort of relic would help you.
+\\
+{--thi}#testcase-think-table-of-verb-checks-vc-go-goon-rule
+>think
+WRONG
+>undo
 >undo
 >undo
 >gonear rare reach
 \\
-#testcase-reject-table-of-verb-checks-vc-bare-beach-rule
+{--vc}#testcase-prereject-table-of-verb-checks-vc-bare-beach-rule
 >bare beach
 You should be able to do that, but you lack the necessary implement.
+\\
+{--thi}#testcase-think-table-of-verb-checks-vc-bare-beach-rule
+>think
+WRONG
+>undo
 >undo
 >undo
 
@@ -763,37 +778,8 @@ The HA HALF button lights up on your Leet Learner.
 by one point
 }}SCORE++
 
-@thi,vc
->e
-\\
->bussed back
-by one point
-\\
->crust crack
-by one point
-\\
->n
-\\
-{--vc}#+testcase-reject-table-of-verb-checks-vc-bare-beach-rule
->bare beach
-WRONG
-
-@thi
-#testcase-think-table-of-verb-checks-vc-bare-beach-rule
->think
-You can change the Rare Reach to a BARE BEACH once you have a life-generating item.
-\\
->undo
-
-@thi,vc
->undo
->undo
->undo
->undo
->undo
-
 @vc
-#testcase-reject-table-of-verb-checks-vc-grow-grudge-rule
+#testcase-postreject-table-of-verb-checks-vc-grow-grudge-rule
 >grow grudge
 You already neutralized the no-nudge slow sludge.
 
@@ -867,7 +853,7 @@ by one point
 }}CURMINBONUS++
 
 @thi,vc
-{--vc}#testcase-reject-table-of-verb-checks-vc-fun-form-rule
+{--vc}#testcase-prereject-table-of-verb-checks-vc-fun-form-rule
 >fun form
 Perhaps you will need a fun form in a bit. But no entity requires it right now.
 
@@ -890,7 +876,11 @@ by one point
 }}SCORE++
 
 @vc
-#testcase-reject-table-of-verb-checks-vc-done-dorm-rule
+#testcase-postreject-table-of-verb-checks-vc-fun-form-rule
+>fun form
+WRONG
+\\
+#testcase-postreject-table-of-verb-checks-vc-done-dorm-rule
 >done dorm
 WRONG
 
@@ -965,7 +955,7 @@ The HA HALF button lights up on your Leet Learner.
 The HA HALF button lights up on your Leet Learner.
 
 @thi,vc
-{--vc}#testcase-reject-table-of-verb-checks-vc-gee-junk-rule
+{--vc}#testcase-prereject-table-of-verb-checks-vc-gee-junk-rule
 >gee junk
 If there were junk in the tree trunk, you couldn't see it. It's way too tall!
 
@@ -979,7 +969,7 @@ by one point
 }}SCORE++
 
 @vc
-#testcase-reject-table-of-verb-checks-vc-see-sunk-rule
+#testcase-postreject-table-of-verb-checks-vc-see-sunk-rule
 >see sunk
 WRONG
 
@@ -997,9 +987,15 @@ by one point
 }}SCORE++
 
 @vc
-#testcase-reject-table-of-verb-checks-vc-pear-peach-rule
+#testcase-postreject-table-of-verb-checks-vc-gee-junk-rule
+>gee junk
+WRONG
+
+@vc
+#testcase-postreject-table-of-verb-checks-vc-pear-peach-rule
 
 @thi,vc
+{--vc}#testcase-prereject-table-of-verb-checks-vc-pear-peach-rule
 >pear peach
 The FREE FRUIT sputters a bit, almost as if it sticks its tongue about you. Weird as it sounds, you may have to show appreciation for it.
 
@@ -1063,7 +1059,7 @@ by one point
 }}SCORE++
 
 @vc
-#testcase-reject-table-of-verb-checks-vc-whee-woot-rule
+#testcase-postreject-table-of-verb-checks-vc-whee-woot-rule
 >whee woot
 WRONG
 
@@ -1114,9 +1110,10 @@ Jack would still be bugging you in that state.
 That would be a useless item.
 
 @vc
-#testcase-reject-table-of-verb-checks-vc-crust-crack-rule
+#testcase-postreject-table-of-verb-checks-vc-crust-crack-rule
 
 @thi,vc
+{--vc}#testcase-prereject-table-of-verb-checks-vc-crust-crack-rule
 >crust crack
 Under Just Jack's watchful eye, you don't feel like you could precipitate such changes. How to get rid of him?
 \\
@@ -1140,12 +1137,17 @@ The HA HALF button lights up on your Leet Learner.
 >bussed zback
 The HA HALF button lights up on your Leet Learner.
 
+@hom
+#testcase-homonym-table-of-verb-checks-bust
+>bust back
+The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right.
+
 >bussed back
 by one point
 }}SCORE++
 
 @vc
-#testcase-reject-table-of-verb-checks-vc-bussed-back-rule
+#testcase-postreject-table-of-verb-checks-vc-bussed-back-rule
 >bussed back
 Just Jack has already been bussed back.
 
@@ -1185,7 +1187,7 @@ by one point
 }}SCORE++
 
 @thi,vc
-{--vc}#testcase-reject-table-of-verb-checks-vc-plus-plaque-rule
+{--vc}#testcase-prereject-table-of-verb-checks-vc-plus-plaque-rule
 >plus plaque
 WRONG
 
@@ -1250,12 +1252,22 @@ The HA HALF button lights up on your Leet Learner.
 >zbare beach
 The HA HALF button lights up on your Leet Learner.
 
+@hom
+#testcase-homonym-table-of-verb-checks-bear
+>bear beach
+The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right.
+
 >bare beach
 by one point
 }}SCORE++
 
 @min
 /^Bare Beach
+
+@vc
+#testcase-postreject-table-of-verb-checks-vc-bare-beach-rule
+>bare beach
+WRONG
 
 @mis
 #+ttc-table-of-rare-reach-guesses-spare-speech
@@ -1280,7 +1292,7 @@ Alas, nobody odd comes by and dives into the deep dune. Nobody at all.
 Low-Key Learny Jokey Journey is the wrong environment for that, and not just because it's text-based.
 
 @thi,vc
-{--vc}#testcase-reject-table-of-verb-checks-vc-reap-rune-rule
+{--vc}#testcase-prereject-table-of-verb-checks-vc-reap-rune-rule
 >reap rune
 The dune is a bit too big now. Maybe you could find a way to reduce it, over time.
 
@@ -1303,7 +1315,7 @@ by one point
 }}SCORE++
 
 @vc
-#testcase-reject-table-of-verb-checks-vc-seep-soon-rule
+#testcase-postreject-table-of-verb-checks-vc-seep-soon-rule
 >seep soon
 WRONG
 
@@ -1325,6 +1337,11 @@ The HA HALF button lights up on your Leet Learner.
 >reap rune
 by one point
 }}SCORE++
+
+@vc
+#testcase-postreject-table-of-verb-checks-vc-reap-rune-rule
+>reap rune
+WRONG
 
 @mis
 #+ttc-table-of-deep-dune-guesses-beep-boon
@@ -1358,7 +1375,7 @@ by one point
 }}SCORE++
 
 @vc
-#testcase-reject-table-of-verb-checks-vc-un-arm-rule
+#testcase-postreject-table-of-verb-checks-vc-un-arm-rule
 >unarm
 WRONG
 
@@ -1402,33 +1419,31 @@ But you already have the rune.
 >toe tune
 Nothing toe-tapping starts playing.
 
-@vc
-#testcase-reject-table-of-verb-checks-vc-co-coon-rule
+@thi,vc
+{--vc}#testcase-prereject-table-of-verb-checks-vc-co-coon-rule
 >cocoon
 WRONG
 \\
-#testcase-reject-table-of-verb-checks-vc-crow-croon-rule
+{--vc}#testcase-prereject-table-of-verb-checks-vc-crow-croon-rule
 >crow croon
 WRONG
 \\
-#testcase-reject-table-of-verb-checks-vc-mo-moon-rule
+{--vc}#testcase-prereject-table-of-verb-checks-vc-mo-moon-rule
 >mo moon
 WRONG
 \\
-#testcase-reject-table-of-verb-checks-vc-so-soon-rule
+{--vc}#testcase-prereject-table-of-verb-checks-vc-so-soon-rule
 >so soon
 WRONG
 
 @thi
 #testcase-think-table-of-verb-checks-vc-co-coon-rule
 #testcase-think-table-of-verb-checks-vc-crow-croon-rule
-#testcase-think-table-of-verb-checks-vc-go-goon-rule
 #testcase-think-table-of-verb-checks-vc-mo-moon-rule
 #testcase-think-table-of-verb-checks-vc-so-soon-rule
 >think
 You can create a COCOON once you feel less watched.
 You can cause daybreak with CROW CROON once it's close to daybreak.
-You can say GO GOON to dispel an enemy once you have a token of power.
 You can speed up time with SO SOON once the darkness is alleviated.
 You can call for MO MOON once you have something else that needs light.
 
@@ -1492,6 +1507,27 @@ The HA HALF button lights up on your Leet Learner.
 #testcase-ha-half-table-of-verb-checks-24-croon
 >zcrow croon
 The HA HALF button lights up on your Leet Learner.
+
+@vc
+#testcase-postreject-table-of-verb-checks-vc-co-coon-rule
+>co coon
+WRONG
+\\
+#testcase-postreject-table-of-verb-checks-vc-crow-croon-rule
+>crow croon
+WRONG
+\\
+#testcase-postreject-table-of-verb-checks-vc-go-goon-rule
+>go goon
+WRONG
+\\
+#testcase-postreject-table-of-verb-checks-vc-mo-moon-rule
+>mo moon
+WRONG
+\\
+#testcase-postreject-table-of-verb-checks-vc-so-soon-rule
+>so soon
+WRONG
 
 >crow croon
 by one point
@@ -1584,11 +1620,11 @@ by one point
 }}CURMINBONUS++
 
 @vc
-#testcase-reject-table-of-verb-checks-vc-grotty-grail-rule
+#testcase-postreject-table-of-verb-checks-vc-grotty-grail-rule
 >grotty grail
 No. The grotty grail was nice to find, but enough of past discoveries. You need to get out of here.
 \\
-#testcase-reject-table-of-verb-checks-vc-potty-pail-rule
+#testcase-postreject-table-of-verb-checks-vc-potty-pail-rule
 >potty pail
 No. The potty pail was a relief to find, but enough of past discoveries. You need to get out of here.
 
@@ -1600,7 +1636,7 @@ by one point
 /^High Hub
 
 @thi,vc
-{--vc}#testcase-reject-table-of-verb-checks-vc-mocking-miffed-rule
+{--vc}#testcase-prereject-table-of-verb-checks-vc-mocking-miffed-rule
 >mocking miffed
 WRONG
 
@@ -1733,7 +1769,7 @@ No, pock marks wouldn't make the stalk look better.
 }}CURMINBONUS++
 
 @vc
-#testcase-reject-table-of-verb-checks-vc-wordy-walk-rule
+#testcase-postreject-table-of-verb-checks-vc-wordy-walk-rule
 >wordy walk
 WRONG
 
@@ -1741,7 +1777,7 @@ WRONG
 >u
 
 @vc
-#testcase-reject-table-of-verb-checks-vc-bye-bub-rule
+#testcase-postreject-table-of-verb-checks-vc-bye-bub-rule
 >bye bub
 WRONG
 
@@ -1767,15 +1803,27 @@ by one point
 /^No-New-Show Shoe
 
 @thi
+{--vc}#testcase-prereject-table-of-verb-checks-vc-bro-brew-rule
 >bro brew
 WRONG
 \\
->stow stew
+{--vc}#testcase-prereject-table-of-verb-checks-vc-crow-crew-rule
+>crow crew
 WRONG
 \\
+{--vc}#testcase-prereject-table-of-verb-checks-vc-ho-who-rule
 >ho who
 WRONG
 \\
+{--vc}#testcase-prereject-table-of-verb-checks-vc-stow-stew-rule
+>stow stew
+WRONG
+\\
+{--vc}#testcase-prereject-table-of-verb-checks-vc-throw-through-rule
+>throw through
+WRONG
+\\
+{--vc}#testcase-prereject-table-of-verb-checks-vc-yo-you-rule
 >yo you
 WRONG
 
@@ -1928,7 +1976,7 @@ by one point
 }}CURMINBONUS++
 
 @vc
-#testcase-reject-table-of-verb-checks-vc-go-goo-rule
+#testcase-postreject-table-of-verb-checks-vc-go-goo-rule
 >go goo
 There's more than enough Go Goo for whoever actually wants it or just fools themselves into thinking they want it.
 
@@ -1937,7 +1985,7 @@ by one point
 }}SCORE++
 
 @vc
-#testcase-reject-table-of-verb-checks-vc-flow-flue-rule
+#testcase-postreject-table-of-verb-checks-vc-flow-flue-rule
 >flow flue
 The flow flue is already present!
 
@@ -1946,7 +1994,7 @@ by one point
 }}SCORE++
 
 @vc
-#testcase-reject-table-of-verb-checks-vc-glow-glue-rule
+#testcase-postreject-table-of-verb-checks-vc-glow-glue-rule
 >glow glue
 You already acquired Glow Glue.
 
@@ -1955,7 +2003,7 @@ by one point
 }}SCORE++
 
 @vc
-#testcase-reject-table-of-verb-checks-vc-bro-brew-rule
+#testcase-postreject-table-of-verb-checks-vc-bro-brew-rule
 >bro brew
 You already have a nice store of Bro Brew.
 
@@ -1964,7 +2012,7 @@ by one point
 }}SCORE++
 
 @vc
-#testcase-reject-table-of-verb-checks-vc-stow-stew-rule
+#testcase-postreject-table-of-verb-checks-vc-stow-stew-rule
 >stow stew
 You already put stew in the flue.
 
@@ -1973,7 +2021,7 @@ by one point
 }}SCORE++
 
 @vc
-#testcase-reject-table-of-verb-checks-vc-crow-crew-rule
+#testcase-postreject-table-of-verb-checks-vc-crow-crew-rule
 >crow crew
 {$REJECT}
 
@@ -1982,7 +2030,7 @@ by one point
 }}SCORE++
 
 @vc
-#testcase-reject-table-of-verb-checks-vc-ho-who-rule
+#testcase-postreject-table-of-verb-checks-vc-ho-who-rule
 >ho who
 You already started to hype up the crowd.
 
@@ -1991,7 +2039,7 @@ by one point
 }}SCORE++
 
 @vc
-#testcase-reject-table-of-verb-checks-vc-yo-you-rule
+#testcase-postreject-table-of-verb-checks-vc-yo-you-rule
 >yo you
 You already hyped the crowd up completely. Time to give them a show!
 
@@ -2012,16 +2060,20 @@ That's a bit too generic a sound to make, and you've already made the right ones
 by one point
 }}SCORE++
 
-@thi
+@thi,vc
+{--vc}#testcase-prereject-table-of-verb-checks-vc-bright-brute-rule
 >bright brute
 WRONG
 \\
+{--vc}#testcase-prereject-table-of-verb-checks-vc-despite-dispute-rule
 >despite dispute
 WRONG
 \\
+{--vc}#testcase-prereject-table-of-verb-checks-vc-right-root-rule
 >right root
 WRONG
-\\
+
+@thi
 #testcase-think-table-of-verb-checks-vc-despite-dispute-rule
 #testcase-think-table-of-verb-checks-vc-right-root-rule
 #testcase-think-table-of-verb-checks-vc-bright-brute-rule
@@ -2080,7 +2132,7 @@ You fail to drag that sort of noise from the lute.
 While it's okay to be white, it's not okay to be all IT'S OKAY TO BE WHITE.
 
 @vc
-#testcase-reject-table-of-verb-checks-vc-rocking-rift-rule
+#testcase-postreject-table-of-verb-checks-vc-rocking-rift-rule
 >rocking rift
 You already brought life back to the Whoah-Woo Show Shoe. You don't need to go back.
 
@@ -2181,20 +2233,20 @@ The HA HALF button lights up on your Leet Learner, but dimly--perhaps this is a 
 >kite zcoot
 The HA HALF button lights up on your Leet Learner, but dimly--perhaps this is a rhyme you don't strictly need to figure to win.
 
-@vc
-#testcase-reject-table-of-verb-checks-vc-night-newt-rule
+@thi,vc
+{--vc}#testcase-prereject-table-of-verb-checks-vc-night-newt-rule
 >night newt
 WRONG
 \\
-#testcase-reject-table-of-verb-checks-vc-kite-coot-rule
+{--vc}#testcase-prereject-table-of-verb-checks-vc-kite-coot-rule
 >kite coot
 WRONG
 \\
-#testcase-reject-table-of-verb-checks-vc-four-foals-rule
+{--vc}#testcase-prereject-table-of-verb-checks-vc-four-foals-rule
 >four foals
 WRONG
 \\
-#testcase-reject-table-of-verb-checks-vc-more-moles-rule
+{--vc}#testcase-prereject-table-of-verb-checks-vc-more-moles-rule
 >more moles
 WRONG
 
@@ -2214,7 +2266,7 @@ by one point
 }}SCORE++
 
 @vc
-#testcase-reject-table-of-verb-checks-vc-shore-shoals-rule
+#testcase-postreject-table-of-verb-checks-vc-shore-shoals-rule
 >shore shoals
 WRONG
 
@@ -2241,21 +2293,38 @@ by one point
 }}CURMINBONUS++
 
 @vc
-#+testcase-reject-table-of-verb-checks-vc-night-newt-rule
+#testcase-postreject-table-of-verb-checks-vc-night-newt-rule
 >night newt
 WRONG
 \\
-#+testcase-reject-table-of-verb-checks-vc-kite-coot-rule
+#testcase-postreject-table-of-verb-checks-vc-kite-coot-rule
 >kite coot
 WRONG
 \\
-#testcase-reject-table-of-verb-checks-vc-lore-lols-rule
+#testcase-postreject-table-of-verb-checks-vc-lore-lols-rule
 >lore lols
 WRONG
+
+@vc
+##balance undos
+>more moles
+by one point
+\\
+#testcase-postreject-table-of-verb-checks-vc-more-moles-rule
+>more moles
+WRONG
+\\
+>undo
+>undo
 
 >four foals
 by one point
 }}SCORE++
+
+@vc
+#testcase-postreject-table-of-verb-checks-vc-four-foals-rule
+>four foals
+WRONG
 
 @mis
 #+ttc-table-of-sore-souls'-gore-goals-guesses-store-stoles
@@ -2391,16 +2460,17 @@ The HA HALF button lights up on your Leet Learner.
 The HA HALF button lights up on your Leet Learner.
 
 @thi
-{--vc}#testcase-reject-table-of-verb-checks-vc-umm-out-rule
+{--vc}#testcase-prereject-table-of-verb-checks-vc-umm-out-rule
 >umm out
 WRONG
 \\
-{--vc}#testcase-reject-table-of-verb-checks-vc-said-sos-rule
+{--vc}#testcase-prereject-table-of-verb-checks-vc-said-sos-rule
 >said sos
 WRONG
 
 @thi
 #testcase-think-table-of-verb-checks-vc-umm-out-rule
+#testcase-think-table-of-verb-checks-vc-said-sos-rule
 >think
 You can say UMM OUT once you're on a roll arguing.
 You can say SAID SOS once you've got a foothold in an argument.
@@ -2410,7 +2480,7 @@ by one point
 }}SCORE++
 
 @vc
-#testcase-reject-table-of-verb-checks-vc-dumb-doubt-rule
+#testcase-postreject-table-of-verb-checks-vc-dumb-doubt-rule
 >dumb doubt
 WRONG
 
@@ -2419,7 +2489,7 @@ by one point
 }}SCORE++
 
 @vc
-#+testcase-reject-table-of-verb-checks-vc-said-sos-rule
+#testcase-postreject-table-of-verb-checks-vc-said-sos-rule
 >said sos
 WRONG
 
@@ -2428,7 +2498,7 @@ by one point
 }}SCORE++
 
 @vc
-#+testcase-reject-table-of-verb-checks-vc-umm-out-rule
+#testcase-postreject-table-of-verb-checks-vc-umm-out-rule
 >umm out
 WRONG
 
@@ -2479,7 +2549,7 @@ The HA HALF button lights up on your Leet Learner.
 
 @thi,vc
 # ?? note this should be rejectable if we do not automatically take the lift back
-{--vc}#testcase-reject-table-of-verb-checks-vc-k-cope-rule
+{--vc}#testcase-prereject-table-of-verb-checks-vc-k-cope-rule
 >k cope
 WRONG
 
@@ -2493,7 +2563,7 @@ by one point
 }}SCORE++
 
 @vc
-#testcase-reject-table-of-verb-checks-vc-hey-hope-rule
+#testcase-postreject-table-of-verb-checks-vc-hey-hope-rule
 >hey hope
 WRONG
 
@@ -2511,7 +2581,7 @@ by one point
 }}SCORE++
 
 @vc
-#testcase-reject-table-of-verb-checks-vc-stocking-stiffed-rule
+#testcase-postreject-table-of-verb-checks-vc-stocking-stiffed-rule
 >stocking stiffed
 WRONG
 
@@ -2606,7 +2676,7 @@ The HA HALF button lights up on your Leet Learner.
 The HA HALF button lights up on your Leet Learner.
 
 @thi,vc
-{--vc}#testcase-reject-table-of-verb-checks-vc-plight-please-rule
+{--vc}#testcase-prereject-table-of-verb-checks-vc-plight-please-rule
 >plight please
 WRONG
 
@@ -2635,19 +2705,19 @@ by one point
 }}SCORE++
 
 @vc
-#testcase-reject-table-of-verb-checks-vc-tight-tease-rule
+#testcase-postreject-table-of-verb-checks-vc-tight-tease-rule
 >tight tees
 WRONG
 \\
-#testcase-reject-table-of-verb-checks-vc-bright-breeze-rule
+#testcase-postreject-table-of-verb-checks-vc-bright-breeze-rule
 >bright breeze
 WRONG
 \\
-#+testcase-reject-table-of-verb-checks-vc-plight-please-rule
+#testcase-postreject-table-of-verb-checks-vc-plight-please-rule
 >plight please
 WRONG
 \\
-#testcase-reject-table-of-verb-checks-vc-right-root-rule
+#testcase-postreject-table-of-verb-checks-vc-right-root-rule
 >right root
 WRONG
 
@@ -2707,9 +2777,11 @@ The HA HALF button lights up on your Leet Learner.
 The HA HALF button lights up on your Leet Learner.
 
 @thi,vc
+{--vc}#testcase-prereject-table-of-verb-checks-vc-chic-shaming-rule
 >chic shaming
 WRONG
 \\
+{--vc}#testcase-prereject-table-of-verb-checks-vc-bred-bros-rule
 >bred bros
 WRONG
 
@@ -2736,15 +2808,15 @@ by one point
 }}SCORE++
 
 @vc
-#testcase-reject-table-of-verb-checks-vc-bleak-blaming-rule
+#testcase-postreject-table-of-verb-checks-vc-bleak-blaming-rule
 >bleak blaming
 WRONG
 \\
-#testcase-reject-table-of-verb-checks-vc-chic-shaming-rule
+#testcase-postreject-table-of-verb-checks-vc-chic-shaming-rule
 >chic shaming
 WRONG
 \\
-#testcase-reject-table-of-verb-checks-vc-clique-claiming-rule
+#testcase-postreject-table-of-verb-checks-vc-clique-claiming-rule
 >clique claiming
 WRONG
 
@@ -2753,7 +2825,7 @@ by one point
 }}SCORE++
 
 @vc
-#testcase-reject-table-of-verb-checks-vc-grokking-grift-rule
+#testcase-postreject-table-of-verb-checks-vc-grokking-grift-rule
 >grokking grift
 WRONG
 
@@ -2811,7 +2883,7 @@ The HA HALF button lights up on your Leet Learner.
 The HA HALF button lights up on your Leet Learner.
 
 @thi,vc
-{--vc}#testcase-reject-table-of-verb-checks-vc-rad-roast-rule
+{--vc}#testcase-prereject-table-of-verb-checks-vc-rad-roast-rule
 >rad roast
 WRONG
 
@@ -2833,11 +2905,11 @@ by one point
 }}SCORE++
 
 @vc
-#testcase-reject-table-of-verb-checks-vc-bad-boast-rule
+#testcase-postreject-table-of-verb-checks-vc-bad-boast-rule
 >bad boast
 WRONG
 \\
-#+testcase-reject-table-of-verb-checks-vc-rad-roast-rule
+#testcase-postreject-table-of-verb-checks-vc-rad-roast-rule
 >rad roast
 WRONG
 
@@ -2935,9 +3007,11 @@ The HA HALF button lights up on your Leet Learner.
 The HA HALF button lights up on your Leet Learner.
 
 @thi
+{--vc}#testcase-prereject-table-of-verb-checks-vc-right-rail-rule
 >right rail
 WRONG
 \\
+{--vc}#testcase-prereject-table-of-verb-checks-vc-excite-exhale-rule
 >excite exhale
 WRONG
 \\
@@ -2968,23 +3042,23 @@ by one point
 }}SCORE++
 
 @vc
-#testcase-reject-table-of-verb-checks-vc-bright-brute-rule
+#testcase-postreject-table-of-verb-checks-vc-bright-brute-rule
 >bright brute
 WRONG
 \\
-#testcase-reject-table-of-verb-checks-vc-flight-flail-rule
+#testcase-postreject-table-of-verb-checks-vc-flight-flail-rule
 >flight flail
 WRONG
 \\
-#testcase-reject-table-of-verb-checks-vc-might-mail-rule
+#testcase-postreject-table-of-verb-checks-vc-might-mail-rule
 >might mail
 WRONG
 \\
-#testcase-reject-table-of-verb-checks-vc-right-rail-rule
+#testcase-postreject-table-of-verb-checks-vc-right-rail-rule
 >right rail
 {$REJECT}
 \\
-#testcase-reject-table-of-verb-checks-vc-sight-sail-rule
+#testcase-postreject-table-of-verb-checks-vc-sight-sail-rule
 >sight sail
 {$REJECT}
 
@@ -2996,7 +3070,7 @@ by one point
 /^High Hub
 
 @vc
-#testcase-reject-table-of-verb-checks-vc-docking-diffed-rule
+#testcase-postreject-table-of-verb-checks-vc-docking-diffed-rule
 >docking diffed
 WRONG
 
@@ -3037,7 +3111,7 @@ The HA HALF button lights up on your Leet Learner.
 @vc
 # now let's take care of all the unavailable locking lift settings
 \\
-#testcase-reject-table-of-verb-checks-vc-shocking-shift-rule
+#testcase-postreject-table-of-verb-checks-vc-shocking-shift-rule
 >shocking shift
 WRONG
 
@@ -3090,11 +3164,11 @@ The HA HALF button lights up on your Leet Learner.
 The HA HALF button lights up on your Leet Learner.
 
 @thi,vc
-{--vc}#testcase-reject-table-of-verb-checks-vc-mold-mend-rule
+{--vc}#testcase-prereject-table-of-verb-checks-vc-mold-mend-rule
 >mold mend
 WRONG
 \\
-{--vc}#testcase-reject-table-of-verb-checks-vc-trolled-trend-rule
+{--vc}#testcase-prereject-table-of-verb-checks-vc-trolled-trend-rule
 >trolled trend
 WRONG
 
@@ -3118,15 +3192,15 @@ by one point
 }}SCORE++
 
 @vc
-#testcase-reject-table-of-verb-checks-vc-bold-bend-rule
+#testcase-postreject-table-of-verb-checks-vc-bold-bend-rule
 >bold bend
 WRONG
 \\
-#+testcase-reject-table-of-verb-checks-vc-mold-mend-rule
+#testcase-postreject-table-of-verb-checks-vc-mold-mend-rule
 >mold mend
 WRONG
 \\
-#+testcase-reject-table-of-verb-checks-vc-trolled-trend-rule
+#testcase-postreject-table-of-verb-checks-vc-trolled-trend-rule
 >trolled trend
 WRONG
 
@@ -3222,15 +3296,15 @@ The HA HALF button lights up on your Leet Learner.
 The HA HALF button lights up on your Leet Learner.
 
 @thi,vc
-{--vc}#testcase-reject-table-of-verb-checks-vc-fed-foes-rule
+{--vc}#testcase-prereject-table-of-verb-checks-vc-fed-foes-rule
 >fed foes
 WRONG
 \\
-{--vc}#testcase-reject-table-of-verb-checks-vc-flain-flat-rule
+{--vc}#testcase-prereject-table-of-verb-checks-vc-flain-flat-rule
 >flain flat
 WRONG
 \\
-{--vc}#testcase-reject-table-of-verb-checks-vc-splain-splat-rule
+{--vc}#testcase-prereject-table-of-verb-checks-vc-splain-splat-rule
 >splain splat
 WRONG
 
@@ -3256,15 +3330,15 @@ by one point
 }}SCORE++
 
 @vc
-#testcase-reject-table-of-verb-checks-vc-bane-bat-rule
+#testcase-postreject-table-of-verb-checks-vc-bane-bat-rule
 >bane bat
 WRONG
 \\
-#+testcase-reject-table-of-verb-checks-vc-flain-flat-rule
+#testcase-postreject-table-of-verb-checks-vc-flain-flat-rule
 >flain flat
 WRONG
 \\
-#+testcase-reject-table-of-verb-checks-vc-splain-splat-rule
+#testcase-postreject-table-of-verb-checks-vc-splain-splat-rule
 >splain splat
 WRONG
 
@@ -3393,15 +3467,15 @@ by one point
 }}SCORE++
 
 @vc
-#testcase-reject-table-of-verb-checks-vc-set-see-rule
+#testcase-postreject-table-of-verb-checks-vc-set-see-rule
 >set see
 WRONG
 \\
-#testcase-reject-table-of-verb-checks-vc-fret-free-rule
+#testcase-postreject-table-of-verb-checks-vc-fret-free-rule
 >fret free
 WRONG
 \\
-#testcase-reject-table-of-verb-checks-vc-yet-ye-rule
+#testcase-postreject-table-of-verb-checks-vc-yet-ye-rule
 >yet ye
 WRONG
 
@@ -3409,7 +3483,7 @@ WRONG
 /^Threat Three Met Me
 
 @thi,vc
-{--vc}#testcase-reject-table-of-verb-checks-vc-t-lly-rule
+{--vc}#testcase-prereject-table-of-verb-checks-vc-t-lly-rule
 >trite telly
 WRONG
 
@@ -3423,7 +3497,7 @@ by one point
 }}SCORE++
 
 @vc
-#+testcase-reject-table-of-verb-checks-vc-plus-plaque-rule
+#testcase-postreject-table-of-verb-checks-vc-plus-plaque-rule
 >plus plaque
 WRONG
 
