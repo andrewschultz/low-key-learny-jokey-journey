@@ -67,20 +67,73 @@ No policemen drive by. They might be corrupt, anyway.
 Surely this is more exciting than a trip for cleaning supplies.
 
 @vc
+====alphabetize on
+#testcase-unavailable-table-of-verb-checks-vc-bad-boast-rule
+>bad boast
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-bad-bunk-rule
+>bad bunk
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-bane-bat-rule
+>bane bat
+{$REJECT}
+\\
 #testcase-unavailable-table-of-verb-checks-vc-bare-beach-rule
 >bare beach
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-bleak-blaming-rule
+>bleak blaming
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-bold-bend-rule
+>bold bend
 {$REJECT}
 \\
 #testcase-unavailable-table-of-verb-checks-vc-boring-box-rule
 >boring box
 {$REJECT}
 \\
+#testcase-unavailable-table-of-verb-checks-vc-bred-bros-rule
+>bred bros
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-bright-breeze-rule
+>bright breeze
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-bright-brute-rule
+>bright brute
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-bro-brew-rule
+>bro brew
+{$REJECT}
+\\
 #testcase-unavailable-table-of-verb-checks-vc-bussed-back-rule
 >bussed back
 {$REJECT}
 \\
+#testcase-unavailable-table-of-verb-checks-vc-bye-bub-rule
+>bye bub
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-chic-shaming-rule
+>chic shaming
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-clique-claiming-rule
+>clique claiming
+{$REJECT}
+\\
 #testcase-unavailable-table-of-verb-checks-vc-co-coon-rule
 >co coon
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-crow-crew-rule
+>crow crew
 {$REJECT}
 \\
 #testcase-unavailable-table-of-verb-checks-vc-crow-croon-rule
@@ -91,72 +144,60 @@ Surely this is more exciting than a trip for cleaning supplies.
 >crust crack
 {$REJECT}
 \\
-#testcase-unavailable-table-of-verb-checks-vc-done-dorm-rule
->done dorm
-{$REJECT}
-\\
-#testcase-unavailable-table-of-verb-checks-vc-fun-form-rule
->fun form
-{$REJECT}
-\\
-#testcase-unavailable-table-of-verb-checks-vc-gee-junk-rule
->gee junk
-{$REJECT}
-\\
-#testcase-unavailable-table-of-verb-checks-vc-go-goon-rule
->go goon
-That location or thing doesn't exist or isn't known to you yet.
-\\
-#testcase-unavailable-table-of-verb-checks-vc-grow-grudge-rule
->grow grudge
-{$REJECT}
-\\
-#testcase-unavailable-table-of-verb-checks-vc-mo-moon-rule
->mo moon
-{$REJECT}
-\\
-#testcase-unavailable-table-of-verb-checks-vc-pear-peach-rule
->pear peach
-{$REJECT}
-\\
-#testcase-unavailable-table-of-verb-checks-vc-reap-rune-rule
->reap rune
-{$REJECT}
-\\
-#testcase-unavailable-table-of-verb-checks-vc-see-sunk-rule
->see sunk
-It looks like you may have tried to refer to the room name, or part of it. You often need to riff on the room name, but you never need to use the room name directly.
-\\
-#testcase-unavailable-table-of-verb-checks-vc-seep-soon-rule
->seep soon
-{$REJECT}
-\\
-#testcase-unavailable-table-of-verb-checks-vc-so-soon-rule
->so soon
-{$REJECT}
-\\
-#testcase-unavailable-table-of-verb-checks-vc-un-arm-rule
->un arm
-{$REJECT}
-\\
-#testcase-unavailable-table-of-verb-checks-vc-whee-woot-rule
->whee woot
-{$REJECT}
-\\
-#testcase-unavailable-table-of-verb-checks-vc-bro-brew-rule
->bro brew
-{$REJECT}
-\\
-#testcase-unavailable-table-of-verb-checks-vc-crow-crew-rule
->crow crew
+#testcase-unavailable-table-of-verb-checks-vc-despite-dispute-rule
+>despite dispute
 {$REJECT}
 \\
 #testcase-unavailable-table-of-verb-checks-vc-docking-diffed-rule
 >docking diffed
 {$REJECT}
 \\
+#testcase-unavailable-table-of-verb-checks-vc-done-dorm-rule
+>done dorm
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-dumb-doubt-rule
+>dumb doubt
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-excite-exhale-rule
+>excite exhale
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-fed-foes-rule
+>fed foes
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-flain-flat-rule
+>flain flat
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-flight-flail-rule
+>flight flail
+{$REJECT}
+\\
 #testcase-unavailable-table-of-verb-checks-vc-flow-flue-rule
 >flow flue
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-four-foals-rule
+>four foals
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-fret-free-rule
+>fret free
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-fun-form-rule
+>fun form
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-gad-gunk-rule
+>gad gunk
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-gee-junk-rule
+>gee junk
 {$REJECT}
 \\
 #testcase-unavailable-table-of-verb-checks-vc-glow-glue-rule
@@ -167,6 +208,10 @@ It looks like you may have tried to refer to the room name, or part of it. You o
 >go goo
 That location or thing doesn't exist or isn't known to you yet.
 \\
+#testcase-unavailable-table-of-verb-checks-vc-go-goon-rule
+>go goon
+That location or thing doesn't exist or isn't known to you yet.
+\\
 #testcase-unavailable-table-of-verb-checks-vc-grokking-grift-rule
 >grokking grift
 {$REJECT}
@@ -175,28 +220,136 @@ That location or thing doesn't exist or isn't known to you yet.
 >grotty grail
 {$REJECT}
 \\
+#testcase-unavailable-table-of-verb-checks-vc-grow-grudge-rule
+>grow grudge
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-hey-hope-rule
+>hey hope
+{$REJECT}
+\\
 #testcase-unavailable-table-of-verb-checks-vc-ho-who-rule
 >ho who
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-k-cope-rule
+>k cope
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-kite-coot-rule
+>kite coot
 {$REJECT}
 \\
 #testcase-unavailable-table-of-verb-checks-vc-knotty-nail-rule
 >knotty nail
 {$REJECT}
 \\
+#testcase-unavailable-table-of-verb-checks-vc-lore-lols-rule
+>lore lols
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-might-mail-rule
+>might mail
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-mo-moon-rule
+>mo moon
+{$REJECT}
+\\
 #testcase-unavailable-table-of-verb-checks-vc-mocking-miffed-rule
 >mocking miffed
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-mold-mend-rule
+>mold mend
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-more-moles-rule
+>more moles
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-night-newt-rule
+>night newt
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-pear-peach-rule
+>pear peach
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-piss-poor-rule
+>piss poor
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-plight-please-rule
+>plight please
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-plus-plaque-rule
+>plus plaque
 {$REJECT}
 \\
 #testcase-unavailable-table-of-verb-checks-vc-potty-pail-rule
 >potty pail
 {$REJECT}
 \\
+#testcase-unavailable-table-of-verb-checks-vc-rad-roast-rule
+>rad roast
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-reap-rune-rule
+>reap rune
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-right-rail-rule
+>right rail
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-right-root-rule
+>right root
+{$REJECT}
+\\
 #testcase-unavailable-table-of-verb-checks-vc-rocking-rift-rule
 >rocking rift
 {$REJECT}
 \\
+#testcase-unavailable-table-of-verb-checks-vc-sad-sunk-rule
+>sad sunk
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-said-sos-rule
+>said sos
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-see-sunk-rule
+>see sunk
+It looks like you may have tried to refer to the room name, or part of it. You often need to riff on the room name, but you never need to use the room name directly.
+\\
+#testcase-unavailable-table-of-verb-checks-vc-seep-soon-rule
+>seep soon
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-set-see-rule
+>set see
+{$REJECT}
+\\
 #testcase-unavailable-table-of-verb-checks-vc-shocking-shift-rule
 >shocking shift
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-shore-shoals-rule
+>shore shoals
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-sight-sail-rule
+>sight sail
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-so-soon-rule
+>so soon
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-splain-splat-rule
+>splain splat
 {$REJECT}
 \\
 #testcase-unavailable-table-of-verb-checks-vc-stocking-stiffed-rule
@@ -207,13 +360,46 @@ That location or thing doesn't exist or isn't known to you yet.
 >stow stew
 {$REJECT}
 \\
+#testcase-unavailable-table-of-verb-checks-vc-t-lly-rule
+>trite tolly
+{$REJECT}
+\\
 #testcase-unavailable-table-of-verb-checks-vc-throw-through-rule
 >throw through
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-tight-tease-rule
+>tight tease|tees
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-trolled-trend-rule
+>trolled trend
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-umm-out-rule
+>umm out
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-un-arm-rule
+>un arm
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-whee-woot-rule
+>whee woot
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-wordy-walk-rule
+>wordy walk
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-yet-ye-rule
+>yet ye
 {$REJECT}
 \\
 #testcase-unavailable-table-of-verb-checks-vc-yo-you-rule
 >yo you
 {$REJECT}
+====alphabetize off
 
 @ver
 >listen
@@ -1658,9 +1844,9 @@ by one point
 You already hyped the crowd up completely. Time to give them a show!
 
 @mis
-#ttc-table-of-no-new-show-shoe-guesses-blow-blew-blue
+#+ttc-table-of-no-new-show-shoe-guesses-blow-blew-blue
 >blow blue
-You blow off steam that you haven't quite revitalized the WRONG yet.
+You blow off steam that you haven't quite revitalized the Whoah-Woo-Show Shoe yet.
 \\
 #+ttc-table-of-no-new-show-shoe-guesses-mo-moo
 >mo moo
@@ -2780,20 +2966,73 @@ by one point
 }}SCORE++
 
 @vc
+====alphabetize on
+#testcase-moot-table-of-verb-checks-vc-bad-boast-rule
+>bad boast
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-bad-bunk-rule
+>bad bunk
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-bane-bat-rule
+>bane bat
+{$REJECT}
+\\
 #testcase-moot-table-of-verb-checks-vc-bare-beach-rule
 >bare beach
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-bleak-blaming-rule
+>bleak blaming
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-bold-bend-rule
+>bold bend
 {$REJECT}
 \\
 #testcase-moot-table-of-verb-checks-vc-boring-box-rule
 >boring box
 {$REJECT}
 \\
+#testcase-moot-table-of-verb-checks-vc-bred-bros-rule
+>bred bros
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-bright-breeze-rule
+>bright breeze
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-bright-brute-rule
+>bright brute
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-bro-brew-rule
+>bro brew
+{$REJECT}
+\\
 #testcase-moot-table-of-verb-checks-vc-bussed-back-rule
 >bussed back
 {$REJECT}
 \\
+#testcase-moot-table-of-verb-checks-vc-bye-bub-rule
+>bye bub
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-chic-shaming-rule
+>chic shaming
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-clique-claiming-rule
+>clique claiming
+{$REJECT}
+\\
 #testcase-moot-table-of-verb-checks-vc-co-coon-rule
 >co coon
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-crow-crew-rule
+>crow crew
 {$REJECT}
 \\
 #testcase-moot-table-of-verb-checks-vc-crow-croon-rule
@@ -2804,80 +3043,60 @@ by one point
 >crust crack
 {$REJECT}
 \\
-#testcase-moot-table-of-verb-checks-vc-done-dorm-rule
->done dorm
-{$REJECT}
-\\
-#testcase-moot-table-of-verb-checks-vc-fun-form-rule
->fun form
-{$REJECT}
-\\
-#testcase-moot-table-of-verb-checks-vc-gee-junk-rule
->gee junk
-{$REJECT}
-\\
-#testcase-moot-table-of-verb-checks-vc-go-goon-rule
->go goon
-{$REJECT}
-\\
-#testcase-moot-table-of-verb-checks-vc-grow-grudge-rule
->grow grudge
-{$REJECT}
-\\
-#testcase-moot-table-of-verb-checks-vc-in-bane-rule
->dane d
-{$REJECT}
-\\
-#testcase-moot-table-of-verb-checks-vc-mo-moon-rule
->mo moon
-{$REJECT}
-\\
-#testcase-moot-table-of-verb-checks-vc-pear-peach-rule
->pear peach
-{$REJECT}
-\\
-#testcase-moot-table-of-verb-checks-vc-plain-plea-rule
->plain plea
-{$REJECT}
-\\
-#testcase-moot-table-of-verb-checks-vc-reap-rune-rule
->reap rune
-{$REJECT}
-\\
-#testcase-moot-table-of-verb-checks-vc-see-sunk-rule
->see sunk
-{$REJECT}
-\\
-#testcase-moot-table-of-verb-checks-vc-seep-soon-rule
->seep soon
-{$REJECT}
-\\
-#testcase-moot-table-of-verb-checks-vc-so-soon-rule
->so soon
-{$REJECT}
-\\
-#testcase-moot-table-of-verb-checks-vc-un-arm-rule
->un arm
-{$REJECT}
-\\
-#testcase-moot-table-of-verb-checks-vc-whee-woot-rule
->whee woot
-{$REJECT}
-\\
-#testcase-moot-table-of-verb-checks-vc-bro-brew-rule
->bro brew
-{$REJECT}
-\\
-#testcase-moot-table-of-verb-checks-vc-crow-crew-rule
->crow crew
+#testcase-moot-table-of-verb-checks-vc-despite-dispute-rule
+>despite dispute
 {$REJECT}
 \\
 #testcase-moot-table-of-verb-checks-vc-docking-diffed-rule
 >docking diffed
 {$REJECT}
 \\
+#testcase-moot-table-of-verb-checks-vc-done-dorm-rule
+>done dorm
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-dumb-doubt-rule
+>dumb doubt
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-excite-exhale-rule
+>excite exhale
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-fed-foes-rule
+>fed foes
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-flain-flat-rule
+>flain flat
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-flight-flail-rule
+>flight flail
+{$REJECT}
+\\
 #testcase-moot-table-of-verb-checks-vc-flow-flue-rule
 >flow flue
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-four-foals-rule
+>four foals
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-fret-free-rule
+>fret free
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-fun-form-rule
+>fun form
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-gad-gunk-rule
+>gad gunk
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-gee-junk-rule
+>gee junk
 {$REJECT}
 \\
 #testcase-moot-table-of-verb-checks-vc-glow-glue-rule
@@ -2888,6 +3107,10 @@ by one point
 >go goo
 {$REJECT}
 \\
+#testcase-moot-table-of-verb-checks-vc-go-goon-rule
+>go goon
+{$REJECT}
+\\
 #testcase-moot-table-of-verb-checks-vc-grokking-grift-rule
 >grokking grift
 {$REJECT}
@@ -2896,28 +3119,144 @@ by one point
 >grotty grail
 {$REJECT}
 \\
+#testcase-moot-table-of-verb-checks-vc-grow-grudge-rule
+>grow grudge
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-hey-hope-rule
+>hey hope
+{$REJECT}
+\\
 #testcase-moot-table-of-verb-checks-vc-ho-who-rule
 >ho who
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-in-bane-rule
+>dane d
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-k-cope-rule
+>k cope
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-kite-coot-rule
+>kite coot
 {$REJECT}
 \\
 #testcase-moot-table-of-verb-checks-vc-knotty-nail-rule
 >knotty nail
 {$REJECT}
 \\
+#testcase-moot-table-of-verb-checks-vc-lore-lols-rule
+>lore lols
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-might-mail-rule
+>might mail
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-mo-moon-rule
+>mo moon
+{$REJECT}
+\\
 #testcase-moot-table-of-verb-checks-vc-mocking-miffed-rule
 >mocking miffed
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-mold-mend-rule
+>mold mend
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-more-moles-rule
+>more moles
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-night-newt-rule
+>night newt
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-pear-peach-rule
+>pear peach
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-piss-poor-rule
+>piss poor
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-plain-plea-rule
+>plain plea
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-plight-please-rule
+>plight please
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-plus-plaque-rule
+>plus plaque
 {$REJECT}
 \\
 #testcase-moot-table-of-verb-checks-vc-potty-pail-rule
 >potty pail
 {$REJECT}
 \\
+#testcase-moot-table-of-verb-checks-vc-rad-roast-rule
+>rad roast
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-reap-rune-rule
+>reap rune
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-right-rail-rule
+>right rail
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-right-root-rule
+>right root
+{$REJECT}
+\\
 #testcase-moot-table-of-verb-checks-vc-rocking-rift-rule
 >rocking rift
 {$REJECT}
 \\
+#testcase-moot-table-of-verb-checks-vc-sad-sunk-rule
+>sad sunk
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-said-sos-rule
+>said sos
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-see-sunk-rule
+>see sunk
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-seep-soon-rule
+>seep soon
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-set-see-rule
+>set see
+{$REJECT}
+\\
 #testcase-moot-table-of-verb-checks-vc-shocking-shift-rule
 >shocking shift
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-shore-shoals-rule
+>shore shoals
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-sight-sail-rule
+>sight sail
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-so-soon-rule
+>so soon
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-splain-splat-rule
+>splain splat
 {$REJECT}
 \\
 #testcase-moot-table-of-verb-checks-vc-stocking-stiffed-rule
@@ -2928,13 +3267,42 @@ by one point
 >stow stew
 {$REJECT}
 \\
+#testcase-moot-table-of-verb-checks-vc-t-lly-rule
+>trite tolly
+{$REJECT}
+\\
 #testcase-moot-table-of-verb-checks-vc-throw-through-rule
 >throw through
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-tight-tease-rule
+>tight tease|tees
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-trolled-trend-rule
+>trolled trend
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-umm-out-rule
+>umm out
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-un-arm-rule
+>un arm
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-whee-woot-rule
+>whee woot
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-wordy-walk-rule
+>wordy walk
 {$REJECT}
 \\
 #testcase-moot-table-of-verb-checks-vc-yo-you-rule
 >yo you
 {$REJECT}
+====alphabetize off
 
 >score
 
