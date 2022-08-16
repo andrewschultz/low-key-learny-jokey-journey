@@ -80,7 +80,7 @@ by one point
 >bare beach
 by one point
 
-^/Bare Beach
+/^Bare Beach
 
 >seep soon
 by one point
@@ -126,22 +126,6 @@ by one point
 
 /^High Hub
 
->shocking shift
-by one point
-
-/^Sore Souls' Gore Goals
-
->shore shoals
-by one point
-
-/^Shore Shoals
-
->four foals
-by one point
-
->more moles
-by one point
-
 >rocking rift
 by one point
 
@@ -169,6 +153,73 @@ by one point
 by one point
 
 >throw through
+by one point
+
+>shocking shift
+by one point
+
+/^Sore Souls' Gore Goals
+
+>shore shoals
+by one point
+
+/^Shore Shoals
+
+>four foals
+by one point
+
+>more moles
+by one point
+
+>stocking stiffed
+by one point
+
+/^Rum Route
+
+>dumb doubt
+by one point
+
+>said sos
+by one point
+
+>umm out
+by one point
+
+>d
+
+/^Nay-Nope-Slay Slope
+
+>hey hope
+by one point
+
+>k cope
+by one point
+
+>grokking grift
+by one point
+
+/^Slight Sleaze
+
+>bright breeze
+by one point
+
+>plight please
+by one point
+
+>right root
+by one point
+
+>s
+
+/^Freak-Framing Seek-Sameing
+
+>bleak blaming
+by one point
+
+>chic shaming
+by one point
+
+>bred bros
 by one point
 
 >docking diffed
@@ -205,57 +256,6 @@ by one point
 by one point
 
 /^High Hub
-
->grokking grift
-by one point
-
-/^Slight Sleaze
-
->bright breeze
-by one point
-
->plight please
-by one point
-
->right root
-by one point
-
->s
-
-/^Freak Framing Seek Saming
-
->bleak blaming
-by one point
-
->chic shaming
-by one point
-
->bred bros
-by one point
-
->stocking stiffed
-by one point
-
-/^Rum Route
-
->dumb doubt
-by one point
-
->said sos
-by one point
-
->umm out
-by one point
-
->d
-
-/^Nay-Nope-Slay Slope
-
->hey hope
-by one point
-
->k cope
-by one point
 
 >mocking miffed
 by one point

@@ -96,9 +96,6 @@ You don't need to catch anything, and denting the rocks would not reveal anythin
 
 >n
 
->gad gunk
-by one point
-
 #ttc-table-of-mad-monk-guesses-brad-brunk
 >brad brunk
 The mad monk needs no name, proper or familiar.
@@ -142,6 +139,9 @@ Alas, a bunch of skunks fail to assault the mad monk.
 #ttc-table-of-mad-monk-guesses-thad-thunk
 >thad thunk
 The mad monk needs no name, proper or familiar.
+
+>gad gunk
+by one point
 
 >bad bunk
 by one point
@@ -613,119 +613,6 @@ No, pock marks wouldn't make the stalk look better.
 >sigh sub
 You sigh at what you did down below, wondering if you should go back.
 
->shocking shift
-by one point
-
-#ttc-table-of-sore-souls'-gore-goals-guesses-bore-bowls
->bore bowls
-You're trying to bring life here, not drain it.
-
-#ttc-table-of-sore-souls'-gore-goals-guesses-door-doles
->door doles
-No, this place doesn't need more doors.
-
-#ttc-table-of-sore-souls'-gore-goals-guesses-poor-poles
->poor poles
-Those would hardly liven the place up.
-
-#ttc-table-of-sore-souls'-gore-goals-guesses-roar-rolls-roles
->roar rolls roles
-Perhaps the roaring would be lively. Perhaps it wouldn't. But it might not add anything.
-
-#ttc-table-of-sore-souls'-gore-goals-guesses-score-skols
->score skols
-Perhaps Vikings will discover this land and conquer it some day. But why speed things up?
-
-#ttc-table-of-sore-souls'-gore-goals-guesses-store-stoles
->store stoles
-Bringing animal pelts into a place coming to life doesn't quite work.
-
-#ttc-table-of-sore-souls'-gore-goals-guesses-whore-holes
->whore holes
-Now, now, this isn't that sort of game.
-
->shore shoals
-by one point
-
->night newt
-by one point
-
->kite coot
-by one point
-
->lore lols
-by one point
-
->four foals
-by one point
-
-#+ttc-table-of-sore-souls'-gore-goals-guesses-store-stoles
->store stoles
-Bringing animal pelts into a place coming to life doesn't quite work.
-
->more moles
-by one point
-
-#ttc-table-of-red-rose-guesses-bed-bows
->bed bows
-You need no fancy place to sleep.
-
-#ttc-table-of-red-rose-guesses-bled-blows
->bled blows
-You do not need to incite violence.
-
-#ttc-table-of-red-rose-guesses-cred-crows
->cred crows
-You don't need to brag about street cred, real or imagined.
-
-#ttc-table-of-red-rose-guesses-dead-does-dohs
->dead does dohs
-You aren't here to kill animals or utter a Simpsonesque epithet.
-
-#ttc-table-of-red-rose-guesses-ed-ohs-os
->ed ohs os
-No larger-than-life football coach with a thick Cajun accent appears. He is probably out driving that Hummer he bought in that one commercial.
-
-#ttc-table-of-red-rose-guesses-fled-flows
->fled flows
-Nobody and nothing flees at your proclamation.
-
-#ttc-table-of-red-rose-guesses-fred-froze
->fred froze
-A sad, succinct tale, indeed.
-
-#ttc-table-of-red-rose-guesses-head-hos-hoes-hose
->head hos hoes hose
-You have no need to disguise your face with hose.
-
-#ttc-table-of-red-rose-guesses-jed-joes
->jed joes
-No "charmingly-named" rustic diner appears.
-
-#ttc-table-of-red-rose-guesses-led-lead-lows
->led lead lows
-You have no need to go low or be laid low.
-
-#ttc-table-of-red-rose-guesses-ned-knows
->ned knows
-There is nobody named Ned around.
-
-#ttc-table-of-red-rose-guesses-shed-shows
->shed shows
-There are no sheds that need showing.
-
-#ttc-table-of-red-rose-guesses-sled-slows
->sled slows
-There are no sleds that need slowing.
-
-#ttc-table-of-red-rose-guesses-ted-tows-toes
->ted tows toes
-You recall an add for a towing service.
-
-#ttc-table-of-red-rose-guesses-wed-woes
->wed woes
-A sad, succinct tale, indeed.
-
 >rocking rift
 by one point
 
@@ -868,90 +755,179 @@ You fail to drag that sort of noise from the lute.
 >white woot
 While it's okay to be white, it's not okay to be all IT'S OKAY TO BE WHITE.
 
->docking diffed
+>shocking shift
 by one point
 
-#ttc-table-of-mad-most-cad-coast-guesses-gad-ghost
->gad ghost
-You fail to scare anyone with this.
+#ttc-table-of-sore-souls'-gore-goals-guesses-bore-bowls
+>bore bowls
+You're trying to bring life here, not drain it.
 
-#ttc-table-of-mad-most-cad-coast-guesses-grad-grossed
->grad grossed
-You think of the most sophisticated disgusting joke you've ever heard.
+#ttc-table-of-sore-souls'-gore-goals-guesses-door-doles
+>door doles
+No, this place doesn't need more doors.
 
-#ttc-table-of-mad-most-cad-coast-guesses-had-host
->had host
-Once the insults are gone, this will be true.
+#ttc-table-of-sore-souls'-gore-goals-guesses-poor-poles
+>poor poles
+Those would hardly liven the place up.
 
-#ttc-table-of-mad-most-cad-coast-guesses-pad-post
->pad post
-A post would offer scant protection against insults.
+#ttc-table-of-sore-souls'-gore-goals-guesses-roar-rolls-roles
+>roar rolls roles
+Perhaps the roaring would be lively. Perhaps it wouldn't. But it might not add anything.
 
-#ttc-table-of-mad-most-cad-coast-guesses-tad-toast
->tad toast
-There's no such thing as toasting someone with an insult halfway.
+#ttc-table-of-sore-souls'-gore-goals-guesses-score-skols
+>score skols
+Perhaps Vikings will discover this land and conquer it some day. But why speed things up?
 
->bad boast
+#ttc-table-of-sore-souls'-gore-goals-guesses-store-stoles
+>store stoles
+Bringing animal pelts into a place coming to life doesn't quite work.
+
+#ttc-table-of-sore-souls'-gore-goals-guesses-whore-holes
+>whore holes
+Now, now, this isn't that sort of game.
+
+>shore shoals
 by one point
 
->rad roast
+>night newt
 by one point
 
-#+ttc-table-of-mad-most-cad-coast-guesses-gad-ghost
->gad ghost
-You fail to scare anyone with this, not that you need to, any more.
-
->w
-
-#ttc-table-of-trite-trail-guesses-aight-ail
->aight ail
-You resort to the vernacular to express your displeasure with enemies, real or imagined.
-
-#ttc-table-of-trite-trail-guesses-bite-bail-bale
->bite bale
-There is no bale to bite, and if you want to bail, you can just go back east.
-
-#ttc-table-of-trite-trail-guesses-bright-braille
->bright braille
-There is no braille here.
-
-#the two below *could* have test cases if we are ever able to go back ??
-#however, right now, you're kicked back to the hub on killing the whale.
-
-#ttc-table-of-trite-trail-guesses-fight-fail
->fight fail
-Don't despair!
-
-#ttc-table-of-trite-trail-guesses-fright-frail
->fright frail
-Don't despair!
-
-# add this test case if you don't go directly back to the lift ?? help -> have helped
-
-#ttc-table-of-trite-trail-guesses-quite-quail
->quite quail
-A quail would not help much against the tight-tail white whale.
-
-#ttc-table-of-trite-trail-guesses-shite-shale
->shite shale
-Well, that would certainly make the trite trail less trite, in its own way.
-
->sight sail
+>kite coot
 by one point
 
->flight flail
+>lore lols
 by one point
 
->might mail
+>four foals
 by one point
 
->right rail
+#+ttc-table-of-sore-souls'-gore-goals-guesses-store-stoles
+>store stoles
+Bringing animal pelts into a place coming to life doesn't quite work.
+
+>more moles
 by one point
 
->bright brute
+#ttc-table-of-red-rose-guesses-bed-bows
+>bed bows
+You need no fancy place to sleep.
+
+#ttc-table-of-red-rose-guesses-bled-blows
+>bled blows
+You do not need to incite violence.
+
+#ttc-table-of-red-rose-guesses-cred-crows
+>cred crows
+You don't need to brag about street cred, real or imagined.
+
+#ttc-table-of-red-rose-guesses-dead-does-dohs
+>dead does dohs
+You aren't here to kill animals or utter a Simpsonesque epithet.
+
+#ttc-table-of-red-rose-guesses-ed-ohs-os
+>ed ohs os
+No larger-than-life football coach with a thick Cajun accent appears. He is probably out driving that Hummer he bought in that one commercial.
+
+#ttc-table-of-red-rose-guesses-fled-flows
+>fled flows
+Nobody and nothing flees at your proclamation.
+
+#ttc-table-of-red-rose-guesses-fred-froze
+>fred froze
+A sad, succinct tale, indeed.
+
+#ttc-table-of-red-rose-guesses-head-hos-hoes-hose
+>head hos hoes hose
+You have no need to disguise your face with hose.
+
+#ttc-table-of-red-rose-guesses-jed-joes
+>jed joes
+No "charmingly-named" rustic diner appears.
+
+#ttc-table-of-red-rose-guesses-led-lead-lows
+>led lead lows
+You have no need to go low or be laid low.
+
+#ttc-table-of-red-rose-guesses-ned-knows
+>ned knows
+There is nobody named Ned around.
+
+#ttc-table-of-red-rose-guesses-shed-shows
+>shed shows
+There are no sheds that need showing.
+
+#ttc-table-of-red-rose-guesses-sled-slows
+>sled slows
+There are no sleds that need slowing.
+
+#ttc-table-of-red-rose-guesses-ted-tows-toes
+>ted tows toes
+You recall an add for a towing service.
+
+#ttc-table-of-red-rose-guesses-wed-woes
+>wed woes
+A sad, succinct tale, indeed.
+
+>stocking stiffed
 by one point
 
->excite exhale
+#ttc-table-of-rum-route-guesses-bum-bout
+>bum bout
+You should have more focus than to bum 'bout.
+
+#ttc-table-of-rum-route-guesses-drum-drought
+>drum drought
+Thankfully, there's no percussion in the background.
+
+#ttc-table-of-rum-route-guesses-gum-gout
+>gum gout
+But gout is in the toes, not the mouth.
+
+>dumb doubt
+by one point
+
+>said sos
+by one point
+
+>umm out
+by one point
+
+>d
+
+# could be tested once not automatically kicked back to lift ?? did/can do
+
+#ttc-table-of-nay-nope-slay-slope-guesses-day-dope
+>day dope
+Reaffirming every day is dope is pretty positive and all, but you can do better.
+
+#ttc-table-of-nay-nope-slay-slope-guesses-gray-grope
+>gray grope
+The object is not to be consumed by depression but to reduce its influence.
+
+#ttc-table-of-nay-nope-slay-slope-guesses-may-mope
+>may mope
+The object is not to be consumed by depression but to reduce its influence.
+
+#ttc-table-of-nay-nope-slay-slope-guesses-pay-pope
+>pay pope
+Don't surrender to religious corruption!
+
+#ttc-table-of-nay-nope-slay-slope-guesses-ray-rope
+>ray rope
+The right sort of ray? Yes. Rope to pull you back? No.
+
+#ttc-table-of-nay-nope-slay-slope-guesses-say-soap
+>say soap
+I suppose I should put in a cliche about cleansing one's soul here.
+
+#ttc-table-of-nay-nope-slay-slope-guesses-tray-tres-trope
+>tray trope
+You recognize a trope or twelve at play during your journeys.
+
+>hey hope
+by one point
+
+>k cope
 by one point
 
 >grokking grift
@@ -1047,66 +1023,90 @@ by one point
 >bred bros
 by one point
 
->stocking stiffed
+>docking diffed
 by one point
 
-#ttc-table-of-rum-route-guesses-bum-bout
->bum bout
-You should have more focus than to bum 'bout.
+#ttc-table-of-mad-most-cad-coast-guesses-gad-ghost
+>gad ghost
+You fail to scare anyone with this.
 
-#ttc-table-of-rum-route-guesses-drum-drought
->drum drought
-Thankfully, there's no percussion in the background.
+#ttc-table-of-mad-most-cad-coast-guesses-grad-grossed
+>grad grossed
+You think of the most sophisticated disgusting joke you've ever heard.
 
-#ttc-table-of-rum-route-guesses-gum-gout
->gum gout
-But gout is in the toes, not the mouth.
+#ttc-table-of-mad-most-cad-coast-guesses-had-host
+>had host
+Once the insults are gone, this will be true.
 
->dumb doubt
+#ttc-table-of-mad-most-cad-coast-guesses-pad-post
+>pad post
+A post would offer scant protection against insults.
+
+#ttc-table-of-mad-most-cad-coast-guesses-tad-toast
+>tad toast
+There's no such thing as toasting someone with an insult halfway.
+
+>bad boast
 by one point
 
->said sos
+>rad roast
 by one point
 
->umm out
+#+ttc-table-of-mad-most-cad-coast-guesses-gad-ghost
+>gad ghost
+You fail to scare anyone with this, not that you need to, any more.
+
+>w
+
+#ttc-table-of-trite-trail-guesses-aight-ail
+>aight ail
+You resort to the vernacular to express your displeasure with enemies, real or imagined.
+
+#ttc-table-of-trite-trail-guesses-bite-bail-bale
+>bite bale
+There is no bale to bite, and if you want to bail, you can just go back east.
+
+#ttc-table-of-trite-trail-guesses-bright-braille
+>bright braille
+There is no braille here.
+
+#the two below *could* have test cases if we are ever able to go back ??
+#however, right now, you're kicked back to the hub on killing the whale.
+
+#ttc-table-of-trite-trail-guesses-fight-fail
+>fight fail
+Don't despair!
+
+#ttc-table-of-trite-trail-guesses-fright-frail
+>fright frail
+Don't despair!
+
+# add this test case if you don't go directly back to the lift ?? help -> have helped
+
+#ttc-table-of-trite-trail-guesses-quite-quail
+>quite quail
+A quail would not help much against the tight-tail white whale.
+
+#ttc-table-of-trite-trail-guesses-shite-shale
+>shite shale
+Well, that would certainly make the trite trail less trite, in its own way.
+
+>sight sail
 by one point
 
->d
-
-# could be tested once not automatically kicked back to lift ?? did/can do
-
-#ttc-table-of-nay-nope-slay-slope-guesses-day-dope
->day dope
-Reaffirming every day is dope is pretty positive and all, but you can do better.
-
-#ttc-table-of-nay-nope-slay-slope-guesses-gray-grope
->gray grope
-The object is not to be consumed by depression but to reduce its influence.
-
-#ttc-table-of-nay-nope-slay-slope-guesses-may-mope
->may mope
-The object is not to be consumed by depression but to reduce its influence.
-
-#ttc-table-of-nay-nope-slay-slope-guesses-pay-pope
->pay pope
-Don't surrender to religious corruption!
-
-#ttc-table-of-nay-nope-slay-slope-guesses-ray-rope
->ray rope
-The right sort of ray? Yes. Rope to pull you back? No.
-
-#ttc-table-of-nay-nope-slay-slope-guesses-say-soap
->say soap
-I suppose I should put in a cliche about cleansing one's soul here.
-
-#ttc-table-of-nay-nope-slay-slope-guesses-tray-tres-trope
->tray trope
-You recognize a trope or twelve at play during your journeys.
-
->hey hope
+>flight flail
 by one point
 
->k cope
+>might mail
+by one point
+
+>right rail
+by one point
+
+>bright brute
+by one point
+
+>excite exhale
 by one point
 
 >despite dispute
