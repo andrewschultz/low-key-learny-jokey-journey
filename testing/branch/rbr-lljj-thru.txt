@@ -845,6 +845,11 @@ The miss-more-diss remains intact.
 >wiz war
 No lightning bolt spell blasts the door.
 
+@hom
+#testcase-homonym-table-of-verb-checks-pore
+>piss pore
+The Leet Learner shakes back and forth. Something you said sounded right, but maybe you didn't THINK it right.
+
 @!min
 >piss poor
 by one point
@@ -1482,6 +1487,11 @@ The HA HALF button lights up on your Leet Learner.
 >zmo moon
 The HA HALF button lights up on your Leet Learner.
 
+@hom
+#testcase-homonym-table-of-verb-checks-mow
+>mow moon
+The Leet Learner shakes back and forth. Something you said sounded right, but maybe you didn't THINK it right.
+
 >mo moon
 by one point
 }}SCORE++
@@ -1494,6 +1504,11 @@ The HA HALF button lights up on your Leet Learner.
 #testcase-ha-half-table-of-verb-checks-23-soon
 >zso soon
 The HA HALF button lights up on your Leet Learner.
+
+@hom
+#testcase-homonym-table-of-verb-checks-sew-sow
+>sew soon
+The Leet Learner shakes back and forth. Something you said sounded right, but maybe you didn't THINK it right.
 
 >so soon
 by one point
@@ -1628,6 +1643,11 @@ No. The grotty grail was nice to find, but enough of past discoveries. You need 
 >potty pail
 No. The potty pail was a relief to find, but enough of past discoveries. You need to get out of here.
 
+@hom
+#testcase-homonym-table-of-verb-checks-naughty
+>naughty nail
+The Leet Learner shakes back and forth. Something you said sounded right, but maybe you didn't THINK it right.
+
 >knotty nail
 by one point
 }}SCORE++
@@ -1721,6 +1741,11 @@ The HA HALF button lights up on your Leet Learner, but dimly--perhaps this is a 
 #testcase-ha-half-table-of-verb-checks-29-bub
 >zbye bub
 The HA HALF button lights up on your Leet Learner, but dimly--perhaps this is a rhyme you don't strictly need to figure to win.
+
+@hom
+#testcase-homonym-table-of-verb-checks-buy
+>buy bub
+The Leet Learner shakes back and forth. Something you said sounded right, but maybe you didn't THINK it right.
 
 @!min
 >bye bub
@@ -1980,6 +2005,11 @@ by one point
 >go goo
 There's more than enough Go Goo for whoever actually wants it or just fools themselves into thinking they want it.
 
+@hom
+#testcase-homonym-table-of-verb-checks-flu-flew
+>flow flew
+The Leet Learner shakes back and forth. Something you said sounded right, but maybe you didn't THINK it right.
+
 >flow flue
 by one point
 }}SCORE++
@@ -2025,6 +2055,11 @@ by one point
 >crow crew
 {$REJECT}
 
+@hom
+#testcase-homonym-table-of-verb-checks-hoe
+>hoe who
+The Leet Learner shakes back and forth. Something you said sounded right, but maybe you didn't THINK it right.
+
 >ho who
 by one point
 }}SCORE++
@@ -2033,6 +2068,11 @@ by one point
 #testcase-postreject-table-of-verb-checks-vc-ho-who-rule
 >ho who
 You already started to hype up the crowd.
+
+@hom
+#testcase-homonym-table-of-verb-checks-yew
+>yo yew
+The Leet Learner shakes back and forth. Something you said sounded right, but maybe you didn't THINK it right.
 
 >yo you
 by one point
@@ -2055,6 +2095,11 @@ Cows would not make very exciting performers, unlike the Crow Crew.
 #+ttc-table-of-no-new-show-shoe-guesses-oh-oo-ooh
 >oh oo ooh
 That's a bit too generic a sound to make, and you've already made the right ones, anyway.
+
+@hom
+#testcase-homonym-table-of-verb-checks-threw
+>throw threw
+The Leet Learner shakes back and forth. Something you said sounded right, but maybe you didn't THINK it right.
 
 >throw through
 by one point
@@ -2317,6 +2362,11 @@ WRONG
 >undo
 >undo
 
+@hom
+#testcase-homonym-table-of-verb-checks-fore
+>fore foals
+The Leet Learner shakes back and forth. Something you said sounded right, but maybe you didn't THINK it right.
+
 >four foals
 by one point
 }}SCORE++
@@ -2557,6 +2607,11 @@ WRONG
 #testcase-think-table-of-verb-checks-vc-k-cope-rule
 >think
 You can say K COPE once once you're able to cope fully.
+
+@hom
+#testcase-homonym-table-of-verb-checks-hay
+>hay hope
+The Leet Learner shakes back and forth. Something you said sounded right, but maybe you didn't THINK it right.
 
 >hey hope
 by one point
@@ -2803,6 +2858,11 @@ by one point
 by one point
 }}SCORE++
 
+@hom
+#testcase-homonym-table-of-verb-checks-shiek
+>shiek shaming
+The Leet Learner shakes back and forth. Something you said sounded right, but maybe you didn't THINK it right.
+
 >chic shaming
 by one point
 }}SCORE++
@@ -2819,6 +2879,11 @@ WRONG
 #testcase-postreject-table-of-verb-checks-vc-clique-claiming-rule
 >clique claiming
 WRONG
+
+@hom
+#testcase-homonym-table-of-verb-checks-bread
+>bread bros
+The Leet Learner shakes back and forth. Something you said sounded right, but maybe you didn't THINK it right.
 
 >bred bros
 by one point
@@ -3021,6 +3086,11 @@ WRONG
 You can try to grab the RIGHT RAIL once you've got a vessel.
 You can EXCITE EXHALE to go out and fight once you have an ally, fighting equipment, transport and stability.
 
+@hom
+#testcase-homonym-table-of-verb-checks-site
+>site sale
+The Leet Learner shakes back and forth. Something you said sounded right, but maybe you didn't THINK it right.
+
 >sight sail
 by one point
 }}SCORE++
@@ -3029,9 +3099,19 @@ by one point
 by one point
 }}SCORE++
 
+@hom
+#testcase-homonym-table-of-verb-checks-mite
+>mite male
+The Leet Learner shakes back and forth. Something you said sounded right, but maybe you didn't THINK it right.
+
 >might mail
 by one point
 }}SCORE++
+
+@hom
+#testcase-homonym-table-of-verb-checks-write
+>write rale
+The Leet Learner shakes back and forth. Something you said sounded right, but maybe you didn't THINK it right.
 
 >right rail
 by one point
@@ -3363,6 +3443,11 @@ The HA HALF button lights up on your Leet Learner.
 #testcase-ha-half-table-of-verb-checks-80-foes
 >zfed foes
 The HA HALF button lights up on your Leet Learner.
+
+@hom
+#testcase-homonym-table-of-verb-checks-phos
+>fed phos
+The Leet Learner shakes back and forth. Something you said sounded right, but maybe you didn't THINK it right.
 
 >fed foes
 by one point
