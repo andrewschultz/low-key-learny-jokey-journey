@@ -658,6 +658,11 @@ by one point
 by one point
 }}SCORE++
 
+@thi,vc
+# this is to place a pre-reject command
+>bother
+door
+
 @vc
 #testcase-reject-table-of-verb-checks-vc-bad-bunk-rule
 >bad bunk
@@ -670,6 +675,16 @@ You already insulted the mad monk's serenity.
 !by one point
 
 >n
+
+@thi,vc
+{--vc}#testcase-reject-table-of-verb-checks-vc-piss-poor-rule
+>piss poor
+WRONG
+
+@thi
+#testcase-think-table-of-verb-checks-vc-piss-poor-rule
+>think
+You can dismiss the miss-more-diss door with PISS POOR once you can see it again.
 
 @min
 /^No-Nudge Slow Sludge
@@ -747,6 +762,35 @@ The HA HALF button lights up on your Leet Learner.
 >grow grudge
 by one point
 }}SCORE++
+
+@thi,vc
+>e
+\\
+>bussed back
+by one point
+\\
+>crust crack
+by one point
+\\
+>n
+\\
+{--vc}#+testcase-reject-table-of-verb-checks-vc-bare-beach-rule
+>bare beach
+WRONG
+
+@thi
+#testcase-think-table-of-verb-checks-vc-bare-beach-rule
+>think
+You can change the Rare Reach to a BARE BEACH once you have a life-generating item.
+\\
+>undo
+
+@thi,vc
+>undo
+>undo
+>undo
+>undo
+>undo
 
 @vc
 #testcase-reject-table-of-verb-checks-vc-grow-grudge-rule
@@ -828,6 +872,7 @@ by one point
 Perhaps you will need a fun form in a bit. But no entity requires it right now.
 
 @thi
+#testcase-think-table-of-verb-checks-vc-fun-form-rule
 >think
 You can fill out a FUN FORM once you have somewhere to enter.
 
@@ -925,6 +970,7 @@ The HA HALF button lights up on your Leet Learner.
 If there were junk in the tree trunk, you couldn't see it. It's way too tall!
 
 @thi
+#testcase-think-table-of-verb-checks-vc-gee-junk-rule
 >think
 You can say GEE JUNK once more of the trunk is visible.
 
@@ -958,9 +1004,9 @@ by one point
 The FREE FRUIT sputters a bit, almost as if it sticks its tongue about you. Weird as it sounds, you may have to show appreciation for it.
 
 @thi
+#testcase-think-table-of-verb-checks-vc-pear-peach-rule
 >think
 You can make a PEAR PEACH once you're happy enough to receive free fruit.
-
 
 @ha
 #testcase-ha-half-table-of-verb-checks-12-whee
@@ -1049,6 +1095,11 @@ by one point
 @min
 /^Trust Track
 
+@hom
+#ttc-table-of-room-homonyms-trust-track-trussed
+>trussed
+You don't need to restrict things here but open them up.
+
 @mis
 #ttc-table-of-trust-track-guesses-cussed-cuss-cack
 >cussed cack
@@ -1072,6 +1123,7 @@ Under Just Jack's watchful eye, you don't feel like you could precipitate such c
 NOTE: this command will be useful later, but you aren't ready to use it, yet. You can track commands like this by typing THINK, which will also clue you if they now work.
 
 @thi
+#testcase-think-table-of-verb-checks-vc-crust-crack-rule
 >think
 You think about more specific challenges you've encountered and not solved, and what you've done and tried, and what you can do.
 \\
@@ -1132,10 +1184,15 @@ The HA HALF button lights up on your Leet Learner.
 by one point
 }}SCORE++
 
-@vc
-#testcase-reject-table-of-verb-checks-vc-plus-plaque-rule
+@thi,vc
+{--vc}#testcase-reject-table-of-verb-checks-vc-plus-plaque-rule
 >plus plaque
 WRONG
+
+@thi
+#testcase-think-table-of-verb-checks-vc-plus-plaque-rule
+>think
+You can make a heavy PLUS PLAQUE once you have someone to dump it off on right away.
 
 @gt
 #+ttc-table-of-noways-trust-track
@@ -1228,6 +1285,7 @@ Low-Key Learny Jokey Journey is the wrong environment for that, and not just bec
 The dune is a bit too big now. Maybe you could find a way to reduce it, over time.
 
 @thi
+#testcase-think-table-of-verb-checks-vc-reap-rune-rule
 >think
 You can REAP RUNE once you have spent time adventuring.
 
@@ -1360,6 +1418,19 @@ WRONG
 #testcase-reject-table-of-verb-checks-vc-so-soon-rule
 >so soon
 WRONG
+
+@thi
+#testcase-think-table-of-verb-checks-vc-co-coon-rule
+#testcase-think-table-of-verb-checks-vc-crow-croon-rule
+#testcase-think-table-of-verb-checks-vc-go-goon-rule
+#testcase-think-table-of-verb-checks-vc-mo-moon-rule
+#testcase-think-table-of-verb-checks-vc-so-soon-rule
+>think
+You can create a COCOON once you feel less watched.
+You can cause daybreak with CROW CROON once it's close to daybreak.
+You can say GO GOON to dispel an enemy once you have a token of power.
+You can speed up time with SO SOON once the darkness is alleviated.
+You can call for MO MOON once you have something else that needs light.
 
 @ha
 #testcase-ha-half-table-of-verb-checks-20-go
@@ -1528,6 +1599,16 @@ by one point
 @min
 /^High Hub
 
+@thi,vc
+{--vc}#testcase-reject-table-of-verb-checks-vc-mocking-miffed-rule
+>mocking miffed
+WRONG
+
+@thi
+#testcase-think-table-of-verb-checks-vc-mocking-miffed-rule
+>think
+You can search for MOCKING MIFFED once you've solved all the other hub areas.
+
 @ver
 #ttc-table-of-readables-locking-lift
 >read locking lift
@@ -1684,6 +1765,34 @@ by one point
 
 @min
 /^No-New-Show Shoe
+
+@thi
+>bro brew
+WRONG
+\\
+>stow stew
+WRONG
+\\
+>ho who
+WRONG
+\\
+>yo you
+WRONG
+
+@thi
+#testcase-think-table-of-verb-checks-vc-yo-you-rule
+#testcase-think-table-of-verb-checks-vc-ho-who-rule
+#testcase-think-table-of-verb-checks-vc-stow-stew-rule
+#testcase-think-table-of-verb-checks-vc-bro-brew-rule
+#testcase-think-table-of-verb-checks-vc-throw-through-rule
+#testcase-think-table-of-verb-checks-vc-crow-crew-rule
+>think
+You can call for BRO BREW once you have a reliable place to store it.
+You can STOW STEW once you have a reliable place to store it.
+You can call HO WHO once you have a crowd to call to.
+You can call YO YOU once you have a partially hyped-up crowd.
+You can THROW THROUGH the main act once they're here and you have a hyped-up, well-fed crowd in place.
+You can call the CROW CREW as performers once you have food and drink for a crowd.
 
 @mis
 #ttc-table-of-no-new-show-shoe-guesses-blow-blew-blue
@@ -1903,6 +2012,24 @@ That's a bit too generic a sound to make, and you've already made the right ones
 by one point
 }}SCORE++
 
+@thi
+>bright brute
+WRONG
+\\
+>despite dispute
+WRONG
+\\
+>right root
+WRONG
+\\
+#testcase-think-table-of-verb-checks-vc-despite-dispute-rule
+#testcase-think-table-of-verb-checks-vc-right-root-rule
+#testcase-think-table-of-verb-checks-vc-bright-brute-rule
+>think
+You can summon a BRIGHT BRUTE once you need an ally.
+You can reason DESPITE DISPUTE once there's something that makes you depressed.
+You can grow trite trees with the RIGHT ROOT once you've fought back against the slight sleaze.
+
 @mis
 #ttc-table-of-light-lute-guesses-bite-boot
 >bite boot
@@ -2070,6 +2197,17 @@ WRONG
 #testcase-reject-table-of-verb-checks-vc-more-moles-rule
 >more moles
 WRONG
+
+@thi
+#testcase-think-table-of-verb-checks-vc-four-foals-rule
+#testcase-think-table-of-verb-checks-vc-kite-coot-rule
+#testcase-think-table-of-verb-checks-vc-more-moles-rule
+#testcase-think-table-of-verb-checks-vc-night-newt-rule
+>think
+You can summon FOUR FOALS once the area is more hospitable.
+You can summon a KITE COOT once the area is more hospitable.
+You can summon MORE MOLES once the area is more hospitable.
+You can summon a NIGHT NEWT once the area is more hospitable.
 
 >shore shoals
 by one point
@@ -2252,6 +2390,21 @@ The HA HALF button lights up on your Leet Learner.
 >umm zout
 The HA HALF button lights up on your Leet Learner.
 
+@thi
+{--vc}#testcase-reject-table-of-verb-checks-vc-umm-out-rule
+>umm out
+WRONG
+\\
+{--vc}#testcase-reject-table-of-verb-checks-vc-said-sos-rule
+>said sos
+WRONG
+
+@thi
+#testcase-think-table-of-verb-checks-vc-umm-out-rule
+>think
+You can say UMM OUT once you're on a roll arguing.
+You can say SAID SOS once you've got a foothold in an argument.
+
 >dumb doubt
 by one point
 }}SCORE++
@@ -2266,7 +2419,7 @@ by one point
 }}SCORE++
 
 @vc
-#testcase-reject-table-of-verb-checks-vc-said-sos-rule
+#+testcase-reject-table-of-verb-checks-vc-said-sos-rule
 >said sos
 WRONG
 
@@ -2275,7 +2428,7 @@ by one point
 }}SCORE++
 
 @vc
-#testcase-reject-table-of-verb-checks-vc-umm-out-rule
+#+testcase-reject-table-of-verb-checks-vc-umm-out-rule
 >umm out
 WRONG
 
@@ -2324,11 +2477,16 @@ The HA HALF button lights up on your Leet Learner.
 >zhey hope
 The HA HALF button lights up on your Leet Learner.
 
-@vc
+@thi,vc
 # ?? note this should be rejectable if we do not automatically take the lift back
-#testcase-reject-table-of-verb-checks-vc-k-cope-rule
+{--vc}#testcase-reject-table-of-verb-checks-vc-k-cope-rule
 >k cope
 WRONG
+
+@thi
+#testcase-think-table-of-verb-checks-vc-k-cope-rule
+>think
+You can say K COPE once once you're able to cope fully.
 
 >hey hope
 by one point
@@ -2447,6 +2605,16 @@ The HA HALF button lights up on your Leet Learner.
 >zright root
 The HA HALF button lights up on your Leet Learner.
 
+@thi,vc
+{--vc}#testcase-reject-table-of-verb-checks-vc-plight-please-rule
+>plight please
+WRONG
+
+@thi
+#testcase-think-table-of-verb-checks-vc-plight-please-rule
+>think
+You can explain PLIGHT PLEASE once you've started to chip away at the slight sleaze.
+
 @!min
 >tight tees
 by one point
@@ -2475,7 +2643,7 @@ WRONG
 >bright breeze
 WRONG
 \\
-#testcase-reject-table-of-verb-checks-vc-plight-please-rule
+#+testcase-reject-table-of-verb-checks-vc-plight-please-rule
 >plight please
 WRONG
 \\
@@ -2537,6 +2705,20 @@ The HA HALF button lights up on your Leet Learner.
 #testcase-ha-half-table-of-verb-checks-65-bros
 >zbred bros
 The HA HALF button lights up on your Leet Learner.
+
+@thi,vc
+>chic shaming
+WRONG
+\\
+>bred bros
+WRONG
+
+@thi
+#testcase-think-table-of-verb-checks-vc-bred-bros-rule
+#testcase-think-table-of-verb-checks-vc-chic-shaming-rule
+>think
+You can summon BRED BROS once you've managed to dismantle the freak framing. ?? what if not been there yet?
+You can go full-in for CHIC SHAMING once you've re-framed the freak framing.
 
 @!min
 >clique claiming
@@ -2607,8 +2789,9 @@ There's no such thing as toasting someone with an insult halfway.
 >rad roast
 WRONG
 \\
+#testcase-think-table-of-verb-checks-vc-rad-roast-rule
 >think
-WRONG
+You can try a RAD ROAST once you've hit back a bit against the madness.
 
 @ha
 #testcase-ha-half-table-of-verb-checks-66-bad
@@ -2633,8 +2816,9 @@ The HA HALF button lights up on your Leet Learner.
 WRONG
 
 @thi
+#+testcase-think-table-of-verb-checks-vc-rad-roast-rule
 >think
-WRONG
+You can try a RAD ROAST now you've hit back a bit against the madness.
 
 >bad boast
 by one point
@@ -2754,8 +2938,14 @@ The HA HALF button lights up on your Leet Learner.
 >right rail
 WRONG
 \\
->think
+>excite exhale
 WRONG
+\\
+#testcase-think-table-of-verb-checks-vc-right-rail-rule
+#testcase-think-table-of-verb-checks-vc-excite-exhale-rule
+>think
+You can try to grab the RIGHT RAIL once you've got a vessel.
+You can EXCITE EXHALE to go out and fight once you have an ally, fighting equipment, transport and stability.
 
 >sight sail
 by one point
@@ -2899,6 +3089,22 @@ The HA HALF button lights up on your Leet Learner.
 >mold zmend
 The HA HALF button lights up on your Leet Learner.
 
+@thi,vc
+{--vc}#testcase-reject-table-of-verb-checks-vc-mold-mend-rule
+>mold mend
+WRONG
+\\
+{--vc}#testcase-reject-table-of-verb-checks-vc-trolled-trend-rule
+>trolled trend
+WRONG
+
+@thi
+#testcase-think-table-of-verb-checks-vc-mold-mend-rule
+#testcase-think-table-of-verb-checks-vc-trolled-trend-rule
+>think
+You can MOLD MEND once you know what's disturbing, where.
+You can find a TROLLED TREND once the Old End is revealed as something more.
+
 >bold bend
 by one point
 }}SCORE++
@@ -2916,11 +3122,11 @@ by one point
 >bold bend
 WRONG
 \\
-#testcase-reject-table-of-verb-checks-vc-mold-mend-rule
+#+testcase-reject-table-of-verb-checks-vc-mold-mend-rule
 >mold mend
 WRONG
 \\
-#testcase-reject-table-of-verb-checks-vc-trolled-trend-rule
+#+testcase-reject-table-of-verb-checks-vc-trolled-trend-rule
 >trolled trend
 WRONG
 
@@ -3015,12 +3221,27 @@ The HA HALF button lights up on your Leet Learner.
 >zsplain splat
 The HA HALF button lights up on your Leet Learner.
 
-@vc
-# ?? you don't have any way to verify this after, only before
-\\
-#testcase-reject-table-of-verb-checks-vc-fed-foes-rule
+@thi,vc
+{--vc}#testcase-reject-table-of-verb-checks-vc-fed-foes-rule
 >fed foes
 WRONG
+\\
+{--vc}#testcase-reject-table-of-verb-checks-vc-flain-flat-rule
+>flain flat
+WRONG
+\\
+{--vc}#testcase-reject-table-of-verb-checks-vc-splain-splat-rule
+>splain splat
+WRONG
+
+@thi
+#testcase-think-table-of-verb-checks-vc-fed-foes-rule
+#testcase-think-table-of-verb-checks-vc-flain-flat-rule
+#testcase-think-table-of-verb-checks-vc-splain-splat-rule
+>think
+You can make FED FOES once there are hungry foes to feed.
+The vat can be FLAIN FLAT once you have a suitable weapon.
+You can SPLAIN SPLAT once you're free of the vat.
 
 >bane bat
 by one point
@@ -3039,14 +3260,13 @@ by one point
 >bane bat
 WRONG
 \\
-#testcase-reject-table-of-verb-checks-vc-flain-flat-rule
+#+testcase-reject-table-of-verb-checks-vc-flain-flat-rule
 >flain flat
 WRONG
 \\
-#testcase-reject-table-of-verb-checks-vc-splain-splat-rule
+#+testcase-reject-table-of-verb-checks-vc-splain-splat-rule
 >splain splat
 WRONG
-
 
 @mis
 #+ttc-table-of-drain-drat-vain-vat-guesses-chain-chat
@@ -3187,6 +3407,16 @@ WRONG
 
 @min
 /^Threat Three Met Me
+
+@thi,vc
+{--vc}#testcase-reject-table-of-verb-checks-vc-t-lly-rule
+>trite telly
+WRONG
+
+@thi
+#testcase-think-table-of-verb-checks-vc-t-lly-rule
+>think
+You can name the Frightfully Bright Bully once they have an "award" of sorts to write their name on.
 
 >plus plaque
 by one point

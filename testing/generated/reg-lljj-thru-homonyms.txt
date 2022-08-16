@@ -81,6 +81,10 @@ by one point
 >s
 >e
 
+#ttc-table-of-room-homonyms-trust-track-trussed
+>trussed
+You don't need to restrict things here but open them up.
+
 >bussed back
 by one point
 

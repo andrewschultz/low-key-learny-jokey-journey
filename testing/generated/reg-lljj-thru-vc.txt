@@ -375,6 +375,10 @@ by one point
 >sad sunk
 by one point
 
+# this is to place a pre-reject command
+>bother
+door
+
 #testcase-reject-table-of-verb-checks-vc-bad-bunk-rule
 >bad bunk
 You already insulted the mad monk's truthfulness.
@@ -386,6 +390,10 @@ You already insulted the mad monk's serenity.
 !by one point
 
 >n
+
+#testcase-reject-table-of-verb-checks-vc-piss-poor-rule
+>piss poor
+WRONG
 
 >gonear no noon
 
@@ -404,6 +412,26 @@ You should be able to do that, but you lack the necessary implement.
 
 >grow grudge
 by one point
+
+>e
+
+>bussed back
+by one point
+
+>crust crack
+by one point
+
+>n
+
+#+testcase-reject-table-of-verb-checks-vc-bare-beach-rule
+>bare beach
+WRONG
+
+>undo
+>undo
+>undo
+>undo
+>undo
 
 #testcase-reject-table-of-verb-checks-vc-grow-grudge-rule
 >grow grudge
@@ -570,6 +598,10 @@ No. The potty pail was a relief to find, but enough of past discoveries. You nee
 >knotty nail
 by one point
 
+#testcase-reject-table-of-verb-checks-vc-mocking-miffed-rule
+>mocking miffed
+WRONG
+
 >bye bub
 
 >wordy walk
@@ -706,6 +738,9 @@ by one point
 >stocking stiffed
 by one point
 
+#testcase-reject-table-of-verb-checks-vc-umm-out-rule
+#testcase-reject-table-of-verb-checks-vc-said-sos-rule
+
 >dumb doubt
 by one point
 
@@ -716,14 +751,14 @@ WRONG
 >said sos
 by one point
 
-#testcase-reject-table-of-verb-checks-vc-said-sos-rule
+#+testcase-reject-table-of-verb-checks-vc-said-sos-rule
 >said sos
 WRONG
 
 >umm out
 by one point
 
-#testcase-reject-table-of-verb-checks-vc-umm-out-rule
+#+testcase-reject-table-of-verb-checks-vc-umm-out-rule
 >umm out
 WRONG
 
@@ -751,6 +786,10 @@ WRONG
 >grokking grift
 by one point
 
+#testcase-reject-table-of-verb-checks-vc-plight-please-rule
+>plight please
+WRONG
+
 >tight tees
 by one point
 
@@ -771,7 +810,7 @@ WRONG
 >bright breeze
 WRONG
 
-#testcase-reject-table-of-verb-checks-vc-plight-please-rule
+#+testcase-reject-table-of-verb-checks-vc-plight-please-rule
 >plight please
 WRONG
 
@@ -780,6 +819,12 @@ WRONG
 WRONG
 
 >s
+
+>chic shaming
+WRONG
+
+>bred bros
+WRONG
 
 >clique claiming
 by one point
@@ -891,6 +936,14 @@ by one point
 
 /^Old End
 
+#testcase-reject-table-of-verb-checks-vc-mold-mend-rule
+>mold mend
+WRONG
+
+#testcase-reject-table-of-verb-checks-vc-trolled-trend-rule
+>trolled trend
+WRONG
+
 >bold bend
 by one point
 
@@ -904,20 +957,26 @@ by one point
 >bold bend
 WRONG
 
-#testcase-reject-table-of-verb-checks-vc-mold-mend-rule
+#+testcase-reject-table-of-verb-checks-vc-mold-mend-rule
 >mold mend
 WRONG
 
-#testcase-reject-table-of-verb-checks-vc-trolled-trend-rule
+#+testcase-reject-table-of-verb-checks-vc-trolled-trend-rule
 >trolled trend
 WRONG
 
 >s
 
-# ?? you don't have any way to verify this after, only before
-
 #testcase-reject-table-of-verb-checks-vc-fed-foes-rule
 >fed foes
+WRONG
+
+#testcase-reject-table-of-verb-checks-vc-flain-flat-rule
+>flain flat
+WRONG
+
+#testcase-reject-table-of-verb-checks-vc-splain-splat-rule
+>splain splat
 WRONG
 
 >bane bat
@@ -933,11 +992,11 @@ by one point
 >bane bat
 WRONG
 
-#testcase-reject-table-of-verb-checks-vc-flain-flat-rule
+#+testcase-reject-table-of-verb-checks-vc-flain-flat-rule
 >flain flat
 WRONG
 
-#testcase-reject-table-of-verb-checks-vc-splain-splat-rule
+#+testcase-reject-table-of-verb-checks-vc-splain-splat-rule
 >splain splat
 WRONG
 
@@ -965,6 +1024,10 @@ WRONG
 
 #testcase-reject-table-of-verb-checks-vc-yet-ye-rule
 >yet ye
+WRONG
+
+#testcase-reject-table-of-verb-checks-vc-t-lly-rule
+>trite telly
 WRONG
 
 >plus plaque
