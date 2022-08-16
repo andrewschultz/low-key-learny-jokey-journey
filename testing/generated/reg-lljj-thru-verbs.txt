@@ -33,7 +33,7 @@ by one point
 #ttc-table-of-color-clues--cheat-churner-
 #ttc-table-of-color-clues--meet-mourner-
 #ttc-table-of-color-clues-conceit-concerner
-#ttc-table-of-readables-leet-learner
+#testcase-common-readables-table-of-readables-leet-learner
 >read leet learner
 Some text matches up with where the needle nose might spin. It's a bit of a stretch, in some cases, but you figure the more help the better.
 CONCEIT CONCERNER is written to the left.

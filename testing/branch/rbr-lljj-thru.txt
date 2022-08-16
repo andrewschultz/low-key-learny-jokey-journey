@@ -552,7 +552,7 @@ You don't need to catch anything, and denting the rocks would not reveal anythin
 #ttc-table-of-color-clues--cheat-churner-
 #ttc-table-of-color-clues--meet-mourner-
 #ttc-table-of-color-clues-conceit-concerner
-#ttc-table-of-readables-leet-learner
+#testcase-common-readables-table-of-readables-leet-learner
 >read leet learner
 Some text matches up with where the needle nose might spin. It's a bit of a stretch, in some cases, but you figure the more help the better.
 CONCEIT CONCERNER is written to the left.
@@ -645,8 +645,9 @@ by one point
 }}CURMINBONUS++
 
 @vc
+#testcase-reject-table-of-verb-checks-vc-gad-gunk-rule
 >gad gunk
-WRONG
+You already insulted the mad monk's cleanliness.
 !by one point
 
 >bad bunk
@@ -656,6 +657,17 @@ by one point
 >sad sunk
 by one point
 }}SCORE++
+
+@vc
+#testcase-reject-table-of-verb-checks-vc-bad-bunk-rule
+>bad bunk
+You already insulted the mad monk's truthfulness.
+!by one point
+\\
+#testcase-reject-table-of-verb-checks-vc-sad-sunk-rule
+>sad sunk
+You already insulted the mad monk's serenity.
+!by one point
 
 >n
 
@@ -810,13 +822,14 @@ by one point
 }}CURMIN++
 }}CURMINBONUS++
 
-@thi
-#testcase-reject-table-of-verb-checks-vc-fun-form-rule
+@thi,vc
+{--vc}#testcase-reject-table-of-verb-checks-vc-fun-form-rule
 >fun form
-WRONG
-\\
+Perhaps you will need a fun form in a bit. But no entity requires it right now.
+
+@thi
 >think
-WRONG
+You can fill out a FUN FORM once you have somewhere to enter.
 
 @ha
 #ttc-table-of-verb-checks-8-done
@@ -906,13 +919,14 @@ The HA HALF button lights up on your Leet Learner.
 >see zsunk
 The HA HALF button lights up on your Leet Learner.
 
-@thi
-#testcase-reject-table-of-verb-checks-vc-gee-junk-rule
+@thi,vc
+{--vc}#testcase-reject-table-of-verb-checks-vc-gee-junk-rule
 >gee junk
-WRONG
-\\
+If there were junk in the tree trunk, you couldn't see it. It's way too tall!
+
+@thi
 >think
-WRONG
+You can say GEE JUNK once more of the trunk is visible.
 
 >see sunk
 by one point
@@ -936,13 +950,17 @@ The HA HALF button lights up on your Leet Learner.
 by one point
 }}SCORE++
 
-@thi
+@vc
 #testcase-reject-table-of-verb-checks-vc-pear-peach-rule
+
+@thi,vc
 >pear peach
-WRONG
-\\
+The FREE FRUIT sputters a bit, almost as if it sticks its tongue about you. Weird as it sounds, you may have to show appreciation for it.
+
+@thi
 >think
-WRONG
+You can make a PEAR PEACH once you're happy enough to receive free fruit.
+
 
 @ha
 #ttc-table-of-verb-checks-12-whee
@@ -1044,13 +1062,16 @@ Jack would still be bugging you in that state.
 >rust rack
 That would be a useless item.
 
-@thi
+@vc
 #testcase-reject-table-of-verb-checks-vc-crust-crack-rule
+
+@thi,vc
 >crust crack
 Under Just Jack's watchful eye, you don't feel like you could precipitate such changes. How to get rid of him?
 \\
 NOTE: this command will be useful later, but you aren't ready to use it, yet. You can track commands like this by typing THINK, which will also clue you if they now work.
-\\
+
+@thi
 >think
 You think about more specific challenges you've encountered and not solved, and what you've done and tried, and what you can do.
 \\
@@ -1110,6 +1131,11 @@ The HA HALF button lights up on your Leet Learner.
 >crust crack
 by one point
 }}SCORE++
+
+@vc
+#testcase-reject-table-of-verb-checks-vc-plus-plaque-rule
+>plus plaque
+WRONG
 
 @gt
 #+ttc-table-of-noways-trust-track
@@ -1196,13 +1222,14 @@ Alas, nobody odd comes by and dives into the deep dune. Nobody at all.
 >peep poon
 Low-Key Learny Jokey Journey is the wrong environment for that, and not just because it's text-based.
 
-@thi
-#testcase-reject-table-of-verb-checks-vc-reap-rune-rule
+@thi,vc
+{--vc}#testcase-reject-table-of-verb-checks-vc-reap-rune-rule
 >reap rune
-WRONG
-\\
+The dune is a bit too big now. Maybe you could find a way to reduce it, over time.
+
+@thi
 >think
-WRONG
+You can REAP RUNE once you have spent time adventuring.
 
 @ha
 #ttc-table-of-verb-checks-17-seep
@@ -1618,8 +1645,18 @@ No, pock marks wouldn't make the stalk look better.
 }}CURMIN++
 }}CURMINBONUS++
 
+@vc
+#testcase-reject-table-of-verb-checks-vc-wordy-walk-rule
+>wordy walk
+WRONG
+
 @!min
 >u
+
+@vc
+#testcase-reject-table-of-verb-checks-vc-bye-bub-rule
+>bye bub
+WRONG
 
 @mis
 #+ttc-table-of-high-hub-guesses-sigh-sub
@@ -2011,9 +2048,31 @@ The HA HALF button lights up on your Leet Learner, but dimly--perhaps this is a 
 >kite zcoot
 The HA HALF button lights up on your Leet Learner, but dimly--perhaps this is a rhyme you don't strictly need to figure to win.
 
+@vc
+#testcase-reject-table-of-verb-checks-vc-night-newt-rule
+>night newt
+WRONG
+\\
+#testcase-reject-table-of-verb-checks-vc-kite-coot-rule
+>kite coot
+WRONG
+\\
+#testcase-reject-table-of-verb-checks-vc-four-foals-rule
+>four foals
+WRONG
+\\
+#testcase-reject-table-of-verb-checks-vc-more-moles-rule
+>more moles
+WRONG
+
 >shore shoals
 by one point
 }}SCORE++
+
+@vc
+#testcase-reject-table-of-verb-checks-vc-shore-shoals-rule
+>shore shoals
+WRONG
 
 @min
 /^Shore Shoals
@@ -2036,6 +2095,19 @@ by one point
 }}SCORE++
 }}CURMIN++
 }}CURMINBONUS++
+
+@vc
+#+testcase-reject-table-of-verb-checks-vc-night-newt-rule
+>night newt
+WRONG
+\\
+#+testcase-reject-table-of-verb-checks-vc-kite-coot-rule
+>kite coot
+WRONG
+\\
+#testcase-reject-table-of-verb-checks-vc-lore-lols-rule
+>lore lols
+WRONG
 
 >four foals
 by one point
@@ -2178,13 +2250,28 @@ The HA HALF button lights up on your Leet Learner.
 by one point
 }}SCORE++
 
+@vc
+#testcase-reject-table-of-verb-checks-vc-dumb-doubt-rule
+>dumb doubt
+WRONG
+
 >said sos
 by one point
 }}SCORE++
 
+@vc
+#testcase-reject-table-of-verb-checks-vc-said-sos-rule
+>said sos
+WRONG
+
 >umm out
 by one point
 }}SCORE++
+
+@vc
+#testcase-reject-table-of-verb-checks-vc-umm-out-rule
+>umm out
+WRONG
 
 >d
 
@@ -2231,9 +2318,20 @@ The HA HALF button lights up on your Leet Learner.
 >zhey hope
 The HA HALF button lights up on your Leet Learner.
 
+@vc
+# ?? note this should be rejectable if we do not automatically take the lift back
+#testcase-reject-table-of-verb-checks-vc-k-cope-rule
+>k cope
+WRONG
+
 >hey hope
 by one point
 }}SCORE++
+
+@vc
+#testcase-reject-table-of-verb-checks-vc-hey-hope-rule
+>hey hope
+WRONG
 
 @ha
 #ttc-table-of-verb-checks-57-cope
@@ -2362,6 +2460,23 @@ by one point
 by one point
 }}SCORE++
 
+@vc
+#testcase-reject-table-of-verb-checks-vc-tight-tease-rule
+>tight tees
+WRONG
+\\
+#testcase-reject-table-of-verb-checks-vc-bright-breeze-rule
+>bright breeze
+WRONG
+\\
+#testcase-reject-table-of-verb-checks-vc-plight-please-rule
+>plight please
+WRONG
+\\
+#testcase-reject-table-of-verb-checks-vc-right-root-rule
+>right root
+WRONG
+
 >s
 
 @min
@@ -2432,6 +2547,19 @@ by one point
 by one point
 }}SCORE++
 
+@vc
+#testcase-reject-table-of-verb-checks-vc-bleak-blaming-rule
+>bleak blaming
+WRONG
+\\
+#testcase-reject-table-of-verb-checks-vc-chic-shaming-rule
+>chic shaming
+WRONG
+\\
+#testcase-reject-table-of-verb-checks-vc-clique-claiming-rule
+>clique claiming
+WRONG
+
 >bred bros
 by one point
 }}SCORE++
@@ -2493,6 +2621,15 @@ The HA HALF button lights up on your Leet Learner.
 >zrad roast
 The HA HALF button lights up on your Leet Learner.
 
+@thi,vc
+{--vc}#testcase-reject-table-of-verb-checks-vc-rad-roast-rule
+>rad roast
+WRONG
+
+@thi
+>think
+WRONG
+
 >bad boast
 by one point
 }}SCORE++
@@ -2504,6 +2641,15 @@ by one point
 >rad roast
 by one point
 }}SCORE++
+
+@vc
+#testcase-reject-table-of-verb-checks-vc-bad-boast-rule
+>bad boast
+WRONG
+\\
+#+testcase-reject-table-of-verb-checks-vc-rad-roast-rule
+>rad roast
+WRONG
 
 @mis
 #+ttc-table-of-mad-most-cad-coast-guesses-gad-ghost
@@ -2625,6 +2771,27 @@ by one point
 by one point
 }}SCORE++
 
+@vc
+#testcase-reject-table-of-verb-checks-vc-bright-brute-rule
+>bright brute
+WRONG
+\\
+#testcase-reject-table-of-verb-checks-vc-flight-flail-rule
+>flight flail
+WRONG
+\\
+#testcase-reject-table-of-verb-checks-vc-might-mail-rule
+>might mail
+WRONG
+\\
+#testcase-reject-table-of-verb-checks-vc-right-rail-rule
+>right rail
+{$REJECT}
+\\
+#testcase-reject-table-of-verb-checks-vc-sight-sail-rule
+>sight sail
+{$REJECT}
+
 >excite exhale
 by one point
 }}SCORE++
@@ -2670,6 +2837,13 @@ The HA HALF button lights up on your Leet Learner.
 #ttc-table-of-verb-checks-37-miffed
 >zmocking miffed
 The HA HALF button lights up on your Leet Learner.
+
+@vc
+# now let's take care of all the unavailable locking lift settings
+\\
+#testcase-reject-table-of-verb-checks-vc-shocking-shift-rule
+>shocking shift
+WRONG
 
 >mocking miffed
 by one point
@@ -2730,6 +2904,19 @@ by one point
 >mold mend
 by one point
 }}SCORE++
+
+@vc
+#testcase-reject-table-of-verb-checks-vc-bold-bend-rule
+>bold bend
+WRONG
+\\
+#testcase-reject-table-of-verb-checks-vc-mold-mend-rule
+>mold mend
+WRONG
+\\
+#testcase-reject-table-of-verb-checks-vc-trolled-trend-rule
+>trolled trend
+WRONG
 
 >s
 
@@ -2822,6 +3009,13 @@ The HA HALF button lights up on your Leet Learner.
 >zsplain splat
 The HA HALF button lights up on your Leet Learner.
 
+@vc
+# ?? you don't have any way to verify this after, only before
+\\
+#testcase-reject-table-of-verb-checks-vc-fed-foes-rule
+>fed foes
+WRONG
+
 >bane bat
 by one point
 }}SCORE++
@@ -2833,6 +3027,20 @@ by one point
 >splain splat
 by one point
 }}SCORE++
+
+@vc
+#testcase-reject-table-of-verb-checks-vc-bane-bat-rule
+>bane bat
+WRONG
+\\
+#testcase-reject-table-of-verb-checks-vc-flain-flat-rule
+>flain flat
+WRONG
+\\
+#testcase-reject-table-of-verb-checks-vc-splain-splat-rule
+>splain splat
+WRONG
+
 
 @mis
 #+ttc-table-of-drain-drat-vain-vat-guesses-chain-chat
@@ -2958,12 +3166,30 @@ by one point
 by one point
 }}SCORE++
 
+@vc
+#testcase-reject-table-of-verb-checks-vc-set-see-rule
+>set see
+WRONG
+\\
+#testcase-reject-table-of-verb-checks-vc-fret-free-rule
+>fret free
+WRONG
+\\
+#testcase-reject-table-of-verb-checks-vc-yet-ye-rule
+>yet ye
+WRONG
+
 @min
 /^Threat Three Met Me
 
 >plus plaque
 by one point
 }}SCORE++
+
+@vc
+#+testcase-reject-table-of-verb-checks-vc-plus-plaque-rule
+>plus plaque
+WRONG
 
 @vc
 ====alphabetize on
@@ -3297,6 +3523,10 @@ by one point
 \\
 #testcase-moot-table-of-verb-checks-vc-wordy-walk-rule
 >wordy walk
+{$REJECT}
+\\
+#testcase-moot-table-of-verb-checks-vc-yet-ye-rule
+>yet ye
 {$REJECT}
 \\
 #testcase-moot-table-of-verb-checks-vc-yo-you-rule

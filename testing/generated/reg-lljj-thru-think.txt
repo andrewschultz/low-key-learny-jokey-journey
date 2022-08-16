@@ -43,12 +43,11 @@ You hear a whooshing as a door swings in from nowhere. It doesn't seem to lead a
 >piss poor
 by one point
 
-#testcase-reject-table-of-verb-checks-vc-fun-form-rule
 >fun form
-WRONG
+Perhaps you will need a fun form in a bit. But no entity requires it right now.
 
 >think
-WRONG
+You can fill out a FUN FORM once you have somewhere to enter.
 
 >done dorm
 by one point
@@ -58,12 +57,11 @@ by one point
 
 >n
 
-#testcase-reject-table-of-verb-checks-vc-gee-junk-rule
 >gee junk
-WRONG
+If there were junk in the tree trunk, you couldn't see it. It's way too tall!
 
 >think
-WRONG
+You can say GEE JUNK once more of the trunk is visible.
 
 >see sunk
 by one point
@@ -71,12 +69,11 @@ by one point
 >gee junk
 by one point
 
-#testcase-reject-table-of-verb-checks-vc-pear-peach-rule
 >pear peach
-WRONG
+The FREE FRUIT sputters a bit, almost as if it sticks its tongue about you. Weird as it sounds, you may have to show appreciation for it.
 
 >think
-WRONG
+You can make a PEAR PEACH once you're happy enough to receive free fruit.
 
 >whee woot
 by one point
@@ -88,7 +85,6 @@ by one point
 >s
 >e
 
-#testcase-reject-table-of-verb-checks-vc-crust-crack-rule
 >crust crack
 Under Just Jack's watchful eye, you don't feel like you could precipitate such changes. How to get rid of him?
 
@@ -117,12 +113,11 @@ But you don't have leads for any puzzles right now.
 >bare beach
 by one point
 
-#testcase-reject-table-of-verb-checks-vc-reap-rune-rule
 >reap rune
-WRONG
+The dune is a bit too big now. Maybe you could find a way to reduce it, over time.
 
 >think
-WRONG
+You can REAP RUNE once you have spent time adventuring.
 
 >seep soon
 by one point
@@ -274,6 +269,12 @@ by one point
 
 >docking diffed
 by one point
+
+>rad roast
+WRONG
+
+>think
+WRONG
 
 >rad roast
 WRONG
