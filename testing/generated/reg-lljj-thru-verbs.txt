@@ -146,6 +146,11 @@ by one point
 >knotty nail
 by one point
 
+#ttc-table-of-readables-locking-lift
+>read locking lift
+You see zero of six settings filled in:
+You've completed zero areas beyond the High Hub.
+
 >bye bub
 
 >wordy walk
