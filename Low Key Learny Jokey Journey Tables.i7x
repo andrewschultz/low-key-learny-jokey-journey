@@ -1268,7 +1268,7 @@ this is the examine-monk rule:
 			if sco-gad-gunk is false, say " one bonus point";
 			say " to help build muscle memory or practice grit or whatever for tougher opponents.[paragraph break]Take down the monk anyway?";
 			say "[i][bracket]NOTE: this nag will not appear again, and if you want to try good guesses against other enemies after they vanish, I have no problems if you [b]UNDO[r][i].[close bracket][i]";
-			unless the player yes-consents, the rule fails;
+			unless the player dir-consents, the rule fails;
 	say "That's it. The mad monk flees. The path south really is free now.";
 	moot mad monk;
 
@@ -1453,6 +1453,22 @@ Bane Be Sane See	"Cardinal directions don't mean much here, yet. Besides, there'
 Roaring Rocks	"The rocks block every way except [if nnss is visited]back [end if]north."
 Trust Track	"[if sco-crust-crack is false]The track seems to end here. You can really only go back west, unless you figure something out[else]The track now runs west-north but not [noun][end if]."
 Warm Stun Storm	"The passage here is north-south."
+Hun Harm Fun Farm	"The passage here bends east to north."
+NoNoon	"This feels like a sacred valley, with the only way out back south."
+Rare Reach	"The [if sco-bare-beach is true]water[else]darkness[end if] encompasses you every way except back south."
+Jotty Jail	"This being a jail, you can't walk out. You have to find a weak link or something."
+High Hub	"The only way out of the High Hub is telling the lift where you want to go."
+Gore Goals	"Exploring the [if sco-shore-shoals is false]darkness would be unwise[else]animal sanctuary you built would feel invasive[end if]. The only way back is entering the lift."
+New Show Shoe	"There's no way out except through the lift. You're the only person to get the show started, here."
+Mad Most Cad Coast	"[if sco-rad-roast is true]You have the confidence to go west, now, or you[else]You[end if] can return to the High Hub in the lift."
+Trite Trail	"Although the trite trail extends in all directions, you'd get lost everywhere except back east."
+Rum Route	"While you can go back into the lift, you [if sco-umm-out is true]can also go down[else]suspect the route leads somewhere, once you're focused right[end if]."
+nay nope slay slope	"The only way out of these depths is up, unless you count being able to pull yourself from mental depths."
+slight sleaze	"You can only enter the lift or [if sco-right-root is true]go south through the path you forged[else]try to find a way through some of the sleaze[end if]."
+seek sameing	"This is a hideont think-tank. If there's a more secret place, it's beyond you. So, back north it is."
+Old End	"[if sco-mold-mend is true]You can only go south[else if sco-bold-bend is true]The bold bend you created only goes south. You need to build confidence to follow it[else]This feels like the end, but it can't be. Maybe you can puzzle your way through[end if]."
+Vain Vat	"[if sco-flain-flat is false]You're trapped in the vat for now[else if sco-splain-splat is false]You're out of the vat, but you can only see passage back north[else]The Pred Pros, alas, only knocked a hole in the south wall to match the way back north[end if]."
+Threat Three	"You're at the final confrontation. There are no secret passages."
 
 volume guesses
 
