@@ -373,7 +373,7 @@ sco-crust-crack is a truth state that varies.
 
 book Rare Reach
 
-Rare Reach is north of Trust Track. it is in Hoppin' Heart. printed name of Rare Reach is "[if sco-bare-beach is true]Bare Beach[else]Rare Reach[end if]".
+Rare Reach is north of Trust Track. it is in Hoppin' Heart. printed name of Rare Reach is "[if sco-bare-beach is true]Bare Beach[else]Rare Reach[end if]". "You're surrounded by [if sco-bare-beach is true]water[else]desolation[end if] every direction except south.".
 
 guess-table of rare reach is the table of rare reach guesses.
 
@@ -491,7 +491,7 @@ sco-night-newt is a truth state that varies.
 
 book mad most cad coast
 
-Mad Most Cad Coast is a room in Poppin' Part. printed name is "[if sco-rad-roast is true]Had-Host Pad/Post[else]Mad-Most-Cad Coast[end if]". understand "had/host pad poast" and "had post" and "had/host pad/poast" and "host pad" as Mad Most Cad Coast when sco-rad-roast is true.
+Mad Most Cad Coast is a room in Poppin' Part. printed name is "[if sco-rad-roast is true]Had-Host Pad/Post[else]Mad-Most-Cad Coast[end if]". understand "had/host pad poast" and "had post" and "had/host pad/poast" and "host pad" as Mad Most Cad Coast when sco-rad-roast is true. "[if sco-bad-boast is false]The way west seems clear, but you sense hostility. Even looking that way raises your blood pressure. If you take a step, a voice seems to tell you it deserves to be there, but you don't[else if sco-rad-roast is false]The voice, or whatever, to the west, still seems to be pushing back. You need to go on the offensive[else]The way west is clear now[end if]. You can enter the lift to go back to the High Hub, too."
 
 check going west in Mad Most Cad Coast: if sco-rad-roast is false, say "You can't go west with all the madness. Well, not yet." instead;
 
@@ -562,7 +562,7 @@ guess-table of red rose is the table of red rose guesses.
 
 book Slight Sleaze / Grokking Grift
 
-Slight Sleaze is a room in Poppin' Part. "[if sco-right-root is false]The trite trees make things feel nicer here, having replaced the fright-freeze that was here[else]You feel a fright-freeze preventing you from going south[end if].". printed name is "[if sco-right-root is false]Slight Sleaze[else]Trite Trees[end if]".
+Slight Sleaze is a room in Poppin' Part. "[if sco-bright-breeze is false]You feel a fright-freeze preventing you from going south[else if sco-plight-please is false]The fright-freeze is still around, but it's at least being blown about. However, self-serving pity stories whispered in your ear make you wonder if you really deserve to move on while they're clearly stuck here[else if sco-right-root is false]It feels nicer here, but this place could use scenery, something that may need to come from elsewhere[else]The trite trees make things feel nicer here, having replaced the fright-freeze that was here[end if].". printed name is "[if sco-right-root is false]Slight Sleaze[else]Trite Trees[end if]".
 
 guess-table of slight sleaze is the table of slight sleaze guesses.
 
@@ -578,7 +578,7 @@ the trite trees are boring scenery. "Not perfect, but not sleazy, either."
 
 book Freak Framing Seek-Sameing
 
-Freak Framing Seek Sameing is south of Slight Sleaze. It is in Poppin' Part. printed name is "[if sco-chic-shaming is true]Eek! Aiming![else]Freak-Framing Seek-Sameing[end if]".
+Freak Framing Seek Sameing is south of Slight Sleaze. It is in Poppin' Part. printed name is "[if sco-chic-shaming is true]Eek! Aiming![else]Freak-Framing Seek-Sameing[end if]". "This is a control center of some sort. You hear chatter, but there might even be some telepathy. [if sco-bleak-blaming is false]Most of the muttering is about how different people are at fault for things they don't even know about, and you don't know how to buttonhole that[else if sco-bred-bros is true]You've got all your arguments in one place. But you have to admit, you're not the one to perpetuate them! You need someone, or people, who will make it fun for any old crowd to change their attitudes for the better. Someone new from outside[else]Congratulations! You've made this a think tank with things actually worth thinking. The Bred Bros discuss ways to frame basic social decency and tolerance as far more desirable than 'edgy' conformism[end if]."
 
 guess-table of freak framing seek sameing is the table of freak framing seek sameing guesses.
 
@@ -590,7 +590,9 @@ sco-bred-bros is a truth state that varies.
 
 book Rum Route
 
-Rum Route is a room in Poppin' Part.
+Rum Route is a room in Poppin' Part. "[if sco-dumb-doubt is false]You seem assailed by ... well, not quite voices, here, but ideas from whoever-it-is that you deserve to be stuck here. The arguments seem brilliant and ironclad[else if sco-said-sos is false]You've pushed back and instilled doubt, but now you need to brag a bit[else if sco-umm-out is false]You feel like you can win the fight against frustration and helplessness with a snappy reply. The sort that might paralyze you[else]You see the way down now you've dispelled your own doubts. You hope you're ready to face it[sstt][end if]."
+
+to say sstt: if slay slope is visited, say " this time"
 
 guess-table of rum route is the table of rum route guesses.
 
@@ -601,7 +603,7 @@ sco-said-sos is a truth state that varies.
 
 book Nay Nope Slay Slope
 
-Nay Nope Slay Slope is a room in Poppin' Part. printed name is "Nay-Nope-Slay Slope".
+Nay Nope Slay Slope is a room in Poppin' Part. printed name is "Nay-Nope-Slay Slope". "Thoughts of being against negativity swirl around here. Why, if you don't have positivity, you've had it! [if sco-hey-hope is false]They seem directed at you, as if to say you're the least positive person ever[else if sco-k-cope is false]Yet you see they can't totally be true, and you've boosted yourself a bit, and maybe you can boost yourself a bit more[else]But you see through them now[end if]."
 
 guess-table of nay nope slay slope is the table of nay nope slay slope guesses.
 
@@ -610,7 +612,7 @@ sco-hey-hope is a truth state that varies.
 
 book Old End / Mocking Miffed
 
-Old End is a room in Poppin' Part. printed name is "[if sco-bold-bend is true]Bold Bend[else]Old End[end if]". understand ["bold/bend" and] "bold bend" as Old End when sco-bold-bend is true.
+Old End is a room in Poppin' Part. printed name is "[if sco-bold-bend is true]Bold Bend[else]Old End[end if]". understand ["bold/bend" and] "bold bend" as Old End when sco-bold-bend is true. "[if sco-bold-bend is false]This simply looks like a dead end. What else could it be? Well, at least the lift didn't ditch you[else]The passage from the lift bends south to your destiny[end if]."
 
 guess-table of old end is the table of old end guesses.
 
@@ -620,13 +622,15 @@ sco-mold-mend is a truth state that varies.
 
 book Drain Drat Vain Vat
 
-Drain Drat Vain Vat is south of Old End. It is in Poppin' Part. printed name of Vain Vat is "[if sco-splain-splat is false]Drain (Drat!) Vain Vat[else]Main Mat[end if]". understand "main mat" as Drain Drat Vain Vat when sco-splain-splat is true.
+Drain Drat Vain Vat is south of Old End. It is in Poppin' Part. printed name of Vain Vat is "[if sco-splain-splat is false]Drain (Drat!) Vain Vat[else]Main Mat[end if]". understand "main mat" as Drain Drat Vain Vat when sco-splain-splat is true. "[if sco-bane-bat is false]You seem stuck here, and that's that. Maybe if you had something to help bash your way out[else if sco-flain-flat is false]You're still stuck in the vat for now. You're not sure how to get out, but once you are, you suspect your bane bat will do the trick[else if sco-splain-splat is false]The south wall looks shaky, but you don't have the strength to bash it by yourself. Perhaps a taunt would bring enemy henchmen busting through it[else]The way south is open now, thanks to the Pred Pros[end if]."
 
 check going south in Vain Vat:
 	if sco-splain-splat is false, say "You don't have the confidence yet. You need to make a bold statement." instead;
 	if sco-fed-foes is false, say "The Pred Pros aren't going to leave without something to show for their work." instead;
 
-check going in Vain Vat: if sco-flain-flat is false, say "You're still stuck in the vain vat. You need to get out. But it can't be too bad." instead;
+check going in Vain Vat:
+	if sco-flain-flat is false, say "You're still stuck in the vain vat. You need to get out. But it can't be too bad." instead;
+	if Pred Pros are in vain vat, say "Running from the Pred Pros would be unwise. Your rose's protection would wear off." instead;
 
 guess-table of drain drat vain vat is the table of drain drat vain vat guesses.
 
