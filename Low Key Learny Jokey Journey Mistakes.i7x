@@ -75,7 +75,7 @@ mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "poor poles"	--	false	109	--	"Those would hardly liven the place up."
 "roar rolls/roles"	--	false	109	--	"Perhaps the roaring would be lively. Perhaps it wouldn't. But it might not add anything."
 "score skols"	--	false	109	--	"Perhaps Vikings will discover this land and conquer it some day. But why speed things up?"
-"store stoles"	--	false	109	--	"[if shoal-score < 0]Before you have animal pelts, you'll need animals living in peace, and then you'd hate to hurt them[else]Bringing animal pelts into a place coming to life doesn't quite work[end if]."
+"store stoles"	--	false	109	--	"[if shoal-core-score < 0]Before you have animal pelts, you'll need animals living in peace, and then you'd hate to hurt them[else]Bringing animal pelts into a place coming to life doesn't quite work[end if]."
 "whore holes"	--	false	109	--	"Now, now, this isn't that sort of game."
 
 table of high hub guesses

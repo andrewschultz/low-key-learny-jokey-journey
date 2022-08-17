@@ -547,7 +547,7 @@ this is the vr-rocking-rift rule:
 
 a goodrhyme rule (this is the vc-shocking-shift rule):
 	if player is not in High Hub, unavailable;
-	if shoal-score is 2:
+	if shoal-core-score is 2:
 		vcal "You already took care of the shocking shift!";
 		already-done;
 	ready;
@@ -1286,12 +1286,12 @@ to take-lift (rm - a room):
 
 [hub 1. shore]
 
-to decide which number is shoal-score:
+to decide which number is shoal-core-score:
 	decide on boolval of sco-four-foals + boolval of sco-more-moles;
 
 to check-red-rose:
 	say "[line break]";
-	if shoal-score is 2:
+	if shoal-core-score is 2:
 		say "Things are livelier now. Plants come into bloom, etc. Of course, there is a red rose, because there always is one. You take it. Who knows where it may come in handy?";
 		now player has red rose;
 		take-lift high hub;
@@ -1406,14 +1406,14 @@ to say lift-stuff:
 	say "[if sco-grokking-grift is true]GROKKING GRIFT[else]------- ------[end if][if sco-chic-shaming is true] (done)[end if].";
 	say "[if tried-mocking-miffed is true or sco-mocking-miffed is true]MOCKING MIFFED[else]------- ------[end if][if hub-score < 5] (not yet)[end if]."; [ no (done) case since it is the final one ]
 	say "[if sco-rocking-rift is true]ROCKING RIFT[else]------ ----[end if][if sco-throw-through is true] (done)[end if].";
-	say "[if sco-shocking-shift is true]SHOCKING SHIFT[else]-------- -----[end if][if shoal-score is 2] (done)[end if].";
+	say "[if sco-shocking-shift is true]SHOCKING SHIFT[else]-------- -----[end if][if shoal-core-score is 2] (done)[end if].";
 	say "[if sco-stocking-stiffed is true]STOCKING STIFFED[else]-------- -------[end if][if sco-k-cope is true] (done)[end if]";
 
 to decide which number is lift-score:
 	decide on boolval of sco-docking-diffed + boolval of sco-grokking-grift + boolval of sco-mocking-miffed + boolval of sco-rocking-rift + boolval of sco-shocking-shift + boolval of sco-stocking-stiffed;
 
 to decide which number is hub-score: [rocking rift/throw through, docking diffed / excite-exhale, grokking grift/chic shaming, stocking stiffed/k cope, shocking shift/3 gore-goals points ]
-	decide on boolval of sco-throw-through + boolval of sco-excite-exhale + boolval of sco-chic-shaming + boolval of sco-k-cope + boolval of (whether or not shoal-score is 2);
+	decide on boolval of sco-throw-through + boolval of sco-excite-exhale + boolval of sco-chic-shaming + boolval of sco-k-cope + boolval of (whether or not shoal-core-score is 2);
 
 volume homonym rejections
 

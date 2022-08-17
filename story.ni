@@ -147,7 +147,7 @@ to decide which number is variable-scan-length of (mynum - a number):
 		decide on 0;
 	else if mynum is 109: [ sore souls' gore goals ]
 		if sco-lore-lols is false, decide on -44;
-		if shoal-score < 2, decide on 45;
+		if shoal-core-score < 2, decide on 45;
 		decide on 0;
 	else if mynum is 110: [ red rose ]
 		if player is in rum route and sco-said-sos is false, decide on 43;
@@ -514,12 +514,24 @@ sco-excite-exhale is a truth state that varies.
 
 book Sore Souls Gore Goals / Shocking Shift
 
-Sore Souls' Gore Goals is a room in Poppin' Part. "[if sco-shore-shoals is false]Desolation and stuff[else]A bit more lively now[end if].". printed name is "[if sco-shore-shoals is false]Sore Souls['] Gore Goals[else]Shore Shoals[end if]". understand "shore/shoals" and "shore shoals" as Gore Goals when sco-shore-shoals is true.
+Sore Souls' Gore Goals is a room in Poppin' Part. "[if sco-shore-shoals is false]It's very desolate here. No life or community of animals could last for long. Perhaps any spark of nature could change things[else]It's a more comforting place to be. You've [shoal-so-far][end if].". printed name is "[if sco-shore-shoals is false]Sore Souls['] Gore Goals[else]Shore Shoals[end if]". understand "shore/shoals" and "shore shoals" as Gore Goals when sco-shore-shoals is true.
+
+to say shoal-so-far:
+	let shoal-total be shoal-extra-animals + shoal-core-score;
+	if shoal-core-score is 0:
+		say "got work to do to repopulate it, though";
+		continue the action;
+	if shoal-core-score is 0:
+		say "managed to find some exotic animals, but this place needs more regular ones";
+		continue the action;
+	say "[if shoal-core-score is 2]repopulated things nicely[else]got some animals back here, but the land needs more[end if]. ";
+	say "[if shoal-extra-animals is 0]There's also space for some exotics[else if shoal-extra-animals is 1]You could find more exotics, too, if you wanted[else]You've even found extra odd animals for variety[end if]"
+
 
 guess-table of sore souls' gore goals is the table of sore souls' gore goals guesses.
 
-to decide which number is shoal-extra:
-	decide on boolval of sco-lore-lols + boolval of sco-night-newt + boolval of sco-kite-coot;
+to decide which number is shoal-extra-animals:
+	decide on boolval of sco-night-newt + boolval of sco-kite-coot;
 
 section needed points
 
@@ -899,8 +911,8 @@ this is the got-whale rule:
 	completed;
 
 this is the got-shoals rule:
-	if shoal-score is 2:
-		if shoal-extra < 4, llp-remaining;
+	if shoal-core-score is 2:
+		if shoal-extra-animals < 2 or sco-lore-lols is false, llp-remaining;
 		completed;
 	uncompleted;
 
