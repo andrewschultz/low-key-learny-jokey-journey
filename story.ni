@@ -194,6 +194,7 @@ guess-table of Bane Be Sane See is table of Bane Be Sane See guesses.
 the player is in Bane Be Sane See.
 
 sco-plain-plea is a truth state that varies.
+sco-choose-name is a truth state that varies. [ this variable is never explicitly used in the code as of now, but it could be. I have one for each point-scored truth-state. ]
 
 chapter train tree
 
@@ -232,19 +233,20 @@ check opening boring box:
 	say "You open the boring box, and you see a metal gadget that doesn't look very interesting at first. It's labeled as a Leet Learner. You can probably [b]READ[r] it for instructions.";
 	say "[line break][i][bracket][b]NOTE:[r][i] for those who played [b][vvff][i], this is the same device you got back then. So you can skip looking into it, if you remember how it works.[close bracket][line break]";
 	moot boring box;
+	set the pronoun it to leet learner;
 	now player has leet learner instead;
 
 volume rooms (mid)
 
 book No Nudge Slow Sludge
 
-NNSS is north of Roaring Rocks. it is in Hoppin' Heart. printed name is "No-Nudge Slow Sludge". "[if sco-grow-grudge is false]Some [sludge] bubbles almost all around, blocking passage west, south and north[else]The [sludge] to the west, north and south no longer seems intimidating[end if]. There's passage back south[if sco-grow-grudge is true] as well[end if], though you reckon you're done there[if sturdy stalk is in NNSS]. The sturdy stalk leads back up to High Hub, as well[end if]."
+NNSS is north of Roaring Rocks. it is in Hoppin' Heart. printed name is "No-Nudge Slow Sludge". "[if sco-grow-grudge is false]Some [sludge] bubbles almost all around, blocking passage all ways back south[else]The [sludge] to the west, north and east no longer seems intimidating[end if][if sturdy stalk is in NNSS]. The sturdy stalk leads back up to High Hub, as well[end if]."
 
 guess-table of NNSS is table of no nudge slow sludge guesses.
 
 check going in nnss:
 	if sco-grow-grudge is false and noun is not south:
-		say "The [sludge] slows you up, which makes you mad, but not mad enough to trek through it." instead;
+		say "The [sludge] slows you up, which frustrates you. Maybe if it could annoy you the right way..." instead;
 
 chapter no nudge slow sludge (scenery)
 
@@ -328,7 +330,7 @@ book Tree Trunk
 carry out going to TTTT when TTTT is unvisited:
 	say "You were a bit too pleased you got away from the storm, and you couldn't help looking back to make sure it was over. And as you did, you ran into a rather large tree trunk, with a THUNK. Well, maybe with the way things are here, it was meant to happen.";
 
-TTTT is north of One Warm Stun Storm. printed name is "The (Thunk!) Tree Trunk". it is in Hoppin' Heart. "Passage any way except back south is too dense here. The tree trunk you ran into still stands here, [if sco-see-sunk is true]cut down to size[else]and you wish you could cut it down to size as revenge for running into it[end if]."
+TTTT is north of One Warm Stun Storm. printed name is "The (Thunk!) Tree Trunk". it is in Hoppin' Heart. "Passage any way except back south is too dense here. The tree trunk you ran into still stands here, [if sco-pear-peach is true]completely looted[else if free fruit is fungible]with the [fruit] in it[else if sco-see-sunk is true]cut down to size[else]and you wish you could cut it down to size as revenge for running into it[end if]."
 
 guess-table of TTTT is table of Thunk Tree Trunk guesses.
 
@@ -344,7 +346,7 @@ the Thunk Tree Trunk is scenery in TTTT. "[if sco-gee-junk is true]Nothing besid
 
 chapter Free Fruit
 
-Free Fruit is a rhymable. it is scenery. "Whatever the FREE FRUIT is, you get no signs of it. Perhaps the free fruit you need will pop up elsewhere."
+Free Fruit is a rhymable. it is scenery. "It's covered in odd hybrid fruits but offers no clue as to which is best for you.". printed name is "[b]FREE FRUIT[r]".
 
 check taking free fruit: say "Best to figure out what's in it, or what it can produce." instead;
 
@@ -747,13 +749,9 @@ this is the verb-checker rule:
 					if there is a hom-txt-rule entry, now hom-row is global-row-check;
 		if ha-half is true and my-count is 1:
 			now vc-dont-print is true;
-			now already-rhymed-this is false;
 			process the check-rule entry;
-			if the rule failed:
-				now vc-dont-print is false;
-				next;
 			now vc-dont-print is false;
-			if already-rhymed-this is true, break;
+			if the rule failed, next;
 			now local-ha-half is true;
 			if debug-state is true, say "DEBUG: [check-rule entry] tipped off the HA HALF button.";
 			if there is a core entry:

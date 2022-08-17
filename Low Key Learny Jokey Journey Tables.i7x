@@ -132,7 +132,7 @@ this is the vr-choose-name rule:
 		now the player is male;
 	else:
 		now the player is neuter;
-	increment the turn count;
+	now sco-choose-name is true;
 	say "You walk through the door and tumble down to...";
 	move the player to Roaring Rocks;
 	if sco-plain-plea is false, max-down; [no way back to PLAIN PLEA]
@@ -245,7 +245,7 @@ this is the vr-see-sunk rule:
 a goodrhyme rule (this is the vc-gee-junk rule):
 	if player is not in TTTT, unavailable;
 	if sco-gee-junk is true:
-		vcal "You already discovered useful junk in the form of FREE FRUIT.";
+		vcal "You already discovered useful junk in the form of [fruit].";
 		already-done;
 	if sco-see-sunk is false:
 		vcp "If there were junk in the tree trunk, you couldn't see it. It's way too tall!";
@@ -254,7 +254,7 @@ a goodrhyme rule (this is the vc-gee-junk rule):
 
 this is the vr-gee-junk rule:
 	now sco-gee-junk is true;
-	say "My goodness, yes! There is something in the tree trunk! It's marked [b]FREE FRUIT[r].";
+	say "My goodness, yes! There is something in the tree trunk! It's marked [fruit].";
 	now free fruit is in TTTT;
 
 a goodrhyme rule (this is the vc-whee-woot rule):
@@ -266,18 +266,18 @@ a goodrhyme rule (this is the vc-whee-woot rule):
 
 this is the vr-whee-woot rule:
 	now sco-whee-woot is true;
-	say "The FREE FRUIT seems to glow a bit from your praise.";
+	say "The [fruit] seems to glow a bit from your praise.";
 
 a goodrhyme rule (this is the vc-pear-peach rule):
 	if player is not in TTTT, unavailable;
 	if sco-whee-woot is false:
-		vcp "The [b]FREE FRUIT[r] sputters a bit, almost as if it sticks its tongue about you. Weird as it sounds, you may have to show appreciation for it.";
+		vcp "The [fruit] sputters a bit, almost as if it sticks its tongue about you. Weird as it sounds, you may have to show appreciation for it.";
 		not-yet;
 	ready;
 
 this is the vr-pear-peach rule:
 	now sco-pear-peach is true;
-	say "A weird fruit you haven't quite seen before pops into your hand as the FREE FRUIT vanishes. Hooray!";
+	say "A weird fruit you haven't quite seen before pops into your hand as the [fruit] vanishes. Hooray!";
 	moot free fruit;
 	now player has peach pear;
 
@@ -1222,7 +1222,7 @@ this is the vr-plus-plaque rule:
 	now sco-plus-plaque is true;
 	say "You have summoned a plus plaque! The [bully] accepts it before you can offer it. But then they are upset ... there's no name on it! What could their name be?";
 
-a goodrhyme rule (this is the vc-t-lly rule):
+a goodrhyme rule (this is the vc-trite-t-lly rule):
 	if player is not in threat three met me, unavailable;
 	if sco-plus-plaque is false:
 		vcp "That would be naming [the Bully], but you need to do a bit more.";
@@ -1232,7 +1232,7 @@ a goodrhyme rule (this is the vc-t-lly rule):
 		already-done;
 	ready;
 
-this is the vr-t-lly rule:
+this is the vr-trite-t-lly rule:
 	now sco-trite-t-lly is true;
 	say "You figured your enemy's name! Congratulations! You have won!";
 	win-the-game;
