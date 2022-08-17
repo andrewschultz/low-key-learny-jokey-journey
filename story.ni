@@ -48,6 +48,10 @@ max-bonus is 14.
 
 chapter offshoots relying on PPRR common file or PPRR universal file
 
+to decide whether this-game-say-nudge:
+	if player is in nay nope slay slope and the player's command includes "say soap", yes;
+	no;
+
 to decide whether force-partminus of (th - a thing): [whether to force certain leet learner readings]
 	no;
 
@@ -97,20 +101,20 @@ section clue numbers
 
 to decide which number is variable-scan-length of (mynum - a number):
 	if mynum is 100: [show shoe]
-		if sco-yo-you is true, decide on 57; [THROW THROUGH]
-		if sco-stow-stew is true and sco-bro-brew is false, decide on 34; [BRO BREW must be next]
+		if sco-throw-through is true, decide on 0; [ this case should not happen, but let's put it here anyway ]
+		if sco-yo-you is true, decide on 57; [ THROW THROUGH, final step ]
+		if sco-stow-stew is true and sco-bro-brew is false, decide on 34; [ BRO BREW must be next ]
 		if sco-crow-crew is true, decide on 23; [HO WHO or YO YOU]
-		if sco-throw-through is true, decide on 0;
 		decide on 44; [most others are 4-4]
-	else if mynum is 101: [Trust Track]
-		if sco-bussed-back is false, decide on 64; [BUSSED BACK]
-		if sco-crust-crack is false, decide on 55; [CRUST CRACK]
+	else if mynum is 101: [ Trust Track ]
+		if sco-bussed-back is false, decide on 64;
+		if sco-crust-crack is false, decide on 55;
 		decide on 0;
-	else if mynum is 102:
-		if sco-crow-croon is true, decide on 0;
-		if sco-so-soon is true, decide on 45; [CROW CROON]
-		decide on 24; [everything before is 2-4]
-	else if mynum is 103: [high hub/locking lift: this may be reordered ]
+	else if mynum is 102: [ No Noon progression ]
+		if sco-crow-croon is true, decide on 0; [ the area is complete ]
+		if sco-so-soon is true, decide on 45; [ in this case, CROW CROON is the only one left ]
+		decide on 24; [ everything before CROW CROON is 2 letters, then 4 ]
+	else if mynum is 103: [ high hub/locking lift: this may be reordered ]
 		if sco-docking-diffed is false, decide on 76;
 		if sco-grokking-grift is false, decide on 85;
 		if sco-rocking-rift is false, decide on 74;
@@ -141,15 +145,15 @@ to decide which number is variable-scan-length of (mynum - a number):
 		if sco-dumb-doubt is false, decide on 45;
 		if sco-umm-out is false, decide on 33;
 		decide on 0;
-	else if mynum is 109:
+	else if mynum is 109: [ sore souls' gore goals ]
 		if sco-lore-lols is false, decide on -44;
 		if shoal-score < 2, decide on 45;
 		decide on 0;
-	else if mynum is 110: [red rose]
+	else if mynum is 110: [ red rose ]
 		if player is in rum route and sco-said-sos is false, decide on 43;
 		if player is in seek sameing freak framing and sco-bred-bros is false, decide on 44;
 		decide on 0;
-	else if mynum is 111: [light lute]
+	else if mynum is 111: [ light lute ]
 		if player is in slight sleaze and sco-right-root is false, decide on 54;
 		if player is in trite trail and sco-bright-brute is false, decide on 65;
 		if player is in sore souls' gore goals:
@@ -157,7 +161,7 @@ to decide which number is variable-scan-length of (mynum - a number):
 			if sco-night-newt is false, decide on 54;
 		if delight dilute is fungible, decide on 77;
 		decide on 0;
-	else if mynum is 112:
+	else if mynum is 112: [ market marquee ]
 		if sco-yet-ye is false, decide on 32;
 		if sco-set-see is false, decide on 33;
 		if sco-fret-free is false, decide on 44;
@@ -267,6 +271,8 @@ book Hun Harm Fun Farm
 Hun Harm Fun Farm is west of NNSS. it is in Hoppin' Heart. "The way bends north here[if sco-un-arm is false], though you feel trepidation at the thought of doing so. Maybe you'll be attacked[end if]. You can go back east."
 
 check going north in hun harm fun farm when sco-un-arm is false: say "Unfortunately, you hear aggressive voices threatening to attack you. They have weapons, and you don't. You're not sure how to change this." instead;
+
+guess-table of Hun Harm Fun Farm is table of hun harm fun farm guesses.
 
 sco-un-arm is a truth state that varies.
 
@@ -494,11 +500,11 @@ sco-bad-boast is a truth state that varies.
 
 book Trite Trail
 
-Trite Trail is west of Mad Most Cad Coast. It is in Poppin' Part. "A trite trail ends at a large body of water here. The only exit is back east to [cad coast][if white whale is in trite trail]. A tight-tail white whale seems to be taunting you in the distance. Perhaps you can go all Captain Ahab on it[end if]."
+Trite Trail is west of Mad Most Cad Coast. It is in Poppin' Part. "A trite trail ends at a large body of water here. The only exit is back east to [cad coast][if white whale is in trite trail]. A [whale] seems to be taunting you in the distance. Perhaps you can go all Captain Ahab on it[end if]."
 
 guess-table of Trite Trail is table of trite trail guesses.
 
-the tight tale white whale is scenery in Trite Trail.
+the tight tail white whale is scenery in Trite Trail. printed name is "tight-tail white whale".
 
 sco-sight-sail is a truth state that varies.
 sco-might-mail is a truth state that varies.
@@ -581,7 +587,7 @@ sco-said-sos is a truth state that varies.
 
 book Nay Nope Slay Slope
 
-Nay Nope Slay Slope is a room in Poppin' Part.
+Nay Nope Slay Slope is a room in Poppin' Part. printed name is "Nay-Nope-Slay Slope".
 
 guess-table of nay nope slay slope is the table of nay nope slay slope guesses.
 
@@ -628,7 +634,9 @@ guess-table of threat three met me is the table of threat three met me guesses.
 
 chapter market marquee
 
-the market marquee is scenery in Threat Three Met Me. "It seems to offer some clues:[line break][fixed letter spacing][marquee-clues][run paragraph on][variable letter spacing]"
+the market marquee is a rhymable in Threat Three Met Me. "It seems to offer some clues:[line break][fixed letter spacing][marquee-clues][run paragraph on][variable letter spacing]". it is scenery.
+
+guess-table of market marquee is table of market marquee guesses.
 
 to say marquee-clues:
 	say "[if sco-fret-free is true]----[line break][else]GLEE?[end if]";
@@ -747,7 +755,7 @@ this is the verb-checker rule:
 		if hom-row > 0:
 			choose row hom-row in table of verb checks;
 			abide by the hom-txt-rule entry;
-		say "The Leet Learner shakes back and forth. Something you said sounded right, but maybe you didn't THINK it right.";
+		say "The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right.";
 		the rule succeeds;
 
 volume unsorted locations

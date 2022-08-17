@@ -4,6 +4,7 @@ Version 1/220704 of Low Key Learny Jokey Journey Tables by Andrew Schultz begins
 
 [UTILITIES:
 rhyru.py checks to make sure the rhyme-rules have the right print stubs.
+notyet.py checks to make sure every "not yet" has a "think" associated with it
 ]
 
 volume core tables
@@ -163,7 +164,7 @@ this is the vr-boring-box rule:
 a goodrhyme rule (this is the vc-gad-gunk rule):
 	if mad monk is not in location of player, unavailable;
 	if sco-gad-gunk is true:
-		vcal "You already insulted the mad monk that way.";
+		vcal "[alr-ins] cleanliness.";
 		already-done;
 	ready;
 
@@ -174,7 +175,7 @@ this is the vr-gad-gunk rule:
 a goodrhyme rule (this is the vc-bad-bunk rule):
 	if mad monk is not fungible, unavailable;
 	if sco-bad-bunk is true:
-		vcal "You already shamed the mad monk this way!";
+		vcal "[alr-ins] truthfulness.";
 		already-done;
 	ready;
 
@@ -185,7 +186,7 @@ this is the vr-bad-bunk rule:
 a goodrhyme rule (this is the vc-sad-sunk rule):
 	if mad monk is not fungible, unavailable;
 	if sco-sad-sunk is true:
-		vcal "You already shamed the mad monk this way!";
+		vcal "[alr-ins] serenity.";
 		already-done;
 	ready;
 
@@ -322,6 +323,7 @@ this is the vr-bare-beach rule:
 	move deep dune to rare reach;
 	now sco-bare-beach is true;
 	moot pear peach;
+	print-the-loc;
 
 this is the vc-seep-soon rule:
 	if player is not in rare reach or sco-bare-beach is false, unavailable;
@@ -350,6 +352,7 @@ this is the vc-reap-rune rule:
 this is the vr-reap-rune rule:
 	say "What do you know? You reach in, and there the rune is. It is in the shape of the Greek letter Rho.";
 	now player has Rho Rune;
+	now sco-reap-rune is true;
 
 a goodrhyme rule (this is the vc-un-arm rule):
 	if player is not in Hun Harm Fun Farm, unavailable;
@@ -469,7 +472,10 @@ this is the vr-knotty-nail rule:
 	take-lift High Hub;
 
 a goodrhyme rule (this is the vc-piss-poor rule):
-	if miss more diss door is not fungible, unavailable;
+	if miss more diss door is off-stage, unavailable;
+	if miss more diss door is not moot and miss more diss door is not fungible:
+		vcp "You'll need to summon the [diss door], with or without profanity.";
+		not-yet;
 	ready;
 
 this is the vr-piss-poor rule:
@@ -735,7 +741,7 @@ a goodrhyme rule (this is the vc-said-sos rule):
 		vcal "You already gave said-sos!";
 		already-done;
 	if player is not in rum route:
-		vcal "Said-sos could hit the spot elsewhere, but not here.";
+		vcp "Said-sos could hit the spot elsewhere, but not here.";
 		not-yet;
 	if sco-dumb-doubt is false:
 		vcp "Your said-sos won't work cold. You need to show confidence and be persuasive.";
@@ -779,7 +785,7 @@ a goodrhyme rule (this is the vc-k-cope rule):
 	if player is not in Nay Nope Slay Slope, unavailable;
 	abide by the coped-in-slope rule;
 	if sco-hey-hope is false:
-		vcal "You will be able to cope soon, but there is an intermediate step.";
+		vcp "You will be able to cope soon, but there is an intermediate step.";
 		not-yet;
 	ready;
 
@@ -870,7 +876,7 @@ a goodrhyme rule (this is the vc-bright-brute rule):
 		vcal "You already found an ally against the white whale.";
 		already-done;
 	if player is not in trite trail:
-		vcal "That would be a great battle cry if a fearsome enemy were around.";
+		vcp "That would be a great battle cry if a fearsome enemy were around.";
 		not-yet;
 	ready;
 
@@ -1122,10 +1128,10 @@ a goodrhyme rule (this is the vc-flain-flat rule):
 	if player is not in drain drat vain vat, unavailable;
 	if sco-bane-bat is false:
 		vcp "There is nothing to leave the vat flain flat with.";
-		already-done;
+		not-yet;
 	if sco-flain-flat is true:
 		vcal "No, you already trashed the (ex-)vat.";
-		not-yet;
+		already-done;
 	ready;
 
 this is the vr-flain-flat rule:
@@ -1203,6 +1209,7 @@ this is the vr-yet-ye rule:
 	abide by the marquee-change rule;
 
 a goodrhyme rule (this is the vc-plus-plaque rule):
+	if player does not have sus sack, unavailable;
 	if frightfully bright bully is not fungible:
 		vcp "You consider conjuring up a gaudy, flattering plus-plaque. But you have nobody to give it to, and you'd hate to have to carry it around[if player is not in Threat Three Met Me]. Maybe elsewhere[end if].";
 		not-yet;
@@ -1218,7 +1225,7 @@ this is the vr-plus-plaque rule:
 a goodrhyme rule (this is the vc-t-lly rule):
 	if player is not in threat three met me, unavailable;
 	if sco-plus-plaque is false:
-		say "That would be naming [the Bully], but you need to do a bit more.";
+		vcp "That would be naming [the Bully], but you need to do a bit more.";
 		not-yet;
 	if sco-trite-t-lly is true:
 		vcal "Somehow, you already managed to win the game. This should not happen.";
@@ -1264,6 +1271,8 @@ this is the examine-monk rule:
 			unless the player yes-consents, the rule fails;
 	say "That's it. The mad monk flees. The path south really is free now.";
 	moot mad monk;
+
+to say alr-ins: say "You already insulted the mad monk's "
 
 [hub 0. transport]
 
@@ -1390,7 +1399,7 @@ volume readables
 
 table of readables (continued)
 read-thing	read-txt
-locking lift	"You see [lift-score] of six settings filled in:[paragraph break][fixed letter spacing][lift-stuff].[variable letter spacing][paragraph break]You've completed [hub-score in words] areas beyond the [high hub]."
+locking lift	"You see [lift-score in words] of six settings filled in:[paragraph break][fixed letter spacing][lift-stuff].[variable letter spacing][paragraph break]You've completed [hub-score in words] areas beyond the [high hub]."
 
 to say lift-stuff:
 	say "[if sco-docking-diffed is true]DOCKING DIFFED[else]------- ------[end if][if sco-excite-exhale is true] (done)[end if].";

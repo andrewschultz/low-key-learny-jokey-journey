@@ -20,6 +20,7 @@ mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "feign fee"	--	false	--	--	"You whine about how [this-game] costs money on top of being a waste of time. Nobody listens."
 "main me"	--	false	--	--	"You are the main character in this adventure, but don't let it go to your head."
 "pain p/pee"	--	false	--	--	"[this-game] is nonviolent and hopefully devoid of bathroom humor."
+"sprain spree"	--	false	--	--	"While this is technically correct, you don't want to injure yourself or others."
 "vain v"	--	false	--	--	"You come to grips with how you are not as humble as you should be."
 
 table of drain drat vain vat guesses
@@ -33,7 +34,7 @@ mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "pain pat"	--	false	105	splat-splained rule	"You feel an intense pain."
 "plain plat"	--	false	105	splat-splained rule	"The terrain is already pretty flat."
 "rain rat"	--	false	105	splat-splained rule	"You don't need an animal friend."
-"sane sat"	--	false	105	splat-splained rule	"You convince yourself the vain vat[if sco-flain-flat is false]is[else]was[end if] a great place to sort out your emotions."
+"sane sat"	--	false	105	splat-splained rule	"You convince yourself the vain vat [if sco-flain-flat is false]is[else]was[end if] a great place to sort out your emotions."
 "slain slat"	--	false	105	splat-splained rule	"There is no slat to slay, alas."
 "spain spat"	--	false	105	splat-splained rule	"You make up reasons to complain about Spain, for whatever good that does."
 "sprain sprat"	--	false	105	splat-splained rule	"You find no fish to torment."
@@ -59,7 +60,7 @@ this is the no-eek-aim rule:
 	if sco-chic-shaming is false, the rule succeeds;
 	the rule fails;
 
-table of fun farm hun harm guesses
+table of hun harm fun farm guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "one worm/warm"	--	false	23	need-unarm rule	"That doesn't quite work. Maybe the farm needs worms or warm weather, but its survival isn't as important to you as passage north."
 
@@ -74,7 +75,7 @@ mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "poor poles"	--	false	109	--	"Those would hardly liven the place up."
 "roar rolls/roles"	--	false	109	--	"Perhaps the roaring would be lively. Perhaps it wouldn't. But it might not add anything."
 "score skols"	--	false	109	--	"Perhaps Vikings will discover this land and conquer it some day. But why speed things up?"
-"store stoles"	--	false	109	--	"[if shoal-score < 0]Before you have animal pelts, you'll need animals living in peace[else]Bringing animal pelts into a place coming to live doesn't quite work[end if]."
+"store stoles"	--	false	109	--	"[if shoal-score < 0]Before you have animal pelts, you'll need animals living in peace, and then you'd hate to hurt them[else]Bringing animal pelts into a place coming to life doesn't quite work[end if]."
 "whore holes"	--	false	109	--	"Now, now, this isn't that sort of game."
 
 table of high hub guesses
@@ -160,7 +161,7 @@ mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "doe/doh/dough dune"	--	false	102	need-crow-croon rule	"The [if sco-bare-beach is false]prospective [end if]dune is elsewhere in this game."
 "jo/joe june"	--	false	102	need-crow-croon rule	"You call for old or new friends, who do not appear."
 "lo/low loon"	--	false	102	need-crow-croon rule	"That is the wrong sort of bird."
-"po poon"	--	false	102	need-crow-croon rule	"The only thing po['] is your dirty mind."
+"po poon"	--	false	102	need-crow-croon rule	"The only thing po['] is your dirty mind. This is a family game!"
 "pro prune"	--	false	102	need-crow-croon rule	"You come out mentally in favor of a high-fiber diet."
 "row/rho ruin/rune"	--	false	102	need-crow-croon rule	"[if player has rho rune]But you already have the rune[else]You are on the right track for what you need[end if]."
 "toe tune"	--	false	102	need-crow-croon rule	"Nothing toe-tapping starts playing."
@@ -202,7 +203,7 @@ table of roaring rocks guesses [note: MAGICNUM doesn't really apply here since y
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "flooring flocks"	--	false	63	--	"You don't need to be dive-bombed by aerial predators. And I don't have the artistic ability to show you majestic birds, either. Sorry."
 "poring/pouring pox"	--	false	63	--	"You don't need to catch anything, and denting the rocks would not reveal anything[furthers of sco-boring-box]."
-"storing stocks"	--	false	63	--	"That's what the rocks will become, but you want something simpler and smaller and shorter."
+"storing stocks"	box-hidden rule	false	63	--	"That's what the rocks will become, but you want something simpler and smaller and shorter."
 
 this is the box-hidden rule:
 	if boring box is off-stage, the rule succeeds;
@@ -251,7 +252,7 @@ table of Thunk Tree Trunk guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "be bunk"	--	false	34	free-fruit-offstage rule	"You crave neither a tall bed nor outright lies."
 "de dunk"	--	false	34	free-fruit-offstage rule	"Your mind flashes back to an 80s-era DePaul basketball commercial. Okay, maybe it doesn't, but mine did when I thought of this."
-"fee/phi funk"	--	false	34	free-fruit-offstage rule	""
+"fee/phi funk"	--	false	34	free-fruit-offstage rule	"You try to monetize or formulate olfactory and/or musical funkiness but fail."
 "flee flunk"	--	false	34	free-fruit-offstage rule	"Aw, c'mon, you've gotten pretty far. You shouldn't need to run in shame."
 "me monk"	--	false	34	free-fruit-offstage rule	"Alas, there is no monastery nearby to retreat to."
 "pee punk"	--	false	34	free-fruit-offstage rule	"Micturation is unnecessary to complete [this-game]."
@@ -301,7 +302,7 @@ to say furthers of (ts - a truth state): if ts is true, say " further"
 table of deep dune guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "beep boon"	--	false	44	rune-unreaped rule	"No, you don't a Geiger counter to search[furthers of sco-reap-rune] through the dune."
-"creep croon"	--	false	44	rune-unreaped rule	"Alas, R. Kelly can't show up. He's still in jail, and anyway, his appearance fee would be too high."
+"creep croon"	--	false	44	rune-unreaped rule	"I couldn't get R. Kelly or Robin Thicke to appear here. Sorry!"
 "leap loon"	--	false	44	rune-unreaped rule	"Alas, nobody odd comes by and dives into the deep dune [if sco-reap-rune is false]to help you find what's there[else]for your entertainment[end if]. Nobody at all."
 "peep poon"	--	false	44	rune-unreaped rule	"[this-game] is the wrong environment for that, and not just because it's text-based."
 
@@ -356,7 +357,7 @@ mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "scad skunk"	--	false	34	--	"Alas, a bunch of skunks fail to assault the mad monk."
 "thad thunk"	--	false	34	--	"[monk-name]."
 
-to say monk-name: say "The mad monk needs no name, proper or familiar."
+to say monk-name: say "The mad monk needs no name, proper or familiar"
 
 table of market marquee guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
