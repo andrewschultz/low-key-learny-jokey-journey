@@ -330,7 +330,7 @@ book Tree Trunk
 carry out going to TTTT when TTTT is unvisited:
 	say "You were a bit too pleased you got away from the storm, and you couldn't help looking back to make sure it was over. And as you did, you ran into a rather large tree trunk, with a THUNK. Well, maybe with the way things are here, it was meant to happen.";
 
-TTTT is north of One Warm Stun Storm. printed name is "The (Thunk!) Tree Trunk". it is in Hoppin' Heart. "Passage any way except back south is too dense here. The tree trunk you ran into still stands here, [if sco-pear-peach is true]completely looted[else if free fruit is fungible]with the [fruit] in it[else if sco-see-sunk is true]cut down to size[else]and you wish you could cut it down to size as revenge for running into it[end if]."
+TTTT is north of One Warm Stun Storm. printed name is "The (Thunk!) Tree Trunk". it is in Hoppin' Heart. "Passage any way except back south is too dense here. The tree trunk you ran into still stands here, [if sco-see-sunk is false]and you wish you could cut it down to size as revenge for running into it[else if sco-gee-junk is false]and now you cut it down to size, there's got to be something in it, if you just look right[else if sco-pear-peach is true]and maybe you can figure what [fruit] to get[else]completely looted[end if]."
 
 guess-table of TTTT is table of Thunk Tree Trunk guesses.
 
@@ -838,6 +838,20 @@ hoohehing is leetsetting.
 before leetsetting when player does not have the leet learner: say "You don't have the Leet Learner yet, so you can't set this option." instead;
 
 volume verbs
+
+book eating
+
+the can't eat unless edible rule is not listed in any rulebook.
+
+check eating:
+	if noun is pear peach, say "It looks good to eat, but it must have a higher purpose. Besides, you're not hungry." instead;
+	say "You need only spiritual sustenance, not physical, in [this-game]." instead;
+
+book taking
+
+check taking scenery (this is the modified can't take scenery rule): say "You don't explicitly need to [b]TAKE[r] anything in [this-game]." instead;
+
+the can't take scenery rule is not listed in any rulebook.
 
 book listening
 
