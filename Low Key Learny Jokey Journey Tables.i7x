@@ -900,6 +900,7 @@ a goodrhyme rule (this is the vc-sight-sail rule):
 this is the vr-sight-sail rule:
 	now sco-sight-sail is true;
 	say "A watercraft drifts into view. Yes, indeed, it is the sight sail. It should help you track down [the whale] very nicely, when you're prepared.";
+	move sight sail to trite trail;
 	follow the notify-final-whale rule;
 
 a goodrhyme rule (this is the vc-might-mail rule):
@@ -912,6 +913,7 @@ a goodrhyme rule (this is the vc-might-mail rule):
 this is the vr-might-mail rule:
 	now sco-might-mail is true;
 	say "A suit of armor appears nearby! You don't want to put it on until you fight [the whale], but it's there when you need it.";
+	move might mail to trite trail;
 	follow the notify-final-whale rule;
 
 a goodrhyme rule (this is the vc-flight-flail rule):
@@ -924,6 +926,7 @@ a goodrhyme rule (this is the vc-flight-flail rule):
 this is the vr-flight-flail rule:
 	now sco-flight-flail is true;
 	say "A translucent flail appears. You grab it, worrying it is too heavy. But as you do, it is easy to swing, and you feel faster. It will be a good weapon to use against the white whale.";
+	move flight flail to trite trail;
 	follow the notify-final-whale rule;
 
 a goodrhyme rule (this is the vc-right-rail rule):
@@ -954,6 +957,7 @@ a goodrhyme rule (this is the vc-bright-brute rule):
 this is the vr-bright-brute rule:
 	now sco-bright-brute is true;
 	say "You call on a bright brute, who hides in the shadows to practice their fighting moves until such time as you're ready to attack the white whale. You'll need the muscle in case the whale somehow gets on board.";
+	move bright brute to trite trail;
 
 a goodrhyme rule (this is the vc-excite-exhale rule):
 	if player is not in Trite Trail, unavailable;
@@ -972,6 +976,11 @@ this is the vr-excite-exhale rule:
 	now sco-excite-exhale is true;
 	say "You get all jazzed up to fight [the whale], believing you can do it. Then you calm down and figure strategy. You make sure the mail is comfortable and you can swing the flail well, and you use the rail until you're able to balance easily.[paragraph break]You conquer the white whale! After doing so, you head back to High Hub.";
 	take-lift High Hub;
+	moot sight sail;
+	moot flight flail;
+	moot bright brute;
+	moot might mail;
+
 
 a goodrhyme rule (this is the vc-tight-tease rule):
 	if player is not in slight sleaze, unavailable;
@@ -1153,6 +1162,7 @@ this is the vr-splain-splat rule:
 	say "Now that you've busted out of the vain vat, you announce yourself! You wonder if this was a fit of pride, but it's too late. A bunch of Pred Pros jump and ambush you. Your red rose, in a final blaze of glory, puts up a protective shield. But the Pros still guard the way south.";
 	moot Red Rose;
 	move Pred Pros to Vain Vat;
+	move head hose to Vain Vat;
 
 a goodrhyme rule (this is the vc-fed-foes rule):
 	if red rose is off-stage or pred pros are moot, unavailable;
@@ -1168,6 +1178,7 @@ this is the vr-fed-foes rule:
 	now sco-fed-foes is true;
 	say "What a feast appears! It looks like the red rose had a bit more something to give. And it keeps giving, until the Fed Foes are full. They nod, gratefully, still wary of the red rose's shield, before heading away. Your destiny awaits!";
 	moot Pred Pros;
+	moot head hose;
 
 a goodrhyme rule (this is the vc-fret-free rule):
 	if player is not in threat three met me, unavailable;
@@ -1457,7 +1468,7 @@ Hun Harm Fun Farm	"The passage here bends east to north."
 NoNoon	"This feels like a sacred valley, with the only way out back south."
 Rare Reach	"The [if sco-bare-beach is true]water[else]darkness[end if] encompasses you every way except back south."
 Jotty Jail	"This being a jail, you can't walk out. You have to find a weak link or something."
-High Hub	"The only way out of the High Hub is telling the lift where you want to go."
+High Hub	"The only way out of the High Hub[if sco-bye-bub is true], besides going back down the sturdy stalk,[end if] is telling the lift where you want to go. Okay, the only non-lethal way."
 Gore Goals	"Exploring the [if sco-shore-shoals is false]darkness would be unwise[else]animal sanctuary you built would feel invasive[end if]. The only way back is entering the lift."
 New Show Shoe	"There's no way out except through the lift. You're the only person to get the show started, here."
 Mad Most Cad Coast	"[if sco-rad-roast is true]You have the confidence to go west, now, or you[else]You[end if] can return to the High Hub in the lift."
