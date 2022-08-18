@@ -156,7 +156,7 @@ to decide which number is variable-scan-length of (mynum - a number):
 	else if mynum is 111: [ light lute ]
 		if player is in slight sleaze and sco-right-root is false, decide on 54;
 		if player is in trite trail and sco-bright-brute is false, decide on 65;
-		if player is in sore souls' gore goals:
+		if player is in sore souls gore goals:
 			if sco-kite-coot is false, decide on 44;
 			if sco-night-newt is false, decide on 54;
 		if delight dilute is fungible, decide on 77;
@@ -564,7 +564,7 @@ to say shoal-so-far:
 	say "[if shoal-extra-animals is 0]There's also space for some exotics[else if shoal-extra-animals is 1]You could find more exotics, too, if you wanted[else]You've even found extra odd animals for variety[end if]"
 
 
-guess-table of sore souls' gore goals is the table of sore souls' gore goals guesses.
+guess-table of sore souls gore goals is the table of sore souls gore goals guesses.
 
 to decide which number is shoal-extra-animals:
 	decide on boolval of sco-night-newt + boolval of sco-kite-coot;
@@ -941,7 +941,7 @@ this-gong-rule of show shoe is the got-lute rule.
 this-gong-rule of nnss is the got-stalk rule.
 this-gong-rule of trite trail is the got-whale rule.
 this-gong-rule of mad most cad coast is the got-whale rule.
-this-gong-rule of sore souls' gore goals is got-shoals rule.
+this-gong-rule of sore souls gore goals is got-shoals rule.
 this-gong-rule of nay nope slay slope is got-k-cope rule.
 this-gong-rule of rum route is got-k-cope rule.
 this-gong-rule of slight sleaze is got-framing-done rule;

@@ -47,6 +47,8 @@ definition: a room (called rm) is unrhymable:
 
 when play begins:
 	let needs be 0;
+	repeat with myth running through things:
+		if description of myth is empty, say "Describe thing [myth].";
 	say "[b]Checking rhymable rooms ...[r]";
 	repeat with myrm running through rooms:
 		if myrm is unrhymable, next;

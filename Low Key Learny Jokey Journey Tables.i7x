@@ -72,12 +72,12 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "docking"	"diffed"	--	--	false	true	true	false	High Hub	vc-docking-diffed rule	vr-docking-diffed rule	--	-- [3-5 are in approximate order of difficulty, then the LLP and the final room]
 "despite"	"dispute"	--	--	false	true	false	false	high hub	vc-despite-dispute rule	vr-despite-dispute rule	--	"You can reason [b]DESPITE DISPUTE[r] [if light lute is moot]now[else]once[end if] there's something that makes you depressed."
 "mocking"	"miffed"	--	--	false	true	true	false	High Hub	vc-mocking-miffed rule	vr-mocking-miffed rule	--	"You can search for [b]MOCKING MIFFED[r] [if hub-score is 5]now[else]once[end if] you've solved all the other hub areas."
-"shore"	"shoals"	--	--	false	true	true	false	sore souls' gore goals	vc-shore-shoals rule	vr-shore-shoals rule	--	-- [start shocking shift / sore souls' gore goals]
-"four"	"foals"	"fore"	--	false	true	true	false	sore souls' gore goals	vc-four-foals rule	vr-four-foals rule	--	"You can summon [b]FOUR FOALS[r] [once-now of vc-four-foals rule] the area is more hospitable."
-"more"	"moles"	--	--	false	true	true	false	sore souls' gore goals	vc-more-moles rule	vr-more-moles rule	--	"You can summon [b]MORE MOLES[r] [once-now of vc-more-moles rule] the area is more hospitable."
-"lore"	"lols"	--	--	false	true	false	false	sore souls' gore goals	vc-lore-lols rule	vr-lore-lols rule	--	--
-"night"	"newt"	--	--	false	true	false	false	sore souls' gore goals	vc-night-newt rule	vr-night-newt rule	--	"You can summon a [b]NIGHT NEWT[r] [once-now of vc-night-newt rule] the area is more hospitable."
-"kite"	"coot"	--	--	false	true	false	false	sore souls' gore goals	vc-kite-coot rule	vr-kite-coot rule	--	"You can summon a [b]KITE COOT[r] [once-now of vc-kite-coot rule] the area is more hospitable."
+"shore"	"shoals"	--	--	false	true	true	false	sore souls gore goals	vc-shore-shoals rule	vr-shore-shoals rule	--	-- [start shocking shift / sore souls' gore goals]
+"four"	"foals"	"fore"	--	false	true	true	false	sore souls gore goals	vc-four-foals rule	vr-four-foals rule	--	"You can summon [b]FOUR FOALS[r] [once-now of vc-four-foals rule] the area is more hospitable."
+"more"	"moles"	--	--	false	true	true	false	sore souls gore goals	vc-more-moles rule	vr-more-moles rule	--	"You can summon [b]MORE MOLES[r] [once-now of vc-more-moles rule] the area is more hospitable."
+"lore"	"lols"	--	--	false	true	false	false	sore souls gore goals	vc-lore-lols rule	vr-lore-lols rule	--	--
+"night"	"newt"	--	--	false	true	false	false	sore souls gore goals	vc-night-newt rule	vr-night-newt rule	--	"You can summon a [b]NIGHT NEWT[r] [once-now of vc-night-newt rule] the area is more hospitable."
+"kite"	"coot"	--	--	false	true	false	false	sore souls gore goals	vc-kite-coot rule	vr-kite-coot rule	--	"You can summon a [b]KITE COOT[r] [once-now of vc-kite-coot rule] the area is more hospitable."
 "flow"	"flue"	"flu/flew"	--	false	true	true	false	show shoe	vc-flow-flue rule	vr-flow-flue rule	--	-- [start no new show shoe/rocking rift]
 "glow"	"glue"	--	--	false	true	true	false	show shoe	vc-glow-glue rule	vr-glow-glue rule	--	--
 "go"	"goo"	--	--	false	true	false	false	show shoe	vc-go-goo rule	vr-go-goo rule	--	--
@@ -555,7 +555,7 @@ a goodrhyme rule (this is the vc-shocking-shift rule):
 this is the vr-shocking-shift rule:
 	now sco-shocking-shift is true;
 	say "The locking lift lurches with what is indeed a shocking shift...";
-	take-lift Sore Souls' Gore Goals;
+	take-lift Sore Souls Gore Goals;
 
 a goodrhyme rule (this is the vc-stocking-stiffed rule):
 	if player is not in High Hub, unavailable;
@@ -599,7 +599,7 @@ this is the vr-mocking-miffed rule:
 	take-lift Old End;
 
 a goodrhyme rule (this is the vc-shore-shoals rule):
-	if player is not in sore souls' gore goals, unavailable;
+	if player is not in sore souls gore goals, unavailable;
 	if sco-shore-shoals is true:
 		vcal "You have already rehabilitated the sore souls['] gore goals!";
 		already-done;
@@ -611,7 +611,7 @@ this is the vr-shore-shoals rule:
 	print-the-loc;
 
 a goodrhyme rule (this is the vc-four-foals rule):
-	if player is not in sore souls' gore goals, unavailable;
+	if player is not in sore souls gore goals, unavailable;
 	abide by the animals-need-shoals rule;
 	if sco-four-foals is true:
 		vcal "You already populated the area with foals!";
@@ -624,7 +624,7 @@ this is the vr-four-foals rule:
 	check-red-rose;
 
 a goodrhyme rule (this is the vc-more-moles rule):
-	if player is not in sore souls' gore goals, unavailable;
+	if player is not in sore souls gore goals, unavailable;
 	abide by the animals-need-shoals rule;
 	if sco-more-moles is true:
 		vcal "You don't need even more moles!";
@@ -637,7 +637,7 @@ this is the vr-more-moles rule:
 	check-red-rose;
 
 a goodrhyme rule (this is the vc-lore-lols rule):
-	if player is not in sore souls' gore goals, unavailable;
+	if player is not in sore souls gore goals, unavailable;
 	if sco-lore-lols is true:
 		vcal "You recount the myths you started to create, just to make sure they're not lost.";
 		already-done;
@@ -704,11 +704,11 @@ a goodrhyme rule (this is the vc-go-goo rule):
 
 this is the vr-go-goo rule:
 	now sco-go-goo is true;
-	say "A huge pile of weird 'energy burst' snacks appears at your feet. You have no idea whether or not they're nutritious, but with that colorful packaging, they can be sold for a markup during and after the performance, to ensure the viability of the [show shoe]. Yay, commerce[if sco-flow-flue is false or sco-glow-glue is false], and you don't even need any climate-controlled storage[end if]![paragraph break]You put them off to the side. They'll be useful once the show gets rocking.";
+	say "A huge pile of weird 'energy burst' snacks appears at your feet. You have no idea whether or not they're nutritious, but with that colorful packaging, they can be sold for a markup during and after the performance, to ensure the viability of the [show shoe]. Yay, commerce[if shoe-storage < 2], and you don't even need any climate-controlled storage[end if]![paragraph break]You put them off to the side. They'll be useful once the show gets rocking.";
 
 a goodrhyme rule (this is the vc-bro-brew rule):
 	if player is not in show shoe, unavailable;
-	if sco-flow-flue is false or sco-glow-glue is false:
+	if shoe-storage < 2:
 		vcp "That's a good idea, but you have nowhere reliable to store such a beverage! Well, not yet.";
 		not-yet;
 	if sco-bro-brew is true:
@@ -723,7 +723,7 @@ this is the vr-bro-brew rule:
 
 a goodrhyme rule (this is the vc-stow-stew rule):
 	if player is not in show shoe, unavailable;
-	if sco-flow-flue is false or sco-glow-glue is false:
+	if shoe-storage < 2:
 		vcp "That's a good idea, but you have nowhere reliable to store something to eat! Well, not yet.";
 		not-yet;
 	if sco-stow-stew is true:
@@ -1327,17 +1327,21 @@ to lose-rose-petal: say "[line break]A[one of][or]nother[stopping] bright petal 
 
 [hub 2. shoe]
 
+to decide which number is shoe-concessions:
+	decide on boolval of sco-stow-stew + boolval of sco-bro-brew;
+
+to decide which number is shoe-storage:
+	decide on boolval of sco-glow-glue + boolval of sco-flow-flue;
+
 to decide whether shoe-food-drink:
-	if sco-stow-stew is true and sco-bro-brew is true, yes;
+	if shoe-concessions is 2, yes;
 	no;
 
 this is the flue-and-glue rule:
-	if sco-flow-flue is true and sco-glow-glue is true:
-		say "With the Glow Glue, you patch up the flow flue as best you can. Surprisingly, you find some hoses to rinse them so they're clean enough that food and drink can go through them."
+	if shoe-storage is 2, say "With the Glow Glue, you patch up the flow flue as best you can. Surprisingly, you find some hoses to rinse them so they're clean enough that food and drink can go through them."
 
 this is the stew-and-brew rule:
-	if sco-bro-brew is true and sco-stow-stew is true:
-		say "With a reliable source of food and drink (which, man, they smell pretty good) a crowd starts to gather. You can't do any rhyming stuff to them directly, but perhaps there's some general stuff you can shout.";
+	if shoe-concessions is 2, say "With a reliable source of food and drink (which, man, they smell pretty good) a crowd starts to gather. You can't do any rhyming stuff to them directly, but perhaps there's some general stuff you can shout.";
 
 a goodrhyme rule (this is the shoe-crowd-yet rule):
 	if not shoe-food-drink:
@@ -1358,7 +1362,7 @@ to say twang: say " string twangs on the light lute. When you look again, it's a
 [hub 2a. got lute]
 
 this is the lute-animal-check rule:
-	if player is not in sore souls' gore goals or player does not have light lute, unavailable;
+	if player is not in sore souls gore goals or player does not have light lute, unavailable;
 	if sco-shore-shoals is false:
 		vcp "The enviroment is too inhospitable for such an animal right now.";
 		not-yet;
