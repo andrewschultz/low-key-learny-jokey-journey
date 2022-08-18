@@ -206,7 +206,7 @@ check opening train tree: say "You should be able to enter the tree as you pleas
 
 book Roaring Rocks
 
-Roaring Rocks is a room in Stoppin' Start. "This is a dead end. The only passage out is north. [if sco-boring-box is false]The roaring is too loud right now, though. You feel as if you'd be chased down if you ran away[else]Things are quieter now. There's nothing left to do here, you're pretty sure[end if].". printed name of Roaring Rocks is "[if sco-boring-box is true]Storing Stocks[else]Roaring Rocks[end if]"
+Roaring Rocks is a room in Stoppin' Start. "This is a dead end. The only passage out is north. [if sco-boring-box is false]The roaring is too loud right now, though. You feel as if you'd be chased down if you ran away[else]Things are quieter now. You doubt the rocks/stocks hold any more great secrets[end if].". printed name of Roaring Rocks is "[if sco-boring-box is true]Storing Stocks[else]Roaring Rocks[end if]"
 
 guess-table of Roaring Rocks is table of Roaring Rocks guesses.
 
@@ -220,17 +220,17 @@ check going north in Roaring Rocks:
 		set the pronoun it to boring box;
 		say "You figure you should open the boring box before moving on." instead;
 	if mad monk is off-stage:
-		say "As you go on your way, who should block your way but a fervent Mad Monk? They don't seem that tough, but then again, this is the start of your journey.";
+		say "As you go on your way, who should block your way but a fervent Mad Monk? They can't be too tough, this early in the game, especially since their name's seven letters.";
 		move mad monk to roaring rocks;
 		the rule fails;
-	if mad monk is in Roaring Rocks, say "Get by the mad monk first." instead;
+	if mad monk is in Roaring Rocks, say "The mad monk is blocking you right now." instead;
 
 chapter boring box
 
-the boring box is a thing. description is "Yup. It's pretty boring, but at least it wouldn't be a challenge to [b]OPEN[r].".
+the boring box is a thing. description is "Yup. It's pretty boring, which is nice in a way, because without 'interesting' locks, you can [b]OPEN[r] it with no problem.".
 
 check opening boring box:
-	say "You open the boring box, and you see a metal gadget that doesn't look very interesting at first. It's labeled as a Leet Learner. You can probably [b]READ[r] it for instructions.";
+	say "You open the boring box, and you see a metal gadget that doesn't look very interesting at first. It's labeled as a Leet Learner, and you also note large print saying [b]DOES NOT GIVE OUTRIGHT SOLUTIONS--THAT'S ANOTHER ITEM[r].[paragraph break]There's also smaller print you can probably [b]READ[r] for instructions. As you grab the Leet Learner, the boring box disintegrates, leaving you quite interested how that happened.";
 	say "[line break][i][bracket][b]NOTE:[r][i] for those who played [b][vvff][i], this is the same device you got back then. So you can skip looking into it, if you remember how it works.[close bracket][line break]";
 	moot boring box;
 	set the pronoun it to leet learner;
@@ -240,7 +240,7 @@ volume rooms (mid)
 
 book No Nudge Slow Sludge
 
-NNSS is north of Roaring Rocks. it is in Hoppin' Heart. printed name is "No-Nudge Slow Sludge". "[if sco-grow-grudge is false]Some [sludge] bubbles almost all around, blocking passage all ways back south[else]The [sludge] to the west, north and east no longer seems intimidating[end if][if sturdy stalk is in NNSS]. The sturdy stalk leads back up to High Hub, as well[end if]."
+NNSS is north of Roaring Rocks. it is in Hoppin' Heart. printed name is "No-Nudge Slow Sludge". "[if sco-grow-grudge is false]Some [sludge] bubbles almost all around, blocking passage all ways back south[else]Paths have been cut through the [sludge] to the west, north and east, which has stopped bubbling[end if][if sturdy stalk is in NNSS]. The sturdy stalk leads back up to High Hub, as well[end if]."
 
 guess-table of NNSS is table of no nudge slow sludge guesses.
 
@@ -270,7 +270,7 @@ guess-table of sturdy stalk is the table of sturdy stalk guesses.
 
 book Hun Harm Fun Farm
 
-Hun Harm Fun Farm is west of NNSS. it is in Hoppin' Heart. "The way bends north here[if sco-un-arm is false], though you feel trepidation at the thought of doing so. Maybe you'll be attacked[end if]. You can go back east."
+Hun Harm Fun Farm is west of NNSS. it is in Hoppin' Heart. "The way bends north here. [if sco-un-arm is false]You hear the clash of weapons that way, though, so it feels unsafe. Maybe you can cut a way through[end if]. There's also passage back east."
 
 check going north in hun harm fun farm when sco-un-arm is false: say "Unfortunately, you hear aggressive voices threatening to attack you. They have weapons, and you don't. You're not sure how to change this." instead;
 
@@ -280,7 +280,7 @@ sco-un-arm is a truth state that varies.
 
 chapter Mad Monk
 
-the Mad Monk is a rhymable. "A mad monk raves here, blocking your way north. What with the short name, they're pretty obviously a simple henchman, especially this early in the game. They might be good for rope-a-doping to [if player has lurking lump]enhance the lurking lump[else]get that stronger help item you read about on the [learner][end if].". description is "Plainly dressed. They seem to have an intense attitude you could cut down, and they'd probably leave you alone."
+the Mad Monk is a rhymable. "A mad monk raves here, blocking your way north. They don't look like much--they probably didn't make the cut for tormenting Lode Runners. They might be good for rope-a-doping to [if player has lurking lump]enhance the lurking lump[else]get that stronger help item you read about on the [learner][end if].". description is "Plainly dressed. They seem to have an intense attitude you could cut down, and they'd probably leave you alone."
 
 guess-table of mad monk is the table of mad monk guesses.
 
@@ -290,7 +290,21 @@ sco-sad-sunk is a truth state that varies.
 
 book No Noon
 
-there is a room called NoNoon in Hoppin' Heart. NoNoon is north of Hun Harm Fun Farm. printed name of NoNoon is "[if cocoon is moot]Show? Shewn![else]No Noon[end if]". "The sky is completely dark here. Even a sliver of light would be helpful."
+there is a room called NoNoon in Hoppin' Heart. NoNoon is north of Hun Harm Fun Farm. printed name of NoNoon is "[if cocoon is moot]Ho, HEWN[else]No Noon[end if]". "[noon-room]". understand "ho/hewn" and "ho hewn" as NoNoon when cocoon is moot.
+
+to say noon-room:
+	if sco-mo-moon is false:
+		say "The sky is completely dark here. Even a sliver of light would be helpful. You can barely see the way back south";
+	else if sco-so-soon is false:
+		say "The moon provides some light, at least, but there should be more";
+	else if sco-crow-croon is false:
+		say "Daybreak must be coming soon! You just need a sign from nature, but -- not the usual one for sunrise";
+	else:
+		say "It's quite bright here now! The rocky terrain surrounding this valley is carved with all sorts of mysterious glyphs beyond your comprehension. The exit is back south";
+		continue the action;
+	if sco-mo-moon is true, say ". Now there's a bit more light, you see there aren't any hidden passages, and back south really is the only way out."
+
+understand "no/noon" and "no noon" as NoNoon.
 
 guess-table of nonoon is the table of nonoon guesses.
 
@@ -304,14 +318,15 @@ understand "no/noon" and "no noon" as NoNoon.
 understand "show/shewn" and "show shewn" as NoNoon when cocoon is moot.
 
 after printing the locale description when location of player is NoNoon:
-	if Rho Rune is off-stage, say "You feel helpless here.";
+	if sco-go-goon is false:
+		say "You feel the presence of something bad here[if sco-reap-rune is false], and worse, you feel helpless to fight it, for now[end if].";
 	continue the action;
 
 the cocoon is a thing. "The cocoon you summoned still lies here.". description is "It's lying here, ready to open, if enough time passes."
 
 book One Warm Stun Storm
 
-there is a room called One Warm Stun Storm in Hoppin' Heart. It is north of NNSS. "[if sco-fun-form is true]It's calm here now. You can go north and south[else]A storm is raging ahead to the north, though it's all very calm to the south[end if]. [if sco-done-dorm is false]And you don't even have a prospect of shelter. Yet[else if sco-fun-form is false]At least the done dorm could give shelter[else]You also note the done dorm that helped you stay out the storm[end if]."
+there is a room called One Warm Stun Storm in Hoppin' Heart. It is north of NNSS. "[if sco-fun-form is true]It's calm here now. You can go north and south[else]A storm is raging ahead to the north, though it's all very calm to the south[end if]. [if sco-done-dorm is false]And you don't even have a prospect of shelter. Yet[else if sco-fun-form is false]At least the done dorm you summoned could give shelter[else]You also note the done dorm that helped you stay out the storm[end if]."
 
 sco-done-dorm is a truth state that varies.
 sco-fun-form is a truth state that varies.
@@ -321,7 +336,7 @@ check going north in One Warm Stun Storm:
 
 chapter done dorm
 
-the done dorm is scenery. "It's impressive it was built so quickly! [if sco-fun-form is true]It was fun to stay in during the storm, as well, but you don't need it any more[else]Perhaps it could provide shelter from the storm, if you apply for residence correctly[end if]."
+the done dorm is scenery. "[if sco-fun-form is true]You have good memories of your stay in the done dorm, but that part of your adventure's over now.[else]It looks like such a nice place to spend time. You wonder if you are exciting or interesting enough to. How would you apply for residence correctly?[end if]"
 
 check entering done dorm: say "[if sco-fun-form is false]You must apply correctly to enter[else]You already spent enough time there[end if]." instead;
 
@@ -358,7 +373,7 @@ the pear peach is a thing. description is "It looks like a cross between a pear 
 
 book Trust Track
 
-Trust Track is east of NNSS. it is in Hoppin' Heart. "You're in a sort of earthy canyon, [if sco-crust-crack is true]though you created a passage south to complement the one west[else if sco-bussed-back is true]and with Just Jack gone, you're wondering if you can create another passage[else]with the only apparent way out being back west[end if]."
+Trust Track is east of NNSS. it is in Hoppin' Heart. "You're in a sort of earthy canyon, [if sco-crust-crack is true]though you created a passage south to complement the one west[else if sco-bussed-back is true]and with Just Jack no longer here to discourage you, you're wondering if you can create another passage[else]with the only apparent way out being back west[end if]."
 
 guess-table of trust track is table of trust track guesses.
 
@@ -369,6 +384,11 @@ description of Just Jack is "He is just sitting around here with no better place
 the sus sack is a rhymable. guess-table of sus sack is table of trust track guesses. description is "What could be in it? It feels both light and heavy at the same time, both practical and impractical."
 
 sco-plus-plaque is a truth state that varies.
+
+to decide whether satisf of (ru - a rule):
+	choose row with run-rule of ru in table of verb checks;
+	if idid entry is true, yes;
+	no;
 
 sco-bussed-back is a truth state that varies.
 sco-crust-crack is a truth state that varies.
@@ -550,11 +570,11 @@ a might mail is scenery. "The might mail is too heavy to wear until you meet the
 
 book Sore Souls Gore Goals / Shocking Shift
 
-Sore Souls Gore Goals is a room in Poppin' Part. "[if sco-shore-shoals is false]It's very desolate here. No life or community of animals could last for long. Perhaps any spark of nature could change things[else]It's a more comforting place to be. You've [shoal-so-far][end if].". printed name is "[if sco-shore-shoals is false]Sore Souls['] Gore Goals[else]Shore Shoals[end if]". understand "shore/shoals" and "shore shoals" as Gore Goals when sco-shore-shoals is true.
+Sore Souls Gore Goals is a room in Poppin' Part. "[if sco-shore-shoals is false]It's very desolate here. No life or community of animals could last for long. Perhaps any spark of nature could change things[else]The shore shoals are a more comforting place to be than before. You've [shoal-so-far][end if].". printed name is "[if sco-shore-shoals is false]Sore Souls['] Gore Goals[else]Shore Shoals[end if]". understand "shore/shoals" and "shore shoals" as Gore Goals when sco-shore-shoals is true.
 
 to say shoal-so-far:
 	let shoal-total be shoal-extra-animals + shoal-core-score;
-	if shoal-core-score is 0:
+	if shoal-total is 0:
 		say "got work to do to repopulate it, though";
 		continue the action;
 	if shoal-core-score is 0:
@@ -653,7 +673,7 @@ sco-hey-hope is a truth state that varies.
 
 book Old End / Mocking Miffed
 
-Old End is a room in Poppin' Part. printed name is "[if sco-bold-bend is true]Bold Bend[else]Old End[end if]". understand ["bold/bend" and] "bold bend" as Old End when sco-bold-bend is true. "[if sco-bold-bend is false]This simply looks like a dead end. What else could it be? Well, at least the lift didn't ditch you[else]The passage from the lift bends south to your destiny[end if]."
+Old End is a room in Poppin' Part. printed name is "[if sco-bold-bend is true]Bold Bend[else]Old End[end if]". understand ["bold/bend" and] "bold bend" as Old End when sco-bold-bend is true. "[if sco-bold-bend is false]This simply looks like a dead end. What else could it be? Well, at least the lift is there, if you can't figure things right now[else]The passage away from the lift bends south to your destiny[end if]."
 
 guess-table of old end is the table of old end guesses.
 
@@ -689,9 +709,15 @@ sco-fed-foes is a truth state that varies.
 
 book Threat Three Met ME
 
-Threat Three Met Me is south of Drain Drat Vain Vat. It is in Poppin' Part. printed name is "[if marquee-score < 3]Market Marquee[else]Threat Three Met Me[end if]". "[if marquee is moot]The marquee has crumbled. All that's left is desolation and your final enemy[else]A market marquee stands here, maybe giving you some clues as to how to do things[end if]."
+Threat Three Met Me is south of Drain Drat Vain Vat. It is in Poppin' Part. printed name is "[if marquee-score < 3]Market Marquee[else]Threat Three Met Me[end if]". "[if marquee is moot]The marquee has crumbled. All that's left is desolation and your final enemy[else]A market marquee stands here, maybe giving you some clues as to how to do things[end if]. [if bright bully is off-stage]You could go back north if you really wanted, but perhaps you'll want to finish things here[else]You feel stuck here in the final encounter[end if]."
+
+check going north in Threat Three Met Me when bright bully is in Threat Three Met Me: say "As much as you dislike [the bully], you're pulled to them, as well. Time to finish the deal.";
 
 guess-table of threat three met me is the table of threat three met me guesses.
+
+after printing the locale description for Threat Three when Threat Three is unvisited:
+	ital-say "you can make enough good guesses from the room name to [if lurking lump is off-stage]get a hint item that will spoil the tricky final puzzle[else]recharge your lurking lump[end if], so you'll be prevented from going back once your enemy appears.";
+	continue the action;
 
 chapter market marquee
 
@@ -1111,7 +1137,7 @@ check swearing obscenely:
 	if miss more diss door is off-stage:
 		say "You hear a whooshing as a door swings in from nowhere. It doesn't seem to lead anywhere. Voices from behind it, though, assure you you are missing something. Using your logical skills, you deduce it is a [diss door]. While it's not going to jump you if your back is turned, it might be nice to get rid of.";
 	else:
-		say "The [diss door] whooshes into view again." instead;
+		say "The [diss door] whooshes into view again.";
 	move miss more diss door to location of player instead;
 
 check swearing mildly: try swearing obscenely instead;
@@ -1193,17 +1219,17 @@ this is the show-misses rule:
 			say "After you swore, you could've said [b]PISS POOR[r] to [the diss door].";
 	if sco-grotty-grail is false, say "You could've discovered a [b]GROTTY GRAIL[r] back in [jotty jail].";
 	if sco-potty-pail is false, say "You could've discovered a [b]POTTY PAIL[r] back in [jotty jail].";
-	if sco-go-goo is false, say "You could've made [b]GO GOO[r] in [show shoe].";
 	if sco-bye-bub is false:
 		say "You could've said [b]BYE BUB[r] in [high hub] to revisit the first rooms and pick up clue-points for good guesses.";
 		say "[one of]There was also a sturdy stalk that would appear in [nnss]. Check [b]MISSES[r] again for the spoiler, if you don't want to replay or guess it[or][ww2][stopping].";
 	else if sco-wordy-walk is false:
 		say "[ww2].";
+	if sco-go-goo is false, say "You could've made [b]GO GOO[r] in [show shoe].";
 	if sco-night-newt is false, say "You could've summoned a [b]NIGHT NEWT[r] in [gore goals].";
 	if sco-kite-coot is false, say "You could've summoned a [b]KITE COOT[r] in [gore goals].";
+	if sco-lore-lols is false, say "You could've performed [b]LORE LOLS[r] in [gore goals].";
 	if sco-tight-tease is false, say "You could've summoned [b]TIGHT TEES[r] or a [b]TIGHT TEASE[r] in [slight sleaze].";
 	if sco-clique-claiming is false, say "You could've performed [b]CLIQUE CLAIMING[r] in [freak framing].";
-	if sco-lore-lols is false, say "You could've performed [b]LORE LOLS[r] in [gore goals].";
 	if sco-despite-dispute is false, say "You could've said [b]DESPITE DISPUTE[r] when the light loot became Delight-Dilute."
 
 to say ww2: say "You could've had a [b]WORDY WALK[r] around the sturdy stalk that appeared in [nnss]"

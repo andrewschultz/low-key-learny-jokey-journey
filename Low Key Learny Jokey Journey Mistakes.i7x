@@ -68,7 +68,7 @@ this is the need-unarm rule:
 	if sco-un-arm is false, the rule succeeds;
 	the rule fails;
 
-table of sore souls' gore goals guesses
+table of sore souls gore goals guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "bore bowls"	--	false	109	--	"You're trying to bring life here, not drain it."
 "door doles"	--	false	109	--	"No, this place doesn't need more doors."

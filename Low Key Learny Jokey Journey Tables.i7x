@@ -62,7 +62,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "grotty"	"grail"	--	--	false	true	false	false	jotty jail	vc-grotty-grail rule	vr-grotty-grail rule	--	--
 "potty"	"pail"	--	--	false	true	false	false	jotty jail	vc-potty-pail rule	vr-potty-pail rule	--	--
 "knotty"	"nail"	"naughty"	--	false	true	true	false	jotty jail	vc-knotty-nail rule	vr-knotty-nail rule	--	--
-"piss"	"poor"	"pore"	--	false	true	false	false	--	vc-piss-poor rule	vr-piss-poor rule	--	"You can dismiss the [diss door] with [b]PISS POOR[r] [once-now of vc-piss-poor rule] you've summoned it to where you are."
+"piss"	"poor"	"pore"	--	false	true	false	false	--	vc-piss-poor rule	vr-piss-poor rule	--	"You can dismiss the [diss door] with [b]PISS POOR[r] [once-now of vc-piss-poor rule] you've re-summoned or revisited it."
 "bye"	"bub"	"buy/by"	--	false	true	false	false	high hub	vc-bye-bub rule	vr-bye-bub rule	--	-- [lift llp]
 "wordy"	"walk"	--	--	false	true	false	false	NNSS	vc-wordy-walk rule	vr-wordy-walk rule	--	-- [llp after lift llp]
 "shocking"	"shift"	--	--	false	true	true	false	High Hub	vc-shocking-shift rule	vr-shocking-shift rule	--	-- [start hub] [remember these aren't alphabetized since some need to be completed before others]
@@ -89,9 +89,9 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "throw"	"through"	"threw"	--	false	true	true	false	show shoe	vc-throw-through rule	vr-throw-through rule	--	"You can [b]THROW THROUGH[r] the main act [once-now of vc-throw-through rule] they're here and you have a hyped-up, well-fed crowd in place."
 "dumb"	"doubt"	--	--	false	true	true	false	rum route	vc-dumb-doubt rule	vr-dumb-doubt rule	--	-- [start rum route]
 "said"	"sos"	--	--	false	true	true	false	rum route	vc-said-sos rule	vr-said-sos rule	--	"You can say [b]SAID SOS[r] [once-now of vc-said-sos rule] you've got a foothold in an argument."
-"umm"	"out"	--	--	false	true	true	false	rum route	vc-umm-out rule	vr-umm-out rule	--	"You can say [b]UMM OUT[r] once you're on a roll arguing."
+"umm"	"out"	--	--	false	true	true	false	rum route	vc-umm-out rule	vr-umm-out rule	--	"You can say [b]UMM OUT[r] [once-now of vc-umm-out rule] you're on a roll arguing."
 "hey"	"hope"	"hay"	--	false	true	true	false	Nay Nope Slay Slope	vc-hey-hope rule	vr-hey-hope rule	--	--
-"k"	"cope"	--	--	false	true	true	false	Nay Nope Slay Slope	vc-k-cope rule	vr-k-cope rule	--	"You can say [b]K COPE[r] [once-now of vc-k-cope rule] once you're able to cope fully."
+"k"	"cope"	--	--	false	true	true	false	Nay Nope Slay Slope	vc-k-cope rule	vr-k-cope rule	--	"You can say [b]K COPE[r] [once-now of vc-k-cope rule] you're able to cope fully."
 "tight"	"tease|tees"	--	--	false	true	false	false	slight sleaze	vc-tight-tease rule	vr-tight-tease rule	--	-- [start grokking grift]
 "bright"	"breeze"	--	--	false	true	true	false	slight sleaze	vc-bright-breeze rule	vr-bright-breeze rule	--	--
 "plight"	"please"	--	--	false	true	true	false	slight sleaze	vc-plight-please rule	vr-plight-please rule	--	"You can explain [b]PLIGHT PLEASE[r] [once-now of vc-plight-please rule] you've started to chip away at the slight sleaze."
@@ -101,7 +101,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "clique"	"claiming"	--	--	false	true	false	false	freak framing seek sameing	vc-clique-claiming rule	vr-clique-claiming rule	--	--
 "bred"	"bros"	"bread"	--	false	true	true	false	freak framing seek sameing	vc-bred-bros rule	vr-bred-bros rule	--	"You can summon [b]BRED BROS[r] [once-now of vc-bred-bros rule] you've managed to dismantle the freak framing."
 "bad"	"boast"	--	--	false	true	true	false	Mad Most Cad Coast	vc-bad-boast rule	vr-bad-boast rule	--	-- [start docking diffed/white whale]
-"rad"	"roast"	--	--	false	true	true	false	Mad Most Cad Coast	vc-rad-roast rule	vr-rad-roast rule	--	"You can try a [b]RAD ROAST[r] [once-now of vc-bad-boast rule] you've hit back a bit against the madness."
+"rad"	"roast"	--	--	false	true	true	false	Mad Most Cad Coast	vc-rad-roast rule	vr-rad-roast rule	--	"You can try a [b]RAD ROAST[r] [once-now of vc-rad-roast rule] you've hit back a bit against the madness."
 "sight"	"sail"	"site/sale"	--	false	true	true	false	Trite Trail	vc-sight-sail rule	vr-sight-sail rule	--	--
 "might"	"mail"	"mite/male"	--	false	true	true	false	Trite Trail	vc-might-mail rule	vr-might-mail rule	--	--
 "flight"	"flail"	--	--	false	true	true	false	Trite Trail	vc-flight-flail rule	vr-flight-flail rule	--	--
@@ -164,7 +164,7 @@ this is the vr-boring-box rule:
 a goodrhyme rule (this is the vc-gad-gunk rule):
 	if mad monk is not in location of player, unavailable;
 	if sco-gad-gunk is true:
-		vcal "[alr-ins] cleanliness.";
+		vcal "[alr-ins]cleanliness.";
 		already-done;
 	ready;
 
@@ -175,7 +175,7 @@ this is the vr-gad-gunk rule:
 a goodrhyme rule (this is the vc-bad-bunk rule):
 	if mad monk is not fungible, unavailable;
 	if sco-bad-bunk is true:
-		vcal "[alr-ins] truthfulness.";
+		vcal "[alr-ins]truthfulness.";
 		already-done;
 	ready;
 
@@ -186,7 +186,7 @@ this is the vr-bad-bunk rule:
 a goodrhyme rule (this is the vc-sad-sunk rule):
 	if mad monk is not fungible, unavailable;
 	if sco-sad-sunk is true:
-		vcal "[alr-ins] serenity.";
+		vcal "[alr-ins]serenity.";
 		already-done;
 	ready;
 
@@ -202,7 +202,7 @@ a goodrhyme rule (this is the vc-grow-grudge rule):
 	ready;
 
 this is the vr-grow-grudge rule:
-	say "The sludge hardens! You feel good about not being perfect and not trying to be. It's opened up possibilities, for sure.";
+	say "As your mood hardens, so does the sludge! But you don't see that right away. You're busy accepting you're not perfect and realizing you don't have to be and recognizing sometimes stewing is better than lashing out. The sludge even recedes a bit. You can go any of the four directions now.";
 	now sco-grow-grudge is true;
 
 a goodrhyme rule (this is the vc-done-dorm rule):
@@ -472,8 +472,8 @@ this is the vr-knotty-nail rule:
 	take-lift High Hub;
 
 a goodrhyme rule (this is the vc-piss-poor rule):
-	if miss more diss door is off-stage, unavailable;
-	if miss more diss door is not moot and miss more diss door is not fungible:
+	if miss more diss door is off-stage or miss more diss door is moot, unavailable;
+	if miss more diss door is not fungible:
 		vcp "You'll need to summon the [diss door], with or without profanity.";
 		not-yet;
 	ready;
@@ -570,11 +570,11 @@ this is the vr-stocking-stiffed rule:
 	take-lift Rum Route;
 
 a goodrhyme rule (this is the vc-despite-dispute rule):
-	if delight dilute is not in location of player, unavailable;
+	if delight dilute is not in location of player and player does not have light lute, unavailable;
 	if sco-despite-dispute is true:
 		vcal "You already dispersed the can of DELIGHT-DILUTE!";
 		already-done;
-	if delight dilute is not fungible:
+	if player has light lute:
 		vcp "That's interesting and tricky, and it'll come in handy later. Trust me.";
 		not-yet;
 	ready;
@@ -950,10 +950,10 @@ this is the vr-right-rail rule:
 a goodrhyme rule (this is the vc-bright-brute rule):
 	if player does not have light lute, unavailable;
 	if sco-bright-brute is true:
-		vcal "You already found an ally against the white whale.";
+		vcal "Two bright brutes might be smart enough to understand the prestige of beating a white whale and beat each other up before the hunt began.";
 		already-done;
 	if player is not in trite trail:
-		vcp "That would be a great battle cry if a fearsome enemy were around.";
+		vcp "Good idea, but there's no huge foe for a bright brute to help you with here.";
 		not-yet;
 	ready;
 
@@ -1028,7 +1028,7 @@ a goodrhyme rule (this is the vc-right-root rule):
 	if player does not have light lute, unavailable;
 	abide by the trite-trees-planted rule;
 	if sleaze-score < 2:
-		vcp "That will work when the sleaze is slight enough. Right now, you [if sleaze-score is 1]need to decrease it a bit more[else]haven't started, yet[end if].";
+		vcp "[if player is not in slight sleaze]The right root needs to be laid down somewhere, but not here[else]That will work when the sleaze is slight enough. Right now, you [right-root-need][end if].";
 		not-yet;
 	ready;
 
@@ -1145,7 +1145,7 @@ this is the vr-bane-bat rule:
 a goodrhyme rule (this is the vc-flain-flat rule):
 	if player is not in drain drat vain vat, unavailable;
 	if sco-bane-bat is false:
-		vcp "There is nothing to leave the vat flain flat with.";
+		vcp "You have nothing to render the vat flain flat with. Well, not yet.";
 		not-yet;
 	if sco-flain-flat is true:
 		vcal "No, you already trashed the (ex-)vat.";
@@ -1265,6 +1265,8 @@ tried-mocking-miffed is a truth state that varies.
 
 warn-monk is a truth state that varies.
 
+to nobreak-if-think: if current action is thinking, skip upcoming rulebook break;
+
 section auxiliary rules and definitions
 
 [these are ranked by approximate game order SOULS SHOE ROUTE SLEAZE COAST END]
@@ -1286,7 +1288,7 @@ this is the examine-monk rule:
 			if lc > 0, say "[lc in words] guess[if lc > 1]es[end if]";
 			if lc > 0 and sco-gad-gunk is false, say " and";
 			if sco-gad-gunk is false, say " one bonus point";
-			say " to help build muscle memory or practice grit or whatever for tougher opponents.[paragraph break]Take down the monk anyway?";
+			say " to help build muscle memory or practice grit or whatever for tougher opponents. Why, you might even [if lurking lump is off-stage]find[else]improve[end if] a puzzle-skipping item![paragraph break]Take down the monk anyway?";
 			say "[i][bracket]NOTE: this nag will not appear again, and if you want to try good guesses against other enemies after they vanish, I have no problems if you [b]UNDO[r][i].[close bracket][i]";
 			unless the player dir-consents, the rule fails;
 	say "That's it. The mad monk flees. The path south really is free now.";
@@ -1319,6 +1321,7 @@ to check-red-rose:
 		say "You've almost filled this area's potential. Just a little more life...";
 
 this is the animals-need-shoals rule:
+	nobreak-if-think;
 	if sco-shore-shoals is false:
 		vcp "Such animals would make this area nicer, but it's too desolate for them right now.";
 		not-yet;
@@ -1344,6 +1347,7 @@ this is the stew-and-brew rule:
 	if shoe-concessions is 2, say "With a reliable source of food and drink (which, man, they smell pretty good) a crowd starts to gather. You can't do any rhyming stuff to them directly, but perhaps there's some general stuff you can shout.";
 
 a goodrhyme rule (this is the shoe-crowd-yet rule):
+	nobreak-if-think;
 	if not shoe-food-drink:
 		vcp "There's no crowd to call out to to get them hyped, but if there were, that'd be great!";
 		not-yet;
@@ -1364,7 +1368,7 @@ to say twang: say " string twangs on the light lute. When you look again, it's a
 this is the lute-animal-check rule:
 	if player is not in sore souls gore goals or player does not have light lute, unavailable;
 	if sco-shore-shoals is false:
-		vcp "The enviroment is too inhospitable for such an animal right now.";
+		vcp "[if player is in gore goals]The enviroment is too inhospitable for such an animal right now[else]That animal would fit in well somewhere else[end if].";
 		not-yet;
 
 [hub 3. route]
@@ -1380,6 +1384,8 @@ this is the coped-in-slope rule:
 		not-yet;
 
 [hub 4a. sleaze]
+
+to say right-root-need: say "[if sleaze-score is 1]need to decrease it a bit more[else]haven't started, yet[end if]"
 
 a goodrhyme rule (this is the trite-trees-planted rule):
 	if sco-right-root is true:
@@ -1421,6 +1427,7 @@ this is the marquee-change rule:
 		say "The marquee crumbles, revealing your nemesis ... the Frightfully Bright Bully!";
 		move Frightfully Bright Bully to Threat Three Met Me;
 		moot marquee;
+		now nowhere is mapped north of Threat Three Met Me;
 		print-the-loc;
 	else if marquee-score is 2:
 		say "The marquee turns more pronouncedly cracked as some more text rubs off.";
@@ -1485,8 +1492,8 @@ Bane Be Sane See	"Cardinal directions don't mean much here, yet. Besides, there'
 Roaring Rocks	"The rocks block every way except [if nnss is visited]back [end if]north."
 Trust Track	"[if sco-crust-crack is false]The track seems to end here. You can really only go back west, unless you figure something out[else]The track now runs west-north but not [noun][end if]."
 Warm Stun Storm	"The passage here is north-south."
-Hun Harm Fun Farm	"The passage here bends east to north."
-NoNoon	"This feels like a sacred valley, with the only way out back south."
+Hun Harm Fun Farm	"If you left the north/east passage, you'd probably get lost."
+NoNoon	"[if sco-mo-moon is false]Any way but back south might get you lost in this darkness[else]In this quasi-sacred valley, the only way out is back south[end if]."
 Rare Reach	"The [if sco-bare-beach is true]water[else]darkness[end if] encompasses you every way except back south."
 Jotty Jail	"This being a jail, you can't walk out. You have to find a weak link or something."
 High Hub	"The only way out of the High Hub[if sco-bye-bub is true], besides going back down the sturdy stalk,[end if] is telling the lift where you want to go. Okay, the only non-lethal way."
