@@ -8,6 +8,8 @@
 
 * main-thru
 
+>au 2
+
 >plain plea
 by one point
 
@@ -345,6 +347,8 @@ The HA HALF button lights up on your Leet Learner, but dimly--perhaps this is a 
 
 >u
 
+##RBRSHUFFLESTART=0
+
 #testcase-ha-half-table-of-verb-checks-32-rocking
 >rocking zrift
 The HA HALF button lights up on your Leet Learner.
@@ -455,6 +459,9 @@ by one point
 >throw through
 by one point
 
+##RBRSHUFFLEEND=0
+##RBRSHUFFLESTART=1
+
 #testcase-ha-half-table-of-verb-checks-31-shocking
 >shocking zshift
 The HA HALF button lights up on your Leet Learner.
@@ -532,13 +539,8 @@ by one point
 >more moles
 by one point
 
-#testcase-ha-half-table-of-verb-checks-35-docking
->docking zdiffed
-The HA HALF button lights up on your Leet Learner.
-
-#testcase-ha-half-table-of-verb-checks-35-diffed
->zdocking diffed
-The HA HALF button lights up on your Leet Learner.
+##RBRSHUFFLEEND=1
+##RBRSHUFFLESTART=2
 
 #testcase-ha-half-table-of-verb-checks-33-stocking
 >stocking zstiffed
@@ -607,6 +609,9 @@ The HA HALF button lights up on your Leet Learner.
 
 >k cope
 by one point
+
+##RBRSHUFFLEEND=2
+##RBRSHUFFLESTART=3
 
 >grokking grift
 by one point
@@ -700,6 +705,17 @@ by one point
 
 >bred bros
 by one point
+
+##RBRSHUFFLEEND=3
+##RBRSHUFFLESTART=4
+
+#testcase-ha-half-table-of-verb-checks-35-docking
+>docking zdiffed
+The HA HALF button lights up on your Leet Learner.
+
+#testcase-ha-half-table-of-verb-checks-35-diffed
+>zdocking diffed
+The HA HALF button lights up on your Leet Learner.
 
 >docking diffed
 by one point
@@ -809,6 +825,8 @@ The HA HALF button lights up on your Leet Learner, but dimly--perhaps this is a 
 #testcase-ha-half-table-of-verb-checks-36-dispute
 >zdespite dispute
 The HA HALF button lights up on your Leet Learner, but dimly--perhaps this is a rhyme you don't strictly need to figure to win.
+
+##RBRSHUFFLEEND=4
 
 >despite dispute
 by one point

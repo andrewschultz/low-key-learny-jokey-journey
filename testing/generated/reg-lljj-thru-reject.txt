@@ -8,6 +8,8 @@
 
 * main-thru
 
+>au 2
+
 #testcase-unavailable-table-of-verb-checks-vc-bad-boast-rule
 >bad boast
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
@@ -642,6 +644,8 @@ WRONG
 >bye bub
 WRONG
 
+##RBRSHUFFLESTART=0
+
 >rocking rift
 by one point
 
@@ -727,6 +731,9 @@ WRONG
 >rocking rift
 You already brought life back to the Whoah-Woo Show Shoe. You don't need to go back.
 
+##RBRSHUFFLEEND=0
+##RBRSHUFFLESTART=1
+
 >shocking shift
 by one point
 
@@ -794,6 +801,9 @@ WRONG
 >more moles
 by one point
 
+##RBRSHUFFLEEND=1
+##RBRSHUFFLESTART=2
+
 >stocking stiffed
 by one point
 
@@ -841,6 +851,9 @@ by one point
 #testcase-postreject-table-of-verb-checks-vc-stocking-stiffed-rule
 >stocking stiffed
 WRONG
+
+##RBRSHUFFLEEND=2
+##RBRSHUFFLESTART=3
 
 >grokking grift
 by one point
@@ -915,6 +928,9 @@ by one point
 >grokking grift
 WRONG
 
+##RBRSHUFFLEEND=3
+##RBRSHUFFLESTART=4
+
 >docking diffed
 by one point
 
@@ -985,6 +1001,8 @@ by one point
 #testcase-postreject-table-of-verb-checks-vc-docking-diffed-rule
 >docking diffed
 WRONG
+
+##RBRSHUFFLEEND=4
 
 >despite dispute
 by one point
