@@ -482,9 +482,41 @@ volume rooms (end)
 
 book no new show shoe
 
-There is a room called No New Show Shoe in Poppin' Part. "This isn't actually a shoe, of course. It's an area for performances, shaped like a horseshoe. But of course the shape doesn't matter. You need to make it viable! It's a bit worn down.". guess-table of Show Shoe is table of no new show shoe guesses. printed name of No New Show Shoe is "[if sco-crow-crew is false]No-New-Show Shoe[else]Whoah-Woo-Show Shoe[end if]".
+There is a room called No New Show Shoe in Poppin' Part. "This isn't actually a shoe, of course. It's an area for performances, shaped like a horseshoe. But of course the shape doesn't matter. The locking lift is here, too[if shoe-concessions is 2], and trust me on this--if you re-enter it, time will freeze here, so nobody's left hanging[end if].[paragraph break][shoe-desc].". guess-table of Show Shoe is table of no new show shoe guesses. printed name of No New Show Shoe is "[if sco-crow-crew is false]No-New-Show Shoe[else]Whoah-Woo-Show Shoe[end if]".
 
 understand "whoah/woo show/shoe" and "whoah/woo show shoe" and "whoah/woo" and "whoah woo show/shoe" and "whoah woo show shoe" as show shoe when sco-crow-crew is true.
+
+to say shoe-desc:
+	if shoe-storage is 0:
+		say "However, the infrastructure for a big performance simply isn't here yet";
+		continue the action;
+	else if shoe-storage is 1:
+		say "You've got some supplies for crowd accomodations (the [if sco-flow-flue is true]flow flue[else]glow glue[end if],) but you need more to build infrastructure";
+		continue the action;
+	say "You've built infrastructure to store consumables with the flow flue and glow glue";
+	if shoe-concessions is 0:
+		say ". Unfortunately, the infrastructure contains no concessions a crowd would appreciate";
+		continue the action;
+	else if shoe-concessions is 1:
+		say ". There's still room for [if sco-bro-brew is true]food[else]drink[end if]";
+		continue the action;
+	else:
+		say ". The brew and stew there should sustain the crowd nicely";
+
+after printing the locale description when player is in Show Shoe (this is the show shoe extra 1 rule):
+	if sco-go-goo is true, say "There's also a pile of 'nutritious' 'energetic' Go Goo that event-goers will snap up.";
+	continue the action;
+
+after printing the locale description when player is in Show Shoe (this is the show shoe extra 2 rule):
+	if shoe-concessions is not 2, continue the action;
+	if sco-ho-who is false:
+		say "The crowd that's built up is ready to be asked if they are ready to make some noise and get this party started. Except, well, a lot more succinctly.";
+	else if sco-yo-you is false:
+		say "The crowd, having expressed their willingness to raise the roof figuratively, seeks reassurance.";
+	else:
+		say "The crowd is hyped for the main performance!";
+	say "[line break][if sco-crow-crew is true]The Crow Crew waits in the wings, out of sight, ready to make an entrance if introduced energetically enough.[else]There are no performers yet. What could the group's name be?[end if]";
+	continue the action;
 
 sco-flow-flue is a truth state that varies.
 sco-glow-glue is a truth state that varies.
@@ -570,7 +602,7 @@ a might mail is scenery. "The might mail is too heavy to wear until you meet the
 
 book Sore Souls Gore Goals / Shocking Shift
 
-Sore Souls Gore Goals is a room in Poppin' Part. "[if sco-shore-shoals is false]It's very desolate here. No life or community of animals could last for long. Perhaps any spark of nature could change things[else]The shore shoals are a more comforting place to be than before. You've [shoal-so-far][end if].". printed name is "[if sco-shore-shoals is false]Sore Souls['] Gore Goals[else]Shore Shoals[end if]". understand "shore/shoals" and "shore shoals" as Gore Goals when sco-shore-shoals is true.
+Sore Souls Gore Goals is a room in Poppin' Part. "[if sco-shore-shoals is false]It's very desolate here. No life or community of animals could last for long. Perhaps any spark of nature could change things[else]The shore shoals are a more comforting place to be than before. You've [shoal-so-far][end if]. You sense you would [if sco-shore-shoals is true]fade into the nothingness[else]violate something sacred[end if] if you explored further.". printed name is "[if sco-shore-shoals is false]Sore Souls['] Gore Goals[else]Shore Shoals[end if]". understand "shore/shoals" and "shore shoals" as Gore Goals when sco-shore-shoals is true.
 
 to say shoal-so-far:
 	let shoal-total be shoal-extra-animals + shoal-core-score;
@@ -623,7 +655,7 @@ guess-table of red rose is the table of red rose guesses.
 
 book Slight Sleaze / Grokking Grift
 
-Slight Sleaze is a room in Poppin' Part. "[if sco-bright-breeze is false]You feel a fright-freeze preventing you from going south[else if sco-plight-please is false]The fright-freeze is still around, but it's at least being blown about. However, self-serving pity stories whispered in your ear make you wonder if you really deserve to move on while they're clearly stuck here[else if sco-right-root is false]It feels nicer here, but this place could use scenery, something that may need to come from elsewhere[else]The trite trees make things feel nicer here, having replaced the fright-freeze that was here[end if].". printed name is "[if sco-right-root is false]Slight Sleaze[else]Trite Trees[end if]".
+Slight Sleaze is a room in Poppin' Part. "[if sco-bright-breeze is false]You feel a fright-freeze preventing you from going south[else if sco-plight-please is false]The fright-freeze is still around, but it's at least being blown about. However, self-serving pity stories whispered in your ear make you wonder if you really deserve to move on while they're clearly stuck here[else if sco-right-root is false]It feels nicer here, but this place could use scenery, something that may need to come from elsewhere[else]The trite trees make things feel nicer here, having replaced the fright-freeze that was here[end if].[paragraph break]Of course, you can always enter the locking lift to return to the High Hub.". printed name is "[if sco-right-root is false]Slight Sleaze[else]Trite Trees[end if]".
 
 guess-table of slight sleaze is the table of slight sleaze guesses.
 
@@ -651,7 +683,7 @@ sco-bred-bros is a truth state that varies.
 
 book Rum Route
 
-Rum Route is a room in Poppin' Part. "[if sco-dumb-doubt is false]You seem assailed by ... well, not quite voices, here, but ideas from whoever-it-is that you deserve to be stuck here. The arguments seem brilliant and ironclad[else if sco-said-sos is false]You've pushed back and instilled doubt, but now you need to brag a bit[else if sco-umm-out is false]You feel like you can win the fight against frustration and helplessness with a snappy reply. The sort that might paralyze you[else]You see the way down now you've dispelled your own doubts. You hope you're ready to face it[sstt][end if]."
+Rum Route is a room in Poppin' Part. "[if sco-dumb-doubt is false]You seem assailed by ... well, not quite voices, here, but ideas from whoever-it-is that you deserve to be stuck here. The arguments seem brilliant and ironclad[else if sco-said-sos is false]You've pushed back and instilled doubt, but now you need to brag a bit[else if sco-umm-out is false]You feel like you can win the fight against frustration and helplessness with a snappy reply. The sort that might paralyze you[else]You see the way down now you've dispelled your own doubts. You hope you're ready to face it[sstt][end if]. Thankfully, the lift here can take you back to the High Hub."
 
 to say sstt: if slay slope is visited, say " this time"
 
