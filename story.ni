@@ -227,7 +227,7 @@ check going north in Roaring Rocks:
 
 chapter boring box
 
-the boring box is a thing.
+the boring box is a thing. description is "Yup. It's pretty boring, but at least it wouldn't be a challenge to [b]OPEN[r].".
 
 check opening boring box:
 	say "You open the boring box, and you see a metal gadget that doesn't look very interesting at first. It's labeled as a Leet Learner. You can probably [b]READ[r] it for instructions.";
@@ -250,7 +250,7 @@ check going in nnss:
 
 chapter no nudge slow sludge (scenery)
 
-there is thing called no nudge slow sludge. It is scenery. It is in NNSS. printed name is "no-nudge slow sludge".
+there is thing called no nudge slow sludge. It is scenery. It is in NNSS. printed name is "no-nudge slow sludge". "It sure is icky! Just looking at it makes you too mad, too fast. You need the right way to be disgusted by it."
 
 sco-grow-grudge is a truth state that varies.
 
@@ -307,7 +307,7 @@ after printing the locale description when location of player is NoNoon:
 	if Rho Rune is off-stage, say "You feel helpless here.";
 	continue the action;
 
-the cocoon is a thing.
+the cocoon is a thing. "The cocoon you summoned still lies here.". description is "It's lying here, ready to open, if enough time passes."
 
 book One Warm Stun Storm
 
@@ -354,7 +354,7 @@ guess-table of free fruit is the table of free fruit guesses.
 
 chapter pear peach
 
-the pear peach is a thing.
+the pear peach is a thing. "It looks like a cross between a pear and a peach, with two bumps where the circumference gets larger instead of one, and the sort of orangish coloring in some spots and the light greenish pear coloring in others.".
 
 book Trust Track
 
@@ -362,7 +362,9 @@ Trust Track is east of NNSS. it is in Hoppin' Heart. "You're in a sort of earthy
 
 guess-table of trust track is table of trust track guesses.
 
-Just Jack is a person in Trust Track. "[one of]'Hi! I'm Just Jack. you can totally trust me that there are no other passages here. In fact, I'd be offended if you looked for them while I was still here. Not that you're getting rid of me.'[or]Just Jack waits here, making sure you trust his 'advice' enough not to look for any other passages.[stopping]"
+Just Jack is a thing in Trust Track. "[one of]'Hi! I'm Just Jack. you can totally trust me that there are no other passages here. In fact, I'd be offended if you looked for them while I was still here. Not that you're getting rid of me.'[or]Just Jack waits here, making sure you trust his 'advice' enough not to look for any other passages.[stopping]".
+
+description of Just Jack is "He is just sitting around here with no better place to be. Or no less awful place. He's not going to go anywhere on his own, that's for sure.".
 
 the sus sack is a rhymable. guess-table of sus sack is table of trust track guesses. description is "What could be in it? It feels both light and heavy at the same time, both practical and impractical."
 
@@ -448,7 +450,7 @@ guess-table of locking lift is the table of locking lift guesses.
 
 chapter delight dilute
 
-the can of DELIGHT DILUTE is a boring rhymable. "Just staring at it makes you feel you need to trivialize what you've done so far, but you can't explain why. There's a way around it, you're sure, and you could also just move on, but all the same, sometimes you can't help but pick one last useless fight to feel like you really nailed things down."
+the can of DELIGHT DILUTE is a boring rhymable. description is "Just staring at it makes you feel you need to trivialize what you've done so far, but you can't explain why. There's a way around it, you're sure, and you could also just move on, but all the same, sometimes you can't help but pick one last useless fight to feel like you really nailed things down."
 
 guess-table of DELIGHT DILUTE is table of light lute guesses.
 
@@ -502,17 +504,36 @@ sco-bad-boast is a truth state that varies.
 
 book Trite Trail
 
-Trite Trail is west of Mad Most Cad Coast. It is in Poppin' Part. "A trite trail ends at a large body of water here. The only exit is back east to [cad coast][if white whale is in trite trail]. A [whale] seems to be taunting you in the distance. Perhaps you can go all Captain Ahab on it[end if]."
+Trite Trail is west of Mad Most Cad Coast. It is in Poppin' Part. "A trite trail ends at a large body of water here. Well, sort of. It gets even more unbearable trite to the west (trust me,) so your only exit is back east to [cad coast][if white whale is in trite trail]. A [whale] seems to be taunting you in the distance. Perhaps you can go all Captain Ahab on it[end if]."
 
 guess-table of Trite Trail is table of trite trail guesses.
 
-the tight tail white whale is scenery in Trite Trail. printed name is "tight-tail white whale".
+the tight tail white whale is scenery in Trite Trail. printed name is "tight-tail white whale". "It splashes out of the water sometimes, mocking you. You don't know why you're supposed to defeat it, but you know you are."
 
 sco-sight-sail is a truth state that varies.
 sco-might-mail is a truth state that varies.
 sco-flight-flail is a truth state that varies.
 sco-right-rail is a truth state that varies.
 sco-excite-exhale is a truth state that varies.
+
+definition: a thing (called th) is whale-defeating:
+	unless th is scenery, no;
+	if th is white whale, no;
+	yes;
+
+after printing the locale description for trite trail when whale-score > 0 and sco-excite-exhale is false:
+	say "So far you've brought together [a list of whale-defeating things in trite trail] for your assault on the white whale. [if whale-score is 1]It[else]They[end if][']ll be ready when needed.";
+	continue the action;
+
+chapter sceneries
+
+a sight sail is scenery. "You don't know much about ships, but it looks ready to go, [if sco-right-rail is true]and you'd be comfortable sailing in it a while[else]though you're not sure you'd be comfortable in it too long, yet[end if]."
+
+a flight flail is scenery. "The flight flail sits on the ground, ready for you to pick up when you need it.".
+
+a bright brute is scenery. "The bright brute seems to be napping right now. Resting up for the big fight."
+
+a might mail is scenery. "The might mail is too heavy to wear until you meet the white whale, but it's shiny and bright and impressive."
 
 book Sore Souls Gore Goals / Shocking Shift
 
@@ -640,7 +661,9 @@ sco-splain-splat is a truth state that varies.
 
 chapter Pred Pros
 
-the Pred Pros are a plural-named rhymable. guess-table of Pred Pros is table of red rose guesses. "Lean and mean Pred Pros stand here, guarding the way south. Your erstwhile red rose still protects you."
+the Pred Pros are a plural-named rhymable. guess-table of Pred Pros is table of red rose guesses. "Unfortunately, the Pred Pros also block the way south, their faces encased in head hose. The aura from your erstwhile red rose still protects you.". description is "They haven't attacked you yet. They aren't, like, obviously snarling under the head hose. Maybe you can do something for them to make peace."
+
+the head hose is scenery. "It obscures the Pred Pros['] faces, but they can still breathe."
 
 sco-fed-foes is a truth state that varies.
 
@@ -1039,7 +1062,7 @@ after printing the locale description:
 	if miss more diss door is fungible, say "Oh. The [diss door] is there. You may want to dispose of it somehow.";
 	continue the action;
 
-the miss more diss door is a rhymable. it is scenery. printed name is "miss-more-diss door".
+the miss more diss door is a rhymable. it is scenery. printed name is "miss-more-diss door". description is "It seems to be inviting you in, and yet, at the same time, pushing you away for not being quite good enough. Yet."
 
 guess-table of miss more diss door is table of miss more diss door guesses.
 
