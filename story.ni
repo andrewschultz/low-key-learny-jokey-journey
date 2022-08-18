@@ -717,12 +717,11 @@ book Drain Drat Vain Vat
 
 Drain Drat Vain Vat is south of Old End. It is in Poppin' Part. printed name of Vain Vat is "[if sco-splain-splat is false]Drain (Drat!) Vain Vat[else]Main Mat[end if]". understand "main mat" as Drain Drat Vain Vat when sco-splain-splat is true. "[if sco-bane-bat is false]You seem stuck here, and that's that. Maybe if you had something to help bash your way out[else if sco-flain-flat is false]You're still stuck in the vat for now. You're not sure how to get out, but once you are, you suspect your bane bat will do the trick[else if sco-splain-splat is false]The south wall looks shaky, but you don't have the strength to bash it by yourself. Perhaps a taunt would bring enemy henchmen busting through it[else]The way south is open now, thanks to the Pred Pros[end if]."
 
-check going south in Vain Vat:
-	if sco-splain-splat is false, say "You don't have the confidence yet. You need to make a bold statement." instead;
-	if sco-fed-foes is false, say "The Pred Pros aren't going to leave without something to show for their work." instead;
-
 check going in Vain Vat:
 	if sco-flain-flat is false, say "You're still stuck in the vain vat. You need to get out. But it can't be too bad." instead;
+	if noun is south:
+		if sco-splain-splat is false, say "While the wall to the south is flimsy, you can't break it by yourself. Maybe you could goad some enemies into busting it down." instead;
+		if Pred Pros are in vain vat, say "The Pred Pros aren't going to leave without something to show for their work." instead;
 	if Pred Pros are in vain vat, say "Running from the Pred Pros would be unwise. Your rose's protection would wear off." instead;
 
 guess-table of drain drat vain vat is the table of drain drat vain vat guesses.
@@ -741,14 +740,19 @@ sco-fed-foes is a truth state that varies.
 
 book Threat Three Met ME
 
-Threat Three Met Me is south of Drain Drat Vain Vat. It is in Poppin' Part. printed name is "[if marquee-score < 3]Market Marquee[else]Threat Three Met Me[end if]". "[if marquee is moot]The marquee has crumbled. All that's left is desolation and your final enemy[else]A market marquee stands here, maybe giving you some clues as to how to do things[end if]. [if bright bully is off-stage]You could go back north if you really wanted, but perhaps you'll want to finish things here[else]You feel stuck here in the final encounter[end if]."
+Threat Three Met Me is south of Drain Drat Vain Vat. It is in Poppin' Part. printed name is "[if marquee-score < 3]Market Marquee[else]Threat Three Met Me[end if]". "[if marquee is moot]The marquee has crumbled, its rubble blocking the way back north. This is it[else]A market marquee stands here, maybe giving you some clues as to how to do things[end if]. [if bright bully is off-stage]You could go back north if you really wanted, but perhaps you'll want to finish things here[else]You feel stuck here in the final encounter[end if]."
 
-check going north in Threat Three Met Me when bright bully is in Threat Three Met Me: say "As much as you dislike [the bully], you're pulled to them, as well. Time to finish the deal.";
+check going north in Threat Three Met Me when bright bully is in Threat Three Met Me: say "As much as you dislike [the bully], you're pulled to them, as well. Time to finish the deal." instead;
 
 guess-table of threat three met me is the table of threat three met me guesses.
 
 after printing the locale description for Threat Three when Threat Three is unvisited:
-	ital-say "you can make enough good guesses from the room name to [if lurking lump is off-stage]get a hint item that will spoil the tricky final puzzle[else]recharge your lurking lump[end if], so you'll be prevented from going back once your enemy appears.";
+	if lump-charges is 1:
+		ital-say "there are enough good guesses in this room to get an additional lump charge for the final puzzle, which is meant to be tricky.";
+	else:
+		ital-say "you can make enough good guesses from the room name to [if lurking lump is off-stage]get a hint item that will spoil the tricky final puzzle[else]recharge your lurking lump[end if], so you'll be prevented from going back once your enemy appears.";
+		if lump-count < next-lump-level - 7:
+			now lump-count is next-lump-level - 7;
 	continue the action;
 
 chapter market marquee
@@ -777,6 +781,12 @@ sco-set-see is a truth state that varies.
 sco-yet-ye is a truth state that varies.
 
 sco-plus-plaque is a truth state that varies.
+
+chapter Frightfully Bright Bully
+
+the Frightfully Bright Bully is a person. description is "The [bully] doesn't look especially mean or conniving or thuggish. But you know they just can't stand you. It's time to face up to them.". "The Frightfully Bright Bully continues a combination of rolling their eyes and looking away from you."
+
+sco-trite-t-lly is a truth state that varies.
 
 volume main engine
 
@@ -1267,16 +1277,6 @@ this is the show-misses rule:
 to say ww2: say "You could've had a [b]WORDY WALK[r] around the sturdy stalk that appeared in [nnss]"
 
 volume unsorted
-
-book people
-
-the Frightfully Bright Bully is a person. description is "The [bully] doesn't look especially mean or conniving or thuggish. But you know they just can't stand you. It's time to face up to them."
-
-sco-trite-t-lly is a truth state that varies.
-
-book places
-
-book things
 
 volume internal map
 

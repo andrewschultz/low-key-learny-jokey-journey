@@ -1424,13 +1424,13 @@ a goodrhyme rule (this is the marquee-there rule):
 
 this is the marquee-change rule:
 	if marquee-score is 3:
-		say "The marquee crumbles, revealing your nemesis ... the Frightfully Bright Bully!";
+		say "The marquee crumbles. Mostly, it crumbles into what was the exit north. Behind it is ... the [Bully] you met at the start! They moan loudly about first the Train Tree, then the cocoon, then ... you somehow getting here with the locking lift. All, yes, threats. 'THREAT THREE MET ME!' the [bully] booms.";
 		move Frightfully Bright Bully to Threat Three Met Me;
 		moot marquee;
 		now nowhere is mapped north of Threat Three Met Me;
 		print-the-loc;
 	else if marquee-score is 2:
-		say "The marquee turns more pronouncedly cracked as some more text rubs off.";
+		say "The marquee becomes even more visibly cracked. Only one bit of text is left on it.";
 	else:
 		say "The marquee shakes slightly as some of the text is rubbed off."
 
