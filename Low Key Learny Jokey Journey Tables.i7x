@@ -657,6 +657,7 @@ a goodrhyme rule (this is the vc-night-newt rule):
 this is the vr-night-newt rule:
 	now sco-night-newt is true;
 	say "A night newt appears and scurries off. The place feels livelier now.";
+	lose-silver-string;
 
 a goodrhyme rule (this is the vc-kite-coot rule):
 	abide by the lute-animal-check rule;
@@ -668,6 +669,7 @@ a goodrhyme rule (this is the vc-kite-coot rule):
 this is the vr-kite-coot rule:
 	now sco-kite-coot is true;
 	say "The kite coot is an odd animal for sure but a worthy addition to the menagerie here.";
+	lose-silver-string;
 
 a goodrhyme rule (this is the vc-flow-flue rule):
 	if player is not in show shoe, unavailable;
@@ -959,6 +961,7 @@ this is the vr-bright-brute rule:
 	now sco-bright-brute is true;
 	say "You call on a bright brute, who hides in the shadows to practice their fighting moves until such time as you're ready to attack the white whale. You'll need the muscle in case the whale somehow gets on board.";
 	move bright brute to trite trail;
+	lose-gold-string;
 
 a goodrhyme rule (this is the vc-excite-exhale rule):
 	if player is not in Trite Trail, unavailable;
@@ -1032,6 +1035,7 @@ a goodrhyme rule (this is the vc-right-root rule):
 this is the vr-right-root rule:
 	now sco-right-root is true;
 	say "The right root takes hold in the ground, and out bloom ... trite trees! No, it's not picturesque, but it's better than what was there before.";
+	lose-gold-string;
 
 a goodrhyme rule (this is the vc-bleak-blaming rule):
 	if player is not in freak framing seek sameing, unavailable;
@@ -1321,7 +1325,6 @@ this is the animals-need-shoals rule:
 
 to lose-rose-petal: say "[line break]A[one of][or]nother[stopping] bright petal falls off the red rose."
 
-
 [hub 2. shoe]
 
 to decide whether shoe-food-drink:
@@ -1345,6 +1348,12 @@ a goodrhyme rule (this is the complete-hype rule):
 	if sco-yo-you is true:
 		vcal "You already hyped the crowd up completely. Time to give them a show!";
 		already-done;
+
+to lose-gold-string: say "[line break]A[one of][or]nother[stopping] gold[twang]."
+
+to lose-silver-string: say "[line break]A[one of][or]nother[stopping] silver[twang]."
+
+to say twang: say " string twangs on the light lute. When you look again, it's a dusty greyish color"
 
 [hub 2a. got lute]
 

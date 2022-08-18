@@ -191,7 +191,7 @@ Bane Be Sane See is a room.  it is in Stoppin' Start. printed name is "Bane Be S
 
 guess-table of Bane Be Sane See is table of Bane Be Sane See guesses.
 
-the player is in Bane Be Sane See.
+the player is in Bane Be Sane See. description of player is "Some searchin['], umm, urchin."
 
 sco-plain-plea is a truth state that varies.
 sco-choose-name is a truth state that varies. [ this variable is never explicitly used in the code as of now, but it could be. I have one for each point-scored truth-state. ]
@@ -354,7 +354,7 @@ guess-table of free fruit is the table of free fruit guesses.
 
 chapter pear peach
 
-the pear peach is a thing. "It looks like a cross between a pear and a peach, with two bumps where the circumference gets larger instead of one, and the sort of orangish coloring in some spots and the light greenish pear coloring in others.".
+the pear peach is a thing. description is "It looks like a cross between a pear and a peach, with two bumps where the circumference gets larger instead of one, and the sort of orangish coloring in some spots and the light greenish pear coloring in others.".
 
 book Trust Track
 
@@ -478,18 +478,31 @@ sco-throw-through is a truth state that varies.
 
 chapter light lute
 
-the light lute is a rhymable. "You have no clue how to play it[if lute-strings is 0]. But it has to be useful[end if]. It has two golden strings, of which [lute-strings in words] are broken.";
+the light lute is a rhymable. description is "You have no clue how to play it, but it feels pretty magical.";
 
 guess-table of light lute is the table of light lute guesses.
-
-to decide which number is lute-strings:
-	decide on boolval of sco-right-root + boolval of sco-bright-brute;
 
 sco-bright-brute is a truth state that varies.
 sco-right-root is a truth state that varies.
 
 sco-kite-coot is a truth state that varies.
 sco-night-newt is a truth state that varies.
+
+section in-depth lute descriptions
+
+report examining light lute:
+	let all-strings be gold-lute-strings + silver-lute-strings;
+	if all-strings is 0:
+		say "It used to have some gold and silver strings, but they're replaced by regular ones now.";
+		continue the action;
+	say "The lute [if all-strings < 4]still [end if]has [if gold-lute-strings > 0][gold-lute-strings in words] gold string[plur of gold-lute-strings][end if][if gold-lute-strings > 0 and silver-lute-strings > 0] and [end if][if silver-lute-strings > 0][silver-lute-strings in words] silver string[plur of silver-lute-strings][end if].";
+	continue the action;
+
+to decide which number is gold-lute-strings:
+	decide on 2 - (boolval of sco-right-root + boolval of sco-bright-brute);
+
+to decide which number is silver-lute-strings:
+	decide on 2 - (boolval of sco-night-newt + boolval of sco-kite-coot);
 
 book mad most cad coast
 
@@ -537,7 +550,7 @@ a might mail is scenery. "The might mail is too heavy to wear until you meet the
 
 book Sore Souls Gore Goals / Shocking Shift
 
-Sore Souls' Gore Goals is a room in Poppin' Part. "[if sco-shore-shoals is false]It's very desolate here. No life or community of animals could last for long. Perhaps any spark of nature could change things[else]It's a more comforting place to be. You've [shoal-so-far][end if].". printed name is "[if sco-shore-shoals is false]Sore Souls['] Gore Goals[else]Shore Shoals[end if]". understand "shore/shoals" and "shore shoals" as Gore Goals when sco-shore-shoals is true.
+Sore Souls Gore Goals is a room in Poppin' Part. "[if sco-shore-shoals is false]It's very desolate here. No life or community of animals could last for long. Perhaps any spark of nature could change things[else]It's a more comforting place to be. You've [shoal-so-far][end if].". printed name is "[if sco-shore-shoals is false]Sore Souls['] Gore Goals[else]Shore Shoals[end if]". understand "shore/shoals" and "shore shoals" as Gore Goals when sco-shore-shoals is true.
 
 to say shoal-so-far:
 	let shoal-total be shoal-extra-animals + shoal-core-score;
@@ -574,10 +587,10 @@ chapter red rose
 a red rose is a rhymable. description is "It's a simple red rose. Just looking at it leaves you feeling protected and inspired."
 
 to decide what number is rose-petals-remaining:
-	decide on 3 - boolval of sco-said-sos - boolval of sco-fed-foes;
+	decide on 3 - (boolval of sco-said-sos + boolval of sco-fed-foes);
 
 report examining red rose:
-	say "You notice the red rose has [rose-petals-remaining in words] particularly bright petal[if rose-petals-remaining > 1]s[end if][if rose-petals-remaining < 3] still remaining[end if].";
+	say "You notice the red rose has [rose-petals-remaining in words] particularly bright petal[plur of rose-petals-remaining][if rose-petals-remaining < 3] still remaining[end if].";
 	continue the action;
 
 sco-said-sos is a truth state that varies.
