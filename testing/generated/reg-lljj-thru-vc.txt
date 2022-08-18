@@ -16,10 +16,6 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 >bad bunk
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
 
-#testcase-unavailable-table-of-verb-checks-vc-bane-bat-rule
->bane bat
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
-
 #testcase-unavailable-table-of-verb-checks-vc-bare-beach-rule
 >bare beach
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
@@ -268,10 +264,6 @@ It looks like you may have tried to refer to the room name, or part of it. You o
 >seep soon
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
 
-#testcase-unavailable-table-of-verb-checks-vc-set-see-rule
->set see
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
-
 #testcase-unavailable-table-of-verb-checks-vc-shocking-shift-rule
 >shocking shift
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
@@ -349,6 +341,14 @@ You already made a plain plea.
 
 >jane g
 by one point
+
+#testcase-unavailable-table-of-verb-checks-vc-bane-bat-rule
+>bane bat
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+
+#testcase-unavailable-table-of-verb-checks-vc-set-see-rule
+>set see
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
 
 >boring box
 by one point
@@ -1080,15 +1080,15 @@ by one point
 
 #testcase-postreject-table-of-verb-checks-vc-set-see-rule
 >set see
-WRONG
+You already prepped yourself for the final fight. Now it is upon you.
 
 #testcase-postreject-table-of-verb-checks-vc-fret-free-rule
 >fret free
-WRONG
+You already prepped yourself for the final fight. Now it is upon you.
 
 #testcase-postreject-table-of-verb-checks-vc-yet-ye-rule
 >yet ye
-WRONG
+You already prepped yourself for the final fight. Now it is upon you.
 
 #testcase-prereject-table-of-verb-checks-vc-t-lly-rule
 >trite telly

@@ -166,7 +166,7 @@ The Leet Learner shakes back and forth. Something you said sounded right, but ma
 >knotty nail
 by one point
 
-#testcase-homonym-table-of-verb-checks-buy
+#testcase-homonym-table-of-verb-checks-buy-by
 >buy bub
 The Leet Learner shakes back and forth. Something you said sounded right, but maybe you didn't THINK it right.
 
@@ -283,6 +283,10 @@ by one point
 >plight please
 by one point
 
+#testcase-homonym-table-of-verb-checks-write-route
+>write route
+The Leet Learner shakes back and forth. Something you said sounded right, but maybe you didn't THINK it right.
+
 >right root
 by one point
 
@@ -294,7 +298,7 @@ by one point
 >bleak blaming
 by one point
 
-#testcase-homonym-table-of-verb-checks-shiek
+#testcase-homonym-table-of-verb-checks-shiek-sheik
 >shiek shaming
 The Leet Learner shakes back and forth. Something you said sounded right, but maybe you didn't THINK it right.
 
@@ -319,7 +323,7 @@ by one point
 
 >w
 
-#testcase-homonym-table-of-verb-checks-site
+#testcase-homonym-table-of-verb-checks-site-sale
 >site sale
 The Leet Learner shakes back and forth. Something you said sounded right, but maybe you didn't THINK it right.
 
@@ -329,14 +333,14 @@ by one point
 >flight flail
 by one point
 
-#testcase-homonym-table-of-verb-checks-mite
+#testcase-homonym-table-of-verb-checks-mite-male
 >mite male
 The Leet Learner shakes back and forth. Something you said sounded right, but maybe you didn't THINK it right.
 
 >might mail
 by one point
 
-#testcase-homonym-table-of-verb-checks-write
+#testcase-homonym-table-of-verb-checks-write-rale
 >write rale
 The Leet Learner shakes back and forth. Something you said sounded right, but maybe you didn't THINK it right.
 

@@ -17,6 +17,16 @@ by one point
 >open box
 
 >n
+
+>au 2
+
+>sad sunk
+by one point
+
+>bad bunk
+by one point
+
+>n
 NOTE: you don't need to go back to Roaring Rocks/Storing Stocks again. If you wish to track this sort of thing, GUIDE GONG will shut you out of completed areas, STRIDE STRONG will remove these restrictions, and PRIDE PRONG is like the gong, except it will give you a poke to visit rooms where you can still get a bonus point.
 
 >undo

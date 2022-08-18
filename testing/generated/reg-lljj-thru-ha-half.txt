@@ -498,9 +498,6 @@ The HA HALF button lights up on your Leet Learner, but dimly--perhaps this is a 
 >lore zlols
 The HA HALF button lights up on your Leet Learner, but dimly--perhaps this is a rhyme you don't strictly need to figure to win.
 
->i
-WRONG
-
 #testcase-ha-half-table-of-verb-checks-42-newt
 >znight newt
 The HA HALF button lights up on your Leet Learner, but dimly--perhaps this is a rhyme you don't strictly need to figure to win.
@@ -942,7 +939,7 @@ The HA HALF button lights up on your Leet Learner.
 >plus zplaque
 The HA HALF button lights up on your Leet Learner.
 
-#testcase-ha-half-table-of-verb-checks-85-tolly-tully-tally-telly-tilly
+#testcase-ha-half-table-of-verb-checks-85-tully-tolly-tally-telly-tilly-tillie
 >ztrite tolly
 The HA HALF button lights up on your Leet Learner.
 
