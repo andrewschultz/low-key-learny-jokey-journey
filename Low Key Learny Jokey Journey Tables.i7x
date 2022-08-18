@@ -822,6 +822,7 @@ a goodrhyme rule (this is the vc-said-sos rule):
 this is the vr-said-sos rule:
 	now sco-said-sos is true;
 	say "Your said-sos make sense. You're ready for the crescendo.";
+	lose-rose-petal;
 
 a goodrhyme rule (this is the vc-umm-out rule):
 	if player is not in rum route, unavailable;
@@ -1068,19 +1069,23 @@ this is the vr-clique-claiming rule:
 	say "Well, claiming that cliques exist and we aren't in it always works, even though we deserve to be, and even if we don't really want to be in good with the leaders. It's not practical, but boy, is it cathartic!";
 
 a goodrhyme rule (this is the vc-bred-bros rule):
-	if player is not in freak framing seek sameing, unavailable;
-	if sco-chic-shaming is false:
-		vcp "You haven't done enough so that said bred Bros can continue your work.";
-		not-yet;
+	if player does not have red rose, unavailable;
 	if sco-bred-bros is true:
 		vcal "There are enough bred Bros to give your message out.";
 		already-done;
+	if player is not in freak framing:
+		vcp "This isn't the place for Bred Bros to generate a more positive influence.";
+		not-yet;
+	if sco-chic-shaming is false:
+		vcp "You haven't done enough so that said bred Bros can continue your work.";
+		not-yet;
 	ready;
 
 this is the vr-bred-bros rule:
 	now sco-bred-bros is true;
 	say "Some bred Bros, more charismatic than you, arrive to disperse your message more charismatically.";
 	take-lift High Hub;
+	lose-rose-petal;
 
 a goodrhyme rule (this is the vc-bold-bend rule):
 	if player is not in old end, unavailable;
@@ -1313,6 +1318,9 @@ this is the animals-need-shoals rule:
 	if sco-shore-shoals is false:
 		vcp "Such animals would make this area nicer, but it's too desolate for them right now.";
 		not-yet;
+
+to lose-rose-petal: say "[line break]A[one of][or]nother[stopping] bright petal falls off the red rose."
+
 
 [hub 2. shoe]
 

@@ -522,7 +522,7 @@ definition: a thing (called th) is whale-defeating:
 	yes;
 
 after printing the locale description for trite trail when whale-score > 0 and sco-excite-exhale is false:
-	say "So far you've brought together [a list of whale-defeating things in trite trail] for your assault on the white whale. [if whale-score is 1]It[else]They[end if][']ll be ready when needed.";
+	say "So far you've scrounged up [a list of whale-defeating things in trite trail] for your assault on the white whale. [if whale-score is 1]It[else]They[end if][']ll be ready when needed.";
 	continue the action;
 
 chapter sceneries
@@ -571,7 +571,14 @@ sco-kite-coot is a truth state that varies.
 
 chapter red rose
 
-a red rose is a rhymable. description is "It's a lovely generic red rose. It can probably help you do things. It has [rose-petals in words] petals left.".
+a red rose is a rhymable. description is "It's a simple red rose. Just looking at it leaves you feeling protected and inspired."
+
+to decide what number is rose-petals-remaining:
+	decide on 3 - boolval of sco-said-sos - boolval of sco-fed-foes;
+
+report examining red rose:
+	say "You notice the red rose has [rose-petals-remaining in words] particularly bright petal[if rose-petals-remaining > 1]s[end if][if rose-petals-remaining < 3] still remaining[end if].";
+	continue the action;
 
 sco-said-sos is a truth state that varies.
 sco-head-hose is a truth state that varies.
