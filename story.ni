@@ -451,7 +451,11 @@ sco-grotty-grail is a truth state that varies.
 sco-potty-pail is a truth state that varies.
 sco-knotty-nail is a truth state that varies.
 
-book High Hub
+volume rooms (end)
+
+book the hub
+
+part High Hub
 
 High Hub is a room in Poppin' Part. "A locking lift offers transport, but to where? Well, you have to ask it. [if sco-bye-bub is true]You can, if you want, go back [b]DOWN[r] to[else]At first glance, you seem stuck here with the lift, which may or may not be too cryptic. Or are you? Perhaps there's a way to go back down and[end if] make more good guesses and scrounge for more clues[if delight dilute is in high hub].[paragraph break]Oh yes, that can of Delight-Dilute is still leaking slowly here. You don't need to take care of it[end if]."
 
@@ -488,7 +492,60 @@ bore-text of delight dilute is "You'll need something slightly esoteric to get r
 
 sco-despite-dispute is a truth state that varies.
 
-volume rooms (end)
+book spoke 0 / Shocking Shift
+
+part Sore Souls Gore Goals
+
+Sore Souls Gore Goals is a room in Poppin' Part. "[if sco-shore-shoals is false]It's very desolate here. No life or community of animals could last for long. Perhaps any spark of nature could change things[else]The shore shoals are a more comforting place to be than before. You've [shoal-so-far][end if]. You sense you would [if sco-shore-shoals is true]fade into the nothingness[else]violate something sacred[end if] if you explored further.". printed name is "[if sco-shore-shoals is false]Sore Souls['] Gore Goals[else]Shore Shoals[end if]". understand "shore/shoals" and "shore shoals" as Gore Goals when sco-shore-shoals is true. spokeval of Sore Souls is 0.
+
+to say shoal-so-far:
+	let shoal-total be shoal-extra-animals + shoal-core-score;
+	if shoal-total is 0:
+		say "got work to do to repopulate it, though";
+		continue the action;
+	if shoal-core-score is 0:
+		say "managed to find some exotic animals, but this place needs more regular ones";
+		continue the action;
+	say "[if shoal-core-score is 2]repopulated things nicely[else]got some animals back here, but the land needs more[end if]. ";
+	say "[if shoal-extra-animals is 0]There's also space for some exotics[else if shoal-extra-animals is 1]You could find more exotics, too, if you wanted[else]You've even found extra odd animals for variety[end if]"
+
+
+guess-table of sore souls gore goals is the table of sore souls gore goals guesses.
+
+to decide which number is shoal-extra-animals:
+	decide on boolval of sco-night-newt + boolval of sco-kite-coot;
+
+section needed points
+
+sco-four-foals is a truth state that varies.
+sco-more-moles is a truth state that varies.
+sco-shore-shoals is a truth state that varies.
+
+section LLPs
+
+sco-lore-lols is a truth state that varies.
+sco-night-newt is a truth state that varies.
+sco-bright-brute is a truth state that varies.
+sco-kite-coot is a truth state that varies.
+
+chapter red rose
+
+a red rose is a rhymable. description is "It's a simple red rose. Just looking at it leaves you feeling protected and inspired."
+
+to decide what number is rose-petals-remaining:
+	decide on 3 - (boolval of sco-said-sos + boolval of sco-fed-foes);
+
+report examining red rose:
+	say "You notice the red rose has [rose-petals-remaining in words] particularly bright petal[plur of rose-petals-remaining][if rose-petals-remaining < 3] still remaining[end if].";
+	continue the action;
+
+sco-said-sos is a truth state that varies.
+sco-head-hose is a truth state that varies.
+
+To decide which number is rose-petals:
+	decide on boolval of sco-said-sos + boolval of sco-head-hose;
+
+guess-table of red rose is the table of red rose guesses.
 
 book spoke 1 / rocking rift
 
@@ -568,6 +625,60 @@ to decide which number is gold-lute-strings:
 to decide which number is silver-lute-strings:
 	decide on 2 - (boolval of sco-night-newt + boolval of sco-kite-coot);
 
+book spoke 2 / Stocking Stiffed
+
+part Rum Route
+
+Rum Route is a room in Poppin' Part. "[if sco-dumb-doubt is false]You seem assailed by ... well, not quite voices, here, but ideas from whoever-it-is that you deserve to be stuck here. The arguments seem brilliant and ironclad[else if sco-said-sos is false]You've pushed back and instilled doubt, but now you need to brag a bit[else if sco-umm-out is false]You feel like you can win the fight against frustration and helplessness with a snappy reply. The sort that might paralyze you[else]You see the way down now you've dispelled your own doubts. You hope you're ready to face it[sstt][end if]. Thankfully, the lift here can take you back to the High Hub.". spokeval of Rum Route is 2.
+
+to say sstt: if slay slope is visited, say " this time"
+
+guess-table of rum route is the table of rum route guesses.
+
+sco-umm-out is a truth state that varies.
+sco-dumb-doubt is a truth state that varies.
+
+sco-said-sos is a truth state that varies.
+
+part Nay Nope Slay Slope
+
+Nay Nope Slay Slope is a room in Poppin' Part. printed name is "Nay-Nope-Slay Slope". "Thoughts of being against negativity swirl around here. Why, if you don't have positivity, you've had it! [if sco-hey-hope is false]They seem directed at you, as if to say you're the least positive person ever[else if sco-k-cope is false]Yet you see they can't totally be true, and you've boosted yourself a bit, and maybe you can boost yourself a bit more[else]But you see through them now[end if].". spokeval of Slay Slope is 2.
+
+guess-table of nay nope slay slope is the table of nay nope slay slope guesses.
+
+sco-k-cope is a truth state that varies.
+sco-hey-hope is a truth state that varies.
+
+book spoke 3 / Grokking Grift
+
+part Slight Sleaze
+
+Slight Sleaze is a room in Poppin' Part. "[if sco-bright-breeze is false]You feel a fright-freeze preventing you from going south[else if sco-plight-please is false]The fright-freeze is still around, but it's at least being blown about. However, self-serving pity stories whispered in your ear make you wonder if you really deserve to move on while they're clearly stuck here[else if sco-right-root is false]It feels nicer here, but this place could use scenery, something that may need to come from elsewhere[else]The trite trees make things feel nicer here, having replaced the fright-freeze that was here[end if].[paragraph break]Of course, you can always enter the locking lift to return to the High Hub.". printed name is "[if sco-right-root is false]Slight Sleaze[else]Trite Trees[end if]". spokeval of Slight Sleaze is 3.
+
+guess-table of slight sleaze is the table of slight sleaze guesses.
+
+check going south in Slight Sleaze when sco-right-root is false: say "The fright-freeze pushes you back. You need to find a way to talk it down, somehow." instead;
+
+sco-tight-tease is a truth state that varies.
+sco-bright-breeze is a truth state that varies.
+sco-plight-please is a truth state that varies.
+
+the fright freeze is boring scenery in slight sleaze. "You can't describe it, but it stops you from going anywhere.".
+
+the trite trees are boring scenery. "Not perfect, but not sleazy, either."
+
+part Freak Framing Seek-Sameing
+
+Freak Framing Seek Sameing is south of Slight Sleaze. It is in Poppin' Part. printed name is "[if sco-chic-shaming is true]Eek! Aiming![else]Freak-Framing Seek-Sameing[end if]". "This is a control center of some sort. You hear chatter, but there might even be some telepathy. [if sco-bleak-blaming is false]Most of the muttering is about how different people are at fault for things they don't even know about, and you don't know how to buttonhole that[else if sco-bred-bros is true]You've got all your arguments in one place. But you have to admit, you're not the one to perpetuate them! You need someone, or people, who will make it fun for any old crowd to change their attitudes for the better. Someone new from outside[else]Congratulations! You've made this a think tank with things actually worth thinking. The Bred Bros discuss ways to frame basic social decency and tolerance as far more desirable than 'edgy' conformism[end if].". spokeval of Freak Framing is 3.
+
+guess-table of freak framing seek sameing is the table of freak framing seek sameing guesses.
+
+sco-bleak-blaming is a truth state that varies.
+sco-chic-shaming is a truth state that varies.
+sco-clique-claiming is a truth state that varies.
+
+sco-bred-bros is a truth state that varies.
+
 book spoke 4 / docking diffed
 
 part mad most cad coast
@@ -614,116 +725,7 @@ a bright brute is scenery. "The bright brute seems to be napping right now. Rest
 
 a might mail is scenery. "The might mail is too heavy to wear until you meet the white whale, but it's shiny and bright and impressive."
 
-book spoke 0 / Shocking Shift
-
-part Sore Souls Gore Goals
-
-Sore Souls Gore Goals is a room in Poppin' Part. "[if sco-shore-shoals is false]It's very desolate here. No life or community of animals could last for long. Perhaps any spark of nature could change things[else]The shore shoals are a more comforting place to be than before. You've [shoal-so-far][end if]. You sense you would [if sco-shore-shoals is true]fade into the nothingness[else]violate something sacred[end if] if you explored further.". printed name is "[if sco-shore-shoals is false]Sore Souls['] Gore Goals[else]Shore Shoals[end if]". understand "shore/shoals" and "shore shoals" as Gore Goals when sco-shore-shoals is true. spokeval of Sore Souls is 0.
-
-to say shoal-so-far:
-	let shoal-total be shoal-extra-animals + shoal-core-score;
-	if shoal-total is 0:
-		say "got work to do to repopulate it, though";
-		continue the action;
-	if shoal-core-score is 0:
-		say "managed to find some exotic animals, but this place needs more regular ones";
-		continue the action;
-	say "[if shoal-core-score is 2]repopulated things nicely[else]got some animals back here, but the land needs more[end if]. ";
-	say "[if shoal-extra-animals is 0]There's also space for some exotics[else if shoal-extra-animals is 1]You could find more exotics, too, if you wanted[else]You've even found extra odd animals for variety[end if]"
-
-
-guess-table of sore souls gore goals is the table of sore souls gore goals guesses.
-
-to decide which number is shoal-extra-animals:
-	decide on boolval of sco-night-newt + boolval of sco-kite-coot;
-
-section needed points
-
-sco-four-foals is a truth state that varies.
-sco-more-moles is a truth state that varies.
-sco-shore-shoals is a truth state that varies.
-
-section LLPs
-
-sco-lore-lols is a truth state that varies.
-sco-night-newt is a truth state that varies.
-sco-bright-brute is a truth state that varies.
-sco-kite-coot is a truth state that varies.
-
-chapter red rose
-
-a red rose is a rhymable. description is "It's a simple red rose. Just looking at it leaves you feeling protected and inspired."
-
-to decide what number is rose-petals-remaining:
-	decide on 3 - (boolval of sco-said-sos + boolval of sco-fed-foes);
-
-report examining red rose:
-	say "You notice the red rose has [rose-petals-remaining in words] particularly bright petal[plur of rose-petals-remaining][if rose-petals-remaining < 3] still remaining[end if].";
-	continue the action;
-
-sco-said-sos is a truth state that varies.
-sco-head-hose is a truth state that varies.
-
-To decide which number is rose-petals:
-	decide on boolval of sco-said-sos + boolval of sco-head-hose;
-
-guess-table of red rose is the table of red rose guesses.
-
-book spoke 3 / Grokking Grift
-
-part Slight Sleaze
-
-Slight Sleaze is a room in Poppin' Part. "[if sco-bright-breeze is false]You feel a fright-freeze preventing you from going south[else if sco-plight-please is false]The fright-freeze is still around, but it's at least being blown about. However, self-serving pity stories whispered in your ear make you wonder if you really deserve to move on while they're clearly stuck here[else if sco-right-root is false]It feels nicer here, but this place could use scenery, something that may need to come from elsewhere[else]The trite trees make things feel nicer here, having replaced the fright-freeze that was here[end if].[paragraph break]Of course, you can always enter the locking lift to return to the High Hub.". printed name is "[if sco-right-root is false]Slight Sleaze[else]Trite Trees[end if]". spokeval of Slight Sleaze is 3.
-
-guess-table of slight sleaze is the table of slight sleaze guesses.
-
-check going south in Slight Sleaze when sco-right-root is false: say "The fright-freeze pushes you back. You need to find a way to talk it down, somehow." instead;
-
-sco-tight-tease is a truth state that varies.
-sco-bright-breeze is a truth state that varies.
-sco-plight-please is a truth state that varies.
-
-the fright freeze is boring scenery in slight sleaze. "You can't describe it, but it stops you from going anywhere.".
-
-the trite trees are boring scenery. "Not perfect, but not sleazy, either."
-
-part Freak Framing Seek-Sameing
-
-Freak Framing Seek Sameing is south of Slight Sleaze. It is in Poppin' Part. printed name is "[if sco-chic-shaming is true]Eek! Aiming![else]Freak-Framing Seek-Sameing[end if]". "This is a control center of some sort. You hear chatter, but there might even be some telepathy. [if sco-bleak-blaming is false]Most of the muttering is about how different people are at fault for things they don't even know about, and you don't know how to buttonhole that[else if sco-bred-bros is true]You've got all your arguments in one place. But you have to admit, you're not the one to perpetuate them! You need someone, or people, who will make it fun for any old crowd to change their attitudes for the better. Someone new from outside[else]Congratulations! You've made this a think tank with things actually worth thinking. The Bred Bros discuss ways to frame basic social decency and tolerance as far more desirable than 'edgy' conformism[end if].". spokeval of Freak Framing is 3.
-
-guess-table of freak framing seek sameing is the table of freak framing seek sameing guesses.
-
-sco-bleak-blaming is a truth state that varies.
-sco-chic-shaming is a truth state that varies.
-sco-clique-claiming is a truth state that varies.
-
-sco-bred-bros is a truth state that varies.
-
-book spoke 2 / Stocking Stiffed
-
-part Rum Route
-
-Rum Route is a room in Poppin' Part. "[if sco-dumb-doubt is false]You seem assailed by ... well, not quite voices, here, but ideas from whoever-it-is that you deserve to be stuck here. The arguments seem brilliant and ironclad[else if sco-said-sos is false]You've pushed back and instilled doubt, but now you need to brag a bit[else if sco-umm-out is false]You feel like you can win the fight against frustration and helplessness with a snappy reply. The sort that might paralyze you[else]You see the way down now you've dispelled your own doubts. You hope you're ready to face it[sstt][end if]. Thankfully, the lift here can take you back to the High Hub.". spokeval of Rum Route is 2.
-
-to say sstt: if slay slope is visited, say " this time"
-
-guess-table of rum route is the table of rum route guesses.
-
-sco-umm-out is a truth state that varies.
-sco-dumb-doubt is a truth state that varies.
-
-sco-said-sos is a truth state that varies.
-
-part Nay Nope Slay Slope
-
-Nay Nope Slay Slope is a room in Poppin' Part. printed name is "Nay-Nope-Slay Slope". "Thoughts of being against negativity swirl around here. Why, if you don't have positivity, you've had it! [if sco-hey-hope is false]They seem directed at you, as if to say you're the least positive person ever[else if sco-k-cope is false]Yet you see they can't totally be true, and you've boosted yourself a bit, and maybe you can boost yourself a bit more[else]But you see through them now[end if].". spokeval of Slay Slope is 2.
-
-guess-table of nay nope slay slope is the table of nay nope slay slope guesses.
-
-sco-k-cope is a truth state that varies.
-sco-hey-hope is a truth state that varies.
-
-book Mocking Miffed
+book Mocking Miffed / spoke 5
 
 part Old End
 
