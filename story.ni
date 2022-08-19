@@ -8,6 +8,8 @@ the story description is "Am (Oh!) Sham-Show".
 
 the story headline is "Civil Seeming Drivel Dreaming entry 3".
 
+release along with cover art.
+
 release along with a website.
 
 release along with the "Parchment" interpreter.
