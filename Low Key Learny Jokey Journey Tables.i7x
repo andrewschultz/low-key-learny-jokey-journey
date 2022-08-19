@@ -47,7 +47,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "see"	"sunk"	--	--	false	true	true	false	TTTT	vc-see-sunk rule	vr-see-sunk rule	--	--
 "gee"	"junk"	--	--	false	true	true	false	TTTT	vc-gee-junk rule	vr-gee-junk rule	--	"You can say [b]GEE JUNK[r] [once-now of vc-gee-junk rule] more of the trunk is visible."
 "whee"	"woot"	--	--	false	true	true	false	TTTT	vc-whee-woot rule	vr-whee-woot rule	--	--
-"pear"	"peach"	--	--	false	true	true	false	TTTT	vc-pear-peach rule	vr-pear-peach rule	--	"You can make a [b]PEAR PEACH[r] [once-now of vc-pear-peach rule] you're happy enough to receive free fruit."
+"pear"	"peach"	"pair/pare"	--	false	true	true	false	TTTT	vc-pear-peach rule	vr-pear-peach rule	--	"You can make a [b]PEAR PEACH[r] [once-now of vc-pear-peach rule] you're happy enough to receive free fruit."
 "bussed"	"back"	"bust"	--	false	false	true	false	Rare Reach	vc-bussed-back rule	vr-bussed-back rule	--	--
 "crust"	"crack"	--	--	false	true	true	false	Trust Track	vc-crust-crack rule	vr-crust-crack rule	--	"You can make the [b]CRUST CRACK[r] [once-now of vc-crust-crack rule] [jack] is gone."
 "bare"	"beach"	"bear"	--	false	true	true	false	Rare Reach	vc-bare-beach rule	vr-bare-beach rule	--	"You can change the Rare Reach to a [b]BARE BEACH[r] [once-now of vc-bare-beach rule] you have a life-generating item."
@@ -99,7 +99,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "bleak"	"blaming"	--	--	false	true	true	false	freak framing seek sameing	vc-bleak-blaming rule	vr-bleak-blaming rule	--	--
 "chic"	"shaming"	"shiek/sheik"	--	false	true	true	false	freak framing seek sameing	vc-chic-shaming rule	vr-chic-shaming rule	--	"You can go full-in for [b]CHIC SHAMING[r] [once-now of vc-chic-shaming rule] you've re-framed the freak framing."
 "clique"	"claiming"	--	--	false	true	false	false	freak framing seek sameing	vc-clique-claiming rule	vr-clique-claiming rule	--	--
-"bred"	"bros"	"bread"	--	false	true	true	false	freak framing seek sameing	vc-bred-bros rule	vr-bred-bros rule	--	"You can summon [b]BRED BROS[r] [once-now of vc-bred-bros rule] you've managed to dismantle the freak framing."
+"bred"	"bros"	"bread"	--	false	true	true	false	freak framing seek sameing	vc-bred-bros rule	vr-bred-bros rule	--	"You can summon [b]BRED BROS[r] [once-now of vc-bred-bros rule] you need folks with charisma to communicate a positive vision."
 "bad"	"boast"	--	--	false	true	true	false	Mad Most Cad Coast	vc-bad-boast rule	vr-bad-boast rule	--	-- [start docking diffed/white whale]
 "rad"	"roast"	--	--	false	true	true	false	Mad Most Cad Coast	vc-rad-roast rule	vr-rad-roast rule	--	"You can try a [b]RAD ROAST[r] [once-now of vc-rad-roast rule] you've hit back a bit against the madness."
 "sight"	"sail"	"site/sale"	--	false	true	true	false	Trite Trail	vc-sight-sail rule	vr-sight-sail rule	--	--
@@ -273,6 +273,9 @@ a goodrhyme rule (this is the vc-pear-peach rule):
 	if sco-whee-woot is false:
 		vcp "The [fruit] sputters a bit, almost as if it sticks its tongue about you. Weird as it sounds, you may have to show appreciation for it.";
 		not-yet;
+	if sco-pear-peach is true:
+		vcal "But you already have the pear peach.";
+		already-done;
 	ready;
 
 this is the vr-pear-peach rule:
@@ -1268,8 +1271,6 @@ tried-mocking-miffed is a truth state that varies.
 
 warn-monk is a truth state that varies.
 
-to nobreak-if-think: if current action is thinking, skip upcoming rulebook break;
-
 section auxiliary rules and definitions
 
 [these are ranked by approximate game order SOULS SHOE ROUTE SLEAZE COAST END]
@@ -1324,9 +1325,8 @@ to check-red-rose:
 		say "You've almost filled this area's potential. Just a little more life...";
 
 this is the animals-need-shoals rule:
-	nobreak-if-think;
 	if sco-shore-shoals is false:
-		vcp "Such animals would make this area nicer, but it's too desolate for them right now.";
+		vcp "[nice-animals].";
 		not-yet;
 
 to lose-rose-petal: say "[line break]A[one of][or]nother[stopping] bright petal falls off the red rose."
@@ -1350,7 +1350,6 @@ this is the stew-and-brew rule:
 	if shoe-concessions is 2, say "With a reliable source of food and drink (which, man, they smell pretty good) a crowd starts to gather. You can't do any rhyming stuff to them directly, but perhaps there's some general stuff you can shout.";
 
 a goodrhyme rule (this is the shoe-crowd-yet rule):
-	nobreak-if-think;
 	if not shoe-food-drink:
 		vcp "There's no crowd to call out to to get them hyped, but if there were, that'd be great!";
 		not-yet;
@@ -1371,8 +1370,10 @@ to say twang: say " string twangs on the light lute. When you look again, it's a
 this is the lute-animal-check rule:
 	if player is not in sore souls gore goals or player does not have light lute, unavailable;
 	if sco-shore-shoals is false:
-		vcp "[if player is in gore goals]The enviroment is too inhospitable for such an animal right now[else]That animal would fit in well somewhere else[end if].";
+		vcp "[nice-animals].";
 		not-yet;
+
+to say nice-animals: say "[if player is in gore goals]Such animals would make this area nicer, but it's too desolate for them here right now[else]Animals like that would fit in well somewhere else[end if]"
 
 [hub 3. route]
 
