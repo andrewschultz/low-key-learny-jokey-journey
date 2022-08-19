@@ -1,7 +1,7 @@
-## reg-lljj-thru-vc.txt
+## reg-lljj-thru-reject.txt
 ## GENERATOR FILE: rbr-lljj-thru.txt
 
-## walkthrough with pre-right command testing
+## walkthrough with all rejections and think
 
 ** game: /home/andrew/prt/debug-low-key-learny-jokey-journey.z8
 ** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
@@ -294,7 +294,7 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 >stow stew
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
 
-#testcase-unavailable-table-of-verb-checks-vc-t-lly-rule
+#testcase-unavailable-table-of-verb-checks-vc-trite-t-lly-rule
 >trite tolly
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
 
@@ -303,7 +303,7 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
 
 #testcase-unavailable-table-of-verb-checks-vc-tight-tease-rule
->tight tease|tees
+>tight tease
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
 
 #testcase-unavailable-table-of-verb-checks-vc-trolled-trend-rule
@@ -371,31 +371,51 @@ by one point
 You already insulted the mad monk's cleanliness.
 !by one point
 
->bad bunk
-by one point
-
+##BALANCE UNDOS
 >sad sunk
 by one point
-
-# this is to place a pre-reject command
->bother
-door
-
-#testcase-postreject-table-of-verb-checks-vc-bad-bunk-rule
->bad bunk
-You already insulted the mad monk's truthfulness.
-!by one point
 
 #testcase-postreject-table-of-verb-checks-vc-sad-sunk-rule
 >sad sunk
 You already insulted the mad monk's serenity.
 !by one point
 
+>undo
+>undo
+
+>bad bunk
+by one point
+
+#testcase-postreject-table-of-verb-checks-vc-bad-bunk-rule
+>bad bunk
+You already insulted the mad monk's truthfulness.
+!by one point
+
+>sad sunk
+by one point
+
+##BALANCE UNDOS
+# this is to place a pre-reject command
+>bother
+door
+
 >n
 
 #testcase-prereject-table-of-verb-checks-vc-piss-poor-rule
 >piss poor
-WRONG
+You'll need to summon the miss-more-diss door, with or without profanity.
+NOTE: this command will be useful later, but you aren't ready to use it, yet. You can track commands like this by typing THINK, which will also clue you if they now work.
+
+#testcase-think-table-of-verb-checks-vc-piss-poor-rule
+>think
+NOTE: Low-Key Learny Jokey Journey should indicate whenever you find the right rhyme but can't execute it yet. An asterisk or (+) will also appear in the score in the upper right. Until then, you can THINK to see things you figured but aren't quite ready to do yet.
+(OPTIONAL) You can dismiss the miss-more-diss door with PISS POOR once you've re-summoned or revisited it.
+>undo
+>undo
+>undo
+>undo
+
+>n
 
 >gonear no noon
 
@@ -403,8 +423,9 @@ WRONG
 >go goon
 You try to form the words, but you don't feel brave enough. Perhaps the right sort of relic would help you.
 
+#testcase-think-table-of-verb-checks-vc-go-goon-rule
 >think
-WRONG
+You can say GO GOON to dispel an enemy once you have a token of power.
 >undo
 >undo
 >undo
@@ -414,8 +435,9 @@ WRONG
 >bare beach
 You should be able to do that, but you lack the necessary implement.
 
+#testcase-think-table-of-verb-checks-vc-bare-beach-rule
 >think
-WRONG
+You can change the Rare Reach to a BARE BEACH once you have a life-generating item.
 >undo
 >undo
 >undo
@@ -439,19 +461,23 @@ by one point
 >fun form
 Perhaps you will need a fun form in a bit. But no entity requires it right now.
 
+#testcase-think-table-of-verb-checks-vc-fun-form-rule
+>think
+You can fill out a FUN FORM once you have somewhere to enter.
+
 >done dorm
+by one point
+
+#testcase-postreject-table-of-verb-checks-vc-done-dorm-rule
+>done dorm
+You already summoned the done dorm.
+
+>fun form
 by one point
 
 #testcase-postreject-table-of-verb-checks-vc-fun-form-rule
 >fun form
-WRONG
-
-#testcase-postreject-table-of-verb-checks-vc-done-dorm-rule
->done dorm
-WRONG
-
->fun form
-by one point
+You already filled out the fun form.
 
 >n
 
@@ -459,32 +485,38 @@ by one point
 >gee junk
 If there were junk in the tree trunk, you couldn't see it. It's way too tall!
 
+#testcase-think-table-of-verb-checks-vc-gee-junk-rule
+>think
+You can say GEE JUNK once more of the trunk is visible.
+
 >see sunk
 by one point
 
 #testcase-postreject-table-of-verb-checks-vc-see-sunk-rule
 >see sunk
-WRONG
+You already sunk the tree trunk!
 
 >gee junk
 by one point
 
 #testcase-postreject-table-of-verb-checks-vc-gee-junk-rule
 >gee junk
-WRONG
-
-#testcase-postreject-table-of-verb-checks-vc-pear-peach-rule
+You already discovered useful junk in the form of FREE FRUIT.
 
 #testcase-prereject-table-of-verb-checks-vc-pear-peach-rule
 >pear peach
 The FREE FRUIT sputters a bit, almost as if it sticks its tongue about you. Weird as it sounds, you may have to show appreciation for it.
+
+#testcase-think-table-of-verb-checks-vc-pear-peach-rule
+>think
+You can make a PEAR PEACH once you're happy enough to receive free fruit.
 
 >whee woot
 by one point
 
 #testcase-postreject-table-of-verb-checks-vc-whee-woot-rule
 >whee woot
-WRONG
+You already appreciated the free fruit sufficiently.
 
 >pear peach
 by one point
@@ -499,7 +531,13 @@ by one point
 >crust crack
 Under Just Jack's watchful eye, you don't feel like you could precipitate such changes. How to get rid of him?
 
-NOTE: this command will be useful later, but you aren't ready to use it, yet. You can track commands like this by typing THINK, which will also clue you if they now work.
+!NOTE: this command will be useful later
+
+#testcase-think-table-of-verb-checks-vc-crust-crack-rule
+>think
+You think about more specific challenges you've encountered and not solved, and what you've done and tried, and what you can do.
+
+You can make the CRUST CRACK once Just Jack is gone.
 
 >bussed back
 by one point
@@ -511,9 +549,17 @@ Just Jack has already been bussed back.
 >crust crack
 by one point
 
+# generic test case if you have no leads
+>think
+You think about more specific challenges you've encountered and not solved, and what you've done and tried, and what you can do.
+
 #testcase-prereject-table-of-verb-checks-vc-plus-plaque-rule
 >plus plaque
-WRONG
+You consider conjuring up a gaudy, flattering plus-plaque. But you have nobody to give it to, and you'd hate to have to carry it around. Maybe elsewhere.
+
+#testcase-think-table-of-verb-checks-vc-plus-plaque-rule
+>think
+You can make a heavy PLUS PLAQUE once you have someone to dump it off on right away.
 
 >n
 
@@ -522,18 +568,22 @@ by one point
 
 #testcase-postreject-table-of-verb-checks-vc-bare-beach-rule
 >bare beach
-WRONG
+You already changed the Rare Reach.
 
 #testcase-prereject-table-of-verb-checks-vc-reap-rune-rule
 >reap rune
 The dune is a bit too big now. Maybe you could find a way to reduce it, over time.
+
+#testcase-think-table-of-verb-checks-vc-reap-rune-rule
+>think
+You can REAP RUNE once you have spent time adventuring.
 
 >seep soon
 by one point
 
 #testcase-postreject-table-of-verb-checks-vc-seep-soon-rule
 >seep soon
-WRONG
+You already doomed the dune to collapsing slightly.
 
 >s
 >n
@@ -543,7 +593,7 @@ by one point
 
 #testcase-postreject-table-of-verb-checks-vc-reap-rune-rule
 >reap rune
-WRONG
+You already reaped a rune.
 
 >s
 >w
@@ -554,25 +604,35 @@ by one point
 
 #testcase-postreject-table-of-verb-checks-vc-un-arm-rule
 >unarm
-WRONG
+You already unarmed the Hun Harm Fun Farm!
 
 >n
 
 #testcase-prereject-table-of-verb-checks-vc-co-coon-rule
 >cocoon
-WRONG
+You can't do anything while oppressed by enemies. How to call them off?
 
 #testcase-prereject-table-of-verb-checks-vc-crow-croon-rule
 >crow croon
-WRONG
+The crow can't croon until it's ready. And it's not time yet. How could you make time advance, right here, right now?
 
 #testcase-prereject-table-of-verb-checks-vc-mo-moon-rule
 >mo moon
-WRONG
+It's scary the sky's so dark, but you sense someone, or something, might need the moon and such to reach its potential. But what, or who?
 
 #testcase-prereject-table-of-verb-checks-vc-so-soon-rule
 >so soon
-WRONG
+You would like time to speed up and dawn to break. But something's missing from the sky.
+
+#testcase-think-table-of-verb-checks-vc-co-coon-rule
+#testcase-think-table-of-verb-checks-vc-crow-croon-rule
+#testcase-think-table-of-verb-checks-vc-mo-moon-rule
+#testcase-think-table-of-verb-checks-vc-so-soon-rule
+>think
+You can create a COCOON once you feel less watched.
+You can cause daybreak with CROW CROON once it's close to daybreak.
+You can speed up time with SO SOON once the darkness is alleviated.
+You can call for MO MOON once you have something else that needs light.
 
 >go goon
 by one point
@@ -588,23 +648,19 @@ by one point
 
 #testcase-postreject-table-of-verb-checks-vc-co-coon-rule
 >co coon
-WRONG
-
-#testcase-postreject-table-of-verb-checks-vc-crow-croon-rule
->crow croon
-WRONG
+You already placed the cocoon.
 
 #testcase-postreject-table-of-verb-checks-vc-go-goon-rule
 >go goon
-WRONG
+You already dispelled the goon!
 
 #testcase-postreject-table-of-verb-checks-vc-mo-moon-rule
 >mo moon
-WRONG
+The moon has already appeared!
 
 #testcase-postreject-table-of-verb-checks-vc-so-soon-rule
 >so soon
-WRONG
+You already sped time up.
 
 >crow croon
 by one point
@@ -628,7 +684,11 @@ by one point
 
 #testcase-prereject-table-of-verb-checks-vc-mocking-miffed-rule
 >mocking miffed
-WRONG
+The mocking, miffed--well, it is there, but you don't quite have the confidence yet to face it. You've only fully tackled none of the other five areas the locking lift can access.
+
+#testcase-think-table-of-verb-checks-vc-mocking-miffed-rule
+>think
+You can search for MOCKING MIFFED once you've solved all the other hub areas.
 
 >bye bub
 
@@ -636,13 +696,23 @@ WRONG
 
 #testcase-postreject-table-of-verb-checks-vc-wordy-walk-rule
 >wordy walk
-WRONG
+You have another wordy walk, but it isn't as effective as the first.
+
+>w
+>n
+
+#testcase-postreject-table-of-verb-checks-vc-crow-croon-rule
+>crow croon
+You already had the crow croon!
+
+>s
+>e
 
 >u
 
 #testcase-postreject-table-of-verb-checks-vc-bye-bub-rule
 >bye bub
-WRONG
+No need to say good-bye twice. That's just awkward, besides, just typing DOWN or D saves emotional energy and keystrokes.
 
 ##RBRSHUFFLESTART=0
 
@@ -650,11 +720,42 @@ WRONG
 by one point
 
 #testcase-prereject-table-of-verb-checks-vc-bro-brew-rule
+>bro brew
+That's a good idea, but you have nowhere reliable to store such a beverage! Well, not yet.
+
 #testcase-prereject-table-of-verb-checks-vc-crow-crew-rule
+>crow crew
+Without reliable food and drink to support the Crow Crew, who would be ideal performers here, it's a no-go. So you need to do a bit more.
+
 #testcase-prereject-table-of-verb-checks-vc-ho-who-rule
+>ho who
+There's no crowd to call out to to get them hyped, but if there were, that'd be great!
+
 #testcase-prereject-table-of-verb-checks-vc-stow-stew-rule
+>stow stew
+That's a good idea, but you have nowhere reliable to store something to eat! Well, not yet.
+
 #testcase-prereject-table-of-verb-checks-vc-throw-through-rule
+>throw through
+You have no performers to (figuratively) throw through and present to a crowd! Well, not yet.
+
 #testcase-prereject-table-of-verb-checks-vc-yo-you-rule
+>yo you
+There's no crowd to call out to to get them hyped, but if there were, that'd be great!
+
+#testcase-think-table-of-verb-checks-vc-yo-you-rule
+#testcase-think-table-of-verb-checks-vc-ho-who-rule
+#testcase-think-table-of-verb-checks-vc-stow-stew-rule
+#testcase-think-table-of-verb-checks-vc-bro-brew-rule
+#testcase-think-table-of-verb-checks-vc-throw-through-rule
+#testcase-think-table-of-verb-checks-vc-crow-crew-rule
+>think
+You can call for BRO BREW once you have a reliable place to store it.
+You can STOW STEW once you have a reliable place to store it.
+You can call HO WHO once you have a crowd to call to.
+You can call YO YOU once you have a partially hyped-up crowd.
+You can THROW THROUGH the main act once they're here and you have a hyped-up, well-fed crowd in place.
+You can call the CROW CREW as performers once you have food and drink for a crowd.
 
 >go goo
 by one point
@@ -696,7 +797,7 @@ by one point
 
 #testcase-postreject-table-of-verb-checks-vc-crow-crew-rule
 >crow crew
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+You already summoned the Crow Crew!
 
 >ho who
 by one point
@@ -717,19 +818,27 @@ by one point
 
 #testcase-prereject-table-of-verb-checks-vc-bright-brute-rule
 >bright brute
-WRONG
+Good idea, but there's no huge foe for a bright brute to help you with here.
 
 #testcase-prereject-table-of-verb-checks-vc-despite-dispute-rule
 >despite dispute
-WRONG
+That's interesting and tricky, and it'll come in handy later. Trust me.
 
 #testcase-prereject-table-of-verb-checks-vc-right-root-rule
 >right root
-WRONG
+The right root needs to be laid down somewhere, but not here.
+
+#testcase-think-table-of-verb-checks-vc-despite-dispute-rule
+#testcase-think-table-of-verb-checks-vc-right-root-rule
+#testcase-think-table-of-verb-checks-vc-bright-brute-rule
+>think
+You can summon a BRIGHT BRUTE once you need an ally.
+You can reason DESPITE DISPUTE once there's something that makes you depressed.
+You can grow trite trees with the RIGHT ROOT once you've fought back against the slight sleaze.
 
 #testcase-postreject-table-of-verb-checks-vc-rocking-rift-rule
 >rocking rift
-You already brought life back to the Whoah-Woo Show Shoe. You don't need to go back.
+You already brought life back to the Whoah-Woo-Show Shoe. You don't need to go back.
 
 ##RBRSHUFFLEEND=0
 ##RBRSHUFFLESTART=1
@@ -739,26 +848,36 @@ by one point
 
 #testcase-prereject-table-of-verb-checks-vc-night-newt-rule
 >night newt
-WRONG
+Such animals would make this area nicer, but it's too desolate for them here right now.
 
 #testcase-prereject-table-of-verb-checks-vc-kite-coot-rule
 >kite coot
-WRONG
+Such animals would make this area nicer, but it's too desolate for them here right now.
 
 #testcase-prereject-table-of-verb-checks-vc-four-foals-rule
 >four foals
-WRONG
+Such animals would make this area nicer, but it's too desolate for them here right now.
 
 #testcase-prereject-table-of-verb-checks-vc-more-moles-rule
 >more moles
-WRONG
+Such animals would make this area nicer, but it's too desolate for them here right now.
+
+#testcase-think-table-of-verb-checks-vc-four-foals-rule
+#testcase-think-table-of-verb-checks-vc-kite-coot-rule
+#testcase-think-table-of-verb-checks-vc-more-moles-rule
+#testcase-think-table-of-verb-checks-vc-night-newt-rule
+>think
+You can summon FOUR FOALS once the area is more hospitable.
+You can summon a KITE COOT once the area is more hospitable.
+You can summon MORE MOLES once the area is more hospitable.
+You can summon a NIGHT NEWT once the area is more hospitable.
 
 >shore shoals
 by one point
 
 #testcase-postreject-table-of-verb-checks-vc-shore-shoals-rule
 >shore shoals
-WRONG
+You have already rehabilitated the sore souls' gore goals!
 
 >night newt
 by one point
@@ -771,22 +890,22 @@ by one point
 
 #testcase-postreject-table-of-verb-checks-vc-night-newt-rule
 >night newt
-WRONG
+You already populated the area with night newts!
 
 #testcase-postreject-table-of-verb-checks-vc-kite-coot-rule
 >kite coot
-WRONG
+There are enough kite coots here.
 
 #testcase-postreject-table-of-verb-checks-vc-lore-lols-rule
 >lore lols
-WRONG
+You recount the myths you started to create, just to make sure they're not lost.
 
 >more moles
 by one point
 
 #testcase-postreject-table-of-verb-checks-vc-more-moles-rule
 >more moles
-WRONG
+You don't need even more moles!
 
 >undo
 >undo
@@ -796,10 +915,14 @@ by one point
 
 #testcase-postreject-table-of-verb-checks-vc-four-foals-rule
 >four foals
-WRONG
+You already populated the area with foals!
 
 >more moles
 by one point
+
+#testcase-postreject-table-of-verb-checks-vc-shocking-shift-rule
+>shocking shift
+You already took care of the shocking shift!
 
 ##RBRSHUFFLEEND=1
 ##RBRSHUFFLESTART=2
@@ -808,49 +931,64 @@ by one point
 by one point
 
 #testcase-prereject-table-of-verb-checks-vc-umm-out-rule
+>umm out
+You can't just come in here cold like that! Maybe with the right preparation, an "umm, out" would be more forceful.
+
 #testcase-prereject-table-of-verb-checks-vc-said-sos-rule
+>said sos
+Your said-sos won't work cold. You need to show confidence and be persuasive.
+
+#testcase-think-table-of-verb-checks-vc-umm-out-rule
+#testcase-think-table-of-verb-checks-vc-said-sos-rule
+>think
+You can say UMM OUT once you're on a roll arguing.
+You can say SAID SOS once you've got a foothold in an argument.
 
 >dumb doubt
 by one point
 
 #testcase-postreject-table-of-verb-checks-vc-dumb-doubt-rule
 >dumb doubt
-WRONG
+You already spread dumb doubt! If you try to spread more, you may wind up believing it yourself.
 
 >said sos
 by one point
 
 #testcase-postreject-table-of-verb-checks-vc-said-sos-rule
 >said sos
-WRONG
+You already gave said-sos!
 
 >umm out
 by one point
 
 #testcase-postreject-table-of-verb-checks-vc-umm-out-rule
 >umm out
-WRONG
+You've cleared the Rum Route. No need to overdo things.
 
 >d
 
 # ?? note this should be rejectable if we do not automatically take the lift back
 #testcase-prereject-table-of-verb-checks-vc-k-cope-rule
 >k cope
-WRONG
+You will be able to cope soon, but there is an intermediate step.
+
+#testcase-think-table-of-verb-checks-vc-k-cope-rule
+>think
+You can say K COPE once you're able to cope fully.
 
 >hey hope
 by one point
 
 #testcase-postreject-table-of-verb-checks-vc-hey-hope-rule
 >hey hope
-WRONG
+You already got hope started! Now to adjust fully.
 
 >k cope
 by one point
 
 #testcase-postreject-table-of-verb-checks-vc-stocking-stiffed-rule
 >stocking stiffed
-WRONG
+You already took care of the Rum Route!
 
 ##RBRSHUFFLEEND=2
 ##RBRSHUFFLESTART=3
@@ -860,7 +998,11 @@ by one point
 
 #testcase-prereject-table-of-verb-checks-vc-plight-please-rule
 >plight please
-WRONG
+You'd like to be that dismissive ("Plight? PLEASE!") but you aren't feeling positive enough for that. Perhaps a slight change in the weather...
+
+#testcase-think-table-of-verb-checks-vc-plight-please-rule
+>think
+You can explain PLIGHT PLEASE once you've started to chip away at the slight sleaze.
 
 >tight tees
 by one point
@@ -876,29 +1018,35 @@ by one point
 
 #testcase-postreject-table-of-verb-checks-vc-tight-tease-rule
 >tight tees
-WRONG
+You already poked the slight sleaze back. You don't get double credit for that.
 
 #testcase-postreject-table-of-verb-checks-vc-bright-breeze-rule
 >bright breeze
-WRONG
+You already planted the right root to make trite trees. Nothing more to do here.
 
 #testcase-postreject-table-of-verb-checks-vc-plight-please-rule
 >plight please
-WRONG
+You already planted the right root to make trite trees. Nothing more to do here.
 
 #testcase-postreject-table-of-verb-checks-vc-right-root-rule
 >right root
-WRONG
+You already planted the right root to make trite trees. Nothing more to do here.
 
 >s
 
 #testcase-prereject-table-of-verb-checks-vc-chic-shaming-rule
 >chic shaming
-WRONG
+You can't jump into such cleverness. You have to bring people down so that they will be glad you picked them up.
 
 #testcase-prereject-table-of-verb-checks-vc-bred-bros-rule
 >bred bros
-WRONG
+You haven't done enough so that said bred Bros can continue your work.
+
+#testcase-think-table-of-verb-checks-vc-bred-bros-rule
+#testcase-think-table-of-verb-checks-vc-chic-shaming-rule
+>think
+You can summon BRED BROS once you need folks with charisma to communicate a positive vision.
+You can go full-in for CHIC SHAMING once you've re-framed the freak framing.
 
 >clique claiming
 by one point
@@ -911,22 +1059,22 @@ by one point
 
 #testcase-postreject-table-of-verb-checks-vc-bleak-blaming-rule
 >bleak blaming
-WRONG
+The chic shaming complete, you're done here. No need to repeat what you did.
 
 #testcase-postreject-table-of-verb-checks-vc-chic-shaming-rule
 >chic shaming
-WRONG
+The chic shaming complete, you're done here. No need to repeat what you did.
 
 #testcase-postreject-table-of-verb-checks-vc-clique-claiming-rule
 >clique claiming
-WRONG
+Clique claiming would not have nearly as much mileage the second time around.
 
 >bred bros
 by one point
 
 #testcase-postreject-table-of-verb-checks-vc-grokking-grift-rule
 >grokking grift
-WRONG
+You already figured everything about grokking grift.
 
 ##RBRSHUFFLEEND=3
 ##RBRSHUFFLESTART=4
@@ -936,10 +1084,18 @@ by one point
 
 #testcase-prereject-table-of-verb-checks-vc-rad-roast-rule
 >rad roast
-WRONG
+You need to put the current insults in check before doing that.
+
+#testcase-think-table-of-verb-checks-vc-rad-roast-rule
+>think
+You can try a RAD ROAST once you've hit back a bit against the madness.
 
 >bad boast
 by one point
+
+#+testcase-think-table-of-verb-checks-vc-rad-roast-rule
+>think
+You can try a RAD ROAST now you've hit back a bit against the madness.
 
 >bad boast
 !by one point
@@ -949,16 +1105,27 @@ by one point
 
 #testcase-postreject-table-of-verb-checks-vc-bad-boast-rule
 >bad boast
-WRONG
+But you already cut the voice down to size.
 
 #testcase-postreject-table-of-verb-checks-vc-rad-roast-rule
 >rad roast
-WRONG
+You already won the insult war!
 
 >w
 
 #testcase-prereject-table-of-verb-checks-vc-right-rail-rule
+>right rail
+You might need a rail to grab, but not out here. Maybe if you've got some sort of vessel.
+
 #testcase-prereject-table-of-verb-checks-vc-excite-exhale-rule
+>excite exhale
+Man! That'd be a good idea, but you aren't quite ready to hunt the whale, yet.
+
+#testcase-think-table-of-verb-checks-vc-right-rail-rule
+#testcase-think-table-of-verb-checks-vc-excite-exhale-rule
+>think
+You can try to grab the RIGHT RAIL once you've got a vessel.
+You can EXCITE EXHALE to go out and fight once you have an ally, fighting equipment, transport and stability.
 
 >sight sail
 by one point
@@ -977,41 +1144,35 @@ by one point
 
 #testcase-postreject-table-of-verb-checks-vc-bright-brute-rule
 >bright brute
-WRONG
+Two bright brutes might be smart enough to understand the prestige of beating a white whale and beat each other up before the hunt began.
 
 #testcase-postreject-table-of-verb-checks-vc-flight-flail-rule
 >flight flail
-WRONG
+You already found a weapon that will be useful to fight the tight-tail white whale!
 
 #testcase-postreject-table-of-verb-checks-vc-might-mail-rule
 >might mail
-WRONG
+You already found armor to wear to fight the tight-tail white whale!
 
 #testcase-postreject-table-of-verb-checks-vc-right-rail-rule
 >right rail
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+You already figured the right rail to grab to be stable on the sight sail.
 
 #testcase-postreject-table-of-verb-checks-vc-sight-sail-rule
 >sight sail
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+You already summoned the sight sail. It's not going anywhere.
 
 >excite exhale
 by one point
 
 #testcase-postreject-table-of-verb-checks-vc-docking-diffed-rule
 >docking diffed
-WRONG
+You already conquered the tight-tail white whale. No need to go back.
 
 ##RBRSHUFFLEEND=4
 
 >despite dispute
 by one point
-
-# now let's take care of all the unavailable locking lift settings
-
-#testcase-postreject-table-of-verb-checks-vc-shocking-shift-rule
->shocking shift
-WRONG
 
 >mocking miffed
 by one point
@@ -1020,11 +1181,17 @@ by one point
 
 #testcase-prereject-table-of-verb-checks-vc-mold-mend-rule
 >mold mend
-WRONG
+That might be good later, but currently, you have nothing to mend from and to mold a future mindset.
 
 #testcase-prereject-table-of-verb-checks-vc-trolled-trend-rule
 >trolled trend
-WRONG
+But you have nowhere to go if trolling would trend. Fortunately, that's the easier of your two tasks here, compared to this.
+
+#testcase-think-table-of-verb-checks-vc-mold-mend-rule
+#testcase-think-table-of-verb-checks-vc-trolled-trend-rule
+>think
+You can MOLD MEND once you know what's disturbing, where.
+You can find a TROLLED TREND once the Old End is revealed as something more.
 
 >bold bend
 by one point
@@ -1037,29 +1204,37 @@ by one point
 
 #testcase-postreject-table-of-verb-checks-vc-bold-bend-rule
 >bold bend
-WRONG
+You already changed the old end into something more navigable.
 
 #testcase-postreject-table-of-verb-checks-vc-mold-mend-rule
 >mold mend
-WRONG
+You already set your mind straight. You're able to move on.
 
 #testcase-postreject-table-of-verb-checks-vc-trolled-trend-rule
 >trolled trend
-WRONG
+You can only deal with so much trolling!
 
 >s
 
 #testcase-prereject-table-of-verb-checks-vc-fed-foes-rule
 >fed foes
-WRONG
+But there are no foes to feed and mollify, yet!
 
 #testcase-prereject-table-of-verb-checks-vc-flain-flat-rule
 >flain flat
-WRONG
+You have nothing to render the vat flain flat with. Well, not yet.
 
 #testcase-prereject-table-of-verb-checks-vc-splain-splat-rule
 >splain splat
-WRONG
+You're not in a position to explain yourself. Well, not a position of enough power.
+
+#testcase-think-table-of-verb-checks-vc-fed-foes-rule
+#testcase-think-table-of-verb-checks-vc-flain-flat-rule
+#testcase-think-table-of-verb-checks-vc-splain-splat-rule
+>think
+You can make FED FOES once there are hungry foes to feed.
+The vat can be FLAIN FLAT once you have a suitable weapon.
+You can SPLAIN SPLAT once you're free of the vat.
 
 >bane bat
 by one point
@@ -1072,15 +1247,15 @@ by one point
 
 #testcase-postreject-table-of-verb-checks-vc-bane-bat-rule
 >bane bat
-WRONG
+No, you don't need additional firepower.
 
 #testcase-postreject-table-of-verb-checks-vc-flain-flat-rule
 >flain flat
-WRONG
+No, you already trashed the (ex-)vat.
 
 #testcase-postreject-table-of-verb-checks-vc-splain-splat-rule
 >splain splat
-WRONG
+With the splaining you do, you're ready to move on.
 
 >fed foes
 by one point
@@ -1108,16 +1283,20 @@ You already prepped yourself for the final fight. Now it is upon you.
 >yet ye
 You already prepped yourself for the final fight. Now it is upon you.
 
-#testcase-prereject-table-of-verb-checks-vc-t-lly-rule
+#testcase-prereject-table-of-verb-checks-vc-trite-t-lly-rule
 >trite telly
-WRONG
+That would be naming the Frightfully Bright Bully, but you need to do a bit more.
+
+#testcase-think-table-of-verb-checks-vc-trite-t-lly-rule
+>think
+You can name the Frightfully Bright Bully once they have an "award" of sorts to write their name on.
 
 >plus plaque
 by one point
 
 #testcase-postreject-table-of-verb-checks-vc-plus-plaque-rule
 >plus plaque
-WRONG
+You already made and gave the plus plaque to the Frightfully Bright Bully! Now you just have to figure, or riff on, their name!
 
 #testcase-moot-table-of-verb-checks-vc-bad-boast-rule
 >bad boast
@@ -1235,10 +1414,6 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 >four foals
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
 
-#testcase-moot-table-of-verb-checks-vc-fret-free-rule
->fret free
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
-
 #testcase-moot-table-of-verb-checks-vc-fun-form-rule
 >fun form
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
@@ -1257,11 +1432,11 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 
 #testcase-moot-table-of-verb-checks-vc-go-goo-rule
 >go goo
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+That location or thing doesn't exist or isn't known to you yet.
 
 #testcase-moot-table-of-verb-checks-vc-go-goon-rule
 >go goon
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+That location or thing doesn't exist or isn't known to you yet.
 
 #testcase-moot-table-of-verb-checks-vc-grokking-grift-rule
 >grokking grift
@@ -1343,10 +1518,6 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 >plight please
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
 
-#testcase-moot-table-of-verb-checks-vc-plus-plaque-rule
->plus plaque
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
-
 #testcase-moot-table-of-verb-checks-vc-potty-pail-rule
 >potty pail
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
@@ -1387,10 +1558,6 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 >seep soon
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
 
-#testcase-moot-table-of-verb-checks-vc-set-see-rule
->set see
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
-
 #testcase-moot-table-of-verb-checks-vc-shocking-shift-rule
 >shocking shift
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
@@ -1419,16 +1586,12 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 >stow stew
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
 
-#testcase-moot-table-of-verb-checks-vc-t-lly-rule
->trite tolly
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
-
 #testcase-moot-table-of-verb-checks-vc-throw-through-rule
 >throw through
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
 
 #testcase-moot-table-of-verb-checks-vc-tight-tease-rule
->tight tease|tees
+>tight tease
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
 
 #testcase-moot-table-of-verb-checks-vc-trolled-trend-rule
@@ -1449,10 +1612,6 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 
 #testcase-moot-table-of-verb-checks-vc-wordy-walk-rule
 >wordy walk
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
-
-#testcase-moot-table-of-verb-checks-vc-yet-ye-rule
->yet ye
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
 
 #testcase-moot-table-of-verb-checks-vc-yo-you-rule

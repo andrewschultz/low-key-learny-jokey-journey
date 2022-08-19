@@ -22,6 +22,10 @@ No policemen drive by. They might be corrupt, anyway.
 >mopping mart
 Surely this is more exciting than a trip for cleaning supplies.
 
+#ttc-table-of-bane-be-sane-see-guesses-sprain-spree
+>sprain spree
+While this is technically correct, you don't want to injure yourself or others.
+
 #ttc-table-of-bane-be-sane-see-guesses-cane-key
 >cane key
 You don't need any key to unlock the tree.
@@ -410,13 +414,17 @@ by one point
 
 #+ttc-table-of-deep-dune-guesses-beep-boon
 >beep boon
-No, you don't a Geiger counter to search further through the dune.
+No, you don't need a Geiger counter to search further through the dune.
 
 >s
 >w
 >w
 
-#ttc-table-of-fun-farm-hun-harm-guesses-one-worm-warm
+#ttc-table-of-hun-harm-fun-farm-guesses-one-worm-warm
+>one worm
+That doesn't quite work. Maybe the farm needs worms or warm weather, but its survival isn't as important to you as passage north.
+
+#+ttc-table-of-hun-harm-fun-farm-guesses-one-worm-warm
 >one worm
 That doesn't quite work. Maybe the farm needs worms or warm weather, but its survival isn't as important to you as passage north.
 
@@ -771,31 +779,31 @@ While it's okay to be white, it's not okay to be all IT'S OKAY TO BE WHITE.
 >shocking shift
 by one point
 
-#ttc-table-of-sore-souls'-gore-goals-guesses-bore-bowls
+#ttc-table-of-sore-souls-gore-goals-guesses-bore-bowls
 >bore bowls
 You're trying to bring life here, not drain it.
 
-#ttc-table-of-sore-souls'-gore-goals-guesses-door-doles
+#ttc-table-of-sore-souls-gore-goals-guesses-door-doles
 >door doles
 No, this place doesn't need more doors.
 
-#ttc-table-of-sore-souls'-gore-goals-guesses-poor-poles
+#ttc-table-of-sore-souls-gore-goals-guesses-poor-poles
 >poor poles
 Those would hardly liven the place up.
 
-#ttc-table-of-sore-souls'-gore-goals-guesses-roar-rolls-roles
+#ttc-table-of-sore-souls-gore-goals-guesses-roar-rolls-roles
 >roar rolls
 Perhaps the roaring would be lively. Perhaps it wouldn't. But it might not add anything.
 
-#ttc-table-of-sore-souls'-gore-goals-guesses-score-skols
+#ttc-table-of-sore-souls-gore-goals-guesses-score-skols
 >score skols
 Perhaps Vikings will discover this land and conquer it some day. But why speed things up?
 
-#ttc-table-of-sore-souls'-gore-goals-guesses-store-stoles
+#ttc-table-of-sore-souls-gore-goals-guesses-store-stoles
 >store stoles
 Bringing animal pelts into a place coming to life doesn't quite work.
 
-#ttc-table-of-sore-souls'-gore-goals-guesses-whore-holes
+#ttc-table-of-sore-souls-gore-goals-guesses-whore-holes
 >whore holes
 Now, now, this isn't that sort of game.
 
@@ -814,7 +822,7 @@ by one point
 >four foals
 by one point
 
-#+ttc-table-of-sore-souls'-gore-goals-guesses-store-stoles
+#+ttc-table-of-sore-souls-gore-goals-guesses-store-stoles
 >store stoles
 Bringing animal pelts into a place coming to life doesn't quite work.
 

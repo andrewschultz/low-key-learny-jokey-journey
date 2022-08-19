@@ -50,6 +50,11 @@ by one point
 
 >n
 
+As you go on your way, who should block your way but a fervent Mad Monk? They can't be too tough, this early in the game, especially since their name's seven letters.
+
+>n
+The mad monk is blocking you right now.
+
 >gad gunk
 by one point
 
@@ -70,13 +75,13 @@ The rocks block every way except back north.
 >n
 
 >w
-The no-nudge slow sludge slows you up, which makes you mad, but not mad enough to trek through it.
+The no-nudge slow sludge slows you up, which frustrates you. Maybe if it could annoy you the right way...
 
 >n
-The no-nudge slow sludge slows you up, which makes you mad, but not mad enough to trek through it.
+The no-nudge slow sludge slows you up, which frustrates you. Maybe if it could annoy you the right way...
 
 >e
-The no-nudge slow sludge slows you up, which makes you mad, but not mad enough to trek through it.
+The no-nudge slow sludge slows you up, which frustrates you. Maybe if it could annoy you the right way...
 
 >gt just jack
 That location or thing doesn't exist or isn't known to you yet.
@@ -110,6 +115,7 @@ by one point
 >done dorm
 by one point
 
+#ttc-table-of-noways-thunk-tree-trunk
 >n
 You feel your will sapped as you attempt to go north. You'll need to sit out the storm first.
 
@@ -117,6 +123,9 @@ You feel your will sapped as you attempt to go north. You'll need to sit out the
 by one point
 
 >n
+
+>n
+There are even bigger and more intimidating trees every way except south.
 
 >see sunk
 by one point
@@ -149,15 +158,23 @@ The track seems to end here. You can really only go back west, unless you figure
 by one point
 
 #+ttc-table-of-noways-trust-track
->n
+>s
 The track now runs west-north but not south.
 >e
 The track now runs west-north but not east.
 
 >n
 
+#ttc-table-of-noways-rare-reach
+>n
+The darkness encompasses you every way except back south.
+
 >bare beach
 by one point
+
+#+ttc-table-of-noways-rare-reach
+>n
+The water encompasses you every way except back south.
 
 >seep soon
 by one point
@@ -173,12 +190,23 @@ by one point
 >w
 
 >n
-WRONG
+Unfortunately, you hear aggressive voices threatening to attack you. They have weapons, and you don't. You're not sure how to change this.
+
+#ttc-table-of-noways-hun-harm-fun-farm
+>w
+If you left the north/east passage, you'd probably get lost.
+
+>s
+If you left the north/east passage, you'd probably get lost.
 
 >unarm
 by one point
 
 >n
+
+#ttc-table-of-noways-nonoon
+>n
+Any way but back south might get you lost in this darkness.
 
 >go goon
 by one point
@@ -195,6 +223,10 @@ by one point
 >crow croon
 by one point
 
+#ttc-table-of-noways-jotty-jail
+>n
+This being a jail, you can't walk out. You have to find a weak link or something.
+
 >grotty grail
 by one point
 
@@ -204,16 +236,38 @@ by one point
 >knotty nail
 by one point
 
+#ttc-table-of-noways-high-hub
+>n
+The only way out of the High Hub is telling the lift where you want to go. Okay, the only non-lethal way.
+
 >bye bub
 
 >wordy walk
 
+>w
+>n
+
+#+ttc-table-of-noways-nonoon
+>n
+In this quasi-sacred valley, the only way out is back south.
+
+>s
+>e
+
 >u
+
+#+ttc-table-of-noways-high-hub
+>n
+The only way out of the High Hub, besides going back down the sturdy stalk, is telling the lift where you want to go. Okay, the only non-lethal way.
 
 ##RBRSHUFFLESTART=0
 
 >rocking rift
 by one point
+
+#ttc-table-of-noways-new-show-shoe
+>n
+There's no way out except through the lift. You're the only person to get the show started, here.
 
 >go goo
 by one point
@@ -248,8 +302,16 @@ by one point
 >shocking shift
 by one point
 
+#ttc-table-of-noways-gore-goals
+>n
+Exploring the darkness would be unwise. The only way out is entering the lift.
+
 >shore shoals
 by one point
+
+#+ttc-table-of-noways-gore-goals
+>n
+Exploring the animal sanctuary you hope to build would feel invasive. The only way out is entering the lift.
 
 >night newt
 by one point
@@ -272,6 +334,13 @@ by one point
 >stocking stiffed
 by one point
 
+#ttc-table-of-noways-rum-route
+>n
+While you can go back into the lift, you suspect the route leads somewhere, once you're focused right.
+
+>d
+While you can go back into the lift, you suspect the route leads somewhere, once you're focused right.
+
 >dumb doubt
 by one point
 
@@ -281,7 +350,15 @@ by one point
 >umm out
 by one point
 
+#+ttc-table-of-noways-rum-route
+>n
+While you can go back into the lift, you can also go down.
+
 >d
+
+#ttc-table-of-noways-nay-nope-slay-slope
+>n
+The only physical way out of these depths is up, though you can pull yourself out of mental depths with the right words.
 
 >hey hope
 by one point
@@ -295,6 +372,13 @@ by one point
 >grokking grift
 by one point
 
+#ttc-table-of-noways-slight-sleaze
+>e
+You can only enter the lift or try to find a way through the fright freeze to the south.
+
+>s
+The fright-freeze pushes you back. You need to find a way to talk it down, somehow.
+
 >tight tees
 by one point
 
@@ -307,7 +391,15 @@ by one point
 >right root
 by one point
 
+#+ttc-table-of-noways-slight-sleaze
+>e
+You can only enter the lift or go south through the path you forged.
+
 >s
+
+#ttc-table-of-noways-seek-sameing
+>w
+This is a hideout think-tank. If there's a more secret place, it's beyond you. So, back north it is, when you want to leave.
 
 >clique claiming
 by one point
@@ -327,13 +419,25 @@ by one point
 >docking diffed
 by one point
 
+#ttc-table-of-noways-mad-most-cad-coast
+>n
+West is the only way out, other than the lift. You don't yet have the confidence to go west.
+
 >bad boast
 by one point
 
 >rad roast
 by one point
 
+#+ttc-table-of-noways-mad-most-cad-coast
+>n
+West is the only way out, other than the lift. You have the confidence to go west.
+
 >w
+
+#ttc-table-of-noways-trite-trail
+>n
+Although the trite trail extends in all directions except, well, where the whale is, you'd get lost everywhere except back east.
 
 >sight sail
 by one point
@@ -363,14 +467,42 @@ by one point
 
 /^Old End
 
+#ttc-table-of-noways-old-end
+>e
+But this is a dead end. For now.
+
 >bold bend
 by one point
+
+#+ttc-table-of-noways-old-end
+>n
+The bold bend you created goes south-to-east. You need to figure which of these ways is right.
+
+>e
+You can't tell which way is right. You need to listen for some source of meanness or nastiness or something.
 
 >trolled trend
 by one point
 
+#+ttc-table-of-noways-old-end
+>e
+You can't run away from the trolling! Somehow, you need to restore your psyche and go east.
+
+>s
+You still feel a bit hurt by the trolling you were exposed to.
+
+>n
+The trolled trend got to you, but you can't forsake the bend entirely.
+
 >mold mend
 by one point
+
+#+ttc-table-of-noways-old-end
+>e
+No. South is the way.
+
+>n
+You are ready to go south now. No turning away.
 
 >s
 
@@ -388,6 +520,10 @@ by one point
 
 >s
 
+#ttc-table-of-noways-threat-three
+>w
+You're at the final confrontation. There are no secret passages, just an exit back north.
+
 >fret free
 by one point
 
@@ -396,6 +532,13 @@ by one point
 
 >set see
 by one point
+
+#+ttc-table-of-noways-threat-three
+>w
+You're at the final confrontation. There are no secret passages, and you can't even exit back north.
+
+>n
+The fallen marquee sealed off the way back north.
 
 >plus plaque
 by one point

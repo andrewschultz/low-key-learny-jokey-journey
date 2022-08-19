@@ -56,14 +56,14 @@ TSV:## minimum walkthrough	## walkthrough with all points	## walkthrough with al
 
 * main-thru
 
+@min
+/^Bane Be Sane, See\?
+
 >au 2
 
 @hom
 >two too
 You set homonym detection to on.
-
-@min
-/^Bane Be Sane, See/?
 
 @mis
 #ttc-table-of-general-good-guesses-choppin-chart
@@ -364,7 +364,7 @@ It looks like you may have tried to refer to the room name, or part of it. You o
 >stow stew
 {$REJECT}
 \\
-#testcase-unavailable-table-of-verb-checks-vc-t-lly-rule
+#testcase-unavailable-table-of-verb-checks-vc-trite-t-lly-rule
 >trite tolly
 {$REJECT}
 \\
@@ -373,7 +373,7 @@ It looks like you may have tried to refer to the room name, or part of it. You o
 {$REJECT}
 \\
 #testcase-unavailable-table-of-verb-checks-vc-tight-tease-rule
->tight tease|tees
+>tight tease
 {$REJECT}
 \\
 #testcase-unavailable-table-of-verb-checks-vc-trolled-trend-rule
@@ -412,13 +412,17 @@ You get the feeling your voice could add constructively to the noises, somehow, 
 @hom
 #ttc-table-of-room-homonyms-bane-be-sane-see-hom-bane-be-sane-see-rule
 >sea
-Homonyms aren't the way here. Look at the train tree for clues. A bee would provide nature and all but nothing staying.
+Homonyms aren't the way here. Look at the train tree for clues. There will be large bodies of water elsewhere.
 \\
 #+ttc-table-of-room-homonyms-bane-be-sane-see-hom-bane-be-sane-see-rule
 >bee
 Homonyms aren't the way here. Look at the train tree for clues. A bee would provide nature and all but nothing staying.
 
 @mis
+#ttc-table-of-bane-be-sane-see-guesses-sprain-spree
+>sprain spree
+While this is technically correct, you don't want to injure yourself or others.
+\\
 #ttc-table-of-bane-be-sane-see-guesses-cane-key
 >cane key
 You don't need any key to unlock the tree.
@@ -581,6 +585,12 @@ You set the Leet Learner to Ha Half.
 
 >n
 
+@gt
+As you go on your way, who should block your way but a fervent Mad Monk? They can't be too tough, this early in the game, especially since their name's seven letters.
+\\
+>n
+The mad monk is blocking you right now.
+
 @ha
 #testcase-ha-half-table-of-verb-checks-4-gad
 >gad zgunk
@@ -663,6 +673,18 @@ by one point
 >gad gunk
 You already insulted the mad monk's cleanliness.
 !by one point
+\\
+##BALANCE UNDOS
+>sad sunk
+by one point
+\\
+#testcase-postreject-table-of-verb-checks-vc-sad-sunk-rule
+>sad sunk
+You already insulted the mad monk's serenity.
+!by one point
+\\
+>undo
+>undo
 
 @alt
 >sad sunk
@@ -677,6 +699,14 @@ by one point
 >bad bunk
 by one point
 }}SCORE++
+
+@rej
+#testcase-postreject-table-of-verb-checks-vc-bad-bunk-rule
+>bad bunk
+You already insulted the mad monk's truthfulness.
+!by one point
+
+@!alt
 \\
 >sad sunk
 by one point
@@ -699,35 +729,28 @@ You know, something even more spare than that might work, in the right place.
 >undo
 
 @rej
+##BALANCE UNDOS
 # this is to place a pre-reject command
 >bother
 door
-
-@rej
-#testcase-postreject-table-of-verb-checks-vc-bad-bunk-rule
->bad bunk
-You already insulted the mad monk's truthfulness.
-!by one point
 \\
-#testcase-postreject-table-of-verb-checks-vc-sad-sunk-rule
->sad sunk
-You already insulted the mad monk's serenity.
-!by one point
-
 >n
-
-@rej
+\\
 #testcase-prereject-table-of-verb-checks-vc-piss-poor-rule
 >piss poor
 You'll need to summon the miss-more-diss door, with or without profanity.
-\\
-#this may change in case I slip in another LLP first
 NOTE: this command will be useful later, but you aren't ready to use it, yet. You can track commands like this by typing THINK, which will also clue you if they now work.
-
-@rej
+\\
 #testcase-think-table-of-verb-checks-vc-piss-poor-rule
 >think
+NOTE: Low-Key Learny Jokey Journey should indicate whenever you find the right rhyme but can't execute it yet. An asterisk or (+) will also appear in the score in the upper right. Until then, you can THINK to see things you figured but aren't quite ready to do yet.
 (OPTIONAL) You can dismiss the miss-more-diss door with PISS POOR once you've re-summoned or revisited it.
+>undo
+>undo
+>undo
+>undo
+
+>n
 
 @min
 /^No-Nudge Slow Sludge
@@ -787,13 +810,13 @@ Weight gain won't help here.
 
 @gt
 >w
-The no-nudge slow sludge slows you up, which makes you mad, but not mad enough to trek through it.
+The no-nudge slow sludge slows you up, which frustrates you. Maybe if it could annoy you the right way...
 \\
 >n
-The no-nudge slow sludge slows you up, which makes you mad, but not mad enough to trek through it.
+The no-nudge slow sludge slows you up, which frustrates you. Maybe if it could annoy you the right way...
 \\
 >e
-The no-nudge slow sludge slows you up, which makes you mad, but not mad enough to trek through it.
+The no-nudge slow sludge slows you up, which frustrates you. Maybe if it could annoy you the right way...
 \\
 >gt just jack
 That location or thing doesn't exist or isn't known to you yet.
@@ -886,7 +909,7 @@ No lightning bolt spell blasts the door.
 @hom
 #testcase-homonym-table-of-verb-checks-pore
 >piss pore
-The Leet Learner shakes back and forth. Something you said sounded right, but maybe you didn't THINK it right.
+The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
 @!min
 >piss poor
@@ -899,8 +922,7 @@ by one point
 #testcase-prereject-table-of-verb-checks-vc-fun-form-rule
 >fun form
 Perhaps you will need a fun form in a bit. But no entity requires it right now.
-
-@rej
+\\
 #testcase-think-table-of-verb-checks-vc-fun-form-rule
 >think
 You can fill out a FUN FORM once you have somewhere to enter.
@@ -919,15 +941,13 @@ by one point
 }}SCORE++
 
 @rej
-#testcase-postreject-table-of-verb-checks-vc-fun-form-rule
->fun form
-WRONG
 \\
 #testcase-postreject-table-of-verb-checks-vc-done-dorm-rule
 >done dorm
-WRONG
+You already summoned the done dorm.
 
 @gt
+#ttc-table-of-noways-thunk-tree-trunk
 >n
 You feel your will sapped as you attempt to go north. You'll need to sit out the storm first.
 
@@ -944,10 +964,19 @@ The HA HALF button lights up on your Leet Learner.
 by one point
 }}SCORE++
 
+@rej
+#testcase-postreject-table-of-verb-checks-vc-fun-form-rule
+>fun form
+You already filled out the fun form.
+
 >n
 
 @min
 /^The \(Thunk!\) Tree Trunk
+
+@gt
+>n
+There are even bigger and more intimidating trees every way except south.
 
 @mis
 #ttc-table-of-thunk-tree-trunk-guesses-be-bunk
@@ -1001,8 +1030,7 @@ The HA HALF button lights up on your Leet Learner.
 #testcase-prereject-table-of-verb-checks-vc-gee-junk-rule
 >gee junk
 If there were junk in the tree trunk, you couldn't see it. It's way too tall!
-
-@rej
+\\
 #testcase-think-table-of-verb-checks-vc-gee-junk-rule
 >think
 You can say GEE JUNK once more of the trunk is visible.
@@ -1014,7 +1042,7 @@ by one point
 @rej
 #testcase-postreject-table-of-verb-checks-vc-see-sunk-rule
 >see sunk
-WRONG
+You already sunk the tree trunk!
 
 @ha
 #testcase-ha-half-table-of-verb-checks-11-gee
@@ -1032,17 +1060,12 @@ by one point
 @rej
 #testcase-postreject-table-of-verb-checks-vc-gee-junk-rule
 >gee junk
-WRONG
-
-@rej
-#testcase-postreject-table-of-verb-checks-vc-pear-peach-rule
-
-@rej
+You already discovered useful junk in the form of FREE FRUIT.
+\\
 #testcase-prereject-table-of-verb-checks-vc-pear-peach-rule
 >pear peach
 The FREE FRUIT sputters a bit, almost as if it sticks its tongue about you. Weird as it sounds, you may have to show appreciation for it.
-
-@rej
+\\
 #testcase-think-table-of-verb-checks-vc-pear-peach-rule
 >think
 You can make a PEAR PEACH once you're happy enough to receive free fruit.
@@ -1104,15 +1127,12 @@ by one point
 @rej
 #testcase-postreject-table-of-verb-checks-vc-whee-woot-rule
 >whee woot
-WRONG
+You already appreciated the free fruit sufficiently.
 
 @hom
-#ttc-table-of-thing-homonyms-pear-peach-pair-pare
+#testcase-homonym-table-of-verb-checks-pair-pare
 >pair peech
-You don't need to reduce or duplicate the pear peach. It has a much bigger purpose.
-\\
->pare peech
-You don't need to reduce or duplicate the pear peach. It has a much bigger purpose.
+The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right.
 
 @ha
 #testcase-ha-half-table-of-verb-checks-13-peach
@@ -1126,6 +1146,11 @@ The HA HALF button lights up on your Leet Learner.
 >pear peach
 by one point
 }}SCORE++
+
+@hom
+#ttc-table-of-thing-homonyms-pear-peach-pair-pare
+>pare peech
+You don't need to reduce or duplicate the pear peach. It has a much bigger purpose.
 
 >s
 >s
@@ -1154,22 +1179,18 @@ That would be a useless item.
 
 @rej
 #testcase-postreject-table-of-verb-checks-vc-crust-crack-rule
-
-@rej
+\\
 #testcase-prereject-table-of-verb-checks-vc-crust-crack-rule
 >crust crack
 Under Just Jack's watchful eye, you don't feel like you could precipitate such changes. How to get rid of him?
 \\
 !NOTE: this command will be useful later
-
-@rej
+\\
 #testcase-think-table-of-verb-checks-vc-crust-crack-rule
 >think
 You think about more specific challenges you've encountered and not solved, and what you've done and tried, and what you can do.
 \\
-You need to get rid of Just Jack before you can make the CRUST CRACK.
-\\
-NOTE: The game will indicate when one command you found early will be applicable. An asterisk or (+) will also appear in the score in the upper right. Until then, you can THINK to see things you figured but aren't quite ready to do yet.
+You can make the CRUST CRACK once Just Jack is gone.
 
 @ha
 #testcase-ha-half-table-of-verb-checks-14-back
@@ -1230,32 +1251,34 @@ by one point
 }}SCORE++
 
 @rej
+# generic test case if you have no leads
+>think
+You think about more specific challenges you've encountered and not solved, and what you've done and tried, and what you can do.
+\\
 #testcase-prereject-table-of-verb-checks-vc-plus-plaque-rule
 >plus plaque
-WRONG
-
-@rej
+You consider conjuring up a gaudy, flattering plus-plaque. But you have nobody to give it to, and you'd hate to have to carry it around. Maybe elsewhere.
+\\
 #testcase-think-table-of-verb-checks-vc-plus-plaque-rule
 >think
 You can make a heavy PLUS PLAQUE once you have someone to dump it off on right away.
 
 @gt
 #+ttc-table-of-noways-trust-track
->n
+>s
 The track now runs west-north but not south.
 >e
 The track now runs west-north but not east.
-
-@rej
->think
-You think about more specific challenges you've encountered and not solved, and what you've done and tried, and what you can do.
-\\
-But you don't have leads for any puzzles right now.
 
 >n
 
 @min
 /^Rare Reach
+
+@gt
+#ttc-table-of-noways-rare-reach
+>n
+The darkness encompasses you every way except back south.
 
 @mis
 #ttc-table-of-rare-reach-guesses-air-ere-err-each
@@ -1299,17 +1322,21 @@ by one point
 @min
 /^Bare Beach
 
+@gt
+#+ttc-table-of-noways-rare-reach
+>n
+The water encompasses you every way except back south.
+
 @rej
 #testcase-postreject-table-of-verb-checks-vc-bare-beach-rule
 >bare beach
-WRONG
+You already changed the Rare Reach.
 
 @mis
 #+ttc-table-of-rare-reach-guesses-spare-speech
 >spare speech
 But that is less spare than a pear peach.
-
-@mis
+\\
 #ttc-table-of-deep-dune-guesses-beep-boon
 >beep boon
 No, you don't a Geiger counter to search through the dune.
@@ -1330,8 +1357,7 @@ Low-Key Learny Jokey Journey is the wrong environment for that, and not just bec
 #testcase-prereject-table-of-verb-checks-vc-reap-rune-rule
 >reap rune
 The dune is a bit too big now. Maybe you could find a way to reduce it, over time.
-
-@rej
+\\
 #testcase-think-table-of-verb-checks-vc-reap-rune-rule
 >think
 You can REAP RUNE once you have spent time adventuring.
@@ -1352,7 +1378,7 @@ by one point
 @rej
 #testcase-postreject-table-of-verb-checks-vc-seep-soon-rule
 >seep soon
-WRONG
+You already doomed the dune to collapsing slightly.
 
 >s
 >n
@@ -1376,23 +1402,38 @@ by one point
 @rej
 #testcase-postreject-table-of-verb-checks-vc-reap-rune-rule
 >reap rune
-WRONG
+You already reaped a rune.
 
 @mis
 #+ttc-table-of-deep-dune-guesses-beep-boon
 >beep boon
-No, you don't a Geiger counter to search further through the dune.
+No, you don't need a Geiger counter to search further through the dune.
 
 >s
 >w
 >w
 
-@gt
->n
-WRONG
+@min
+/^Hun Harm Fun Farm
 
 @mis
-#ttc-table-of-fun-farm-hun-harm-guesses-one-worm-warm
+#ttc-table-of-hun-harm-fun-farm-guesses-one-worm-warm
+>one worm
+That doesn't quite work. Maybe the farm needs worms or warm weather, but its survival isn't as important to you as passage north.
+
+@gt
+>n
+Unfortunately, you hear aggressive voices threatening to attack you. They have weapons, and you don't. You're not sure how to change this.
+\\
+#ttc-table-of-noways-hun-harm-fun-farm
+>w
+If you left the north/east passage, you'd probably get lost.
+\\
+>s
+If you left the north/east passage, you'd probably get lost.
+
+@mis
+#+ttc-table-of-hun-harm-fun-farm-guesses-one-worm-warm
 >one worm
 That doesn't quite work. Maybe the farm needs worms or warm weather, but its survival isn't as important to you as passage north.
 
@@ -1412,12 +1453,17 @@ by one point
 @rej
 #testcase-postreject-table-of-verb-checks-vc-un-arm-rule
 >unarm
-WRONG
+You already unarmed the Hun Harm Fun Farm!
 
 >n
 
 @min
 /^No Noon
+
+@gt
+#ttc-table-of-noways-nonoon
+>n
+Any way but back south might get you lost in this darkness.
 
 @mis
 #ttc-table-of-nonoon-guesses-bow-boon
@@ -1457,21 +1503,20 @@ Nothing toe-tapping starts playing.
 @rej
 #testcase-prereject-table-of-verb-checks-vc-co-coon-rule
 >cocoon
-WRONG
+You can't do anything while oppressed by enemies. How to call them off?
 \\
 #testcase-prereject-table-of-verb-checks-vc-crow-croon-rule
 >crow croon
-WRONG
+The crow can't croon until it's ready. And it's not time yet. How could you make time advance, right here, right now?
 \\
 #testcase-prereject-table-of-verb-checks-vc-mo-moon-rule
 >mo moon
-WRONG
+It's scary the sky's so dark, but you sense someone, or something, might need the moon and such to reach its potential. But what, or who?
 \\
 #testcase-prereject-table-of-verb-checks-vc-so-soon-rule
 >so soon
-WRONG
-
-@rej
+You would like time to speed up and dawn to break. But something's missing from the sky.
+\\
 #testcase-think-table-of-verb-checks-vc-co-coon-rule
 #testcase-think-table-of-verb-checks-vc-crow-croon-rule
 #testcase-think-table-of-verb-checks-vc-mo-moon-rule
@@ -1520,7 +1565,7 @@ The HA HALF button lights up on your Leet Learner.
 @hom
 #testcase-homonym-table-of-verb-checks-mow
 >mow moon
-The Leet Learner shakes back and forth. Something you said sounded right, but maybe you didn't THINK it right.
+The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
 >mo moon
 by one point
@@ -1538,7 +1583,7 @@ The HA HALF button lights up on your Leet Learner.
 @hom
 #testcase-homonym-table-of-verb-checks-sew-sow
 >sew soon
-The Leet Learner shakes back and forth. Something you said sounded right, but maybe you didn't THINK it right.
+The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
 >so soon
 by one point
@@ -1556,23 +1601,19 @@ The HA HALF button lights up on your Leet Learner.
 @rej
 #testcase-postreject-table-of-verb-checks-vc-co-coon-rule
 >co coon
-WRONG
-\\
-#testcase-postreject-table-of-verb-checks-vc-crow-croon-rule
->crow croon
-WRONG
+You already placed the cocoon.
 \\
 #testcase-postreject-table-of-verb-checks-vc-go-goon-rule
 >go goon
-WRONG
+You already dispelled the goon!
 \\
 #testcase-postreject-table-of-verb-checks-vc-mo-moon-rule
 >mo moon
-WRONG
+The moon has already appeared!
 \\
 #testcase-postreject-table-of-verb-checks-vc-so-soon-rule
 >so soon
-WRONG
+You already sped time up.
 
 >crow croon
 by one point
@@ -1580,6 +1621,11 @@ by one point
 
 @min
 /^Jotty Jail
+
+@gt
+#ttc-table-of-noways-jotty-jail
+>n
+This being a jail, you can't walk out. You have to find a weak link or something.
 
 @mis
 #ttc-table-of-jotty-jail-guesses-botty-bawdy-bail-bale
@@ -1676,7 +1722,7 @@ No. The potty pail was a relief to find, but enough of past discoveries. You nee
 @hom
 #testcase-homonym-table-of-verb-checks-naughty
 >naughty nail
-The Leet Learner shakes back and forth. Something you said sounded right, but maybe you didn't THINK it right.
+The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
 >knotty nail
 by one point
@@ -1685,12 +1731,16 @@ by one point
 @min
 /^High Hub
 
+@gt
+#ttc-table-of-noways-high-hub
+>n
+The only way out of the High Hub is telling the lift where you want to go. Okay, the only non-lethal way.
+
 @rej
 #testcase-prereject-table-of-verb-checks-vc-mocking-miffed-rule
 >mocking miffed
-WRONG
-
-@rej
+The mocking, miffed--well, it is there, but you don't quite have the confidence yet to face it. You've only fully tackled none of the other five areas the locking lift can access.
+\\
 #testcase-think-table-of-verb-checks-vc-mocking-miffed-rule
 >think
 You can search for MOCKING MIFFED once you've solved all the other hub areas.
@@ -1713,8 +1763,7 @@ You wouldn't want to sift through punches to receive.
 #ttc-table-of-locking-lift-guesses-whocking-whiffed
 >whocking whiffed
 You wouldn't want to attack someone and miss.
-
-@mis
+\\
 #ttc-table-of-high-hub-guesses-cly-club
 >cly club
 You try to go old-school finding an so-old-school-schools-didn't-exist weapon, but alas, it doesn't work.
@@ -1775,7 +1824,7 @@ The HA HALF button lights up on your Leet Learner, but dimly--perhaps this is a 
 @hom
 #testcase-homonym-table-of-verb-checks-buy-by
 >buy bub
-The Leet Learner shakes back and forth. Something you said sounded right, but maybe you didn't THINK it right.
+The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
 @!min
 >bye bub
@@ -1823,18 +1872,44 @@ No, pock marks wouldn't make the stalk look better.
 }}CURMIN++
 }}CURMINBONUS++
 
+@gt
+>w
+>n
+\\
+#+ttc-table-of-noways-nonoon
+>n
+In this quasi-sacred valley, the only way out is back south.
+\\
+>s
+>e
+
 @rej
 #testcase-postreject-table-of-verb-checks-vc-wordy-walk-rule
 >wordy walk
-WRONG
+You have another wordy walk, but it isn't as effective as the first.
+\\
+>w
+>n
+\\
+#testcase-postreject-table-of-verb-checks-vc-crow-croon-rule
+>crow croon
+You already had the crow croon!
+\\
+>s
+>e
 
 @!min
 >u
 
+@gt
+#+ttc-table-of-noways-high-hub
+>n
+The only way out of the High Hub, besides going back down the sturdy stalk, is telling the lift where you want to go. Okay, the only non-lethal way.
+
 @rej
 #testcase-postreject-table-of-verb-checks-vc-bye-bub-rule
 >bye bub
-WRONG
+No need to say good-bye twice. That's just awkward, besides, just typing DOWN or D saves emotional energy and keystrokes.
 
 @mis
 #+ttc-table-of-high-hub-guesses-sigh-sub
@@ -1859,32 +1934,36 @@ by one point
 @min
 /^No-New-Show Shoe
 
+@gt
+#ttc-table-of-noways-new-show-shoe
+>n
+There's no way out except through the lift. You're the only person to get the show started, here.
+
 @rej
 #testcase-prereject-table-of-verb-checks-vc-bro-brew-rule
 >bro brew
-WRONG
+That's a good idea, but you have nowhere reliable to store such a beverage! Well, not yet.
 \\
 #testcase-prereject-table-of-verb-checks-vc-crow-crew-rule
 >crow crew
-WRONG
+Without reliable food and drink to support the Crow Crew, who would be ideal performers here, it's a no-go. So you need to do a bit more.
 \\
 #testcase-prereject-table-of-verb-checks-vc-ho-who-rule
 >ho who
-WRONG
+There's no crowd to call out to to get them hyped, but if there were, that'd be great!
 \\
 #testcase-prereject-table-of-verb-checks-vc-stow-stew-rule
 >stow stew
-WRONG
+That's a good idea, but you have nowhere reliable to store something to eat! Well, not yet.
 \\
 #testcase-prereject-table-of-verb-checks-vc-throw-through-rule
 >throw through
-WRONG
+You have no performers to (figuratively) throw through and present to a crowd! Well, not yet.
 \\
 #testcase-prereject-table-of-verb-checks-vc-yo-you-rule
 >yo you
-WRONG
-
-@rej
+There's no crowd to call out to to get them hyped, but if there were, that'd be great!
+\\
 #testcase-think-table-of-verb-checks-vc-yo-you-rule
 #testcase-think-table-of-verb-checks-vc-ho-who-rule
 #testcase-think-table-of-verb-checks-vc-stow-stew-rule
@@ -2040,7 +2119,7 @@ There's more than enough Go Goo for whoever actually wants it or just fools them
 @hom
 #testcase-homonym-table-of-verb-checks-flu-flew
 >flow flew
-The Leet Learner shakes back and forth. Something you said sounded right, but maybe you didn't THINK it right.
+The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
 >flow flue
 by one point
@@ -2085,12 +2164,12 @@ by one point
 @rej
 #testcase-postreject-table-of-verb-checks-vc-crow-crew-rule
 >crow crew
-{$REJECT}
+You already summoned the Crow Crew!
 
 @hom
 #testcase-homonym-table-of-verb-checks-hoe
 >hoe who
-The Leet Learner shakes back and forth. Something you said sounded right, but maybe you didn't THINK it right.
+The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
 >ho who
 by one point
@@ -2104,7 +2183,7 @@ You already started to hype up the crowd.
 @hom
 #testcase-homonym-table-of-verb-checks-yew
 >yo yew
-The Leet Learner shakes back and forth. Something you said sounded right, but maybe you didn't THINK it right.
+The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
 >yo you
 by one point
@@ -2131,7 +2210,7 @@ That's a bit too generic a sound to make, and you've already made the right ones
 @hom
 #testcase-homonym-table-of-verb-checks-threw
 >throw threw
-The Leet Learner shakes back and forth. Something you said sounded right, but maybe you didn't THINK it right.
+The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
 >throw through
 by one point
@@ -2140,17 +2219,16 @@ by one point
 @rej
 #testcase-prereject-table-of-verb-checks-vc-bright-brute-rule
 >bright brute
-WRONG
+Good idea, but there's no huge foe for a bright brute to help you with here.
 \\
 #testcase-prereject-table-of-verb-checks-vc-despite-dispute-rule
 >despite dispute
-WRONG
+That's interesting and tricky, and it'll come in handy later. Trust me.
 \\
 #testcase-prereject-table-of-verb-checks-vc-right-root-rule
 >right root
-WRONG
-
-@rej
+The right root needs to be laid down somewhere, but not here.
+\\
 #testcase-think-table-of-verb-checks-vc-despite-dispute-rule
 #testcase-think-table-of-verb-checks-vc-right-root-rule
 #testcase-think-table-of-verb-checks-vc-bright-brute-rule
@@ -2211,7 +2289,7 @@ While it's okay to be white, it's not okay to be all IT'S OKAY TO BE WHITE.
 @rej
 #testcase-postreject-table-of-verb-checks-vc-rocking-rift-rule
 >rocking rift
-You already brought life back to the Whoah-Woo Show Shoe. You don't need to go back.
+You already brought life back to the Whoah-Woo-Show Shoe. You don't need to go back.
 
 ##RBRSHUFFLEEND=0
 ##RBRSHUFFLESTART=1
@@ -2232,32 +2310,37 @@ by one point
 @min
 /^Sore Souls' Gore Goals
 
+@gt
+#ttc-table-of-noways-gore-goals
+>n
+Exploring the darkness would be unwise. The only way out is entering the lift.
+
 @mis
-#ttc-table-of-sore-souls'-gore-goals-guesses-bore-bowls
+#ttc-table-of-sore-souls-gore-goals-guesses-bore-bowls
 >bore bowls
 You're trying to bring life here, not drain it.
 \\
-#ttc-table-of-sore-souls'-gore-goals-guesses-door-doles
+#ttc-table-of-sore-souls-gore-goals-guesses-door-doles
 >door doles
 No, this place doesn't need more doors.
 \\
-#ttc-table-of-sore-souls'-gore-goals-guesses-poor-poles
+#ttc-table-of-sore-souls-gore-goals-guesses-poor-poles
 >poor poles
 Those would hardly liven the place up.
 \\
-#ttc-table-of-sore-souls'-gore-goals-guesses-roar-rolls-roles
+#ttc-table-of-sore-souls-gore-goals-guesses-roar-rolls-roles
 >roar rolls
 Perhaps the roaring would be lively. Perhaps it wouldn't. But it might not add anything.
 \\
-#ttc-table-of-sore-souls'-gore-goals-guesses-score-skols
+#ttc-table-of-sore-souls-gore-goals-guesses-score-skols
 >score skols
 Perhaps Vikings will discover this land and conquer it some day. But why speed things up?
 \\
-#ttc-table-of-sore-souls'-gore-goals-guesses-store-stoles
+#ttc-table-of-sore-souls-gore-goals-guesses-store-stoles
 >store stoles
 Bringing animal pelts into a place coming to life doesn't quite work.
 \\
-#ttc-table-of-sore-souls'-gore-goals-guesses-whore-holes
+#ttc-table-of-sore-souls-gore-goals-guesses-whore-holes
 >whore holes
 Now, now, this isn't that sort of game.
 
@@ -2313,21 +2396,20 @@ The HA HALF button lights up on your Leet Learner, but dimly--perhaps this is a 
 @rej
 #testcase-prereject-table-of-verb-checks-vc-night-newt-rule
 >night newt
-WRONG
+Such animals would make this area nicer, but it's too desolate for them here right now.
 \\
 #testcase-prereject-table-of-verb-checks-vc-kite-coot-rule
 >kite coot
-WRONG
+Such animals would make this area nicer, but it's too desolate for them here right now.
 \\
 #testcase-prereject-table-of-verb-checks-vc-four-foals-rule
 >four foals
-WRONG
+Such animals would make this area nicer, but it's too desolate for them here right now.
 \\
 #testcase-prereject-table-of-verb-checks-vc-more-moles-rule
 >more moles
-WRONG
-
-@rej
+Such animals would make this area nicer, but it's too desolate for them here right now.
+\\
 #testcase-think-table-of-verb-checks-vc-four-foals-rule
 #testcase-think-table-of-verb-checks-vc-kite-coot-rule
 #testcase-think-table-of-verb-checks-vc-more-moles-rule
@@ -2342,10 +2424,15 @@ You can summon a NIGHT NEWT once the area is more hospitable.
 by one point
 }}SCORE++
 
+@gt
+#+ttc-table-of-noways-gore-goals
+>n
+Exploring the animal sanctuary you hope to build would feel invasive. The only way out is entering the lift.
+
 @rej
 #testcase-postreject-table-of-verb-checks-vc-shore-shoals-rule
 >shore shoals
-WRONG
+You have already rehabilitated the sore souls' gore goals!
 
 @min
 /^Shore Shoals
@@ -2372,24 +2459,23 @@ by one point
 @rej
 #testcase-postreject-table-of-verb-checks-vc-night-newt-rule
 >night newt
-WRONG
+You already populated the area with night newts!
 \\
 #testcase-postreject-table-of-verb-checks-vc-kite-coot-rule
 >kite coot
-WRONG
+There are enough kite coots here.
 \\
 #testcase-postreject-table-of-verb-checks-vc-lore-lols-rule
 >lore lols
-WRONG
-
-@rej
+You recount the myths you started to create, just to make sure they're not lost.
+\\
 ##balance undos
 >more moles
 by one point
 \\
 #testcase-postreject-table-of-verb-checks-vc-more-moles-rule
 >more moles
-WRONG
+You don't need even more moles!
 \\
 >undo
 >undo
@@ -2397,7 +2483,7 @@ WRONG
 @hom
 #testcase-homonym-table-of-verb-checks-fore
 >fore foals
-The Leet Learner shakes back and forth. Something you said sounded right, but maybe you didn't THINK it right.
+The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
 >four foals
 by one point
@@ -2406,10 +2492,10 @@ by one point
 @rej
 #testcase-postreject-table-of-verb-checks-vc-four-foals-rule
 >four foals
-WRONG
+You already populated the area with foals!
 
 @mis
-#+ttc-table-of-sore-souls'-gore-goals-guesses-store-stoles
+#+ttc-table-of-sore-souls-gore-goals-guesses-store-stoles
 >store stoles
 Bringing animal pelts into a place coming to life doesn't quite work.
 
@@ -2478,6 +2564,11 @@ You recall an add for a towing service.
 >wed woes
 A sad, succinct tale, indeed.
 
+@rej
+#testcase-postreject-table-of-verb-checks-vc-shocking-shift-rule
+>shocking shift
+You already took care of the shocking shift!
+
 ##RBRSHUFFLEEND=1
 ##RBRSHUFFLESTART=2
 
@@ -2496,6 +2587,14 @@ by one point
 
 @min
 /^Rum Route
+
+@gt
+#ttc-table-of-noways-rum-route
+>n
+While you can go back into the lift, you suspect the route leads somewhere, once you're focused right.
+\\
+>d
+While you can go back into the lift, you suspect the route leads somewhere, once you're focused right.
 
 @mis
 #ttc-table-of-rum-route-guesses-bum-bout
@@ -2538,13 +2637,12 @@ The HA HALF button lights up on your Leet Learner.
 @rej
 #testcase-prereject-table-of-verb-checks-vc-umm-out-rule
 >umm out
-WRONG
+You can't just come in here cold like that! Maybe with the right preparation, an "umm, out" would be more forceful.
 \\
 #testcase-prereject-table-of-verb-checks-vc-said-sos-rule
 >said sos
-WRONG
-
-@rej
+Your said-sos won't work cold. You need to show confidence and be persuasive.
+\\
 #testcase-think-table-of-verb-checks-vc-umm-out-rule
 #testcase-think-table-of-verb-checks-vc-said-sos-rule
 >think
@@ -2558,7 +2656,7 @@ by one point
 @rej
 #testcase-postreject-table-of-verb-checks-vc-dumb-doubt-rule
 >dumb doubt
-WRONG
+You already spread dumb doubt! If you try to spread more, you may wind up believing it yourself.
 
 >said sos
 by one point
@@ -2567,21 +2665,31 @@ by one point
 @rej
 #testcase-postreject-table-of-verb-checks-vc-said-sos-rule
 >said sos
-WRONG
+You already gave said-sos!
 
 >umm out
 by one point
 }}SCORE++
 
+@gt
+#+ttc-table-of-noways-rum-route
+>n
+While you can go back into the lift, you can also go down.
+
 @rej
 #testcase-postreject-table-of-verb-checks-vc-umm-out-rule
 >umm out
-WRONG
+You've cleared the Rum Route. No need to overdo things.
 
 >d
 
 @min
 /^Nay-Nope-Slay Slope
+
+@gt
+#ttc-table-of-noways-nay-nope-slay-slope
+>n
+The only physical way out of these depths is up, though you can pull yourself out of mental depths with the right words.
 
 @mis
 # could be tested once not automatically kicked back to lift ?? did/can do
@@ -2627,17 +2735,16 @@ The HA HALF button lights up on your Leet Learner.
 # ?? note this should be rejectable if we do not automatically take the lift back
 #testcase-prereject-table-of-verb-checks-vc-k-cope-rule
 >k cope
-WRONG
-
-@rej
+You will be able to cope soon, but there is an intermediate step.
+\\
 #testcase-think-table-of-verb-checks-vc-k-cope-rule
 >think
-You can say K COPE once once you're able to cope fully.
+You can say K COPE once you're able to cope fully.
 
 @hom
 #testcase-homonym-table-of-verb-checks-hay
 >hay hope
-The Leet Learner shakes back and forth. Something you said sounded right, but maybe you didn't THINK it right.
+The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
 >hey hope
 by one point
@@ -2646,7 +2753,7 @@ by one point
 @rej
 #testcase-postreject-table-of-verb-checks-vc-hey-hope-rule
 >hey hope
-WRONG
+You already got hope started! Now to adjust fully.
 
 @ha
 #testcase-ha-half-table-of-verb-checks-57-cope
@@ -2664,10 +2771,19 @@ by one point
 @rej
 #testcase-postreject-table-of-verb-checks-vc-stocking-stiffed-rule
 >stocking stiffed
-WRONG
+You already took care of the Rum Route!
 
 ##RBRSHUFFLEEND=2
 ##RBRSHUFFLESTART=3
+
+@ha
+#testcase-ha-half-table-of-verb-checks-34-grokking
+>grokking zgrift
+The HA HALF button lights up on your Leet Learner.
+\\
+#testcase-ha-half-table-of-verb-checks-34-grift
+>zgrokking grift
+The HA HALF button lights up on your Leet Learner.
 
 >grokking grift
 by one point
@@ -2675,6 +2791,14 @@ by one point
 
 @min
 /^Slight Sleaze
+
+@gt
+#ttc-table-of-noways-slight-sleaze
+>e
+You can only enter the lift or try to find a way through the fright freeze to the south.
+\\
+>s
+The fright-freeze pushes you back. You need to find a way to talk it down, somehow.
 
 @mis
 \\
@@ -2762,9 +2886,8 @@ The HA HALF button lights up on your Leet Learner.
 @rej
 #testcase-prereject-table-of-verb-checks-vc-plight-please-rule
 >plight please
-WRONG
-
-@rej
+You'd like to be that dismissive ("Plight? PLEASE!") but you aren't feeling positive enough for that. Perhaps a slight change in the weather...
+\\
 #testcase-think-table-of-verb-checks-vc-plight-please-rule
 >think
 You can explain PLIGHT PLEASE once you've started to chip away at the slight sleaze.
@@ -2787,33 +2910,43 @@ by one point
 @hom
 #testcase-homonym-table-of-verb-checks-write-route
 >write route
-The Leet Learner shakes back and forth. Something you said sounded right, but maybe you didn't THINK it right.
+The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
 >right root
 by one point
 }}SCORE++
 
+@gt
+#+ttc-table-of-noways-slight-sleaze
+>e
+You can only enter the lift or go south through the path you forged.
+
 @rej
 #testcase-postreject-table-of-verb-checks-vc-tight-tease-rule
 >tight tees
-WRONG
+You already poked the slight sleaze back. You don't get double credit for that.
 \\
 #testcase-postreject-table-of-verb-checks-vc-bright-breeze-rule
 >bright breeze
-WRONG
+You already planted the right root to make trite trees. Nothing more to do here.
 \\
 #testcase-postreject-table-of-verb-checks-vc-plight-please-rule
 >plight please
-WRONG
+You already planted the right root to make trite trees. Nothing more to do here.
 \\
 #testcase-postreject-table-of-verb-checks-vc-right-root-rule
 >right root
-WRONG
+You already planted the right root to make trite trees. Nothing more to do here.
 
 >s
 
 @min
 /^Freak-Framing Seek-Sameing
+
+@gt
+#ttc-table-of-noways-seek-sameing
+>w
+This is a hideout think-tank. If there's a more secret place, it's beyond you. So, back north it is, when you want to leave.
 
 @mis
 #ttc-table-of-freak-framing-seek-sameing-guesses-eek-aiming
@@ -2868,17 +3001,16 @@ The HA HALF button lights up on your Leet Learner.
 @rej
 #testcase-prereject-table-of-verb-checks-vc-chic-shaming-rule
 >chic shaming
-WRONG
+You can't jump into such cleverness. You have to bring people down so that they will be glad you picked them up.
 \\
 #testcase-prereject-table-of-verb-checks-vc-bred-bros-rule
 >bred bros
-WRONG
-
-@rej
+You haven't done enough so that said bred Bros can continue your work.
+\\
 #testcase-think-table-of-verb-checks-vc-bred-bros-rule
 #testcase-think-table-of-verb-checks-vc-chic-shaming-rule
 >think
-You can summon BRED BROS once you've managed to dismantle the freak framing. ?? what if not been there yet?
+You can summon BRED BROS once you need folks with charisma to communicate a positive vision.
 You can go full-in for CHIC SHAMING once you've re-framed the freak framing.
 
 @!min
@@ -2895,7 +3027,7 @@ by one point
 @hom
 #testcase-homonym-table-of-verb-checks-shiek-sheik
 >shiek shaming
-The Leet Learner shakes back and forth. Something you said sounded right, but maybe you didn't THINK it right.
+The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
 >chic shaming
 by one point
@@ -2904,20 +3036,20 @@ by one point
 @rej
 #testcase-postreject-table-of-verb-checks-vc-bleak-blaming-rule
 >bleak blaming
-WRONG
+The chic shaming complete, you're done here. No need to repeat what you did.
 \\
 #testcase-postreject-table-of-verb-checks-vc-chic-shaming-rule
 >chic shaming
-WRONG
+The chic shaming complete, you're done here. No need to repeat what you did.
 \\
 #testcase-postreject-table-of-verb-checks-vc-clique-claiming-rule
 >clique claiming
-WRONG
+Clique claiming would not have nearly as much mileage the second time around.
 
 @hom
 #testcase-homonym-table-of-verb-checks-bread
 >bread bros
-The Leet Learner shakes back and forth. Something you said sounded right, but maybe you didn't THINK it right.
+The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
 >bred bros
 by one point
@@ -2926,7 +3058,7 @@ by one point
 @rej
 #testcase-postreject-table-of-verb-checks-vc-grokking-grift-rule
 >grokking grift
-WRONG
+You already figured everything about grokking grift.
 
 ##RBRSHUFFLEEND=3
 ##RBRSHUFFLESTART=4
@@ -2946,6 +3078,11 @@ by one point
 
 @min
 /^Mad-Most-Cad Coast
+
+@gt
+#ttc-table-of-noways-mad-most-cad-coast
+>n
+West is the only way out, other than the lift. You don't yet have the confidence to go west.
 
 @mis
 #ttc-table-of-mad-most-cad-coast-guesses-gad-ghost
@@ -2969,8 +3106,9 @@ A post would offer scant protection against insults.
 There's no such thing as toasting someone with an insult halfway.
 
 @rej
+#testcase-prereject-table-of-verb-checks-vc-rad-roast-rule
 >rad roast
-WRONG
+You need to put the current insults in check before doing that.
 \\
 #testcase-think-table-of-verb-checks-vc-rad-roast-rule
 >think
@@ -2993,21 +3131,15 @@ The HA HALF button lights up on your Leet Learner.
 >zrad roast
 The HA HALF button lights up on your Leet Learner.
 
-@rej
-#testcase-prereject-table-of-verb-checks-vc-rad-roast-rule
->rad roast
-WRONG
-
-@rej
-#+testcase-think-table-of-verb-checks-vc-rad-roast-rule
->think
-You can try a RAD ROAST now you've hit back a bit against the madness.
-
 >bad boast
 by one point
 }}SCORE++
 
 @rej
+#+testcase-think-table-of-verb-checks-vc-rad-roast-rule
+>think
+You can try a RAD ROAST now you've hit back a bit against the madness.
+\\
 >bad boast
 !by one point
 
@@ -3015,14 +3147,19 @@ by one point
 by one point
 }}SCORE++
 
+@gt
+#+ttc-table-of-noways-mad-most-cad-coast
+>n
+West is the only way out, other than the lift. You have the confidence to go west.
+
 @rej
 #testcase-postreject-table-of-verb-checks-vc-bad-boast-rule
 >bad boast
-WRONG
+But you already cut the voice down to size.
 \\
 #testcase-postreject-table-of-verb-checks-vc-rad-roast-rule
 >rad roast
-WRONG
+You already won the insult war!
 
 @mis
 #+ttc-table-of-mad-most-cad-coast-guesses-gad-ghost
@@ -3033,6 +3170,11 @@ You fail to scare anyone with this, not that you need to, any more.
 
 @min
 /^Trite Trail
+
+@gt
+#ttc-table-of-noways-trite-trail
+>n
+Although the trite trail extends in all directions except, well, where the whale is, you'd get lost everywhere except back east.
 
 @mis
 #ttc-table-of-trite-trail-guesses-aight-ail
@@ -3120,11 +3262,11 @@ The HA HALF button lights up on your Leet Learner.
 @rej
 #testcase-prereject-table-of-verb-checks-vc-right-rail-rule
 >right rail
-WRONG
+You might need a rail to grab, but not out here. Maybe if you've got some sort of vessel.
 \\
 #testcase-prereject-table-of-verb-checks-vc-excite-exhale-rule
 >excite exhale
-WRONG
+Man! That'd be a good idea, but you aren't quite ready to hunt the whale, yet.
 \\
 #testcase-think-table-of-verb-checks-vc-right-rail-rule
 #testcase-think-table-of-verb-checks-vc-excite-exhale-rule
@@ -3135,7 +3277,7 @@ You can EXCITE EXHALE to go out and fight once you have an ally, fighting equipm
 @hom
 #testcase-homonym-table-of-verb-checks-site-sale
 >site sale
-The Leet Learner shakes back and forth. Something you said sounded right, but maybe you didn't THINK it right.
+The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
 >sight sail
 by one point
@@ -3148,7 +3290,7 @@ by one point
 @hom
 #testcase-homonym-table-of-verb-checks-mite-male
 >mite male
-The Leet Learner shakes back and forth. Something you said sounded right, but maybe you didn't THINK it right.
+The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
 >might mail
 by one point
@@ -3157,7 +3299,7 @@ by one point
 @hom
 #testcase-homonym-table-of-verb-checks-write-rale
 >write rale
-The Leet Learner shakes back and forth. Something you said sounded right, but maybe you didn't THINK it right.
+The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
 >right rail
 by one point
@@ -3170,23 +3312,23 @@ by one point
 @rej
 #testcase-postreject-table-of-verb-checks-vc-bright-brute-rule
 >bright brute
-WRONG
+Two bright brutes might be smart enough to understand the prestige of beating a white whale and beat each other up before the hunt began.
 \\
 #testcase-postreject-table-of-verb-checks-vc-flight-flail-rule
 >flight flail
-WRONG
+You already found a weapon that will be useful to fight the tight-tail white whale!
 \\
 #testcase-postreject-table-of-verb-checks-vc-might-mail-rule
 >might mail
-WRONG
+You already found armor to wear to fight the tight-tail white whale!
 \\
 #testcase-postreject-table-of-verb-checks-vc-right-rail-rule
 >right rail
-{$REJECT}
+You already figured the right rail to grab to be stable on the sight sail.
 \\
 #testcase-postreject-table-of-verb-checks-vc-sight-sail-rule
 >sight sail
-{$REJECT}
+You already summoned the sight sail. It's not going anywhere.
 
 >excite exhale
 by one point
@@ -3198,17 +3340,9 @@ by one point
 @rej
 #testcase-postreject-table-of-verb-checks-vc-docking-diffed-rule
 >docking diffed
-WRONG
+You already conquered the tight-tail white whale. No need to go back.
 
-@ha
-#testcase-ha-half-table-of-verb-checks-34-grokking
->grokking zgrift
-The HA HALF button lights up on your Leet Learner.
 \\
-#testcase-ha-half-table-of-verb-checks-34-grift
->zgrokking grift
-The HA HALF button lights up on your Leet Learner.
-
 @ha
 #testcase-ha-half-table-of-verb-checks-36-despite
 >despite zdispute
@@ -3236,18 +3370,16 @@ The HA HALF button lights up on your Leet Learner.
 >zmocking miffed
 The HA HALF button lights up on your Leet Learner.
 
-@rej
-# now let's take care of all the unavailable locking lift settings
-\\
-#testcase-postreject-table-of-verb-checks-vc-shocking-shift-rule
->shocking shift
-WRONG
-
 >mocking miffed
 by one point
 }}SCORE++
 
 /^Old End
+
+@gt
+#ttc-table-of-noways-old-end
+>e
+But this is a dead end. For now.
 
 @mis
 #ttc-table-of-old-end-guesses-fold-fend
@@ -3294,13 +3426,12 @@ The HA HALF button lights up on your Leet Learner.
 @rej
 #testcase-prereject-table-of-verb-checks-vc-mold-mend-rule
 >mold mend
-WRONG
+That might be good later, but currently, you have nothing to mend from and to mold a future mindset.
 \\
 #testcase-prereject-table-of-verb-checks-vc-trolled-trend-rule
 >trolled trend
-WRONG
-
-@rej
+But you have nowhere to go if trolling would trend. Fortunately, that's the easier of your two tasks here, compared to this.
+\\
 #testcase-think-table-of-verb-checks-vc-mold-mend-rule
 #testcase-think-table-of-verb-checks-vc-trolled-trend-rule
 >think
@@ -3311,26 +3442,53 @@ You can find a TROLLED TREND once the Old End is revealed as something more.
 by one point
 }}SCORE++
 
+@gt
+#+ttc-table-of-noways-old-end
+>n
+The bold bend you created goes south-to-east. You need to figure which of these ways is right.
+\\
+>e
+You can't tell which way is right. You need to listen for some source of meanness or nastiness or something.
+
 >trolled trend
 by one point
 }}SCORE++
 
+@gt
+#+ttc-table-of-noways-old-end
+>e
+You can't run away from the trolling! Somehow, you need to restore your psyche and go east.
+\\
+>s
+You still feel a bit hurt by the trolling you were exposed to.
+\\
+>n
+The trolled trend got to you, but you can't forsake the bend entirely.
+
 >mold mend
 by one point
 }}SCORE++
+
+@gt
+#+ttc-table-of-noways-old-end
+>e
+No. South is the way.
+\\
+>n
+You are ready to go south now. No turning away.
 
 @rej
 #testcase-postreject-table-of-verb-checks-vc-bold-bend-rule
 >bold bend
-WRONG
+You already changed the old end into something more navigable.
 \\
 #testcase-postreject-table-of-verb-checks-vc-mold-mend-rule
 >mold mend
-WRONG
+You already set your mind straight. You're able to move on.
 \\
 #testcase-postreject-table-of-verb-checks-vc-trolled-trend-rule
 >trolled trend
-WRONG
+You can only deal with so much trolling!
 
 >s
 
@@ -3426,17 +3584,16 @@ The HA HALF button lights up on your Leet Learner.
 @rej
 #testcase-prereject-table-of-verb-checks-vc-fed-foes-rule
 >fed foes
-WRONG
+But there are no foes to feed and mollify, yet!
 \\
 #testcase-prereject-table-of-verb-checks-vc-flain-flat-rule
 >flain flat
-WRONG
+You have nothing to render the vat flain flat with. Well, not yet.
 \\
 #testcase-prereject-table-of-verb-checks-vc-splain-splat-rule
 >splain splat
-WRONG
-
-@rej
+You're not in a position to explain yourself. Well, not a position of enough power.
+\\
 #testcase-think-table-of-verb-checks-vc-fed-foes-rule
 #testcase-think-table-of-verb-checks-vc-flain-flat-rule
 #testcase-think-table-of-verb-checks-vc-splain-splat-rule
@@ -3460,15 +3617,15 @@ by one point
 @rej
 #testcase-postreject-table-of-verb-checks-vc-bane-bat-rule
 >bane bat
-WRONG
+No, you don't need additional firepower.
 \\
 #testcase-postreject-table-of-verb-checks-vc-flain-flat-rule
 >flain flat
-WRONG
+No, you already trashed the (ex-)vat.
 \\
 #testcase-postreject-table-of-verb-checks-vc-splain-splat-rule
 >splain splat
-WRONG
+With the splaining you do, you're ready to move on.
 
 @mis
 #+ttc-table-of-drain-drat-vain-vat-guesses-chain-chat
@@ -3497,7 +3654,7 @@ The HA HALF button lights up on your Leet Learner.
 @hom
 #testcase-homonym-table-of-verb-checks-phos
 >fed phos
-The Leet Learner shakes back and forth. Something you said sounded right, but maybe you didn't THINK it right.
+The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
 >fed foes
 by one point
@@ -3507,6 +3664,11 @@ by one point
 
 @min
 /Market Marquee
+
+@gt
+#ttc-table-of-noways-threat-three
+>w
+You're at the final confrontation. There are no secret passages, just an exit back north.
 
 @mis
 #these become the name of the location later, so they are only available when the market marquee is
@@ -3518,8 +3680,7 @@ You will be met, but you need the right actions and attitude.
 #ttc-table-of-market-marquee-guesses-threat-three
 >threat three
 Threat three will appear, but you need the right actions and attitude.
-
-@mis
+\\
 #ttc-table-of-threat-three-met-me-guesses-bet-be-bee
 >bet bee
 You don't need to gamble or bluff right now.
@@ -3617,13 +3778,20 @@ You already prepped yourself for the final fight. Now it is upon you.
 @min
 /^Threat Three Met Me
 
-@rej
-#testcase-prereject-table-of-verb-checks-vc-t-lly-rule
->trite telly
-WRONG
+@gt
+#+ttc-table-of-noways-threat-three
+>w
+You're at the final confrontation. There are no secret passages, and you can't even exit back north.
+\\
+>n
+The fallen marquee sealed off the way back north.
 
 @rej
-#testcase-think-table-of-verb-checks-vc-t-lly-rule
+#testcase-prereject-table-of-verb-checks-vc-trite-t-lly-rule
+>trite telly
+That would be naming the Frightfully Bright Bully, but you need to do a bit more.
+\\
+#testcase-think-table-of-verb-checks-vc-trite-t-lly-rule
 >think
 You can name the Frightfully Bright Bully once they have an "award" of sorts to write their name on.
 
@@ -3634,9 +3802,8 @@ by one point
 @rej
 #testcase-postreject-table-of-verb-checks-vc-plus-plaque-rule
 >plus plaque
-WRONG
-
-@rej
+You already made and gave the plus plaque to the Frightfully Bright Bully! Now you just have to figure, or riff on, their name!
+\\
 ====alphabetize on
 #testcase-moot-table-of-verb-checks-vc-bad-boast-rule
 >bad boast
@@ -3754,10 +3921,6 @@ WRONG
 >four foals
 {$REJECT}
 \\
-#testcase-moot-table-of-verb-checks-vc-fret-free-rule
->fret free
-{$REJECT}
-\\
 #testcase-moot-table-of-verb-checks-vc-fun-form-rule
 >fun form
 {$REJECT}
@@ -3776,11 +3939,11 @@ WRONG
 \\
 #testcase-moot-table-of-verb-checks-vc-go-goo-rule
 >go goo
-{$REJECT}
+That location or thing doesn't exist or isn't known to you yet.
 \\
 #testcase-moot-table-of-verb-checks-vc-go-goon-rule
 >go goon
-{$REJECT}
+That location or thing doesn't exist or isn't known to you yet.
 \\
 #testcase-moot-table-of-verb-checks-vc-grokking-grift-rule
 >grokking grift
@@ -3862,10 +4025,6 @@ WRONG
 >plight please
 {$REJECT}
 \\
-#testcase-moot-table-of-verb-checks-vc-plus-plaque-rule
->plus plaque
-{$REJECT}
-\\
 #testcase-moot-table-of-verb-checks-vc-potty-pail-rule
 >potty pail
 {$REJECT}
@@ -3906,10 +4065,6 @@ WRONG
 >seep soon
 {$REJECT}
 \\
-#testcase-moot-table-of-verb-checks-vc-set-see-rule
->set see
-{$REJECT}
-\\
 #testcase-moot-table-of-verb-checks-vc-shocking-shift-rule
 >shocking shift
 {$REJECT}
@@ -3938,16 +4093,12 @@ WRONG
 >stow stew
 {$REJECT}
 \\
-#testcase-moot-table-of-verb-checks-vc-t-lly-rule
->trite tolly
-{$REJECT}
-\\
 #testcase-moot-table-of-verb-checks-vc-throw-through-rule
 >throw through
 {$REJECT}
 \\
 #testcase-moot-table-of-verb-checks-vc-tight-tease-rule
->tight tease|tees
+>tight tease
 {$REJECT}
 \\
 #testcase-moot-table-of-verb-checks-vc-trolled-trend-rule
@@ -3968,10 +4119,6 @@ WRONG
 \\
 #testcase-moot-table-of-verb-checks-vc-wordy-walk-rule
 >wordy walk
-{$REJECT}
-\\
-#testcase-moot-table-of-verb-checks-vc-yet-ye-rule
->yet ye
 {$REJECT}
 \\
 #testcase-moot-table-of-verb-checks-vc-yo-you-rule

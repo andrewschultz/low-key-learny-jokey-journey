@@ -613,6 +613,14 @@ by one point
 ##RBRSHUFFLEEND=2
 ##RBRSHUFFLESTART=3
 
+#testcase-ha-half-table-of-verb-checks-34-grokking
+>grokking zgrift
+The HA HALF button lights up on your Leet Learner.
+
+#testcase-ha-half-table-of-verb-checks-34-grift
+>zgrokking grift
+The HA HALF button lights up on your Leet Learner.
+
 >grokking grift
 by one point
 
@@ -809,14 +817,6 @@ by one point
 
 >excite exhale
 by one point
-
-#testcase-ha-half-table-of-verb-checks-34-grokking
->grokking zgrift
-The HA HALF button lights up on your Leet Learner.
-
-#testcase-ha-half-table-of-verb-checks-34-grift
->zgrokking grift
-The HA HALF button lights up on your Leet Learner.
 
 #testcase-ha-half-table-of-verb-checks-36-despite
 >despite zdispute

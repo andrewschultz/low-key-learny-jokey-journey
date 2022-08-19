@@ -8,9 +8,9 @@
 
 * main-thru
 
->au 2
+/^Bane Be Sane, See\?
 
-/^Bane Be Sane, See/?
+>au 2
 
 >jane g
 by one point
@@ -98,6 +98,8 @@ by one point
 >s
 >w
 >w
+
+/^Hun Harm Fun Farm
 
 >unarm
 by one point
