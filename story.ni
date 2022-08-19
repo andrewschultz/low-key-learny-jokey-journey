@@ -917,8 +917,9 @@ this is the verb-checker rule:
 		if two-too is true:
 			if there is a posthom entry:
 				if the player's command includes the posthom entry:
-					now local-post-hom is true;
-					if there is a hom-txt-rule entry, now hom-row is global-row-check;
+					if rb-out is the not-yet outcome or rb-out is the ready outcome:
+						now local-post-hom is true;
+						if there is a hom-txt-rule entry, now hom-row is global-row-check;
 		if ha-half is true and my-count is 1:
 			now vc-dont-print is true;
 			process the check-rule entry;
