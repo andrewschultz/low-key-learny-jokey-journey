@@ -18,23 +18,23 @@ test w4 with "w/unarm/n/go goon/cocoon/mo moon/so soon/crow croon".
 
 test w5 with "potty pail/grotty grail/knotty nail".
 
-test w6 with "bye bub/wordy walk/u/rocking rift/flow flue/glow glue/go goo/bro brew/stow stew/crow crew/ho who/yo you/throw through".
+test w6 with "bye bub/wordy walk/u"
 
-test w7 with "shocking shift/shore shoals/night newt/kite coot/lore lols/four foals/more moles".
+test w7 with "rocking rift/flow flue/glow glue/go goo/bro brew/stow stew/crow crew/ho who/yo you/throw through".
 
-test w8 with "docking diffed/bad boast/rad roast/w/flight flail/might mail/sight sail/right rail/bright brute/excite exhale".
+test w8 with "shocking shift/shore shoals/night newt/kite coot/lore lols/four foals/more moles".
 
-test w9 with "shocking shift/enter lift"
+test w9 with "stocking stiffed/dumb doubt/said sos/umm out/d/hey hope/k cope".
 
-test w10 with "grokking grift/tight tees/bright breeze/plight please/right root/s/clique claiming/bleak blaming/chic shaming/bred bros/n/enter lift".
+test w10 with "grokking grift/tight tees/bright breeze/plight please/right root/s/clique claiming/bleak blaming/chic shaming/bred bros".
 
-test w11 with "stocking stiffed/dumb doubt/said sos/umm out/d/hey hope/k cope/u/enter lift".
+test w11 with "docking diffed/bad boast/rad roast/w/flight flail/might mail/sight sail/right rail/bright brute/excite exhale".
 
 test w12 with "despite dispute/mocking miffed/bold bend/trolled trend/mold mend/s".
 
 test w13 with "bane bat/flain flat/splain splat/fed foes/s".
 
-test w14 with "x marquee/fret free/yet ye/set see/plus plaque/trite telly".
+test w14 with "fret free/yet ye/set see/plus plaque/trite telly".
 
 test wa with "test w1/test w2/test w3/test w4/test w5/test w6/test w7/test w8/test w9/test w10/test w11/test w12/test w13/test w14".
 

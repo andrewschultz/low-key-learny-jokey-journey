@@ -60,24 +60,6 @@ this is the no-eek-aim rule:
 	if sco-chic-shaming is false, the rule succeeds;
 	the rule fails;
 
-table of hun harm fun farm guesses
-mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
-"one worm/warm"	--	false	23	need-unarm rule	"That doesn't quite work. Maybe the farm needs worms or warm weather, but its survival isn't as important to you as passage north."
-
-this is the need-unarm rule:
-	if sco-un-arm is false, the rule succeeds;
-	the rule fails;
-
-table of sore souls gore goals guesses
-mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
-"bore bowls"	--	false	109	--	"You're trying to bring life here, not drain it."
-"door doles"	--	false	109	--	"No, this place doesn't need more doors."
-"poor poles"	--	false	109	--	"Those would hardly liven the place up."
-"roar rolls/roles"	--	false	109	--	"Perhaps the roaring would be lively. Perhaps it wouldn't. But it might not add anything."
-"score skols"	--	false	109	--	"Perhaps Vikings will discover this land and conquer it some day. But why speed things up?"
-"store stoles"	--	false	109	--	"[if shoal-core-score < 0]Before you have animal pelts, you'll need animals living in peace, and then you'd hate to hurt them[else]Bringing animal pelts into a place coming to life doesn't quite work[end if]."
-"whore holes"	--	false	109	--	"Now, now, this isn't that sort of game."
-
 table of high hub guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "cly club"	--	false	33	bye-bub-yet rule	"You try to go old-school finding an so-old-school-schools-didn't-exist weapon, but alas, it doesn't work."
@@ -97,11 +79,13 @@ this is the bye-bub-yet rule:
 	if sco-bye-bub is true, the rule fails;
 	the rule succeeds;
 
-table of no nudge slow sludge guesses
+table of hun harm fun farm guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
-"fo/foe fudge"	--	false	46	--	"This isn't Willy Wonka's Chocolate Factory. Err, Charlie's."
-"joe judge"	--	false	46	--	"No former New York Giants head football coach appears."
-"po/poe pudge"	--	false	46	--	"Weight gain won't help here."
+"one worm/warm"	--	false	23	need-unarm rule	"That doesn't quite work. Maybe the farm needs worms or warm weather, but its survival isn't as important to you as passage north."
+
+this is the need-unarm rule:
+	if sco-un-arm is false, the rule succeeds;
+	the rule fails;
 
 table of jotty jail guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
@@ -169,6 +153,12 @@ mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 this is the need-crow-croon rule:
 	if sco-crow-croon is false, the rule succeeds;
 	the rule fails;
+
+table of no nudge slow sludge guesses
+mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
+"fo/foe fudge"	--	false	46	--	"This isn't Willy Wonka's Chocolate Factory. Err, Charlie's."
+"joe judge"	--	false	46	--	"No former New York Giants head football coach appears."
+"po/poe pudge"	--	false	46	--	"Weight gain won't help here."
 
 table of old end guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
@@ -238,6 +228,16 @@ this is the sleaze-undone rule:
 	if sco-plight-please is false, the rule succeeds;
 	the rule fails;
 
+table of sore souls gore goals guesses
+mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
+"bore bowls"	--	false	109	--	"You're trying to bring life here, not drain it."
+"door doles"	--	false	109	--	"No, this place doesn't need more doors."
+"poor poles"	--	false	109	--	"Those would hardly liven the place up."
+"roar rolls/roles"	--	false	109	--	"Perhaps the roaring would be lively. Perhaps it wouldn't. But it might not add anything."
+"score skols"	--	false	109	--	"Perhaps Vikings will discover this land and conquer it some day. But why speed things up?"
+"store stoles"	--	false	109	--	"[if shoal-core-score < 0]Before you have animal pelts, you'll need animals living in peace, and then you'd hate to hurt them[else]Bringing animal pelts into a place coming to life doesn't quite work[end if]."
+"whore holes"	--	false	109	--	"Now, now, this isn't that sort of game."
+
 table of threat three met me guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "bet be/bee"	--	false	112	--	"You don't need to gamble or bluff right now."
@@ -301,7 +301,7 @@ to say furthers of (ts - a truth state): if ts is true, say " further"
 
 table of deep dune guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
-"beep boon"	--	false	44	rune-unreaped rule	"No, you don't a Geiger counter to search[furthers of sco-reap-rune] through the dune."
+"beep boon"	--	false	44	rune-unreaped rule	"No, you don't need a Geiger counter to search[furthers of sco-reap-rune] through the dune."
 "creep croon"	--	false	44	rune-unreaped rule	"I couldn't get R. Kelly or Robin Thicke to appear here. Sorry!"
 "leap loon"	--	false	44	rune-unreaped rule	"Alas, nobody odd comes by and dives into the deep dune [if sco-reap-rune is false]to help you find what's there[else]for your entertainment[end if]. Nobody at all."
 "peep poon"	--	false	44	rune-unreaped rule	"[this-game] is the wrong environment for that, and not just because it's text-based."
@@ -347,7 +347,7 @@ table of mad monk guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "brad brunk"	--	false	34	--	"[monk-name]."
 "chad chunk"	--	false	34	--	"You find no ballot or part thereof."
-"clad clunk"	--	false	34	--	"You disparage the mad monk's outfit. They look slightly wounded."
+"clad clunk"	--	false	34	--	"You disparage the mad monk's outfit. They roll their eyes. Something more spiritual is the way to go, here."
 "dad dunk"	--	false	34	--	"Alas, no middle-aged man soars into the air, basketball in hand, to posterize the mad monk."
 "fad funk"	--	false	34	--	"Falling prey to fashion is not one of the mad monk's vices. They're more about violence and intimidation."
 "grad grunk"	--	false	34	--	"The mad monk fails to look for a lost pig or learn anything."
