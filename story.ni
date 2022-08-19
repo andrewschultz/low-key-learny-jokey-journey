@@ -302,7 +302,7 @@ sco-sad-sunk is a truth state that varies.
 
 book No Noon
 
-there is a room called NoNoon in Hoppin' Heart. NoNoon is north of Hun Harm Fun Farm. printed name of NoNoon is "[if cocoon is moot]Ho, HEWN[else]No Noon[end if]". "[noon-room]". understand "ho/hewn" and "ho hewn" as NoNoon when cocoon is moot.
+there is a room called NoNoon in Hoppin' Heart. it is north of Hun Harm Fun Farm. printed name of NoNoon is "[if cocoon is moot]Ho, HEWN[else]No Noon[end if]". "[noon-room]". understand "ho/hewn" and "ho hewn" as NoNoon when cocoon is moot.
 
 to say noon-room:
 	if sco-mo-moon is false:
@@ -407,7 +407,7 @@ sco-crust-crack is a truth state that varies.
 
 book Rare Reach
 
-Rare Reach is north of Trust Track. it is in Hoppin' Heart. printed name of Rare Reach is "[if sco-bare-beach is true]Bare Beach[else]Rare Reach[end if]". "You're surrounded by [if sco-bare-beach is true]water[else]desolation[end if] every direction except south.".
+Rare Reach is in Hoppin' Heart. printed name of Rare Reach is "[if sco-bare-beach is true]Bare Beach[else]Rare Reach[end if]". "You're surrounded by [if sco-bare-beach is true]water[else]desolation[end if] every direction except south.". Trust Track is mapped south of Rare Reach. nowhere is mapped north of Trust Track.
 
 guess-table of rare reach is the table of rare reach guesses.
 
@@ -659,20 +659,21 @@ Slight Sleaze is a room in Poppin' Part. "[if sco-bright-breeze is false]You fee
 
 guess-table of slight sleaze is the table of slight sleaze guesses.
 
-check going south in Slight Sleaze when sco-right-root is false: say "The fright-freeze pushes you back. You need to find a way to talk it down, somehow." instead;
-
 sco-tight-tease is a truth state that varies.
 sco-bright-breeze is a truth state that varies.
 sco-plight-please is a truth state that varies.
 
+chapter fright freeze
+
 the fright freeze is boring scenery in slight sleaze. "You can't describe it, but it stops you from going anywhere.".
 
-the trite trees are boring scenery. "Not perfect, but not sleazy, either."
+the trite trees are boring scenery. "Not perfect, but not sleazy, either. They surround you on all sides except to the south."
 
 part Freak Framing Seek-Sameing
 
-Freak Framing Seek Sameing is south of Slight Sleaze. It is in Poppin' Part. printed name is "[if sco-chic-shaming is true]Eek! Aiming![else]Freak-Framing Seek-Sameing[end if]". "This is a control center of some sort. You hear chatter, but there might even be some telepathy. [if sco-bleak-blaming is false]Most of the muttering is about how different people are at fault for things they don't even know about, and you don't know how to buttonhole that[else if sco-bred-bros is true]You've got all your arguments in one place. But you have to admit, you're not the one to perpetuate them! You need someone, or people, who will make it fun for any old crowd to change their attitudes for the better. Someone new from outside[else]Congratulations! You've made this a think tank with things actually worth thinking. The Bred Bros discuss ways to frame basic social decency and tolerance as far more desirable than 'edgy' conformism[end if].". spokeval of Freak Framing is 3.
+Freak Framing Seek Sameing is in Poppin' Part. printed name is "[if sco-chic-shaming is true]Eek! Aiming![else]Freak-Framing Seek-Sameing[end if]". "This is a control center of some sort. You hear chatter, but there might even be some telepathy. [if sco-bleak-blaming is false]Most of the muttering is about how different people are at fault for things they don't even know about, and you don't know how to buttonhole that[else if sco-bred-bros is true]You've got all your arguments in one place. But you have to admit, you're not the one to perpetuate them! You need someone, or people, who will make it fun for any old crowd to change their attitudes for the better. Someone new from outside[else]Congratulations! You've made this a think tank with things actually worth thinking. The Bred Bros discuss ways to frame basic social decency and tolerance as far more desirable than 'edgy' conformism[end if].". spokeval of Freak Framing is 3.
 
+Slight Sleaze is mapped north of Seek Sameing. Nowhere is mapped south of Slight Sleaze.
 guess-table of freak framing seek sameing is the table of freak framing seek sameing guesses.
 
 sco-bleak-blaming is a truth state that varies.
@@ -696,7 +697,9 @@ sco-bad-boast is a truth state that varies.
 
 part Trite Trail
 
-Trite Trail is west of Mad Most Cad Coast. It is in Poppin' Part. "A trite trail ends at a large body of water here. Well, sort of. It gets even more unbearable trite to the west (trust me,) so your only exit is back east to [cad coast][if white whale is in trite trail]. A [whale] seems to be taunting you in the distance. Perhaps you can go all Captain Ahab on it[end if].". spokeval of Trite Trail is 4.
+Trite Trail is in Poppin' Part. "A trite trail ends at a large body of water here. Well, sort of. It gets even more unbearable trite to the west (trust me,) so your only exit is back east to [cad coast][if white whale is in trite trail]. A [whale] seems to be taunting you in the distance. Perhaps you can go all Captain Ahab on it[end if].". spokeval of Trite Trail is 4.
+
+Mad Most Cad Coast is mapped east of Trite Trail. nowhere is mapped west of Mad Most Cad Coast.
 
 guess-table of Trite Trail is table of trite trail guesses.
 
@@ -785,9 +788,10 @@ sco-fed-foes is a truth state that varies.
 
 part Threat Three Met ME
 
-Threat Three Met Me is south of Drain Drat Vain Vat. It is in Poppin' Part. printed name is "[if marquee-score < 3]Market Marquee[else]Threat Three Met Me[end if]". "[if marquee is moot]The marquee has crumbled, its rubble blocking the way back north. This is it[else]A market marquee stands here, maybe giving you some clues as to how to do things[end if]. [if bright bully is off-stage]You could go back north if you really wanted, but perhaps you'll want to finish things here[else]You feel stuck here in the final encounter[end if].". spokeval of Threat Three is 5.
+Threat Three Met Me is in Poppin' Part. printed name is "[if marquee-score < 3]Market Marquee[else]Threat Three Met Me[end if]". "[if marquee is moot]The marquee has crumbled, its rubble blocking the way back north. This is it[else]A market marquee stands here, maybe giving you some clues as to how to do things[end if]. [if bright bully is off-stage]You could go back north if you really wanted, but perhaps you'll want to finish things here[else]You feel stuck here in the final encounter[end if].". spokeval of Threat Three is 5.
 
-check going north in Threat Three Met Me when bright bully is in Threat Three Met Me: say "As much as you dislike [the bully], you're pulled to them, as well. Time to finish the deal." instead;
+Drain Drat Vain Vat is mapped north of Threat Three Met Me. nowhere is mapped south of Drain Drat Vain Vat.
+
 check going north in Threat Three Met Me when bright bully is in Threat Three Met Me: say "The fallen marquee sealed off the way back north." instead;
 
 guess-table of threat three met me is the table of threat three met me guesses.
@@ -1331,6 +1335,8 @@ volume unsorted
 
 volume internal map
 
+chapter early area
+
 index map with Show Shoe mapped east of TTTT.
 
 index map with Roaring Rocks mapped east of Bane Be Sane See.
@@ -1338,6 +1344,10 @@ index map with Roaring Rocks mapped east of Bane Be Sane See.
 index map with Jotty Jail mapped south of Trust Track.
 
 Index map with No New Show Shoe mapped east of TTTT.
+
+index map with Rare Reach mapped north of Trust Track.
+
+index map with NoNoon mapped north of Hun Harm Fun Farm.
 
 chapter hub-ish era
 
