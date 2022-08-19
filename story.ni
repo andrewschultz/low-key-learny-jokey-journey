@@ -28,6 +28,8 @@ entry-in-series is 3.
 
 a thing is usually not boring.
 
+a thing can be himher. a thing is usually not himher.
+
 section test module(s) - not for release
 
 include Low Key Learny Jokey Journey Tests by Andrew Schultz.
@@ -290,7 +292,7 @@ sco-un-arm is a truth state that varies.
 
 chapter Mad Monk
 
-the Mad Monk is a rhymable. "A mad monk raves here, blocking your way north. They don't look like much--they probably didn't make the cut for tormenting Lode Runners. They might be good for rope-a-doping to [if player has lurking lump]enhance the lurking lump[else]get that stronger help item you read about on the [learner][end if].". description is "Plainly dressed. They seem to have an intense attitude you could cut down, and they'd probably leave you alone."
+the Mad Monk is a himher rhymable. "A mad monk raves here, blocking your way north. They don't look like much--they probably didn't make the cut for tormenting Lode Runners. They might be good for rope-a-doping to [if player has lurking lump]enhance the lurking lump[else]get that stronger help item you read about on the [learner][end if].". description is "Plainly dressed. They seem to have an intense attitude you could cut down, and they'd probably leave you alone."
 
 guess-table of mad monk is the table of mad monk guesses.
 
@@ -808,7 +810,12 @@ sco-plus-plaque is a truth state that varies.
 
 chapter Frightfully Bright Bully
 
-the Frightfully Bright Bully is a person. description is "The [bully] doesn't look especially mean or conniving or thuggish. But you know they just can't stand you. It's time to face up to them.". "The Frightfully Bright Bully continues a combination of rolling their eyes and looking away from you."
+the Frightfully Bright Bully is a himher thing. description is "The [bully] doesn't look especially mean or conniving or thuggish. But you know they just can't stand you. It's time to face up to them.". "The Frightfully Bright Bully continues a combination of rolling their eyes and looking away from you."
+
+after doing something with a himher thing (called th):
+	set the pronoun them to th;
+	set the pronoun him to th;
+	set the pronoun her to th;
 
 sco-trite-t-lly is a truth state that varies.
 
