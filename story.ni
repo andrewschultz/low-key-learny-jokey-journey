@@ -72,12 +72,22 @@ to say optional-hint-think-item: say "";
 
 section viability and gotoing
 
+a room has a number called spokeval. spokeval of a room is usually -1.
+
 this is the flag bad goto to rule:
 	if noun is location of player, say "You're already there! Well, here." instead;
 	if noun is Bane Be Sane See, say "There's no way back to where you started." instead;
+	if noun is Jotty Jail, say "You don't need or want to go back to [jail]." instead;
+	if noun is Show Shoe and sco-throw-through is true, say "You can't revisit the [show shoe] after the big performance!" instead;
+	if location of player is High Hub:
+		let mrgo be map region of noun;
+		if mrgo is not Poppin' Part and sco-bye-bub is false, say "There's a way back, but you need to find the right way off the High Hub." instead;
 
 this is the flag bad goto from rule:
-	do nothing;
+	if player is in Threat Three and bully is in threat three, say "You're stuck here!";
+	if mrlp is Poppin' Part:
+		let mrgo be map region of noun;
+		if mrgo is Poppin' Part and spokeval of noun is not spokeval of location of player, say "Here around the high hub, you need to use the lift." instead;
 
 definition: a direction (called d) is viable:
 	if the room d of location of the player is nowhere, no;
@@ -480,9 +490,11 @@ sco-despite-dispute is a truth state that varies.
 
 volume rooms (end)
 
-book no new show shoe
+book spoke 1 / rocking rift
 
-There is a room called No New Show Shoe in Poppin' Part. "This isn't actually a shoe, of course. It's an area for performances, shaped like a horseshoe. But of course the shape doesn't matter. The locking lift is here, too[if shoe-concessions is 2], and trust me on this--if you re-enter it, time will freeze here, so nobody's left hanging[end if].[paragraph break][shoe-desc].". guess-table of Show Shoe is table of no new show shoe guesses. printed name of No New Show Shoe is "[if sco-crow-crew is false]No-New-Show Shoe[else]Whoah-Woo-Show Shoe[end if]".
+part no new show shoe
+
+There is a room called No New Show Shoe in Poppin' Part. "This isn't actually a shoe, of course. It's an area for performances, shaped like a horseshoe. But of course the shape doesn't matter. The locking lift is here, too[if shoe-concessions is 2], and trust me on this--if you re-enter it, time will freeze here, so nobody's left hanging[end if].[paragraph break][shoe-desc].". guess-table of Show Shoe is table of no new show shoe guesses. printed name of No New Show Shoe is "[if sco-crow-crew is false]No-New-Show Shoe[else]Whoah-Woo-Show Shoe[end if]". spokeval of Show Shoe is 1.
 
 understand "whoah/woo show/shoe" and "whoah/woo show shoe" and "whoah/woo" and "whoah woo show/shoe" and "whoah woo show shoe" as show shoe when sco-crow-crew is true.
 
@@ -556,9 +568,11 @@ to decide which number is gold-lute-strings:
 to decide which number is silver-lute-strings:
 	decide on 2 - (boolval of sco-night-newt + boolval of sco-kite-coot);
 
-book mad most cad coast
+book spoke 4 / docking diffed
 
-Mad Most Cad Coast is a room in Poppin' Part. printed name is "[if sco-rad-roast is true]Had-Host Pad/Post[else]Mad-Most-Cad Coast[end if]". understand "had/host pad poast" and "had post" and "had/host pad/poast" and "host pad" as Mad Most Cad Coast when sco-rad-roast is true. "[if sco-bad-boast is false]The way west seems clear, but you sense hostility. Even looking that way raises your blood pressure. If you take a step, a voice seems to tell you it deserves to be there, but you don't[else if sco-rad-roast is false]The voice, or whatever, to the west, still seems to be pushing back. You need to go on the offensive[else]The way west is clear now[end if]. You can enter the lift to go back to the High Hub, too."
+part mad most cad coast
+
+Mad Most Cad Coast is a room in Poppin' Part. printed name is "[if sco-rad-roast is true]Had-Host Pad/Post[else]Mad-Most-Cad Coast[end if]". understand "had/host pad poast" and "had post" and "had/host pad/poast" and "host pad" as Mad Most Cad Coast when sco-rad-roast is true. "[if sco-bad-boast is false]The way west seems clear, but you sense hostility. Even looking that way raises your blood pressure. If you take a step, a voice seems to tell you it deserves to be there, but you don't[else if sco-rad-roast is false]The voice, or whatever, to the west, still seems to be pushing back. You need to go on the offensive[else]The way west is clear now[end if]. You can enter the lift to go back to the High Hub, too.". spokeval of Cad Coast is 4.
 
 check going west in Mad Most Cad Coast: if sco-rad-roast is false, say "You can't go west with all the madness. Well, not yet." instead;
 
@@ -567,9 +581,9 @@ guess-table of mad most cad coast is the table of mad most cad coast guesses.
 sco-rad-roast is a truth state that varies.
 sco-bad-boast is a truth state that varies.
 
-book Trite Trail
+part Trite Trail
 
-Trite Trail is west of Mad Most Cad Coast. It is in Poppin' Part. "A trite trail ends at a large body of water here. Well, sort of. It gets even more unbearable trite to the west (trust me,) so your only exit is back east to [cad coast][if white whale is in trite trail]. A [whale] seems to be taunting you in the distance. Perhaps you can go all Captain Ahab on it[end if]."
+Trite Trail is west of Mad Most Cad Coast. It is in Poppin' Part. "A trite trail ends at a large body of water here. Well, sort of. It gets even more unbearable trite to the west (trust me,) so your only exit is back east to [cad coast][if white whale is in trite trail]. A [whale] seems to be taunting you in the distance. Perhaps you can go all Captain Ahab on it[end if].". spokeval of Trite Trail is 4.
 
 guess-table of Trite Trail is table of trite trail guesses.
 
@@ -600,9 +614,11 @@ a bright brute is scenery. "The bright brute seems to be napping right now. Rest
 
 a might mail is scenery. "The might mail is too heavy to wear until you meet the white whale, but it's shiny and bright and impressive."
 
-book Sore Souls Gore Goals / Shocking Shift
+book spoke 0 / Shocking Shift
 
-Sore Souls Gore Goals is a room in Poppin' Part. "[if sco-shore-shoals is false]It's very desolate here. No life or community of animals could last for long. Perhaps any spark of nature could change things[else]The shore shoals are a more comforting place to be than before. You've [shoal-so-far][end if]. You sense you would [if sco-shore-shoals is true]fade into the nothingness[else]violate something sacred[end if] if you explored further.". printed name is "[if sco-shore-shoals is false]Sore Souls['] Gore Goals[else]Shore Shoals[end if]". understand "shore/shoals" and "shore shoals" as Gore Goals when sco-shore-shoals is true.
+part Sore Souls Gore Goals
+
+Sore Souls Gore Goals is a room in Poppin' Part. "[if sco-shore-shoals is false]It's very desolate here. No life or community of animals could last for long. Perhaps any spark of nature could change things[else]The shore shoals are a more comforting place to be than before. You've [shoal-so-far][end if]. You sense you would [if sco-shore-shoals is true]fade into the nothingness[else]violate something sacred[end if] if you explored further.". printed name is "[if sco-shore-shoals is false]Sore Souls['] Gore Goals[else]Shore Shoals[end if]". understand "shore/shoals" and "shore shoals" as Gore Goals when sco-shore-shoals is true. spokeval of Sore Souls is 0.
 
 to say shoal-so-far:
 	let shoal-total be shoal-extra-animals + shoal-core-score;
@@ -653,9 +669,11 @@ To decide which number is rose-petals:
 
 guess-table of red rose is the table of red rose guesses.
 
-book Slight Sleaze / Grokking Grift
+book spoke 3 / Grokking Grift
 
-Slight Sleaze is a room in Poppin' Part. "[if sco-bright-breeze is false]You feel a fright-freeze preventing you from going south[else if sco-plight-please is false]The fright-freeze is still around, but it's at least being blown about. However, self-serving pity stories whispered in your ear make you wonder if you really deserve to move on while they're clearly stuck here[else if sco-right-root is false]It feels nicer here, but this place could use scenery, something that may need to come from elsewhere[else]The trite trees make things feel nicer here, having replaced the fright-freeze that was here[end if].[paragraph break]Of course, you can always enter the locking lift to return to the High Hub.". printed name is "[if sco-right-root is false]Slight Sleaze[else]Trite Trees[end if]".
+part Slight Sleaze
+
+Slight Sleaze is a room in Poppin' Part. "[if sco-bright-breeze is false]You feel a fright-freeze preventing you from going south[else if sco-plight-please is false]The fright-freeze is still around, but it's at least being blown about. However, self-serving pity stories whispered in your ear make you wonder if you really deserve to move on while they're clearly stuck here[else if sco-right-root is false]It feels nicer here, but this place could use scenery, something that may need to come from elsewhere[else]The trite trees make things feel nicer here, having replaced the fright-freeze that was here[end if].[paragraph break]Of course, you can always enter the locking lift to return to the High Hub.". printed name is "[if sco-right-root is false]Slight Sleaze[else]Trite Trees[end if]". spokeval of Slight Sleaze is 3.
 
 guess-table of slight sleaze is the table of slight sleaze guesses.
 
@@ -669,9 +687,9 @@ the fright freeze is boring scenery in slight sleaze. "You can't describe it, bu
 
 the trite trees are boring scenery. "Not perfect, but not sleazy, either."
 
-book Freak Framing Seek-Sameing
+part Freak Framing Seek-Sameing
 
-Freak Framing Seek Sameing is south of Slight Sleaze. It is in Poppin' Part. printed name is "[if sco-chic-shaming is true]Eek! Aiming![else]Freak-Framing Seek-Sameing[end if]". "This is a control center of some sort. You hear chatter, but there might even be some telepathy. [if sco-bleak-blaming is false]Most of the muttering is about how different people are at fault for things they don't even know about, and you don't know how to buttonhole that[else if sco-bred-bros is true]You've got all your arguments in one place. But you have to admit, you're not the one to perpetuate them! You need someone, or people, who will make it fun for any old crowd to change their attitudes for the better. Someone new from outside[else]Congratulations! You've made this a think tank with things actually worth thinking. The Bred Bros discuss ways to frame basic social decency and tolerance as far more desirable than 'edgy' conformism[end if]."
+Freak Framing Seek Sameing is south of Slight Sleaze. It is in Poppin' Part. printed name is "[if sco-chic-shaming is true]Eek! Aiming![else]Freak-Framing Seek-Sameing[end if]". "This is a control center of some sort. You hear chatter, but there might even be some telepathy. [if sco-bleak-blaming is false]Most of the muttering is about how different people are at fault for things they don't even know about, and you don't know how to buttonhole that[else if sco-bred-bros is true]You've got all your arguments in one place. But you have to admit, you're not the one to perpetuate them! You need someone, or people, who will make it fun for any old crowd to change their attitudes for the better. Someone new from outside[else]Congratulations! You've made this a think tank with things actually worth thinking. The Bred Bros discuss ways to frame basic social decency and tolerance as far more desirable than 'edgy' conformism[end if].". spokeval of Freak Framing is 3.
 
 guess-table of freak framing seek sameing is the table of freak framing seek sameing guesses.
 
@@ -681,9 +699,11 @@ sco-clique-claiming is a truth state that varies.
 
 sco-bred-bros is a truth state that varies.
 
-book Rum Route
+book spoke 2 / Stocking Stiffed
 
-Rum Route is a room in Poppin' Part. "[if sco-dumb-doubt is false]You seem assailed by ... well, not quite voices, here, but ideas from whoever-it-is that you deserve to be stuck here. The arguments seem brilliant and ironclad[else if sco-said-sos is false]You've pushed back and instilled doubt, but now you need to brag a bit[else if sco-umm-out is false]You feel like you can win the fight against frustration and helplessness with a snappy reply. The sort that might paralyze you[else]You see the way down now you've dispelled your own doubts. You hope you're ready to face it[sstt][end if]. Thankfully, the lift here can take you back to the High Hub."
+part Rum Route
+
+Rum Route is a room in Poppin' Part. "[if sco-dumb-doubt is false]You seem assailed by ... well, not quite voices, here, but ideas from whoever-it-is that you deserve to be stuck here. The arguments seem brilliant and ironclad[else if sco-said-sos is false]You've pushed back and instilled doubt, but now you need to brag a bit[else if sco-umm-out is false]You feel like you can win the fight against frustration and helplessness with a snappy reply. The sort that might paralyze you[else]You see the way down now you've dispelled your own doubts. You hope you're ready to face it[sstt][end if]. Thankfully, the lift here can take you back to the High Hub.". spokeval of Rum Route is 2.
 
 to say sstt: if slay slope is visited, say " this time"
 
@@ -694,18 +714,20 @@ sco-dumb-doubt is a truth state that varies.
 
 sco-said-sos is a truth state that varies.
 
-book Nay Nope Slay Slope
+part Nay Nope Slay Slope
 
-Nay Nope Slay Slope is a room in Poppin' Part. printed name is "Nay-Nope-Slay Slope". "Thoughts of being against negativity swirl around here. Why, if you don't have positivity, you've had it! [if sco-hey-hope is false]They seem directed at you, as if to say you're the least positive person ever[else if sco-k-cope is false]Yet you see they can't totally be true, and you've boosted yourself a bit, and maybe you can boost yourself a bit more[else]But you see through them now[end if]."
+Nay Nope Slay Slope is a room in Poppin' Part. printed name is "Nay-Nope-Slay Slope". "Thoughts of being against negativity swirl around here. Why, if you don't have positivity, you've had it! [if sco-hey-hope is false]They seem directed at you, as if to say you're the least positive person ever[else if sco-k-cope is false]Yet you see they can't totally be true, and you've boosted yourself a bit, and maybe you can boost yourself a bit more[else]But you see through them now[end if].". spokeval of Slay Slope is 2.
 
 guess-table of nay nope slay slope is the table of nay nope slay slope guesses.
 
 sco-k-cope is a truth state that varies.
 sco-hey-hope is a truth state that varies.
 
-book Old End / Mocking Miffed
+book Mocking Miffed
 
-Old End is a room in Poppin' Part. printed name is "[if sco-bold-bend is true]Bold Bend[else]Old End[end if]". understand ["bold/bend" and] "bold bend" as Old End when sco-bold-bend is true. "[if sco-bold-bend is false]This simply looks like a dead end. What else could it be? Well, at least the lift is there, if you can't figure things right now[else]The passage away from the lift bends south to your destiny[end if]."
+part Old End
+
+Old End is a room in Poppin' Part. printed name is "[if sco-bold-bend is true]Bold Bend[else]Old End[end if]". understand ["bold/bend" and] "bold bend" as Old End when sco-bold-bend is true. "[if sco-bold-bend is false]This simply looks like a dead end. What else could it be? Well, at least the lift is there, if you can't figure things right now[else]The passage away from the lift bends south to your destiny[end if].". spokeval of Old End is 5.
 
 guess-table of old end is the table of old end guesses.
 
@@ -713,9 +735,9 @@ sco-bold-bend is a truth state that varies.
 sco-trolled-trend is a truth state that varies.
 sco-mold-mend is a truth state that varies.
 
-book Drain Drat Vain Vat
+part Drain Drat Vain Vat
 
-Drain Drat Vain Vat is south of Old End. It is in Poppin' Part. printed name of Vain Vat is "[if sco-splain-splat is false]Drain (Drat!) Vain Vat[else]Main Mat[end if]". understand "main mat" as Drain Drat Vain Vat when sco-splain-splat is true. "[if sco-bane-bat is false]You seem stuck here, and that's that. Maybe if you had something to help bash your way out[else if sco-flain-flat is false]You're still stuck in the vat for now. You're not sure how to get out, but once you are, you suspect your bane bat will do the trick[else if sco-splain-splat is false]The south wall looks shaky, but you don't have the strength to bash it by yourself. Perhaps a taunt would bring enemy henchmen busting through it[else]The way south is open now, thanks to the Pred Pros[end if]."
+Drain Drat Vain Vat is south of Old End. It is in Poppin' Part. printed name of Vain Vat is "[if sco-splain-splat is false]Drain (Drat!) Vain Vat[else]Main Mat[end if]". understand "main mat" as Drain Drat Vain Vat when sco-splain-splat is true. "[if sco-bane-bat is false]You seem stuck here, and that's that. Maybe if you had something to help bash your way out[else if sco-flain-flat is false]You're still stuck in the vat for now. You're not sure how to get out, but once you are, you suspect your bane bat will do the trick[else if sco-splain-splat is false]The south wall looks shaky, but you don't have the strength to bash it by yourself. Perhaps a taunt would bring enemy henchmen busting through it[else]The way south is open now, thanks to the Pred Pros[end if].". spokeval of Vain Vat is 5.
 
 check going in Vain Vat:
 	if sco-flain-flat is false, say "You're still stuck in the vain vat. You need to get out. But it can't be too bad." instead;
@@ -738,9 +760,9 @@ the head hose is scenery. "It obscures the Pred Pros['] faces, but they can stil
 
 sco-fed-foes is a truth state that varies.
 
-book Threat Three Met ME
+part Threat Three Met ME
 
-Threat Three Met Me is south of Drain Drat Vain Vat. It is in Poppin' Part. printed name is "[if marquee-score < 3]Market Marquee[else]Threat Three Met Me[end if]". "[if marquee is moot]The marquee has crumbled, its rubble blocking the way back north. This is it[else]A market marquee stands here, maybe giving you some clues as to how to do things[end if]. [if bright bully is off-stage]You could go back north if you really wanted, but perhaps you'll want to finish things here[else]You feel stuck here in the final encounter[end if]."
+Threat Three Met Me is south of Drain Drat Vain Vat. It is in Poppin' Part. printed name is "[if marquee-score < 3]Market Marquee[else]Threat Three Met Me[end if]". "[if marquee is moot]The marquee has crumbled, its rubble blocking the way back north. This is it[else]A market marquee stands here, maybe giving you some clues as to how to do things[end if]. [if bright bully is off-stage]You could go back north if you really wanted, but perhaps you'll want to finish things here[else]You feel stuck here in the final encounter[end if].". spokeval of Threat Three is 5.
 
 check going north in Threat Three Met Me when bright bully is in Threat Three Met Me: say "As much as you dislike [the bully], you're pulled to them, as well. Time to finish the deal." instead;
 
