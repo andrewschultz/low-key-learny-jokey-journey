@@ -731,7 +731,26 @@ book Mocking Miffed / spoke 5
 
 part Old End
 
-Old End is a room in Poppin' Part. printed name is "[if sco-bold-bend is true]Bold Bend[else]Old End[end if]". understand ["bold/bend" and] "bold bend" as Old End when sco-bold-bend is true. "[if sco-bold-bend is false]This simply looks like a dead end. What else could it be? Well, at least the lift is there, if you can't figure things right now[else]The passage away from the lift bends south to your destiny[end if].". spokeval of Old End is 5.
+Old End is a room in Poppin' Part. printed name is "[if sco-bold-bend is true]Bold Bend[else]Old End[end if]". understand ["bold/bend" and] "bold bend" as Old End when sco-bold-bend is true. "[old-end-desc].". spokeval of Old End is 5.
+
+to say old-end-desc:
+	if sco-bold-bend is false:
+		say "This simply looks like a dead end. What else could it be? Well, at least the lift is there, if you can't figure things right now";
+	else if sco-trolled-trend is false:
+		say "The bold bend you envisioned runs from south to east. But you're not sure which part of the bend you should take";
+	else if sco-mold-mend is false:
+		say "You're pretty sure you want to go south instead of east along the bend, but you're not mentally prepared yet";
+	else:
+		say "The bend curves east to nowhere and south to your destiny";
+
+check going in Old End:
+	if sco-bold-bend is false, say "But this is a dead end. For now." instead;
+	if sco-trolled-trend is false:
+		if noun is south or noun is east, say "You can't tell which way is right. You need to listen for some source of meanness or nastiness or something." instead;
+	if sco-mold-mend is false:
+		if noun is south, say "You still feel a bit hurt by the trolling you were exposed to." instead;
+		if noun is east, say "You can't run away from the trolling! Somehow, you need to restore your psyche and go east." instead;
+	if noun is east, say "No. South is the way." instead;
 
 guess-table of old end is the table of old end guesses.
 
@@ -741,14 +760,14 @@ sco-mold-mend is a truth state that varies.
 
 part Drain Drat Vain Vat
 
-Drain Drat Vain Vat is south of Old End. It is in Poppin' Part. printed name of Vain Vat is "[if sco-splain-splat is false]Drain (Drat!) Vain Vat[else]Main Mat[end if]". understand "main mat" as Drain Drat Vain Vat when sco-splain-splat is true. "[if sco-bane-bat is false]You seem stuck here, and that's that. Maybe if you had something to help bash your way out[else if sco-flain-flat is false]You're still stuck in the vat for now. You're not sure how to get out, but once you are, you suspect your bane bat will do the trick[else if sco-splain-splat is false]The south wall looks shaky, but you don't have the strength to bash it by yourself. Perhaps a taunt would bring enemy henchmen busting through it[else]The way south is open now, thanks to the Pred Pros[end if].". spokeval of Vain Vat is 5.
+Old End is north of Drain Drat Vain Vat. Drain Drat Vain Vat is in Poppin' Part. printed name of Vain Vat is "[if sco-splain-splat is false]Drain (Drat!) Vain Vat[else]Main Mat[end if]". understand "main mat" as Drain Drat Vain Vat when sco-splain-splat is true. description of Vain Vat is "[if sco-bane-bat is false]You seem stuck here, and that's that. Maybe if you had something to help bash your way out[else if sco-flain-flat is false]You're still stuck in the vat for now. You're not sure how to get out, but once you are, you suspect your bane bat will do the trick[else if sco-splain-splat is false]The walls look shaky, but you can't find a weak point. Perhaps a taunt would bring enemy henchmen busting said weak spot[else]The way south is open now, thanks to the Pred Pros[end if].". spokeval of Vain Vat is 5. south of Old End is nowhere.
 
 check going in Vain Vat:
 	if sco-flain-flat is false, say "You're still stuck in the vain vat. You need to get out. But it can't be too bad." instead;
-	if noun is south:
-		if sco-splain-splat is false, say "While the wall to the south is flimsy, you can't break it by yourself. Maybe you could goad some enemies into busting it down." instead;
-		if Pred Pros are in vain vat, say "The Pred Pros aren't going to leave without something to show for their work." instead;
-	if Pred Pros are in vain vat, say "Running from the Pred Pros would be unwise. Your rose's protection would wear off." instead;
+	if noun is not north and sco-splain-splat is false, say "There must be enemies hidden behind some secret wall. How to draw attention to yourself to bring them out?" instead;
+	if Pred Pros are in vain vat:
+		if noun is south, say "The Pred Pros aren't going to leave without something to show for their work." instead;
+		say "Running from the Pred Pros would be unwise. Your rose's protection would wear off." instead;
 
 guess-table of drain drat vain vat is the table of drain drat vain vat guesses.
 
@@ -769,6 +788,7 @@ part Threat Three Met ME
 Threat Three Met Me is south of Drain Drat Vain Vat. It is in Poppin' Part. printed name is "[if marquee-score < 3]Market Marquee[else]Threat Three Met Me[end if]". "[if marquee is moot]The marquee has crumbled, its rubble blocking the way back north. This is it[else]A market marquee stands here, maybe giving you some clues as to how to do things[end if]. [if bright bully is off-stage]You could go back north if you really wanted, but perhaps you'll want to finish things here[else]You feel stuck here in the final encounter[end if].". spokeval of Threat Three is 5.
 
 check going north in Threat Three Met Me when bright bully is in Threat Three Met Me: say "As much as you dislike [the bully], you're pulled to them, as well. Time to finish the deal." instead;
+check going north in Threat Three Met Me when bright bully is in Threat Three Met Me: say "The fallen marquee sealed off the way back north." instead;
 
 guess-table of threat three met me is the table of threat three met me guesses.
 
