@@ -89,7 +89,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "throw"	"through"	"threw"	--	false	true	true	false	show shoe	vc-throw-through rule	vr-throw-through rule	--	"You can [b]THROW THROUGH[r] the main act [once-now of vc-throw-through rule] they're here and you have a hyped-up, well-fed crowd in place."
 "dumb"	"doubt"	--	--	false	true	true	false	rum route	vc-dumb-doubt rule	vr-dumb-doubt rule	--	-- [start rum route]
 "said"	"sos"	--	--	false	true	true	false	rum route	vc-said-sos rule	vr-said-sos rule	--	"You can say [b]SAID SOS[r] [once-now of vc-said-sos rule] you've got a foothold in an argument."
-"umm"	"out"	--	--	false	true	true	false	rum route	vc-umm-out rule	vr-umm-out rule	--	"You can say [b]UMM OUT[r] [once-now of vc-umm-out rule] you're on a roll arguing."
+"umm|um"	"out"	--	--	false	true	true	false	rum route	vc-umm-out rule	vr-umm-out rule	--	"You can say [b]UMM OUT[r] [once-now of vc-umm-out rule] you're on a roll arguing."
 "hey"	"hope"	"hay"	--	false	true	true	false	Nay Nope Slay Slope	vc-hey-hope rule	vr-hey-hope rule	--	--
 "k"	"cope"	--	--	false	true	true	false	Nay Nope Slay Slope	vc-k-cope rule	vr-k-cope rule	--	"You can say [b]K COPE[r] [once-now of vc-k-cope rule] you're able to cope fully."
 "tight"	"tease|tees"	--	--	false	true	false	false	slight sleaze	vc-tight-tease rule	vr-tight-tease rule	--	-- [start grokking grift]
@@ -160,6 +160,7 @@ this is the vr-boring-box rule:
 	now player has boring box;
 	now sco-boring-box is true;
 	set the pronoun it to boring box;
+	print-the-loc;
 
 a goodrhyme rule (this is the vc-gad-gunk rule):
 	if mad monk is not in location of player, unavailable;
@@ -780,6 +781,7 @@ a goodrhyme rule (this is the vc-crow-crew rule):
 this is the vr-crow-crew rule:
 	now sco-crow-crew is true;
 	say "The Crow Crew appears! They look ready to give a performance replete with humor, wit, song, pyrotechnics, and so forth. You just need to find a way to make a grand entrance.";
+	print-the-loc;
 
 a goodrhyme rule (this is the vc-throw-through rule):
 	if player is not in show shoe, unavailable;
@@ -846,7 +848,6 @@ this is the vr-umm-out rule:
 	now sco-umm-out is true;
 	say "With the confidence instilled by instilling dumb doubt, you finish the deal. You notice a valley below. You should go down when you are ready.";
 	now Slay Slope is mapped below Rum Route;
-	now Rum Route is mapped above Slay Slope;
 
 a goodrhyme rule (this is the vc-hey-hope rule):
 	if player is not in Nay Nope Slay Slope, unavailable;
@@ -898,6 +899,7 @@ this is the vr-rad-roast rule:
 	now sco-rad-roast is true;
 	say "You strike back to show you know what's what. The voice goes away.!";
 	now Trite Trail is mapped west of Mad Most Cad Coast;
+	print-the-loc;
 
 a goodrhyme rule (this is the vc-sight-sail rule):
 	if player is not in Trite Trail, unavailable;
@@ -1040,7 +1042,8 @@ a goodrhyme rule (this is the vc-right-root rule):
 
 this is the vr-right-root rule:
 	now sco-right-root is true;
-	say "The right root takes hold in the ground, and out bloom ... trite trees! No, it's not picturesque, but it's better than what was there before.";
+	say "The right root takes hold in the ground, and out bloom ... trite trees! No, it's not picturesque, but it's better than what was there before. The trees bloom on all sides except one ... which cuts out a clear passage!";
+	now Freak Framing is mapped south of Slight Sleaze;
 	lose-gold-string;
 
 a goodrhyme rule (this is the vc-bleak-blaming rule):
@@ -1066,6 +1069,7 @@ a goodrhyme rule (this is the vc-chic-shaming rule):
 this is the vr-chic-shaming rule:
 	now sco-chic-shaming is true;
 	say "You segue from bleak blaming to an effortless, unavoidable, flowing conclusion, your voice rising to a crescendo for your main point. Bam!";
+	print-the-loc;
 
 a goodrhyme rule (this is the vc-clique-claiming rule):
 	if player is not in freak framing seek sameing, unavailable;
@@ -1107,6 +1111,7 @@ a goodrhyme rule (this is the vc-bold-bend rule):
 this is the vr-bold-bend rule:
 	now sco-bold-bend is true;
 	say "Of course the old end was too simplistic. You feel a bit of courage now. But the question is: courage to face what? It's probably something abstract.";
+	print-the-loc;
 
 a goodrhyme rule (this is the vc-trolled-trend rule):
 	if player is not in old end, unavailable;
@@ -1121,6 +1126,7 @@ a goodrhyme rule (this is the vc-trolled-trend rule):
 this is the vr-trolled-trend rule:
 	now sco-trolled-trend is true;
 	say "You feel malevolence from the south. It is where you must go next, you are pretty sure. You're also pretty sure there'll be no way back. The thought depresses you a bit. You need a way to pull out of your doldrums.";
+	now Drain Drat Vain Vat is mapped south of Old End;
 
 a goodrhyme rule (this is the vc-mold-mend rule):
 	if player is not in old end, unavailable;
@@ -1135,7 +1141,6 @@ a goodrhyme rule (this is the vc-mold-mend rule):
 this is the vr-mold-mend rule:
 	now sco-mold-mend is true;
 	say "You feel emotionally ready to go forward, and what's more, you feel robust enough to push back against any temporary setbacks.";
-	now nowhere is mapped north of Drain Drat Vain Vat;
 
 a goodrhyme rule (this is the vc-bane-bat rule):
 	if player is not in drain drat vain vat, unavailable;
@@ -1178,6 +1183,8 @@ this is the vr-splain-splat rule:
 	moot Red Rose;
 	move Pred Pros to Vain Vat;
 	move head hose to Vain Vat;
+	now Threat Three Met Me is mapped south of Vain Vat;
+	print-the-loc;
 
 a goodrhyme rule (this is the vc-fed-foes rule):
 	if red rose is off-stage or pred pros are moot, unavailable;
@@ -1508,7 +1515,7 @@ Mad Most Cad Coast	"West is the only way out, other than the lift. You [if sco-r
 Trite Trail	"Although the trite trail extends in all directions except, well, where the whale is, you'd get lost everywhere except back east."
 Rum Route	"While you can go back into the lift, you [if sco-umm-out is true]can also go down[else]suspect the route leads somewhere, once you're focused right[end if]."
 nay nope slay slope	"The only physical way out of these depths is up, though you can pull yourself out of mental depths with the right words."
-slight sleaze	"You can only enter the lift or [if sco-right-root is true]go south through the path you forged[else]try to find a way through the fright freeze to the south[end if]."
+slight sleaze	"You can only enter the lift or [if sco-right-root is true]go south through the path you forged[else]try to dispel the fright freeze and find a passage[end if]."
 seek sameing	"This is a hideout think-tank. If there's a more secret place, it's beyond you. So, back north it is, when you want to leave."
 Old End	"[if sco-mold-mend is true]You are ready to go south now. No turning away.[else if sco-trolled-trend is true]The trolled trend got to you, but you can't forsake the bend entirely[else if sco-bold-bend is true]The bold bend you created goes south-to-east. You need to figure which of these ways is right[else]This feels like the end, but it can't be. Maybe you can puzzle your way through[end if]."
 Vain Vat	"[if sco-flain-flat is false]You're trapped in the vat for now[else if sco-splain-splat is false]You're out of the vat, but you can only see passage back north[else]The Pred Pros, alas, only knocked a hole in the south wall to match the way back north[end if]."

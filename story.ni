@@ -340,7 +340,7 @@ the cocoon is a thing. "The cocoon you summoned still lies here.". description i
 
 book One Warm Stun Storm
 
-there is a room called One Warm Stun Storm in Hoppin' Heart. It is north of NNSS. "[if sco-fun-form is true]It's calm here now. You can go north and south[else]A storm is raging ahead to the north, though it's all very calm to the south[end if]. [if sco-done-dorm is false]And you don't even have a prospect of shelter. Yet[else if sco-fun-form is false]At least the done dorm you summoned could give shelter[else]You also note the done dorm that helped you stay out the storm[end if]."
+there is a room called One Warm Stun Storm in Hoppin' Heart. It is north of NNSS. "[if sco-fun-form is true]It's calm here now. You can go north and south[else]A storm is raging ahead to the north, though it's all very calm to the south[end if]. [if sco-done-dorm is false]And you don't even have a prospect of shelter. Yet[else if sco-fun-form is false]At least the done dorm you summoned could give shelter[else]You also note the done dorm that helped you stay out the storm[end if].". printed name is "One Warm Stun-Storm".
 
 sco-done-dorm is a truth state that varies.
 sco-fun-form is a truth state that varies.
@@ -478,7 +478,9 @@ chapter locking lift
 
 The locking lift is a rhymable in High Hub. It is scenery. "The locking lift seems to have a list of places it can go, or emotions you can express to see a new place. The unvisited ones are blurred out, of course. You can [b]READ[r] your progress so far." [?? if you got MOCKING MIFFED first, then you are in luck]
 
-check entering lift:
+check going inside when locking lift is in location of player: try entering lift instead;
+
+check entering locking lift:
 	if player is in high hub, say "You need to decide where to go in the lift." instead;
 	say "You take the lift back to High Hub...";
 	move player to High Hub;
@@ -648,6 +650,8 @@ part Nay Nope Slay Slope
 
 Nay Nope Slay Slope is a room in Poppin' Part. printed name is "Nay-Nope-Slay Slope". "Thoughts of being against negativity swirl around here. Why, if you don't have positivity, you've had it! [if sco-hey-hope is false]They seem directed at you, as if to say you're the least positive person ever[else if sco-k-cope is false]Yet you see they can't totally be true, and you've boosted yourself a bit, and maybe you can boost yourself a bit more[else]But you see through them now[end if].". spokeval of Slay Slope is 2.
 
+Rum Route is mapped above Slay Slope. nowhere is mapped below Rum Route.
+
 guess-table of nay nope slay slope is the table of nay nope slay slope guesses.
 
 sco-k-cope is a truth state that varies.
@@ -657,7 +661,7 @@ book spoke 3 / Grokking Grift
 
 part Slight Sleaze
 
-Slight Sleaze is a room in Poppin' Part. "[if sco-bright-breeze is false]You feel a fright-freeze preventing you from going south[else if sco-plight-please is false]The fright-freeze is still around, but it's at least being blown about. However, self-serving pity stories whispered in your ear make you wonder if you really deserve to move on while they're clearly stuck here[else if sco-right-root is false]It feels nicer here, but this place could use scenery, something that may need to come from elsewhere[else]The trite trees make things feel nicer here, having replaced the fright-freeze that was here[end if].[paragraph break]Of course, you can always enter the locking lift to return to the High Hub.". printed name is "[if sco-right-root is false]Slight Sleaze[else]Trite Trees[end if]". spokeval of Slight Sleaze is 3.
+Slight Sleaze is a room in Poppin' Part. "[if sco-bright-breeze is false]You feel a fright-freeze preventing you from going south. A change in the weather would be nice[else if sco-plight-please is false]The fright-freeze is still around, but it's at least being blown about. However, self-serving pity stories whispered in your ear make you wonder if you really deserve to move on while they're clearly stuck here[else if sco-right-root is false]It feels nicer here, but this place could use scenery, something that may need to come from elsewhere[else]The trite trees make things feel nicer here, having replaced the fright-freeze that was here, and they surround you every way except to the south[end if].[paragraph break]Of course, you can always enter the locking lift to return to the High Hub.". printed name is "[if sco-right-root is false]Slight Sleaze[else]Trite Trees[end if]". spokeval of Slight Sleaze is 3.
 
 guess-table of slight sleaze is the table of slight sleaze guesses.
 
@@ -688,7 +692,7 @@ book spoke 4 / docking diffed
 
 part mad most cad coast
 
-Mad Most Cad Coast is a room in Poppin' Part. printed name is "[if sco-rad-roast is true]Had-Host Pad/Post[else]Mad-Most-Cad Coast[end if]". understand "had/host pad poast" and "had post" and "had/host pad/poast" and "host pad" as Mad Most Cad Coast when sco-rad-roast is true. "[if sco-bad-boast is false]The way west seems clear, but you sense hostility. Even looking that way raises your blood pressure. If you take a step, a voice seems to tell you it deserves to be there, but you don't[else if sco-rad-roast is false]The voice, or whatever, to the west, still seems to be pushing back. You need to go on the offensive[else]The way west is clear now[end if]. You can enter the lift to go back to the High Hub, too.". spokeval of Cad Coast is 4.
+Mad Most Cad Coast is a room in Poppin' Part. printed name is "[if sco-rad-roast is true]Pad Post-Had-Host[else]Mad-Most-Cad Coast[end if]". understand "had/host pad poast" and "had post" and "had/host pad/poast" and "host pad" as Mad Most Cad Coast when sco-rad-roast is true. "[if sco-bad-boast is false]You are driven mad with all the possible ways to go here. I mean, it's the coast, so you don't want to jump in the water, but you're not focused enough[else if sco-rad-roast is false]Your mind's a bit calmer now, but not calm enough[else]The way west is clear now[end if]. You can enter the lift to go back to the High Hub, too.". spokeval of Cad Coast is 4.
 
 check going west in Mad Most Cad Coast: if sco-rad-roast is false, say "You can't go west with all the madness. Well, not yet." instead;
 
@@ -769,10 +773,11 @@ Old End is north of Drain Drat Vain Vat. Drain Drat Vain Vat is in Poppin' Part.
 
 check going in Vain Vat:
 	if sco-flain-flat is false, say "You're still stuck in the vain vat. You need to get out. But it can't be too bad." instead;
-	if noun is not north and sco-splain-splat is false, say "There must be enemies hidden behind some secret wall. How to draw attention to yourself to bring them out?" instead;
+	if noun is not north and sco-splain-splat is false, say "While you could go back north, there must be enemies hidden behind some secret wall. How to draw attention to yourself to bring them out?" instead;
 	if Pred Pros are in vain vat:
 		if noun is south, say "The Pred Pros aren't going to leave without something to show for their work." instead;
-		say "Running from the Pred Pros would be unwise. Your rose's protection would wear off." instead;
+		if noun is north, say "Running from the Pred Pros would be unwise. Your rose's protection would wear off." instead;
+		say "There's no extra secret wall. You can and should stay and tackle the [pros]." instead;
 
 guess-table of drain drat vain vat is the table of drain drat vain vat guesses.
 
@@ -1205,10 +1210,29 @@ carry out creditsing:
 
 chapter exitsing
 
-[ needed for the core, where VVFF north in Fun Fen is originally blocked ]
+[ for the EXITS command when you can see a way to go but it isn't physically available ]
+
+[ so behind Trust Track is unavailable but beyond Slow Sludge is blocked ]
 
 to decide whether (di - a direction) is blocked:
+	if player is in NNSS and sco-grow-grudge is false:
+		if di is north or di is south or di is east, yes;
+	if player is in Vain Vat and sco-flain-flat is false:
+		if di is north, yes;
+	if player is in Roaring Rocks and di is north and mad monk is in roaring rocks, yes;
+	if player is in Hun Harm Fun Farm and di is north and sco-un-arm is false, yes;
+	if player is in Warm Stun Storm and di is north and sco-fun-form is false, yes;
 	no;
+
+check exitsing (this is the adjust exit text with lift present rule):
+	if location of player is High Hub, say "The locking lift is the main way out of here, but [if sco-bye-bub is true]you can go back [b]DOWN[r] the stalk[else]there is a way to revisit what's below[end if]." instead;
+	if locking lift is in location of player and number of viable directions is 0, say "You can't go in any direction[unless player is in show shoe or player is in gore goals] yet[end if], but you can [enter-lift]." instead;
+	if player is in Threat Three and Bully is in Threat Three, say "You're at the final confrontation. There are no exits." instead;
+
+report exitsing (this is the notify player of lift rule):
+	if locking lift is in the location of the player, say "You can also [enter-lift].";
+
+to say enter-lift: say "[b]ENTER[r] the locking lift to go back to [hub]";
 
 chapter optsing
 

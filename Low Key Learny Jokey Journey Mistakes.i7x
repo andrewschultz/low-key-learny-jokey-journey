@@ -204,6 +204,7 @@ mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "bum bout"	--	false	108	no-umm-out rule	"You should have more focus than to bum [']bout."
 "drum drought"	--	false	108	no-umm-out rule	"Thankfully, there's no percussion in the background."
 "gum gout"	--	false	108	no-umm-out rule	"But gout is in the toes, not the mouth."
+"pum pout" or "pump out"	--	false	108	no-umm-out rule	"Clever sleight-of-mouth, but I can't quite allow it."
 
 this is the no-umm-out rule:
 	if sco-umm-out is false, the rule succeeds;
