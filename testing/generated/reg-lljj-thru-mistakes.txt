@@ -29,16 +29,16 @@ While this is technically correct, you don't want to injure yourself or others.
 #ttc-table-of-bane-be-sane-see-guesses-cane-key
 >cane key
 You don't need any key to unlock the tree.
+lurking lump
 
 #ttc-table-of-bane-be-sane-see-guesses-feign-fee
 >feign fee
 You whine about how Low-Key Learny Jokey Journey costs money on top of being a waste of time. Nobody listens.
-lurking lump
+!lurking lump
 
 #ttc-table-of-bane-be-sane-see-guesses-main-me
 >main me
 You are the main character in this adventure, but don't let it go to your head.
-!lurking lump
 
 #ttc-table-of-bane-be-sane-see-guesses-pain-p-pee
 >pain p
@@ -112,7 +112,7 @@ You find no ballot or part thereof.
 
 #ttc-table-of-mad-monk-guesses-clad-clunk
 >clad clunk
-You disparage the mad monk's outfit. They look slightly wounded.
+You disparage the mad monk's outfit. They roll their eyes. Something more spiritual is the way to go, here.
 
 #ttc-table-of-mad-monk-guesses-dad-dunk
 >dad dunk
@@ -389,7 +389,7 @@ But that is less spare than a pear peach.
 
 #ttc-table-of-deep-dune-guesses-beep-boon
 >beep boon
-No, you don't a Geiger counter to search through the dune.
+No, you don't need a Geiger counter to search through the dune.
 
 #ttc-table-of-deep-dune-guesses-creep-croon
 >creep croon
@@ -907,6 +907,10 @@ Thankfully, there's no percussion in the background.
 >gum gout
 But gout is in the toes, not the mouth.
 
+#ttc-table-of-rum-route-guesses-pum-pout
+>pump out
+Clever sleight-of-mouth, but I can't quite allow it.
+
 >dumb doubt
 by one point
 
@@ -1147,8 +1151,6 @@ by one point
 >mocking miffed
 by one point
 
-/^Old End
-
 #ttc-table-of-old-end-guesses-fold-fend
 >fold fend
 Folding and fending are contradictory.
@@ -1318,5 +1320,3 @@ by one point
 
 >trite telly
 by one point
-
->quit

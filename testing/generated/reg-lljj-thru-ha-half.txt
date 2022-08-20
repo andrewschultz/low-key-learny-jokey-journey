@@ -573,7 +573,7 @@ The HA HALF button lights up on your Leet Learner.
 >zumm out
 The HA HALF button lights up on your Leet Learner.
 
-#testcase-ha-half-table-of-verb-checks-55-umm
+#testcase-ha-half-table-of-verb-checks-55-umm-um
 >umm zout
 The HA HALF button lights up on your Leet Learner.
 
@@ -842,8 +842,6 @@ The HA HALF button lights up on your Leet Learner.
 >mocking miffed
 by one point
 
-/^Old End
-
 #testcase-ha-half-table-of-verb-checks-74-bend
 >zbold bend
 The HA HALF button lights up on your Leet Learner.
@@ -981,5 +979,3 @@ by one point
 
 >trite telly
 by one point
-
->quit

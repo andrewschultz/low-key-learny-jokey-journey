@@ -10,21 +10,23 @@
 
 * main-thru
 
->z
-> jj
+# so we pass the mad monk...
+>au 2
+
+>jj
 After some thought, you consider the right way forward: DANE D...
 
-> jj
+>jj
 After some thought, you consider the right way forward: BORING BOX...
 
 >open box
 
 >n
 
-> jj
+>jj
 After some thought, you consider the right way forward: BAD BUNK...
 
-> jj
+>jj
 After some thought, you consider the right way forward: SAD SUNK...
 
 >n

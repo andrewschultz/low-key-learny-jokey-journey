@@ -378,8 +378,6 @@ by one point
 >mocking miffed
 by one point
 
-/^Old End
-
 >bold bend
 by one point
 
@@ -425,5 +423,3 @@ by one point
 
 >trite telly
 by one point
-
->quit

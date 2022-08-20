@@ -24,8 +24,17 @@ You're already there! Well, here.
 >n
 Cardinal directions don't mean much here, yet. Besides, there's no way back. You can only just enter the Train Tree one of three ways.
 
+#testcase-exits-bane-be-sane-see
+>exits
+There are no clear safe exits. It looks like you need to solve a puzzle to find your way out of here.
+
 >jane g
 by one point
+
+#testcase-exits-roaring-rocks
+>exits
+EXIT LIST:
+north: (unvisited.)
 
 >n
 The roaring seems to pull you back.
@@ -55,6 +64,11 @@ As you go on your way, who should block your way but a fervent Mad Monk? They ca
 >n
 The mad monk is blocking you right now.
 
+#+testcase-exits-roaring-rocks
+>exits
+EXIT LIST:
+north: (blocked.)
+
 >gad gunk
 by one point
 
@@ -66,11 +80,24 @@ by one point
 
 >n
 
+#testcase-exits-no-nudge-slow-sludge
+>exits
+EXIT LIST:
+north: (blocked.)
+south: (blocked.)
+east: (blocked.)
+west: (unvisited.)
+
 >s
 >s
 
 #+ttc-table-of-noways-roaring-rocks
 The rocks block every way except back north.
+
+#+testcase-exits-roaring-rocks
+>exits
+EXIT LIST:
+north: No-Nudge Slow Sludge.
 
 >n
 
@@ -94,6 +121,14 @@ That location or thing doesn't exist or isn't known to you yet.
 >grow grudge
 by one point
 
+#+testcase-exits-no-nudge-slow-sludge
+>exits
+EXIT LIST:
+north: (unvisited.)
+south: Storing Stocks.
+east: (unvisited.)
+west: (unvisited.)
+
 >n
 
 #ttc-table-of-noways-warm-stun-storm
@@ -106,6 +141,12 @@ The passage here is north-south.
 >n
 You feel your will sapped as you attempt to go north. You'll need to sit out the storm first.
 
+#testcase-exits-one-warm-stun-storm
+>exits
+EXIT LIST:
+north: (blocked.)
+south: No-Nudge Slow Sludge.
+
 >bother
 You hear a whooshing as a door swings in from nowhere. It doesn't seem to lead anywhere. Voices from behind it, though, assure you you are missing something. Using your logical skills, you deduce it is a miss-more-diss door. While it's not going to jump you if your back is turned, it might be nice to get rid of.
 
@@ -115,14 +156,25 @@ by one point
 >done dorm
 by one point
 
-#ttc-table-of-noways-thunk-tree-trunk
+#ttc-table-of-noways-tttt
 >n
 You feel your will sapped as you attempt to go north. You'll need to sit out the storm first.
 
 >fun form
 by one point
 
+#+testcase-exits-one-warm-stun-storm
+>exits
+EXIT LIST:
+north: (unvisited.)
+south: No-Nudge Slow Sludge.
+
 >n
+
+#testcase-exits-the-thunk-tree-trunk
+>exits
+EXIT LIST:
+south: One Warm Stun-Storm.
 
 >n
 There are even bigger and more intimidating trees every way except south.
@@ -154,8 +206,19 @@ The track seems to end here. You can really only go back west, unless you figure
 >s
 The track seems to end here. You can really only go back west, unless you figure something out.
 
+#testcase-exits-trust-track
+>exits
+EXIT LIST:
+west: No-Nudge Slow Sludge.
+
 >crust crack
 by one point
+
+#+testcase-exits-trust-track
+>exits
+EXIT LIST:
+north: (unvisited.)
+west: No-Nudge Slow Sludge.
 
 #+ttc-table-of-noways-trust-track
 >s
@@ -168,6 +231,11 @@ The track now runs west-north but not east.
 #ttc-table-of-noways-rare-reach
 >n
 The darkness encompasses you every way except back south.
+
+#testcase-exits-rare-reach
+>exits
+EXIT LIST:
+south: Trust Track.
 
 >bare beach
 by one point
@@ -199,14 +267,31 @@ If you left the north/east passage, you'd probably get lost.
 >s
 If you left the north/east passage, you'd probably get lost.
 
+#testcase-exits-hun-harm-fun-farm
+>exits
+EXIT LIST:
+north: (blocked.)
+east: No-Nudge Slow Sludge.
+
 >unarm
 by one point
+
+#+testcase-exits-hun-harm-fun-farm
+>exits
+EXIT LIST:
+north: (unvisited.)
+east: No-Nudge Slow Sludge.
 
 >n
 
 #ttc-table-of-noways-nonoon
 >n
 Any way but back south might get you lost in this darkness.
+
+#testcase-exits-no-noon
+>exits
+EXIT LIST:
+south: Hun Harm Fun Farm.
 
 >go goon
 by one point
@@ -227,6 +312,10 @@ by one point
 >n
 This being a jail, you can't walk out. You have to find a weak link or something.
 
+#testcase-exits-jotty-jail
+>exits
+There are no clear safe exits. It looks like you need to solve a puzzle to find your way out of here.
+
 >grotty grail
 by one point
 
@@ -239,6 +328,10 @@ by one point
 #ttc-table-of-noways-high-hub
 >n
 The only way out of the High Hub is telling the lift where you want to go. Okay, the only non-lethal way.
+
+#testcase-exits-high-hub
+>exits
+The locking lift is the main way out of here, but there is a way to revisit what's below.
 
 >bye bub
 
@@ -260,6 +353,10 @@ In this quasi-sacred valley, the only way out is back south.
 >n
 The only way out of the High Hub, besides going back down the sturdy stalk, is telling the lift where you want to go. Okay, the only non-lethal way.
 
+#+testcase-exits-high-hub
+>exits
+The locking lift is the main way out of here, but you can go back DOWN the stalk.
+
 ##RBRSHUFFLESTART=0
 
 >rocking rift
@@ -268,6 +365,10 @@ by one point
 #ttc-table-of-noways-new-show-shoe
 >n
 There's no way out except through the lift. You're the only person to get the show started, here.
+
+#testcase-exits-no-new-show-shoe
+>exits
+You can't go in any direction, but you can ENTER the locking lift to go back to High Hub.
 
 >go goo
 by one point
@@ -306,6 +407,10 @@ by one point
 >n
 Exploring the darkness would be unwise. The only way out is entering the lift.
 
+#testcase-exits-sore-souls-gore-goals
+>exits
+You can't go in any direction, but you can ENTER the locking lift to go back to High Hub.
+
 >shore shoals
 by one point
 
@@ -341,6 +446,10 @@ While you can go back into the lift, you suspect the route leads somewhere, once
 >d
 While you can go back into the lift, you suspect the route leads somewhere, once you're focused right.
 
+#testcase-exits-rum-route
+>exits
+You can't go in any direction yet, but you can ENTER the locking lift to go back to High Hub.
+
 >dumb doubt
 by one point
 
@@ -354,11 +463,22 @@ by one point
 >n
 While you can go back into the lift, you can also go down.
 
+#+testcase-exits-rum-route
+>exits
+EXIT LIST:
+down: (unvisited.)
+You can also ENTER the locking lift to go back to High Hub.
+
 >d
 
 #ttc-table-of-noways-nay-nope-slay-slope
 >n
 The only physical way out of these depths is up, though you can pull yourself out of mental depths with the right words.
+
+#testcase-exits-nay-nope-slay-slope
+>exits
+EXIT LIST:
+up: Rum Route.
 
 >hey hope
 by one point
@@ -374,10 +494,14 @@ by one point
 
 #ttc-table-of-noways-slight-sleaze
 >e
-You can only enter the lift or try to find a way through the fright freeze to the south.
+You can only enter the lift or try to dispel the fright freeze and find a passage.
 
 >s
-The fright-freeze pushes you back. You need to find a way to talk it down, somehow.
+You can only enter the lift or try to dispel the fright freeze and find a passage.
+
+#testcase-exits-slight-sleaze
+>exits
+You can't go in any direction yet, but you can ENTER the locking lift to go back to High Hub.
 
 >tight tees
 by one point
@@ -395,11 +519,23 @@ by one point
 >e
 You can only enter the lift or go south through the path you forged.
 
+#+testcase-exits-slight-sleaze
+>exits
+EXIT LIST:
+south: (unvisited.)
+
+You can also ENTER the locking lift to go back to High Hub.
+
 >s
 
 #ttc-table-of-noways-seek-sameing
 >w
 This is a hideout think-tank. If there's a more secret place, it's beyond you. So, back north it is, when you want to leave.
+
+#testcase-exits-freak-framing-seek-saming
+>exits
+EXIT LIST:
+north: Trite Trees.
 
 >clique claiming
 by one point
@@ -423,6 +559,10 @@ by one point
 >n
 West is the only way out, other than the lift. You don't yet have the confidence to go west.
 
+#testcase-exits-mad-most-cad-coast
+>exits
+You can't go in any direction yet, but you can ENTER the locking lift to go back to High Hub.
+
 >bad boast
 by one point
 
@@ -432,6 +572,13 @@ by one point
 #+ttc-table-of-noways-mad-most-cad-coast
 >n
 West is the only way out, other than the lift. You have the confidence to go west.
+
+#+testcase-exits-mad-most-cad-coast
+>exits
+EXIT LIST:
+west: (unvisited.)
+
+You can also ENTER the locking lift to go back to High Hub.
 
 >w
 
@@ -465,14 +612,20 @@ by one point
 >mocking miffed
 by one point
 
-/^Old End
-
 #ttc-table-of-noways-old-end
 >e
 But this is a dead end. For now.
 
+#testcase-exits-old-end
+>exits
+You can't go in any direction yet, but you can ENTER the locking lift to go back to High Hub.
+
 >bold bend
 by one point
+
+#+testcase-exits-old-end
+>exits
+You can't go in any direction yet, but you can ENTER the locking lift to go back to High Hub.
 
 #+ttc-table-of-noways-old-end
 >n
@@ -494,6 +647,11 @@ You still feel a bit hurt by the trolling you were exposed to.
 >n
 The trolled trend got to you, but you can't forsake the bend entirely.
 
+#+testcase-exits-old-end
+>exits
+EXIT LIST:
+south: (unvisited.)
+
 >mold mend
 by one point
 
@@ -506,14 +664,45 @@ You are ready to go south now. No turning away.
 
 >s
 
+#ttc-table-of-noways-vain-vat
+>w
+You're still stuck in the vain vat. You need to get out. But it can't be too bad.
+
+#testcase-exits-drain-drat-vain-vat
+>exits
+EXIT LIST:
+north: (blocked.)
+
 >bane bat
 by one point
 
 >flain flat
 by one point
 
+#+ttc-table-of-noways-vain-vat
+>w
+While you could go back north, there must be enemies hidden behind some secret wall. How to draw attention to yourself to bring them out?
+
+#+testcase-exits-drain-drat-vain-vat
+>exits
+EXIT LIST:
+north: Bold Bend.
+
 >splain splat
 by one point
+
+#+ttc-table-of-noways-vain-vat
+>n
+Running from the Pred Pros would be unwise. Your rose's protection would wear off.
+
+>w
+There's no extra secret wall. You can and should stay and tackle the Pred Pros.
+
+#+testcase-exits-drain-drat-vain-vat
+>exits
+EXIT LIST:
+north: Bold Bend.
+south: (unvisited.)
 
 >fed foes
 by one point
@@ -523,6 +712,11 @@ by one point
 #ttc-table-of-noways-threat-three
 >w
 You're at the final confrontation. There are no secret passages, just an exit back north.
+
+#testcase-exits-threat-three-met-me
+>exits
+EXIT LIST:
+north: Main Mat.
 
 >fret free
 by one point
@@ -540,6 +734,10 @@ You're at the final confrontation. There are no secret passages, and you can't e
 >n
 The fallen marquee sealed off the way back north.
 
+#+testcase-exits-threat-three-met-me
+>exits
+You're at the final confrontation. There are no exits.
+
 >plus plaque
 by one point
 
@@ -547,5 +745,3 @@ by one point
 
 >trite telly
 by one point
-
->quit

@@ -521,6 +521,10 @@ You already appreciated the free fruit sufficiently.
 >pear peach
 by one point
 
+#testcase-postreject-table-of-verb-checks-vc-pear-peach-rule
+>pear peach
+But you already have the pear peach.
+
 >s
 >s
 >e
@@ -1177,8 +1181,6 @@ by one point
 >mocking miffed
 by one point
 
-/^Old End
-
 #testcase-prereject-table-of-verb-checks-vc-mold-mend-rule
 >mold mend
 That might be good later, but currently, you have nothing to mend from and to mold a future mindset.
@@ -1262,11 +1264,36 @@ by one point
 
 >s
 
+>set see
+by one point
+
+>n
+
+#testcase-moot-table-of-verb-checks-vc-set-see-rule
+>set see
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+
+>undo
+>undo
+>undo
+
 >fret free
 by one point
 
 >yet ye
 by one point
+
+>n
+
+#testcase-moot-table-of-verb-checks-vc-yet-ye-rule
+>yet ye
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+
+#testcase-moot-table-of-verb-checks-vc-fret-free-rule
+>fret free
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+
+>s
 
 >set see
 by one point
@@ -1622,5 +1649,3 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 
 >trite telly
 by one point
-
->quit

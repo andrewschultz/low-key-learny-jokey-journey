@@ -8,6 +8,7 @@
 
 * main-thru
 
+#testcase-room-names-bane-be-sane-see
 /^Bane Be Sane, See\?
 
 >au 2
@@ -15,10 +16,14 @@
 >jane g
 by one point
 
+#testcase-room-names-roaring-rocks
 /^Roaring Rocks
 
 >boring box
 by one point
+
+#+testcase-room-names-roaring-rocks
+/^Storing Stocks
 
 >open box
 
@@ -32,6 +37,7 @@ by one point
 
 >n
 
+#testcase-room-names-no-nudge-slow-sludge
 /^No-Nudge Slow Sludge
 
 >grow grudge
@@ -39,7 +45,8 @@ by one point
 
 >n
 
-/^One Warm Stun Storm
+#testcase-room-names-one-warm-stun-storm
+/^One Warm Stun-Storm
 
 >done dorm
 by one point
@@ -49,6 +56,7 @@ by one point
 
 >n
 
+#testcase-room-names-the-thunk-tree-trunk
 /^The \(Thunk!\) Tree Trunk
 
 >see sunk
@@ -67,6 +75,7 @@ by one point
 >s
 >e
 
+#testcase-room-names-trust-track
 /^Trust Track
 
 >bussed back
@@ -77,11 +86,13 @@ by one point
 
 >n
 
+#testcase-room-names-rare-reach
 /^Rare Reach
 
 >bare beach
 by one point
 
+#+testcase-room-names-rare-reach
 /^Bare Beach
 
 >seep soon
@@ -99,6 +110,7 @@ by one point
 >w
 >w
 
+#testcase-room-names-hun-harm-fun-farm
 /^Hun Harm Fun Farm
 
 >unarm
@@ -106,6 +118,7 @@ by one point
 
 >n
 
+#testcase-room-names-no-noon
 /^No Noon
 
 >go goon
@@ -123,18 +136,28 @@ by one point
 >crow croon
 by one point
 
+#testcase-room-names-jotty-jail
 /^Jotty Jail
 
 >knotty nail
 by one point
 
+#testcase-room-names-high-hub
 /^High Hub
+
+##BALANCE UNDOS
+#+testcase-room-names-no-noon
+>gonear no noon
+/^Ho, HEWN
+
+>undo
 
 ##RBRSHUFFLESTART=0
 
 >rocking rift
 by one point
 
+#testcase-room-names-no-new-show-shoe
 /^No-New-Show Shoe
 
 >flow flue
@@ -152,6 +175,9 @@ by one point
 >crow crew
 by one point
 
+#+testcase-room-names-no-new-show-shoe
+/^Whoah-Woo-Show Shoe
+
 >ho who
 by one point
 
@@ -167,11 +193,13 @@ by one point
 >shocking shift
 by one point
 
+#testcase-room-names-sore-souls-gore-goals
 /^Sore Souls' Gore Goals
 
 >shore shoals
 by one point
 
+#+testcase-room-names-sore-souls-gore-goals
 /^Shore Shoals
 
 >four foals
@@ -186,6 +214,7 @@ by one point
 >stocking stiffed
 by one point
 
+#testcase-room-names-rum-route
 /^Rum Route
 
 >dumb doubt
@@ -199,6 +228,7 @@ by one point
 
 >d
 
+#testcase-room-names-nay-nope-slay-slope
 /^Nay-Nope-Slay Slope
 
 >hey hope
@@ -213,6 +243,7 @@ by one point
 >grokking grift
 by one point
 
+#testcase-room-names-slight-sleaze
 /^Slight Sleaze
 
 >bright breeze
@@ -226,6 +257,7 @@ by one point
 
 >s
 
+#testcase-room-names-freak-framing-seek-saming
 /^Freak-Framing Seek-Sameing
 
 >bleak blaming
@@ -233,6 +265,9 @@ by one point
 
 >chic shaming
 by one point
+
+#+testcase-room-names-freak-framing-seek-saming
+/^Eek! Aiming!
 
 >bred bros
 by one point
@@ -243,6 +278,7 @@ by one point
 >docking diffed
 by one point
 
+#testcase-room-names-mad-most-cad-coast
 /^Mad-Most-Cad Coast
 
 >bad boast
@@ -250,6 +286,9 @@ by one point
 
 >rad roast
 by one point
+
+#+testcase-room-names-mad-most-cad-coast
+/^Pad Post-Had-Host
 
 >w
 
@@ -273,17 +312,19 @@ by one point
 >excite exhale
 by one point
 
-/^High Hub
-
 ##RBRSHUFFLEEND=4
 
 >mocking miffed
 by one point
 
+#testcase-room-names-old-end
 /^Old End
 
 >bold bend
 by one point
+
+#+testcase-room-names-old-end
+/^Bold Bend
 
 >trolled trend
 by one point
@@ -293,6 +334,7 @@ by one point
 
 >s
 
+#testcase-room-names-drain-drat-vain-vat
 /^Drain \(Drat!\) Vain Vat
 
 >bane bat
@@ -304,12 +346,16 @@ by one point
 >splain splat
 by one point
 
+#+testcase-room-names-drain-drat-vain-vat
+/^Main Mat
+
 >fed foes
 by one point
 
 >s
 
-/Market Marquee
+#testcase-room-names-threat-three-met-me
+/^Market Marquee
 
 >fret free
 by one point
@@ -331,5 +377,3 @@ by one point
 
 >trite telly
 by one point
-
->quit
