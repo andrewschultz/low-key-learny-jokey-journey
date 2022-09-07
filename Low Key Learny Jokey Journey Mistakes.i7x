@@ -23,6 +23,18 @@ mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "sprain spree"	--	false	--	--	"While this is technically correct, you don't want to injure yourself or others."
 "vain v"	--	false	--	--	"You come to grips with how you are not as humble as you should be."
 
+table of bum bout rum route guesses
+mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
+"drum drought"	--	false	108	no-umm-out rule	"Thankfully, there's no percussion in the background."
+"gum gout"	--	false	108	no-umm-out rule	"But gout is in the toes, not the mouth."
+"numb nowt"	no-umm-out rule	false	108	--	"Once you're more confident, you won't want to feel numb any more, and it'll just happen."
+"pum pout" or "pump out"	--	false	108	no-umm-out rule	"Clever sleight-of-mouth, but I can't quite allow it."
+"scum scout"	--	false	108	--	"You don't want to call up an antagonist face-to-face."
+
+this is the no-umm-out rule:
+	if sco-umm-out is false, the rule succeeds;
+	the rule fails;
+
 table of drain drat vain vat guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "brain brat"	--	false	105	splat-splained rule	"You don't want to fight annoying people with violence. Inanimate obstacles, yes. People, no."
@@ -119,6 +131,7 @@ mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "pay pope"	--	false	107	--	"Don't surrender to religious corruption!"
 "ray rope"	--	false	107	--	"The right sort of ray? Yes. Rope to pull you back? No."
 "say soap"	--	false	107	--	"I suppose I should put in a cliche about cleansing one's soul here."
+"stay stope"	--	false	107	--	"Building a long-lasting mine here would not make or keep things happier."
 "tray/tres trope"	--	false	107	--	"You recognize a trope or twelve at play during your journeys."
 
 to say no-mope-grope: say "The object is not to be consumed by depression but to reduce its influence"
@@ -197,17 +210,6 @@ mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 
 this is the box-hidden rule:
 	if boring box is off-stage, the rule succeeds;
-	the rule fails;
-
-table of rum route guesses
-mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
-"bum bout"	--	false	108	no-umm-out rule	"You should have more focus than to bum [']bout."
-"drum drought"	--	false	108	no-umm-out rule	"Thankfully, there's no percussion in the background."
-"gum gout"	--	false	108	no-umm-out rule	"But gout is in the toes, not the mouth."
-"pum pout" or "pump out"	--	false	108	no-umm-out rule	"Clever sleight-of-mouth, but I can't quite allow it."
-
-this is the no-umm-out rule:
-	if sco-umm-out is false, the rule succeeds;
 	the rule fails;
 
 table of slight sleaze guesses

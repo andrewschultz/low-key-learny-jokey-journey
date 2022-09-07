@@ -515,7 +515,6 @@ to say shoal-so-far:
 	say "[if shoal-core-score is 2]repopulated things nicely[else]got some animals back here, but the land needs more[end if]. ";
 	say "[if shoal-extra-animals is 0]There's also space for some exotics[else if shoal-extra-animals is 1]You could find more exotics, too, if you wanted[else]You've even found extra odd animals for variety[end if]"
 
-
 guess-table of sore souls gore goals is the table of sore souls gore goals guesses.
 
 to decide which number is shoal-extra-animals:
@@ -641,11 +640,13 @@ book spoke 2 / Stocking Stiffed
 
 part Rum Route
 
-Rum Route is a room in Poppin' Part. "[if sco-dumb-doubt is false]You seem assailed by ... well, not quite voices, here, but ideas from whoever-it-is that you deserve to be stuck here. The arguments seem brilliant and ironclad[else if sco-said-sos is false]You've pushed back and instilled doubt, but now you need to brag a bit[else if sco-umm-out is false]You feel like you can win the fight against frustration and helplessness with a snappy reply. The sort that might paralyze you[else]You see the way down now you've dispelled your own doubts. You hope you're ready to face it[sstt][end if]. Thankfully, the lift here can take you back to the High Hub.". spokeval of Rum Route is 2.
+Bum Bout Rum Route is a room in Poppin' Part. "[if sco-dumb-doubt is false]You seem assailed by ... well, not quite voices, here, but ideas from whoever-it-is that you deserve to be stuck here. The arguments seem brilliant and ironclad[else if sco-said-sos is false]You've pushed back and instilled doubt, but now you need to brag a bit[else if sco-umm-out is false]You feel like you can win the fight against frustration and helplessness with a snappy reply. The sort that might paralyze you[else]You see the way down now you've dispelled your own doubts. You hope you're ready to face it[sstt][end if]. Thankfully, the lift here can take you back to the High Hub.". spokeval of Rum Route is 2. printed name of Rum Route is "[if sco-umm-out is false]Bum-[']Bout Rum Route[else]Numb? NOWT![end if]".
+
+understand "numb/nowt" and "numb nowt" as Rum Route when sco-umm-out is true.
 
 to say sstt: if slay slope is visited, say " this time"
 
-guess-table of rum route is the table of rum route guesses.
+guess-table of Bum Bout Rum Route is the table of bum bout rum route guesses.
 
 sco-umm-out is a truth state that varies.
 sco-dumb-doubt is a truth state that varies.
