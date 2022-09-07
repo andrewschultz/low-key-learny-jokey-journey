@@ -1011,6 +1011,21 @@ check taking scenery (this is the modified can't take scenery rule): say "You do
 
 the can't take scenery rule is not listed in any rulebook.
 
+book talking
+
+carry out talktoing:
+	if noun is the player, say "[one of]'Whee! Why me? My!'[or]'Me! My! See?'[paragraph break]'Sigh.'[in random order]" instead;
+	if noun is mad monk, say "You need more pointed commentary, picking out the mad monk's flaws." instead;
+	if noun is lazy loud crazy crowd, say "Regular chatter doesn't work on the crowd. They need to be hyped up and see a show." instead;
+	if noun is Bully, say "No, you will lose an argument. Even if you don't start an argument, you'll lose it. You know that." instead;
+	if noun is white whale, say "You sense a telepathic 'Splay! Splash! May mash!' Yes, it's dolphins that have telepathic chatter in the real world, but there are different rules here. Play along with it." instead;
+	if noun is bright brute, say "The brute's brightness is more positivity than conversational brilliance. But it will know how to fight." instead;
+	if noun is crow crew, say "The crow crew has its own prep for the performance. You feel even asking them if they were ready would make them less ready. It's the crowd that you need to interact with." instead;
+	if noun is kite coot or noun is night newt, say "They wouldn't understand you, and they don't need to be disturbed." instead;
+	if noun is FREE FRUIT, say "It reveals nothing of the free fruit inside. You feel like you just banged on a vending machine that ate your change, except without [i]casus belli[r]." instead;
+	if noun is pred pros, say "Direct negotiations won't work. You can give them something, though." instead;
+	say "No response. There's not a lot you need to talk to." instead;
+
 book listening
 
 the block listening rule is not listed in any rulebook.
