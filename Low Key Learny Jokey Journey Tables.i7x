@@ -35,7 +35,7 @@ other stuff that may be added is best-room though I may have divided room-specif
 
 table of verb checks
 w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	idid	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
-"dane|jane|lane|wayne"	"d|dee|g|gee|lee|whee"	--	--	false	false	true	false	Bane Be Sane See	vc-in-bane rule	vr-choose-name rule	"d/dee dane" or "dane dee/d" or "jane g/gee" or "gee/g jane" or "wayne whee" or "whee wayne"	--
+"dane|jane|lane|wayne"	"d|dee|g|gee|lee|whee"	--	--	false	false	true	false	Bane Be Sane See	vc-in-bane rule	vr-choose-name rule	"d/dee dane" or "dane dee/d" or "jane g/gee" or "gee/g jane" or "wayne whee" or "whee wayne" or "lane lee"	--
 "plain"	"plea"	--	--	false	true	false	false	Bane Be Sane See	vc-plain-plea rule	vr-plain-plea rule	--	--
 "boring"	"box"	--	--	false	true	true	false	Roaring Rocks	vc-boring-box rule	vr-boring-box rule	--	--
 "gad"	"gunk"	--	--	false	true	false	false	Roaring Rocks	vc-gad-gunk rule	vr-gad-gunk rule	--	--
@@ -851,6 +851,7 @@ this is the vr-umm-out rule:
 	now sco-umm-out is true;
 	say "With the confidence instilled by instilling dumb doubt, you finish the deal. You notice a valley below. You should go down when you are ready.";
 	now Slay Slope is mapped below Rum Route;
+	print-the-loc;
 
 a goodrhyme rule (this is the vc-hey-hope rule):
 	if player is not in Nay Nope Slay Slope, unavailable;
@@ -863,6 +864,7 @@ a goodrhyme rule (this is the vc-hey-hope rule):
 this is the vr-hey-hope rule:
 	now sco-hey-hope is true;
 	say "How exhilarating! The hope is real! With that, a pall lifts over your depression. But not enough. Yet. You must finish the job.";
+	print-the-loc;
 
 a goodrhyme rule (this is the vc-k-cope rule):
 	if player is not in Nay Nope Slay Slope, unavailable;

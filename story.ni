@@ -655,7 +655,7 @@ sco-said-sos is a truth state that varies.
 
 part Nay Nope Slay Slope
 
-Nay Nope Slay Slope is a room in Poppin' Part. printed name is "Nay-Nope-Slay Slope". "Thoughts of being against negativity swirl around here. Why, if you don't have positivity, you've had it! [if sco-hey-hope is false]They seem directed at you, as if to say you're the least positive person ever[else if sco-k-cope is false]Yet you see they can't totally be true, and you've boosted yourself a bit, and maybe you can boost yourself a bit more[else]But you see through them now[end if].". spokeval of Slay Slope is 2.
+Nay Nope Slay Slope is a room in Poppin' Part. printed name is "[if sco-hey-hope is false]Nay-Nope-Slay Slope[else]Eh-[']Ope Day, Dope![end if]". "Thoughts of being against negativity swirl around here. Why, if you don't have positivity, you've had it! [if sco-hey-hope is false]They seem directed at you, as if to say you're the least positive person ever[else if sco-k-cope is false]Yet you see they can't totally be true, and you've boosted yourself a bit, and maybe you can boost yourself a bit more[else]But you see through them now. You can move on. There is passage down[end if].". spokeval of Slay Slope is 2.
 
 Rum Route is mapped above Slay Slope. nowhere is mapped below Rum Route.
 
@@ -716,7 +716,7 @@ Mad Most Cad Coast is mapped east of Trite Trail. nowhere is mapped west of Mad 
 
 guess-table of Trite Trail is table of trite trail guesses.
 
-the tight tail white whale is scenery in Trite Trail. printed name is "tight-tail white whale". "It splashes out of the water sometimes, mocking you. You don't know why you're supposed to defeat it, but you know you are."
+the tight tail white whale is scenery in Trite Trail. printed name is "tight-tail white whale". "It splashes out of the water sometimes, glaring at you as if to say you're lucky it can't swim in shallow water. You don't know why you're supposed to defeat it, but you know you are."
 
 sco-sight-sail is a truth state that varies.
 sco-might-mail is a truth state that varies.
@@ -1032,7 +1032,7 @@ the block listening rule is not listed in any rulebook.
 
 check listening:
 	if player is in Roaring Rocks, say "[if sco-boring-box is false]'Poring Pox!' the roaring rocks, uh, roar[else]The roaring is exciting. Too exciting. You don't need that right now[end if]." instead;
-	if player is in Bane Be Sane See, say "[if sco-plain-plea is false]You get the feeling your voice could add constructively to the noises, somehow, but it's not critical[else]You still think you hear echoes of your plain plea[end if]." instead;
+	if player is in Bane Be Sane See, say "[if sco-plain-plea is false]You get the feeling your voice could add constructively to the noises, somehow, but it's not critical[else]You think you still hear echoes of your plain plea, but it's time to move on[end if]." instead;
 	say "Quite quiet site. Sigh, it ..." instead;
 
 volume room restrictions
