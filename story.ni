@@ -587,18 +587,8 @@ to say shoe-desc:
 		say ". The brew and stew there should sustain the crowd nicely";
 
 after printing the locale description when player is in Show Shoe (this is the show shoe extra 1 rule):
-	if sco-go-goo is true, say "There's also a pile of 'nutritious' 'energetic' Go Goo that event-goers will snap up.";
-	continue the action;
-
-after printing the locale description when player is in Show Shoe (this is the show shoe extra 2 rule):
-	if shoe-concessions is not 2, continue the action;
-	if sco-ho-who is false:
-		say "The crowd that's built up is ready to be asked if they are ready to make some noise and get this party started. Except, well, a lot more succinctly.";
-	else if sco-yo-you is false:
-		say "The crowd, having expressed their willingness to raise the roof figuratively, seeks reassurance.";
-	else:
-		say "The crowd is hyped for the main performance!";
-	say "[line break][if sco-crow-crew is true]The Crow Crew waits in the wings, out of sight, ready to make an entrance if introduced energetically enough.[else]There are no performers yet. What could the group's name be?[end if]";
+	if sco-crow-crew is false, say "There are no performers yet. What could the group's name be?";
+	if sco-go-goo is true, say "[if sco-crow-crew is false][line break][end if]There's also a pile of 'nutritious' 'energetic' Go Goo that event-goers will snap up.";
 	continue the action;
 
 sco-flow-flue is a truth state that varies.
@@ -610,6 +600,14 @@ sco-ho-who is a truth state that varies.
 sco-yo-you is a truth state that varies.
 sco-crow-crew is a truth state that varies.
 sco-throw-through is a truth state that varies.
+
+chapter lazy loud crazy crowd
+
+the lazy loud crazy crowd is a thing. "A lazy loud crazy crowd waits here for entertainment. You're the one to provide it!". description is "[if sco-ho-who is false]The lazy loud crazy crowd that's built up is ready to be asked if they are ready to make some noise and get this party started. Except, well, a lot more succinctly.[else if sco-yo-you is false]The lazy loud crazy crowd, having expressed their willingness to raise the roof figuratively, seeks reassurance.[else]The lazy loud crazy crowd is hyped for the main performance!"
+
+chapter Crow Crew
+
+the Crow Crew is a thing. "The Crow Crew waits in the, um, wings to be properly introduced.". description is "They are high-fiving and discussing their dopest moves for whatever performance they're aiming to give."
 
 chapter light lute
 

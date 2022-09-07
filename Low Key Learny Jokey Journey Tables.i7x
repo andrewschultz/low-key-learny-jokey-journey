@@ -783,6 +783,7 @@ a goodrhyme rule (this is the vc-crow-crew rule):
 this is the vr-crow-crew rule:
 	now sco-crow-crew is true;
 	say "The Crow Crew appears! They look ready to give a performance replete with humor, wit, song, pyrotechnics, and so forth. You just need to find a way to make a grand entrance.";
+	move crow crew to show shoe;
 	print-the-loc;
 
 a goodrhyme rule (this is the vc-throw-through rule):
@@ -1357,6 +1358,7 @@ this is the flue-and-glue rule:
 
 this is the stew-and-brew rule:
 	if shoe-concessions is 2, say "With a reliable source of food and drink (which, man, they smell pretty good) a crowd starts to gather. You can't do any rhyming stuff to them directly, but perhaps there's some general stuff you can shout.";
+	move lazy loud crazy crowd to show shoe;
 
 a goodrhyme rule (this is the shoe-crowd-yet rule):
 	if not shoe-food-drink:
