@@ -662,7 +662,8 @@ a goodrhyme rule (this is the vc-night-newt rule):
 
 this is the vr-night-newt rule:
 	now sco-night-newt is true;
-	say "A night newt appears and scurries off. The place feels livelier now.";
+	say "A night newt appears and scurries around. You lose it in the scenery, but the place feels livelier now.";
+	move night newt to gore goals;
 	lose-silver-string;
 
 a goodrhyme rule (this is the vc-kite-coot rule):
@@ -675,6 +676,7 @@ a goodrhyme rule (this is the vc-kite-coot rule):
 this is the vr-kite-coot rule:
 	now sco-kite-coot is true;
 	say "The kite coot is an odd animal for sure but a worthy addition to the menagerie here.";
+	move kite coot to gore goals;
 	lose-silver-string;
 
 a goodrhyme rule (this is the vc-flow-flue rule):

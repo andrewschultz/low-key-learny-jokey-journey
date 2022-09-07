@@ -534,6 +534,14 @@ sco-night-newt is a truth state that varies.
 sco-bright-brute is a truth state that varies.
 sco-kite-coot is a truth state that varies.
 
+section night newt
+
+the night newt is scenery. description is "It blends in well, so you can't see it. But you know it's there.".
+
+section kite coot
+
+the kite coot is scenery. description is "It's an odd bird, for sure. You should leave it to do its own thing, now you summoned it."
+
 chapter red rose
 
 a red rose is a rhymable. description is "It's a simple red rose. Just looking at it leaves you feeling protected and inspired."
