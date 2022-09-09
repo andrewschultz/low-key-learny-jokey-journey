@@ -39,8 +39,8 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "plain"	"plea"	--	--	false	true	false	false	Bane Be Sane See	vc-plain-plea rule	vr-plain-plea rule	--	--
 "boring"	"box"	--	--	false	true	true	false	Roaring Rocks	vc-boring-box rule	vr-boring-box rule	--	--
 "gad"	"gunk"	--	--	false	true	false	false	Roaring Rocks	vc-gad-gunk rule	vr-gad-gunk rule	--	--
-"bad"	"bunk"	--	--	false	true	true	false	Roaring Rocks	vc-bad-bunk rule	vr-bad-bunk rule	--	--
-"sad"	"sunk"	--	--	false	true	true	false	Roaring Rocks	vc-sad-sunk rule	vr-sad-sunk rule	--	--
+"bad"	"bunk"	--	--	false	true	true	false	Roaring Rocks	vc-bad-bunk rule	vr-bad-bunk rule	--	"[poke-mad-monk]."
+"sad"	"sunk"	--	--	false	true	true	false	Roaring Rocks	vc-sad-sunk rule	vr-sad-sunk rule	--	"[poke-mad-monk]."
 "grow"	"grudge"	--	--	false	true	true	false	NNSS	vc-grow-grudge rule	vr-grow-grudge rule	--	--
 "done"	"dorm"	--	--	false	true	true	false	One Warm Stun Storm	vc-done-dorm rule	vr-done-dorm rule	--	--
 "fun"	"form"	--	--	false	true	true	false	One Warm Stun Storm	vc-fun-form rule	vr-fun-form rule	--	"You can fill out a [b]FUN FORM[r] [once-now of vc-fun-form rule] you have somewhere to enter."
@@ -172,16 +172,18 @@ a goodrhyme rule (this is the vc-gad-gunk rule):
 this is the vr-gad-gunk rule:
 	now sco-gad-gunk is true;
 	say "Chiding the monk's cleanliness, groundless or otherwise, is an effective insult, though it doesn't win the war. Have a bonus point.";
+	if warn-monk is true, say "[monk-count].";
 
 a goodrhyme rule (this is the vc-bad-bunk rule):
 	if mad monk is not fungible, unavailable;
 	if sco-bad-bunk is true:
 		vcal "[alr-ins]truthfulness.";
 		already-done;
+	abide by the check-dumping-monk rule;
 	ready;
 
 this is the vr-bad-bunk rule:
-	abide by the examine-monk rule;
+	abide by the diss-monk rule;
 	now sco-bad-bunk is true;
 
 a goodrhyme rule (this is the vc-sad-sunk rule):
@@ -189,10 +191,11 @@ a goodrhyme rule (this is the vc-sad-sunk rule):
 	if sco-sad-sunk is true:
 		vcal "[alr-ins]serenity.";
 		already-done;
+	abide by the check-dumping-monk rule;
 	ready;
 
 this is the vr-sad-sunk rule:
-	abide by the examine-monk rule;
+	abide by the diss-monk rule;
 	now sco-sad-sunk is true;
 
 a goodrhyme rule (this is the vc-grow-grudge rule):
@@ -1289,28 +1292,58 @@ section auxiliary rules and definitions
 
 [rocks, game start]
 
+a goodrhyme rule (this is the check-dumping-monk rule):
+	if warn-monk is true or monk-score is 0, continue the action;
+	now warn-monk is true;
+	let lc be left-count of table of mad monk guesses;
+	if lc is 0 and sco-gad-gunk is false, continue the action;
+	say "You sense you could practice on the monk for a bit. Specifically, you have ";
+	if lc > 0, say "[lc in words] guess[if lc > 1]es[end if]";
+	if lc > 0 and sco-gad-gunk is false, say " and";
+	if sco-gad-gunk is false, say " one bonus point";
+	say " to help build muscle memory or practice grit or whatever for tougher opponents. Why, you might even [if lurking lump is off-stage]find[else]improve[end if] a puzzle-skipping item![paragraph break]Take down the monk anyway?";
+	say "[i][bracket]NOTE: this nag will not appear again, and if you want to try good guesses against other enemies after they vanish, I have no problems if you [b]UNDO[r][i].[close bracket][i]";
+	let X be indexed text; [ this sucks, but unfortunately 6G60 doesn't play nice with player's command and "if the player consents" ]
+	now X is the player's command;
+	let TS be whether or not the player dir-consents;
+	change the text of the player's command to X;
+	say "[the player's command].";
+	if TS is true:
+		ready;
+	else:
+		not-yet;
+
 to decide which number is monk-score:
 	decide on boolval of sco-bad-bunk + boolval of sco-sad-sunk;
 
-this is the examine-monk rule:
+this is the diss-monk rule:
 	if monk-score < 1:
 		say "The mad monk blinks a bit. That one hurt. Your attack was simple but effective. Maybe one more...";
 		continue the action;
-	if warn-monk is false:
-		now warn-monk is true;
-		let lc be left-count of table of mad monk guesses;
-		if lc > 0 or sco-gad-gunk is false:
-			say "You sense you could practice on the monk for a bit. Specifically, you have ";
-			if lc > 0, say "[lc in words] guess[if lc > 1]es[end if]";
-			if lc > 0 and sco-gad-gunk is false, say " and";
-			if sco-gad-gunk is false, say " one bonus point";
-			say " to help build muscle memory or practice grit or whatever for tougher opponents. Why, you might even [if lurking lump is off-stage]find[else]improve[end if] a puzzle-skipping item![paragraph break]Take down the monk anyway?";
-			say "[i][bracket]NOTE: this nag will not appear again, and if you want to try good guesses against other enemies after they vanish, I have no problems if you [b]UNDO[r][i].[close bracket][i]";
-			unless the player dir-consents, the rule fails;
 	say "That's it. The mad monk flees. The path south really is free now.";
 	moot mad monk;
 
 to say alr-ins: say "You already insulted the mad monk's "
+
+to say sunk-or-bunk:
+	say "[b]";
+	if sco-sad-sunk is true:
+		say "BAD BUNK";
+	else if sco-sad-sunk is true:
+		say "SAD SUNK";
+	else:
+		say "(BUG)";
+	say "[r]";
+
+to say monk-move-on: say "say [sunk-or-bunk] to move on"
+
+to say poke-mad-monk:
+	say "You can say [sunk-or-bunk] again to move on ";
+	if is-exhausted of table of mad monk guesses:
+		say "now";
+	else:
+		say "when";
+	say "you've poked the Mad Monk enough";
 
 [hub 0. transport]
 

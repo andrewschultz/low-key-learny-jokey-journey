@@ -12,6 +12,20 @@ mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "choppin chart"	--	false	--	--	"There are only three regions, and the name isn't really important."
 "mopping mart"	--	false	--	--	"Surely this is more exciting than a trip for cleaning supplies."
 
+book current table notes
+
+to current-table-note (tn - a table name):
+	if tn is table of mad monk guesses:
+		if warn-monk is false, continue the action;
+		let nptn be nudge-points of tn;
+		if (nptn is number of rows in tn) and sco-gad-gunk is true:
+			say "You've torn apart the Mad Monk in pretty much any which way. Time to [monk-move-on].";
+			continue the action;
+		say "[monk-count].";
+
+to say monk-count:
+	say "[line break]You now have [nudge-points of table of mad monk guesses] of [number of rows in table of mad monk guesses] good guesses available from the Mad Monk, and you have [if sco-gad-gunk is false]not [end if]found the Last Lousy Point. If that's good enough, [monk-move-on]";
+
 book guesses by room, alphabetical
 
 table of bane be sane see guesses [note: you don't have the leet learner here, so MAGICNUM can't be filled in, and even if it could, it would be a mess]
@@ -354,7 +368,7 @@ mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "dad dunk"	--	false	34	--	"Alas, no middle-aged man soars into the air, basketball in hand, to posterize the mad monk."
 "fad funk"	--	false	34	--	"Falling prey to fashion is not one of the mad monk's vices. They're more about violence and intimidation."
 "grad grunk"	--	false	34	--	"The mad monk fails to look for a lost pig or learn anything."
-"had hunk"	--	false	34	--	"You try to claim the mad monk has lost muscle, but the insult doesn't really land."
+"had hunk"	--	false	34	--	"You try to claim the mad monk has lost muscle, but the insult doesn't really land, because they have more wisdom than ever, and stuff."
 "lad lunk"	--	false	34	--	"Both insults are a bit too trivial to land."
 "pad punk"	--	false	34	--	"No mercenary hoodlum walks by, which might actually be a good thing for the hoodlum."
 "plaid plunk"	--	false	34	--	"The mad monk's fashion choice will not change."
