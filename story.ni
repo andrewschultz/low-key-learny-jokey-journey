@@ -6,7 +6,7 @@ the release number is 1.
 
 the story description is "Am (Oh!) Sham-Show".
 
-the story headline is "Civil Seeming Drivel Dreaming entry 3".
+the story headline is "Prime Pro-Rhyme Row entry 3".
 
 release along with cover art.
 
@@ -284,7 +284,7 @@ guess-table of sturdy stalk is the table of sturdy stalk guesses.
 
 book Hun Harm Fun Farm
 
-Hun Harm Fun Farm is west of NNSS. it is in Hoppin' Heart. "The way bends north here. [if sco-un-arm is false]You hear the clash of weapons that way, though, so it feels unsafe. Maybe you can cut a way through[end if]. There's also passage back east."
+Hun Harm Fun Farm is west of NNSS. it is in Hoppin' Heart. "The way bends north here[if sco-un-arm is false]. You hear the clash of weapons that way, though, so it feels unsafe. Maybe you can cut a way through[end if]. There's also passage back east."
 
 check going north in hun harm fun farm when sco-un-arm is false: say "Unfortunately, you hear aggressive voices threatening to attack you. They have weapons, and you don't. You're not sure how to change this." instead;
 
@@ -387,7 +387,7 @@ the pear peach is a thing. description is "It looks like a cross between a pear 
 
 book Trust Track
 
-Trust Track is east of NNSS. it is in Hoppin' Heart. "You're in a sort of earthy canyon, [if sco-crust-crack is true]though you created a passage south to complement the one west[else if sco-bussed-back is true]and with Just Jack no longer here to discourage you, you're wondering if you can create another passage[else]with the only apparent way out being back west[end if]."
+Trust Track is east of NNSS. it is in Hoppin' Heart. "You're in a sort of earthy canyon, [if sco-crust-crack is true]though you created a passage north to complement the one west[else if sco-bussed-back is true]and with Just Jack no longer here to discourage you, you're wondering if you can create another passage[else]with the only apparent way out being back west[end if]."
 
 guess-table of trust track is table of trust track guesses.
 
@@ -909,7 +909,10 @@ this is the verb-checker rule:
 				say "Ooh! You're close. You've probably juggled two valid solutions.";
 				the rule succeeds;
 			abide by the situational-cuing-reject rule;
-			abide by the run-rule entry;
+			process the run-rule entry;
+			if the rule failed:
+				now think-cue entry is true;
+				the rule succeeds;
 			if there is a core entry and idid entry is false:
 				if core entry is true and nwpc > 2:
 					say "You may have used too many words. Any necessary command just needs two words, no more, no less. I put this in to make sure you can't just spam guesses. It's a bit strict, but ... I wanted some cursory protection, as well as simple guidance to narrow down what you should guess.";
@@ -1210,12 +1213,20 @@ volume standard verbs
 
 [just in case, so far]
 
+chapter attacking
+
+check attacking: say "Hawk hurts? Block! BLURTS!" instead;
+
+chapter singing
+
+check singing: say "You hum a few too-totes-new notes, almost stringing together a wry witty dry ditty." instead;
+
 volume meta-verbs
 
 chapter abouting
 
 carry out abouting:
-	say "[this-game] is the third entry in the [pprr] series. You do not need experience [series-names] to get through succesfully.";
+	say "[this-game] is the third entry in the [pprr] series. You do not need experience [series-names] to get through successfully.";
 	say "[line break]It felt like something that'd never get created, but it was fun to dream about. Then I had an idea about [if nnss is unvisited]the third room[else][NNSS][end if] offering another LLP in [vvff], but I wanted to move on. Then an idea for one room came, then another, and suddenly I had a game for IFComp 2022, which was nice, as the one I'd had on reserve since 2018 had dried up.";
 	say "[line break]I was able to re-use and fine-tune and fix bugs in a lot of code from [vvff], and I even managed to create some code I backported. And I started using Zarf's regression scripts earlier, to catch bugs well before the deadline and free my mind up for bigger-picture things. So it feels like the user experience should be smoother, although the story might be weaker.";
 	say "[line break]While my code for [vvff] wasn't perfect, it gave me a boost so I didn't have to rewrite a lot. I'd also become more comfortable with rules and rule ordering since then, so I was able to make the code more portable.";
@@ -1224,6 +1235,7 @@ carry out abouting:
 chapter creditsing
 
 carry out creditsing:
+	say "Thanks to Beau Sorrell and <check other name(s)> for testing.";
 	say "Thanks to many people on the I7 board at Intfiction.org. This includes, in alphabetical order, Draconis, otistdog, Zarf and ZedLopez.";
 	say "[line break]Thanks to all involved in IFComp, whether administering, programming, judging, or reviewing.";
 	say "Thanks to GitHub for allowing free hosting, public or private.";
@@ -1321,7 +1333,7 @@ carry out xyzzying:
 	say "A hollow voice booms incredulously, 'Easter egg bestir-beg?!'";
 	the rule succeeds;
 
-volume when play begins
+volume parser errors
 
 rule for printing a parser error when the latest parser error is the noun did not make sense in that context error (this is the goto reject rule):
 	if action-to-be is the gotothinging action or action-to-be is the gotoing action:
@@ -1332,6 +1344,9 @@ rule for printing a parser error when the latest parser error is the noun did no
 the goto reject rule is listed after the clue half right words rule in the for printing a parser error rulebook.
 
 rule for printing a parser error (this is the default parser error notification rule):
+	if action-to-be is the examining action or action-to-be is the reading action or action-to-be is the taking action or action-to-be is the talktoing action:
+		say "You see nothing here like that. Or there may be, but it's a small part of something more prominent. [this-game] tries not to force you to look into any items too much.";
+		the rule succeeds;
 	say "Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But [b]VERBS[r] will show what you can use.";
 	the rule succeeds;
 

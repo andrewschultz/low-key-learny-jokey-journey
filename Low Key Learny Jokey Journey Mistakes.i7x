@@ -356,6 +356,7 @@ mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "grad grunk"	--	false	34	--	"The mad monk fails to look for a lost pig or learn anything."
 "had hunk"	--	false	34	--	"You try to claim the mad monk has lost muscle, but the insult doesn't really land."
 "lad lunk"	--	false	34	--	"Both insults are a bit too trivial to land."
+"pad punk"	--	false	34	--	"No mercenary hoodlum walks by, which might actually be a good thing for the hoodlum."
 "plaid plunk"	--	false	34	--	"The mad monk's fashion choice will not change."
 "scad skunk"	--	false	34	--	"Alas, a bunch of skunks fail to assault the mad monk."
 "thad thunk"	--	false	34	--	"[monk-name]."
