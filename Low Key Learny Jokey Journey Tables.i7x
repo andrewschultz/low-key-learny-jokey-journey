@@ -490,7 +490,7 @@ this is the vr-piss-poor rule:
 	moot miss more diss door;
 
 a goodrhyme rule (this is the vc-bye-bub rule):
-	if player is not in high hub, unavailable;
+	if player is not in High Hub, unavailable;
 	if sco-bye-bub is true:
 		vcal "No need to say good-bye twice. That's just awkward, besides, just typing [b]DOWN[r] or [b]D[r] saves emotional energy and keystrokes.";
 		already-done;
@@ -516,7 +516,7 @@ this is the vr-wordy-walk rule:
 	say "You take a nice long wordy walk, and it fills you with ideas and things to try when you go back to [high hub].";
 
 a goodrhyme rule (this is the vc-docking-diffed rule):
-	if player is not in High Hub, unavailable;
+	if locking lift is not fungible, unavailable;
 	if sco-excite-exhale is true:
 		vcal "You already conquered [the whale]. No need to go back.";
 		already-done;
@@ -528,7 +528,7 @@ this is the vr-docking-diffed rule:
 	take-lift mad most cad coast;
 
 a goodrhyme rule (this is the vc-grokking-grift rule):
-	if player is not in High Hub, unavailable;
+	if locking lift is not fungible, unavailable;
 	if sco-grokking-grift is true:
 		vcal "You already figured everything about grokking grift.";
 		already-done;
@@ -540,7 +540,7 @@ this is the vr-grokking-grift rule:
 	take-lift Slight Sleaze;
 
 a goodrhyme rule (this is the vc-rocking-rift rule):
-	if player is not in High Hub, unavailable;
+	if locking lift is not fungible, unavailable;
 	if sco-rocking-rift is true:
 		vcal "You already brought life back to the [show shoe]. You don't need to go back.";
 		already-done;
@@ -552,7 +552,7 @@ this is the vr-rocking-rift rule:
 	take-lift Show Shoe;
 
 a goodrhyme rule (this is the vc-shocking-shift rule):
-	if player is not in High Hub, unavailable;
+	if locking lift is not fungible, unavailable;
 	if shoal-core-score is 2:
 		vcal "You already took care of the shocking shift!";
 		already-done;
@@ -564,7 +564,7 @@ this is the vr-shocking-shift rule:
 	take-lift Sore Souls Gore Goals;
 
 a goodrhyme rule (this is the vc-stocking-stiffed rule):
-	if player is not in High Hub, unavailable;
+	if locking lift is not fungible, unavailable;
 	if sco-umm-out is true:
 		vcal "You already took care of the Rum Route!";
 		already-done;
@@ -591,7 +591,7 @@ this is the vr-despite-dispute rule:
 	moot delight dilute;
 
 a goodrhyme rule (this is the vc-mocking-miffed rule):
-	if player is not in High Hub, unavailable;
+	if locking lift is not fungible, unavailable;
 	if hub-score < 5:
 		vcp "The mocking, miffed--well, it is there, but you don't quite have the confidence yet to face it. You've only fully tackled [if hub-score is 0]none[else][hub-score in words][end if] of the other five areas the locking lift can access.";
 		now tried-mocking-miffed is true;
