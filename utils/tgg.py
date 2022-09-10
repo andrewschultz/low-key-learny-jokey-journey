@@ -26,7 +26,8 @@ condition = 'GENERIC is false'
 
 alphabetize = True
 
-def usage():
+def usage(header = '====usage===='):
+    print(header)
     print("All arguments need dashes. They are converted to spaces. Put a dash at the end if there is a one-word mistake.")
     print("a/an/na = alphabetize table entries (or not) with default ON")
     print("t=room or thing that needs guesses")
@@ -89,7 +90,7 @@ while cmd_count < len(sys.argv):
     elif arg.isdigit() or arg == '--':
         magic_number = strip_equals(arg)
     elif '-' not in arg or '=' in arg:
-        usage()
+        usage('BAD ARGUMENT: {}'.format(arg))
     else:
         ttarg = to_topic(arg)
         if ttarg in base_string_array:
