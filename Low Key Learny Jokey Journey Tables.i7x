@@ -51,7 +51,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "fun"	"form"	--	--	false	true	true	false	One Warm Stun Storm	vc-fun-form rule	vr-fun-form rule	--	"You can fill out a [b]FUN FORM[r] [once-now of vc-fun-form rule] you have somewhere to enter."
 "see"	"sunk"	--	--	false	true	true	false	TTTT	vc-see-sunk rule	vr-see-sunk rule	--	--
 "gee"	"junk"	--	--	false	true	true	false	TTTT	vc-gee-junk rule	vr-gee-junk rule	--	"You can say [b]GEE JUNK[r] [once-now of vc-gee-junk rule] more of the trunk is visible."
-"whee"	"woot"	--	--	false	true	true	false	TTTT	vc-whee-woot rule	vr-whee-woot rule	--	--
+"whee"	"woot"	"wee"	vh-whee-woot rule	false	true	true	false	TTTT	vc-whee-woot rule	vr-whee-woot rule	--	--
 "pear"	"peach"	"pair/pare"	--	false	true	true	false	TTTT	vc-pear-peach rule	vr-pear-peach rule	--	"You can make a [b]PEAR PEACH[r] [once-now of vc-pear-peach rule] you're happy enough to receive free fruit."
 "bussed"	"back"	"bust"	vh-bust-back rule	false	false	true	false	Rare Reach	vc-bussed-back rule	vr-bussed-back rule	--	--
 "crust"	"crack"	--	--	false	true	true	false	Trust Track	vc-crust-crack rule	vr-crust-crack rule	--	"You can make the [b]CRUST CRACK[r] [once-now of vc-crust-crack rule] [jack] is gone."
@@ -102,7 +102,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "plight"	"please"	--	--	false	true	true	false	slight sleaze	vc-plight-please rule	vr-plight-please rule	--	"You can explain [b]PLIGHT PLEASE[r] [once-now of vc-plight-please rule] you've started to chip away at the slight sleaze."
 "right"	"root"	"write/route"	--	false	true	true	false	slight sleaze	vc-right-root rule	vr-right-root rule	--	"You can grow trite trees with the [b]RIGHT ROOT[r] [once-now of vc-right-root rule] you've fought back against the slight sleaze."
 "bleak"	"blaming"	--	--	false	true	true	false	freak framing seek sameing	vc-bleak-blaming rule	vr-bleak-blaming rule	--	--
-"chic"	"shaming"	"shiek/sheik"	--	false	true	true	false	freak framing seek sameing	vc-chic-shaming rule	vr-chic-shaming rule	--	"You can go full-in for [b]CHIC SHAMING[r] [once-now of vc-chic-shaming rule] you've re-framed the freak framing."
+"chic|chique"	"shaming"	"shiek/sheik"	--	false	true	true	false	freak framing seek sameing	vc-chic-shaming rule	vr-chic-shaming rule	--	"You can go full-in for [b]CHIC SHAMING[r] [once-now of vc-chic-shaming rule] you've re-framed the freak framing."
 "clique"	"claiming"	--	--	false	true	false	false	freak framing seek sameing	vc-clique-claiming rule	vr-clique-claiming rule	--	--
 "bred"	"bros"	"bread"	--	false	true	true	false	freak framing seek sameing	vc-bred-bros rule	vr-bred-bros rule	--	"You can summon [b]BRED BROS[r] [once-now of vc-bred-bros rule] you need folks with charisma to communicate a positive vision."
 "bad"	"boast"	--	--	false	true	true	false	Mad Most Cad Coast	vc-bad-boast rule	vr-bad-boast rule	--	-- [start docking diffed/white whale]
@@ -266,6 +266,10 @@ this is the vr-gee-junk rule:
 	say "My goodness, yes! There is something in the tree trunk! It's marked [fruit].";
 	now free fruit is in TTTT;
 
+this is the vh-whee-woot rule:
+	say "You're thinking small. Be more enthusiastic!";
+	the rule succeeds;
+
 a goodrhyme rule (this is the vc-whee-woot rule):
 	if player is not in TTTT and free fruit is not in TTTT, unavailable;
 	if sco-whee-woot is true:
@@ -278,7 +282,7 @@ this is the vr-whee-woot rule:
 	say "The [fruit] seems to glow a bit from your praise.";
 
 a goodrhyme rule (this is the vc-pear-peach rule):
-	if player is not in TTTT, unavailable;
+	if player is not in TTTT or pear peach is moot, unavailable;
 	if sco-whee-woot is false:
 		vcp "The [fruit] sputters a bit, almost as if it sticks its tongue about you. Weird as it sounds, you may have to show appreciation for it.";
 		not-yet;
@@ -333,6 +337,9 @@ this is the vc-bare-beach rule:
 	if player does not have pear peach:
 		vcp "You should be able to do that, but you lack the necessary implement.";
 		not-yet;
+	if player has pear peach and player is not in rare reach:
+		vcp "You're in the wrong place. [if rare reach is visited]You've been to the right one[else]Explore a bit. The right place isn't far[end if].";
+		not-yet;
 	ready;
 
 this is the vr-bare-beach rule:
@@ -359,7 +366,7 @@ this is the vc-reap-rune rule:
 		vcp "The dune is a bit too big now. Maybe you could find a way to reduce it, over time.";
 		not-yet;
 	if flag-reap-rune is false:
-		vcp "The dune has started seeping, but not enough. Maybe you'll need to come back later.";
+		vcp "The dune has started seeping, but not enough. Maybe you'll need to come back, err, soon. Watched pot never boils, and all that sort of thing.";
 		not-yet;
 	if sco-reap-rune is true:
 		vcal "You already reaped a rune.";
@@ -386,7 +393,7 @@ this is the vr-un-arm rule:
 a goodrhyme rule (this is the vc-go-goon rule):
 	if player is not in NoNoon, unavailable;
 	if Rho Rune is off-stage:
-		vcp "You try to form the words, but you don't feel brave enough. Perhaps the right sort of relic would help you.";
+		vcp "You try to form the words, but you don't feel brave enough. Perhaps the right sort of relic would help you.[rune-cue]";
 		not-yet;
 	if sco-go-goon is true:
 		vcal "You already dispelled the goon!";
@@ -403,7 +410,7 @@ a goodrhyme rule (this is the vc-co-coon rule):
 		vcal "You already placed the cocoon.";
 		already-done;
 	if sco-go-goon is false:
-		vcp "You can't do anything while oppressed by enemies. How to call them off?";
+		vcp "You can't do anything while oppressed by enemies. You need to call them off.[rune-cue]";
 		not-yet;
 	ready;
 
@@ -417,7 +424,7 @@ a goodrhyme rule (this is the vc-mo-moon rule):
 		vcal "The moon has already appeared!";
 		already-done;
 	if sco-co-coon is false:
-		vcp "It's scary the sky's so dark, but you sense someone, or something, might need the moon and such to reach its potential. But what, or who?";
+		vcp "It's scary the sky's so dark, but you sense someone, or something, might need the moon and such to reach its potential. But what, or who?[rune-cue]";
 		not-yet;
 	ready;
 
@@ -431,7 +438,7 @@ a goodrhyme rule (this is the vc-so-soon rule):
 		vcal "You already sped time up.";
 		already-done;
 	if sco-mo-moon is false:
-		vcp "You would like time to speed up and dawn to break. But something's missing from the sky.";
+		vcp "You would like time to speed up and dawn to break. But something's missing from the sky.[rune-cue]";
 		not-yet;
 	ready;
 
@@ -445,7 +452,7 @@ a goodrhyme rule (this is the vc-crow-croon rule):
 		vcal "You already had the crow croon!";
 		already-done;
 	if sco-co-coon is false:
-		vcp "The crow can't croon until it's ready. And it's not time yet. How could you make time advance, right here, right now?";
+		vcp "The crow can't croon until it's ready. And it's not time yet. How could you make time advance, right here, right now?[rune-cue]";
 		not-yet;
 	ready;
 
@@ -553,7 +560,7 @@ this is the vr-grokking-grift rule:
 
 a goodrhyme rule (this is the vc-rocking-rift rule):
 	if locking lift is not fungible, unavailable;
-	if sco-rocking-rift is true:
+	if sco-throw-through is true:
 		vcal "You already brought life back to the [show shoe]. You don't need to go back.";
 		already-done;
 	ready;
@@ -605,8 +612,7 @@ this is the vr-despite-dispute rule:
 a goodrhyme rule (this is the vc-mocking-miffed rule):
 	if locking lift is not fungible, unavailable;
 	if hub-score < 5:
-		vcp "The mocking, miffed--well, it is there, but you don't quite have the confidence yet to face it. You've only fully tackled [if hub-score is 0]none[else][hub-score in words][end if] of the other five areas the locking lift can access.";
-		now tried-mocking-miffed is true;
+		vcp "[try-miffed]The mocking, miffed--well, it is there, but you don't quite have the confidence yet to face it. You've only fully tackled [if hub-score is 0]none[else][hub-score in words][end if] of the other five areas the locking lift can access.";
 		not-yet;
 	ready;
 
@@ -855,7 +861,7 @@ a goodrhyme rule (this is the vc-umm-out rule):
 		vcp "You can't just come in here cold like that! Maybe with the right preparation, an 'umm, out' would be more forceful.";
 		not-yet;
 	if sco-said-sos is false:
-		vcp "You've instilled doubt, but you need an argument. Perhaps one that originated somewhere else..";
+		vcp "You've instilled doubt, but you need an argument. Perhaps one that originated somewhere else.";
 		not-yet;
 	ready;
 
@@ -914,7 +920,7 @@ a goodrhyme rule (this is the vc-rad-roast rule):
 
 this is the vr-rad-roast rule:
 	now sco-rad-roast is true;
-	say "You strike back to show you know what's what. The voice goes away.!";
+	say "You strike back to show you know what's what. The voice goes away!";
 	now Trite Trail is mapped west of Mad Most Cad Coast;
 	print-the-loc;
 
@@ -1020,7 +1026,7 @@ a goodrhyme rule (this is the vc-tight-tease rule):
 
 this is the vr-tight-tease rule:
 	now sco-tight-tease is true;
-	say "You figure, if you can't beat [']em, join [']em, or just pretend to. You demand something more risque, which the slight sleaze is unable to provide. This doesn't win the war, but it wins a small, satisfying pointless side battle.";
+	say "You figure, if you can't beat [']em, join [']em, or just pretend to. You demand something more risque, which the slight sleaze is unable to provide. This doesn't win the war, but it wins a small, satisfying pointless side battle.[line break]Okay, yeah, I may've said this isn't that sort of game, but you're only getting a bonus point here, and this one just fit too well.";
 
 a goodrhyme rule (this is the vc-bright-breeze rule):
 	if player is not in slight sleaze, unavailable;
@@ -1328,7 +1334,7 @@ this is the diss-monk rule:
 	if monk-score < 1:
 		say "The mad monk blinks a bit. That one hurt. Your attack was simple but effective. Maybe one more...";
 		continue the action;
-	say "That's it. The mad monk flees. The path south really is free now.";
+	say "That's it. The mad monk flees. The path north really is free now.";
 	moot mad monk;
 
 to say alr-ins: say "You already insulted the mad monk's "
@@ -1353,7 +1359,13 @@ to say poke-mad-monk:
 		say "when";
 	say " you've poked the Mad Monk enough";
 
-[hub 0. transport]
+[no noon]
+
+to say rune-cue: if player does not have rho rune, say "[run paragraph on] You feel as though you're missing something basic and fundamental as well, an emblem to start whatever ritual you need to perform here[one of].[paragraph break]Also, more fourth-wallishly, the solution may be anticlimactic if you figure everything out here before finding said magic item. A few testers said so[or][stopping].[run paragraph on]"
+
+[hub 0. lift and transport]
+
+to say try-miffed: now tried-mocking-miffed is true;
 
 to take-lift (rm - a room):
 	move locking lift to rm;
@@ -1371,7 +1383,7 @@ to decide which number is shoal-core-score:
 to check-red-rose:
 	say "[line break]";
 	if shoal-core-score is 2:
-		say "Things are livelier now. Plants come into bloom, etc. Of course, there is a red rose, because there always is one. You take it. Who knows where it may come in handy?";
+		say "Things are livelier now. Plants come into bloom, etc. Of course, there is a red rose, because there always is one during such a quick transformation. You take it. Who knows where it may come in handy?";
 		now player has red rose;
 		take-lift high hub;
 	else:
@@ -1382,7 +1394,7 @@ this is the animals-need-shoals rule:
 		vcp "[nice-animals].";
 		not-yet;
 
-to lose-rose-petal: say "[line break]A[one of][or]nother[stopping] bright petal falls off the red rose."
+to lose-rose-petal: say "[line break]A[one of][or]nother[stopping] bright petal falls off the red rose and blows away in the wind."
 
 [hub 2. shoe]
 
@@ -1500,7 +1512,7 @@ locking lift	"You see [lift-score in words] of six settings filled in:[paragraph
 
 to say lift-stuff:
 	say "[if sco-docking-diffed is true]DOCKING DIFFED[else]------- ------[end if][if sco-excite-exhale is true] (done)[end if].";
-	say "[if sco-grokking-grift is true]GROKKING GRIFT[else]------- ------[end if][if sco-chic-shaming is true] (done)[end if].";
+	say "[if sco-grokking-grift is true]GROKKING GRIFT[else]-------- ------[end if][if sco-chic-shaming is true] (done)[end if].";
 	say "[if tried-mocking-miffed is true or sco-mocking-miffed is true]MOCKING MIFFED[else]------- ------[end if][if hub-score < 5] (not yet)[end if]."; [ no (done) case since it is the final one ]
 	say "[if sco-rocking-rift is true]ROCKING RIFT[else]------ ----[end if][if sco-throw-through is true] (done)[end if].";
 	say "[if sco-shocking-shift is true]SHOCKING SHIFT[else]-------- -----[end if][if shoal-core-score is 2] (done)[end if].";
@@ -1555,7 +1567,7 @@ Hun Harm Fun Farm	"If you left the north/east passage, you'd probably get lost."
 NoNoon	"[if sco-mo-moon is false]Any way but back south might get you lost in this darkness[else]In this quasi-sacred valley, the only way out is back south[end if]."
 Rare Reach	"The [if sco-bare-beach is true]water[else]darkness[end if] encompasses you every way except back south."
 Jotty Jail	"This being a jail, you can't walk out. You have to find a weak link or something."
-High Hub	"The only way out of the High Hub[if sco-bye-bub is true], besides going back down the sturdy stalk,[end if] is telling the lift where you want to go. Okay, the only non-lethal way."
+High Hub	"The only way out of the High Hub[if sco-bye-bub is true], besides going back down the sturdy stalk,[else] (well, currently,)[end if] is telling the locking lift where you want to go. Okay, the only non-lethal way."
 Gore Goals	"Exploring the [if sco-shore-shoals is false]darkness would be unwise[else]animal sanctuary you hope to build would feel invasive[end if]. The only way out is entering the lift."
 New Show Shoe	"There's no way out except through the lift. You're the only person to get the show started, here."
 Mad Most Cad Coast	"West is the only way out, other than the lift. You [if sco-rad-roast is false]don't yet [end if]have the confidence to go west."
