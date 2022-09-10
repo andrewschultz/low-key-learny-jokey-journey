@@ -347,7 +347,7 @@ The HA HALF button lights up on your Leet Learner, but dimly--perhaps this is a 
 
 >u
 
-##RBRSHUFFLESTART=0
+##RBRS-SHUFFLESTART=0
 
 #testcase-ha-half-table-of-verb-checks-32-rocking
 >rocking zrift
@@ -459,8 +459,8 @@ by one point
 >throw through
 by one point
 
-##RBRSHUFFLEEND=0
-##RBRSHUFFLESTART=1
+##RBRS-SHUFFLEEND=0
+##RBRS-SHUFFLESTART=1
 
 #testcase-ha-half-table-of-verb-checks-31-shocking
 >shocking zshift
@@ -524,11 +524,15 @@ The HA HALF button lights up on your Leet Learner, but dimly--perhaps this is a 
 >shore shoals
 by one point
 
+##RBRS-SHUFFLECONDITION=1>0
+
 >night newt
 by one point
 
 >kite coot
 by one point
+
+##RBRS-SHUFFLECONDITION=
 
 >lore lols
 by one point
@@ -539,8 +543,8 @@ by one point
 >more moles
 by one point
 
-##RBRSHUFFLEEND=1
-##RBRSHUFFLESTART=2
+##RBRS-SHUFFLEEND=1
+##RBRS-SHUFFLESTART=2
 
 #testcase-ha-half-table-of-verb-checks-33-stocking
 >stocking zstiffed
@@ -610,8 +614,8 @@ The HA HALF button lights up on your Leet Learner.
 >k cope
 by one point
 
-##RBRSHUFFLEEND=2
-##RBRSHUFFLESTART=3
+##RBRS-SHUFFLEEND=2
+##RBRS-SHUFFLESTART=3
 
 #testcase-ha-half-table-of-verb-checks-34-grokking
 >grokking zgrift
@@ -714,8 +718,8 @@ by one point
 >bred bros
 by one point
 
-##RBRSHUFFLEEND=3
-##RBRSHUFFLESTART=4
+##RBRS-SHUFFLEEND=3
+##RBRS-SHUFFLESTART=4
 
 #testcase-ha-half-table-of-verb-checks-35-docking
 >docking zdiffed
@@ -826,7 +830,7 @@ The HA HALF button lights up on your Leet Learner, but dimly--perhaps this is a 
 >zdespite dispute
 The HA HALF button lights up on your Leet Learner, but dimly--perhaps this is a rhyme you don't strictly need to figure to win.
 
-##RBRSHUFFLEEND=4
+##RBRS-SHUFFLEEND=4
 
 >despite dispute
 by one point

@@ -718,7 +718,7 @@ You already had the crow croon!
 >bye bub
 No need to say good-bye twice. That's just awkward, besides, just typing DOWN or D saves emotional energy and keystrokes.
 
-##RBRSHUFFLESTART=0
+##RBRS-SHUFFLESTART=0
 
 >rocking rift
 by one point
@@ -844,8 +844,8 @@ You can grow trite trees with the RIGHT ROOT once you've fought back against the
 >rocking rift
 You already brought life back to the Whoah-Woo-Show Shoe. You don't need to go back.
 
-##RBRSHUFFLEEND=0
-##RBRSHUFFLESTART=1
+##RBRS-SHUFFLEEND=0
+##RBRS-SHUFFLESTART=1
 
 >shocking shift
 by one point
@@ -883,11 +883,15 @@ by one point
 >shore shoals
 You have already rehabilitated the sore souls' gore goals!
 
+##RBRS-SHUFFLECONDITION=1>0
+
 >night newt
 by one point
 
 >kite coot
 by one point
+
+##RBRS-SHUFFLECONDITION=
 
 >lore lols
 by one point
@@ -928,8 +932,8 @@ by one point
 >shocking shift
 You already took care of the shocking shift!
 
-##RBRSHUFFLEEND=1
-##RBRSHUFFLESTART=2
+##RBRS-SHUFFLEEND=1
+##RBRS-SHUFFLESTART=2
 
 >stocking stiffed
 by one point
@@ -994,8 +998,8 @@ by one point
 >stocking stiffed
 You already took care of the Rum Route!
 
-##RBRSHUFFLEEND=2
-##RBRSHUFFLESTART=3
+##RBRS-SHUFFLEEND=2
+##RBRS-SHUFFLESTART=3
 
 >grokking grift
 by one point
@@ -1080,8 +1084,8 @@ by one point
 >grokking grift
 You already figured everything about grokking grift.
 
-##RBRSHUFFLEEND=3
-##RBRSHUFFLESTART=4
+##RBRS-SHUFFLEEND=3
+##RBRS-SHUFFLESTART=4
 
 >docking diffed
 by one point
@@ -1173,7 +1177,7 @@ by one point
 >docking diffed
 You already conquered the tight-tail white whale. No need to go back.
 
-##RBRSHUFFLEEND=4
+##RBRS-SHUFFLEEND=4
 
 >despite dispute
 by one point

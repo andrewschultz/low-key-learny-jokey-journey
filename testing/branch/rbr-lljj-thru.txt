@@ -16,7 +16,7 @@
 # 2 = route/stocking, need rose
 # 3 = sleaze/grokking, need loot and rose
 # 4 = trail/docking, need loot
-##RBRCONSTRAINTS=1<2,0<3,1<3,0<4
+##RBRCONSTRAINTS=1<2,0<3,1<3,0<4,1<4
 
 files=reg-lljj-thru-min.txt,reg-lljj-thru-all.txt,reg-lljj-thru-reject.txt,reg-lljj-thru-alt-verbs.txt,reg-lljj-thru-fake-deaths.txt,reg-lljj-thru-mistakes.txt,reg-lljj-thru-ha-half.txt,reg-lljj-thru-homonyms.txt,reg-lljj-thru-verbs.txt,reg-lljj-thru-goto.txt
 ~	min	t0
@@ -2050,7 +2050,7 @@ No need to say good-bye twice. That's just awkward, besides, just typing DOWN or
 >sigh sub
 You sigh at what you did down below, wondering if you should go back.
 
-##RBRSHUFFLESTART=0
+##RBRS-SHUFFLESTART=0
 
 @ha
 #testcase-ha-half-table-of-verb-checks-32-rocking
@@ -2136,7 +2136,7 @@ You don't need to be expressing contempt here.
 \\
 #ttc-table-of-no-new-show-shoe-guesses-grow-grue
 >grow grue
-You want entertainers who crave the spotlight, not avoid it. Also, you'd prefer them less predatory, too.
+You want entertainers who crave the spotlight, not avoid it. Also, you'd prefer them less predatory.
 \\
 #ttc-table-of-no-new-show-shoe-guesses-lo-low-lew-lou
 >lo lew
@@ -2434,8 +2434,8 @@ While it's okay to be white, it's not okay to be all IT'S OKAY TO BE WHITE.
 >rocking rift
 You already brought life back to the Whoah-Woo-Show Shoe. You don't need to go back.
 
-##RBRSHUFFLEEND=0
-##RBRSHUFFLESTART=1
+##RBRS-SHUFFLEEND=0
+##RBRS-SHUFFLESTART=1
 
 @ha
 #testcase-ha-half-table-of-verb-checks-31-shocking
@@ -2586,6 +2586,8 @@ You have already rehabilitated the sore souls' gore goals!
 #+testcase-room-names-sore-souls-gore-goals
 /^Shore Shoals
 
+##RBRS-SHUFFLECONDITION=1>0
+
 @!min
 >night newt
 by one point
@@ -2598,7 +2600,10 @@ by one point
 }}SCORE++
 }}CURMIN++
 }}CURMINBONUS++
-\\
+
+##RBRS-SHUFFLECONDITION=
+
+@!min
 >lore lols
 by one point
 }}SCORE++
@@ -2718,8 +2723,8 @@ A sad, succinct tale, indeed.
 >shocking shift
 You already took care of the shocking shift!
 
-##RBRSHUFFLEEND=1
-##RBRSHUFFLESTART=2
+##RBRS-SHUFFLEEND=1
+##RBRS-SHUFFLESTART=2
 
 @ha
 #testcase-ha-half-table-of-verb-checks-33-stocking
@@ -2730,13 +2735,16 @@ The HA HALF button lights up on your Leet Learner.
 >zstocking stiffed
 The HA HALF button lights up on your Leet Learner.
 
+@min
+#testcase-just-checking
+
 >stocking stiffed
 by one point
 }}SCORE++
 
 @min
 #testcase-room-names-rum-route
-/^Rum Route
+/^um-'Bout Rum Route
 
 @gt
 #ttc-table-of-noways-rum-route
@@ -2751,19 +2759,19 @@ While you can go back into the lift, you suspect the route leads somewhere, once
 You can't go in any direction yet, but you can ENTER the locking lift to go back to High Hub.
 
 @mis
-#ttc-table-of-rum-route-guesses-bum-bout
->bum bout
-You should have more focus than to bum 'bout.
-\\
-#ttc-table-of-rum-route-guesses-drum-drought
+#ttc-table-of-bum-bout-rum-route-guesses-drum-drought
 >drum drought
 Thankfully, there's no percussion in the background.
 \\
-#ttc-table-of-rum-route-guesses-gum-gout
+#ttc-table-of-bum-bout-rum-route-guesses-gum-gout
 >gum gout
 But gout is in the toes, not the mouth.
 \\
-#ttc-table-of-rum-route-guesses-pum-pout
+#ttc-table-of-bum-bout-rum-route-guesses-numb-nowt
+>numb nowt
+Once you're more confident, you won't want to feel numb any more, and it'll just happen.
+\\
+#ttc-table-of-bum-bout-rum-route-guesses-pum-pout
 >pump out
 Clever sleight-of-mouth, but I can't quite allow it.
 
@@ -2829,6 +2837,10 @@ You already gave said-sos!
 by one point
 }}SCORE++
 
+@min
+#+testcase-room-names-rum-route
+/^Numb\? NOWT!
+
 @gt
 #+ttc-table-of-noways-rum-route
 >n
@@ -2887,6 +2899,9 @@ The right sort of ray? Yes. Rope to pull you back? No.
 #ttc-table-of-nay-nope-slay-slope-guesses-say-soap
 >say soap
 I suppose I should put in a cliche about cleansing one's soul here.
+#ttc-table-of-nay-nope-slay-slope-guesses-stay-stope
+>stay stope
+Building a long-lasting mine here would not make or keep things happier.
 \\
 #ttc-table-of-nay-nope-slay-slope-guesses-tray-tres-trope
 >tray trope
@@ -2943,8 +2958,8 @@ by one point
 >stocking stiffed
 You already took care of the Rum Route!
 
-##RBRSHUFFLEEND=2
-##RBRSHUFFLESTART=3
+##RBRS-SHUFFLEEND=2
+##RBRS-SHUFFLESTART=3
 
 @ha
 #testcase-ha-half-table-of-verb-checks-34-grokking
@@ -3252,8 +3267,8 @@ by one point
 >grokking grift
 You already figured everything about grokking grift.
 
-##RBRSHUFFLEEND=3
-##RBRSHUFFLESTART=4
+##RBRS-SHUFFLEEND=3
+##RBRS-SHUFFLESTART=4
 
 @ha
 #testcase-ha-half-table-of-verb-checks-35-docking
@@ -3557,7 +3572,7 @@ The HA HALF button lights up on your Leet Learner, but dimly--perhaps this is a 
 >zdespite dispute
 The HA HALF button lights up on your Leet Learner, but dimly--perhaps this is a rhyme you don't strictly need to figure to win.
 
-##RBRSHUFFLEEND=4
+##RBRS-SHUFFLEEND=4
 
 @!min
 >despite dispute

@@ -152,7 +152,7 @@ by one point
 
 >undo
 
-##RBRSHUFFLESTART=0
+##RBRS-SHUFFLESTART=0
 
 >rocking rift
 by one point
@@ -187,8 +187,8 @@ by one point
 >throw through
 by one point
 
-##RBRSHUFFLEEND=0
-##RBRSHUFFLESTART=1
+##RBRS-SHUFFLEEND=0
+##RBRS-SHUFFLESTART=1
 
 >shocking shift
 by one point
@@ -202,20 +202,26 @@ by one point
 #+testcase-room-names-sore-souls-gore-goals
 /^Shore Shoals
 
+##RBRS-SHUFFLECONDITION=1>0
+
+##RBRS-SHUFFLECONDITION=
+
 >four foals
 by one point
 
 >more moles
 by one point
 
-##RBRSHUFFLEEND=1
-##RBRSHUFFLESTART=2
+##RBRS-SHUFFLEEND=1
+##RBRS-SHUFFLESTART=2
+
+#testcase-just-checking
 
 >stocking stiffed
 by one point
 
 #testcase-room-names-rum-route
-/^Rum Route
+/^um-'Bout Rum Route
 
 >dumb doubt
 by one point
@@ -225,6 +231,9 @@ by one point
 
 >umm out
 by one point
+
+#+testcase-room-names-rum-route
+/^Numb\? NOWT!
 
 >d
 
@@ -237,8 +246,8 @@ by one point
 >k cope
 by one point
 
-##RBRSHUFFLEEND=2
-##RBRSHUFFLESTART=3
+##RBRS-SHUFFLEEND=2
+##RBRS-SHUFFLESTART=3
 
 >grokking grift
 by one point
@@ -272,8 +281,8 @@ by one point
 >bred bros
 by one point
 
-##RBRSHUFFLEEND=3
-##RBRSHUFFLESTART=4
+##RBRS-SHUFFLEEND=3
+##RBRS-SHUFFLESTART=4
 
 >docking diffed
 by one point
@@ -312,7 +321,7 @@ by one point
 >excite exhale
 by one point
 
-##RBRSHUFFLEEND=4
+##RBRS-SHUFFLEEND=4
 
 >mocking miffed
 by one point

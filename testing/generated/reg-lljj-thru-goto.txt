@@ -357,7 +357,7 @@ The only way out of the High Hub, besides going back down the sturdy stalk, is t
 >exits
 The locking lift is the main way out of here, but you can go back DOWN the stalk.
 
-##RBRSHUFFLESTART=0
+##RBRS-SHUFFLESTART=0
 
 >rocking rift
 by one point
@@ -397,8 +397,8 @@ by one point
 >throw through
 by one point
 
-##RBRSHUFFLEEND=0
-##RBRSHUFFLESTART=1
+##RBRS-SHUFFLEEND=0
+##RBRS-SHUFFLESTART=1
 
 >shocking shift
 by one point
@@ -418,11 +418,15 @@ by one point
 >n
 Exploring the animal sanctuary you hope to build would feel invasive. The only way out is entering the lift.
 
+##RBRS-SHUFFLECONDITION=1>0
+
 >night newt
 by one point
 
 >kite coot
 by one point
+
+##RBRS-SHUFFLECONDITION=
 
 >lore lols
 by one point
@@ -433,8 +437,8 @@ by one point
 >more moles
 by one point
 
-##RBRSHUFFLEEND=1
-##RBRSHUFFLESTART=2
+##RBRS-SHUFFLEEND=1
+##RBRS-SHUFFLESTART=2
 
 >stocking stiffed
 by one point
@@ -486,8 +490,8 @@ by one point
 >k cope
 by one point
 
-##RBRSHUFFLEEND=2
-##RBRSHUFFLESTART=3
+##RBRS-SHUFFLEEND=2
+##RBRS-SHUFFLESTART=3
 
 >grokking grift
 by one point
@@ -549,8 +553,8 @@ by one point
 >bred bros
 by one point
 
-##RBRSHUFFLEEND=3
-##RBRSHUFFLESTART=4
+##RBRS-SHUFFLEEND=3
+##RBRS-SHUFFLESTART=4
 
 >docking diffed
 by one point
@@ -604,7 +608,7 @@ by one point
 >excite exhale
 by one point
 
-##RBRSHUFFLEEND=4
+##RBRS-SHUFFLEEND=4
 
 >despite dispute
 by one point
