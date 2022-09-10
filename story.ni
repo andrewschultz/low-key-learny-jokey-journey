@@ -182,6 +182,10 @@ to decide which number is variable-scan-length of (mynum - a number):
 		if sco-set-see is false, decide on 33;
 		if sco-fret-free is false, decide on 44;
 		decide on 0;
+	else if mynum is 113: [stun storm ... put in late as I didn't consider NUN NORM ]
+		if sco-done-dorm is false, decide on 44;
+		if sco-fun-form is false, decide on 34;
+		decide on 0;
 	say "[b]BUG[r]: no variable-scan-length for [mynum]. Please let me know what you typed.";
 	decide on 44;
 
@@ -349,6 +353,8 @@ sco-fun-form is a truth state that varies.
 
 check going north in One Warm Stun Storm:
 	if sco-fun-form is false, say "You feel your will sapped as you attempt to go north. You'll need to sit out the storm first." instead;
+
+guess-table of One Warm Stun Storm is table of one warm stun storm guesses.
 
 chapter done dorm
 

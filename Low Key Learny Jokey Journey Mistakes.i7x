@@ -199,6 +199,14 @@ this is the untrolled-yet rule:
 	if sco-trolled-trend is false, the rule succeeds;
 	the rule fails;
 
+table of one warm stun storm guesses
+mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
+"none/nun norm"	--	false	113	no-fun-form rule	"You wouldn't want to instill strict morals on this place. Or deny Mr. Peterson an extension of his bar tab."
+
+this is the no-fun-form rule:
+	if sco-fun-form is false, the rule succeeds;
+	the rule fails;
+
 table of rare reach guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "air/ere/err each"	--	false	45	need-bare-beach rule	"There aren't enough things to be each-worthy here."
