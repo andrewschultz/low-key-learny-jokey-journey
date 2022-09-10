@@ -272,9 +272,13 @@ check going in nnss:
 	if sco-grow-grudge is false and noun is not south:
 		say "The [sludge] slows you up, which frustrates you. Maybe if it could annoy you the right way..." instead;
 
+after printing the locale description when player is in NNSS and high hub is visited:
+	say "It might be fun to hang around down here and mooch for good guesses, if that's your gig. But you think back to the locking lift and where [if lift-score > 0]else [end if]it could go, if you rack your brain.";
+	continue the action;
+
 chapter no nudge slow sludge (scenery)
 
-there is thing called no nudge slow sludge. It is scenery. It is in NNSS. printed name is "no-nudge slow sludge". "It sure is icky! Just looking at it makes you too mad, too fast. You need the right way to be disgusted by [the sludge]."
+there is thing called no nudge slow sludge. It is scenery. It is in NNSS. printed name is "no-nudge slow sludge". "[if sco-grow-grudge is false]It sure is icky! Just looking at it makes you too mad, too fast. You need the right way to be[else]It's icky, but since it's out of the way, you're no longer[end if] disgusted by [the sludge]."
 
 sco-grow-grudge is a truth state that varies.
 
@@ -294,7 +298,7 @@ guess-table of sturdy stalk is the table of sturdy stalk guesses.
 
 book Hun Harm Fun Farm
 
-Hun Harm Fun Farm is west of NNSS. it is in Hoppin' Heart. "The way bends north here[if sco-un-arm is false]. You hear the clash of weapons that way, though, so it feels unsafe. Maybe you can cut a way through[end if]. There's also passage back east."
+Hun Harm Fun Farm is west of NNSS. it is in Hoppin' Heart. "The way bends north here[if sco-un-arm is false]. You hear the clash of weapons that way, though, so it feels unsafe. Maybe you can cut a way through with a surprisingly simple idea[end if]. There's also passage back east."
 
 check going north in hun harm fun farm when sco-un-arm is false: say "Unfortunately, you hear aggressive voices threatening to attack you. They have weapons, and you don't. You're not sure how to change this." instead;
 
@@ -324,7 +328,7 @@ to say noon-room:
 	else if sco-crow-croon is false:
 		say "Daybreak must be coming soon! You just need a sign from nature, but -- not the usual one for sunrise";
 	else:
-		say "It's quite bright here now! The rocky terrain surrounding this valley is carved with all sorts of mysterious glyphs beyond your comprehension. The exit is back south";
+		say "It's quite bright here now! The rocky terrain surrounding this valley is carved with all sorts of mysterious glyphs beyond your comprehension. Peace is restored, so all that's left to do is go back south";
 		continue the action;
 	if sco-mo-moon is true, say ". Now there's a bit more light, you see there aren't any hidden passages, and back south really is the only way out."
 
@@ -343,7 +347,7 @@ understand "show/shewn" and "show shewn" as NoNoon when cocoon is moot.
 
 after printing the locale description when location of player is NoNoon:
 	if sco-go-goon is false:
-		say "You feel the presence of something bad here[if sco-reap-rune is false], and worse, you feel helpless to fight it, for now[end if].";
+		say "You feel the presence of something bad here[if sco-reap-rune is false], and worse, you feel helpless to fight it, for now. But perhaps trying incantations and such will help you out for later[end if].";
 	continue the action;
 
 the cocoon is a thing. "The cocoon you summoned still lies here.". description is "It's lying here, ready to open, if enough time passes."
@@ -411,7 +415,7 @@ description of Just Jack is "He is just sitting around here with no better place
 
 chapter Sus Sack
 
-the sus sack is a rhymable. description is "What could be in it? It feels both light and heavy at the same time, both practical and impractical."
+the sus sack is a rhymable. description is "What could be in the sus sack? It feels both light and heavy at the same time, both practical and impractical."
 
 guess-table of sus sack is table of sus sack guesses.
 
@@ -445,7 +449,7 @@ the deep dune is a rhymable. it is scenery. "[if rho rune is off-stage]Man! It's
 
 chapter Rho Rune
 
-the Rho Rune is a rhymable. description is "It's shaped like the Greek letter Rho."
+the Rho Rune is a rhymable. description is "It's shaped like the Greek letter Rho. So I guess it has both ancient mystique and modern power, or something."
 
 guess-table of Rho Rune is table of nonoon guesses.
 
@@ -601,7 +605,7 @@ to say shoe-desc:
 		say ". The brew and stew there should sustain the crowd nicely";
 
 after printing the locale description when player is in Show Shoe (this is the show shoe extra 1 rule):
-	if sco-crow-crew is false, say "There are no performers yet. What could the group's name be?";
+	if sco-crow-crew is false, say "There are no performers yet[if lazy loud crazy crowd is off-stage], either[end if]. What could the group's name be?";
 	if sco-go-goo is true, say "[if sco-crow-crew is false][line break][end if]There's also a pile of 'nutritious' 'energetic' Go Goo that event-goers will snap up.";
 	continue the action;
 
@@ -699,7 +703,7 @@ the trite trees are boring scenery. "Not perfect, but not sleazy, either. They s
 
 part Freak Framing Seek-Sameing
 
-Freak Framing Seek Sameing is in Poppin' Part. printed name is "[if sco-chic-shaming is true]Eek! Aiming![else]Freak-Framing Seek-Sameing[end if]". "This is a control center of some sort. You hear chatter, but there might even be some telepathy. [if sco-bleak-blaming is false]Most of the muttering is about how different people are at fault for things they don't even know about, and you don't know how to buttonhole that[else if sco-bred-bros is true]You've got all your arguments in one place. But you have to admit, you're not the one to perpetuate them! You need someone, or people, who will make it fun for any old crowd to change their attitudes for the better. Someone new from outside[else]Congratulations! You've made this a think tank with things actually worth thinking. The Bred Bros discuss ways to frame basic social decency and tolerance as far more desirable than 'edgy' conformism[end if].". spokeval of Freak Framing is 3.
+Freak Framing Seek Sameing is in Poppin' Part. printed name is "[if sco-chic-shaming is true]Eek! Aiming![else]Freak-Framing Seek-Sameing[end if]". "This is a control center of some sort. You hear chatter, but there might even be some telepathy. [if sco-bleak-blaming is false]Most of the muttering is about how different people are at fault for things they don't even know about, and you don't know how to buttonhole that[else if sco-bred-bros is false]You've got all your arguments in one place. But you have to admit, you're not the one to perpetuate them! You need someone, or people, who will make it fun for any old crowd to change their attitudes for the better. Someone new from outside[else]Congratulations! You've made this a think tank with things actually worth thinking. The Bred Bros discuss ways to frame basic social decency and tolerance as far more desirable than 'edgy' conformism[end if].". spokeval of Freak Framing is 3.
 
 Slight Sleaze is mapped north of Seek Sameing. Nowhere is mapped south of Slight Sleaze.
 guess-table of freak framing seek sameing is the table of freak framing seek sameing guesses.
@@ -714,7 +718,7 @@ book spoke 4 / docking diffed
 
 part mad most cad coast
 
-Mad Most Cad Coast is a room in Poppin' Part. printed name is "[if sco-rad-roast is true]Pad Post-Had-Host[else]Mad-Most-Cad Coast[end if]". understand "had/host pad poast" and "had post" and "had/host pad/poast" and "host pad" as Mad Most Cad Coast when sco-rad-roast is true. "[if sco-bad-boast is false]You are driven mad with all the possible ways to go here. I mean, it's the coast, so you don't want to jump in the water, but you're not focused enough[else if sco-rad-roast is false]Your mind's a bit calmer now, but not calm enough[else]The way west is clear now[end if]. You can enter the lift to go back to the High Hub, too.". spokeval of Cad Coast is 4.
+Mad Most Cad Coast is a room in Poppin' Part. printed name is "[if sco-rad-roast is true]Pad Post-Had-Host[else]Mad-Most-Cad Coast[end if]". understand "had/host pad poast" and "had post" and "had/host pad/poast" and "host pad" as Mad Most Cad Coast when sco-rad-roast is true. "[if sco-bad-boast is false]You are driven mad with all the possible ways to go here. I mean, it's the coast, so you don't want to jump in the water, but you're not focused enough[else if sco-rad-roast is false]Your mind's a bit calmer now, but not calm enough[else]The way west is clear now, and you can't imagine there's much left to do here[end if]. The lift awaits for it you wish to return to the High Hub.". spokeval of Cad Coast is 4.
 
 check going west in Mad Most Cad Coast: if sco-rad-roast is false, say "You can't go west with all the madness. Well, not yet." instead;
 
@@ -741,11 +745,15 @@ sco-excite-exhale is a truth state that varies.
 
 definition: a thing (called th) is whale-defeating:
 	unless th is scenery, no;
-	if th is white whale, no;
+	if th is white whale or th is bright brute, no;
 	yes;
 
 after printing the locale description for trite trail when whale-score > 0 and sco-excite-exhale is false:
 	say "So far you've scrounged up [a list of whale-defeating things in trite trail] for your assault on the white whale. [if whale-score is 1]It[else]They[end if][']ll be ready when needed.";
+	if bright brute is off-stage:
+		say "[line break]You could probably use an ally with bulk. You don't see any around.";
+	else if bright brute is fungible:
+		say "[line break]The bright brute wanders about happily. It seems ready but not anxious.";
 	continue the action;
 
 chapter sceneries
@@ -756,7 +764,7 @@ a flight flail is scenery. "The flight flail sits on the ground, ready for you t
 
 a bright brute is scenery. "The bright brute seems to be napping right now. Resting up for the big fight."
 
-a might mail is scenery. "The might mail is too heavy to wear until you meet the white whale, but it's shiny and bright and impressive."
+some might mail is scenery. "The might mail is too heavy to wear until you meet the white whale, but it's shiny and bright and impressive."
 
 book Mocking Miffed / spoke 5
 
@@ -914,7 +922,7 @@ this is the verb-checker rule:
 					say "[line break][one of][b]NOTE[r]: this command[if exact-cmd is false] (well, an equivalent, as there were alternate solutions)[end if] will be useful later, but you aren't ready to use it, yet. You can track commands like this by typing [b]THINK[r], which will also clue you if they now work.[or](useful command[if exact-cmd is false] (or a functionally equivalent alternate solution)[end if] again saved to [b]THINK[r] for later reference.)[stopping]";
 					now think-cue entry is true;
 				else:
-					say "[line break]Hmm, that [if exact-cmd is false](or a functionally equivalent alternate solution) [end if]still doesn't quite work here and now. But it will, somewhere, some time.";
+					say "[line break]Hmph. That [if exact-cmd is false](or a functionally equivalent alternate solution) [end if]still doesn't quite work! You'll figure out the how and when and where, though.";
 				the rule succeeds;
 			if okflip entry is false:
 				unless my-count is 4 or there is no w2 entry or the player's command matches the regular expression "^([w1 entry])\W": [using only w1 is for the DIM'D test case... and "my-count is 4" is a hack for FLIMFLAM]
