@@ -1,0 +1,111 @@
+# reg-lljj-lone-jjthru.txt
+
+## reg-lljj-lone-jjthru.txt
+## NO GENERATOR FILE, THOUGH I ORIGINALLY GOT THIS FROM THE FULL WALKTHROUGHT.
+## it roughly corresponds to reg-lljj-min-thru.txt.
+
+## walkthrough with no bonus points, jumping everywhere
+** game: /home/andrew/prt/debug-low-key-learny-jokey-journey.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main-thru
+
+# so we get properly stuck at the mad monk...
+>au 0
+
+>jj
+After some thought, you consider the right way forward: DANE D...
+
+>jj
+After some thought, you consider the right way forward: BORING BOX...
+
+>open box
+
+>n
+As you go on your way, who should block your way but a fervent Mad Monk? They can't be too tough, this early in the game, especially since their name's seven letters.
+
+>bad bunk
+by one point
+
+>sad sunk
+NOTE: this command will be useful later, but you aren't ready to use it, yet. You can track commands like this by typing THINK, which will also clue you if they now work.
+
+>jj
+The lump glistens weirdly. Perhaps you've forgotten something you tried, which didn't work then, but it does, now. (THINK should give details.) Use it anyway?
+Okay. Again, THINK should show what you can do now.
+
+>think
+(CAN DO NOW) You can say SAD SUNK again to move on when you've poked the Mad Monk enough.
+
+>pad punk
+You've discovered 1 of 12 good guesses available from the Mad Monk, and you have not found the Last Lousy Point. If that's good enough, say SAD SUNK again to move on.
+
+>undo
+>undo
+>undo
+>undo
+>undo
+
+>sad sunk
+by one point
+
+>bad bunk
+NOTE: this command will be useful later, but you aren't ready to use it, yet. You can track commands like this by typing THINK, which will also clue you if they now work.
+
+>jj
+The lump glistens weirdly. Perhaps you've forgotten something you tried, which didn't work then, but it does, now. (THINK should give details.) Use it anyway?
+Okay. Again, THINK should show what you can do now.
+
+>think
+(CAN DO NOW) You can say BAD BUNK again to move on when you've poked the Mad Monk enough.
+
+>pad punk
+You've discovered 1 of 12 good guesses available from the Mad Monk, and you have not found the Last Lousy Point. If that's good enough, say BAD BUNK again to move on.
+
+>brad brunk
+You've discovered 2 of 12 good guesses available from the Mad Monk, and you have not found the Last Lousy Point. If that's good enough, say BAD BUNK again to move on.
+
+>chad chunk
+You've discovered 3 of 12 good guesses available from the Mad Monk, and you have not found the Last Lousy Point. If that's good enough, say BAD BUNK again to move on.
+
+>clad clunk
+You've discovered 4 of 12 good guesses available from the Mad Monk, and you have not found the Last Lousy Point. If that's good enough, say BAD BUNK again to move on.
+
+>dad dunk
+You've discovered 5 of 12 good guesses available from the Mad Monk, and you have not found the Last Lousy Point. If that's good enough, say BAD BUNK again to move on.
+
+>fad funk
+You've discovered 6 of 12 good guesses available from the Mad Monk, and you have not found the Last Lousy Point. If that's good enough, say BAD BUNK again to move on.
+
+>grad grunk
+You've discovered 7 of 12 good guesses available from the Mad Monk, and you have not found the Last Lousy Point. If that's good enough, say BAD BUNK again to move on.
+
+>had hunk
+You've discovered 8 of 12 good guesses available from the Mad Monk, and you have not found the Last Lousy Point. If that's good enough, say BAD BUNK again to move on.
+
+>lad lunk
+You've discovered 9 of 12 good guesses available from the Mad Monk, and you have not found the Last Lousy Point. If that's good enough, say BAD BUNK again to move on.
+
+>plaid plunk
+You've discovered 10 of 12 good guesses available from the Mad Monk, and you have not found the Last Lousy Point. If that's good enough, say BAD BUNK again to move on.
+
+>scad skunk
+You've discovered 11 of 12 good guesses available from the Mad Monk, and you have not found the Last Lousy Point. If that's good enough, say BAD BUNK again to move on.
+
+>gad gunk
+You've discovered 11 of 12 good guesses available from the Mad Monk, and you have found the Last Lousy Point. If that's good enough, say BAD BUNK again to move on.
+
+>thad thunk
+You've torn apart the Mad Monk in pretty much any which way. Time to say BAD BUNK again to move on.
+!guesses available from the Mad Monk
+
+>undo
+>undo
+
+>thad thunk
+You've discovered 12 of 12 good guesses available from the Mad Monk, and you have not found the Last Lousy Point. If that's good enough, say BAD BUNK again to move on.
+
+>gad gunk
+You've torn apart the Mad Monk in pretty much any which way. Time to say BAD BUNK again to move on.
+!guesses available from the Mad Monk
+
