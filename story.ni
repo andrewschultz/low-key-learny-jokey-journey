@@ -139,7 +139,7 @@ to decide which number is variable-scan-length of (mynum - a number):
 		if sco-grokking-grift is false, decide on 85;
 		if sco-rocking-rift is false, decide on 74;
 		if sco-shocking-shift is false, decide on 75;
-		if sco-stocking-stiffed is false, decide on 87;
+		if sco-gawking-gift is false, decide on 74;
 		if sco-mocking-miffed is false, decide on 76;
 		decide on 0;
 	else if mynum is 104: [ trite trail: note we have some tricky stuff here because we have a pool of 4 things, of which 3 are 54 and 1 is 65 ]
@@ -501,7 +501,7 @@ sco-docking-diffed is a truth state that varies.
 sco-rocking-rift is a truth state that varies.
 sco-grokking-grift is a truth state that varies.
 sco-shocking-shift is a truth state that varies.
-sco-stocking-stiffed is a truth state that varies.
+sco-gawking-gift is a truth state that varies.
 sco-mocking-miffed is a truth state that varies.
 
 chapter locking lift
@@ -666,7 +666,7 @@ to decide which number is gold-lute-strings:
 to decide which number is silver-lute-strings:
 	decide on 2 - (boolval of sco-night-newt + boolval of sco-kite-coot);
 
-book spoke 2 / Stocking Stiffed
+book spoke 2 / Gawking Gift
 
 part Rum Route
 

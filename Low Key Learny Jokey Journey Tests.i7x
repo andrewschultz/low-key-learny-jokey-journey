@@ -4,7 +4,7 @@ Version 1/220715 of Low Key Learny Jokey Journey Tests by Andrew Schultz begins 
 
 volume IDE tests
 
-[test wm with "au 2/jane g/boring box/open box/n/bad bunk/sad sunk/n/grow grudge/n/done dorm/fun form/n/see sunk/gee junk/whee woot/pear peach/s/s/e/bussed back/crust crack/n/bare beach/seep soon/s/n/reap rune/s/w/w/unarm/n/go goon/cocoon/mo moon/so soon/crow croon/knotty nail/rocking rift/flow flue/glow glue/bro brew/stow stew/crow crew/ho who/yo you/throw through/shocking shift/shore shoals/four foals/more moles/docking diffed/bad boast/rad roast/w/flight flail/might mail/sight sail/right rail/bright brute/excite exhale/grokking grift/bright breeze/plight please/right root/s/bleak blaming/chic shaming/bred bros/n/enter lift/stocking stiffed/dumb doubt/said sos/umm out/d/hey hope/k cope/u/enter lift/mocking miffed/bold bend/trolled trend/mold mend/s/bane bat/flain flat/splain splat/fed foes/s/x marquee/fret free/yet ye/set see/plus plaque/trite telly".]
+[test wm with "au 2/jane g/boring box/open box/n/bad bunk/sad sunk/n/grow grudge/n/done dorm/fun form/n/see sunk/gee junk/whee woot/pear peach/s/s/e/bussed back/crust crack/n/bare beach/seep soon/s/n/reap rune/s/w/w/unarm/n/go goon/cocoon/mo moon/so soon/crow croon/knotty nail/rocking rift/flow flue/glow glue/bro brew/stow stew/crow crew/ho who/yo you/throw through/shocking shift/shore shoals/four foals/more moles/docking diffed/bad boast/rad roast/w/flight flail/might mail/sight sail/right rail/bright brute/excite exhale/thread throws/grokking grift/bright breeze/plight please/right root/s/bleak blaming/chic shaming/bred bros/n/enter lift/gawking gift/dumb doubt/said sos/umm out/d/hey hope/k cope/u/enter lift/mocking miffed/bold bend/trolled trend/mold mend/s/bane bat/flain flat/splain splat/fed foes/s/x marquee/fret free/yet ye/set see/plus plaque/trite telly".]
 
 [test ocome with "jane g/boring box/open box/n/guide gong/s/e/pride prong/s/e".]
 
@@ -24,7 +24,7 @@ test w7 with "rocking rift/flow flue/glow glue/go goo/bro brew/stow stew/crow cr
 
 test w8 with "shocking shift/shore shoals/night newt/kite coot/lore lols/four foals/more moles".
 
-test w9 with "stocking stiffed/dumb doubt/said sos/umm out/d/hey hope/k cope".
+test w9 with "gawking gift/dumb doubt/said sos/umm out/d/hey hope/k cope".
 
 test w10 with "grokking grift/tight tees/bright breeze/plight please/right root/s/clique claiming/bleak blaming/chic shaming/bred bros".
 

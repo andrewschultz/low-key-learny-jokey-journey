@@ -72,7 +72,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "wordy"	"walk"	--	--	false	true	false	false	NNSS	vc-wordy-walk rule	vr-wordy-walk rule	--	-- [llp after lift llp]
 "shocking"	"shift"	--	--	false	true	true	false	High Hub	vc-shocking-shift rule	vr-shocking-shift rule	--	-- [start hub] [remember these aren't alphabetized since some need to be completed before others]
 "rocking"	"rift"	--	--	false	true	true	false	High Hub	vc-rocking-rift rule	vr-rocking-rift rule	--	-- [2nd necessary item, can get in either order but this is slightly tougher]
-"stocking"	"stiffed"	--	--	false	true	true	false	High Hub	vc-stocking-stiffed rule	vr-stocking-stiffed rule	--	--
+"gawking"	"gift"	--	--	false	true	true	false	High Hub	vc-gawking-gift rule	vr-gawking-gift rule	--	--
 "grokking"	"grift"	--	--	false	true	true	false	High Hub	vc-grokking-grift rule	vr-grokking-grift rule	--	--
 "docking"	"diffed"	--	--	false	true	true	false	High Hub	vc-docking-diffed rule	vr-docking-diffed rule	--	-- [3-5 are in approximate order of difficulty, then the LLP and the final room]
 "despite"	"dispute"	--	--	false	true	false	false	high hub	vc-despite-dispute rule	vr-despite-dispute rule	--	"You can reason [b]DESPITE DISPUTE[r] [if light lute is moot]now[else]once[end if] there's something that makes you depressed."
@@ -583,15 +583,15 @@ this is the vr-shocking-shift rule:
 	say "The locking lift lurches with what is indeed a shocking shift...";
 	take-lift Sore Souls Gore Goals;
 
-a goodrhyme rule (this is the vc-stocking-stiffed rule):
+a goodrhyme rule (this is the vc-gawking-gift rule):
 	if locking lift is not fungible, unavailable;
 	if sco-umm-out is true:
 		vcal "You already took care of the Rum Route!";
 		already-done;
 	ready;
 
-this is the vr-stocking-stiffed rule:
-	now sco-stocking-stiffed is true;
+this is the vr-gawking-gift rule:
+	now sco-gawking-gift is true;
 	say "You see a vision of kids ripped off during the holidays. You wind up [one of][or]back [stopping]in...";
 	take-lift Rum Route;
 
@@ -1528,16 +1528,16 @@ locking lift	"You see [lift-score in words] of six settings filled in:[paragraph
 
 to say lift-stuff:
 	say "[if sco-docking-diffed is true]DOCKING DIFFED[else]------- ------[end if][if sco-excite-exhale is true] (done)[end if].";
+	say "[if sco-gawking-gift is true]GAWKING GIFT[else]------- ----[end if][if sco-k-cope is true] (done)[end if]";
 	say "[if sco-grokking-grift is true]GROKKING GRIFT[else]-------- ------[end if][if sco-chic-shaming is true] (done)[end if].";
 	say "[if tried-mocking-miffed is true or sco-mocking-miffed is true]MOCKING MIFFED[else]------- ------[end if][if hub-score < 5] (not yet)[end if]."; [ no (done) case since it is the final one ]
 	say "[if sco-rocking-rift is true]ROCKING RIFT[else]------ ----[end if][if sco-throw-through is true] (done)[end if].";
 	say "[if sco-shocking-shift is true]SHOCKING SHIFT[else]-------- -----[end if][if shoal-core-score is 2] (done)[end if].";
-	say "[if sco-stocking-stiffed is true]STOCKING STIFFED[else]-------- -------[end if][if sco-k-cope is true] (done)[end if]";
 
 to decide which number is lift-score:
-	decide on boolval of sco-docking-diffed + boolval of sco-grokking-grift + boolval of sco-mocking-miffed + boolval of sco-rocking-rift + boolval of sco-shocking-shift + boolval of sco-stocking-stiffed;
+	decide on boolval of sco-docking-diffed + boolval of sco-grokking-grift + boolval of sco-mocking-miffed + boolval of sco-rocking-rift + boolval of sco-shocking-shift + boolval of sco-gawking-gift;
 
-to decide which number is hub-score: [rocking rift/throw through, docking diffed / excite-exhale, grokking grift/chic shaming, stocking stiffed/k cope, shocking shift/3 gore-goals points ]
+to decide which number is hub-score: [rocking rift/throw through, docking diffed / excite-exhale, grokking grift/chic shaming, gawking gift/k cope, shocking shift/3 gore-goals points ]
 	decide on boolval of sco-throw-through + boolval of sco-excite-exhale + boolval of sco-chic-shaming + boolval of sco-k-cope + boolval of (whether or not shoal-core-score is 2);
 
 volume homonym rejections
