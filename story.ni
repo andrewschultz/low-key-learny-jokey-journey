@@ -476,7 +476,18 @@ sco-knotty-nail is a truth state that varies.
 
 volume rooms (end)
 
+
 book the hub
+
+understand "high hub" as lifttaking when high hub is visited.
+
+lifttaking is an action applying to nothing.
+
+carry out lifttaking:
+	if player is in high hub, say "You're already here!" instead;
+	abide by the stuck-right-now rule;
+	say "You [if locking lift is not fungible]walk back and [end if]take the locking lift back to High Hub.";
+	take-lift High Hub;
 
 part High Hub
 
@@ -502,7 +513,7 @@ check going inside when locking lift is in location of player: try entering lift
 check entering locking lift:
 	if player is in high hub, say "You need to decide where to go in the lift." instead;
 	say "You take the lift back to High Hub...";
-	move player to High Hub;
+	take-lift high hub;
 	the rule succeeds;
 
 guess-table of locking lift is the table of locking lift guesses.
@@ -955,14 +966,15 @@ this is the verb-checker rule:
 		if two-too is true and player has leet learner:
 			if there is a posthom entry:
 				if the player's command includes the posthom entry:
-					if rb-out is the not-yet outcome or rb-out is the ready outcome:
+					if rb-out is worth-parsing:
 						now local-post-hom is true;
 						if there is a hom-txt-rule entry, now hom-row is global-row-check;
 		if ha-half is true and my-count is 1 and player has leet learner:
 			now vc-dont-print is true;
 			process the check-rule entry;
+			let rb-out be the outcome of the rulebook;
 			now vc-dont-print is false;
-			if the rule failed, next;
+			unless rb-out is the not-yet outcome or rb-out is the ready outcome, next;
 			now local-ha-half is true;
 			if debug-state is true, say "DEBUG: [check-rule entry] tipped off the HA HALF button.";
 			if there is a core entry:
@@ -978,7 +990,6 @@ this is the verb-checker rule:
 			abide by the hom-txt-rule entry;
 		say "The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right.";
 		abide by the two-too-help rule;
-		the rule succeeds;
 
 volume unsorted locations
 
@@ -1380,7 +1391,13 @@ rule for printing a parser error (this is the default parser error notification 
 	if action-to-be is the examining action or action-to-be is the reading action or action-to-be is the taking action or action-to-be is the talktoing action:
 		say "You see nothing here like that. Or there may be, but it's a small part of something more prominent. [this-game] tries not to force you to look into any items too much.";
 		the rule succeeds;
-	say "Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But [b]VERBS[r] will show what you can use.";
+	if number of words in the player's command is 1:
+		say "Most special commands are more than one word[if roaring rocks is visited], because of the rhyme-pairs involved[end if]";
+	else if number of words in the player's command is 0:
+		say "You think a bit";
+	else:
+		say "Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs";
+	say ". [b]VERBS[r] will give a list of standard, non-puzzle-solving verbs.";
 	the rule succeeds;
 
 volume end of game
