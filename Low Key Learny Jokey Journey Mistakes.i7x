@@ -486,7 +486,6 @@ mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "shed shows"	--	false	110	--	"There are no sheds that need showing."
 "sled slows"	--	false	110	--	"There are no sleds that need slowing."
 "ted tows/toes"	--	false	110	--	"You recall an ad for a towing service."
-"thread throws"	--	false	110	--	"The rose would not make enough thread to tie up any antagonists."
 "wed woes"	--	false	110	--	"[sad-tale]."
 
 to say sad-tale: say "A sad, succinct tale, indeed"

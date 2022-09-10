@@ -28,7 +28,7 @@ test w9 with "stocking stiffed/dumb doubt/said sos/umm out/d/hey hope/k cope".
 
 test w10 with "grokking grift/tight tees/bright breeze/plight please/right root/s/clique claiming/bleak blaming/chic shaming/bred bros".
 
-test w11 with "docking diffed/bad boast/rad roast/w/flight flail/might mail/sight sail/right rail/bright brute/excite exhale".
+test w11 with "docking diffed/bad boast/rad roast/w/flight flail/might mail/sight sail/right rail/bright brute/excite exhale/thread throws".
 
 test w12 with "despite dispute/mocking miffed/bold bend/trolled trend/mold mend/s".
 

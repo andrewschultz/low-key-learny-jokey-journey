@@ -112,7 +112,8 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "flight"	"flail"	--	--	false	true	true	false	Trite Trail	vc-flight-flail rule	vr-flight-flail rule	--	--
 "right"	"rail"	"write/rale"	--	false	true	true	false	Trite Trail	vc-right-rail rule	vr-right-rail rule	--	"You can try to grab the [b]RIGHT RAIL[r] [once-now of vc-right-rail rule] you've got a vessel."
 "bright"	"brute"	--	--	false	true	true	false	Trite Trail	vc-bright-brute rule	vr-bright-brute rule	--	"You can summon a [b]BRIGHT BRUTE[r] [once-now of vc-bright-brute rule] you need an ally."
-"excite"	"exhale"	--	--	false	true	true	false	Trite Trail	vc-excite-exhale rule	vr-excite-exhale rule	--	"You can [b]EXCITE EXHALE[r] to go out and fight once you have an ally, fighting equipment, transport and stability."
+"excite"	"exhale"	--	--	false	true	true	false	Trite Trail	vc-excite-exhale rule	vr-excite-exhale rule	--	"You can [b]EXCITE EXHALE[r] to prep yourself [once-now of vc-excite-exhale rule] you have an ally, fighting equipment, transport and stability."
+"thread"	"throws"	--	--	false	true	true	false	Trite Trail	vc-thread-throws rule	vr-thread-throws rule	--	"You can execute [b]THREAD THROWS[r] to make a net to catch [the white whale] [once-now of vc-thread-throws rule] you've prepped fully."
 "bold"	"bend"	--	--	false	true	true	false	old end	vc-bold-bend rule	vr-bold-bend rule	--	-- [mocking miffed: this is the endgame sequence, so put nothing after it]
 "trolled"	"trend"	--	--	false	true	true	false	old end	vc-trolled-trend rule	vr-trolled-trend rule	--	"You can find a [b]TROLLED TREND[r] [once-now of vc-trolled-trend rule] the Old End is revealed as something more."
 "mold"	"mend"	--	--	false	true	true	false	old end	vc-mold-mend rule	vr-mold-mend rule	--	"You can [b]MOLD MEND[r] [once-now of vc-mold-mend rule] you know what's disturbing, where."
@@ -935,7 +936,6 @@ this is the vr-sight-sail rule:
 	now sco-sight-sail is true;
 	say "A watercraft drifts into view. Yes, indeed, it is the sight sail. It should help you track down [the whale] very nicely, when you're prepared.";
 	move sight sail to trite trail;
-	follow the notify-final-whale rule;
 
 a goodrhyme rule (this is the vc-might-mail rule):
 	if player is not in Trite Trail, unavailable;
@@ -993,6 +993,7 @@ this is the vr-bright-brute rule:
 	say "You call on a bright brute, who hides in the shadows to practice their fighting moves until such time as you're ready to attack the white whale. You'll need the muscle in case the whale somehow gets on board.";
 	move bright brute to trite trail;
 	lose-gold-string;
+	follow the notify-final-whale rule;
 
 a goodrhyme rule (this is the vc-excite-exhale rule):
 	if player is not in Trite Trail, unavailable;
@@ -1009,13 +1010,28 @@ a goodrhyme rule (this is the vc-excite-exhale rule):
 
 this is the vr-excite-exhale rule:
 	now sco-excite-exhale is true;
-	say "You get all jazzed up to fight [the whale], believing you can do it. Then you calm down and figure strategy. You make sure the mail is comfortable and you can swing the flail well, and you use the rail until you're able to balance easily.[paragraph break]You conquer the white whale! After doing so, you head back to High Hub.";
+	say "You get all jazzed up to fight [the whale], believing you can do it. Then you calm down and figure strategy. You're pretty confident. You just need something to restrict or capture [the white whale].";
+	lose-rose-petal;
+	cue-thread-throws;
+
+a goodrhyme rule (this is the vc-thread-throws rule):
+	if player does not have red rose, unavailable;
+	if player is not in trite trail or sco-excite-exhale is false:
+		vcp "The rose probably only has so much thread. You should only use it [if player is not in trite trail]to capture a big predator[else]once you're fully prepared to make a net and catch [the whale][end if].";
+		not-yet;
+	if sco-thread-throws is true:
+		vcal "You already tackled [the whale]!";
+		already-done;
+	ready;
+
+this is the vr-thread-throws rule:
+	now sco-thread-throws is true;
+	say "Everything is prepped! You throw out some nets. You're armed with the flight flail, protected by the might mail, supported by the bright brute, and holding the right rail in your sight sail. And you've mentally prepped.[paragraph break]Anyway, there's a lot of drama and stuff, but you defeat [the whale].";
 	take-lift High Hub;
 	moot sight sail;
 	moot flight flail;
 	moot bright brute;
 	moot might mail;
-
 
 a goodrhyme rule (this is the vc-tight-tease rule):
 	if player is not in slight sleaze, unavailable;
@@ -1476,7 +1492,7 @@ a goodrhyme rule (this is the did-i-shame rule):
 
 this is the notify-final-whale rule:
 	unless whale-hunt-ready, continue the action;
-	say "The last step will be something else! It will probably require, like, extra syllables in what you want to do. Both with psyching yourself up and then taking a step back and achieving mindfulness, or whatever.";
+	say "The last step of your prep will be something else! It will probably require, like, extra syllables in what you want to do. Both with psyching yourself up and then taking a step back and achieving mindfulness, or whatever.";
 
 to decide what number is whale-score:
 	decide on boolval of sco-sight-sail + boolval of sco-might-mail + boolval of sco-flight-flail + boolval of sco-right-rail + boolval of sco-bright-brute;

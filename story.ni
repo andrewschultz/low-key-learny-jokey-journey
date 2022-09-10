@@ -46,7 +46,7 @@ Poppin' Part is a region.
 
 section scoring
 
-core-max is 71.
+core-max is 72.
 
 max-bonus is 14.
 
@@ -576,7 +576,7 @@ chapter red rose
 a red rose is a rhymable. description is "It's a simple red rose. Just looking at it leaves you feeling protected and inspired."
 
 to decide what number is rose-petals-remaining:
-	decide on 3 - (boolval of sco-said-sos + boolval of sco-fed-foes);
+	decide on 4 - (boolval of sco-said-sos + boolval of sco-fed-foes + boolval of sco-thread-throws);
 
 report examining red rose:
 	say "You notice the red rose has [rose-petals-remaining in words] particularly bright petal[plur of rose-petals-remaining][if rose-petals-remaining < 3] still remaining[end if].";
@@ -753,6 +753,7 @@ sco-might-mail is a truth state that varies.
 sco-flight-flail is a truth state that varies.
 sco-right-rail is a truth state that varies.
 sco-excite-exhale is a truth state that varies.
+sco-thread-throws is a truth state that varies.
 
 definition: a thing (called th) is whale-defeating:
 	unless th is scenery, no;
@@ -765,7 +766,14 @@ after printing the locale description for trite trail when whale-score > 0 and s
 		say "[line break]You could probably use an ally with bulk. You don't see any around.";
 	else if bright brute is fungible:
 		say "[line break]The bright brute wanders about happily. It seems ready but not anxious.";
+	cue-excite-exhale;
 	continue the action;
+
+to cue-excite-exhale:
+	if whale-score is 5:
+		say "[line break]You've got to be close now! Psyching yourself up to defeat [the whale] will require something big. Perhaps two words with more than one syllable each. You need to get psyched, then you need to relax, and you'll know what to do next.";
+
+to cue-thread-throws: if player does not have red rose, say "[line break]You feel as though you may need outside help for your hunting expedition. Help you don't have yet.";
 
 chapter sceneries
 
