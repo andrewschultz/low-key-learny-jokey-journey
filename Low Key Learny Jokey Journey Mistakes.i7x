@@ -15,6 +15,7 @@ mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 book current table notes
 
 to current-table-note (tn - a table name):
+	say "[line break]";
 	if tn is table of mad monk guesses:
 		if warn-monk is false, continue the action;
 		let nptn be nudge-points of tn;
@@ -24,7 +25,7 @@ to current-table-note (tn - a table name):
 		say "[monk-count].";
 
 to say monk-count:
-	say "[line break]You now have [nudge-points of table of mad monk guesses] of [number of rows in table of mad monk guesses] good guesses available from the Mad Monk, and you have [if sco-gad-gunk is false]not [end if]found the Last Lousy Point. If that's good enough, [monk-move-on]";
+	say "You've discovered [nudge-points of table of mad monk guesses] of [number of rows in table of mad monk guesses] good guesses available from the Mad Monk, and you have [if sco-gad-gunk is false]not [end if]found the Last Lousy Point. If that's good enough, [monk-move-on]";
 
 book guesses by room, alphabetical
 

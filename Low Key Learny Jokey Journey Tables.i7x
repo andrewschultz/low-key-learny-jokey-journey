@@ -172,7 +172,7 @@ a goodrhyme rule (this is the vc-gad-gunk rule):
 this is the vr-gad-gunk rule:
 	now sco-gad-gunk is true;
 	say "Chiding the monk's cleanliness, groundless or otherwise, is an effective insult, though it doesn't win the war. Have a bonus point.";
-	if warn-monk is true, say "[monk-count].";
+	if warn-monk is true, current-table-note table of mad monk guesses;
 
 a goodrhyme rule (this is the vc-bad-bunk rule):
 	if mad monk is not fungible, unavailable;
@@ -1307,7 +1307,6 @@ a goodrhyme rule (this is the check-dumping-monk rule):
 	now X is the player's command;
 	let TS be whether or not the player dir-consents;
 	change the text of the player's command to X;
-	say "[the player's command].";
 	if TS is true:
 		ready;
 	else:
@@ -1329,21 +1328,21 @@ to say sunk-or-bunk:
 	say "[b]";
 	if sco-sad-sunk is true:
 		say "BAD BUNK";
-	else if sco-sad-sunk is true:
+	else if sco-bad-bunk is true:
 		say "SAD SUNK";
 	else:
 		say "(BUG)";
 	say "[r]";
 
-to say monk-move-on: say "say [sunk-or-bunk] to move on"
+to say monk-move-on: say "say [sunk-or-bunk] again to move on"
 
 to say poke-mad-monk:
-	say "You can say [sunk-or-bunk] again to move on ";
+	say "You can [monk-move-on] ";
 	if is-exhausted of table of mad monk guesses:
 		say "now";
 	else:
 		say "when";
-	say "you've poked the Mad Monk enough";
+	say " you've poked the Mad Monk enough";
 
 [hub 0. transport]
 

@@ -52,6 +52,8 @@ max-bonus is 14.
 
 chapter offshoots relying on PPRR common file or PPRR universal file
 
+this is the disable-learner-options rule: if player does not have leet learner, say "You've tried an option you can't exercise until you get a hint item. You should, shortly." instead;
+
 to decide whether this-game-say-nudge:
 	if player is in nay nope slay slope and the player's command includes "say soap", yes;
 	no;
@@ -264,7 +266,7 @@ check going in nnss:
 
 chapter no nudge slow sludge (scenery)
 
-there is thing called no nudge slow sludge. It is scenery. It is in NNSS. printed name is "no-nudge slow sludge". "It sure is icky! Just looking at it makes you too mad, too fast. You need the right way to be disgusted by it."
+there is thing called no nudge slow sludge. It is scenery. It is in NNSS. printed name is "no-nudge slow sludge". "It sure is icky! Just looking at it makes you too mad, too fast. You need the right way to be disgusted by [the sludge]."
 
 sco-grow-grudge is a truth state that varies.
 
@@ -929,13 +931,13 @@ this is the verb-checker rule:
 			if there is a core entry and core entry is false, check-lump-progress;
 			the rule succeeds;
 		if shut-scan is true, next;
-		if two-too is true:
+		if two-too is true and player has leet learner:
 			if there is a posthom entry:
 				if the player's command includes the posthom entry:
 					if rb-out is the not-yet outcome or rb-out is the ready outcome:
 						now local-post-hom is true;
 						if there is a hom-txt-rule entry, now hom-row is global-row-check;
-		if ha-half is true and my-count is 1:
+		if ha-half is true and my-count is 1 and player has leet learner:
 			now vc-dont-print is true;
 			process the check-rule entry;
 			now vc-dont-print is false;
@@ -947,13 +949,14 @@ this is the verb-checker rule:
 				if core entry is true, now brightness is true;
 			next;
 	if local-ha-half is true:
-		say "The HA HALF button lights up on your Leet Learner[if new-point-to-get is false]--wait, you're just switching back to a rhyme you knew before. You must've mis-thought a word[else if brightness is false], but dimly--perhaps this is a rhyme you don't strictly need to figure to win[else if local-post-hom is true], and its brightness suggests your rhyme must be very close, indeed[end if].";
-		the rule succeeds;
+		say "The [b]HA HALF[r] button lights up on your Leet Learner[if new-point-to-get is false]--wait, you're just switching back to a rhyme you knew before. You must've mis-thought a word[else if brightness is false], but dimly--perhaps this is a rhyme you don't strictly need to figure to win[else if local-post-hom is true], and its brightness suggests your rhyme must be very close, indeed[end if].";
+		abide by the ha-half-help rule;
 	if local-post-hom is true:
 		if hom-row > 0:
 			choose row hom-row in table of verb checks;
 			abide by the hom-txt-rule entry;
 		say "The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right.";
+		abide by the two-too-help rule;
 		the rule succeeds;
 
 volume unsorted locations
