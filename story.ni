@@ -89,8 +89,12 @@ this is the flag bad goto to rule:
 		let mrgo be map region of noun;
 		if mrgo is not Poppin' Part and sco-bye-bub is false, say "There's a way back, but you need to find the right way off the High Hub." instead;
 
+this is the stuck-right-now rule:
+	if player is in Threat Three and bully is in threat three, say "It's the final conflict! You're stuck here!" instead;
+	if player is in Vain Vat and pred pros are not moot, say "You're in a bit of a pickle. Too much to get up and go anywhere." instead;
+
 this is the flag bad goto from rule:
-	if player is in Threat Three and bully is in threat three, say "You're stuck here!";
+	abide by the stuck-right-now rule;
 	if mrlp is Poppin' Part:
 		let mrgo be map region of noun;
 		if mrgo is Poppin' Part and spokeval of noun is not spokeval of location of player, say "Here around the high hub, you need to use the lift." instead;
@@ -1101,17 +1105,26 @@ section gong rules
 [ LLPs not llp-remaining are Go Goo and Gad Gunk because it disappears when the monk does ]
 
 this-gong-rule of hun harm fun farm is the got-cocoon rule.
+this-gong-rule of NoNoon is the got-cocoon rule.
 this-gong-rule of warm stun storm is the got-peach rule.
 this-gong-rule of TTTT is the got-peach rule.
 this-gong-rule of trust track is the got-rune rule.
 this-gong-rule of rare reach is the got-rune rule.
 this-gong-rule of show shoe is the got-lute rule.
 this-gong-rule of nnss is the got-stalk rule.
-this-gong-rule of trite trail is the got-whale rule.
-this-gong-rule of mad most cad coast is the got-whale rule.
-this-gong-rule of sore souls gore goals is got-shoals rule.
+
+[the starting area is above]
+
+this-gong-rule of show shoe is got-lute rule. [1]
+
+this-gong-rule of sore souls gore goals is got-shoals rule. [2]
+
 this-gong-rule of nay nope slay slope is got-k-cope rule.
 this-gong-rule of rum route is got-k-cope rule.
+
+this-gong-rule of trite trail is the got-whale rule.
+this-gong-rule of mad most cad coast is the got-whale rule.
+
 this-gong-rule of slight sleaze is got-framing-done rule;
 this-gong-rule of freak framing seek sameing is got-framing-done rule;
 
@@ -1283,7 +1296,7 @@ to say enter-lift: say "[b]ENTER[r] the locking lift to go back to [hub]";
 chapter optsing
 
 carry out optsing:
-	if guide-gong-warn is true, say "[b]GUIDE GONG[r] will restrict you from solved rooms, [b]PRIDE PRONG[r] will notify you of rooms with just LLPs left, and [b]STRIDE STRONG[r] will remove these bumpers. Currently this is set to [b][if player-room-allow-threshold is bonus-left]PRIDE PRONG[else if player-room-allow-threshold is bonus-left]GUIDE GONE[else]player-room-allow-threshold is bonus-left[end if][r].";
+	if guide-gong-warn is true, say "[2da][b]GUIDE GONG[r] will restrict you from solved rooms, [b]PRIDE PRONG[r] will notify you of rooms with just LLPs left, and [b]STRIDE STRONG[r] will remove these bumpers. Currently this is set to [b][if player-room-allow-threshold is bonus-left]PRIDE PRONG[else if player-room-allow-threshold is bonus-left]GUIDE GONE[else]player-room-allow-threshold is bonus-left[end if][r].";
 	the rule succeeds;
 
 chapter swearing
