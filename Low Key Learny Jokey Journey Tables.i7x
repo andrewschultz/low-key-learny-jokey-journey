@@ -33,6 +33,11 @@ think-advice =
 other stuff that may be added is best-room though I may have divided room-specific points.
 ]
 
+[to decide whether satisf of (ru - a rule):
+	choose row with run-rule of ru in table of verb checks;
+	if idid entry is true, yes;
+	no;]
+
 table of verb checks
 w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	idid	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
 "dane|jane|lane|wayne"	"d|dee|g|gee|lee|whee"	--	--	false	false	true	false	Bane Be Sane See	vc-in-bane rule	vr-choose-name rule	"d/dee dane" or "dane dee/d" or "jane g/gee" or "gee/g jane" or "wayne whee" or "whee wayne" or "lane lee"	--
@@ -48,7 +53,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "gee"	"junk"	--	--	false	true	true	false	TTTT	vc-gee-junk rule	vr-gee-junk rule	--	"You can say [b]GEE JUNK[r] [once-now of vc-gee-junk rule] more of the trunk is visible."
 "whee"	"woot"	--	--	false	true	true	false	TTTT	vc-whee-woot rule	vr-whee-woot rule	--	--
 "pear"	"peach"	"pair/pare"	--	false	true	true	false	TTTT	vc-pear-peach rule	vr-pear-peach rule	--	"You can make a [b]PEAR PEACH[r] [once-now of vc-pear-peach rule] you're happy enough to receive free fruit."
-"bussed"	"back"	"bust"	--	false	false	true	false	Rare Reach	vc-bussed-back rule	vr-bussed-back rule	--	--
+"bussed"	"back"	"bust"	vh-bust-back rule	false	false	true	false	Rare Reach	vc-bussed-back rule	vr-bussed-back rule	--	--
 "crust"	"crack"	--	--	false	true	true	false	Trust Track	vc-crust-crack rule	vr-crust-crack rule	--	"You can make the [b]CRUST CRACK[r] [once-now of vc-crust-crack rule] [jack] is gone."
 "bare"	"beach"	"bear"	--	false	true	true	false	Rare Reach	vc-bare-beach rule	vr-bare-beach rule	--	"You can change the Rare Reach to a [b]BARE BEACH[r] [once-now of vc-bare-beach rule] you have a life-generating item."
 "seep"	"soon"	--	--	false	true	true	false	Rare Reach	vc-seep-soon rule	vr-seep-soon rule	--	--
@@ -287,6 +292,10 @@ this is the vr-pear-peach rule:
 	say "A weird fruit you haven't quite seen before pops into your hand as the [fruit] vanishes. Hooray!";
 	moot free fruit;
 	now player has peach pear;
+
+this is the vh-bust-back rule:
+	say "Violence isn't the answer, here, though you're close. You may wish to think of Jack differently.";
+	the rule succeeds;
 
 a goodrhyme rule (this is the vc-bussed-back rule):
 	if location of player is not trust track, unavailable;

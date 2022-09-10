@@ -308,17 +308,14 @@ this is the no-excite-exhale-rule rule:
 
 table of trust track guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
-"cussed/cuss cack"	--	false	101	--	"[if player has sus sack]No, the sack will be worthwhile.[else]There's a useful item here. More useful than such words![end if]"
-"lust lack"	in-trust-track rule	false	101	--	"[if just jack is fungible]Jack would still be bugging you in that state[else]You continue to put impure thoughts aside to focus on a really cool text adventure[end if]."
-"must mack"	jack-gone rule	false	101	--	"You don't need memories of Just Jack."
+"cussed cack"	--	false	101	--	"[if player has sus sack]No, the sack will be worthwhile.[else]There's a useful item to discover here. More useful than such words![end if]"
+"gust gack"	--	false	101	--	"No stinky cloud rumbles in[if sco-bussed-back is false] to push Jack away[end if]."
+"lust lack"	--	false	101	--	"You make sure put impure thoughts aside so you're really focused on a totally cool text adventure. Yay, you!"
+"must mack"	--	false	101	--	"[if just jack is in trust track]Jack raises his eyebrows, but sadly, he seems more concerned with blocking you[else]This is a comedy puzzle game, not a romance game[end if]."
 "rust rack"	--	false	101	--	"That would be a useless item."
 
 this is the in-trust-track rule:
 	if player is in Trust Track, the rule succeeds;
-	the rule fails;
-
-this is the jack-gone rule:
-	if Just Jack is moot, the rule succeeds;
 	the rule fails;
 
 book guesses by item, alphabetical
@@ -426,6 +423,11 @@ mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
 "wed woes"	--	false	110	--	"[sad-tale]."
 
 to say sad-tale: say "A sad, succinct tale, indeed"
+
+table of sus sack guesses
+mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt
+"pus/puss pack"	--	false	46	--	"You don't need a cat, or a mound of pus. Think more positive!"
+"wuss wack/whack"	--	false	46	--	"No, something more positive and flattering is inside."
 
 table of sturdy stalk guesses
 mist-cmd(topic)	mist-rule	got-yet	magicnum	leet-rule	mist-txt

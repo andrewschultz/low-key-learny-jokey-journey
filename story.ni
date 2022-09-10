@@ -399,18 +399,21 @@ Trust Track is east of NNSS. it is in Hoppin' Heart. "You're in a sort of earthy
 
 guess-table of trust track is table of trust track guesses.
 
+chapter Just Jack
+
 Just Jack is a thing in Trust Track. "[one of]'Hi! I'm Just Jack. you can totally trust me that there are no other passages here. In fact, I'd be offended if you looked for them while I was still here. Not that you're getting rid of me.'[or]Just Jack waits here, making sure you trust his 'advice' enough not to look for any other passages.[stopping]".
 
 description of Just Jack is "He is just sitting around here with no better place to be. Or no less awful place. He's not going to go anywhere on his own, that's for sure.".
 
-the sus sack is a rhymable. guess-table of sus sack is table of trust track guesses. description is "What could be in it? It feels both light and heavy at the same time, both practical and impractical."
+chapter Sus Sack
+
+the sus sack is a rhymable. description is "What could be in it? It feels both light and heavy at the same time, both practical and impractical."
+
+guess-table of sus sack is table of sus sack guesses.
+
+check opening sus sack: say "This far into [this-game], you suspect you have to figure what's in the sack to get it to open right." instead;
 
 sco-plus-plaque is a truth state that varies.
-
-to decide whether satisf of (ru - a rule):
-	choose row with run-rule of ru in table of verb checks;
-	if idid entry is true, yes;
-	no;
 
 sco-bussed-back is a truth state that varies.
 sco-crust-crack is a truth state that varies.
