@@ -226,6 +226,7 @@ this is the vr-done-dorm rule:
 	say "A done dorm pops up out of nowhere! You probably can't just go entering it, though. A nice, exclusive place like that probably requires documentation of worth and being an interesting person to hang around and stuff. All sorts of bureaucracy, don't you know.";
 	now sco-done-dorm is true;
 	move done dorm to One Warm Stun Storm;
+	now to-number of One Warm Stun Storm is 5304;
 
 a goodrhyme rule (this is the vc-fun-form rule):
 	if player is not in One Warm Stun Storm, unavailable;
@@ -240,6 +241,8 @@ a goodrhyme rule (this is the vc-fun-form rule):
 this is the vr-fun-form rule:
 	say "You actually, well, have fun saying why you should be certified to stay in the done dorm until enough time has passed.";
 	now sco-fun-form is true;
+	declue One Warm Stun Storm;
+	declue Done Dorm;
 
 a goodrhyme rule (this is the vc-see-sunk rule):
 	if player is not in TTTT, unavailable;

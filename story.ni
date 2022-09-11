@@ -20,6 +20,8 @@ include Bold Final Question Rows by Andrew Schultz.
 
 include Prime Pro Rhyme Row Common by Andrew Schultz.
 
+include Prime Pro Rhyme Row E34 by Andrew Schultz.
+
 include Low Key Learny Jokey Journey Tables by Andrew Schultz.
 
 include Low Key Learny Jokey Journey Mistakes by Andrew Schultz.
@@ -207,6 +209,71 @@ instead of doing something with a boring thing:
 	if action is procedural, continue the action;
 	say "Most things, you don't need to interact with directly.";
 
+volume cluing
+
+to declue (rm - a room):
+	now from-number of rm is -1;
+	now to-number of rm is -1;
+
+to declue (th - a thing):
+	now from-number of th is -1;
+	now to-number of th is -1;
+
+test lls with "jj/jj/au 2/open box/n/jj/jj/n/ll"
+
+rule for supplying a missing noun when lling (this is the get readings from room rule):
+	say "You scan the area.";
+	if player is in roaring rocks:
+		say "Hmm. There's a reading. It must relate 'Storing Stocks' to the erstwhile boring box.";
+	show-readings (from-number of location of player) and (to-number of location of player);
+	reject the player's command;
+
+a room has a number called from-number. a room has a number called to-number.
+
+a thing has a number called from-number. a thing has a number called to-number.
+
+to say floatfrac of (x - a number) and (y - a number):
+	if remainder after dividing x by y is 0:
+		say "[x / y].00";
+		continue the action;
+	if x < 0:
+		say "-";
+		now x is 0 - x;
+	let temp be (x * 100) / y;
+	say "[temp / 100]";
+	say ".[run paragraph on]";
+	let decimal be (x * 100) / y;
+	if decimal < 10, say "0";
+	say "[decimal]";
+
+check lling:
+	if from-number of noun is 0 and to-number of noun is not 0:
+		show-readings (from-number of noun) and (to-number of location of player);
+	else:
+		show-readings (from-number of noun) and (to-number of noun);
+	the rule succeeds;
+
+to show-readings (nfrom - a number) and (nto - a number):
+	if nfrom < 0 or nto < 0:
+		say "Nothing comes up. You have finished business [if nfrom is -1]here[else]with [the noun][end if].";
+		continue the action;
+	if nfrom is 0 or nto is 0:
+		say "Nothing comes up.";
+		continue the action;
+	let name-length be nfrom / 5000;
+	let puz-length be nto / 5000;
+	let name-1 be the remainder after dividing (nfrom / 100) by 50; [hundreds digit = first word # of letters]
+	let puz-1 be the remainder after dividing (nto / 100) by 50;
+	let name-2 be the remainder after dividing nfrom by 100; [ones digit = second word # of letters]
+	let puz-2 be the remainder after dividing nto by 100;
+	say "[name-length] [puz-length] [name-1] [name-2] [puz-1] [puz-2].";
+	let numerator be (name-length * puz-1) - (puz-length * name-1);
+	let denominator be (name-length * puz-length);
+	say "A dot bounces around the grid and winds up at ([floatfrac of numerator and denominator], ";
+	now numerator is (name-length * puz-2) - (puz-length * name-2);
+	now denominator is (name-length * puz-length);
+	say "[floatfrac of numerator and denominator].)";
+
 volume rooms (intro)
 
 book bane be sane see
@@ -231,6 +298,8 @@ check opening train tree: say "You should be able to enter the tree as you pleas
 book Roaring Rocks
 
 Roaring Rocks is a room in Stoppin' Start. "This is a dead end. The only passage out is north. [if sco-boring-box is false]The roaring is too loud right now, though. You feel as if you'd be chased down if you ran away[else]Things are quieter now. You doubt the rocks/stocks hold any more great secrets[end if].". printed name of Roaring Rocks is "[if sco-boring-box is true]Storing Stocks[else]Roaring Rocks[end if]"
+
+from-number of roaring rocks is 5705. to-number of roaring rocks is 5603.
 
 guess-table of Roaring Rocks is table of Roaring Rocks guesses.
 
@@ -266,6 +335,8 @@ book No Nudge Slow Sludge
 
 NNSS is north of Roaring Rocks. it is in Hoppin' Heart. printed name is "No-Nudge Slow Sludge". "[if sco-grow-grudge is false]Some [sludge] bubbles almost all around, blocking passage all ways back south[else]Paths have been cut through the [sludge] to the west, north and east, which has stopped bubbling[end if][if sturdy stalk is in NNSS]. The sturdy stalk leads back up to High Hub, as well[end if]."
 
+from-number of nnss is 10611. to-number of nnss is 5406.
+
 guess-table of NNSS is table of no nudge slow sludge guesses.
 
 check going in nnss:
@@ -299,6 +370,8 @@ guess-table of sturdy stalk is the table of sturdy stalk guesses.
 book Hun Harm Fun Farm
 
 Hun Harm Fun Farm is west of NNSS. it is in Hoppin' Heart. "The way bends north here[if sco-un-arm is false]. You hear the clash of weapons that way, though, so it feels unsafe. Maybe you can cut a way through with a surprisingly simple idea[end if]. There's also passage back east."
+
+from-number of hun harm fun farm is 10608. to-number of hun harm fun farm is 5203.
 
 check going north in hun harm fun farm when sco-un-arm is false: say "Unfortunately, you hear aggressive voices threatening to attack you. They have weapons, and you don't. You're not sure how to change this." instead;
 
@@ -356,6 +429,8 @@ book One Warm Stun Storm
 
 there is a room called One Warm Stun Storm in Hoppin' Heart. It is north of NNSS. "[if sco-fun-form is true]It's calm here now. You can go north and south[else]A storm is raging ahead to the north, though it's all very calm to the south[end if]. [if sco-done-dorm is false]And you don't even have a prospect of shelter. Yet[else if sco-fun-form is false]At least the done dorm you summoned could give shelter[else]You also note the done dorm that helped you stay out the storm[end if].". printed name is "One Warm Stun-Storm".
 
+from-number of one warm stun storm is 10709. to-number of one warm stun storm is 5404.
+
 sco-done-dorm is a truth state that varies.
 sco-fun-form is a truth state that varies.
 
@@ -367,6 +442,8 @@ guess-table of One Warm Stun Storm is table of one warm stun storm guesses.
 chapter done dorm
 
 the done dorm is scenery. "[if sco-fun-form is true]You have good memories of your stay in the done dorm, but that part of your adventure's over now.[else]It looks like such a nice place to spend time. You wonder if you are exciting or interesting enough to. How would you apply for residence correctly?[end if]"
+
+from-number of done dorm is 5404. [to-number folds into OWSS once done dorm appears]
 
 check entering done dorm: say "[if sco-fun-form is false]You must apply correctly to enter[else]You already spent enough time there[end if]." instead;
 
