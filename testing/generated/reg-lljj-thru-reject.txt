@@ -286,8 +286,8 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 >splain splat
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
 
-#testcase-unavailable-table-of-verb-checks-vc-stocking-stiffed-rule
->stocking stiffed
+#testcase-unavailable-table-of-verb-checks-vc-gawking-gift-rule
+>gawking gift
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
 
 #testcase-unavailable-table-of-verb-checks-vc-stow-stew-rule
@@ -935,7 +935,7 @@ You already took care of the shocking shift!
 ##RBRS-SHUFFLEEND=1
 ##RBRS-SHUFFLESTART=2
 
->stocking stiffed
+>gawking gift
 by one point
 
 #testcase-prereject-table-of-verb-checks-vc-umm-out-rule
@@ -994,8 +994,8 @@ You already got hope started! Now to adjust fully.
 >k cope
 by one point
 
-#testcase-postreject-table-of-verb-checks-vc-stocking-stiffed-rule
->stocking stiffed
+#testcase-postreject-table-of-verb-checks-vc-gawking-gift-rule
+>gawking gift
 You already took care of the Rum Route!
 
 ##RBRS-SHUFFLEEND=2
@@ -1090,6 +1090,14 @@ You already figured everything about grokking grift.
 >docking diffed
 by one point
 
+#testcase-prereject-table-of-verb-checks-vc-thread-throws-rule
+>thread throws
+WRONG
+
+#testcase-think-table-of-verb-checks-vc-thread-throws-rule
+>think
+WRONG
+
 #testcase-prereject-table-of-verb-checks-vc-rad-roast-rule
 >rad roast
 You need to put the current insults in check before doing that.
@@ -1120,6 +1128,10 @@ But you already cut the voice down to size.
 You already won the insult war!
 
 >w
+
+#+testcase-think-table-of-verb-checks-vc-thread-throws-rule
+>think
+WRONG
 
 #testcase-prereject-table-of-verb-checks-vc-right-rail-rule
 >right rail
@@ -1171,6 +1183,9 @@ You already figured the right rail to grab to be stable on the sight sail.
 You already summoned the sight sail. It's not going anywhere.
 
 >excite exhale
+by one point
+
+>thread throws
 by one point
 
 #testcase-postreject-table-of-verb-checks-vc-docking-diffed-rule
@@ -1609,8 +1624,8 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 >splain splat
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
 
-#testcase-moot-table-of-verb-checks-vc-stocking-stiffed-rule
->stocking stiffed
+#testcase-moot-table-of-verb-checks-vc-gawking-gift-rule
+>gawking gift
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
 
 #testcase-moot-table-of-verb-checks-vc-stow-stew-rule

@@ -278,11 +278,11 @@ by one point
 >gee junk
 by one point
 
-#ttc-table-of-free-fruit-guesses-be-boot
+#ttc-table-of-free-fruit-guesses-be-bee-boot
 >be boot
 The free fruit does not change into footwear.
 
-#ttc-table-of-free-fruit-guesses-flee-flute
+#ttc-table-of-free-fruit-guesses-flee-flea-flute
 >flee flute
 There is no music or need to run away.
 
@@ -328,7 +328,7 @@ by one point
 >s
 >e
 
-#ttc-table-of-trust-track-guesses-cussed-cuss-cack
+#ttc-table-of-trust-track-guesses-cussed-cack
 >cussed cack
 There's a useful item here. More useful than such words!
 
@@ -347,7 +347,7 @@ by one point
 >must mack
 You don't need memories of Just Jack.
 
-#+ttc-table-of-trust-track-guesses-cussed-cuss-cack
+#+ttc-table-of-trust-track-guesses-cussed-cack
 >cussed cack
 No, the sack will be worthwhile.
 
@@ -372,7 +372,7 @@ But this area is sparse enough already.
 >cher cheech
 Celebrities can't help you here.
 
-#ttc-table-of-rare-reach-guesses-lair-leech
+#ttc-table-of-rare-reach-guesses-lair-leech-leach
 >lair leech
 You don't need to summon enemies.
 
@@ -433,7 +433,7 @@ by one point
 
 >n
 
-#ttc-table-of-nonoon-guesses-bow-boon
+#ttc-table-of-nonoon-guesses-beau-bow-boon
 >bow boon
 You require no ranged weapon.
 
@@ -463,7 +463,7 @@ You come out mentally in favor of a high-fiber diet.
 >rho rune
 But you already have the rune.
 
-#ttc-table-of-nonoon-guesses-toe-tune
+#ttc-table-of-nonoon-guesses-toe-tow-toon-tune
 >toe tune
 Nothing toe-tapping starts playing.
 
@@ -567,7 +567,7 @@ You consider making a mistake to impress someone. After all, being too perfect m
 >nigh nub
 You suspect some small stuff or other is around.
 
-#ttc-table-of-high-hub-guesses-rye-rub
+#ttc-table-of-high-hub-guesses-rye-wry-rub
 >rye rub
 You aren't sure whether you mean a rub of alcohol or bread. You're not sure what it will do. But you consider the possibility.
 
@@ -642,7 +642,7 @@ You blow off steam that you haven't quite revitalized the No-New-Show Shoe yet.
 >cocu
 Your knowledge of former footballers is impressive. (So is mine, since I caught this, eh?)
 
-#ttc-table-of-no-new-show-shoe-guesses-doh-do-due
+#ttc-table-of-no-new-show-shoe-guesses-doh-do-due-dew
 >doh due
 There is talking about action or deserving stuff, and there is doing it.
 
@@ -787,7 +787,7 @@ You're trying to bring life here, not drain it.
 >door doles
 No, this place doesn't need more doors.
 
-#ttc-table-of-sore-souls-gore-goals-guesses-poor-poles
+#ttc-table-of-sore-souls-gore-goals-guesses-poor-pour-pore-poles
 >poor poles
 Those would hardly liven the place up.
 
@@ -845,7 +845,7 @@ You do not need to incite violence.
 >cred crows
 You don't need to brag about street cred, real or imagined.
 
-#ttc-table-of-red-rose-guesses-dead-does-dohs
+#ttc-table-of-red-rose-guesses-dead-does-dohs-doze
 >dead dohs
 You aren't here to kill animals or utter a Simpsonesque epithet.
 
@@ -896,7 +896,7 @@ A sad, succinct tale, indeed.
 ##RBRS-SHUFFLEEND=1
 ##RBRS-SHUFFLESTART=2
 
->stocking stiffed
+>gawking gift
 by one point
 
 #ttc-table-of-bum-bout-rum-route-guesses-drum-drought
@@ -951,6 +951,7 @@ The right sort of ray? Yes. Rope to pull you back? No.
 #ttc-table-of-nay-nope-slay-slope-guesses-say-soap
 >say soap
 I suppose I should put in a cliche about cleansing one's soul here.
+
 #ttc-table-of-nay-nope-slay-slope-guesses-stay-stope
 >stay stope
 Building a long-lasting mine here would not make or keep things happier.
@@ -1041,7 +1042,7 @@ Yes, you do need to aim barbs at people.
 >geek gaming
 Geek gaming, I suppose, has its own brand of conformism and conventions, so you can't quite use it as a shelter.
 
-#ttc-table-of-freak-framing-seek-sameing-guesses-meek-maiming
+#ttc-table-of-freak-framing-seek-sameing-guesses-meek-maiming-mameing-maming
 >meek maiming
 Unfortunately, in trying to start soft or end strong, you achieve neither.
 
@@ -1148,6 +1149,9 @@ by one point
 by one point
 
 >excite exhale
+by one point
+
+>thread throws
 by one point
 
 ##RBRS-SHUFFLEEND=4
@@ -1307,7 +1311,7 @@ No knights appear to say a paralyzing two-letter word.
 >pet pee
 No, you don't need to mess things up that way, here.
 
-#ttc-table-of-threat-three-met-me-guesses-wet-whee
+#ttc-table-of-threat-three-met-me-guesses-wet-wee-whee
 >wet whee
 No cool waterslide or pool appears. You still have business!
 

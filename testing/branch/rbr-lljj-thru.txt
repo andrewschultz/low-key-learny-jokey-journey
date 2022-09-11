@@ -7,15 +7,15 @@
 #-- use HCH.PY to verify room/thing homonyms
 #--
 
-# for when we hit glulx:
+# for when/if we hit glulx:
 # glulx-game: /home/andrew/prt/debug-low-key-learny-jokey-journey.ulx
 # glulx-interpreter: /home/andrew/prt/glulxe -q
 
-# 0 = shoe/rocking, get loot
-# 1 = shoals/shocking, get rose
+# 0 = shoe/rocking, get lute
+# 1 = shoals/shocking, get rose, LLPs from lute
 # 2 = route/stocking, need rose
 # 3 = sleaze/grokking, need loot and rose
-# 4 = trail/docking, need loot
+# 4 = trail/docking, need loot and rose
 ##RBRCONSTRAINTS=1<2,0<3,1<3,0<4,1<4
 
 files=reg-lljj-thru-min.txt,reg-lljj-thru-all.txt,reg-lljj-thru-reject.txt,reg-lljj-thru-alt-verbs.txt,reg-lljj-thru-fake-deaths.txt,reg-lljj-thru-mistakes.txt,reg-lljj-thru-ha-half.txt,reg-lljj-thru-homonyms.txt,reg-lljj-thru-verbs.txt,reg-lljj-thru-goto.txt
@@ -34,10 +34,10 @@ files=reg-lljj-thru-min.txt,reg-lljj-thru-all.txt,reg-lljj-thru-reject.txt,reg-l
 
 }$REJECT=Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
 
-}}MAX=84
-}}CURMAX=84
+}}MAX=86
+}}CURMAX=86
 }}SCORE=0
-}}CURMIN=70
+}}CURMIN=72
 }}CURMINBONUS=0
 }}CURMAXBONUS=14
 }}MAXBONUS=14
@@ -357,8 +357,8 @@ It looks like you may have tried to refer to the room name, or part of it. You o
 >splain splat
 {$REJECT}
 \\
-#testcase-unavailable-table-of-verb-checks-vc-stocking-stiffed-rule
->stocking stiffed
+#testcase-unavailable-table-of-verb-checks-vc-gawking-gift-rule
+>gawking gift
 {$REJECT}
 \\
 #testcase-unavailable-table-of-verb-checks-vc-stow-stew-rule
@@ -1146,11 +1146,11 @@ The HA HALF button lights up on your Leet Learner.
 The HA HALF button lights up on your Leet Learner.
 
 @mis
-#ttc-table-of-free-fruit-guesses-be-boot
+#ttc-table-of-free-fruit-guesses-be-bee-boot
 >be boot
 The free fruit does not change into footwear.
 \\
-#ttc-table-of-free-fruit-guesses-flee-flute
+#ttc-table-of-free-fruit-guesses-flee-flea-flute
 >flee flute
 There is no music or need to run away.
 \\
@@ -1237,7 +1237,7 @@ You don't need to reduce or duplicate the pear peach. It has a much bigger purpo
 You don't need to restrict things here but open them up.
 
 @mis
-#ttc-table-of-trust-track-guesses-cussed-cuss-cack
+#ttc-table-of-trust-track-guesses-cussed-cack
 >cussed cack
 There's a useful item here. More useful than such words!
 \\
@@ -1274,7 +1274,7 @@ The HA HALF button lights up on your Leet Learner.
 The HA HALF button lights up on your Leet Learner.
 
 @hom
-#testcase-homonym-table-of-verb-checks-bust
+#testcase-homonym-table-of-verb-checks-bust-back-rule-bust
 >bust back
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right.
 
@@ -1292,7 +1292,7 @@ Just Jack has already been bussed back.
 >must mack
 You don't need memories of Just Jack.
 \\
-#+ttc-table-of-trust-track-guesses-cussed-cuss-cack
+#+ttc-table-of-trust-track-guesses-cussed-cack
 >cussed cack
 No, the sack will be worthwhile.
 \\
@@ -1384,7 +1384,7 @@ But this area is sparse enough already.
 >cher cheech
 Celebrities can't help you here.
 \\
-#ttc-table-of-rare-reach-guesses-lair-leech
+#ttc-table-of-rare-reach-guesses-lair-leech-leach
 >lair leech
 You don't need to summon enemies.
 \\
@@ -1578,7 +1578,7 @@ EXIT LIST:
 south: Hun Harm Fun Farm.
 
 @mis
-#ttc-table-of-nonoon-guesses-bow-boon
+#ttc-table-of-nonoon-guesses-beau-bow-boon
 >bow boon
 You require no ranged weapon.
 \\
@@ -1608,7 +1608,7 @@ You come out mentally in favor of a high-fiber diet.
 >rho rune
 But you already have the rune.
 \\
-#ttc-table-of-nonoon-guesses-toe-tune
+#ttc-table-of-nonoon-guesses-toe-tow-toon-tune
 >toe tune
 Nothing toe-tapping starts playing.
 
@@ -1906,7 +1906,7 @@ You consider making a mistake to impress someone. After all, being too perfect m
 >nigh nub
 You suspect some small stuff or other is around.
 \\
-#ttc-table-of-high-hub-guesses-rye-rub
+#ttc-table-of-high-hub-guesses-rye-wry-rub
 >rye rub
 You aren't sure whether you mean a rub of alcohol or bread. You're not sure what it will do. But you consider the possibility.
 \\
@@ -2126,7 +2126,7 @@ You blow off steam that you haven't quite revitalized the No-New-Show Shoe yet.
 >cocu
 Your knowledge of former footballers is impressive. (So is mine, since I caught this, eh?)
 \\
-#ttc-table-of-no-new-show-shoe-guesses-doh-do-due
+#ttc-table-of-no-new-show-shoe-guesses-doh-do-due-dew
 >doh due
 There is talking about action or deserving stuff, and there is doing it.
 \\
@@ -2472,7 +2472,7 @@ You're trying to bring life here, not drain it.
 >door doles
 No, this place doesn't need more doors.
 \\
-#ttc-table-of-sore-souls-gore-goals-guesses-poor-poles
+#ttc-table-of-sore-souls-gore-goals-guesses-poor-pour-pore-poles
 >poor poles
 Those would hardly liven the place up.
 \\
@@ -2670,7 +2670,7 @@ You do not need to incite violence.
 >cred crows
 You don't need to brag about street cred, real or imagined.
 \\
-#ttc-table-of-red-rose-guesses-dead-does-dohs
+#ttc-table-of-red-rose-guesses-dead-does-dohs-doze
 >dead dohs
 You aren't here to kill animals or utter a Simpsonesque epithet.
 \\
@@ -2727,18 +2727,15 @@ You already took care of the shocking shift!
 ##RBRS-SHUFFLESTART=2
 
 @ha
-#testcase-ha-half-table-of-verb-checks-33-stocking
->stocking zstiffed
+#testcase-ha-half-table-of-verb-checks-33-gawking
+>gawking zgift
 The HA HALF button lights up on your Leet Learner.
 \\
-#testcase-ha-half-table-of-verb-checks-33-stiffed
->zstocking stiffed
+#testcase-ha-half-table-of-verb-checks-33-gift
+>zgawking gift
 The HA HALF button lights up on your Leet Learner.
 
-@min
-#testcase-just-checking
-
->stocking stiffed
+>gawking gift
 by one point
 }}SCORE++
 
@@ -2899,6 +2896,7 @@ The right sort of ray? Yes. Rope to pull you back? No.
 #ttc-table-of-nay-nope-slay-slope-guesses-say-soap
 >say soap
 I suppose I should put in a cliche about cleansing one's soul here.
+\\
 #ttc-table-of-nay-nope-slay-slope-guesses-stay-stope
 >stay stope
 Building a long-lasting mine here would not make or keep things happier.
@@ -2954,8 +2952,8 @@ by one point
 }}SCORE++
 
 @rej
-#testcase-postreject-table-of-verb-checks-vc-stocking-stiffed-rule
->stocking stiffed
+#testcase-postreject-table-of-verb-checks-vc-gawking-gift-rule
+>gawking gift
 You already took care of the Rum Route!
 
 ##RBRS-SHUFFLEEND=2
@@ -3160,7 +3158,7 @@ Yes, you do need to aim barbs at people.
 >geek gaming
 Geek gaming, I suppose, has its own brand of conformism and conventions, so you can't quite use it as a shelter.
 \\
-#ttc-table-of-freak-framing-seek-sameing-guesses-meek-maiming
+#ttc-table-of-freak-framing-seek-sameing-guesses-meek-maiming-mameing-maming
 >meek maiming
 Unfortunately, in trying to start soft or end strong, you achieve neither.
 \\
@@ -3177,8 +3175,12 @@ The HA HALF button lights up on your Leet Learner.
 >bleak zblaming
 The HA HALF button lights up on your Leet Learner.
 \\
-#testcase-ha-half-table-of-verb-checks-63-chic
+#testcase-ha-half-table-of-verb-checks-63-chic-chique
 >chic zshaming
+The HA HALF button lights up on your Leet Learner.
+\\
+#+testcase-ha-half-table-of-verb-checks-63-chic-chique
+>chique zshaming
 The HA HALF button lights up on your Leet Learner.
 \\
 #testcase-ha-half-table-of-verb-checks-63-shaming
@@ -3287,6 +3289,15 @@ by one point
 #testcase-room-names-mad-most-cad-coast
 /^Mad-Most-Cad Coast
 
+@rej
+#testcase-prereject-table-of-verb-checks-vc-thread-throws-rule
+>thread throws
+WRONG
+\\
+#testcase-think-table-of-verb-checks-vc-thread-throws-rule
+>think
+WRONG
+
 @gt
 #ttc-table-of-noways-mad-most-cad-coast
 >n
@@ -3342,6 +3353,14 @@ The HA HALF button lights up on your Leet Learner.
 #testcase-ha-half-table-of-verb-checks-67-roast
 >zrad roast
 The HA HALF button lights up on your Leet Learner.
+\\
+#testcase-ha-half-table-of-verb-checks-74-thread
+>thread zthrows
+The HA HALF button lights up on your Leet Learner.
+\\
+#testcase-ha-half-table-of-verb-checks-74-throws
+>zthread throws
+The HA HALF button lights up on your Leet Learner.
 
 >bad boast
 by one point
@@ -3393,6 +3412,11 @@ You fail to scare anyone with this, not that you need to, any more.
 
 @min
 /^Trite Trail
+
+@rej
+#+testcase-think-table-of-verb-checks-vc-thread-throws-rule
+>think
+WRONG
 
 @gt
 #ttc-table-of-noways-trite-trail
@@ -3557,6 +3581,10 @@ You already summoned the sight sail. It's not going anywhere.
 by one point
 }}SCORE++
 
+>thread throws
+by one point
+}}SCORE++
+
 @rej
 #testcase-postreject-table-of-verb-checks-vc-docking-diffed-rule
 >docking diffed
@@ -3625,27 +3653,27 @@ Not quite. Commerce isn't at the end of all this.
 Not quite. You weren't given instructions how to take care of things, and you probably can't pass them on.
 
 @ha
-#testcase-ha-half-table-of-verb-checks-74-bend
+#testcase-ha-half-table-of-verb-checks-75-bend
 >zbold bend
 The HA HALF button lights up on your Leet Learner.
 \\
-#testcase-ha-half-table-of-verb-checks-74-bold
+#testcase-ha-half-table-of-verb-checks-75-bold
 >bold zbend
 The HA HALF button lights up on your Leet Learner.
 \\
-#testcase-ha-half-table-of-verb-checks-75-trend
+#testcase-ha-half-table-of-verb-checks-76-trend
 >ztrolled trend
 The HA HALF button lights up on your Leet Learner.
 \\
-#testcase-ha-half-table-of-verb-checks-75-trolled
+#testcase-ha-half-table-of-verb-checks-76-trolled
 >trolled ztrend
 The HA HALF button lights up on your Leet Learner.
 \\
-#testcase-ha-half-table-of-verb-checks-76-mend
+#testcase-ha-half-table-of-verb-checks-77-mend
 >zmold mend
 The HA HALF button lights up on your Leet Learner.
 \\
-#testcase-ha-half-table-of-verb-checks-76-mold
+#testcase-ha-half-table-of-verb-checks-77-mold
 >mold zmend
 The HA HALF button lights up on your Leet Learner.
 
@@ -3807,27 +3835,27 @@ Alas, you have nothing to vandalize the premises with.
 You contemplate a way to put your ultimate enemy under pressure.
 
 @ha
-#testcase-ha-half-table-of-verb-checks-77-bane
+#testcase-ha-half-table-of-verb-checks-78-bane
 >bane zbat
 The HA HALF button lights up on your Leet Learner.
 \\
-#testcase-ha-half-table-of-verb-checks-77-bat
+#testcase-ha-half-table-of-verb-checks-78-bat
 >zbane bat
 The HA HALF button lights up on your Leet Learner.
 \\
-#testcase-ha-half-table-of-verb-checks-78-flain
+#testcase-ha-half-table-of-verb-checks-79-flain
 >flain zflat
 The HA HALF button lights up on your Leet Learner.
 \\
-#testcase-ha-half-table-of-verb-checks-78-flat
+#testcase-ha-half-table-of-verb-checks-79-flat
 >zflain flat
 The HA HALF button lights up on your Leet Learner.
 \\
-#testcase-ha-half-table-of-verb-checks-79-splain
+#testcase-ha-half-table-of-verb-checks-80-splain
 >splain zsplat
 The HA HALF button lights up on your Leet Learner.
 \\
-#testcase-ha-half-table-of-verb-checks-79-splat
+#testcase-ha-half-table-of-verb-checks-80-splat
 >zsplain splat
 The HA HALF button lights up on your Leet Learner.
 
@@ -3921,11 +3949,11 @@ It looks like you may have tried to refer to the room name, or part of it. You o
 You convince yourself the vain vat was a great place to sort out your emotions.
 
 @ha
-#testcase-ha-half-table-of-verb-checks-80-fed
+#testcase-ha-half-table-of-verb-checks-81-fed
 >fed zfoes
 The HA HALF button lights up on your Leet Learner.
 \\
-#testcase-ha-half-table-of-verb-checks-80-foes
+#testcase-ha-half-table-of-verb-checks-81-foes
 >zfed foes
 The HA HALF button lights up on your Leet Learner.
 
@@ -3989,48 +4017,48 @@ No knights appear to say a paralyzing two-letter word.
 >pet pee
 No, you don't need to mess things up that way, here.
 \\
-#ttc-table-of-threat-three-met-me-guesses-wet-whee
+#ttc-table-of-threat-three-met-me-guesses-wet-wee-whee
 >wet whee
 No cool waterslide or pool appears. You still have business!
 
 @ha
-#testcase-ha-half-table-of-verb-checks-81-free
+#testcase-ha-half-table-of-verb-checks-82-free
 >zfret free
 The HA HALF button lights up on your Leet Learner.
 \\
-#testcase-ha-half-table-of-verb-checks-81-fret
+#testcase-ha-half-table-of-verb-checks-82-fret
 >fret zfree
 The HA HALF button lights up on your Leet Learner.
 \\
-#testcase-ha-half-table-of-verb-checks-82-see
+#testcase-ha-half-table-of-verb-checks-83-see
 >zset see
 The HA HALF button lights up on your Leet Learner.
 \\
-#testcase-ha-half-table-of-verb-checks-82-set
+#testcase-ha-half-table-of-verb-checks-83-set
 >set zsee
 The HA HALF button lights up on your Leet Learner.
 \\
-#testcase-ha-half-table-of-verb-checks-83-ye
+#testcase-ha-half-table-of-verb-checks-84-ye
 >zyet ye
 The HA HALF button lights up on your Leet Learner.
 \\
-#testcase-ha-half-table-of-verb-checks-83-yet
+#testcase-ha-half-table-of-verb-checks-84-yet
 >yet zye
 The HA HALF button lights up on your Leet Learner.
 \\
-#testcase-ha-half-table-of-verb-checks-84-plaque
+#testcase-ha-half-table-of-verb-checks-85-plaque
 >zplus plaque
 The HA HALF button lights up on your Leet Learner.
 \\
-#testcase-ha-half-table-of-verb-checks-84-plus
+#testcase-ha-half-table-of-verb-checks-85-plus
 >plus zplaque
 The HA HALF button lights up on your Leet Learner.
 \\
-#testcase-ha-half-table-of-verb-checks-85-tully-tolly-tally-telly-tilly-tillie
+#testcase-ha-half-table-of-verb-checks-86-tully-tolly-tally-telly-tilly-tillie
 >ztrite tolly
 The HA HALF button lights up on your Leet Learner.
 \\
-#testcase-ha-half-table-of-verb-checks-85-trite
+#testcase-ha-half-table-of-verb-checks-86-trite
 >trite ztolly
 The HA HALF button lights up on your Leet Learner.
 
@@ -4401,8 +4429,8 @@ That location or thing doesn't exist or isn't known to you yet.
 >splain splat
 {$REJECT}
 \\
-#testcase-moot-table-of-verb-checks-vc-stocking-stiffed-rule
->stocking stiffed
+#testcase-moot-table-of-verb-checks-vc-gawking-gift-rule
+>gawking gift
 {$REJECT}
 \\
 #testcase-moot-table-of-verb-checks-vc-stow-stew-rule

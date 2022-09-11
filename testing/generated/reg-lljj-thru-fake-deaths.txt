@@ -191,7 +191,7 @@ by one point
 ##RBRS-SHUFFLEEND=1
 ##RBRS-SHUFFLESTART=2
 
->stocking stiffed
+>gawking gift
 by one point
 
 >dumb doubt
@@ -273,6 +273,9 @@ by one point
 by one point
 
 >excite exhale
+by one point
+
+>thread throws
 by one point
 
 ##RBRS-SHUFFLEEND=4

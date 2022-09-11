@@ -215,9 +215,7 @@ by one point
 ##RBRS-SHUFFLEEND=1
 ##RBRS-SHUFFLESTART=2
 
-#testcase-just-checking
-
->stocking stiffed
+>gawking gift
 by one point
 
 #testcase-room-names-rum-route
@@ -319,6 +317,9 @@ by one point
 by one point
 
 >excite exhale
+by one point
+
+>thread throws
 by one point
 
 ##RBRS-SHUFFLEEND=4
