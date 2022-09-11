@@ -134,9 +134,20 @@ a goodrhyme rule (this is the vc-in-bane rule):
 this is the vr-choose-name rule:
 	if the player's command includes "jane":
 		now the player is female;
+		if the player's command includes "g":
+			now name-choice-index is 3;
+		else:
+			now name-choice-index is 4;
 	else if the player's command includes "wayne":
 		now the player is male;
+		now name-choice-index is 6;
 	else:
+		if the player's command includes "lane":
+			now name-choice-index is 5;
+		else if the player's command includes "dee":
+			now name-choice-index is 2;
+		else:
+			now name-choice-index is 1;
 		now the player is neuter;
 	now sco-choose-name is true;
 	say "You walk through the door and tumble down to...";

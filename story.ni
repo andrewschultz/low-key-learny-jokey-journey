@@ -145,11 +145,16 @@ to declue (th - a thing):
 
 test lls with "jj/jj/au 2/open box/n/jj/jj/n/ll"
 
+boring-box-check is a truth state that varies.
+
 rule for supplying a missing noun when lling (this is the get readings from room rule):
 	say "You scan the area.";
 	if player is in roaring rocks:
 		say "Hmm. There's a reading. It must relate 'Storing Stocks' to the erstwhile boring box.";
 	show-readings (from-number of location of player) and (to-number of location of player);
+	if boring-box-check is false and player has leet learner and player is in roaring rocks:
+		say "[line break]The [learner] is giving a funny readout. You could maybe climb [b]UP[r] to the old rocks and get another reading.";
+		now boring-box-check is true;
 	reject the player's command;
 
 a room has a number called from-number. a room has a number called to-number.
@@ -178,11 +183,14 @@ check lling:
 	the rule succeeds;
 
 to show-readings (nfrom - a number) and (nto - a number):
-	if nfrom < 0 or nto < 0:
-		say "Nothing comes up. You have finished business [if nfrom is -1]here[else]with [the noun][end if].";
-		continue the action;
-	if nfrom is 0 or nto is 0:
+	if nfrom is 0:
 		say "Nothing comes up.";
+		continue the action;
+	if nfrom is -3 or nto is -3:
+		say "Nothing comes up. It seems [the noun] is fine as-is.";
+		continue the action;
+	if nfrom is unscannable or nto is unscannable:
+		say "Nothing comes up. You have finished business [if nfrom is -1]here[else]with [the noun][end if].";
 		continue the action;
 	let name-length be nfrom / 5000;
 	let puz-length be nto / 5000;
@@ -193,7 +201,7 @@ to show-readings (nfrom - a number) and (nto - a number):
 	say "[name-length] [puz-length] [name-1] [name-2] [puz-1] [puz-2].";
 	let numerator be (name-length * puz-1) - (puz-length * name-1);
 	let denominator be (name-length * puz-length);
-	say "A dot bounces around the grid and winds up at ([floatfrac of numerator and denominator], ";
+	say "A dot bounces around [the learner]'s grid and winds up at ([floatfrac of numerator and denominator], ";
 	now numerator is (name-length * puz-2) - (puz-length * name-2);
 	now denominator is (name-length * puz-length);
 	say "[floatfrac of numerator and denominator].)";
@@ -241,6 +249,39 @@ check going north in Roaring Rocks:
 		move mad monk to roaring rocks;
 		the rule fails;
 	if mad monk is in Roaring Rocks, say "The mad monk is blocking you right now." instead;
+
+learner-up-rocks is a number that varies.
+
+froms-list is a list of numbers variable. froms-list is { 5401, 5403, 5401, 5403, 5403, 5504 }.
+
+firstpoint-list is a list of text variable. firstpoint-list is { "DANE D", "DANE DEE", "JANE G", "JANE GEE", "LANE LEE", "WAYNE WHEE" }.
+
+name-choice-index is a number that varies. name-choice-index is 0.
+
+check going up in roaring rocks when player has leet learner:
+	if learner-up-rocks is 0:
+		say "Climbing up a bit, scanning the roaring rocks gets you a readout of (-1.00, -2.00.)";
+		increment learner-up-rocks;
+		the rule succeeds;
+	let my-from be 5504;
+	let my-to be 21709;
+	say "Climbing up a bit, you see the tubes that led from where you started. You note ";
+	if learner-up-rocks is 1 or learner-up-rocks is 2:
+		say "your choice [entry name-choice-index in firstpoint-list]";
+		now my-to is entry learner-up-rocks in froms-list;
+	else:
+		say "each of the four paths for [b]DANE D, JANE G, LANE LEE,[r] and [b]WAYNE WHEE[r]";
+	say ". You scan a bit where ";
+	if learner-up-rocks is 1 or learner-up-rocks is 3:
+		say "[b]TRAIN TREE[r]";
+	 else:
+		say "[b]BANE BE SANE, SEE[r]";
+		now my-from is 10805;
+	say " is mentioned beneath each tube.";
+	say "The [learner] turns up";
+	show-readings my-from and my-to;
+	increment learner-up-rocks;
+	the rule succeeds;
 
 chapter boring box
 
