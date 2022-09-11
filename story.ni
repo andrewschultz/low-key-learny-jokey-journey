@@ -119,82 +119,6 @@ to decide whether (ru - a rule) is spaceable:
 	if ru is vc-co-coon rule or ru is vc-un-arm rule, no;
 	yes;
 
-section clue numbers
-
-to decide which number is variable-scan-length of (mynum - a number):
-	if mynum is 100: [show shoe]
-		if sco-throw-through is true, decide on 0; [ this case should not happen, but let's put it here anyway ]
-		if sco-yo-you is true, decide on 57; [ THROW THROUGH, final step ]
-		if sco-stow-stew is true and sco-bro-brew is false, decide on 34; [ BRO BREW must be next ]
-		if sco-crow-crew is true, decide on 23; [HO WHO or YO YOU]
-		decide on 44; [most others are 4-4]
-	else if mynum is 101: [ Trust Track ]
-		if sco-bussed-back is false, decide on 64;
-		if sco-crust-crack is false, decide on 55;
-		decide on 0;
-	else if mynum is 102: [ No Noon progression ]
-		if sco-crow-croon is true, decide on 0; [ the area is complete ]
-		if sco-so-soon is true, decide on 45; [ in this case, CROW CROON is the only one left ]
-		decide on 24; [ everything before CROW CROON is 2 letters, then 4 ]
-	else if mynum is 103: [ high hub/locking lift: this may be reordered ]
-		if sco-docking-diffed is false, decide on 76;
-		if sco-grokking-grift is false, decide on 85;
-		if sco-rocking-rift is false, decide on 74;
-		if sco-shocking-shift is false, decide on 75;
-		if sco-gawking-gift is false, decide on 74;
-		if sco-mocking-miffed is false, decide on 76;
-		decide on 0;
-	else if mynum is 104: [ trite trail: note we have some tricky stuff here because we have a pool of 4 things, of which 3 are 54 and 1 is 65 ]
-		if sco-excite-exhale is true, decide on 0;
-		if whale-hunt-ready, decide on 66;
-		if sco-flight-flail is false and sco-might-mail is true and sco-sight-sail is true and sco-right-rail is true, decide on 65;
-		decide on 54;
-	else if mynum is 105: [ drain/drat vain vat ]
-		if sco-bane-bat is false, decide on 43;
-		if sco-flain-flat is false, decide on 54;
-		if sco-splain-splat is false, decide on 65;
-		decide on 0;
-	else if mynum is 106: [ freak framing: CLIQUE CLAIMING is LLP ]
-		if sco-bleak-blaming is false, decide on 57;
-		if sco-chic-shaming is false, decide on 47;
-		if sco-clique-claiming is false, decide on -68;
-		decide on 0;
-	else if mynum is 107: [ nay nope slay slope ]
-		if sco-hey-hope is false, decide on 34;
-		if sco-k-cope is false, decide on 14;
-		decide on 0;
-	else if mynum is 108: [ rum route ]
-		if sco-dumb-doubt is false, decide on 45;
-		if sco-umm-out is false, decide on 33;
-		decide on 0;
-	else if mynum is 109: [ sore souls' gore goals ]
-		if sco-lore-lols is false, decide on -44;
-		if shoal-core-score < 2, decide on 45;
-		decide on 0;
-	else if mynum is 110: [ red rose ]
-		if player is in rum route and sco-said-sos is false, decide on 43;
-		if player is in seek sameing freak framing and sco-bred-bros is false, decide on 44;
-		decide on 0;
-	else if mynum is 111: [ light lute ]
-		if player is in slight sleaze and sco-right-root is false, decide on 54;
-		if player is in trite trail and sco-bright-brute is false, decide on 65;
-		if player is in sore souls gore goals:
-			if sco-kite-coot is false, decide on 44;
-			if sco-night-newt is false, decide on 54;
-		if delight dilute is fungible, decide on 77;
-		decide on 0;
-	else if mynum is 112: [ market marquee ]
-		if sco-yet-ye is false, decide on 32;
-		if sco-set-see is false, decide on 33;
-		if sco-fret-free is false, decide on 44;
-		decide on 0;
-	else if mynum is 113: [stun storm ... put in late as I didn't consider NUN NORM ]
-		if sco-done-dorm is false, decide on 44;
-		if sco-fun-form is false, decide on 34;
-		decide on 0;
-	say "[b]BUG[r]: no variable-scan-length for [mynum]. Please let me know what you typed.";
-	decide on 44;
-
 chapter offshoots from the universal file
 
 to decide whether vcp-ignore: decide no; [When do we block check-text? In VVFF, when we have Been Buggin]
@@ -1081,22 +1005,25 @@ volume unsorted locations
 volume parser rules
 
 Rule for printing a parser error (this is the clue half right words rule):
+	now compare-item is the player;
 	abide by the rhyme-guess-checker rule for the table of first check rhymes;
 	abide by the game-specific-backdrop-check rule;
 	unless guess-table of location of player is table of no good guesses:
 		[if debug-state is true, say "DEBUG location guesses: [location of player], [guess-table of location of player].";]
 		abide by the rhyme-guess-checker rule for guess-table of location of player;
 	let table-list be a list of table names;
-	repeat with tou running through fungible rhymables:
-		let gtt be guess-table of tou;
+	repeat with fun running through fungible rhymables:
+		let gtt be guess-table of fun;
 		if gtt is table of no good guesses or gtt is listed in table-list, next;
 		add gtt to table-list;
-	repeat with tou running through fungible people:
-		let gtt be guess-table of tou;
+		now compare-item is fun;
+		abide by the rhyme-guess-checker rule for gtt;
+	repeat with fun running through fungible people:
+		let gtt be guess-table of fun;
 		if gtt is table of no good guesses or gtt is listed in table-list, next;
 		add gtt to table-list;
-	repeat with cur-guess-table running through table-list:
-		abide by the rhyme-guess-checker rule for cur-guess-table;
+		now compare-item is fun;
+		abide by the rhyme-guess-checker rule for gtt;
 	abide by the verb-checker rule;
 	abide by the rhyme-guess-checker rule for table of general good guesses;
 	continue the action;
