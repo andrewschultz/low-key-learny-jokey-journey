@@ -136,12 +136,12 @@ instead of doing something with a boring thing:
 volume cluing
 
 to declue (rm - a room):
-	now from-number of rm is -1;
-	now to-number of rm is -1;
+	now from-number of rm is -3;
+	now to-number of rm is 0;
 
 to declue (th - a thing):
-	now from-number of th is -1;
-	now to-number of th is -1;
+	now from-number of th is -3;
+	now to-number of th is 0;
 
 test lls with "jj/jj/au 2/open box/n/jj/jj/n/ll"
 
@@ -176,6 +176,9 @@ to say floatfrac of (x - a number) and (y - a number):
 	say "[decimal]";
 
 check lling:
+	if noun is leet learner or noun is needle or noun is ha half nah naff button, say "The [leet learner] can't scan itself." instead;
+	if noun is lurking lump, say "The [lurking lump] is a hint item, so you can't really scan it." instead;
+	if noun is the player, say "Nothing. You're the changer, not the changee." instead;
 	if from-number of noun is 0 and to-number of noun is not 0:
 		show-readings (from-number of noun) and (to-number of location of player);
 	else:
@@ -187,11 +190,15 @@ to show-readings (nfrom - a number) and (nto - a number):
 		say "Nothing comes up.";
 		continue the action;
 	if nfrom is -3 or nto is -3:
-		say "Nothing comes up. It seems [the noun] is fine as-is.";
+		say "Nothing comes up. It seems [the noun] doesn't need to change or be changed any more.";
 		continue the action;
 	if nfrom is unscannable or nto is unscannable:
 		say "Nothing comes up. You have finished business [if nfrom is -1]here[else]with [the noun][end if].";
 		continue the action;
+	let optionals be false;
+	if nto < 0:
+		now nto is 0 - nto;
+		now optionals is true;
 	let name-length be nfrom / 5000;
 	let puz-length be nto / 5000;
 	let name-1 be the remainder after dividing (nfrom / 100) by 50; [hundreds digit = first word # of letters]
@@ -205,6 +212,14 @@ to show-readings (nfrom - a number) and (nto - a number):
 	now numerator is (name-length * puz-2) - (puz-length * name-2);
 	now denominator is (name-length * puz-length);
 	say "[floatfrac of numerator and denominator].)";
+	if optionals is true, say "[line break]However, it's really dim, as if you don't need to do or think whatever there is to do or think.";
+
+section unscannables
+
+to-number of ha half nah naff button is -3.
+to-number of leet learner button is -3.
+to-number of needle button is -3.
+to-number of lurking lump is -3.
 
 volume rooms (intro)
 
@@ -286,6 +301,8 @@ check going up in roaring rocks when player has leet learner:
 chapter boring box
 
 the boring box is a thing. description is "Yup. It's pretty boring, which is nice in a way, because without 'interesting' locks, you can [b]OPEN[r] it with no problem.".
+
+to-number of boring box is -3.
 
 check opening boring box:
 	say "You open the boring box, and you see a metal gadget that doesn't look very interesting at first. It's labeled as a Leet Learner, and you also note large print saying [b]DOES NOT GIVE OUTRIGHT SOLUTIONS--THAT'S ANOTHER ITEM[r].[paragraph break]There's also smaller print you can probably [b]READ[r] for instructions. As you grab the Leet Learner, the boring box disintegrates, leaving you quite interested how that happened.";
@@ -607,11 +624,11 @@ sco-kite-coot is a truth state that varies.
 
 section night newt
 
-the night newt is scenery. description is "It blends in well, so you can't see it. But you know it's there.".
+the night newt is scenery. description is "It blends in well, so you can't see it. But you know it's there.". from-number of night newt is -3.
 
 section kite coot
 
-the kite coot is scenery. description is "It's an odd bird, for sure. You should leave it to do its own thing, now you summoned it."
+the kite coot is scenery. description is "It's an odd bird, for sure. You should leave it to do its own thing, now you summoned it.". from-number of kite coot is -3.
 
 chapter red rose
 
@@ -754,6 +771,8 @@ the fright freeze is boring scenery in slight sleaze. "You can't describe it, bu
 
 the trite trees are boring scenery. "Not perfect, but not sleazy, either. They surround you on all sides except to the south."
 
+from-number of trite trees is -3.
+
 part Freak Framing Seek-Sameing
 
 Freak Framing Seek Sameing is in Poppin' Part. printed name is "[if sco-chic-shaming is true]Eek! Aiming![else]Freak-Framing Seek-Sameing[end if]". "This is a control center of some sort. You hear chatter, but there might even be some telepathy. [if sco-bleak-blaming is false]Most of the muttering is about how different people are at fault for things they don't even know about, and you don't know how to buttonhole that[else if sco-bred-bros is false]You've got all your arguments in one place. But you have to admit, you're not the one to perpetuate them! You need someone, or people, who will make it fun for any old crowd to change their attitudes for the better. Someone new from outside[else]Congratulations! You've made this a think tank with things actually worth thinking. The Bred Bros discuss ways to frame basic social decency and tolerance as far more desirable than 'edgy' conformism[end if].". spokeval of Freak Framing is 3.
@@ -821,11 +840,19 @@ chapter sceneries
 
 a sight sail is scenery. "You don't know much about ships, but it looks ready to go, [if sco-right-rail is true]and you'd be comfortable sailing in it a while[else]though you're not sure you'd be comfortable in it too long, yet[end if]."
 
+from-number of sight sail is -3.
+
 a flight flail is scenery. "The flight flail sits on the ground, ready for you to pick up when you need it.".
+
+from-number of flight flail is -3.
+
+some might mail is scenery. "The might mail is too heavy to wear until you meet the white whale, but it's shiny and bright and impressive."
+
+from-number of might mail is -3.
 
 a bright brute is scenery. "The bright brute seems to be napping right now. Resting up for the big fight."
 
-some might mail is scenery. "The might mail is too heavy to wear until you meet the white whale, but it's shiny and bright and impressive."
+from-number of bright brute is -3.
 
 book Mocking Miffed / spoke 5
 
