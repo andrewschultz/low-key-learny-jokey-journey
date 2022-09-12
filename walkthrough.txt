@@ -1,0 +1,370 @@
+
+This is a quick walkthrough for Low-Key Learny Jokey Journey. It neglects bonus points.
+
+Because walkthroughs can be spoilers, I thought I'd offer some general hints up front about what to look for and how to use clues. There is HINT (item) or HINT to see if you can do anything in a room. You also may wish to mess about with the leet learner. This is strictly a walkthrough, so I won't explain it here, but if you use the learner before trying a puzzle, you'll see differences and be able to guess what they mean. A brief overview: the leet learner can scan both areas (LL) or items (LL THING).
+
+You can choose whatever path you want in the introduction, though there's a chance for a bonus point.
+
+Two things about good guesses: sometimes, you will be able to switch the word order. The game will always either allow this or tell you you are very close. Also, getting the lurking lump requires five good guesses. Each additional charge requires more: seven, nine, etc. And homonyms only count once, so DONT DEW and DONT DO don't give extra.
+
+We start in Bane Be Sane, See? If you look at the train tree, you realize you have three options. Well, four, for the bonus point.
+
+I will hint at them throughout this abbreviated walkthrough, but you don't need to do anything with them if you don't want to.
+
+Now to get out. Three ways are acceptable. Let's pick the gender-neutral one.
+
+> JANE G (1)
+
+Okay, the roaring rocks are irritating you.
+
+> BORING BOX (2)
+
+Let's see what the gift is!
+
+> OPEN BOX
+
+Now, you can X LEARNER if you want, to see clues about how to use it, as well as a note about a stronger hint item, which you'll get if you make enough good guesses.
+
+> N
+
+Oh no! A mad monk! But with a short name like that, it should be easy to riff on them. The game will warn you before you defeat it, because if you want in-game jumps, good guesses are the way to build them.
+
+There's a last lousy point to poke at the monk. It seemed like the best way to pick at their appearance.
+
+Congratulations. You win! I hope you enjoyed this.
+
+The next two pokes at the monk can be done in either order.
+
+> BAD BUNK (3)
+
+> SAD SUNK (4)
+
+> N
+
+No-nudge slow sludge! Now things branch a bit.
+
+> GROW GRUDGE (5)
+
+There's a Last Lousy Point you can do at any time, so let's do it now. It's an odd one, since it contains off-color language. You'll want to say a profanity (BOTHER if you don't want the rough stuff) and then summon it and repel it. Once I saw the joke, it seemed too good not to include. I hope it's not too off-color.
+
+Note that you may wish to go east and make a passage north for a puzzle first, so you can understand why this walkthrough does what it does. You will get an area that needs upgrading, and a possible solution may be rejected, as you don't have the right item. Visiting it first will give you an idea for a lateral-thinking puzzle based on types of things.
+
+You may also wish to poke to the west. You can't do anything in the end room, but you may see what to do and be tipped off that it's time to get going once you get a certain item.
+
+> N
+
+One Warm Stun Storm will go on for a while until you find rest.
+
+> DONE DORM (6)
+
+You're not cool enough to be let in!
+
+> FUN FORM (7)
+
+> N
+
+Now there's a tree trunk with something in it, but it's too high.
+
+> SEE SUNK (8)
+
+> GEE JUNK (9)
+
+Free fruit! But you're not sufficiently excited yet.
+
+> WHEE WOOT (10)
+
+Now you are! But what sort of fruit is it? Think back to the place east and north, if you visited it.
+
+> PEAR PEACH (11)
+
+> S
+
+> S
+
+Okay, let's check the east branch now.
+
+> E
+
+How to get rid of Just Jack?
+
+> BUSSED BACK (12)
+
+Jack said there was no way through, which is true, but there is one, if you make it. How?
+
+> CRUST CRACK (13)
+
+> N
+
+It's too desolate here. How can you make it less desolate?
+
+> BARE BEACH (14)
+
+Without the pear peach, this wouldn't be possible. But what to do with the deep dune? Make it smaller, first, before searching it.
+
+> SEEP SOON (15)
+
+"Soon" means "go back and come back."
+
+> S
+
+> N
+
+> REAP RUNE (16)
+
+> S
+
+> W
+
+Now the west branch!
+
+> W
+
+This one's easy, but the room beyond is tougher.
+
+> UNARM (17)
+
+> N
+
+An unseen enemy must be repelled! The Rho Rune seems to be active.
+
+> GO GOON (18)
+
+Now you need to make something.
+
+> COCOON (19)
+
+It's too dark!
+
+> MO MOON (20)
+
+It's not getting light fast enough!
+
+> SO SOON (21)
+
+Time for daybreak!
+
+> CROW CROON (22)
+
+Okay, you're in jail. There are two optional things to do here.
+
+Okay, let's get out of here.
+
+> KNOTTY NAIL (23)
+
+You're on to the high hub. You need to find where to go and solve each area. It's kind of like Trinity, and I guess it's as weird as Trinity, but it's not as profound. Still, it's the adventure you're stuck in. There's a way down if you want it. That's so you can keep making good guesses and store up clues. The high hub itself has a few, as do the side areas.
+
+You can complete the spokes in a variety of orders. Sixteen, to be precise.
+
+There are two critical items found in certain areas. Let's start with the Shoe. You could complete the other area first, but you'd have to come back later for two LLPs.
+
+> ROCKING RIFT (24)
+
+> FLOW FLUE (25)
+> GLOW GLUE (26)
+
+Now you can get food and drink in either order, but you can also get oddly-named snacks for a bonus point! You can't come back to get it, because, well, once the show is over, everyone leaves.
+
+Food.
+
+> BRO BREW (27)
+
+Drink.
+
+> STOW STEW (28)
+
+Now you need performers.
+
+> CROW CREW (29)
+
+Now you get to play hype man/woman! Call out to the crowd to get them hyped...
+
+> HO WHO (30)
+
+...then get them into a total frenzy.
+
+> YO YOU (31)
+
+Now how to help the crow crew make their grand entrance?
+
+> THROW THROUGH (32)
+
+You now have a light lute, which will be handy.
+
+Now, back at High Hub, let's get that second item.
+
+> SHOCKING SHIFT (33)
+
+We need this place to be habitable!
+
+> SHORE SHOALS (34)
+
+Now there are ways to create two rare odd animals and, well, something to pass down for generations.
+
+You need two normal sorts of animals to patch things up fully here now.
+
+> FOUR FOALS (35)
+
+> MORE MOLES (36)
+
+Hooray! And you get a red rose, too.
+
+Let's hit the third spoke, which requires something from the previous two.
+
+> GAWKING GIFT (37)
+
+First, you will be gawking at a gift that seems worthless. At the end, you will gawk at one that seems priceless.
+
+> DUMB DOUBT (38)
+
+But you need a detour here. Time to use the red rose for the first time. How can you sort-of win an argument?
+
+> SAID SOS (39)
+
+Now a swift conclusion!
+
+> UMM OUT (40)
+
+The fourth spoke has you use both the lute and rose.
+
+> D
+
+Again, get a foothold.
+
+> HEY HOPE (41)
+
+Now, show you are well-adjusted.
+
+> K COPE (42)
+
+Let's hit the fourth spoke now.
+
+> GROKKING GRIFT (43)
+
+One rhyme-pair was too good to pass up, so I added it as an LLP. It fit right in.
+
+How to make the slight sleaze more wholesome?
+
+> BRIGHT BREEZE (44)
+
+> PLIGHT PLEASE (45)
+
+Now, you need trite trees, which would fix things enough to get by. But what do trees need? Well, it's something from outside. Time to use that light lute.
+
+> RIGHT ROOT (46)
+
+> S
+
+Time for a bonus point here. There might be some fake underdogging involved.
+
+First, expose the freak framing for what it is.
+
+> BLEAK BLAMING (47)
+
+Then, take it down in style.
+
+> CHIC SHAMING (48)
+
+But you need charismatic people to carry on your work. The red rose may be helpful here.
+
+> BRED BROS (49)
+
+You are kicked back to the High Hub again.
+
+On to spoke five. I thought the ending rhyme was probably the toughest by a long shot.
+
+> DOCKING DIFFED (50)
+
+Start getting that confidence back.
+
+> BAD BOAST (51)
+
+Now use it! It opens a new area.
+
+> RAD ROAST (52)
+
+> W
+
+To beat the white whale, you need:
+
+A weapon and armor.
+A boat, then a way to get your sea legs. (The boat must come first. Everything else can be in any order.)
+An ally, at any time.
+The last, most tricky command: to build yourself up for the fight, then relax.
+
+> FLIGHT FLAIL (53)
+
+> MIGHT MAIL (54)
+
+> SIGHT SAIL (55)
+
+> RIGHT RAIL (56)
+
+> BRIGHT BRUTE (57)
+
+> EXCITE EXHALE (58)
+
+After this happens, your light lute bursts into flames and becomes Delight-Dilute! The solution to get rid of this is a tricky LLP.
+
+Now on to your destiny.
+
+> MOCKING MIFFED (59)
+
+The old end seems like, well, a dead end. How can it lead somewhere else?
+
+> BOLD BEND (60)
+
+We don't want it to lead anywhere. We want it to lead somewhere bad.
+
+> TROLLED TREND (61)
+
+Ouch! That something bad left us sore a bit. Time to recuperate.
+
+> MOLD MEND (62)
+
+> S
+
+Oh no! You're trapped in a vain vat! It'd be nice to have a weapon, there.
+
+> BANE BAT (63)
+
+How to trash the vain vat?
+
+> FLAIN FLAT (64)
+
+Now to brag a bit! Once you brag, enemies will bust through and allow you a way further south.
+
+> SPLAIN SPLAT (65)
+
+Oops! The red rose protects you from harm. But you still need to get rid of the Pred Pros. Pay them off, not with money...
+
+> FED FOES (66)
+
+> S
+
+Examining the marquee will give you clues what to do. Three tasks can be done in any order.
+
+Let's knock off the longest one first. It corresponds to "glee" on the marquee, with "glet" not being a word.
+
+> FRET FREE (67)
+
+Show you won't be pushed around! This corresponds to "tree" on the marquee, with "tret" not being a word.
+
+> SET SEE (68)
+
+Finally, "twee/twet" is not a word. This is the shortest, yet the toughest, of the three puzzles. You need to go in for a bit of argument.
+
+> YET YE (69)
+
+Oh no! The way back north crumbles.
+
+Now remember that sus sack? It's the only thing that's left in your inventory.
+
+> PLUS PLAQUE (70)
+
+But it's not engraved! The Burning Bright Spurning Sprite is upset! They need an apt title!
+
+Now there is a way to lose the game, to make a heel turn at the last possible minute. That is left as an exercise to the reader.
+
+> TURNING TRITE (71)
+
+Congratulations! You have won. I hope this was fun and educational in some way.
