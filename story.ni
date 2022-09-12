@@ -92,7 +92,7 @@ this is the flag bad goto to rule:
 		if mrgo is not Poppin' Part and sco-bye-bub is false, say "There's a way back, but you need to find the right way off the High Hub." instead;
 
 this is the stuck-right-now rule:
-	if player is in Threat Three and bully is in threat three, say "It's the final conflict! You're stuck here!" instead;
+	if player is in Threat Three and sprite is in threat three, say "It's the final conflict! You're stuck here!" instead;
 	if player is in Vain Vat and pred pros are not moot, say "You're in a bit of a pickle. Too much to get up and go anywhere." instead;
 
 this is the flag bad goto from rule:
@@ -997,13 +997,13 @@ sco-fed-foes is a truth state that varies.
 
 part Threat Three Met ME
 
-Threat Three Met Me is in Poppin' Part. printed name is "[if marquee-score < 3]Market Marquee[else]Threat Three Met Me[end if]". "[if marquee is moot]The marquee has crumbled, its rubble blocking the way back north. This is it[else]A market marquee stands here, maybe giving you some clues as to how to do things[end if]. [if bright bully is off-stage]You could go back north if you really wanted, but perhaps you'll want to finish things here[else]You feel stuck here in the final encounter[end if].". spokeval of Threat Three is 5.
+Threat Three Met Me is in Poppin' Part. printed name is "[if marquee-score < 3]Market Marquee[else]Threat Three Met Me[end if]". "[if marquee is moot]The marquee has crumbled, its rubble blocking the way back north. This is it[else]A market marquee stands here, maybe giving you some clues as to how to do things[end if]. [if sprite is off-stage]You could go back north if you really wanted, but perhaps you'll want to finish things here[else]You feel stuck here in the final encounter[end if].". spokeval of Threat Three is 5.
 
 from-number of threat three met me is 5607. to-number of threat three met me is 16009.
 
 Drain Drat Vain Vat is mapped north of Threat Three Met Me. nowhere is mapped south of Drain Drat Vain Vat.
 
-check going north in Threat Three Met Me when bright bully is in Threat Three Met Me: say "The fallen marquee sealed off the way back north." instead;
+check going north in Threat Three Met Me when sprite is in Threat Three Met Me: say "The fallen marquee sealed off the way back north." instead;
 
 guess-table of threat three met me is the table of threat three met me guesses.
 
@@ -1045,18 +1045,20 @@ sco-yet-ye is a truth state that varies.
 
 sco-plus-plaque is a truth state that varies.
 
-chapter Frightfully Bright Bully
+chapter Burning Bright Spurning Sprite
 
-the Frightfully Bright Bully is a himher thing. description is "The [bully] doesn't look especially mean or conniving or thuggish. But you know they just can't stand you. It's time to face up to them.". "The Frightfully Bright Bully continues a combination of rolling their eyes and looking away from you."
+there is a himher thing called the Burning Bright Spurning Sprite.
 
-from-number of bright bully is 11012. to-number of bright bully is 5505.
+[the Frightfully Bright Bully is a himher thing. description is "The [bully] doesn't look especially mean or conniving or thuggish. But you know they just can't stand you. It's time to face up to them.". "The Frightfully Bright Bully continues a combination of rolling their eyes and looking away from you."]
+
+from-number of spurning sprite is 11512. to-number of spurning sprite is 5705.
 
 after doing something with a himher thing (called th):
 	set the pronoun them to th;
 	set the pronoun him to th;
 	set the pronoun her to th;
 
-sco-trite-t-lly is a truth state that varies.
+sco-turning-trite is a truth state that varies.
 
 volume main engine
 
@@ -1225,7 +1227,7 @@ carry out talktoing:
 	if noun is the player, say "[one of]'Whee! Why me? My!'[or]'Me! My! See?'[paragraph break]'Sigh.'[in random order]" instead;
 	if noun is mad monk, say "You need more pointed commentary, picking out the mad monk's flaws." instead;
 	if noun is lazy loud crazy crowd, say "Regular chatter doesn't work on the crowd. They need to be hyped up and see a show." instead;
-	if noun is Bully, say "No, you will lose an argument. Even if you don't start an argument, you'll lose it. You know that." instead;
+	if noun is spurning sprite, say "No, you will lose an argument. Even if you don't start an argument, you'll lose it. You know that." instead;
 	if noun is white whale, say "You sense a telepathic 'Splay! Splash! May mash!' Yes, it's dolphins that have telepathic chatter in the real world, but there are different rules here. Play along with it." instead;
 	if noun is bright brute, say "The brute's brightness is more positivity than conversational brilliance. But it will know how to fight." instead;
 	if noun is crow crew, say "The crow crew has its own prep for the performance. You feel even asking them if they were ready would make them less ready. It's the crowd that you need to interact with." instead;
@@ -1475,7 +1477,7 @@ to decide whether (di - a direction) is blocked:
 check exitsing (this is the adjust exit text with lift present rule):
 	if location of player is High Hub, say "The locking lift is the main way out of here, but [if sco-bye-bub is true]you can go back [b]DOWN[r] the stalk[else]there is a way to revisit what's below[end if]." instead;
 	if locking lift is in location of player and number of viable directions is 0, say "You can't go in any direction[unless player is in show shoe or player is in gore goals] yet[end if], but you can [enter-lift]." instead;
-	if player is in Threat Three and Bully is in Threat Three, say "You're at the final confrontation. There are no exits." instead;
+	if player is in Threat Three and spurning sprite is in Threat Three, say "You're at the final confrontation. There are no exits." instead;
 
 report exitsing (this is the notify player of lift rule):
 	if locking lift is in the location of the player, say "You can also [enter-lift].";

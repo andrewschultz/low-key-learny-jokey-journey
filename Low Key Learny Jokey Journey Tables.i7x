@@ -1322,30 +1322,33 @@ this is the vr-yet-ye rule:
 
 a goodrhyme rule (this is the vc-plus-plaque rule):
 	if player does not have sus sack, unavailable;
-	if frightfully bright bully is not fungible:
+	if spurning sprite is not fungible:
 		vcp "You consider conjuring up a gaudy, flattering plus-plaque. But you have nobody to give it to, and you'd hate to have to carry it around[if player is not in Threat Three Met Me]. Maybe elsewhere[end if].";
 		not-yet;
 	if sco-plus-plaque is true:
-		vcal "You already made and gave the plus plaque to [the bully]! Now you just have to figure, or riff on, their name!";
+		vcal "You already made and gave the plus plaque to [the sprite]! Now you just have to figure, or riff on, their name!";
 		already-done;
 	ready;
 
 this is the vr-plus-plaque rule:
 	now sco-plus-plaque is true;
-	say "You have summoned a plus plaque! The [bully] accepts it before you can offer it. But then they are upset ... there's no name on it! What could their name be?";
+	say "You have summoned a plus plaque! The [sprite] accepts it before you can offer it. But then they are upset ... there's no name on it! What could their name be?";
 
-a goodrhyme rule (this is the vc-trite-t-lly rule):
+a goodrhyme rule (this is the vc-turning-trite rule):
 	if player is not in threat three met me, unavailable;
-	if sco-plus-plaque is false:
-		vcp "That would be naming [the Bully], but you need to do a bit more.";
+	if spurning sprite is off-stage:
+		vcp "Oh no! Is the story really getting that bad? Still ... that might be useful, in some context, somehow.";
 		not-yet;
-	if sco-trite-t-lly is true:
+	if sco-plus-plaque is false:
+		vcp "That is just talk, until you have something physical to notarize that [the sprite] may swing this way.";
+		not-yet;
+	if sco-turning-trite is true:
 		vcal "Somehow, you already managed to win the game. This should not happen.";
 		already-done;
 	ready;
 
-this is the vr-trite-t-lly rule:
-	now sco-trite-t-lly is true;
+this is the vr-turning-trite rule:
+	now sco-turning-trite is true;
 	say "You figured your enemy's name! Congratulations! You have won!";
 	win-the-game;
 
@@ -1571,8 +1574,9 @@ a goodrhyme rule (this is the marquee-there rule):
 
 this is the marquee-change rule:
 	if marquee-score is 3:
-		say "The marquee crumbles. Mostly, it crumbles into what was the exit north. Behind it is ... the [Bully] you met at the start! They moan loudly about first the Train Tree, then the cocoon, then ... you somehow getting here with the locking lift. All, yes, threats. 'THREAT THREE MET ME!' the [bully] booms.";
-		move Frightfully Bright Bully to Threat Three Met Me;
+		say "The marquee crumbles. Mostly, it crumbles into what was the exit north. Behind it is ... the [Sprite] you met at the start! They moan loudly about first the Train Tree, then the cocoon, then ... you somehow getting here with the locking lift. All, yes, threats. 'THREAT THREE MET ME!' the [sprite] booms.";
+		declue-here;
+		move spurning sprite to Threat Three Met Me;
 		moot marquee;
 		now nowhere is mapped north of Threat Three Met Me;
 		print-the-loc;
