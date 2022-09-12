@@ -230,9 +230,9 @@ sco-choose-name is a truth state that varies. [ this variable is never explicitl
 
 chapter train tree
 
-the train tree is scenery in Bane Be Sane See. "There are three ways to enter the train tree: under writing saying [b]WAYNE (WHEE)[r], [b]JANE G[r], or [b]DANE D/LANE LEE[r]. They all look about the same."
+the train tree is scenery in Bane Be Sane See. "It's a big tree. [b]MAIN ME[r] is carved into it in big letters.  There are three ways to enter, none more right than the other. You may wish to [b]READ[r] what's below them."
 
-check entering train tree: say "Which way? Examine the tree." instead;
+check entering train tree: say "Which way? [b]READ[r] the tree." instead;
 
 check opening train tree: say "You should be able to enter the tree as you please." instead;
 
@@ -300,7 +300,7 @@ to-number of boring box is -4.
 
 check opening boring box:
 	say "You open the boring box, and you see a metal gadget that doesn't look very interesting at first. It's labeled as a Leet Learner, and you also note large print saying [b]DOES NOT GIVE OUTRIGHT SOLUTIONS--THAT'S ANOTHER ITEM[r].[paragraph break]There's also smaller print you can probably [b]READ[r] for instructions. As you grab the Leet Learner, the boring box disintegrates, leaving you quite interested how that happened.";
-	say "[line break][i][bracket][b]NOTE:[r][i] for those who played [b][vvff][i], this is the same device you got back then. So you can skip looking into it, if you remember how it works.[close bracket][line break]";
+	say "[line break][i][bracket][b]NOTE:[r][i] for those who played [b][vvff][i], this is a different device from the one you got back then. It has many of the same options, but the clue readout is different.[close bracket][line break]";
 	moot boring box;
 	set the pronoun it to leet learner;
 	now player has leet learner instead;

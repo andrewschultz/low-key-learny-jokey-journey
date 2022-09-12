@@ -1614,8 +1614,9 @@ this is the marquee-change rule:
 
 volume readables
 
-table of readables (continued)
+table of readables
 read-thing	read-txt
+train tree	"There are three ways to enter the train tree: under writing saying [b]WAYNE (WHEE)[r], [b]JANE G[r], or [b]DANE D/LANE LEE[r]. They all look about the same."
 locking lift	"You see [lift-score in words] of six settings filled in:[paragraph break][fixed letter spacing][lift-stuff].[variable letter spacing][paragraph break]You've completed [hub-score in words] areas beyond the [high hub]."
 
 to say lift-stuff:
