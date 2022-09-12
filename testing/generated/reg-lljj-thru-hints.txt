@@ -1,0 +1,655 @@
+## reg-lljj-thru-hints.txt
+## GENERATOR FILE: rbr-lljj-thru.txt
+
+## walkthrough testing hints
+
+** game: /home/andrew/prt/debug-low-key-learny-jokey-journey.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main-thru
+
+>au 2
+
+>plain plea
+by one point
+
+>ll
+Most special commands are more than one word. VERBS will give a list of standard, non-puzzle-solving verbs.
+
+>jane g
+by one point
+
+>ll
+Most special commands are more than one word, because of the rhyme-pairs involved. VERBS will give a list of standard, non-puzzle-solving verbs.
+
+>boring box
+by one point
+
+>ll
+Most special commands are more than one word, because of the rhyme-pairs involved. VERBS will give a list of standard, non-puzzle-solving verbs.
+
+>open box
+
+>ll
+You scan the area.
+Hmm. There's a reading. It must relate "Storing Stocks" to the erstwhile boring box.
+A dot bounces around the leet learner's grid and winds up at (-1.00, -3.00.)
+The leet learner is giving a funny readout. You could maybe climb UP to the old rocks and get another reading.
+
+>n
+
+>ll
+A dot bounces around the leet learner's grid and winds up at (-1.00, -3.00.)
+!You could maybe climb UP to the old rocks and get another reading.
+
+>ll mad monk
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+
+>gad gunk
+by one point
+
+>sad sunk
+
+>ll mad monk
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+
+>undo
+>undo
+
+>bad bunk
+by one point
+
+>ll mad monk
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+
+>sad sunk
+by one point
+
+>ll
+A dot bounces around the leet learner's grid and winds up at (-1.00, -3.00.)
+
+>n
+
+>ll
+A dot bounces around the leet learner's grid and winds up at (1.00, 0.50.)
+
+>grow grudge
+by one point
+
+>ll
+Nothing comes up. It seems the general area doesn't need to change or be changed any more.
+
+>n
+
+>bother
+You hear a whooshing as a door swings in from nowhere. It doesn't seem to lead anywhere. Voices from behind it, though, assure you you are missing something. Using your logical skills, you deduce it is a miss-more-diss door. While it's not going to jump you if your back is turned, it might be nice to get rid of.
+
+>ll door
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
+
+>piss poor
+by one point
+
+>ll
+A dot bounces around the leet learner's grid and winds up at (0.50, -0.50.)
+
+>done dorm
+by one point
+
+>ll
+A dot bounces around the leet learner's grid and winds up at (-0.50, -0.50.)
+
+>ll done dorm
+A dot bounces around the leet learner's grid and winds up at (-1.00, 0.00.)
+
+>fun form
+by one point
+
+>ll
+A dot bounces around the leet learner's grid and winds up at (-1.00, 0.00.)
+
+>n
+
+>ll
+A dot bounces around the leet learner's grid and winds up at (-0.50, -1.00.)
+
+>see sunk
+by one point
+
+>ll
+A dot bounces around the leet learner's grid and winds up at (-0.50, -1.00.)
+
+>gee junk
+by one point
+
+>ll
+Nothing comes up. It seems the general area doesn't need to change or be changed any more.
+
+>ll fruit
+A dot bounces around the leet learner's grid and winds up at (0.00, -1.00.)
+
+>whee woot
+by one point
+
+>ll fruit
+Nothing comes up. It seems FREE FRUIT doesn't need to change or be changed any more.
+
+>pear peach
+by one point
+
+>ll pear peach
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+
+>s
+>s
+>e
+
+>ll jack
+A dot bounces around the leet learner's grid and winds up at (2.00, 0.00.)
+
+>ll
+A dot bounces around the leet learner's grid and winds up at (1.00, -1.00.)
+
+>bussed back
+by one point
+
+>ll
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+
+>crust crack
+by one point
+
+>ll
+WRONG
+
+>n
+
+>ll
+WRONG
+
+>bare beach
+by one point
+
+>ll
+WRONG
+
+>ll
+WRONG
+
+>seep soon
+by one point
+
+>ll
+WRONG
+
+>s
+>n
+
+>ll
+WRONG
+
+>reap rune
+by one point
+
+>ll
+WRONG
+
+>s
+>w
+>w
+
+>ll
+WRONG
+
+>unarm
+by one point
+
+>ll
+WRONG
+
+>n
+
+>ll
+WRONG
+
+>go goon
+by one point
+
+>ll
+WRONG
+
+>cocoon
+by one point
+
+>ll
+WRONG
+
+>mo moon
+by one point
+
+>ll
+WRONG
+
+>so soon
+by one point
+
+>ll
+WRONG
+
+>crow croon
+by one point
+
+>grotty grail
+by one point
+
+>potty pail
+by one point
+
+>ll
+WRONG
+
+>knotty nail
+by one point
+
+>bye bub
+
+>ll stalk
+WRONG
+
+>wordy walk
+
+>w
+>n
+>ll
+WRONG
+
+>undo
+>undo
+
+>u
+
+##RBRS-SHUFFLESTART=0
+
+>ll
+WRONG
+
+>rocking rift
+by one point
+
+>go goo
+by one point
+
+>ll
+WRONG
+
+>flow flue
+by one point
+
+>ll
+WRONG
+
+>glow glue
+by one point
+
+>ll
+WRONG
+
+>bro brew
+by one point
+
+>ll
+WRONG
+
+>stow stew
+by one point
+
+>ll
+WRONG
+
+>crow crew
+by one point
+
+>ll
+WRONG
+
+>ho who
+by one point
+
+>ll
+WRONG
+
+>yo you
+by one point
+
+>ll
+WRONG
+
+>throw through
+by one point
+
+##RBRS-SHUFFLEEND=0
+##RBRS-SHUFFLESTART=1
+
+>ll
+WRONG
+
+>shocking shift
+by one point
+
+>ll
+WRONG
+
+>shore shoals
+by one point
+
+>ll
+WRONG
+
+##RBRS-SHUFFLECONDITION=1>0
+
+>night newt
+by one point
+
+>kite coot
+by one point
+
+##RBRS-SHUFFLECONDITION=
+
+##?? note to test after -- if only LLPs remain
+
+>lore lols
+by one point
+
+>four foals
+by one point
+
+>ll
+WRONG
+
+>more moles
+by one point
+
+##RBRS-SHUFFLEEND=1
+##RBRS-SHUFFLESTART=2
+
+>ll
+WRONG
+
+>gawking gift
+by one point
+
+>ll
+WRONG
+
+>dumb doubt
+by one point
+
+>ll
+WRONG
+
+>ll rose
+WRONG
+
+>said sos
+by one point
+
+>ll rose
+WRONG
+
+>umm out
+by one point
+
+>ll
+WRONG
+
+>d
+
+>ll
+WRONG
+
+>hey hope
+by one point
+
+>ll
+WRONG
+
+>k cope
+by one point
+
+##RBRS-SHUFFLEEND=2
+##RBRS-SHUFFLESTART=3
+
+>ll
+WRONG
+
+>grokking grift
+by one point
+
+>ll
+WRONG
+
+>bright breeze
+by one point
+
+>ll
+WRONG
+
+>plight please
+by one point
+
+>ll
+WRONG
+
+>tight tees
+by one point
+
+>ll light lute
+WRONG
+
+>right root
+by one point
+
+>ll
+WRONG
+
+>s
+
+>ll
+WRONG
+
+>bleak blaming
+by one point
+
+>ll
+WRONG
+
+>chic shaming
+by one point
+
+>ll
+WRONG
+
+>clique claiming
+by one point
+
+>ll
+WRONG
+
+>bred bros
+by one point
+
+##RBRS-SHUFFLEEND=3
+##RBRS-SHUFFLESTART=4
+
+>ll
+WRONG
+
+>docking diffed
+by one point
+
+>bad boast
+by one point
+
+>ll
+WRONG
+
+>rad roast
+by one point
+
+>ll
+WRONG
+
+>w
+
+>ll
+WRONG
+
+>sight sail
+by one point
+
+>ll
+WRONG
+
+>flight flail
+by one point
+
+>ll
+WRONG
+
+>might mail
+by one point
+
+>ll
+WRONG
+
+>right rail
+by one point
+
+>ll
+WRONG
+
+>ll light lute
+WRONG
+
+>bright brute
+by one point
+
+>ll light lute
+WRONG
+
+>excite exhale
+by one point
+
+>ll red rose
+WRONG
+
+>thread throws
+by one point
+
+>ll red rose
+WRONG
+
+##RBRS-SHUFFLEEND=4
+
+>ll delight dilute
+WRONG
+
+>despite dispute
+by one point
+
+>ll
+WRONG
+
+>mocking miffed
+by one point
+
+>ll
+WRONG
+
+>bold bend
+by one point
+
+>ll
+WRONG
+
+>trolled trend
+by one point
+
+>ll
+WRONG
+
+>mold mend
+by one point
+
+>ll
+WRONG
+
+>s
+
+>ll
+WRONG
+
+>bane bat
+by one point
+
+>ll
+WRONG
+
+>flain flat
+by one point
+
+>ll
+WRONG
+
+>splain splat
+by one point
+
+>ll
+WRONG
+
+>ll red rose
+WRONG
+
+>fed foes
+by one point
+
+>ll red rose
+WRONG
+
+>s
+
+>ll
+WRONG
+
+>fret free
+by one point
+
+>ll
+WRONG
+
+>yet ye
+by one point
+
+>ll
+WRONG
+
+>set see
+by one point
+
+>ll
+WRONG
+
+>ll sack
+WRONG
+
+>plus plaque
+by one point
+
+>ll spurning sprite
+WRONG
+
+>score
+
+>turning trite
+by one point
