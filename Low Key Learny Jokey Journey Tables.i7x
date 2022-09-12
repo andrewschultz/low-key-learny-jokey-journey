@@ -125,7 +125,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "set"	"see"	--	--	false	true	true	false	threat three met me	vc-set-see rule	vr-set-see rule	--	--
 "yet"	"ye"	--	--	false	true	true	false	threat three met me	vc-yet-ye rule	vr-yet-ye rule	--	--
 "plus"	"plaque"	--	--	false	true	true	false	drain drat vain vat	vc-plus-plaque rule	vr-plus-plaque rule	--	"You can make a heavy [b]PLUS PLAQUE[r] [once-now of vc-plus-plaque rule] you have someone to dump it off on right away."
-"trite"	"tully|tolly|tally|telly|tilly|tillie"	--	--	false	true	true	false	threat three met me	vc-trite-t-lly rule	vr-trite-t-lly rule	--	"You can name [the bully] [once-now of vc-trite-t-lly rule] they have an 'award' of sorts to write their name on."
+"turning"	"trite"	--	--	false	true	true	false	threat three met me	vc-turning-trite rule	vr-turning-trite rule	--	"You can label [the sprite] [once-now of vc-turning-trite rule] they have an 'award' of sorts to write their name on."
 
 a goodrhyme rule (this is the vc-in-bane rule):
 	if player is not in Bane Be Sane See, unavailable;
@@ -225,7 +225,7 @@ a goodrhyme rule (this is the vc-grow-grudge rule):
 this is the vr-grow-grudge rule:
 	say "As your mood hardens, so does the sludge! But you don't see that right away. You're busy accepting you're not perfect and realizing you don't have to be and recognizing sometimes stewing is better than lashing out. The sludge even recedes a bit. You can go any of the four directions now.";
 	now sco-grow-grudge is true;
-	declue nnss;
+	declue-here;
 
 a goodrhyme rule (this is the vc-done-dorm rule):
 	if player is not in One Warm Stun Storm, unavailable;
@@ -253,7 +253,7 @@ a goodrhyme rule (this is the vc-fun-form rule):
 this is the vr-fun-form rule:
 	say "You actually, well, have fun saying why you should be certified to stay in the done dorm until enough time has passed.";
 	now sco-fun-form is true;
-	declue One Warm Stun Storm;
+	declue-here;
 	declue Done Dorm;
 
 a goodrhyme rule (this is the vc-see-sunk rule):
@@ -281,7 +281,7 @@ this is the vr-gee-junk rule:
 	now sco-gee-junk is true;
 	say "My goodness, yes! There is something in the tree trunk! It's marked [fruit].";
 	now free fruit is in TTTT;
-	declue TTTT;
+	declue-here;
 
 this is the vh-whee-woot rule:
 	say "You're thinking small. Be more enthusiastic!";
@@ -347,6 +347,7 @@ this is the vr-crust-crack rule:
 	say "A rumbling. Passage opens to the north.";
 	now sco-crust-crack is true;
 	now rare reach is mapped north of trust track;
+	declue-here;
 
 this is the vc-bare-beach rule:
 	if player is not in rare reach, unavailable;
@@ -367,6 +368,7 @@ this is the vr-bare-beach rule:
 	now sco-bare-beach is true;
 	moot pear peach;
 	print-the-loc;
+	declue-here;
 
 this is the vc-seep-soon rule:
 	if player is not in rare reach or sco-bare-beach is false, unavailable;
@@ -409,6 +411,7 @@ this is the vr-un-arm rule:
 	now sco-un-arm is true;
 	say "That wasn't too bad. Whoever it was guarding the way north sounds very disappointed that their oppression may now take actual effort!";
 	now NoNoon is mapped north of Hun Harm Fun Farm;
+	declue-here;
 
 a goodrhyme rule (this is the vc-go-goon rule):
 	if player is not in NoNoon, unavailable;
@@ -480,6 +483,7 @@ a goodrhyme rule (this is the vc-crow-croon rule):
 this is the vr-crow-croon rule:
 	now sco-crow-croon is true;
 	say "The crow croons! Your [rune] glows, then bursts in unison with the cocoon. A ... well, not quite a monster, but no animal you've seen before ... busts out.[paragraph break]Unfortunately, the commotion brings a few henchmen to where you are.[paragraph break]You are arrested and dumped in...";
+	declue-here;
 	move player to Jotty Jail;
 	moot cocoon;
 	moot rho rune;
@@ -538,6 +542,7 @@ a goodrhyme rule (this is the vc-bye-bub rule):
 
 this is the vr-bye-bub rule:
 	say "And just like that, you find the way down. You want to leave, and that's that. You hope something new is below ... and it is! A sturdy stalk pops through for you to climb down, and you do, back to [nnss]. Perhaps you will find additional inspiration.";
+	declue-here;
 	move sturdy stalk to NNSS;
 	now High Hub is mapped above NNSS;
 	now NNSS is mapped below High Hub;
@@ -554,6 +559,7 @@ a goodrhyme rule (this is the vc-wordy-walk rule):
 this is the vr-wordy-walk rule:
 	now sco-wordy-walk is true;
 	say "You take a nice long wordy walk, and it fills you with ideas and things to try when you go back to [high hub].";
+	declue sturdy stalk;
 
 a goodrhyme rule (this is the vc-docking-diffed rule):
 	if locking lift is not fungible, unavailable;
@@ -829,7 +835,7 @@ this is the vr-crow-crew rule:
 	say "The Crow Crew appears! They look ready to give a performance replete with humor, wit, song, pyrotechnics, and so forth. You just need to find a way to make a grand entrance.";
 	move crow crew to show shoe;
 	print-the-loc;
-	change-shoe-number 5304;
+	change-shoe-number 5404;
 
 a goodrhyme rule (this is the vc-throw-through rule):
 	if player is not in show shoe, unavailable;
@@ -862,7 +868,7 @@ a goodrhyme rule (this is the vc-dumb-doubt rule):
 this is the vr-dumb-doubt rule:
 	now sco-dumb-doubt is true;
 	say "You create dumb doubt in the mind of your adversaries. This would be rude if they weren't mean, but they are, so it all feels creative and appropriate. How to expand that doubt, now?";
-	now to-number of bum bout rum route is 10606;
+	now to-number of bum bout rum route is 5303;
 
 a goodrhyme rule (this is the vc-said-sos rule):
 	if player does not have red rose, unavailable;
@@ -898,6 +904,7 @@ this is the vr-umm-out rule:
 	now sco-umm-out is true;
 	say "With the confidence instilled by instilling dumb doubt, you finish the deal. You notice a valley below. You should go down when you are ready.";
 	now Slay Slope is mapped below Rum Route;
+	declue-here;
 	print-the-loc;
 
 a goodrhyme rule (this is the vc-hey-hope rule):
@@ -953,7 +960,7 @@ this is the vr-rad-roast rule:
 	say "You strike back to show you know what's what. The voice goes away!";
 	now Trite Trail is mapped west of Mad Most Cad Coast;
 	print-the-loc;
-	declue mad most cad coast;
+	declue-here;
 
 a goodrhyme rule (this is the vc-sight-sail rule):
 	if player is not in Trite Trail, unavailable;
@@ -978,6 +985,7 @@ this is the vr-might-mail rule:
 	now sco-might-mail is true;
 	say "A suit of armor appears nearby! You don't want to put it on until you fight [the whale], but it's there when you need it.";
 	move might mail to trite trail;
+	adjust-trail 5504;
 	follow the notify-final-whale rule;
 
 a goodrhyme rule (this is the vc-flight-flail rule):
@@ -991,6 +999,7 @@ this is the vr-flight-flail rule:
 	now sco-flight-flail is true;
 	say "A translucent flail appears. You grab it, worrying it is too heavy. But as you do, it is easy to swing, and you feel faster. It will be a good weapon to use against the white whale.";
 	move flight flail to trite trail;
+	adjust-trail 5605;
 	follow the notify-final-whale rule;
 
 a goodrhyme rule (this is the vc-right-rail rule):
@@ -1006,6 +1015,7 @@ a goodrhyme rule (this is the vc-right-rail rule):
 this is the vr-right-rail rule:
 	now sco-right-rail is true;
 	say "You inspect the sight sail, and you realize that, yes, there are rails to help you keep your balance and gain your sea legs as you hunt [the whale].";
+	adjust-trail 5504;
 	follow the notify-final-whale rule;
 
 a goodrhyme rule (this is the vc-bright-brute rule):
@@ -1042,6 +1052,7 @@ this is the vr-excite-exhale rule:
 	now sco-excite-exhale is true;
 	say "You get all jazzed up to fight [the whale], believing you can do it. Then you calm down and figure strategy. You're pretty confident. You just need something to restrict or capture [the white whale].";
 	cue-thread-throws;
+	declue-here;
 
 a goodrhyme rule (this is the vc-thread-throws rule):
 	if player does not have red rose, unavailable;
@@ -1101,7 +1112,10 @@ a goodrhyme rule (this is the vc-plight-please rule):
 this is the vr-plight-please rule:
 	now sco-plight-please is true;
 	say "'Plight? PLEASE!' you laugh. The sleaze lessens. The flight-flees you feel disappear.";
-	declue Slight Sleaze;
+	if sco-right-root is true:
+		declue-here;
+	else:
+		now to-number of Slight Sleaze is -5504;
 
 a goodrhyme rule (this is the vc-right-root rule):
 	if player does not have light lute, unavailable;
@@ -1141,6 +1155,10 @@ a goodrhyme rule (this is the vc-chic-shaming rule):
 this is the vr-chic-shaming rule:
 	now sco-chic-shaming is true;
 	say "You segue from bleak blaming to an effortless, unavoidable, flowing conclusion, your voice rising to a crescendo for your main point. Bam!";
+	if sco-clique-claiming is true:
+		declue-here;
+	else:
+		now to-number of Freak Framing is -5607;
 	print-the-loc;
 
 a goodrhyme rule (this is the vc-clique-claiming rule):
@@ -1153,6 +1171,7 @@ a goodrhyme rule (this is the vc-clique-claiming rule):
 this is the vr-clique-claiming rule:
 	now sco-clique-claiming is true;
 	say "Well, claiming that cliques exist and we aren't in it always works, even though we deserve to be, and even if we don't really want to be in good with the leaders. It's not practical, but boy, is it cathartic!";
+	if sco-chic-shaming is true, declue-here;
 
 a goodrhyme rule (this is the vc-bred-bros rule):
 	if player does not have red rose, unavailable;
@@ -1217,7 +1236,7 @@ a goodrhyme rule (this is the vc-mold-mend rule):
 this is the vr-mold-mend rule:
 	now sco-mold-mend is true;
 	say "You feel emotionally ready to go forward, and what's more, you feel robust enough to push back against any temporary setbacks.";
-	declue old end;
+	declue-here;
 
 a goodrhyme rule (this is the vc-bane-bat rule):
 	if player is not in drain drat vain vat, unavailable;
@@ -1263,6 +1282,7 @@ this is the vr-splain-splat rule:
 	move Pred Pros to Vain Vat;
 	move head hose to Vain Vat;
 	now Threat Three Met Me is mapped south of Vain Vat;
+	declue-here;
 	print-the-loc;
 
 a goodrhyme rule (this is the vc-fed-foes rule):
@@ -1292,6 +1312,7 @@ a goodrhyme rule (this is the vc-fret-free rule):
 this is the vr-fret-free rule:
 	now sco-fret-free is true;
 	say "You feel cheerier. Perhaps there is stuff to fret about, but you recognize it'd be a waste of energy, and you're pleased you got this far.";
+	decrease to-number of Threat Three by 5404;
 	abide by the marquee-change rule;
 
 a goodrhyme rule (this is the vc-set-see rule):
@@ -1305,6 +1326,7 @@ a goodrhyme rule (this is the vc-set-see rule):
 this is the vr-set-see rule:
 	now sco-set-see is true;
 	say "You stand tall and confident. You won't be easily pushed around!";
+	decrease to-number of Threat Three by 5303;
 	abide by the marquee-change rule;
 
 a goodrhyme rule (this is the vc-yet-ye rule):
@@ -1318,6 +1340,7 @@ a goodrhyme rule (this is the vc-yet-ye rule):
 this is the vr-yet-ye rule:
 	now sco-yet-ye is true;
 	say "You think back to people who helped you in bad faith and realize you have a right to reject 'help' or 'advice' with strings attached and, yes, get under the nerves of people offering said 'services.'";
+	decrease to-number of Threat Three by 5302;
 	abide by the marquee-change rule;
 
 a goodrhyme rule (this is the vc-plus-plaque rule):
@@ -1449,7 +1472,7 @@ to check-red-rose:
 	if shoal-core-score is 2:
 		say "Things are livelier now. Plants come into bloom, etc. Of course, there is a red rose, because there always is one during such a quick transformation. You take it. Who knows where it may come in handy?";
 		now player has red rose;
-		declue sore souls gore goals;
+		declue-here;
 		remove-spoke 5805; [SHOCKING SHIFT done]
 	else:
 		say "You've almost filled this area's potential. Just a little more life...";
@@ -1483,10 +1506,11 @@ this is the flue-and-glue rule:
 		now to-number of show shoe is 10708;
 
 this is the stew-and-brew rule:
-	if shoe-concessions is 2, say "With a reliable source of food and drink (which, man, they smell pretty good) a crowd starts to gather. You can't do any rhyming stuff to them directly, but perhaps there's some general stuff you can shout.";
-	move lazy loud crazy crowd to show shoe;
-	now from-number of show shoe is 10907;
-	now to-number of show shoe is 15810;
+	if shoe-concessions is 2:
+		say "With a reliable source of food and drink (which, man, they smell pretty good) a crowd starts to gather. You can't do any rhyming stuff to them directly, but perhaps there's some general stuff you can shout.";
+		move lazy loud crazy crowd to show shoe;
+		now from-number of show shoe is 10907;
+		now to-number of show shoe is 15810;
 
 a goodrhyme rule (this is the shoe-crowd-yet rule):
 	if not shoe-food-drink:
@@ -1502,9 +1526,9 @@ to lose-gold-string (nu - a number):
 	say "[line break]A[one of][or]nother[stopping] gold[twang].";
 	decrease to-number of light lute by nu;
 	if to-number of light lute is 0:
-		if sco-night-newt is false, increase to-number of light lute by 5504;
-		if sco-kite-coot is false, increase to-number of light lute by 5403;
-		if to-number of light lute is 0, now to-number of light lute is -3;
+		if sco-night-newt is false, decrease to-number of light lute by 5504;
+		if sco-kite-coot is false, decrease to-number of light lute by 5403;
+		now from-number of light lute is -4;
 
 to lose-silver-string: say "[line break]A[one of][or]nother[stopping] silver[twang]."
 
@@ -1556,7 +1580,6 @@ a goodrhyme rule (this is the did-i-shame rule):
 this is the notify-final-whale rule:
 	unless whale-hunt-ready, continue the action;
 	say "The last step of your prep will be something else! It will probably require, like, extra syllables in what you want to do. Both with psyching yourself up and then taking a step back and achieving mindfulness, or whatever.";
-	now to-number of trite trail is 5606;
 
 to decide what number is whale-score:
 	decide on boolval of sco-sight-sail + boolval of sco-might-mail + boolval of sco-flight-flail + boolval of sco-right-rail + boolval of sco-bright-brute;
@@ -1564,6 +1587,10 @@ to decide what number is whale-score:
 to decide whether whale-hunt-ready:
 	if whale-score is 5, yes;
 	no;
+
+to adjust-trail (nu - a number):
+	decrease to-number of trite trail by nu;
+	if to-number of trite trail is 0, now to-number of trite trail is 5606;
 
 [ending sequence]
 

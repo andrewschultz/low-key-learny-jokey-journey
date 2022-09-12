@@ -127,6 +127,7 @@ chapter instead rules
 
 to decide whether the action is procedural:
 	if examining, yes;
+	if lling, yes;
 	no;
 
 instead of doing something with a boring thing:
@@ -135,31 +136,19 @@ instead of doing something with a boring thing:
 
 volume cluing
 
-to declue (rm - a room):
-	now from-number of rm is -3;
-	now to-number of rm is 0;
-
-to declue (th - a thing):
-	now from-number of th is -3;
-	now to-number of th is 0;
-
-test lls with "jj/jj/au 2/open box/n/jj/jj/n/ll"
-
 boring-box-check is a truth state that varies.
 
 rule for supplying a missing noun when lling (this is the get readings from room rule):
-	say "You scan the area.";
+	say "You scan the area[one of]. This will suffice most of the time, though you may wish to [b]LL[r] a thing that doesn't jibe with its rhymes[or][stopping].";
 	if player is in roaring rocks:
-		say "Hmm. There's a reading. It must relate 'Storing Stocks' to the erstwhile boring box.";
+		say "Hmm. There's a reading. It must relate 'Storing Stocks' to the erstwhile boring box[if mad monk is in location of player]--[b]LL MONK[r] directly if you want to[end if].";
+	if from-number of location of player is -1, say "Nothing comes up. The general area here doesn't need changing." instead;
+	if from-number of location of player is -3, say "Nothing comes up. The general area here has been changed enough." instead;
 	show-readings (from-number of location of player) and (to-number of location of player);
 	if boring-box-check is false and player has leet learner and player is in roaring rocks:
 		say "[line break]The [learner] is giving a funny readout. You could maybe climb [b]UP[r] to the old rocks and get another reading.";
 		now boring-box-check is true;
 	reject the player's command;
-
-a room has a number called from-number. a room has a number called to-number.
-
-a thing has a number called from-number. a thing has a number called to-number.
 
 to say floatfrac of (x - a number) and (y - a number):
 	if remainder after dividing x by y is 0:
@@ -171,7 +160,7 @@ to say floatfrac of (x - a number) and (y - a number):
 	let temp be (x * 100) / y;
 	say "[temp / 100]";
 	say ".[run paragraph on]";
-	let decimal be (x * 100) / y;
+	let decimal be the remainder after dividing ((x * 100) / y) by 100;
 	if decimal < 10, say "0";
 	say "[decimal]";
 
@@ -181,7 +170,9 @@ check lling:
 	if noun is the player, say "Nothing. You're the changer, not the changee." instead;
 	if noun is lazy loud crazy crowd, say "They're sort of there, and while they need to be interacted with, you may wish to focus on the whole area, instead." instead;
 	if noun is rho rune and player is not in NoNoon, say "The [learner] makes a weird noise. The [rune] seems to grow duller. Perhaps this is not where [the rune] is at full power." instead;
-	if from-number of noun is 0 and to-number of noun is not 0:
+	if from-number of noun is -2, say "Nothing comes up. You don't need to change [the noun]." instead;
+	if from-number of noun is -4, say "Nothing comes up. You've changed [the noun] as much as you needed to." instead;
+	if to-number of noun is 0:
 		show-readings (from-number of noun) and (to-number of location of player);
 	else:
 		show-readings (from-number of noun) and (to-number of noun);
@@ -191,14 +182,11 @@ to show-readings (nfrom - a number) and (nto - a number):
 	if nfrom is 0:
 		say "Nothing comes up.";
 		continue the action;
-	if nfrom is -3 or nto is -3:
-		say "Nothing comes up. It seems [the noun] doesn't need to change or be changed any more.";
-		continue the action;
-	if nfrom is unscannable or nto is unscannable:
-		say "Nothing comes up. You have finished business [if nfrom is -1]here[else]with [the noun][end if].";
-		continue the action;
 	let optionals be false;
 	if nto < 0:
+		if nto > -5:
+			say "UH OH! This should have been caught before.";
+			continue the action;
 		now nto is 0 - nto;
 		now optionals is true;
 	let name-length be nfrom / 5000;
@@ -207,7 +195,7 @@ to show-readings (nfrom - a number) and (nto - a number):
 	let puz-1 be the remainder after dividing (nto / 100) by 50;
 	let name-2 be the remainder after dividing nfrom by 100; [ones digit = second word # of letters]
 	let puz-2 be the remainder after dividing nto by 100;
-	say "[name-length] [puz-length] [name-1] [name-2] [puz-1] [puz-2].";
+[	say "[name-length] [puz-length] [name-1] [name-2] [puz-1] [puz-2].";]
 	let numerator be (name-length * puz-1) - (puz-length * name-1);
 	let denominator be (name-length * puz-length);
 	say "A dot bounces around [the learner]'s grid and winds up at ([floatfrac of numerator and denominator], ";
@@ -218,12 +206,12 @@ to show-readings (nfrom - a number) and (nto - a number):
 
 section unscannables
 
-to-number of ha half nah naff button is -3.
-to-number of leet learner is -3.
-to-number of needle is -3.
-to-number of lurking lump is -3.
-to-number of train tree is -3.
-to-number of yourself is -3.
+from-number of ha half nah naff button is -2.
+from-number of leet learner is -2.
+from-number of needle is -2.
+from-number of lurking lump is -2.
+from-number of train tree is -2.
+from-number of yourself is -2.
 
 volume rooms (intro)
 
@@ -233,9 +221,7 @@ Bane Be Sane See is a room.  it is in Stoppin' Start. printed name is "Bane Be S
 
 guess-table of Bane Be Sane See is table of Bane Be Sane See guesses.
 
-from-number of bane be sane see is 10805.
-
-to-number of bane be sane see is -3.
+from-number of bane be sane see is -1. to-number of bane be sane see is -1.
 
 the player is in Bane Be Sane See. description of player is "Some searchin['], umm, urchin."
 
@@ -254,7 +240,7 @@ book Roaring Rocks
 
 Roaring Rocks is a room in Stoppin' Start. "This is a dead end. The only passage out is north. [if sco-boring-box is false]The roaring is too loud right now, though. You feel as if you'd be chased down if you ran away[else]Things are quieter now. You doubt the rocks/stocks hold any more great secrets[end if].". printed name of Roaring Rocks is "[if sco-boring-box is true]Storing Stocks[else]Roaring Rocks[end if]"
 
-from-number of roaring rocks is 5705. to-number of roaring rocks is 5603.
+from-number of roaring rocks is 5706. to-number of roaring rocks is 5603. [ the name is roaring rocks, but it becomes storing stocks before you find the learner. ]
 
 guess-table of Roaring Rocks is table of Roaring Rocks guesses.
 
@@ -310,7 +296,7 @@ chapter boring box
 
 the boring box is a thing. description is "Yup. It's pretty boring, which is nice in a way, because without 'interesting' locks, you can [b]OPEN[r] it with no problem.".
 
-to-number of boring box is -3.
+to-number of boring box is -4.
 
 check opening boring box:
 	say "You open the boring box, and you see a metal gadget that doesn't look very interesting at first. It's labeled as a Leet Learner, and you also note large print saying [b]DOES NOT GIVE OUTRIGHT SOLUTIONS--THAT'S ANOTHER ITEM[r].[paragraph break]There's also smaller print you can probably [b]READ[r] for instructions. As you grab the Leet Learner, the boring box disintegrates, leaving you quite interested how that happened.";
@@ -405,7 +391,7 @@ understand "no/noon" and "no noon" as NoNoon.
 
 guess-table of nonoon is the table of nonoon guesses.
 
-from-number of nonoon is 5206. to-number of nonoon is 5206.
+from-number of nonoon is 5204. to-number of nonoon is 5204.
 
 sco-go-goon is a truth state that varies.
 sco-co-coon is a truth state that varies.
@@ -484,7 +470,7 @@ chapter pear peach
 
 the pear peach is a thing. description is "It looks like a cross between a pear and a peach, with two bumps where the circumference gets larger instead of one, and the sort of orangish coloring in some spots and the light greenish pear coloring in others.".
 
-from-number of pear peach is -3.
+from-number of pear peach is 5405. to-number of pear peach is 5405.
 
 book Trust Track
 
@@ -671,11 +657,11 @@ sco-kite-coot is a truth state that varies.
 
 section night newt
 
-the night newt is scenery. description is "It blends in well, so you can't see it. But you know it's there.". from-number of night newt is -3.
+the night newt is scenery. description is "It blends in well, so you can't see it. But you know it's there.". from-number of night newt is -4.
 
 section kite coot
 
-the kite coot is scenery. description is "It's an odd bird, for sure. You should leave it to do its own thing, now you summoned it.". from-number of kite coot is -3.
+the kite coot is scenery. description is "It's an odd bird, for sure. You should leave it to do its own thing, now you summoned it.". from-number of kite coot is -4.
 
 chapter red rose
 
@@ -746,7 +732,7 @@ chapter lazy loud crazy crowd
 
 the lazy loud crazy crowd is a thing. "A lazy loud crazy crowd waits here for entertainment. You're the one to provide it!". description is "[if sco-ho-who is false]The lazy loud crazy crowd that's built up is ready to be asked if they are ready to make some noise and get this party started. Except, well, a lot more succinctly.[else if sco-yo-you is false]The lazy loud crazy crowd, having expressed their willingness to raise the roof figuratively, seeks reassurance.[else]The lazy loud crazy crowd is hyped for the main performance!"
 
-to-number of lazy loud crazy crowd is -3.
+to-number of lazy loud crazy crowd is -2.
 
 chapter Crow Crew
 
@@ -796,7 +782,7 @@ to say sstt: if slay slope is visited, say " this time"
 
 guess-table of Bum Bout Rum Route is the table of bum bout rum route guesses.
 
-from-number of bum bout rum route is 10609. to-number of bum bout rum route is 10708.
+from-number of bum bout rum route is 10609. to-number of bum bout rum route is 5405.
 
 sco-umm-out is a truth state that varies.
 sco-dumb-doubt is a truth state that varies.
@@ -838,7 +824,7 @@ from-number of fright freeze is 5606.
 
 the trite trees are boring scenery. "Not perfect, but not sleazy, either. They surround you on all sides except to the south."
 
-to-number of trite trees is -3.
+to-number of trite trees is -4.
 
 part Freak Framing Seek-Sameing
 
@@ -916,19 +902,19 @@ chapter sceneries
 
 a sight sail is scenery. "You don't know much about ships, but it looks ready to go, [if sco-right-rail is true]and you'd be comfortable sailing in it a while[else]though you're not sure you'd be comfortable in it too long, yet[end if]."
 
-to-number of sight sail is -3.
+to-number of sight sail is -4.
 
 a flight flail is scenery. "The flight flail sits on the ground, ready for you to pick up when you need it.".
 
-to-number of flight flail is -3.
+to-number of flight flail is -4.
 
 some might mail is scenery. "The might mail is too heavy to wear until you meet the white whale, but it's shiny and bright and impressive."
 
-to-number of might mail is -3.
+to-number of might mail is -4.
 
 a bright brute is scenery. "The bright brute seems to be napping right now. Resting up for the big fight."
 
-to-number of bright brute is -3.
+to-number of bright brute is -4.
 
 book Mocking Miffed / spoke 5
 
