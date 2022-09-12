@@ -1425,6 +1425,28 @@ check singing: say "You hum a few too-totes-new notes, almost stringing together
 
 volume meta-verbs
 
+chapter high level game stuff
+
+check saving the game: say "The [sprite]'s voice echoes: 'Surely you don't need a break from THIS, right?'";
+
+report saving the game:
+	if the rule succeeded:
+		say "The [sprite]'s voice on the wind: 'Another file you may never look at again. Or if you do, it's because you messed up.'";
+	else:
+		say "'Dithering, eh?'"
+
+check restarting the game: say "The [sprite]'s voice mocks you. 'Reliving stuff you already know? No progress that way.'";
+
+check restoring the game: say "'Jumping ahead and missing the journey, eh?' the [sprite] mocks you.";
+
+report restoring the game:
+	if the rule succeeded:
+		say "'Ah. You're back. Something more important to do, I'm sure.'";
+	else:
+		say "'Dithering, eh?'"
+
+check quitting the game: say "'Well, if you have something better to do... I hope you do...'";
+
 chapter abouting
 
 carry out abouting:
