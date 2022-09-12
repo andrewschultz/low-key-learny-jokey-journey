@@ -11,6 +11,14 @@ mist-cmd(topic)	mist-rule	got-yet	leet-rule	mist-txt
 "coppin cart"	--	false	--	"No policemen drive by. They might be corrupt, anyway."
 "choppin chart"	--	false	--	"There are only three regions, and the name isn't really important."
 "mopping mart"	--	false	--	"Surely this is more exciting than a trip for cleaning supplies."
+"earning right"	--	false	lose-the-game rule	"Well, that's what you hope to find!"
+"ferning fright"	--	false	--	"There are no terrorist plants worth summoning in [this-game]."
+
+this is the lose-the-game rule:
+	if player is in threat three and spurning sprite is in threat three:
+		say "'Ah, so you have been assimilated,' the [sprite] says. And you have been.[paragraph break]You were close to victory, but now the story ends in total failure. Well, existential failure.";
+		end the story saying "Suck-Soul: Stuck! Stole!";
+		follow the shutdown rules;
 
 to say is-was of (ts - a truth state): say "[if ts is true]was[else]is[end if]"
 
@@ -213,7 +221,7 @@ mist-cmd(topic)	mist-rule	got-yet	leet-rule	mist-txt
 "po poon"	--	false	need-crow-croon rule	"The only thing po['] is your dirty mind. This is a family game!"
 "pro prune"	--	false	need-crow-croon rule	"You come out mentally in favor of a high-fiber diet."
 "row/rho ruin/rune"	--	false	need-crow-croon rule	"[if player has rho rune]But you already have the rune[else]You are on the right track for what you need[end if]."
-"toe/tow tune/toon"	--	false	need-crow-croon rule	"Nothing toe-tapping starts playing, nor are any cartoon characters dragged across the landscape."
+"toe/tow toon/tune"	--	false	need-crow-croon rule	"Nothing toe-tapping starts playing, nor are any cartoon characters dragged across the landscape."
 
 this is the need-crow-croon rule:
 	if sco-crow-croon is false, the rule succeeds;
@@ -308,6 +316,7 @@ mist-cmd(topic)	mist-rule	got-yet	leet-rule	mist-txt
 "door doles"	--	false	--	"No, this place doesn't need more doors."
 "nor knolls"	--	false	--	"You don't need to deprive this place of landscape."
 "poor/pour/pore poles"	--	false	--	"Lifeless poles would not make this area cheerier."
+"poor/pour/pore polls"	--	false	--	"Nothing could make this area drearier than polls."
 "roar rolls/roles"	--	false	--	"Perhaps the roaring would be lively. Perhaps it wouldn't. But it might not add anything."
 "score skols"	--	false	--	"Perhaps Vikings will discover this land and conquer it some day. But why speed things up?"
 "store stoles"	--	false	--	"[if shoal-core-score < 0]Before you have animal pelts, you'll need animals living in peace, and then you'd hate to hurt them[else]Bringing animal pelts into a place coming to life doesn't quite work[end if]."
@@ -468,8 +477,6 @@ mist-cmd(topic)	mist-rule	got-yet	leet-rule	mist-txt
 "this thor"	--	false	--	"Thor is more about actions than words."
 "tis tore"	--	false	--	"The [diss door] remains intact."
 "wiz war"	--	false	--	"No lightning bolt spell blasts the door."
-
-guess-table of red rose is the table of red rose guesses.
 
 table of red rose guesses
 mist-cmd(topic)	mist-rule	got-yet	leet-rule	mist-txt

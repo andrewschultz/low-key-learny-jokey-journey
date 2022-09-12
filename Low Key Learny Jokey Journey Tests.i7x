@@ -4,7 +4,7 @@ Version 1/220715 of Low Key Learny Jokey Journey Tests by Andrew Schultz begins 
 
 volume IDE tests
 
-[test wm with "au 2/jane g/boring box/open box/n/bad bunk/sad sunk/n/grow grudge/n/done dorm/fun form/n/see sunk/gee junk/whee woot/pear peach/s/s/e/bussed back/crust crack/n/bare beach/seep soon/s/n/reap rune/s/w/w/unarm/n/go goon/cocoon/mo moon/so soon/crow croon/knotty nail/rocking rift/flow flue/glow glue/bro brew/stow stew/crow crew/ho who/yo you/throw through/shocking shift/shore shoals/four foals/more moles/docking diffed/bad boast/rad roast/w/flight flail/might mail/sight sail/right rail/bright brute/excite exhale/thread throws/grokking grift/bright breeze/plight please/right root/s/bleak blaming/chic shaming/bred bros/n/enter lift/gawking gift/dumb doubt/said sos/umm out/d/hey hope/k cope/u/enter lift/mocking miffed/bold bend/trolled trend/mold mend/s/bane bat/flain flat/splain splat/fed foes/s/x marquee/fret free/yet ye/set see/plus plaque/trite telly".]
+[test wm with "au 2/jane g/boring box/open box/n/bad bunk/sad sunk/n/grow grudge/n/done dorm/fun form/n/see sunk/gee junk/whee woot/pear peach/s/s/e/bussed back/crust crack/n/bare beach/seep soon/s/n/reap rune/s/w/w/unarm/n/go goon/cocoon/mo moon/so soon/crow croon/knotty nail/rocking rift/flow flue/glow glue/bro brew/stow stew/crow crew/ho who/yo you/throw through/shocking shift/shore shoals/four foals/more moles/docking diffed/bad boast/rad roast/w/flight flail/might mail/sight sail/right rail/bright brute/excite exhale/thread throws/grokking grift/bright breeze/plight please/right root/s/bleak blaming/chic shaming/bred bros/n/enter lift/gawking gift/dumb doubt/said sos/umm out/d/hey hope/k cope/u/enter lift/mocking miffed/bold bend/trolled trend/mold mend/s/bane bat/flain flat/splain splat/fed foes/s/x marquee/fret free/yet ye/set see/plus plaque/turning trite".]
 
 [test ocome with "jane g/boring box/open box/n/guide gong/s/e/pride prong/s/e".]
 
@@ -34,7 +34,7 @@ test w12 with "despite dispute/mocking miffed/bold bend/trolled trend/mold mend/
 
 test w13 with "bane bat/flain flat/splain splat/fed foes/s".
 
-test w14 with "fret free/yet ye/set see/plus plaque/trite telly".
+test w14 with "fret free/yet ye/set see/plus plaque/turning trite".
 
 test wa with "test w1/test w2/test w3/test w4/test w5/test w6/test w7/test w8/test w9/test w10/test w11/test w12/test w13/test w14".
 
@@ -45,7 +45,7 @@ definition: a room (called rm) is unrhymable:
 	if rm is One Warm Stun Storm or rm is Hun Harm Fun Farm, yes;
 	no;
 
-when play begins:
+[when play begins:
 	let needs be 0;
 	repeat with myth running through things:
 		if description of myth is empty, say "Describe thing [myth].";
@@ -53,16 +53,36 @@ when play begins:
 	repeat with myrm running through rooms:
 		if myrm is unrhymable, next;
 		if guess-table of myrm is table of no good guesses:
-			say "[myrm] needs a good-guess table. tgg.py r=[myrm].";
 			increment needs;
+			say "[needs]. [myrm] needs a good-guess table. tgg.py r=[myrm].";
 	if needs is 0, say "YAY! All rooms are taken care of!";
 	now needs is 0;
 	say "[b]On to rhymable things or people ...[r]";
 	repeat with myth running through rhymables:
 		if guess-table of myth is table of no good guesses:
-			say "[myth] needs a good-guess table. tgg.py r=[myth].";
 			increment needs;
+			say "[needs]. [myth] needs a good-guess table. tgg.py r=[myth].";
+	if needs is 0, say "YAY! All rhymables are taken care of!";]
+
+when play begins:
+	let needs be 0;
+	say "[b]Checking thing checksums...[r]";
+	repeat with myth running through things:
+		if from-number of myth is 0 and to-number of myth is 0:
+			increment needs;
+			say "[needs]. [myth] needs from-number.";
 	if needs is 0, say "YAY! All rhymables are taken care of!";
+	now needs is 0;
+	say "[b]Checking room checksums...[r]";
+	repeat with myrm running through rooms:
+		if myrm is unrhymable, next;
+		if from-number of myrm is 0:
+			increment needs;
+			say "[needs]. [myrm] needs from-number.";
+		if to-number of myrm is 0:
+			increment needs;
+			say "[needs]. [myrm] needs from-number.";
+	if needs is 0, say "YAY! All rooms are taken care of!";
 
 volume ending diagnostics
 

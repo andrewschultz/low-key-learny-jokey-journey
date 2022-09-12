@@ -1450,7 +1450,7 @@ check quitting the game: say "'Well, if you have something better to do... I hop
 chapter abouting
 
 carry out abouting:
-	say "[this-game] is the third entry in the [pprr] series. You do not need experience [series-names] to get through successfully.";
+	say "[this-game] is the third entry in the [pprr] series. You do not need experience with [series-names] to get through successfully.";
 	say "[line break]It felt like something that'd never get created, but it was fun to dream about. Then I had an idea about [if nnss is unvisited]the third room[else][NNSS][end if] offering another LLP in [vvff], but I wanted to move on. Then an idea for one room came, then another, and suddenly I had a game for IFComp 2022, which was nice, as the one I'd had on reserve since 2018 had dried up.";
 	say "[line break]I was able to re-use and fine-tune and fix bugs in a lot of code from [vvff], and I even managed to create some code I backported. And I started using Zarf's regression scripts earlier, to catch bugs well before the deadline and free my mind up for bigger-picture things. So it feels like the user experience should be smoother, although the story might be weaker.";
 	say "[line break]While my code for [vvff] wasn't perfect, it gave me a boost so I didn't have to rewrite a lot. I'd also become more comfortable with rules and rule ordering since then, so I was able to make the code more portable.";
@@ -1577,8 +1577,10 @@ rule for printing a parser error (this is the default parser error notification 
 		say "Most special commands are more than one word[if roaring rocks is visited], because of the rhyme-pairs involved[end if]";
 	else if number of words in the player's command is 0:
 		say "You think a bit";
-	else:
+	else if number of words in the player's command is 2 and boring box is off-stage:
 		say "Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs";
+	else:
+		say "I couldn't parse that command. You don't need any more than two words long";
 	say ". [b]VERBS[r] will give a list of standard, non-puzzle-solving verbs.";
 	the rule succeeds;
 
