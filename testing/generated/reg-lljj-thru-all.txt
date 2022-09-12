@@ -325,7 +325,13 @@ by one point
 
 >score
 
-84 out of 85
+85 out of 86
 
->trite telly
+>earning right
+*** Suck-Soul: Stuck! Stole! ***
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+
+>undo
+
+>turning trite
 by one point

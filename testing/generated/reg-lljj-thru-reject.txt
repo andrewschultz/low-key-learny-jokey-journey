@@ -294,8 +294,8 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 >stow stew
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
 
-#testcase-unavailable-table-of-verb-checks-vc-trite-t-lly-rule
->trite tolly
+#testcase-unavailable-table-of-verb-checks-vc-turning-trite-rule
+>turning trite
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
 
 #testcase-unavailable-table-of-verb-checks-vc-throw-through-rule
@@ -1329,11 +1329,11 @@ You already prepped yourself for the final fight. Now it is upon you.
 >yet ye
 You already prepped yourself for the final fight. Now it is upon you.
 
-#testcase-prereject-table-of-verb-checks-vc-trite-t-lly-rule
->trite telly
-That would be naming the Frightfully Bright Bully, but you need to do a bit more.
+#testcase-prereject-table-of-verb-checks-vc-turning-trite-rule
+>turning trite
+That is just talk. You need some sort of monument or memento to establish that.
 
-#testcase-think-table-of-verb-checks-vc-trite-t-lly-rule
+#testcase-think-table-of-verb-checks-vc-turning-trite-rule
 >think
 You can name the Frightfully Bright Bully once they have an "award" of sorts to write their name on.
 
@@ -1666,5 +1666,5 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 
 >score
 
->trite telly
+>turning trite
 by one point

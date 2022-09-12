@@ -974,12 +974,12 @@ The HA HALF button lights up on your Leet Learner.
 >plus zplaque
 The HA HALF button lights up on your Leet Learner.
 
-#testcase-ha-half-table-of-verb-checks-86-tully-tolly-tally-telly-tilly-tillie
->ztrite tolly
+#testcase-ha-half-table-of-verb-checks-86-trite
+>zturning trite
 The HA HALF button lights up on your Leet Learner.
 
-#testcase-ha-half-table-of-verb-checks-86-trite
->trite ztolly
+#testcase-ha-half-table-of-verb-checks-86-turning
+>turning ztrite
 The HA HALF button lights up on your Leet Learner.
 
 >fret free
@@ -996,5 +996,5 @@ by one point
 
 >score
 
->trite telly
+>turning trite
 by one point

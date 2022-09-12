@@ -365,8 +365,8 @@ It looks like you may have tried to refer to the room name, or part of it. You o
 >stow stew
 {$REJECT}
 \\
-#testcase-unavailable-table-of-verb-checks-vc-trite-t-lly-rule
->trite tolly
+#testcase-unavailable-table-of-verb-checks-vc-turning-trite-rule
+>turning trite
 {$REJECT}
 \\
 #testcase-unavailable-table-of-verb-checks-vc-throw-through-rule
@@ -4054,12 +4054,12 @@ The HA HALF button lights up on your Leet Learner.
 >plus zplaque
 The HA HALF button lights up on your Leet Learner.
 \\
-#testcase-ha-half-table-of-verb-checks-86-tully-tolly-tally-telly-tilly-tillie
->ztrite tolly
+#testcase-ha-half-table-of-verb-checks-86-trite
+>zturning trite
 The HA HALF button lights up on your Leet Learner.
 \\
-#testcase-ha-half-table-of-verb-checks-86-trite
->trite ztolly
+#testcase-ha-half-table-of-verb-checks-86-turning
+>turning ztrite
 The HA HALF button lights up on your Leet Learner.
 
 @rej
@@ -4131,11 +4131,11 @@ The fallen marquee sealed off the way back north.
 You're at the final confrontation. There are no exits.
 
 @rej
-#testcase-prereject-table-of-verb-checks-vc-trite-t-lly-rule
->trite telly
-That would be naming the Frightfully Bright Bully, but you need to do a bit more.
+#testcase-prereject-table-of-verb-checks-vc-turning-trite-rule
+>turning trite
+That is just talk. You need some sort of monument or memento to establish that.
 \\
-#testcase-think-table-of-verb-checks-vc-trite-t-lly-rule
+#testcase-think-table-of-verb-checks-vc-turning-trite-rule
 >think
 You can name the Frightfully Bright Bully once they have an "award" of sorts to write their name on.
 
@@ -4473,11 +4473,17 @@ That location or thing doesn't exist or isn't known to you yet.
 >score
 
 @min
-70 out of 85
+72 out of 86
 
 @all
-84 out of 85
+85 out of 86
+\\
+>earning right
+*** Suck-Soul: Stuck! Stole! ***
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+\\
+>undo
 
->trite telly
+>turning trite
 by one point
 }}SCORE++
