@@ -1,0 +1,308 @@
+# reg-lljj-lone-odd-learner.txt
+
+## reg-lljj-lone-odd-learner.txt
+
+## this goes through divergent case with using the leet learner e.g. different first choices and getting the lute before the rose
+
+** game: /home/andrew/prt/debug-low-key-learny-jokey-journey.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* dane-d-thru
+
+>dane d
+by one point
+
+>boring box
+by one point
+
+>open box
+
+>ll
+
+>u
+Climbing up a bit, scanning the roaring rocks gets you a readout of (-1.00, -2.00.)
+
+>u
+Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note your choice DANE D. You scan a bit where TRAIN TREE is mentioned beneath each tube.
+A dot bounces around the leet learner's grid and winds up at (-1.00, -3.00.)
+
+>u
+Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note your choice DANE D. You scan a bit where BANE BE SANE, SEE is mentioned beneath each tube.
+A dot bounces around the leet learner's grid and winds up at (0.00, -1.50.)
+
+>u
+
+Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note each of the four paths for DANE D, JANE G, LANE LEE, and WAYNE WHEE. You scan a bit where TRAIN TREE is mentioned beneath each tube.
+A dot bounces around the leet learner's grid and winds up at (-0.75, -1.75.)
+
+>u
+Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note each of the four paths for DANE D, JANE G, LANE LEE, and WAYNE WHEE. You scan a bit where BANE BE SANE, SEE is mentioned beneath each tube.
+A dot bounces around the leet learner's grid and winds up at (0.25, -0.25.)
+
+* dane-dee-thru
+
+>dane dee
+by one point
+
+>boring box
+by one point
+
+>open box
+
+>ll
+
+>u
+Climbing up a bit, scanning the roaring rocks gets you a readout of (-1.00, -2.00.)
+
+>u
+Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note your choice DANE DEE. You scan a bit where TRAIN TREE is mentioned beneath each tube.
+A dot bounces around the leet learner's grid and winds up at (-1.00, -1.00.)
+
+>u
+Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note your choice DANE DEE. You scan a bit where BANE BE SANE, SEE is mentioned beneath each tube.
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.50.)
+
+>u
+
+Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note each of the four paths for DANE D, JANE G, LANE LEE, and WAYNE WHEE. You scan a bit where TRAIN TREE is mentioned beneath each tube.
+A dot bounces around the leet learner's grid and winds up at (-0.75, -1.75.)
+
+>u
+Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note each of the four paths for DANE D, JANE G, LANE LEE, and WAYNE WHEE. You scan a bit where BANE BE SANE, SEE is mentioned beneath each tube.
+A dot bounces around the leet learner's grid and winds up at (0.25, -0.25.)
+
+* jane-g-thru
+
+>jane g
+by one point
+
+>boring box
+by one point
+
+>open box
+
+>ll
+
+>u
+Climbing up a bit, scanning the roaring rocks gets you a readout of (-1.00, -2.00.)
+
+>u
+Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note your choice JANE G. You scan a bit where TRAIN TREE is mentioned beneath each tube.
+A dot bounces around the leet learner's grid and winds up at (-1.00, -3.00.)
+
+>u
+Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note your choice JANE G. You scan a bit where BANE BE SANE, SEE is mentioned beneath each tube.
+A dot bounces around the leet learner's grid and winds up at (0.00, -1.50.)
+
+>u
+
+Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note each of the four paths for DANE D, JANE G, LANE LEE, and WAYNE WHEE. You scan a bit where TRAIN TREE is mentioned beneath each tube.
+A dot bounces around the leet learner's grid and winds up at (-0.75, -1.75.)
+
+>u
+Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note each of the four paths for DANE D, JANE G, LANE LEE, and WAYNE WHEE. You scan a bit where BANE BE SANE, SEE is mentioned beneath each tube.
+A dot bounces around the leet learner's grid and winds up at (0.25, -0.25.)
+
+* jane-gee-thru
+
+>jane gee
+by one point
+
+>boring box
+by one point
+
+>open box
+
+>ll
+
+>u
+Climbing up a bit, scanning the roaring rocks gets you a readout of (-1.00, -2.00.)
+
+>u
+Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note your choice JANE GEE. You scan a bit where TRAIN TREE is mentioned beneath each tube.
+A dot bounces around the leet learner's grid and winds up at (-1.00, -1.00.)
+
+>u
+Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note your choice JANE GEE. You scan a bit where BANE BE SANE, SEE is mentioned beneath each tube.
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.50.)
+
+>u
+
+Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note each of the four paths for DANE D, JANE G, LANE LEE, and WAYNE WHEE. You scan a bit where TRAIN TREE is mentioned beneath each tube.
+A dot bounces around the leet learner's grid and winds up at (-0.75, -1.75.)
+
+>u
+Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note each of the four paths for DANE D, JANE G, LANE LEE, and WAYNE WHEE. You scan a bit where BANE BE SANE, SEE is mentioned beneath each tube.
+A dot bounces around the leet learner's grid and winds up at (0.25, -0.25.)
+
+* lane-lee-thru
+
+>lane lee
+by one point
+
+>boring box
+by one point
+
+>open box
+
+>ll
+
+>u
+Climbing up a bit, scanning the roaring rocks gets you a readout of (-1.00, -2.00.)
+
+>u
+Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note your choice LANE LEE. You scan a bit where TRAIN TREE is mentioned beneath each tube.
+A dot bounces around the leet learner's grid and winds up at (-1.00, -1.00.)
+
+>u
+Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note your choice LANE LEE. You scan a bit where BANE BE SANE, SEE is mentioned beneath each tube.
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.50.)
+
+>u
+
+Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note each of the four paths for DANE D, JANE G, LANE LEE, and WAYNE WHEE. You scan a bit where TRAIN TREE is mentioned beneath each tube.
+A dot bounces around the leet learner's grid and winds up at (-0.75, -1.75.)
+
+>u
+Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note each of the four paths for DANE D, JANE G, LANE LEE, and WAYNE WHEE. You scan a bit where BANE BE SANE, SEE is mentioned beneath each tube.
+A dot bounces around the leet learner's grid and winds up at (0.25, -0.25.)
+
+* wayne-whee-thru
+
+>wayne whee
+by one point
+
+>boring box
+by one point
+
+>open box
+
+>ll
+
+>u
+Climbing up a bit, scanning the roaring rocks gets you a readout of (-1.00, -2.00.)
+
+>u
+Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note your choice WAYNE WHEE. You scan a bit where TRAIN TREE is mentioned beneath each tube.
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+
+>u
+Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note your choice WAYNE WHEE. You scan a bit where BANE BE SANE, SEE is mentioned beneath each tube.
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.50.)
+
+>u
+
+Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note each of the four paths for DANE D, JANE G, LANE LEE, and WAYNE WHEE. You scan a bit where TRAIN TREE is mentioned beneath each tube.
+A dot bounces around the leet learner's grid and winds up at (-0.75, -1.75.)
+
+>u
+Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note each of the four paths for DANE D, JANE G, LANE LEE, and WAYNE WHEE. You scan a bit where BANE BE SANE, SEE is mentioned beneath each tube.
+A dot bounces around the leet learner's grid and winds up at (0.25, -0.25.)
+
+* lute-llps
+
+>gonear hub
+>purloin ll
+
+>rocking rift
+by one point
+
+>flow flue
+by one point
+
+>glow glue
+by one point
+
+>stow stew
+by one point
+
+>bro brew
+by one point
+
+>ho who
+by one point
+
+>yo you
+by one point
+
+>crow crew
+by one point
+
+>throw through
+by one point
+
+>docking diffed
+by one point
+
+>bad boast
+by one point
+
+>rad roast
+by one point
+
+>w
+
+>sight sail
+by one point
+
+>right rail
+by one point
+
+>flight flail
+by one point
+
+>might mail
+by one point
+
+>bright brute
+by one point
+
+>e
+
+>enter lift
+
+>grokking grift
+by one point
+
+>bright breeze
+by one point
+
+>plight please
+by one point
+
+>right root
+by one point
+
+>ll lute
+A dot bounces around the leet learner's grid and winds up at (-0.50, 0.00.)
+
+>enter lift
+
+>shocking shift
+by one point
+
+>shore shoals
+by one point
+
+>night newt
+by one point
+
+>ll lute
+A dot bounces around the leet learner's grid and winds up at (-1.00, 0.00.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
+
+>undo
+>undo
+
+>kite coot
+by one point
+
+>ll lute
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
+
+>night newt
+by one point
+
+>ll lute
+Nothing comes up. You've changed the light lute as much as you needed to.
