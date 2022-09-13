@@ -134,10 +134,10 @@ a goodrhyme rule (this is the vc-in-bane rule):
 this is the vr-choose-name rule:
 	if the player's command includes "jane":
 		now the player is female;
-		if the player's command includes "g":
-			now name-choice-index is 3;
-		else:
+		if the player's command includes "gee":
 			now name-choice-index is 4;
+		else:
+			now name-choice-index is 3;
 	else if the player's command includes "wayne":
 		now the player is male;
 		now name-choice-index is 6;
@@ -713,6 +713,7 @@ this is the vr-night-newt rule:
 	say "A night newt appears and scurries around. You lose it in the scenery, but the place feels livelier now.";
 	move night newt to gore goals;
 	lose-silver-string;
+	light-lute-llp 5504;
 
 a goodrhyme rule (this is the vc-kite-coot rule):
 	abide by the lute-animal-check rule;
@@ -726,6 +727,7 @@ this is the vr-kite-coot rule:
 	say "The kite coot is an odd animal for sure but a worthy addition to the menagerie here.";
 	move kite coot to gore goals;
 	lose-silver-string;
+	light-lute-llp 5404;
 
 a goodrhyme rule (this is the vc-flow-flue rule):
 	if player is not in show shoe, unavailable;
@@ -1525,14 +1527,20 @@ a goodrhyme rule (this is the complete-hype rule):
 to lose-gold-string (nu - a number):
 	say "[line break]A[one of][or]nother[stopping] gold[twang].";
 	decrease to-number of light lute by nu;
+	say "[to-number of light lute] = new light lute total.";
 	if to-number of light lute is 0:
 		if sco-night-newt is false, decrease to-number of light lute by 5504;
-		if sco-kite-coot is false, decrease to-number of light lute by 5403;
-		now from-number of light lute is -4;
+		if sco-kite-coot is false, decrease to-number of light lute by 5404;
+		if to-number of light lute is 0, now from-number of light lute is -4;
 
 to lose-silver-string: say "[line break]A[one of][or]nother[stopping] silver[twang]."
 
 to say twang: say " string twangs on the light lute. When you look again, it's a dusty greyish color"
+
+to light-lute-llp (nu - a number):
+	if to-number of light lute < 0:
+		increase to-number of light lute by nu;
+		if to-number of light lute is 0, now from-number of light lute is -4;
 
 [hub 2a. got lute]
 

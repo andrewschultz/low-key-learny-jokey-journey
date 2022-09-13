@@ -274,10 +274,10 @@ check going up in roaring rocks when player has leet learner:
 		the rule succeeds;
 	let my-from be 5504;
 	let my-to be 21709;
-	say "Climbing up a bit, you see the tubes that led from where you started. You note ";
+	say "Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note ";
 	if learner-up-rocks is 1 or learner-up-rocks is 2:
 		say "your choice [entry name-choice-index in firstpoint-list]";
-		now my-to is entry learner-up-rocks in froms-list;
+		now my-to is entry name-choice-index in froms-list;
 	else:
 		say "each of the four paths for [b]DANE D, JANE G, LANE LEE,[r] and [b]WAYNE WHEE[r]";
 	say ". You scan a bit where ";
@@ -286,10 +286,10 @@ check going up in roaring rocks when player has leet learner:
 	 else:
 		say "[b]BANE BE SANE, SEE[r]";
 		now my-from is 10805;
-	say " is mentioned beneath each tube.";
-	say "The [learner] turns up";
+	say " is mentioned beneath each tube. The leet learner pulses!";
 	show-readings my-from and my-to;
 	increment learner-up-rocks;
+	if learner-up-rocks is 5, now learner-up-rocks is 0;
 	the rule succeeds;
 
 chapter boring box
