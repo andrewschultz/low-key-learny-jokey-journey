@@ -24,17 +24,17 @@ to say is-was of (ts - a truth state): say "[if ts is true]was[else]is[end if]"
 
 book current table notes
 
-to current-table-note (tn - a table name):
-	say "[line break]";
+to current-table-note-x (tn - a table name):
 	if tn is table of mad monk guesses:
+		say "[line break]";
 		if warn-monk is false, continue the action;
 		let nptn be nudge-points of tn;
 		if (nptn is number of rows in tn) and sco-gad-gunk is true:
 			say "You've torn apart the Mad Monk in pretty much any which way. Time to [monk-move-on].";
 			continue the action;
 		say "[monk-count].";
-	else if is-exhausted of tn:
-		say "You've farmed all the good guesses you can out of this rhyme pair.";
+		continue the action;
+	current-table-note tn;
 
 to say monk-count:
 	say "You've discovered [nudge-points of table of mad monk guesses] of [number of rows in table of mad monk guesses] good guesses available from the Mad Monk, and you have [if sco-gad-gunk is false]not [end if]found the Last Lousy Point. If that's good enough, [monk-move-on]";
