@@ -756,12 +756,13 @@ sco-night-newt is a truth state that varies.
 
 section in-depth lute descriptions
 
+to decide which number is lute-strings: decide on gold-lute-strings + silver-lute-strings;
+
 report examining light lute:
-	let all-strings be gold-lute-strings + silver-lute-strings;
-	if all-strings is 0:
-		say "It used to have some gold and silver strings, but they're replaced by regular ones now.";
+	if lute-strings is 0:
+		say "The lute used to have some gold and silver strings, but they're replaced by regular ones now.";
 		continue the action;
-	say "The lute [if all-strings < 4]still [end if]has [if gold-lute-strings > 0][gold-lute-strings in words] gold string[plur of gold-lute-strings][end if][if gold-lute-strings > 0 and silver-lute-strings > 0] and [end if][if silver-lute-strings > 0][silver-lute-strings in words] silver string[plur of silver-lute-strings][end if].";
+	say "The lute [if lute-strings < 4]still [end if]has [if gold-lute-strings > 0][gold-lute-strings in words] gold string[plur of gold-lute-strings][end if][if gold-lute-strings > 0 and silver-lute-strings > 0] and [end if][if silver-lute-strings > 0][silver-lute-strings in words] silver string[plur of silver-lute-strings][end if].";
 	continue the action;
 
 to decide which number is gold-lute-strings:
@@ -1468,6 +1469,230 @@ carry out pride-pronging:
 	say "You will [if player-room-allow-threshold is bonus-left]already[else]now[end if] be blocked from paths where no branches contain any point-scoring activities, critical or bonus.";
 	now player-room-allow-threshold is bonus-left;
 	the rule succeeds;
+
+book generic thing hints
+
+this is the hint-just-scenery rule: say "You don't have to worry about [the noun], which is just scenery to provide clues or atmosphere." instead;
+this is the hint-done-stuff rule: say "You summoned [the noun] into existence, which is enough. You'll want to look elsewhere for double-rhymes." instead;
+
+to say done-here: say "You're done here in [location of player]"
+
+chapter room hints
+
+room-hint-rule of bane be sane see is hint-bane-be-sane-see rule.
+
+room-hint-rule of roaring rocks is hint-roaring-rocks rule.
+
+room-hint-rule of nnss is hint-nnss rule.
+
+room-hint-rule of stun storm is hint-stun-storm rule.
+
+room-hint-rule of trust track is hint-trust-track rule.
+room-hint-rule of rare reach is hint-rare-reach rule.
+
+room-hint-rule of hun harm fun farm is hint-fun-farm rule.
+
+room-hint-rule of jotty jail is hint-jotty-jail rule.
+
+room-hint-rule of high hub is hint-high-hub rule.
+
+room-hint-rule of threat three is hint-threat-three rule.
+
+section room hint rules
+
+this is the hint-bane-be-sane-see rule:
+	say "[one of]You may notice the [b]TRAIN TREE[r] has writing on it. It's an option that's meaningless for gameplay, but it helps you see what sort of puzzles are ahead.[or]You can [b]READ[r] the train tree to decide your name, which has no effect on anything except the hints you may pick up in the next room.[or]If you note the names, you may find a bonus point that goes along with the room name and game theme.[cycling]" instead;
+
+this is the hint-roaring-rocks rule:
+	if sco-boring-box is false, say "[one of]The roaring rocks can be changed into something useful and interesting. Or something that contains something interesting. Something that double-rhymes roaring rocks.[or]The container itself may not look interesting.[or][b]BORING BOX[r].[cycling]" instead;
+	say "You can [b]LL[r] and try going [b]UP[r] to look around and get clues about the leet learner here, but there are no more puzzles." instead;
+
+this is the hint-stun-storm rule:
+	if sco-done-dorm is false, say "[one of]You need a place to rest that double-rhymes [b]STUN STORM[r].[or]Your place to rest must be sturdy and solid.[or][b]DONE DORM[r].[cycling]" instead;
+	if sco-fun-form is false, say "[one of]You need certification you're the sort of person welcome in a done dorm. How to rhyme that?[or][b]FUN FORM[r].[cycling]" instead;
+	say "[done-here]." instead;
+
+this is the hint-nnss rule:
+	if sco-grow-grudge is true, say "[done-here]" instead;
+	say "[one of]The [sludge] is annoying. You need to be annoyed by it.[or]What's a good way to build up annoyance?[or][b]GROW GRUDGE[r].[cycling]" instead;
+
+this is the hint-trust-track rule:
+	if sco-crust-crack is true, say "[done-here]." instead;
+	if just jack is fungible, abide by the hint-just-jack rule;
+	say "[one of]There is a passage, even though you trust there isn't.[or]But the passage won't appear until there is a shift in the ground.[or]Make the [b]CRUST CRACK[r].[cycling]" instead;
+
+this is the hint-rare-reach rule:
+	if sco-reap-rune is true, say "[done-here]." instead;
+	if sco-bare-beach is false:
+		if player does not have pear peach, say "You don't have the item you need to transform this place. You can guess what to say, though, until you find that item." instead;
+	abide by the hint-pear-peach rule;
+
+this is the hint-fun-farm rule:
+	if sco-un-arm is true, say "[done-here]." instead;
+	say "[one of]How can you get rid of weapons and threats to get by?[or]You can shorten things up.[or][b]UN ARM[r] or [b]UNARM[r].[cycling]" instead;
+
+this is the hint-jotty-jail rule:
+	say "[one of]You'll want to look for a weakness in the construction of the jail you're in.[or]What's something that's used in construction and rhymes with jail?[or][b]KNOTTY NAIL[r].[cycling]" instead;
+
+this is the hint-high-hub rule:
+	if sco-bye-bub is true, say "The only thing to do here is to operate [the lift]." instead;
+	say "[one of]There's a way back down from the high hub, but it's largely for entertainment.[or]You can take your leave of the hub with the right phrase.[or][b]BYE BUB[r].[cycling]" instead;
+
+this is the hint-trite-trail rule:
+	if sco-thread-throws is true, say "You've done everything you need to here." instead;
+	if sco-excite-exhale is true:
+		if player does not have the red rose, say "You have one thing left to do, but it requires an outside item." instead;
+		abide by the hint-red-rose rule;
+	say "There are many things to do in Trite Trail, so they will be listed in arbitrary order.";
+	the rule succeeds;
+
+this is the hint-threat-three rule:
+	if market marquee is fungible, abide by the hint-market-marquee rule;
+	if sus sack is fungible, abide by the hint-sus-sack rule;
+	if sprite is fungible, abide by the hint-spurning-sprite rule;
+	say "BUG. Sorry." instead;
+
+chapter thing hints
+
+thing-hint-rule of the player is hint-player rule.
+
+thing-hint-rule of leet learner is hint-learner-part rule.
+thing-hint-rule of needle is hint-learner-part rule.
+thing-hint-rule of ha half nah naff is hint-learner-part rule.
+
+thing-hint-rule of train tree is hint-bane-be-sane-see rule.
+thing-hint-rule of boring box is hint-boring-box rule.
+
+thing-hint-rule of mad monk is hint-mad-monk rule.
+
+thing-hint-rule of lurking lump is hint-lurking-lump rule.
+
+thing-hint-rule of miss more diss door is hint-diss-door rule.
+
+thing-hint-rule of slow sludge is hint-nnss rule.
+
+thing-hint-rule of done dorm is hint-stun-storm rule.
+
+thing-hint-rule of Just Jack is the hint-just-jack rule.
+
+thing-hint-rule of sus sack is the hint-sus-sack rule.
+thing-hint-rule of pear peach is the hint-pear-peach rule.
+
+thing-hint-rule of rho rune is hint-rho-rune rule.
+
+thing-hint-rule of sturdy stalk is hint-sturdy-stalk rule.
+
+thing-hint-rule of lazy loud crazy crowd is hint-done-stuff rule.
+
+thing-hint-rule of kite coot is hint-done-stuff rule.
+thing-hint-rule of night newt is hint-done-stuff rule.
+
+thing-hint-rule of trite trees is hint-done-stuff rule.
+
+thing-hint-rule of Bred Bros is hint-done-stuff rule.
+
+thing-hint-rule of flight flail is hint-trail-stuff rule.
+thing-hint-rule of might mail is hint-trail-stuff rule.
+thing-hint-rule of tight tail white whale is hint-trite-trail rule.
+thing-hint-rule of right rail is hint-trail-stuff rule.
+thing-hint-rule of bright brute is hint-trail-stuff rule.
+
+thing-hint-rule of sight sail is hint-sight-sail rule.
+
+thing-hint-rule of delight dilute is hint-delight-dilute rule.
+
+thing-hint-rule of pred pros is hint-pred-pros rule.
+thing-hint-rule of head hose is hint-pred-pros rule.
+
+thing-hint-rule of market marquee is hint-market-marquee rule.
+
+thing-hint-rule of spurning sprite is hint-spurning-sprite rule.
+
+thing-hint-rule of red rose is hint-red-rose rule.
+thing-hint-rule of light lute is hint-light-lute rule.
+
+section thing hint rules
+
+this is the hint-player rule:
+	if core-score > 0, say "Your magic power is being able to construct parallel rhymes, as the game title suggests." instead;
+	say "[one of]Look at the location names and title of the story.[or]Read the train tree.[or]Note that there are a lot of rhyme pairs floating around.[or]Your job in this game is to manufacture parallel rhyme pairs.[stopping]" instead;
+
+this is the hint-learner-part rule: say "The leet learner and its parts only give hints. You can [b]LL[r] alone to scan a room, [b]LL[r] any thing or person, or [b]READ[r] the leet learner to see its option." instead;
+
+this is the hint-lurking-lump rule: say "You can say [b]LL[r] for the lurking lump to push you through a puzzle at the right time. It can solve any rhyme you wish but has limited charges." instead;
+
+this is the hint-boring-box rule: say "You can really only [b]OPEN[r] [the box]." instead;
+
+this is the hint-mad-monk rule:
+	if monk-score is 2, say "You already know both [b]BAD BUNK[r] and [b]SAD SUNK[r]. Repeat [b][if monk-bad-cue is true]BAD BUNK[else]SAD SUNK[end if][r] to get by." instead;
+	say "[one of]You have two ways you need to dispose of the mad monk.[or]Both ways are a downer, and you may be able to guess words that rhyme with ad.[or]You can say [b][if monk-score is 0][one of]BAD BUNK[or]SAD SUNK[in random order][else if sco-bad-bunk is true]SAD SUNK[else]BAD BUNK[end if][r].[cycling]" instead;
+
+this is the hint-diss-door rule: say "[one of]There are two solutions to the [diss door]. One is racy, and one is not.[or]The racy one is to cut the diss door down with your own rude phrase.[or][b]PISS POOR[r].[or]You can also try a hint given at game's end.[or][b]SWEAR SWAMP WHERE WOMP[r].[cycling]" instead;
+
+this is the hint-just-jack rule: say "[one of][jack] is in the way, and he won't get out without proper transport.[or]You don't need to summon something directly, just something that leaves [jack] displaced.[or]Make [jack] [b]BUSSED BACK[r].[cycling]" instead;
+
+this is the hint-sus-sack rule: say "[one of]The sus sack can be changed to something more useful.[or]You don't need that something in the sus sack for yourself, but it may impress someone.[or][b]PLUS PLAQUE[r].[cycling]" instead;
+
+this is the hint-pear-peach rule:
+	if rare reach is unvisited, say "It's impressive you got the pear peach before visiting the place that tipped it off." instead;
+	if player is not in rare reach, say "The pear peach can work its magic in Rare Reach." instead;
+	say "[one of]The pear peach can make Rare Reach a bit less desolate.[or]This could be a place with life, or at  least, water.[or]Make a [b]BARE BEACH[r].[cycling]" instead;
+
+this is the hint-deep-dune rule:
+	if sco-seep-soon is false, say "[one of]You need the deep dune to start getting smaller.[or]The deep dune won't get smaller right away.[or]Make the deep dune [b]SEEP SOON[r].[cycling]" instead;
+	if flag-reap-rune is false, say "Leave and come back before making further progress with the deep dune." instead;
+	say "[one of]What is in the deep dune? Something valuable.[or]A symbol of magic power is inside the dune, if you search right.[or][b]REAP RUNE[r].[cycling]" instead;
+
+this is the hint-rho-rune rule: say "The [rune] [if player is in nonoon]gives you power here[else if nonoon is unvisited]is useful somewhere you haven't been[else]is useful somewhere you've been[end if]." instead;
+
+this is the hint-sturdy-stalk rule: say "[one of]The sturdy stalk isn't critical to winning, but it provides a bonus point.[or]Look at the stalk the right way, and you get inspiration.[or]Have a [b]WORDY WALK[r].[cycling]" instead;
+
+this is the hint-trail-stuff rule: say "You will have [the noun]'s help when the time comes. It's there so you don't lose track of it." instead;
+
+this is the hint-sight-sail rule:
+	if sco-right-rail is false, say "[one of]You need to gain your bearings on the sight sail.[or]A piece of equipment rhyming with sight sail would help.[or]Find the [b]RIGHT RAIL[r].[cycling]" instead;
+
+this is the hint-delight-dilute rule:
+	say "[one of]It's optional to get rid of [the dilute], and if you want to, the solution may be a bit tricky. But it follows the rhyming description.[or]The name of [the dilute] suggests taking something nice and making it worse. You can do the reverse.[or][b]DESPITE DISPUTE[r].[cycling]" instead;
+
+this is the hint-pred-pros rule:
+	say "[one of]The Pred Pros in their head hose are blocked by your red rose, but you can actually make them allies.[or]The Pred Pros look very skinny.[or][b]FED FOES[r].[cycling]" instead;
+
+this is the hint-market-marquee rule:
+	say "[one of]You need to figure the three settings of the marquee.[or]The nonsense words on the marquee clue the rhymes you need, ones that work with market marquee, but they're shorter.[or][if sco-yet-ye is false][b]TWET/TWEE[r] leads to [b]YET YE[r][else if sco-set-see is false][b]TRET/TREE[r] leads to [b]SET SEE[r][else][b]GLET/GLEE[r] leads to [b]FRET FREE[r][end if].[cycling]" instead;
+
+this is  the hint-spurning-sprite rule:
+	if sus sack is not moot, say "You need a gift for [the sprite] first. Check your inventory for something to work on." instead;
+	say "[one of]You need to label the plus plaque now. Something that describes [the sprite].[or]You can describe [the sprite] unfavorably.[or][b]TURNING TRITE[r].[cycling]" instead;
+
+this is the hint-light-lute rule:
+	if player is in slight sleaze:
+		if sco-plight-please is false, say "[genprog of lute]." instead;
+	if player is in trite trail:
+		if sco-bright-brute is false, say "[one of]The light lute can summon a generic animal ally.[or]You need an animal ally with strength and a positive mood.[or]Summon a [b]BRIGHT BRUTE[r].[cycling]" instead;
+	if player is in gore goals:
+		if sco-shore-shoals is false, say "The light lute can summon some optional animals once you've taken care of general business." instead;
+		if sco-kite-coot is false, say "[one of]You can summon a hybrid bird with the light lute.[or]Each word is a bit odd, and it has another non-animal use, too.[or]Summon a [b]KITE COOT[r].[cycling]" instead;
+		if sco-night-newt is false, say "[one of]You can summon an animal that blends into the background with the light lute.[or]Not the background during the day.[or]Summon a [b]NIGHT NEWT[r].[cycling]" instead;
+	if lute-strings is 0, say "You've done all you can with [the lute]." instead;
+	if gold-lute-strings is 0, say "You only have bonus points to gain from [the lute]." instead;
+	say "[useless of light lute]." instead;
+
+this is the hint-red-rose rule:
+	if player is in bum bout rum route and sco-said-sos is false:
+		if sco-dumb-doubt is false, say "[genprog of red rose]." instead;
+		say "[one of]The red rose can extend the dumb doubt you've cast on your oppressors.[or]The red rose can use a rhetorical trick or help you use one.[or]The red rose can generate [b]SAID SOS[r].[cycling]" instead;
+	if player is in seek sameing:
+		if sco-chic-shaming is false, say "[genprog of red rose]." instead;
+		say "[one of]The red rose can attract people who can spread a positive message better than you can.[or]Summon upper-class types full of camaraderie.[or][b]BRED BROS[r].[cycling]" instead;
+	if player is in trite trail:
+		if whale-score < 5, say "[genprog of red rose]." instead;
+		if sco-thread-throws is false, say "[one of]The red rose is useful for making something to subdue [the whale].[or]Generally you use a net to catch fish. Something that can sort of make a net is the first word, and how you use a net is the second.[or][b]THREAD THROWS[r].[cycling]";
+	say "[useless of red rose]." instead;
+
+to say useless of (itm - a thing): say "The [itm] is useful but not here"
+
+to say genprog of (itm - a thing): say "You can use [the itm] after making progress with the general area here"
 
 volume standard verbs
 
