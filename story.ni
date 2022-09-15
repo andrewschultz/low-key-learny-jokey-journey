@@ -1254,26 +1254,37 @@ player-room-allow-threshold is a room-hint-state that varies. player-room-allow-
 
 the go-goto rules are a room based rulebook.
 
-a go-goto rule for a room (called rm) (this is the gong may ring rule):
-	process the this-gong-rule of rm;
-	let room-done be the outcome of the rulebook;
-	if room-done is the uncompleted outcome, continue the action;
-	if room-done is the llp-remaining outcome and player-room-allow-threshold is bonus-left:
-		say "[that-prong] to try and go see what's there in [rm], even though it might not be necessary.";
-		continue the action;
-	if player-room-allow-threshold is bonus-left:
-		say "[that-prong] ";
-	else:
-		say "[one of]A guide gong[or]That guide gong, again,[stopping] rings ";
-	say "to notify you that you don't need to go back to [rm]." instead;
+hunt-bonus-points is a truth state that varies.
+
+main-directions is a list of directions variable. main-directions is { north, south, east, west, up, down }.
 
 check going when player-room-allow-threshold is not nothing-left:
-	abide by the gong may ring rule for room gone to;
+	now all rooms are not go-checked;
+	now location of player is go-checked;
+	if the room gone to is nothing, continue the action;
+	now hunt-bonus-points is false;
+	if the room gone to is go-useful, continue the action;
+	if player-room-allow-threshold is bonus-left:
+		now hunt-bonus-points is true;
+		if the room gone to is go-useful:
+			say "The pride-prong you summoned earlier pokes you to go and see what's ahead, even if it might not be critical to your quest.";
+			continue the action;
+	say "[one of]A guide gong[or]That guide gong, again,[stopping] rings to notify you that you don't need to go back through [room gone to]." instead;
 
-to say that-prong: say "The pride-prong you summoned earlier pokes you"
+a room can be go-checked. a room is usually not go-checked.
 
-check gotoing when player-room-allow-threshold is not nothing-left:
-	abide by the gong may ring rule for noun;
+definition: a room (called rm) is go-useful:
+	now rm is go-checked;
+	process the this-gong-rule of rm;
+	let room-done be the outcome of the rulebook;
+	if debug-state is true, say "[rm] [room-done].";
+	if room-done is the uncompleted outcome, yes;
+	if room-done is the llp-remaining outcome and hunt-bonus-points is true, yes;
+	repeat with DI running through main-directions:
+		if the room DI of rm is nothing, next;
+		if the room DI of rm is go-checked, next;
+		if the room DI of rm is go-useful, yes;
+	no;
 
 section gong rules
 
@@ -1373,7 +1384,7 @@ understand "guide gong" as guide-gonging.
 
 carry out guide-gonging:
 	follow the know-ide-ong rule;
-	say "You will [if player-room-allow-threshold is points-left]already[else]now[end if] be repelled by a guide gong if you try to enter a location where you have nothing game-critical to do.";
+	say "You will [if player-room-allow-threshold is points-left]already[else]now[end if] be repelled by a guide gong if you try to go down a path where you have nothing game-critical to do in any branches.";
 	now player-room-allow-threshold is points-left;
 	the rule succeeds;
 
@@ -1407,7 +1418,7 @@ understand "pride prong" as pride-pronging.
 
 carry out pride-pronging:
 	follow the know-ide-ong rule;
-	say "You will [if player-room-allow-threshold is bonus-left]already[else]now[end if] be blocked from locations with nothing left to do and be warned if there is a bonus point in a location you are about to visit.";
+	say "You will [if player-room-allow-threshold is bonus-left]already[else]now[end if] be blocked from paths where no branches contain any point-scoring activities, critical or bonus.";
 	now player-room-allow-threshold is bonus-left;
 	the rule succeeds;
 
