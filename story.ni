@@ -1233,9 +1233,12 @@ check listening:
 
 volume room restrictions
 
+this is the nothing-left gong rule: completed;
+
 definition: a room (called rm) is available-from-here:
 	if rm is unvisited, no;
 	if rm is bane be sane see and player is not in bane be sane see, no;
+	if rm is jotty jail and player is not in jotty jail, no;
 	yes;
 
 [this may be moved to PPRR common later]
@@ -1286,92 +1289,136 @@ definition: a room (called rm) is go-useful:
 		if the room DI of rm is go-useful, yes;
 	no;
 
-section gong rules
+chapter gong rules pre-hub
 
-[ trivially completed rooms: Bane Be Sane See, Jotty Jail (both have LLPs but can't go back), Roaring Rocks ]
+[ trivially completed rooms: Bane Be Sane See, Jotty Jail (both have LLPs but can't go back), Roaring Rocks. Note Roaring Rocks chould have "if sco-boring-box is true" but if you are out, you got the boring box. ]
 
 [ LLPs not llp-remaining are Go Goo and Gad Gunk because it disappears when the monk does ]
 
-this-gong-rule of hun harm fun farm is the got-cocoon rule.
-this-gong-rule of NoNoon is the got-cocoon rule.
-this-gong-rule of warm stun storm is the got-peach rule.
-this-gong-rule of TTTT is the got-peach rule.
-this-gong-rule of trust track is the got-rune rule.
-this-gong-rule of rare reach is the got-rune rule.
-this-gong-rule of show shoe is the got-lute rule.
-this-gong-rule of nnss is the got-stalk rule.
+[bane be sane see needs no rules, with the one-way passage out]
+[this-gong-rule of Roaring Rocks is the gong-roaring-rocks rule.]
+this-gong-rule of nnss is the gong-nnss rule.
 
-[the starting area is above]
+this-gong-rule of warm stun storm is the gong-one-warm-stun-storm rule. [north branch first]
+this-gong-rule of tttt is gong-tttt rule.
 
-this-gong-rule of show shoe is got-lute rule. [1]
+this-gong-rule of trust track is the gong-trust-track rule. [east branch next]
+this-gong-rule of rare reach is the gong-rare-reach rule.
 
-this-gong-rule of sore souls gore goals is got-shoals rule. [2]
+this-gong-rule of hun harm fun farm is the gong-hun-harm-fun-farm rule. [west branch last]
+this-gong-rule of NoNoon is the gong-nonoon rule.
 
-this-gong-rule of nay nope slay slope is got-k-cope rule.
-this-gong-rule of rum route is got-k-cope rule.
+section actual rules
 
-this-gong-rule of trite trail is the got-whale rule.
-this-gong-rule of mad most cad coast is the got-whale rule.
+[this is the gong-roaring-rocks rule:
+	if sco-boring-box is false, uncompleted;
+	completed;]
 
-this-gong-rule of slight sleaze is got-framing-done rule;
-this-gong-rule of freak framing seek sameing is got-framing-done rule;
-
-this is the nothing-left gong rule: completed;
-
-this is the got-cocoon rule:
-	if sco-co-coon is false, uncompleted;
+this is the gong-nnss rule:
+	if sco-grow-grudge is false, uncompleted;
+	if high hub is unvisited, completed;
+	if sco-wordy-walk is false, llp-remaining;
 	completed;
 
-this is the got-peach rule:
+this is the gong-one-warm-stun-storm rule:
+	if sco-fun-form is false, uncompleted;
+	completed;
+
+this is the gong-tttt rule:
 	if sco-pear-peach is false, uncompleted;
 	completed;
 
-this is the got-rune rule:
+this is the gong-trust-track rule:
+	if sco-crust-crack is false, uncompleted;
+	completed;
+
+this is the gong-rare-reach rule:
 	if sco-reap-rune is false, uncompleted;
 	completed;
 
-this is the got-lute rule: [ NOTE this disallows us from getting the Go Goo after the concert ]
-	if light lute is off-stage, uncompleted;
+this is the gong-hun-harm-fun-farm rule:
+	if sco-un-arm is false, uncompleted;
 	completed;
 
-this is the got-whale rule:
-	if sco-excite-exhale is false, uncompleted;
+this is the gong-nonoon rule:
+	if sco-crow-croon is false, uncompleted;
 	completed;
 
-this is the got-shoals rule:
-	if shoal-core-score is 2:
-		if shoal-extra-animals < 2 or sco-lore-lols is false, llp-remaining;
-		completed;
+chapter gong rules post-hub
+
+[the starting area is above]
+
+this-gong-rule of high hub is gong-high-hub rule.
+
+this-gong-rule of show shoe is the gong-show-shoe rule. [1]
+
+this-gong-rule of sore souls gore goals is the gong-sore-souls-gore-goals rule. [2]
+
+this-gong-rule of bum bout rum route is the gong-bum-bout-rum-route rule. [3]
+this-gong-rule of nay nope slay slope is the gong-nay-nope-slay-slope rule.
+
+this-gong-rule of slight sleaze is the gong-slight-sleaze rule. [4]
+this-gong-rule of freak framing seek sameing is the gong-freak-framing-seek-sameing rule.
+
+this-gong-rule of mad most cad coast is the gong-mad-most-cad-coast rule. [5]
+this-gong-rule of trite trail is the gong-trite-trail rule.
+
+this-gong-rule of old end is the gong-old-end rule.
+this-gong-rule of vain vat is the gong-vain-vat rule.
+this-gong-rule of threat three is the gong-threat-three rule.
+
+section actual rules
+
+this is the gong-high-hub rule:
+	if hub-score < 5, uncompleted;
+	if sco-despite-dispute is false, llp-remaining;
 	uncompleted;
 
-this is the got-stalk rule:
-	if sco-wordy-walk is true, completed;
-	if high hub is visited, llp-remaining;
-	if player is in hun harm fun farm or player is in nonoon:
-		if sco-reap-rune is true, completed;
-	uncompleted;
+this is the gong-show-shoe rule: [1] [ NOTE we're currently disallowed from getting the Go Goo after the concert ]
+	if sco-throw-through is false, uncompleted;
+	if sco-go-goo is false, llp-remaining;
+	completed;
 
-this is the got-sleaze rule:
-	if sco-right-root is true:
-		if sco-tight-tease is false, llp-remaining;
-		completed;
-	uncompleted;
+this is the gong-sore-souls-gore-goals rule: [2]
+	if shoal-core-score < 2, uncompleted;
+	if shoal-extra-animals < 2 or sco-lore-lols is false, llp-remaining;
+	completed;
 
-this is the got-framing-done rule:
-	if sco-bred-bros is true:
-		if sco-clique-claiming is false, llp-remaining;
-		completed;
-	uncompleted;
+this is the gong-bum-bout-rum-route rule: [3]
+	if sco-umm-out is false, uncompleted;
+	completed;
 
-this is the got-k-cope rule:
-	if sco-k-cope is true, completed;
-	uncompleted;
+this is the gong-nay-nope-slay-slope rule:
+	if sco-k-cope is false, uncompleted;
+	completed;
 
-this is the hub-done rule: [this is a bit off.]
-	if sco-right-root is true and sco-tight-tease is false, llp-remaining;
-	if sco-bred-bros is true and sco-clique-claiming is false, llp-remaining;
-	if sco-bye-bub is false or sco-wordy-walk is false, llp-remaining;
-	if player is in old end, completed;
+this is the gong-slight-sleaze rule: [4]
+	if sco-right-root is false, uncompleted;
+	if sco-tight-tease is false, llp-remaining;
+	completed;
+
+this is the gong-freak-framing-seek-sameing rule:
+	if sco-bred-bros is false, uncompleted;
+	if sco-clique-claiming is false, llp-remaining;
+	completed;
+
+this is the gong-mad-most-cad-coast rule: [5]
+	if sco-rad-roast is false, uncompleted;
+	completed;
+
+this is the gong-trite-trail rule:
+	if sco-thread-throws is false, uncompleted;
+	completed;
+
+this is the gong-old-end rule:
+	if sco-mold-mend is false, uncompleted;
+	completed;
+
+this is the gong-vain-vat rule:
+	if sco-splain-splat is false, uncompleted;
+	completed;
+
+this is the gong-threat-three rule:
 	uncompleted;
 
 chapter guide-gonging
