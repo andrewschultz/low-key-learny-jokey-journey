@@ -77,7 +77,7 @@ A dot bounces around the leet learner's grid and winds up at (1.00, 0.50.)
 by one point
 
 >ll
-Nothing comes up. It seems the general area doesn't need to change or be changed any more.
+Nothing comes up. The general area here has been changed enough.
 
 >n
 
@@ -107,7 +107,7 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 0.00.)
 by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (-1.00, 0.00.)
+Nothing comes up. The general area here has been changed enough.
 
 >n
 
@@ -124,7 +124,7 @@ A dot bounces around the leet learner's grid and winds up at (-0.50, -1.00.)
 by one point
 
 >ll
-Nothing comes up. It seems the general area doesn't need to change or be changed any more.
+Nothing comes up. The general area here has been changed enough.
 
 >ll fruit
 A dot bounces around the leet learner's grid and winds up at (0.00, -1.00.)
@@ -133,7 +133,7 @@ A dot bounces around the leet learner's grid and winds up at (0.00, -1.00.)
 by one point
 
 >ll fruit
-Nothing comes up. It seems FREE FRUIT doesn't need to change or be changed any more.
+Nothing comes up. You've changed FREE FRUIT as much as you needed to.
 
 >pear peach
 by one point
@@ -161,81 +161,84 @@ A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
 by one point
 
 >ll
-WRONG
+Nothing comes up. The general area here has been changed enough.
 
 >n
 
 >ll
-WRONG
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
 
 >bare beach
 by one point
 
 >ll
-WRONG
+Nothing comes up. The general area here has been changed enough.
 
->ll
-WRONG
+>ll dune
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
 
 >seep soon
 by one point
 
->ll
-WRONG
+>ll dune
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
 
 >s
 >n
 
->ll
-WRONG
+>ll dune
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
 
 >reap rune
 by one point
 
+>ll dune
+!deep dune
+
 >ll
-WRONG
+Nothing comes up. The general area here has been changed enough.
 
 >s
 >w
 >w
 
 >ll
-WRONG
+A dot bounces around the leet learner's grid and winds up at (-1.00, -1.00.)
 
 >unarm
 by one point
 
 >ll
-WRONG
+Nothing comes up. The general area here has been changed enough.
 
 >n
 
 >ll
-WRONG
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
 
 >go goon
 by one point
 
 >ll
-WRONG
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
 
 >cocoon
 by one point
 
 >ll
-WRONG
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
 
 >mo moon
 by one point
 
 >ll
-WRONG
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
 
 >so soon
 by one point
 
 >ll
-WRONG
+A dot bounces around the leet learner's grid and winds up at (2.00, 1.00.)
 
 >crow croon
 by one point
@@ -247,23 +250,32 @@ by one point
 by one point
 
 >ll
-WRONG
+A dot bounces around the leet learner's grid and winds up at (1.00, 0.00.)
 
 >knotty nail
 by one point
 
+>ll
+A dot bounces around the leet learner's grid and winds up at (-1.00, 0.00.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
+
 >bye bub
 
 >ll stalk
-WRONG
+A dot bounces around the leet learner's grid and winds up at (-1.00, -1.00.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 
 >wordy walk
+
+>ll stalk
+Nothing comes up. You've changed the sturdy stalk as much as you needed to.
 
 >w
 >n
 >ll
-WRONG
+Nothing comes up. The general area here has been changed enough.
 
+>undo
 >undo
 >undo
 
@@ -272,7 +284,10 @@ WRONG
 ##RBRS-SHUFFLESTART=0
 
 >ll
-WRONG
+Nothing comes up. The general area here has been changed enough.
+
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.40, 0.80.)
 
 >rocking rift
 by one point
@@ -281,49 +296,66 @@ by one point
 by one point
 
 >ll
-WRONG
+A dot bounces around the leet learner's grid and winds up at (1.00, 0.50.)
+
+>glow glue
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (1.00, 0.50.)
+
+>undo
+>undo
 
 >flow flue
 by one point
 
 >ll
-WRONG
+A dot bounces around the leet learner's grid and winds up at (1.00, 0.50.)
 
 >glow glue
 by one point
 
 >ll
-WRONG
-
->bro brew
-by one point
-
->ll
-WRONG
+A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
 
 >stow stew
 by one point
 
 >ll
-WRONG
+A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+
+>undo
+>undo
+
+>bro brew
+by one point
+
+>ll
+A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+
+>stow stew
+by one point
+
+>ll
+A dot bounces around the leet learner's grid and winds up at (-1.83, -0.16.)
 
 >crow crew
 by one point
 
 >ll
-WRONG
+A dot bounces around the leet learner's grid and winds up at (-2.50, -0.50.)
 
 >ho who
 by one point
 
 >ll
-WRONG
+A dot bounces around the leet learner's grid and winds up at (-2.50, -0.50.)
 
 >yo you
 by one point
 
 >ll
-WRONG
+A dot bounces around the leet learner's grid and winds up at (0.50, 3.50.)
 
 >throw through
 by one point
@@ -331,20 +363,20 @@ by one point
 ##RBRS-SHUFFLEEND=0
 ##RBRS-SHUFFLESTART=1
 
->ll
-WRONG
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.50, 1.00.)
 
 >shocking shift
 by one point
 
 >ll
-WRONG
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
 
 >shore shoals
 by one point
 
 >ll
-WRONG
+A dot bounces around the leet learner's grid and winds up at (-1.00, -1.00.)
 
 ##RBRS-SHUFFLECONDITION=1>0
 
@@ -365,7 +397,7 @@ by one point
 by one point
 
 >ll
-WRONG
+A dot bounces around the leet learner's grid and winds up at (-1.00, -1.00.)
 
 >more moles
 by one point
@@ -373,46 +405,46 @@ by one point
 ##RBRS-SHUFFLEEND=1
 ##RBRS-SHUFFLESTART=2
 
->ll
-WRONG
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.33, 1.00.)
 
 >gawking gift
 by one point
 
 >ll
-WRONG
+A dot bounces around the leet learner's grid and winds up at (1.00, 0.50.)
 
 >dumb doubt
 by one point
 
 >ll
-WRONG
+A dot bounces around the leet learner's grid and winds up at (0.00, -1.50.)
 
 >ll rose
-WRONG
+A dot bounces around the leet learner's grid and winds up at (1.25, 0.25.)
 
 >said sos
 by one point
 
 >ll rose
-WRONG
+A dot bounces around the leet learner's grid and winds up at (1.33, 0.66.)
 
 >umm out
 by one point
 
 >ll
-WRONG
+Nothing comes up. The general area here has been changed enough.
 
 >d
 
 >ll
-WRONG
+A dot bounces around the leet learner's grid and winds up at (-0.50, -0.50.)
 
 >hey hope
 by one point
 
 >ll
-WRONG
+A dot bounces around the leet learner's grid and winds up at (-2.50, -0.50.)
 
 >k cope
 by one point
@@ -420,61 +452,67 @@ by one point
 ##RBRS-SHUFFLEEND=2
 ##RBRS-SHUFFLESTART=3
 
->ll
-WRONG
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.50, 1.50.)
 
 >grokking grift
 by one point
 
 >ll
-WRONG
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
 
 >bright breeze
 by one point
 
 >ll
-WRONG
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
 
 >plight please
 by one point
 
 >ll
-WRONG
+A dot bounces around the leet learner's grid and winds up at (-1.00, -2.00.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 
 >tight tees
 by one point
 
 >ll light lute
-WRONG
+A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
 
 >right root
 by one point
 
+>ll light lute
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+
 >ll
-WRONG
+A dot bounces around the leet learner's grid and winds up at (-1.00, -2.00.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 
 >s
 
 >ll
-WRONG
+A dot bounces around the leet learner's grid and winds up at (0.50, 0.00.)
 
 >bleak blaming
 by one point
 
 >ll
-WRONG
+A dot bounces around the leet learner's grid and winds up at (-0.50, 0.00.)
 
 >chic shaming
 by one point
 
 >ll
-WRONG
+A dot bounces around the leet learner's grid and winds up at (1.50, 0.00.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 
 >clique claiming
 by one point
 
 >ll
-WRONG
+Nothing comes up. The general area here has been changed enough.
 
 >bred bros
 by one point
@@ -482,172 +520,183 @@ by one point
 ##RBRS-SHUFFLEEND=3
 ##RBRS-SHUFFLESTART=4
 
->ll
-WRONG
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
 
 >docking diffed
 by one point
+
+>ll
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.50.)
 
 >bad boast
 by one point
 
 >ll
-WRONG
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.50.)
 
 >rad roast
 by one point
 
 >ll
-WRONG
+Nothing comes up. The general area here has been changed enough.
 
 >w
 
 >ll
-WRONG
+A dot bounces around the leet learner's grid and winds up at (0.33, -0.66.)
 
 >sight sail
 by one point
 
+# nothing changes after Sight Sail, because Right Rail is opened
 >ll
-WRONG
+A dot bounces around the leet learner's grid and winds up at (0.33, -0.66.)
 
 >flight flail
 by one point
 
 >ll
-WRONG
+A dot bounces around the leet learner's grid and winds up at (0.00, -1.00.)
 
 >might mail
 by one point
 
 >ll
-WRONG
+A dot bounces around the leet learner's grid and winds up at (0.00, -1.00.)
 
 >right rail
 by one point
 
 >ll
-WRONG
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
 
 >ll light lute
-WRONG
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
 
 >bright brute
 by one point
 
 >ll light lute
-WRONG
+Nothing comes up. You've changed the light lute as much as you needed to.
 
 >excite exhale
 by one point
 
 >ll red rose
-WRONG
+A dot bounces around the leet learner's grid and winds up at (1.50, 1.00.)
+
+>ll
+Nothing comes up. The general area here has been changed enough.
 
 >thread throws
 by one point
 
 >ll red rose
-WRONG
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
 
 ##RBRS-SHUFFLEEND=4
 
 >ll delight dilute
-WRONG
+A dot bounces around the leet learner's grid and winds up at (0.00, 1.00.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 
 >despite dispute
 by one point
 
->ll
-WRONG
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
 
 >mocking miffed
 by one point
 
 >ll
-WRONG
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
 
 >bold bend
 by one point
 
 >ll
-WRONG
+A dot bounces around the leet learner's grid and winds up at (3.00, 1.00.)
 
 >trolled trend
 by one point
 
 >ll
-WRONG
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
 
 >mold mend
 by one point
 
 >ll
-WRONG
+Nothing comes up. The general area here has been changed enough.
 
 >s
 
 >ll
-WRONG
+A dot bounces around the leet learner's grid and winds up at (-0.50, -0.50.)
 
 >bane bat
 by one point
 
 >ll
-WRONG
+A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
 
 >flain flat
 by one point
 
 >ll
-WRONG
+A dot bounces around the leet learner's grid and winds up at (1.50, 1.50.)
 
 >splain splat
 by one point
 
 >ll
-WRONG
+Nothing comes up. The general area here has been changed enough.
 
 >ll red rose
-WRONG
+I couldn't parse that command. You don't need any more than two words long. VERBS will give a list of standard, non-puzzle-solving verbs.
+
+>ll pred pros
+A dot bounces around the leet learner's grid and winds up at (-1.00, 0.00.)
 
 >fed foes
 by one point
 
->ll red rose
-WRONG
+>ll pred pros
+I couldn't parse that command. You don't need any more than two words long. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 >s
 
 >ll
-WRONG
+A dot bounces around the leet learner's grid and winds up at (-2.66, -4.00.)
 
 >fret free
 by one point
 
 >ll
-WRONG
+A dot bounces around the leet learner's grid and winds up at (-3.00, -4.50.)
 
 >yet ye
 by one point
 
 >ll
-WRONG
+A dot bounces around the leet learner's grid and winds up at (-3.00, -4.00.)
 
 >set see
 by one point
 
 >ll
-WRONG
+Nothing comes up. The general area here has been changed enough.
 
 >ll sack
-WRONG
+A dot bounces around the leet learner's grid and winds up at (1.00, 2.00.)
 
 >plus plaque
 by one point
 
 >ll spurning sprite
-WRONG
+A dot bounces around the leet learner's grid and winds up at (-0.50, -1.00.)
 
 >score
 

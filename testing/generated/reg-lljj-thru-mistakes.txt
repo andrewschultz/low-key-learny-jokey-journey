@@ -833,6 +833,8 @@ Bringing animal pelts into a place coming to life doesn't quite work.
 >more moles
 by one point
 
+#this is back at High Hub after we got the red rose
+
 #ttc-table-of-red-rose-guesses-bed-bows
 >bed bows
 You need no fancy place to sleep.

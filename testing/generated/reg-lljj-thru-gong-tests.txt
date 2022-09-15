@@ -1,7 +1,7 @@
-## reg-lljj-thru-fake-deaths.txt
+## reg-lljj-thru-gong-tests.txt
 ## GENERATOR FILE: rbr-lljj-thru.txt
 
-## walkthrough with fake deaths
+## walkthrough testing gong/player restrictions
 
 ** game: /home/andrew/prt/debug-low-key-learny-jokey-journey.z8
 ** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25

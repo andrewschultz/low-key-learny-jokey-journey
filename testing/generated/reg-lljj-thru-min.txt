@@ -219,7 +219,7 @@ by one point
 by one point
 
 #testcase-room-names-rum-route
-/^um-'Bout Rum Route
+/^Bum-'Bout Rum Route
 
 >dumb doubt
 by one point
@@ -383,7 +383,7 @@ by one point
 
 >score
 
-72 out of 86
+71 out of 86
 
 >turning trite
 by one point

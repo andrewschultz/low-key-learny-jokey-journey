@@ -18,7 +18,7 @@
 # 4 = trail/docking, need loot and rose
 ##RBRCONSTRAINTS=1<2,0<3,1<3,0<4,1<4
 
-files=reg-lljj-thru-min.txt,reg-lljj-thru-all.txt,reg-lljj-thru-reject.txt,reg-lljj-thru-alt-verbs.txt,reg-lljj-thru-fake-deaths.txt,reg-lljj-thru-mistakes.txt,reg-lljj-thru-ha-half.txt,reg-lljj-thru-homonyms.txt,reg-lljj-thru-verbs.txt,reg-lljj-thru-goto.txt
+files=reg-lljj-thru-min.txt,reg-lljj-thru-all.txt,reg-lljj-thru-reject.txt,reg-lljj-thru-alt-verbs.txt,reg-lljj-thru-gong-tests.txt,reg-lljj-thru-mistakes.txt,reg-lljj-thru-ha-half.txt,reg-lljj-thru-homonyms.txt,reg-lljj-thru-verbs.txt,reg-lljj-thru-goto.txt,reg-lljj-thru-hints.txt
 ~	min	t0
 ~	all	t1
 ~	rej	t2
@@ -29,7 +29,8 @@ files=reg-lljj-thru-min.txt,reg-lljj-thru-all.txt,reg-lljj-thru-reject.txt,reg-l
 ~	hom	t7
 ~	ver	t8
 ~	goto,gt,go	t9
-#--stacle-file: this eventually says that the project is stable, and I shouldn't change the main/minimal file unless I really need to.
+~	hin,hint,hints	t10
+#--stable-file: this eventually says that the project is stable, and I shouldn't change the main/minimal file unless I really need to.
 #--strict-file: this says that the project requires strict section marking e.g. @all instead of ==t1.
 
 }$REJECT=Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
@@ -49,7 +50,7 @@ files=reg-lljj-thru-min.txt,reg-lljj-thru-all.txt,reg-lljj-thru-reject.txt,reg-l
 ## *FILE
 ## *FORK
 
-TSV:## minimum walkthrough	## walkthrough with all points	## walkthrough with all rejections and THINK	## walkthrough with altverb tests	## walkthrough with fake deaths	## walkthrough testing all mistakes	## walkthrough testing half-right cases	## walkthrough testing homonyms	##walkthrough testing special verbs	## walkthrough testing GOTO
+TSV:## minimum walkthrough	## walkthrough with all points	## walkthrough with all rejections and THINK	## walkthrough with altverb tests	## walkthrough testing gong/player restrictions	## walkthrough testing all mistakes	## walkthrough testing half-right cases	## walkthrough testing homonyms	##walkthrough testing special verbs	## walkthrough testing GOTO	## walkthrough testing HINTS
 
 ** game: /home/andrew/prt/debug-low-key-learny-jokey-journey.z8
 ** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
@@ -498,6 +499,10 @@ Cardinal directions don't mean much here, yet. Besides, there's no way back. You
 >exits
 There are no clear safe exits. It looks like you need to solve a puzzle to find your way out of here.
 
+@hin
+>ll
+Most special commands are more than one word. VERBS will give a list of standard, non-puzzle-solving verbs.
+
 >jane g
 by one point
 }}SCORE++
@@ -520,6 +525,10 @@ north: (unvisited.)
 #testcase-unavailable-table-of-verb-checks-vc-set-see-rule
 >set see
 {$REJECT}
+
+@hin
+>ll
+Most special commands are more than one word, because of the rhyme-pairs involved. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 @ver
 >listen
@@ -559,6 +568,10 @@ There's no way back to where you started.
 by one point
 }}SCORE++
 
+@hin
+>ll
+Most special commands are more than one word, because of the rhyme-pairs involved. VERBS will give a list of standard, non-puzzle-solving verbs.
+
 @min
 #+testcase-room-names-roaring-rocks
 /^Storing Stocks
@@ -579,6 +592,13 @@ riff
 You don't need to catch anything, and denting the rocks would not reveal anything further.
 
 >open box
+
+@hin
+>ll
+You scan the area.
+Hmm. There's a reading. It must relate "Storing Stocks" to the erstwhile boring box.
+A dot bounces around the leet learner's grid and winds up at (-1.00, -3.00.)
+The leet learner is giving a funny readout. You could maybe climb UP to the old rocks and get another reading.
 
 @ver
 #ttc-table-of-color-clues---eat-earner--
@@ -606,6 +626,14 @@ As you go on your way, who should block your way but a fervent Mad Monk? They ca
 \\
 >n
 The mad monk is blocking you right now.
+
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (-1.00, -3.00.)
+!You could maybe climb UP to the old rocks and get another reading.
+\\
+>ll mad monk
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
 
 @ha
 #testcase-ha-half-table-of-verb-checks-4-gad
@@ -708,6 +736,16 @@ You already insulted the mad monk's serenity.
 >undo
 >undo
 
+@hin
+##balance undos
+>sad sunk
+\\
+>ll mad monk
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+\\
+>undo
+>undo
+
 @alt
 >sad sunk
 by one point
@@ -722,6 +760,10 @@ by one point
 by one point
 }}SCORE++
 
+@hin
+>ll mad monk
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+
 @rej
 #testcase-postreject-table-of-verb-checks-vc-bad-bunk-rule
 >bad bunk
@@ -733,6 +775,10 @@ You already insulted the mad monk's truthfulness.
 >sad sunk
 by one point
 }}SCORE++
+
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (-1.00, -3.00.)
 
 @mis
 ##balance undos
@@ -786,6 +832,10 @@ north: (blocked.)
 south: (blocked.)
 east: (blocked.)
 west: (unvisited.)
+
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (1.00, 0.50.)
 
 @rej
 ##balance undos
@@ -876,6 +926,10 @@ The HA HALF button lights up on your Leet Learner.
 by one point
 }}SCORE++
 
+@hin
+>ll
+Nothing comes up. The general area here has been changed enough.
+
 @gt
 #+testcase-exits-no-nudge-slow-sludge
 >exits
@@ -964,6 +1018,11 @@ No lightning bolt spell blasts the door.
 >piss pore
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
+@hin
+>ll door
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
+
 @!min
 >piss poor
 by one point
@@ -989,9 +1048,20 @@ The HA HALF button lights up on your Leet Learner.
 >zdone dorm
 The HA HALF button lights up on your Leet Learner.
 
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (0.50, -0.50.)
+
 >done dorm
 by one point
 }}SCORE++
+
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (-0.50, -0.50.)
+\\
+>ll done dorm
+A dot bounces around the leet learner's grid and winds up at (-1.00, 0.00.)
 
 @rej
 \\
@@ -1016,6 +1086,10 @@ The HA HALF button lights up on your Leet Learner.
 >fun form
 by one point
 }}SCORE++
+
+@hin
+>ll
+Nothing comes up. The general area here has been changed enough.
 
 @gt
 #+testcase-exits-one-warm-stun-storm
@@ -1101,9 +1175,17 @@ If there were junk in the tree trunk, you couldn't see it. It's way too tall!
 >think
 You can say GEE JUNK once more of the trunk is visible.
 
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (-0.50, -1.00.)
+
 >see sunk
 by one point
 }}SCORE++
+
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (-0.50, -1.00.)
 
 @rej
 #testcase-postreject-table-of-verb-checks-vc-see-sunk-rule
@@ -1122,6 +1204,10 @@ The HA HALF button lights up on your Leet Learner.
 >gee junk
 by one point
 }}SCORE++
+
+@hin
+>ll
+Nothing comes up. The general area here has been changed enough.
 
 @rej
 #testcase-postreject-table-of-verb-checks-vc-gee-junk-rule
@@ -1186,9 +1272,17 @@ You can just walk to get around.
 >tea tout
 Perhaps the tea would be fruit-flavored and refreshing, but it wouldn't be useful.
 
+@hin
+>ll fruit
+A dot bounces around the leet learner's grid and winds up at (0.00, -1.00.)
+
 >whee woot
 by one point
 }}SCORE++
+
+@hin
+>ll fruit
+Nothing comes up. You've changed FREE FRUIT as much as you needed to.
 
 @rej
 #testcase-postreject-table-of-verb-checks-vc-whee-woot-rule
@@ -1212,6 +1306,10 @@ The HA HALF button lights up on your Leet Learner.
 >pear peach
 by one point
 }}SCORE++
+
+@hin
+>ll pear peach
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
 
 @rej
 #testcase-postreject-table-of-verb-checks-vc-pear-peach-rule
@@ -1278,9 +1376,20 @@ The HA HALF button lights up on your Leet Learner.
 >bust back
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right.
 
+@hin
+>ll jack
+A dot bounces around the leet learner's grid and winds up at (2.00, 0.00.)
+\\
+>ll
+A dot bounces around the leet learner's grid and winds up at (1.00, -1.00.)
+
 >bussed back
 by one point
 }}SCORE++
+
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
 
 @rej
 #testcase-postreject-table-of-verb-checks-vc-bussed-back-rule
@@ -1327,6 +1436,10 @@ west: No-Nudge Slow Sludge.
 >crust crack
 by one point
 }}SCORE++
+
+@hin
+>ll
+Nothing comes up. The general area here has been changed enough.
 
 @gt
 #+testcase-exits-trust-track
@@ -1406,9 +1519,17 @@ The HA HALF button lights up on your Leet Learner.
 >bear beach
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right.
 
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+
 >bare beach
 by one point
 }}SCORE++
+
+@hin
+>ll
+Nothing comes up. The general area here has been changed enough.
 
 @min
 #+testcase-room-names-rare-reach
@@ -1463,9 +1584,17 @@ The HA HALF button lights up on your Leet Learner.
 >zseep soon
 The HA HALF button lights up on your Leet Learner.
 
+@hin
+>ll dune
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+
 >seep soon
 by one point
 }}SCORE++
+
+@hin
+>ll dune
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
 
 @rej
 #testcase-postreject-table-of-verb-checks-vc-seep-soon-rule
@@ -1487,9 +1616,20 @@ The HA HALF button lights up on your Leet Learner.
 >zreap rune
 The HA HALF button lights up on your Leet Learner.
 
+@hin
+>ll dune
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+
 >reap rune
 by one point
 }}SCORE++
+
+@hin
+>ll dune
+!deep dune
+\\
+>ll
+Nothing comes up. The general area here has been changed enough.
 
 @rej
 #testcase-postreject-table-of-verb-checks-vc-reap-rune-rule
@@ -1545,9 +1685,17 @@ The HA HALF button lights up on your Leet Learner.
 >zun arm
 The HA HALF button lights up on your Leet Learner.
 
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (-1.00, -1.00.)
+
 >unarm
 by one point
 }}SCORE++
+
+@hin
+>ll
+Nothing comes up. The general area here has been changed enough.
 
 @gt
 #+testcase-exits-hun-harm-fun-farm
@@ -1566,6 +1714,10 @@ You already unarmed the Hun Harm Fun Farm!
 @min
 #testcase-room-names-no-noon
 /^No Noon
+
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
 
 @gt
 #ttc-table-of-noways-nonoon
@@ -1652,6 +1804,10 @@ The HA HALF button lights up on your Leet Learner.
 by one point
 }}SCORE++
 
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+
 @ha
 #testcase-ha-half-table-of-verb-checks-21-co
 >co zcoon
@@ -1664,6 +1820,10 @@ The HA HALF button lights up on your Leet Learner.
 >cocoon
 by one point
 }}SCORE++
+
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
 
 @ha
 #testcase-ha-half-table-of-verb-checks-22-mo
@@ -1683,6 +1843,10 @@ The Leet Learner shakes back and forth. Something you said sounded right, but it
 by one point
 }}SCORE++
 
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+
 @ha
 #testcase-ha-half-table-of-verb-checks-23-so
 >so zsoon
@@ -1700,6 +1864,10 @@ The Leet Learner shakes back and forth. Something you said sounded right, but it
 >so soon
 by one point
 }}SCORE++
+
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (2.00, 1.00.)
 
 @ha
 #testcase-ha-half-table-of-verb-checks-24-crow
@@ -1841,6 +2009,10 @@ No. The potty pail was a relief to find, but enough of past discoveries. You nee
 >naughty nail
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (1.00, 0.00.)
+
 >knotty nail
 by one point
 }}SCORE++
@@ -1857,6 +2029,11 @@ The only way out of the High Hub is telling the lift where you want to go. Okay,
 #testcase-exits-high-hub
 >exits
 The locking lift is the main way out of here, but there is a way to revisit what's below.
+
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (-1.00, 0.00.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 
 @rej
 #testcase-prereject-table-of-verb-checks-vc-mocking-miffed-rule
@@ -1988,11 +2165,20 @@ A nerdy knock, whatever it is, wouldn't get a favorable response.
 >purdy pock
 No, pock marks wouldn't make the stalk look better.
 
+@hin
+>ll stalk
+A dot bounces around the leet learner's grid and winds up at (-1.00, -1.00.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
+
 @!min
 >wordy walk
 }}SCORE++
 }}CURMIN++
 }}CURMINBONUS++
+
+@hin
+>ll stalk
+Nothing comes up. You've changed the sturdy stalk as much as you needed to.
 
 @min
 ##BALANCE UNDOS
@@ -2000,6 +2186,17 @@ No, pock marks wouldn't make the stalk look better.
 >gonear no noon
 /^Ho, HEWN
 \\
+>undo
+
+@hin
+##balance undos
+>w
+>n
+>ll
+Nothing comes up. The general area here has been changed enough.
+\\
+>undo
+>undo
 >undo
 
 @gt
@@ -2060,6 +2257,13 @@ The HA HALF button lights up on your Leet Learner.
 #testcase-ha-half-table-of-verb-checks-32-rift
 >zrocking rift
 The HA HALF button lights up on your Leet Learner.
+
+@hin
+>ll
+Nothing comes up. The general area here has been changed enough.
+\\
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.40, 0.80.)
 
 >rocking rift
 by one point
@@ -2260,6 +2464,18 @@ There's more than enough Go Goo for whoever actually wants it or just fools them
 >flow flew
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (1.00, 0.50.)
+\\
+>glow glue
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (1.00, 0.50.)
+\\
+>undo
+>undo
+
 >flow flue
 by one point
 }}SCORE++
@@ -2268,6 +2484,10 @@ by one point
 #testcase-postreject-table-of-verb-checks-vc-flow-flue-rule
 >flow flue
 The flow flue is already present!
+
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (1.00, 0.50.)
 
 >glow glue
 by one point
@@ -2278,6 +2498,19 @@ by one point
 >glow glue
 You already acquired Glow Glue.
 
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+\\
+>stow stew
+by one point
+\\
+>ll
+A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+\\
+>undo
+>undo
+
 >bro brew
 by one point
 }}SCORE++
@@ -2287,6 +2520,10 @@ by one point
 >bro brew
 You already have a nice store of Bro Brew.
 
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+
 >stow stew
 by one point
 }}SCORE++
@@ -2295,6 +2532,10 @@ by one point
 #testcase-postreject-table-of-verb-checks-vc-stow-stew-rule
 >stow stew
 You already put stew in the flue.
+
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (-1.83, -0.16.)
 
 >crow crew
 by one point
@@ -2314,6 +2555,10 @@ You already summoned the Crow Crew!
 >hoe who
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (-2.50, -0.50.)
+
 >ho who
 by one point
 }}SCORE++
@@ -2327,6 +2572,10 @@ You already started to hype up the crowd.
 #testcase-homonym-table-of-verb-checks-yew
 >yo yew
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
+
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (-2.50, -0.50.)
 
 >yo you
 by one point
@@ -2354,6 +2603,10 @@ That's a bit too generic a sound to make, and you've already made the right ones
 #testcase-homonym-table-of-verb-checks-threw
 >throw threw
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
+
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (0.50, 3.50.)
 
 >throw through
 by one point
@@ -2445,6 +2698,10 @@ The HA HALF button lights up on your Leet Learner.
 #testcase-ha-half-table-of-verb-checks-31-shift
 >zshocking shift
 The HA HALF button lights up on your Leet Learner.
+
+@hin
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.50, 1.00.)
 
 >shocking shift
 by one point
@@ -2568,9 +2825,17 @@ You can summon a KITE COOT once the area is more hospitable.
 You can summon MORE MOLES once the area is more hospitable.
 You can summon a NIGHT NEWT once the area is more hospitable.
 
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+
 >shore shoals
 by one point
 }}SCORE++
+
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (-1.00, -1.00.)
 
 @gt
 #+ttc-table-of-noways-gore-goals
@@ -2602,6 +2867,9 @@ by one point
 }}CURMINBONUS++
 
 ##RBRS-SHUFFLECONDITION=
+
+@hin
+##?? note to test after -- if only LLPs remain
 
 @!min
 >lore lols
@@ -2643,6 +2911,10 @@ The Leet Learner shakes back and forth. Something you said sounded right, but it
 by one point
 }}SCORE++
 
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (-1.00, -1.00.)
+
 @rej
 #testcase-postreject-table-of-verb-checks-vc-four-foals-rule
 >four foals
@@ -2658,6 +2930,8 @@ by one point
 }}SCORE++
 
 @mis
+#this is back at High Hub after we got the red rose
+\\
 #ttc-table-of-red-rose-guesses-bed-bows
 >bed bows
 You need no fancy place to sleep.
@@ -2735,13 +3009,17 @@ The HA HALF button lights up on your Leet Learner.
 >zgawking gift
 The HA HALF button lights up on your Leet Learner.
 
+@hin
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.33, 1.00.)
+
 >gawking gift
 by one point
 }}SCORE++
 
 @min
 #testcase-room-names-rum-route
-/^um-'Bout Rum Route
+/^Bum-'Bout Rum Route
 
 @gt
 #ttc-table-of-noways-rum-route
@@ -2812,18 +3090,34 @@ Your said-sos won't work cold. You need to show confidence and be persuasive.
 You can say UMM OUT once you're on a roll arguing.
 You can say SAID SOS once you've got a foothold in an argument.
 
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (1.00, 0.50.)
+
 >dumb doubt
 by one point
 }}SCORE++
+
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (0.00, -1.50.)
 
 @rej
 #testcase-postreject-table-of-verb-checks-vc-dumb-doubt-rule
 >dumb doubt
 You already spread dumb doubt! If you try to spread more, you may wind up believing it yourself.
 
+@hin
+>ll rose
+A dot bounces around the leet learner's grid and winds up at (1.25, 0.25.)
+
 >said sos
 by one point
 }}SCORE++
+
+@hin
+>ll rose
+A dot bounces around the leet learner's grid and winds up at (1.33, 0.66.)
 
 @rej
 #testcase-postreject-table-of-verb-checks-vc-said-sos-rule
@@ -2833,6 +3127,10 @@ You already gave said-sos!
 >umm out
 by one point
 }}SCORE++
+
+@hin
+>ll
+Nothing comes up. The general area here has been changed enough.
 
 @min
 #+testcase-room-names-rum-route
@@ -2929,9 +3227,17 @@ You can say K COPE once you're able to cope fully.
 >hay hope
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (-0.50, -0.50.)
+
 >hey hope
 by one point
 }}SCORE++
+
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (-2.50, -0.50.)
 
 @rej
 #testcase-postreject-table-of-verb-checks-vc-hey-hope-rule
@@ -2967,6 +3273,10 @@ The HA HALF button lights up on your Leet Learner.
 #testcase-ha-half-table-of-verb-checks-34-grift
 >zgrokking grift
 The HA HALF button lights up on your Leet Learner.
+
+@hin
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.50, 1.50.)
 
 >grokking grift
 by one point
@@ -3080,29 +3390,60 @@ You'd like to be that dismissive ("Plight? PLEASE!") but you aren't feeling posi
 >think
 You can explain PLIGHT PLEASE once you've started to chip away at the slight sleaze.
 
-@!min
+@!min,hin
 >tight tees
 by one point
 }}SCORE++
 }}CURMIN++
 }}CURMINBONUS++
 
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+
 >bright breeze
 by one point
 }}SCORE++
 
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+
 >plight please
 by one point
 }}SCORE++
+
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (-1.00, -2.00.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
+\\
+>tight tees
+by one point
+}}SCORE++
+}}CURMIN++
+}}CURMINBONUS++
 
 @hom
 #testcase-homonym-table-of-verb-checks-write-route
 >write route
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
+@hin
+>ll light lute
+A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+
 >right root
 by one point
 }}SCORE++
+
+@hin
+>ll light lute
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+\\
+>ll
+A dot bounces around the leet learner's grid and winds up at (-1.00, -2.00.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 
 @gt
 #+ttc-table-of-noways-slight-sleaze
@@ -3218,16 +3559,24 @@ You haven't done enough so that said bred Bros can continue your work.
 You can summon BRED BROS once you need folks with charisma to communicate a positive vision.
 You can go full-in for CHIC SHAMING once you've re-framed the freak framing.
 
-@!min
+@!min,hin
 >clique claiming
 by one point
 }}SCORE++
 }}CURMIN++
 }}CURMINBONUS++
 
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (0.50, 0.00.)
+
 >bleak blaming
 by one point
 }}SCORE++
+
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (-0.50, 0.00.)
 
 @hom
 #testcase-homonym-table-of-verb-checks-shiek-sheik
@@ -3237,6 +3586,20 @@ The Leet Learner shakes back and forth. Something you said sounded right, but it
 >chic shaming
 by one point
 }}SCORE++
+
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (1.50, 0.00.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
+\\
+>clique claiming
+by one point
+}}SCORE++
+}}CURMIN++
+}}CURMINBONUS++
+\\
+>ll
+Nothing comes up. The general area here has been changed enough.
 
 @min
 #+testcase-room-names-freak-framing-seek-saming
@@ -3280,6 +3643,10 @@ The HA HALF button lights up on your Leet Learner.
 #testcase-ha-half-table-of-verb-checks-35-diffed
 >zdocking diffed
 The HA HALF button lights up on your Leet Learner.
+
+@hin
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
 
 >docking diffed
 by one point
@@ -3362,9 +3729,17 @@ The HA HALF button lights up on your Leet Learner.
 >zthread throws
 The HA HALF button lights up on your Leet Learner.
 
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.50.)
+
 >bad boast
 by one point
 }}SCORE++
+
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.50.)
 
 @rej
 #+testcase-think-table-of-verb-checks-vc-rad-roast-rule
@@ -3377,6 +3752,10 @@ You can try a RAD ROAST now you've hit back a bit against the madness.
 >rad roast
 by one point
 }}SCORE++
+
+@hin
+>ll
+Nothing comes up. The general area here has been changed enough.
 
 @min
 #+testcase-room-names-mad-most-cad-coast
@@ -3526,13 +3905,26 @@ You can EXCITE EXHALE to go out and fight once you have an ally, fighting equipm
 >site sale
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (0.33, -0.66.)
+
 >sight sail
 by one point
 }}SCORE++
 
+@hin
+# nothing changes after Sight Sail, because Right Rail is opened
+>ll
+A dot bounces around the leet learner's grid and winds up at (0.33, -0.66.)
+
 >flight flail
 by one point
 }}SCORE++
+
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (0.00, -1.00.)
 
 @hom
 #testcase-homonym-table-of-verb-checks-mite-male
@@ -3543,6 +3935,10 @@ The Leet Learner shakes back and forth. Something you said sounded right, but it
 by one point
 }}SCORE++
 
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (0.00, -1.00.)
+
 @hom
 #testcase-homonym-table-of-verb-checks-write-rale
 >write rale
@@ -3552,9 +3948,20 @@ The Leet Learner shakes back and forth. Something you said sounded right, but it
 by one point
 }}SCORE++
 
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+\\
+>ll light lute
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+
 >bright brute
 by one point
 }}SCORE++
+
+@hin
+>ll light lute
+Nothing comes up. You've changed the light lute as much as you needed to.
 
 @rej
 #testcase-postreject-table-of-verb-checks-vc-bright-brute-rule
@@ -3581,9 +3988,20 @@ You already summoned the sight sail. It's not going anywhere.
 by one point
 }}SCORE++
 
+@hin
+>ll red rose
+A dot bounces around the leet learner's grid and winds up at (1.50, 1.00.)
+\\
+>ll
+Nothing comes up. The general area here has been changed enough.
+
 >thread throws
 by one point
 }}SCORE++
+
+@hin
+>ll red rose
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
 
 @rej
 #testcase-postreject-table-of-verb-checks-vc-docking-diffed-rule
@@ -3602,6 +4020,11 @@ The HA HALF button lights up on your Leet Learner, but dimly--perhaps this is a 
 
 ##RBRS-SHUFFLEEND=4
 
+@hin
+>ll delight dilute
+A dot bounces around the leet learner's grid and winds up at (0.00, 1.00.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
+
 @!min
 >despite dispute
 by one point
@@ -3617,6 +4040,10 @@ The HA HALF button lights up on your Leet Learner.
 #testcase-ha-half-table-of-verb-checks-37-miffed
 >zmocking miffed
 The HA HALF button lights up on your Leet Learner.
+
+@hin
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
 
 >mocking miffed
 by one point
@@ -3692,6 +4119,10 @@ But you have nowhere to go if trolling would trend. Fortunately, that's the easi
 You can MOLD MEND once you know what's disturbing, where.
 You can find a TROLLED TREND once the Old End is revealed as something more.
 
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+
 >bold bend
 by one point
 }}SCORE++
@@ -3712,9 +4143,17 @@ The bold bend you created goes south-to-east. You need to figure which of these 
 >e
 You can't tell which way is right. You need to listen for some source of meanness or nastiness or something.
 
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (3.00, 1.00.)
+
 >trolled trend
 by one point
 }}SCORE++
+
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
 
 @gt
 #+ttc-table-of-noways-old-end
@@ -3735,6 +4174,10 @@ south: (unvisited.)
 >mold mend
 by one point
 }}SCORE++
+
+@hin
+>ll
+Nothing comes up. The general area here has been changed enough.
 
 @gt
 #+ttc-table-of-noways-old-end
@@ -3880,13 +4323,25 @@ You can make FED FOES once there are hungry foes to feed.
 The vat can be FLAIN FLAT once you have a suitable weapon.
 You can SPLAIN SPLAT once you're free of the vat.
 
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (-0.50, -0.50.)
+
 >bane bat
 by one point
 }}SCORE++
 
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+
 >flain flat
 by one point
 }}SCORE++
+
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (1.50, 1.50.)
 
 @gt
 #+ttc-table-of-noways-vain-vat
@@ -3901,6 +4356,16 @@ north: Bold Bend.
 >splain splat
 by one point
 }}SCORE++
+
+@hin
+>ll
+Nothing comes up. The general area here has been changed enough.
+\\
+>ll red rose
+I couldn't parse that command. You don't need any more than two words long. VERBS will give a list of standard, non-puzzle-solving verbs.
+\\
+>ll pred pros
+A dot bounces around the leet learner's grid and winds up at (-1.00, 0.00.)
 
 @min
 #+testcase-room-names-drain-drat-vain-vat
@@ -3965,6 +4430,10 @@ The Leet Learner shakes back and forth. Something you said sounded right, but it
 >fed foes
 by one point
 }}SCORE++
+
+@hin
+>ll pred pros
+I couldn't parse that command. You don't need any more than two words long. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 >s
 
@@ -4077,13 +4546,25 @@ by one point
 >undo
 >undo
 
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (-2.66, -4.00.)
+
 >fret free
 by one point
 }}SCORE++
 
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (-3.00, -4.50.)
+
 >yet ye
 by one point
 }}SCORE++
+
+@hin
+>ll
+A dot bounces around the leet learner's grid and winds up at (-3.00, -4.00.)
 
 @rej
 >n
@@ -4118,6 +4599,10 @@ You already prepped yourself for the final fight. Now it is upon you.
 @min
 /^Threat Three Met Me
 
+@hin
+>ll
+Nothing comes up. The general area here has been changed enough.
+
 @gt
 #+ttc-table-of-noways-threat-three
 >w
@@ -4139,9 +4624,17 @@ That is just talk. You need some sort of monument or memento to establish that.
 >think
 You can name the Frightfully Bright Bully once they have an "award" of sorts to write their name on.
 
+@hin
+>ll sack
+A dot bounces around the leet learner's grid and winds up at (1.00, 2.00.)
+
 >plus plaque
 by one point
 }}SCORE++
+
+@hin
+>ll spurning sprite
+A dot bounces around the leet learner's grid and winds up at (-0.50, -1.00.)
 
 @rej
 #testcase-postreject-table-of-verb-checks-vc-plus-plaque-rule
@@ -4473,7 +4966,7 @@ That location or thing doesn't exist or isn't known to you yet.
 >score
 
 @min
-72 out of 86
+71 out of 86
 
 @all
 85 out of 86
