@@ -18,18 +18,19 @@
 # 4 = trail/docking, need loot and rose
 ##RBRCONSTRAINTS=1<2,0<3,1<3,0<4,1<4
 
-files=reg-lljj-thru-min.txt,reg-lljj-thru-all.txt,reg-lljj-thru-reject.txt,reg-lljj-thru-alt-verbs.txt,reg-lljj-thru-gong-tests.txt,reg-lljj-thru-mistakes.txt,reg-lljj-thru-ha-half.txt,reg-lljj-thru-homonyms.txt,reg-lljj-thru-verbs.txt,reg-lljj-thru-goto.txt,reg-lljj-thru-hints.txt
+files=reg-lljj-thru-min.txt,reg-lljj-thru-all.txt,reg-lljj-thru-reject.txt,reg-lljj-thru-alt-verbs.txt,reg-lljj-thru-guide-gong.txt,reg-lljj-thru-pride-prong.txt,reg-lljj-thru-mistakes.txt,reg-lljj-thru-ha-half.txt,reg-lljj-thru-homonyms.txt,reg-lljj-thru-verbs.txt,reg-lljj-thru-goto.txt,reg-lljj-thru-hints.txt
 ~	min	t0
 ~	all	t1
 ~	rej	t2
 ~	alt	t3
 ~	gong	t4
-~	mis	t5
-~	ha	t6
-~	hom	t7
-~	ver	t8
-~	goto,gt,go	t9
-~	hin,hint,hints	t10
+~	prong	t5
+~	mis	t6
+~	ha	t7
+~	hom	t8
+~	ver	t9
+~	goto,gt,go	t10
+~	hin,hint,hints	t11
 #--stable-file: this eventually says that the project is stable, and I shouldn't change the main/minimal file unless I really need to.
 #--strict-file: this says that the project requires strict section marking e.g. @all instead of ==t1.
 
@@ -50,7 +51,7 @@ files=reg-lljj-thru-min.txt,reg-lljj-thru-all.txt,reg-lljj-thru-reject.txt,reg-l
 ## *FILE
 ## *FORK
 
-TSV:## minimum walkthrough	## walkthrough with all points	## walkthrough with all rejections and THINK	## walkthrough with altverb tests	## walkthrough testing gong/player restrictions	## walkthrough testing all mistakes	## walkthrough testing half-right cases	## walkthrough testing homonyms	##walkthrough testing special verbs	## walkthrough testing GOTO	## walkthrough testing HINTS
+TSV:## minimum walkthrough	## walkthrough with all points	## walkthrough with all rejections and THINK	## walkthrough with altverb tests	## walkthrough testing guide gong	## walkthrough testing pride prong	## walkthrough testing all mistakes	## walkthrough testing half-right cases	## walkthrough testing homonyms	## walkthrough testing special verbs	## walkthrough testing GOTO	## walkthrough testing HINTS
 
 ** game: /home/andrew/prt/debug-low-key-learny-jokey-journey.z8
 ** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25

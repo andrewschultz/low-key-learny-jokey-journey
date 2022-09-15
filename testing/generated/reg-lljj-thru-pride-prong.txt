@@ -1,7 +1,7 @@
-## reg-lljj-thru-verbs.txt
+## reg-lljj-thru-pride-prong.txt
 ## GENERATOR FILE: rbr-lljj-thru.txt
 
-## walkthrough testing special verbs
+## walkthrough testing all mistakes
 
 ** game: /home/andrew/prt/debug-low-key-learny-jokey-journey.z8
 ** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
@@ -10,39 +10,16 @@
 
 >au 2
 
->listen
-You get the feeling your voice could add constructively to the noises, somehow, but it's not critical.
-
 >plain plea
 by one point
 
->listen
-You still think you hear echoes of your plain plea.
-
 >jane g
 by one point
-
->listen
-"Poring Pox!" the roaring rocks, uh, roar.
 
 >boring box
 by one point
 
 >open box
-
-#ttc-table-of-color-clues---eat-earner--
-#ttc-table-of-color-clues--beat-burner--
-#ttc-table-of-color-clues--cheat-churner-
-#ttc-table-of-color-clues--meet-mourner-
-#ttc-table-of-color-clues-conceit-concerner
-#testcase-common-readables-table-of-readables-leet-learner
->read leet learner
-Some text matches up with where the needle nose might spin. It's a bit of a stretch, in some cases, but you figure the more help the better.
-CONCEIT CONCERNER is written to the left.
-  CHEAT CHURNER   is written to the center-left.
-   MEET MOURNER   is written to the center.
-   BEAT BURNER    is written to the center-right.
-    EAT EARNER    is written to the right.
 
 >n
 
@@ -56,9 +33,6 @@ by one point
 by one point
 
 >n
-
->listen
-Quite quiet site. Sigh, it ...
 
 >grow grudge
 by one point
@@ -147,11 +121,6 @@ by one point
 
 >knotty nail
 by one point
-
-#ttc-table-of-readables-locking-lift
->read locking lift
-You see zero of six settings filled in:
-You've completed zero areas beyond the High Hub.
 
 >bye bub
 
