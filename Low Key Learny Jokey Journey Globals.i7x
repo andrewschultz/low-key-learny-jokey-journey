@@ -21,14 +21,16 @@ chapter game score booleans
 sco-plain-plea is a truth state that varies. [llp]
 sco-choose-name is a truth state that varies. [ this variable is never explicitly used in the code as of now, but it could be. I have one for each point-scored truth-state. ]
 
-sco-grow-grudge is a truth state that varies.
-sco-wordy-walk is a truth state that varies. [llp]
-
-sco-un-arm is a truth state that varies.
+sco-boring-box is a truth state that varies.
 
 sco-gad-gunk is a truth state that varies. [llp]
 sco-bad-bunk is a truth state that varies.
 sco-sad-sunk is a truth state that varies.
+
+sco-grow-grudge is a truth state that varies.
+sco-wordy-walk is a truth state that varies. [llp]
+
+sco-un-arm is a truth state that varies.
 
 sco-done-dorm is a truth state that varies.
 sco-fun-form is a truth state that varies.
@@ -137,17 +139,29 @@ firstpoint-list is a list of text variable. firstpoint-list is { "DANE D", "DANE
 
 volume game flags
 
+name-choice-index is a number that varies. name-choice-index is 0. [1st room, which of firstpoint-list?]
+
 boring-box-check is a truth state that varies. [this is to note if the player has tried LL in the Roaring Rocks, so they know to go up to understand the learner]
 
 learner-up-rocks is a number that varies.
 
-name-choice-index is a number that varies. name-choice-index is 0.
+monk-bad-cue is a truth state that varies. [bad bunk or sad sunk cued if you run up the score?]
+
+chapter rejected point events
+
+guessed-pear-peach is a truth state that varies.
+
+tried-mocking-miffed is a truth state that varies.
+
+warn-monk is a truth state that varies.
+
+chapter options roving
 
 hunt-bonus-points is a truth state that varies. [this is for gong / prong checking the path]
 
 guide-gong-warn is a truth state that varies. [this is for going north in rocks -- we only see the GONG nag once]
 
-
 Low Key Learny Jokey Journey Globals ends here.
 
 ---- DOCUMENTATION ----
+guessed-pear-peach is a truth state that varies.

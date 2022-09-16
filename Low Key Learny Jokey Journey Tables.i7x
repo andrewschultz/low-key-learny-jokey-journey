@@ -11,10 +11,6 @@ volume core tables
 
 section variables by tables
 
-sco-choose-name is a truth state that varies.
-
-sco-boring-box is a truth state that varies.
-
 book main point command table
 
 [
@@ -1387,17 +1383,11 @@ section general auxiliary definitions
 
 to print-the-loc: say "[line break][b][location of player][r][line break]" [?? move to universal?]
 
-tried-mocking-miffed is a truth state that varies.
-
-warn-monk is a truth state that varies.
-
 section auxiliary rules and definitions
 
 [these are ranked by approximate game order SOULS SHOE ROUTE SLEAZE COAST END]
 
 [rocks, game start]
-
-monk-bad-cue is a truth state that varies.
 
 a goodrhyme rule (this is the check-dumping-monk rule):
 	if vc-dont-print is true, continue the action;
@@ -1418,9 +1408,6 @@ a goodrhyme rule (this is the check-dumping-monk rule):
 	if TS is true, ready;
 	if the player's command includes "bad", now monk-bad-cue is true;
 	not-yet;
-
-to decide which number is monk-score:
-	decide on boolval of sco-bad-bunk + boolval of sco-sad-sunk;
 
 this is the diss-monk rule:
 	if monk-score < 1:
@@ -1475,9 +1462,6 @@ to remove-spoke (nu - a number):
 
 [hub 1. shore]
 
-to decide which number is shoal-core-score:
-	decide on boolval of sco-four-foals + boolval of sco-more-moles;
-
 to check-red-rose:
 	say "[line break]";
 	if shoal-core-score is 2:
@@ -1496,16 +1480,6 @@ this is the animals-need-shoals rule:
 to lose-rose-petal: say "[line break]A[one of][or]nother[stopping] bright petal falls off the red rose and blows away in the wind."
 
 [hub 2. shoe]
-
-to decide which number is shoe-concessions:
-	decide on boolval of sco-stow-stew + boolval of sco-bro-brew;
-
-to decide which number is shoe-storage:
-	decide on boolval of sco-glow-glue + boolval of sco-flow-flue;
-
-to decide whether shoe-food-drink:
-	if shoe-concessions is 2, yes;
-	no;
 
 to change-shoe-number (nu - a number):
 	decrease to-number of show shoe by nu;
@@ -1582,9 +1556,6 @@ a goodrhyme rule (this is the trite-trees-planted rule):
 		vcal "You already planted the right root to make trite trees. Nothing more to do here.";
 		already-done;
 
-to decide which number is sleaze-score:
-	decide on boolval of sco-bright-breeze + boolval of sco-plight-please;
-
 [hub 4b. beyond sleaze]
 
 a goodrhyme rule (this is the did-i-shame rule):
@@ -1600,10 +1571,6 @@ this is the notify-final-whale rule:
 
 to decide what number is whale-score:
 	decide on boolval of sco-sight-sail + boolval of sco-might-mail + boolval of sco-flight-flail + boolval of sco-right-rail + boolval of sco-bright-brute;
-
-to decide whether whale-hunt-ready:
-	if whale-score is 5, yes;
-	no;
 
 to adjust-trail (nu - a number):
 	decrease to-number of trite trail by nu;
@@ -1643,12 +1610,6 @@ to say lift-stuff:
 	say "[if tried-mocking-miffed is true or sco-mocking-miffed is true]MOCKING MIFFED[else]------- ------[end if][if hub-score < 5] (not yet)[end if]."; [ no (done) case since it is the final one ]
 	say "[if sco-rocking-rift is true]ROCKING RIFT[else]------ ----[end if][if sco-throw-through is true] (done)[end if].";
 	say "[if sco-shocking-shift is true]SHOCKING SHIFT[else]-------- -----[end if][if shoal-core-score is 2] (done)[end if].";
-
-to decide which number is lift-score:
-	decide on boolval of sco-docking-diffed + boolval of sco-grokking-grift + boolval of sco-mocking-miffed + boolval of sco-rocking-rift + boolval of sco-shocking-shift + boolval of sco-gawking-gift;
-
-to decide which number is hub-score: [rocking rift/throw through, docking diffed / excite-exhale, grokking grift/chic shaming, gawking gift/k cope, shocking shift/3 gore-goals points ]
-	decide on boolval of sco-throw-through + boolval of sco-excite-exhale + boolval of sco-chic-shaming + boolval of sco-k-cope + boolval of (whether or not shoal-core-score is 2);
 
 volume homonym rejections
 

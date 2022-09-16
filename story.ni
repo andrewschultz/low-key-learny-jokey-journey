@@ -20,6 +20,8 @@ include Prime Pro Rhyme Row Common by Andrew Schultz.
 
 include Prime Pro Rhyme Row E34 by Andrew Schultz.
 
+include Low Key Learny Jokey Journey Definitions by Andrew Schultz.
+
 include Low Key Learny Jokey Journey Globals by Andrew Schultz.
 
 include Low Key Learny Jokey Journey Tables by Andrew Schultz.
@@ -44,85 +46,7 @@ Hoppin' Heart is a region.
 
 Poppin' Part is a region.
 
-section scoring
-
-chapter offshoots relying on PPRR common file or PPRR universal file
-
-this is the disable-learner-options rule: if player does not have leet learner, say "You've tried an option you can't exercise until you get a hint item. You should, shortly." instead;
-
-to decide whether this-game-say-nudge:
-	if player is in nay nope slay slope and the player's command includes "say soap", yes;
-	no;
-
-to decide whether force-partminus of (th - a thing): [whether to force certain leet learner readings]
-	no;
-
-this is the game-specific-ll-direction rule: [point to specific objects with the Leet Learner]
-	do nothing;
-
-this is the game-specific-backdrop-check rule: [wry wall in VVFF]
-	do nothing;
-
-to decide which number is variable-scan-length of (mynum - a number): [if we have variable scan lengths for an item depending on context]
-	say "BUG: no variable-scan-length for [mynum]. Please let me know what you typed.";
-	decide on 44;
-
-this is the narrative-checking rule: [in VVFF been-buggin blocks you from seeing narrative]
-	do nothing;
-
-to say optional-hint-think-item: say "";
-
-section viability and gotoing
-
-a room has a number called spokeval. spokeval of a room is usually -1.
-
-this is the flag bad goto to rule:
-	if noun is location of player, say "You're already there! Well, here." instead;
-	if noun is Bane Be Sane See, say "There's no way back to where you started." instead;
-	if noun is Jotty Jail, say "You don't need or want to go back to [jail]." instead;
-	if noun is Show Shoe and sco-throw-through is true, say "You can't revisit the [show shoe] after the big performance!" instead;
-	if location of player is High Hub:
-		let mrgo be map region of noun;
-		if mrgo is not Poppin' Part and sco-bye-bub is false, say "There's a way back, but you need to find the right way off the High Hub." instead;
-
-this is the stuck-right-now rule:
-	if player is in Threat Three and sprite is in threat three, say "It's the final conflict! You're stuck here!" instead;
-	if player is in Vain Vat and pred pros are not moot, say "You're in a bit of a pickle. Too much to get up and go anywhere." instead;
-
-this is the flag bad goto from rule:
-	abide by the stuck-right-now rule;
-	if mrlp is Poppin' Part:
-		let mrgo be map region of noun;
-		if mrgo is Poppin' Part and spokeval of noun is not spokeval of location of player, say "Here around the high hub, you need to use the lift." instead;
-
-definition: a direction (called d) is viable:
-	if the room d of location of the player is nowhere, no;
-	yes;
-
-section "too-distracted" determines if we should reject THINK
-
-to decide whether too-distracted:
-	no;
-
-to decide whether immediate-attention of (ru - a rule):
-	no;
-
-section spacing for Lurking Lump
-
-to decide whether (ru - a rule) is spaceable:
-	if ru is vc-co-coon rule or ru is vc-un-arm rule, no;
-	yes;
-
-chapter offshoots from the universal file
-
-to decide whether vcp-ignore: decide no; [When do we block check-text? In VVFF, when we have Been Buggin]
-
-chapter instead rules
-
-to decide whether the action is procedural:
-	if examining, yes;
-	if lling, yes;
-	no;
+section instead rules
 
 instead of doing something with a boring thing:
 	if action is procedural, continue the action;
@@ -501,8 +425,6 @@ to decide what number is jail-bonus:
 
 volume rooms (end)
 
-a liftroom is a kind of room.
-
 book the hub
 
 understand "high hub" as lifttaking when high hub is visited.
@@ -570,9 +492,6 @@ to say shoal-so-far:
 
 guess-table of sore souls gore goals is the table of sore souls gore goals guesses.
 
-to decide which number is shoal-extra-animals:
-	decide on boolval of sco-night-newt + boolval of sco-kite-coot;
-
 section needed points
 
 section LLPs
@@ -597,9 +516,6 @@ to decide what number is rose-petals-remaining:
 report examining red rose:
 	say "You notice the red rose has [rose-petals-remaining in words] particularly bright petal[plur of rose-petals-remaining][if rose-petals-remaining < 3] still remaining[end if].";
 	continue the action;
-
-To decide which number is rose-petals:
-	decide on boolval of sco-said-sos + boolval of sco-thread-throws;
 
 guess-table of red rose is the table of red rose guesses.
 
@@ -662,20 +578,12 @@ from-number of light lute is 5504. to-number of light lute is 11109.
 
 section in-depth lute descriptions
 
-to decide which number is lute-strings: decide on gold-lute-strings + silver-lute-strings;
-
 report examining light lute:
 	if lute-strings is 0:
 		say "The lute used to have some gold and silver strings, but they're replaced by regular ones now.";
 		continue the action;
 	say "The lute [if lute-strings < 4]still [end if]has [if gold-lute-strings > 0][gold-lute-strings in words] gold string[plur of gold-lute-strings][end if][if gold-lute-strings > 0 and silver-lute-strings > 0] and [end if][if silver-lute-strings > 0][silver-lute-strings in words] silver string[plur of silver-lute-strings][end if].";
 	continue the action;
-
-to decide which number is gold-lute-strings:
-	decide on 2 - (boolval of sco-right-root + boolval of sco-bright-brute);
-
-to decide which number is silver-lute-strings:
-	decide on 2 - (boolval of sco-night-newt + boolval of sco-kite-coot);
 
 book spoke 2 / Gawking Gift
 
@@ -756,11 +664,6 @@ from-number of trite trail is 5505. to-number of trite trail is 16613.
 the tight tail white whale is scenery in Trite Trail. printed name is "tight-tail white whale". "It splashes out of the water sometimes, glaring at you as if to say you're lucky it can't swim in shallow water. You don't know why you're supposed to defeat it, but you know you are."
 
 from-number of white whale is 11009.
-
-definition: a thing (called th) is whale-defeating:
-	unless th is scenery, no;
-	if th is white whale or th is bright brute, no;
-	yes;
 
 after printing the locale description for trite trail when whale-score > 0 and sco-excite-exhale is false:
 	say "So far you've scrounged up [a list of whale-defeating things in trite trail] for your assault on the white whale. [if whale-score is 1]It[else]They[end if][']ll be ready when needed.";
@@ -890,9 +793,6 @@ report examining market marquee for the first time:
 	if sco-yet-ye is false, say "TWET. ";
 	say "Not [if marquee-score is 2]a word[else]words[end if][if marquee-score > 1]. But what you solved made sense[end if]. There are other possibilities.";
 	continue the action;
-
-to decide which number is marquee-score:
-	decide on boolval of sco-fret-free + boolval of sco-set-see + boolval of sco-yet-ye;
 
 chapter Burning Bright Spurning Sprite
 
@@ -1100,12 +1000,6 @@ volume room restrictions
 
 this is the nothing-left gong rule: completed;
 
-definition: a room (called rm) is available-from-here:
-	if rm is unvisited, no;
-	if rm is bane be sane see and player is not in bane be sane see, no;
-	if rm is jotty jail and player is not in jotty jail, no;
-	yes;
-
 [this may be moved to PPRR common later]
 
 the gong rules are a rulebook. the gong rules have outcomes completed, llp-remaining, and uncompleted.
@@ -1132,32 +1026,6 @@ check going when player-room-allow-threshold is not nothing-left:
 	say "[one of]A guide gong[or]That guide gong, again,[stopping] rings to notify you that you don't need to go back through [room gone to]." instead;
 
 a room can be go-checked. a room is usually not go-checked.
-
-definition: a room (called rm) is overall-go-useful:
-	now hunt-bonus-points is false;
-	reset-go-check;
-	if rm is go-useful, yes;
-	if player-room-allow-threshold is bonus-left:
-		now hunt-bonus-points is true;
-		reset-go-check;
-		if rm is go-useful:
-			vcal "The pride-prong you summoned earlier pokes you to go and see what's ahead, even if it might not be critical to your quest.";
-			yes;
-	no;
-
-definition: a room (called rm) is go-useful:
-	if rm is location of player, no;
-	now rm is go-checked;
-	process the this-gong-rule of rm;
-	let room-done be the outcome of the rulebook;
-	if room-done is the uncompleted outcome, yes;
-	if room-done is the llp-remaining outcome and hunt-bonus-points is true, yes;
-	repeat with R2 running through rooms:
-		if R2 is not adjacent to rm:
-			unless (rm is a liftroom and r2 is high hub) or (r2 is a liftroom and rm is high hub), next;
-		if R2 is go-checked, next;
-		if R2 is go-useful, yes;
-	no;
 
 chapter gong rules pre-hub
 
@@ -1650,8 +1518,6 @@ this is the hint-locking-lift rule:
 
 to say need-rose: if player does not have red rose, say "though you can't complete it now until you visit another hub"
 
-to decide which number is side-item-score: decide on (boolval of whether or not red rose is not off-stage) + (boolval of whether or not light lute is not off-stage)
-
 to say need-rose-and-lute:
 	if side-item-score is 2, continue the action;
 	if player does not have red rose, say "though you can't complete it now until you visit ";
@@ -1787,16 +1653,6 @@ chapter exitsing
 [ for the EXITS command when you can see a way to go but it isn't physically available ]
 
 [ so behind Trust Track is unavailable but beyond Slow Sludge is blocked ]
-
-to decide whether (di - a direction) is blocked:
-	if player is in NNSS and sco-grow-grudge is false:
-		if di is north or di is south or di is east, yes;
-	if player is in Vain Vat and sco-flain-flat is false:
-		if di is north, yes;
-	if player is in Roaring Rocks and di is north and mad monk is in roaring rocks, yes;
-	if player is in Hun Harm Fun Farm and di is north and sco-un-arm is false, yes;
-	if player is in Warm Stun Storm and di is north and sco-fun-form is false, yes;
-	no;
 
 check exitsing (this is the adjust exit text with lift present rule):
 	if location of player is High Hub, say "The locking lift is the main way out of here, but [if sco-bye-bub is true]you can go back [b]DOWN[r] the stalk[else]there is a way to revisit what's below[end if]." instead;

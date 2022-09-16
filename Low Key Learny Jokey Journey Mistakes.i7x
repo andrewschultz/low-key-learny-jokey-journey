@@ -268,8 +268,6 @@ mist-cmd(topic)	mist-rule	got-yet	leet-rule	mist-txt
 "spare speech"	--	false	need-bare-beach rule	"[if sco-pear-peach is false]You know, something even more spare than that might work, in the right place[else]But that is less spare than a pear peach[end if]."
 "tear/tare teach"	--	false	need-bare-beach rule	"There is nobody to teach, much less verbally tear while you do so."
 
-guessed-pear-peach is a truth state that varies.
-
 this is the need-pear-peach rule:
 	now guessed-pear-peach is true;
 	if sco-pear-peach is false, the rule succeeds;
