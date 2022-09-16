@@ -812,7 +812,7 @@ volume main engine
 this is the situational-cuing-reject rule: do nothing;
 
 this is the verb-checker rule:
-	let local-ha-half be false;
+	let local-ha-half-level be 0;
 	let local-post-hom be false;
 	let brightness be false;
 	let new-point-to-get be false;
@@ -895,14 +895,18 @@ this is the verb-checker rule:
 			let rb-out be the outcome of the rulebook;
 			now vc-dont-print is false;
 			unless rb-out is the not-yet outcome or rb-out is the ready outcome, next;
-			now local-ha-half is true;
+			if rb-out is ready outcome:
+				now local-ha-half-level is 2;
+			else if local-ha-half-level < 2:
+				now local-ha-half-level is 1;
 			if debug-state is true, say "DEBUG: [check-rule entry] tipped off the HA HALF button.";
 			if there is a core entry:
 				now new-point-to-get is true;
 				if core entry is true, now brightness is true;
 			next;
-	if local-ha-half is true:
-		say "The [b]HA HALF[r] button lights up on your Leet Learner[if new-point-to-get is false]--wait, you're just switching back to a rhyme you knew before. You must've mis-thought a word[else if brightness is false], but dimly--perhaps this is a rhyme you don't strictly need to figure to win[else if local-post-hom is true], and its brightness suggests your rhyme must be very close, indeed[end if].";
+	if local-ha-half-level > 0:
+		say "The [b]HA HALF[r] button on your Leet Learner lights up [if local-ha-half-level is 1]yellow[one of]--you must be close to a future solution[or][stopping][else]green[one of]--you must be close to something you can do now[or][stopping][end if][if new-point-to-get is false]. Oh, wait, you're just switching back to a rhyme you knew before. You must've mis-thought a word[else if brightness is false]. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win[else if local-post-hom is true]. Its brightness suggests your rhyme must be very close, indeed[end if].";
+		the rule succeeds;
 		abide by the ha-half-help rule;
 	if local-post-hom is true:
 		if hom-row > 0:
