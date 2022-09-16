@@ -560,6 +560,8 @@ sco-knotty-nail is a truth state that varies.
 
 volume rooms (end)
 
+a liftroom is a kind of room.
+
 book the hub
 
 understand "high hub" as lifttaking when high hub is visited.
@@ -687,7 +689,7 @@ book spoke 1 / rocking rift
 
 part no new show shoe
 
-There is a room called No New Show Shoe in Poppin' Part. "This isn't actually a shoe, of course. It's an area for performances, shaped like a horseshoe. But of course the shape doesn't matter. The locking lift is here, too[if shoe-concessions is 2], and trust me on this--if you re-enter it, time will freeze here, so nobody's left hanging[end if].[paragraph break][shoe-desc].". printed name of No New Show Shoe is "[if sco-crow-crew is false]No-New-Show Shoe[else]Whoah-Woo-Show Shoe[end if]". spokeval of Show Shoe is 1.
+There is a liftroom called No New Show Shoe in Poppin' Part. "This isn't actually a shoe, of course. It's an area for performances, shaped like a horseshoe. But of course the shape doesn't matter. The locking lift is here, too[if shoe-concessions is 2 and sco-throw-through is false], and trust me on this--if you re-enter it, time will freeze here, so nobody's left hanging[end if].[paragraph break][shoe-desc].". printed name of No New Show Shoe is "[if sco-crow-crew is false]No-New-Show Shoe[else]Whoah-Woo-Show Shoe[end if]". spokeval of Show Shoe is 1.
 
 guess-table of Show Shoe is table of no new show shoe guesses.
 
@@ -696,6 +698,9 @@ from-number of no new show shoe is 10607. to-number of no new show shoe is 10808
 understand "whoah/woo show/shoe" and "whoah/woo show shoe" and "whoah/woo" and "whoah woo show/shoe" and "whoah woo show shoe" as show shoe when sco-crow-crew is true.
 
 to say shoe-desc:
+	if sco-throw-through is true:
+		say "The crowd has gone. There's not much left to do here[if sco-go-goo is false], but you sense you could conjure up some oddly-named supplies for the next performance[end if]";
+		continue the action;
 	if shoe-storage is 0:
 		say "However, the infrastructure for a big performance simply isn't here yet";
 		continue the action;
@@ -712,9 +717,9 @@ to say shoe-desc:
 	else:
 		say ". The brew and stew there should sustain the crowd nicely";
 
-after printing the locale description when player is in Show Shoe (this is the show shoe extra 1 rule):
+after printing the locale description when player is in Show Shoe and sco-throw-through is false (this is the show shoe extra 1 rule):
 	if sco-crow-crew is false, say "There are no performers yet[if lazy loud crazy crowd is off-stage], either[end if]. What could the group's name be?";
-	if sco-go-goo is true, say "[if sco-crow-crew is false][line break][end if]There's also a pile of 'nutritious' 'energetic' Go Goo that event-goers will snap up.";
+	if sco-go-goo is true and sco-throw-through is false, say "[if sco-crow-crew is false][line break][end if]There's also a pile of 'nutritious' 'energetic' Go Goo that event-goers will snap up.";
 	continue the action;
 
 sco-flow-flue is a truth state that varies.
@@ -774,7 +779,7 @@ book spoke 2 / Gawking Gift
 
 part Rum Route
 
-Bum Bout Rum Route is a room in Poppin' Part. "[if sco-dumb-doubt is false]You seem assailed by ... well, not quite voices, here, but ideas from whoever-it-is that you deserve to be stuck here. The arguments seem brilliant and ironclad[else if sco-said-sos is false]You've pushed back and instilled doubt, but now you need to brag a bit[else if sco-umm-out is false]You feel like you can win the fight against frustration and helplessness with a snappy reply. The sort that might paralyze you[else]You see the way down now you've dispelled your own doubts. You hope you're ready to face it[sstt][end if]. Thankfully, the lift here can take you back to the High Hub.". spokeval of Rum Route is 2. printed name of Rum Route is "[if sco-umm-out is false]Bum-[']Bout Rum Route[else]Numb? NOWT![end if]".
+Bum Bout Rum Route is a liftroom in Poppin' Part. "[if sco-dumb-doubt is false]You seem assailed by ... well, not quite voices, here, but ideas from whoever-it-is that you deserve to be stuck here. The arguments seem brilliant and ironclad[else if sco-said-sos is false]You've pushed back and instilled doubt, but now you need to brag a bit[else if sco-umm-out is false]You feel like you can win the fight against frustration and helplessness with a snappy reply. The sort that might paralyze you[else]You see the way down now you've dispelled your own doubts. You hope you're ready to face it[sstt][end if]. Thankfully, the lift here can take you back to the High Hub.". spokeval of Rum Route is 2. printed name of Rum Route is "[if sco-umm-out is false]Bum-[']Bout Rum Route[else]Numb? NOWT![end if]".
 
 understand "numb/nowt" and "numb nowt" as Rum Route when sco-umm-out is true.
 
@@ -791,7 +796,7 @@ sco-said-sos is a truth state that varies.
 
 part Nay Nope Slay Slope
 
-Nay Nope Slay Slope is a room in Poppin' Part. printed name is "[if sco-hey-hope is false]Nay-Nope-Slay Slope[else]Eh-[']Ope Day, Dope![end if]". "Thoughts of being against negativity swirl around here. Why, if you don't have positivity, you've had it! [if sco-hey-hope is false]They seem directed at you, as if to say you're the least positive person ever[else if sco-k-cope is false]Yet you see they can't totally be true, and you've boosted yourself a bit, and maybe you can boost yourself a bit more[else]But you see through them now. You can move on. There is passage down[end if].". spokeval of Slay Slope is 2.
+Nay Nope Slay Slope is a liftroom in Poppin' Part. printed name is "[if sco-hey-hope is false]Nay-Nope-Slay Slope[else]Eh-[']Ope Day, Dope![end if]". "Thoughts of being against negativity swirl around here. Why, if you don't have positivity, you've had it! [if sco-hey-hope is false]They seem directed at you, as if to say you're the least positive person ever[else if sco-k-cope is false]Yet you see they can't totally be true, and you've boosted yourself a bit, and maybe you can boost yourself a bit more[else]But you see through them now. You can move on. There is passage down[end if].". spokeval of Slay Slope is 2.
 
 Rum Route is mapped above Slay Slope. nowhere is mapped below Rum Route.
 
@@ -806,7 +811,7 @@ book spoke 3 / Grokking Grift
 
 part Slight Sleaze
 
-Slight Sleaze is a room in Poppin' Part. "[if sco-bright-breeze is false]You feel a fright-freeze preventing you from going south. A change in the weather would be nice[else if sco-plight-please is false]The fright-freeze is still around, but it's at least being blown about. However, self-serving pity stories whispered in your ear make you wonder if you really deserve to move on while they're clearly stuck here[else if sco-right-root is false]It feels nicer here, but this place could use scenery, something that may need to come from elsewhere[else]The trite trees make things feel nicer here, having replaced the fright-freeze that was here, and they surround you every way except to the south[end if].[paragraph break]Of course, you can always enter the locking lift to return to the High Hub.". printed name is "[if sco-right-root is false]Slight Sleaze[else]Trite Trees[end if]". spokeval of Slight Sleaze is 3.
+Slight Sleaze is a liftroom in Poppin' Part. "[if sco-bright-breeze is false]You feel a fright-freeze preventing you from going south. A change in the weather would be nice[else if sco-plight-please is false]The fright-freeze is still around, but it's at least being blown about. However, self-serving pity stories whispered in your ear make you wonder if you really deserve to move on while they're clearly stuck here[else if sco-right-root is false]It feels nicer here, but this place could use scenery, something that may need to come from elsewhere[else]The trite trees make things feel nicer here, having replaced the fright-freeze that was here, and they surround you every way except to the south[end if].[paragraph break]Of course, you can always enter the locking lift to return to the High Hub.". printed name is "[if sco-right-root is false]Slight Sleaze[else]Trite Trees[end if]". spokeval of Slight Sleaze is 3.
 
 guess-table of slight sleaze is the table of slight sleaze guesses.
 
@@ -828,7 +833,7 @@ to-number of trite trees is -4.
 
 part Freak Framing Seek-Sameing
 
-Freak Framing Seek Sameing is in Poppin' Part. printed name is "[if sco-chic-shaming is true]Eek! Aiming![else]Freak-Framing Seek-Sameing[end if]". "This is a control center of some sort. You hear chatter, but there might even be some telepathy. [if sco-bleak-blaming is false]Most of the muttering is about how different people are at fault for things they don't even know about, and you don't know how to buttonhole that[else if sco-bred-bros is false]You've got all your arguments in one place. But you have to admit, you're not the one to perpetuate them! You need someone, or people, who will make it fun for any old crowd to change their attitudes for the better. Someone new from outside[else]Congratulations! You've made this a think tank with things actually worth thinking. The Bred Bros discuss ways to frame basic social decency and tolerance as far more desirable than 'edgy' conformism[end if].". spokeval of Freak Framing is 3.
+Freak Framing Seek Sameing is a liftroom in Poppin' Part. printed name is "[if sco-chic-shaming is true]Eek! Aiming![else]Freak-Framing Seek-Sameing[end if]". "This is a control center of some sort. You hear chatter, but there might even be some telepathy. [if sco-bleak-blaming is false]Most of the muttering is about how different people are at fault for things they don't even know about, and you don't know how to buttonhole that[else if sco-bred-bros is false]You've got all your arguments in one place. But you have to admit, you're not the one to perpetuate them! You need someone, or people, who will make it fun for any old crowd to change their attitudes for the better. Someone new from outside[else]Congratulations! You've made this a think tank with things actually worth thinking. The Bred Bros discuss ways to frame basic social decency and tolerance as far more desirable than 'edgy' conformism[end if].". spokeval of Freak Framing is 3.
 
 guess-table of freak framing seek sameing is the table of freak framing seek sameing guesses.
 
@@ -846,7 +851,7 @@ book spoke 4 / docking diffed
 
 part mad most cad coast
 
-Mad Most Cad Coast is a room in Poppin' Part. printed name is "[if sco-rad-roast is true]Pad Post-Had-Host[else]Mad-Most-Cad Coast[end if]". understand "had/host pad poast" and "had post" and "had/host pad/poast" and "host pad" as Mad Most Cad Coast when sco-rad-roast is true. "[if sco-bad-boast is false]You are driven mad with all the possible ways to go here. I mean, it's the coast, so you don't want to jump in the water, but you're not focused enough[else if sco-rad-roast is false]Your mind's a bit calmer now, but not calm enough[else]The way west is clear now, and you can't imagine there's much left to do here[end if]. The lift awaits for it you wish to return to the High Hub.". spokeval of Cad Coast is 4.
+Mad Most Cad Coast is a liftroom in Poppin' Part. printed name is "[if sco-rad-roast is true]Pad Post-Had-Host[else]Mad-Most-Cad Coast[end if]". understand "had/host pad poast" and "had post" and "had/host pad/poast" and "host pad" as Mad Most Cad Coast when sco-rad-roast is true. "[if sco-bad-boast is false]You are driven mad with all the possible ways to go here. I mean, it's the coast, so you don't want to jump in the water, but you're not focused enough[else if sco-rad-roast is false]Your mind's a bit calmer now, but not calm enough[else]The way west is clear now, and you can't imagine there's much left to do here[end if]. The lift awaits for it you wish to return to the High Hub.". spokeval of Cad Coast is 4.
 
 check going west in Mad Most Cad Coast: if sco-rad-roast is false, say "You can't go west with all the madness. Well, not yet." instead;
 
@@ -1259,38 +1264,45 @@ player-room-allow-threshold is a room-hint-state that varies. player-room-allow-
 [roomblocking when room gone to is trust track:
 	llp-remaining;]
 
-the go-goto rules are a room based rulebook.
-
 hunt-bonus-points is a truth state that varies.
 
-main-directions is a list of directions variable. main-directions is { north, south, east, west, up, down }.
-
-check going when player-room-allow-threshold is not nothing-left:
+to reset-go-check:
 	now all rooms are not go-checked;
 	now location of player is go-checked;
+
+check going when player-room-allow-threshold is not nothing-left:
 	if the room gone to is nothing, continue the action;
 	now hunt-bonus-points is false;
-	if the room gone to is go-useful, continue the action;
-	if player-room-allow-threshold is bonus-left:
-		now hunt-bonus-points is true;
-		if the room gone to is go-useful:
-			say "The pride-prong you summoned earlier pokes you to go and see what's ahead, even if it might not be critical to your quest.";
-			continue the action;
+	reset-go-check;
+	if the room gone to is overall-go-useful, continue the action;
 	say "[one of]A guide gong[or]That guide gong, again,[stopping] rings to notify you that you don't need to go back through [room gone to]." instead;
 
 a room can be go-checked. a room is usually not go-checked.
 
+definition: a room (called rm) is overall-go-useful:
+	now hunt-bonus-points is false;
+	reset-go-check;
+	if rm is go-useful, yes;
+	if player-room-allow-threshold is bonus-left:
+		now hunt-bonus-points is true;
+		reset-go-check;
+		if rm is go-useful:
+			vcal "The pride-prong you summoned earlier pokes you to go and see what's ahead, even if it might not be critical to your quest.";
+			yes;
+	no;
+
 definition: a room (called rm) is go-useful:
+	if rm is location of player, no;
 	now rm is go-checked;
 	process the this-gong-rule of rm;
 	let room-done be the outcome of the rulebook;
-	if debug-state is true, say "[rm] [room-done].";
 	if room-done is the uncompleted outcome, yes;
 	if room-done is the llp-remaining outcome and hunt-bonus-points is true, yes;
-	repeat with DI running through main-directions:
-		if the room DI of rm is nothing, next;
-		if the room DI of rm is go-checked, next;
-		if the room DI of rm is go-useful, yes;
+	repeat with R2 running through rooms:
+		if R2 is not adjacent to rm:
+			unless (rm is a liftroom and r2 is high hub) or (r2 is a liftroom and rm is high hub), next;
+		if R2 is go-checked, next;
+		if R2 is go-useful, yes;
 	no;
 
 chapter gong rules pre-hub

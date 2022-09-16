@@ -563,7 +563,8 @@ this is the vr-wordy-walk rule:
 
 a goodrhyme rule (this is the vc-docking-diffed rule):
 	if locking lift is not fungible, unavailable;
-	if sco-excite-exhale is true:
+	if sco-thread-throws is true:
+		if mad most cad coast is overall-go-useful, ready;
 		vcal "You already conquered [the whale]. No need to go back.";
 		already-done;
 	ready;
@@ -575,7 +576,8 @@ this is the vr-docking-diffed rule:
 
 a goodrhyme rule (this is the vc-grokking-grift rule):
 	if locking lift is not fungible, unavailable;
-	if sco-grokking-grift is true:
+	if sco-bred-bros is true:
+		if slight sleaze is overall-go-useful, ready;
 		vcal "You already figured everything about grokking grift.";
 		already-done;
 	ready;
@@ -588,6 +590,7 @@ this is the vr-grokking-grift rule:
 a goodrhyme rule (this is the vc-rocking-rift rule):
 	if locking lift is not fungible, unavailable;
 	if sco-throw-through is true:
+		if show shoe is overall-go-useful, ready;
 		vcal "You already brought life back to the [show shoe]. You don't need to go back.";
 		already-done;
 	ready;
@@ -600,6 +603,7 @@ this is the vr-rocking-rift rule:
 a goodrhyme rule (this is the vc-shocking-shift rule):
 	if locking lift is not fungible, unavailable;
 	if shoal-core-score is 2:
+		if sore souls gore goals is overall-go-useful, ready;
 		vcal "You already took care of the shocking shift!";
 		already-done;
 	ready;
@@ -612,6 +616,7 @@ this is the vr-shocking-shift rule:
 a goodrhyme rule (this is the vc-gawking-gift rule):
 	if locking lift is not fungible, unavailable;
 	if sco-umm-out is true:
+		if bum bout rum route is overall-go-useful, ready;
 		vcal "You already took care of the Rum Route!";
 		already-done;
 	ready;
@@ -762,7 +767,7 @@ a goodrhyme rule (this is the vc-go-goo rule):
 
 this is the vr-go-goo rule:
 	now sco-go-goo is true;
-	say "A huge pile of weird 'energy burst' snacks appears at your feet. You have no idea whether or not they're nutritious, but with that colorful packaging, they can be sold for a markup during and after the performance, to ensure the viability of the [show shoe]. Yay, commerce[if shoe-storage < 2], and you don't even need any climate-controlled storage[end if]![paragraph break]You put them off to the side. They'll be useful once the show gets rocking.";
+	say "A huge pile of weird 'energy burst' snacks appears at your feet. You have no idea whether or not they're nutritious, but with that colorful packaging, they can be sold for a markup [if sco-throw-through is false]during and after the performance[else]at future performances[end if], to ensure the viability of the [show shoe]. Yay, commerce[if shoe-storage < 2], and you don't even need any climate-controlled storage[end if]![paragraph break]You put them off to the side. They'll be useful once the show gets rocking.";
 
 a goodrhyme rule (this is the vc-bro-brew rule):
 	if player is not in show shoe, unavailable;
@@ -857,6 +862,7 @@ this is the vr-throw-through rule:
 	say "The Crow Crew makes a dramatic entrance, thanks to your planning! The show is a financial and emotional success. Everyone congratulates you. Surely, you must take a reward! Something![paragraph break]You can't think of anything you really need. Then, something that just wasn't used in the concert. A light lute! It's, well, something. If you were resourceful enough to get things working here, who knows what you can do with it?[paragraph break]Your job here done, you return back...";
 	remove-spoke 5704; [ ROCKING RIFT done ]
 	if sco-go-goo is false, max-down;
+	moot lazy loud crazy crowd;
 	now player has light lute;
 
 a goodrhyme rule (this is the vc-dumb-doubt rule):
