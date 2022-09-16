@@ -1391,7 +1391,10 @@ section auxiliary rules and definitions
 
 [rocks, game start]
 
+monk-bad-cue is a truth state that varies.
+
 a goodrhyme rule (this is the check-dumping-monk rule):
+	if vc-dont-print is true, continue the action;
 	if warn-monk is true or monk-score is 0, continue the action;
 	now warn-monk is true;
 	let lc be left-count of table of mad monk guesses;
@@ -1404,12 +1407,11 @@ a goodrhyme rule (this is the check-dumping-monk rule):
 	say "[i][bracket]NOTE: this nag will not appear again, and if you want to try good guesses against other enemies after they vanish, I have no problems if you [b]UNDO[r][i].[close bracket][i]";
 	let X be indexed text; [ this sucks, but unfortunately 6G60 doesn't play nice with player's command and "if the player consents" ]
 	now X is the player's command;
-	let TS be whether or not the player dir-consents;
+	let TS be whether or not the player consents;
 	change the text of the player's command to X;
-	if TS is true:
-		ready;
-	else:
-		not-yet;
+	if TS is true, ready;
+	if the player's command includes "bad", now monk-bad-cue is true;
+	not-yet;
 
 to decide which number is monk-score:
 	decide on boolval of sco-bad-bunk + boolval of sco-sad-sunk;
@@ -1420,6 +1422,7 @@ this is the diss-monk rule:
 		continue the action;
 	say "That's it. The mad monk flees. The path north really is free now.";
 	moot mad monk;
+	if sco-gad-gunk is false, max-down;
 
 to say alr-ins: say "You already insulted the mad monk's "
 

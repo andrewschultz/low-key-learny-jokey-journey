@@ -165,7 +165,7 @@ to say floatfrac of (x - a number) and (y - a number):
 	say "[decimal]";
 
 check lling:
-	if noun is leet learner or noun is needle or noun is ha half nah naff button, say "The [leet learner] can't scan itself." instead;
+	if noun is leet learner or noun is ha half nah naff button, say "The [leet learner] can't scan itself." instead;
 	if noun is lurking lump, say "The [lurking lump] is a hint item, so you can't really scan it." instead;
 	if noun is the player, say "Nothing. You're the changer, not the changee." instead;
 	if noun is lazy loud crazy crowd, say "They're sort of there, and while they need to be interacted with, you may wish to focus on the whole area, instead." instead;
@@ -208,7 +208,6 @@ section unscannables
 
 from-number of ha half nah naff button is -2.
 from-number of leet learner is -2.
-from-number of needle is -2.
 from-number of lurking lump is -2.
 from-number of train tree is -2.
 from-number of yourself is -2.
@@ -1081,10 +1080,14 @@ this is the verb-checker rule:
 				increment my-count;
 		if my-count >= 2:
 [			if debug-state is true, say "DEBUG: processing [check-rule entry], outcome [if rb-out is unavailable outcome]UA[else if rb-out is not-yet outcome]NOT YET[else if rb-out is already-done outcome]already done[else]rady[end if].";]
-			process the check-rule entry;
+			process the check-rule entry; [necessary to catch the mad monk--perhaps we could have an extra "inconclusive" state]
+			let rb-out be the outcome of the rulebook;
 			if rb-out is the already-done outcome, the rule succeeds;
 			if rb-out is the not-yet outcome:
 				let exact-cmd be whether or not the player's command matches the text "[first-of-ors of w1 entry][if there is a w2 entry] [first-of-ors of w2 entry][end if]", case insensitively;
+				if check-rule entry is vc-sad-sunk rule or check-rule entry is vc-bad-bunk rule:
+					say "Whenever you're ready, just type [b][the player's command in upper case][r] to move on.";
+					the rule succeeds;
 				if think-cue entry is false:
 					say "[line break][one of][b]NOTE[r]: this command[if exact-cmd is false] (well, an equivalent, as there were alternate solutions)[end if] will be useful later, but you aren't ready to use it, yet. You can track commands like this by typing [b]THINK[r], which will also clue you if they now work.[or](useful command[if exact-cmd is false] (or a functionally equivalent alternate solution)[end if] again saved to [b]THINK[r] for later reference.)[stopping]";
 					now think-cue entry is true;
@@ -1656,7 +1659,6 @@ chapter thing hints
 thing-hint-rule of the player is the hint-player rule.
 
 thing-hint-rule of leet learner is the hint-learner-part rule.
-thing-hint-rule of needle is the hint-learner-part rule.
 thing-hint-rule of ha half nah naff is the hint-learner-part rule.
 
 thing-hint-rule of train tree is the hint-bane-be-sane-see rule.
@@ -2077,8 +2079,6 @@ this is the show-misses rule:
 	if sco-despite-dispute is false, say "You could've said [b]DESPITE DISPUTE[r] when the light loot became Delight-Dilute."
 
 to say ww2: say "You could've had a [b]WORDY WALK[r] around the sturdy stalk that appeared in [nnss]"
-
-volume unsorted
 
 volume internal map
 
