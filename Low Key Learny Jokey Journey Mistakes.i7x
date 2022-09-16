@@ -13,6 +13,7 @@ mist-cmd(topic)	mist-rule	got-yet	leet-rule	mist-txt
 "mopping mart"	--	false	--	"Surely this is more exciting than a trip for cleaning supplies."
 "earning right"	--	false	lose-the-game rule	"Well, that's what you hope to find!"
 "ferning fright"	--	false	--	"There are no terrorist plants worth summoning in [this-game]."
+"ride wrong"	--	false	--	"There is no fourth option for the guide gone, but you do have a chance for a heel turn at game's end."
 
 this is the lose-the-game rule:
 	if player is in threat three and spurning sprite is in threat three:

@@ -607,7 +607,7 @@ from-number of locking lift is 5704. to-number of locking lift is 28724.
 
 chapter delight dilute
 
-the can of DELIGHT DILUTE is a boring rhymable. description is "Just staring at it makes you feel you need to trivialize what you've done so far, but you can't explain why. There's a way around it, you're sure, and you could also just move on, but all the same, sometimes you can't help but pick one last useless fight to feel like you really nailed things down."
+the can of DELIGHT DILUTE is a boring rhymable. description is "Just staring at it makes you feel you need to trivialize what you've done so far, but you can't explain why. There's a way around it, you're sure, and you could also just move on, but all the same, sometimes you can't help but pick one last useless fight to feel like you really nailed things down.". printed name is "can of [b]DELIGHT DILUTE[r]".
 
 guess-table of DELIGHT DILUTE is table of light lute guesses.
 
@@ -1435,7 +1435,7 @@ understand "guide gong" as guide-gonging.
 
 carry out guide-gonging:
 	follow the know-ide-ong rule;
-	say "You will [if player-room-allow-threshold is points-left]already[else]now[end if] be repelled by a guide gong if you try to go down a path where you have nothing game-critical to do in any branches.";
+	say "You are [if player-room-allow-threshold is points-left]already[else]now[end if] repelled by a guide gong if you try to go down a path where you have nothing game-critical to do in any branches.";
 	now player-room-allow-threshold is points-left;
 	the rule succeeds;
 
@@ -1443,7 +1443,7 @@ guide-gong-warn is a truth state that varies.
 this is the know-ide-ong rule:
 	if guide-gong-warn is false:
 		now guide-gong-warn is true;
-		say "(disabling later explanation of [b]GUIDE GONG[r], etc., but it will still be in [b]VERBS[r])";
+		say "(disabling later explanation of [b]GUIDE GONG[r], etc., but it will still be in [b]VERBS[r])[paragraph break]";
 
 chapter stride-stronging
 
@@ -1469,7 +1469,7 @@ understand "pride prong" as pride-pronging.
 
 carry out pride-pronging:
 	follow the know-ide-ong rule;
-	say "You will [if player-room-allow-threshold is bonus-left]already[else]now[end if] be blocked from paths where no branches contain any point-scoring activities, critical or bonus.";
+	say "You are [if player-room-allow-threshold is bonus-left]already[else]now[end if] blocked from paths where no branches contain any point-scoring activities, critical or bonus.";
 	now player-room-allow-threshold is bonus-left;
 	the rule succeeds;
 
@@ -1902,7 +1902,7 @@ chapter abouting
 
 carry out abouting:
 	say "[this-game] is the third entry in the [pprr] series. You do not need experience with [series-names] to get through successfully.";
-	say "[line break]It felt like something that'd never get created, but it was fun to dream about. Then I had an idea about [if nnss is unvisited]the third room[else][NNSS][end if] offering another LLP in [vvff], but I wanted to move on. Then an idea for one room came, then another, and suddenly I had a game for IFComp 2022, which was nice, as the one I'd had on reserve since 2018 had dried up.";
+	say "[line break]It felt like something that'd never get created, but it was fun to dream about. Then I had an idea about [if nnss is unvisited]the third room[else][NNSS][end if] offering another odd bonus point in [vvff], but I wanted to move on. Then an idea for one room came, then another, and suddenly I had a game for IFComp 2022, which was nice, as the one I'd had on reserve since 2018 had dried up.";
 	say "[line break]I was able to re-use and fine-tune and fix bugs in a lot of code from [vvff], and I even managed to create some code I backported. And I started using Zarf's regression scripts earlier, to catch bugs well before the deadline and free my mind up for bigger-picture things. So it feels like the user experience should be smoother, although the story might be weaker.";
 	say "[line break]While my code for [vvff] wasn't perfect, it gave me a boost so I didn't have to rewrite a lot. I'd also become more comfortable with rules and rule ordering since then, so I was able to make the code more portable.";
 	the rule succeeds;
@@ -1946,7 +1946,7 @@ to say enter-lift: say "[b]ENTER[r] the locking lift to go back to [hub]";
 chapter optsing
 
 carry out optsing:
-	if guide-gong-warn is true, say "[2da][b]GUIDE GONG[r] will restrict you from solved rooms, [b]PRIDE PRONG[r] will notify you of rooms with just LLPs left, and [b]STRIDE STRONG[r] will remove these bumpers. Currently this is set to [b][if player-room-allow-threshold is bonus-left]PRIDE PRONG[else if player-room-allow-threshold is bonus-left]GUIDE GONE[else]player-room-allow-threshold is bonus-left[end if][r].";
+	if guide-gong-warn is true, say "[2da][b]GUIDE GONG[r] will restrict you from solved rooms, [b]PRIDE PRONG[r] will notify you of rooms with just bonus points left, and [b]STRIDE STRONG[r] will remove these bumpers. Currently this is set to [b][if player-room-allow-threshold is bonus-left]PRIDE PRONG[else if player-room-allow-threshold is bonus-left]GUIDE GONE[else]player-room-allow-threshold is bonus-left[end if][r].";
 	the rule succeeds;
 
 chapter swearing

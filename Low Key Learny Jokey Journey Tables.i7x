@@ -173,7 +173,7 @@ a goodrhyme rule (this is the vc-boring-box rule):
 	ready;
 
 this is the vr-boring-box rule:
-	say "The roaring rocks crumble, leaving behind storing stocks and ... the boring box you'd hoped for. You totally want to open it!";
+	say "You know nice things come in humble packages, and anyway, anything too garish might've gotten confiscated. The roaring rocks crumble, leaving behind storing stocks and ... the boring box you'd hoped for. You totally want to [b]OPEN[r] it!";
 	now player has boring box;
 	now sco-boring-box is true;
 	set the pronoun it to boring box;
@@ -594,7 +594,7 @@ a goodrhyme rule (this is the vc-rocking-rift rule):
 
 this is the vr-rocking-rift rule:
 	now sco-rocking-rift is true;
-	say "[if sco-rocking-rift is false]You enter the Locking Lift and wind up in what seems to be a large amphitheater. It's empty, but it could put on a decent show[else]Back to the [show shoe].";
+	say "[if sco-rocking-rift is false]You enter the Locking Lift and wind up in what seems to be a large amphitheater. It's empty, but it could put on a decent show[else]Back to the [show shoe][end if].";
 	take-lift Show Shoe;
 
 a goodrhyme rule (this is the vc-shocking-shift rule):
@@ -834,7 +834,7 @@ a goodrhyme rule (this is the vc-crow-crew rule):
 
 this is the vr-crow-crew rule:
 	now sco-crow-crew is true;
-	say "The Crow Crew appears! They look ready to give a performance replete with humor, wit, song, pyrotechnics, and so forth. You just need to find a way to make a grand entrance.";
+	say "The Crow Crew appears! They look ready to give a performance replete with humor, wit, song, pyrotechnics, and so forth. You just need to find a way to facilitate a grand entrance.";
 	move crow crew to show shoe;
 	print-the-loc;
 	change-shoe-number 5404;
