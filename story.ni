@@ -2,8 +2,6 @@
 
 volume basics
 
-the release number is 1.
-
 the story description is "Am (Oh!) Sham-Show".
 
 the story headline is "Prime Pro-Rhyme Row entry 3".
@@ -22,13 +20,13 @@ include Prime Pro Rhyme Row Common by Andrew Schultz.
 
 include Prime Pro Rhyme Row E34 by Andrew Schultz.
 
+include Low Key Learny Jokey Journey Globals by Andrew Schultz.
+
 include Low Key Learny Jokey Journey Tables by Andrew Schultz.
 
 include Low Key Learny Jokey Journey Mistakes by Andrew Schultz.
 
 include Old School Verb Total Carnage by Andrew Schultz.
-
-entry-in-series is 3.
 
 a thing is usually not boring.
 
@@ -47,10 +45,6 @@ Hoppin' Heart is a region.
 Poppin' Part is a region.
 
 section scoring
-
-core-max is 72.
-
-max-bonus is 14.
 
 chapter offshoots relying on PPRR common file or PPRR universal file
 
@@ -135,8 +129,6 @@ instead of doing something with a boring thing:
 	say "Most things, you don't need to interact with directly.";
 
 volume cluing
-
-boring-box-check is a truth state that varies.
 
 rule for supplying a missing noun when lling (this is the get readings from room rule):
 	say "You scan the area[one of]. This will suffice most of the time, though you may wish to [b]LL[r] a thing that doesn't jibe with its rhymes[or][stopping].";
@@ -224,9 +216,6 @@ from-number of bane be sane see is -1. to-number of bane be sane see is -1.
 
 the player is in Bane Be Sane See. description of player is "Some searchin['], umm, urchin."
 
-sco-plain-plea is a truth state that varies.
-sco-choose-name is a truth state that varies. [ this variable is never explicitly used in the code as of now, but it could be. I have one for each point-scored truth-state. ]
-
 chapter train tree
 
 the train tree is scenery in Bane Be Sane See. "It's a big tree. [b]MAIN ME[r] is carved into it in big letters.  There are three ways to enter, none more right than the other. You may wish to [b]READ[r] what's below them."
@@ -257,14 +246,6 @@ check going north in Roaring Rocks:
 		move mad monk to roaring rocks;
 		the rule fails;
 	if mad monk is in Roaring Rocks, say "The mad monk is blocking you right now." instead;
-
-learner-up-rocks is a number that varies.
-
-froms-list is a list of numbers variable. froms-list is { 5401, 5403, 5401, 5403, 5403, 5504 }.
-
-firstpoint-list is a list of text variable. firstpoint-list is { "DANE D", "DANE DEE", "JANE G", "JANE GEE", "LANE LEE", "WAYNE WHEE" }.
-
-name-choice-index is a number that varies. name-choice-index is 0.
 
 check going up in roaring rocks when player has leet learner:
 	if learner-up-rocks is 0:
@@ -328,8 +309,6 @@ there is thing called no nudge slow sludge. It is scenery. It is in NNSS. printe
 
 from-number of slow sludge is 5406.
 
-sco-grow-grudge is a truth state that varies.
-
 after printing the locale description for NNSS when NNSS is unvisited:
 	if guide-gong-warn is false:
 		say "[i][bracket][b]NOTE:[r] [i]you don't need to go back to Roaring Rocks/Storing Stocks again. If you wish to track this sort of thing, [b]GUIDE GONG[r][i] will shut you out of completed areas, [b]STRIDE STRONG[r][i] will remove these restrictions, and [b]PRIDE PRONG[r][i] is like the gong, except it will give you a poke to visit rooms where you can still get a bonus point.[close bracket][r][line break]";
@@ -341,8 +320,6 @@ chapter sturdy stalk
 the sturdy stalk is a rhymable. it is scenery. "You can climb back up it. Apparently, it's artificial, and its creator inscribed their name: Ferdie Falk.".
 
 from-number of sturdy stalk is 5605. to-number of sturdy stalk is -5504.
-
-sco-wordy-walk is a truth state that varies.
 
 guess-table of sturdy stalk is the table of sturdy stalk guesses.
 
@@ -356,8 +333,6 @@ check going north in hun harm fun farm when sco-un-arm is false: say "Unfortunat
 
 guess-table of Hun Harm Fun Farm is table of hun harm fun farm guesses.
 
-sco-un-arm is a truth state that varies.
-
 chapter Mad Monk
 
 the Mad Monk is a himher rhymable. "A mad monk raves here, blocking your way north. They don't look like much--they probably didn't make the cut for tormenting Lode Runners. They might be good for rope-a-doping to [if player has lurking lump]enhance the lurking lump[else]get that stronger help item you read about on the [learner][end if].". description is "Plainly dressed. They seem to have an intense attitude you could cut down, and they'd probably leave you alone."
@@ -365,10 +340,6 @@ the Mad Monk is a himher rhymable. "A mad monk raves here, blocking your way nor
 guess-table of mad monk is the table of mad monk guesses.
 
 from-number of mad monk is 5304. to-number of mad monk is 5304.
-
-sco-gad-gunk is a truth state that varies.
-sco-bad-bunk is a truth state that varies.
-sco-sad-sunk is a truth state that varies.
 
 book No Noon
 
@@ -392,12 +363,6 @@ guess-table of nonoon is the table of nonoon guesses.
 
 from-number of nonoon is 5204. to-number of nonoon is 5204.
 
-sco-go-goon is a truth state that varies.
-sco-co-coon is a truth state that varies.
-sco-mo-moon is a truth state that varies.
-sco-so-soon is a truth state that varies.
-sco-crow-croon is a truth state that varies.
-
 understand "no/noon" and "no noon" as NoNoon.
 understand "show/shewn" and "show shewn" as NoNoon when cocoon is moot.
 
@@ -415,9 +380,6 @@ book One Warm Stun Storm
 there is a room called One Warm Stun Storm in Hoppin' Heart. It is north of NNSS. "[if sco-fun-form is true]It's calm here now. You can go north and south[else]A storm is raging ahead to the north, though it's all very calm to the south[end if]. [if sco-done-dorm is false]And you don't even have a prospect of shelter. Yet[else if sco-fun-form is false]At least the done dorm you summoned could give shelter[else]You also note the done dorm that helped you stay out the storm[end if].". printed name is "One Warm Stun-Storm".
 
 from-number of one warm stun storm is 10709. to-number of one warm stun storm is 5404.
-
-sco-done-dorm is a truth state that varies.
-sco-fun-form is a truth state that varies.
 
 check going north in One Warm Stun Storm:
 	if sco-fun-form is false, say "You feel your will sapped as you attempt to go north. You'll need to sit out the storm first." instead;
@@ -442,12 +404,6 @@ TTTT is north of One Warm Stun Storm. printed name is "The (Thunk!) Tree Trunk".
 from-number of TTTT is 10710. to-number of TTTT is 5304.
 
 guess-table of TTTT is table of Thunk Tree Trunk guesses.
-
-sco-see-sunk is a truth state that varies.
-sco-gee-junk is a truth state that varies.
-
-sco-whee-woot is a truth state that varies.
-sco-pear-peach is a truth state that varies.
 
 chapter Tree Trunk
 
@@ -497,11 +453,6 @@ from-number of sus sack is 5304. to-number of sus sack is 5406.
 
 check opening sus sack: say "This far into [this-game], you suspect you have to figure what's in the sack to get it to open right." instead;
 
-sco-plus-plaque is a truth state that varies.
-
-sco-bussed-back is a truth state that varies.
-sco-crust-crack is a truth state that varies.
-
 book Rare Reach
 
 Rare Reach is in Hoppin' Heart. printed name of Rare Reach is "[if sco-bare-beach is true]Bare Beach[else]Rare Reach[end if]". "You're surrounded by [if sco-bare-beach is true]water[else]desolation[end if] every direction except south.". Trust Track is mapped south of Rare Reach. nowhere is mapped north of Trust Track.
@@ -510,16 +461,10 @@ guess-table of rare reach is the table of rare reach guesses.
 
 from-number of rare reach is 5405. to-number of rare reach is 5405.
 
-sco-bare-beach is a truth state that varies.
-
 after going to Rare Reach when sco-seep-soon is true and flag-reap-rune is false:
 	now flag-reap-rune is true;
 	say "The deep dune seems to have shifted a bit. Maybe you can find something in the middle of it.";
 	continue the action;
-
-sco-seep-soon is a truth state that varies.
-flag-reap-rune is a truth state that varies.
-sco-reap-rune is a truth state that varies.
 
 chapter deep dune
 
@@ -554,10 +499,6 @@ to say jotty-bonus:
 to decide what number is jail-bonus:
 	decide on boolval of sco-potty-pail + boolval of sco-grotty-grail;
 
-sco-grotty-grail is a truth state that varies.
-sco-potty-pail is a truth state that varies.
-sco-knotty-nail is a truth state that varies.
-
 volume rooms (end)
 
 a liftroom is a kind of room.
@@ -581,15 +522,6 @@ High Hub is a room in Poppin' Part. "A locking lift offers transport, but to whe
 guess-table of High Hub is the table of High Hub guesses.
 
 from-number of high hub is 5403. to-number of high hub is -5303.
-
-sco-bye-bub is a truth state that varies.
-
-sco-docking-diffed is a truth state that varies.
-sco-rocking-rift is a truth state that varies.
-sco-grokking-grift is a truth state that varies.
-sco-shocking-shift is a truth state that varies.
-sco-gawking-gift is a truth state that varies.
-sco-mocking-miffed is a truth state that varies.
 
 chapter locking lift
 
@@ -617,8 +549,6 @@ from-number of delight dilute is 5706. to-number of delight dilute is -5707.
 
 bore-text of delight dilute is "You'll need something slightly esoteric to get rid of it.".
 
-sco-despite-dispute is a truth state that varies.
-
 book spoke 0 / Shocking Shift
 
 part Sore Souls Gore Goals
@@ -645,16 +575,7 @@ to decide which number is shoal-extra-animals:
 
 section needed points
 
-sco-four-foals is a truth state that varies.
-sco-more-moles is a truth state that varies.
-sco-shore-shoals is a truth state that varies.
-
 section LLPs
-
-sco-lore-lols is a truth state that varies.
-sco-night-newt is a truth state that varies.
-sco-bright-brute is a truth state that varies.
-sco-kite-coot is a truth state that varies.
 
 section night newt
 
@@ -677,11 +598,8 @@ report examining red rose:
 	say "You notice the red rose has [rose-petals-remaining in words] particularly bright petal[plur of rose-petals-remaining][if rose-petals-remaining < 3] still remaining[end if].";
 	continue the action;
 
-sco-said-sos is a truth state that varies.
-sco-head-hose is a truth state that varies.
-
 To decide which number is rose-petals:
-	decide on boolval of sco-said-sos + boolval of sco-head-hose;
+	decide on boolval of sco-said-sos + boolval of sco-thread-throws;
 
 guess-table of red rose is the table of red rose guesses.
 
@@ -722,16 +640,6 @@ after printing the locale description when player is in Show Shoe and sco-throw-
 	if sco-go-goo is true and sco-throw-through is false, say "[if sco-crow-crew is false][line break][end if]There's also a pile of 'nutritious' 'energetic' Go Goo that event-goers will snap up.";
 	continue the action;
 
-sco-flow-flue is a truth state that varies.
-sco-glow-glue is a truth state that varies.
-sco-go-goo is a truth state that varies.
-sco-bro-brew is a truth state that varies.
-sco-stow-stew is a truth state that varies.
-sco-ho-who is a truth state that varies.
-sco-yo-you is a truth state that varies.
-sco-crow-crew is a truth state that varies.
-sco-throw-through is a truth state that varies.
-
 chapter lazy loud crazy crowd
 
 the lazy loud crazy crowd is a thing. "A lazy loud crazy crowd waits here for entertainment. You're the one to provide it!". description is "[if sco-ho-who is false]The lazy loud crazy crowd that's built up is ready to be asked if they are ready to make some noise and get this party started. Except, well, a lot more succinctly.[else if sco-yo-you is false]The lazy loud crazy crowd, having expressed their willingness to raise the roof figuratively, seeks reassurance.[else]The lazy loud crazy crowd is hyped for the main performance!"
@@ -751,12 +659,6 @@ the light lute is a rhymable. description is "You have no clue how to play it, b
 guess-table of light lute is the table of light lute guesses.
 
 from-number of light lute is 5504. to-number of light lute is 11109.
-
-sco-bright-brute is a truth state that varies.
-sco-right-root is a truth state that varies.
-
-sco-kite-coot is a truth state that varies.
-sco-night-newt is a truth state that varies.
 
 section in-depth lute descriptions
 
@@ -789,11 +691,6 @@ guess-table of Bum Bout Rum Route is the table of bum bout rum route guesses.
 
 from-number of bum bout rum route is 10609. to-number of bum bout rum route is 5405.
 
-sco-umm-out is a truth state that varies.
-sco-dumb-doubt is a truth state that varies.
-
-sco-said-sos is a truth state that varies.
-
 part Nay Nope Slay Slope
 
 Nay Nope Slay Slope is a liftroom in Poppin' Part. printed name is "[if sco-hey-hope is false]Nay-Nope-Slay Slope[else]Eh-[']Ope Day, Dope![end if]". "Thoughts of being against negativity swirl around here. Why, if you don't have positivity, you've had it! [if sco-hey-hope is false]They seem directed at you, as if to say you're the least positive person ever[else if sco-k-cope is false]Yet you see they can't totally be true, and you've boosted yourself a bit, and maybe you can boost yourself a bit more[else]But you see through them now. You can move on. There is passage down[end if].". spokeval of Slay Slope is 2.
@@ -804,9 +701,6 @@ guess-table of nay nope slay slope is the table of nay nope slay slope guesses.
 
 from-number of nay nope slay slope is 10709. to-number of nay nope slay slope is 5304.
 
-sco-k-cope is a truth state that varies.
-sco-hey-hope is a truth state that varies.
-
 book spoke 3 / Grokking Grift
 
 part Slight Sleaze
@@ -816,10 +710,6 @@ Slight Sleaze is a liftroom in Poppin' Part. "[if sco-bright-breeze is false]You
 guess-table of slight sleaze is the table of slight sleaze guesses.
 
 from-number of slight sleaze is 5606. to-number of slight sleaze is 5606.
-
-sco-tight-tease is a truth state that varies.
-sco-bright-breeze is a truth state that varies.
-sco-plight-please is a truth state that varies.
 
 chapter fright freeze
 
@@ -841,12 +731,6 @@ from-number of freak framing seek sameing is 10914. to-number of freak framing s
 
 Slight Sleaze is mapped north of Seek Sameing. Nowhere is mapped south of Slight Sleaze.
 
-sco-bleak-blaming is a truth state that varies.
-sco-chic-shaming is a truth state that varies.
-sco-clique-claiming is a truth state that varies.
-
-sco-bred-bros is a truth state that varies.
-
 book spoke 4 / docking diffed
 
 part mad most cad coast
@@ -858,9 +742,6 @@ check going west in Mad Most Cad Coast: if sco-rad-roast is false, say "You can'
 guess-table of mad most cad coast is the table of mad most cad coast guesses.
 
 from-number of mad most cad coast is 10609. to-number of mad most cad coast is 5305.
-
-sco-rad-roast is a truth state that varies.
-sco-bad-boast is a truth state that varies.
 
 part Trite Trail
 
@@ -875,13 +756,6 @@ from-number of trite trail is 5505. to-number of trite trail is 16613.
 the tight tail white whale is scenery in Trite Trail. printed name is "tight-tail white whale". "It splashes out of the water sometimes, glaring at you as if to say you're lucky it can't swim in shallow water. You don't know why you're supposed to defeat it, but you know you are."
 
 from-number of white whale is 11009.
-
-sco-sight-sail is a truth state that varies.
-sco-might-mail is a truth state that varies.
-sco-flight-flail is a truth state that varies.
-sco-right-rail is a truth state that varies.
-sco-excite-exhale is a truth state that varies.
-sco-thread-throws is a truth state that varies.
 
 definition: a thing (called th) is whale-defeating:
 	unless th is scenery, no;
@@ -950,10 +824,6 @@ guess-table of old end is the table of old end guesses.
 
 from-number of old end is 5303. to-number of old end is 5404.
 
-sco-bold-bend is a truth state that varies.
-sco-trolled-trend is a truth state that varies.
-sco-mold-mend is a truth state that varies.
-
 part Drain Drat Vain Vat
 
 Old End is north of Drain Drat Vain Vat. Drain Drat Vain Vat is in Poppin' Part. printed name of Vain Vat is "[if sco-splain-splat is false]Drain (Drat!) Vain Vat[else]Main Mat[end if]". understand "main mat" as Drain Drat Vain Vat when sco-splain-splat is true. description of Vain Vat is "[if sco-bane-bat is false]You seem stuck here, and that's that. Maybe if you had something to help bash your way out[else if sco-flain-flat is false]You're still stuck in the vat for now. You're not sure how to get out, but once you are, you suspect your bane bat will do the trick[else if sco-splain-splat is false]The walls look shaky, but you can't find a weak point. Perhaps a taunt would bring enemy henchmen busting said weak spot[else]The way south is open now, thanks to the Pred Pros[end if].". spokeval of Vain Vat is 5. south of Old End is nowhere.
@@ -970,10 +840,6 @@ guess-table of drain drat vain vat is the table of drain drat vain vat guesses.
 
 from-number of drain drat vain vat is 10907. to-number of drain drat vain vat is 5403.
 
-sco-bane-bat is a truth state that varies.
-sco-flain-flat is a truth state that varies.
-sco-splain-splat is a truth state that varies.
-
 chapter Pred Pros
 
 the Pred Pros are a plural-named rhymable. guess-table of Pred Pros is table of red rose guesses. "Unfortunately, the Pred Pros also block the way south, their faces encased in head hose. The aura from your erstwhile red rose still protects you.". description is "They haven't attacked you yet. They aren't, like, obviously snarling under the head hose. Maybe you can do something for them to make peace."
@@ -983,8 +849,6 @@ from-number of Pred Pros is 5404. to-number of Pred Pros is 5304.
 the head hose is scenery. "It obscures the Pred Pros['] faces, but they can still breathe."
 
 from-number of head hose is 5404. to-number of head hose is 5304.
-
-sco-fed-foes is a truth state that varies.
 
 part Threat Three Met ME
 
@@ -1030,12 +894,6 @@ report examining market marquee for the first time:
 to decide which number is marquee-score:
 	decide on boolval of sco-fret-free + boolval of sco-set-see + boolval of sco-yet-ye;
 
-sco-fret-free is a truth state that varies.
-sco-set-see is a truth state that varies.
-sco-yet-ye is a truth state that varies.
-
-sco-plus-plaque is a truth state that varies.
-
 chapter Burning Bright Spurning Sprite
 
 there is a himher thing called the Burning Bright Spurning Sprite.
@@ -1048,8 +906,6 @@ after doing something with a himher thing (called th):
 	set the pronoun them to th;
 	set the pronoun him to th;
 	set the pronoun her to th;
-
-sco-turning-trite is a truth state that varies.
 
 volume main engine
 
@@ -1264,8 +1120,6 @@ player-room-allow-threshold is a room-hint-state that varies. player-room-allow-
 [roomblocking when room gone to is trust track:
 	llp-remaining;]
 
-hunt-bonus-points is a truth state that varies.
-
 to reset-go-check:
 	now all rooms are not go-checked;
 	now location of player is go-checked;
@@ -1451,7 +1305,6 @@ carry out guide-gonging:
 	now player-room-allow-threshold is points-left;
 	the rule succeeds;
 
-guide-gong-warn is a truth state that varies.
 this is the know-ide-ong rule:
 	if guide-gong-warn is false:
 		now guide-gong-warn is true;
@@ -1972,8 +1825,6 @@ the miss more diss door is a rhymable. it is scenery. printed name is "miss-more
 from-number of miss more diss door is 5404. to-number of miss more diss door is -5404.
 
 guess-table of miss more diss door is table of miss more diss door guesses.
-
-sco-piss-poor is a truth state that varies.
 
 check entering miss more diss door: say "Looking for arguments right now is pointless." instead;
 
