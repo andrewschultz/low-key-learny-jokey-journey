@@ -12,135 +12,135 @@
 
 #testcase-unavailable-table-of-verb-checks-vc-bad-boast-rule
 >bad boast
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-bad-bunk-rule
 >bad bunk
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-bare-beach-rule
 >bare beach
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-bleak-blaming-rule
 >bleak blaming
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-bold-bend-rule
 >bold bend
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-boring-box-rule
 >boring box
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-bred-bros-rule
 >bred bros
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-bright-breeze-rule
 >bright breeze
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-bright-brute-rule
 >bright brute
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-bro-brew-rule
 >bro brew
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-bussed-back-rule
 >bussed back
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-bye-bub-rule
 >bye bub
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-chic-shaming-rule
 >chic shaming
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-clique-claiming-rule
 >clique claiming
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-co-coon-rule
 >co coon
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-crow-crew-rule
 >crow crew
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-crow-croon-rule
 >crow croon
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-crust-crack-rule
 >crust crack
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-despite-dispute-rule
 >despite dispute
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-docking-diffed-rule
 >docking diffed
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-done-dorm-rule
 >done dorm
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-dumb-doubt-rule
 >dumb doubt
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-excite-exhale-rule
 >excite exhale
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-fed-foes-rule
 >fed foes
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-flain-flat-rule
 >flain flat
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-flight-flail-rule
 >flight flail
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-flow-flue-rule
 >flow flue
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-four-foals-rule
 >four foals
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-fret-free-rule
 >fret free
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-fun-form-rule
 >fun form
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-gad-gunk-rule
 >gad gunk
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-gee-junk-rule
 >gee junk
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-glow-glue-rule
 >glow glue
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-go-goo-rule
 >go goo
@@ -152,111 +152,111 @@ That location or thing doesn't exist or isn't known to you yet.
 
 #testcase-unavailable-table-of-verb-checks-vc-grokking-grift-rule
 >grokking grift
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-grotty-grail-rule
 >grotty grail
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-grow-grudge-rule
 >grow grudge
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-hey-hope-rule
 >hey hope
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-ho-who-rule
 >ho who
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-k-cope-rule
 >k cope
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-kite-coot-rule
 >kite coot
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-knotty-nail-rule
 >knotty nail
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-lore-lols-rule
 >lore lols
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-might-mail-rule
 >might mail
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-mo-moon-rule
 >mo moon
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-mocking-miffed-rule
 >mocking miffed
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-mold-mend-rule
 >mold mend
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-more-moles-rule
 >more moles
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-night-newt-rule
 >night newt
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-pear-peach-rule
 >pear peach
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-piss-poor-rule
 >piss poor
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-plight-please-rule
 >plight please
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-plus-plaque-rule
 >plus plaque
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-potty-pail-rule
 >potty pail
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-rad-roast-rule
 >rad roast
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-reap-rune-rule
 >reap rune
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-right-rail-rule
 >right rail
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-right-root-rule
 >right root
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-rocking-rift-rule
 >rocking rift
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-sad-sunk-rule
 >sad sunk
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-said-sos-rule
 >said sos
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-see-sunk-rule
 >see sunk
@@ -264,75 +264,75 @@ It looks like you may have tried to refer to the room name, or part of it. You o
 
 #testcase-unavailable-table-of-verb-checks-vc-seep-soon-rule
 >seep soon
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-shocking-shift-rule
 >shocking shift
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-shore-shoals-rule
 >shore shoals
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-sight-sail-rule
 >sight sail
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-so-soon-rule
 >so soon
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-splain-splat-rule
 >splain splat
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-gawking-gift-rule
 >gawking gift
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-stow-stew-rule
 >stow stew
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-turning-trite-rule
 >turning trite
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-throw-through-rule
 >throw through
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-tight-tease-rule
 >tight tease
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-trolled-trend-rule
 >trolled trend
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-umm-out-rule
 >umm out
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-un-arm-rule
 >un arm
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-whee-woot-rule
 >whee woot
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-wordy-walk-rule
 >wordy walk
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-yet-ye-rule
 >yet ye
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-yo-you-rule
 >yo you
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 >plain plea
 by one point
@@ -346,11 +346,11 @@ by one point
 
 #testcase-unavailable-table-of-verb-checks-vc-bane-bat-rule
 >bane bat
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-set-see-rule
 >set see
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+I couldn't parse that command. You don't need any more than two words long.
 
 >boring box
 by one point
@@ -526,7 +526,9 @@ by one point
 But you already have the pear peach.
 
 >s
+
 >s
+
 >e
 
 #testcase-postreject-table-of-verb-checks-vc-crust-crack-rule
@@ -600,7 +602,9 @@ by one point
 You already reaped a rune.
 
 >s
+
 >w
+
 >w
 
 >unarm
@@ -614,7 +618,7 @@ You already unarmed the Hun Harm Fun Farm!
 
 #testcase-prereject-table-of-verb-checks-vc-co-coon-rule
 >cocoon
-You can't do anything while oppressed by enemies. How to call them off?
+You can't do anything while oppressed by enemies. You need to call them off.
 
 #testcase-prereject-table-of-verb-checks-vc-crow-croon-rule
 >crow croon
@@ -819,6 +823,14 @@ You already hyped the crowd up completely. Time to give them a show!
 
 >throw through
 by one point
+
+>rocking rift
+Show Shoe
+
+>undo
+
+>guide gong
+You are now repelled by a guide gong if you try to go down a path where you have nothing game-critical to do in any branches.
 
 #testcase-prereject-table-of-verb-checks-vc-bright-brute-rule
 >bright brute
@@ -1092,11 +1104,11 @@ by one point
 
 #testcase-prereject-table-of-verb-checks-vc-thread-throws-rule
 >thread throws
-WRONG
+The rose probably only has so much thread. You should only use it to capture a big predator.
 
 #testcase-think-table-of-verb-checks-vc-thread-throws-rule
 >think
-WRONG
+You can execute THREAD THROWS to make a net to catch the tight-tail white whale once you've prepped fully.
 
 #testcase-prereject-table-of-verb-checks-vc-rad-roast-rule
 >rad roast
@@ -1131,7 +1143,7 @@ You already won the insult war!
 
 #+testcase-think-table-of-verb-checks-vc-thread-throws-rule
 >think
-WRONG
+You can execute THREAD THROWS to make a net to catch the tight-tail white whale once you've prepped fully.
 
 #testcase-prereject-table-of-verb-checks-vc-right-rail-rule
 >right rail
@@ -1145,7 +1157,7 @@ Man! That'd be a good idea, but you aren't quite ready to hunt the whale, yet.
 #testcase-think-table-of-verb-checks-vc-excite-exhale-rule
 >think
 You can try to grab the RIGHT RAIL once you've got a vessel.
-You can EXCITE EXHALE to go out and fight once you have an ally, fighting equipment, transport and stability.
+You can EXCITE EXHALE to prep yourself once you have an ally, fighting equipment, transport and stability.
 
 >sight sail
 by one point
@@ -1283,6 +1295,9 @@ by one point
 
 >s
 
+>stride strong
+You are now able to move freely between locations, even ones with nothing left to do.
+
 >set see
 by one point
 
@@ -1290,7 +1305,7 @@ by one point
 
 #testcase-moot-table-of-verb-checks-vc-set-see-rule
 >set see
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 >undo
 >undo
@@ -1306,11 +1321,11 @@ by one point
 
 #testcase-moot-table-of-verb-checks-vc-yet-ye-rule
 >yet ye
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-fret-free-rule
 >fret free
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 >s
 
@@ -1331,150 +1346,150 @@ You already prepped yourself for the final fight. Now it is upon you.
 
 #testcase-prereject-table-of-verb-checks-vc-turning-trite-rule
 >turning trite
-That is just talk. You need some sort of monument or memento to establish that.
+That is just talk, until you have something physical to notarize that this might, indeed, apply to the Burning Bright Spurning Sprite.
 
 #testcase-think-table-of-verb-checks-vc-turning-trite-rule
 >think
-You can name the Frightfully Bright Bully once they have an "award" of sorts to write their name on.
+You can label the Burning Bright Spurning Sprite once they have an "award" of sorts to write their name on.
 
 >plus plaque
 by one point
 
 #testcase-postreject-table-of-verb-checks-vc-plus-plaque-rule
 >plus plaque
-You already made and gave the plus plaque to the Frightfully Bright Bully! Now you just have to figure, or riff on, their name!
+You already made and gave the plus plaque to the Burning Bright Spurning Sprite! Now you just have to figure what belongs on the plus plaque!
 
 #testcase-moot-table-of-verb-checks-vc-bad-boast-rule
 >bad boast
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-bad-bunk-rule
 >bad bunk
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-bane-bat-rule
 >bane bat
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-bare-beach-rule
 >bare beach
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-bleak-blaming-rule
 >bleak blaming
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-bold-bend-rule
 >bold bend
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-boring-box-rule
 >boring box
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-bred-bros-rule
 >bred bros
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-bright-breeze-rule
 >bright breeze
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-bright-brute-rule
 >bright brute
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-bro-brew-rule
 >bro brew
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-bussed-back-rule
 >bussed back
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-bye-bub-rule
 >bye bub
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-chic-shaming-rule
 >chic shaming
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-clique-claiming-rule
 >clique claiming
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-co-coon-rule
 >co coon
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-crow-crew-rule
 >crow crew
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-crow-croon-rule
 >crow croon
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-crust-crack-rule
 >crust crack
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-despite-dispute-rule
 >despite dispute
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-docking-diffed-rule
 >docking diffed
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-done-dorm-rule
 >done dorm
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-dumb-doubt-rule
 >dumb doubt
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-excite-exhale-rule
 >excite exhale
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-fed-foes-rule
 >fed foes
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-flain-flat-rule
 >flain flat
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-flight-flail-rule
 >flight flail
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-flow-flue-rule
 >flow flue
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-four-foals-rule
 >four foals
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-fun-form-rule
 >fun form
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-gad-gunk-rule
 >gad gunk
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-gee-junk-rule
 >gee junk
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-glow-glue-rule
 >glow glue
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-go-goo-rule
 >go goo
@@ -1486,183 +1501,183 @@ That location or thing doesn't exist or isn't known to you yet.
 
 #testcase-moot-table-of-verb-checks-vc-grokking-grift-rule
 >grokking grift
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-grotty-grail-rule
 >grotty grail
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-grow-grudge-rule
 >grow grudge
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-hey-hope-rule
 >hey hope
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-ho-who-rule
 >ho who
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-in-bane-rule
 >dane d
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-k-cope-rule
 >k cope
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-kite-coot-rule
 >kite coot
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-knotty-nail-rule
 >knotty nail
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-lore-lols-rule
 >lore lols
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-might-mail-rule
 >might mail
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-mo-moon-rule
 >mo moon
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-mocking-miffed-rule
 >mocking miffed
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-mold-mend-rule
 >mold mend
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-more-moles-rule
 >more moles
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-night-newt-rule
 >night newt
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-pear-peach-rule
 >pear peach
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-piss-poor-rule
 >piss poor
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-plain-plea-rule
 >plain plea
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-plight-please-rule
 >plight please
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-potty-pail-rule
 >potty pail
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-rad-roast-rule
 >rad roast
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-reap-rune-rule
 >reap rune
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-right-rail-rule
 >right rail
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-right-root-rule
 >right root
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-rocking-rift-rule
 >rocking rift
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-sad-sunk-rule
 >sad sunk
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-said-sos-rule
 >said sos
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-see-sunk-rule
 >see sunk
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-seep-soon-rule
 >seep soon
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-shocking-shift-rule
 >shocking shift
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-shore-shoals-rule
 >shore shoals
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-sight-sail-rule
 >sight sail
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-so-soon-rule
 >so soon
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-splain-splat-rule
 >splain splat
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-gawking-gift-rule
 >gawking gift
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-stow-stew-rule
 >stow stew
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-throw-through-rule
 >throw through
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-tight-tease-rule
 >tight tease
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-trolled-trend-rule
 >trolled trend
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-umm-out-rule
 >umm out
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-un-arm-rule
 >un arm
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-whee-woot-rule
 >whee woot
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-wordy-walk-rule
 >wordy walk
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-yo-you-rule
 >yo you
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 >score
 

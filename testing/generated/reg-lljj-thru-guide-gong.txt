@@ -1,7 +1,7 @@
-## reg-lljj-thru-gong-tests.txt
+## reg-lljj-thru-guide-gong.txt
 ## GENERATOR FILE: rbr-lljj-thru.txt
 
-## walkthrough testing gong/player restrictions
+## walkthrough testing guide gong
 
 ** game: /home/andrew/prt/debug-low-key-learny-jokey-journey.z8
 ** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
@@ -9,6 +9,9 @@
 * main-thru
 
 >au 2
+
+>guide gong
+You are now repelled by a guide gong if you try to go down a path where you have nothing game-critical to do in any branches.
 
 >plain plea
 by one point
@@ -33,6 +36,9 @@ by one point
 by one point
 
 >n
+
+>s
+A guide gong rings to notify you that you don't need to go back through Storing Stocks.
 
 >grow grudge
 by one point
@@ -66,7 +72,15 @@ by one point
 by one point
 
 >s
+
+>n
+That guide gong, again, rings to notify you that you don't need to go back through The (Thunk!) Tree Trunk.
+
 >s
+
+>n
+That guide gong, again, rings to notify you that you don't need to go back through One Warm Stun-Storm.
+
 >e
 
 >bussed back
@@ -90,13 +104,27 @@ by one point
 by one point
 
 >s
+
+>n
+That guide gong, again, rings to notify you that you don't need to go back through Bare Beach.
+
 >w
+
+>e
+That guide gong, again, rings to notify you that you don't need to go back through Trust Track.
+
 >w
+
+>e
+That guide gong, again, rings to notify you that you don't need to go back through No-Nudge Slow Sludge.
 
 >unarm
 by one point
 
 >n
+
+>s
+That guide gong, again, rings to notify you that you don't need to go back through Hun Harm Fun Farm.
 
 >go goon
 by one point
@@ -123,6 +151,37 @@ by one point
 by one point
 
 >bye bub
+
+>n
+That guide gong, again, rings to notify you that you don't need to go back through One Warm Stun-Storm.
+
+>s
+That guide gong, again, rings to notify you that you don't need to go back through Storing Stocks.
+
+>e
+That guide gong, again, rings to notify you that you don't need to go back through Trust Track.
+
+>w
+That guide gong, again, rings to notify you that you don't need to go back through Hun Harm Fun Farm.
+
+>u
+High Hub
+>undo
+
+>gonear tree trunk
+
+>s
+Storm
+>undo
+>undo
+
+>u
+
+>d
+That guide gong, again, rings to notify you that you don't need to go back through No-Nudge Slow Sludge.
+
+>undo
+>undo
 
 >wordy walk
 
@@ -160,6 +219,9 @@ by one point
 >throw through
 by one point
 
+>rocking rift
+You already brought life back to the Whoah-Woo-Show Shoe. You don't need to go back.
+
 ##RBRS-SHUFFLEEND=0
 ##RBRS-SHUFFLESTART=1
 
@@ -188,6 +250,9 @@ by one point
 >more moles
 by one point
 
+>shocking shift
+You already took care of the shocking shift!
+
 ##RBRS-SHUFFLEEND=1
 ##RBRS-SHUFFLESTART=2
 
@@ -210,6 +275,9 @@ by one point
 
 >k cope
 by one point
+
+>gawking gift
+You already took care of the Rum Route!
 
 ##RBRS-SHUFFLEEND=2
 ##RBRS-SHUFFLESTART=3
@@ -242,6 +310,9 @@ by one point
 
 >bred bros
 by one point
+
+>grokking grift
+You already figured everything about grokking grift.
 
 ##RBRS-SHUFFLEEND=3
 ##RBRS-SHUFFLESTART=4
@@ -278,6 +349,9 @@ by one point
 >thread throws
 by one point
 
+>docking diffed
+You already conquered the tight-tail white whale. No need to go back.
+
 ##RBRS-SHUFFLEEND=4
 
 >despite dispute
@@ -297,6 +371,9 @@ by one point
 
 >s
 
+>n
+That guide gong, again, rings to notify you that you don't need to go back through Bold Bend.
+
 >bane bat
 by one point
 
@@ -310,6 +387,9 @@ by one point
 by one point
 
 >s
+
+>n
+That guide gong, again, rings to notify you that you don't need to go back through Main Mat.
 
 >fret free
 by one point

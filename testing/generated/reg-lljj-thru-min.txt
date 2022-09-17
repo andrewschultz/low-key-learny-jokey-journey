@@ -72,7 +72,9 @@ by one point
 by one point
 
 >s
+
 >s
+
 >e
 
 #testcase-room-names-trust-track
@@ -107,7 +109,9 @@ The deep dune seems to have shifted a bit. Maybe you can find something in the m
 by one point
 
 >s
+
 >w
+
 >w
 
 #testcase-room-names-hun-harm-fun-farm

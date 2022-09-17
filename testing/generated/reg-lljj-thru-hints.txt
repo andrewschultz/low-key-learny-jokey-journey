@@ -142,7 +142,9 @@ by one point
 A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
 
 >s
+
 >s
+
 >e
 
 >ll jack
@@ -199,7 +201,9 @@ by one point
 Nothing comes up. The general area here has been changed enough.
 
 >s
+
 >w
+
 >w
 
 >ll

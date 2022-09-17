@@ -34,7 +34,8 @@ files=reg-lljj-thru-min.txt,reg-lljj-thru-all.txt,reg-lljj-thru-reject.txt,reg-l
 #--stable-file: this eventually says that the project is stable, and I shouldn't change the main/minimal file unless I really need to.
 #--strict-file: this says that the project requires strict section marking e.g. @all instead of ==t1.
 
-}$REJECT=Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. But VERBS will show what you can use.
+}$REJECT=I couldn't parse that command. You don't need any more than two words long.
+}$REJECT2=Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
 
 }}MAX=86
 }}CURMAX=86
@@ -63,6 +64,14 @@ TSV:## minimum walkthrough	## walkthrough with all points	## walkthrough with al
 /^Bane Be Sane, See\?
 
 >au 2
+
+@gong
+>guide gong
+You are now repelled by a guide gong if you try to go down a path where you have nothing game-critical to do in any branches.
+
+@prong
+>pride prong
+You are now blocked from paths where no branches contain any point-scoring activities, critical or bonus.
 
 @hom
 >two too
@@ -825,6 +834,10 @@ NOTE: Low-Key Learny Jokey Journey should indicate whenever you find the right r
 #testcase-room-names-no-nudge-slow-sludge
 /^No-Nudge Slow Sludge
 
+@gong,prong
+>s
+A guide gong rings to notify you that you don't need to go back through Storing Stocks.
+
 @gt
 #testcase-exits-no-nudge-slow-sludge
 >exits
@@ -1323,7 +1336,17 @@ But you already have the pear peach.
 You don't need to reduce or duplicate the pear peach. It has a much bigger purpose.
 
 >s
+
+@gong,prong
+>n
+That guide gong, again, rings to notify you that you don't need to go back through The (Thunk!) Tree Trunk.
+
 >s
+
+@gong,prong
+>n
+That guide gong, again, rings to notify you that you don't need to go back through One Warm Stun-Storm.
+
 >e
 
 @min
@@ -1643,12 +1666,26 @@ You already reaped a rune.
 No, you don't need a Geiger counter to search further through the dune.
 
 >s
+
+@gong,prong
+>n
+That guide gong, again, rings to notify you that you don't need to go back through Bare Beach.
+
 >w
+
+@gong,prong
+>e
+That guide gong, again, rings to notify you that you don't need to go back through Trust Track.
+
 >w
 
 @min
 #testcase-room-names-hun-harm-fun-farm
 /^Hun Harm Fun Farm
+
+@gong,prong
+>e
+That guide gong, again, rings to notify you that you don't need to go back through No-Nudge Slow Sludge.
 
 @mis
 #ttc-table-of-hun-harm-fun-farm-guesses-one-worm-warm
@@ -1716,6 +1753,10 @@ You already unarmed the Hun Harm Fun Farm!
 #testcase-room-names-no-noon
 /^No Noon
 
+@gong,prong
+>s
+That guide gong, again, rings to notify you that you don't need to go back through Hun Harm Fun Farm.
+
 @hin
 >ll
 A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
@@ -1768,7 +1809,7 @@ Nothing toe-tapping starts playing.
 @rej
 #testcase-prereject-table-of-verb-checks-vc-co-coon-rule
 >cocoon
-You can't do anything while oppressed by enemies. How to call them off?
+You can't do anything while oppressed by enemies. You need to call them off.
 \\
 #testcase-prereject-table-of-verb-checks-vc-crow-croon-rule
 >crow croon
@@ -2132,6 +2173,30 @@ The Leet Learner shakes back and forth. Something you said sounded right, but it
 }}CURMIN++
 }}CURMINBONUS++
 
+@gong,prong
+>n
+That guide gong, again, rings to notify you that you don't need to go back through One Warm Stun-Storm.
+\\
+>s
+That guide gong, again, rings to notify you that you don't need to go back through Storing Stocks.
+\\
+>e
+That guide gong, again, rings to notify you that you don't need to go back through Trust Track.
+\\
+>w
+That guide gong, again, rings to notify you that you don't need to go back through Hun Harm Fun Farm.
+\\
+>u
+High Hub
+>undo
+\\
+>gonear tree trunk
+\\
+>s
+Storm
+>undo
+>undo
+
 @ha
 #testcase-ha-half-table-of-verb-checks-30-wordy
 >wordy zwalk
@@ -2170,6 +2235,20 @@ No, pock marks wouldn't make the stalk look better.
 >ll stalk
 A dot bounces around the leet learner's grid and winds up at (-1.00, -1.00.)
 However, it's really dim, as if you don't need to do or think whatever there is to do or think.
+
+@gong,prong
+>u
+
+@gong
+>d
+That guide gong, again, rings to notify you that you don't need to go back through No-Nudge Slow Sludge.
+\\
+>undo
+>undo
+
+@prong
+>d
+!That guide gong, again
 
 @!min
 >wordy walk
@@ -2228,6 +2307,10 @@ You already had the crow croon!
 
 @!min
 >u
+
+@prong
+>d
+That guide gong, again, rings to notify you that you don't need to go back through No-Nudge Slow Sludge.
 
 @gt
 #+ttc-table-of-noways-high-hub
@@ -2614,6 +2697,19 @@ by one point
 }}SCORE++
 
 @rej
+>rocking rift
+Show Shoe
+\\
+>undo
+\\
+>guide gong
+You are now repelled by a guide gong if you try to go down a path where you have nothing game-critical to do in any branches.
+
+@gong,prong
+>rocking rift
+You already brought life back to the Whoah-Woo-Show Shoe. You don't need to go back.
+
+@rej
 #testcase-prereject-table-of-verb-checks-vc-bright-brute-rule
 >bright brute
 Good idea, but there's no huge foe for a bright brute to help you with here.
@@ -2998,6 +3094,10 @@ A sad, succinct tale, indeed.
 >shocking shift
 You already took care of the shocking shift!
 
+@gong,prong
+>shocking shift
+You already took care of the shocking shift!
+
 ##RBRS-SHUFFLEEND=1
 ##RBRS-SHUFFLESTART=2
 
@@ -3260,6 +3360,10 @@ by one point
 
 @rej
 #testcase-postreject-table-of-verb-checks-vc-gawking-gift-rule
+>gawking gift
+You already took care of the Rum Route!
+
+@gong,prong
 >gawking gift
 You already took care of the Rum Route!
 
@@ -3633,6 +3737,10 @@ by one point
 >grokking grift
 You already figured everything about grokking grift.
 
+@gong,prong
+>grokking grift
+You already figured everything about grokking grift.
+
 ##RBRS-SHUFFLEEND=3
 ##RBRS-SHUFFLESTART=4
 
@@ -3660,11 +3768,11 @@ by one point
 @rej
 #testcase-prereject-table-of-verb-checks-vc-thread-throws-rule
 >thread throws
-WRONG
+The rose probably only has so much thread. You should only use it to capture a big predator.
 \\
 #testcase-think-table-of-verb-checks-vc-thread-throws-rule
 >think
-WRONG
+You can execute THREAD THROWS to make a net to catch the tight-tail white whale once you've prepped fully.
 
 @gt
 #ttc-table-of-noways-mad-most-cad-coast
@@ -3796,7 +3904,7 @@ You fail to scare anyone with this, not that you need to, any more.
 @rej
 #+testcase-think-table-of-verb-checks-vc-thread-throws-rule
 >think
-WRONG
+You can execute THREAD THROWS to make a net to catch the tight-tail white whale once you've prepped fully.
 
 @gt
 #ttc-table-of-noways-trite-trail
@@ -3899,7 +4007,7 @@ Man! That'd be a good idea, but you aren't quite ready to hunt the whale, yet.
 #testcase-think-table-of-verb-checks-vc-excite-exhale-rule
 >think
 You can try to grab the RIGHT RAIL once you've got a vessel.
-You can EXCITE EXHALE to go out and fight once you have an ally, fighting equipment, transport and stability.
+You can EXCITE EXHALE to prep yourself once you have an ally, fighting equipment, transport and stability.
 
 @hom
 #testcase-homonym-table-of-verb-checks-site-sale
@@ -4004,11 +4112,6 @@ by one point
 >ll red rose
 A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
 
-@rej
-#testcase-postreject-table-of-verb-checks-vc-docking-diffed-rule
->docking diffed
-You already conquered the tight-tail white whale. No need to go back.
-
 \\
 @ha
 #testcase-ha-half-table-of-verb-checks-36-despite
@@ -4018,6 +4121,15 @@ The HA HALF button lights up on your Leet Learner, but dimly--perhaps this is a 
 #testcase-ha-half-table-of-verb-checks-36-dispute
 >zdespite dispute
 The HA HALF button lights up on your Leet Learner, but dimly--perhaps this is a rhyme you don't strictly need to figure to win.
+
+@rej
+#testcase-postreject-table-of-verb-checks-vc-docking-diffed-rule
+>docking diffed
+You already conquered the tight-tail white whale. No need to go back.
+
+@gong,prong
+>docking diffed
+You already conquered the tight-tail white whale. No need to go back.
 
 ##RBRS-SHUFFLEEND=4
 
@@ -4206,6 +4318,10 @@ You can only deal with so much trolling!
 @min
 #testcase-room-names-drain-drat-vain-vat
 /^Drain \(Drat!\) Vain Vat
+
+@gong,prong
+>n
+That guide gong, again, rings to notify you that you don't need to go back through Bold Bend.
 
 @gt
 #ttc-table-of-noways-vain-vat
@@ -4442,6 +4558,14 @@ I couldn't parse that command. You don't need any more than two words long. VERB
 #testcase-room-names-threat-three-met-me
 /^Market Marquee
 
+@gong,prong
+>n
+That guide gong, again, rings to notify you that you don't need to go back through Main Mat.
+
+@rej
+>stride strong
+You are now able to move freely between locations, even ones with nothing left to do.
+
 @gt
 #ttc-table-of-noways-threat-three
 >w
@@ -4541,7 +4665,7 @@ by one point
 \\
 #testcase-moot-table-of-verb-checks-vc-set-see-rule
 >set see
-{$REJECT}
+{$REJECT2}
 \\
 >undo
 >undo
@@ -4572,11 +4696,11 @@ A dot bounces around the leet learner's grid and winds up at (-3.00, -4.00.)
 \\
 #testcase-moot-table-of-verb-checks-vc-yet-ye-rule
 >yet ye
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-fret-free-rule
 >fret free
-{$REJECT}
+{$REJECT2}
 \\
 >s
 
@@ -4619,11 +4743,11 @@ You're at the final confrontation. There are no exits.
 @rej
 #testcase-prereject-table-of-verb-checks-vc-turning-trite-rule
 >turning trite
-That is just talk. You need some sort of monument or memento to establish that.
+That is just talk, until you have something physical to notarize that this might, indeed, apply to the Burning Bright Spurning Sprite.
 \\
 #testcase-think-table-of-verb-checks-vc-turning-trite-rule
 >think
-You can name the Frightfully Bright Bully once they have an "award" of sorts to write their name on.
+You can label the Burning Bright Spurning Sprite once they have an "award" of sorts to write their name on.
 
 @hin
 >ll sack
@@ -4640,140 +4764,140 @@ A dot bounces around the leet learner's grid and winds up at (-0.50, -1.00.)
 @rej
 #testcase-postreject-table-of-verb-checks-vc-plus-plaque-rule
 >plus plaque
-You already made and gave the plus plaque to the Frightfully Bright Bully! Now you just have to figure, or riff on, their name!
+You already made and gave the plus plaque to the Burning Bright Spurning Sprite! Now you just have to figure what belongs on the plus plaque!
 \\
 ====alphabetize on
 #testcase-moot-table-of-verb-checks-vc-bad-boast-rule
 >bad boast
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-bad-bunk-rule
 >bad bunk
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-bane-bat-rule
 >bane bat
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-bare-beach-rule
 >bare beach
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-bleak-blaming-rule
 >bleak blaming
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-bold-bend-rule
 >bold bend
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-boring-box-rule
 >boring box
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-bred-bros-rule
 >bred bros
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-bright-breeze-rule
 >bright breeze
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-bright-brute-rule
 >bright brute
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-bro-brew-rule
 >bro brew
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-bussed-back-rule
 >bussed back
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-bye-bub-rule
 >bye bub
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-chic-shaming-rule
 >chic shaming
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-clique-claiming-rule
 >clique claiming
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-co-coon-rule
 >co coon
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-crow-crew-rule
 >crow crew
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-crow-croon-rule
 >crow croon
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-crust-crack-rule
 >crust crack
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-despite-dispute-rule
 >despite dispute
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-docking-diffed-rule
 >docking diffed
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-done-dorm-rule
 >done dorm
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-dumb-doubt-rule
 >dumb doubt
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-excite-exhale-rule
 >excite exhale
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-fed-foes-rule
 >fed foes
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-flain-flat-rule
 >flain flat
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-flight-flail-rule
 >flight flail
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-flow-flue-rule
 >flow flue
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-four-foals-rule
 >four foals
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-fun-form-rule
 >fun form
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-gad-gunk-rule
 >gad gunk
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-gee-junk-rule
 >gee junk
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-glow-glue-rule
 >glow glue
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-go-goo-rule
 >go goo
@@ -4785,183 +4909,183 @@ That location or thing doesn't exist or isn't known to you yet.
 \\
 #testcase-moot-table-of-verb-checks-vc-grokking-grift-rule
 >grokking grift
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-grotty-grail-rule
 >grotty grail
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-grow-grudge-rule
 >grow grudge
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-hey-hope-rule
 >hey hope
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-ho-who-rule
 >ho who
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-in-bane-rule
 >dane d
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-k-cope-rule
 >k cope
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-kite-coot-rule
 >kite coot
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-knotty-nail-rule
 >knotty nail
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-lore-lols-rule
 >lore lols
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-might-mail-rule
 >might mail
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-mo-moon-rule
 >mo moon
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-mocking-miffed-rule
 >mocking miffed
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-mold-mend-rule
 >mold mend
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-more-moles-rule
 >more moles
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-night-newt-rule
 >night newt
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-pear-peach-rule
 >pear peach
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-piss-poor-rule
 >piss poor
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-plain-plea-rule
 >plain plea
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-plight-please-rule
 >plight please
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-potty-pail-rule
 >potty pail
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-rad-roast-rule
 >rad roast
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-reap-rune-rule
 >reap rune
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-right-rail-rule
 >right rail
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-right-root-rule
 >right root
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-rocking-rift-rule
 >rocking rift
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-sad-sunk-rule
 >sad sunk
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-said-sos-rule
 >said sos
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-see-sunk-rule
 >see sunk
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-seep-soon-rule
 >seep soon
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-shocking-shift-rule
 >shocking shift
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-shore-shoals-rule
 >shore shoals
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-sight-sail-rule
 >sight sail
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-so-soon-rule
 >so soon
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-splain-splat-rule
 >splain splat
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-gawking-gift-rule
 >gawking gift
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-stow-stew-rule
 >stow stew
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-throw-through-rule
 >throw through
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-tight-tease-rule
 >tight tease
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-trolled-trend-rule
 >trolled trend
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-umm-out-rule
 >umm out
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-un-arm-rule
 >un arm
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-whee-woot-rule
 >whee woot
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-wordy-walk-rule
 >wordy walk
-{$REJECT}
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-yo-you-rule
 >yo you
-{$REJECT}
+{$REJECT2}
 ====alphabetize off
 
 >score

@@ -157,7 +157,9 @@ The HA HALF button lights up on your Leet Learner.
 by one point
 
 >s
+
 >s
+
 >e
 
 #testcase-ha-half-table-of-verb-checks-14-back
@@ -221,7 +223,9 @@ The HA HALF button lights up on your Leet Learner.
 by one point
 
 >s
+
 >w
+
 >w
 
 #testcase-ha-half-table-of-verb-checks-19-un
