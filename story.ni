@@ -34,6 +34,10 @@ a thing is usually not boring.
 
 a thing can be himher. a thing is usually not himher.
 
+section beta testing - not for release
+
+include Low Key Learny Jokey Journey Beta Testing by Andrew Schultz.
+
 section test module(s) - not for release
 
 include Low Key Learny Jokey Journey Tests by Andrew Schultz.
