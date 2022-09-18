@@ -1,0 +1,1045 @@
+## reg-lljj-lone-score-ordering.txt
+## GENERATOR FILE: rbr-lljj-lone-score-ordering.txt
+
+## checking wins and leet learner scoring with all possibilities
+
+** game: /home/andrew/prt/debug-low-key-learny-jokey-journey.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main-thru
+
+>au 2
+
+>plain plea
+by one point
+
+>jane g
+by one point
+
+>boring box
+by one point
+
+>open box
+
+>n
+
+>gad gunk
+by one point
+
+#>{include} _mad_monk_all
+>{include} _mad_monk_1
+
+>n
+
+>grow grudge
+by one point
+
+>n
+
+>done dorm
+by one point
+
+>fun form
+by one point
+
+>n
+
+>see sunk
+by one point
+
+>gee junk
+by one point
+
+>whee woot
+by one point
+
+>pear peach
+by one point
+
+>s
+
+>s
+
+>e
+
+>bussed back
+by one point
+
+>crust crack
+by one point
+
+>n
+
+>bare beach
+by one point
+
+>seep soon
+by one point
+
+>s
+>n
+
+>reap rune
+by one point
+
+>s
+
+>w
+
+>w
+
+>unarm
+by one point
+
+>n
+
+>go goon
+by one point
+
+>cocoon
+by one point
+
+>mo moon
+by one point
+
+>so soon
+by one point
+
+>crow croon
+by one point
+
+>grotty grail
+by one point
+
+>potty pail
+by one point
+
+>knotty nail
+by one point
+
+>bye bub
+
+>wordy walk
+
+>u
+
+>rocking rift
+by one point
+
+#>{include} _flow_glue_all
+>{include} _flow_glue_1
+
+#>{include} _brew_stew_all
+>{include} _brew_stew_1
+
+#>{include} _crew_who_you_all
+>{include} _crew_who_you_1
+
+>throw through
+by one point
+
+>rocking rift
+
+>ll
+You scan the area. This will suffice most of the time, though you may wish to LL a thing that doesn't jibe with its rhymes.
+A dot bounces around the leet learner's grid and winds up at (-2.50, -0.50.)
+
+>go goo
+by one point
+
+>ll
+You scan the area.
+Nothing comes up. The general area here has been changed enough.
+
+>enter lift
+
+>shocking shift
+by one point
+
+>shore shoals
+by one point
+
+>{include} _foals_moles_all
+#>{include} _foals_moles_1
+
+>docking diffed
+by one point
+
+>bad boast
+by one point
+
+>rad roast
+by one point
+
+>w
+Trite Trail
+
+#>{include} _trite_trail_1
+>{include} _trite_trail_all
+
+>bright brute
+by one point
+
+>excite exhale
+by one point
+
+>thread throws
+by one point
+
+>grokking grift
+by one point
+
+>bright breeze
+by one point
+
+>plight please
+by one point
+
+>right root
+by one point
+
+>s
+
+>bleak blaming
+by one point
+
+>chic shaming
+by one point
+
+>bred bros
+by one point
+High Hub
+
+>grokking grift
+
+>ll
+A dot bounces around the leet learner's grid and winds up at (-1.00, -2.00.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
+
+>tight tees
+>by one point
+
+>ll
+Nothing comes up. The general area here has been changed enough.
+
+>s
+
+>ll
+A dot bounces around the leet learner's grid and winds up at (3.00, 1.00.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
+
+>clique claiming
+
+>ll
+Nothing comes up. The general area here has been changed enough.
+
+>n
+>enter lift
+
+>shocking shift
+!by one point
+
+>ll
+A dot bounces around the leet learner's grid and winds up at (-1.00, -2.00.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
+
+>lore lols
+by one point
+
+>ll
+Nothing comes up. The general area here has been changed enough.
+
+#>{include} _coot_newt_all
+>{include} _coot_newt_1
+
+>enter lift
+
+####################this goes last so the lute doesn't burst into flames too early
+
+>gawking gift
+by one point
+
+>dumb doubt
+by one point
+
+>said sos
+by one point
+
+>umm out
+by one point
+
+>d
+
+>hey hope
+by one point
+
+>k cope
+by one point
+
+>mocking miffed
+by one point
+
+>bold bend
+by one point
+
+>trolled trend
+by one point
+
+>mold mend
+by one point
+
+>s
+
+>bane bat
+by one point
+
+>flain flat
+by one point
+
+>splain splat
+by one point
+
+>fed foes
+by one point
+
+>s
+
+#>{include} _final_room_1
+>{include} _final_room_all
+
+>plus plaque
+by one point
+
+>turning trite
+by one point
+
+###############################################################################subroutines below
+
+* _mad_monk_1
+
+>bad bunk
+by one point
+
+>sad sunk
+by one point
+
+* _mad_monk_all
+
+#################### bad bunk/sad sunk start
+#0/1
+>bad bunk
+by one point
+>ll monk
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+
+>undo
+
+>sad sunk
+by one point
+>ll monk
+DEBUG: can't see any such thing error.
+>undo
+
+#1/0
+>undo
+>undo
+
+>sad sunk
+by one point
+>ll monk
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>bad bunk
+by one point
+>ll monk
+DEBUG: can't see any such thing error.
+>undo
+
+>n
+Sludge
+>undo
+#################### bad bunk/sad sunk end
+
+* _flow_glue_1
+
+>flow flue
+by one point
+
+>glow glue
+by one point
+
+* _flow_glue_all
+
+#################### flow flue/glow glue start
+#0/1
+>flow flue
+by one point
+>ll
+You scan the area. This will suffice most of the time, though you may wish to LL a thing that doesn't jibe with its rhymes.
+A dot bounces around the leet learner's grid and winds up at (1.00, 0.50.)
+>undo
+
+>glow glue
+by one point
+>ll
+You scan the area. This will suffice most of the time, though you may wish to LL a thing that doesn't jibe with its rhymes.
+A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+>undo
+
+#1/0
+>undo
+>undo
+
+>glow glue
+by one point
+>ll
+You scan the area. This will suffice most of the time, though you may wish to LL a thing that doesn't jibe with its rhymes.
+A dot bounces around the leet learner's grid and winds up at (1.00, 0.50.)
+>undo
+
+>flow flue
+by one point
+>ll
+You scan the area. This will suffice most of the time, though you may wish to LL a thing that doesn't jibe with its rhymes.
+A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+>undo
+
+>l
+You've built infrastructure
+>undo
+#################### flow flue/glow glue end
+
+* _brew_stew_1
+
+>bro brew
+by one point
+
+>stow stew
+by one point
+
+* _brew_stew_all
+
+#################### bro brew/stow stew start
+#0/1
+>bro brew
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+>undo
+
+>stow stew
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (-1.50, 0.00.)
+>undo
+
+#1/0
+>undo
+>undo
+>stow stew
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+>undo
+
+>bro brew
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (-1.50, 0.00.)
+>undo
+
+#################### bro brew/stow stew end
+
+* _crew_who_you_1
+
+>crow crew
+by one point
+
+>ho who
+by one point
+
+>yo you
+by one point
+
+* _crew_who_you_all
+
+#################### crow crew/ho who/yo you start
+
+#0/1/2
+>crow crew
+by one point
+>ll
+You scan the area. This will suffice most of the time, though you may wish to LL a thing that doesn't jibe with its rhymes.
+A dot bounces around the leet learner's grid and winds up at (-1.00, -0.50.)
+>undo
+
+>ho who
+by one point
+>ll
+You scan the area. This will suffice most of the time, though you may wish to LL a thing that doesn't jibe with its rhymes.
+A dot bounces around the leet learner's grid and winds up at (-1.00, -0.50.)
+>undo
+
+>yo you
+by one point
+>ll
+You scan the area. This will suffice most of the time, though you may wish to LL a thing that doesn't jibe with its rhymes.
+A dot bounces around the leet learner's grid and winds up at (0.50, 3.50.)
+>undo
+
+#1/0/2
+>undo
+>undo
+>undo
+
+>ho who
+by one point
+>ll
+You scan the area. This will suffice most of the time, though you may wish to LL a thing that doesn't jibe with its rhymes.
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>crow crew
+by one point
+>ll
+You scan the area. This will suffice most of the time, though you may wish to LL a thing that doesn't jibe with its rhymes.
+A dot bounces around the leet learner's grid and winds up at (-1.00, -0.50.)
+>undo
+
+>yo you
+by one point
+>ll
+You scan the area. This will suffice most of the time, though you may wish to LL a thing that doesn't jibe with its rhymes.
+A dot bounces around the leet learner's grid and winds up at (0.50, 3.50.)
+>undo
+
+>l
+The Crow Crew waits in the, um, wings to be properly introduced.
+A lazy loud crazy crowd waits here for entertainment. They're ready for the big show!
+>undo
+
+#1/2/0
+>undo
+>undo
+
+>yo you
+by one point
+>ll
+You scan the area. This will suffice most of the time, though you may wish to LL a thing that doesn't jibe with its rhymes.
+A dot bounces around the leet learner's grid and winds up at (-0.50, 0.50.)
+>undo
+
+>crow crew
+by one point
+>ll
+You scan the area. This will suffice most of the time, though you may wish to LL a thing that doesn't jibe with its rhymes.
+A dot bounces around the leet learner's grid and winds up at (0.50, 3.50.)
+>undo
+
+>l
+The Crow Crew waits in the, um, wings to be properly introduced.
+A lazy loud crazy crowd waits here for entertainment. They're ready for the big show!
+>undo
+#################### crow crew/ho who/yo you end
+
+* _foals_moles_1
+
+>four foals
+by one point
+
+>more moles
+by one point
+
+* _foals_moles_all
+
+#################### four foals/more moles start
+#0/1
+>four foals
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (-1.00, -1.00.)
+>undo
+
+>more moles
+by one point
+>ll
+Nothing comes up. The general area here has been changed enough.
+>undo
+
+#1/0
+>undo
+>undo
+
+>more moles
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (-1.00, -1.00.)
+>undo
+
+>four foals
+by one point
+>ll
+Nothing comes up. The general area here has been changed enough.
+>undo
+
+#################### four foals/more moles end
+
+* _trite_trail_1
+
+>flight flail
+by one point
+>might mail
+by one point
+>right rail
+by one point
+>sight sail
+by one point
+
+* _trite_trail_all
+
+#################### flight flail/might mail/sight sail/right rail start
+#0/1/2/3
+>flight flail
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (0.00, -1.00.)
+>undo
+
+>might mail
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (0.00, -1.00.)
+>undo
+
+>sight sail
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (0.00, -1.00.)
+>undo
+
+>right rail
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>0213
+>undo
+>undo
+>undo
+>undo
+
+>sight sail
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (0.00, -1.00.)
+>undo
+
+>might mail
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (0.00, -1.00.)
+>undo
+
+>right rail
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>0231
+>undo
+>undo
+>undo
+
+>right rail
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (0.00, -1.00.)
+>undo
+
+>might mail
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>1023
+>undo
+>undo
+>undo
+>undo
+>undo
+
+>might mail
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (0.50, -0.50.)
+>undo
+
+>flight flail
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (0.00, -1.00.)
+>undo
+
+>sight sail
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (0.00, -1.00.)
+>undo
+
+>right rail
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>1203
+>undo
+>undo
+>undo
+>undo
+
+>sight sail
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (0.50, -0.50.)
+>undo
+
+>flight flail
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (0.00, -1.00.)
+>undo
+
+>right rail
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>1230
+>undo
+>undo
+>undo
+
+>right rail
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (1.00, 0.00.)
+>undo
+
+>flight flail
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>2013
+>undo
+>undo
+>undo
+>undo
+>undo
+
+>sight sail
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (0.33, -0.66.)
+>undo
+
+>flight flail
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (0.00, -1.00.)
+>undo
+
+>might mail
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (0.00, -1.00.)
+>undo
+
+>right rail
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>2031
+>undo
+>undo
+>undo
+
+>right rail
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (0.00, -1.00.)
+>undo
+
+>might mail
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>2103
+>undo
+>undo
+>undo
+>undo
+
+>might mail
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (0.50, -0.50.)
+>undo
+
+>flight flail
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (0.00, -1.00.)
+>undo
+
+>right rail
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>2130
+>undo
+>undo
+>undo
+
+>right rail
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (1.00, 0.00.)
+>undo
+
+>flight flail
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>2301
+>undo
+>undo
+>undo
+>undo
+
+>right rail
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (0.50, -0.50.)
+>undo
+
+>flight flail
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (0.00, -1.00.)
+>undo
+
+>might mail
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>2310
+>undo
+>undo
+>undo
+
+>might mail
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (1.00, 0.00.)
+>undo
+
+>flight flail
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+#################### flight flail/might mail/sight sail/right rail end
+
+* _coot_newt_1
+
+>kite coot
+by one point
+>night newt
+by one point
+
+* _coot_newt_all
+
+#################### night newt/kite coot start
+#0/1
+>night newt
+by one point
+>ll lute
+WRONG
+>undo
+
+>kite coot
+by one point
+>ll lute
+WRONG
+>undo
+
+#1/0
+>undo
+>undo
+
+>kite coot
+by one point
+>ll lute
+WRONG
+>undo
+
+>night newt
+by one point
+>ll lute
+WRONG
+>undo
+
+#################### night newt/kite coot end
+
+* _final_room_1
+
+>yet ye
+by one point
+
+>set see
+by one point
+
+>fret free
+by one point
+
+* _final_room_all
+
+#################### fret free/set see/yet ye start
+#0/1/2
+>fret free
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (-3.00, -4.50.)
+>undo
+
+>set see
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (-3.00, -5.00.)
+>undo
+
+>yet ye
+by one point
+>ll
+Nothing comes up. The general area here has been changed enough.
+>undo
+
+>021
+>undo
+>undo
+>undo
+
+>yet ye
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (-3.00, -4.00.)
+>undo
+
+>set see
+by one point
+>ll
+Nothing comes up. The general area here has been changed enough.
+>undo
+
+>102
+>undo
+>undo
+>undo
+>undo
+
+>set see
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (-2.50, -4.00.)
+>undo
+
+>fret free
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (-3.00, -5.00.)
+>undo
+
+>yet ye
+by one point
+>ll
+Nothing comes up. The general area here has been changed enough.
+>undo
+
+>120
+>undo
+>undo
+>undo
+
+>yet ye
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (-2.00, -3.00.)
+>undo
+
+>fret free
+by one point
+>ll
+Nothing comes up. The general area here has been changed enough.
+>undo
+
+>201
+>undo
+>undo
+>undo
+>undo
+
+>yet ye
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (-2.50, -3.50.)
+>undo
+
+>fret free
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (-3.00, -4.00.)
+>undo
+
+>set see
+by one point
+>ll
+Nothing comes up. The general area here has been changed enough.
+>undo
+
+>210
+>undo
+>undo
+>undo
+
+>set see
+by one point
+>ll
+A dot bounces around the leet learner's grid and winds up at (-2.00, -3.00.)
+>undo
+
+>fret free
+by one point
+>ll
+Nothing comes up. The general area here has been changed enough.
+>undo
+
+#################### fret free/set see/yet ye end
