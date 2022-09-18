@@ -40,7 +40,7 @@ include Low Key Learny Jokey Journey Beta Testing by Andrew Schultz.
 
 section test module(s) - not for release
 
-include Low Key Learny Jokey Journey Tests by Andrew Schultz.
+[include Low Key Learny Jokey Journey Tests by Andrew Schultz.]
 
 section regions
 
@@ -271,7 +271,7 @@ from-number of mad monk is 5304. to-number of mad monk is 5304.
 
 book No Noon
 
-there is a room called NoNoon in Hoppin' Heart. it is north of Hun Harm Fun Farm. printed name of NoNoon is "[if cocoon is moot]Ho, HEWN[else]No Noon[end if]". "[noon-room]". understand "ho/hewn" and "ho hewn" as NoNoon when cocoon is moot.
+there is a room called NoNoon in Hoppin' Heart. it is north of Hun Harm Fun Farm. printed name of NoNoon is "[if cocoon is moot]Ho, HEWN[else]No Noon[end if]". "[noon-room].". understand "ho/hewn" and "ho hewn" as NoNoon when cocoon is moot.
 
 to say noon-room:
 	if sco-mo-moon is false:
@@ -527,7 +527,7 @@ book spoke 1 / rocking rift
 
 part no new show shoe
 
-There is a liftroom called No New Show Shoe in Poppin' Part. "This isn't actually a shoe, of course. It's an area for performances, shaped like a horseshoe. But of course the shape doesn't matter. The locking lift is here, too[if shoe-concessions is 2 and sco-throw-through is false], and trust me on this--if you re-enter it, time will freeze here, so nobody's left hanging[end if].[paragraph break][shoe-desc].". printed name of No New Show Shoe is "[if sco-crow-crew is false]No-New-Show Shoe[else]Whoah-Woo-Show Shoe[end if]". spokeval of Show Shoe is 1.
+There is a liftroom called No New Show Shoe in Poppin' Part. "This isn't actually a shoe, of course. It's an area for performances, shaped like a horseshoe. But of course the shape doesn't matter. The locking lift is here, too[if shoe-concessions is 2 and sco-throw-through is false], and trust me on this--if you re-enter it, time will freeze here, so nobody's left hanging[end if].[paragraph break][shoe-desc].". printed name of No New Show Shoe is "[if sco-yo-you is false]No-New-Show Shoe[else]Whoah-Woo-Show Shoe[end if]". spokeval of Show Shoe is 1.
 
 guess-table of Show Shoe is table of no new show shoe guesses.
 
@@ -562,7 +562,7 @@ after printing the locale description when player is in Show Shoe and sco-throw-
 
 chapter lazy loud crazy crowd
 
-the lazy loud crazy crowd is a thing. "A lazy loud crazy crowd waits here for entertainment. You're the one to provide it!". description is "[if sco-ho-who is false]The lazy loud crazy crowd that's built up is ready to be asked if they are ready to make some noise and get this party started. Except, well, a lot more succinctly.[else if sco-yo-you is false]The lazy loud crazy crowd, having expressed their willingness to raise the roof figuratively, seeks reassurance.[else]The lazy loud crazy crowd is hyped for the main performance!"
+the lazy loud crazy crowd is a thing. "A lazy loud crazy crowd waits here for entertainment. [if sco-ho-who is false]They're looking for you to hype them up[else if sco-yo-you is false]They're almost in a frenzy[else]They're ready for the big show[end if]!". description is "[if sco-ho-who is false]The lazy loud crazy crowd that's built up is ready to be asked if they are ready to make some noise and get this party started. Except, well, a lot more succinctly.[else if sco-yo-you is false]The lazy loud crazy crowd, having expressed their willingness to raise the roof figuratively, seeks reassurance.[else]The lazy loud crazy crowd is hyped for the main performance!"
 
 to-number of lazy loud crazy crowd is -2.
 
@@ -759,7 +759,7 @@ from-number of head hose is 5404. to-number of head hose is 5304.
 
 part Threat Three Met ME
 
-Threat Three Met Me is in Poppin' Part. printed name is "[if marquee-score < 3]Market Marquee[else]Threat Three Met Me[end if]". "[if marquee is moot]The marquee has crumbled, its rubble blocking the way back north. This is it[else]A market marquee stands here, maybe giving you some clues as to how to do things[end if]. [if sprite is off-stage]You could go back north if you really wanted, but perhaps you'll want to finish things here[else]You feel stuck here in the final encounter[end if].". spokeval of Threat Three is 5.
+Threat Three Met Me is in Poppin' Part. printed name is "[if marquee-score < 3]Market Marquee[else]Threat Three Met Me[end if]". "[if marquee is moot]The marquee has crumbled, its rubble blocking the way back north. This is it[else]A market marquee stands here, maybe giving you some clues as to how to do things[end if]. [if sprite is off-stage]You could go back north if you really wanted, but perhaps you'll want to finish things here[else]You feel stuck here in the final encounter[end if][if plus plaque is in threat three].[paragraph break]That plus plaque you summoned is waiting for an inscription[end if].". spokeval of Threat Three is 5.
 
 from-number of threat three met me is 5607. to-number of threat three met me is 16009.
 
@@ -800,7 +800,7 @@ report examining market marquee for the first time:
 
 chapter Burning Bright Spurning Sprite
 
-there is a himher thing called the Burning Bright Spurning Sprite.
+there is a himher thing called the Burning Bright Spurning Sprite. "The [sprite] waits here impatiently waiting for acknowledgement.". description is "It looks at you with contempt, which you expect will increase no matter what you do. Unless ... unless ... you've learned from all you've gone through."
 
 [the Frightfully Bright Bully is a himher thing. description is "The [bully] doesn't look especially mean or conniving or thuggish. But you know they just can't stand you. It's time to face up to them.". "The Frightfully Bright Bully continues a combination of rolling their eyes and looking away from you."]
 
@@ -810,6 +810,10 @@ after doing something with a himher thing (called th):
 	set the pronoun them to th;
 	set the pronoun him to th;
 	set the pronoun her to th;
+
+chapter plus plaque
+
+the plus plaque is boring scenery. "The plus plaque mentions that it is dedicated to [the sprite] for ... well, that's blank. Maybe you can figure what goes there."
 
 volume main engine
 
