@@ -123,6 +123,8 @@ by one point
 
 >u
 
+>{include}_hub_permutations
+
 >rocking rift
 by one point
 
@@ -314,6 +316,2646 @@ by one point
 by one point
 
 ###############################################################################subroutines below
+
+* _hub_permutations
+
+#################### docking diffed/gawking gift/grokking grift/rocking rift/shocking shift start
+#0/1/2/3/4
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.66, 0.66.)
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>01243
+>undo
+>undo
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>01324
+>undo
+>undo
+>undo
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>01342
+>undo
+>undo
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>01423
+>undo
+>undo
+>undo
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>01432
+>undo
+>undo
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>02134
+>undo
+>undo
+>undo
+>undo
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.33, 0.33.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>02143
+>undo
+>undo
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>02314
+>undo
+>undo
+>undo
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>02341
+>undo
+>undo
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>02413
+>undo
+>undo
+>undo
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>02431
+>undo
+>undo
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>03124
+>undo
+>undo
+>undo
+>undo
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.66, 0.66.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>03142
+>undo
+>undo
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>03214
+>undo
+>undo
+>undo
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>03241
+>undo
+>undo
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>03412
+>undo
+>undo
+>undo
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>03421
+>undo
+>undo
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>04123
+>undo
+>undo
+>undo
+>undo
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.33, 0.33.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>04132
+>undo
+>undo
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>04213
+>undo
+>undo
+>undo
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>04231
+>undo
+>undo
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>04312
+>undo
+>undo
+>undo
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>04321
+>undo
+>undo
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>10234
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.50, 1.00.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.66, 0.66.)
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>10243
+>undo
+>undo
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>10324
+>undo
+>undo
+>undo
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>10342
+>undo
+>undo
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>10423
+>undo
+>undo
+>undo
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>10432
+>undo
+>undo
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>12034
+>undo
+>undo
+>undo
+>undo
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.33, 1.00.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>12043
+>undo
+>undo
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>12304
+>undo
+>undo
+>undo
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.50, 1.50.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>12340
+>undo
+>undo
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>12403
+>undo
+>undo
+>undo
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 1.00.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>12430
+>undo
+>undo
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>13024
+>undo
+>undo
+>undo
+>undo
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.66, 1.33.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>13042
+>undo
+>undo
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>13204
+>undo
+>undo
+>undo
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.50, 1.50.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>13240
+>undo
+>undo
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>13402
+>undo
+>undo
+>undo
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.50, 1.50.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>13420
+>undo
+>undo
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>14023
+>undo
+>undo
+>undo
+>undo
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.33, 1.00.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>14032
+>undo
+>undo
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>14203
+>undo
+>undo
+>undo
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 1.00.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>14230
+>undo
+>undo
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>14302
+>undo
+>undo
+>undo
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.50, 1.50.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>14320
+>undo
+>undo
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>20134
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.25, 0.75.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.33, 0.33.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>20143
+>undo
+>undo
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>20314
+>undo
+>undo
+>undo
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>20341
+>undo
+>undo
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>20413
+>undo
+>undo
+>undo
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>20431
+>undo
+>undo
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>21034
+>undo
+>undo
+>undo
+>undo
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.33, 1.00.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>21043
+>undo
+>undo
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>21304
+>undo
+>undo
+>undo
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.50, 1.50.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>21340
+>undo
+>undo
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>21403
+>undo
+>undo
+>undo
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 1.00.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>21430
+>undo
+>undo
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>23014
+>undo
+>undo
+>undo
+>undo
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.33, 1.00.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>23041
+>undo
+>undo
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>23104
+>undo
+>undo
+>undo
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.50, 1.50.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>23140
+>undo
+>undo
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>23401
+>undo
+>undo
+>undo
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 1.00.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>23410
+>undo
+>undo
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>24013
+>undo
+>undo
+>undo
+>undo
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.66.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>24031
+>undo
+>undo
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>24103
+>undo
+>undo
+>undo
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 1.00.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>24130
+>undo
+>undo
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>24301
+>undo
+>undo
+>undo
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 1.00.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>24310
+>undo
+>undo
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>30124
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.50, 1.00.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.66, 0.66.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>30142
+>undo
+>undo
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>30214
+>undo
+>undo
+>undo
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>30241
+>undo
+>undo
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>30412
+>undo
+>undo
+>undo
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>30421
+>undo
+>undo
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>31024
+>undo
+>undo
+>undo
+>undo
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.66, 1.33.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>31042
+>undo
+>undo
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>31204
+>undo
+>undo
+>undo
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.50, 1.50.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>31240
+>undo
+>undo
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>31402
+>undo
+>undo
+>undo
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.50, 1.50.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>31420
+>undo
+>undo
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>32014
+>undo
+>undo
+>undo
+>undo
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.33, 1.00.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>32041
+>undo
+>undo
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>32104
+>undo
+>undo
+>undo
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.50, 1.50.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>32140
+>undo
+>undo
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>32401
+>undo
+>undo
+>undo
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 1.00.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>32410
+>undo
+>undo
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>34012
+>undo
+>undo
+>undo
+>undo
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.33, 1.00.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>34021
+>undo
+>undo
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>34102
+>undo
+>undo
+>undo
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.50, 1.50.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>34120
+>undo
+>undo
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>34201
+>undo
+>undo
+>undo
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 1.00.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>34210
+>undo
+>undo
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>40123
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+
+>shocking shift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.25, 0.75.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.33, 0.33.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>40132
+>undo
+>undo
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>40213
+>undo
+>undo
+>undo
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>40231
+>undo
+>undo
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>40312
+>undo
+>undo
+>undo
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>40321
+>undo
+>undo
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>41023
+>undo
+>undo
+>undo
+>undo
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.33, 1.00.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>41032
+>undo
+>undo
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>41203
+>undo
+>undo
+>undo
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 1.00.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>41230
+>undo
+>undo
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>41302
+>undo
+>undo
+>undo
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.50, 1.50.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>41320
+>undo
+>undo
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>42013
+>undo
+>undo
+>undo
+>undo
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.66.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>42031
+>undo
+>undo
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>42103
+>undo
+>undo
+>undo
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 1.00.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>42130
+>undo
+>undo
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>42301
+>undo
+>undo
+>undo
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 1.00.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>42310
+>undo
+>undo
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>43012
+>undo
+>undo
+>undo
+>undo
+>undo
+
+>rocking rift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.33, 1.00.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>43021
+>undo
+>undo
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>43102
+>undo
+>undo
+>undo
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.50, 1.50.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>43120
+>undo
+>undo
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>43201
+>undo
+>undo
+>undo
+>undo
+
+>grokking grift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 1.00.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>43210
+>undo
+>undo
+>undo
+
+>gawking gift
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+>undo
+
+>docking diffed
+by one point
+>ll lift
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+>undo
+
+>undo
+>undo
+>undo
+>undo
+>undo
+
+#################### docking diffed/gawking gift/grokking grift/rocking rift/shocking shift end
 
 * _mad_monk_1
 
