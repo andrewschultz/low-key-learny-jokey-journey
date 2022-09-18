@@ -49,7 +49,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "gee"	"junk"	--	--	false	true	true	false	TTTT	vc-gee-junk rule	vr-gee-junk rule	--	"You can say [b]GEE JUNK[r] [once-now of vc-gee-junk rule] more of the trunk is visible."
 "whee"	"woot"	"wee"	vh-whee-woot rule	false	true	true	false	TTTT	vc-whee-woot rule	vr-whee-woot rule	--	--
 "pear"	"peach"	"pair/pare"	--	false	true	true	false	TTTT	vc-pear-peach rule	vr-pear-peach rule	--	"You can make a [b]PEAR PEACH[r] [once-now of vc-pear-peach rule] you're happy enough to receive free fruit."
-"bussed"	"back"	"bust"	vh-bust-back rule	false	false	true	false	Rare Reach	vc-bussed-back rule	vr-bussed-back rule	--	--
+"bussed"	"back"	"bust"	vh-bust-back rule	false	false	true	false	Trust Track	vc-bussed-back rule	vr-bussed-back rule	--	--
 "crust"	"crack"	--	--	false	true	true	false	Trust Track	vc-crust-crack rule	vr-crust-crack rule	--	"You can make the [b]CRUST CRACK[r] [once-now of vc-crust-crack rule] [jack] is gone."
 "bare"	"beach"	"bear"	--	false	true	true	false	Rare Reach	vc-bare-beach rule	vr-bare-beach rule	--	"You can change the Rare Reach to a [b]BARE BEACH[r] [once-now of vc-bare-beach rule] you have a life-generating item."
 "seep"	"soon"	--	--	false	true	true	false	Rare Reach	vc-seep-soon rule	vr-seep-soon rule	--	--
@@ -298,7 +298,7 @@ this is the vr-whee-woot rule:
 a goodrhyme rule (this is the vc-pear-peach rule):
 	if player is not in TTTT or pear peach is moot, unavailable;
 	if sco-whee-woot is false:
-		vcp "The [fruit] sputters a bit, almost as if it sticks its tongue about you. Weird as it sounds, you may have to show appreciation for it.";
+		vcp "[gpp]The [fruit] sputters a bit, almost as if it sticks its tongue out at you. Weird as it sounds, you may have to show appreciation for it.";
 		not-yet;
 	if sco-pear-peach is true:
 		vcal "But you already have the pear peach.";
@@ -1353,13 +1353,14 @@ a goodrhyme rule (this is the vc-plus-plaque rule):
 		vcp "You consider conjuring up a gaudy, flattering plus-plaque. But you have nobody to give it to, and you'd hate to have to carry it around[if player is not in Threat Three Met Me]. Maybe elsewhere[end if].";
 		not-yet;
 	if sco-plus-plaque is true:
-		vcal "You already made and gave the plus plaque to [the sprite]! Now you just have to figure, or riff on, their name!";
+		vcal "You already made and gave the plus plaque to [the sprite]! Now you just have to figure what belongs on [the plaque]!";
 		already-done;
 	ready;
 
 this is the vr-plus-plaque rule:
 	now sco-plus-plaque is true;
 	say "You have summoned a plus plaque! The [sprite] accepts it before you can offer it. But then they are upset ... there's no name on it! What could their name be?";
+	now plus plaque is in Threat Three;
 
 a goodrhyme rule (this is the vc-turning-trite rule):
 	if player is not in threat three met me, unavailable;
@@ -1403,7 +1404,7 @@ a goodrhyme rule (this is the check-dumping-monk rule):
 	say "[i][bracket]NOTE: this nag will not appear again, and if you want to try good guesses against other enemies after they vanish, I have no problems if you [b]UNDO[r][i].[close bracket][i]";
 	let X be indexed text; [ this sucks, but unfortunately 6G60 doesn't play nice with player's command and "if the player consents" ]
 	now X is the player's command;
-	let TS be whether or not the player consents;
+	let TS be whether or not the player dir-consents;
 	change the text of the player's command to X;
 	if TS is true, ready;
 	if the player's command includes "bad", now monk-bad-cue is true;
@@ -1439,6 +1440,10 @@ to say poke-mad-monk:
 		say "when";
 	say " you've poked the Mad Monk enough";
 
+[guess pear peach]
+
+to say gpp: now guessed-pear-peach is true;
+
 [no noon]
 
 to say rune-cue: if player does not have rho rune, say "[run paragraph on] You feel as though you're missing something basic and fundamental as well, an emblem to start whatever ritual you need to perform here[one of].[paragraph break]Also, more fourth-wallishly, the solution may be anticlimactic if you figure everything out here before finding said magic item. A few testers said so[or][stopping].[run paragraph on]"
@@ -1459,6 +1464,14 @@ to remove-spoke (nu - a number):
 	decrease to-number of locking lift by nu;
 	if to-number of locking lift is 0, now to-number of locking lift is 5706;
 	take-lift High Hub;
+	if gong-hub-warn is false:
+		now gong-hub-warn is true;
+		if player-room-allow-threshold is nothing-left:
+			say "[i][bracket][b]NOTE:[r] [i]you've finished your first spoke of the high hub, and you don't have to go back. This is a one-time nag that you may wish to activate the [b]GUIDE GONG[r][i] to block returning completely or [b]PRIDE PRONG[r][i] to close off areas where you've found all bonus points.[close bracket][r]";
+
+to lift-adjust (nu - a number):
+	decrease to-number of locking lift by nu;
+	if to-number of locking lift is 0, now to-number of locking lift is 5606;
 
 [hub 1. shore]
 

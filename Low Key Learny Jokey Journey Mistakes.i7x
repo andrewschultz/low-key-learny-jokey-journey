@@ -14,6 +14,7 @@ mist-cmd(topic)	mist-rule	got-yet	leet-rule	mist-txt
 "earning right"	--	false	lose-the-game rule	"Well, that's what you hope to find!"
 "ferning fright"	--	false	--	"There are no terrorist plants worth summoning in [this-game]."
 "ride wrong"	--	false	--	"There is no fourth option for the guide gone, but you do have a chance for a heel turn at game's end."
+"side song"	--	false	--	"This is a no-frills text adventure. No music, no graphics, besides the middling-at-best cover art."
 
 this is the lose-the-game rule:
 	if player is in threat three and spurning sprite is in threat three:
@@ -370,7 +371,7 @@ table of trust track guesses
 mist-cmd(topic)	mist-rule	got-yet	leet-rule	mist-txt
 "cussed cack"	--	false	--	"[if player has sus sack]No, the sack will be worthwhile.[else]There's a useful item to discover here. More useful than such words![end if]"
 "gust gack"	--	false	--	"No stinky cloud rumbles in[if sco-bussed-back is false] to push Jack away[end if]."
-"lust lack"	--	false	--	"You make sure put impure thoughts aside so you're really focused on a totally cool text adventure. Yay, you!"
+"lust lack"	--	false	--	"You make sure to put impure thoughts aside so you're really focused on a totally cool text adventure. Yay, you!"
 "must mack"	--	false	--	"[if just jack is in trust track]Jack raises his eyebrows, but sadly, he seems more concerned with blocking you[else]This is a comedy puzzle game, not a romance game[end if]."
 "rust rack"	--	false	--	"That would be a useless item."
 
@@ -384,17 +385,13 @@ to say furthers of (ts - a truth state): if ts is true, say " further"
 
 table of deep dune guesses
 mist-cmd(topic)	mist-rule	got-yet	leet-rule	mist-txt
-"beep boon"	--	false	rune-unreaped rule	"No, you don't need a Geiger counter to search[furthers of sco-reap-rune] through the dune."
-"creep croon"	--	false	rune-unreaped rule	"I couldn't get R. Kelly or Robin Thicke to appear here. Sorry!"
-"keep coon"	--	false	rune-unreaped rule	"The dune would not be stable enough for wild animals like that to make a home."
-"leap loon"	--	false	rune-unreaped rule	"Alas, nobody odd comes by and dives into the deep dune [if sco-reap-rune is false]to help you find what's there[else]for your entertainment[end if]. Nobody at all."
-"peep poon"	--	false	rune-unreaped rule	"[this-game] is the wrong environment for that, and not just because it's text-based."
-"streep strewn"	--	false	rune-unreaped rule	"Honestly! Her acting style goes well beyond just lazing about."
-"sweep swoon"	--	false	rune-unreaped rule	"You have neither a broom nor a favorite team who overpowers all playoff foes."
-
-this is the rune-unreaped rule:
-	if sco-reap-rune is false, the rule succeeds;
-	the rule fails;
+"beep boon"	--	false	--	"No, you don't need a Geiger counter to search[furthers of sco-reap-rune] through the dune."
+"creep croon"	--	false	--	"I couldn't get R. Kelly or Robin Thicke to appear here. Sorry!"
+"keep coon"	--	false	--	"The dune would not be stable enough for wild animals like that to make a home."
+"leap loon"	--	false	--	"Alas, nobody odd comes by and dives into the deep dune [if sco-reap-rune is false]to help you find what's there[else]for your entertainment[end if]. Nobody at all."
+"peep poon"	--	false	--	"[this-game] is the wrong environment for that, and not just because it's text-based."
+"streep strewn"	--	false	--	"Honestly! Her acting style goes well beyond just lazing about."
+"sweep swoon"	--	false	--	"You have neither a broom nor a favorite team who overpowers all playoff foes."
 
 table of free fruit guesses
 mist-cmd(topic)	mist-rule	got-yet	leet-rule	mist-txt
@@ -413,7 +410,7 @@ mist-cmd(topic)	mist-rule	got-yet	leet-rule	mist-txt
 "tea toot/tout"	--	false	--	"Perhaps the tea would be fruit-flavored and refreshing, but it wouldn't be useful.[fruit-clue]"
 
 to say fruit-clue:
-	if sco-whee-woot is true:
+	if sco-whee-woot is false:
 		if guessed-pear-peach is true:
 			say "[run paragraph on] In fact, it looks like you already guessed what the hybrid free fruit is elsewhere. Perhaps a look around would help you recall what you guessed.[no line break]";
 		else:
@@ -450,7 +447,7 @@ mist-cmd(topic)	mist-rule	got-yet	leet-rule	mist-txt
 "dad dunk"	--	false	--	"Alas, no middle-aged man soars into the air, basketball in hand, to posterize the mad monk."
 "fad funk"	--	false	--	"Falling prey to fashion is not one of the mad monk's vices. They're more about violence and intimidation."
 "grad grunk"	--	false	--	"The mad monk fails to look for a lost pig or learn anything."
-"had hunk"	--	false	--	"You try to claim the mad monk has lost muscle, but the insult doesn't really land, because they have more wisdom than ever, and stuff."
+"had hunk"	--	false	--	"You try to claim the mad monk has lost muscle, but the insult doesn't really land, because with age comes wisdom, and stuff."
 "lad lunk"	--	false	--	"Both insults are a bit too trivial to land."
 "pad punk"	--	false	--	"No mercenary hoodlum walks by, which might actually be a good thing for the hoodlum."
 "plaid plunk"	--	false	--	"The mad monk's fashion choice will not change."
@@ -479,8 +476,7 @@ mist-cmd(topic)	mist-rule	got-yet	leet-rule	mist-txt
 
 table of red rose guesses
 mist-cmd(topic)	mist-rule	got-yet	leet-rule	mist-txt
-"bed bows"	--	false	--	"You need no fancy place to sleep."
-"bed beaus"	--	false	--	"Yeah, roses are romantic and all, but by now, you may guess this game's shtick is corny jokes."
+"bed beaus/bows"	--	false	--	"[bows-beaus]."
 "bled blows"	--	false	--	"You do not need to incite violence."
 "cred crows"	--	false	--	"You don't need to brag about street cred, real or imagined."
 "dead does/dohs/doze"	--	false	--	"You aren't here to kill helpless animals or utter a Simpsonesque epithet. Or sleep on the job."
@@ -495,6 +491,12 @@ mist-cmd(topic)	mist-rule	got-yet	leet-rule	mist-txt
 "sled slows"	--	false	--	"There are no sleds that need slowing."
 "ted tows/toes"	--	false	--	"You recall an ad for a towing service."
 "wed woes"	--	false	--	"[sad-tale]."
+
+to say bows-beaus:
+	if the player's command includes "bows":
+		say "You need no fancy place to sleep";
+	else:
+		say "Yeah, roses are romantic and all, but by now, you may guess this game's shtick is corny jokes"
 
 to say sad-tale: say "A sad, succinct tale, indeed"
 
