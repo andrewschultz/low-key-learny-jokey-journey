@@ -566,6 +566,7 @@ a goodrhyme rule (this is the vc-docking-diffed rule):
 	ready;
 
 this is the vr-docking-diffed rule:
+	if sco-docking-diffed is false, lift-adjust 5706;
 	now sco-docking-diffed is true;
 	say "The locking lift leads you [one of]to a shore where you'd expect a watercraft, but there is none[or]back to the [cad coast][stopping].";
 	take-lift mad most cad coast;
@@ -574,11 +575,12 @@ a goodrhyme rule (this is the vc-grokking-grift rule):
 	if locking lift is not fungible, unavailable;
 	if sco-bred-bros is true:
 		if slight sleaze is overall-go-useful, ready;
-		vcal "You already figured everything about grokking grift.";
+		vcal "You already gained insight into grokking grift.";
 		already-done;
 	ready;
 
 this is the vr-grokking-grift rule:
+	if sco-grokking-grift is false, lift-adjust 5805;
 	say "You wonder if you are up to understanding seediness. But it is too late, by the time you're in the lift.";
 	now sco-grokking-grift is true;
 	take-lift Slight Sleaze;
@@ -592,8 +594,9 @@ a goodrhyme rule (this is the vc-rocking-rift rule):
 	ready;
 
 this is the vr-rocking-rift rule:
-	now sco-rocking-rift is true;
+	if sco-rocking-rift is false, lift-adjust 5704;
 	say "[if sco-rocking-rift is false]You enter the Locking Lift and wind up in what seems to be a large amphitheater. It's empty, but it could put on a decent show[else]Back to the [show shoe][end if].";
+	now sco-rocking-rift is true;
 	take-lift Show Shoe;
 
 a goodrhyme rule (this is the vc-shocking-shift rule):
@@ -605,6 +608,7 @@ a goodrhyme rule (this is the vc-shocking-shift rule):
 	ready;
 
 this is the vr-shocking-shift rule:
+	if sco-shocking-shift is false, lift-adjust 5805;
 	now sco-shocking-shift is true;
 	say "The locking lift lurches with what is indeed a shocking shift...";
 	take-lift Sore Souls Gore Goals;
@@ -618,6 +622,7 @@ a goodrhyme rule (this is the vc-gawking-gift rule):
 	ready;
 
 this is the vr-gawking-gift rule:
+	if sco-gawking-gift is false, lift-adjust 5704;
 	now sco-gawking-gift is true;
 	say "You see a vision of kids ripped off during the holidays. You wind up [one of][or]back [stopping]in...";
 	take-lift Rum Route;
@@ -701,6 +706,8 @@ a goodrhyme rule (this is the vc-lore-lols rule):
 this is the vr-lore-lols rule:
 	now sco-lore-lols is true;
 	say "Why, yes, this place could use myths of creation and so forth[if sco-shore-shoals is false] for when it becomes habitable[end if].";
+	if to-number of gore goals is -5404:
+		now from-number of gore goals is -3;
 
 a goodrhyme rule (this is the vc-night-newt rule):
 	abide by the lute-animal-check rule;
@@ -764,6 +771,8 @@ a goodrhyme rule (this is the vc-go-goo rule):
 this is the vr-go-goo rule:
 	now sco-go-goo is true;
 	say "A huge pile of weird 'energy burst' snacks appears at your feet. You have no idea whether or not they're nutritious, but with that colorful packaging, they can be sold for a markup [if sco-throw-through is false]during and after the performance[else]at future performances[end if], to ensure the viability of the [show shoe]. Yay, commerce[if shoe-storage < 2], and you don't even need any climate-controlled storage[end if]![paragraph break]You put them off to the side. They'll be useful once the show gets rocking.";
+	if sco-throw-through is true:
+		now from-number of show shoe is -3;
 
 a goodrhyme rule (this is the vc-bro-brew rule):
 	if player is not in show shoe, unavailable;
@@ -807,7 +816,6 @@ a goodrhyme rule (this is the vc-ho-who rule):
 this is the vr-ho-who rule:
 	now sco-ho-who is true;
 	say "'Ho! WHO?' you call out. The crowd seems to react favorably, waiting for the right phrase to go totally crazy.";
-	change-shoe-number 5203;
 
 a goodrhyme rule (this is the vc-yo-you rule):
 	if player is not in show shoe, unavailable;
@@ -821,6 +829,7 @@ a goodrhyme rule (this is the vc-yo-you rule):
 this is the vr-yo-you rule:
 	now sco-yo-you is true;
 	say "'Yo! YOU!' you cry, and there's a slightly undignified call-and-response, featuring both you and the crowd asking 'Ho! Who?' and responding. It's not brilliant discourse, but everyone's all jazzed for a bigger show now.";
+	now from-number of show shoe is 10907;
 	change-shoe-number 5203;
 
 a goodrhyme rule (this is the vc-crow-crew rule):
@@ -857,7 +866,10 @@ this is the vr-throw-through rule:
 	now sco-throw-through is true;
 	say "The Crow Crew makes a dramatic entrance, thanks to your planning! The show is a financial and emotional success. Everyone congratulates you. Surely, you must take a reward! Something![paragraph break]You can't think of anything you really need. Then, something that just wasn't used in the concert. A light lute! It's, well, something. If you were resourceful enough to get things working here, who knows what you can do with it?[paragraph break]Your job here done, you return back...";
 	remove-spoke 5704; [ ROCKING RIFT done ]
-	if sco-go-goo is false, max-down;
+	if sco-go-goo is true:
+		now to-number of show shoe is -3;
+	else:
+		now to-number of show shoe is -5203;
 	moot lazy loud crazy crowd;
 	now player has light lute;
 
@@ -1089,6 +1101,7 @@ a goodrhyme rule (this is the vc-tight-tease rule):
 this is the vr-tight-tease rule:
 	now sco-tight-tease is true;
 	say "You figure, if you can't beat [']em, join [']em, or just pretend to. You demand something more risque, which the slight sleaze is unable to provide. This doesn't win the war, but it wins a small, satisfying pointless side battle.[line break]Okay, yeah, I may've said this isn't that sort of game, but you're only getting a bonus point here, and this one just fit too well.";
+	if sco-plight-please is true, declue-here;
 
 a goodrhyme rule (this is the vc-bright-breeze rule):
 	if player is not in slight sleaze, unavailable;
@@ -1159,6 +1172,7 @@ a goodrhyme rule (this is the vc-chic-shaming rule):
 this is the vr-chic-shaming rule:
 	now sco-chic-shaming is true;
 	say "You segue from bleak blaming to an effortless, unavoidable, flowing conclusion, your voice rising to a crescendo for your main point. Bam!";
+	now from-number of freak framing is 5306;
 	if sco-clique-claiming is true:
 		declue-here;
 	else:
@@ -1368,7 +1382,7 @@ a goodrhyme rule (this is the vc-turning-trite rule):
 		vcp "Oh no! Is the story really getting that bad? Still ... that might be useful, in some context, somehow.";
 		not-yet;
 	if sco-plus-plaque is false:
-		vcp "That is just talk, until you have something physical to notarize that [the sprite] may swing this way.";
+		vcp "That is just talk, until you have something physical to notarize that this might, indeed, apply to [the sprite].";
 		not-yet;
 	if sco-turning-trite is true:
 		vcal "Somehow, you already managed to win the game. This should not happen.";
@@ -1480,7 +1494,12 @@ to check-red-rose:
 	if shoal-core-score is 2:
 		say "Things are livelier now. Plants come into bloom, etc. Of course, there is a red rose, because there always is one during such a quick transformation. You take it. Who knows where it may come in handy?";
 		now player has red rose;
-		declue-here;
+		if sco-lore-lols is false:
+			say "lols not done.";
+			now to-number of gore goals is -5404;
+		else:
+			say "lols done.";
+			now from-number of gore goals is -3;
 		remove-spoke 5805; [SHOCKING SHIFT done]
 	else:
 		say "You've almost filled this area's potential. Just a little more life...";
@@ -1507,8 +1526,7 @@ this is the stew-and-brew rule:
 	if shoe-concessions is 2:
 		say "With a reliable source of food and drink (which, man, they smell pretty good) a crowd starts to gather. You can't do any rhyming stuff to them directly, but perhaps there's some general stuff you can shout.";
 		move lazy loud crazy crowd to show shoe;
-		now from-number of show shoe is 10907;
-		now to-number of show shoe is 15810;
+		now to-number of show shoe is 10607;
 
 a goodrhyme rule (this is the shoe-crowd-yet rule):
 	if not shoe-food-drink:
