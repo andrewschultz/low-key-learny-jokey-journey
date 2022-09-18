@@ -312,7 +312,7 @@ by one point
 by one point
 
 >grokking grift
-You already figured everything about grokking grift.
+You already gained insight into grokking grift.
 
 ##RBRS-SHUFFLEEND=3
 ##RBRS-SHUFFLESTART=4

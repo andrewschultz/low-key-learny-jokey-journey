@@ -6,6 +6,7 @@
 #-- use SCT.PY to verify alternate verb solutions
 #-- use HCH.PY to verify room/thing homonyms
 #--
+#--
 
 # for when/if we hit glulx:
 # glulx-game: /home/andrew/prt/debug-low-key-learny-jokey-journey.ulx
@@ -70,6 +71,11 @@ TSV:## minimum walkthrough	## walkthrough with all points	## walkthrough with al
 
 >au 2
 
+@ver
+#ttc-table-of-readables-train-tree
+>read train tree
+There are three ways to enter the train tree: under writing saying WAYNE (WHEE), JANE G, or DANE D/LANE LEE. They all look about the same.
+
 @gong
 >guide gong
 You are now repelled by a guide gong if you try to go down a path where you have nothing game-critical to do in any branches.
@@ -83,6 +89,7 @@ You are now blocked from paths where no branches contain any point-scoring activ
 You set homonym detection to on.
 
 @mis
+====alphabetize on
 #ttc-table-of-general-good-guesses-choppin-chart
 >choppin chart
 There are only three regions, and the name isn't really important.
@@ -91,9 +98,28 @@ There are only three regions, and the name isn't really important.
 >coppin cart
 No policemen drive by. They might be corrupt, anyway.
 \\
+#ttc-table-of-general-good-guesses-earning-right
+>earning right
+Well, that's what you hope to find!
+\\
+#ttc-table-of-general-good-guesses-ferning-fright
+>ferning fright
+There are no terrorist plants worth summoning in Low-Key Learny Jokey Journey.
+\\
 #ttc-table-of-general-good-guesses-mopping-mart
 >mopping mart
 Surely this is more exciting than a trip for cleaning supplies.
+lurking lump
+\\
+#ttc-table-of-general-good-guesses-ride-wrong
+>ride wrong
+There is no fourth option for the guide gone, but you do have a chance for a heel turn at game's end.
+!lurking lump
+\\
+#ttc-table-of-general-good-guesses-side-song
+>side song
+This is a no-frills text adventure. No music, no graphics, besides the middling-at-best cover art.
+====alphabetize off
 
 @rej
 ====alphabetize on
@@ -219,6 +245,10 @@ Surely this is more exciting than a trip for cleaning supplies.
 \\
 #testcase-unavailable-table-of-verb-checks-vc-gad-gunk-rule
 >gad gunk
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-gawking-gift-rule
+>gawking gift
 {$REJECT}
 \\
 #testcase-unavailable-table-of-verb-checks-vc-gee-junk-rule
@@ -373,16 +403,12 @@ It looks like you may have tried to refer to the room name, or part of it. You o
 >splain splat
 {$REJECT}
 \\
-#testcase-unavailable-table-of-verb-checks-vc-gawking-gift-rule
->gawking gift
-{$REJECT}
-\\
 #testcase-unavailable-table-of-verb-checks-vc-stow-stew-rule
 >stow stew
 {$REJECT}
 \\
-#testcase-unavailable-table-of-verb-checks-vc-turning-trite-rule
->turning trite
+#testcase-unavailable-table-of-verb-checks-vc-thread-throws-rule
+>thread throws
 {$REJECT}
 \\
 #testcase-unavailable-table-of-verb-checks-vc-throw-through-rule
@@ -395,6 +421,10 @@ It looks like you may have tried to refer to the room name, or part of it. You o
 \\
 #testcase-unavailable-table-of-verb-checks-vc-trolled-trend-rule
 >trolled trend
+{$REJECT}
+\\
+#testcase-unavailable-table-of-verb-checks-vc-turning-trite-rule
+>turning trite
 {$REJECT}
 \\
 #testcase-unavailable-table-of-verb-checks-vc-umm-out-rule
@@ -436,19 +466,14 @@ Homonyms aren't the way here. Look at the train tree for clues. There will be la
 Homonyms aren't the way here. Look at the train tree for clues. A bee would provide nature and all but nothing staying.
 
 @mis
-#ttc-table-of-bane-be-sane-see-guesses-sprain-spree
->sprain spree
-While this is technically correct, you don't want to injure yourself or others.
-\\
+====alphabetize on
 #ttc-table-of-bane-be-sane-see-guesses-cane-key
 >cane key
 You don't need any key to unlock the tree.
-lurking lump
 \\
 #ttc-table-of-bane-be-sane-see-guesses-feign-fee
 >feign fee
 You whine about how Low-Key Learny Jokey Journey costs money on top of being a waste of time. Nobody listens.
-!lurking lump
 \\
 #ttc-table-of-bane-be-sane-see-guesses-main-me
 >main me
@@ -458,9 +483,9 @@ You are the main character in this adventure, but don't let it go to your head.
 >pain p
 Low-Key Learny Jokey Journey is nonviolent and hopefully devoid of bathroom humor.
 \\
-#+ttc-table-of-bane-be-sane-see-guesses-pain-p-pee
->pain pee
-Low-Key Learny Jokey Journey is nonviolent and hopefully devoid of bathroom humor.
+#ttc-table-of-bane-be-sane-see-guesses-sprain-spree
+>sprain spree
+While this is technically correct, you don't want to injure yourself or others.
 \\
 #ttc-table-of-bane-be-sane-see-guesses-vain-v
 >vain v
@@ -481,6 +506,7 @@ The lump can't keep track of things. That would be the Leet Learner.
 #ttc-table-of-lurking-lump-guesses-perking-pump
 >perking pump
 I don't want to know.
+====alphabetize off
 
 @!min
 >plain plea
@@ -496,7 +522,7 @@ You already made a plain plea.
 
 @ver
 >listen
-You still think you hear echoes of your plain plea.
+You think you still hear echoes of your plain plea, but it's time to move on.
 
 @gt
 >gt tree
@@ -550,6 +576,7 @@ Most special commands are more than one word, because of the rhyme-pairs involve
 "Poring Pox!" the roaring rocks, uh, roar.
 
 @mis
+====alphabetize on
 #ttc-table-of-roaring-rocks-guesses-flooring-flocks
 >flooring flocks
 You don't need to be dive-bombed by aerial predators. And I don't have the artistic ability to show you majestic birds, either. Sorry.
@@ -561,6 +588,7 @@ You don't need to catch anything, and denting the rocks would not reveal anythin
 #ttc-table-of-roaring-rocks-guesses-storing-stocks
 >storing stocks
 That's what the rocks will become, but you want something simpler and smaller and shorter.
+====alphabetize off
 
 @gt
 >n
@@ -597,14 +625,16 @@ Most special commands are more than one word, because of the rhyme-pairs involve
 You already uncovered the boring box.
 
 @mis
+====alphabetize on
+#+ttc-table-of-roaring-rocks-guesses-poring-pouring-pox
+>poring pox
+You don't need to catch anything, and denting the rocks would not reveal anything further.
+\\
 #+ttc-table-of-roaring-rocks-guesses-storing-stocks
 >storing stocks
 riff
 !rocks will become
-\\
-#+ttc-table-of-roaring-rocks-guesses-poring-pouring-pox
->poring pox
-You don't need to catch anything, and denting the rocks would not reveal anything further.
+====alphabetize off
 
 >open box
 
@@ -615,24 +645,14 @@ Hmm. There's a reading. It must relate "Storing Stocks" to the erstwhile boring 
 A dot bounces around the leet learner's grid and winds up at (-1.00, -3.00.)
 The leet learner is giving a funny readout. You could maybe climb UP to the old rocks and get another reading.
 
-@ver
-#ttc-table-of-color-clues---eat-earner--
-#ttc-table-of-color-clues--beat-burner--
-#ttc-table-of-color-clues--cheat-churner-
-#ttc-table-of-color-clues--meet-mourner-
-#ttc-table-of-color-clues-conceit-concerner
-#testcase-common-readables-table-of-readables-leet-learner
->read leet learner
-Some text matches up with where the needle nose might spin. It's a bit of a stretch, in some cases, but you figure the more help the better.
-CONCEIT CONCERNER is written to the left.
-  CHEAT CHURNER   is written to the center-left.
-   MEET MOURNER   is written to the center.
-   BEAT BURNER    is written to the center-right.
-    EAT EARNER    is written to the right.
-
 @ha
 >ha half
 The Leet Learner is already set to Ha Half.
+
+@mis
+#ttc-table-of-leet-learner-guesses-yeet-yearner
+>yeet yearner
+Yes, with such a device, you can reach for the skies.
 
 >n
 
@@ -676,6 +696,7 @@ The HA HALF button on your Leet Learner lights up green--you must be close to so
 {$GREENCORE}
 
 @mis
+====alphabetize on
 #ttc-table-of-mad-monk-guesses-brad-brunk
 >brad brunk
 The mad monk needs no name, proper or familiar.
@@ -702,11 +723,15 @@ The mad monk fails to look for a lost pig or learn anything.
 \\
 #ttc-table-of-mad-monk-guesses-had-hunk
 >had hunk
-You try to claim the mad monk has lost muscle, but the insult doesn't really land.
+You try to claim the mad monk has lost muscle, but the insult doesn't really land, because with age comes wisdom, and stuff.
 \\
 #ttc-table-of-mad-monk-guesses-lad-lunk
 >lad lunk
 Both insults are a bit too trivial to land.
+\\
+#ttc-table-of-mad-monk-guesses-pad-punk
+>pad punk
+No mercenary hoodlum walks by, which might actually be a good thing for the hoodlum.
 \\
 #ttc-table-of-mad-monk-guesses-plaid-plunk
 >plaid plunk
@@ -719,6 +744,7 @@ Alas, a bunch of skunks fail to assault the mad monk.
 #ttc-table-of-mad-monk-guesses-thad-thunk
 >thad thunk
 The mad monk needs no name, proper or familiar.
+====alphabetize off
 
 @gt
 #+testcase-exits-roaring-rocks
@@ -738,18 +764,6 @@ by one point
 >gad gunk
 You already insulted the mad monk's cleanliness.
 !by one point
-\\
-##BALANCE UNDOS
->sad sunk
-by one point
-\\
-#testcase-postreject-table-of-verb-checks-vc-sad-sunk-rule
->sad sunk
-You already insulted the mad monk's serenity.
-!by one point
-\\
->undo
->undo
 
 @hin
 ##balance undos
@@ -758,6 +772,47 @@ You already insulted the mad monk's serenity.
 >ll mad monk
 A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
 \\
+>undo
+>undo
+
+@rej
+##balance undos
+>au 0
+>sad sunk
+by one point
+\\
+#testcase-postreject-table-of-verb-checks-vc-sad-sunk-rule
+>sad sunk
+You already insulted the mad monk's serenity.
+\\
+#testcase-prereject-table-of-verb-checks-vc-bad-bunk-rule
+>bad bunk
+!by one point
+Whenever you're ready, just type BAD BUNK to move on.
+\\
+#testcase-think-table-of-verb-checks-vc-bad-bunk-rule
+>think
+(CAN DO NOW) You can say BAD BUNK again to move on when you've poked the Mad Monk enough.
+\\
+>undo
+>undo
+>undo
+>undo
+\\
+>bad bunk
+by one point
+\\
+#testcase-prereject-table-of-verb-checks-vc-sad-sunk-rule
+>sad sunk
+!by one point
+Whenever you're ready, just type SAD SUNK to move on.
+\\
+#testcase-think-table-of-verb-checks-vc-sad-sunk-rule
+>think
+(CAN DO NOW) You can say SAD SUNK again to move on when you've poked the Mad Monk enough.
+\\
+>undo
+>undo
 >undo
 >undo
 
@@ -786,7 +841,6 @@ You already insulted the mad monk's truthfulness.
 !by one point
 
 @!alt
-\\
 >sad sunk
 by one point
 }}SCORE++
@@ -799,13 +853,15 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, -3.00.)
 ##balance undos
 >gonear rare reach
 \\
+====alphabetize on
 #ttc-table-of-rare-reach-guesses-pear-peach
 >pear peach
-If you ever are in a position to ask for fruit, that might be helpful indeed.
+Very interesting! If you are ever in a position to ask for fruit, that might be helpful indeed.
 \\
 #ttc-table-of-rare-reach-guesses-spare-speech
 >spare speech
 You know, something even more spare than that might work, in the right place.
+====alphabetize off
 \\
 >undo
 >undo
@@ -902,6 +958,7 @@ north: No-Nudge Slow Sludge.
 Quite quiet site. Sigh, it ...
 
 @mis
+====alphabetize on
 #ttc-table-of-no-nudge-slow-sludge-guesses-fo-foe-fudge
 >foe fudge
 This isn't Willy Wonka's Chocolate Factory. Err, Charlie's.
@@ -913,6 +970,15 @@ No former New York Giants head football coach appears.
 #ttc-table-of-no-nudge-slow-sludge-guesses-po-poe-pudge
 >po pudge
 Weight gain won't help here.
+\\
+#ttc-table-of-no-nudge-slow-sludge-guesses-stow-studge
+>stow studge
+No ghost of Saki arrives to tell you to eat your Filboid Studge and don't let it sit.
+\\
+#ttc-table-of-no-nudge-slow-sludge-guesses-trow-trudge
+>trow trudge
+No need for Middle English here.
+====alphabetize off
 
 @gt
 >w
@@ -969,6 +1035,11 @@ You already neutralized the no-nudge slow sludge.
 #testcase-room-names-one-warm-stun-storm
 /^One Warm Stun-Storm
 
+@mis
+#ttc-table-of-one-warm-stun-storm-guesses-none-nun-norm
+>none norm
+You wouldn't want to instill strict morals on this place. Or deny Mr. Peterson an extension of his bar tab.
+
 @gt
 #ttc-table-of-noways-warm-stun-storm
 >w
@@ -1000,6 +1071,7 @@ You hear a whooshing as a door swings in from nowhere. It doesn't seem to lead a
 {$GREENBONUS}
 
 @mis
+====alphabetize on
 #ttc-table-of-miss-more-diss-door-guesses-chiz-chore
 >chiz chore
 You briefly get your Nigel Molesworth on.
@@ -1031,6 +1103,7 @@ The miss-more-diss door remains intact.
 #ttc-table-of-miss-more-diss-door-guesses-wiz-war
 >wiz war
 No lightning bolt spell blasts the door.
+====alphabetize off
 
 @hom
 #testcase-homonym-table-of-verb-checks-pore
@@ -1083,7 +1156,6 @@ A dot bounces around the leet learner's grid and winds up at (-0.50, -0.50.)
 A dot bounces around the leet learner's grid and winds up at (-1.00, 0.00.)
 
 @rej
-\\
 #testcase-postreject-table-of-verb-checks-vc-done-dorm-rule
 >done dorm
 You already summoned the done dorm.
@@ -1138,6 +1210,7 @@ south: One Warm Stun-Storm.
 There are even bigger and more intimidating trees every way except south.
 
 @mis
+====alphabetize on
 #ttc-table-of-thunk-tree-trunk-guesses-be-bunk
 >be bunk
 You crave neither a tall bed nor outright lies.
@@ -1153,6 +1226,10 @@ You try to monetize or formulate olfactory and/or musical funkiness but fail.
 #ttc-table-of-thunk-tree-trunk-guesses-flee-flunk
 >flee flunk
 Aw, c'mon, you've gotten pretty far. You shouldn't need to run in shame.
+\\
+#ttc-table-of-thunk-tree-trunk-guesses-klee-clunk-klunk
+>klee klunk
+The landscape stays its own form of surreal.
 \\
 #ttc-table-of-thunk-tree-trunk-guesses-me-monk
 >me monk
@@ -1175,6 +1252,7 @@ The weather is not cold enough, and there's no snow.
 #ttc-table-of-thunk-tree-trunk-guesses-whee-whunk
 >whee whunk
 You shouldn't be thrilled to go around socking stuff.
+====alphabetize off
 
 @ha
 #testcase-ha-half-table-of-verb-checks-10-see
@@ -1235,7 +1313,7 @@ You already discovered useful junk in the form of FREE FRUIT.
 \\
 #testcase-prereject-table-of-verb-checks-vc-pear-peach-rule
 >pear peach
-The FREE FRUIT sputters a bit, almost as if it sticks its tongue about you. Weird as it sounds, you may have to show appreciation for it.
+The FREE FRUIT sputters a bit, almost as if it sticks its tongue out at you. Weird as it sounds, you may have to show appreciation for it.
 \\
 #testcase-think-table-of-verb-checks-vc-pear-peach-rule
 >think
@@ -1251,13 +1329,14 @@ You can make a PEAR PEACH once you're happy enough to receive free fruit.
 {$GREENCORE}
 
 @mis
+====alphabetize on
 #ttc-table-of-free-fruit-guesses-be-bee-boot
 >be boot
 The free fruit does not change into footwear.
 \\
 #ttc-table-of-free-fruit-guesses-flee-flea-flute
 >flee flute
-There is no music or need to run away.
+There is no need to chase animals away with music.
 \\
 #ttc-table-of-free-fruit-guesses-gee-jute
 >gee jute
@@ -1266,6 +1345,14 @@ No, there's actual fruit inside.
 #ttc-table-of-free-fruit-guesses-glee-glute
 >glee glute
 You pat yourself on the back for eating so much fruit to keep your stomach in shape.
+\\
+#ttc-table-of-free-fruit-guesses-he-hee-hoot
+>hee hoot
+You make a small show of being grateful for the prospect of free fruit. But you may need to be more demonstrative.
+\\
+#ttc-table-of-free-fruit-guesses-key-coot
+>key coot
+No animal appears to unlock the free fruit.
 \\
 #ttc-table-of-free-fruit-guesses-me-moot
 >me moot
@@ -1283,6 +1370,10 @@ The free fruit dispenser is not broken. No need to start it up again.
 >see soot
 The free fruit dispenses fruit, not clothes or coal.
 \\
+#ttc-table-of-free-fruit-guesses-she-shee-chute-shoot
+>shee shoot
+No gun or passage down appears.
+\\
 #ttc-table-of-free-fruit-guesses-ski-scoot
 >ski scoot
 You can just walk to get around.
@@ -1290,10 +1381,26 @@ You can just walk to get around.
 #ttc-table-of-free-fruit-guesses-tea-toot-tout
 >tea tout
 Perhaps the tea would be fruit-flavored and refreshing, but it wouldn't be useful.
+You probably want to figure what free fruit there is now. Perhaps traveling some more will suggest something.
+\\
+>pear peach
+The FREE FRUIT sputters a bit, almost as if it sticks its tongue out at you. Weird as it sounds, you may have to show appreciation for it.
+\\
+>tea tout
+Perhaps the tea would be fruit-flavored and refreshing, but it wouldn't be useful.
+In fact, it looks like you already guessed what the hybrid free fruit is elsewhere. Perhaps a look around would help you recall what you guessed.
+>undo
+>undo
+====alphabetize off
 
 @hin
 >ll fruit
 A dot bounces around the leet learner's grid and winds up at (0.00, -1.00.)
+
+@hom
+#testcase-homonym-table-of-verb-checks-vh-whee-woot-rule-wee
+>wee woot
+whee WRONG
 
 >whee woot
 by one point
@@ -1307,6 +1414,11 @@ Nothing comes up. You've changed FREE FRUIT as much as you needed to.
 #testcase-postreject-table-of-verb-checks-vc-whee-woot-rule
 >whee woot
 You already appreciated the free fruit sufficiently.
+
+@mis
+#+ttc-table-of-free-fruit-guesses-he-hee-hoot
+>hee hoot
+You make a small show of being grateful for the prospect of free fruit. But you already did enough.
 
 @hom
 #testcase-homonym-table-of-verb-checks-pair-pare
@@ -1364,17 +1476,23 @@ That guide gong, again, rings to notify you that you don't need to go back throu
 You don't need to restrict things here but open them up.
 
 @mis
+====alphabetize on
 #ttc-table-of-trust-track-guesses-cussed-cack
 >cussed cack
-There's a useful item here. More useful than such words!
+There's a useful item to discover here. More useful than such words!
+\\
+#ttc-table-of-trust-track-guesses-gust-gack
+>gust gack
+No stinky cloud rumbles in to push Jack away.
 \\
 #ttc-table-of-trust-track-guesses-lust-lack
 >lust lack
-Jack would still be bugging you in that state.
+You make sure to put impure thoughts aside so you're really focused on a totally cool text adventure. Yay, you!
 \\
 #ttc-table-of-trust-track-guesses-rust-rack
 >rust rack
 That would be a useless item.
+====alphabetize off
 
 @rej
 #testcase-postreject-table-of-verb-checks-vc-crust-crack-rule
@@ -1401,7 +1519,7 @@ You can make the CRUST CRACK once Just Jack is gone.
 {$GREENCORE}
 
 @hom
-#testcase-homonym-table-of-verb-checks-bust-back-rule-bust
+#testcase-homonym-table-of-verb-checks-vh-bust-back-rule-bust
 >bust back
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right.
 
@@ -1426,17 +1544,19 @@ A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
 Just Jack has already been bussed back.
 
 @mis
-#ttc-table-of-trust-track-guesses-must-mack
->must mack
-You don't need memories of Just Jack.
-\\
+====alphabetize on
 #+ttc-table-of-trust-track-guesses-cussed-cack
 >cussed cack
 No, the sack will be worthwhile.
 \\
-#+ttc-table-of-trust-track-guesses-lust-lack
->lust lack
-You continue to put impure thoughts aside to focus on a really cool text adventure.
+#+ttc-table-of-trust-track-guesses-gust-gack
+>gust gack
+No stinky cloud rumbles in.
+\\
+#ttc-table-of-trust-track-guesses-must-mack
+>must mack
+This is a comedy puzzle game, not a romance game.
+====alphabetize off
 
 @gt
 #ttc-table-of-noways-trust-track
@@ -1469,6 +1589,17 @@ by one point
 @hin
 >ll
 Nothing comes up. The general area here has been changed enough.
+
+@mis
+====alphabetize on
+#ttc-table-of-sus-sack-guesses-pus-puss-pack
+>pus pack
+You don't need a cat, or a mound of pus. Think more positive!
+\\
+#ttc-table-of-sus-sack-guesses-wuss-wack-whack
+>wuss wack
+No, something more positive and flattering is inside.
+====alphabetize off
 
 @gt
 #+testcase-exits-trust-track
@@ -1514,6 +1645,7 @@ EXIT LIST:
 south: Trust Track.
 
 @mis
+====alphabetize on
 #ttc-table-of-rare-reach-guesses-air-ere-err-each
 >err each
 There aren't enough things to be each-worthy here.
@@ -1524,15 +1656,24 @@ But this area is sparse enough already.
 \\
 #ttc-table-of-rare-reach-guesses-chair-cher-cheech
 >cher cheech
-Celebrities can't help you here.
+Celebrities from the '80s can't help you here, even though they're more worth celebrity than celebrities these days, when text adventures aren't properly respected.
 \\
 #ttc-table-of-rare-reach-guesses-lair-leech-leach
 >lair leech
-You don't need to summon enemies.
+You don't need to summon enemies or drain anything here.
+\\
+#ttc-table-of-rare-reach-guesses-prayer-preach
+>prayer preach
+The goal of Low-Key Learny Jokey Journey is not to become some televangelist.
+\\
+#ttc-table-of-rare-reach-guesses-snare-sneech-sneetch
+>snare sneetch
+You consider the possibility, but then you're not sure whether you want to snare a star-bellied one. So much for that.
 \\
 #ttc-table-of-rare-reach-guesses-tear-tare-teach
 >tear teach
 There is nobody to teach, much less verbally tear while you do so.
+====alphabetize off
 
 @ha
 #testcase-ha-half-table-of-verb-checks-16-bare
@@ -1575,10 +1716,7 @@ The water encompasses you every way except back south.
 You already changed the Rare Reach.
 
 @mis
-#+ttc-table-of-rare-reach-guesses-spare-speech
->spare speech
-But that is less spare than a pear peach.
-\\
+====alphabetize on
 #ttc-table-of-deep-dune-guesses-beep-boon
 >beep boon
 No, you don't need a Geiger counter to search through the dune.
@@ -1587,6 +1725,10 @@ No, you don't need a Geiger counter to search through the dune.
 >creep croon
 I couldn't get R. Kelly or Robin Thicke to appear here. Sorry!
 \\
+#ttc-table-of-deep-dune-guesses-keep-coon
+>keep coon
+The dune would not be stable enough for wild animals like that to make a home.
+\\
 #ttc-table-of-deep-dune-guesses-leap-loon
 >leap loon
 Alas, nobody odd comes by and dives into the deep dune to help you find what's there. Nobody at all.
@@ -1594,6 +1736,19 @@ Alas, nobody odd comes by and dives into the deep dune to help you find what's t
 #ttc-table-of-deep-dune-guesses-peep-poon
 >peep poon
 Low-Key Learny Jokey Journey is the wrong environment for that, and not just because it's text-based.
+\\
+#ttc-table-of-deep-dune-guesses-streep-strewn
+>streep strewn
+Honestly! Her acting style goes well beyond just lazing about.
+\\
+#ttc-table-of-deep-dune-guesses-sweep-swoon
+>sweep swoon
+You have neither a broom nor a favorite team who overpowers all playoff foes.
+\\
+#+ttc-table-of-rare-reach-guesses-spare-speech
+>spare speech
+But that is less spare than a pear peach.
+====alphabetize off
 
 @rej
 #testcase-prereject-table-of-verb-checks-vc-reap-rune-rule
@@ -1668,7 +1823,7 @@ You already reaped a rune.
 @mis
 #+ttc-table-of-deep-dune-guesses-beep-boon
 >beep boon
-No, you don't need a Geiger counter to search further through the dune.
+{$REJECT2}
 
 >s
 
@@ -1777,15 +1932,24 @@ EXIT LIST:
 south: Hun Harm Fun Farm.
 
 @mis
+# many "what if we come back later" test cases ??
+\\
+====alphabetize on
 #ttc-table-of-nonoon-guesses-beau-bow-boon
 >bow boon
-You require no ranged weapon.
+You require no ranged weapon or physical attractiveness.
 \\
-# ?? this test case and rho rune could be in another tricky file odd-case-mistakes "prospective dune"
+#ttc-table-of-nonoon-guesses-blow-balloon
+>blow balloon
+This ... this is worth a nudge-point, if not strictly a rhyming pair. But the whole procedure is a bit more mystical.
 \\
 #ttc-table-of-nonoon-guesses-doe-doh-dough-dune
 >doh dune
 The dune is elsewhere in this game.
+\\
+#ttc-table-of-nonoon-guesses-ho-hewn
+>ho hewn
+This is what to intone once things are all right. They are not, yet.
 \\
 #ttc-table-of-nonoon-guesses-jo-joe-june
 >joe june
@@ -1809,7 +1973,10 @@ But you already have the rune.
 \\
 #ttc-table-of-nonoon-guesses-toe-tow-toon-tune
 >toe tune
-Nothing toe-tapping starts playing.
+Nothing toe-tapping starts playing, nor are any cartoon characters dragged across the landscape.
+\\
+#was = post-jail
+====alphabetize off
 
 @rej
 #testcase-prereject-table-of-verb-checks-vc-co-coon-rule
@@ -1960,12 +2127,12 @@ This being a jail, you can't walk out. You have to find a weak link or something
 There are no clear safe exits. It looks like you need to solve a puzzle to find your way out of here.
 
 @mis
+====alphabetize on
 #ttc-table-of-jotty-jail-guesses-botty-bawdy-bail-bale
->botty bail
+>bawdy bale
 You don't need a dirty story, and money won't get you out of here.
 \\
-#+ttc-table-of-jotty-jail-guesses-botty-bawdy-bail-bale
->bawdy bale
+>botty bail
 You don't need a dirty story, and money won't get you out of here.
 \\
 #ttc-table-of-jotty-jail-guesses-dotty-doughty-dale
@@ -1977,12 +2144,11 @@ Perhaps there is a dale beyond, but going dotty or staying doughty isn't the way
 Don't give up! I believe in you!
 \\
 #ttc-table-of-jotty-jail-guesses-hottie-hotty-hail-hale
->hotty hail
-Such thoughts at a time like this won't help you get out.
-\\
-#+ttc-table-of-jotty-jail-guesses-hottie-hotty-hail-hale
 >hottie hale
-Such thoughts at a time like this won't help you get out.
+Such useless thoughts at a time like this! Less escapism, more escape!
+\\
+>hotty hail
+Such useless thoughts at a time like this! Less escapism, more escape!
 \\
 #ttc-table-of-jotty-jail-guesses-scotty-scale
 >scotty scale
@@ -2003,6 +2169,7 @@ You focus on what sort of land is outside, ignoring how you might actually get o
 #ttc-table-of-jotty-jail-guesses-trotty-trail
 >trotty trail
 No trail opens up, but even if it did, the snotty snail would push you back from it.
+====alphabetize off
 
 @ha
 #testcase-ha-half-table-of-verb-checks-25-grail
@@ -2071,7 +2238,7 @@ by one point
 @gt
 #ttc-table-of-noways-high-hub
 >n
-The only way out of the High Hub is telling the lift where you want to go. Okay, the only non-lethal way.
+The only way out of the High Hub (well, currently,) is telling the locking lift where you want to go. Okay, the only non-lethal way.
 \\
 #testcase-exits-high-hub
 >exits
@@ -2098,18 +2265,7 @@ You see zero of six settings filled in:
 You've completed zero areas beyond the High Hub.
 
 @mis
-#ttc-table-of-locking-lift-guesses-knocking-niffed
->knocking niffed
-Smells and knocking aren't the way to go here.
-\\
-#ttc-table-of-locking-lift-guesses-socking-sift
->socking sift
-You wouldn't want to sift through punches to receive.
-\\
-#ttc-table-of-locking-lift-guesses-whocking-whiffed
->whocking whiffed
-You wouldn't want to attack someone and miss.
-\\
+====alphabetize on
 #ttc-table-of-high-hub-guesses-cly-club
 >cly club
 You try to go old-school finding an so-old-school-schools-didn't-exist weapon, but alas, it doesn't work.
@@ -2129,6 +2285,10 @@ You consider making a mistake to impress someone. After all, being too perfect m
 #ttc-table-of-high-hub-guesses-nigh-nub
 >nigh nub
 You suspect some small stuff or other is around.
+\\
+#ttc-table-of-high-hub-guesses-pie-pub
+>pie pub
+Alas, the high hub is not expansive enough to fit such an establishment.
 \\
 #ttc-table-of-high-hub-guesses-rye-wry-rub
 >rye rub
@@ -2157,6 +2317,39 @@ Alas, there is no tub to tie.
 #ttc-table-of-high-hub-guesses-try-trub
 >try trub
 You'll have to look harder than that to find trouble. But it is close.
+\\
+#ttc-table-of-high-hub-guesses-why-wub
+>why wub
+You think back to a Philip K. Dick short story.
+\\
+#ttc-table-of-locking-lift-guesses-balking-biffed
+>balking biffed
+You don't want to go somewhere you might get punched with no response.
+\\
+#ttc-table-of-locking-lift-guesses-clocking-clift-cliffed
+>clocking cliffed
+You're already way above ground, clocking mad rhymes.
+\\
+#ttc-table-of-locking-lift-guesses-knocking-niffed
+>knocking niffed
+Smells and knocking aren't the way to go here.
+\\
+#ttc-table-of-locking-lift-guesses-socking-sift
+>socking sift
+Sifting through punches thrown at you would be a bit too violent, here.
+\\
+#ttc-table-of-locking-lift-guesses-spocking-spiffed
+>spocking spiffed
+Alas, not even one famous fictitious spaceman takes you to adventurous parts unknown.
+\\
+#ttc-table-of-locking-lift-guesses-whocking-whiffed
+>whocking whiffed
+You wouldn't want to attack someone and miss.
+\\
+#ttc-table-of-lurking-lump-guesses-working-whump-wump
+>working whump
+The lump will act with whatever sound effects it chooses.
+====alphabetize off
 
 @ha
 #testcase-ha-half-table-of-verb-checks-29-bye
@@ -2212,6 +2405,7 @@ Storm
 {$GREENBONUS}
 
 @mis
+====alphabetize on
 #ttc-table-of-sturdy-stalk-guesses-birdy-balk
 >birdy balk
 No bird makes loud noises.
@@ -2235,6 +2429,7 @@ A nerdy knock, whatever it is, wouldn't get a favorable response.
 #ttc-table-of-sturdy-stalk-guesses-purdy-pock
 >purdy pock
 No, pock marks wouldn't make the stalk look better.
+====alphabetize off
 
 @hin
 >ll stalk
@@ -2320,7 +2515,7 @@ That guide gong, again, rings to notify you that you don't need to go back throu
 @gt
 #+ttc-table-of-noways-high-hub
 >n
-The only way out of the High Hub, besides going back down the sturdy stalk, is telling the lift where you want to go. Okay, the only non-lethal way.
+The only way out of the High Hub, besides going back down the sturdy stalk, is telling the locking lift where you want to go. Okay, the only non-lethal way.
 \\
 #+testcase-exits-high-hub
 >exits
@@ -2411,6 +2606,7 @@ You can THROW THROUGH the main act once they're here and you have a hyped-up, we
 You can call the CROW CREW as performers once you have food and drink for a crowd.
 
 @mis
+====alphabetize on
 #ttc-table-of-no-new-show-shoe-guesses-blow-blew-blue
 >blow blue
 You blow off steam that you haven't quite revitalized the No-New-Show Shoe yet.
@@ -2419,9 +2615,17 @@ You blow off steam that you haven't quite revitalized the No-New-Show Shoe yet.
 >cocu
 Your knowledge of former footballers is impressive. (So is mine, since I caught this, eh?)
 \\
+#ttc-table-of-no-new-show-shoe-guesses-doe-do-due-dew
+>doe dew
+This isn't a nature park. Other places need animals, though.
+\\
 #ttc-table-of-no-new-show-shoe-guesses-doh-do-due-dew
 >doh due
-There is talking about action or deserving stuff, and there is doing it.
+No need for regrets.
+\\
+#ttc-table-of-no-new-show-shoe-guesses-dough-do-due-dew
+>dough dew
+Bread isn't quite the right food for a concert.
 \\
 #ttc-table-of-no-new-show-shoe-guesses-fo-foe-foo-phoo
 >fo foo
@@ -2435,13 +2639,25 @@ You want entertainers who crave the spotlight, not avoid it. Also, you'd prefer 
 >lo lew
 You don't need to call out anyone by name.
 \\
+#ttc-table-of-no-new-show-shoe-guesses-lo-low-loo
+>lo loo
+The No-New-Show Shoe is already equipped with those, out of sight.
+\\
 #ttc-table-of-no-new-show-shoe-guesses-mo-moo
 >mo moo
 Cows would not make very exciting performers, but another animal, or people named after them, might.
 \\
+#ttc-table-of-no-new-show-shoe-guesses-no-know-knew-new
+>know knew
+The last thing people want to be thinking about is knowledge, or how cliched a show might be if you think about it too much.
+\\
 #ttc-table-of-no-new-show-shoe-guesses-oh-oo-ooh
 >oh ooh
 That's a bit too generic a sound to make, but it gives you ideas.
+\\
+#ttc-table-of-no-new-show-shoe-guesses-po-pew
+>po pew
+The show ahead is not particularly religious.
 \\
 #ttc-table-of-no-new-show-shoe-guesses-po-poo-pooh
 >po pooh
@@ -2453,7 +2669,7 @@ No, we want a positive environment, here.
 \\
 #ttc-table-of-no-new-show-shoe-guesses-slow-slue-slew
 >slow slue
-But this place was a backwater when you got here.
+But we want to make this place less of a backwater. Gotta speed things up so the performance starts!
 \\
 #ttc-table-of-no-new-show-shoe-guesses-so-sue
 >so sue
@@ -2462,6 +2678,11 @@ You don't want to either take or face legal action, which is a lot less exciting
 #ttc-table-of-no-new-show-shoe-guesses-toe-two-too
 >toe two
 Counting your digits would be exciting for nobody.
+\\
+#ttc-table-of-no-new-show-shoe-guesses-woe-whoah-whoa-woo
+>whoah woo
+That's a bit too generic a sound to make, but it gives you ideas.
+====alphabetize off
 
 @ha
 #testcase-ha-half-table-of-verb-checks-44-flow
@@ -2676,6 +2897,7 @@ by one point
 You already hyped the crowd up completely. Time to give them a show!
 
 @mis
+====alphabetize on
 #+ttc-table-of-no-new-show-shoe-guesses-blow-blew-blue
 >blow blue
 You blow off steam that you haven't quite revitalized the Whoah-Woo-Show Shoe yet.
@@ -2687,6 +2909,7 @@ Cows would not make very exciting performers, unlike the Crow Crew.
 #+ttc-table-of-no-new-show-shoe-guesses-oh-oo-ooh
 >oh ooh
 That's a bit too generic a sound to make, and you've already made the right ones, anyway.
+====alphabetize off
 
 @hom
 #testcase-homonym-table-of-verb-checks-threw
@@ -2736,6 +2959,7 @@ You can reason DESPITE DISPUTE once there's something that makes you depressed.
 You can grow trite trees with the RIGHT ROOT once you've fought back against the slight sleaze.
 
 @mis
+====alphabetize on
 #ttc-table-of-light-lute-guesses-bite-boot
 >bite boot
 That would be no fun.
@@ -2769,11 +2993,10 @@ Polite polluters are the worst kind, because they're harder to point out.
 Creative, but not terribly helpful.
 \\
 #ttc-table-of-light-lute-guesses-sight-cite-site-suit
->cite suit
+>sight suit
 The light lute is too artsy to beget a business suit or a lawsuit.
 \\
-#+ttc-table-of-light-lute-guesses-sight-cite-site-suit
->sight suit
+>cite suit
 The light lute is too artsy to beget a business suit or a lawsuit.
 \\
 #ttc-table-of-light-lute-guesses-tight-toot
@@ -2783,6 +3006,7 @@ You fail to drag that sort of noise from the lute.
 #ttc-table-of-light-lute-guesses-white-woot
 >white woot
 While it's okay to be white, it's not okay to be all IT'S OKAY TO BE WHITE.
+====alphabetize off
 
 @rej
 #testcase-postreject-table-of-verb-checks-vc-rocking-rift-rule
@@ -2823,17 +3047,34 @@ Exploring the darkness would be unwise. The only way out is entering the lift.
 You can't go in any direction, but you can ENTER the locking lift to go back to High Hub.
 
 @mis
+====alphabetize on
+#ttc-table-of-sore-souls-gore-goals-guesses-boar-bowls
+>boar bowls
+Boars would be too rowdy for here.
+\\
 #ttc-table-of-sore-souls-gore-goals-guesses-bore-bowls
 >bore bowls
 You're trying to bring life here, not drain it.
+\\
+#ttc-table-of-sore-souls-gore-goals-guesses-cor-core-coals
+>core coals
+Coal would not enliven such a place.
 \\
 #ttc-table-of-sore-souls-gore-goals-guesses-door-doles
 >door doles
 No, this place doesn't need more doors.
 \\
+#ttc-table-of-sore-souls-gore-goals-guesses-nor-knolls
+>nor knolls
+You don't need to deprive this place of landscape.
+\\
 #ttc-table-of-sore-souls-gore-goals-guesses-poor-pour-pore-poles
 >poor poles
-Those would hardly liven the place up.
+Lifeless poles would not make this area cheerier.
+\\
+#ttc-table-of-sore-souls-gore-goals-guesses-poor-pour-pore-polls
+>poor polls
+Nothing could make this area drearier than polls.
 \\
 #ttc-table-of-sore-souls-gore-goals-guesses-roar-rolls-roles
 >roar rolls
@@ -2850,6 +3091,7 @@ Bringing animal pelts into a place coming to life doesn't quite work.
 #ttc-table-of-sore-souls-gore-goals-guesses-whore-holes
 >whore holes
 Now, now, this isn't that sort of game.
+====alphabetize off
 
 @ha
 #testcase-ha-half-table-of-verb-checks-38-shoals
@@ -2936,20 +3178,20 @@ by one point
 }}SCORE++
 
 @ha
-#testcase-ha-half-table-of-verb-checks-39-four
+#+testcase-ha-half-table-of-verb-checks-39-foals
+>zfour foals
+{$YELLOWCORE}
+\\
+#+testcase-ha-half-table-of-verb-checks-39-four
 >four zfoals
 {$GREENCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-40-moles
+#+testcase-ha-half-table-of-verb-checks-40-moles
 >zmore moles
 {$GREENCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-40-more
+#+testcase-ha-half-table-of-verb-checks-40-more
 >more zmoles
-{$GREENCORE}
-\\
-#testcase-ha-half-table-of-verb-checks-40-moles
->zmore moles
 {$GREENCORE}
 
 @hin
@@ -3040,9 +3282,15 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, -1.00.)
 You already populated the area with foals!
 
 @mis
+====alphabetize on
+#+ttc-table-of-sore-souls-gore-goals-guesses-cor-core-coals
+>core coals
+Coal would not enliven such a place further.
+\\
 #+ttc-table-of-sore-souls-gore-goals-guesses-store-stoles
 >store stoles
 Bringing animal pelts into a place coming to life doesn't quite work.
+====alphabetize off
 
 >more moles
 by one point
@@ -3051,7 +3299,11 @@ by one point
 @mis
 #this is back at High Hub after we got the red rose
 \\
-#ttc-table-of-red-rose-guesses-bed-bows
+====alphabetize on
+#ttc-table-of-red-rose-guesses-bed-beaus-bows
+>bed beaus
+Yeah, roses are romantic and all, but by now, you may guess this game's shtick is corny jokes.
+\\
 >bed bows
 You need no fancy place to sleep.
 \\
@@ -3065,7 +3317,7 @@ You don't need to brag about street cred, real or imagined.
 \\
 #ttc-table-of-red-rose-guesses-dead-does-dohs-doze
 >dead dohs
-You aren't here to kill animals or utter a Simpsonesque epithet.
+You aren't here to kill helpless animals or utter a Simpsonesque epithet. Or sleep on the job.
 \\
 #ttc-table-of-red-rose-guesses-ed-ohs-os
 >ed ohs
@@ -3105,11 +3357,12 @@ There are no sleds that need slowing.
 \\
 #ttc-table-of-red-rose-guesses-ted-tows-toes
 >ted tows
-You recall an add for a towing service.
+You recall an ad for a towing service.
 \\
 #ttc-table-of-red-rose-guesses-wed-woes
 >wed woes
 A sad, succinct tale, indeed.
+====alphabetize off
 
 @rej
 #testcase-postreject-table-of-verb-checks-vc-shocking-shift-rule
@@ -3157,13 +3410,53 @@ While you can go back into the lift, you suspect the route leads somewhere, once
 You can't go in any direction yet, but you can ENTER the locking lift to go back to High Hub.
 
 @mis
+====alphabetize on
+#ttc-table-of-bum-bout-rum-route-guesses-bum-boot
+>bum boot
+While 'Bout should indicate Route is pronounced with a long o, I'll let you have fun guessing.
+What would you do with only one boot?
+\\
+#ttc-table-of-bum-bout-rum-route-guesses-chum-chute
+>chum chute
+While 'Bout should indicate Route is pronounced with a long o, I'll let you have fun guessing.
+Misery loves company, but company doesn't love misery.
+\\
+#ttc-table-of-bum-bout-rum-route-guesses-come-coot
+>come coot
+While 'Bout should indicate Route is pronounced with a long o, I'll let you have fun guessing.
+This isn't the place to summon animals.
+\\
+#ttc-table-of-bum-bout-rum-route-guesses-crumb-kraut
+>crumb kraut
+You don't need a plate of food. You need spiritual nourishment.
+\\
 #ttc-table-of-bum-bout-rum-route-guesses-drum-drought
 >drum drought
 Thankfully, there's no percussion in the background.
 \\
+#ttc-table-of-bum-bout-rum-route-guesses-from-fruit
+>from fruit
+While 'Bout should indicate Route is pronounced with a long o, I'll let you have fun guessing.
+We already did stuff with fruit.
+\\
 #ttc-table-of-bum-bout-rum-route-guesses-gum-gout
 >gum gout
 But gout is in the toes, not the mouth.
+\\
+#ttc-table-of-bum-bout-rum-route-guesses-hum-hoot
+>hum hoot
+While 'Bout should indicate Route is pronounced with a long o, I'll let you have fun guessing.
+You try to scrounge up a tune. It's very bluesy!
+\\
+#ttc-table-of-bum-bout-rum-route-guesses-mum-moot
+>mum moot
+While 'Bout should indicate Route is pronounced with a long o, I'll let you have fun guessing.
+No matter how quiet things are, that won't stop negative voices in one's head.
+\\
+#ttc-table-of-bum-bout-rum-route-guesses-numb-newt
+>numb newt
+While 'Bout should indicate Route is pronounced with a long o, I'll let you have fun guessing.
+This isn't the place to summon animals.
 \\
 #ttc-table-of-bum-bout-rum-route-guesses-numb-nowt
 >numb nowt
@@ -3172,6 +3465,21 @@ Once you're more confident, you won't want to feel numb any more, and it'll just
 #ttc-table-of-bum-bout-rum-route-guesses-pum-pout
 >pump out
 Clever sleight-of-mouth, but I can't quite allow it.
+\\
+#ttc-table-of-bum-bout-rum-route-guesses-scum-scoot
+>scum scoot
+While 'Bout should indicate Route is pronounced with a long o, I'll let you have fun guessing.
+There are no scum here, just thoughts that make you feel negative.
+\\
+#ttc-table-of-bum-bout-rum-route-guesses-scum-scout
+>scum scout
+You don't want to call up an antagonist face-to-face.
+\\
+#ttc-table-of-bum-bout-rum-route-guesses-some-suit
+>some suit
+While 'Bout should indicate Route is pronounced with a long o, I'll let you have fun guessing.
+A better wardrobe would only help things look better, not be better.
+====alphabetize off
 
 @ha
 #testcase-ha-half-table-of-verb-checks-53-doubt
@@ -3289,11 +3597,12 @@ The only physical way out of these depths is up, though you can pull yourself ou
 #testcase-exits-nay-nope-slay-slope
 >exits
 EXIT LIST:
-up: Rum Route.
+up: Numb? NOWT!.
 
 @mis
 # could be tested once not automatically kicked back to lift ?? did/can do
 \\
+====alphabetize on
 #ttc-table-of-nay-nope-slay-slope-guesses-day-dope
 >day dope
 Reaffirming every day is dope is pretty positive and all, but you can do better.
@@ -3302,13 +3611,17 @@ Reaffirming every day is dope is pretty positive and all, but you can do better.
 >gray grope
 The object is not to be consumed by depression but to reduce its influence.
 \\
+#ttc-table-of-nay-nope-slay-slope-guesses-lay-lope
+>lay lope
+You make rudimentary plans to ambush something, even though there's nothing to ambush.
+\\
 #ttc-table-of-nay-nope-slay-slope-guesses-may-mope
 >may mope
 The object is not to be consumed by depression but to reduce its influence.
 \\
 #ttc-table-of-nay-nope-slay-slope-guesses-pay-pope
 >pay pope
-Don't surrender to religious corruption!
+Oh dear no. The proper way to surrender to religious corruption these days is to chuck money at televangelists. Get with the times!
 \\
 #ttc-table-of-nay-nope-slay-slope-guesses-ray-rope
 >ray rope
@@ -3325,6 +3638,7 @@ Building a long-lasting mine here would not make or keep things happier.
 #ttc-table-of-nay-nope-slay-slope-guesses-tray-tres-trope
 >tray trope
 You recognize a trope or twelve at play during your journeys.
+====alphabetize off
 
 @ha
 #testcase-ha-half-table-of-verb-checks-56-hey
@@ -3426,7 +3740,7 @@ You can only enter the lift or try to dispel the fright freeze and find a passag
 You can't go in any direction yet, but you can ENTER the locking lift to go back to High Hub.
 
 @mis
-\\
+====alphabetize on
 #ttc-table-of-slight-sleaze-guesses-bite-bees
 >bite bees
 Those wouldn't taste very good.
@@ -3463,17 +3777,22 @@ Bad grammar is pretty neutral on the sleaze scale.
 >sight seize
 There is enough to see, and seizing anything would be, uh, sleazy.
 \\
+#ttc-table-of-slight-sleaze-guesses-smite-smees
+>smite smees
+I'm afraid Never-Never Land is a few universes over.
+\\
 #ttc-table-of-slight-sleaze-guesses-sprite-sprees
 >sprite sprees
 Well, guzzling a two-liter pop bottle is less sleazy than doing the same with alcohol.
 \\
 #ttc-table-of-slight-sleaze-guesses-trite-trees
 >trite trees
-They will pop up once you removed the sleaze.
+They will pop up once you've removed the sleaze.
 \\
 #ttc-table-of-slight-sleaze-guesses-white-whees-wheeze
 >white wheeze
-Such sentiments are not strong enough to dispel sleaze.
+You imagine yourself reciting Philip Larkin's fine poem Sympathy in White Major to great applause. Unfortunately, the speaker in the poem being sleazy doesn't help your cause, here.
+====alphabetize off
 
 @ha
 #testcase-ha-half-table-of-verb-checks-58-tease-tees
@@ -3618,6 +3937,7 @@ EXIT LIST:
 north: Trite Trees.
 
 @mis
+====alphabetize on
 #ttc-table-of-freak-framing-seek-sameing-guesses-eek-aiming
 >eek aiming
 Yes, you do need to aim barbs at people.
@@ -3626,13 +3946,18 @@ Yes, you do need to aim barbs at people.
 >geek gaming
 Geek gaming, I suppose, has its own brand of conformism and conventions, so you can't quite use it as a shelter.
 \\
+#ttc-table-of-freak-framing-seek-sameing-guesses-leek-laming
+>leek laming
+Mangling plants is sort of nonconformist in its own way, I guess.
+\\
 #ttc-table-of-freak-framing-seek-sameing-guesses-meek-maiming-mameing-maming
 >meek maiming
-Unfortunately, in trying to start soft or end strong, you achieve neither.
+Sure, go ahead, sneak a few of your favorite arcade games in on MAME. I'll wait.
 \\
 #ttc-table-of-freak-framing-seek-sameing-guesses-teak-tique-taming
 >teak taming
 You need neither wood nor a boutique nor a critique.
+====alphabetize off
 
 @ha
 #testcase-ha-half-table-of-verb-checks-62-blaming
@@ -3757,11 +4082,11 @@ by one point
 @rej
 #testcase-postreject-table-of-verb-checks-vc-grokking-grift-rule
 >grokking grift
-You already figured everything about grokking grift.
+You already gained insight into grokking grift.
 
 @gong,prong
 >grokking grift
-You already figured everything about grokking grift.
+You already gained insight into grokking grift.
 
 ##RBRS-SHUFFLEEND=3
 ##RBRS-SHUFFLESTART=4
@@ -3806,6 +4131,7 @@ West is the only way out, other than the lift. You don't yet have the confidence
 You can't go in any direction yet, but you can ENTER the locking lift to go back to High Hub.
 
 @mis
+====alphabetize on
 #ttc-table-of-mad-most-cad-coast-guesses-gad-ghost
 >gad ghost
 You fail to scare anyone with this.
@@ -3825,6 +4151,7 @@ A post would offer scant protection against insults.
 #ttc-table-of-mad-most-cad-coast-guesses-tad-toast
 >tad toast
 There's no such thing as toasting someone with an insult halfway.
+====alphabetize off
 
 @rej
 #testcase-prereject-table-of-verb-checks-vc-rad-roast-rule
@@ -3936,6 +4263,9 @@ You can execute THREAD THROWS to make a net to catch the tight-tail white whale 
 Although the trite trail extends in all directions except, well, where the whale is, you'd get lost everywhere except back east.
 
 @mis
+# some test cases are wobbly here! This is before I allowed you to come back to the trail after beating the whale, for whatever reason you wanted to
+\\
+====alphabetize on
 #ttc-table-of-trite-trail-guesses-aight-ail
 >aight ail
 You resort to the vernacular to express your displeasure with enemies, real or imagined.
@@ -3948,9 +4278,6 @@ There is no bale to bite, and if you want to bail, you can just go back east.
 >bright braille
 There is no braille here.
 \\
-#the two below *could* have test cases if we are ever able to go back ??
-#however, right now, you're kicked back to the hub on killing the whale.
-\\
 #ttc-table-of-trite-trail-guesses-fight-fail
 >fight fail
 Don't despair!
@@ -3959,7 +4286,13 @@ Don't despair!
 >fright frail
 Don't despair!
 \\
-# add this test case if you don't go directly back to the lift ?? help -> have helped
+#ttc-table-of-trite-trail-guesses-height-hail-hale
+>height hale
+Alas, no airplane appears to destroy the tight-tail white whale.
+\\
+#ttc-table-of-trite-trail-guesses-kite-kale
+>kite kale
+No nutririous green kite appears.
 \\
 #ttc-table-of-trite-trail-guesses-quite-quail
 >quite quail
@@ -3968,6 +4301,7 @@ A quail would not help much against the tight-tail white whale.
 #ttc-table-of-trite-trail-guesses-shite-shale
 >shite shale
 Well, that would certainly make the trite trail less trite, in its own way.
+====alphabetize off
 
 @ha
 #testcase-ha-half-table-of-verb-checks-68-sail
@@ -4136,7 +4470,11 @@ by one point
 >ll red rose
 A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
 
-\\
+@rej
+#testcase-postreject-table-of-verb-checks-vc-thread-throws-rule
+>thread throws
+The rose probably only has so much thread. You should only use it to capture a big predator.
+
 @ha
 #testcase-ha-half-table-of-verb-checks-36-despite
 >despite zdispute
@@ -4200,9 +4538,14 @@ But this is a dead end. For now.
 You can't go in any direction yet, but you can ENTER the locking lift to go back to High Hub.
 
 @mis
+====alphabetize on
 #ttc-table-of-old-end-guesses-fold-fend
 >fold fend
 Folding and fending are contradictory.
+\\
+#ttc-table-of-old-end-guesses-polled-penned
+>polled penned
+Someone rushes by and ropes you into a corner you didn't know existed. They hand you a pen and a push-poll about how much you're enjoying Low-Key Learny Jokey Journey. Super-Great, Extra-Great, and ten other options. You feel compelled to check them all! Then you try to keep the pen they loaned you, but they remind you that if you're having so much fun, it'd just be wack to steal a pen in the process.
 \\
 #ttc-table-of-old-end-guesses-rolled-rend
 >rolled rend
@@ -4215,6 +4558,7 @@ Not quite. Commerce isn't at the end of all this.
 #ttc-table-of-old-end-guesses-told-tend
 >told tend
 Not quite. You weren't given instructions how to take care of things, and you probably can't pass them on.
+====alphabetize off
 
 @ha
 #testcase-ha-half-table-of-verb-checks-75-bend
@@ -4358,6 +4702,11 @@ EXIT LIST:
 north: (blocked.)
 
 @mis
+====alphabetize on
+#ttc-table-of-drain-drat-vain-vat-guesses-attain-a-tat
+>attain a tat
+Oh, your parents warned you that text adventures and D&D would lead to darker desires, but did you listen? Oh, no, you did not.
+\\
 #ttc-table-of-drain-drat-vain-vat-guesses-brain-brat
 >brain brat
 You don't want to fight annoying people with violence. Inanimate obstacles, yes. People, no.
@@ -4384,7 +4733,7 @@ Perhaps that will be laid out once you have figured how to get out of the vat.
 \\
 #ttc-table-of-drain-drat-vain-vat-guesses-pain-pat
 >pain pat
-You feel an intense pain.
+Not being Patrick Swayze's character in Road House, you admit the truism that pain, indeed, does hurt. And you grab where it hurts, briefly.
 \\
 #ttc-table-of-drain-drat-vain-vat-guesses-plain-plat
 >plain plat
@@ -4392,7 +4741,11 @@ The terrain is already pretty flat.
 \\
 #ttc-table-of-drain-drat-vain-vat-guesses-rain-rat
 >rain rat
-You don't need an animal friend.
+But you'd have no way to make it rain cats and dogs to catch the rat(s) after.
+\\
+#ttc-table-of-drain-drat-vain-vat-guesses-rain-reign-rat
+>reign rat
+You don't need an animal overlord.
 \\
 #ttc-table-of-drain-drat-vain-vat-guesses-sane-sat
 >sane sat
@@ -4417,6 +4770,7 @@ Alas, you have nothing to vandalize the premises with.
 #ttc-table-of-drain-drat-vain-vat-guesses-strain-strat
 >strain strat
 You contemplate a way to put your ultimate enemy under pressure.
+====alphabetize off
 
 @ha
 #testcase-ha-half-table-of-verb-checks-78-bane
@@ -4540,6 +4894,7 @@ No, you already trashed the (ex-)vat.
 With the splaining you do, you're ready to move on.
 
 @mis
+====alphabetize on
 #+ttc-table-of-drain-drat-vain-vat-guesses-chain-chat
 >chain chat
 More forceful talking was necessary here.
@@ -4553,6 +4908,7 @@ It looks like you may have tried to refer to the room name, or part of it. You o
 #+ttc-table-of-drain-drat-vain-vat-guesses-sane-sat
 >sane sat
 You convince yourself the vain vat was a great place to sort out your emotions.
+====alphabetize off
 
 @ha
 #testcase-ha-half-table-of-verb-checks-81-fed
@@ -4603,6 +4959,7 @@ north: Main Mat.
 @mis
 #these become the name of the location later, so they are only available when the market marquee is
 \\
+====alphabetize on
 #ttc-table-of-market-marquee-guesses-met-me
 >met me
 You will be met, but you need the right actions and attitude.
@@ -4638,6 +4995,7 @@ No, you don't need to mess things up that way, here.
 #ttc-table-of-threat-three-met-me-guesses-wet-wee-whee
 >wet whee
 No cool waterslide or pool appears. You still have business!
+====alphabetize off
 
 @ha
 #testcase-ha-half-table-of-verb-checks-82-free
@@ -4915,6 +5273,10 @@ You already made and gave the plus plaque to the Burning Bright Spurning Sprite!
 >gad gunk
 {$REJECT2}
 \\
+#testcase-moot-table-of-verb-checks-vc-gawking-gift-rule
+>gawking gift
+{$REJECT2}
+\\
 #testcase-moot-table-of-verb-checks-vc-gee-junk-rule
 >gee junk
 {$REJECT2}
@@ -5071,12 +5433,12 @@ That location or thing doesn't exist or isn't known to you yet.
 >splain splat
 {$REJECT2}
 \\
-#testcase-moot-table-of-verb-checks-vc-gawking-gift-rule
->gawking gift
-{$REJECT2}
-\\
 #testcase-moot-table-of-verb-checks-vc-stow-stew-rule
 >stow stew
+{$REJECT2}
+\\
+#testcase-moot-table-of-verb-checks-vc-thread-throws-rule
+>thread throws
 {$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-throw-through-rule
@@ -5120,8 +5482,9 @@ That location or thing doesn't exist or isn't known to you yet.
 @all
 85 out of 86
 \\
+#+ttc-table-of-general-good-guesses-earning-right
 >earning right
-*** Suck-Soul: Stuck! Stole! ***
+Suck-Soul: Stuck! Stole!
 Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
 \\
 >undo

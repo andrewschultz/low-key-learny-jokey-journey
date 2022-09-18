@@ -331,7 +331,7 @@ by one point
 
 #ttc-table-of-noways-high-hub
 >n
-The only way out of the High Hub is telling the lift where you want to go. Okay, the only non-lethal way.
+The only way out of the High Hub (well, currently,) is telling the locking lift where you want to go. Okay, the only non-lethal way.
 
 #testcase-exits-high-hub
 >exits
@@ -355,7 +355,7 @@ In this quasi-sacred valley, the only way out is back south.
 
 #+ttc-table-of-noways-high-hub
 >n
-The only way out of the High Hub, besides going back down the sturdy stalk, is telling the lift where you want to go. Okay, the only non-lethal way.
+The only way out of the High Hub, besides going back down the sturdy stalk, is telling the locking lift where you want to go. Okay, the only non-lethal way.
 
 #+testcase-exits-high-hub
 >exits
@@ -486,7 +486,7 @@ The only physical way out of these depths is up, though you can pull yourself ou
 #testcase-exits-nay-nope-slay-slope
 >exits
 EXIT LIST:
-up: Rum Route.
+up: Numb? NOWT!.
 
 >hey hope
 by one point

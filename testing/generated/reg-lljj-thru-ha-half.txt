@@ -528,20 +528,20 @@ The HA HALF button on your Leet Learner lights up yellow. Very dim, though. Perh
 >shore shoals
 by one point
 
-#testcase-ha-half-table-of-verb-checks-39-four
+#+testcase-ha-half-table-of-verb-checks-39-foals
+>zfour foals
+The HA HALF button on your Leet Learner lights up yellow.
+
+#+testcase-ha-half-table-of-verb-checks-39-four
 >four zfoals
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-40-moles
+#+testcase-ha-half-table-of-verb-checks-40-moles
 >zmore moles
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-40-more
+#+testcase-ha-half-table-of-verb-checks-40-more
 >more zmoles
-The HA HALF button on your Leet Learner lights up green.
-
-#testcase-ha-half-table-of-verb-checks-40-moles
->zmore moles
 The HA HALF button on your Leet Learner lights up green.
 
 ##RBRS-SHUFFLECONDITION=1>0

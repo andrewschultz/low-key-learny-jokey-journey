@@ -331,8 +331,9 @@ by one point
 
 85 out of 86
 
+#+ttc-table-of-general-good-guesses-earning-right
 >earning right
-*** Suck-Soul: Stuck! Stole! ***
+Suck-Soul: Stuck! Stole!
 Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
 
 >undo

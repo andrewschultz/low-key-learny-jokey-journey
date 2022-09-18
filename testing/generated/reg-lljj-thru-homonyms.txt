@@ -74,6 +74,10 @@ by one point
 >gee junk
 by one point
 
+#testcase-homonym-table-of-verb-checks-vh-whee-woot-rule-wee
+>wee woot
+whee WRONG
+
 >whee woot
 by one point
 
@@ -98,7 +102,7 @@ You don't need to reduce or duplicate the pear peach. It has a much bigger purpo
 >trussed
 You don't need to restrict things here but open them up.
 
-#testcase-homonym-table-of-verb-checks-bust-back-rule-bust
+#testcase-homonym-table-of-verb-checks-vh-bust-back-rule-bust
 >bust back
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right.
 

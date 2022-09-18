@@ -10,6 +10,10 @@
 
 >au 2
 
+#ttc-table-of-readables-train-tree
+>read train tree
+There are three ways to enter the train tree: under writing saying WAYNE (WHEE), JANE G, or DANE D/LANE LEE. They all look about the same.
+
 >listen
 You get the feeling your voice could add constructively to the noises, somehow, but it's not critical.
 
@@ -17,7 +21,7 @@ You get the feeling your voice could add constructively to the noises, somehow, 
 by one point
 
 >listen
-You still think you hear echoes of your plain plea.
+You think you still hear echoes of your plain plea, but it's time to move on.
 
 >jane g
 by one point
@@ -29,20 +33,6 @@ by one point
 by one point
 
 >open box
-
-#ttc-table-of-color-clues---eat-earner--
-#ttc-table-of-color-clues--beat-burner--
-#ttc-table-of-color-clues--cheat-churner-
-#ttc-table-of-color-clues--meet-mourner-
-#ttc-table-of-color-clues-conceit-concerner
-#testcase-common-readables-table-of-readables-leet-learner
->read leet learner
-Some text matches up with where the needle nose might spin. It's a bit of a stretch, in some cases, but you figure the more help the better.
-CONCEIT CONCERNER is written to the left.
-  CHEAT CHURNER   is written to the center-left.
-   MEET MOURNER   is written to the center.
-   BEAT BURNER    is written to the center-right.
-    EAT EARNER    is written to the right.
 
 >n
 
