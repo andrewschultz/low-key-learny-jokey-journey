@@ -147,6 +147,8 @@ learner-up-rocks is a number that varies.
 
 monk-bad-cue is a truth state that varies. [bad bunk or sad sunk cued if you run up the score?]
 
+gong-hub-warn is a truth state that varies. [nudges you to set the gong or prong if you haven't, in the hub]
+
 chapter rejected point events
 
 guessed-pear-peach is a truth state that varies.

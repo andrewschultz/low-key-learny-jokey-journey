@@ -128,6 +128,7 @@ definition: a room (called rm) is overall-go-useful:
 	now hunt-bonus-points is false;
 	reset-go-check;
 	if rm is go-useful, yes;
+	if player-room-allow-threshold is nothing-left, yes;
 	if player-room-allow-threshold is bonus-left:
 		now hunt-bonus-points is true;
 		reset-go-check;

@@ -852,6 +852,7 @@ this is the verb-checker rule:
 				let exact-cmd be whether or not the player's command matches the text "[first-of-ors of w1 entry][if there is a w2 entry] [first-of-ors of w2 entry][end if]", case insensitively;
 				if check-rule entry is vc-sad-sunk rule or check-rule entry is vc-bad-bunk rule:
 					say "Whenever you're ready, just type [b][the player's command in upper case][r] to move on.";
+					now think-cue entry is true;
 					the rule succeeds;
 				if think-cue entry is false:
 					say "[line break][one of][b]NOTE[r]: this command[if exact-cmd is false] (well, an equivalent, as there were alternate solutions)[end if] will be useful later, but you aren't ready to use it, yet. You can track commands like this by typing [b]THINK[r], which will also clue you if they now work.[or](useful command[if exact-cmd is false] (or a functionally equivalent alternate solution)[end if] again saved to [b]THINK[r] for later reference.)[stopping]";
@@ -866,7 +867,7 @@ this is the verb-checker rule:
 			if my-count is 3:
 				say "Ooh! You're close. You've probably juggled two valid solutions.";
 				the rule succeeds;
-			abide by the situational-cuing-reject rule;
+			abide-nlb the situational-cuing-reject rule;
 			process the run-rule entry;
 			if the rule failed:
 				now think-cue entry is true;
@@ -883,7 +884,7 @@ this is the verb-checker rule:
 			if zap-core-entry is true: [must be after "process the run-rule entry" or next LLP may not register]
 				blank out the core entry;
 				now zap-core-entry is false;
-			follow the score and thinking changes rule;
+			process the score and thinking changes rule;
 			if there is a core entry and core entry is false, check-lump-progress;
 			the rule succeeds;
 		if shut-scan is true, next;
@@ -910,8 +911,7 @@ this is the verb-checker rule:
 			next;
 	if local-ha-half-level > 0:
 		say "The [b]HA HALF[r] button on your Leet Learner lights up [if local-ha-half-level is 1]yellow[one of]--you must be close to a future solution[or][stopping][else]green[one of]--you must be close to something you can do now[or][stopping][end if][if new-point-to-get is false]. Oh, wait, you're just switching back to a rhyme you knew before. You must've mis-thought a word[else if brightness is false]. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win[else if local-post-hom is true]. Its brightness suggests your rhyme must be very close, indeed[end if].";
-		the rule succeeds;
-		abide by the ha-half-help rule;
+		abide-nlb the ha-half-help rule;
 	if local-post-hom is true:
 		if hom-row > 0:
 			choose row hom-row in table of verb checks;
@@ -1755,7 +1755,7 @@ rule for printing a parser error (this is the default parser error notification 
 		say "Most special commands are more than one word[if roaring rocks is visited], because of the rhyme-pairs involved[end if]";
 	else if number of words in the player's command is 0:
 		say "You think a bit";
-	else if number of words in the player's command is 2 and boring box is off-stage:
+	else if number of words in the player's command is 2 and boring box is not off-stage:
 		say "Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs";
 	else:
 		say "I couldn't parse that command. You don't need any more than two words long";
