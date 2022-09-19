@@ -341,19 +341,19 @@ A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
 by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (-1.83, -0.16.)
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
 
 >crow crew
 by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (-2.50, -0.50.)
+A dot bounces around the leet learner's grid and winds up at (-1.00, -0.50.)
 
 >ho who
 by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (-2.50, -0.50.)
+A dot bounces around the leet learner's grid and winds up at (-1.00, -0.50.)
 
 >yo you
 by one point
@@ -491,8 +491,8 @@ by one point
 A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (-1.00, -2.00.)
-However, it's really dim, as if you don't need to do or think whatever there is to do or think.
+You scan the area.
+Nothing comes up. The general area here has been changed enough.
 
 >s
 
@@ -509,7 +509,7 @@ A dot bounces around the leet learner's grid and winds up at (-0.50, 0.00.)
 by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (1.50, 0.00.)
+A dot bounces around the leet learner's grid and winds up at (3.00, 1.00.)
 However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 
 >clique claiming
@@ -609,7 +609,7 @@ However, it's really dim, as if you don't need to do or think whatever there is 
 by one point
 
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 
 >mocking miffed
 by one point

@@ -179,14 +179,14 @@ by one point
 >crow crew
 by one point
 
-#+testcase-room-names-no-new-show-shoe
-/^Whoah-Woo-Show Shoe
-
 >ho who
 by one point
 
 >yo you
 by one point
+
+#+testcase-room-names-no-new-show-shoe
+/^Whoah-Woo-Show Shoe
 
 >throw through
 by one point

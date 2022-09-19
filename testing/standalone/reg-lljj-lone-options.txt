@@ -40,10 +40,10 @@ You are already able to move freely between locations, even ones with nothing le
 !don't need to go back
 
 >pride prong
-You will now be blocked from locations with nothing left to do and be warned if there is a bonus point in a location you are about to visit.
+You are now blocked from paths where no branches contain any point-scoring activities, critical or bonus.
 
 >pride prong
-You will already be blocked from locations with nothing left to do and be warned if there is a bonus point in a location you are about to visit.
+You are already blocked from paths where no branches contain any point-scoring activities, critical or bonus.
 
 >stride strong
 You are now able to move freely between locations, even ones with nothing left to do.
@@ -52,9 +52,9 @@ You are now able to move freely between locations, even ones with nothing left t
 You are already able to move freely between locations, even ones with nothing left to do.
 
 >guide gong
-You will now be repelled by a guide gong if you try to enter a location where you have nothing game-critical to do.
+You are now repelled by a guide gong if you try to go down a path where you have nothing game-critical to do in any branches.
 
 >guide gong
-You will already be repelled by a guide gong if you try to enter a location where you have nothing game-critical to do.
+You are already repelled by a guide gong if you try to go down a path where you have nothing game-critical to do in any branches.
 
->
+>z

@@ -86,7 +86,7 @@ You are now blocked from paths where no branches contain any point-scoring activ
 
 @hom
 >two too
-You set homonym detection to on.
+You've tried an option you can't exercise until you get a hint item. You should, shortly.
 
 @mis
 ====alphabetize on
@@ -638,6 +638,10 @@ riff
 
 >open box
 
+@hom
+>two too
+Homonym detection is already set to on.
+
 @hin
 >ll
 You scan the area.
@@ -1106,9 +1110,9 @@ No lightning bolt spell blasts the door.
 ====alphabetize off
 
 @hom
-#testcase-homonym-table-of-verb-checks-pore
+#testcase-homonym-table-of-verb-checks-vh-piss-poor-rule-pore
 >piss pore
-The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
+A crude insult, not a crude image.
 
 @hin
 >ll door
@@ -1400,7 +1404,7 @@ A dot bounces around the leet learner's grid and winds up at (0.00, -1.00.)
 @hom
 #testcase-homonym-table-of-verb-checks-vh-whee-woot-rule-wee
 >wee woot
-whee WRONG
+You're thinking small. Be more enthusiastic!
 
 >whee woot
 by one point
@@ -1521,7 +1525,7 @@ You can make the CRUST CRACK once Just Jack is gone.
 @hom
 #testcase-homonym-table-of-verb-checks-vh-bust-back-rule-bust
 >bust back
-The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right.
+Violence isn't the answer, here, though you're close. You may wish to think of Jack differently.
 
 @hin
 >ll jack
@@ -2845,15 +2849,11 @@ You already put stew in the flue.
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (-1.83, -0.16.)
+A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
 
 >crow crew
 by one point
 }}SCORE++
-
-@min
-#+testcase-room-names-no-new-show-shoe
-/^Whoah-Woo-Show Shoe
 
 @rej
 #testcase-postreject-table-of-verb-checks-vc-crow-crew-rule
@@ -2867,7 +2867,7 @@ The Leet Learner shakes back and forth. Something you said sounded right, but it
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (-2.50, -0.50.)
+A dot bounces around the leet learner's grid and winds up at (-1.00, -0.50.)
 
 >ho who
 by one point
@@ -2885,11 +2885,15 @@ The Leet Learner shakes back and forth. Something you said sounded right, but it
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (-2.50, -0.50.)
+A dot bounces around the leet learner's grid and winds up at (-1.00, -0.50.)
 
 >yo you
 by one point
 }}SCORE++
+
+@min
+#+testcase-room-names-no-new-show-shoe
+/^Whoah-Woo-Show Shoe
 
 @rej
 #testcase-postreject-table-of-verb-checks-vc-yo-you-rule
@@ -3180,7 +3184,7 @@ by one point
 @ha
 #+testcase-ha-half-table-of-verb-checks-39-foals
 >zfour foals
-{$YELLOWCORE}
+{$GREENCORE}
 \\
 #+testcase-ha-half-table-of-verb-checks-39-four
 >four zfoals
@@ -3888,8 +3892,8 @@ by one point
 A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
 \\
 >ll
-A dot bounces around the leet learner's grid and winds up at (-1.00, -2.00.)
-However, it's really dim, as if you don't need to do or think whatever there is to do or think.
+You scan the area.
+Nothing comes up. The general area here has been changed enough.
 
 @gt
 #+ttc-table-of-noways-slight-sleaze
@@ -4041,7 +4045,7 @@ by one point
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (1.50, 0.00.)
+A dot bounces around the leet learner's grid and winds up at (3.00, 1.00.)
 However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 \\
 >clique claiming
@@ -4518,7 +4522,7 @@ by one point
 
 @hin
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 
 >mocking miffed
 by one point
@@ -5479,7 +5483,8 @@ That location or thing doesn't exist or isn't known to you yet.
 @min
 71 out of 86
 
-@all
+@mis
+#technically "all" but it is in the mistake tables
 85 out of 86
 \\
 #+ttc-table-of-general-good-guesses-earning-right

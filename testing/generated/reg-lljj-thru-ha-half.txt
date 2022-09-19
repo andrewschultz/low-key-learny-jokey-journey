@@ -530,7 +530,7 @@ by one point
 
 #+testcase-ha-half-table-of-verb-checks-39-foals
 >zfour foals
-The HA HALF button on your Leet Learner lights up yellow.
+The HA HALF button on your Leet Learner lights up green.
 
 #+testcase-ha-half-table-of-verb-checks-39-four
 >four zfoals

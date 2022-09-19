@@ -28,7 +28,7 @@ As you go on your way, who should block your way but a fervent Mad Monk? They ca
 by one point
 
 >sad sunk
-NOTE: this command will be useful later, but you aren't ready to use it, yet. You can track commands like this by typing THINK, which will also clue you if they now work.
+[NOTE: this nag will not appear again, and if you want to try good guesses against other enemies after they vanish, I have no problems if you UNDO.]
 
 >jj
 The lump glistens weirdly. Perhaps you've forgotten something you tried, which didn't work then, but it does, now. (THINK should give details.) Use it anyway?
@@ -50,7 +50,7 @@ You've discovered 1 of 12 good guesses available from the Mad Monk, and you have
 by one point
 
 >bad bunk
-NOTE: this command will be useful later, but you aren't ready to use it, yet. You can track commands like this by typing THINK, which will also clue you if they now work.
+[NOTE: this nag will not appear again, and if you want to try good guesses against other enemies after they vanish, I have no problems if you UNDO.]
 
 >jj
 The lump glistens weirdly. Perhaps you've forgotten something you tried, which didn't work then, but it does, now. (THINK should give details.) Use it anyway?
