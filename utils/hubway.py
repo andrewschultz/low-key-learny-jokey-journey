@@ -20,15 +20,15 @@ incl = "{include}"
 final_list = []
 
 for x in permutations(my_list):
-    if x.index(4) < x.index(2): #slight sleaze needs right root
-        continue
     if x.index(5) < x.index(2): #trite trail needs bright brute
+        continue
+    if x.index(5) < x.index(1): #trite trail needs thread throws
+        continue
+    if x.index(4) < x.index(2): #slight sleaze needs right root
         continue
     if x.index(3) < x.index(1): #rum route needs said sos
         continue
     if x.index(4) < x.index(1): #slight sleaze needs bred bros
-        continue
-    if x.index(5) < x.index(1): #trite trail need thread throws
         continue
     count += 1
     final_list.append(list(x))
