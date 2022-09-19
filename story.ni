@@ -897,7 +897,7 @@ this is the verb-checker rule:
 				if the player's command includes the posthom entry:
 					if rb-out is worth-parsing:
 						now local-post-hom is true;
-						if there is a hom-txt-rule entry, now hom-row is global-row-check;
+						now hom-row is global-row-check;
 		if ha-half is true and my-count is 1 and player has leet learner:
 			now vc-dont-print is true;
 			process the check-rule entry;
@@ -913,15 +913,17 @@ this is the verb-checker rule:
 				now new-point-to-get is true;
 				if core entry is true, now brightness is true;
 			next;
-	if local-ha-half-level > 0:
-		say "The [b]HA HALF[r] button on your Leet Learner lights up [if local-ha-half-level is 1]yellow[one of]--you must be close to a future solution[or][stopping][else]green[one of]--you must be close to something you can do now[or][stopping][end if][if new-point-to-get is false]. Oh, wait, you're just switching back to a rhyme you knew before. You must've mis-thought a word[else if brightness is false]. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win[else if local-post-hom is true]. Its brightness suggests your rhyme must be very close, indeed[end if].";
-		abide-nlb the ha-half-help rule;
 	if local-post-hom is true:
 		if hom-row > 0:
 			choose row hom-row in table of verb checks;
-			abide by the hom-txt-rule entry;
-		say "The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right.";
+			if there is a hom-txt-rule entry:
+				abide by the hom-txt-rule entry;
+			else:
+				say "The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right.";
 		abide by the two-too-help rule;
+	if local-ha-half-level > 0:
+		say "The [b]HA HALF[r] button on your Leet Learner lights up [if local-ha-half-level is 1]yellow[one of]--you must be close to a future solution[or][stopping][else]green[one of]--you must be close to something you can do now[or][stopping][end if][if new-point-to-get is false]. Oh, wait, you're just switching back to a rhyme you knew before. You must've mis-thought a word[else if brightness is false]. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win[else if local-post-hom is true]. Its brightness suggests your rhyme must be very close, indeed[end if].";
+		abide-nlb the ha-half-help rule;
 
 volume unsorted locations
 

@@ -63,7 +63,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "grotty"	"grail"	--	--	false	true	false	false	jotty jail	vc-grotty-grail rule	vr-grotty-grail rule	--	--
 "potty"	"pail"	--	--	false	true	false	false	jotty jail	vc-potty-pail rule	vr-potty-pail rule	--	--
 "knotty"	"nail"	"naughty"	--	false	true	true	false	jotty jail	vc-knotty-nail rule	vr-knotty-nail rule	--	--
-"piss"	"poor"	"pore"	--	false	true	false	false	--	vc-piss-poor rule	vr-piss-poor rule	--	"You can dismiss the [diss door] with [b]PISS POOR[r] [once-now of vc-piss-poor rule] you've re-summoned or revisited it."
+"piss"	"poor"	"pore"	vh-piss-poor rule	false	true	false	false	--	vc-piss-poor rule	vr-piss-poor rule	--	"You can dismiss the [diss door] with [b]PISS POOR[r] [once-now of vc-piss-poor rule] you've re-summoned or revisited it."
 "bye"	"bub"	"buy/by"	--	false	true	false	false	high hub	vc-bye-bub rule	vr-bye-bub rule	--	-- [lift llp]
 "wordy"	"walk"	--	--	false	true	false	false	NNSS	vc-wordy-walk rule	vr-wordy-walk rule	--	-- [llp after lift llp]
 "shocking"	"shift"	--	--	false	true	true	false	High Hub	vc-shocking-shift rule	vr-shocking-shift rule	--	-- [start hub] [remember these aren't alphabetized since some need to be completed before others]
@@ -523,6 +523,8 @@ a goodrhyme rule (this is the vc-piss-poor rule):
 		vcp "You'll need to summon the [diss door], with or without profanity.";
 		not-yet;
 	ready;
+
+this is the vh-piss-poor rule: say "A crude insult, not a crude image.";
 
 this is the vr-piss-poor rule:
 	now sco-piss-poor is true;
