@@ -185,7 +185,7 @@ a goodrhyme rule (this is the vc-gad-gunk rule):
 this is the vr-gad-gunk rule:
 	now sco-gad-gunk is true;
 	say "Chiding the monk's cleanliness, groundless or otherwise, is an effective insult, though it doesn't win the war. Have a bonus point.";
-	if warn-monk is true, current-table-note table of mad monk guesses;
+	if warn-monk is true, current-table-note-x table of mad monk guesses;
 
 a goodrhyme rule (this is the vc-bad-bunk rule):
 	if mad monk is not fungible, unavailable;
@@ -843,6 +843,7 @@ this is the vr-yo-you rule:
 	say "'Yo! YOU!' you cry, and there's a slightly undignified call-and-response, featuring both you and the crowd asking 'Ho! Who?' and responding. It's not brilliant discourse, but everyone's all jazzed for a bigger show now.";
 	now from-number of show shoe is 10907;
 	change-shoe-number 5203;
+	print-the-loc;
 
 a goodrhyme rule (this is the vc-crow-crew rule):
 	if player is not in show shoe, unavailable;
@@ -858,7 +859,6 @@ this is the vr-crow-crew rule:
 	now sco-crow-crew is true;
 	say "The Crow Crew appears! They look ready to give a performance replete with humor, wit, song, pyrotechnics, and so forth. You just need to find a way to facilitate a grand entrance.";
 	move crow crew to show shoe;
-	print-the-loc;
 	change-shoe-number 5404;
 
 a goodrhyme rule (this is the vc-throw-through rule):
@@ -1490,8 +1490,6 @@ to take-lift (rm - a room):
 		move delight dilute to high hub;
 
 to remove-spoke (nu - a number):
-	decrease to-number of locking lift by nu;
-	if to-number of locking lift is 0, now to-number of locking lift is 5706;
 	take-lift High Hub;
 	if gong-hub-warn is false:
 		now gong-hub-warn is true;
@@ -1509,7 +1507,7 @@ a liftsummon rule for a room (called rm) (this is the lift won't budge rule):
 		say "The lift doesn't move, since those words are what got you here.";
 		the rule succeeds;
 	if the player is in Old End:
-		say "The lift doesn't move. You could enter it if you like, but your destiny's ahead.";
+		say "The lift wheezes. You could [b]ENTER[r] it to return to [high hub], but your destiny's ahead.";
 		the rule succeeds;
 
 [hub 1. shore]

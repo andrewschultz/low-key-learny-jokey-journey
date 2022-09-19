@@ -270,7 +270,6 @@ mist-cmd(topic)	mist-rule	got-yet	leet-rule	mist-txt
 "tear/tare teach"	--	false	need-bare-beach rule	"There is nobody to teach, much less verbally tear while you do so."
 
 this is the need-pear-peach rule:
-	now guessed-pear-peach is true;
 	if sco-pear-peach is false, the rule succeeds;
 	the rule fails;
 
