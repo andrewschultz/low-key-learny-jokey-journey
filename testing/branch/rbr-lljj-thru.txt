@@ -2561,6 +2561,10 @@ by one point
 #testcase-room-names-no-new-show-shoe
 /^No-New-Show Shoe
 
+@rej
+>rocking rift
+The lift doesn't move, since those words are what got you here.
+
 @gt
 #ttc-table-of-noways-new-show-shoe
 >n
@@ -3041,6 +3045,10 @@ by one point
 #testcase-room-names-sore-souls-gore-goals
 /^Sore Souls' Gore Goals
 
+@rej
+>shocking shift
+The lift doesn't move, since those words are what got you here.
+
 @gt
 #ttc-table-of-noways-gore-goals
 >n
@@ -3401,6 +3409,10 @@ by one point
 #testcase-room-names-rum-route
 /^Bum-'Bout Rum Route
 
+@rej
+>gawking gift
+The lift doesn't move, since those words are what got you here.
+
 @gt
 #ttc-table-of-noways-rum-route
 >n
@@ -3730,6 +3742,10 @@ by one point
 @min
 #testcase-room-names-slight-sleaze
 /^Slight Sleaze
+
+@rej
+>grokking grift
+The lift doesn't move, since those words are what got you here.
 
 @gt
 #ttc-table-of-noways-slight-sleaze
@@ -4117,6 +4133,9 @@ by one point
 /^Mad-Most-Cad Coast
 
 @rej
+>docking diffed
+The lift doesn't move, since those words are what got you here.
+\\
 #testcase-prereject-table-of-verb-checks-vc-thread-throws-rule
 >thread throws
 The rose probably only has so much thread. You should only use it to capture a big predator.
@@ -4531,6 +4550,22 @@ by one point
 @min
 #testcase-room-names-old-end
 /^Old End
+
+@rej
+>docking diffed
+The lift wheezes. You could ENTER it to return to High Hub, but your destiny's ahead.
+\\
+>gawking gift
+The lift wheezes. You could ENTER it to return to High Hub, but your destiny's ahead.
+\\
+>grokking grift
+The lift wheezes. You could ENTER it to return to High Hub, but your destiny's ahead.
+\\
+>rocking rift
+The lift wheezes. You could ENTER it to return to High Hub, but your destiny's ahead.
+\\
+>shocking shift
+The lift wheezes. You could ENTER it to return to High Hub, but your destiny's ahead.
 
 @gt
 #ttc-table-of-noways-old-end

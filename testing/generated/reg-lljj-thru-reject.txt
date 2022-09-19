@@ -758,6 +758,9 @@ No need to say good-bye twice. That's just awkward, besides, just typing DOWN or
 >rocking rift
 by one point
 
+>rocking rift
+The lift doesn't move, since those words are what got you here.
+
 #testcase-prereject-table-of-verb-checks-vc-bro-brew-rule
 >bro brew
 That's a good idea, but you have nowhere reliable to store such a beverage! Well, not yet.
@@ -893,6 +896,9 @@ You already brought life back to the Whoah-Woo-Show Shoe. You don't need to go b
 >shocking shift
 by one point
 
+>shocking shift
+The lift doesn't move, since those words are what got you here.
+
 #testcase-prereject-table-of-verb-checks-vc-night-newt-rule
 >night newt
 Such animals would make this area nicer, but it's too desolate for them here right now.
@@ -981,6 +987,9 @@ You already took care of the shocking shift!
 >gawking gift
 by one point
 
+>gawking gift
+The lift doesn't move, since those words are what got you here.
+
 #testcase-prereject-table-of-verb-checks-vc-umm-out-rule
 >umm out
 You can't just come in here cold like that! Maybe with the right preparation, an "umm, out" would be more forceful.
@@ -1046,6 +1055,9 @@ You already took care of the Rum Route!
 
 >grokking grift
 by one point
+
+>grokking grift
+The lift doesn't move, since those words are what got you here.
 
 #testcase-prereject-table-of-verb-checks-vc-plight-please-rule
 >plight please
@@ -1132,6 +1144,9 @@ You already gained insight into grokking grift.
 
 >docking diffed
 by one point
+
+>docking diffed
+The lift doesn't move, since those words are what got you here.
 
 #testcase-prereject-table-of-verb-checks-vc-thread-throws-rule
 >thread throws
@@ -1246,6 +1261,21 @@ by one point
 
 >mocking miffed
 by one point
+
+>docking diffed
+The lift wheezes. You could ENTER it to return to High Hub, but your destiny's ahead.
+
+>gawking gift
+The lift wheezes. You could ENTER it to return to High Hub, but your destiny's ahead.
+
+>grokking grift
+The lift wheezes. You could ENTER it to return to High Hub, but your destiny's ahead.
+
+>shocking shift
+The lift wheezes. You could ENTER it to return to High Hub, but your destiny's ahead.
+
+>rocking rift
+The lift wheezes. You could ENTER it to return to High Hub, but your destiny's ahead.
 
 #testcase-prereject-table-of-verb-checks-vc-mold-mend-rule
 >mold mend

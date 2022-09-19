@@ -565,10 +565,12 @@ a goodrhyme rule (this is the vc-docking-diffed rule):
 		if mad most cad coast is overall-go-useful, ready;
 		vcal "You already conquered [the whale]. No need to go back.";
 		already-done;
+	abide-nlb the lift-jump-pass rule;
 	ready;
 
 this is the vr-docking-diffed rule:
 	if sco-docking-diffed is false, lift-adjust 5706;
+	abide by the lift won't budge rule for mad most cad coast;
 	now sco-docking-diffed is true;
 	say "The locking lift leads you [one of]to a shore where you'd expect a watercraft, but there is none[or]back to the [cad coast][stopping].";
 	take-lift mad most cad coast;
@@ -579,10 +581,12 @@ a goodrhyme rule (this is the vc-grokking-grift rule):
 		if slight sleaze is overall-go-useful, ready;
 		vcal "You already gained insight into grokking grift.";
 		already-done;
+	abide-nlb the lift-jump-pass rule;
 	ready;
 
 this is the vr-grokking-grift rule:
 	if sco-grokking-grift is false, lift-adjust 5805;
+	abide by the lift won't budge rule for slight sleaze;
 	say "You wonder if you are up to understanding seediness. But it is too late, by the time you're in the lift.";
 	now sco-grokking-grift is true;
 	take-lift Slight Sleaze;
@@ -593,10 +597,12 @@ a goodrhyme rule (this is the vc-rocking-rift rule):
 		if show shoe is overall-go-useful, ready;
 		vcal "You already brought life back to the [show shoe]. You don't need to go back.";
 		already-done;
+	abide-nlb the lift-jump-pass rule;
 	ready;
 
 this is the vr-rocking-rift rule:
 	if sco-rocking-rift is false, lift-adjust 5704;
+	abide by the lift won't budge rule for show shoe;
 	say "[if sco-rocking-rift is false]You enter the Locking Lift and wind up in what seems to be a large amphitheater. It's empty, but it could put on a decent show[else]Back to the [show shoe][end if].";
 	now sco-rocking-rift is true;
 	take-lift Show Shoe;
@@ -607,10 +613,12 @@ a goodrhyme rule (this is the vc-shocking-shift rule):
 		if sore souls gore goals is overall-go-useful, ready;
 		vcal "You already took care of the shocking shift!";
 		already-done;
+	abide-nlb the lift-jump-pass rule;
 	ready;
 
 this is the vr-shocking-shift rule:
 	if sco-shocking-shift is false, lift-adjust 5805;
+	abide by the lift won't budge rule for gore goals;
 	now sco-shocking-shift is true;
 	say "The locking lift lurches with what is indeed a shocking shift...";
 	take-lift Sore Souls Gore Goals;
@@ -621,10 +629,12 @@ a goodrhyme rule (this is the vc-gawking-gift rule):
 		if bum bout rum route is overall-go-useful, ready;
 		vcal "You already took care of the Rum Route!";
 		already-done;
+	abide-nlb the lift-jump-pass rule;
 	ready;
 
 this is the vr-gawking-gift rule:
 	if sco-gawking-gift is false, lift-adjust 5704;
+	abide by the lift won't budge rule for rum route;
 	now sco-gawking-gift is true;
 	say "You see a vision of kids ripped off during the holidays. You wind up [one of][or]back [stopping]in...";
 	take-lift Rum Route;
@@ -1466,6 +1476,9 @@ to say rune-cue: if player does not have rho rune, say "[run paragraph on] You f
 
 [hub 0. lift and transport]
 
+a goodrhyme rule (this is the lift-jump-pass rule):
+	if player is not in high hub and current action is jerkingjumping, jump-reject;
+
 to say try-miffed: now tried-mocking-miffed is true;
 
 to take-lift (rm - a room):
@@ -1488,6 +1501,16 @@ to remove-spoke (nu - a number):
 to lift-adjust (nu - a number):
 	decrease to-number of locking lift by nu;
 	if to-number of locking lift is 0, now to-number of locking lift is 5606;
+
+the liftsummon rules are a room based rulebook.
+
+a liftsummon rule for a room (called rm) (this is the lift won't budge rule):
+	if the player is in rm:
+		say "The lift doesn't move, since those words are what got you here.";
+		the rule succeeds;
+	if the player is in Old End:
+		say "The lift doesn't move. You could enter it if you like, but your destiny's ahead.";
+		the rule succeeds;
 
 [hub 1. shore]
 
