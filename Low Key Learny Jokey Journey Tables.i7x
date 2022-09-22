@@ -517,14 +517,14 @@ this is the vr-knotty-nail rule:
 	if sco-grotty-grail is false, max-down;
 	take-lift High Hub;
 
+this is the vh-piss-poor rule: say "A crude insult, not a crude image.";
+
 a goodrhyme rule (this is the vc-piss-poor rule):
 	if miss more diss door is off-stage or miss more diss door is moot, unavailable;
 	if miss more diss door is not fungible:
 		vcp "You'll need to summon the [diss door], with or without profanity.";
 		not-yet;
 	ready;
-
-this is the vh-piss-poor rule: say "A crude insult, not a crude image.";
 
 this is the vr-piss-poor rule:
 	now sco-piss-poor is true;
@@ -559,37 +559,21 @@ this is the vr-wordy-walk rule:
 	say "You take a nice long wordy walk, and it fills you with ideas and things to try when you go back to [high hub].";
 	declue sturdy stalk;
 
-a goodrhyme rule (this is the vc-docking-diffed rule):
+a goodrhyme rule (this is the vc-shocking-shift rule):
 	if locking lift is not fungible, unavailable;
-	if sco-thread-throws is true:
-		if mad most cad coast is overall-go-useful, ready;
-		vcal "You already conquered [the whale]. No need to go back.";
+	if shoal-core-score is 2:
+		if sore souls gore goals is overall-go-useful, ready;
+		vcal "You already took care of the shocking shift!";
 		already-done;
 	abide-nlb the lift-jump-pass rule;
 	ready;
 
-this is the vr-docking-diffed rule:
-	if sco-docking-diffed is false, lift-adjust 5706;
-	abide by the lift won't budge rule for mad most cad coast;
-	now sco-docking-diffed is true;
-	say "The locking lift leads you [one of]to a shore where you'd expect a watercraft, but there is none[or]back to the [cad coast][stopping].";
-	take-lift mad most cad coast;
-
-a goodrhyme rule (this is the vc-grokking-grift rule):
-	if locking lift is not fungible, unavailable;
-	if sco-bred-bros is true:
-		if slight sleaze is overall-go-useful, ready;
-		vcal "You already gained insight into grokking grift.";
-		already-done;
-	abide-nlb the lift-jump-pass rule;
-	ready;
-
-this is the vr-grokking-grift rule:
-	if sco-grokking-grift is false, lift-adjust 5805;
-	abide by the lift won't budge rule for slight sleaze;
-	say "[one of]You wonder there is a way to understand con artistry without becoming one. As you enter the lift, you reflect that you seem to know when someone is pulling your leg, but they always talk you into believing them. How to break that cycle?[or]There is still grift to be grokked.[stopping]";
-	now sco-grokking-grift is true;
-	take-lift Slight Sleaze;
+this is the vr-shocking-shift rule:
+	if sco-shocking-shift is false, lift-adjust 5805;
+	abide by the lift won't budge rule for gore goals;
+	now sco-shocking-shift is true;
+	say "[one of]You reflect on how we all want big changes, but we're uncomfortable with them happening just this way.[or]The [lift] lurches again with a shift shocking enough even though you know it's coming...[stopping]";
+	take-lift Sore Souls Gore Goals;
 
 a goodrhyme rule (this is the vc-rocking-rift rule):
 	if locking lift is not fungible, unavailable;
@@ -607,22 +591,6 @@ this is the vr-rocking-rift rule:
 	now sco-rocking-rift is true;
 	take-lift Show Shoe;
 
-a goodrhyme rule (this is the vc-shocking-shift rule):
-	if locking lift is not fungible, unavailable;
-	if shoal-core-score is 2:
-		if sore souls gore goals is overall-go-useful, ready;
-		vcal "You already took care of the shocking shift!";
-		already-done;
-	abide-nlb the lift-jump-pass rule;
-	ready;
-
-this is the vr-shocking-shift rule:
-	if sco-shocking-shift is false, lift-adjust 5805;
-	abide by the lift won't budge rule for gore goals;
-	now sco-shocking-shift is true;
-	say "[one of]You reflect on how we all want big changes, but we're uncomfortable with them happening just this way.[or]The [lift] lurches again with a shift shocking enough even though you know it's coming...[stopping]";
-	take-lift Sore Souls Gore Goals;
-
 a goodrhyme rule (this is the vc-gawking-gift rule):
 	if locking lift is not fungible, unavailable;
 	if sco-umm-out is true:
@@ -638,6 +606,38 @@ this is the vr-gawking-gift rule:
 	now sco-gawking-gift is true;
 	say "[one of]You think back to the bad gifts you've received when people said you should be grateful for their consideration. Then you think back to favors people did, just because, and how much they meant. Gawking in each case. You dare to ask for another gift that will make you gawk the right way...[or]You know what to expect this time, so you don't gawk.[stopping]";
 	take-lift Rum Route;
+
+a goodrhyme rule (this is the vc-grokking-grift rule):
+	if locking lift is not fungible, unavailable;
+	if sco-bred-bros is true:
+		if slight sleaze is overall-go-useful, ready;
+		vcal "You already gained insight into grokking grift.";
+		already-done;
+	abide-nlb the lift-jump-pass rule;
+	ready;
+
+this is the vr-grokking-grift rule:
+	if sco-grokking-grift is false, lift-adjust 5805;
+	abide by the lift won't budge rule for slight sleaze;
+	say "[one of]You wonder there is a way to understand con artistry without becoming one. As you enter the lift, you reflect that you seem to know when someone is pulling your leg, but they always talk you into believing them. How to break that cycle?[or]There is still grift to be grokked.[stopping]";
+	now sco-grokking-grift is true;
+	take-lift Slight Sleaze;
+
+a goodrhyme rule (this is the vc-docking-diffed rule):
+	if locking lift is not fungible, unavailable;
+	if sco-thread-throws is true:
+		if mad most cad coast is overall-go-useful, ready;
+		vcal "You already conquered [the whale]. No need to go back.";
+		already-done;
+	abide-nlb the lift-jump-pass rule;
+	ready;
+
+this is the vr-docking-diffed rule:
+	if sco-docking-diffed is false, lift-adjust 5706;
+	abide by the lift won't budge rule for mad most cad coast;
+	now sco-docking-diffed is true;
+	say "The locking lift leads you [one of]to a shore where you'd expect a watercraft, but there is none[or]back to the [cad coast][stopping].";
+	take-lift mad most cad coast;
 
 a goodrhyme rule (this is the vc-despite-dispute rule):
 	if delight dilute is not in location of player and player does not have light lute, unavailable;
@@ -962,6 +962,127 @@ this is the vr-k-cope rule:
 	say "The hope that started turns into coping, with a bit of slang. You feel spiritually refreshed. You take the lift back to the [hub].";
 	remove-spoke 5704; [ GAWKING GIFT done ]
 
+a goodrhyme rule (this is the vc-tight-tease rule):
+	if player is not in slight sleaze, unavailable;
+	if sco-tight-tease is true:
+		vcal "You already poked the slight sleaze back. You don't get double credit for that.";
+		already-done;
+	ready;
+
+this is the vr-tight-tease rule:
+	now sco-tight-tease is true;
+	say "You figure, if you can't beat [']em, join [']em, or just pretend to. You demand something more risque, which the slight sleaze is unable to provide. This doesn't win the war, but it wins a small, satisfying pointless side battle.[line break]Okay, yeah, I may've said this isn't that sort of game, but you're only getting a bonus point here, and this one just fit too well.";
+	if sco-plight-please is true, declue-here;
+
+a goodrhyme rule (this is the vc-bright-breeze rule):
+	if player is not in slight sleaze, unavailable;
+	abide by the trite-trees-planted rule;
+	if sco-bright-breeze is true:
+		vcal "The bright breeze is already blowing!";
+		already-done;
+	ready;
+
+this is the vr-bright-breeze rule:
+	now sco-bright-breeze is true;
+	say "The local weather shifts slightly but for the better. You feel cheerier and more open to foisting sarcasm on those that deserve it.";
+
+a goodrhyme rule (this is the vc-plight-please rule):
+	if player is not in slight sleaze, unavailable;
+	abide by the trite-trees-planted rule;
+	if sco-bright-breeze is false:
+		vcp "You'd like to be that dismissive ('Plight? PLEASE!') but you aren't feeling positive enough for that. Perhaps a slight change in the weather...";
+		not-yet;
+	if sco-plight-please is true:
+		vcal "The slight sleaze is already nearly gone.";
+		already-done;
+	ready;
+
+this is the vr-plight-please rule:
+	now sco-plight-please is true;
+	say "'Plight? PLEASE!' you laugh. The sleaze lessens. The flight-flees you feel disappear.";
+	if sco-right-root is true:
+		declue-here;
+	else:
+		now to-number of Slight Sleaze is -5504;
+
+a goodrhyme rule (this is the vc-right-root rule):
+	if player does not have light lute, unavailable;
+	abide by the trite-trees-planted rule;
+	if sleaze-score < 2:
+		vcp "[if player is not in slight sleaze]The right root needs to be laid down somewhere, but not here[else]That will work when the sleaze is slight enough. Right now, you [right-root-need][end if].";
+		not-yet;
+	ready;
+
+this is the vr-right-root rule:
+	now sco-right-root is true;
+	say "The right root takes hold in the ground, and out bloom ... trite trees! No, it's not picturesque, but it's better than what was there before. The trees bloom on all sides except one ... which cuts out a clear passage!";
+	now Freak Framing is mapped south of Slight Sleaze;
+	lose-gold-string 5504;
+
+a goodrhyme rule (this is the vc-bleak-blaming rule):
+	if player is not in freak framing seek sameing, unavailable;
+	abide by the did-i-shame rule;
+	if sco-bleak-blaming is true:
+		vcal "You already showed the worst-case. Now you need to rise above it with humor, and stuff!";
+		already-done;
+	ready;
+
+this is the vr-bleak-blaming rule:
+	now sco-bleak-blaming is true;
+	say "You get into the groove with some general complaining.";
+	now to-number of seek sameing is 5407;
+
+a goodrhyme rule (this is the vc-chic-shaming rule):
+	if player is not in freak framing seek sameing, unavailable;
+	abide by the did-i-shame rule;
+	if sco-bleak-blaming is false:
+		vcp "You can't jump into such cleverness. You have to bring people down so that they will be glad you picked them up.";
+		not-yet;
+	ready;
+
+this is the vr-chic-shaming rule:
+	now sco-chic-shaming is true;
+	say "You segue from bleak blaming to an effortless, unavoidable, flowing conclusion, your voice rising to a crescendo for your main point. Bam!";
+	now from-number of freak framing is 5306;
+	if sco-clique-claiming is true:
+		declue-here;
+	else:
+		now to-number of Freak Framing is -5607;
+	print-the-loc;
+
+a goodrhyme rule (this is the vc-clique-claiming rule):
+	if player is not in freak framing seek sameing, unavailable;
+	if sco-clique-claiming is true:
+		vcal "Clique claiming would not have nearly as much mileage the second time around.";
+		already-done;
+	ready;
+
+this is the vr-clique-claiming rule:
+	now sco-clique-claiming is true;
+	say "Well, claiming that cliques exist and we aren't in it always works, even though we deserve to be, and even if we don't really want to be in good with the leaders. It's not practical, but boy, is it cathartic!";
+	if sco-chic-shaming is true, declue-here;
+
+a goodrhyme rule (this is the vc-bred-bros rule):
+	if player does not have red rose, unavailable;
+	if sco-bred-bros is true:
+		vcal "There are enough bred Bros to give your message out.";
+		already-done;
+	if player is not in freak framing:
+		vcp "This isn't the place for Bred Bros to generate a more positive influence.";
+		not-yet;
+	if sco-chic-shaming is false:
+		vcp "You haven't done enough so that said bred Bros can continue your work.";
+		not-yet;
+	ready;
+
+this is the vr-bred-bros rule:
+	now sco-bred-bros is true;
+	say "Some bred Bros, more charismatic than you, arrive to disperse your message more charismatically. You engage in a ton of delegation, and stuff. They seem pleased, though with their charisma, it's possible they might secretly have contempt for you. Still, they're on board with your mission. Your work is done here.";
+	move bred bros to seek sameing;
+	remove-spoke 5805; [ GROKKING GRIFT done ]
+	decrease to-number of red rose by 5404;
+	lose-rose-petal;
+
 a goodrhyme rule (this is the vc-bad-boast rule):
 	if player is not in Mad Most Cad Coast, unavailable;
 	if sco-bad-boast is true:
@@ -1102,127 +1223,6 @@ this is the vr-thread-throws rule:
 	moot flight flail;
 	moot bright brute;
 	moot might mail;
-
-a goodrhyme rule (this is the vc-tight-tease rule):
-	if player is not in slight sleaze, unavailable;
-	if sco-tight-tease is true:
-		vcal "You already poked the slight sleaze back. You don't get double credit for that.";
-		already-done;
-	ready;
-
-this is the vr-tight-tease rule:
-	now sco-tight-tease is true;
-	say "You figure, if you can't beat [']em, join [']em, or just pretend to. You demand something more risque, which the slight sleaze is unable to provide. This doesn't win the war, but it wins a small, satisfying pointless side battle.[line break]Okay, yeah, I may've said this isn't that sort of game, but you're only getting a bonus point here, and this one just fit too well.";
-	if sco-plight-please is true, declue-here;
-
-a goodrhyme rule (this is the vc-bright-breeze rule):
-	if player is not in slight sleaze, unavailable;
-	abide by the trite-trees-planted rule;
-	if sco-bright-breeze is true:
-		vcal "The bright breeze is already blowing!";
-		already-done;
-	ready;
-
-this is the vr-bright-breeze rule:
-	now sco-bright-breeze is true;
-	say "The local weather shifts slightly but for the better. You feel cheerier and more open to foisting sarcasm on those that deserve it.";
-
-a goodrhyme rule (this is the vc-plight-please rule):
-	if player is not in slight sleaze, unavailable;
-	abide by the trite-trees-planted rule;
-	if sco-bright-breeze is false:
-		vcp "You'd like to be that dismissive ('Plight? PLEASE!') but you aren't feeling positive enough for that. Perhaps a slight change in the weather...";
-		not-yet;
-	if sco-plight-please is true:
-		vcal "The slight sleaze is already nearly gone.";
-		already-done;
-	ready;
-
-this is the vr-plight-please rule:
-	now sco-plight-please is true;
-	say "'Plight? PLEASE!' you laugh. The sleaze lessens. The flight-flees you feel disappear.";
-	if sco-right-root is true:
-		declue-here;
-	else:
-		now to-number of Slight Sleaze is -5504;
-
-a goodrhyme rule (this is the vc-right-root rule):
-	if player does not have light lute, unavailable;
-	abide by the trite-trees-planted rule;
-	if sleaze-score < 2:
-		vcp "[if player is not in slight sleaze]The right root needs to be laid down somewhere, but not here[else]That will work when the sleaze is slight enough. Right now, you [right-root-need][end if].";
-		not-yet;
-	ready;
-
-this is the vr-right-root rule:
-	now sco-right-root is true;
-	say "The right root takes hold in the ground, and out bloom ... trite trees! No, it's not picturesque, but it's better than what was there before. The trees bloom on all sides except one ... which cuts out a clear passage!";
-	now Freak Framing is mapped south of Slight Sleaze;
-	lose-gold-string 5504;
-
-a goodrhyme rule (this is the vc-bleak-blaming rule):
-	if player is not in freak framing seek sameing, unavailable;
-	abide by the did-i-shame rule;
-	if sco-bleak-blaming is true:
-		vcal "You already showed the worst-case. Now you need to rise above it with humor, and stuff!";
-		already-done;
-	ready;
-
-this is the vr-bleak-blaming rule:
-	now sco-bleak-blaming is true;
-	say "You get into the groove with some general complaining.";
-	now to-number of seek sameing is 5407;
-
-a goodrhyme rule (this is the vc-chic-shaming rule):
-	if player is not in freak framing seek sameing, unavailable;
-	abide by the did-i-shame rule;
-	if sco-bleak-blaming is false:
-		vcp "You can't jump into such cleverness. You have to bring people down so that they will be glad you picked them up.";
-		not-yet;
-	ready;
-
-this is the vr-chic-shaming rule:
-	now sco-chic-shaming is true;
-	say "You segue from bleak blaming to an effortless, unavoidable, flowing conclusion, your voice rising to a crescendo for your main point. Bam!";
-	now from-number of freak framing is 5306;
-	if sco-clique-claiming is true:
-		declue-here;
-	else:
-		now to-number of Freak Framing is -5607;
-	print-the-loc;
-
-a goodrhyme rule (this is the vc-clique-claiming rule):
-	if player is not in freak framing seek sameing, unavailable;
-	if sco-clique-claiming is true:
-		vcal "Clique claiming would not have nearly as much mileage the second time around.";
-		already-done;
-	ready;
-
-this is the vr-clique-claiming rule:
-	now sco-clique-claiming is true;
-	say "Well, claiming that cliques exist and we aren't in it always works, even though we deserve to be, and even if we don't really want to be in good with the leaders. It's not practical, but boy, is it cathartic!";
-	if sco-chic-shaming is true, declue-here;
-
-a goodrhyme rule (this is the vc-bred-bros rule):
-	if player does not have red rose, unavailable;
-	if sco-bred-bros is true:
-		vcal "There are enough bred Bros to give your message out.";
-		already-done;
-	if player is not in freak framing:
-		vcp "This isn't the place for Bred Bros to generate a more positive influence.";
-		not-yet;
-	if sco-chic-shaming is false:
-		vcp "You haven't done enough so that said bred Bros can continue your work.";
-		not-yet;
-	ready;
-
-this is the vr-bred-bros rule:
-	now sco-bred-bros is true;
-	say "Some bred Bros, more charismatic than you, arrive to disperse your message more charismatically. You engage in a ton of delegation, and stuff. They seem pleased, though with their charisma, it's possible they might secretly have contempt for you. Still, they're on board with your mission. Your work is done here.";
-	move bred bros to seek sameing;
-	remove-spoke 5805; [ GROKKING GRIFT done ]
-	decrease to-number of red rose by 5404;
-	lose-rose-petal;
 
 a goodrhyme rule (this is the vc-bold-bend rule):
 	if player is not in old end, unavailable;
