@@ -131,6 +131,10 @@ section roving
 
 sco-piss-poor is a truth state that varies. [llp]
 
+volume repeated game text
+
+to say nkhh: say "[i]Now Know How, Ho![run paragraph on][r]"
+
 volume game meaningful constants
 
 froms-list is a list of numbers variable. froms-list is { 5401, 5403, 5401, 5403, 5403, 5504 }.

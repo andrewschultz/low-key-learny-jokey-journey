@@ -217,7 +217,7 @@ volume rooms (mid)
 
 book No Nudge Slow Sludge
 
-NNSS is north of Roaring Rocks. it is in Hoppin' Heart. printed name is "No-Nudge Slow Sludge". "[if sco-grow-grudge is false]Some [sludge] bubbles almost all around, blocking passage all ways back south[else]Paths have been cut through the [sludge] to the west, north and east, which has stopped bubbling[end if][if sturdy stalk is in NNSS]. The sturdy stalk leads back up to High Hub, as well[end if]."
+NNSS is north of Roaring Rocks. it is in Hoppin' Heart. printed name is "No-Nudge Slow Sludge". "[if sco-grow-grudge is false]Some [sludge] bubbles almost all around, blocking passage all ways back south[else]Paths have been cut through the [sludge] to the west, north and east, which has stopped bubbling[end if][if sturdy stalk is in NNSS]. The sturdy stalk leads back up to High Hub, as well[end if][one of].[paragraph break]You hear cursing from far above. 'Threat one.' It's [the sprite]. 'That mad monk could've taught you something! No, really! But you're just concerned about scoring points and winning arguments and such. Goodness knows, I'm above that sort of thing.'[or].[stopping]"
 
 from-number of nnss is 10611. to-number of nnss is 5406.
 
@@ -769,15 +769,6 @@ check going north in Threat Three Met Me when sprite is in Threat Three Met Me: 
 
 guess-table of threat three met me is the table of threat three met me guesses.
 
-after printing the locale description for Threat Three when Threat Three is unvisited:
-	if lump-charges is 1:
-		ital-say "there are enough good guesses in this room to get an additional lump charge for the final puzzle, which is meant to be tricky.";
-	else:
-		ital-say "you can make enough good guesses from the room name to [if lurking lump is off-stage]get a hint item that will spoil the tricky final puzzle[else]recharge your lurking lump[end if], so you'll be prevented from going back once your enemy appears.";
-		if lump-count < next-lump-level - 7:
-			now lump-count is next-lump-level - 7;
-	continue the action;
-
 chapter market marquee
 
 the market marquee is a rhymable in Threat Three Met Me. "It seems to offer some clues:[line break][fixed letter spacing][marquee-clues][run paragraph on][variable letter spacing]". it is scenery.
@@ -999,6 +990,7 @@ carry out talktoing:
 	if noun is kite coot or noun is night newt, say "They wouldn't understand you, and they don't need to be disturbed." instead;
 	if noun is FREE FRUIT, say "It reveals nothing of the free fruit inside. You feel like you just banged on a vending machine that ate your change, except without [i]casus belli[r]." instead;
 	if noun is pred pros, say "Direct negotiations won't work. You can give them something, though." instead;
+	if noun is sprite, say "'So! The gift? I'm not greedy or anything. It's just the right thing to do. Obviously." instead;
 	say "No response. There's not a lot you need to talk to." instead;
 
 book listening
@@ -1767,6 +1759,24 @@ rule for printing a parser error (this is the default parser error notification 
 		say "I couldn't parse that command. You don't need any more than two words long";
 	say ". [b]VERBS[r] will give a list of standard, non-puzzle-solving verbs.";
 	the rule succeeds;
+
+volume start of game
+
+when play begins:
+	say "You're walking along, thinking of big things, knowing that big ideas won't just drop themselves right next to you just because you hope they will.";
+	wfak;
+	say "Or do they? You look up, and there's some weird flame creature or something. It's a bit odd to see them on a busy city street, but nobody else notices them. They're holding a pamphlet called [nkhh][line break]";
+	wfak;
+	say "They introduce themselves as the [sprite], and -- well, they're hoping for SOMEONE, ANYONE who might understand the slightest bit what's in this pamphlet, or who even tries. You take the pamphlet and read it, if only to drown them out.";
+	wfak;
+	say "And you do. There's some good information in here. So good, you can't help but remark 'Wow! Whoah!' Such a simple, powerful idea! You'll remember that idea, of course you will...";
+	wfak;
+	say "...until [the sprite] interrupts you saying FINALLY someone understood this, and they'd been waiting long enough, and they've been forced by goodness knows WHAT afterlife bureaucracy to search the world for someone even VAGUELY interested in this sort of thing, and if you don't hop along and listen to their guidance, who will?";
+	wfak;
+	say "This is all very annoying. You try to pull away, hoping to remember what prompted your exclamation, but you've already forgotten. You lash out at [the sprite], who promptly assures you that if you'd really internalized what you read, you wouldn't have problems remembering it. Perhaps if you went on this quest here? I'm too busy to actually hold your hand through it, but I'll try and give advice when I can be bothered.'";
+	wfak;
+	say "You have nothing better to do. In fact, you were trying to avoid watching television you didn't enjoy anyway. A weird journey would be a bonus. The [sprite] points you to a back alley. A weird train shaped like a tree on its side awaits. You enter. It chugs off somewhere far and weird, then springs upright.";
+	wfak;
 
 volume end of game
 

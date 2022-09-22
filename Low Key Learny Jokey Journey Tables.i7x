@@ -121,7 +121,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "set"	"see"	--	--	false	true	true	false	threat three met me	vc-set-see rule	vr-set-see rule	--	--
 "yet"	"ye"	--	--	false	true	true	false	threat three met me	vc-yet-ye rule	vr-yet-ye rule	--	--
 "plus"	"plaque"	--	--	false	true	true	false	drain drat vain vat	vc-plus-plaque rule	vr-plus-plaque rule	--	"You can make a heavy [b]PLUS PLAQUE[r] [once-now of vc-plus-plaque rule] you have someone to dump it off on right away."
-"turning"	"trite"	--	--	false	true	true	false	threat three met me	vc-turning-trite rule	vr-turning-trite rule	--	"You can label [the sprite] [once-now of vc-turning-trite rule] they have an 'award' of sorts to write their name on."
+"turning"	"trite"	--	--	false	true	true	false	threat three met me	vc-turning-trite rule	vr-turning-trite rule	--	"[if sprite is off-stage]Perhaps one day you can label the whole adventure [b]TURNING TRITE[r][else]You can label [the sprite] [once-now of vc-turning-trite rule] they have an 'award' of sorts to write their name on[end if]."
 
 a goodrhyme rule (this is the vc-in-bane rule):
 	if player is not in Bane Be Sane See, unavailable;
@@ -478,7 +478,7 @@ a goodrhyme rule (this is the vc-crow-croon rule):
 
 this is the vr-crow-croon rule:
 	now sco-crow-croon is true;
-	say "The crow croons! Your [rune] glows, then bursts in unison with the cocoon. A ... well, not quite a monster, but no animal you've seen before ... busts out.[paragraph break]Unfortunately, the commotion brings a few henchmen to where you are.[paragraph break]You are arrested and dumped in...";
+	say "The crow croons! Your [rune] glows, then bursts in unison with the cocoon. A ... well, not quite a monster, but no animal you've seen before ... flies out into the sky.[paragraph break]It is met by [the sprite]! 'Threat two!' screeches [the sprite]. A fight ensues, and the beast you've created gets away.[paragraph break]'Now you've done it!' says [the sprite]. 'That wasn't supposed to happen. Trust me. And no offense, you've learned the rules to get by, but you haven't lerned the REAL rules. Maye a spell in jail will help you.'";
 	declue-here;
 	move player to Jotty Jail;
 	moot cocoon;
@@ -587,7 +587,7 @@ a goodrhyme rule (this is the vc-grokking-grift rule):
 this is the vr-grokking-grift rule:
 	if sco-grokking-grift is false, lift-adjust 5805;
 	abide by the lift won't budge rule for slight sleaze;
-	say "You wonder if you are up to understanding seediness. But it is too late, by the time you're in the lift.";
+	say "[one of]You wonder there is a way to understand con artistry without becoming one. As you enter the lift, you reflect that you seem to know when someone is pulling your leg, but they always talk you into believing them. How to break that cycle?[or]There is still grift to be grokked.[stopping]";
 	now sco-grokking-grift is true;
 	take-lift Slight Sleaze;
 
@@ -603,7 +603,7 @@ a goodrhyme rule (this is the vc-rocking-rift rule):
 this is the vr-rocking-rift rule:
 	if sco-rocking-rift is false, lift-adjust 5704;
 	abide by the lift won't budge rule for show shoe;
-	say "[if sco-rocking-rift is false]You enter the Locking Lift and wind up in what seems to be a large amphitheater. It's empty, but it could put on a decent show[else]Back to the [show shoe][end if].";
+	say "[if sco-rocking-rift is false]You wonder if a concert will really take your mind off things. You wonder what things there are to take your mind off. Before you finish wondering, [the lift] drops you by a large amphitheater. Empty, but big enough for a good show[else]Back to the [show shoe][end if].";
 	now sco-rocking-rift is true;
 	take-lift Show Shoe;
 
@@ -620,7 +620,7 @@ this is the vr-shocking-shift rule:
 	if sco-shocking-shift is false, lift-adjust 5805;
 	abide by the lift won't budge rule for gore goals;
 	now sco-shocking-shift is true;
-	say "The locking lift lurches with what is indeed a shocking shift...";
+	say "[one of]You reflect on how we all want big changes, but we're uncomfortable with them happening just this way.[or]The [lift] lurches again with a shift shocking enough even though you know it's coming...[stopping]";
 	take-lift Sore Souls Gore Goals;
 
 a goodrhyme rule (this is the vc-gawking-gift rule):
@@ -636,7 +636,7 @@ this is the vr-gawking-gift rule:
 	if sco-gawking-gift is false, lift-adjust 5704;
 	abide by the lift won't budge rule for rum route;
 	now sco-gawking-gift is true;
-	say "You see a vision of kids ripped off during the holidays. You wind up [one of][or]back [stopping]in...";
+	say "[one of]You think back to the bad gifts you've received when people said you should be grateful for their consideration. Then you think back to favors people did, just because, and how much they meant. Gawking in each case. You dare to ask for another gift that will make you gawk the right way...[or]You know what to expect this time, so you don't gawk.[stopping]";
 	take-lift Rum Route;
 
 a goodrhyme rule (this is the vc-despite-dispute rule):
@@ -664,7 +664,7 @@ a goodrhyme rule (this is the vc-mocking-miffed rule):
 this is the vr-mocking-miffed rule:
 	now sco-mocking-miffed is true;
 	now tried-mocking-miffed is false;
-	say "You are on your way to the final!";
+	say "[one of]Facing any sort of laughter is tough, but you know you have to do it.[or]You pick yourself up mentally again. This time, you'll tackle the source of the mocking, miffed[stopping]";
 	declue locking lift;
 	take-lift Old End;
 
@@ -1403,7 +1403,9 @@ a goodrhyme rule (this is the vc-turning-trite rule):
 
 this is the vr-turning-trite rule:
 	now sco-turning-trite is true;
-	say "You figured your enemy's name! Congratulations! You have won!";
+	say "An invisible pen begins to fill the blank space in [the plaque]. The [sprite] smirks, at first, but then frowns once they see what's really there. 'That's a cheap shot! No! It's too obvious! Why would you? I ... I just get cleverer and cleverer! Or I would, if not for afterlife intrigue and backstabbing and the man keeping down the people with real ideas.' It waves its hand, and you are blown away to shouts of 'Ingrate' and 'Smart-aleck' and so forth.";
+	wfak;
+	say "You tumble down on the sidewalk where you first met [the sprite]. You feel like you learned nothing, and yet, at the same time, you think back to what made you say 'Wow, whoah,' trying to reconstruct that magic moment before you were interrupted. You feel as though your journeys helped piece together parts of it, and there will be other experiences that put a bit more together. You are confident that anything reminding you of [nkhh] will be worth checking out, and you will chip away pieces of the vision you had, and that will be good enough.";
 	win-the-game;
 
 section general auxiliary definitions
@@ -1643,7 +1645,7 @@ a goodrhyme rule (this is the marquee-there rule):
 
 this is the marquee-change rule:
 	if marquee-score is 3:
-		say "The marquee crumbles. Mostly, it crumbles into what was the exit north. Behind it is ... the [Sprite] you met at the start! They moan loudly about first the Train Tree, then the cocoon, then ... you somehow getting here with the locking lift. All, yes, threats. 'THREAT THREE MET ME!' the [sprite] booms.";
+		say "The marquee crumbles. Mostly, it crumbles into what was the exit north. Behind it is ... [the sprite]! Of course! 'THREAT THREE MET ME!' it [sprite] booms, before asking if you've brought it some sort of gift to thank it for giving you something to actually do with your day. Have you? No? Really, how rude! Well, there must be something! Preferably something that can be personalized.";
 		declue-here;
 		move spurning sprite to Threat Three Met Me;
 		moot marquee;
