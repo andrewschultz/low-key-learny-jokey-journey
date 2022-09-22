@@ -883,7 +883,7 @@ this is the vr-throw-through rule:
 	else:
 		now to-number of show shoe is -5203;
 	moot lazy loud crazy crowd;
-	now player has light lute;
+	cheap-poem-cue light lute;
 
 a goodrhyme rule (this is the vc-dumb-doubt rule):
 	if player is not in rum route, unavailable;
@@ -1494,7 +1494,7 @@ to remove-spoke (nu - a number):
 	if gong-hub-warn is false:
 		now gong-hub-warn is true;
 		if player-room-allow-threshold is nothing-left:
-			say "[i][bracket][b]NOTE:[r] [i]you've finished your first spoke of the high hub, and you don't have to go back. This is a one-time nag that you may wish to activate the [b]GUIDE GONG[r][i] to block returning completely or [b]PRIDE PRONG[r][i] to close off areas where you've found all bonus points.[close bracket][r]";
+			say "[i][bracket][b]NOTE:[r] [i]you've finished your first spoke of the high hub, and you don't have to go back. This is a one-time nag that you may wish to activate the [b]GUIDE GONG[r][i] to block returning completely or [b]PRIDE PRONG[r][i] to close off areas where you've found all bonus points.[close bracket][r][line break]";
 
 to lift-adjust (nu - a number):
 	decrease to-number of locking lift by nu;
@@ -1510,20 +1510,24 @@ a liftsummon rule for a room (called rm) (this is the lift won't budge rule):
 		say "The lift wheezes. You could [b]ENTER[r] it to return to [high hub], but your destiny's ahead.";
 		the rule succeeds;
 
+to cheap-poem-cue (th - a thing):
+	say "[line break]Man! That [th] seems like it appears in epic poems with heroes, and stuff. Perhaps";
+	if number of multrhymables carried by player > 0, say ", like [the list of multrhymables carried by player],";
+	say " it can help you deal with obstacles you can't quite tackle alone.";
+	now player has th;
+
 [hub 1. shore]
 
 to check-red-rose:
 	say "[line break]";
 	if shoal-core-score is 2:
-		say "Things are livelier now. Plants come into bloom, etc. Of course, there is a red rose, because there always is one during such a quick transformation. You take it. Who knows where it may come in handy?";
-		now player has red rose;
+		say "Things are livelier now. Plants come into bloom, etc. Of course, there is a red rose, because there always is one during such a quick transformation. You take it.";
 		if sco-lore-lols is false:
-			say "lols not done.";
 			now to-number of gore goals is -5404;
 		else:
-			say "lols done.";
 			now from-number of gore goals is -3;
 		remove-spoke 5805; [SHOCKING SHIFT done]
+		cheap-poem-cue red rose;
 	else:
 		say "You've almost filled this area's potential. Just a little more life...";
 

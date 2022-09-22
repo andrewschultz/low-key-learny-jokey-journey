@@ -510,7 +510,7 @@ the kite coot is scenery. description is "It's an odd bird, for sure. You should
 
 chapter red rose
 
-a red rose is a rhymable. description is "It's a simple red rose. Just looking at it leaves you feeling protected and inspired."
+a red rose is a multrhymable. description is "It's a simple red rose. Just looking at it leaves you feeling protected and inspired."
 
 from-number of red rose is 5304. to-number of red rose is 21717.
 
@@ -574,7 +574,7 @@ from-number of crow crew is 5404. to-number of crow crew is 5507.
 
 chapter light lute
 
-the light lute is a rhymable. description is "You have no clue how to play it, but it feels pretty magical.";
+the light lute is a multrhymable. description is "You have no clue how to play it, but it feels pretty magical.";
 
 guess-table of light lute is the table of light lute guesses.
 

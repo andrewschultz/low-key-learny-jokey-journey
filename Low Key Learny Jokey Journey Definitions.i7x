@@ -6,6 +6,8 @@ volume object property extensions
 
 a liftroom is a kind of room. [i could've defined a property, too]
 
+a multrhymable is a kind of rhymable.
+
 a room has a number called spokeval. spokeval of a room is usually -1.
 
 volume defined numbers
@@ -25,7 +27,7 @@ section lute/rose/side items
 
 to decide which number is side-item-score: decide on (boolval of whether or not red rose is not off-stage) + (boolval of whether or not light lute is not off-stage)
 
-To decide which number is rose-petals: decide on boolval of sco-said-sos + boolval of sco-thread-throws;
+To decide which number is rose-petals: decide on 3 - (boolval of sco-said-sos + boolval of sco-thread-throws + boolval of sco-fed-foes);
 
 to decide which number is lute-strings: decide on gold-lute-strings + silver-lute-strings;
 
