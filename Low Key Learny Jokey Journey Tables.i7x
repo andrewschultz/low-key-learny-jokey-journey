@@ -1490,6 +1490,8 @@ to take-lift (rm - a room):
 		move delight dilute to high hub;
 
 to remove-spoke (nu - a number):
+	choose row hub-score in table of lift-texts;
+	say "[line break][in-order entry][line break]";
 	take-lift High Hub;
 	if gong-hub-warn is false:
 		now gong-hub-warn is true;
@@ -1657,12 +1659,12 @@ this is the marquee-change rule:
 volume text when taking lift
 
 table of lift-texts
-to-room	first-time	second-time
-sore souls	"You reflect on how we all want big changes, but we're uncomfortable with them happening just this way."	"The [lift] lurches again with a shift shocking enough even though you know it's coming..."
-show shoe	"You wonder if a concert will really take your mind off things. You wonder what things there are to take your mind off. Before you finish wondering, [the lift] drops you by a large amphitheater. Empty, but big enough for a good show."	"Back to the [show shoe]."
-rum route	"You think back to the bad gifts you've received when people said you should be grateful for their consideration. Then you think back to favors people did, just because, and how much they meant. Gawking in each case. You dare to ask for another gift that will make you gawk the right way..."	"You know what to expect this time, so you don't gawk as much."
-slight sleaze	"You wonder there is a way to understand con artistry without becoming one. As you enter the lift, you reflect that you seem to know when someone is pulling your leg, but they always talk you into believing them. How to break that cycle?"	"Yes, there is still grift to be grokked. Alas, there always will be."
-Mad Most Cad Coast	"The locking lift leads you to a shore where you'd expect a watercraft, but there is none."	"Back to the [cad coast]."
+to-room	first-time	second-time	in-order
+sore souls	"You reflect on how we all want big changes, but we're uncomfortable with them happening just this way."	"The [lift] lurches again with a shift shocking enough even though you know it's coming..."	"The [sprite]'s voice: 'Oh. You escaped. Congratulations. Showing some initiative there. But ... but you know you're not really showing creativity. It's just a formula, and you have it nailed down. Which is something, I guess.'"
+show shoe	"You wonder if a concert will really take your mind off things. You wonder what things there are to take your mind off. Before you finish wondering, [the lift] drops you by a large amphitheater. Empty, but big enough for a good show."	"Back to the [show shoe]."	"The [sprite], again. You can hear but not see it. 'Credit for perseverance, eh? Well, it's not like you have anything else to do, trapped as you are.'"
+rum route	"You think back to the bad gifts you've received when people said you should be grateful for their consideration. Then you think back to favors people did, just because, and how much they meant. Gawking in each case. You dare to ask for another gift that will make you gawk the right way..."	"You know what to expect this time, so you don't gawk as much."	"The [sprite] is back with more 'encouragement:' 'So you're actually solving things, maybe even bringing people together, eh? But ever done anything like this in the real world?'"
+slight sleaze	"You wonder there is a way to understand con artistry without becoming one. As you enter the lift, you reflect that you seem to know when someone is pulling your leg, but they always talk you into believing them. How to break that cycle?"	"Yes, there is still grift to be grokked. Alas, there always will be."	"The [sprite] can't help itself. 'You know, I could almost make time to see you, if you do a bit more. See if you learned more than how to make some silly rhymes.'"
+Mad Most Cad Coast	"The locking lift leads you to a shore where you'd expect a watercraft, but there is none."	"Back to the [cad coast]."	"The [sprite]'s voice crackles through again. 'I've got some free time just now. Tell me what you've learned, with me as your guide. Heaven knows, I deserve an adventure. I could learn from it. You'd better have, too. Just, don't blame me if you're too bored with your own sad life once it's done.'"
 
 volume readables
 
