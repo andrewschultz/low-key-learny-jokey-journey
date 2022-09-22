@@ -647,6 +647,7 @@ chapter Bred Bros
 
 the Bred Bros are a rhymable. "The Bred Bros you summoned continue to discuss positive social media strategies and such.". description is "They have a presence about them. They nod and smile as you look in their direction. But they seem quite busy with their work.".
 
+guess-table of Bred Bros is table of red rose guesses.
 
 book spoke 4 / docking diffed
 

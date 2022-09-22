@@ -1271,10 +1271,10 @@ The lift wheezes. You could ENTER it to return to High Hub, but your destiny's a
 >grokking grift
 The lift wheezes. You could ENTER it to return to High Hub, but your destiny's ahead.
 
->shocking shift
+>rocking rift
 The lift wheezes. You could ENTER it to return to High Hub, but your destiny's ahead.
 
->rocking rift
+>shocking shift
 The lift wheezes. You could ENTER it to return to High Hub, but your destiny's ahead.
 
 #testcase-prereject-table-of-verb-checks-vc-mold-mend-rule

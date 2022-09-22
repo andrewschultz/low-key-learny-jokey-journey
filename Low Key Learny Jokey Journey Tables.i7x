@@ -572,14 +572,13 @@ this is the vr-shocking-shift rule:
 	if sco-shocking-shift is false, lift-adjust 5805;
 	abide by the lift won't budge rule for gore goals;
 	now sco-shocking-shift is true;
-	say "[one of]You reflect on how we all want big changes, but we're uncomfortable with them happening just this way.[or]The [lift] lurches again with a shift shocking enough even though you know it's coming...[stopping]";
 	take-lift Sore Souls Gore Goals;
 
 a goodrhyme rule (this is the vc-rocking-rift rule):
 	if locking lift is not fungible, unavailable;
 	if sco-throw-through is true:
 		if show shoe is overall-go-useful, ready;
-		vcal "You already brought life back to the [show shoe]. You don't need to go back.";
+		vcal "You already brought a performance back to the [show shoe]. You don't need to go back.";
 		already-done;
 	abide-nlb the lift-jump-pass rule;
 	ready;
@@ -587,7 +586,6 @@ a goodrhyme rule (this is the vc-rocking-rift rule):
 this is the vr-rocking-rift rule:
 	if sco-rocking-rift is false, lift-adjust 5704;
 	abide by the lift won't budge rule for show shoe;
-	say "[if sco-rocking-rift is false]You wonder if a concert will really take your mind off things. You wonder what things there are to take your mind off. Before you finish wondering, [the lift] drops you by a large amphitheater. Empty, but big enough for a good show[else]Back to the [show shoe][end if].";
 	now sco-rocking-rift is true;
 	take-lift Show Shoe;
 
@@ -604,7 +602,6 @@ this is the vr-gawking-gift rule:
 	if sco-gawking-gift is false, lift-adjust 5704;
 	abide by the lift won't budge rule for rum route;
 	now sco-gawking-gift is true;
-	say "[one of]You think back to the bad gifts you've received when people said you should be grateful for their consideration. Then you think back to favors people did, just because, and how much they meant. Gawking in each case. You dare to ask for another gift that will make you gawk the right way...[or]You know what to expect this time, so you don't gawk.[stopping]";
 	take-lift Rum Route;
 
 a goodrhyme rule (this is the vc-grokking-grift rule):
@@ -619,7 +616,6 @@ a goodrhyme rule (this is the vc-grokking-grift rule):
 this is the vr-grokking-grift rule:
 	if sco-grokking-grift is false, lift-adjust 5805;
 	abide by the lift won't budge rule for slight sleaze;
-	say "[one of]You wonder there is a way to understand con artistry without becoming one. As you enter the lift, you reflect that you seem to know when someone is pulling your leg, but they always talk you into believing them. How to break that cycle?[or]There is still grift to be grokked.[stopping]";
 	now sco-grokking-grift is true;
 	take-lift Slight Sleaze;
 
@@ -636,7 +632,6 @@ this is the vr-docking-diffed rule:
 	if sco-docking-diffed is false, lift-adjust 5706;
 	abide by the lift won't budge rule for mad most cad coast;
 	now sco-docking-diffed is true;
-	say "The locking lift leads you [one of]to a shore where you'd expect a watercraft, but there is none[or]back to the [cad coast][stopping].";
 	take-lift mad most cad coast;
 
 a goodrhyme rule (this is the vc-despite-dispute rule):
@@ -1485,6 +1480,8 @@ a goodrhyme rule (this is the lift-jump-pass rule):
 to say try-miffed: now tried-mocking-miffed is true;
 
 to take-lift (rm - a room):
+	repeat through table of lift-texts:
+		if rm is to-room entry, say "[if rm is visited][second-time entry][else][first-time entry][end if][line break]";
 	move locking lift to rm;
 	move the player to rm;
 	if hub-score is 5 and delight dilute is off-stage:
@@ -1656,6 +1653,16 @@ this is the marquee-change rule:
 		say "The marquee becomes even more visibly cracked. Only one bit of text is left on it.";
 	else:
 		say "The marquee shakes slightly as some of the text is rubbed off."
+
+volume text when taking lift
+
+table of lift-texts
+to-room	first-time	second-time
+sore souls	"You reflect on how we all want big changes, but we're uncomfortable with them happening just this way."	"The [lift] lurches again with a shift shocking enough even though you know it's coming..."
+show shoe	"You wonder if a concert will really take your mind off things. You wonder what things there are to take your mind off. Before you finish wondering, [the lift] drops you by a large amphitheater. Empty, but big enough for a good show."	"Back to the [show shoe]."
+rum route	"You think back to the bad gifts you've received when people said you should be grateful for their consideration. Then you think back to favors people did, just because, and how much they meant. Gawking in each case. You dare to ask for another gift that will make you gawk the right way..."	"You know what to expect this time, so you don't gawk as much."
+slight sleaze	"You wonder there is a way to understand con artistry without becoming one. As you enter the lift, you reflect that you seem to know when someone is pulling your leg, but they always talk you into believing them. How to break that cycle?"	"Yes, there is still grift to be grokked. Alas, there always will be."
+Mad Most Cad Coast	"The locking lift leads you to a shore where you'd expect a watercraft, but there is none."	"Back to the [cad coast]."
 
 volume readables
 

@@ -65,7 +65,7 @@ TSV:## minimum walkthrough	## walkthrough with all points	## walkthrough with al
 
 * main-thru
 
-@min
+@all
 #testcase-room-names-bane-be-sane-see
 /^Bane Be Sane, See\?
 
@@ -548,7 +548,7 @@ Most special commands are more than one word. VERBS will give a list of standard
 by one point
 }}SCORE++
 
-@min
+@all
 #testcase-room-names-roaring-rocks
 /^Roaring Rocks
 
@@ -615,7 +615,7 @@ by one point
 >ll
 Most special commands are more than one word, because of the rhyme-pairs involved. VERBS will give a list of standard, non-puzzle-solving verbs.
 
-@min
+@all
 #+testcase-room-names-roaring-rocks
 /^Storing Stocks
 
@@ -895,7 +895,7 @@ NOTE: Low-Key Learny Jokey Journey should indicate whenever you find the right r
 
 >n
 
-@min
+@all
 #testcase-room-names-no-nudge-slow-sludge
 /^No-Nudge Slow Sludge
 
@@ -1035,7 +1035,7 @@ You already neutralized the no-nudge slow sludge.
 
 >n
 
-@min
+@all
 #testcase-room-names-one-warm-stun-storm
 /^One Warm Stun-Storm
 
@@ -1200,7 +1200,7 @@ You already filled out the fun form.
 
 >n
 
-@min
+@all
 #testcase-room-names-the-thunk-tree-trunk
 /^The \(Thunk!\) Tree Trunk
 
@@ -1470,7 +1470,7 @@ That guide gong, again, rings to notify you that you don't need to go back throu
 
 >e
 
-@min
+@all
 #testcase-room-names-trust-track
 /^Trust Track
 
@@ -1634,7 +1634,7 @@ The track now runs west-north but not east.
 
 >n
 
-@min
+@all
 #testcase-room-names-rare-reach
 /^Rare Reach
 
@@ -1705,7 +1705,7 @@ by one point
 >ll
 Nothing comes up. The general area here has been changed enough.
 
-@min
+@all
 #+testcase-room-names-rare-reach
 /^Bare Beach
 
@@ -1792,7 +1792,7 @@ You already doomed the dune to collapsing slightly.
 >s
 >n
 
-@min
+@all
 The deep dune seems to have shifted a bit. Maybe you can find something in the middle of it.
 
 @ha
@@ -1843,7 +1843,7 @@ That guide gong, again, rings to notify you that you don't need to go back throu
 
 >w
 
-@min
+@all
 #testcase-room-names-hun-harm-fun-farm
 /^Hun Harm Fun Farm
 
@@ -1913,7 +1913,7 @@ You already unarmed the Hun Harm Fun Farm!
 
 >n
 
-@min
+@all
 #testcase-room-names-no-noon
 /^No Noon
 
@@ -2117,7 +2117,7 @@ You already sped time up.
 by one point
 }}SCORE++
 
-@min
+@all
 #testcase-room-names-jotty-jail
 /^Jotty Jail
 
@@ -2235,7 +2235,7 @@ A dot bounces around the leet learner's grid and winds up at (1.00, 0.00.)
 by one point
 }}SCORE++
 
-@min
+@all
 #testcase-room-names-high-hub
 /^High Hub
 
@@ -2464,7 +2464,7 @@ That guide gong, again, rings to notify you that you don't need to go back throu
 >ll stalk
 Nothing comes up. You've changed the sturdy stalk as much as you needed to.
 
-@min
+@all
 ##BALANCE UNDOS
 #+testcase-room-names-no-noon
 >gonear no noon
@@ -2557,7 +2557,10 @@ A dot bounces around the leet learner's grid and winds up at (0.40, 0.80.)
 by one point
 }}SCORE++
 
-@min
+@all
+#testcase-lift-before-table-of-lift-texts-show-shoe
+You wonder if a concert will really take your mind off things. You wonder what things there are to take your mind off. Before you finish wondering, the locking lift drops you by a large amphitheater. Empty, but big enough for a good show.
+\\
 #testcase-room-names-no-new-show-shoe
 /^No-New-Show Shoe
 
@@ -2895,7 +2898,7 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, -0.50.)
 by one point
 }}SCORE++
 
-@min
+@all
 #+testcase-room-names-no-new-show-shoe
 /^Whoah-Woo-Show Shoe
 
@@ -3041,7 +3044,10 @@ A dot bounces around the leet learner's grid and winds up at (0.50, 1.00.)
 by one point
 }}SCORE++
 
-@min
+@all
+#testcase-lift-before-table-of-lift-texts-sore-souls
+You reflect on how we all want big changes, but we're uncomfortable with them happening just this way.
+\\
 #testcase-room-names-sore-souls-gore-goals
 /^Sore Souls' Gore Goals
 
@@ -3220,7 +3226,7 @@ Exploring the animal sanctuary you hope to build would feel invasive. The only w
 >shore shoals
 You have already rehabilitated the sore souls' gore goals!
 
-@min
+@all
 #+testcase-room-names-sore-souls-gore-goals
 /^Shore Shoals
 
@@ -3405,7 +3411,10 @@ A dot bounces around the leet learner's grid and winds up at (0.33, 1.00.)
 by one point
 }}SCORE++
 
-@min
+@all
+#testcase-lift-before-table-of-lift-texts-rum-route
+You think back to the bad gifts you've received when people said you should be grateful for their consideration. Then you think back to favors people did, just because, and how much they meant. Gawking in each case. You dare to ask for another gift that will make you gawk the right way...
+\\
 #testcase-room-names-rum-route
 /^Bum-'Bout Rum Route
 
@@ -3579,7 +3588,7 @@ by one point
 >ll
 Nothing comes up. The general area here has been changed enough.
 
-@min
+@all
 #+testcase-room-names-rum-route
 /^Numb\? NOWT!
 
@@ -3601,7 +3610,7 @@ You've cleared the Rum Route. No need to overdo things.
 
 >d
 
-@min
+@all
 #testcase-room-names-nay-nope-slay-slope
 /^Nay-Nope-Slay Slope
 
@@ -3739,7 +3748,10 @@ A dot bounces around the leet learner's grid and winds up at (0.50, 1.50.)
 by one point
 }}SCORE++
 
-@min
+@all
+#testcase-lift-before-table-of-lift-texts-slight-sleaze
+You wonder there is a way to understand con artistry without becoming one. As you enter the lift, you reflect that you seem to know when someone is pulling your leg, but they always talk you into believing them. How to break that cycle?
+\\
 #testcase-room-names-slight-sleaze
 /^Slight Sleaze
 
@@ -3942,7 +3954,7 @@ You already planted the right root to make trite trees. Nothing more to do here.
 
 >s
 
-@min
+@all
 #testcase-room-names-freak-framing-seek-saming
 /^Freak-Framing Seek-Sameing
 
@@ -4073,7 +4085,7 @@ by one point
 >ll
 Nothing comes up. The general area here has been changed enough.
 
-@min
+@all
 #+testcase-room-names-freak-framing-seek-saming
 /^Eek! Aiming!
 
@@ -4128,7 +4140,10 @@ A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
 by one point
 }}SCORE++
 
-@min
+@all
+#testcase-lift-before-table-of-lift-texts-mad-most-cad-coast
+The locking lift leads you to a shore where you'd expect a watercraft, but there is none.
+\\
 #testcase-room-names-mad-most-cad-coast
 /^Mad-Most-Cad Coast
 
@@ -4240,7 +4255,7 @@ by one point
 >ll
 Nothing comes up. The general area here has been changed enough.
 
-@min
+@all
 #+testcase-room-names-mad-most-cad-coast
 /^Pad Post-Had-Host
 
@@ -4272,7 +4287,7 @@ You fail to scare anyone with this, not that you need to, any more.
 
 >w
 
-@min
+@all
 /^Trite Trail
 
 @rej
@@ -4543,11 +4558,32 @@ by one point
 >ll lift
 A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 
+@all
+#testcase-lift-after-table-of-lift-texts-rum-route
+>gawking gift
+You know what to expect this time, so you don't gawk as much.
+\\
+#testcase-lift-after-table-of-lift-texts-slight-sleaze
+>grokking grift
+Yes, there is still grift to be grokked. Alas, there always will be.
+\\
+#testcase-lift-after-table-of-lift-texts-show-shoe
+>rocking rift
+Back to the Whoah-Woo-Show Shoe.
+\\
+#testcase-lift-after-table-of-lift-texts-mad-most-cad-coast
+>docking diffed
+Back to the Pad Post-Had-Host.
+\\
+#testcase-lift-after-table-of-lift-texts-sore-souls
+>shocking shift
+The locking lift lurches again with a shift shocking enough even though you know it's coming...
+
 >mocking miffed
 by one point
 }}SCORE++
 
-@min
+@all
 #testcase-room-names-old-end
 /^Old End
 
@@ -4647,7 +4683,7 @@ A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
 by one point
 }}SCORE++
 
-@min
+@all
 #+testcase-room-names-old-end
 /^Bold Bend
 
@@ -4722,7 +4758,7 @@ You can only deal with so much trolling!
 
 >s
 
-@min
+@all
 #testcase-room-names-drain-drat-vain-vat
 /^Drain \(Drat!\) Vain Vat
 
@@ -4901,7 +4937,7 @@ I couldn't parse that command. You don't need any more than two words long. VERB
 >ll pred pros
 A dot bounces around the leet learner's grid and winds up at (-1.00, 0.00.)
 
-@min
+@all
 #+testcase-room-names-drain-drat-vain-vat
 /^Main Mat
 
@@ -4973,7 +5009,7 @@ I couldn't parse that command. You don't need any more than two words long. VERB
 
 >s
 
-@min
+@all
 #testcase-room-names-threat-three-met-me
 /^Market Marquee
 
@@ -5142,7 +5178,7 @@ You already prepped yourself for the final fight. Now it is upon you.
 >yet ye
 You already prepped yourself for the final fight. Now it is upon you.
 
-@min
+@all
 /^Threat Three Met Me
 
 @hin
