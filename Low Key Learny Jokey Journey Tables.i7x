@@ -1219,6 +1219,7 @@ a goodrhyme rule (this is the vc-bred-bros rule):
 this is the vr-bred-bros rule:
 	now sco-bred-bros is true;
 	say "Some bred Bros, more charismatic than you, arrive to disperse your message more charismatically. You engage in a ton of delegation, and stuff. They seem pleased, though with their charisma, it's possible they might secretly have contempt for you. Still, they're on board with your mission. Your work is done here.";
+	move bred bros to seek sameing;
 	remove-spoke 5805; [ GROKKING GRIFT done ]
 	decrease to-number of red rose by 5404;
 	lose-rose-petal;

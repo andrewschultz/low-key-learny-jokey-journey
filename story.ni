@@ -643,6 +643,11 @@ from-number of freak framing seek sameing is 10914. to-number of freak framing s
 
 Slight Sleaze is mapped north of Seek Sameing. Nowhere is mapped south of Slight Sleaze.
 
+chapter Bred Bros
+
+the Bred Bros are a rhymable. "The Bred Bros you summoned continue to discuss positive social media strategies and such.". description is "They have a presence about them. They nod and smile as you look in their direction. But they seem quite busy with their work.".
+
+
 book spoke 4 / docking diffed
 
 part mad most cad coast
