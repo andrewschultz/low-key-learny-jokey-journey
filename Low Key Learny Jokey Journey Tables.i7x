@@ -1290,6 +1290,7 @@ a goodrhyme rule (this is the vc-flain-flat rule):
 this is the vr-flain-flat rule:
 	now sco-flain-flat is true;
 	say "Wham! Wham! You take the bane bat to the vat, and it makes all kinds of dents. You strike a final blow, and as the vat falls over, both it and the bat disintegrate.[paragraph break]You're left standing on a main mat, which also feels welcoming. But you have a feeling you still need to give a reason to enter.";
+	moot bane bat;
 	now to-number of vain vat is 5605;
 
 a goodrhyme rule (this is the vc-splain-splat rule):
@@ -1571,7 +1572,6 @@ a goodrhyme rule (this is the complete-hype rule):
 to lose-gold-string (nu - a number):
 	say "[line break]A[one of][or]nother[stopping] gold[twang].";
 	decrease to-number of light lute by nu;
-	say "[to-number of light lute] = new light lute total.";
 	if to-number of light lute is 0:
 		if sco-night-newt is false, decrease to-number of light lute by 5504;
 		if sco-kite-coot is false, decrease to-number of light lute by 5404;
