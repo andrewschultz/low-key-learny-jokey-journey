@@ -1432,11 +1432,15 @@ carry out abouting:
 chapter creditsing
 
 carry out creditsing:
-	say "Thanks to Beau Sorrell and <check other name(s)> for testing.";
+	say "Thanks to DrkStarr, Peter M. J. Gross, Beau Sorrell and <check other name(s)> for testing.";
 	say "Thanks to many people on the I7 board at Intfiction.org. This includes, in alphabetical order, Draconis, otistdog, Zarf and ZedLopez.";
 	say "[line break]Thanks to all involved in IFComp, whether administering, programming, judging, or reviewing.";
 	say "Thanks to GitHub for allowing free hosting, public or private.";
-	say "Thanks to you for playing.";
+	say "The cover art contains free-attribution vector images:";
+	say "[paragraph break]  Red rose: https://www.vecteezy.com/vector-art/3605050-illustrations-red-roses-rose-floral-romantic-artwork";
+	say "[line break]  Flames: https://www.vecteezy.com/vector-art/552364-flame-vector-icon";
+	say "[line break]  Amphitheater: https://www.flaticon.com/free-icon/amphitheatre_82266";
+	say "[line break]Thanks to you for playing.";
 	the rule succeeds;
 
 chapter exitsing
@@ -1458,7 +1462,9 @@ to say enter-lift: say "[b]ENTER[r] the locking lift to go back to [hub]";
 chapter optsing
 
 carry out optsing:
-	if guide-gong-warn is true, say "[2da][b]GUIDE GONG[r] will restrict you from solved rooms, [b]PRIDE PRONG[r] will notify you of rooms with just bonus points left, and [b]STRIDE STRONG[r] will remove these bumpers. Currently this is set to [b][if player-room-allow-threshold is bonus-left]PRIDE PRONG[else if player-room-allow-threshold is bonus-left]GUIDE GONE[else]player-room-allow-threshold is bonus-left[end if][r].";
+	if leet learner is off-stage and guide-gong-warn is false, say "You haven't discovered any options yet, but when you get a hint item or reach the third room, there will be more." instead;
+	if guide-gong-warn is true, say "[2da][b]GUIDE GONG[r] will restrict you from solved rooms, [b]PRIDE PRONG[r] will notify you of rooms with just bonus points left, and [b]STRIDE STRONG[r] will remove these bumpers. Currently this is set to [b][if player-room-allow-threshold is bonus-left]PRIDE PRONG[else if player-room-allow-threshold is bonus-left]GUIDE GONG[else]player-room-allow-threshold is bonus-left[end if][r].";
+	if player has leet learner, say "You can [b]READ[r] the leet learner for options there.";
 	the rule succeeds;
 
 chapter swearing
@@ -1510,8 +1516,9 @@ carry out swear-swamp-where-womping:
 chapter verbsing
 
 carry out verbsing:
-	say "[this-game] doesn't have many custom verbs that are used regularly. However, you need to guess the right words to advance.";
-	say "[b]OPTS[r] gives options, and [b]CREDITS[r] and [b]ABOUT[r] give general information.";
+	say "[this-game] doesn't have many custom verbs that are used regularly. In fact, many standard verbs such as [b]PUSH[r] and [b]PULL[r] are disabled, and [b]CLIMB[r] or [b]ATTACK[r], for instance, have minimal implementation. This is to help you focus on certain phrases you need to guess to advance.";
+	say "[line break]The four cardinal directions and [b]UP[r] are used, as well as [b]X[r] or [b]EXAMINE[r]. [b]READ[r] may provide different output. Use [b]I[r] to take inventory as well. The four ";
+	say "[line break]Useful meta-verbs: [b]OPTS[r] gives game options, and [b]CREDITS[r] and [b]ABOUT[r] give general information.";
 	the rule succeeds;
 
 chapter xyzzying
@@ -1539,10 +1546,10 @@ rule for printing a parser error (this is the default parser error notification 
 	else if number of words in the player's command is 0:
 		say "You think a bit";
 	else if number of words in the player's command is 2 and boring box is not off-stage:
-		say "Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs";
+		say "Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, [this-game] has eliminated a lot of them, so you can focus on the puzzle verbs";
 	else:
 		say "I couldn't parse that command. You don't need any more than two words long";
-	say ". [b]VERBS[r] will give a list of standard, non-puzzle-solving verbs.";
+	say ". [b]VERBS[r] will give a list of useful, non-puzzle-solving verbs.";
 	the rule succeeds;
 
 volume start of game
