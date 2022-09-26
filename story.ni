@@ -987,6 +987,24 @@ before leetsetting when player does not have the leet learner: say "You don't ha
 
 volume verbs
 
+book attacking
+
+the block attacking rule is not listed in any rulebook.
+
+check attacking:
+	if player is in Bane Be Sane See, say "[b]READ[r]ing the tree is a better way to attack getting that first point." instead; [intro]
+	if player is in gore goals, say "That would play into the sore souls['] whatever-they-grab-things-with." instead; [2]
+	if noun is bred bros or noun is bright brute, say "Don't attack allies." instead; [4/5]
+	if noun is white whale, say "Try building resources for an expedition instead." instead; [5]
+	if noun is pred pros, say "Make friends of your enemies instead." instead; [6]
+	if noun is spurning sprite, say "You'd lose the flame war, verbal or physical." instead;
+	say "Less physical abuse. More abusing the English language with rhymes!" instead;
+
+book push pull
+
+understand the command "push" as something new.
+understand the command "pull" as something new.
+
 book eating
 
 the can't eat unless edible rule is not listed in any rulebook.
