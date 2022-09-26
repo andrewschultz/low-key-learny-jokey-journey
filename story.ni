@@ -410,7 +410,7 @@ from-number of rho rune is 5304.
 
 book Jotty Jail
 
-Jotty Jail is a room in Hoppin' Heart. "Well, the walls are scribbled-over here. The way out is guarded by a snotty snail. It looks pretty well-kept-up here, so it's tricky to get out, unless you know what to look for. [jotty-bonus]."
+Jotty Jail is a room in Hoppin' Heart. "Well, the walls are scribbled-over here. The way out is blocked by a large snotty snail. It looks pretty well-kept-up here, so it's tricky to get out, unless you know what to look for. [jotty-bonus]."
 
 from-number of jotty jail is 5504. to-number of jotty jail is 5604.
 
@@ -426,6 +426,10 @@ to say jotty-bonus:
 
 to decide what number is jail-bonus:
 	decide on boolval of sco-potty-pail + boolval of sco-grotty-grail;
+
+chapter snotty snail
+
+the snotty snail is climbable scenery in Jotty Jail. "There's no way past it. It pretty much blocks the exit. But it doesn't seem to be paying any attention to you at all."
 
 volume rooms (end)
 
@@ -1020,6 +1024,7 @@ check climbing:
 	if noun is tree trunk, say "The tree trunk doesn't lead anywhere." instead;
 	if noun is deep dune, say "You might fall in." instead;
 	if noun is locking lift, say "That would be really dangerous." instead;
+	if noun is snotty snail, say "Too slippery. Plus, you don't want to attract its attention." instead;
 	say "There's nothing really to climb here." instead;
 
 book listening
