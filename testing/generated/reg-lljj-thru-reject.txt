@@ -888,7 +888,7 @@ You can grow trite trees with the RIGHT ROOT once you've fought back against the
 
 #testcase-postreject-table-of-verb-checks-vc-rocking-rift-rule
 >rocking rift
-You already brought life back to the Whoah-Woo-Show Shoe. You don't need to go back.
+You already brought a performance back to the Whoah-Woo-Show Shoe. You don't need to go back.
 
 ##RBRS-SHUFFLEEND=0
 ##RBRS-SHUFFLESTART=1
@@ -1370,7 +1370,7 @@ by one point
 
 #testcase-moot-table-of-verb-checks-vc-set-see-rule
 >set see
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 >undo
 >undo
@@ -1386,11 +1386,11 @@ by one point
 
 #testcase-moot-table-of-verb-checks-vc-yet-ye-rule
 >yet ye
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-fret-free-rule
 >fret free
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 >s
 
@@ -1426,139 +1426,139 @@ You already made and gave the plus plaque to the Burning Bright Spurning Sprite!
 
 #testcase-moot-table-of-verb-checks-vc-bad-boast-rule
 >bad boast
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-bad-bunk-rule
 >bad bunk
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-bane-bat-rule
 >bane bat
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-bare-beach-rule
 >bare beach
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-bleak-blaming-rule
 >bleak blaming
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-bold-bend-rule
 >bold bend
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-boring-box-rule
 >boring box
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-bred-bros-rule
 >bred bros
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-bright-breeze-rule
 >bright breeze
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-bright-brute-rule
 >bright brute
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-bro-brew-rule
 >bro brew
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-bussed-back-rule
 >bussed back
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-bye-bub-rule
 >bye bub
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-chic-shaming-rule
 >chic shaming
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-clique-claiming-rule
 >clique claiming
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-co-coon-rule
 >co coon
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-crow-crew-rule
 >crow crew
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-crow-croon-rule
 >crow croon
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-crust-crack-rule
 >crust crack
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-despite-dispute-rule
 >despite dispute
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-docking-diffed-rule
 >docking diffed
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-done-dorm-rule
 >done dorm
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-dumb-doubt-rule
 >dumb doubt
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-excite-exhale-rule
 >excite exhale
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-fed-foes-rule
 >fed foes
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-flain-flat-rule
 >flain flat
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-flight-flail-rule
 >flight flail
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-flow-flue-rule
 >flow flue
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-four-foals-rule
 >four foals
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-fun-form-rule
 >fun form
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-gad-gunk-rule
 >gad gunk
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-gawking-gift-rule
 >gawking gift
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-gee-junk-rule
 >gee junk
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-glow-glue-rule
 >glow glue
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-go-goo-rule
 >go goo
@@ -1570,183 +1570,183 @@ That location or thing doesn't exist or isn't known to you yet.
 
 #testcase-moot-table-of-verb-checks-vc-grokking-grift-rule
 >grokking grift
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-grotty-grail-rule
 >grotty grail
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-grow-grudge-rule
 >grow grudge
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-hey-hope-rule
 >hey hope
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-ho-who-rule
 >ho who
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-in-bane-rule
 >dane d
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-k-cope-rule
 >k cope
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-kite-coot-rule
 >kite coot
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-knotty-nail-rule
 >knotty nail
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-lore-lols-rule
 >lore lols
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-might-mail-rule
 >might mail
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-mo-moon-rule
 >mo moon
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-mocking-miffed-rule
 >mocking miffed
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-mold-mend-rule
 >mold mend
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-more-moles-rule
 >more moles
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-night-newt-rule
 >night newt
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-pear-peach-rule
 >pear peach
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-piss-poor-rule
 >piss poor
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-plain-plea-rule
 >plain plea
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-plight-please-rule
 >plight please
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-potty-pail-rule
 >potty pail
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-rad-roast-rule
 >rad roast
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-reap-rune-rule
 >reap rune
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-right-rail-rule
 >right rail
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-right-root-rule
 >right root
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-rocking-rift-rule
 >rocking rift
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-sad-sunk-rule
 >sad sunk
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-said-sos-rule
 >said sos
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-see-sunk-rule
 >see sunk
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-seep-soon-rule
 >seep soon
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-shocking-shift-rule
 >shocking shift
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-shore-shoals-rule
 >shore shoals
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-sight-sail-rule
 >sight sail
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-so-soon-rule
 >so soon
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-splain-splat-rule
 >splain splat
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-stow-stew-rule
 >stow stew
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-thread-throws-rule
 >thread throws
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-throw-through-rule
 >throw through
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-tight-tease-rule
 >tight tease
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-trolled-trend-rule
 >trolled trend
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-umm-out-rule
 >umm out
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-un-arm-rule
 >un arm
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-whee-woot-rule
 >whee woot
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-wordy-walk-rule
 >wordy walk
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-yo-you-rule
 >yo you
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 >score
 

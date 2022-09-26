@@ -19,7 +19,7 @@
 # 4 = trail/docking, need loot and rose
 ##RBRCONSTRAINTS=1<2,0<3,1<3,0<4,1<4
 
-files=reg-lljj-thru-min.txt,reg-lljj-thru-all.txt,reg-lljj-thru-reject.txt,reg-lljj-thru-alt-verbs.txt,reg-lljj-thru-guide-gong.txt,reg-lljj-thru-pride-prong.txt,reg-lljj-thru-mistakes.txt,reg-lljj-thru-ha-half.txt,reg-lljj-thru-homonyms.txt,reg-lljj-thru-verbs.txt,reg-lljj-thru-goto.txt,reg-lljj-thru-hints.txt
+files=reg-lljj-thru-min.txt,reg-lljj-thru-all.txt,reg-lljj-thru-reject.txt,reg-lljj-thru-alt-verbs.txt,reg-lljj-thru-guide-gong.txt,reg-lljj-thru-pride-prong.txt,reg-lljj-thru-mistakes.txt,reg-lljj-thru-ha-half.txt,reg-lljj-thru-homonyms.txt,reg-lljj-thru-verbs.txt,reg-lljj-thru-goto.txt,reg-lljj-thru-hints.txt,reg-lljj-thru-hintfull.txt
 ~	min	t0
 ~	all	t1
 ~	rej	t2
@@ -32,15 +32,16 @@ files=reg-lljj-thru-min.txt,reg-lljj-thru-all.txt,reg-lljj-thru-reject.txt,reg-l
 ~	ver	t9
 ~	goto,gt,go	t10
 ~	hin,hint,hints	t11
+~	hf,hfull	t12
 #--stable-file: this eventually says that the project is stable, and I shouldn't change the main/minimal file unless I really need to.
 #--strict-file: this says that the project requires strict section marking e.g. @all instead of ==t1.
 
 }$REJECT=I couldn't parse that command. You don't need any more than two words long.
-}$REJECT2=Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+}$REJECT2=Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 }$GREENBONUS=The HA HALF button on your Leet Learner lights up green. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win.
 }$GREENCORE=The HA HALF button on your Leet Learner lights up green.
 }$YELLOWBONUS=The HA HALF button on your Leet Learner lights up yellow. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win.
-}$YELLOWCOREFIRST=The HA HALF button on your Leet Learner lights up yellow--you must be close to a future solution.
+}$YELLOWCOREFIRST=The HA HALF button on your Leet Learner lights up yellow--one of the words must work for a future solution.
 }$YELLOWCORE=The HA HALF button on your Leet Learner lights up yellow.
 
 }}MAX=86
@@ -58,7 +59,7 @@ files=reg-lljj-thru-min.txt,reg-lljj-thru-all.txt,reg-lljj-thru-reject.txt,reg-l
 ## *FILE
 ## *FORK
 
-TSV:## minimum walkthrough	## walkthrough with all points	## walkthrough with all rejections and THINK	## walkthrough with altverb tests	## walkthrough testing guide gong	## walkthrough testing pride prong	## walkthrough testing all mistakes	## walkthrough testing half-right cases	## walkthrough testing homonyms	## walkthrough testing special verbs	## walkthrough testing GOTO	## walkthrough testing HINTS
+TSV:## minimum walkthrough	## walkthrough with all points	## walkthrough with all rejections and THINK	## walkthrough with altverb tests	## walkthrough testing guide gong	## walkthrough testing pride prong	## walkthrough testing all mistakes	## walkthrough testing half-right cases	## walkthrough testing homonyms	## walkthrough testing special verbs	## walkthrough testing GOTO	## walkthrough testing HINTS basic	## walkthrough testing HINTS full
 
 ** game: /home/andrew/prt/debug-low-key-learny-jokey-journey.z8
 ** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
@@ -74,7 +75,7 @@ TSV:## minimum walkthrough	## walkthrough with all points	## walkthrough with al
 @ver
 #ttc-table-of-readables-train-tree
 >read train tree
-There are three ways to enter the train tree: under writing saying WAYNE (WHEE), JANE G, or DANE D/LANE LEE. They all look about the same.
+There are three ways to enter the train tree: under writing saying WAYNE (WHEE), JANE G, or DANE D/LANE LEE. You can probably type whichever, to enter as you please.
 
 @gong
 >guide gong
@@ -93,32 +94,39 @@ You've tried an option you can't exercise until you get a hint item. You should,
 #ttc-table-of-general-good-guesses-choppin-chart
 >choppin chart
 There are only three regions, and the name isn't really important.
+!learner
 \\
 #ttc-table-of-general-good-guesses-coppin-cart
 >coppin cart
 No policemen drive by. They might be corrupt, anyway.
+!learner
 \\
 #ttc-table-of-general-good-guesses-earning-right
 >earning right
 Well, that's what you hope to find!
+!learner
 \\
 #ttc-table-of-general-good-guesses-ferning-fright
 >ferning fright
 There are no terrorist plants worth summoning in Low-Key Learny Jokey Journey.
+!learner
 \\
 #ttc-table-of-general-good-guesses-mopping-mart
 >mopping mart
 Surely this is more exciting than a trip for cleaning supplies.
 lurking lump
+!learner
 \\
 #ttc-table-of-general-good-guesses-ride-wrong
 >ride wrong
 There is no fourth option for the guide gone, but you do have a chance for a heel turn at game's end.
+!learner
 !lurking lump
 \\
 #ttc-table-of-general-good-guesses-side-song
 >side song
 This is a no-frills text adventure. No music, no graphics, besides the middling-at-best cover art.
+!learner
 ====alphabetize off
 
 @rej
@@ -470,38 +478,47 @@ Homonyms aren't the way here. Look at the train tree for clues. A bee would prov
 #ttc-table-of-bane-be-sane-see-guesses-cane-key
 >cane key
 You don't need any key to unlock the tree.
+!learner
 \\
 #ttc-table-of-bane-be-sane-see-guesses-feign-fee
 >feign fee
 You whine about how Low-Key Learny Jokey Journey costs money on top of being a waste of time. Nobody listens.
+!learner
 \\
 #ttc-table-of-bane-be-sane-see-guesses-main-me
 >main me
 You are the main character in this adventure, but don't let it go to your head.
+!learner
 \\
 #ttc-table-of-bane-be-sane-see-guesses-pain-p-pee
 >pain p
 Low-Key Learny Jokey Journey is nonviolent and hopefully devoid of bathroom humor.
+!learner
 \\
 #ttc-table-of-bane-be-sane-see-guesses-sprain-spree
 >sprain spree
 While this is technically correct, you don't want to injure yourself or others.
+!learner
 \\
 #ttc-table-of-bane-be-sane-see-guesses-vain-v
 >vain v
 You come to grips with how you are not as humble as you should be.
+!learner
 \\
 #ttc-table-of-general-good-guesses-okie-ernie-earnie-earny
 >okie ernie
 No stereotypical rural fellow pops up with down-home advice.
+!learner
 \\
 #ttc-table-of-general-good-guesses-tokey-tourney
 >tokey tourney
 That could potentially be very relaxed and low-key, indeed. I guess.
+!learner
 \\
 #ttc-table-of-lurking-lump-guesses-clerking-clump
 >clerking clump
 The lump can't keep track of things. That would be the Leet Learner.
+!learner
 \\
 #ttc-table-of-lurking-lump-guesses-perking-pump
 >perking pump
@@ -542,7 +559,7 @@ There are no clear safe exits. It looks like you need to solve a puzzle to find 
 
 @hin
 >ll
-Most special commands are more than one word. VERBS will give a list of standard, non-puzzle-solving verbs.
+Most special commands are more than one word. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 >jane g
 by one point
@@ -569,7 +586,7 @@ north: (unvisited.)
 
 @hin
 >ll
-Most special commands are more than one word, because of the rhyme-pairs involved. VERBS will give a list of standard, non-puzzle-solving verbs.
+Most special commands are more than one word, because of the rhyme-pairs involved. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 @ver
 >listen
@@ -613,7 +630,7 @@ by one point
 
 @hin
 >ll
-Most special commands are more than one word, because of the rhyme-pairs involved. VERBS will give a list of standard, non-puzzle-solving verbs.
+Most special commands are more than one word, because of the rhyme-pairs involved. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 @all
 #+testcase-room-names-roaring-rocks
@@ -646,7 +663,7 @@ Homonym detection is already set to on.
 >ll
 You scan the area.
 Hmm. There's a reading. It must relate "Storing Stocks" to the erstwhile boring box.
-A dot bounces around the leet learner's grid and winds up at (-1.00, -3.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -3.00.)
 The leet learner is giving a funny readout. You could maybe climb UP to the old rocks and get another reading.
 
 @ha
@@ -668,16 +685,16 @@ The mad monk is blocking you right now.
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (-1.00, -3.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -3.00.)
 !You could maybe climb UP to the old rocks and get another reading.
 \\
 >ll mad monk
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 @ha
 #testcase-ha-half-table-of-verb-checks-4-gad
 >gad zgunk
-The HA HALF button on your Leet Learner lights up green--you must be close to something you can do now. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win.
+The HA HALF button on your Leet Learner lights up green--one of the words you thought must be right. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win.
 \\
 #testcase-ha-half-table-of-verb-checks-4-gunk
 >zgad gunk
@@ -774,7 +791,7 @@ You already insulted the mad monk's cleanliness.
 >sad sunk
 \\
 >ll mad monk
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 \\
 >undo
 >undo
@@ -836,7 +853,7 @@ by one point
 
 @hin
 >ll mad monk
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 @rej
 #testcase-postreject-table-of-verb-checks-vc-bad-bunk-rule
@@ -851,7 +868,7 @@ by one point
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (-1.00, -3.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -3.00.)
 
 @mis
 ##balance undos
@@ -914,7 +931,7 @@ west: (unvisited.)
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (1.00, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.50.)
 
 @rej
 ##balance undos
@@ -1116,7 +1133,7 @@ A crude insult, not a crude image.
 
 @hin
 >ll door
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 
 @!min
@@ -1146,7 +1163,7 @@ You can fill out a FUN FORM once you have somewhere to enter.
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.50, -0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, -0.50.)
 
 >done dorm
 by one point
@@ -1154,10 +1171,10 @@ by one point
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (-0.50, -0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, -0.50.)
 \\
 >ll done dorm
-A dot bounces around the leet learner's grid and winds up at (-1.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 0.00.)
 
 @rej
 #testcase-postreject-table-of-verb-checks-vc-done-dorm-rule
@@ -1278,7 +1295,7 @@ You can say GEE JUNK once more of the trunk is visible.
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (-0.50, -1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, -1.00.)
 
 >see sunk
 by one point
@@ -1286,7 +1303,7 @@ by one point
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (-0.50, -1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, -1.00.)
 
 @rej
 #testcase-postreject-table-of-verb-checks-vc-see-sunk-rule
@@ -1399,7 +1416,7 @@ In fact, it looks like you already guessed what the hybrid free fruit is elsewhe
 
 @hin
 >ll fruit
-A dot bounces around the leet learner's grid and winds up at (0.00, -1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
 
 @hom
 #testcase-homonym-table-of-verb-checks-vh-whee-woot-rule-wee
@@ -1444,7 +1461,7 @@ by one point
 
 @hin
 >ll pear peach
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 @rej
 #testcase-postreject-table-of-verb-checks-vc-pear-peach-rule
@@ -1529,10 +1546,10 @@ Violence isn't the answer, here, though you're close. You may wish to think of J
 
 @hin
 >ll jack
-A dot bounces around the leet learner's grid and winds up at (2.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (2.00, 0.00.)
 \\
 >ll
-A dot bounces around the leet learner's grid and winds up at (1.00, -1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, -1.00.)
 
 >bussed back
 by one point
@@ -1540,7 +1557,7 @@ by one point
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 @rej
 #testcase-postreject-table-of-verb-checks-vc-bussed-back-rule
@@ -1695,7 +1712,7 @@ The Leet Learner shakes back and forth. Something you said sounded right, but it
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >bare beach
 by one point
@@ -1774,7 +1791,7 @@ You can REAP RUNE once you have spent time adventuring.
 
 @hin
 >ll dune
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >seep soon
 by one point
@@ -1782,7 +1799,7 @@ by one point
 
 @hin
 >ll dune
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 @rej
 #testcase-postreject-table-of-verb-checks-vc-seep-soon-rule
@@ -1806,7 +1823,7 @@ The deep dune seems to have shifted a bit. Maybe you can find something in the m
 
 @hin
 >ll dune
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >reap rune
 by one point
@@ -1889,7 +1906,7 @@ That doesn't quite work. Maybe the farm needs worms or warm weather, but its sur
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (-1.00, -1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
 
 >unarm
 by one point
@@ -1923,7 +1940,7 @@ That guide gong, again, rings to notify you that you don't need to go back throu
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 @gt
 #ttc-table-of-noways-nonoon
@@ -2024,7 +2041,7 @@ by one point
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 @ha
 #testcase-ha-half-table-of-verb-checks-21-co
@@ -2041,7 +2058,7 @@ by one point
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 @ha
 #testcase-ha-half-table-of-verb-checks-22-mo
@@ -2063,7 +2080,7 @@ by one point
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 @ha
 #testcase-ha-half-table-of-verb-checks-23-so
@@ -2085,7 +2102,7 @@ by one point
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (2.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (2.00, 1.00.)
 
 @ha
 #testcase-ha-half-table-of-verb-checks-24-crow
@@ -2229,7 +2246,7 @@ The Leet Learner shakes back and forth. Something you said sounded right, but it
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (1.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.00.)
 
 >knotty nail
 by one point
@@ -2250,7 +2267,7 @@ The locking lift is the main way out of here, but there is a way to revisit what
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (-1.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 0.00.)
 However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 
 @rej
@@ -2437,7 +2454,7 @@ No, pock marks wouldn't make the stalk look better.
 
 @hin
 >ll stalk
-A dot bounces around the leet learner's grid and winds up at (-1.00, -1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
 However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 
 @gong,prong
@@ -2551,7 +2568,7 @@ You sigh at what you did down below, wondering if you should go back.
 Nothing comes up. The general area here has been changed enough.
 \\
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.40, 0.80.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.40, 0.80.)
 
 >rocking rift
 by one point
@@ -2571,7 +2588,7 @@ The lift doesn't move, since those words are what got you here.
 @gt
 #ttc-table-of-noways-new-show-shoe
 >n
-There's no way out except through the lift. You're the only person to get the show started, here.
+The expanses beyond No-New-Show Shoe seem daunting indeed. You're the only person to bring together a successful show, though you can take the lift elsewhere if you're stuck here.
 \\
 #testcase-exits-no-new-show-shoe
 >exits
@@ -2787,12 +2804,12 @@ The Leet Learner shakes back and forth. Something you said sounded right, but it
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (1.00, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.50.)
 \\
 >glow glue
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (1.00, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.50.)
 \\
 >undo
 >undo
@@ -2808,7 +2825,7 @@ The flow flue is already present!
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (1.00, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.50.)
 
 >glow glue
 by one point
@@ -2821,13 +2838,13 @@ You already acquired Glow Glue.
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 \\
 >stow stew
 by one point
 \\
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 \\
 >undo
 >undo
@@ -2843,7 +2860,7 @@ You already have a nice store of Bro Brew.
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 
 >stow stew
 by one point
@@ -2856,7 +2873,7 @@ You already put stew in the flue.
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >crow crew
 by one point
@@ -2874,7 +2891,7 @@ The Leet Learner shakes back and forth. Something you said sounded right, but it
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (-1.00, -0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -0.50.)
 
 >ho who
 by one point
@@ -2892,7 +2909,7 @@ The Leet Learner shakes back and forth. Something you said sounded right, but it
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (-1.00, -0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -0.50.)
 
 >yo you
 by one point
@@ -2929,7 +2946,7 @@ The Leet Learner shakes back and forth. Something you said sounded right, but it
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.50, 3.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 3.50.)
 
 >throw through
 by one point
@@ -2946,7 +2963,7 @@ You are now repelled by a guide gong if you try to go down a path where you have
 
 @gong,prong
 >rocking rift
-You already brought life back to the Whoah-Woo-Show Shoe. You don't need to go back.
+You already brought a performance back to the Whoah-Woo-Show Shoe. You don't need to go back.
 
 @rej
 #testcase-prereject-table-of-verb-checks-vc-bright-brute-rule
@@ -3022,7 +3039,7 @@ While it's okay to be white, it's not okay to be all IT'S OKAY TO BE WHITE.
 @rej
 #testcase-postreject-table-of-verb-checks-vc-rocking-rift-rule
 >rocking rift
-You already brought life back to the Whoah-Woo-Show Shoe. You don't need to go back.
+You already brought a performance back to the Whoah-Woo-Show Shoe. You don't need to go back.
 
 ##RBRS-SHUFFLEEND=0
 ##RBRS-SHUFFLESTART=1
@@ -3038,7 +3055,7 @@ You already brought life back to the Whoah-Woo-Show Shoe. You don't need to go b
 
 @hin
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.50, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 1.00.)
 
 >shocking shift
 by one point
@@ -3189,7 +3206,7 @@ You can summon a NIGHT NEWT once the area is more hospitable.
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 
 >shore shoals
 by one point
@@ -3214,7 +3231,7 @@ by one point
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (-1.00, -1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
 
 @gt
 #+ttc-table-of-noways-gore-goals
@@ -3292,7 +3309,7 @@ by one point
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (-1.00, -1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
 
 @rej
 #testcase-postreject-table-of-verb-checks-vc-four-foals-rule
@@ -3405,7 +3422,7 @@ You already took care of the shocking shift!
 
 @hin
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.33, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.33, 1.00.)
 
 >gawking gift
 by one point
@@ -3425,10 +3442,10 @@ The lift doesn't move, since those words are what got you here.
 @gt
 #ttc-table-of-noways-rum-route
 >n
-While you can go back into the lift, you suspect the route leads somewhere, once you're focused right.
+Directions seem meaningless here, though you can always enter the lift. You suspect the route leads somewhere, once you're focused right.
 \\
 >d
-While you can go back into the lift, you suspect the route leads somewhere, once you're focused right.
+Directions seem meaningless here, though you can always enter the lift. You suspect the route leads somewhere, once you're focused right.
 \\
 #testcase-exits-rum-route
 >exits
@@ -3548,7 +3565,7 @@ You can say SAID SOS once you've got a foothold in an argument.
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (1.00, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.50.)
 
 >dumb doubt
 by one point
@@ -3556,7 +3573,7 @@ by one point
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.00, -1.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.50.)
 
 @rej
 #testcase-postreject-table-of-verb-checks-vc-dumb-doubt-rule
@@ -3565,7 +3582,7 @@ You already spread dumb doubt! If you try to spread more, you may wind up believ
 
 @hin
 >ll rose
-A dot bounces around the leet learner's grid and winds up at (1.25, 0.25.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.25, 0.25.)
 
 >said sos
 by one point
@@ -3573,7 +3590,7 @@ by one point
 
 @hin
 >ll rose
-A dot bounces around the leet learner's grid and winds up at (1.33, 0.66.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.33, 0.66.)
 
 @rej
 #testcase-postreject-table-of-verb-checks-vc-said-sos-rule
@@ -3595,7 +3612,7 @@ Nothing comes up. The general area here has been changed enough.
 @gt
 #+ttc-table-of-noways-rum-route
 >n
-While you can go back into the lift, you can also go down.
+Directions seem meaningless here, though you can always enter the lift. You can, however, go down now.
 \\
 #+testcase-exits-rum-route
 >exits
@@ -3691,7 +3708,7 @@ The Leet Learner shakes back and forth. Something you said sounded right, but it
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (-0.50, -0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, -0.50.)
 
 >hey hope
 by one point
@@ -3699,7 +3716,7 @@ by one point
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (-2.50, -0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-2.50, -0.50.)
 
 @rej
 #testcase-postreject-table-of-verb-checks-vc-hey-hope-rule
@@ -3742,7 +3759,7 @@ You already took care of the Rum Route!
 
 @hin
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.50, 1.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 1.50.)
 
 >grokking grift
 by one point
@@ -3877,7 +3894,7 @@ by one point
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >bright breeze
 by one point
@@ -3885,7 +3902,7 @@ by one point
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >plight please
 by one point
@@ -3893,7 +3910,7 @@ by one point
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (-1.00, -2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -2.00.)
 However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 \\
 >tight tees
@@ -3909,7 +3926,7 @@ The Leet Learner shakes back and forth. Something you said sounded right, but it
 
 @hin
 >ll light lute
-A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 
 >right root
 by one point
@@ -3917,7 +3934,7 @@ by one point
 
 @hin
 >ll light lute
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 \\
 >ll
 You scan the area.
@@ -4052,7 +4069,7 @@ by one point
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.50, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.00.)
 
 >bleak blaming
 by one point
@@ -4060,7 +4077,7 @@ by one point
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (-0.50, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, 0.00.)
 
 @hom
 #testcase-homonym-table-of-verb-checks-shiek-sheik
@@ -4073,7 +4090,7 @@ by one point
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (3.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (3.00, 1.00.)
 However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 \\
 >clique claiming
@@ -4134,7 +4151,7 @@ You already gained insight into grokking grift.
 
 @hin
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 2.00.)
 
 >docking diffed
 by one point
@@ -4229,7 +4246,7 @@ You can try a RAD ROAST once you've hit back a bit against the madness.
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.50.)
 
 >bad boast
 by one point
@@ -4237,7 +4254,7 @@ by one point
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.50.)
 
 @rej
 #+testcase-think-table-of-verb-checks-vc-rad-roast-rule
@@ -4412,7 +4429,7 @@ The Leet Learner shakes back and forth. Something you said sounded right, but it
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.33, -0.66.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.33, -0.66.)
 
 >sight sail
 by one point
@@ -4421,7 +4438,7 @@ by one point
 @hin
 # nothing changes after Sight Sail, because Right Rail is opened
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.33, -0.66.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.33, -0.66.)
 
 >flight flail
 by one point
@@ -4429,7 +4446,7 @@ by one point
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.00, -1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
 
 @hom
 #testcase-homonym-table-of-verb-checks-mite-male
@@ -4442,7 +4459,7 @@ by one point
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.00, -1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
 
 @hom
 #testcase-homonym-table-of-verb-checks-write-rale
@@ -4455,10 +4472,10 @@ by one point
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 \\
 >ll light lute
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 
 >bright brute
 by one point
@@ -4495,7 +4512,7 @@ by one point
 
 @hin
 >ll red rose
-A dot bounces around the leet learner's grid and winds up at (1.50, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.50, 1.00.)
 \\
 >ll
 Nothing comes up. The general area here has been changed enough.
@@ -4506,7 +4523,7 @@ by one point
 
 @hin
 >ll red rose
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 @rej
 #testcase-postreject-table-of-verb-checks-vc-thread-throws-rule
@@ -4535,7 +4552,7 @@ You already conquered the tight-tail white whale. No need to go back.
 
 @hin
 >ll delight dilute
-A dot bounces around the leet learner's grid and winds up at (0.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
 However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 
 @!min
@@ -4556,7 +4573,7 @@ by one point
 
 @hin
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 
 @all
 #testcase-lift-after-table-of-lift-texts-rum-route
@@ -4677,7 +4694,7 @@ You can find a TROLLED TREND once the Old End is revealed as something more.
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 
 >bold bend
 by one point
@@ -4701,7 +4718,7 @@ You can't tell which way is right. You need to listen for some source of meannes
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (3.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (3.00, 1.00.)
 
 >trolled trend
 by one point
@@ -4709,7 +4726,7 @@ by one point
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 @gt
 #+ttc-table-of-noways-old-end
@@ -4769,7 +4786,7 @@ That guide gong, again, rings to notify you that you don't need to go back throu
 @gt
 #ttc-table-of-noways-vain-vat
 >w
-You're still stuck in the vain vat. You need to get out. But it can't be too bad.
+You'd injure yourself trying to run through the vat. It's sturdy.
 \\
 #testcase-exits-drain-drat-vain-vat
 >exits
@@ -4895,7 +4912,7 @@ You can SPLAIN SPLAT once you're free of the vat.
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (-0.50, -0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, -0.50.)
 
 >bane bat
 by one point
@@ -4903,7 +4920,11 @@ by one point
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
+
+@gt
+>w
+You'd need to destroy the vat with your bat first. But how?
 
 >flain flat
 by one point
@@ -4911,7 +4932,7 @@ by one point
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (1.50, 1.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.50, 1.50.)
 
 @gt
 #+ttc-table-of-noways-vain-vat
@@ -4932,10 +4953,10 @@ by one point
 Nothing comes up. The general area here has been changed enough.
 \\
 >ll red rose
-I couldn't parse that command. You don't need any more than two words long. VERBS will give a list of standard, non-puzzle-solving verbs.
+I couldn't parse that command. You don't need any more than two words long. VERBS will give a list of useful, non-puzzle-solving verbs.
 \\
 >ll pred pros
-A dot bounces around the leet learner's grid and winds up at (-1.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 0.00.)
 
 @all
 #+testcase-room-names-drain-drat-vain-vat
@@ -5005,7 +5026,7 @@ by one point
 
 @hin
 >ll pred pros
-I couldn't parse that command. You don't need any more than two words long. VERBS will give a list of standard, non-puzzle-solving verbs.
+I couldn't parse that command. You don't need any more than two words long. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 >s
 
@@ -5130,7 +5151,7 @@ by one point
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (-2.66, -4.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-2.66, -4.00.)
 
 >fret free
 by one point
@@ -5138,7 +5159,7 @@ by one point
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (-3.00, -4.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-3.00, -4.50.)
 
 >yet ye
 by one point
@@ -5146,7 +5167,7 @@ by one point
 
 @hin
 >ll
-A dot bounces around the leet learner's grid and winds up at (-3.00, -4.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-3.00, -4.00.)
 
 @rej
 >n
@@ -5208,7 +5229,7 @@ You can label the Burning Bright Spurning Sprite once they have an "award" of so
 
 @hin
 >ll sack
-A dot bounces around the leet learner's grid and winds up at (1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 2.00.)
 
 >plus plaque
 by one point
@@ -5216,7 +5237,7 @@ by one point
 
 @hin
 >ll spurning sprite
-A dot bounces around the leet learner's grid and winds up at (-0.50, -1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, -1.00.)
 
 @rej
 #testcase-postreject-table-of-verb-checks-vc-plus-plaque-rule

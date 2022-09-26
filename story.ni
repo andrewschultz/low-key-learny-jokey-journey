@@ -757,7 +757,7 @@ Old End is north of Drain Drat Vain Vat. Drain Drat Vain Vat is in Poppin' Part.
 
 check going in Vain Vat:
 	if sco-flain-flat is false and noun is up, say "It's too high to climb out!" instead;
-	if noun is not north and sco-splain-splat is false, say "While you could go back north, there must be enemies hidden behind some secret wall. How to draw attention to yourself to bring them out?" instead;
+	if noun is not north and sco-flain-flat is true and sco-splain-splat is false, say "While you could go back north, there must be enemies hidden behind some secret wall. How to draw attention to yourself to bring them out?" instead;
 	if Pred Pros are in vain vat:
 		if noun is south, say "The Pred Pros aren't going to leave without something to show for their work." instead;
 		if noun is north, say "Running from the Pred Pros would be unwise. Your rose's protection would wear off." instead;
@@ -937,7 +937,7 @@ this is the verb-checker rule:
 				say "The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right.";
 		abide by the two-too-help rule;
 	if local-ha-half-level > 0:
-		say "The [b]HA HALF[r] button on your Leet Learner lights up [if local-ha-half-level is 1]yellow[one of]--you must be close to a future solution[or][stopping][else]green[one of]--you must be just a letter or two away from progress[or][stopping][end if][if new-point-to-get is false]. Oh, wait, you're just switching back to a rhyme you knew before. You must've mis-thought a word[else if brightness is false]. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win[else if local-post-hom is true]. Its brightness suggests your rhyme must be very close, indeed[end if].";
+		say "The [b]HA HALF[r] button on your Leet Learner lights up [if local-ha-half-level is 1]yellow[one of]--one of the words must work for a future solution[or][stopping][else]green[one of]--one of the words you thought must be right[or][stopping][end if][if new-point-to-get is false]. Oh, wait, you're just switching back to a rhyme you knew before. You must've mis-thought a word[else if brightness is false]. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win[else if local-post-hom is true]. Its brightness suggests your rhyme must be very close, indeed[end if].";
 		abide-nlb the ha-half-help rule;
 
 volume unsorted locations

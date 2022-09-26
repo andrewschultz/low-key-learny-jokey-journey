@@ -24,20 +24,20 @@ Climbing up a bit, scanning the roaring rocks gets you a readout of (-1.00, -2.0
 
 >u
 Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note your choice DANE D. You scan a bit where TRAIN TREE is mentioned beneath each tube.
-A dot bounces around the leet learner's grid and winds up at (-1.00, -3.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -3.00.)
 
 >u
 Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note your choice DANE D. You scan a bit where BANE BE SANE, SEE is mentioned beneath each tube.
-A dot bounces around the leet learner's grid and winds up at (0.00, -1.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.50.)
 
 >u
 
 Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note each of the four paths for DANE D, JANE G, LANE LEE, and WAYNE WHEE. You scan a bit where TRAIN TREE is mentioned beneath each tube.
-A dot bounces around the leet learner's grid and winds up at (-0.75, -1.75.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.75, -1.75.)
 
 >u
 Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note each of the four paths for DANE D, JANE G, LANE LEE, and WAYNE WHEE. You scan a bit where BANE BE SANE, SEE is mentioned beneath each tube.
-A dot bounces around the leet learner's grid and winds up at (0.25, -0.25.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.25, -0.25.)
 
 * dane-dee-thru
 
@@ -56,20 +56,20 @@ Climbing up a bit, scanning the roaring rocks gets you a readout of (-1.00, -2.0
 
 >u
 Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note your choice DANE DEE. You scan a bit where TRAIN TREE is mentioned beneath each tube.
-A dot bounces around the leet learner's grid and winds up at (-1.00, -1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
 
 >u
 Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note your choice DANE DEE. You scan a bit where BANE BE SANE, SEE is mentioned beneath each tube.
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.50.)
 
 >u
 
 Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note each of the four paths for DANE D, JANE G, LANE LEE, and WAYNE WHEE. You scan a bit where TRAIN TREE is mentioned beneath each tube.
-A dot bounces around the leet learner's grid and winds up at (-0.75, -1.75.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.75, -1.75.)
 
 >u
 Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note each of the four paths for DANE D, JANE G, LANE LEE, and WAYNE WHEE. You scan a bit where BANE BE SANE, SEE is mentioned beneath each tube.
-A dot bounces around the leet learner's grid and winds up at (0.25, -0.25.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.25, -0.25.)
 
 * jane-g-thru
 
@@ -88,20 +88,20 @@ Climbing up a bit, scanning the roaring rocks gets you a readout of (-1.00, -2.0
 
 >u
 Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note your choice JANE G. You scan a bit where TRAIN TREE is mentioned beneath each tube.
-A dot bounces around the leet learner's grid and winds up at (-1.00, -3.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -3.00.)
 
 >u
 Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note your choice JANE G. You scan a bit where BANE BE SANE, SEE is mentioned beneath each tube.
-A dot bounces around the leet learner's grid and winds up at (0.00, -1.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.50.)
 
 >u
 
 Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note each of the four paths for DANE D, JANE G, LANE LEE, and WAYNE WHEE. You scan a bit where TRAIN TREE is mentioned beneath each tube.
-A dot bounces around the leet learner's grid and winds up at (-0.75, -1.75.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.75, -1.75.)
 
 >u
 Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note each of the four paths for DANE D, JANE G, LANE LEE, and WAYNE WHEE. You scan a bit where BANE BE SANE, SEE is mentioned beneath each tube.
-A dot bounces around the leet learner's grid and winds up at (0.25, -0.25.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.25, -0.25.)
 
 * jane-gee-thru
 
@@ -120,20 +120,20 @@ Climbing up a bit, scanning the roaring rocks gets you a readout of (-1.00, -2.0
 
 >u
 Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note your choice JANE GEE. You scan a bit where TRAIN TREE is mentioned beneath each tube.
-A dot bounces around the leet learner's grid and winds up at (-1.00, -1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
 
 >u
 Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note your choice JANE GEE. You scan a bit where BANE BE SANE, SEE is mentioned beneath each tube.
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.50.)
 
 >u
 
 Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note each of the four paths for DANE D, JANE G, LANE LEE, and WAYNE WHEE. You scan a bit where TRAIN TREE is mentioned beneath each tube.
-A dot bounces around the leet learner's grid and winds up at (-0.75, -1.75.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.75, -1.75.)
 
 >u
 Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note each of the four paths for DANE D, JANE G, LANE LEE, and WAYNE WHEE. You scan a bit where BANE BE SANE, SEE is mentioned beneath each tube.
-A dot bounces around the leet learner's grid and winds up at (0.25, -0.25.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.25, -0.25.)
 
 * lane-lee-thru
 
@@ -152,20 +152,20 @@ Climbing up a bit, scanning the roaring rocks gets you a readout of (-1.00, -2.0
 
 >u
 Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note your choice LANE LEE. You scan a bit where TRAIN TREE is mentioned beneath each tube.
-A dot bounces around the leet learner's grid and winds up at (-1.00, -1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
 
 >u
 Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note your choice LANE LEE. You scan a bit where BANE BE SANE, SEE is mentioned beneath each tube.
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.50.)
 
 >u
 
 Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note each of the four paths for DANE D, JANE G, LANE LEE, and WAYNE WHEE. You scan a bit where TRAIN TREE is mentioned beneath each tube.
-A dot bounces around the leet learner's grid and winds up at (-0.75, -1.75.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.75, -1.75.)
 
 >u
 Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note each of the four paths for DANE D, JANE G, LANE LEE, and WAYNE WHEE. You scan a bit where BANE BE SANE, SEE is mentioned beneath each tube.
-A dot bounces around the leet learner's grid and winds up at (0.25, -0.25.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.25, -0.25.)
 
 * wayne-whee-thru
 
@@ -184,20 +184,20 @@ Climbing up a bit, scanning the roaring rocks gets you a readout of (-1.00, -2.0
 
 >u
 Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note your choice WAYNE WHEE. You scan a bit where TRAIN TREE is mentioned beneath each tube.
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >u
 Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note your choice WAYNE WHEE. You scan a bit where BANE BE SANE, SEE is mentioned beneath each tube.
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.50.)
 
 >u
 
 Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note each of the four paths for DANE D, JANE G, LANE LEE, and WAYNE WHEE. You scan a bit where TRAIN TREE is mentioned beneath each tube.
-A dot bounces around the leet learner's grid and winds up at (-0.75, -1.75.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.75, -1.75.)
 
 >u
 Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note each of the four paths for DANE D, JANE G, LANE LEE, and WAYNE WHEE. You scan a bit where BANE BE SANE, SEE is mentioned beneath each tube.
-A dot bounces around the leet learner's grid and winds up at (0.25, -0.25.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.25, -0.25.)
 
 * lute-llps
 
@@ -274,7 +274,7 @@ by one point
 by one point
 
 >ll lute
-A dot bounces around the leet learner's grid and winds up at (-0.50, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, 0.00.)
 
 >enter lift
 
@@ -288,7 +288,7 @@ by one point
 by one point
 
 >ll lute
-A dot bounces around the leet learner's grid and winds up at (-1.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 0.00.)
 However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 
 >undo
@@ -298,7 +298,7 @@ However, it's really dim, as if you don't need to do or think whatever there is 
 by one point
 
 >ll lute
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 
 >night newt

@@ -28,7 +28,7 @@ The Leet Learner is already set to Ha Half.
 
 #testcase-ha-half-table-of-verb-checks-4-gad
 >gad zgunk
-The HA HALF button on your Leet Learner lights up green--you must be close to something you can do now. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win.
+The HA HALF button on your Leet Learner lights up green--one of the words you thought must be right. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win.
 
 #testcase-ha-half-table-of-verb-checks-4-gunk
 >zgad gunk
@@ -390,7 +390,7 @@ The HA HALF button on your Leet Learner lights up green. Very dim, though. Perha
 
 #testcase-ha-half-table-of-verb-checks-47-brew
 >bro zbrew
-The HA HALF button on your Leet Learner lights up yellow--you must be close to a future solution.
+The HA HALF button on your Leet Learner lights up yellow--one of the words must work for a future solution.
 
 #testcase-ha-half-table-of-verb-checks-47-bro
 >zbro brew

@@ -144,7 +144,7 @@ by one point
 
 >ll
 You scan the area. This will suffice most of the time, though you may wish to LL a thing that doesn't jibe with its rhymes.
-A dot bounces around the leet learner's grid and winds up at (-2.50, -0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-2.50, -0.50.)
 
 >go goo
 by one point
@@ -215,7 +215,7 @@ High Hub
 >grokking grift
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (-1.00, -2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -2.00.)
 However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 
 >tight tees
@@ -227,7 +227,7 @@ Nothing comes up. The general area here has been changed enough.
 >s
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (3.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (3.00, 1.00.)
 However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 
 >clique claiming
@@ -242,7 +242,7 @@ Nothing comes up. The general area here has been changed enough.
 !by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (-1.00, -2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -2.00.)
 However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 
 >lore lols
@@ -324,31 +324,31 @@ by one point
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.66, 0.66.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.66, 0.66.)
 >undo
 
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 >undo
 
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >01243
@@ -359,13 +359,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >01324
@@ -377,19 +377,19 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >01342
@@ -400,13 +400,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >01423
@@ -418,19 +418,19 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 >undo
 
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >01432
@@ -441,13 +441,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >02134
@@ -460,25 +460,25 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.33, 0.33.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.33, 0.33.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 >undo
 
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >02143
@@ -489,13 +489,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >02314
@@ -507,19 +507,19 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >02341
@@ -530,13 +530,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >02413
@@ -548,19 +548,19 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >02431
@@ -571,13 +571,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >03124
@@ -590,25 +590,25 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.66, 0.66.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.66, 0.66.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >03142
@@ -619,13 +619,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >03214
@@ -637,19 +637,19 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >03241
@@ -660,13 +660,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >03412
@@ -678,19 +678,19 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >03421
@@ -701,13 +701,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >04123
@@ -720,25 +720,25 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.33, 0.33.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.33, 0.33.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 >undo
 
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >04132
@@ -749,13 +749,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >04213
@@ -767,19 +767,19 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >04231
@@ -790,13 +790,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >04312
@@ -808,19 +808,19 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >04321
@@ -831,13 +831,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >10234
@@ -851,31 +851,31 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.50, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 1.00.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.66, 0.66.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.66, 0.66.)
 >undo
 
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 >undo
 
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >10243
@@ -886,13 +886,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >10324
@@ -904,19 +904,19 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >10342
@@ -927,13 +927,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >10423
@@ -945,19 +945,19 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 >undo
 
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >10432
@@ -968,13 +968,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >12034
@@ -987,25 +987,25 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.33, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.33, 1.00.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 >undo
 
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >12043
@@ -1016,13 +1016,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >12304
@@ -1034,19 +1034,19 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.50, 1.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 1.50.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >12340
@@ -1057,13 +1057,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 2.00.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >12403
@@ -1075,19 +1075,19 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >12430
@@ -1098,13 +1098,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 2.00.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >13024
@@ -1117,25 +1117,25 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.66, 1.33.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.66, 1.33.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >13042
@@ -1146,13 +1146,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >13204
@@ -1164,19 +1164,19 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.50, 1.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 1.50.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >13240
@@ -1187,13 +1187,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 2.00.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >13402
@@ -1205,19 +1205,19 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.50, 1.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 1.50.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >13420
@@ -1228,13 +1228,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 2.00.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >14023
@@ -1247,26 +1247,26 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.33, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.33, 1.00.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 
 >undo
 
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >14032
@@ -1277,13 +1277,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >14203
@@ -1295,19 +1295,19 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >14230
@@ -1318,13 +1318,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 2.00.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >14302
@@ -1336,19 +1336,19 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.50, 1.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 1.50.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >14320
@@ -1359,13 +1359,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 2.00.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >20134
@@ -1379,31 +1379,31 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.25, 0.75.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.25, 0.75.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.33, 0.33.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.33, 0.33.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 >undo
 
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >20143
@@ -1414,13 +1414,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >20314
@@ -1432,19 +1432,19 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >20341
@@ -1455,13 +1455,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >20413
@@ -1473,19 +1473,19 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >20431
@@ -1496,13 +1496,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >21034
@@ -1515,25 +1515,25 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.33, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.33, 1.00.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 >undo
 
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >21043
@@ -1544,13 +1544,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >21304
@@ -1562,19 +1562,19 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.50, 1.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 1.50.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >21340
@@ -1585,13 +1585,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 2.00.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >21403
@@ -1603,19 +1603,19 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >21430
@@ -1626,13 +1626,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 2.00.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >23014
@@ -1645,25 +1645,25 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.33, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.33, 1.00.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >23041
@@ -1674,13 +1674,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >23104
@@ -1692,19 +1692,19 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.50, 1.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 1.50.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >23140
@@ -1715,13 +1715,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 2.00.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >23401
@@ -1733,19 +1733,19 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >23410
@@ -1756,13 +1756,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 2.00.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >24013
@@ -1775,25 +1775,25 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.66.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.66.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >24031
@@ -1804,13 +1804,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >24103
@@ -1822,19 +1822,19 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >24130
@@ -1845,13 +1845,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 2.00.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >24301
@@ -1863,19 +1863,19 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >24310
@@ -1886,13 +1886,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 2.00.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >30124
@@ -1906,31 +1906,31 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.50, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 1.00.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.66, 0.66.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.66, 0.66.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >30142
@@ -1941,13 +1941,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >30214
@@ -1959,19 +1959,19 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >30241
@@ -1982,13 +1982,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >30412
@@ -2000,19 +2000,19 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >30421
@@ -2023,13 +2023,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >31024
@@ -2042,25 +2042,25 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.66, 1.33.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.66, 1.33.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >31042
@@ -2071,13 +2071,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >31204
@@ -2089,19 +2089,19 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.50, 1.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 1.50.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >31240
@@ -2112,13 +2112,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 2.00.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >31402
@@ -2130,19 +2130,19 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.50, 1.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 1.50.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >31420
@@ -2153,13 +2153,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 2.00.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >32014
@@ -2172,25 +2172,25 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.33, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.33, 1.00.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >32041
@@ -2201,13 +2201,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >32104
@@ -2219,19 +2219,19 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.50, 1.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 1.50.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >32140
@@ -2242,13 +2242,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 2.00.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >32401
@@ -2260,19 +2260,19 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >32410
@@ -2283,13 +2283,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 2.00.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >34012
@@ -2302,25 +2302,25 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.33, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.33, 1.00.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >34021
@@ -2331,13 +2331,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >34102
@@ -2349,19 +2349,19 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.50, 1.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 1.50.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >34120
@@ -2372,13 +2372,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 2.00.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >34201
@@ -2390,19 +2390,19 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >34210
@@ -2413,13 +2413,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 2.00.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >40123
@@ -2433,31 +2433,31 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >shocking shift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.25, 0.75.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.25, 0.75.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.33, 0.33.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.33, 0.33.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 >undo
 
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >40132
@@ -2468,13 +2468,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >40213
@@ -2486,19 +2486,19 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >40231
@@ -2509,13 +2509,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >40312
@@ -2527,19 +2527,19 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >40321
@@ -2550,13 +2550,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >41023
@@ -2569,25 +2569,25 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.33, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.33, 1.00.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 >undo
 
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >41032
@@ -2598,13 +2598,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >41203
@@ -2616,19 +2616,19 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >41230
@@ -2639,13 +2639,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 2.00.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >41302
@@ -2657,19 +2657,19 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.50, 1.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 1.50.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >41320
@@ -2680,13 +2680,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 2.00.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >42013
@@ -2699,25 +2699,25 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.66.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.66.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >42031
@@ -2728,13 +2728,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >42103
@@ -2746,19 +2746,19 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >42130
@@ -2769,13 +2769,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 2.00.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >42301
@@ -2787,19 +2787,19 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >42310
@@ -2810,13 +2810,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 2.00.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >43012
@@ -2829,25 +2829,25 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >rocking rift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.33, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.33, 1.00.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >43021
@@ -2858,13 +2858,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >43102
@@ -2876,19 +2876,19 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.50, 1.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 1.50.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >43120
@@ -2899,13 +2899,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 2.00.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >43201
@@ -2917,19 +2917,19 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >grokking grift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >43210
@@ -2940,13 +2940,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
 >gawking gift
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 2.00.)
 >undo
 
 >docking diffed
 by one point
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
 >undo
@@ -2972,7 +2972,7 @@ by one point
 >bad bunk
 by one point
 >ll monk
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >undo
 
@@ -2989,7 +2989,7 @@ DEBUG: can't see any such thing error.
 >sad sunk
 by one point
 >ll monk
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >bad bunk
@@ -3019,14 +3019,14 @@ by one point
 by one point
 >ll
 You scan the area. This will suffice most of the time, though you may wish to LL a thing that doesn't jibe with its rhymes.
-A dot bounces around the leet learner's grid and winds up at (1.00, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.50.)
 >undo
 
 >glow glue
 by one point
 >ll
 You scan the area. This will suffice most of the time, though you may wish to LL a thing that doesn't jibe with its rhymes.
-A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 >undo
 
 #1/0
@@ -3037,14 +3037,14 @@ A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
 by one point
 >ll
 You scan the area. This will suffice most of the time, though you may wish to LL a thing that doesn't jibe with its rhymes.
-A dot bounces around the leet learner's grid and winds up at (1.00, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.50.)
 >undo
 
 >flow flue
 by one point
 >ll
 You scan the area. This will suffice most of the time, though you may wish to LL a thing that doesn't jibe with its rhymes.
-A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 >undo
 
 >l
@@ -3067,13 +3067,13 @@ by one point
 >bro brew
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 >undo
 
 >stow stew
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (-1.50, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.50, 0.00.)
 >undo
 
 #1/0
@@ -3082,13 +3082,13 @@ A dot bounces around the leet learner's grid and winds up at (-1.50, 0.00.)
 >stow stew
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 >undo
 
 >bro brew
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (-1.50, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.50, 0.00.)
 >undo
 
 #################### bro brew/stow stew end
@@ -3113,21 +3113,21 @@ by one point
 by one point
 >ll
 You scan the area. This will suffice most of the time, though you may wish to LL a thing that doesn't jibe with its rhymes.
-A dot bounces around the leet learner's grid and winds up at (-1.00, -0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -0.50.)
 >undo
 
 >ho who
 by one point
 >ll
 You scan the area. This will suffice most of the time, though you may wish to LL a thing that doesn't jibe with its rhymes.
-A dot bounces around the leet learner's grid and winds up at (-1.00, -0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -0.50.)
 >undo
 
 >yo you
 by one point
 >ll
 You scan the area. This will suffice most of the time, though you may wish to LL a thing that doesn't jibe with its rhymes.
-A dot bounces around the leet learner's grid and winds up at (0.50, 3.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 3.50.)
 >undo
 
 #1/0/2
@@ -3139,21 +3139,21 @@ A dot bounces around the leet learner's grid and winds up at (0.50, 3.50.)
 by one point
 >ll
 You scan the area. This will suffice most of the time, though you may wish to LL a thing that doesn't jibe with its rhymes.
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 >undo
 
 >crow crew
 by one point
 >ll
 You scan the area. This will suffice most of the time, though you may wish to LL a thing that doesn't jibe with its rhymes.
-A dot bounces around the leet learner's grid and winds up at (-1.00, -0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -0.50.)
 >undo
 
 >yo you
 by one point
 >ll
 You scan the area. This will suffice most of the time, though you may wish to LL a thing that doesn't jibe with its rhymes.
-A dot bounces around the leet learner's grid and winds up at (0.50, 3.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 3.50.)
 >undo
 
 >l
@@ -3169,14 +3169,14 @@ A lazy loud crazy crowd waits here for entertainment. They're ready for the big 
 by one point
 >ll
 You scan the area. This will suffice most of the time, though you may wish to LL a thing that doesn't jibe with its rhymes.
-A dot bounces around the leet learner's grid and winds up at (-0.50, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, 0.50.)
 >undo
 
 >crow crew
 by one point
 >ll
 You scan the area. This will suffice most of the time, though you may wish to LL a thing that doesn't jibe with its rhymes.
-A dot bounces around the leet learner's grid and winds up at (0.50, 3.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 3.50.)
 >undo
 
 >l
@@ -3200,7 +3200,7 @@ by one point
 >four foals
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (-1.00, -1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
 >undo
 
 >more moles
@@ -3216,7 +3216,7 @@ Nothing comes up. The general area here has been changed enough.
 >more moles
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (-1.00, -1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
 >undo
 
 >four foals
@@ -3245,25 +3245,25 @@ by one point
 >flight flail
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.00, -1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
 >undo
 
 >might mail
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.00, -1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
 >undo
 
 >sight sail
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.00, -1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
 >undo
 
 >right rail
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >0213
@@ -3275,19 +3275,19 @@ A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
 >sight sail
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.00, -1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
 >undo
 
 >might mail
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.00, -1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
 >undo
 
 >right rail
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >0231
@@ -3298,13 +3298,13 @@ A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
 >right rail
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.00, -1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
 >undo
 
 >might mail
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >1023
@@ -3317,25 +3317,25 @@ A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
 >might mail
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.50, -0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, -0.50.)
 >undo
 
 >flight flail
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.00, -1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
 >undo
 
 >sight sail
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.00, -1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
 >undo
 
 >right rail
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >1203
@@ -3347,19 +3347,19 @@ A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
 >sight sail
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.50, -0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, -0.50.)
 >undo
 
 >flight flail
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.00, -1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
 >undo
 
 >right rail
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >1230
@@ -3370,13 +3370,13 @@ A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
 >right rail
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (1.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.00.)
 >undo
 
 >flight flail
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >2013
@@ -3389,25 +3389,25 @@ A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
 >sight sail
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.33, -0.66.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.33, -0.66.)
 >undo
 
 >flight flail
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.00, -1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
 >undo
 
 >might mail
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.00, -1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
 >undo
 
 >right rail
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >2031
@@ -3418,13 +3418,13 @@ A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
 >right rail
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.00, -1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
 >undo
 
 >might mail
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >2103
@@ -3436,19 +3436,19 @@ A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
 >might mail
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.50, -0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, -0.50.)
 >undo
 
 >flight flail
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.00, -1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
 >undo
 
 >right rail
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >2130
@@ -3459,13 +3459,13 @@ A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
 >right rail
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (1.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.00.)
 >undo
 
 >flight flail
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >2301
@@ -3477,19 +3477,19 @@ A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
 >right rail
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.50, -0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, -0.50.)
 >undo
 
 >flight flail
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.00, -1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
 >undo
 
 >might mail
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 >2310
@@ -3500,13 +3500,13 @@ A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
 >might mail
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (1.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.00.)
 >undo
 
 >flight flail
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
 #################### flight flail/might mail/sight sail/right rail end
@@ -3570,13 +3570,13 @@ by one point
 >fret free
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (-3.00, -4.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-3.00, -4.50.)
 >undo
 
 >set see
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (-3.00, -5.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-3.00, -5.00.)
 >undo
 
 >yet ye
@@ -3593,7 +3593,7 @@ Nothing comes up. The general area here has been changed enough.
 >yet ye
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (-3.00, -4.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-3.00, -4.00.)
 >undo
 
 >set see
@@ -3611,13 +3611,13 @@ Nothing comes up. The general area here has been changed enough.
 >set see
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (-2.50, -4.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-2.50, -4.00.)
 >undo
 
 >fret free
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (-3.00, -5.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-3.00, -5.00.)
 >undo
 
 >yet ye
@@ -3634,7 +3634,7 @@ Nothing comes up. The general area here has been changed enough.
 >yet ye
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (-2.00, -3.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-2.00, -3.00.)
 >undo
 
 >fret free
@@ -3652,13 +3652,13 @@ Nothing comes up. The general area here has been changed enough.
 >yet ye
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (-2.50, -3.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-2.50, -3.50.)
 >undo
 
 >fret free
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (-3.00, -4.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-3.00, -4.00.)
 >undo
 
 >set see
@@ -3675,7 +3675,7 @@ Nothing comes up. The general area here has been changed enough.
 >set see
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (-2.00, -3.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-2.00, -3.00.)
 >undo
 
 >fret free

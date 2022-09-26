@@ -13,68 +13,84 @@
 #ttc-table-of-general-good-guesses-choppin-chart
 >choppin chart
 There are only three regions, and the name isn't really important.
+!learner
 
 #ttc-table-of-general-good-guesses-coppin-cart
 >coppin cart
 No policemen drive by. They might be corrupt, anyway.
+!learner
 
 #ttc-table-of-general-good-guesses-earning-right
 >earning right
 Well, that's what you hope to find!
+!learner
 
 #ttc-table-of-general-good-guesses-ferning-fright
 >ferning fright
 There are no terrorist plants worth summoning in Low-Key Learny Jokey Journey.
+!learner
 
 #ttc-table-of-general-good-guesses-mopping-mart
 >mopping mart
 Surely this is more exciting than a trip for cleaning supplies.
 lurking lump
+!learner
 
 #ttc-table-of-general-good-guesses-ride-wrong
 >ride wrong
 There is no fourth option for the guide gone, but you do have a chance for a heel turn at game's end.
+!learner
 !lurking lump
 
 #ttc-table-of-general-good-guesses-side-song
 >side song
 This is a no-frills text adventure. No music, no graphics, besides the middling-at-best cover art.
+!learner
 
 #ttc-table-of-bane-be-sane-see-guesses-cane-key
 >cane key
 You don't need any key to unlock the tree.
+!learner
 
 #ttc-table-of-bane-be-sane-see-guesses-feign-fee
 >feign fee
 You whine about how Low-Key Learny Jokey Journey costs money on top of being a waste of time. Nobody listens.
+!learner
 
 #ttc-table-of-bane-be-sane-see-guesses-main-me
 >main me
 You are the main character in this adventure, but don't let it go to your head.
+!learner
 
 #ttc-table-of-bane-be-sane-see-guesses-pain-p-pee
 >pain p
 Low-Key Learny Jokey Journey is nonviolent and hopefully devoid of bathroom humor.
+!learner
 
 #ttc-table-of-bane-be-sane-see-guesses-sprain-spree
 >sprain spree
 While this is technically correct, you don't want to injure yourself or others.
+!learner
 
 #ttc-table-of-bane-be-sane-see-guesses-vain-v
 >vain v
 You come to grips with how you are not as humble as you should be.
+!learner
 
 #ttc-table-of-general-good-guesses-okie-ernie-earnie-earny
 >okie ernie
 No stereotypical rural fellow pops up with down-home advice.
+!learner
 
 #ttc-table-of-general-good-guesses-tokey-tourney
 >tokey tourney
 That could potentially be very relaxed and low-key, indeed. I guess.
+!learner
 
 #ttc-table-of-lurking-lump-guesses-clerking-clump
 >clerking clump
 The lump can't keep track of things. That would be the Leet Learner.
+!learner
 
 #ttc-table-of-lurking-lump-guesses-perking-pump
 >perking pump
@@ -510,7 +526,7 @@ by one point
 
 #+ttc-table-of-deep-dune-guesses-beep-boon
 >beep boon
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, this game tries to keep it simple, so you can focus on the puzzle verbs. VERBS will give a list of standard, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 >s
 

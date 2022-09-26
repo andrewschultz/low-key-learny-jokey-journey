@@ -1738,7 +1738,7 @@ nay nope slay slope	"The only physical way out of these depths is up, [if sco-k-
 slight sleaze	"You can only enter the lift or [if sco-right-root is true]go south through the path you forged[else]try to dispel the fright freeze and find a passage[end if]."
 seek sameing	"This is a hideout think-tank. If there's a more secret place, it's beyond you. So, back north it is, when you want to leave."
 Old End	"[if sco-mold-mend is true]You are ready to go south now. No turning away.[else if sco-trolled-trend is true]The trolled trend got to you, but you can't forsake the bend entirely[else if sco-bold-bend is true]The bold bend you created goes south-to-east. You need to figure which of these ways is right[else]This feels like the end, but it can't be. Maybe you can puzzle your way through[end if]."
-Vain Vat	"[if sco-bane-bat is false]You'd injure yourself trying to run through the vat. It's sturdy[else if sco-flain-flat is false]You need a plan of how to destroy the vat with your bat[else if sco-splain-splat is false]You're out of the vat, but you can only see passage back north[else]The Pred Pros, alas, only knocked a hole in the south wall to match the way back north[end if]."
+Vain Vat	"[if sco-bane-bat is false]You'd injure yourself trying to run through the vat. It's sturdy.[else if sco-flain-flat is false]You'd need to destroy the vat with your bat first. But how?[else if sco-splain-splat is false]You're out of the vat, but you can only see passage back north.[else]The Pred Pros, alas, only knocked a hole in the south wall to match the way back north.[end if]"
 Threat Three	"You're at the final confrontation. There are no secret passages, [if marquee is moot]and you can't even[else]just an[end if] exit back north."
 
 volume guesses

@@ -1,7 +1,7 @@
 ## reg-lljj-thru-hints.txt
 ## GENERATOR FILE: rbr-lljj-thru.txt
 
-## walkthrough testing hints
+## walkthrough testing hints basic
 
 ** game: /home/andrew/prt/debug-low-key-learny-jokey-journey.z8
 ** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
@@ -14,36 +14,36 @@
 by one point
 
 >ll
-Most special commands are more than one word. VERBS will give a list of standard, non-puzzle-solving verbs.
+Most special commands are more than one word. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 >jane g
 by one point
 
 >ll
-Most special commands are more than one word, because of the rhyme-pairs involved. VERBS will give a list of standard, non-puzzle-solving verbs.
+Most special commands are more than one word, because of the rhyme-pairs involved. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 >boring box
 by one point
 
 >ll
-Most special commands are more than one word, because of the rhyme-pairs involved. VERBS will give a list of standard, non-puzzle-solving verbs.
+Most special commands are more than one word, because of the rhyme-pairs involved. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 >open box
 
 >ll
 You scan the area.
 Hmm. There's a reading. It must relate "Storing Stocks" to the erstwhile boring box.
-A dot bounces around the leet learner's grid and winds up at (-1.00, -3.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -3.00.)
 The leet learner is giving a funny readout. You could maybe climb UP to the old rocks and get another reading.
 
 >n
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (-1.00, -3.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -3.00.)
 !You could maybe climb UP to the old rocks and get another reading.
 
 >ll mad monk
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >gad gunk
 by one point
@@ -51,7 +51,7 @@ by one point
 >sad sunk
 
 >ll mad monk
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >undo
 >undo
@@ -60,18 +60,18 @@ A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
 by one point
 
 >ll mad monk
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >sad sunk
 by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (-1.00, -3.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -3.00.)
 
 >n
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (1.00, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.50.)
 
 >grow grudge
 by one point
@@ -85,23 +85,23 @@ Nothing comes up. The general area here has been changed enough.
 You hear a whooshing as a door swings in from nowhere. It doesn't seem to lead anywhere. Voices from behind it, though, assure you you are missing something. Using your logical skills, you deduce it is a miss-more-diss door. While it's not going to jump you if your back is turned, it might be nice to get rid of.
 
 >ll door
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 
 >piss poor
 by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.50, -0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, -0.50.)
 
 >done dorm
 by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (-0.50, -0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, -0.50.)
 
 >ll done dorm
-A dot bounces around the leet learner's grid and winds up at (-1.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 0.00.)
 
 >fun form
 by one point
@@ -112,13 +112,13 @@ Nothing comes up. The general area here has been changed enough.
 >n
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (-0.50, -1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, -1.00.)
 
 >see sunk
 by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (-0.50, -1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, -1.00.)
 
 >gee junk
 by one point
@@ -127,7 +127,7 @@ by one point
 Nothing comes up. The general area here has been changed enough.
 
 >ll fruit
-A dot bounces around the leet learner's grid and winds up at (0.00, -1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
 
 >whee woot
 by one point
@@ -139,7 +139,7 @@ Nothing comes up. You've changed FREE FRUIT as much as you needed to.
 by one point
 
 >ll pear peach
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >s
 
@@ -148,16 +148,16 @@ A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
 >e
 
 >ll jack
-A dot bounces around the leet learner's grid and winds up at (2.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (2.00, 0.00.)
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (1.00, -1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, -1.00.)
 
 >bussed back
 by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >crust crack
 by one point
@@ -168,7 +168,7 @@ Nothing comes up. The general area here has been changed enough.
 >n
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >bare beach
 by one point
@@ -177,19 +177,19 @@ by one point
 Nothing comes up. The general area here has been changed enough.
 
 >ll dune
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >seep soon
 by one point
 
 >ll dune
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >s
 >n
 
 >ll dune
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >reap rune
 by one point
@@ -207,7 +207,7 @@ Nothing comes up. The general area here has been changed enough.
 >w
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (-1.00, -1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
 
 >unarm
 by one point
@@ -218,31 +218,31 @@ Nothing comes up. The general area here has been changed enough.
 >n
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >go goon
 by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >cocoon
 by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >mo moon
 by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >so soon
 by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (2.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (2.00, 1.00.)
 
 >crow croon
 by one point
@@ -254,19 +254,19 @@ by one point
 by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (1.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.00.)
 
 >knotty nail
 by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (-1.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 0.00.)
 However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 
 >bye bub
 
 >ll stalk
-A dot bounces around the leet learner's grid and winds up at (-1.00, -1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
 However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 
 >wordy walk
@@ -291,7 +291,7 @@ Nothing comes up. The general area here has been changed enough.
 Nothing comes up. The general area here has been changed enough.
 
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.40, 0.80.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.40, 0.80.)
 
 >rocking rift
 by one point
@@ -300,12 +300,12 @@ by one point
 by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (1.00, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.50.)
 
 >glow glue
 by one point
 >ll
-A dot bounces around the leet learner's grid and winds up at (1.00, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.50.)
 
 >undo
 >undo
@@ -314,19 +314,19 @@ A dot bounces around the leet learner's grid and winds up at (1.00, 0.50.)
 by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (1.00, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.50.)
 
 >glow glue
 by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 
 >stow stew
 by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 
 >undo
 >undo
@@ -335,31 +335,31 @@ A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
 by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 
 >stow stew
 by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >crow crew
 by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (-1.00, -0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -0.50.)
 
 >ho who
 by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (-1.00, -0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -0.50.)
 
 >yo you
 by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.50, 3.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 3.50.)
 
 >throw through
 by one point
@@ -368,19 +368,19 @@ by one point
 ##RBRS-SHUFFLESTART=1
 
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.50, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 1.00.)
 
 >shocking shift
 by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 
 >shore shoals
 by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (-1.00, -1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
 
 ##RBRS-SHUFFLECONDITION=1>0
 
@@ -401,7 +401,7 @@ by one point
 by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (-1.00, -1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
 
 >more moles
 by one point
@@ -410,28 +410,28 @@ by one point
 ##RBRS-SHUFFLESTART=2
 
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.33, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.33, 1.00.)
 
 >gawking gift
 by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (1.00, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.50.)
 
 >dumb doubt
 by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.00, -1.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.50.)
 
 >ll rose
-A dot bounces around the leet learner's grid and winds up at (1.25, 0.25.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.25, 0.25.)
 
 >said sos
 by one point
 
 >ll rose
-A dot bounces around the leet learner's grid and winds up at (1.33, 0.66.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.33, 0.66.)
 
 >umm out
 by one point
@@ -442,13 +442,13 @@ Nothing comes up. The general area here has been changed enough.
 >d
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (-0.50, -0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, -0.50.)
 
 >hey hope
 by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (-2.50, -0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-2.50, -0.50.)
 
 >k cope
 by one point
@@ -457,38 +457,38 @@ by one point
 ##RBRS-SHUFFLESTART=3
 
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.50, 1.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 1.50.)
 
 >grokking grift
 by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >bright breeze
 by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >plight please
 by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (-1.00, -2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -2.00.)
 However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 
 >tight tees
 by one point
 
 >ll light lute
-A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 
 >right root
 by one point
 
 >ll light lute
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 
 >ll
 You scan the area.
@@ -497,19 +497,19 @@ Nothing comes up. The general area here has been changed enough.
 >s
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.50, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.00.)
 
 >bleak blaming
 by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (-0.50, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, 0.00.)
 
 >chic shaming
 by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (3.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (3.00, 1.00.)
 However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 
 >clique claiming
@@ -525,19 +525,19 @@ by one point
 ##RBRS-SHUFFLESTART=4
 
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (0.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 2.00.)
 
 >docking diffed
 by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.50.)
 
 >bad boast
 by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.50.)
 
 >rad roast
 by one point
@@ -548,35 +548,35 @@ Nothing comes up. The general area here has been changed enough.
 >w
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.33, -0.66.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.33, -0.66.)
 
 >sight sail
 by one point
 
 # nothing changes after Sight Sail, because Right Rail is opened
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.33, -0.66.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.33, -0.66.)
 
 >flight flail
 by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.00, -1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
 
 >might mail
 by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.00, -1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
 
 >right rail
 by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 
 >ll light lute
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 
 >bright brute
 by one point
@@ -588,7 +588,7 @@ Nothing comes up. You've changed the light lute as much as you needed to.
 by one point
 
 >ll red rose
-A dot bounces around the leet learner's grid and winds up at (1.50, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.50, 1.00.)
 
 >ll
 Nothing comes up. The general area here has been changed enough.
@@ -597,37 +597,37 @@ Nothing comes up. The general area here has been changed enough.
 by one point
 
 >ll red rose
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 ##RBRS-SHUFFLEEND=4
 
 >ll delight dilute
-A dot bounces around the leet learner's grid and winds up at (0.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
 However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 
 >despite dispute
 by one point
 
 >ll lift
-A dot bounces around the leet learner's grid and winds up at (-1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 
 >mocking miffed
 by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (1.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 
 >bold bend
 by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (3.00, 1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (3.00, 1.00.)
 
 >trolled trend
 by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >mold mend
 by one point
@@ -638,19 +638,19 @@ Nothing comes up. The general area here has been changed enough.
 >s
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (-0.50, -0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, -0.50.)
 
 >bane bat
 by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (0.50, 0.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 
 >flain flat
 by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (1.50, 1.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.50, 1.50.)
 
 >splain splat
 by one point
@@ -659,33 +659,33 @@ by one point
 Nothing comes up. The general area here has been changed enough.
 
 >ll red rose
-I couldn't parse that command. You don't need any more than two words long. VERBS will give a list of standard, non-puzzle-solving verbs.
+I couldn't parse that command. You don't need any more than two words long. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 >ll pred pros
-A dot bounces around the leet learner's grid and winds up at (-1.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 0.00.)
 
 >fed foes
 by one point
 
 >ll pred pros
-I couldn't parse that command. You don't need any more than two words long. VERBS will give a list of standard, non-puzzle-solving verbs.
+I couldn't parse that command. You don't need any more than two words long. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 >s
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (-2.66, -4.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-2.66, -4.00.)
 
 >fret free
 by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (-3.00, -4.50.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-3.00, -4.50.)
 
 >yet ye
 by one point
 
 >ll
-A dot bounces around the leet learner's grid and winds up at (-3.00, -4.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-3.00, -4.00.)
 
 >set see
 by one point
@@ -694,13 +694,13 @@ by one point
 Nothing comes up. The general area here has been changed enough.
 
 >ll sack
-A dot bounces around the leet learner's grid and winds up at (1.00, 2.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 2.00.)
 
 >plus plaque
 by one point
 
 >ll spurning sprite
-A dot bounces around the leet learner's grid and winds up at (-0.50, -1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, -1.00.)
 
 >score
 

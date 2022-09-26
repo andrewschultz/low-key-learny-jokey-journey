@@ -12,7 +12,7 @@
 
 #ttc-table-of-readables-train-tree
 >read train tree
-There are three ways to enter the train tree: under writing saying WAYNE (WHEE), JANE G, or DANE D/LANE LEE. They all look about the same.
+There are three ways to enter the train tree: under writing saying WAYNE (WHEE), JANE G, or DANE D/LANE LEE. You can probably type whichever, to enter as you please.
 
 >listen
 You get the feeling your voice could add constructively to the noises, somehow, but it's not critical.

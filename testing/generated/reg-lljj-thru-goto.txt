@@ -368,7 +368,7 @@ by one point
 
 #ttc-table-of-noways-new-show-shoe
 >n
-There's no way out except through the lift. You're the only person to get the show started, here.
+The expanses beyond No-New-Show Shoe seem daunting indeed. You're the only person to bring together a successful show, though you can take the lift elsewhere if you're stuck here.
 
 #testcase-exits-no-new-show-shoe
 >exits
@@ -449,10 +449,10 @@ by one point
 
 #ttc-table-of-noways-rum-route
 >n
-While you can go back into the lift, you suspect the route leads somewhere, once you're focused right.
+Directions seem meaningless here, though you can always enter the lift. You suspect the route leads somewhere, once you're focused right.
 
 >d
-While you can go back into the lift, you suspect the route leads somewhere, once you're focused right.
+Directions seem meaningless here, though you can always enter the lift. You suspect the route leads somewhere, once you're focused right.
 
 #testcase-exits-rum-route
 >exits
@@ -469,7 +469,7 @@ by one point
 
 #+ttc-table-of-noways-rum-route
 >n
-While you can go back into the lift, you can also go down.
+Directions seem meaningless here, though you can always enter the lift. You can, however, go down now.
 
 #+testcase-exits-rum-route
 >exits
@@ -677,7 +677,7 @@ You are ready to go south now. No turning away.
 
 #ttc-table-of-noways-vain-vat
 >w
-You're still stuck in the vain vat. You need to get out. But it can't be too bad.
+You'd injure yourself trying to run through the vat. It's sturdy.
 
 #testcase-exits-drain-drat-vain-vat
 >exits
@@ -686,6 +686,9 @@ north: (blocked.)
 
 >bane bat
 by one point
+
+>w
+You'd need to destroy the vat with your bat first. But how?
 
 >flain flat
 by one point
