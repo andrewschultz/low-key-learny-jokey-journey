@@ -146,7 +146,7 @@ the player is in Bane Be Sane See. description of player is "Some searchin['], u
 
 chapter train tree
 
-the train tree is scenery in Bane Be Sane See. "It's a big tree. [b]MAIN ME[r] is carved into it in big letters.  There are three ways to enter, none more right than the other. You may wish to [b]READ[r] what's below them."
+the train tree is climbable scenery in Bane Be Sane See. "[b]MAIN ME[r] is carved into the train tree in big letters.  It has three identical entries, none more right than the other. You may wish to [b]READ[r] what's below them."
 
 check entering train tree: say "Which way? [b]READ[r] the tree." instead;
 
@@ -335,7 +335,7 @@ guess-table of TTTT is table of Thunk Tree Trunk guesses.
 
 chapter Tree Trunk
 
-the Thunk Tree Trunk is scenery in TTTT. "[if sco-gee-junk is true]Nothing besides the [FRUIT] is in the tree trunk[else if sco-see-sunk is true]You get the feeling something semi-valuable could be in the tree trunk, if you just asked right[else]The tree trunk is tough to climb, but it's wide. Perhaps you could make it a little less intimidating[end if].". printed name of Thunk Tree Trunk is "(thunk) tree trunk".
+the Thunk Tree Trunk is climbable scenery in TTTT. "[if sco-gee-junk is true]Nothing besides the [FRUIT] is in the tree trunk[else if sco-see-sunk is true]You get the feeling something semi-valuable could be in the tree trunk, if you just asked right[else]The tree trunk is tough to climb, but it's wide. Perhaps you could make it a little less intimidating[end if].". printed name of Thunk Tree Trunk is "(thunk) tree trunk".
 
 from-number of Thunk Tree Trunk is 10710.
 
@@ -396,7 +396,7 @@ after going to Rare Reach when sco-seep-soon is true and flag-reap-rune is false
 
 chapter deep dune
 
-the deep dune is a rhymable. it is scenery. "[if rho rune is off-stage]Man! It's so big, you figure something must be hidden in it[else]The deep dune gave you the Rho Rune, and you can't think of anything else to look for[end if].". guess-table of deep dune is table of deep dune guesses.
+the deep dune is a climbable rhymable. it is scenery. "[if rho rune is off-stage]Man! It's so big, you figure something must be hidden in it[else]The deep dune gave you the Rho Rune, and you can't think of anything else to look for[end if].". guess-table of deep dune is table of deep dune guesses.
 
 from-number of deep dune is 5404. to-number of deep dune is 5404.
 
@@ -451,7 +451,7 @@ from-number of high hub is 5403. to-number of high hub is -5303.
 
 chapter locking lift
 
-The locking lift is a rhymable in High Hub. It is scenery. "The locking lift seems to have a list of places it can go, or emotions you can express to see a new place. The unvisited ones are blurred out, of course. You can [b]READ[r] your progress so far." [?? if you got MOCKING MIFFED first, then you are in luck]
+The locking lift is a climbable rhymable in High Hub. It is scenery. "The locking lift seems to have a list of places it can go, or emotions you can express to see a new place. The unvisited ones are blurred out, of course. You can [b]READ[r] your progress so far." [?? if you got MOCKING MIFFED first, then you are in luck]
 
 check going inside when locking lift is in location of player: try entering lift instead;
 
@@ -998,6 +998,29 @@ carry out talktoing:
 	if noun is pred pros, say "Direct negotiations won't work. You can give them something, though." instead; [start endgame]
 	if noun is sprite, say "'So! The [if sco-plus-plaque is true]inscription on your [end if]gift? I'm not greedy or anything. It's just the right thing to do. Obviously." instead;
 	say "No response. There's not a lot you need to talk to." instead;
+
+book climbing
+
+the block climbing rule is not listed in any rulebook.
+
+rule for supplying a missing noun when climbing:
+	if number of fungible climbable things is 0:
+		say "(going up)[paragraph break]";
+		try going up instead;
+	now noun is a random fungible climbable thing;
+
+check climbing:
+	if climb-warn is false:
+		now climb-warn is true;
+		say "[i][bracket][b]NOTE: CLIMB[r][i] maps to going up.[close bracket][r][paragraph break]";
+	if noun is train tree, say "There's nothing on top of the tree, only inside." instead;
+	if noun is stalk:
+		say "The stalk is, unsurprisingly, sturdy enough.";
+		try going up instead;
+	if noun is tree trunk, say "The tree trunk doesn't lead anywhere." instead;
+	if noun is deep dune, say "You might fall in." instead;
+	if noun is locking lift, say "That would be really dangerous." instead;
+	say "There's nothing really to climb here." instead;
 
 book listening
 

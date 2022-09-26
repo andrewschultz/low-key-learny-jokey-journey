@@ -10,6 +10,12 @@ a multrhymable is a kind of rhymable.
 
 a room has a number called spokeval. spokeval of a room is usually -1.
 
+section climbing
+
+climb-warn is a truth state that varies.
+
+a thing can be climbable. a thing is usually not climbable.
+
 volume defined numbers
 
 section monk
