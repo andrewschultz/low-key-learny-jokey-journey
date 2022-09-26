@@ -391,7 +391,7 @@ this is the vc-reap-rune rule:
 	ready;
 
 this is the vr-reap-rune rule:
-	say "What do you know? You reach in, and there the rune is. It is in the shape of the Greek letter Rho. The deep dune, having served its purpose, sinks into the general landscape.";
+	say "What do you know? You totally believe in yourself as you reach into the deep dune, and a rune turns up! It is in the shape of the Greek letter Rho. The deep dune, having served its purpose, sinks into the general landscape.";
 	now player has Rho Rune;
 	now sco-reap-rune is true;
 	moot deep dune;
@@ -478,7 +478,7 @@ a goodrhyme rule (this is the vc-crow-croon rule):
 
 this is the vr-crow-croon rule:
 	now sco-crow-croon is true;
-	say "The crow croons! Your [rune] glows, then bursts in unison with the cocoon. A ... well, not quite a monster, but no animal you've seen before ... flies out into the sky.[paragraph break]It is met by [the sprite]! 'Threat two!' screeches [the sprite]. A fight ensues, and the beast you've created gets away.[paragraph break]'Now you've done it!' says [the sprite]. 'That wasn't supposed to happen. Trust me. And no offense, you've learned the rules to get by, but you haven't lerned the REAL rules. Maye a spell in jail will help you.'";
+	say "The crow croons! Your [rune] glows, then bursts in unison with the cocoon. A ... well, not quite a monster, but no animal you've seen before ... flies out into the sky.[paragraph break]It is met by [the sprite]! 'Threat two!' screeches [the sprite]. A fight ensues, and the beast you've created gets away.[paragraph break]'Now you've done it!' says [the sprite]. 'That wasn't supposed to happen. Trust me. And no offense, you've learned the rules to get by, but you haven't learned the REAL rules. Maybe a spell in jail will help you.'";
 	declue-here;
 	move player to Jotty Jail;
 	moot cocoon;
@@ -1275,6 +1275,7 @@ this is the vr-bane-bat rule:
 	now sco-bane-bat is true;
 	say "A particularly lethal bat appears in your hands! It looks like it could really destroy stuff. In particular, this vat. But how?";
 	now to-number of vain vat is 5504;
+	now player has bane bat;
 
 a goodrhyme rule (this is the vc-flain-flat rule):
 	if player is not in drain drat vain vat, unavailable;
@@ -1288,7 +1289,7 @@ a goodrhyme rule (this is the vc-flain-flat rule):
 
 this is the vr-flain-flat rule:
 	now sco-flain-flat is true;
-	say "Wham! Wham! You take the bane bat to the vat, and it makes all kinds of dents, before it falls over. It disintegrates once it does, leaving you standing on a main mat, which also feels welcoming. But you have a feeling you still need to give a reason to enter.";
+	say "Wham! Wham! You take the bane bat to the vat, and it makes all kinds of dents. You strike a final blow, and as the vat falls over, both it and the bat disintegrate.[paragraph break]You're left standing on a main mat, which also feels welcoming. But you have a feeling you still need to give a reason to enter.";
 	now to-number of vain vat is 5605;
 
 a goodrhyme rule (this is the vc-splain-splat rule):
@@ -1668,9 +1669,9 @@ Mad Most Cad Coast	"The locking lift leads you to a shore where you'd expect a w
 
 volume readables
 
-table of readables
+table of readables (continued)
 read-thing	read-txt
-train tree	"There are three ways to enter the train tree: under writing saying [b]WAYNE (WHEE)[r], [b]JANE G[r], or [b]DANE D/LANE LEE[r]. They all look about the same."
+train tree	"There are three ways to enter the train tree: under writing saying [b]WAYNE (WHEE)[r], [b]JANE G[r], or [b]DANE D/LANE LEE[r]. You can probably type whichever, to enter as you please."
 locking lift	"You see [lift-score in words] of six settings filled in:[paragraph break][fixed letter spacing][lift-stuff].[variable letter spacing][paragraph break]You've completed [hub-score in words] areas beyond the [high hub]."
 
 to say lift-stuff:
@@ -1726,15 +1727,15 @@ Rare Reach	"The [if sco-bare-beach is true]water[else]darkness[end if] encompass
 Jotty Jail	"This being a jail, you can't walk out. You have to find a weak link or something."
 High Hub	"The only way out of the High Hub[if sco-bye-bub is true], besides going back down the sturdy stalk,[else] (well, currently,)[end if] is telling the locking lift where you want to go. Okay, the only non-lethal way."
 Gore Goals	"Exploring the [if sco-shore-shoals is false]darkness would be unwise[else]animal sanctuary you hope to build would feel invasive[end if]. The only way out is entering the lift."
-New Show Shoe	"There's no way out except through the lift. You're the only person to get the show started, here."
+New Show Shoe	"The expanses beyond [show shoe] seem daunting indeed. You're the only person to bring together a successful show, though you can take the lift elsewhere if you're stuck here."
 Mad Most Cad Coast	"West is the only way out, other than the lift. You [if sco-rad-roast is false]don't yet [end if]have the confidence to go west."
 Trite Trail	"Although the trite trail extends in all directions except, well, where the whale is, you'd get lost everywhere except back east."
-Rum Route	"While you can go back into the lift, you [if sco-umm-out is true]can also go down[else]suspect the route leads somewhere, once you're focused right[end if]."
-nay nope slay slope	"The only physical way out of these depths is up, though you can pull yourself out of mental depths with the right words."
+Rum Route	"Directions seem meaningless here, though you can always enter the lift. You [if sco-umm-out is true]can, however, go down now[else]suspect the route leads somewhere, once you're focused right[end if]."
+nay nope slay slope	"The only physical way out of these depths is up, [if sco-k-cope is true]and you already pulled yourself out of mental depths[else]though you can pull yourself out of mental depths with the right words[end if]."
 slight sleaze	"You can only enter the lift or [if sco-right-root is true]go south through the path you forged[else]try to dispel the fright freeze and find a passage[end if]."
 seek sameing	"This is a hideout think-tank. If there's a more secret place, it's beyond you. So, back north it is, when you want to leave."
 Old End	"[if sco-mold-mend is true]You are ready to go south now. No turning away.[else if sco-trolled-trend is true]The trolled trend got to you, but you can't forsake the bend entirely[else if sco-bold-bend is true]The bold bend you created goes south-to-east. You need to figure which of these ways is right[else]This feels like the end, but it can't be. Maybe you can puzzle your way through[end if]."
-Vain Vat	"[if sco-flain-flat is false]You're trapped in the vat for now[else if sco-splain-splat is false]You're out of the vat, but you can only see passage back north[else]The Pred Pros, alas, only knocked a hole in the south wall to match the way back north[end if]."
+Vain Vat	"[if sco-bane-bat is false]You'd injure yourself trying to run through the vat. It's sturdy[else if sco-flain-flat is false]You need a plan of how to destroy the vat with your bat[else if sco-splain-splat is false]You're out of the vat, but you can only see passage back north[else]The Pred Pros, alas, only knocked a hole in the south wall to match the way back north[end if]."
 Threat Three	"You're at the final confrontation. There are no secret passages, [if marquee is moot]and you can't even[else]just an[end if] exit back north."
 
 volume guesses

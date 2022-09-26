@@ -30,7 +30,7 @@ a rhymeguess rule for a table name (called tn) (this is the rhyme-guess-checker 
 				process the mist-rule entry;
 				unless the rule succeeded, continue the action;
 			say "[mist-txt entry][line break]";
-			let see-leet-read be true;
+			let see-leet-read be whether or not player has leet learner;
 			let is-opt be false;
 			if there is a leet-rule entry:
 				process the leet-rule entry;

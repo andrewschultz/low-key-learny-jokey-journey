@@ -54,7 +54,8 @@ section instead rules
 
 instead of doing something with a boring thing:
 	if action is procedural, continue the action;
-	say "Most things, you don't need to interact with directly.";
+	if noun is delight dilute, say "Hmm. This is tricky. Doing anything physical with [the dilute] wouldn't work, but thinking about it just the right way might." instead;
+	say "You don't need to interact with [the noun] directly.";
 
 volume cluing
 
@@ -118,7 +119,7 @@ to show-readings (nfrom - a number) and (nto - a number):
 [	say "[name-length] [puz-length] [name-1] [name-2] [puz-1] [puz-2].";]
 	let numerator be (name-length * puz-1) - (puz-length * name-1);
 	let denominator be (name-length * puz-length);
-	say "A dot bounces around [the learner]'s grid and winds up at ([floatfrac of numerator and denominator], ";
+	say "The [learner]'s display lights up and scrolls through LCD numbers which settle on the pair ([floatfrac of numerator and denominator], ";
 	now numerator is (name-length * puz-2) - (puz-length * name-2);
 	now denominator is (name-length * puz-length);
 	say "[floatfrac of numerator and denominator].)";
@@ -148,13 +149,15 @@ chapter train tree
 
 the train tree is climbable scenery in Bane Be Sane See. "[b]MAIN ME[r] is carved into the train tree in big letters.  It has three identical entries, none more right than the other. You may wish to [b]READ[r] what's below them."
 
-check entering train tree: say "Which way? [b]READ[r] the tree." instead;
+check entering train tree: say "You can [b]READ[r] the tree to see which of three ways to enter. There is no right or wrong way." instead;
 
-check opening train tree: say "You should be able to enter the tree as you please." instead;
+check opening train tree: say "The tree's three passages are already open to you." instead;
+
+understand "jane/g" and "jane g/gee" and "dane d/dee" and "dane/wayne/jane" as train tree when player is in Bane Be Sane See
 
 book Roaring Rocks
 
-Roaring Rocks is a room in Stoppin' Start. "This is a dead end. The only passage out is north. [if sco-boring-box is false]The roaring is too loud right now, though. You feel as if you'd be chased down if you ran away[else]Things are quieter now. You doubt the rocks/stocks hold any more great secrets[end if].". printed name of Roaring Rocks is "[if sco-boring-box is true]Storing Stocks[else]Roaring Rocks[end if]"
+Roaring Rocks is a room in Stoppin' Start. "This is a dead end. The only passage out is north. [if sco-boring-box is false]The roaring is too loud right now, though. You feel as if you'd be chased down if you ran away. And yet you feel the rocks would offer a gift, if you asked right[else]Things are quieter now. You doubt the rocks/stocks hold any more great secrets[end if].". printed name of Roaring Rocks is "[if sco-boring-box is true]Storing Stocks[else]Roaring Rocks[end if]"
 
 from-number of roaring rocks is 5706. to-number of roaring rocks is 5603. [ the name is roaring rocks, but it becomes storing stocks before you find the learner. ]
 
@@ -353,6 +356,8 @@ chapter pear peach
 
 the pear peach is a thing. description is "It looks like a cross between a pear and a peach, with two bumps where the circumference gets larger instead of one, and the sort of orangish coloring in some spots and the light greenish pear coloring in others.".
 
+understand "fruit" as pear peach when player has pear peach.
+
 from-number of pear peach is 5405. to-number of pear peach is 5405.
 
 book Trust Track
@@ -373,7 +378,7 @@ description of Just Jack is "He is just sitting around here with no better place
 
 chapter Sus Sack
 
-the sus sack is a rhymable. description is "What could be in the sus sack? It feels both light and heavy at the same time, both practical and impractical."
+the sus sack is a rhymable. description is "What could be in the sus sack? It feels both light and heavy at the same time, both practical and impractical. You see no normal way to open it."
 
 guess-table of sus sack is table of sus sack guesses.
 
@@ -383,7 +388,7 @@ check opening sus sack: say "This far into [this-game], you suspect you have to 
 
 book Rare Reach
 
-Rare Reach is in Hoppin' Heart. printed name of Rare Reach is "[if sco-bare-beach is true]Bare Beach[else]Rare Reach[end if]". "You're surrounded by [if sco-bare-beach is true]water[else]desolation[end if] every direction except south.". Trust Track is mapped south of Rare Reach. nowhere is mapped north of Trust Track.
+Rare Reach is in Hoppin' Heart. printed name of Rare Reach is "[if sco-bare-beach is true]Bare Beach[else]Rare Reach[end if]". "[if sco-bare-beach is true]This is an isthmus[else]Desolation all around[end if][if dune is in rare reach]. That dune might hold something, though[end if]. You can only go back south.". Trust Track is mapped south of Rare Reach. nowhere is mapped north of Trust Track.
 
 guess-table of rare reach is the table of rare reach guesses.
 
@@ -471,7 +476,7 @@ from-number of locking lift is 5704. to-number of locking lift is 28724.
 
 chapter delight dilute
 
-the can of DELIGHT DILUTE is a boring rhymable. description is "Just staring at it makes you feel you need to trivialize what you've done so far, but you can't explain why. There's a way around it, you're sure, and you could also just move on, but all the same, sometimes you can't help but pick one last useless fight to feel like you really nailed things down.". printed name is "can of [b]DELIGHT DILUTE[r]".
+the can of DELIGHT DILUTE is a boring rhymable. description is "Just staring at it makes you feel you need to trivialize what you've done so far, but you can't explain why. There's a way around it, you're sure, and you could also just move on, but all the same, sometimes you can't help but pick one last useless fight to feel like you really nailed things down.". "That [dilute] [one of][or]still [stopping]lies here, sort of ruining your day, but not really.". printed name is "can of [b]DELIGHT DILUTE[r]".
 
 guess-table of DELIGHT DILUTE is table of light lute guesses.
 
@@ -746,7 +751,7 @@ part Drain Drat Vain Vat
 Old End is north of Drain Drat Vain Vat. Drain Drat Vain Vat is in Poppin' Part. printed name of Vain Vat is "[if sco-splain-splat is false]Drain (Drat!) Vain Vat[else]Main Mat[end if]". understand "main mat" as Drain Drat Vain Vat when sco-splain-splat is true. description of Vain Vat is "[if sco-bane-bat is false]You seem stuck here, and that's that. Maybe if you had something to help bash your way out[else if sco-flain-flat is false]You're still stuck in the vat for now. You're not sure how to get out, but once you are, you suspect your bane bat will do the trick[else if sco-splain-splat is false]The walls look shaky, but you can't find a weak point. Perhaps a taunt would bring enemy henchmen busting said weak spot[else]The way south is open now, thanks to the Pred Pros[end if].". spokeval of Vain Vat is 5. south of Old End is nowhere.
 
 check going in Vain Vat:
-	if sco-flain-flat is false, say "You're still stuck in the vain vat. You need to get out. But it can't be too bad." instead;
+	if sco-flain-flat is false and noun is up, say "It's too high to climb out!" instead;
 	if noun is not north and sco-splain-splat is false, say "While you could go back north, there must be enemies hidden behind some secret wall. How to draw attention to yourself to bring them out?" instead;
 	if Pred Pros are in vain vat:
 		if noun is south, say "The Pred Pros aren't going to leave without something to show for their work." instead;
@@ -756,6 +761,10 @@ check going in Vain Vat:
 guess-table of drain drat vain vat is the table of drain drat vain vat guesses.
 
 from-number of drain drat vain vat is 10907. to-number of drain drat vain vat is 5403.
+
+chapter bane bat
+
+the bane bat is a thing. description is "It looks tough. You just have to figure how to use it right to get out of the vat."
 
 chapter Pred Pros
 
@@ -923,7 +932,7 @@ this is the verb-checker rule:
 				say "The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right.";
 		abide by the two-too-help rule;
 	if local-ha-half-level > 0:
-		say "The [b]HA HALF[r] button on your Leet Learner lights up [if local-ha-half-level is 1]yellow[one of]--you must be close to a future solution[or][stopping][else]green[one of]--you must be close to something you can do now[or][stopping][end if][if new-point-to-get is false]. Oh, wait, you're just switching back to a rhyme you knew before. You must've mis-thought a word[else if brightness is false]. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win[else if local-post-hom is true]. Its brightness suggests your rhyme must be very close, indeed[end if].";
+		say "The [b]HA HALF[r] button on your Leet Learner lights up [if local-ha-half-level is 1]yellow[one of]--you must be close to a future solution[or][stopping][else]green[one of]--you must be just a letter or two away from progress[or][stopping][end if][if new-point-to-get is false]. Oh, wait, you're just switching back to a rhyme you knew before. You must've mis-thought a word[else if brightness is false]. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win[else if local-post-hom is true]. Its brightness suggests your rhyme must be very close, indeed[end if].";
 		abide-nlb the ha-half-help rule;
 
 volume unsorted locations
@@ -1404,7 +1413,7 @@ report restoring the game:
 	else:
 		say "'Dithering, eh?'"
 
-check quitting the game: say "'Well, if you have something better to do... I hope you do...'";
+check quitting the game: say "You hear [the sprite]: 'Oh, wow! You have something a little better to do? What a coincidence! So do I! Well, something a lot better, actually.'";
 
 chapter abouting
 
