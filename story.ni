@@ -684,10 +684,13 @@ the tight tail white whale is scenery in Trite Trail. printed name is "tight-tai
 
 from-number of white whale is 11009.
 
-after printing the locale description for trite trail when whale-score > 0 and sco-excite-exhale is false:
-	say "So far you've scrounged up [a list of whale-defeating things in trite trail] for your assault on the white whale. [if whale-score is 1]It[else]They[end if][']ll be ready when needed.";
+after printing the locale description for trite trail when whale-score > 0 and sco-thread-throws is false:
+	if whale-stuff is 0:
+		say "You've gathered nothing to help defeat [the whale], yet.";
+	else:
+		say "So far you've scrounged up [list of whale-defeating things] for your assault on the white whale. [if whale-stuff is 1]It[else]They[end if][']ll be ready when needed[if sco-sight-sail is true and sco-right-rail is false]. However, the thought of traveling in the sight sail makes you a bit queasy right now[end if].";
 	if bright brute is off-stage:
-		say "[line break]You could probably use an ally with bulk. You don't see any around.";
+		say "[line break]You could probably use an ally with bulk. You doubt any are indigenous, so you'll need help from outside the trail.";
 	else if bright brute is fungible:
 		say "[line break]The bright brute wanders about happily. It seems ready but not anxious.";
 	cue-excite-exhale;
@@ -696,12 +699,14 @@ after printing the locale description for trite trail when whale-score > 0 and s
 to cue-excite-exhale:
 	if whale-score is 5:
 		say "[line break]You've got to be close now! Psyching yourself up to defeat [the whale] will require something big. Perhaps two words with more than one syllable each. You need to get psyched, then you need to relax, and you'll know what to do next.";
+	else if whale-score is 6:
+		say "[line break]You need material and a method to catch [the whale]. Big words for a big enemy. You see no supplies around--as for the bright brute, you probably need something from outside[if player does not have red rose], but you sense you're not quite prepared, yet[end if].";
 
 to cue-thread-throws: if player does not have red rose, say "[line break]You feel as though you may need outside help for your hunting expedition. Help you don't have yet.";
 
 chapter sceneries
 
-a sight sail is scenery. "You don't know much about ships, but it looks ready to go, [if sco-right-rail is true]and you'd be comfortable sailing in it a while[else]though you're not sure you'd be comfortable in it too long, yet[end if]."
+a sight sail is scenery. indefinite article is "a". "You don't know much about ships, but it looks ready to go, [if sco-right-rail is true]and you'd be comfortable sailing in it a while[else]though you're not sure you'd be comfortable in it too long, yet[end if]."
 
 to-number of sight sail is -4.
 

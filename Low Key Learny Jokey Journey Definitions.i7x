@@ -123,6 +123,7 @@ volume definitions
 definition: a thing (called th) is whale-defeating:
 	unless th is scenery, no;
 	if th is white whale or th is bright brute, no;
+	unless th is in Trite Trail, no;
 	yes;
 
 volume gotoing

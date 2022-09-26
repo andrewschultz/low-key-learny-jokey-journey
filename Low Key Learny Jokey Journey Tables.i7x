@@ -1631,7 +1631,10 @@ this is the notify-final-whale rule:
 	say "The last step of your prep will be something else! It will probably require, like, extra syllables in what you want to do. Both with psyching yourself up and then taking a step back and achieving mindfulness, or whatever.";
 
 to decide what number is whale-score:
-	decide on boolval of sco-sight-sail + boolval of sco-might-mail + boolval of sco-flight-flail + boolval of sco-right-rail + boolval of sco-bright-brute;
+	decide on boolval of sco-sight-sail + boolval of sco-might-mail + boolval of sco-flight-flail + boolval of sco-right-rail + boolval of sco-bright-brute + boolval of sco-excite-exhale;
+
+to decide what number is whale-stuff:
+	decide on boolval of sco-sight-sail + boolval of sco-might-mail + boolval of sco-flight-flail;
 
 to adjust-trail (nu - a number):
 	decrease to-number of trite trail by nu;
