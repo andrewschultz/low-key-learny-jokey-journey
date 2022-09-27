@@ -61,6 +61,11 @@ files=reg-lljj-thru-min.txt,reg-lljj-thru-all.txt,reg-lljj-thru-reject.txt,reg-l
 
 TSV:## minimum walkthrough	## walkthrough with all points	## walkthrough with all rejections and THINK	## walkthrough with altverb tests	## walkthrough testing guide gong	## walkthrough testing pride prong	## walkthrough testing all mistakes	## walkthrough testing half-right cases	## walkthrough testing homonyms	## walkthrough testing special verbs	## walkthrough testing GOTO	## walkthrough testing HINTS basic	## walkthrough testing HINTS full
 
+@hfull
+** game: /home/andrew/prt/hint-lljj.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+@!hfull
 ** game: /home/andrew/prt/debug-low-key-learny-jokey-journey.z8
 ** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
 
@@ -78,6 +83,28 @@ TSV:## minimum walkthrough	## walkthrough with all points	## walkthrough with al
 \\
 >hint tree
 <Hint-bane-be-sane-see>.
+
+@hfull
+>hint
+You may notice the TRAIN TREE has writing on it. It's an option that's meaningless for gameplay, but it helps you see what sort of puzzles are ahead. (+)
+\\
+>hint
+You can READ the train tree to decide your name, which has no effect on anything except the hints you may pick up in the next room. (+)
+\\
+>hint
+If you note the names, you may find a bonus point that goes along with the room name and game theme. (-)
+\\
+>hint me
+Look at the location names and title of the story. (+)
+\\
+>hint me
+Read the train tree. (+)
+\\
+>hint me
+Note that there are a lot of rhyme pairs floating around. (+)
+\\
+>hint me
+Your job in this game is to manufacture parallel rhyme pairs. (-)
 
 @ver
 #ttc-table-of-readables-train-tree
@@ -576,6 +603,16 @@ by one point
 #testcase-room-names-roaring-rocks
 /^Roaring Rocks
 
+@hfull
+>hint
+The roaring rocks can be changed into something useful and interesting. Or something that contains something interesting. Something that double-rhymes roaring rocks. (+)
+\\
+>hint
+The container itself may not look interesting. (+)
+\\
+>hint
+BORING BOX. (-)
+
 @gt
 #testcase-exits-roaring-rocks
 >exits
@@ -639,6 +676,10 @@ by one point
 >ll
 Most special commands are more than one word, because of the rhyme-pairs involved. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+@hfull
+>hint
+You can LL and try going UP to look around and get clues about the leet learner here, but there are no more puzzles.
+
 @all
 #+testcase-room-names-roaring-rocks
 /^Storing Stocks
@@ -667,7 +708,15 @@ riff
 >hint box
 <Hint-boring-box>.
 
+@hfull
+>hint box
+You can really only OPEN the boring box.
+
 >open box
+
+@hfull
+>hint learner
+The leet learner and its parts only give hints. You can LL alone to scan a room, LL any thing or person, or READ the leet learner to see its option.
 
 @hin
 >hint learner
@@ -853,6 +902,65 @@ Whenever you're ready, just type SAD SUNK to move on.
 >think
 (CAN DO NOW) You can say SAD SUNK again to move on when you've poked the Mad Monk enough.
 \\
+>undo
+>undo
+>undo
+>undo
+
+@hfull
+>hint monk
+You have two ways you need to dispose of the mad monk. (+)
+\\
+>hint monk
+Both ways are a downer, and you may be able to guess words that rhyme with ad. (+)
+\\
+>hint monk
+/You can say (BAD BUNK|SAD SUNK)\.
+\\
+>hint monk
+You have two ways you need to dispose of the mad monk. (+)
+\\
+>hint monk
+Both ways are a downer, and you may be able to guess words that rhyme with ad. (+)
+\\
+>hint monk
+/You can say (BAD BUNK|SAD SUNK)\.
+\\
+>undo
+\\
+##balance undo
+>au 0
+\\
+>bad bunk
+by one point
+\\
+>hint monk
+You can say SAD SUNK.
+\\
+>sad sunk
+Take down the monk anyway?
+\\
+>hint monk
+You already know both BAD BUNK and SAD SUNK. Repeat SAD SUNK to get by.
+\\
+>undo
+>undo
+>undo
+>undo
+\\
+>sad sunk
+by one point
+\\
+>hint monk
+You can say BAD BUNK.
+\\
+>bad bunk
+Take down the monk anyway?
+\\
+>hint monk
+You already know both BAD BUNK and SAD SUNK. Repeat BAD BUNK to get by.
+\\
+>undo
 >undo
 >undo
 >undo
@@ -2206,7 +2314,7 @@ by one point
 #testcase-room-names-jotty-jail
 /^Jotty Jail
 
-@hint
+@hin
 >hint
 <Hint-jotty-jail>.
 \\
@@ -2305,6 +2413,10 @@ by one point
 }}CURMIN++
 }}CURMINBONUS++
 
+@hfull
+>hint lump
+You can say LL for the lurking lump to push you through a puzzle at the right time. It can solve any rhyme you wish but has limited charges.
+
 @rej
 #testcase-postreject-table-of-verb-checks-vc-grotty-grail-rule
 >grotty grail
@@ -2331,7 +2443,7 @@ by one point
 #testcase-room-names-high-hub
 /^High Hub
 
-@hint
+@hin
 >hint
 <Hint-high-hub>.
 \\
@@ -2474,7 +2586,7 @@ The Leet Learner shakes back and forth. Something you said sounded right, but it
 }}CURMIN++
 }}CURMINBONUS++
 
-@hint
+@hin
 >hint stalk
 <Hint-sturdy-stalk>.
 
@@ -3540,7 +3652,7 @@ You think back to the bad gifts you've received when people said you should be g
 #testcase-room-names-rum-route
 /^Bum-'Bout Rum Route
 
-@hint
+@hin
 >hint
 <Hint-rum-route>.
 
@@ -3740,7 +3852,7 @@ You've cleared the Rum Route. No need to overdo things.
 #testcase-room-names-nay-nope-slay-slope
 /^Nay-Nope-Slay Slope
 
-@hint
+@hin
 >hint
 <Hint-slay-slope>.
 
@@ -4045,7 +4157,7 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 by one point
 }}SCORE++
 
-@hint
+@hin
 >hint
 <Hint-slight-sleaze>.
 \\
@@ -4247,7 +4359,7 @@ The Leet Learner shakes back and forth. Something you said sounded right, but it
 by one point
 }}SCORE++
 
-@hint
+@hin
 ##balance undos
 >gonear bred bros
 \\
@@ -4297,7 +4409,7 @@ The locking lift leads you to a shore where you'd expect a watercraft, but there
 #testcase-room-names-mad-most-cad-coast
 /^Mad-Most-Cad Coast
 
-@hint
+@hin
 >hint
 <Hint-mad-most-cad-coast>.
 
@@ -4653,8 +4765,7 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 \\
 >ll
 Nothing comes up. The general area here has been changed enough.
-
-@hint
+\\
 >hint sight sail
 <Hint-sight-sail>.
 \\
@@ -4763,7 +4874,7 @@ by one point
 #testcase-room-names-old-end
 /^Old End
 
-@hint
+@hin
 >hint
 <Hint-old-end>.
 
@@ -5189,7 +5300,7 @@ You convince yourself the vain vat was a great place to sort out your emotions.
 >fed phos
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
-@hint
+@hin
 >hint pred pros
 <Hint-pred-pros>.
 
@@ -5207,7 +5318,7 @@ I couldn't parse that command. You don't need any more than two words long. VERB
 #testcase-room-names-threat-three-met-me
 /^Market Marquee
 
-@hint
+@hin
 >hint market marquee
 <Hint-market-marquee>.
 \\

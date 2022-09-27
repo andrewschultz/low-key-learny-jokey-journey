@@ -1,0 +1,432 @@
+## reg-lljj-thru-hintfull.txt
+## GENERATOR FILE: rbr-lljj-thru.txt
+
+## walkthrough testing hints full
+
+** game: /home/andrew/prt/hint-lljj.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main-thru
+
+>au 2
+
+>hint
+You may notice the TRAIN TREE has writing on it. It's an option that's meaningless for gameplay, but it helps you see what sort of puzzles are ahead. (+)
+
+>hint
+You can READ the train tree to decide your name, which has no effect on anything except the hints you may pick up in the next room. (+)
+
+>hint
+If you note the names, you may find a bonus point that goes along with the room name and game theme. (-)
+
+>hint me
+Look at the location names and title of the story. (+)
+
+>hint me
+Read the train tree. (+)
+
+>hint me
+Note that there are a lot of rhyme pairs floating around. (+)
+
+>hint me
+Your job in this game is to manufacture parallel rhyme pairs. (-)
+
+>plain plea
+by one point
+
+>jane g
+by one point
+
+>hint
+The roaring rocks can be changed into something useful and interesting. Or something that contains something interesting. Something that double-rhymes roaring rocks. (+)
+
+>hint
+The container itself may not look interesting. (+)
+
+>hint
+BORING BOX. (-)
+
+>boring box
+by one point
+
+>hint
+You can LL and try going UP to look around and get clues about the leet learner here, but there are no more puzzles.
+
+>hint box
+You can really only OPEN the boring box.
+
+>open box
+
+>hint learner
+The leet learner and its parts only give hints. You can LL alone to scan a room, LL any thing or person, or READ the leet learner to see its option.
+
+>n
+
+>gad gunk
+by one point
+
+>hint monk
+You have two ways you need to dispose of the mad monk. (+)
+
+>hint monk
+Both ways are a downer, and you may be able to guess words that rhyme with ad. (+)
+
+>hint monk
+/You can say (BAD BUNK|SAD SUNK)\.
+
+>hint monk
+You have two ways you need to dispose of the mad monk. (+)
+
+>hint monk
+Both ways are a downer, and you may be able to guess words that rhyme with ad. (+)
+
+>hint monk
+/You can say (BAD BUNK|SAD SUNK)\.
+
+>undo
+
+>au 0
+
+>bad bunk
+by one point
+
+>hint monk
+You can say SAD SUNK.
+
+>sad sunk
+Take down the monk anyway?
+
+>hint monk
+You already know both BAD BUNK and SAD SUNK. Repeat SAD SUNK to get by.
+
+>undo
+>undo
+>undo
+>undo
+
+>sad sunk
+by one point
+
+>hint monk
+You can say BAD BUNK.
+
+>bad bunk
+Take down the monk anyway?
+
+>hint monk
+You already know both BAD BUNK and SAD SUNK. Repeat BAD BUNK to get by.
+
+>undo
+>undo
+>undo
+>undo
+>undo
+
+>bad bunk
+by one point
+
+>sad sunk
+by one point
+
+>n
+
+>grow grudge
+by one point
+
+>n
+
+>bother
+You hear a whooshing as a door swings in from nowhere. It doesn't seem to lead anywhere. Voices from behind it, though, assure you you are missing something. Using your logical skills, you deduce it is a miss-more-diss door. While it's not going to jump you if your back is turned, it might be nice to get rid of.
+
+>piss poor
+by one point
+
+>done dorm
+by one point
+
+>fun form
+by one point
+
+>n
+
+>see sunk
+by one point
+
+>gee junk
+by one point
+
+>whee woot
+by one point
+
+>pear peach
+by one point
+
+>s
+
+>s
+
+>e
+
+>bussed back
+by one point
+
+>crust crack
+by one point
+
+>n
+
+>bare beach
+by one point
+
+>seep soon
+by one point
+
+>s
+>n
+
+>reap rune
+by one point
+
+>s
+
+>w
+
+>w
+
+>unarm
+by one point
+
+>n
+
+>go goon
+by one point
+
+>cocoon
+by one point
+
+>mo moon
+by one point
+
+>so soon
+by one point
+
+>crow croon
+by one point
+
+>grotty grail
+by one point
+
+>potty pail
+by one point
+
+>hint lump
+You can say LL for the lurking lump to push you through a puzzle at the right time. It can solve any rhyme you wish but has limited charges.
+
+>knotty nail
+by one point
+
+>bye bub
+
+>wordy walk
+
+>u
+
+##RBRS-SHUFFLESTART=0
+
+>rocking rift
+by one point
+
+>go goo
+by one point
+
+>flow flue
+by one point
+
+>glow glue
+by one point
+
+>bro brew
+by one point
+
+>stow stew
+by one point
+
+>crow crew
+by one point
+
+>ho who
+by one point
+
+>yo you
+by one point
+
+>throw through
+by one point
+
+##RBRS-SHUFFLEEND=0
+##RBRS-SHUFFLESTART=1
+
+>shocking shift
+by one point
+
+>shore shoals
+by one point
+
+##RBRS-SHUFFLECONDITION=1>0
+
+>night newt
+by one point
+
+>kite coot
+by one point
+
+##RBRS-SHUFFLECONDITION=
+
+>lore lols
+by one point
+
+>four foals
+by one point
+
+>more moles
+by one point
+
+##RBRS-SHUFFLEEND=1
+##RBRS-SHUFFLESTART=2
+
+>gawking gift
+by one point
+
+>dumb doubt
+by one point
+
+>said sos
+by one point
+
+>umm out
+by one point
+
+>d
+
+>hey hope
+by one point
+
+>k cope
+by one point
+
+##RBRS-SHUFFLEEND=2
+##RBRS-SHUFFLESTART=3
+
+>grokking grift
+by one point
+
+>tight tees
+by one point
+
+>bright breeze
+by one point
+
+>plight please
+by one point
+
+>right root
+by one point
+
+>s
+
+>clique claiming
+by one point
+
+>bleak blaming
+by one point
+
+>chic shaming
+by one point
+
+>bred bros
+by one point
+
+##RBRS-SHUFFLEEND=3
+##RBRS-SHUFFLESTART=4
+
+>docking diffed
+by one point
+
+>bad boast
+by one point
+
+>rad roast
+by one point
+
+>w
+
+>sight sail
+by one point
+
+>flight flail
+by one point
+
+>might mail
+by one point
+
+>right rail
+by one point
+
+>bright brute
+by one point
+
+>excite exhale
+by one point
+
+>thread throws
+by one point
+
+##RBRS-SHUFFLEEND=4
+
+>despite dispute
+by one point
+
+>mocking miffed
+by one point
+
+>bold bend
+by one point
+
+>trolled trend
+by one point
+
+>mold mend
+by one point
+
+>s
+
+>bane bat
+by one point
+
+>flain flat
+by one point
+
+>splain splat
+by one point
+
+>fed foes
+by one point
+
+>s
+
+>fret free
+by one point
+
+>yet ye
+by one point
+
+>set see
+by one point
+
+>plus plaque
+by one point
+
+>score
+
+>turning trite
+by one point
