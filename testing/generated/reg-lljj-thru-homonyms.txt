@@ -362,14 +362,14 @@ The Leet Learner shakes back and forth. Something you said sounded right, but it
 >sight sail
 by one point
 
->flight flail
-by one point
-
 #testcase-homonym-table-of-verb-checks-mite-male
 >mite male
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
 >might mail
+by one point
+
+>flight flail
 by one point
 
 #testcase-homonym-table-of-verb-checks-write-rale

@@ -1164,9 +1164,23 @@ That location or thing doesn't exist or isn't known to you yet.
 >zgrow grudge
 {$GREENCORE}
 
+@hfull
+>hint
+The no-nudge slow sludge is annoying. You need to be annoyed by it the right way. (+)
+\\
+>hint
+What's a good way to build up annoyance?
+\\
+>hint
+GROW GRUDGE. (-)
+
 >grow grudge
 by one point
 }}SCORE++
+
+@hfull
+>hint
+You're done here in No-Nudge Slow Sludge.
 
 @hin
 >ll
@@ -1191,6 +1205,16 @@ You already neutralized the no-nudge slow sludge.
 @all
 #testcase-room-names-one-warm-stun-storm
 /^One Warm Stun-Storm
+
+@hfull
+>hint
+You need a place to rest that double-rhymes STUN STORM. (+)
+\\
+>hint
+Your place to rest must be sturdy and solid. (+)
+\\
+>hint
+DONE DORM. (-)
 
 @mis
 #ttc-table-of-one-warm-stun-storm-guesses-none-nun-norm
@@ -1321,6 +1345,13 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 by one point
 }}SCORE++
 
+@hfull
+>hint
+You need certification you're the sort of person welcome in a done dorm. How to rhyme that?
+\\
+>hint
+FUN FORM. (-)
+
 @hin
 >hint
 <Hint-stun-storm>.
@@ -1357,6 +1388,10 @@ You feel your will sapped as you attempt to go north. You'll need to sit out the
 by one point
 }}SCORE++
 
+@hfull
+>hint
+You're done here in One Warm Stun-Storm.
+
 @hin
 >ll
 Nothing comes up. The general area here has been changed enough.
@@ -1378,6 +1413,12 @@ You already filled out the fun form.
 @all
 #testcase-room-names-the-thunk-tree-trunk
 /^The \(Thunk!\) Tree Trunk
+
+@hfull
+>hint
+The tree trunk, or a place in it you can look, is too high up. (+)
+\\
+>undo
 
 @hin
 >hint
@@ -1463,6 +1504,11 @@ You can say GEE JUNK once more of the trunk is visible.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, -1.00.)
 
 @hfull
+>hint
+The tree trunk, or a place in it you can look, is too high up. (+)
+\\
+>undo
+\\
 >hint tree trunk
 The tree trunk, or a place in it you can look, is too high up. (+)
 \\
@@ -1616,6 +1662,11 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 You're thinking small. Be more enthusiastic!
 
 @hfull
+>hint
+You need to be thrilled you got free fruit. (+)
+\\
+>undo
+\\
 >hint free fruit
 You need to be thrilled you got free fruit. (+)
 \\
@@ -1675,6 +1726,9 @@ by one point
 }}SCORE++
 
 @hfull
+>hint
+You're done here in The (Thunk!) Tree Trunk.
+\\
 >hint pear peach
 It's impressive you got the pear peach before visiting the place where you need to use it. You'll know when you get there.
 
@@ -1780,6 +1834,11 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, -1.00.)
 
 @hfull
+>hint
+Just Jack is in the way, and he won't get out without proper transport. (+)
+\\
+>undo
+\\
 >hint just jack
 Just Jack is in the way, and he won't get out without proper transport. (+)
 \\
@@ -1794,6 +1853,15 @@ by one point
 }}SCORE++
 
 @hfull
+>hint
+There is a passage, even though you trust there isn't. (+)
+\\
+>hint
+But the passage won't appear until there is a shift in the ground. (+)
+\\
+>hint
+Make the CRUST CRACK. (-)
+\\
 >hint sus sack
 The sus sack can be changed to something more useful. (+)
 \\
@@ -1854,6 +1922,10 @@ west: No-Nudge Slow Sludge.
 >crust crack
 by one point
 }}SCORE++
+
+@hfull
+>hint
+You're done here in Trust Track.
 
 @hin
 >ll
@@ -1963,6 +2035,11 @@ The Leet Learner shakes back and forth. Something you said sounded right, but it
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 @hfull
+>hint
+The pear peach can make Rare Reach a bit less desolate. (+)
+\\
+>undo
+\\
 >s
 \\
 >hint pear peach
@@ -2126,6 +2203,9 @@ by one point
 }}SCORE++
 
 @hfull
+>hint
+You're done here in Bare Beach.
+\\
 >hint rho rune
 The Rho Rune is useful somewhere you haven't been.
 
@@ -2211,9 +2291,23 @@ That doesn't quite work. Maybe the farm needs worms or warm weather, but its sur
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
 
+@hfull
+>hint
+How can you get rid of weapons and threats to get by?
+\\
+>hint
+You can shorten things up. (+)
+\\
+>hint
+UN ARM or UNARM. (-)
+
 >unarm
 by one point
 }}SCORE++
+
+@hfull
+>hint
+You're done here in Hun Harm Fun Farm.
 
 @hin
 >ll
@@ -2342,6 +2436,16 @@ You can call for MO MOON once you have something else that needs light.
 >zgo goon
 {$GREENCORE}
 
+@hfull
+>hint
+You need to ward off enemies. (+)
+\\
+>hint
+Give an order to a certain sort of enemy. (+)
+\\
+>hint
+GO GOON. (-)
+
 >go goon
 by one point
 }}SCORE++
@@ -2358,6 +2462,16 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 #testcase-ha-half-table-of-verb-checks-21-coon
 >zco coon
 {$GREENCORE}
+
+@hfull
+>hint
+You must summon something that can grow with the passage of time. (+)
+\\
+>hint
+Something that can burst into life. (+)
+\\
+>hint
+COCOON, with or without a space. (-)
 
 >cocoon
 by one point
@@ -2388,6 +2502,11 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
 @hfull
+>hint
+You need some light to appear in the night sky. (+)
+\\
+>undo
+\\
 >hint cocoon
 You need some light to appear in the night sky. (+)
 \\
@@ -2464,6 +2583,11 @@ The moon has already appeared!
 You already sped time up.
 
 @hfull
+>hint
+You need morning to appear. (+)
+\\
+>undo
+\\
 >hint cocoon
 You need morning to appear. (+)
 \\
@@ -2601,6 +2725,16 @@ The Leet Learner shakes back and forth. Something you said sounded right, but it
 @hin
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.00.)
+
+@hfull
+>hint
+You'll want to look for a weakness in the construction of the jail you're in. (+)
+\\
+>hint
+What's something that's used in construction and rhymes with jail?
+\\
+>hint
+KNOTTY NAIL. (-)
 
 >knotty nail
 by one point
@@ -2768,6 +2902,16 @@ The lump will act with whatever sound effects it chooses.
 >buy bub
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
+@hfull
+>hint
+There's a way back down from the high hub, but it's largely for entertainment. Your main objective here is to use the lift as needed. (+)
+\\
+>hint
+You can take your leave of the hub with the right phrase. (+)
+\\
+>hint
+BYE BUB. (-)
+
 @!min
 >bye bub
 }}SCORE++
@@ -2886,6 +3030,21 @@ Have a WORDY WALK. (-)
 @hfull
 >hint sturdy stalk
 You already figured how to be inspired by the sturdy stalk.
+\\
+>hint
+You're done here in No-Nudge Slow Sludge.
+\\
+>w
+\\
+>n
+\\
+>hint
+You're done here in Ho, HEWN.
+\\
+>undo
+>undo
+>undo
+>undo
 
 @hin
 >ll stalk
@@ -2938,6 +3097,10 @@ You already had the crow croon!
 
 @!min
 >u
+
+@hfull
+>hint
+The only thing to do here is to operate the locking lift.
 
 @prong
 >d
@@ -3224,6 +3387,16 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >undo
 >undo
 
+@hfull
+>hint
+You need to build infrastructure to start. (+)
+\\
+>hint
+Tubes, or something like them, would help, to transport stuff that can't be easily contained. (+)
+\\
+>hint
+FLOW FLUE. (-)
+
 >flow flue
 by one point
 }}SCORE++
@@ -3236,6 +3409,16 @@ The flow flue is already present!
 @hin
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.50.)
+
+@hfull
+>hint
+You need something that will hold infrastructure together. (+)
+\\
+>hint
+Duct tape works a lot of places, but you need something less visible. (+)
+\\
+>hint
+GLOW GLUE. (-)
 
 >glow glue
 by one point
@@ -3259,6 +3442,16 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >undo
 >undo
 
+@hfull
+>hint
+You need to provide potential concertgoers with something to drink. (+)
+\\
+>hint
+What sort of drink would provied camaraderie?
+\\
+>hint
+BRO BREW. (-)
+
 >bro brew
 by one point
 }}SCORE++
@@ -3271,6 +3464,16 @@ You already have a nice store of Bro Brew.
 @hin
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
+
+@hfull
+>hint
+You need to provide potential concertgoers with something to eat. (+)
+\\
+>hint
+You'll want to keep that something to eat tucked away, nice and hot, until people are hungry. (+)
+\\
+>hint
+STOW STEW. (-)
 
 >stow stew
 by one point
@@ -3299,13 +3502,23 @@ You already summoned the Crow Crew!
 >hoe who
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
+@hfull
+>hint crow crew
+You need to hype up the crowd before the crow crew makes their big entrance. HINT the general area for that.
+
 @hin
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -0.50.)
 
 @hfull
->hint crow crew
-You need to hype up the crowd before the crow crew makes their big entrance. HINT the general area for that.
+>hint
+You need to call out to the crowd to start getting them hyped. (+)
+\\
+>hint
+What's a question that might make a crowd feel wanted?
+\\
+>hint
+HO WHO. (-)
 
 >ho who
 by one point
@@ -3324,6 +3537,16 @@ The Leet Learner shakes back and forth. Something you said sounded right, but it
 @hin
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -0.50.)
+
+@hfull
+>hint
+You have the crowd's attention. They need to be acknowledged. (+)
+\\
+>hint
+You need to let the crowd know whom the show's for. (+)
+\\
+>hint
+YO YOU. (-)
 
 >yo you
 by one point
@@ -3372,6 +3595,11 @@ You summoned the lazy loud crazy crowd into existence, which is enough. You'll w
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 3.50.)
 
 @hfull
+>hint
+The Crow Crew needs to make a big, grand entrance. (+)
+\\
+>undo
+\\
 >hint crow crew
 The Crow Crew needs to make a big, grand entrance. (+)
 \\
@@ -3490,10 +3718,6 @@ You already brought a performance back to the Whoah-Woo-Show Shoe. You don't nee
 >zshocking shift
 {$GREENCORE}
 
-@hin
->ll lift
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 1.00.)
-
 @hfull
 >hint locking lift
 You want to change things everywhere, but one place is particularly drastic. It gives you an item you need elsewhere. (+)
@@ -3503,6 +3727,20 @@ The background itself will change, and you'll be amazed. (+)
 \\
 >hint locking lift
 SHOCKING SHIFT. (-)
+
+@hin
+>ll lift
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 1.00.)
+
+@hfull
+##balance undos
+>rocking rift
+\\
+>hint
+You're done here in Whoah-Woo-Show Shoe.
+\\
+>undo
+>undo
 
 >shocking shift
 by one point
@@ -3658,6 +3896,15 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 @hfull
 >hint light lute
 The light lute can summon some optional animals once you've taken care of general business.
+\\
+>hint
+You can make this area much more livable. (+)
+\\
+>hint
+A more coastal backdrop would be nice. (+)
+\\
+>hint
+SHORE SHOALS. (-)
 
 >shore shoals
 by one point
@@ -3796,6 +4043,16 @@ You don't need even more moles!
 >fore foals
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
+@hfull
+>hint
+This place needs animals. Let's get some cute ones. (+)
+\\
+>hint
+A specific number of cute animals works here. (+)
+\\
+>hint
+FOUR FOALS. (-)
+
 >four foals
 by one point
 }}SCORE++
@@ -3820,9 +4077,29 @@ Coal would not enliven such a place further.
 Bringing animal pelts into a place coming to life doesn't quite work.
 ====alphabetize off
 
+@hfull
+>hint
+This place doesn't have enough animals, yet. (+)
+\\
+>hint
+We don't need any specific number, but some animals might be particularly useful. (+)
+\\
+>hint
+MORE MOLES. (-)
+
 >more moles
 by one point
 }}SCORE++
+
+@hfull
+##balance undos
+>shocking shift
+\\
+>hint
+You're done here in Shore Shoals.
+\\
+>undo
+>undo
 
 @mis
 #this is back at High Hub after we got the red rose
@@ -3937,19 +4214,6 @@ You think back to the bad gifts you've received when people said you should be g
 \\
 #testcase-room-names-rum-route
 /^Bum-'Bout Rum Route
-
-@hfull
->hint red rose
-You can use the red rose after making progress with the general area here.
-\\
-##balance undos
->banish red rose
-\\
->hint red rose
-An outside item is required for what you need to do next.
-\\
->undo
->undo
 
 @hin
 >hint
@@ -4087,6 +4351,16 @@ You can say SAID SOS once you've got a foothold in an argument.
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.50.)
 
+@hfull
+>hint
+Being here makes you feel a lack of confidence for silly reasons. You can flip that around. (+)
+\\
+>hint
+Put a name to the indecision you are feeling. (+)
+\\
+>hint
+DUMB DOUBT. (-)
+
 >dumb doubt
 by one point
 }}SCORE++
@@ -4105,6 +4379,11 @@ You already spread dumb doubt! If you try to spread more, you may wind up believ
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.25, 0.25.)
 
 @hfull
+>hint
+The red rose can extend the dumb doubt you've cast on your oppressors. (+)
+\\
+>undo
+\\
 >hint red rose
 The red rose can extend the dumb doubt you've cast on your oppressors. (+)
 \\
@@ -4126,6 +4405,16 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 #testcase-postreject-table-of-verb-checks-vc-said-sos-rule
 >said sos
 You already gave said-sos!
+
+@hfull
+>hint
+You need to seal the deal you started with dumb doubt. (+)
+\\
+>hint
+What's an underhanded way to say good-bye? (+)
+\\
+>hint
+UMM OUT. (-)
 
 >umm out
 by one point
@@ -4244,6 +4533,16 @@ The Leet Learner shakes back and forth. Something you said sounded right, but it
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, -0.50.)
 
+@hfull
+>hint
+You need to improve your mood a bit. (+)
+\\
+>hint
+You can't do anything concrete, and you don't need to force a smile, but you can discover a small light. (+)
+\\
+>hint
+HEY HOPE. (-)
+
 >hey hope
 by one point
 }}SCORE++
@@ -4266,6 +4565,16 @@ You already got hope started! Now to adjust fully.
 >zk cope
 {$GREENCORE}
 
+@hfull
+>hint
+Now you've discovered solace, you need to find something to do with it. (+)
+\\
+>hint
+The first word is a bit of slang, but the second word is all about fully dealing with your current life. (+)
+\\
+>hint
+K COPE. (-)
+
 >k cope
 by one point
 }}SCORE++
@@ -4278,6 +4587,25 @@ You already took care of the Rum Route!
 @gong,prong
 >gawking gift
 You already took care of the Rum Route!
+
+@hfull
+##balance undos
+>gawking gift
+!by one point
+Numb?
+\\
+>hint
+You're done here in Numb? NOWT!
+\\
+>d
+\\
+>hint
+You're done here in Eh-'Ope Day, Dope!
+\\
+>undo
+>undo
+>undo
+>undo
 
 ##RBRS-SHUFFLEEND=2
 ##RBRS-SHUFFLESTART=3
@@ -4444,6 +4772,16 @@ by one point
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
+@hfull
+>hint
+You need a change in the weather to start to alleviate the fright freeze. (+)
+\\
+>hint
+There's something that could cheer you up. A breath of fresh air. (+)
+\\
+>hint
+BRIGHT BREEZE. (-)
+
 >bright breeze
 by one point
 }}SCORE++
@@ -4452,9 +4790,25 @@ by one point
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
+@hfull
+>hint
+You need to dispel the false moaning that seems to swirl around. (+)
+\\
+>hint
+Things aren't so bad, and the right phrase will emphasize that. (+)
+\\
+>hint
+PLIGHT PLEASE. (-)
+
 >plight please
 by one point
 }}SCORE++
+
+@hfull
+>hint
+You want to grow trite trees, but they'd be hard to build. (+)
+\\
+>undo
 
 @hin
 >ll
@@ -4479,6 +4833,10 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >right root
 by one point
 }}SCORE++
+
+@hfull
+>hint
+You're done here in Trite Trees.
 
 @hin
 >hint
@@ -4532,15 +4890,6 @@ You already planted the right root to make trite trees. Nothing more to do here.
 @hfull
 >hint red rose
 You can use the red rose after making progress with the general area here.
-\\
-##balance undos
->banish red rose
-\\
->hint red rose
-An outside item is required for what you need to do next.
-\\
->undo
->undo
 
 @gt
 #ttc-table-of-noways-seek-sameing
@@ -4638,6 +4987,16 @@ by one point
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.00.)
 
+@hfull
+>hint
+You need to establish the freak framing as something far less glamorous. (+)
+\\
+>hint
+Show complaining is not as insightful as many people think. What to call it?
+\\
+>hint
+BLEAK BLAMING. (-)
+
 >bleak blaming
 by one point
 }}SCORE++
@@ -4650,6 +5009,16 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 #testcase-homonym-table-of-verb-checks-shiek-sheik
 >shiek shaming
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
+
+@hfull
+>hint
+It's not enough to call out bad, whiny behavior. You need a counter to it.
+\\
+>hint
+There's a rather cheery counterattack possible.
+\\
+>hint
+CHIC SHAMING. (-)
 
 >chic shaming
 by one point
@@ -4692,6 +5061,11 @@ Clique claiming would not have nearly as much mileage the second time around.
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
 @hfull
+>hint
+The red rose can attract people who can spread a positive message better than you can. (+)
+\\
+>undo
+\\
 >hint red rose
 The red rose can attract people who can spread a positive message better than you can. (+)
 \\
@@ -4866,6 +5240,16 @@ You can try a RAD ROAST once you've hit back a bit against the madness.
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.50.)
 
+@hfull
+>hint
+You need to repel the insults and bravado you're hearing. (+)
+\\
+>hint
+Label the taunts around you as objectively not up to par. (+)
+\\
+>hint
+BAD BOAST. (-)
+
 >bad boast
 by one point
 }}SCORE++
@@ -4882,9 +5266,23 @@ You can try a RAD ROAST now you've hit back a bit against the madness.
 >bad boast
 !by one point
 
+@hfull
+>hint
+You've dealt with the taunts, but it's time for a counter-offensive. (+)
+\\
+>hint
+Have faith in yourself. Show you can give better than you get. (+)
+\\
+>hint
+RAD ROAST. (-)
+
 >rad roast
 by one point
 }}SCORE++
+
+@hfull
+>hint
+You're done here in Pad Post-Had-Host.
 
 @hin
 >ll
@@ -4924,19 +5322,6 @@ You fail to scare anyone with this, not that you need to, any more.
 
 @all
 /^Trite Trail
-
-@hfull
->hint red rose
-You can use the red rose after making progress with the general area here.
-\\
-##balance undos
->banish red rose
-\\
->hint red rose
-An outside item is required for what you need to do next.
-\\
->undo
->undo
 
 @rej
 #+testcase-think-table-of-verb-checks-vc-thread-throws-rule
@@ -5062,32 +5447,34 @@ The Leet Learner shakes back and forth. Something you said sounded right, but it
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.33, -0.66.)
 
+@hfull
+>hint
+You need transportation to fight the tight-tail white whale. (+)
+\\
+>hint
+What sort of transportation could be available from the Trite Trail?
+\\
+>hint
+SIGHT SAIL. (-)
+
 >sight sail
 by one point
 }}SCORE++
-
-@hfull
->hint sight sail
-You need to gain your bearings on the sight sail. (+)
-\\
->hint sight sail
-A piece of equipment rhyming with sight sail would help. (+)
-\\
->hint sight sail
-Find the RIGHT RAIL. (-)
 
 @hin
 # nothing changes after Sight Sail, because Right Rail is opened
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.33, -0.66.)
 
->flight flail
-by one point
-}}SCORE++
-
-@hin
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
+@hfull
+>hint
+You need armor to fight the tight-tail white whale. (+)
+\\
+>hint
+What sort of armor could be available from the Trite Trail?
+\\
+>hint
+MIGHT MAIL. (-)
 
 @hom
 #testcase-homonym-table-of-verb-checks-mite-male
@@ -5102,10 +5489,38 @@ by one point
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
 
+@hfull
+>hint
+You need a weapon to fight the tight-tail white whale. (+)
+\\
+>hint
+What sort of weapon could be available from the Trite Trail?
+\\
+>hint
+FLIGHT FLAIL. (-)
+
+>flight flail
+by one point
+}}SCORE++
+
+@hin
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
+
 @hom
 #testcase-homonym-table-of-verb-checks-write-rale
 >write rale
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
+
+@hfull
+>hint sight sail
+You need to gain your bearings on the sight sail. (+)
+\\
+>hint sight sail
+A piece of equipment rhyming with sight sail would help. (+)
+\\
+>hint sight sail
+Find the RIGHT RAIL. (-)
 
 >right rail
 by one point
@@ -5165,6 +5580,16 @@ You already figured the right rail to grab to be stable on the sight sail.
 >sight sail
 You already summoned the sight sail. It's not going anywhere.
 
+@hfull
+>hint
+You really need a big mental boost, but then you need to relax. (+)
+\\
+>hint
+It's a tall order. Two six-letter words work here. (+)
+\\
+>hint
+EXCITE EXHALE. (-)
+
 >excite exhale
 by one point
 }}SCORE++
@@ -5209,6 +5634,11 @@ The red rose is useful for making something to subdue the tight-tail white whale
 \\
 >undo
 \\
+>hint
+The red rose is useful for making something to subdue the tight-tail white whale. (+)
+\\
+>undo
+\\
 >hint red rose
 The red rose is useful for making something to subdue the tight-tail white whale. (+)
 \\
@@ -5221,6 +5651,20 @@ THREAD THROWS. (-)
 >thread throws
 by one point
 }}SCORE++
+
+@hfull
+##balance undos
+>docking diffed
+!by one point
+\\
+>w
+\\
+>hint
+You're done here in Trite Trail.
+\\
+>undo
+>undo
+>undo
 
 @hin
 >ll red rose
@@ -5435,6 +5879,16 @@ You can find a TROLLED TREND once the Old End is revealed as something more.
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 
+@hfull
+>hint
+You need to extend the path. (+)
+\\
+>hint
+There's a way to extend the old end, though it won't be a linear path. (+)
+\\
+>hint
+BOLD BEND. (-)
+
 >bold bend
 by one point
 }}SCORE++
@@ -5458,6 +5912,16 @@ You can't tell which way is right. You need to listen for some source of meannes
 @hin
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (3.00, 1.00.)
+
+@hfull
+>hint
+There are two ways to go. You need to look for clues which way to go. (+)
+\\
+>hint
+One way clearly has nastiness, if you know what to look for. (+)
+\\
+>hint
+TROLLED TREND. (-)
 
 >trolled trend
 by one point
@@ -5483,9 +5947,23 @@ The trolled trend got to you, but you can't forsake the bend entirely.
 EXIT LIST:
 south: (unvisited.)
 
+@hfull
+>hint
+The trolling hurt a bit. You need to prepare yourself to face it. (+)
+\\
+>hint
+First you need the right mindset, then you can heal. (+)
+\\
+>hint
+MOLD MEND. (-)
+
 >mold mend
 by one point
 }}SCORE++
+
+@hfull
+>hint
+You're done here in Bold Bend.
 
 @hin
 >ll
@@ -5653,16 +6131,31 @@ You can SPLAIN SPLAT once you're free of the vat.
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, -0.50.)
 
+@hfull
+>hint
+You need to get out of this vat! But you have nothing to break the vat down with. (+)
+\\
+>hint
+You need a strong weapon to beat down the vat. (+)
+\\
+>hint
+BANE BAT. (-)
+
 >bane bat
 by one point
 }}SCORE++
 
 @hfull
->hint bane bat
-Now you have a weapon, what's the right way to bust out?
+>hint
+Now you have a weapon, what's the right way to bust out? (+)
+\\
+>undo
 \\
 >hint bane bat
-Leave the walls of the vat down
+Now you have a weapon, what's the right way to bust out? (+)
+\\
+>hint bane bat
+There's a specific way to bring the walls of the vat down. (+)
 \\
 >hint bane bat
 FLAIN FLAT. (-)
@@ -5698,6 +6191,16 @@ While you could go back north, there must be enemies hidden behind some secret w
 >exits
 EXIT LIST:
 north: Bold Bend.
+
+@hfull
+>hint
+It's time to announce your presence! (+)
+\\
+>hint
+You need to do so with sound effects after. (+)
+\\
+>hint
+SPLAIN SPLAT. (-)
 
 >splain splat
 by one point
@@ -5783,6 +6286,11 @@ The Leet Learner shakes back and forth. Something you said sounded right, but it
 >hint pred pros
 The Pred Pros in their head hose are blocked by your red rose, but you can actually make them allies. (+)
 \\
+>undo
+\\
+>hint pred pros
+The Pred Pros in their head hose are blocked by your red rose, but you can actually make them allies. (+)
+\\
 >hint pred pros
 The Pred Pros look very skinny. (+)
 \\
@@ -5792,6 +6300,10 @@ FED FOES. (-)
 >fed foes
 by one point
 }}SCORE++
+
+@hfull
+>hint
+You're done here in Main Mat.
 
 @hin
 >ll pred pros
@@ -5811,6 +6323,11 @@ I couldn't parse that command. You don't need any more than two words long. VERB
 <Hint-threat-three>.
 
 @hfull
+>hint
+You need to figure the three settings of the marquee. (+)
+\\
+>undo
+\\
 >hint market marquee
 You need to figure the three settings of the marquee. (+)
 \\
@@ -6039,6 +6556,11 @@ You can label the Burning Bright Spurning Sprite once they have an "award" of so
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 2.00.)
 
 @hfull
+>hint
+The sus sack can be changed to something more useful. (+)
+\\
+>undo
+\\
 >hint spurning sprite
 You need a gift for the Burning Bright Spurning Sprite first. Check your inventory for something to work on.
 
@@ -6047,6 +6569,11 @@ by one point
 }}SCORE++
 
 @hfull
+>hint
+You need to label the plus plaque now. Something that describes the Burning Bright Spurning Sprite. (+)
+\\
+>undo
+\\
 >hint plus plaque
 You need to label the plus plaque now. Something that describes the Burning Bright Spurning Sprite. (+)
 \\

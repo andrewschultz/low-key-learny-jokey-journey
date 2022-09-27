@@ -1208,10 +1208,10 @@ You can EXCITE EXHALE to prep yourself once you have an ally, fighting equipment
 >sight sail
 by one point
 
->flight flail
+>might mail
 by one point
 
->might mail
+>flight flail
 by one point
 
 >right rail

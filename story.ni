@@ -1294,6 +1294,8 @@ this is the hint-done-stuff rule: say "You summoned [the noun] into existence, w
 
 to say done-here: say "You're done here in [location of player]"
 
+to say outside-item: say "An outside item is required for what you need to do next"
+
 chapter room hints
 
 the room-hint-rule of bane be sane see is the hint-bane-be-sane-see rule.
