@@ -274,7 +274,7 @@ from-number of mad monk is 5304. to-number of mad monk is 5304.
 
 book No Noon
 
-there is a room called NoNoon in Hoppin' Heart. it is north of Hun Harm Fun Farm. printed name of NoNoon is "[if cocoon is moot]Ho, HEWN[else]No Noon[end if]". "[noon-room].". understand "ho/hewn" and "ho hewn" as NoNoon when cocoon is moot.
+NoNoon is a room in Hoppin' Heart. it is north of Hun Harm Fun Farm. printed name of NoNoon is "[if cocoon is moot]Ho, HEWN[else]No Noon[end if]". "[noon-room].". understand "ho/hewn" and "ho hewn" as NoNoon when cocoon is moot.
 
 to say noon-room:
 	if sco-mo-moon is false:
@@ -302,7 +302,9 @@ after printing the locale description when location of player is NoNoon:
 		say "You feel the presence of something bad here[if sco-reap-rune is false], and worse, you feel helpless to fight it, for now. But perhaps trying incantations and such will help you out for later[end if].";
 	continue the action;
 
-the cocoon is a thing. "The cocoon you summoned still lies here.". description is "It's lying here, ready to open, if enough time passes."
+chapter cocoon
+
+the cocoon is a boring thing. "The cocoon you summoned still lies here.". description is "It's lying here, ready to open, if enough time passes."
 
 from-number of cocoon is 5204.
 
@@ -1363,6 +1365,8 @@ thing-hint-rule of rho rune is the hint-rho-rune rule.
 
 thing-hint-rule of cocoon is the hint-cocoon rule.
 
+thing-hint-rule of snotty snail is hint-just-scenery rule.
+
 thing-hint-rule of locking lift is the hint-locking-lift rule.
 
 thing-hint-rule of sturdy stalk is the hint-sturdy-stalk rule.
@@ -1388,12 +1392,16 @@ thing-hint-rule of sight sail is the hint-sight-sail rule.
 
 thing-hint-rule of delight dilute is the hint-delight-dilute rule.
 
+thing-hint-rule of bane bat is hint-bane-bat rule.
+
 thing-hint-rule of pred pros is the hint-pred-pros rule.
 thing-hint-rule of head hose is the hint-pred-pros rule.
 
 thing-hint-rule of market marquee is the hint-market-marquee rule.
 
 thing-hint-rule of spurning sprite is the hint-spurning-sprite rule.
+
+thing-hint-rule of plus plaque is hint-plus-plaque rule.
 
 thing-hint-rule of red rose is the hint-red-rose rule.
 thing-hint-rule of light lute is the hint-light-lute rule.

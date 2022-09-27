@@ -86,14 +86,14 @@ definition: a room (called rm) is unrhymable:
 			say "[needs]. [myrm] needs from-number.";
 	if needs is 0, say "YAY! All rooms are taken care of!";]
 
-[when play begins:
+when play begins:
 	let count be 0;
 	repeat with TH running through things:
 		if thing-hint-rule of TH is trivially false rule:
 			increment count;
 			say "[count]. [th] needs a real hint rule.";
 	if count is 0, say "All things hinted!";
-	now count is 0;
+[	now count is 0;
 	repeat with RM running through rooms:
 		if map region of RM is get a guess, next;
 		if room-hint-rule of RM is trivially false rule:

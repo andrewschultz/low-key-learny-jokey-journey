@@ -10,6 +10,12 @@
 
 >au 2
 
+>hint
+<Hint-bane-be-sane-see>.
+
+>hint tree
+<Hint-bane-be-sane-see>.
+
 >plain plea
 by one point
 
@@ -28,7 +34,16 @@ by one point
 >ll
 Most special commands are more than one word, because of the rhyme-pairs involved. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+>hint
+<Hint-roaring-rocks>.
+
+>hint box
+<Hint-boring-box>.
+
 >open box
+
+>hint learner
+<Hint-learner-part>.
 
 >ll
 You scan the area.
@@ -37,6 +52,9 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 The leet learner is giving a funny readout. You could maybe climb UP to the old rocks and get another reading.
 
 >n
+
+>hint monk
+<Hint-mad-monk>.
 
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -3.00.)
@@ -70,6 +88,12 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 
 >n
 
+>hint
+<Hint-nnss>.
+
+>hint sludge
+<Hint-nnss>.
+
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.50.)
 
@@ -97,6 +121,12 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >done dorm
 by one point
 
+>hint
+<Hint-stun-storm>.
+
+>hint dorm
+<Hint-stun-storm>.
+
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, -0.50.)
 
@@ -111,6 +141,12 @@ Nothing comes up. The general area here has been changed enough.
 
 >n
 
+>hint
+<Hint-tttt>.
+
+>hint trunk
+<Hint-tree-trunk>.
+
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, -1.00.)
 
@@ -122,6 +158,9 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 
 >gee junk
 by one point
+
+>hint
+<Hint-tttt>.
 
 >ll
 Nothing comes up. The general area here has been changed enough.
@@ -138,6 +177,9 @@ Nothing comes up. You've changed FREE FRUIT as much as you needed to.
 >pear peach
 by one point
 
+>hint peach
+<Hint-pear-peach>.
+
 >ll pear peach
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
@@ -146,6 +188,12 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >s
 
 >e
+
+>hint
+<Hint-trust-track>.
+
+>hint jack
+<Hint-just-jack>.
 
 >ll jack
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (2.00, 0.00.)
@@ -172,6 +220,12 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 
 >bare beach
 by one point
+
+>hint
+<Hint-rare-reach>.
+
+>hint dune
+<Hint-deep-dune>.
 
 >ll
 Nothing comes up. The general area here has been changed enough.
@@ -206,6 +260,9 @@ Nothing comes up. The general area here has been changed enough.
 
 >w
 
+>hint 
+<Hint-fun-farm>.
+
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
 
@@ -229,6 +286,12 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >cocoon
 by one point
 
+>hint
+<Hint-nonoon>.
+
+>hint cocoon
+<Hint-cocoon>.
+
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
@@ -247,6 +310,12 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >crow croon
 by one point
 
+>hint
+<Hint-jotty-jail>.
+
+>hint snail
+You don't have to worry about the snotty snail, which is just scenery to provide clues or atmosphere.
+
 >grotty grail
 by one point
 
@@ -259,11 +328,20 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >knotty nail
 by one point
 
+>hint
+<Hint-high-hub>.
+
+>hint lift
+<Hint-locking-lift>.
+
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 0.00.)
 However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 
 >bye bub
+
+>hint stalk
+<Hint-sturdy-stalk>.
 
 >ll stalk
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
@@ -358,6 +436,15 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >yo you
 by one point
 
+>hint
+<Hint-no-new-show-shoe>.
+
+>hint crowd
+You summoned the lazy loud crazy crowd into existence, which is enough. You'll want to look elsewhere for double-rhymes.
+
+>hint crow crew
+<Hint-crow-crew>.
+
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 3.50.)
 
@@ -390,6 +477,15 @@ by one point
 >kite coot
 by one point
 
+>hint
+<Hint-gore-goals>.
+
+>hint kite coot
+You summoned the kite coot into existence, which is enough. You'll want to look elsewhere for double-rhymes.
+
+>hint night newt
+You summoned the night newt into existence, which is enough. You'll want to look elsewhere for double-rhymes.
+
 ##RBRS-SHUFFLECONDITION=
 
 ##?? note to test after -- if only LLPs remain
@@ -414,6 +510,9 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 
 >gawking gift
 by one point
+
+>hint
+<Hint-rum-route>.
 
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.50.)
@@ -440,6 +539,9 @@ by one point
 Nothing comes up. The general area here has been changed enough.
 
 >d
+
+>hint
+<Hint-slay-slope>.
 
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, -0.50.)
@@ -487,6 +589,12 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >right root
 by one point
 
+>hint
+<Hint-slight-sleaze>.
+
+>hint trite trees
+You summoned the trite trees into existence, which is enough. You'll want to look elsewhere for double-rhymes.
+
 >ll light lute
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 
@@ -521,6 +629,18 @@ Nothing comes up. The general area here has been changed enough.
 >bred bros
 by one point
 
+>gonear bred bros
+
+>hint
+<Hint-seek-sameing>.
+
+>hint bred bros
+You summoned the Bred Bros into existence, which is enough. You'll want to look elsewhere for double-rhymes.
+
+>undo
+>undo
+>undo
+
 ##RBRS-SHUFFLEEND=3
 ##RBRS-SHUFFLESTART=4
 
@@ -529,6 +649,9 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 
 >docking diffed
 by one point
+
+>hint
+<Hint-mad-most-cad-coast>.
 
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.50.)
@@ -593,6 +716,24 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >ll
 Nothing comes up. The general area here has been changed enough.
 
+>hint sight sail
+<Hint-sight-sail>.
+
+>hint might mail
+<Hint-trail-stuff>.
+
+>hint flight flail
+<Hint-trail-stuff>.
+
+>hint bright brute
+<Hint-trail-stuff>.
+
+>hint white whale
+<Hint-trite-trail>.
+
+>hint
+<Hint-trite-trail>.
+
 >thread throws
 by one point
 
@@ -605,6 +746,9 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
 However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 
+>hint delight dilute
+<Hint-delight-dilute>.
+
 >despite dispute
 by one point
 
@@ -613,6 +757,9 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 
 >mocking miffed
 by one point
+
+>hint
+<Hint-old-end>.
 
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
@@ -646,6 +793,12 @@ by one point
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 
+>hint bane bat
+<Hint-bane-bat>.
+
+>hint
+<Hint-vain-vat>.
+
 >flain flat
 by one point
 
@@ -664,6 +817,9 @@ I couldn't parse that command. You don't need any more than two words long. VERB
 >ll pred pros
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 0.00.)
 
+>hint pred pros
+<Hint-pred-pros>.
+
 >fed foes
 by one point
 
@@ -671,6 +827,12 @@ by one point
 I couldn't parse that command. You don't need any more than two words long. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 >s
+
+>hint market marquee
+<Hint-market-marquee>.
+
+>hint
+<Hint-threat-three>.
 
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-2.66, -4.00.)
@@ -698,6 +860,12 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 
 >plus plaque
 by one point
+
+>hint sprite
+<Hint-spurning-sprite>.
+
+>hint plus plaque
+<Hint-plus-plaque>.
 
 >ll spurning sprite
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, -1.00.)

@@ -72,6 +72,13 @@ TSV:## minimum walkthrough	## walkthrough with all points	## walkthrough with al
 
 >au 2
 
+@hin
+>hint
+<Hint-bane-be-sane-see>.
+\\
+>hint tree
+<Hint-bane-be-sane-see>.
+
 @ver
 #ttc-table-of-readables-train-tree
 >read train tree
@@ -653,7 +660,18 @@ riff
 !rocks will become
 ====alphabetize off
 
+@hin
+>hint
+<Hint-roaring-rocks>.
+\\
+>hint box
+<Hint-boring-box>.
+
 >open box
+
+@hin
+>hint learner
+<Hint-learner-part>.
 
 @hom
 >two too
@@ -684,6 +702,9 @@ As you go on your way, who should block your way but a fervent Mad Monk? They ca
 The mad monk is blocking you right now.
 
 @hin
+>hint monk
+<Hint-mad-monk>.
+\\
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -3.00.)
 !You could maybe climb UP to the old rocks and get another reading.
@@ -915,6 +936,13 @@ NOTE: Low-Key Learny Jokey Journey should indicate whenever you find the right r
 @all
 #testcase-room-names-no-nudge-slow-sludge
 /^No-Nudge Slow Sludge
+
+@hin
+>hint
+<Hint-nnss>.
+\\
+>hint sludge
+<Hint-nnss>.
 
 @gong,prong
 >s
@@ -1170,6 +1198,12 @@ by one point
 }}SCORE++
 
 @hin
+>hint
+<Hint-stun-storm>.
+\\
+>hint dorm
+<Hint-stun-storm>.
+\\
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, -0.50.)
 \\
@@ -1220,6 +1254,13 @@ You already filled out the fun form.
 @all
 #testcase-room-names-the-thunk-tree-trunk
 /^The \(Thunk!\) Tree Trunk
+
+@hin
+>hint
+<Hint-tttt>.
+\\
+>hint trunk
+<Hint-tree-trunk>.
 
 @gt
 #testcase-exits-the-thunk-tree-trunk
@@ -1324,6 +1365,9 @@ by one point
 }}SCORE++
 
 @hin
+>hint
+<Hint-tttt>.
+\\
 >ll
 Nothing comes up. The general area here has been changed enough.
 
@@ -1460,6 +1504,9 @@ by one point
 }}SCORE++
 
 @hin
+>hint peach
+<Hint-pear-peach>.
+\\
 >ll pear peach
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
@@ -1545,6 +1592,12 @@ You can make the CRUST CRACK once Just Jack is gone.
 Violence isn't the answer, here, though you're close. You may wish to think of Jack differently.
 
 @hin
+>hint
+<Hint-trust-track>.
+\\
+>hint jack
+<Hint-just-jack>.
+\\
 >ll jack
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (2.00, 0.00.)
 \\
@@ -1719,6 +1772,12 @@ by one point
 }}SCORE++
 
 @hin
+>hint
+<Hint-rare-reach>.
+\\
+>hint dune
+<Hint-deep-dune>.
+\\
 >ll
 Nothing comes up. The general area here has been changed enough.
 
@@ -1905,6 +1964,9 @@ That doesn't quite work. Maybe the farm needs worms or warm weather, but its sur
 {$GREENCORE}
 
 @hin
+>hint 
+<Hint-fun-farm>.
+\\
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
 
@@ -2057,6 +2119,12 @@ by one point
 }}SCORE++
 
 @hin
+>hint
+<Hint-nonoon>.
+\\
+>hint cocoon
+<Hint-cocoon>.
+\\
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
@@ -2137,6 +2205,13 @@ by one point
 @all
 #testcase-room-names-jotty-jail
 /^Jotty Jail
+
+@hint
+>hint
+<Hint-jotty-jail>.
+\\
+>hint snail
+You don't have to worry about the snotty snail, which is just scenery to provide clues or atmosphere.
 
 @gt
 #ttc-table-of-noways-jotty-jail
@@ -2255,6 +2330,13 @@ by one point
 @all
 #testcase-room-names-high-hub
 /^High Hub
+
+@hint
+>hint
+<Hint-high-hub>.
+\\
+>hint lift
+<Hint-locking-lift>.
 
 @gt
 #ttc-table-of-noways-high-hub
@@ -2391,6 +2473,10 @@ The Leet Learner shakes back and forth. Something you said sounded right, but it
 }}SCORE++
 }}CURMIN++
 }}CURMINBONUS++
+
+@hint
+>hint stalk
+<Hint-sturdy-stalk>.
 
 @gong,prong
 >n
@@ -2945,6 +3031,15 @@ That's a bit too generic a sound to make, and you've already made the right ones
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
 @hin
+>hint
+<Hint-no-new-show-shoe>.
+\\
+>hint crowd
+You summoned the lazy loud crazy crowd into existence, which is enough. You'll want to look elsewhere for double-rhymes.
+\\
+>hint crow crew
+<Hint-crow-crew>.
+\\
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 3.50.)
 
@@ -3262,6 +3357,16 @@ by one point
 }}CURMIN++
 }}CURMINBONUS++
 
+@hin
+>hint
+<Hint-gore-goals>.
+\\
+>hint kite coot
+You summoned the kite coot into existence, which is enough. You'll want to look elsewhere for double-rhymes.
+\\
+>hint night newt
+You summoned the night newt into existence, which is enough. You'll want to look elsewhere for double-rhymes.
+
 ##RBRS-SHUFFLECONDITION=
 
 @hin
@@ -3434,6 +3539,10 @@ You think back to the bad gifts you've received when people said you should be g
 \\
 #testcase-room-names-rum-route
 /^Bum-'Bout Rum Route
+
+@hint
+>hint
+<Hint-rum-route>.
 
 @rej
 >gawking gift
@@ -3630,6 +3739,10 @@ You've cleared the Rum Route. No need to overdo things.
 @all
 #testcase-room-names-nay-nope-slay-slope
 /^Nay-Nope-Slay Slope
+
+@hint
+>hint
+<Hint-slay-slope>.
 
 @gt
 #ttc-table-of-noways-nay-nope-slay-slope
@@ -3932,7 +4045,13 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 by one point
 }}SCORE++
 
-@hin
+@hint
+>hint
+<Hint-slight-sleaze>.
+\\
+>hint trite trees
+You summoned the trite trees into existence, which is enough. You'll want to look elsewhere for double-rhymes.
+\\
 >ll light lute
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 \\
@@ -4128,6 +4247,20 @@ The Leet Learner shakes back and forth. Something you said sounded right, but it
 by one point
 }}SCORE++
 
+@hint
+##balance undos
+>gonear bred bros
+\\
+>hint
+<Hint-seek-sameing>.
+\\
+>hint bred bros
+You summoned the Bred Bros into existence, which is enough. You'll want to look elsewhere for double-rhymes.
+\\
+>undo
+>undo
+>undo
+
 @rej
 #testcase-postreject-table-of-verb-checks-vc-grokking-grift-rule
 >grokking grift
@@ -4163,6 +4296,10 @@ The locking lift leads you to a shore where you'd expect a watercraft, but there
 \\
 #testcase-room-names-mad-most-cad-coast
 /^Mad-Most-Cad Coast
+
+@hint
+>hint
+<Hint-mad-most-cad-coast>.
 
 @rej
 >docking diffed
@@ -4517,6 +4654,25 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >ll
 Nothing comes up. The general area here has been changed enough.
 
+@hint
+>hint sight sail
+<Hint-sight-sail>.
+\\
+>hint might mail
+<Hint-trail-stuff>.
+\\
+>hint flight flail
+<Hint-trail-stuff>.
+\\
+>hint bright brute
+<Hint-trail-stuff>.
+\\
+>hint white whale
+<Hint-trite-trail>.
+\\
+>hint
+<Hint-trite-trail>.
+
 >thread throws
 by one point
 }}SCORE++
@@ -4554,6 +4710,9 @@ You already conquered the tight-tail white whale. No need to go back.
 >ll delight dilute
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
 However, it's really dim, as if you don't need to do or think whatever there is to do or think.
+\\
+>hint delight dilute
+<Hint-delight-dilute>.
 
 @!min
 >despite dispute
@@ -4603,6 +4762,10 @@ by one point
 @all
 #testcase-room-names-old-end
 /^Old End
+
+@hint
+>hint
+<Hint-old-end>.
 
 @rej
 >docking diffed
@@ -4921,6 +5084,12 @@ by one point
 @hin
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
+\\
+>hint bane bat
+<Hint-bane-bat>.
+\\
+>hint
+<Hint-vain-vat>.
 
 @gt
 >w
@@ -5020,6 +5189,10 @@ You convince yourself the vain vat was a great place to sort out your emotions.
 >fed phos
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
+@hint
+>hint pred pros
+<Hint-pred-pros>.
+
 >fed foes
 by one point
 }}SCORE++
@@ -5033,6 +5206,13 @@ I couldn't parse that command. You don't need any more than two words long. VERB
 @all
 #testcase-room-names-threat-three-met-me
 /^Market Marquee
+
+@hint
+>hint market marquee
+<Hint-market-marquee>.
+\\
+>hint
+<Hint-threat-three>.
 
 @gong,prong
 >n
@@ -5236,6 +5416,12 @@ by one point
 }}SCORE++
 
 @hin
+>hint sprite
+<Hint-spurning-sprite>.
+\\
+>hint plus plaque
+<Hint-plus-plaque>.
+\\
 >ll spurning sprite
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, -1.00.)
 

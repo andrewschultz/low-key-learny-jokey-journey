@@ -115,6 +115,7 @@ chapter instead rules
 to decide whether the action is procedural:
 	if examining, yes;
 	if reading, yes;
+	if hintobjing, yes;
 	if lling, yes;
 	no;
 

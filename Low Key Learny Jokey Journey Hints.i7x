@@ -104,9 +104,12 @@ this is the hint-pred-pros rule:
 this is the hint-market-marquee rule:
 	say "[one of]You need to figure the three settings of the marquee.[or]The nonsense words on the marquee clue the rhymes you need, ones that work with market marquee, but they're shorter.[or][if sco-yet-ye is false][b]TWET/TWEE[r] leads to [b]YET YE[r][else if sco-set-see is false][b]TRET/TREE[r] leads to [b]SET SEE[r][else][b]GLET/GLEE[r] leads to [b]FRET FREE[r][end if].[cycling]" instead;
 
-this is  the hint-spurning-sprite rule:
-	if sus sack is not moot, say "You need a gift for [the sprite] first. Check your inventory for something to work on." instead;
+this is the hint-plus-plaque rule:
 	say "[one of]You need to label the plus plaque now. Something that describes [the sprite].[or]You can describe [the sprite] unfavorably.[or][b]TURNING TRITE[r].[cycling]" instead;
+
+this is the hint-spurning-sprite rule:
+	if sus sack is not moot, say "You need a gift for [the sprite] first. Check your inventory for something to work on." instead;
+	abide by the hint-plus-plaque rule;
 
 this is the hint-light-lute rule:
 	if player does not have the light lute, say "An outside item is required for what you need to do next." instead;

@@ -436,6 +436,7 @@ a goodrhyme rule (this is the vc-co-coon rule):
 this is the vr-co-coon rule:
 	now sco-co-coon is true;
 	say "A cocoon appears! It's not ready to hatch yet. Maybe not for a while. Perhaps you could get time to move in weird ways.";
+	move cocoon to NoNoon;
 
 a goodrhyme rule (this is the vc-mo-moon rule):
 	if player is not in NoNoon, unavailable;
@@ -1012,6 +1013,7 @@ this is the vr-right-root rule:
 	now sco-right-root is true;
 	say "The right root takes hold in the ground, and out bloom ... trite trees! No, it's not picturesque, but it's better than what was there before. The trees bloom on all sides except one ... which cuts out a clear passage!";
 	now Freak Framing is mapped south of Slight Sleaze;
+	move trite trees to Slight Sleaze;
 	lose-gold-string 5504;
 
 a goodrhyme rule (this is the vc-bleak-blaming rule):
