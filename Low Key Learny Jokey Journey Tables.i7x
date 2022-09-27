@@ -1387,6 +1387,7 @@ this is the vr-plus-plaque rule:
 	now sco-plus-plaque is true;
 	say "You have summoned a plus plaque! The [sprite] accepts it before you can offer it. But then they are upset ... there's no name on it! What could their name be?";
 	now plus plaque is in Threat Three;
+	moot sus sack;
 
 a goodrhyme rule (this is the vc-turning-trite rule):
 	if player is not in threat three met me, unavailable;

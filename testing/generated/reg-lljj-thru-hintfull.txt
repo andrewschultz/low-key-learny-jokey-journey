@@ -138,6 +138,21 @@ by one point
 >bother
 You hear a whooshing as a door swings in from nowhere. It doesn't seem to lead anywhere. Voices from behind it, though, assure you you are missing something. Using your logical skills, you deduce it is a miss-more-diss door. While it's not going to jump you if your back is turned, it might be nice to get rid of.
 
+>hint diss door
+There are two solutions to the miss-more-diss door. One is racy, and one is not. (+)
+
+>hint diss door
+The racy one is to cut the diss door down with your own rude phrase. (+)
+
+>hint diss door
+PISS POOR. (+)
+
+>hint diss door
+You can also try a hint given at game's end. (+)
+
+>hint diss door
+SWEAR SWAMP WHERE WOMP. (-)
+
 >piss poor
 by one point
 
@@ -149,17 +164,62 @@ by one point
 
 >n
 
+>hint tree trunk
+The tree trunk, or a place in it you can look, is too high up. (+)
+
+>hint tree trunk
+You can bring the tree trunk down a little. (+)
+
+>hint tree trunk
+GEE JUNK brings the tree trunk down. (-)
+
 >see sunk
 by one point
+
+>hint tree trunk
+There's something in the tree trunk, but you need to see it right. (+)
+
+>hint tree trunk
+You might be glad to find something that seems worthless to others. (+)
+
+>hint tree trunk
+GEE JUNK reveals what's in the tree trunk. (-)
 
 >gee junk
 by one point
 
+>hint tree trunk
+You saw what was in the tree trunk, and that's all you need to do with it.
+
+>hint free fruit
+You need to be thrilled you got free fruit. (+)
+
+>hint free fruit
+There are two colloquial interjections that make things click. (+)
+
+>hint free fruit
+WHEE WOOT. (-)
+
 >whee woot
 by one point
 
+>hint free fruit
+Figuring what free fruit to get is a lateral-thinking puzzle. It's not a rhyme that springs from FREE FRUIT. (+)
+
+>hint free fruit
+There are other places that need something. (+)
+
+>hint free fruit
+I won't spoil this until you've been the other place. (+)
+
+>hint free fruit
+It's a combination of two fruits, but I won't spoil it until you've been where you need to be. (-)
+
 >pear peach
 by one point
+
+>hint pear peach
+It's impressive you got the pear peach before visiting the place where you need to use it. You'll know when you get there.
 
 >s
 
@@ -167,25 +227,84 @@ by one point
 
 >e
 
+>hint just jack
+Just Jack is in the way, and he won't get out without proper transport. (+)
+
+>hint just jack
+You don't need to summon something directly, just something that leaves Just Jack displaced. (+)
+
+>hint just jack
+Make Just Jack BUSSED BACK. (-)
+
 >bussed back
 by one point
+
+>hint sus sack
+The sus sack can be changed to something more useful. (+)
+
+>hint sus sack
+You don't need that something in the sus sack for yourself, but it is a nice gift for someone, if they are present. (+)
+
+>hint sus sack
+PLUS PLAQUE. (-)
 
 >crust crack
 by one point
 
 >n
 
+>s
+
+>hint pear peach
+The pear peach can work its magic in Rare Reach.
+
+>undo
+>undo
+
+>hint pear peach
+The pear peach can make Rare Reach a bit less desolate. (+)
+
+>hint pear peach
+This could be a place with life, or at  least, water. (+)
+
+>hint pear peach
+Make a BARE BEACH. (-)
+
 >bare beach
 by one point
+
+>hint deep dune
+You need the deep dune to start getting smaller. (+)
+
+>hint deep dune
+The deep dune won't get smaller right away. (+)
+
+>hint deep dune
+Make the deep dune SEEP SOON. (-)
 
 >seep soon
 by one point
 
+>hint deep dune
+Leave and come back before making further progress with the deep dune.
+
 >s
 >n
 
+>hint deep dune
+What is in the deep dune? Something valuable. (+)
+
+>hint deep dune
+A symbol of magic power is inside the dune, if you search right. (+)
+
+>hint deep dune
+REAP RUNE. (-)
+
 >reap rune
 by one point
+
+>hint rho rune
+The Rho Rune is useful somewhere you haven't been.
 
 >s
 
@@ -198,17 +317,38 @@ by one point
 
 >n
 
+>hint rho rune
+The Rho Rune gives you power here.
+
 >go goon
 by one point
 
 >cocoon
 by one point
 
+>hint cocoon
+You need some light to appear in the night sky. (+)
+
+>hint cocoon
+There are no stars that can appear, but there is another celestial body. (+)
+
+>hint cocoon
+MO MOON. (-)
+
 >mo moon
 by one point
 
 >so soon
 by one point
+
+>hint cocoon
+You need morning to appear. (+)
+
+>hint cocoon
+You have no rooster, but there's another animal that can make a noise that might signify morning. (+)
+
+>hint cocoon
+CROW CROON. (-)
 
 >crow croon
 by one point
@@ -225,9 +365,49 @@ You can say LL for the lurking lump to push you through a puzzle at the right ti
 >knotty nail
 by one point
 
+>hint locking lift
+A good introductory hub is a concert that has been split up. It's on the long side, but the words are short. (+)
+
+>hint locking lift
+ROCKING RIFT. (-)
+
+>rocking rift
+by one point
+
+>hint locking lift
+You have uncompleted areas you can reach in the lift, so hinting the lift will show what is remaining until you are ready for the final spoke of the hub.
+
+>hint locking lift
+!You have uncompleted areas you can reach in the lift, so hinting the lift will show what is remaining until you are ready for the final spoke of the hub.
+
+>undo
+>undo
+>undo
+
 >bye bub
 
+>w
+>n
+>hint cocoon
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+>undo
+>undo
+>undo
+
+>hint sturdy stalk
+The sturdy stalk isn't critical to winning, but it provides a bonus point. (+)
+
+>hint sturdy stalk
+Look at the stalk the right way, and you get inspiration. (+)
+
+>hint sturdy stalk
+Have a WORDY WALK. (-)
+
 >wordy walk
+
+>hint sturdy stalk
+You already figured how to be inspired by the sturdy stalk.
 
 >u
 
@@ -254,23 +434,80 @@ by one point
 >crow crew
 by one point
 
+>hint crow crew
+You need to hype up the crowd before the crow crew makes their big entrance. HINT the general area for that.
+
 >ho who
 by one point
 
 >yo you
 by one point
 
+>hint crow crew
+The Crow Crew needs to make a big, grand entrance. (+)
+
+>hint crow crew
+You can give the Crow Crew momentum if you introduce them right. (+)
+
+>hint crow crew
+THROW THROUGH. (-)
+
 >throw through
 by one point
+
+>hint light lute
+The light lute is useful but not here.
 
 ##RBRS-SHUFFLEEND=0
 ##RBRS-SHUFFLESTART=1
 
+>hint locking lift
+You want to change things everywhere, but one place is particularly drastic. It gives you an item you need elsewhere. (+)
+
+>hint locking lift
+The background itself will change, and you'll be amazed. (+)
+
+>hint locking lift
+SHOCKING SHIFT. (-)
+
 >shocking shift
 by one point
 
+>hint light lute
+The light lute can summon some optional animals once you've taken care of general business.
+
 >shore shoals
 by one point
+
+>kite coot
+by one point
+
+>hint light lute
+You can summon an animal that blends into the background with the light lute. (+)
+
+>hint light lute
+Not the background during the day. (+)
+
+>hint light lute
+Summon a NIGHT NEWT. (-)
+
+>undo
+>undo
+>undo
+>undo
+
+>hint light lute
+You can summon a hybrid bird with the light lute. (+)
+
+>hint light lute
+Each word is a bit odd, and it has another non-animal use, too. (+)
+
+>hint light lute
+Summon a KITE COOT. (-)
+
+>undo
+>undo
+>undo
 
 ##RBRS-SHUFFLECONDITION=1>0
 
@@ -294,11 +531,40 @@ by one point
 ##RBRS-SHUFFLEEND=1
 ##RBRS-SHUFFLESTART=2
 
+>hint locking lift
+There's a place where you get knowledge and confidence. (+)
+
+>hint locking lift
+You'll stare blankly, whether it's too much or too little.
+
+>hint locking lift
+GAWKING GIFT. (-)
+
 >gawking gift
 by one point
 
+>hint red rose
+You can use the red rose after making progress with the general area here.
+
+>banish red rose
+
+>hint red rose
+An outside item is required for what you need to do next.
+
+>undo
+>undo
+
 >dumb doubt
 by one point
+
+>hint red rose
+The red rose can extend the dumb doubt you've cast on your oppressors. (+)
+
+>hint red rose
+The red rose can use a rhetorical trick or help you use one. (+)
+
+>hint red rose
+The red rose can generate SAID SOS. (-)
 
 >said sos
 by one point
@@ -317,8 +583,20 @@ by one point
 ##RBRS-SHUFFLEEND=2
 ##RBRS-SHUFFLESTART=3
 
+>hint locking lift
+You need to learn about the seedy side of things without being affected. (+)
+
+>hint locking lift
+This lift setting requires slang for knowing something. (+)
+
+>hint locking lift
+GROKKING GRIFT. (-)
+
 >grokking grift
 by one point
+
+>hint light lute
+You can use the light lute after making progress with the general area here.
 
 >tight tees
 by one point
@@ -334,6 +612,17 @@ by one point
 
 >s
 
+>hint red rose
+You can use the red rose after making progress with the general area here.
+
+>banish red rose
+
+>hint red rose
+An outside item is required for what you need to do next.
+
+>undo
+>undo
+
 >clique claiming
 by one point
 
@@ -343,14 +632,47 @@ by one point
 >chic shaming
 by one point
 
+>hint red rose
+The red rose can attract people who can spread a positive message better than you can. (+)
+
+>hint red rose
+Summon upper-class types full of camaraderie. (+)
+
+>hint red rose
+BRED BROS. (-)
+
 >bred bros
 by one point
+
+>grokking grift
+!by one point
+
+>s
+
+>hint bred bros
+You summoned the Bred Bros into existence, which is enough. You'll want to look elsewhere for double-rhymes.
+
+>undo
+>undo
+>undo
 
 ##RBRS-SHUFFLEEND=3
 ##RBRS-SHUFFLESTART=4
 
+>hint locking lift
+There's a boat ahead in the toughest area. (+)
+
+>hint locking lift
+DOCKING DIFFED. (-)
+
 >docking diffed
 by one point
+
+>hint locking lift
+DOCKING DIFFED is the recommended lift setting to complete.
+
+>hint red rose
+The red rose is useful but not here.
 
 >bad boast
 by one point
@@ -360,8 +682,28 @@ by one point
 
 >w
 
+>hint red rose
+You can use the red rose after making progress with the general area here.
+
+>banish red rose
+
+>hint red rose
+An outside item is required for what you need to do next.
+
+>undo
+>undo
+
 >sight sail
 by one point
+
+>hint sight sail
+You need to gain your bearings on the sight sail. (+)
+
+>hint sight sail
+A piece of equipment rhyming with sight sail would help. (+)
+
+>hint sight sail
+Find the RIGHT RAIL. (-)
 
 >flight flail
 by one point
@@ -372,22 +714,87 @@ by one point
 >right rail
 by one point
 
+>hint sight sail
+You got your bearings with the sight sail already.
+
+>hint light lute
+The light lute can summon a generic animal ally. (+)
+
+>hint light lute
+You need an animal ally with strength and a positive mood. (+)
+
+>hint light lute
+Summon a BRIGHT BRUTE. (-)
+
 >bright brute
 by one point
 
+>hint light lute
+You've done all you can with the light lute.
+
 >excite exhale
 by one point
+
+>hint might mail
+You will have the might mail's help when the time comes. It's there so you don't lose track of it.
+
+>hint flight flail
+You will have the flight flail's help when the time comes. It's there so you don't lose track of it.
+
+>hint bright brute
+You will have the bright brute's help when the time comes. It's there so you don't lose track of it.
+
+>hint white whale
+The red rose is useful for making something to subdue the tight-tail white whale. (+)
+
+>undo
+
+>hint red rose
+The red rose is useful for making something to subdue the tight-tail white whale. (+)
+
+>hint red rose
+Generally you use a net to catch fish. Something that can sort of make a net is the first word, and how you use a net is the second. (+)
+
+>hint red rose
+THREAD THROWS. (-)
 
 >thread throws
 by one point
 
 ##RBRS-SHUFFLEEND=4
 
+>hint delight dilute
+It's optional to get rid of the can of DELIGHT DILUTE, and if you want to, the solution may be a bit tricky. But it follows the rhyming description. (+)
+
+>hint delight dilute
+The name of the can of DELIGHT DILUTE suggests taking something nice and making it worse. You can do the reverse. (+)
+
+>hint delight dilute
+DESPITE DISPUTE. (-)
+
 >despite dispute
 by one point
 
+>hint locking lift
+The last area is where you encounter the Burning Bright Spurning Sprite. They are upset and contemptuous. (+)
+
+>hint locking lift
+Specifically, you may imagine you hear scornful laughter, which you need to follow. (+)
+
+>hint locking lift
+MOCKING MIFFED. (-)
+
 >mocking miffed
 by one point
+
+>enter lift
+High Hub
+
+>hint locking lift
+You're done here in High Hub.
+
+>undo
+>undo
 
 >bold bend
 by one point
@@ -403,16 +810,63 @@ by one point
 >bane bat
 by one point
 
+>hint bane bat
+Now you have a weapon, what's the right way to bust out?
+
+>hint bane bat
+Leave the walls of the vat down
+
+>hint bane bat
+FLAIN FLAT. (-)
+
 >flain flat
 by one point
 
 >splain splat
 by one point
 
+>hint pred pros
+The Pred Pros in their head hose are blocked by your red rose, but you can actually make them allies. (+)
+
+>hint pred pros
+The Pred Pros look very skinny. (+)
+
+>hint pred pros
+FED FOES. (-)
+
 >fed foes
 by one point
 
 >s
+
+>hint market marquee
+You need to figure the three settings of the marquee. (+)
+
+>hint market marquee
+The nonsense words on the marquee clue the rhymes you need, ones that work with market marquee, but they're shorter. (+)
+
+>hint market marquee
+TWET/TWEE leads to YET YE. (-)
+
+>undo
+
+>yet ye
+by one point
+
+>hint market marquee
+TRET/TREE leads to SET SEE. (-)
+
+>undo
+
+>set see
+by one point
+
+>hint market marquee
+GLET/GLEE leads to FRET FREE. (-)
+
+>undo
+>undo
+>undo
 
 >fret free
 by one point
@@ -423,8 +877,23 @@ by one point
 >set see
 by one point
 
+>hint spurning sprite
+You need a gift for the Burning Bright Spurning Sprite first. Check your inventory for something to work on.
+
 >plus plaque
 by one point
+
+>hint plus plaque
+You need to label the plus plaque now. Something that describes the Burning Bright Spurning Sprite. (+)
+
+>hint plus plaque
+You can describe the Burning Bright Spurning Sprite unfavorably. (+)
+
+>hint plus plaque
+TURNING TRITE. (-)
+
+>hint spurning sprite
+You need to label the plus plaque now. Something that describes the Burning Bright Spurning Sprite. (+)
 
 >score
 

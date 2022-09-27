@@ -392,6 +392,8 @@ book Rare Reach
 
 Rare Reach is in Hoppin' Heart. printed name of Rare Reach is "[if sco-bare-beach is true]Bare Beach[else]Rare Reach[end if]". "[if sco-bare-beach is true]This is an isthmus[else]Desolation all around[end if][if dune is in rare reach]. That dune might hold something, though[end if]. You can only go back south.". Trust Track is mapped south of Rare Reach. nowhere is mapped north of Trust Track.
 
+understand "bare beach" and "bare/beach" as rare reach when sco-bare-beach is true.
+
 guess-table of rare reach is the table of rare reach guesses.
 
 from-number of rare reach is 5405. to-number of rare reach is 5405.

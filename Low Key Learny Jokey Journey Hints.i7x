@@ -43,6 +43,10 @@ to check-minus-and-plus:
 		ital-say "a minus sign means you've reached the end of a hint loop. You can cycle through them again, though.";
 		now minus-noted is true;
 
+volume definitions
+
+lift-hint-warn is a truth state that varies.
+
 volume thing hints
 
 this is the hint-player rule:
@@ -72,10 +76,10 @@ this is the hint-diss-door rule: say "[one of]There are two solutions to the [di
 
 this is the hint-just-jack rule: say "[one of][jack] is in the way, and he won't get out without proper transport[pplus][or]You don't need to summon something directly, just something that leaves [jack] displaced[pplus][or]Make [jack] [b]BUSSED BACK[r][pminus][cycling]" instead;
 
-this is the hint-sus-sack rule: say "[one of]The sus sack can be changed to something more useful[pplus][or]You don't need that something in the sus sack for yourself, but it may impress someone[pplus][or][b]PLUS PLAQUE[r][pminus][cycling]" instead;
+this is the hint-sus-sack rule: say "[one of]The sus sack can be changed to something more useful[pplus][or]You don't need that something in the sus sack for yourself, but it is a nice gift for someone, if they are present[pplus][or][b]PLUS PLAQUE[r][pminus][cycling]" instead;
 
 this is the hint-pear-peach rule:
-	if rare reach is unvisited, say "It's impressive you got the pear peach before visiting the place that tipped it off." instead;
+	if rare reach is unvisited, say "It's impressive you got the pear peach before visiting the place where you need to use it. You'll know when you get there." instead;
 	if player is not in rare reach, say "The pear peach can work its magic in Rare Reach." instead;
 	say "[one of]The pear peach can make Rare Reach a bit less desolate[pplus][or]This could be a place with life, or at  least, water[pplus][or]Make a [b]BARE BEACH[r][pminus][cycling]" instead;
 
@@ -93,12 +97,14 @@ this is the hint-cocoon rule:
 	say "The cocoon should be gone now. This is a BUG." instead;
 
 this is the hint-locking-lift rule:
-	if hub-score < lift-score and lift-score < 5, say "You have uncompleted areas you can reach in the lift, but filling in lift settings will take priority when you ask for hints here.[line break]" instead;
-	if sco-rocking-rift is false, say "[one of]A good introductory hub is a concert that has been split up. It's on the long side, but the words are short[pplus][or][or][r]ROCKING RIFT[b][pminus][cycling]" instead;
+	if hub-score < lift-score and lift-score < 5 and lift-hint-warn is false:
+		now lift-hint-warn is true;
+		say "You have uncompleted areas you can reach in the lift, so hinting the lift will show what is remaining until you are ready for the final spoke of the hub.[line break]";
+	if sco-rocking-rift is false, say "[one of]A good introductory hub is a concert that has been split up. It's on the long side, but the words are short[pplus][or][r]ROCKING RIFT[b][pminus][cycling]" instead;
 	if sco-shocking-shift is false, say "[one of]You want to change things everywhere, but one place is particularly drastic. It gives you an item you need elsewhere[pplus][or]The background itself will change, and you'll be amazed[pplus][or][r]SHOCKING SHIFT[b][pminus][cycling]" instead;
-	if sco-gawking-gift is false, say "[one of]There's a place where you get knowledge and confidence[pplus][or]You'll stare blankly, whether it's too much or too little[or][r]GAWKING GIFT[b][if player does not have red rose], though you can't complete it now until you visit another hub[end if][pminus][cycling]" instead;
+	if sco-gawking-gift is false, say "[one of]There's a place where you get knowledge and confidence[pplus][or]You'll stare blankly, whether it's too much or too little[pplus][or][r]GAWKING GIFT[b][if player does not have red rose], though you can't complete it now until you visit another hub[end if][pminus][cycling]" instead;
 	if sco-grokking-grift is false, say "[one of]You need to learn about the seedy side of things without being affected[pplus][or]This lift setting requires slang for knowing something[pplus][or][r]GROKKING GRIFT[b][pminus][cycling]" instead;
-	if sco-docking-diffed is false, say "[one of]There's a boat ahead in the toughest[or][or][r]DOCKING DIFFED[b][pminus][cycling]" instead;
+	if sco-docking-diffed is false, say "[one of]There's a boat ahead in the toughest area[pplus][or][r]DOCKING DIFFED[b][pminus][cycling]" instead;
 	if hub-score < 5, say "[b][best-hub][r] is the recommended lift setting to complete." instead;
 	if sco-mocking-miffed is false, say "[one of]The last area is where you encounter [the sprite]. They are upset and contemptuous[pplus][or]Specifically, you may imagine you hear scornful laughter, which you need to follow[pplus][or][r]MOCKING MIFFED[b][pminus][cycling]" instead;
 	say "[done-here]." instead;
@@ -125,7 +131,9 @@ to say best-hub:
 	else:
 		say "DOCKING DIFFED"
 
-this is the hint-sturdy-stalk rule: say "[one of]The sturdy stalk isn't critical to winning, but it provides a bonus point[pplus][or]Look at the stalk the right way, and you get inspiration[pplus][or]Have a [b]WORDY WALK[r][pminus][cycling]" instead;
+this is the hint-sturdy-stalk rule:
+	if sco-wordy-walk is true, say "You already figured how to be inspired by the sturdy stalk." instead;
+	say "[one of]The sturdy stalk isn't critical to winning, but it provides a bonus point[pplus][or]Look at the stalk the right way, and you get inspiration[pplus][or]Have a [b]WORDY WALK[r][pminus][cycling]" instead;
 
 this is the hint-crow-crew rule:
 	if sco-yo-you is false, say "You need to hype up the crowd before the crow crew makes their big entrance. [b]HINT[r] the general area for that." instead;
@@ -135,6 +143,7 @@ this is the hint-trail-stuff rule: say "You will have [the noun]'s help when the
 
 this is the hint-sight-sail rule:
 	if sco-right-rail is false, say "[one of]You need to gain your bearings on the sight sail[pplus][or]A piece of equipment rhyming with sight sail would help[pplus][or]Find the [b]RIGHT RAIL[r][pminus][cycling]" instead;
+	say "You got your bearings with the sight sail already." instead;
 
 this is the hint-delight-dilute rule:
 	say "[one of]It's optional to get rid of [the dilute], and if you want to, the solution may be a bit tricky. But it follows the rhyming description[pplus][or]The name of [the dilute] suggests taking something nice and making it worse. You can do the reverse[pplus][or][b]DESPITE DISPUTE[r][pminus][cycling]" instead;
@@ -151,7 +160,7 @@ this is the hint-plus-plaque rule:
 	say "[one of]You need to label the plus plaque now. Something that describes [the sprite][pplus][or]You can describe [the sprite] unfavorably[pplus][or][b]TURNING TRITE[r][pminus][cycling]" instead;
 
 this is the hint-spurning-sprite rule:
-	if sus sack is not moot, say "You need a gift for [the sprite] first. Check your inventory for something to work on." instead;
+	if sco-plus-plaque is false, say "You need a gift for [the sprite] first. Check your inventory for something to work on." instead;
 	abide by the hint-plus-plaque rule;
 
 this is the hint-light-lute rule:
@@ -178,7 +187,7 @@ this is the hint-red-rose rule:
 		say "[one of]The red rose can attract people who can spread a positive message better than you can[pplus][or]Summon upper-class types full of camaraderie[pplus][or][b]BRED BROS[r][pminus][cycling]" instead;
 	if player is in trite trail:
 		if whale-score < 5, say "[genprog of red rose]." instead;
-		if sco-thread-throws is false, say "[one of]The red rose is useful for making something to subdue [the whale][pplus][or]Generally you use a net to catch fish. Something that can sort of make a net is the first word, and how you use a net is the second[pplus][or][b]THREAD THROWS[r][pminus][cycling]";
+		if sco-thread-throws is false, say "[one of]The red rose is useful for making something to subdue [the whale][pplus][or]Generally you use a net to catch fish. Something that can sort of make a net is the first word, and how you use a net is the second[pplus][or][b]THREAD THROWS[r][pminus][cycling]" instead;
 	say "[useless of red rose]." instead;
 
 to say useless of (itm - a thing): say "The [itm] is useful but not here"
