@@ -350,20 +350,20 @@ this is the free-fruit-offstage rule:
 
 table of trite trail guesses
 mist-cmd(topic)	mist-rule	got-yet	leet-rule	mist-txt
-"aight ail"	--	false	no-excite-exhale-rule rule	"You resort to the vernacular to express your displeasure with enemies, real or imagined."
-"bite bail/bale"	--	false	no-excite-exhale-rule rule	"There is no bale to bite, and if you want to bail, you can just go back east."
-"bright braille"	--	false	no-excite-exhale-rule rule	"There is no braille here."
-"fight fail"	--	false	no-excite-exhale-rule rule	"[desp-gloat]!"
-"fright frail"	--	false	no-excite-exhale-rule rule	"[desp-gloat]!"
-"height hail/hale"	--	false	no-excite-exhale-rule rule	"Alas, no airplane appears to destroy [the whale]."
-"kite kale"	--	false	no-excite-exhale-rule rule	"No nutririous green kite appears."
-"quite quail"	--	false	no-excite-exhale-rule rule	"A quail would not [if sco-excite-exhale is true]have helped[else]help[end if] much against [the whale]."
-"shite shale"	--	false	no-excite-exhale-rule rule	"Well, that would certainly make the trite trail less trite, in its own way."
+"aight ail"	--	false	no-thread-throws-rule rule	"You resort to the vernacular to express your displeasure with enemies, real or imagined."
+"bite bail/bale"	--	false	no-thread-throws-rule rule	"There is no bale to bite, and if you want to bail, you can just go back east."
+"bright braille"	--	false	no-thread-throws-rule rule	"There is no braille here."
+"fight fail"	--	false	no-thread-throws-rule rule	"[desp-gloat]!"
+"fright frail"	--	false	no-thread-throws-rule rule	"[desp-gloat]!"
+"height hail/hale"	--	false	no-thread-throws-rule rule	"Alas, no airplane appears to destroy [the whale]."
+"kite kale"	--	false	no-thread-throws-rule rule	"No nutritious green kite appears."
+"quite quail"	--	false	no-thread-throws-rule rule	"A quail would not [if sco-excite-exhale is true]have helped[else]help[end if] much against [the whale]."
+"shite shale"	--	false	no-thread-throws-rule rule	"Well, that would certainly make the trite trail less trite, in its own way."
 
-to say desp-gloat: say "Don't [if sco-excite-exhale is false]despair[else]gloat[end if]"
+to say desp-gloat: say "Don't [if sco-thread-throws is false]despair[else]gloat[end if]"
 
-this is the no-excite-exhale-rule rule:
-	if sco-excite-exhale is false, the rule succeeds;
+this is the no-thread-throws-rule rule:
+	if sco-thread-throws is false, the rule succeeds;
 	the rule fails;
 
 table of trust track guesses

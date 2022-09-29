@@ -29,6 +29,10 @@ to decide which number is lift-score: decide on boolval of sco-docking-diffed + 
 
 to decide which number is hub-score: decide on boolval of sco-throw-through + boolval of sco-excite-exhale + boolval of sco-chic-shaming + boolval of sco-k-cope + boolval of (whether or not shoal-core-score is 2); [rocking rift/throw through, docking diffed / excite-exhale, grokking grift/chic shaming, gawking gift/k cope, shocking shift/3 gore-goals points ]
 
+to decide whether spoke-6-known:
+	if sco-mocking-miffed is true or tried-mocking-miffed is true, yes;
+	no;
+
 section lute/rose/side items
 
 to decide which number is side-item-score: decide on (boolval of whether or not red rose is not off-stage) + (boolval of whether or not light lute is not off-stage)

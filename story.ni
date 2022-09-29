@@ -1543,6 +1543,22 @@ carry out swear-swamp-where-womping:
 	say "Oops. You should've gotten a check for a bonus point here.";
 	the rule succeeds;
 
+chapter thinking extension
+
+check thinking (this is the lift reminder rule):
+	if high hub is unvisited, continue the action;
+	unless spoke-6-known or hub-score < lift-score, continue the action;
+	if location of player is a liftroom and spokeval of location of player is 5, continue the action;
+	say "You still have spokes you've visited from the High Hub that haven't been solved.[paragraph break]";
+	if sco-rocking-rift is true and sco-throw-through is false, say "[b]ROCKING RIFT[r] [gets-got of show shoe].";
+	if sco-shocking-shift is true and shoal-core-score < 2, say "[b]SHOCKING SHIFT[r] [gets-got of gore goals].";
+	if sco-docking-diffed is true and sco-thread-throws is false, say "[b]DOCKING DIFFED[r] [gets-got of cad coast][if trite trail is visited] and Trite Trail[end if].";
+	if sco-gawking-gift is true and sco-k-cope is false, say "[b]GAWKING GIFT[r] [gets-got of rum route][if slay slope is visited] and [slay slope][end if].";
+	if sco-grokking-grift is true and sco-chic-shaming is false, say "[b]GROKKING GRIFT[r] [gets-got of slight sleaze][if freak framing is visited] and [freak framing][end if].";
+	if spoke-6-known, say "[b]MOCKING MIFFED[r] will get you [if hub-score < 5]to the final area once the others are cleared[else if old end is visited]to the final area[else]back to the final area[end if].";
+
+to say gets-got of (rm - a room): say "[if player is in rm]got you[else]gets you back[end if] to [rm]";
+
 chapter verbsing
 
 carry out verbsing:

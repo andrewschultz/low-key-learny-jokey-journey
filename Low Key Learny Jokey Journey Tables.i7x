@@ -1684,7 +1684,7 @@ to say lift-stuff:
 	say "[if sco-docking-diffed is true]DOCKING DIFFED[else]------- ------[end if][if sco-excite-exhale is true] (done)[end if].";
 	say "[if sco-gawking-gift is true]GAWKING GIFT[else]------- ----[end if][if sco-k-cope is true] (done)[end if]";
 	say "[if sco-grokking-grift is true]GROKKING GRIFT[else]-------- ------[end if][if sco-chic-shaming is true] (done)[end if].";
-	say "[if tried-mocking-miffed is true or sco-mocking-miffed is true]MOCKING MIFFED[else]------- ------[end if][if hub-score < 5] (not yet)[end if]."; [ no (done) case since it is the final one ]
+	say "[if spoke-6-known]MOCKING MIFFED[else]------- ------[end if][if hub-score < 5] (not yet)[end if]."; [ no (done) case since it is the final one ]
 	say "[if sco-rocking-rift is true]ROCKING RIFT[else]------ ----[end if][if sco-throw-through is true] (done)[end if].";
 	say "[if sco-shocking-shift is true]SHOCKING SHIFT[else]-------- -----[end if][if shoal-core-score is 2] (done)[end if].";
 
