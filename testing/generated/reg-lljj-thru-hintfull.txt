@@ -446,6 +446,15 @@ MO MOON. (-)
 >mo moon
 by one point
 
+>hint cocoon
+You'd like to hurry up the cocoon opening. (+)
+
+>hint cocoon
+There is a way to speed up time, but not quite to where the cocoon opens. (+)
+
+>hint cocoon
+SO SOON. (-)
+
 >so soon
 by one point
 

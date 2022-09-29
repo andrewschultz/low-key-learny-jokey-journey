@@ -1374,7 +1374,7 @@ this is the vr-yet-ye rule:
 	abide by the marquee-change rule;
 
 a goodrhyme rule (this is the vc-plus-plaque rule):
-	if player does not have sus sack, unavailable;
+	if player does not have sus sack and plus plaque is not fungible, unavailable;
 	if spurning sprite is not fungible:
 		vcp "You consider conjuring up a gaudy, flattering plus-plaque. But you have nobody to give it to, and you'd hate to have to carry it around[if player is not in Threat Three Met Me]. Maybe elsewhere[end if].";
 		not-yet;

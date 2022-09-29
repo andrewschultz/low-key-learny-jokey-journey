@@ -301,15 +301,6 @@ by one point
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
->hint cocoon
-You'd like to hurry up the cocoon opening. (+)
-
->hint cocoon
-There is a way to speed up time, but not quite to where the cocoon opens. (+)
-
->hint cocoon
-SO SOON. (-)
-
 >so soon
 by one point
 
@@ -688,7 +679,7 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 by one point
 
 >ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, -0.50.)
 
 >flight flail
 by one point

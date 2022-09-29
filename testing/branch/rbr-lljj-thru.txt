@@ -2538,7 +2538,7 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >sew soon
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
-@hin
+@hfull
 >hint cocoon
 You'd like to hurry up the cocoon opening. (+)
 \\
@@ -5487,7 +5487,7 @@ by one point
 
 @hin
 >ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, -0.50.)
 
 @hfull
 >hint
