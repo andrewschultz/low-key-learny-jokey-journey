@@ -1410,9 +1410,9 @@ thing-hint-rule of plus plaque is hint-plus-plaque rule.
 thing-hint-rule of red rose is the hint-red-rose rule.
 thing-hint-rule of light lute is the hint-light-lute rule.
 
-[include Low Key Learny Jokey Journey Hints by Andrew Schultz.]
+include Low Key Learny Jokey Journey Hints by Andrew Schultz.
 
-include Low Key Learny Jokey Journey Hint Stubs by Andrew Schultz.
+[include Low Key Learny Jokey Journey Hint Stubs by Andrew Schultz.]
 
 volume standard verbs
 
@@ -1457,6 +1457,7 @@ carry out abouting:
 	say "[line break]It felt like something that'd never get created, but it was fun to dream about. Then I had an idea about [if nnss is unvisited]the third room[else][NNSS][end if] offering another odd bonus point in [vvff], but I wanted to move on. Then an idea for one room came, then another, and suddenly I had a game for IFComp 2022, which was nice, as the one I'd had on reserve since 2018 had dried up.";
 	say "[line break]I was able to re-use and fine-tune and fix bugs in a lot of code from [vvff], and I even managed to create some code I backported. And I started using Zarf's regression scripts earlier, to catch bugs well before the deadline and free my mind up for bigger-picture things. So it feels like the user experience should be smoother, although the story might be weaker.";
 	say "[line break]While my code for [vvff] wasn't perfect, it gave me a boost so I didn't have to rewrite a lot. I'd also become more comfortable with rules and rule ordering since then, so I was able to make the code more portable.";
+	say "[line break]I welcome bug reports, big or small, as well as transcripts. [this-game]'s repository is at https://github.com/andrewschultz/low-key-learny-jokey-journey/issues. My email blurglecruncheon@gmail.com are also appreciated.";
 	the rule succeeds;
 
 chapter creditsing
@@ -1602,19 +1603,19 @@ volume start of game
 
 when play begins:
 	say "You're walking along, thinking of big things, knowing that big ideas won't just drop themselves right next to you just because you hope they will.";
-	wfak;
+	wfas;
 	say "Or do they? You look up, and there's some weird flame creature or something. It's a bit odd to see them on a busy city street, but nobody else notices them. They're holding a pamphlet called [nkhh][line break]";
-	wfak;
+	wfas;
 	say "They introduce themselves as the [sprite], and -- well, they're hoping for SOMEONE, ANYONE who might understand the slightest bit what's in this pamphlet, or who even tries. You take the pamphlet and read it, if only to drown them out.";
-	wfak;
+	wfas;
 	say "And you do. There's some good information in here. So good, you can't help but remark 'Wow! Whoah!' Such a simple, powerful idea! You'll remember that idea, of course you will...";
-	wfak;
+	wfas;
 	say "...until [the sprite] interrupts you saying FINALLY someone understood this, and they'd been waiting long enough, and they've been forced by goodness knows WHAT afterlife bureaucracy to search the world for someone even VAGUELY interested in this sort of thing, and if you don't hop along and listen to their guidance, who will?";
-	wfak;
+	wfas;
 	say "This is all very annoying. You try to pull away, hoping to remember what prompted your exclamation, but you've already forgotten. You lash out at [the sprite], who promptly assures you that if you'd really internalized what you read, you wouldn't have problems remembering it. Perhaps if you went on this quest here? I'm too busy to actually hold your hand through it, but I'll try and give advice when I can be bothered.'";
-	wfak;
+	wfas;
 	say "You have nothing better to do. In fact, you were trying to avoid watching television you didn't enjoy anyway. A weird journey would be a bonus. The [sprite] points you to a back alley. A weird train shaped like a tree on its side awaits. You enter. It chugs off somewhere far and weird, then springs upright.";
-	wfak;
+	wfas;
 
 volume end of game
 
