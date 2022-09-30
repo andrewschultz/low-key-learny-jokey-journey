@@ -41,6 +41,7 @@ Most special commands are more than one word, because of the rhyme-pairs involve
 <Hint-boring-box>.
 
 >open box
+You open the boring box, and you see a metal gadget that doesn't look very interesting at first.
 
 >hint learner
 <Hint-learner-part>.
@@ -312,9 +313,6 @@ by one point
 
 >hint
 <Hint-jotty-jail>.
-
->hint snail
-You don't have to worry about the snotty snail, which is just scenery to provide clues or atmosphere.
 
 >grotty grail
 by one point

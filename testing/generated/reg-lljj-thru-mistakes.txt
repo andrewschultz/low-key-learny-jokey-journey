@@ -127,6 +127,7 @@ riff
 !rocks will become
 
 >open box
+You open the boring box, and you see a metal gadget that doesn't look very interesting at first.
 
 #ttc-table-of-leet-learner-guesses-yeet-yearner
 >yeet yearner

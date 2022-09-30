@@ -10,6 +10,7 @@
 
 >au 2
 
+#testcase-rules-hint-bane-be-sane-see-rule-default
 >hint
 You may notice the TRAIN TREE has writing on it. It's an option that's meaningless for gameplay, but it helps you see what sort of puzzles are ahead. (+)
 
@@ -19,6 +20,7 @@ You can READ the train tree to decide your name, which has no effect on anything
 >hint
 If you note the names, you may find a bonus point that goes along with the room name and game theme. (-)
 
+#testcase-rules-hint-player-rule-fallthrough
 >hint me
 Look at the location names and title of the story. (+)
 
@@ -34,9 +36,14 @@ Your job in this game is to manufacture parallel rhyme pairs. (-)
 >plain plea
 by one point
 
+#testcase-rules-hint-player-rule-if-core-score->-0
+>hint me
+Your magic power is being able to construct parallel rhymes, as the game title suggests.
+
 >jane g
 by one point
 
+#testcase-rules-hint-roaring-rocks-rule-if-sco-boring-box-is-false
 >hint
 The roaring rocks can be changed into something useful and interesting. Or something that contains something interesting. Something that double-rhymes roaring rocks. (+)
 
@@ -49,15 +56,20 @@ BORING BOX. (-)
 >boring box
 by one point
 
+#testcase-rules-hint-roaring-rocks-rule-fallthrough
 >hint
 You can LL and try going UP to look around and get clues about the leet learner here, but there are no more puzzles.
 
+#testcase-rules-hint-boring-box-rule-default
 >hint box
 You can really only OPEN the boring box.
 
 >open box
+You open the boring box, and you see a metal gadget that doesn't look very interesting at first.
 
->hint learner
+#hint learner
+#testcase-rules-hint-learner-part-rule-default
+>hint leet learner
 The leet learner and its parts only give hints. You can LL alone to scan a room, LL any thing or person, or READ the leet learner to see its option.
 
 >n
@@ -65,6 +77,7 @@ The leet learner and its parts only give hints. You can LL alone to scan a room,
 >gad gunk
 by one point
 
+#testcase-rules-hint-mad-monk-rule-fallthrough
 >hint monk
 You have two ways you need to dispose of the mad monk. (+)
 
@@ -97,6 +110,8 @@ You can say SAD SUNK.
 Take down the monk anyway?
 
 >hint monk
+
+#testcase-rules-hint-mad-monk-rule-if-warn-monk-is-true
 You already know both BAD BUNK and SAD SUNK. Repeat SAD SUNK to get by.
 
 >undo
@@ -114,6 +129,8 @@ You can say BAD BUNK.
 Take down the monk anyway?
 
 >hint monk
+
+#+testcase-rules-hint-mad-monk-rule-if-warn-monk-is-true
 You already know both BAD BUNK and SAD SUNK. Repeat BAD BUNK to get by.
 
 >undo
@@ -130,6 +147,7 @@ by one point
 
 >n
 
+#testcase-rules-hint-nnss-rule-if-sco-grow-grudge-is-false
 >hint
 The no-nudge slow sludge is annoying. You need to be annoyed by it the right way. (+)
 
@@ -147,6 +165,7 @@ You're done here in No-Nudge Slow Sludge.
 
 >n
 
+#testcase-rules-hint-stun-storm-rule-if-sco-done-dorm-is-false
 >hint
 You need a place to rest that double-rhymes STUN STORM. (+)
 
@@ -159,6 +178,7 @@ DONE DORM. (-)
 >bother
 You hear a whooshing as a door swings in from nowhere. It doesn't seem to lead anywhere. Voices from behind it, though, assure you you are missing something. Using your logical skills, you deduce it is a miss-more-diss door. While it's not going to jump you if your back is turned, it might be nice to get rid of.
 
+#testcase-rules-hint-diss-door-rule-default
 >hint diss door
 There are two solutions to the miss-more-diss door. One is racy, and one is not. (+)
 
@@ -180,6 +200,7 @@ by one point
 >done dorm
 by one point
 
+#testcase-rules-hint-stun-storm-rule-if-sco-fun-form-is-false
 >hint
 You need certification you're the sort of person welcome in a done dorm. How to rhyme that?
 
@@ -189,6 +210,7 @@ FUN FORM. (-)
 >fun form
 by one point
 
+#testcase-rules-hint-stun-storm-rule-fallthrough
 >hint
 You're done here in One Warm Stun-Storm.
 
@@ -204,6 +226,7 @@ The tree trunk, or a place in it you can look, is too high up. (+)
 
 >undo
 
+#testcase-rules-hint-tree-trunk-rule-if-sco-see-sunk-is-false
 >hint tree trunk
 The tree trunk, or a place in it you can look, is too high up. (+)
 
@@ -211,11 +234,18 @@ The tree trunk, or a place in it you can look, is too high up. (+)
 You can bring the tree trunk down a little. (+)
 
 >hint tree trunk
-GEE JUNK brings the tree trunk down. (-)
+SEE SUNK brings the tree trunk down. (-)
 
 >see sunk
 by one point
 
+#testcase-rules-hint-tttt-rule-if-sco-gee-junk-is-false
+>hint
+There's something in the tree trunk, but you need to see it right. (+)
+
+>undo
+
+#testcase-rules-hint-tree-trunk-rule-if-sco-gee-junk-is-false
 >hint tree trunk
 There's something in the tree trunk, but you need to see it right. (+)
 
@@ -228,9 +258,11 @@ GEE JUNK reveals what's in the tree trunk. (-)
 >gee junk
 by one point
 
+#testcase-rules-hint-tree-trunk-rule-fallthrough
 >hint tree trunk
 You saw what was in the tree trunk, and that's all you need to do with it.
 
+#testcase-rules-hint-free-fruit-rule-if-sco-whee-woot-is-false
 >hint
 You need to be thrilled you got free fruit. (+)
 
@@ -248,6 +280,13 @@ WHEE WOOT. (-)
 >whee woot
 by one point
 
+#testcase-rules-hint-tttt-rule-if-free-fruit-is-not-moot
+#testcase-rules-hint-free-fruit-rule-fallthrough
+>hint
+Figuring what free fruit to get is a lateral-thinking puzzle. It's not a rhyme that springs from FREE FRUIT. (+)
+
+>undo
+
 >hint free fruit
 Figuring what free fruit to get is a lateral-thinking puzzle. It's not a rhyme that springs from FREE FRUIT. (+)
 
@@ -263,9 +302,11 @@ It's a combination of two fruits, but I won't spoil it until you've been where y
 >pear peach
 by one point
 
+#testcase-rules-hint-tttt-rule-fallthrough
 >hint
 You're done here in The (Thunk!) Tree Trunk.
 
+#testcase-rules-hint-pear-peach-rule-if-rare-reach-is-unvisited
 >hint pear peach
 It's impressive you got the pear peach before visiting the place where you need to use it. You'll know when you get there.
 
@@ -280,6 +321,8 @@ Just Jack is in the way, and he won't get out without proper transport. (+)
 
 >undo
 
+#testcase-rules-hint-trust-track-rule-if-just-jack-is-fungible
+#testcase-rules-hint-just-jack-rule-default
 >hint just jack
 Just Jack is in the way, and he won't get out without proper transport. (+)
 
@@ -292,6 +335,7 @@ Make Just Jack BUSSED BACK. (-)
 >bussed back
 by one point
 
+#testcase-rules-hint-trust-track-rule-fallthrough
 >hint
 There is a passage, even though you trust there isn't. (+)
 
@@ -301,6 +345,7 @@ But the passage won't appear until there is a shift in the ground. (+)
 >hint
 Make the CRUST CRACK. (-)
 
+#testcase-rules-hint-sus-sack-rule-default
 >hint sus sack
 The sus sack can be changed to something more useful. (+)
 
@@ -313,11 +358,14 @@ PLUS PLAQUE. (-)
 >crust crack
 by one point
 
+#testcase-rules-hint-trust-track-rule-if-sco-crust-crack-is-true
 >hint
 You're done here in Trust Track.
 
 >n
 
+#testcase-rules-hint-pear-peach-rule-fallthrough
+#testcase-rules-hint-rare-reach-rule-fallthrough
 >hint
 The pear peach can make Rare Reach a bit less desolate. (+)
 
@@ -325,6 +373,7 @@ The pear peach can make Rare Reach a bit less desolate. (+)
 
 >s
 
+#testcase-rules-hint-pear-peach-rule-if-player-is-not-in-rare-reach
 >hint pear peach
 The pear peach can work its magic in Rare Reach.
 
@@ -343,6 +392,12 @@ Make a BARE BEACH. (-)
 >bare beach
 by one point
 
+#testcase-rules-hint-deep-dune-rule-if-sco-seep-soon-is-false
+>hint
+You need the deep dune to start getting smaller. (+)
+
+>undo
+
 >hint deep dune
 You need the deep dune to start getting smaller. (+)
 
@@ -355,12 +410,14 @@ Make the deep dune SEEP SOON. (-)
 >seep soon
 by one point
 
+#testcase-rules-hint-deep-dune-rule-if-flag-reap-rune-is-false
 >hint deep dune
 Leave and come back before making further progress with the deep dune.
 
 >s
 >n
 
+#testcase-rules-hint-deep-dune-rule-fallthrough
 >hint deep dune
 What is in the deep dune? Something valuable. (+)
 
@@ -373,9 +430,11 @@ REAP RUNE. (-)
 >reap rune
 by one point
 
+#testcase-rules-hint-rare-reach-rule-if-sco-reap-rune-is-true
 >hint
 You're done here in Bare Beach.
 
+#testcase-rules-hint-rho-rune-rule-default
 >hint rho rune
 The Rho Rune is useful somewhere you haven't been.
 
@@ -385,6 +444,7 @@ The Rho Rune is useful somewhere you haven't been.
 
 >w
 
+#testcase-rules-hint-fun-farm-rule-if-sco-un-arm-is-true
 >hint
 How can you get rid of weapons and threats to get by?
 
@@ -397,14 +457,23 @@ UN ARM or UNARM. (-)
 >unarm
 by one point
 
+#testcase-rules-hint-fun-farm-rule-fallthrough
 >hint
 You're done here in Hun Harm Fun Farm.
 
 >n
 
+#+testcase-rules-hint-rho-rune-rule-default
 >hint rho rune
 The Rho Rune gives you power here.
 
+>s
+
+#+testcase-rules-hint-rho-rune-rule-default
+>hint rho rune
+The Rho Rune is useful somewhere you've been.
+
+#testcase-rules-hint-nonoon-rule-if-sco-go-goon-is-false
 >hint
 You need to ward off enemies. (+)
 
@@ -417,6 +486,7 @@ GO GOON. (-)
 >go goon
 by one point
 
+#testcase-rules-hint-nonoon-rule-if-sco-co-coon-is-false
 >hint
 You must summon something that can grow with the passage of time. (+)
 
@@ -434,6 +504,7 @@ You need some light to appear in the night sky. (+)
 
 >undo
 
+#testcase-rules-hint-cocoon-rule-if-sco-mo-moon-is-false
 >hint cocoon
 You need some light to appear in the night sky. (+)
 
@@ -446,6 +517,7 @@ MO MOON. (-)
 >mo moon
 by one point
 
+#testcase-rules-hint-cocoon-rule-if-sco-so-soon-is-false
 >hint cocoon
 You'd like to hurry up the cocoon opening. (+)
 
@@ -463,6 +535,7 @@ You need morning to appear. (+)
 
 >undo
 
+#testcase-rules-hint-cocoon-rule-if-sco-crow-croon-is-false
 >hint cocoon
 You need morning to appear. (+)
 
@@ -475,15 +548,21 @@ CROW CROON. (-)
 >crow croon
 by one point
 
+>hint snail
+You don't have to worry about the snotty snail, which is just scenery to provide clues or atmosphere.
+
 >grotty grail
 by one point
 
 >potty pail
 by one point
 
->hint lump
+#hint lump
+#testcase-rules-hint-lurking-lump-rule-default
+>hint lurking lump
 You can say LL for the lurking lump to push you through a puzzle at the right time. It can solve any rhyme you wish but has limited charges.
 
+#testcase-rules-hint-jotty-jail-rule-default
 >hint
 You'll want to look for a weakness in the construction of the jail you're in. (+)
 
@@ -496,6 +575,7 @@ KNOTTY NAIL. (-)
 >knotty nail
 by one point
 
+#testcase-rules-hint-locking-lift-rule-if-sco-rocking-rift-is-false
 >hint locking lift
 A good introductory hub is a concert that has been split up. It's on the long side, but the words are short. (+)
 
@@ -515,6 +595,7 @@ You have uncompleted areas you can reach in the lift, so hinting the lift will s
 >undo
 >undo
 
+#testcase-rules-hint-high-hub-rule-fallthrough
 >hint
 There's a way back down from the high hub, but it's largely for entertainment. Your main objective here is to use the lift as needed. (+)
 
@@ -535,6 +616,7 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 >undo
 >undo
 
+#testcase-rules-hint-sturdy-stalk-rule-fallthrough
 >hint sturdy stalk
 The sturdy stalk isn't critical to winning, but it provides a bonus point. (+)
 
@@ -546,9 +628,11 @@ Have a WORDY WALK. (-)
 
 >wordy walk
 
+#testcase-rules-hint-sturdy-stalk-rule-if-sco-wordy-walk-is-true
 >hint sturdy stalk
 You already figured how to be inspired by the sturdy stalk.
 
+#testcase-rules-hint-nnss-rule-fallthrough
 >hint
 You're done here in No-Nudge Slow Sludge.
 
@@ -556,6 +640,8 @@ You're done here in No-Nudge Slow Sludge.
 
 >n
 
+#testcase-rules-hint-nonoon-rule-fallthrough
+#testcase-rules-hint-cocoon-rule-fallthrough
 >hint
 You're done here in Ho, HEWN.
 
@@ -566,6 +652,7 @@ You're done here in Ho, HEWN.
 
 >u
 
+#testcase-rules-hint-high-hub-rule-if-sco-bye-bub-is-true
 >hint
 The only thing to do here is to operate the locking lift.
 
@@ -577,6 +664,7 @@ by one point
 >go goo
 by one point
 
+#testcase-rules-hint-no-new-show-shoe-rule-if-sco-flow-flue-is-false
 >hint
 You need to build infrastructure to start. (+)
 
@@ -589,6 +677,7 @@ FLOW FLUE. (-)
 >flow flue
 by one point
 
+#testcase-rules-hint-no-new-show-shoe-rule-if-sco-glow-glue-is-false
 >hint
 You need something that will hold infrastructure together. (+)
 
@@ -601,6 +690,7 @@ GLOW GLUE. (-)
 >glow glue
 by one point
 
+#testcase-rules-hint-no-new-show-shoe-rule-if-sco-bro-brew-is-false
 >hint
 You need to provide potential concertgoers with something to drink. (+)
 
@@ -613,6 +703,7 @@ BRO BREW. (-)
 >bro brew
 by one point
 
+#testcase-rules-hint-no-new-show-shoe-rule-if-sco-stow-stew-is-false
 >hint
 You need to provide potential concertgoers with something to eat. (+)
 
@@ -628,9 +719,11 @@ by one point
 >crow crew
 by one point
 
+#testcase-rules-hint-crow-crew-rule-if-sco-yo-you-is-false
 >hint crow crew
 You need to hype up the crowd before the crow crew makes their big entrance. HINT the general area for that.
 
+#testcase-rules-hint-no-new-show-shoe-rule-if-sco-ho-who-is-false
 >hint
 You need to call out to the crowd to start getting them hyped. (+)
 
@@ -643,6 +736,7 @@ HO WHO. (-)
 >ho who
 by one point
 
+#testcase-rules-hint-no-new-show-shoe-rule-if-sco-yo-you-is-false
 >hint
 You have the crowd's attention. They need to be acknowledged. (+)
 
@@ -655,11 +749,13 @@ YO YOU. (-)
 >yo you
 by one point
 
+#testcase-rules-hint-no-new-show-shoe-rule-if-sco-throw-through-is-false
 >hint
 The Crow Crew needs to make a big, grand entrance. (+)
 
 >undo
 
+#testcase-rules-hint-crow-crew-rule-fallthrough
 >hint crow crew
 The Crow Crew needs to make a big, grand entrance. (+)
 
@@ -672,12 +768,14 @@ THROW THROUGH. (-)
 >throw through
 by one point
 
+#testcase-rules-hint-light-lute-rule-fallthrough
 >hint light lute
 The light lute is useful but not here.
 
 ##RBRS-SHUFFLEEND=0
 ##RBRS-SHUFFLESTART=1
 
+#testcase-rules-hint-locking-lift-rule-if-sco-shocking-shift-is-false
 >hint locking lift
 You want to change things everywhere, but one place is particularly drastic. It gives you an item you need elsewhere. (+)
 
@@ -689,6 +787,7 @@ SHOCKING SHIFT. (-)
 
 >rocking rift
 
+#testcase-rules-hint-no-new-show-shoe-rule-fallthrough
 >hint
 You're done here in Whoah-Woo-Show Shoe.
 
@@ -698,9 +797,11 @@ You're done here in Whoah-Woo-Show Shoe.
 >shocking shift
 by one point
 
+#testcase-rules-hint-light-lute-rule-if-player-is-in-gore-goals-if-sco-shore-shoals-is-false
 >hint light lute
 The light lute can summon some optional animals once you've taken care of general business.
 
+#testcase-rules-hint-gore-goals-rule-if-sco-shore-shoals-is-false
 >hint
 You can make this area much more livable. (+)
 
@@ -716,6 +817,7 @@ by one point
 >kite coot
 by one point
 
+#testcase-rules-hint-light-lute-rule-if-player-is-in-gore-goals-if-sco-night-newt-is-false
 >hint light lute
 You can summon an animal that blends into the background with the light lute. (+)
 
@@ -730,6 +832,7 @@ Summon a NIGHT NEWT. (-)
 >undo
 >undo
 
+#testcase-rules-hint-light-lute-rule-if-player-is-in-gore-goals-if-sco-kite-coot-is-false
 >hint light lute
 You can summon a hybrid bird with the light lute. (+)
 
@@ -756,6 +859,7 @@ by one point
 >lore lols
 by one point
 
+#testcase-rules-hint-gore-goals-rule-if-sco-four-foals-is-false
 >hint
 This place needs animals. Let's get some cute ones. (+)
 
@@ -768,6 +872,7 @@ FOUR FOALS. (-)
 >four foals
 by one point
 
+#testcase-rules-hint-gore-goals-rule-if-sco-more-moles-is-false
 >hint
 This place doesn't have enough animals, yet. (+)
 
@@ -782,6 +887,7 @@ by one point
 
 >shocking shift
 
+#testcase-rules-hint-gore-goals-rule-fallthrough
 >hint
 You're done here in Shore Shoals.
 
@@ -791,6 +897,7 @@ You're done here in Shore Shoals.
 ##RBRS-SHUFFLEEND=1
 ##RBRS-SHUFFLESTART=2
 
+#testcase-rules-hint-locking-lift-rule-if-sco-gawking-gift-is-false
 >hint locking lift
 There's a place where you get knowledge and confidence. (+)
 
@@ -803,6 +910,11 @@ GAWKING GIFT. (-)
 >gawking gift
 by one point
 
+#testcase-rules-hint-red-rose-rule-if-player-is-in-bum-bout-rum-route-and-sco-said-sos-is-false-if-sco-dumb-doubt-is-false
+>hint red rose
+You can use the red rose after making general progress here.
+
+#testcase-rules-hint-rum-route-rule-if-sco-dumb-doubt-is-false
 >hint
 Being here makes you feel a lack of confidence for silly reasons. You can flip that around. (+)
 
@@ -815,11 +927,13 @@ DUMB DOUBT. (-)
 >dumb doubt
 by one point
 
+#testcase-rules-hint-rum-route-rule-if-sco-said-sos-is-false
 >hint
 The red rose can extend the dumb doubt you've cast on your oppressors. (+)
 
 >undo
 
+#testcase-rules-hint-red-rose-rule-if-player-is-in-bum-bout-rum-route-and-sco-said-sos-is-false
 >hint red rose
 The red rose can extend the dumb doubt you've cast on your oppressors. (+)
 
@@ -832,6 +946,7 @@ The red rose can generate SAID SOS. (-)
 >said sos
 by one point
 
+#testcase-rules-hint-rum-route-rule-if-sco-umm-out-is-false
 >hint
 You need to seal the deal you started with dumb doubt. (+)
 
@@ -846,6 +961,7 @@ by one point
 
 >d
 
+#testcase-rules-hint-slay-slope-rule-if-sco-hey-hope-is-false
 >hint
 You need to improve your mood a bit. (+)
 
@@ -858,6 +974,7 @@ HEY HOPE. (-)
 >hey hope
 by one point
 
+#testcase-rules-hint-slay-slope-rule-if-sco-k-cope-is-false
 >hint
 Now you've discovered solace, you need to find something to do with it. (+)
 
@@ -874,11 +991,13 @@ by one point
 !by one point
 Numb?
 
+#testcase-rules-hint-rum-route-rule-fallthrough
 >hint
 You're done here in Numb? NOWT!
 
 >d
 
+#testcase-rules-hint-slay-slope-rule-fallthrough
 >hint
 You're done here in Eh-'Ope Day, Dope!
 
@@ -890,6 +1009,7 @@ You're done here in Eh-'Ope Day, Dope!
 ##RBRS-SHUFFLEEND=2
 ##RBRS-SHUFFLESTART=3
 
+#testcase-rules-hint-locking-lift-rule-if-sco-grokking-grift-is-false
 >hint locking lift
 You need to learn about the seedy side of things without being affected. (+)
 
@@ -902,12 +1022,14 @@ GROKKING GRIFT. (-)
 >grokking grift
 by one point
 
+#testcase-rules-hint-light-lute-rule-if-player-is-in-slight-sleaze-if-sco-plight-please-is-false
 >hint light lute
 You can use the light lute after making progress with the general area here.
 
 >tight tees
 by one point
 
+#testcase-rules-hint-slight-sleaze-rule-if-sco-bright-breeze-is-false
 >hint
 You need a change in the weather to start to alleviate the fright freeze. (+)
 
@@ -920,6 +1042,7 @@ BRIGHT BREEZE. (-)
 >bright breeze
 by one point
 
+#testcase-rules-hint-slight-sleaze-rule-if-sco-plight-please-is-false
 >hint
 You need to dispel the false moaning that seems to swirl around. (+)
 
@@ -932,25 +1055,37 @@ PLIGHT PLEASE. (-)
 >plight please
 by one point
 
+#testcase-rules-hint-slight-sleaze-rule-if-sco-right-root-is-false
 >hint
 You want to grow trite trees, but they'd be hard to build. (+)
 
->undo
+>hint
+The light lute can help you build a firm foundation. (+)
+
+>hint
+RIGHT ROOT. (-)
+
+#testcase-rules-hint-light-lute-rule-if-player-is-in-slight-sleaze-if-sco-right-root-is-false
+>hint light lute
+WRONG
 
 >right root
 by one point
 
+#testcase-rules-hint-slight-sleaze-rule-fallthrough
 >hint
 You're done here in Trite Trees.
 
 >s
 
+#testcase-rules-hint-red-rose-rule-if-player-is-in-seek-sameing-if-sco-chic-shaming-is-false
 >hint red rose
 You can use the red rose after making progress with the general area here.
 
 >clique claiming
 by one point
 
+#testcase-rules-hint-seek-sameing-rule-if-sco-bleak-blaming-is-false
 >hint
 You need to establish the freak framing as something far less glamorous. (+)
 
@@ -963,6 +1098,7 @@ BLEAK BLAMING. (-)
 >bleak blaming
 by one point
 
+#testcase-rules-hint-seek-sameing-rule-if-sco-chic-shaming-is-false
 >hint
 It's not enough to call out bad, whiny behavior. You need a counter to it.
 
@@ -975,11 +1111,13 @@ CHIC SHAMING. (-)
 >chic shaming
 by one point
 
+#testcase-rules-hint-seek-sameing-rule-if-sco-bred-bros-is-false
 >hint
 The red rose can attract people who can spread a positive message better than you can. (+)
 
 >undo
 
+#testcase-rules-hint-red-rose-rule-if-player-is-in-seek-sameing-if-sco-bred-bros-is-false
 >hint red rose
 The red rose can attract people who can spread a positive message better than you can. (+)
 
@@ -1000,6 +1138,11 @@ by one point
 >hint bred bros
 You summoned the Bred Bros into existence, which is enough. You'll want to look elsewhere for double-rhymes.
 
+#testcase-rules-hint-seek-sameing-rule-fallthrough
+>hint
+You're done here in Eek! Aiming!
+
+>undo
 >undo
 >undo
 >undo
@@ -1007,6 +1150,7 @@ You summoned the Bred Bros into existence, which is enough. You'll want to look 
 ##RBRS-SHUFFLEEND=3
 ##RBRS-SHUFFLESTART=4
 
+#testcase-rules-hint-locking-lift-rule-if-sco-docking-diffed-is-false
 >hint locking lift
 There's a boat ahead in the toughest area. (+)
 
@@ -1019,9 +1163,11 @@ by one point
 >hint locking lift
 DOCKING DIFFED is the recommended lift setting to complete.
 
+#testcase-rules-hint-red-rose-rule-fallthrough
 >hint red rose
 The red rose is useful but not here.
 
+#testcase-rules-hint-mad-most-cad-coast-rule-if-sco-bad-boast-is-false
 >hint
 You need to repel the insults and bravado you're hearing. (+)
 
@@ -1034,6 +1180,7 @@ BAD BOAST. (-)
 >bad boast
 by one point
 
+#testcase-rules-hint-mad-most-cad-coast-rule-if-sco-rad-roast-is-false
 >hint
 You've dealt with the taunts, but it's time for a counter-offensive. (+)
 
@@ -1046,11 +1193,18 @@ RAD ROAST. (-)
 >rad roast
 by one point
 
+#testcase-rules-hint-mad-most-cad-coast-rule-fallthrough
 >hint
 You're done here in Pad Post-Had-Host.
 
 >w
 
+#testcase-rules-hint-red-rose-rule-if-player-is-in-trite-trail-if-whale-score-<-5
+#testcase-rules-hint-trite-trail-rule-fallthrough
+>hint red rose
+You can use the red rose after making general progress here.
+
+#testcase-rules-hint-trite-trail-rule-if-sco-sight-sail-is-false
 >hint
 You need transportation to fight the tight-tail white whale. (+)
 
@@ -1063,6 +1217,7 @@ SIGHT SAIL. (-)
 >sight sail
 by one point
 
+#testcase-rules-hint-trite-trail-rule-if-sco-might-mail-is-false
 >hint
 You need armor to fight the tight-tail white whale. (+)
 
@@ -1075,6 +1230,7 @@ MIGHT MAIL. (-)
 >might mail
 by one point
 
+#testcase-rules-hint-trite-trail-rule-if-sco-flight-flail-is-false
 >hint
 You need a weapon to fight the tight-tail white whale. (+)
 
@@ -1087,6 +1243,13 @@ FLIGHT FLAIL. (-)
 >flight flail
 by one point
 
+#testcase-rules-hint-trite-trail-rule-if-sco-right-rail-is-false
+>hint
+You need to gain your bearings on the sight sail. (+)
+
+>undo
+
+#testcase-rules-hint-sight-sail-rule-if-sco-right-rail-is-false
 >hint sight sail
 You need to gain your bearings on the sight sail. (+)
 
@@ -1099,9 +1262,12 @@ Find the RIGHT RAIL. (-)
 >right rail
 by one point
 
+#testcase-rules-hint-sight-sail-rule-fallthrough
 >hint sight sail
 You got your bearings with the sight sail already.
 
+#testcase-rules-hint-light-lute-rule-if-player-is-in-trite-trail-if-sco-bright-brute-is-false
+#testcase-rules-hint-trite-trail-rule-if-sco-bright-brute-is-false
 >hint light lute
 The light lute can summon a generic animal ally. (+)
 
@@ -1114,9 +1280,11 @@ Summon a BRIGHT BRUTE. (-)
 >bright brute
 by one point
 
+#testcase-rules-hint-light-lute-rule-if-lute-strings-is-0
 >hint light lute
 You've done all you can with the light lute.
 
+#testcase-rules-hint-trite-trail-rule-if-sco-excite-exhale-is-false
 >hint
 You really need a big mental boost, but then you need to relax. (+)
 
@@ -1129,15 +1297,19 @@ EXCITE EXHALE. (-)
 >excite exhale
 by one point
 
+#testcase-rules-hint-trail-stuff-rule-default
 >hint might mail
 You will have the might mail's help when the time comes. It's there so you don't lose track of it.
 
+#+testcase-rules-hint-trail-stuff-rule-default
 >hint flight flail
 You will have the flight flail's help when the time comes. It's there so you don't lose track of it.
 
+#+testcase-rules-hint-trail-stuff-rule-default
 >hint bright brute
 You will have the bright brute's help when the time comes. It's there so you don't lose track of it.
 
+#+testcase-rules-hint-trail-stuff-rule-default
 >hint white whale
 The red rose is useful for making something to subdue the tight-tail white whale. (+)
 
@@ -1148,6 +1320,7 @@ The red rose is useful for making something to subdue the tight-tail white whale
 
 >undo
 
+#testcase-rules-hint-red-rose-rule-if-player-is-in-trite-trail-if-sco-thread-throws-is-false
 >hint red rose
 The red rose is useful for making something to subdue the tight-tail white whale. (+)
 
@@ -1165,6 +1338,7 @@ by one point
 
 >w
 
+#testcase-rules-hint-trite-trail-rule-if-sco-thread-throws-is-true
 >hint
 You're done here in Trite Trail.
 
@@ -1174,6 +1348,7 @@ You're done here in Trite Trail.
 
 ##RBRS-SHUFFLEEND=4
 
+#testcase-rules-hint-delight-dilute-rule-default
 >hint delight dilute
 It's optional to get rid of the can of DELIGHT DILUTE, and if you want to, the solution may be a bit tricky. But it follows the rhyming description. (+)
 
@@ -1186,6 +1361,7 @@ DESPITE DISPUTE. (-)
 >despite dispute
 by one point
 
+#testcase-rules-hint-locking-lift-rule-if-sco-mocking-miffed-is-false
 >hint locking lift
 The last area is where you encounter the Burning Bright Spurning Sprite. They are upset and contemptuous. (+)
 
@@ -1201,12 +1377,14 @@ by one point
 >enter lift
 High Hub
 
+#testcase-rules-hint-locking-lift-rule-fallthrough
 >hint locking lift
-You're done here in High Hub.
+You've figured out the locking lift completely.
 
 >undo
 >undo
 
+#testcase-rules-hint-old-end-rule-if-sco-bold-bend-is-false
 >hint
 You need to extend the path. (+)
 
@@ -1219,6 +1397,7 @@ BOLD BEND. (-)
 >bold bend
 by one point
 
+#testcase-rules-hint-old-end-rule-if-sco-trolled-trend-is-false
 >hint
 There are two ways to go. You need to look for clues which way to go. (+)
 
@@ -1231,6 +1410,7 @@ TROLLED TREND. (-)
 >trolled trend
 by one point
 
+#testcase-rules-hint-old-end-rule-if-sco-mold-mend-is-false
 >hint
 The trolling hurt a bit. You need to prepare yourself to face it. (+)
 
@@ -1243,11 +1423,13 @@ MOLD MEND. (-)
 >mold mend
 by one point
 
+#testcase-rules-hint-old-end-rule-fallthrough
 >hint
 You're done here in Bold Bend.
 
 >s
 
+#testcase-rules-hint-vain-vat-rule-if-sco-bane-bat-is-false
 >hint
 You need to get out of this vat! But you have nothing to break the vat down with. (+)
 
@@ -1260,11 +1442,13 @@ BANE BAT. (-)
 >bane bat
 by one point
 
+#testcase-rules-hint-vain-vat-rule-if-sco-flain-flat-is-false
 >hint
 Now you have a weapon, what's the right way to bust out? (+)
 
 >undo
 
+#testcase-rules-hint-bane-bat-rule-default
 >hint bane bat
 Now you have a weapon, what's the right way to bust out? (+)
 
@@ -1277,6 +1461,7 @@ FLAIN FLAT. (-)
 >flain flat
 by one point
 
+#testcase-rules-hint-vain-vat-rule-if-sco-splain-splat-is-false
 >hint
 It's time to announce your presence! (+)
 
@@ -1289,11 +1474,13 @@ SPLAIN SPLAT. (-)
 >splain splat
 by one point
 
+#testcase-rules-hint-pred-pros-rule-default
 >hint pred pros
 The Pred Pros in their head hose are blocked by your red rose, but you can actually make them allies. (+)
 
 >undo
 
+#testcase-rules-hint-vain-vat-rule-if-pred-pros-are-fungible
 >hint pred pros
 The Pred Pros in their head hose are blocked by your red rose, but you can actually make them allies. (+)
 
@@ -1306,6 +1493,7 @@ FED FOES. (-)
 >fed foes
 by one point
 
+#testcase-rules-hint-vain-vat-rule-fallthrough
 >hint
 You're done here in Main Mat.
 
@@ -1316,12 +1504,14 @@ You need to figure the three settings of the marquee. (+)
 
 >undo
 
+#testcase-rules-hint-market-marquee-rule-default
 >hint market marquee
 You need to figure the three settings of the marquee. (+)
 
 >hint market marquee
 The nonsense words on the marquee clue the rhymes you need, ones that work with market marquee, but they're shorter. (+)
 
+#testcase-rules-hint-threat-three-rule-if-market-marquee-is-fungible
 >hint market marquee
 TWET/TWEE leads to YET YE. (-)
 
@@ -1330,6 +1520,7 @@ TWET/TWEE leads to YET YE. (-)
 >yet ye
 by one point
 
+#+testcase-rules-hint-threat-three-rule-if-market-marquee-is-fungible
 >hint market marquee
 TRET/TREE leads to SET SEE. (-)
 
@@ -1338,6 +1529,7 @@ TRET/TREE leads to SET SEE. (-)
 >set see
 by one point
 
+#+testcase-rules-hint-threat-three-rule-if-market-marquee-is-fungible
 >hint market marquee
 GLET/GLEE leads to FRET FREE. (-)
 
@@ -1354,22 +1546,26 @@ by one point
 >set see
 by one point
 
+#testcase-rules-hint-threat-three-rule-if-sus-sack-is-fungible
 >hint
 The sus sack can be changed to something more useful. (+)
 
 >undo
 
+#testcase-rules-hint-spurning-sprite-rule-if-sco-plus-plaque-is-false
 >hint spurning sprite
 You need a gift for the Burning Bright Spurning Sprite first. Check your inventory for something to work on.
 
 >plus plaque
 by one point
 
+#testcase-rules-hint-threat-three-rule-fallthrough
 >hint
 You need to label the plus plaque now. Something that describes the Burning Bright Spurning Sprite. (+)
 
 >undo
 
+#testcase-rules-hint-plus-plaque-rule-default
 >hint plus plaque
 You need to label the plus plaque now. Something that describes the Burning Bright Spurning Sprite. (+)
 
@@ -1379,6 +1575,7 @@ You can describe the Burning Bright Spurning Sprite unfavorably. (+)
 >hint plus plaque
 TURNING TRITE. (-)
 
+#testcase-rules-hint-spurning-sprite-rule-fallthrough
 >hint spurning sprite
 You need to label the plus plaque now. Something that describes the Burning Bright Spurning Sprite. (+)
 

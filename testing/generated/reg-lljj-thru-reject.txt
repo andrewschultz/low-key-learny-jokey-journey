@@ -364,6 +364,7 @@ by one point
 You already uncovered the boring box.
 
 >open box
+You open the boring box, and you see a metal gadget that doesn't look very interesting at first.
 
 >n
 

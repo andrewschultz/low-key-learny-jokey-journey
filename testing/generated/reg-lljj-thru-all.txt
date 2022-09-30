@@ -29,6 +29,7 @@ by one point
 /^Storing Stocks
 
 >open box
+You open the boring box, and you see a metal gadget that doesn't look very interesting at first.
 
 >n
 

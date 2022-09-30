@@ -31,6 +31,7 @@ by one point
 by one point
 
 >open box
+You open the boring box, and you see a metal gadget that doesn't look very interesting at first.
 
 >two too
 Homonym detection is already set to on.

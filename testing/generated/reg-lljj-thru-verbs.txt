@@ -33,6 +33,11 @@ by one point
 by one point
 
 >open box
+You open the boring box, and you see a metal gadget that doesn't look very interesting at first.
+
+#testcase-common-readables-table-of-readables-leet-learner
+>read leet learner
+WRONG
 
 >n
 
