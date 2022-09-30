@@ -556,7 +556,7 @@ to say shoe-desc:
 		say "However, the infrastructure for a big performance simply isn't here yet";
 		continue the action;
 	else if shoe-storage is 1:
-		say "You've got some supplies for crowd accomodations (the [if sco-flow-flue is true]flow flue[else]glow glue[end if],) but you need more to build infrastructure";
+		say "You've got some supplies for crowd acommodations (the [if sco-flow-flue is true]flow flue[else]glow glue[end if],) but you need more to build infrastructure";
 		continue the action;
 	say "You've built infrastructure to store consumables with the flow flue and glow glue";
 	if shoe-concessions is 0:
@@ -819,7 +819,7 @@ report examining market marquee for the first time:
 
 chapter Burning Bright Spurning Sprite
 
-there is a himher thing called the Burning Bright Spurning Sprite. "The [sprite] waits here impatiently waiting for acknowledgement.". description is "It looks at you with contempt, which you expect will increase no matter what you do. Unless ... unless ... you've learned from all you've gone through."
+there is a himher thing called the Burning Bright Spurning Sprite. "The [sprite] waits here impatiently waiting for acknowledgment.". description is "It looks at you with contempt, which you expect will increase no matter what you do. Unless ... unless ... you've learned from all you've gone through."
 
 [the Frightfully Bright Bully is a himher thing. description is "The [bully] doesn't look especially mean or conniving or thuggish. But you know they just can't stand you. It's time to face up to them.". "The Frightfully Bright Bully continues a combination of rolling their eyes and looking away from you."]
 

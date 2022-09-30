@@ -64,7 +64,7 @@ this is the hint-mad-monk rule:
 	say "[one of]You have two ways you need to dispose of the mad monk[pplus][or]Both ways are a downer, and you may be able to guess words that rhyme with ad[pplus][or]You can say [b][if monk-score is 0][one of]BAD BUNK[or]SAD SUNK[in random order][else if sco-bad-bunk is true]SAD SUNK[else]BAD BUNK[end if][r][pminus][cycling]" instead;
 
 this is the hint-tree-trunk rule:
-	if sco-see-sunk is false, say "[one of]The tree trunk, or a place in it you can look, is too high up[pplus][or]You can bring the tree trunk down a little[pplus][or][b]GEE JUNK[r] brings the tree trunk down[pminus][cycling]" instead;
+	if sco-see-sunk is false, say "[one of]The tree trunk, or a place in it you can look, is too high up[pplus][or]You can bring the tree trunk down a little[pplus][or][b]SEE SUNK[r] brings the tree trunk down[pminus][cycling]" instead;
 	if sco-gee-junk is false, say "[one of]There's something in the tree trunk, but you need to see it right[pplus][or]You might be glad to find something that seems worthless to others[pplus][or][b]GEE JUNK[r] reveals what's in the tree trunk[pminus][cycling]" instead;
 	say "You saw what was in the tree trunk, and that's all you need to do with it." instead;
 
@@ -81,7 +81,7 @@ this is the hint-sus-sack rule: say "[one of]The sus sack can be changed to some
 this is the hint-pear-peach rule:
 	if rare reach is unvisited, say "It's impressive you got the pear peach before visiting the place where you need to use it. You'll know when you get there." instead;
 	if player is not in rare reach, say "The pear peach can work its magic in Rare Reach." instead;
-	say "[one of]The pear peach can make Rare Reach a bit less desolate[pplus][or]This could be a place with life, or at  least, water[pplus][or]Make a [b]BARE BEACH[r][pminus][cycling]" instead;
+	say "[one of]The pear peach can make Rare Reach a bit less desolate[pplus][or]This could be a place with life, or at least, water[pplus][or]Make a [b]BARE BEACH[r][pminus][cycling]" instead;
 
 this is the hint-deep-dune rule:
 	if sco-seep-soon is false, say "[one of]You need the deep dune to start getting smaller[pplus][or]The deep dune won't get smaller right away[pplus][or]Make the deep dune [b]SEEP SOON[r][pminus][cycling]" instead;
@@ -94,7 +94,7 @@ this is the hint-cocoon rule:
 	if sco-mo-moon is false, say "[one of]You need some light to appear in the night sky[pplus][or]There are no stars that can appear, but there is another celestial body[pplus][or][b]MO MOON[r][pminus][cycling]" instead;
 	if sco-so-soon is false, say "[one of]You'd like to hurry up the cocoon opening[pplus][or]There is a way to speed up time, but not quite to where the cocoon opens[pplus][or][b]SO SOON[r][pminus][cycling]" instead;
 	if sco-crow-croon is false, say "[one of]You need morning to appear[pplus][or]You have no rooster, but there's another animal that can make a noise that might signify morning[pplus][or][b]CROW CROON[r][pminus][cycling]" instead;
-	say "The cocoon should be gone now. This is a BUG." instead;
+	say "[done-here]." instead;
 
 this is the hint-locking-lift rule:
 	if hub-score < lift-score and lift-score < 5 and lift-hint-warn is false:
@@ -107,7 +107,7 @@ this is the hint-locking-lift rule:
 	if sco-docking-diffed is false, say "[one of]There's a boat ahead in the toughest area[pplus][or][b]DOCKING DIFFED[r][pminus][cycling]" instead;
 	if hub-score < 5, say "[b][best-hub][r] is the recommended lift setting to complete." instead;
 	if sco-mocking-miffed is false, say "[one of]The last area is where you encounter [the sprite]. They are upset and contemptuous[pplus][or]Specifically, you may imagine you hear scornful laughter, which you need to follow[pplus][or][b]MOCKING MIFFED[r][pminus][cycling]" instead;
-	say "[done-here]." instead;
+	say "You've figured out the locking lift completely." instead;
 
 to say need-rose: if player does not have red rose, say "though you can't complete it now until you visit another hub"
 
@@ -167,7 +167,7 @@ this is the hint-light-lute rule:
 	if player does not have the light lute, say "[outside-item]." instead;
 	if player is in slight sleaze:
 		if sco-plight-please is false, say "[genprog of lute]." instead;
-		if sco-right-root is false, say "[one of]You want to grow trite trees, but they'd be hard to build[pplus][or]You have something that can help build a firm foundation[pplus][or]The light lute helps here[pplus][or][b]RIGHT ROOT[r][pminus][cycling]" instead;
+		if sco-right-root is false, say "[one of]You want to grow trite trees, but they'd be hard to build[pplus][or]The light lute can help you build a firm foundation[pplus][or][b]RIGHT ROOT[r][pminus][cycling]" instead;
 	if player is in trite trail:
 		if sco-bright-brute is false, say "[one of]The light lute can summon a generic animal ally[pplus][or]You need an animal ally with strength and a positive mood[pplus][or]Summon a [b]BRIGHT BRUTE[r][pminus][cycling]" instead;
 	if player is in gore goals:
@@ -185,7 +185,7 @@ this is the hint-red-rose rule:
 		say "[one of]The red rose can extend the dumb doubt you've cast on your oppressors[pplus][or]The red rose can use a rhetorical trick or help you use one[pplus][or]The red rose can generate [b]SAID SOS[r][pminus][cycling]" instead;
 	if player is in seek sameing:
 		if sco-chic-shaming is false, say "[genprog of red rose]." instead;
-		say "[one of]The red rose can attract people who can spread a positive message better than you can[pplus][or]Summon upper-class types full of camaraderie[pplus][or][b]BRED BROS[r][pminus][cycling]" instead;
+		if sco-bred-bros is false, say "[one of]The red rose can attract people who can spread a positive message better than you can[pplus][or]Summon upper-class types full of camaraderie[pplus][or][b]BRED BROS[r][pminus][cycling]" instead;
 	if player is in trite trail:
 		if whale-score < 5, say "[genprog of red rose]." instead;
 		if sco-thread-throws is false, say "[one of]The red rose is useful for making something to subdue [the whale][pplus][or]Generally you use a net to catch fish. Something that can sort of make a net is the first word, and how you use a net is the second[pplus][or][b]THREAD THROWS[r][pminus][cycling]" instead;
@@ -236,7 +236,6 @@ this is the hint-nonoon rule:
 	if rho rune is off-stage, say "You can't do much here until you get an item of power. You can guess what to do, but it will have no effect." instead;
 	if sco-go-goon is false, say "[one of]You need to ward off enemies[pplus][or]Give an order to a certain sort of enemy[pplus][or][b]GO GOON[r][pminus][cycling]" instead;
 	if sco-co-coon is false, say "[one of]You must summon something that can grow with the passage of time[pplus][or]Something that can burst into life[pplus][or][b]COCOON[r], with or without a space[pminus][cycling]" instead;
-	if sco-crow-croon is true, say "[done-here]." instead;
 	abide by the hint-cocoon rule;
 
 this is the hint-jotty-jail rule:
@@ -249,7 +248,7 @@ this is the hint-high-hub rule:
 this is the hint-no-new-show-shoe rule:
 	if sco-flow-flue is false, say "[one of]You need to build infrastructure to start[pplus][or]Tubes, or something like them, would help, to transport stuff that can't be easily contained[pplus][or][b]FLOW FLUE[r][pminus][cycling]" instead;
 	if sco-glow-glue is false, say "[one of]You need something that will hold infrastructure together[pplus][or]Duct tape works a lot of places, but you need something less visible[pplus][or][b]GLOW GLUE[r][pminus][cycling]" instead;
-	if sco-bro-brew is false, say "[one of]You need to provide potential concertgoers with something to drink[pplus][or]What sort of drink would provied camaraderie[qplus][or][b]BRO BREW[r][pminus][cycling]" instead;
+	if sco-bro-brew is false, say "[one of]You need to provide potential concertgoers with something to drink[pplus][or]What sort of drink would provide camaraderie[qplus][or][b]BRO BREW[r][pminus][cycling]" instead;
 	if sco-stow-stew is false, say "[one of]You need to provide potential concertgoers with something to eat[pplus][or]You'll want to keep that something to eat tucked away, nice and hot, until people are hungry[pplus][or][b]STOW STEW[r][pminus][cycling]" instead;
 	if sco-ho-who is false, say "[one of]You need to call out to the crowd to start getting them hyped[pplus][or]What's a question that might make a crowd feel wanted[qplus][or][b]HO WHO[r][pminus][cycling]" instead;
 	if sco-yo-you is false, say "[one of]You have the crowd's attention. They need to be acknowledged[pplus][or]You need to let the crowd know whom the show's for[pplus][or][b]YO YOU[r][pminus][cycling]" instead;
@@ -286,7 +285,7 @@ this is the hint-seek-sameing rule:
 	if sco-chic-shaming is false, say "[one of]It's not enough to call out bad, whiny behavior. You need a counter to it.[or]There's a rather cheery counterattack possible.[or][b]CHIC SHAMING[r][pminus][cycling]" instead;
 	abide by the hint-red-rose rule;
 	if sco-bred-bros is false, abide by the hint-red-rose rule;
-	say "[done-here]." instead;
+	say "[done-here]" instead; [ no period since the room name now ends with a ! ]
 
 this is the hint-trite-trail rule:
 	if sco-thread-throws is true, say "[done-here]." instead;
@@ -322,8 +321,7 @@ this is the hint-vain-vat rule:
 this is the hint-threat-three rule:
 	if market marquee is fungible, abide by the hint-market-marquee rule;
 	if sus sack is fungible, abide by the hint-sus-sack rule;
-	if sprite is fungible, abide by the hint-spurning-sprite rule;
-	say "BUG. Sorry." instead;
+	abide by the hint-spurning-sprite rule;
 
 Low Key Learny Jokey Journey Hints ends here.
 

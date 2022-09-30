@@ -202,7 +202,7 @@ mist-cmd(topic)	mist-rule	got-yet	leet-rule	mist-txt
 "mo moo"	--	false	--	"Cows would not make very exciting performers, [if sco-crow-crew is false]but another animal, or people named after them, might[else]unlike the Crow Crew[end if]."
 "no/know knew/new"	--	false	--	"The last thing people want to be thinking about is knowledge, or how cliched a show might be if you think about it too much."
 "oh oo/ooh"	--	false	--	"[generic-sounds]."
-"po poo/pooh"	--	false	--	"There is underpromising and overdelivering, but that's a bit too much. Way too much."
+"po poo/pooh"	--	false	--	"There is under-promising and over-delivering, but that's a bit too much. Way too much."
 "po pew"	--	false	--	"The show ahead is not particularly religious."
 "row rue"	--	false	--	"No, we want a positive environment, here."
 "slow slue/slew"	--	false	--	"But we want to make this place less of a backwater. Gotta speed things up so the performance starts!"
