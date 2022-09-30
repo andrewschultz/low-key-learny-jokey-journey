@@ -50,7 +50,7 @@ lift-hint-warn is a truth state that varies.
 volume thing hints
 
 this is the hint-player rule:
-	if core-score > 0, say "Your magic power is being able to construct parallel rhymes, as the game title suggests." instead;
+	if current-score > 0, say "Your magic power is being able to construct parallel rhymes, as the game title suggests." instead;
 	say "[one of]Look at the location names and title of the story[pplus][or]Read the train tree[pplus][or]Note that there are a lot of rhyme pairs floating around[pplus][or]Your job in this game is to manufacture parallel rhyme pairs[pminus][stopping]" instead;
 
 this is the hint-learner-part rule: say "The leet learner and its parts only give hints. You can [b]LL[r] alone to scan a room, [b]LL[r] any thing or person, or [b]READ[r] the leet learner to see its option." instead;
@@ -81,7 +81,7 @@ this is the hint-sus-sack rule: say "[one of]The sus sack can be changed to some
 this is the hint-pear-peach rule:
 	if rare reach is unvisited, say "It's impressive you got the pear peach before visiting the place where you need to use it. You'll know when you get there." instead;
 	if player is not in rare reach, say "The pear peach can work its magic in Rare Reach." instead;
-	say "[one of]The pear peach can make Rare Reach a bit less desolate[pplus][or]This could be a place with life, or at least, water[pplus][or]Make a [b]BARE BEACH[r][pminus][cycling]" instead;
+	say "[one of]The pear peach can make Rare Reach a bit less desolate[pplus][or]This could be a place with life. Perhaps life-giving water would help[pplus][or]Make a [b]BARE BEACH[r][pminus][cycling]" instead;
 
 this is the hint-deep-dune rule:
 	if sco-seep-soon is false, say "[one of]You need the deep dune to start getting smaller[pplus][or]The deep dune won't get smaller right away[pplus][or]Make the deep dune [b]SEEP SOON[r][pminus][cycling]" instead;
@@ -225,7 +225,8 @@ this is the hint-trust-track rule:
 
 this is the hint-rare-reach rule:
 	if sco-reap-rune is true, say "[done-here]." instead;
-	if sco-bare-beach is false and player does not have pear peach, say "You don't have the item you need to transform this place. You can guess what to say, though, until you find that item." instead;
+	if sco-bare-beach is true, abide by the hint-deep-dune rule;
+	if pear peach is off-stage, say "You don't have the item you need to transform this place. You can guess what to say, though, until you find that item." instead;
 	abide by the hint-pear-peach rule;
 
 this is the hint-fun-farm rule:
@@ -283,7 +284,6 @@ this is the hint-slight-sleaze rule:
 this is the hint-seek-sameing rule:
 	if sco-bleak-blaming is false, say "[one of]You need to establish the freak framing as something far less glamorous[pplus][or]Show complaining is not as insightful as many people think. What to call it[qplus][or][b]BLEAK BLAMING[r][pminus][cycling]" instead;
 	if sco-chic-shaming is false, say "[one of]It's not enough to call out bad, whiny behavior. You need a counter to it.[or]There's a rather cheery counterattack possible.[or][b]CHIC SHAMING[r][pminus][cycling]" instead;
-	abide by the hint-red-rose rule;
 	if sco-bred-bros is false, abide by the hint-red-rose rule;
 	say "[done-here]" instead; [ no period since the room name now ends with a ! ]
 
@@ -292,7 +292,7 @@ this is the hint-trite-trail rule:
 	if sco-sight-sail is false, say "[one of]You need transportation to fight [the whale][pplus][or]What sort of transportation could be available from the Trite Trail[qplus][or][b]SIGHT SAIL[r][pminus][cycling]" instead;
 	if sco-might-mail is false, say "[one of]You need armor to fight [the whale][pplus][or]What sort of armor could be available from the Trite Trail[qplus][or][b]MIGHT MAIL[r][pminus][cycling]" instead;
 	if sco-flight-flail is false, say "[one of]You need a weapon to fight [the whale][pplus][or]What sort of weapon could be available from the Trite Trail[qplus][or][b]FLIGHT FLAIL[r][pminus][cycling]" instead;
-	if sco-right-rail is false, say "[one of]You could have trouble keeping your legs during water travel[pplus][or]What could you grab on the sight sail so you don't fall over[qplus][or][b]RIGHT RAIL[r][pminus][cycling]" instead;
+	if sco-right-rail is false, abide by the hint-sight-sail rule;
 	if sco-excite-exhale is false, say "[one of]You really need a big mental boost, but then you need to relax[pplus][or]It's a tall order. Two six-letter words work here[pplus][or][b]EXCITE EXHALE[r][pminus][cycling]";
 	if sco-bright-brute is false:
 		abide by the hint-light-lute rule;

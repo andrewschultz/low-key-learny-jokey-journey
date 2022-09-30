@@ -36,7 +36,7 @@ Your job in this game is to manufacture parallel rhyme pairs. (-)
 >plain plea
 by one point
 
-#testcase-rules-hint-player-rule-if-core-score->-0
+#testcase-rules-hint-player-rule-if-current-score->-0
 >hint me
 Your magic power is being able to construct parallel rhymes, as the game title suggests.
 
@@ -85,7 +85,7 @@ You have two ways you need to dispose of the mad monk. (+)
 Both ways are a downer, and you may be able to guess words that rhyme with ad. (+)
 
 >hint monk
-/You can say (BAD BUNK|SAD SUNK)\.
+/You can say (BAD BUNK|SAD SUNK)\. \(-\)
 
 >hint monk
 You have two ways you need to dispose of the mad monk. (+)
@@ -94,7 +94,7 @@ You have two ways you need to dispose of the mad monk. (+)
 Both ways are a downer, and you may be able to guess words that rhyme with ad. (+)
 
 >hint monk
-/You can say (BAD BUNK|SAD SUNK)\.
+/You can say (BAD BUNK|SAD SUNK)\. \(-\)
 
 >undo
 
@@ -104,7 +104,7 @@ Both ways are a downer, and you may be able to guess words that rhyme with ad. (
 by one point
 
 >hint monk
-You can say SAD SUNK.
+You can say SAD SUNK. (-)
 
 >sad sunk
 Take down the monk anyway?
@@ -123,7 +123,7 @@ You already know both BAD BUNK and SAD SUNK. Repeat SAD SUNK to get by.
 by one point
 
 >hint monk
-You can say BAD BUNK.
+You can say BAD BUNK. (-)
 
 >bad bunk
 Take down the monk anyway?
@@ -384,13 +384,19 @@ The pear peach can work its magic in Rare Reach.
 The pear peach can make Rare Reach a bit less desolate. (+)
 
 >hint pear peach
-This could be a place with life, or at  least, water. (+)
+This could be a place with life. Perhaps life-giving water would help. (+)
 
 >hint pear peach
 Make a BARE BEACH. (-)
 
 >bare beach
 by one point
+
+#testcase-rules-hint-rare-reach-rule-if-sco-bare-beach-is-true
+>hint
+You need the deep dune to start getting smaller. (+)
+
+>undo
 
 #testcase-rules-hint-deep-dune-rule-if-sco-seep-soon-is-false
 >hint
@@ -472,6 +478,9 @@ The Rho Rune gives you power here.
 #+testcase-rules-hint-rho-rune-rule-default
 >hint rho rune
 The Rho Rune is useful somewhere you've been.
+
+>undo
+>undo
 
 #testcase-rules-hint-nonoon-rule-if-sco-go-goon-is-false
 >hint
@@ -695,7 +704,7 @@ by one point
 You need to provide potential concertgoers with something to drink. (+)
 
 >hint
-What sort of drink would provied camaraderie?
+What sort of drink would provide camaraderie?
 
 >hint
 BRO BREW. (-)
@@ -902,7 +911,7 @@ You're done here in Shore Shoals.
 There's a place where you get knowledge and confidence. (+)
 
 >hint locking lift
-You'll stare blankly, whether it's too much or too little.
+You'll stare blankly, whether it's too much or too little. (+)
 
 >hint locking lift
 GAWKING GIFT. (-)
@@ -912,7 +921,7 @@ by one point
 
 #testcase-rules-hint-red-rose-rule-if-player-is-in-bum-bout-rum-route-and-sco-said-sos-is-false-if-sco-dumb-doubt-is-false
 >hint red rose
-You can use the red rose after making general progress here.
+You can use the red rose after making progress with the general area here.
 
 #testcase-rules-hint-rum-route-rule-if-sco-dumb-doubt-is-false
 >hint
@@ -1067,7 +1076,7 @@ RIGHT ROOT. (-)
 
 #testcase-rules-hint-light-lute-rule-if-player-is-in-slight-sleaze-if-sco-right-root-is-false
 >hint light lute
-WRONG
+You want to grow trite trees, but they'd be hard to build. (+)
 
 >right root
 by one point
@@ -1202,7 +1211,7 @@ You're done here in Pad Post-Had-Host.
 #testcase-rules-hint-red-rose-rule-if-player-is-in-trite-trail-if-whale-score-<-5
 #testcase-rules-hint-trite-trail-rule-fallthrough
 >hint red rose
-You can use the red rose after making general progress here.
+You can use the red rose after making progress with the general area here.
 
 #testcase-rules-hint-trite-trail-rule-if-sco-sight-sail-is-false
 >hint

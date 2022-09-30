@@ -10,11 +10,16 @@
 
 >au 2
 
+#testcase-rulestubs-hint-bane-be-sane-see-rule-default
 >hint
 <Hint-bane-be-sane-see>.
 
 >hint tree
 <Hint-bane-be-sane-see>.
+
+#testcase-rulestubs-hint-player-rule-default
+>hint me
+<Hint-player>.
 
 >plain plea
 by one point
@@ -34,15 +39,18 @@ by one point
 >ll
 Most special commands are more than one word, because of the rhyme-pairs involved. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-rulestubs-hint-roaring-rocks-rule-default
 >hint
 <Hint-roaring-rocks>.
 
+#testcase-rulestubs-hint-boring-box-rule-default
 >hint box
 <Hint-boring-box>.
 
 >open box
 You open the boring box, and you see a metal gadget that doesn't look very interesting at first.
 
+#testcase-rulestubs-hint-learner-part-rule-default
 >hint learner
 <Hint-learner-part>.
 
@@ -54,6 +62,7 @@ The leet learner is giving a funny readout. You could maybe climb UP to the old 
 
 >n
 
+#testcase-rulestubs-hint-mad-monk-rule-default
 >hint monk
 <Hint-mad-monk>.
 
@@ -89,9 +98,11 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 
 >n
 
+#testcase-rulestubs-hint-nnss-rule-default
 >hint
 <Hint-nnss>.
 
+#+testcase-rulestubs-hint-nnss-rule-default
 >hint sludge
 <Hint-nnss>.
 
@@ -113,6 +124,10 @@ You hear a whooshing as a door swings in from nowhere. It doesn't seem to lead a
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 
+#testcase-rulestubs-hint-diss-door-rule-default
+>hint diss door
+<Hint-diss-door>.
+
 >piss poor
 by one point
 
@@ -122,9 +137,11 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >done dorm
 by one point
 
+#testcase-rulestubs-hint-stun-storm-rule-default
 >hint
 <Hint-stun-storm>.
 
+#+testcase-rulestubs-hint-stun-storm-rule-default
 >hint dorm
 <Hint-stun-storm>.
 
@@ -142,9 +159,11 @@ Nothing comes up. The general area here has been changed enough.
 
 >n
 
+#testcase-rulestubs-hint-tree-trunk-rule-default
 >hint
 <Hint-tttt>.
 
+#testcase-rulestubs-hint-tttt-rule-default
 >hint trunk
 <Hint-tree-trunk>.
 
@@ -160,6 +179,7 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >gee junk
 by one point
 
+#+testcase-rulestubs-hint-tttt-rule-default
 >hint
 <Hint-tttt>.
 
@@ -168,6 +188,10 @@ Nothing comes up. The general area here has been changed enough.
 
 >ll fruit
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
+
+#testcase-rulestubs-hint-free-fruit-rule-default
+>hint free fruit
+<Hint-free-fruit>.
 
 >whee woot
 by one point
@@ -178,6 +202,7 @@ Nothing comes up. You've changed FREE FRUIT as much as you needed to.
 >pear peach
 by one point
 
+#testcase-rulestubs-hint-pear-peach-rule-default
 >hint peach
 <Hint-pear-peach>.
 
@@ -190,9 +215,11 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 
 >e
 
+#testcase-rulestubs-hint-trust-track-rule-default
 >hint
 <Hint-trust-track>.
 
+#testcase-rulestubs-hint-just-jack-rule-default
 >hint jack
 <Hint-just-jack>.
 
@@ -204,6 +231,10 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 
 >bussed back
 by one point
+
+#testcase-rulestubs-hint-sus-sack-rule-default
+>hint sus sack
+<Hint-sus-sack>.
 
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
@@ -222,9 +253,11 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >bare beach
 by one point
 
+#testcase-rulestubs-hint-rare-reach-rule-default
 >hint
 <Hint-rare-reach>.
 
+#testcase-rulestubs-hint-deep-dune-rule-default
 >hint dune
 <Hint-deep-dune>.
 
@@ -255,12 +288,17 @@ by one point
 >ll
 Nothing comes up. The general area here has been changed enough.
 
+#testcase-rulestubs-hint-rho-rune-rule-default
+>hint rho rune
+<Hint-rho-rune>.
+
 >s
 
 >w
 
 >w
 
+#testcase-rulestubs-hint-fun-farm-rule-default
 >hint 
 <Hint-fun-farm>.
 
@@ -287,9 +325,11 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >cocoon
 by one point
 
+#testcase-rulestubs-hint-nonoon-rule-default
 >hint
 <Hint-nonoon>.
 
+#testcase-rulestubs-hint-cocoon-rule-default
 >hint cocoon
 <Hint-cocoon>.
 
@@ -311,6 +351,7 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >crow croon
 by one point
 
+#testcase-rulestubs-hint-jotty-jail-rule-default
 >hint
 <Hint-jotty-jail>.
 
@@ -320,15 +361,21 @@ by one point
 >potty pail
 by one point
 
+#testcase-rulestubs-hint-lurking-lump-rule-default
+>hint lurking lump
+<Hint-lurking-lump>.
+
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.00.)
 
 >knotty nail
 by one point
 
+#testcase-rulestubs-hint-high-hub-rule-default
 >hint
 <Hint-high-hub>.
 
+#testcase-rulestubs-hint-locking-lift-rule-default
 >hint lift
 <Hint-locking-lift>.
 
@@ -338,6 +385,7 @@ However, it's really dim, as if you don't need to do or think whatever there is 
 
 >bye bub
 
+#testcase-rulestubs-hint-sturdy-stalk-rule-default
 >hint stalk
 <Hint-sturdy-stalk>.
 
@@ -434,12 +482,14 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >yo you
 by one point
 
+#testcase-rulestubs-hint-no-new-show-shoe-rule-default
 >hint
 <Hint-no-new-show-shoe>.
 
 >hint crowd
 You summoned the lazy loud crazy crowd into existence, which is enough. You'll want to look elsewhere for double-rhymes.
 
+#testcase-rulestubs-hint-crow-crew-rule-default
 >hint crow crew
 <Hint-crow-crew>.
 
@@ -448,6 +498,10 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 
 >throw through
 by one point
+
+#testcase-rulestubs-hint-light-lute-rule-default
+>hint light lute
+<Hint-light-lute>.
 
 ##RBRS-SHUFFLEEND=0
 ##RBRS-SHUFFLESTART=1
@@ -475,6 +529,7 @@ by one point
 >kite coot
 by one point
 
+#testcase-rulestubs-hint-gore-goals-rule-default
 >hint
 <Hint-gore-goals>.
 
@@ -500,6 +555,10 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >more moles
 by one point
 
+#testcase-rulestubs-hint-red-rose-rule-default
+>hint red rose
+<Hint-red-rose>.
+
 ##RBRS-SHUFFLEEND=1
 ##RBRS-SHUFFLESTART=2
 
@@ -509,6 +568,7 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >gawking gift
 by one point
 
+#testcase-rulestubs-hint-rum-route-rule-default
 >hint
 <Hint-rum-route>.
 
@@ -538,6 +598,7 @@ Nothing comes up. The general area here has been changed enough.
 
 >d
 
+#testcase-rulestubs-hint-slay-slope-rule-default
 >hint
 <Hint-slay-slope>.
 
@@ -587,6 +648,7 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >right root
 by one point
 
+#testcase-rulestubs-hint-slight-sleaze-rule-default
 >hint
 <Hint-slight-sleaze>.
 
@@ -601,6 +663,10 @@ You scan the area.
 Nothing comes up. The general area here has been changed enough.
 
 >s
+
+#testcase-rulestubs-hint-seek-sameing-rule-default
+>hint
+<Hint-seek-sameing>.
 
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.00.)
@@ -643,6 +709,7 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >docking diffed
 by one point
 
+#testcase-rulestubs-hint-mad-most-cad-coast-rule-default
 >hint
 <Hint-mad-most-cad-coast>.
 
@@ -709,21 +776,27 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >ll
 Nothing comes up. The general area here has been changed enough.
 
+#testcase-rulestubs-hint-sight-sail-rule-default
 >hint sight sail
 <Hint-sight-sail>.
 
+#testcase-rulestubs-hint-trail-stuff-rule-default
 >hint might mail
 <Hint-trail-stuff>.
 
+#+testcase-rulestubs-hint-trail-stuff-rule-default
 >hint flight flail
 <Hint-trail-stuff>.
 
+#+testcase-rulestubs-hint-trail-stuff-rule-default
 >hint bright brute
 <Hint-trail-stuff>.
 
+#testcase-rulestubs-hint-trite-trail-rule-default
 >hint white whale
 <Hint-trite-trail>.
 
+#+testcase-rulestubs-hint-trite-trail-rule-default
 >hint
 <Hint-trite-trail>.
 
@@ -739,6 +812,7 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
 However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 
+#testcase-rulestubs-hint-delight-dilute-rule-default
 >hint delight dilute
 <Hint-delight-dilute>.
 
@@ -751,6 +825,7 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >mocking miffed
 by one point
 
+#testcase-rulestubs-hint-old-end-rule-default
 >hint
 <Hint-old-end>.
 
@@ -786,9 +861,11 @@ by one point
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 
+#testcase-rulestubs-hint-bane-bat-rule-default
 >hint bane bat
 <Hint-bane-bat>.
 
+#testcase-rulestubs-hint-vain-vat-rule-default
 >hint
 <Hint-vain-vat>.
 
@@ -810,6 +887,7 @@ I couldn't parse that command. You don't need any more than two words long. VERB
 >ll pred pros
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 0.00.)
 
+#testcase-rulestubs-hint-pred-pros-rule-default
 >hint pred pros
 <Hint-pred-pros>.
 
@@ -821,9 +899,11 @@ I couldn't parse that command. You don't need any more than two words long. VERB
 
 >s
 
+#testcase-rulestubs-hint-market-marquee-rule-default
 >hint market marquee
 <Hint-market-marquee>.
 
+#testcase-rulestubs-hint-threat-three-rule-default
 >hint
 <Hint-threat-three>.
 
@@ -854,9 +934,11 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >plus plaque
 by one point
 
+#testcase-rulestubs-hint-spurning-sprite-rule-default
 >hint sprite
 <Hint-spurning-sprite>.
 
+#testcase-rulestubs-hint-plus-plaque-rule-default
 >hint plus plaque
 <Hint-plus-plaque>.
 

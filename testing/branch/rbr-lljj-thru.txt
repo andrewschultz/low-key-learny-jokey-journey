@@ -78,11 +78,16 @@ TSV:## minimum walkthrough	## walkthrough with all points	## walkthrough with al
 >au 2
 
 @hin
+#testcase-rulestubs-hint-bane-be-sane-see-rule-default
 >hint
 <Hint-bane-be-sane-see>.
 \\
 >hint tree
 <Hint-bane-be-sane-see>.
+\\
+#testcase-rulestubs-hint-player-rule-default
+>hint me
+<Hint-player>.
 
 @hfull
 #testcase-rules-hint-bane-be-sane-see-rule-default
@@ -569,7 +574,7 @@ by one point
 }}CURMINBONUS++
 
 @hfull
-#testcase-rules-hint-player-rule-if-core-score->-0
+#testcase-rules-hint-player-rule-if-current-score->-0
 >hint me
 Your magic power is being able to construct parallel rhymes, as the game title suggests.
 
@@ -711,9 +716,11 @@ riff
 ====alphabetize off
 
 @hin
+#testcase-rulestubs-hint-roaring-rocks-rule-default
 >hint
 <Hint-roaring-rocks>.
 \\
+#testcase-rulestubs-hint-boring-box-rule-default
 >hint box
 <Hint-boring-box>.
 
@@ -737,6 +744,7 @@ WRONG
 The leet learner and its parts only give hints. You can LL alone to scan a room, LL any thing or person, or READ the leet learner to see its option.
 
 @hin
+#testcase-rulestubs-hint-learner-part-rule-default
 >hint learner
 <Hint-learner-part>.
 
@@ -769,6 +777,7 @@ As you go on your way, who should block your way but a fervent Mad Monk? They ca
 The mad monk is blocking you right now.
 
 @hin
+#testcase-rulestubs-hint-mad-monk-rule-default
 >hint monk
 <Hint-mad-monk>.
 \\
@@ -934,7 +943,7 @@ You have two ways you need to dispose of the mad monk. (+)
 Both ways are a downer, and you may be able to guess words that rhyme with ad. (+)
 \\
 >hint monk
-/You can say (BAD BUNK|SAD SUNK)\.
+/You can say (BAD BUNK|SAD SUNK)\. \(-\)
 \\
 >hint monk
 You have two ways you need to dispose of the mad monk. (+)
@@ -943,7 +952,7 @@ You have two ways you need to dispose of the mad monk. (+)
 Both ways are a downer, and you may be able to guess words that rhyme with ad. (+)
 \\
 >hint monk
-/You can say (BAD BUNK|SAD SUNK)\.
+/You can say (BAD BUNK|SAD SUNK)\. \(-\)
 \\
 >undo
 \\
@@ -954,7 +963,7 @@ Both ways are a downer, and you may be able to guess words that rhyme with ad. (
 by one point
 \\
 >hint monk
-You can say SAD SUNK.
+You can say SAD SUNK. (-)
 \\
 >sad sunk
 Take down the monk anyway?
@@ -973,7 +982,7 @@ You already know both BAD BUNK and SAD SUNK. Repeat SAD SUNK to get by.
 by one point
 \\
 >hint monk
-You can say BAD BUNK.
+You can say BAD BUNK. (-)
 \\
 >bad bunk
 Take down the monk anyway?
@@ -1069,9 +1078,11 @@ NOTE: Low-Key Learny Jokey Journey should indicate whenever you find the right r
 /^No-Nudge Slow Sludge
 
 @hin
+#testcase-rulestubs-hint-nnss-rule-default
 >hint
 <Hint-nnss>.
 \\
+#+testcase-rulestubs-hint-nnss-rule-default
 >hint sludge
 <Hint-nnss>.
 
@@ -1320,6 +1331,10 @@ A crude insult, not a crude image.
 >ll door
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 However, it's really dim, as if you don't need to do or think whatever there is to do or think.
+\\
+#testcase-rulestubs-hint-diss-door-rule-default
+>hint diss door
+<Hint-diss-door>.
 
 @hfull
 #testcase-rules-hint-diss-door-rule-default
@@ -1380,9 +1395,11 @@ You need certification you're the sort of person welcome in a done dorm. How to 
 FUN FORM. (-)
 
 @hin
+#testcase-rulestubs-hint-stun-storm-rule-default
 >hint
 <Hint-stun-storm>.
 \\
+#+testcase-rulestubs-hint-stun-storm-rule-default
 >hint dorm
 <Hint-stun-storm>.
 \\
@@ -1449,9 +1466,11 @@ The tree trunk, or a place in it you can look, is too high up. (+)
 >undo
 
 @hin
+#testcase-rulestubs-hint-tree-trunk-rule-default
 >hint
 <Hint-tttt>.
 \\
+#testcase-rulestubs-hint-tttt-rule-default
 >hint trunk
 <Hint-tree-trunk>.
 
@@ -1596,6 +1615,7 @@ by one point
 You saw what was in the tree trunk, and that's all you need to do with it.
 
 @hin
+#+testcase-rulestubs-hint-tttt-rule-default
 >hint
 <Hint-tttt>.
 \\
@@ -1714,6 +1734,11 @@ There are two colloquial interjections that make things click. (+)
 >hint free fruit
 WHEE WOOT. (-)
 
+@hin
+#testcase-rulestubs-hint-free-fruit-rule-default
+>hint free fruit
+<Hint-free-fruit>.
+
 >whee woot
 by one point
 }}SCORE++
@@ -1780,6 +1805,7 @@ You're done here in The (Thunk!) Tree Trunk.
 It's impressive you got the pear peach before visiting the place where you need to use it. You'll know when you get there.
 
 @hin
+#testcase-rulestubs-hint-pear-peach-rule-default
 >hint peach
 <Hint-pear-peach>.
 \\
@@ -1868,9 +1894,11 @@ You can make the CRUST CRACK once Just Jack is gone.
 Violence isn't the answer, here, though you're close. You may wish to think of Jack differently.
 
 @hin
+#testcase-rulestubs-hint-trust-track-rule-default
 >hint
 <Hint-trust-track>.
 \\
+#testcase-rulestubs-hint-just-jack-rule-default
 >hint jack
 <Hint-just-jack>.
 \\
@@ -1900,6 +1928,11 @@ Make Just Jack BUSSED BACK. (-)
 >bussed back
 by one point
 }}SCORE++
+
+@hin
+#testcase-rulestubs-hint-sus-sack-rule-default
+>hint sus sack
+<Hint-sus-sack>.
 
 @hfull
 #testcase-rules-hint-trust-track-rule-fallthrough
@@ -2107,7 +2140,7 @@ The pear peach can work its magic in Rare Reach.
 The pear peach can make Rare Reach a bit less desolate. (+)
 \\
 >hint pear peach
-This could be a place with life, or at  least, water. (+)
+This could be a place with life. Perhaps life-giving water would help. (+)
 \\
 >hint pear peach
 Make a BARE BEACH. (-)
@@ -2117,14 +2150,23 @@ by one point
 }}SCORE++
 
 @hin
+#testcase-rulestubs-hint-rare-reach-rule-default
 >hint
 <Hint-rare-reach>.
 \\
+#testcase-rulestubs-hint-deep-dune-rule-default
 >hint dune
 <Hint-deep-dune>.
 \\
 >ll
 Nothing comes up. The general area here has been changed enough.
+
+@hfull
+#testcase-rules-hint-rare-reach-rule-if-sco-bare-beach-is-true
+>hint
+You need the deep dune to start getting smaller. (+)
+\\
+>undo
 
 @all
 #+testcase-room-names-rare-reach
@@ -2280,6 +2322,10 @@ The Rho Rune is useful somewhere you haven't been.
 \\
 >ll
 Nothing comes up. The general area here has been changed enough.
+\\
+#testcase-rulestubs-hint-rho-rune-rule-default
+>hint rho rune
+<Hint-rho-rune>.
 
 @rej
 #testcase-postreject-table-of-verb-checks-vc-reap-rune-rule
@@ -2350,6 +2396,7 @@ That doesn't quite work. Maybe the farm needs worms or warm weather, but its sur
 {$GREENCORE}
 
 @hin
+#testcase-rulestubs-hint-fun-farm-rule-default
 >hint 
 <Hint-fun-farm>.
 \\
@@ -2403,11 +2450,15 @@ You already unarmed the Hun Harm Fun Farm!
 >hint rho rune
 The Rho Rune gives you power here.
 \\
+##balance undos
 >s
 \\
 #+testcase-rules-hint-rho-rune-rule-default
 >hint rho rune
 The Rho Rune is useful somewhere you've been.
+\\
+>undo
+>undo
 
 @gong,prong
 >s
@@ -2554,9 +2605,11 @@ by one point
 }}SCORE++
 
 @hin
+#testcase-rulestubs-hint-nonoon-rule-default
 >hint
 <Hint-nonoon>.
 \\
+#testcase-rulestubs-hint-cocoon-rule-default
 >hint cocoon
 <Hint-cocoon>.
 \\
@@ -2685,6 +2738,7 @@ by one point
 /^Jotty Jail
 
 @hin
+#testcase-rulestubs-hint-jotty-jail-rule-default
 >hint
 <Hint-jotty-jail>.
 
@@ -2784,6 +2838,11 @@ by one point
 }}CURMIN++
 }}CURMINBONUS++
 
+@hin
+#testcase-rulestubs-hint-lurking-lump-rule-default
+>hint lurking lump
+<Hint-lurking-lump>.
+
 @hfull
 #hint lump
 #testcase-rules-hint-lurking-lump-rule-default
@@ -2850,9 +2909,11 @@ You have uncompleted areas you can reach in the lift, so hinting the lift will s
 >undo
 
 @hin
+#testcase-rulestubs-hint-high-hub-rule-default
 >hint
 <Hint-high-hub>.
 \\
+#testcase-rulestubs-hint-locking-lift-rule-default
 >hint lift
 <Hint-locking-lift>.
 
@@ -3014,6 +3075,7 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 >undo
 
 @hin
+#testcase-rulestubs-hint-sturdy-stalk-rule-default
 >hint stalk
 <Hint-sturdy-stalk>.
 
@@ -3541,7 +3603,7 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 You need to provide potential concertgoers with something to drink. (+)
 \\
 >hint
-What sort of drink would provied camaraderie?
+What sort of drink would provide camaraderie?
 \\
 >hint
 BRO BREW. (-)
@@ -3680,12 +3742,14 @@ That's a bit too generic a sound to make, and you've already made the right ones
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
 @hin
+#testcase-rulestubs-hint-no-new-show-shoe-rule-default
 >hint
 <Hint-no-new-show-shoe>.
 \\
 >hint crowd
 You summoned the lazy loud crazy crowd into existence, which is enough. You'll want to look elsewhere for double-rhymes.
 \\
+#testcase-rulestubs-hint-crow-crew-rule-default
 >hint crow crew
 <Hint-crow-crew>.
 \\
@@ -3712,6 +3776,11 @@ THROW THROUGH. (-)
 >throw through
 by one point
 }}SCORE++
+
+@hin
+#testcase-rulestubs-hint-light-lute-rule-default
+>hint light lute
+<Hint-light-lute>.
 
 @hfull
 #testcase-rules-hint-light-lute-rule-fallthrough
@@ -4100,6 +4169,7 @@ by one point
 }}CURMINBONUS++
 
 @hin
+#testcase-rulestubs-hint-gore-goals-rule-default
 >hint
 <Hint-gore-goals>.
 \\
@@ -4199,6 +4269,11 @@ MORE MOLES. (-)
 >more moles
 by one point
 }}SCORE++
+
+@hin
+#testcase-rulestubs-hint-red-rose-rule-default
+>hint red rose
+<Hint-red-rose>.
 
 @hfull
 ##balance undos
@@ -4310,7 +4385,7 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 There's a place where you get knowledge and confidence. (+)
 \\
 >hint locking lift
-You'll stare blankly, whether it's too much or too little.
+You'll stare blankly, whether it's too much or too little. (+)
 \\
 >hint locking lift
 GAWKING GIFT. (-)
@@ -4327,13 +4402,14 @@ You think back to the bad gifts you've received when people said you should be g
 /^Bum-'Bout Rum Route
 
 @hin
+#testcase-rulestubs-hint-rum-route-rule-default
 >hint
 <Hint-rum-route>.
 
 @hfull
 #testcase-rules-hint-red-rose-rule-if-player-is-in-bum-bout-rum-route-and-sco-said-sos-is-false-if-sco-dumb-doubt-is-false
 >hint red rose
-You can use the red rose after making general progress here.
+You can use the red rose after making progress with the general area here.
 
 @rej
 >gawking gift
@@ -4571,6 +4647,7 @@ You've cleared the Rum Route. No need to overdo things.
 /^Nay-Nope-Slay Slope
 
 @hin
+#testcase-rulestubs-hint-slay-slope-rule-default
 >hint
 <Hint-slay-slope>.
 
@@ -4966,7 +5043,7 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 @hfull
 #testcase-rules-hint-light-lute-rule-if-player-is-in-slight-sleaze-if-sco-right-root-is-false
 >hint light lute
-WRONG
+You want to grow trite trees, but they'd be hard to build. (+)
 
 >right root
 by one point
@@ -4978,6 +5055,7 @@ by one point
 You're done here in Trite Trees.
 
 @hin
+#testcase-rulestubs-hint-slight-sleaze-rule-default
 >hint
 <Hint-slight-sleaze>.
 \\
@@ -5025,6 +5103,11 @@ You already planted the right root to make trite trees. Nothing more to do here.
 @all
 #testcase-room-names-freak-framing-seek-saming
 /^Freak-Framing Seek-Sameing
+
+@hin
+#testcase-rulestubs-hint-seek-sameing-rule-default
+>hint
+<Hint-seek-sameing>.
 
 @hfull
 #testcase-rules-hint-red-rose-rule-if-player-is-in-seek-sameing-if-sco-chic-shaming-is-false
@@ -5299,6 +5382,7 @@ The locking lift leads you to a shore where you'd expect a watercraft, but there
 /^Mad-Most-Cad Coast
 
 @hin
+#testcase-rulestubs-hint-mad-most-cad-coast-rule-default
 >hint
 <Hint-mad-most-cad-coast>.
 
@@ -5481,7 +5565,7 @@ You fail to scare anyone with this, not that you need to, any more.
 #testcase-rules-hint-red-rose-rule-if-player-is-in-trite-trail-if-whale-score-<-5
 #testcase-rules-hint-trite-trail-rule-fallthrough
 >hint red rose
-You can use the red rose after making general progress here.
+You can use the red rose after making progress with the general area here.
 
 @rej
 #+testcase-think-table-of-verb-checks-vc-thread-throws-rule
@@ -5776,21 +5860,27 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >ll
 Nothing comes up. The general area here has been changed enough.
 \\
+#testcase-rulestubs-hint-sight-sail-rule-default
 >hint sight sail
 <Hint-sight-sail>.
 \\
+#testcase-rulestubs-hint-trail-stuff-rule-default
 >hint might mail
 <Hint-trail-stuff>.
 \\
+#+testcase-rulestubs-hint-trail-stuff-rule-default
 >hint flight flail
 <Hint-trail-stuff>.
 \\
+#+testcase-rulestubs-hint-trail-stuff-rule-default
 >hint bright brute
 <Hint-trail-stuff>.
 \\
+#testcase-rulestubs-hint-trite-trail-rule-default
 >hint white whale
 <Hint-trite-trail>.
 \\
+#+testcase-rulestubs-hint-trite-trail-rule-default
 >hint
 <Hint-trite-trail>.
 
@@ -5881,6 +5971,7 @@ You already conquered the tight-tail white whale. No need to go back.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
 However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 \\
+#testcase-rulestubs-hint-delight-dilute-rule-default
 >hint delight dilute
 <Hint-delight-dilute>.
 
@@ -5968,6 +6059,7 @@ You've figured out the locking lift completely.
 /^Old End
 
 @hin
+#testcase-rulestubs-hint-old-end-rule-default
 >hint
 <Hint-old-end>.
 
@@ -6355,9 +6447,11 @@ FLAIN FLAT. (-)
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 \\
+#testcase-rulestubs-hint-bane-bat-rule-default
 >hint bane bat
 <Hint-bane-bat>.
 \\
+#testcase-rulestubs-hint-vain-vat-rule-default
 >hint
 <Hint-vain-vat>.
 
@@ -6471,6 +6565,7 @@ You convince yourself the vain vat was a great place to sort out your emotions.
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
 @hin
+#testcase-rulestubs-hint-pred-pros-rule-default
 >hint pred pros
 <Hint-pred-pros>.
 
@@ -6511,9 +6606,11 @@ I couldn't parse that command. You don't need any more than two words long. VERB
 /^Market Marquee
 
 @hin
+#testcase-rulestubs-hint-market-marquee-rule-default
 >hint market marquee
 <Hint-market-marquee>.
 \\
+#testcase-rulestubs-hint-threat-three-rule-default
 >hint
 <Hint-threat-three>.
 
@@ -6791,9 +6888,11 @@ TURNING TRITE. (-)
 You need to label the plus plaque now. Something that describes the Burning Bright Spurning Sprite. (+)
 
 @hin
+#testcase-rulestubs-hint-spurning-sprite-rule-default
 >hint sprite
 <Hint-spurning-sprite>.
 \\
+#testcase-rulestubs-hint-plus-plaque-rule-default
 >hint plus plaque
 <Hint-plus-plaque>.
 \\
