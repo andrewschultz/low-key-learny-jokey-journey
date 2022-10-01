@@ -149,10 +149,6 @@ chapter train tree
 
 the train tree is climbable scenery in Bane Be Sane See. "[b]MAIN ME[r] is carved into the train tree in big letters.  It has three identical entries, none more right than the other. You may wish to [b]READ[r] what's below them."
 
-check entering train tree: say "You can [b]READ[r] the tree to see which of three ways to enter. There is no right or wrong way." instead;
-
-check opening train tree: say "The tree's three passages are already open to you." instead;
-
 understand "jane/g" and "jane g/gee" and "dane d/dee" and "dane/wayne/jane" as train tree when player is in Bane Be Sane See
 
 book Roaring Rocks
@@ -325,8 +321,6 @@ the done dorm is scenery. "[if sco-fun-form is true]You have good memories of yo
 
 from-number of done dorm is 5404. [to-number folds into OWSS once done dorm appears]
 
-check entering done dorm: say "[if sco-fun-form is false]You must apply correctly to enter[else]You already spent enough time there[end if]." instead;
-
 book Tree Trunk
 
 carry out going to TTTT when TTTT is unvisited:
@@ -467,12 +461,6 @@ chapter locking lift
 The locking lift is a climbable rhymable in High Hub. It is scenery. "The locking lift seems to have a list of places it can go, or emotions you can express to see a new place. The unvisited ones are blurred out, of course. You can [b]READ[r] your progress so far." [?? if you got MOCKING MIFFED first, then you are in luck]
 
 check going inside when locking lift is in location of player: try entering lift instead;
-
-check entering locking lift:
-	if player is in high hub, say "You need to decide where to go in the lift." instead;
-	say "You take the lift back to High Hub...";
-	take-lift high hub;
-	the rule succeeds;
 
 guess-table of locking lift is the table of locking lift guesses.
 
@@ -989,89 +977,6 @@ hoohehing is leetsetting.
 
 before leetsetting when player does not have the leet learner: say "You don't have the Leet Learner yet, so you can't set this option." instead;
 
-volume verbs
-
-book attacking
-
-the block attacking rule is not listed in any rulebook.
-
-check attacking:
-	if player is in Bane Be Sane See, say "[b]READ[r]ing the tree is a better way to attack getting that first point." instead; [intro]
-	if player is in gore goals, say "That would play into the sore souls['] whatever-they-grab-things-with." instead; [2]
-	if noun is bred bros or noun is bright brute, say "Don't attack allies." instead; [4/5]
-	if noun is white whale, say "Try building resources for an expedition instead." instead; [5]
-	if noun is pred pros, say "Make friends of your enemies instead." instead; [6]
-	if noun is spurning sprite, say "You'd lose the flame war, verbal or physical." instead;
-	say "Less physical abuse. More abusing the English language with rhymes!" instead;
-
-book push pull
-
-understand the command "push" as something new.
-understand the command "pull" as something new.
-
-book eating
-
-the can't eat unless edible rule is not listed in any rulebook.
-
-check eating:
-	if noun is pear peach, say "It looks good to eat, but it must have a higher purpose. Besides, you're not hungry." instead;
-	say "You need only spiritual sustenance, not physical, in [this-game]." instead;
-
-book taking
-
-check taking scenery (this is the modified can't take scenery rule): say "You don't explicitly need to [b]TAKE[r] anything in [this-game]." instead;
-
-the can't take scenery rule is not listed in any rulebook.
-
-book talking
-
-carry out talktoing:
-	if noun is the player, say "[one of]'Whee! Why me? My!'[or]'Me! My! See?'[paragraph break]'Sigh.'[in random order]" instead;
-	if noun is mad monk, say "You need more pointed commentary, picking out the mad monk's flaws." instead;
-	if noun is FREE FRUIT, say "It reveals nothing of the free fruit inside. You feel like you just banged on a vending machine that ate your change, except without [i]casus belli[r]." instead;
-	if noun is lazy loud crazy crowd, say "Regular chatter doesn't work on the crowd. They need to be hyped up and see a show." instead; [spoke 1]
-	if noun is crow crew, say "The crow crew has its own prep for the performance. You feel even asking them if they were ready would make them less ready. It's the crowd that you need to interact with." instead;
-	if noun is kite coot or noun is night newt, say "They wouldn't understand you, and they don't need to be disturbed." instead; [spoke 2]
-	if noun is bred bros, say "You make small talk with a bit, even coming up with a few ideas to counter grokking grift. But you sense [the bros] will do their very best work alone." instead; [spoke 4]
-	if noun is bright brute, say "The brute's brightness is more positivity than conversational brilliance. But it will know how to fight." instead;
-	if noun is white whale, say "You sense a telepathic 'Splay! Splash! May mash!' Yes, it's dolphins that have telepathic chatter in the real world, but there are different rules here. Play along with it." instead; [spoke 5]
-	if noun is pred pros, say "Direct negotiations won't work. You can give them something, though." instead; [start endgame]
-	if noun is sprite, say "'So! The [if sco-plus-plaque is true]inscription on your [end if]gift? I'm not greedy or anything. It's just the right thing to do. Obviously." instead;
-	say "No response. There's not a lot you need to talk to." instead;
-
-book climbing
-
-the block climbing rule is not listed in any rulebook.
-
-rule for supplying a missing noun when climbing:
-	if number of fungible climbable things is 0:
-		say "(going up)[paragraph break]";
-		try going up instead;
-	now noun is a random fungible climbable thing;
-
-check climbing:
-	if climb-warn is false:
-		now climb-warn is true;
-		say "[i][bracket][b]NOTE: CLIMB[r][i] maps to going up.[close bracket][r][paragraph break]";
-	if noun is train tree, say "There's nothing on top of the tree, only inside." instead;
-	if noun is stalk:
-		say "The stalk is, unsurprisingly, sturdy enough.";
-		try going up instead;
-	if noun is tree trunk, say "The tree trunk doesn't lead anywhere." instead;
-	if noun is deep dune, say "You might fall in." instead;
-	if noun is locking lift, say "That would be really dangerous." instead;
-	if noun is snotty snail, say "Too slippery. Plus, you don't want to attract its attention." instead;
-	say "There's nothing really to climb here." instead;
-
-book listening
-
-the block listening rule is not listed in any rulebook.
-
-check listening:
-	if player is in Roaring Rocks, say "[if sco-boring-box is false]'Poring Pox!' the roaring rocks, uh, roar[else]The roaring is exciting. Too exciting. You don't need that right now[end if]." instead;
-	if player is in Bane Be Sane See, say "[if sco-plain-plea is false]You get the feeling your voice could add constructively to the noises, somehow, but it's not critical[else]You think you still hear echoes of your plain plea, but it's time to move on[end if]." instead;
-	say "Quite quiet site. Sigh, it ..." instead;
-
 volume room restrictions
 
 this is the nothing-left gong rule: completed;
@@ -1410,25 +1315,166 @@ thing-hint-rule of plus plaque is hint-plus-plaque rule.
 thing-hint-rule of red rose is the hint-red-rose rule.
 thing-hint-rule of light lute is the hint-light-lute rule.
 
-include Low Key Learny Jokey Journey Hints by Andrew Schultz.
+[include Low Key Learny Jokey Journey Hints by Andrew Schultz.]
 
-[include Low Key Learny Jokey Journey Hint Stubs by Andrew Schultz.]
+include Low Key Learny Jokey Journey Hint Stubs by Andrew Schultz.
 
-volume standard verbs
+volume standard and action verbs
 
 [just in case, so far]
 
-chapter attacking
+book attacking
 
-check attacking: say "Hawk hurts? Block! BLURTS!" instead;
+the block attacking rule is not listed in any rulebook.
 
-chapter singing
+check attacking:
+	if player is in Bane Be Sane See, say "[b]READ[r]ing the tree is a better way to attack getting that first point." instead; [intro]
+	if noun is mad monk, say "That would be, um, mad." instead; [ground]
+	if player is in gore goals, say "That would play into the sore souls['] whatever-they-grab-things-with." instead; [2]
+	if noun is bred bros or noun is bright brute, say "Don't attack allies." instead; [4/5]
+	if noun is white whale, say "Try building resources for an expedition instead." instead; [5]
+	if noun is pred pros, say "Make friends of your enemies instead." instead; [6]
+	if noun is spurning sprite, say "You'd lose the flame war, verbal or physical." instead;
+	say "Hawk hurts? Block! BLURTS!" instead;
+
+book climbing
+
+the block climbing rule is not listed in any rulebook.
+
+rule for supplying a missing noun when climbing:
+	if number of fungible climbable things is 0:
+		say "(going up)[paragraph break]";
+		try going up instead;
+	now noun is a random fungible climbable thing;
+
+check climbing:
+	if climb-warn is false:
+		now climb-warn is true;
+		say "[i][bracket][b]NOTE: CLIMB[r][i] maps to going up.[close bracket][r][paragraph break]";
+	if noun is train tree, say "There's nothing on top of the tree, only inside." instead;
+	if noun is stalk:
+		say "The stalk is, unsurprisingly, sturdy enough.";
+		try going up instead;
+	if noun is tree trunk, say "The tree trunk doesn't lead anywhere." instead;
+	if noun is deep dune, say "You might fall in." instead;
+	if noun is locking lift, say "That would be really dangerous." instead;
+	if noun is snotty snail, say "Too slippery. Plus, you don't want to attract its attention." instead;
+	say "Unclimbable, but you don't really need to climb anything." instead;
+
+book eating
+
+the can't eat unless edible rule is not listed in any rulebook.
+
+check eating:
+	if noun is pear peach, say "It looks good to eat, but it must have a higher purpose. Besides, you're not hungry." instead;
+	say "You need only spiritual sustenance, not physical, in [this-game]." instead;
+
+book entering
+
+check entering miss more diss door: say "Looking for arguments right now is pointless." instead;
+
+check entering done dorm: say "[if sco-fun-form is false]You must apply correctly to enter[else]You already spent enough time there[end if]." instead;
+
+check entering locking lift:
+	if player is in high hub, say "You need to decide where to go in the lift." instead;
+	say "You take the lift back to High Hub...";
+	take-lift high hub;
+	the rule succeeds;
+
+check entering train tree: say "You can [b]READ[r] the tree to see which of three ways to enter. There is no right or wrong way." instead;
+
+book listening
+
+the block listening rule is not listed in any rulebook.
+
+check listening:
+	if player is in Roaring Rocks, say "[if sco-boring-box is false]'Poring Pox!' the roaring rocks, uh, roar[else]The roaring is exciting. Too exciting. You don't need that right now[end if]." instead;
+	if player is in Bane Be Sane See, say "[if sco-plain-plea is false]You get the feeling your voice could add constructively to the noises, somehow, but it's not critical[else]You think you still hear echoes of your plain plea, but it's time to move on[end if]." instead;
+	say "Quite quiet site. Sigh, it ..." instead;
+
+book opening
+
+check opening train tree: say "The tree's three passages are already open to you." instead;
+
+book push pull
+
+understand the command "push" as something new.
+understand the command "pull" as something new.
+
+book singing
 
 check singing: say "You hum a few too-totes-new notes, almost stringing together a wry witty dry ditty." instead;
 
+book swear-swamp-where-womping
+
+swear-swamp-where-womping is an action out of world.
+
+understand the command "swear swamp where womp" as something new.
+
+understand "swear swamp where womp" as swear-swamp-where-womping when player is not in Bane Be Sane See.
+
+carry out swear-swamp-where-womping:
+	repeat through table of verb checks:
+		if check-rule entry is vc-piss-poor rule:
+			if idid entry is true, say "You can only avoid swearing once." instead;
+			up-min;
+			now idid entry is true;
+			say "You bypass any form of profanity, and the [if diss door is off-stage]unsummoned [end if][diss door], to remain above that sort of thing and gain a bonus point for your efforts. You'd have done so even if a bonus point weren't at stake.";
+			moot miss more diss door;
+			follow the score and thinking changes rule;
+			the rule succeeds;
+	say "Oops. You should've gotten a check for a bonus point here.";
+	the rule succeeds;
+
+book swearing
+
+after printing the locale description:
+	if miss more diss door is fungible, say "Oh. The [diss door] is there. You may want to dispose of it somehow.";
+	continue the action;
+
+the miss more diss door is a rhymable. it is scenery. printed name is "miss-more-diss door". description is "It seems to be inviting you in, and yet, at the same time, pushing you away for not being quite good enough. Yet."
+
+from-number of miss more diss door is 5404. to-number of miss more diss door is -5404.
+
+guess-table of miss more diss door is table of miss more diss door guesses.
+
+check swearing obscenely:
+	if roaring rocks is unvisited, say "Wait until you've moved out of here. Then, cursing will give you a chance for a bonus point." instead;
+	if miss more diss door is moot, say "With the [diss door] gone, [one of]a[or]another[stopping] worst-word-burst bird flies by and puts your efforts to utter shame." instead;
+	if miss more diss door is fungible, say "The [diss door] rattles a menacing challenge." instead;
+	if miss more diss door is off-stage:
+		say "You hear a whooshing as a door swings in from nowhere. It doesn't seem to lead anywhere. Voices from behind it, though, assure you you are missing something. Using your logical skills, you deduce it is a [diss door]. While it's not going to jump you if your back is turned, it might be nice to get rid of.";
+	else:
+		say "The [diss door] whooshes into view again.";
+	move miss more diss door to location of player instead;
+
+check swearing mildly: try swearing obscenely instead;
+
+book taking
+
+check taking scenery (this is the modified can't take scenery rule): say "You don't explicitly need to [b]TAKE[r] anything in [this-game]." instead;
+
+the can't take scenery rule is not listed in any rulebook.
+
+book talking
+
+carry out talktoing:
+	if noun is the player, say "[one of]'Whee! Why me? My!'[or]'Me! My! See?'[paragraph break]'Sigh.'[in random order]" instead;
+	if noun is mad monk, say "You need more pointed commentary, picking out the mad monk's flaws." instead;
+	if noun is FREE FRUIT, say "It reveals nothing of the free fruit inside. You feel like you just banged on a vending machine that ate your change, except without [i]casus belli[r]." instead;
+	if noun is lazy loud crazy crowd, say "Regular chatter doesn't work on the crowd. They [if sco-yo-you is true]have been[else]need to be[end if] hyped up and see a show." instead; [spoke 1]
+	if noun is crow crew, say "The crow crew has its own prep for the performance. You feel even asking them if they were ready would make them less ready. It's the crowd that you need[if sco-yo-you is true]ed[end if] to interact with." instead;
+	if noun is kite coot or noun is night newt, say "The [noun] doesn't need to be disturbed and wouldn't understand you anyway." instead; [spoke 2]
+	if noun is bred bros, say "You make small talk a bit, even coming up with a few ideas to counter grokking grift. But you sense [the bros] will do their very best work alone." instead; [spoke 4]
+	if noun is bright brute, say "The brute's brightness is more positivity than conversational brilliance. But it will know how to fight." instead;
+	if noun is white whale, say "You sense a telepathic 'Splay! Splash! May mash!' Yes, it's dolphins that have telepathic chatter in the real world, but there are different rules here. Play along with it." instead; [spoke 5]
+	if noun is pred pros, say "Direct negotiations won't work. You can give them something, though." instead; [start endgame]
+	if noun is sprite, say "'So! The [if sco-plus-plaque is true]inscription on your [end if]gift? I'm not greedy or anything. It's just the right thing to do. Obviously.'" instead;
+	say "No response. There's not a lot you need to talk to." instead;
+
 volume meta-verbs
 
-chapter high level game stuff
+book high level game stuff
 
 check saving the game: say "The [sprite]'s voice echoes: 'Surely you don't need a break from THIS, right?'";
 
@@ -1450,7 +1496,7 @@ report restoring the game:
 
 check quitting the game: say "You hear [the sprite]: 'Oh, wow! You have something a little better to do? What a coincidence! So do I! Well, something a lot better, actually.'";
 
-chapter abouting
+book abouting
 
 carry out abouting:
 	say "[this-game] is the third entry in the [pprr] series. You do not need experience with [series-names] to get through successfully.";
@@ -1460,7 +1506,7 @@ carry out abouting:
 	say "[line break]I welcome bug reports, big or small, as well as transcripts. [this-game]'s repository is at https://github.com/andrewschultz/low-key-learny-jokey-journey/issues. My email blurglecruncheon@gmail.com are also appreciated.";
 	the rule succeeds;
 
-chapter creditsing
+book creditsing
 
 carry out creditsing:
 	say "Thanks to DrkStarr, Peter M. J. Gross, Beau Sorrell and <check other name(s)> for testing.";
@@ -1474,7 +1520,7 @@ carry out creditsing:
 	say "[line break]Thanks to you for playing.";
 	the rule succeeds;
 
-chapter exitsing
+book exitsing
 
 [ for the EXITS command when you can see a way to go but it isn't physically available ]
 
@@ -1490,7 +1536,7 @@ report exitsing (this is the notify player of lift rule):
 
 to say enter-lift: say "[b]ENTER[r] the locking lift to go back to [hub]";
 
-chapter optsing
+book optsing
 
 carry out optsing:
 	if leet learner is off-stage and guide-gong-warn is false, say "You haven't discovered any options yet, but when you get a hint item or reach the third room, there will be more." instead;
@@ -1498,53 +1544,7 @@ carry out optsing:
 	if player has leet learner, say "You can [b]READ[r] the leet learner for options there.";
 	the rule succeeds;
 
-chapter swearing
-
-after printing the locale description:
-	if miss more diss door is fungible, say "Oh. The [diss door] is there. You may want to dispose of it somehow.";
-	continue the action;
-
-the miss more diss door is a rhymable. it is scenery. printed name is "miss-more-diss door". description is "It seems to be inviting you in, and yet, at the same time, pushing you away for not being quite good enough. Yet."
-
-from-number of miss more diss door is 5404. to-number of miss more diss door is -5404.
-
-guess-table of miss more diss door is table of miss more diss door guesses.
-
-check entering miss more diss door: say "Looking for arguments right now is pointless." instead;
-
-check swearing obscenely:
-	if roaring rocks is unvisited, say "Wait until you've moved out of here. Then, cursing will give you a chance for a bonus point." instead;
-	if miss more diss door is moot, say "With the [diss door] gone, [one of]a[or]another[stopping] worst-word-burst bird flies by and puts your efforts to utter shame." instead;
-	if miss more diss door is fungible, say "The [diss door] rattles a menacing challenge." instead;
-	if miss more diss door is off-stage:
-		say "You hear a whooshing as a door swings in from nowhere. It doesn't seem to lead anywhere. Voices from behind it, though, assure you you are missing something. Using your logical skills, you deduce it is a [diss door]. While it's not going to jump you if your back is turned, it might be nice to get rid of.";
-	else:
-		say "The [diss door] whooshes into view again.";
-	move miss more diss door to location of player instead;
-
-check swearing mildly: try swearing obscenely instead;
-
-section swear-swamp-where-womping
-
-swear-swamp-where-womping is an action out of world.
-
-understand the command "swear swamp where womp" as something new.
-
-understand "swear swamp where womp" as swear-swamp-where-womping when player is not in Bane Be Sane See.
-
-carry out swear-swamp-where-womping:
-	repeat through table of verb checks:
-		if check-rule entry is vc-piss-poor rule:
-			if idid entry is true, say "You can only avoid swearing once." instead;
-			up-min;
-			now idid entry is true;
-			say "You bypass any form of profanity, and the [if diss door is off-stage]unsummoned [end if][diss door], to remain above that sort of thing and gain a bonus point for your efforts. You'd have done so even if a bonus point weren't at stake.";
-			follow the score and thinking changes rule;
-			the rule succeeds;
-	say "Oops. You should've gotten a check for a bonus point here.";
-	the rule succeeds;
-
-chapter thinking extension
+book thinking extension
 
 check thinking (this is the lift reminder rule):
 	if high hub is unvisited, continue the action;
@@ -1560,7 +1560,7 @@ check thinking (this is the lift reminder rule):
 
 to say gets-got of (rm - a room): say "[if player is in rm]got you[else]gets you back[end if] to [rm]";
 
-chapter verbsing
+book verbsing
 
 carry out verbsing:
 	say "[this-game] doesn't have many custom verbs that are used regularly. In fact, many standard verbs such as [b]PUSH[r] and [b]PULL[r] are disabled, and [b]CLIMB[r] or [b]ATTACK[r], for instance, have minimal implementation. This is to help you focus on certain phrases you need to guess to advance.";
@@ -1568,7 +1568,7 @@ carry out verbsing:
 	say "[line break]Useful meta-verbs: [b]OPTS[r] gives game options, and [b]CREDITS[r] and [b]ABOUT[r] give general information.";
 	the rule succeeds;
 
-chapter xyzzying
+book xyzzying
 
 carry out xyzzying:
 	say "A hollow voice booms incredulously, 'Easter egg bestir-beg?!'";
