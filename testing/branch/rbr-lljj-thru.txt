@@ -29,7 +29,7 @@ files=reg-lljj-thru-min.txt,reg-lljj-thru-all.txt,reg-lljj-thru-reject.txt,reg-l
 ~	mis	t6
 ~	ha	t7
 ~	hom	t8
-~	ver	t9
+~	ver,verbs	t9
 ~	goto,gt,go	t10
 ~	hin,hint,hints	t11
 ~	hf,hfull	t12
@@ -76,6 +76,42 @@ TSV:## minimum walkthrough	## walkthrough with all points	## walkthrough with al
 /^Bane Be Sane, See\?
 
 >au 2
+
+@verbs
+#testcase-mainverbs-check-attacking-if-player-is-in-bane-be-sane-see
+>attack tree
+READing the tree is a better way to attack getting that first point.
+\\
+#testcase-mainverbs-check-climbing-if-climb-warn-is-false
+#testcase-mainverbs-check-climbing-if-noun-is-train-tree
+>climb tree
+There's nothing on top of the tree, only inside.
+NOTE: CLIMB maps to going up.
+\\
+#testcase-mainverbs-check-climbing-fallthrough
+>climb me
+Unclimbable, but you don't really need to climb anything.
+!NOTE:
+\\
+#testcase-mainverbs-check-entering-train-tree-default
+>enter tree
+You can READ the tree to see which of three ways to enter. There is no right or wrong way.
+\\
+#testcase-mainverbs-check-opening-train-tree-default
+>open tree
+The tree's three passages are already open to you.
+\\
+#testcase-mainverbs-check-singing-default
+>sing
+You hum a few too-totes-new notes, almost stringing together a wry witty dry ditty.
+\\
+#testcase-mainverbs-modified-can't-take-scenery-rule-default
+>take tree
+You don't explicitly need to TAKE anything in Low-Key Learny Jokey Journey.
+\\
+#testcase-mainverbs-check-swearing-obscenely-if-roaring-rocks-is-unvisited
+>shit
+Wait until you've moved out of here. Then, cursing will give you a chance for a bonus point.
 
 @hin
 #testcase-rulestubs-hint-bane-be-sane-see-rule-default
@@ -502,6 +538,7 @@ It looks like you may have tried to refer to the room name, or part of it. You o
 ====alphabetize off
 
 @ver
+#testcase-mainverbs-check-listening-if-player-is-in-bane-be-sane-see
 >listen
 You get the feeling your voice could add constructively to the noises, somehow, but it's not critical.
 
@@ -584,6 +621,7 @@ Your magic power is being able to construct parallel rhymes, as the game title s
 You already made a plain plea.
 
 @ver
+#+testcase-mainverbs-check-listening-if-player-is-in-bane-be-sane-see
 >listen
 You think you still hear echoes of your plain plea, but it's time to move on.
 
@@ -646,6 +684,7 @@ north: (unvisited.)
 Most special commands are more than one word, because of the rhyme-pairs involved. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 @ver
+#testcase-mainverbs-check-listening-if-player-is-in-roaring-rocks
 >listen
 "Poring Pox!" the roaring rocks, uh, roar.
 
@@ -735,7 +774,7 @@ You open the boring box, and you see a metal gadget that doesn't look very inter
 @ver
 #testcase-common-readables-table-of-readables-leet-learner
 >read leet learner
-WRONG
+The leet learner has three toggles: HA HALF (on) and NAH NAFF (off) to note when you are half right. It's currently on. TWO TOO (on) and DO DUE (off) is for homonym detection, and a GUESS GO toggle has YES YO and LESS LO, which seems to track how many good guesses you've found so far.
 
 @hfull
 #hint learner
@@ -877,6 +916,15 @@ by one point
 }}CURMIN++
 }}CURMINBONUS++
 
+@verbs
+#testcase-mainverbs-check-attacking-if-noun-is-mad-monk
+>attack mad monk
+That would be, um, mad.
+\\
+#testcase-mainverbs-carry-out-talktoing-fallthrough
+>t leet learner
+No response. There's not a lot you need to talk to.
+
 @rej
 #testcase-postreject-table-of-verb-checks-vc-gad-gunk-rule
 >gad gunk
@@ -998,6 +1046,19 @@ You already know both BAD BUNK and SAD SUNK. Repeat BAD BUNK to get by.
 >undo
 >undo
 
+@verbs
+#testcase-mainverbs-carry-out-talktoing-if-noun-is-mad-monk
+>t mad monk
+\\
+You need more pointed commentary, picking out the mad monk's flaws.
+\\
+#testcase-mainverbs-carry-out-talktoing-if-noun-is-the-player
+>t me
+/^("Whee! Why me\? My!"|"Me! My! See\?")$
+\\
+>t me
+/^("Whee! Why me\? My!"|"Me! My! See\?")$
+
 @alt
 >sad sunk
 by one point
@@ -1077,6 +1138,11 @@ NOTE: Low-Key Learny Jokey Journey should indicate whenever you find the right r
 #testcase-room-names-no-nudge-slow-sludge
 /^No-Nudge Slow Sludge
 
+@verbs
+#testcase-mainverbs-check-listening-fallthrough
+>listen
+Quite quiet site. Sigh, it ...
+
 @hin
 #testcase-rulestubs-hint-nnss-rule-default
 >hint
@@ -1145,6 +1211,7 @@ north: No-Nudge Slow Sludge.
 >n
 
 @ver
+#+testcase-mainverbs-check-listening-if-player-is-in-roaring-rocks
 >listen
 Quite quiet site. Sigh, it ...
 
@@ -1274,9 +1341,44 @@ EXIT LIST:
 north: (blocked.)
 south: No-Nudge Slow Sludge.
 
+@verbs
+##balance undos
+#testcase-mainverbs-carry-out-swear-swamp-where-womping-repeat-through-table-of-verb-checks-if-check-rule-entry-is-vc-piss-poor-rule
+>swear swamp where womp
+You bypass any form of profanity, and the unsummoned miss-more-diss door, to remain above that sort of thing and gain a bonus point for your efforts. You'd have done so even if a bonus point weren't at stake.
+\\
+#testcase-mainverbs-carry-out-swear-swamp-where-womping-fallthrough
+#testcase-mainverbs-carry-out-swear-swamp-where-womping-repeat-through-table-of-verb-checks-if-check-rule-entry-is-vc-piss-poor-rule-if-idid-entry-is-true
+>swear swamp where womp
+You can only avoid swearing once.
+\\
+>piss poor
+!by one point
+\\
+>undo
+>undo
+>undo
+\\
+#testcase-mainverbs-check-swearing-obscenely-if-miss-more-diss-door-is-off-stage
+#testcase-mainverbs-check-swearing-mildly-default
+
 @!min
 >bother
 You hear a whooshing as a door swings in from nowhere. It doesn't seem to lead anywhere. Voices from behind it, though, assure you you are missing something. Using your logical skills, you deduce it is a miss-more-diss door. While it's not going to jump you if your back is turned, it might be nice to get rid of.
+
+@verbs
+#testcase-mainverbs-check-swearing-obscenely-fallthrough
+>x diss door
+#game text is not as important as the diss door being there
+It seems to be inviting you in, and yet, at the same time, pushing you away for not being quite good enough. Yet.
+\\
+#testcase-mainverbs-check-entering-miss-more-diss-door-default
+>enter diss door
+Looking for arguments right now is pointless.
+\\
+#testcase-mainverbs-check-swearing-obscenely-if-miss-more-diss-door-is-fungible
+>bother
+The miss-more-diss door rattles a menacing challenge.
 
 @ha
 #testcase-ha-half-table-of-verb-checks-28-piss
@@ -1360,6 +1462,15 @@ by one point
 }}CURMIN++
 }}CURMINBONUS++
 
+@verbs
+#testcase-mainverbs-check-swearing-obscenely-if-miss-more-diss-door-is-moot
+>bother
+With the miss-more-diss door gone, a worst-word-burst bird flies by and puts your efforts to utter shame.
+\\
+#+testcase-mainverbs-check-swearing-obscenely-if-miss-more-diss-door-is-moot
+>bother
+With the miss-more-diss door gone, another worst-word-burst bird flies by and puts your efforts to utter shame.
+
 @rej
 #testcase-prereject-table-of-verb-checks-vc-fun-form-rule
 >fun form
@@ -1428,9 +1539,19 @@ You feel your will sapped as you attempt to go north. You'll need to sit out the
 >form zfun
 {$GREENCORE}
 
+@verbs
+#testcase-mainverbs-check-entering-done-dorm-default
+>enter dorm
+You must apply correctly to enter.
+
 >fun form
 by one point
 }}SCORE++
+
+@verbs
+#+testcase-mainverbs-check-entering-done-dorm-default
+>enter dorm
+You already spent enough time there.
 
 @hfull
 #testcase-rules-hint-stun-storm-rule-fallthrough
@@ -1458,6 +1579,11 @@ You already filled out the fun form.
 @all
 #testcase-room-names-the-thunk-tree-trunk
 /^The \(Thunk!\) Tree Trunk
+
+@verbs
+#testcase-mainverbs-check-climbing-if-noun-is-tree-trunk
+>climb tree trunk
+The tree trunk doesn't lead anywhere.
 
 @hfull
 >hint
@@ -1739,6 +1865,11 @@ WHEE WOOT. (-)
 >hint free fruit
 <Hint-free-fruit>.
 
+@verbs
+#testcase-mainverbs-carry-out-talktoing-if-noun-is-free-fruit
+>t free fruit
+It reveals nothing of the free fruit inside. You feel like you just banged on a vending machine that ate your change, except without casus belli.
+
 >whee woot
 by one point
 }}SCORE++
@@ -1794,6 +1925,15 @@ The Leet Learner shakes back and forth. Something you said sounded right, but it
 >pear peach
 by one point
 }}SCORE++
+
+@verbs
+#testcase-mainverbs-check-eating-if-noun-is-pear-peach
+>eat pear peach
+It looks good to eat, but it must have a higher purpose. Besides, you're not hungry.
+\\
+#testcase-mainverbs-check-eating-fallthrough
+>eat leet learner
+You need only spiritual sustenance, not physical, in Low-Key Learny Jokey Journey.
 
 @hfull
 #testcase-rules-hint-tttt-rule-fallthrough
@@ -2148,6 +2288,11 @@ Make a BARE BEACH. (-)
 >bare beach
 by one point
 }}SCORE++
+
+@verbs
+#testcase-mainverbs-check-climbing-if-noun-is-deep-dune
+>climb deep dune
+You might fall in.
 
 @hin
 #testcase-rulestubs-hint-rare-reach-rule-default
@@ -2737,6 +2882,11 @@ by one point
 #testcase-room-names-jotty-jail
 /^Jotty Jail
 
+@verbs
+#testcase-mainverbs-check-climbing-if-noun-is-snotty-snail
+>climb snotty snail
+Too slippery. Plus, you don't want to attract its attention.
+
 @hin
 #testcase-rulestubs-hint-jotty-jail-rule-default
 >hint
@@ -2885,6 +3035,15 @@ by one point
 @all
 #testcase-room-names-high-hub
 /^High Hub
+
+@verbs
+#testcase-mainverbs-check-climbing-if-noun-is-locking-lift
+>climb locking lift
+That would be really dangerous.
+\\
+#testcase-mainverbs-check-entering-locking-lift-if-player-is-in-high-hub
+>enter lift
+You need to decide where to go in the lift.
 
 @hfull
 #testcase-rules-hint-locking-lift-rule-if-sco-rocking-rift-is-false
@@ -3158,6 +3317,11 @@ That guide gong, again, rings to notify you that you don't need to go back throu
 >d
 !That guide gong, again
 
+@verbs
+#testcase-mainverbs-check-climbing-if-noun-is-stalk
+>climb stalk
+The stalk is, unsurprisingly, sturdy enough.
+
 @hfull
 #testcase-rules-hint-sturdy-stalk-rule-fallthrough
 >hint sturdy stalk
@@ -3415,7 +3579,7 @@ The show ahead is not particularly religious.
 \\
 #ttc-table-of-no-new-show-shoe-guesses-po-poo-pooh
 >po pooh
-There is underpromising and overdelivering, but that's a bit too much. Way too much.
+There is under-promising and over-delivering, but that's a bit too much. Way too much.
 \\
 #ttc-table-of-no-new-show-shoe-guesses-row-rue
 >row rue
@@ -3649,6 +3813,15 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 by one point
 }}SCORE++
 
+@verbs
+#testcase-mainverbs-carry-out-talktoing-if-noun-is-crow-crew
+>t crow crew
+The crow crew has its own prep for the performance. You feel even asking them if they were ready would make them less ready. It's the crowd that you need to interact with.
+\\
+#testcase-mainverbs-carry-out-talktoing-if-noun-is-lazy-loud-crazy-crowd
+>t crowd
+Regular chatter doesn't work on the crowd. They need to be hyped up and see a show.
+
 @rej
 #testcase-postreject-table-of-verb-checks-vc-crow-crew-rule
 >crow crew
@@ -3715,6 +3888,15 @@ by one point
 @all
 #+testcase-room-names-no-new-show-shoe
 /^Whoah-Woo-Show Shoe
+
+@verbs
+#+testcase-mainverbs-carry-out-talktoing-if-noun-is-crow-crew
+>t crow crew
+The crow crew has its own prep for the performance. You feel even asking them if they were ready would make them less ready. It's the crowd that you needed to interact with.
+\\
+#+testcase-mainverbs-carry-out-talktoing-if-noun-is-lazy-loud-crazy-crowd
+>t crowd
+Regular chatter doesn't work on the crowd. They have been hyped up and see a show.
 
 @rej
 #testcase-postreject-table-of-verb-checks-vc-yo-you-rule
@@ -4234,6 +4416,18 @@ FOUR FOALS. (-)
 >four foals
 by one point
 }}SCORE++
+
+@verbs
+#testcase-mainverbs-check-attacking-if-player-is-in-gore-goals
+>attack newt
+That would play into the sore souls' whatever-they-grab-things-with.
+\\
+#testcase-mainverbs-carry-out-talktoing-if-noun-is-kite-coot-or-noun-is-night-newt
+>t kite coot
+The kite coot doesn't need to be disturbed and wouldn't understand you anyway.
+\\
+>t night newt
+The night newt doesn't need to be disturbed and wouldn't understand you anyway.
 
 @hin
 >ll
@@ -5306,6 +5500,22 @@ BRED BROS. (-)
 by one point
 }}SCORE++
 
+@verbs
+##balance undos
+>gonear bred bros
+\\
+#testcase-mainverbs-check-attacking-if-noun-is-bred-bros-or-noun-is-bright-brute
+>attack bred bros
+Don't attack allies.
+\\
+#testcase-mainverbs-carry-out-talktoing-if-noun-is-bred-bros
+>t bred bros
+You make small talk a bit, even coming up with a few ideas to counter grokking grift. But you sense the Bred Bros will do their very best work alone.
+\\
+>undo
+>undo
+>undo
+
 @hin
 ##balance undos
 >gonear bred bros
@@ -5561,6 +5771,11 @@ You fail to scare anyone with this, not that you need to, any more.
 @all
 /^Trite Trail
 
+@verbs
+#testcase-mainverbs-carry-out-talktoing-if-noun-is-white-whale
+>t white whale
+You sense a telepathic "Splay! Splash! May mash!" Yes, it's dolphins that have telepathic chatter in the real world, but there are different rules here. Play along with it.
+
 @hfull
 #testcase-rules-hint-red-rose-rule-if-player-is-in-trite-trail-if-whale-score-<-5
 #testcase-rules-hint-trite-trail-rule-fallthrough
@@ -5807,6 +6022,19 @@ Summon a BRIGHT BRUTE. (-)
 >bright brute
 by one point
 }}SCORE++
+
+@verbs
+#testcase-mainverbs-carry-out-talktoing-if-noun-is-bright-brute
+>t bright brute
+The brute's brightness is more positivity than conversational brilliance. But it will know how to fight.
+\\
+#+testcase-mainverbs-check-attacking-if-noun-is-bred-bros-or-noun-is-bright-brute
+>attack bright brute
+Don't attack allies.
+\\
+#testcase-mainverbs-check-attacking-if-noun-is-white-whale
+>attack white whale
+Try building resources for an expedition instead.
 
 @hfull
 #testcase-rules-hint-light-lute-rule-if-lute-strings-is-0
@@ -6165,6 +6393,13 @@ There's a way to extend the old end, though it won't be a linear path. (+)
 \\
 >hint
 BOLD BEND. (-)
+
+@verbs
+#testcase-mainverbs-check-entering-locking-lift-fallthrough
+>enter lift
+You take the lift back to High Hub...
+\\
+>undo
 
 >bold bend
 by one point
@@ -6586,6 +6821,15 @@ The Pred Pros look very skinny. (+)
 >hint pred pros
 FED FOES. (-)
 
+@verbs
+#testcase-mainverbs-check-attacking-if-noun-is-pred-pros
+>attack pred pros
+Make friends of your enemies instead.
+\\
+#testcase-mainverbs-carry-out-talktoing-if-noun-is-pred-pros
+>t pred pros
+Direct negotiations won't work. You can give them something, though.
+
 >fed foes
 by one point
 }}SCORE++
@@ -6822,6 +7066,15 @@ You already prepped yourself for the final fight. Now it is upon you.
 @all
 /^Threat Three Met Me
 
+@verbs
+#testcase-mainverbs-check-attacking-if-noun-is-spurning-sprite
+>attack spurning sprite
+You'd lose the flame war, verbal or physical.
+\\
+#testcase-mainverbs-check-attacking-fallthrough
+>attack me
+Hawk hurts? Block! BLURTS!
+
 @hin
 >ll
 Nothing comes up. The general area here has been changed enough.
@@ -6862,9 +7115,19 @@ The sus sack can be changed to something more useful. (+)
 >hint spurning sprite
 You need a gift for the Burning Bright Spurning Sprite first. Check your inventory for something to work on.
 
+@verbs
+#testcase-mainverbs-carry-out-talktoing-if-noun-is-sprite
+>t sprite
+"So! The gift? I'm not greedy or anything. It's just the right thing to do. Obviously."
+
 >plus plaque
 by one point
 }}SCORE++
+
+@verbs
+#+testcase-mainverbs-carry-out-talktoing-if-noun-is-sprite
+>t sprite
+"So! The inscription on your gift? I'm not greedy or anything. It's just the right thing to do. Obviously."
 
 @hfull
 #testcase-rules-hint-threat-three-rule-fallthrough
