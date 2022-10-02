@@ -74,11 +74,11 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "despite"	"dispute"	--	--	false	true	false	false	high hub	vc-despite-dispute rule	vr-despite-dispute rule	--	"You can reason [b]DESPITE DISPUTE[r] [if light lute is moot]now[else]once[end if] there's something that makes you depressed."
 "mocking"	"miffed"	--	--	false	true	true	false	High Hub	vc-mocking-miffed rule	vr-mocking-miffed rule	--	"You can search for [b]MOCKING MIFFED[r] [if hub-score is 5]now[else]once[end if] you've solved all the other hub areas."
 "shore"	"shoals"	--	--	false	true	true	false	sore souls gore goals	vc-shore-shoals rule	vr-shore-shoals rule	--	-- [start shocking shift / sore souls' gore goals]
-"four"	"foals"	"fore"	--	false	true	true	false	sore souls gore goals	vc-four-foals rule	vr-four-foals rule	--	"You can summon [b]FOUR FOALS[r] [once-now of vc-four-foals rule] the area is more hospitable."
-"more"	"moles"	--	--	false	true	true	false	sore souls gore goals	vc-more-moles rule	vr-more-moles rule	--	"You can summon [b]MORE MOLES[r] [once-now of vc-more-moles rule] the area is more hospitable."
+"four"	"foals"	"fore"	--	false	true	true	false	sore souls gore goals	vc-four-foals rule	vr-four-foals rule	--	"You can summon [b]FOUR FOALS[r] [once-now of vc-four-foals rule] [goals-hospitable]."
+"more"	"moles"	--	--	false	true	true	false	sore souls gore goals	vc-more-moles rule	vr-more-moles rule	--	"You can summon [b]MORE MOLES[r] [once-now of vc-more-moles rule] [goals-hospitable]."
 "lore"	"lols"	--	--	false	true	false	false	sore souls gore goals	vc-lore-lols rule	vr-lore-lols rule	--	--
-"night"	"newt"	--	--	false	true	false	false	sore souls gore goals	vc-night-newt rule	vr-night-newt rule	--	"You can summon a [b]NIGHT NEWT[r] [once-now of vc-night-newt rule] the area is more hospitable."
-"kite"	"coot"	--	--	false	true	false	false	sore souls gore goals	vc-kite-coot rule	vr-kite-coot rule	--	"You can summon a [b]KITE COOT[r] [once-now of vc-kite-coot rule] the area is more hospitable."
+"night"	"newt"	--	--	false	true	false	false	sore souls gore goals	vc-night-newt rule	vr-night-newt rule	--	"You can summon a [b]NIGHT NEWT[r] [once-now of vc-night-newt rule] [somewhere-hospitable]."
+"kite"	"coot"	--	--	false	true	false	false	sore souls gore goals	vc-kite-coot rule	vr-kite-coot rule	--	"You can summon a [b]KITE COOT[r] [once-now of vc-kite-coot rule] [somewhere-hospitable]."
 "flow"	"flue"	"flu/flew"	--	false	true	true	false	show shoe	vc-flow-flue rule	vr-flow-flue rule	--	-- [start no new show shoe/rocking rift]
 "glow"	"glue"	--	--	false	true	true	false	show shoe	vc-glow-glue rule	vr-glow-glue rule	--	--
 "go"	"goo"	--	--	false	true	false	false	show shoe	vc-go-goo rule	vr-go-goo rule	--	--
@@ -1545,6 +1545,10 @@ this is the animals-need-shoals rule:
 
 to lose-rose-petal: say "[line break]A[one of][or]nother[stopping] bright petal falls off the red rose and blows away in the wind."
 
+to say goals-hospitable: say "[gore goals] is more hospitable"
+
+to say somewhere-hospitable: say "you're somewhere hospitable to animals"
+
 [hub 2. shoe]
 
 to change-shoe-number (nu - a number):
@@ -1592,7 +1596,10 @@ to light-lute-llp (nu - a number):
 [hub 2a. got lute]
 
 this is the lute-animal-check rule:
-	if player is not in sore souls gore goals or player does not have light lute, unavailable;
+	if player does not have light lute, unavailable;
+	if player is not in gore goals:
+		vcp "This isn't a safe animal habitat. Somewhere else could be, though.";
+		not-yet;
 	if sco-shore-shoals is false:
 		vcp "[nice-animals].";
 		not-yet;
