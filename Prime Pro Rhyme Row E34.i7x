@@ -25,27 +25,30 @@ book deciphering mistakes
 
 a rhymeguess rule for a table name (called tn) (this is the rhyme-guess-checker rule):
 	repeat through tn:
-		if the player's command matches mist-cmd entry:
-			if there is a mist-rule entry:
-				process the mist-rule entry;
-				unless the rule succeeded, continue the action;
-			say "[mist-txt entry][line break]";
-			let see-leet-read be whether or not player has leet learner;
-			let is-opt be false;
-			if there is a leet-rule entry:
-				process the leet-rule entry;
-				unless the rule succeeded, now see-leet-read is false;
-			if see-leet-read is true, print-my-clue;
-			let gyw be got-yet entry; [this seems awkward, but here we have a case where we want to say "You've solved X of Y" and while we could add X+1, that makes "if X is Y-1" look a bit odd. ]
-			now got-yet entry is true;
-			if gyw is false:
-				increment total-good-guesses;
-				if less-lo-warn is false and guess-go is false:
-					say "[i][bracket][b]NOTE:[r][i] to switch on the option that shows how many similar rhyme pairs you have left in this area, you can type [b]YES YO[r][i]. This option is off by default as it may distract people from the main game.[close bracket][r]";
-					now less-lo-warn is true;
-				current-table-note-x tn; [the -x is for special cases like the mad monk, even though table-note is in the universal file]
-				check-lump-progress;
-			the rule succeeds;
+		if there is a mist-cmd entry:
+			unless the player's command matches mist-cmd entry, next;
+		if there is a mist-regex entry:
+			unless the player's command matches the regular expression "^[mist-regex entry]$", next;
+		if there is a mist-rule entry:
+			process the mist-rule entry;
+			unless the rule succeeded, continue the action;
+		say "[mist-txt entry][line break]";
+		let see-leet-read be whether or not player has leet learner;
+		let is-opt be false;
+		if there is a leet-rule entry:
+			process the leet-rule entry;
+			unless the rule succeeded, now see-leet-read is false;
+		if see-leet-read is true, print-my-clue;
+		let gyw be got-yet entry; [this seems awkward, but here we have a case where we want to say "You've solved X of Y" and while we could add X+1, that makes "if X is Y-1" look a bit odd. ]
+		now got-yet entry is true;
+		if gyw is false:
+			increment total-good-guesses;
+			if less-lo-warn is false and guess-go is false:
+				say "[i][bracket][b]NOTE:[r][i] to switch on the option that shows how many similar rhyme pairs you have left in this area, you can type [b]YES YO[r][i]. This option is off by default as it may distract people from the main game.[close bracket][r]";
+				now less-lo-warn is true;
+			current-table-note-x tn; [the -x is for special cases like the mad monk, even though table-note is in the universal file]
+			check-lump-progress;
+		the rule succeeds;
 
 compare-item is a thing that varies.
 
