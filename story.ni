@@ -14,11 +14,15 @@ release along with the "Parchment" interpreter.
 
 include Trivial Niceties by Andrew Schultz.
 
-include Bold Final Question Rows by Andrew Schultz.
+section series modules
+
+include Prime Pro Rhyme Row Universal by Andrew Schultz.
 
 include Prime Pro Rhyme Row Common by Andrew Schultz.
 
 include Prime Pro Rhyme Row E34 by Andrew Schultz.
+
+section game specific modules
 
 include Low Key Learny Jokey Journey Definitions by Andrew Schultz.
 
@@ -28,11 +32,9 @@ include Low Key Learny Jokey Journey Tables by Andrew Schultz.
 
 include Low Key Learny Jokey Journey Mistakes by Andrew Schultz.
 
-include Old School Verb Total Carnage by Andrew Schultz.
+include Low Key Learny Jokey Journey Hints by Andrew Schultz.
 
-a thing is usually not boring.
-
-a thing can be himher. a thing is usually not himher.
+[include Low Key Learny Jokey Journey Hint Stubs by Andrew Schultz.]
 
 section beta testing - not for release
 
@@ -42,6 +44,12 @@ section test module(s) - not for release
 
 [include Low Key Learny Jokey Journey Tests by Andrew Schultz.]
 
+section minor general modules
+
+include Old School Verb Total Carnage by Andrew Schultz.
+
+include Bold Final Question Rows by Andrew Schultz.
+
 section regions
 
 Stoppin' Start is a region.
@@ -49,6 +57,12 @@ Stoppin' Start is a region.
 Hoppin' Heart is a region.
 
 Poppin' Part is a region.
+
+section general definitions
+
+a thing is usually not boring.
+
+a thing can be himher. a thing is usually not himher.
 
 section instead rules
 
@@ -144,6 +158,8 @@ guess-table of Bane Be Sane See is table of Bane Be Sane See guesses.
 from-number of bane be sane see is -1. to-number of bane be sane see is -1.
 
 the player is in Bane Be Sane See. description of player is "Some searchin['], umm, urchin."
+
+after looking in Bane Be Sane See for the first time: say "[i][bracket][b]NOTE:[r] [i]you may wish to type [b]VERBS[r] to see verbs used in [this-game][i].[close bracket][r][line break]";
 
 chapter train tree
 
@@ -1315,10 +1331,6 @@ thing-hint-rule of plus plaque is hint-plus-plaque rule.
 thing-hint-rule of red rose is the hint-red-rose rule.
 thing-hint-rule of light lute is the hint-light-lute rule.
 
-[include Low Key Learny Jokey Journey Hints by Andrew Schultz.]
-
-include Low Key Learny Jokey Journey Hint Stubs by Andrew Schultz.
-
 volume standard and action verbs
 
 [just in case, so far]
@@ -1565,8 +1577,13 @@ book verbsing
 carry out verbsing:
 	say "[this-game] doesn't have many custom verbs that are used regularly. In fact, many standard verbs such as [b]PUSH[r] and [b]PULL[r] are disabled, and [b]CLIMB[r] or [b]ATTACK[r], for instance, have minimal implementation. This is to help you focus on certain phrases you need to guess to advance.";
 	say "[line break]The four cardinal directions and [b]UP[r] are used, as well as [b]X[r] or [b]EXAMINE[r]. [b]READ[r] may provide different output. Use [b]I[r] to take inventory as well. The four ";
-	say "[line break]Useful meta-verbs: [b]OPTS[r] gives game options, and [b]CREDITS[r] and [b]ABOUT[r] give general information.";
+	say "[line break]Useful meta-verbs: [b]OPTS[r] gives game options, and [b]META[r] gives general information commands.";
 	the rule succeeds;
+
+book versioning
+
+carry out versioning:
+	say "[this-game] received its first code commit on July 3, 2022. The first release to the public was for IFComp 2022, on October 1.";
 
 book xyzzying
 
