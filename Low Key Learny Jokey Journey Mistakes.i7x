@@ -192,13 +192,10 @@ table of no new show shoe guesses [ you can't go back to the show shoe after you
 mist-cmd(topic)	mist-rule	got-yet	leet-rule	mist-txt
 "blow blew/blue"	--	false	--	"You blow off steam that you haven't quite revitalized the [show shoe] yet."
 "cocu"	--	false	--	"Your knowledge of former footballers is impressive. (So is mine, since I caught this, eh?)"
-"doh do/due/dew"	--	false	--	"No need for regrets."
-"dough do/due/dew"	--	false	--	"Bread isn't quite the right food for a concert."
-"doe do/due/dew"	--	false	--	"This isn't a nature park. Other places need animals, though."
+"doh/dough/doe do/due/dew"	--	false	--	"[doh-dough-doe-shoe]."
 "fo/foe foo/phoo"	--	false	--	"You don't need to be expressing contempt here."
 "grow grue"	--	false	--	"You want entertainers who crave the spotlight, not avoid it. Also, you'd prefer them less predatory."
-"lo/low loo"	--	false	--	"The [shoe] is already equipped with those, out of sight."
-"lo/low lew/lou"	--	false	--	"You don't need to call out anyone by name."
+"lo/low loo/lew/lou"	--	false	--	"[lew-lou-shoe]."
 "mo moo"	--	false	--	"Cows would not make very exciting performers, [if sco-crow-crew is false]but another animal, or people named after them, might[else]unlike the Crow Crew[end if]."
 "no/know knew/new"	--	false	--	"The last thing people want to be thinking about is knowledge, or how cliched a show might be if you think about it too much."
 "oh oo/ooh"	--	false	--	"[generic-sounds]."
@@ -209,6 +206,20 @@ mist-cmd(topic)	mist-rule	got-yet	leet-rule	mist-txt
 "so sue"	--	false	--	"You don't want to either take or face legal action, which is a lot less exciting than how it's presented in most TV dramas."
 "toe two/too"	--	false	--	"Counting your digits would be exciting for nobody."
 "woe/whoah/whoa woo"	--	false	--	"[generic-sounds]."
+
+to say doh-dough-doe-shoe:
+	if the player's command includes "doh":
+		say "No need for regrets";
+	else if the player's command includes "dough":
+		say "Bread isn't quite the right food for a concert";
+	else if the player's command includes "doe":
+		say "This isn't a nature park. Other places need animals, though"
+
+to say lew-lou-shoe:
+	if the player's command includes "loo":
+		say "The [shoe] is already equipped with those, out of sight";
+	else:
+		say "You don't need to call out anyone by name";
 
 to say generic-sounds: say "That's a bit too generic a sound to make, [if sco-yo-you is false]but it gives you ideas[else]and you've already made the right ones, anyway[end if]"
 
@@ -314,8 +325,7 @@ mist-cmd(topic)	mist-rule	got-yet	leet-rule	mist-txt
 "cor/core coals"	--	false	--	"Coal would not enliven such a place[if sco-shore-shoals is true] further[end if]."
 "door doles"	--	false	--	"No, this place doesn't need more doors."
 "nor knolls"	--	false	--	"You don't need to deprive this place of landscape."
-"poor/pour/pore poles"	--	false	--	"Lifeless poles would not make this area cheerier."
-"poor/pour/pore polls"	--	false	--	"Nothing could make this area drearier than polls."
+"poor/pour/pore polls/poles"	--	false	--	"Polls, poles ... neither would make a place [if sco-shore-shoals is true]cheerier[else]less dreary[end if]."
 "roar rolls/roles"	--	false	--	"Perhaps the roaring would be lively. Perhaps it wouldn't. But it might not add anything."
 "score skols"	--	false	--	"Perhaps Vikings will discover this land and conquer it some day. But why speed things up?"
 "store stoles"	--	false	--	"[if shoal-core-score < 0]Before you have animal pelts, you'll need animals living in peace, and then you'd hate to hurt them[else]Bringing animal pelts into a place coming to life doesn't quite work[end if]."
@@ -524,6 +534,10 @@ book miscellaneous guesses
 table of first check rhymes
 mist-cmd(topic)	mist-rule	got-yet	leet-rule	mist-txt
 a topic	a rule	a truth state	a rule	text
+
+table of future feature bookmarks
+mist-regex (text)
+--
 
 Low Key Learny Jokey Journey Mistakes ends here.
 
