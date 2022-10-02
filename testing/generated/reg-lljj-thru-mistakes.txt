@@ -970,12 +970,8 @@ No, this place doesn't need more doors.
 You don't need to deprive this place of landscape.
 
 #ttc-table-of-sore-souls-gore-goals-guesses-poor-pour-pore-poles
->poor poles
-Lifeless poles would not make this area cheerier.
-
-#ttc-table-of-sore-souls-gore-goals-guesses-poor-pour-pore-polls
->poor polls
-Nothing could make this area drearier than polls.
+>pour poles
+Polls, poles ... neither would make a place less dreary.
 
 #ttc-table-of-sore-souls-gore-goals-guesses-roar-rolls-roles
 >roar rolls
@@ -995,6 +991,10 @@ Now, now, this isn't that sort of game.
 
 >shore shoals
 by one point
+
+#+ttc-table-of-sore-souls-gore-goals-guesses-poor-pour-pore-polls
+>poor polls
+Polls, poles ... neither would make a place cheerier.
 
 ##RBRS-SHUFFLECONDITION=1>0
 

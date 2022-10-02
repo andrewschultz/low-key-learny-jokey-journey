@@ -4143,12 +4143,8 @@ No, this place doesn't need more doors.
 You don't need to deprive this place of landscape.
 \\
 #ttc-table-of-sore-souls-gore-goals-guesses-poor-pour-pore-poles
->poor poles
-Lifeless poles would not make this area cheerier.
-\\
-#ttc-table-of-sore-souls-gore-goals-guesses-poor-pour-pore-polls
->poor polls
-Nothing could make this area drearier than polls.
+>pour poles
+Polls, poles ... neither would make a place less dreary.
 \\
 #ttc-table-of-sore-souls-gore-goals-guesses-roar-rolls-roles
 >roar rolls
@@ -4238,10 +4234,10 @@ Such animals would make this area nicer, but it's too desolate for them here rig
 #testcase-think-table-of-verb-checks-vc-more-moles-rule
 #testcase-think-table-of-verb-checks-vc-night-newt-rule
 >think
-You can summon FOUR FOALS once the area is more hospitable.
-You can summon a KITE COOT once the area is more hospitable.
-You can summon MORE MOLES once the area is more hospitable.
-You can summon a NIGHT NEWT once the area is more hospitable.
+You can summon FOUR FOALS once Sore Souls' Gore Goals is more hospitable.
+You can summon MORE MOLES once Sore Souls' Gore Goals is more hospitable.
+(OPTIONAL) You can summon a NIGHT NEWT once you're somewhere hospitable to animals.
+(OPTIONAL) You can summon a KITE COOT once you're somewhere hospitable to animals.
 
 @hin
 >ll
@@ -4265,6 +4261,11 @@ SHORE SHOALS. (-)
 >shore shoals
 by one point
 }}SCORE++
+
+@mis
+#+ttc-table-of-sore-souls-gore-goals-guesses-poor-pour-pore-polls
+>poor polls
+Polls, poles ... neither would make a place cheerier.
 
 @hfull
 ##balance undos
