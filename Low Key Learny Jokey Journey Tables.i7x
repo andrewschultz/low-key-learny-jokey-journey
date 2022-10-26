@@ -1202,12 +1202,12 @@ this is the vr-excite-exhale rule:
 
 a goodrhyme rule (this is the vc-thread-throws rule):
 	if player does not have red rose, unavailable;
-	if player is not in trite trail or sco-excite-exhale is false:
-		vcp "The rose probably only has so much thread. You should only use it [if player is not in trite trail]to capture a big predator[else]once you're fully prepared to make a net and catch [the whale][end if].";
-		not-yet;
 	if sco-thread-throws is true:
 		vcal "You already tackled [the whale]!";
 		already-done;
+	if player is not in trite trail or sco-excite-exhale is false:
+		vcp "The rose probably only has so much thread. You should only use it [if player is not in trite trail]to capture a big predator[else]once you're fully prepared to make a net and catch [the whale][end if].";
+		not-yet;
 	ready;
 
 this is the vr-thread-throws rule:
