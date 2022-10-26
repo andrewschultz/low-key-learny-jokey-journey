@@ -389,6 +389,7 @@ The HA HALF button on your Leet Learner lights up green. Very dim, though. Perha
 >zgo goo
 The HA HALF button on your Leet Learner lights up green. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win.
 
+#nothing special about BRO BREW--it's just the first time we tested a core thing we can't solve yet, so there's additional info text
 #testcase-ha-half-table-of-verb-checks-47-brew
 >bro zbrew
 The HA HALF button on your Leet Learner lights up yellow--one of the words must work for a future solution.

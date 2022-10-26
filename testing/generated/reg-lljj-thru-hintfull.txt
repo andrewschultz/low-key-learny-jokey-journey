@@ -365,7 +365,7 @@ You're done here in Trust Track.
 >n
 
 #testcase-rules-hint-pear-peach-rule-fallthrough
-#testcase-rules-hint-rare-reach-rule-fallthrough
+#testcase-rules-hint-rare-reach-rule-abide-by-the-hint-pear-peach-rule
 >hint
 The pear peach can make Rare Reach a bit less desolate. (+)
 
@@ -649,7 +649,7 @@ You're done here in No-Nudge Slow Sludge.
 
 >n
 
-#testcase-rules-hint-nonoon-rule-fallthrough
+#testcase-rules-hint-nonoon-rule-abide-by-the-hint-cocoon-rule
 #testcase-rules-hint-cocoon-rule-fallthrough
 >hint
 You're done here in Ho, HEWN.
@@ -1209,7 +1209,7 @@ You're done here in Pad Post-Had-Host.
 >w
 
 #testcase-rules-hint-red-rose-rule-if-player-is-in-trite-trail-if-whale-score-<-5
-#testcase-rules-hint-trite-trail-rule-fallthrough
+#testcase-rules-hint-trite-trail-rule-abide-by-the-hint-red-rose-rule
 >hint red rose
 You can use the red rose after making progress with the general area here.
 
@@ -1568,7 +1568,7 @@ You need a gift for the Burning Bright Spurning Sprite first. Check your invento
 >plus plaque
 by one point
 
-#testcase-rules-hint-threat-three-rule-fallthrough
+#testcase-rules-hint-threat-three-rule-abide-by-the-hint-spurning-sprite-rule
 >hint
 You need to label the plus plaque now. Something that describes the Burning Bright Spurning Sprite. (+)
 
@@ -1584,7 +1584,7 @@ You can describe the Burning Bright Spurning Sprite unfavorably. (+)
 >hint plus plaque
 TURNING TRITE. (-)
 
-#testcase-rules-hint-spurning-sprite-rule-fallthrough
+#testcase-rules-hint-spurning-sprite-rule-abide-by-the-hint-plus-plaque-rule
 >hint spurning sprite
 You need to label the plus plaque now. Something that describes the Burning Bright Spurning Sprite. (+)
 

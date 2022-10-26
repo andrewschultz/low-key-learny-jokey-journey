@@ -789,15 +789,15 @@ You blow off steam that you haven't quite revitalized the No-New-Show Shoe yet.
 >cocu
 Your knowledge of former footballers is impressive. (So is mine, since I caught this, eh?)
 
-#ttc-table-of-no-new-show-shoe-guesses-doe-do-due-dew
+#ttc-table-of-no-new-show-shoe-guesses-doh-dough-doe-do-due-dew
 >doe dew
 This isn't a nature park. Other places need animals, though.
 
-#ttc-table-of-no-new-show-shoe-guesses-doh-do-due-dew
+#+ttc-table-of-no-new-show-shoe-guesses-doh-dough-doe-do-due-dew
 >doh due
 No need for regrets.
 
-#ttc-table-of-no-new-show-shoe-guesses-dough-do-due-dew
+#+ttc-table-of-no-new-show-shoe-guesses-doh-dough-doe-do-due-dew
 >dough dew
 Bread isn't quite the right food for a concert.
 
@@ -809,11 +809,11 @@ You don't need to be expressing contempt here.
 >grow grue
 You want entertainers who crave the spotlight, not avoid it. Also, you'd prefer them less predatory.
 
-#ttc-table-of-no-new-show-shoe-guesses-lo-low-lew-lou
+#ttc-table-of-no-new-show-shoe-guesses-lo-low-loo-lew-lou
 >lo lew
 You don't need to call out anyone by name.
 
-#ttc-table-of-no-new-show-shoe-guesses-lo-low-loo
+#+ttc-table-of-no-new-show-shoe-guesses-lo-low-loo-lew-lou
 >lo loo
 The No-New-Show Shoe is already equipped with those, out of sight.
 
@@ -969,7 +969,7 @@ No, this place doesn't need more doors.
 >nor knolls
 You don't need to deprive this place of landscape.
 
-#ttc-table-of-sore-souls-gore-goals-guesses-poor-pour-pore-poles
+#ttc-table-of-sore-souls-gore-goals-guesses-poor-pour-pore-polls-poles
 >pour poles
 Polls, poles ... neither would make a place less dreary.
 
@@ -992,7 +992,7 @@ Now, now, this isn't that sort of game.
 >shore shoals
 by one point
 
-#+ttc-table-of-sore-souls-gore-goals-guesses-poor-pour-pore-polls
+#+ttc-table-of-sore-souls-gore-goals-guesses-poor-pour-pore-polls-poles
 >poor polls
 Polls, poles ... neither would make a place cheerier.
 

@@ -346,11 +346,11 @@ This is a no-frills text adventure. No music, no graphics, besides the middling-
 \\
 #testcase-unavailable-table-of-verb-checks-vc-go-goo-rule
 >go goo
-That location or thing doesn't exist or isn't known to you yet.
+{$REJECT}
 \\
 #testcase-unavailable-table-of-verb-checks-vc-go-goon-rule
 >go goon
-That location or thing doesn't exist or isn't known to you yet.
+{$REJECT}
 \\
 #testcase-unavailable-table-of-verb-checks-vc-grokking-grift-rule
 >grokking grift
@@ -2261,7 +2261,7 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 
 @hfull
 #testcase-rules-hint-pear-peach-rule-fallthrough
-#testcase-rules-hint-rare-reach-rule-fallthrough
+#testcase-rules-hint-rare-reach-rule-abide-by-the-hint-pear-peach-rule
 >hint
 The pear peach can make Rare Reach a bit less desolate. (+)
 \\
@@ -3352,7 +3352,7 @@ You're done here in No-Nudge Slow Sludge.
 \\
 >n
 \\
-#testcase-rules-hint-nonoon-rule-fallthrough
+#testcase-rules-hint-nonoon-rule-abide-by-the-hint-cocoon-rule
 #testcase-rules-hint-cocoon-rule-fallthrough
 >hint
 You're done here in Ho, HEWN.
@@ -3533,15 +3533,15 @@ You blow off steam that you haven't quite revitalized the No-New-Show Shoe yet.
 >cocu
 Your knowledge of former footballers is impressive. (So is mine, since I caught this, eh?)
 \\
-#ttc-table-of-no-new-show-shoe-guesses-doe-do-due-dew
+#ttc-table-of-no-new-show-shoe-guesses-doh-dough-doe-do-due-dew
 >doe dew
 This isn't a nature park. Other places need animals, though.
 \\
-#ttc-table-of-no-new-show-shoe-guesses-doh-do-due-dew
+#+ttc-table-of-no-new-show-shoe-guesses-doh-dough-doe-do-due-dew
 >doh due
 No need for regrets.
 \\
-#ttc-table-of-no-new-show-shoe-guesses-dough-do-due-dew
+#+ttc-table-of-no-new-show-shoe-guesses-doh-dough-doe-do-due-dew
 >dough dew
 Bread isn't quite the right food for a concert.
 \\
@@ -3553,11 +3553,11 @@ You don't need to be expressing contempt here.
 >grow grue
 You want entertainers who crave the spotlight, not avoid it. Also, you'd prefer them less predatory.
 \\
-#ttc-table-of-no-new-show-shoe-guesses-lo-low-lew-lou
+#ttc-table-of-no-new-show-shoe-guesses-lo-low-loo-lew-lou
 >lo lew
 You don't need to call out anyone by name.
 \\
-#ttc-table-of-no-new-show-shoe-guesses-lo-low-loo
+#+ttc-table-of-no-new-show-shoe-guesses-lo-low-loo-lew-lou
 >lo loo
 The No-New-Show Shoe is already equipped with those, out of sight.
 \\
@@ -3627,6 +3627,7 @@ That's a bit too generic a sound to make, but it gives you ideas.
 >zgo goo
 {$GREENBONUS}
 \\
+#nothing special about BRO BREW--it's just the first time we tested a core thing we can't solve yet, so there's additional info text
 #testcase-ha-half-table-of-verb-checks-47-brew
 >bro zbrew
 {$YELLOWCOREFIRST}
@@ -4142,7 +4143,7 @@ No, this place doesn't need more doors.
 >nor knolls
 You don't need to deprive this place of landscape.
 \\
-#ttc-table-of-sore-souls-gore-goals-guesses-poor-pour-pore-poles
+#ttc-table-of-sore-souls-gore-goals-guesses-poor-pour-pore-polls-poles
 >pour poles
 Polls, poles ... neither would make a place less dreary.
 \\
@@ -4263,7 +4264,7 @@ by one point
 }}SCORE++
 
 @mis
-#+ttc-table-of-sore-souls-gore-goals-guesses-poor-pour-pore-polls
+#+ttc-table-of-sore-souls-gore-goals-guesses-poor-pour-pore-polls-poles
 >poor polls
 Polls, poles ... neither would make a place cheerier.
 
@@ -4377,11 +4378,11 @@ by one point
 @rej
 #testcase-postreject-table-of-verb-checks-vc-night-newt-rule
 >night newt
-You already populated the area with night newts!
+You already populated this area with night newts!
 \\
 #testcase-postreject-table-of-verb-checks-vc-kite-coot-rule
 >kite coot
-There are enough kite coots here.
+You already populated this area with kite coots!
 \\
 #testcase-postreject-table-of-verb-checks-vc-lore-lols-rule
 >lore lols
@@ -4480,6 +4481,15 @@ You're done here in Shore Shoals.
 \\
 >undo
 >undo
+
+@rej
+#+testcase-prereject-table-of-verb-checks-vc-kite-coot-rule
+>kite coot
+You wouldn't want to move the kite coots from their comfortable habitat in Shore Shoals!
+\\
+#+testcase-prereject-table-of-verb-checks-vc-kite-coot-rule
+>night newt
+You wouldn't want to move the night newts from their comfortable habitat in Shore Shoals!
 
 @mis
 #this is back at High Hub after we got the red rose
@@ -4794,7 +4804,7 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 @rej
 #testcase-postreject-table-of-verb-checks-vc-said-sos-rule
 >said sos
-You already gave said-sos!
+You already gave said-sos here, and that's something you don't want to overdo.
 
 @hfull
 #testcase-rules-hint-rum-route-rule-if-sco-umm-out-is-false
@@ -4907,6 +4917,10 @@ You recognize a trope or twelve at play during your journeys.
 {$GREENCORE}
 
 @rej
+#+testcase-prereject-table-of-verb-checks-vc-said-sos-rule
+>said sos
+You already gave said-sos where you needed, and that's something you don't want to overdo.
+\\
 # ?? note this should be rejectable if we do not automatically take the lift back
 #testcase-prereject-table-of-verb-checks-vc-k-cope-rule
 >k cope
@@ -5380,6 +5394,10 @@ You need neither wood nor a boutique nor a critique.
 {$YELLOWCORE}
 
 @rej
+#+testcase-postreject-table-of-verb-checks-vc-right-root-rule
+>right root
+You already planted the right root where it should be.
+\\
 #testcase-prereject-table-of-verb-checks-vc-chic-shaming-rule
 >chic shaming
 You can't jump into such cleverness. You have to bring people down so that they will be glad you picked them up.
@@ -5779,7 +5797,7 @@ You sense a telepathic "Splay! Splash! May mash!" Yes, it's dolphins that have t
 
 @hfull
 #testcase-rules-hint-red-rose-rule-if-player-is-in-trite-trail-if-whale-score-<-5
-#testcase-rules-hint-trite-trail-rule-fallthrough
+#testcase-rules-hint-trite-trail-rule-abide-by-the-hint-red-rose-rule
 >hint red rose
 You can use the red rose after making progress with the general area here.
 
@@ -5787,6 +5805,10 @@ You can use the red rose after making progress with the general area here.
 #+testcase-think-table-of-verb-checks-vc-thread-throws-rule
 >think
 You can execute THREAD THROWS to make a net to catch the tight-tail white whale once you've prepped fully.
+\\
+#+testcase-prereject-table-of-verb-checks-vc-thread-throws-rule
+>thread throws
+The rose probably only has so much thread. You should only use it once you're fully prepared to make a net and catch the tight-tail white whale.
 
 @gt
 #ttc-table-of-noways-trite-trail
@@ -6171,9 +6193,19 @@ You're done here in Trite Trail.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 @rej
-#testcase-postreject-table-of-verb-checks-vc-thread-throws-rule
+#+testcase-postreject-table-of-verb-checks-vc-thread-throws-rule
 >thread throws
-The rose probably only has so much thread. You should only use it to capture a big predator.
+You already tackled the tight-tail white whale!
+\\
+##balance undos
+# the "undo" hack here is because i can't quite undo a long trip through to get the whale
+#+testcase-postreject-table-of-verb-checks-vc-bright-brute-rule
+>purloin lute
+>bright brute
+The bright brute is hibernating now. You won't need it again!
+\\
+>undo
+>undo
 
 @ha
 #testcase-ha-half-table-of-verb-checks-36-despite
@@ -7131,7 +7163,7 @@ by one point
 "So! The inscription on your gift? I'm not greedy or anything. It's just the right thing to do. Obviously."
 
 @hfull
-#testcase-rules-hint-threat-three-rule-fallthrough
+#testcase-rules-hint-threat-three-rule-abide-by-the-hint-spurning-sprite-rule
 >hint
 You need to label the plus plaque now. Something that describes the Burning Bright Spurning Sprite. (+)
 \\
@@ -7147,7 +7179,7 @@ You can describe the Burning Bright Spurning Sprite unfavorably. (+)
 >hint plus plaque
 TURNING TRITE. (-)
 \\
-#testcase-rules-hint-spurning-sprite-rule-fallthrough
+#testcase-rules-hint-spurning-sprite-rule-abide-by-the-hint-plus-plaque-rule
 >hint spurning sprite
 You need to label the plus plaque now. Something that describes the Burning Bright Spurning Sprite. (+)
 
@@ -7307,11 +7339,11 @@ You already made and gave the plus plaque to the Burning Bright Spurning Sprite!
 \\
 #testcase-moot-table-of-verb-checks-vc-go-goo-rule
 >go goo
-That location or thing doesn't exist or isn't known to you yet.
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-go-goon-rule
 >go goon
-That location or thing doesn't exist or isn't known to you yet.
+{$REJECT2}
 \\
 #testcase-moot-table-of-verb-checks-vc-grokking-grift-rule
 >grokking grift

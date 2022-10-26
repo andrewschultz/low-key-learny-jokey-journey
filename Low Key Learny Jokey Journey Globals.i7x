@@ -141,6 +141,10 @@ froms-list is a list of numbers variable. froms-list is { 5401, 5403, 5401, 5403
 
 firstpoint-list is a list of text variable. firstpoint-list is { "DANE D", "DANE DEE", "JANE G", "JANE GEE", "LANE LEE", "WAYNE WHEE" }.
 
+volume variables for cluing and such
+
+hint-trip-room is Roaring Rocks.
+
 volume game flags
 
 name-choice-index is a number that varies. name-choice-index is 0. [1st room, which of firstpoint-list?]
@@ -161,11 +165,11 @@ tried-mocking-miffed is a truth state that varies.
 
 warn-monk is a truth state that varies.
 
-chapter options roving
+chapter variables for rules
 
-hunt-bonus-points is a truth state that varies. [this is for gong / prong checking the path]
+current-shoal-summon is a thing that varies.
 
-guide-gong-warn is a truth state that varies. [this is for going north in rocks -- we only see the GONG nag once]
+chapter options roving (was not empty before I moved gong variables to Universal)
 
 Low Key Learny Jokey Journey Globals ends here.
 

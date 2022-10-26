@@ -148,11 +148,11 @@ I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-go-goo-rule
 >go goo
-That location or thing doesn't exist or isn't known to you yet.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-go-goon-rule
 >go goon
-That location or thing doesn't exist or isn't known to you yet.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-unavailable-table-of-verb-checks-vc-grokking-grift-rule
 >grokking grift
@@ -948,11 +948,11 @@ by one point
 
 #testcase-postreject-table-of-verb-checks-vc-night-newt-rule
 >night newt
-You already populated the area with night newts!
+You already populated this area with night newts!
 
 #testcase-postreject-table-of-verb-checks-vc-kite-coot-rule
 >kite coot
-There are enough kite coots here.
+You already populated this area with kite coots!
 
 #testcase-postreject-table-of-verb-checks-vc-lore-lols-rule
 >lore lols
@@ -977,6 +977,14 @@ You already populated the area with foals!
 
 >more moles
 by one point
+
+#+testcase-prereject-table-of-verb-checks-vc-kite-coot-rule
+>kite coot
+You wouldn't want to move the kite coots from their comfortable habitat in Shore Shoals!
+
+#+testcase-prereject-table-of-verb-checks-vc-kite-coot-rule
+>night newt
+You wouldn't want to move the night newts from their comfortable habitat in Shore Shoals!
 
 #testcase-postreject-table-of-verb-checks-vc-shocking-shift-rule
 >shocking shift
@@ -1017,7 +1025,7 @@ by one point
 
 #testcase-postreject-table-of-verb-checks-vc-said-sos-rule
 >said sos
-You already gave said-sos!
+You already gave said-sos here, and that's something you don't want to overdo.
 
 >umm out
 by one point
@@ -1027,6 +1035,10 @@ by one point
 You've cleared the Rum Route. No need to overdo things.
 
 >d
+
+#+testcase-prereject-table-of-verb-checks-vc-said-sos-rule
+>said sos
+You already gave said-sos where you needed, and that's something you don't want to overdo.
 
 # ?? note this should be rejectable if we do not automatically take the lift back
 #testcase-prereject-table-of-verb-checks-vc-k-cope-rule
@@ -1097,6 +1109,10 @@ You already planted the right root to make trite trees. Nothing more to do here.
 You already planted the right root to make trite trees. Nothing more to do here.
 
 >s
+
+#+testcase-postreject-table-of-verb-checks-vc-right-root-rule
+>right root
+You already planted the right root where it should be.
 
 #testcase-prereject-table-of-verb-checks-vc-chic-shaming-rule
 >chic shaming
@@ -1192,6 +1208,10 @@ You already won the insult war!
 >think
 You can execute THREAD THROWS to make a net to catch the tight-tail white whale once you've prepped fully.
 
+#+testcase-prereject-table-of-verb-checks-vc-thread-throws-rule
+>thread throws
+The rose probably only has so much thread. You should only use it once you're fully prepared to make a net and catch the tight-tail white whale.
+
 #testcase-prereject-table-of-verb-checks-vc-right-rail-rule
 >right rail
 You might need a rail to grab, but not out here. Maybe if you've got some sort of vessel.
@@ -1247,9 +1267,18 @@ by one point
 >thread throws
 by one point
 
-#testcase-postreject-table-of-verb-checks-vc-thread-throws-rule
+#+testcase-postreject-table-of-verb-checks-vc-thread-throws-rule
 >thread throws
-The rose probably only has so much thread. You should only use it to capture a big predator.
+You already tackled the tight-tail white whale!
+
+# the "undo" hack here is because i can't quite undo a long trip through to get the whale
+#+testcase-postreject-table-of-verb-checks-vc-bright-brute-rule
+>purloin lute
+>bright brute
+The bright brute is hibernating now. You won't need it again!
+
+>undo
+>undo
 
 #testcase-postreject-table-of-verb-checks-vc-docking-diffed-rule
 >docking diffed
@@ -1563,11 +1592,11 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 
 #testcase-moot-table-of-verb-checks-vc-go-goo-rule
 >go goo
-That location or thing doesn't exist or isn't known to you yet.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-go-goon-rule
 >go goon
-That location or thing doesn't exist or isn't known to you yet.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-moot-table-of-verb-checks-vc-grokking-grift-rule
 >grokking grift

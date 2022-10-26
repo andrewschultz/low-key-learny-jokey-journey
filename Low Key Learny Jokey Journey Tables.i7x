@@ -9,8 +9,6 @@ notyet.py checks to make sure every "not yet" has a "think" associated with it
 
 volume core tables
 
-section variables by tables
-
 book main point command table
 
 [
@@ -718,10 +716,8 @@ this is the vr-lore-lols rule:
 		now from-number of gore goals is -3;
 
 a goodrhyme rule (this is the vc-night-newt rule):
+	now current-shoal-summon is night newt;
 	abide by the lute-animal-check rule;
-	if sco-night-newt is true:
-		vcal "You already populated the area with night newts!";
-		already-done;
 	ready;
 
 this is the vr-night-newt rule:
@@ -732,10 +728,8 @@ this is the vr-night-newt rule:
 	light-lute-llp 5504;
 
 a goodrhyme rule (this is the vc-kite-coot rule):
+	now current-shoal-summon is kite coot;
 	abide by the lute-animal-check rule;
-	if sco-kite-coot is true:
-		vcal "There are enough kite coots here.";
-		already-done;
 	ready;
 
 this is the vr-kite-coot rule:
@@ -897,7 +891,7 @@ this is the vr-dumb-doubt rule:
 a goodrhyme rule (this is the vc-said-sos rule):
 	if player does not have red rose, unavailable;
 	if sco-said-sos is true:
-		vcal "You already gave said-sos!";
+		vcal "You already gave said-sos [if player is in rum route]here[else]where you needed[end if], and that's something you don't want to overdo.";
 		already-done;
 	if player is not in rum route:
 		vcp "Said-sos could hit the spot elsewhere, but not here.";
@@ -1166,7 +1160,13 @@ this is the vr-right-rail rule:
 
 a goodrhyme rule (this is the vc-bright-brute rule):
 	if player does not have light lute, unavailable;
+	if sco-thread-throws is true:
+		vcal "The bright brute is hibernating now. You won't need it again!";
+		already-done;
 	if sco-bright-brute is true:
+		if player is not in trite trail:
+			vcal "The bright brute is there to take down the white whale. Plus running them around would exhaust them.";
+			already-done;
 		vcal "Two bright brutes might be smart enough to understand the prestige of beating a white whale and beat each other up before the hunt began.";
 		already-done;
 	if player is not in trite trail:
@@ -1409,10 +1409,6 @@ this is the vr-turning-trite rule:
 	say "You tumble down on the sidewalk where you first met [the sprite]. You feel like you learned nothing, and yet, at the same time, you think back to what made you say 'Wow, whoah,' trying to reconstruct that magic moment before you were interrupted. You feel as though your journeys helped piece together parts of it, and there will be other experiences that put a bit more together. You are confident that anything reminding you of [nkhh] will be worth checking out, and you will chip away pieces of the vision you had, and that will be good enough.";
 	win-the-game;
 
-section general auxiliary definitions
-
-to print-the-loc: say "[line break][b][location of player][r][line break]" [?? move to universal?]
-
 section auxiliary rules and definitions
 
 [these are ranked by approximate game order SOULS SHOE ROUTE SLEAZE COAST END]
@@ -1595,8 +1591,15 @@ to light-lute-llp (nu - a number):
 
 [hub 2a. got lute]
 
+this is the lute-animal-done rule:
+	if sco-kite-coot is false and current-shoal-summon is kite coot, continue the action;
+	if sco-night-newt is false and current-shoal-summon is night newt, continue the action;
+	vcal "[if player is not in gore goals]You wouldn't want to move [the current-shoal-summon]s from their comfortable habitat in [souls][else]You already populated this area with [current-shoal-summon]s[end if]!";
+	already-done;
+
 this is the lute-animal-check rule:
 	if player does not have light lute, unavailable;
+	if sco-shore-shoals is true, abide by the lute-animal-done rule;
 	if player is not in gore goals:
 		vcp "This isn't a safe animal habitat. Somewhere else could be, though.";
 		not-yet;
@@ -1624,7 +1627,7 @@ to say right-root-need: say "[if sleaze-score is 1]need to decrease it a bit mor
 
 a goodrhyme rule (this is the trite-trees-planted rule):
 	if sco-right-root is true:
-		vcal "You already planted the right root to make trite trees. Nothing more to do here.";
+		vcal "You already planted the right root [if player is not in slight sleaze]where it should be[else]to make trite trees. Nothing more to do here[end if].";
 		already-done;
 
 [hub 4b. beyond sleaze]
