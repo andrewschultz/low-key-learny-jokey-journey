@@ -20,11 +20,17 @@ rule_creation_list = []
 this_leet_rule = '--'
 this_general_rule = '--'
 default_leet_rule = '--'
-magic_number = '--'
+magic_num_columnber = '--'
 
 condition = 'GENERIC is false'
 
 alphabetize = True
+
+magic_num_column = False
+
+mist_txt_index = False
+
+mist_txt_hdr = [ 'mist-regex', 'mist-cmd(topic)' ]
 
 def usage(header = '====usage===='):
     print(header)
@@ -55,6 +61,7 @@ def strip_equals(my_string, add_string = ''):
 def to_topic(my_string):
     temp = my_string.replace('-', ' ')
     temp = temp.replace(';', '" or "')
+    temp = temp.replace('/', '|')
     return temp
 
 while cmd_count < len(sys.argv):
@@ -67,6 +74,8 @@ while cmd_count < len(sys.argv):
         verify_code = True
     elif arg in ( 'nv', 'vn' ):
         verify_code = False
+    elif arg == 'r':
+        mist_txt_index = True
     elif arg.startswith("c="):
         condition = strip_equals(arg, " is true")
     elif arg.startswith("cf=") or arg.startswith("fc="):
@@ -76,6 +85,8 @@ while cmd_count < len(sys.argv):
         if len(base_string_array) > 0:
             sys.exit("Room/thing specification must be before any base string definitions!")
     elif arg.startswith("r="):
+        if my_room_or_thing == 'unnamed room':
+            sys.stderr.write("NOTE: r= (rule) run before t= (thing/room).\n")
         this_general_rule = strip_equals(arg, " rule")
         if this_general_rule in rule_creation_list:
             print("Duplicate general rule", this_general_rule, "but this may not matter as leet/mistake rules can cross")
@@ -88,7 +99,7 @@ while cmd_count < len(sys.argv):
         else:
             rule_creation_list.append(this_leet_rule)
     elif arg.isdigit() or arg == '--':
-        magic_number = strip_equals(arg)
+        magic_num_columnber = strip_equals(arg)
     elif '-' not in arg or '=' in arg:
         usage('BAD ARGUMENT: {}'.format(arg))
     else:
@@ -97,7 +108,7 @@ while cmd_count < len(sys.argv):
             print("WARNING duplicate string specified:", ttarg)
         else:
             base_string_array.append(ttarg)
-            out_string_array.append('"{}"\t{}\tfalse\t{}\t{}\t"<CLEVER REJECT TEXT>"'.format(ttarg, this_general_rule, magic_number, this_leet_rule))
+            out_string_array.append('"{}"\t{}\tfalse{}\t{}\t"<CLEVER REJECT TEXT>"'.format(ttarg, this_general_rule, '\t' + magic_num_columnber if magic_num_column else '', this_leet_rule))
     cmd_count += 1
 
 if not len(base_string_array):
@@ -109,7 +120,7 @@ if alphabetize:
 
 
 if len(base_string_array):
-    output_string = 'guess-table of {} is the table of {} guesses.\n\n'.format(my_room_or_thing, my_room_or_thing) + 'table of {} guesses\n'.format(my_room_or_thing) + 'mist-cmd(topic)\tmist-rule\tgot-yet\tmagicnum\tleet-rule\tmist-txt'
+    output_string = 'guess-table of {} is the table of {} guesses.\n\n'.format(my_room_or_thing, my_room_or_thing) + 'table of {} guesses\n'.format(my_room_or_thing) + '{}\tmist-rule\tgot-yet{}\tleet-rule\tmist-txt'.format(mist_txt_hdr[mist_txt_index], '\tmagicnum' if magic_num_column else '')
     print(output_string)
     for o in out_string_array:
         print(o)
