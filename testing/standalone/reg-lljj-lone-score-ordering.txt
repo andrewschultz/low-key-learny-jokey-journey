@@ -351,7 +351,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->01243
+>;01243
 >undo
 >undo
 >undo
@@ -368,7 +368,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->01324
+>;01324
 >undo
 >undo
 >undo
@@ -392,7 +392,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->01342
+>;01342
 >undo
 >undo
 >undo
@@ -409,7 +409,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->01423
+>;01423
 >undo
 >undo
 >undo
@@ -433,7 +433,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->01432
+>;01432
 >undo
 >undo
 >undo
@@ -450,7 +450,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->02134
+>;02134
 >undo
 >undo
 >undo
@@ -481,7 +481,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->02143
+>;02143
 >undo
 >undo
 >undo
@@ -498,7 +498,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->02314
+>;02314
 >undo
 >undo
 >undo
@@ -522,7 +522,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->02341
+>;02341
 >undo
 >undo
 >undo
@@ -539,7 +539,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->02413
+>;02413
 >undo
 >undo
 >undo
@@ -563,7 +563,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->02431
+>;02431
 >undo
 >undo
 >undo
@@ -580,7 +580,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->03124
+>;03124
 >undo
 >undo
 >undo
@@ -611,7 +611,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->03142
+>;03142
 >undo
 >undo
 >undo
@@ -628,7 +628,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->03214
+>;03214
 >undo
 >undo
 >undo
@@ -652,7 +652,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->03241
+>;03241
 >undo
 >undo
 >undo
@@ -669,7 +669,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->03412
+>;03412
 >undo
 >undo
 >undo
@@ -693,7 +693,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->03421
+>;03421
 >undo
 >undo
 >undo
@@ -710,7 +710,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->04123
+>;04123
 >undo
 >undo
 >undo
@@ -741,7 +741,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->04132
+>;04132
 >undo
 >undo
 >undo
@@ -758,7 +758,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->04213
+>;04213
 >undo
 >undo
 >undo
@@ -782,7 +782,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->04231
+>;04231
 >undo
 >undo
 >undo
@@ -799,7 +799,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->04312
+>;04312
 >undo
 >undo
 >undo
@@ -823,7 +823,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->04321
+>;04321
 >undo
 >undo
 >undo
@@ -840,7 +840,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->10234
+>;10234
 >undo
 >undo
 >undo
@@ -878,7 +878,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->10243
+>;10243
 >undo
 >undo
 >undo
@@ -895,7 +895,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->10324
+>;10324
 >undo
 >undo
 >undo
@@ -919,7 +919,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->10342
+>;10342
 >undo
 >undo
 >undo
@@ -936,7 +936,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->10423
+>;10423
 >undo
 >undo
 >undo
@@ -960,7 +960,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->10432
+>;10432
 >undo
 >undo
 >undo
@@ -977,7 +977,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->12034
+>;12034
 >undo
 >undo
 >undo
@@ -1008,7 +1008,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->12043
+>;12043
 >undo
 >undo
 >undo
@@ -1025,7 +1025,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->12304
+>;12304
 >undo
 >undo
 >undo
@@ -1049,7 +1049,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->12340
+>;12340
 >undo
 >undo
 >undo
@@ -1066,7 +1066,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->12403
+>;12403
 >undo
 >undo
 >undo
@@ -1090,7 +1090,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->12430
+>;12430
 >undo
 >undo
 >undo
@@ -1107,7 +1107,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->13024
+>;13024
 >undo
 >undo
 >undo
@@ -1138,7 +1138,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->13042
+>;13042
 >undo
 >undo
 >undo
@@ -1155,7 +1155,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->13204
+>;13204
 >undo
 >undo
 >undo
@@ -1179,7 +1179,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->13240
+>;13240
 >undo
 >undo
 >undo
@@ -1196,7 +1196,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->13402
+>;13402
 >undo
 >undo
 >undo
@@ -1220,7 +1220,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->13420
+>;13420
 >undo
 >undo
 >undo
@@ -1237,7 +1237,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->14023
+>;14023
 >undo
 >undo
 >undo
@@ -1269,7 +1269,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->14032
+>;14032
 >undo
 >undo
 >undo
@@ -1286,7 +1286,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->14203
+>;14203
 >undo
 >undo
 >undo
@@ -1310,7 +1310,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->14230
+>;14230
 >undo
 >undo
 >undo
@@ -1327,7 +1327,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->14302
+>;14302
 >undo
 >undo
 >undo
@@ -1351,7 +1351,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->14320
+>;14320
 >undo
 >undo
 >undo
@@ -1368,7 +1368,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->20134
+>;20134
 >undo
 >undo
 >undo
@@ -1406,7 +1406,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->20143
+>;20143
 >undo
 >undo
 >undo
@@ -1423,7 +1423,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->20314
+>;20314
 >undo
 >undo
 >undo
@@ -1447,7 +1447,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->20341
+>;20341
 >undo
 >undo
 >undo
@@ -1464,7 +1464,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->20413
+>;20413
 >undo
 >undo
 >undo
@@ -1488,7 +1488,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->20431
+>;20431
 >undo
 >undo
 >undo
@@ -1505,7 +1505,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->21034
+>;21034
 >undo
 >undo
 >undo
@@ -1536,7 +1536,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->21043
+>;21043
 >undo
 >undo
 >undo
@@ -1553,7 +1553,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->21304
+>;21304
 >undo
 >undo
 >undo
@@ -1577,7 +1577,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->21340
+>;21340
 >undo
 >undo
 >undo
@@ -1594,7 +1594,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->21403
+>;21403
 >undo
 >undo
 >undo
@@ -1618,7 +1618,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->21430
+>;21430
 >undo
 >undo
 >undo
@@ -1635,7 +1635,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->23014
+>;23014
 >undo
 >undo
 >undo
@@ -1666,7 +1666,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->23041
+>;23041
 >undo
 >undo
 >undo
@@ -1683,7 +1683,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->23104
+>;23104
 >undo
 >undo
 >undo
@@ -1707,7 +1707,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->23140
+>;23140
 >undo
 >undo
 >undo
@@ -1724,7 +1724,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->23401
+>;23401
 >undo
 >undo
 >undo
@@ -1748,7 +1748,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->23410
+>;23410
 >undo
 >undo
 >undo
@@ -1765,7 +1765,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->24013
+>;24013
 >undo
 >undo
 >undo
@@ -1796,7 +1796,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->24031
+>;24031
 >undo
 >undo
 >undo
@@ -1813,7 +1813,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->24103
+>;24103
 >undo
 >undo
 >undo
@@ -1837,7 +1837,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->24130
+>;24130
 >undo
 >undo
 >undo
@@ -1854,7 +1854,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->24301
+>;24301
 >undo
 >undo
 >undo
@@ -1878,7 +1878,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->24310
+>;24310
 >undo
 >undo
 >undo
@@ -1895,7 +1895,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->30124
+>;30124
 >undo
 >undo
 >undo
@@ -1933,7 +1933,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->30142
+>;30142
 >undo
 >undo
 >undo
@@ -1950,7 +1950,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->30214
+>;30214
 >undo
 >undo
 >undo
@@ -1974,7 +1974,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->30241
+>;30241
 >undo
 >undo
 >undo
@@ -1991,7 +1991,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->30412
+>;30412
 >undo
 >undo
 >undo
@@ -2015,7 +2015,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->30421
+>;30421
 >undo
 >undo
 >undo
@@ -2032,7 +2032,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->31024
+>;31024
 >undo
 >undo
 >undo
@@ -2063,7 +2063,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->31042
+>;31042
 >undo
 >undo
 >undo
@@ -2080,7 +2080,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->31204
+>;31204
 >undo
 >undo
 >undo
@@ -2104,7 +2104,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->31240
+>;31240
 >undo
 >undo
 >undo
@@ -2121,7 +2121,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->31402
+>;31402
 >undo
 >undo
 >undo
@@ -2145,7 +2145,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->31420
+>;31420
 >undo
 >undo
 >undo
@@ -2162,7 +2162,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->32014
+>;32014
 >undo
 >undo
 >undo
@@ -2193,7 +2193,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->32041
+>;32041
 >undo
 >undo
 >undo
@@ -2210,7 +2210,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->32104
+>;32104
 >undo
 >undo
 >undo
@@ -2234,7 +2234,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->32140
+>;32140
 >undo
 >undo
 >undo
@@ -2251,7 +2251,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->32401
+>;32401
 >undo
 >undo
 >undo
@@ -2275,7 +2275,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->32410
+>;32410
 >undo
 >undo
 >undo
@@ -2292,7 +2292,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->34012
+>;34012
 >undo
 >undo
 >undo
@@ -2323,7 +2323,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->34021
+>;34021
 >undo
 >undo
 >undo
@@ -2340,7 +2340,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->34102
+>;34102
 >undo
 >undo
 >undo
@@ -2364,7 +2364,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->34120
+>;34120
 >undo
 >undo
 >undo
@@ -2381,7 +2381,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->34201
+>;34201
 >undo
 >undo
 >undo
@@ -2405,7 +2405,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->34210
+>;34210
 >undo
 >undo
 >undo
@@ -2422,7 +2422,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->40123
+>;40123
 >undo
 >undo
 >undo
@@ -2460,7 +2460,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->40132
+>;40132
 >undo
 >undo
 >undo
@@ -2477,7 +2477,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->40213
+>;40213
 >undo
 >undo
 >undo
@@ -2501,7 +2501,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->40231
+>;40231
 >undo
 >undo
 >undo
@@ -2518,7 +2518,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->40312
+>;40312
 >undo
 >undo
 >undo
@@ -2542,7 +2542,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->40321
+>;40321
 >undo
 >undo
 >undo
@@ -2559,7 +2559,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->41023
+>;41023
 >undo
 >undo
 >undo
@@ -2590,7 +2590,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->41032
+>;41032
 >undo
 >undo
 >undo
@@ -2607,7 +2607,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->41203
+>;41203
 >undo
 >undo
 >undo
@@ -2631,7 +2631,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->41230
+>;41230
 >undo
 >undo
 >undo
@@ -2648,7 +2648,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->41302
+>;41302
 >undo
 >undo
 >undo
@@ -2672,7 +2672,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->41320
+>;41320
 >undo
 >undo
 >undo
@@ -2689,7 +2689,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->42013
+>;42013
 >undo
 >undo
 >undo
@@ -2720,7 +2720,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->42031
+>;42031
 >undo
 >undo
 >undo
@@ -2737,7 +2737,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->42103
+>;42103
 >undo
 >undo
 >undo
@@ -2761,7 +2761,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->42130
+>;42130
 >undo
 >undo
 >undo
@@ -2778,7 +2778,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->42301
+>;42301
 >undo
 >undo
 >undo
@@ -2802,7 +2802,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->42310
+>;42310
 >undo
 >undo
 >undo
@@ -2819,7 +2819,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->43012
+>;43012
 >undo
 >undo
 >undo
@@ -2850,7 +2850,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->43021
+>;43021
 >undo
 >undo
 >undo
@@ -2867,7 +2867,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->43102
+>;43102
 >undo
 >undo
 >undo
@@ -2891,7 +2891,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->43120
+>;43120
 >undo
 >undo
 >undo
@@ -2908,7 +2908,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->43201
+>;43201
 >undo
 >undo
 >undo
@@ -2932,7 +2932,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 >undo
 
->43210
+>;43210
 >undo
 >undo
 >undo
@@ -3266,7 +3266,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
->0213
+>;0213
 >undo
 >undo
 >undo
@@ -3290,7 +3290,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
->0231
+>;0231
 >undo
 >undo
 >undo
@@ -3307,7 +3307,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
->1023
+>;1023
 >undo
 >undo
 >undo
@@ -3338,7 +3338,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
->1203
+>;1203
 >undo
 >undo
 >undo
@@ -3362,7 +3362,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
->1230
+>;1230
 >undo
 >undo
 >undo
@@ -3379,7 +3379,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
->2013
+>;2013
 >undo
 >undo
 >undo
@@ -3410,7 +3410,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
->2031
+>;2031
 >undo
 >undo
 >undo
@@ -3427,7 +3427,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
->2103
+>;2103
 >undo
 >undo
 >undo
@@ -3451,7 +3451,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
->2130
+>;2130
 >undo
 >undo
 >undo
@@ -3468,7 +3468,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
->2301
+>;2301
 >undo
 >undo
 >undo
@@ -3492,7 +3492,7 @@ by one point
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 >undo
 
->2310
+>;2310
 >undo
 >undo
 >undo
@@ -3585,7 +3585,7 @@ by one point
 Nothing comes up. The general area here has been changed enough.
 >undo
 
->021
+>;021
 >undo
 >undo
 >undo
@@ -3602,7 +3602,7 @@ by one point
 Nothing comes up. The general area here has been changed enough.
 >undo
 
->102
+>;102
 >undo
 >undo
 >undo
@@ -3626,7 +3626,7 @@ by one point
 Nothing comes up. The general area here has been changed enough.
 >undo
 
->120
+>;120
 >undo
 >undo
 >undo
@@ -3643,7 +3643,7 @@ by one point
 Nothing comes up. The general area here has been changed enough.
 >undo
 
->201
+>;201
 >undo
 >undo
 >undo
@@ -3667,7 +3667,7 @@ by one point
 Nothing comes up. The general area here has been changed enough.
 >undo
 
->210
+>;210
 >undo
 >undo
 >undo
