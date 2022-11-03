@@ -78,6 +78,7 @@ this_room = "THISROOM"
 this_vcal = True
 this_vcp = True
 this_core = True
+not_yet_text = True
 
 add_vcal = defaultdict(bool)
 add_vcp = defaultdict(bool)
@@ -87,7 +88,7 @@ while cmd_count < len(sys.argv):
     argr = sys.argv[cmd_count]
     arg = argr.lower()
     arg2 = sys.argv[cmd_count+1].lower() if cmd_count + 1 < len(sys.argv) else ''
-    if '=' in arg and not arg.startswith("r="):
+    if '=' in arg and not arg.startswith("r=") and not arg.startswith('n='):
         this_vcal = False
         arg = arg.replace('=', '')
     if '`' in arg:
@@ -96,7 +97,13 @@ while cmd_count < len(sys.argv):
     if '0' in arg:
         this_core = False
         arg = arg.replace('0', '')
-    if arg.startswith("r="):
+    if arg == 'nny':
+        not_yet_text = False
+    elif arg.startswith("n="):
+        print("to decide what number is {}:".format(arg[2:]))
+        decide_on = ' + '.join([ '(boolval of sco-{})'.format(x) for x in words_to_proc ])
+        print("\tdecide on " + decide_on)
+    elif arg.startswith("r="):
         this_room = argr[2:].replace('.', ' ').replace('-', ' ')
     elif arg == '/':
         pass
@@ -109,7 +116,8 @@ while cmd_count < len(sys.argv):
     elif re.search("^[a-z/]+$", arg) and re.search("^[a-z/]+$", arg2):
         my_words = "{}-{}".format(arg, arg2)
         words_to_proc.append(my_words)
-        add_vcal[my_words] = this_vcal
+        if not_yet_text:
+            add_vcal[my_words] = this_vcal
         add_vcp[my_words] = this_vcp
         add_core[my_words] = this_core
         this_vcal = this_vcp = this_core = True
@@ -128,14 +136,16 @@ while cmd_count < len(sys.argv):
     else:
         arg = re.sub("[^a-z/]", "-", arg)
         words_to_proc.append(arg)
-        add_vcal[arg] = this_vcal
+        if not_yet_text:
+            add_vcal[arg] = this_vcal
         add_vcp[arg] = this_vcp
         add_core[arg] = this_core
         this_vcal = this_vcp = this_core = True
     cmd_count += 1
 
 if not len(words_to_proc):
-    sys.stderr.write("No word pairs were found to process. Remember, MRC is for make-rhyme-code, TGG for good guesses.\n")
+    sys.stderr.write("No word pairs were found to process. Verifying code. Remember, MRC is for make-rhyme-code, TGG for good guesses.\n")
+    verify_code = True
 
 if direct_to_file:
     old_stdout = sys.stdout
@@ -153,7 +163,7 @@ for w in words_to_proc:
     add_basic_rules(w.replace('|', '-'))
 
 if len(words_to_proc):
-    print("===============for main story.ni file===============")
+    print("===============definitions for global file / main story.ni file===============")
     print()
 
 for w in words_to_proc:

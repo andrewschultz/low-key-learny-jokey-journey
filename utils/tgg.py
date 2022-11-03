@@ -112,7 +112,8 @@ while cmd_count < len(sys.argv):
     cmd_count += 1
 
 if not len(base_string_array):
-    sys.stderr.write("No word pairs were found to process. Bailing. Remember, MRC is for make-rhyme-code, TGG for good guesses.\n")
+    sys.stderr.write("No word pairs were found to process. Verifying code. Remember, MRC is for make-rhyme-code, TGG for good guesses.\n")
+    verify_code = True
 
 if alphabetize:
     out_string_array = sorted(out_string_array)
