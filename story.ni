@@ -77,67 +77,15 @@ rule for supplying a missing noun when lling (this is the get readings from room
 	say "You scan the area[one of]. This will suffice most of the time, though you may wish to [b]LL[r] a thing that doesn't jibe with its rhymes[or][stopping].";
 	if player is in roaring rocks:
 		say "Hmm. There's a reading. It must relate 'Storing Stocks' to the erstwhile boring box[if mad monk is in location of player]--[b]LL MONK[r] directly if you want to[end if].";
-	if from-number of location of player is -1, say "Nothing comes up. The general area here doesn't need changing." instead;
-	if from-number of location of player is -3, say "Nothing comes up. The general area here has been changed enough." instead;
-	show-readings (from-number of location of player) and (to-number of location of player);
+	abide by the general-ll-locations rule;
 	if boring-box-check is false and player has leet learner and player is in roaring rocks:
 		say "[line break]The [learner] is giving a funny readout. You could maybe climb [b]UP[r] to the old rocks and get another reading.";
 		now boring-box-check is true;
 	reject the player's command;
 
-to say floatfrac of (x - a number) and (y - a number):
-	if remainder after dividing x by y is 0:
-		say "[x / y].00";
-		continue the action;
-	if x < 0:
-		say "-";
-		now x is 0 - x;
-	let temp be (x * 100) / y;
-	say "[temp / 100]";
-	say ".[run paragraph on]";
-	let decimal be the remainder after dividing ((x * 100) / y) by 100;
-	if decimal < 10, say "0";
-	say "[decimal]";
-
 check lling:
-	if noun is leet learner or noun is ha half nah naff button, say "The [leet learner] can't scan itself." instead;
-	if noun is lurking lump, say "The [lurking lump] is a hint item, so you can't really scan it." instead;
-	if noun is the player, say "Nothing. You're the changer, not the changee." instead;
 	if noun is lazy loud crazy crowd, say "They're sort of there, and while they need to be interacted with, you may wish to focus on the whole area, instead." instead;
 	if noun is rho rune and player is not in NoNoon, say "The [learner] makes a weird noise. The [rune] seems to grow duller. Perhaps this is not where [the rune] is at full power." instead;
-	if from-number of noun is -2, say "Nothing comes up. You don't need to change [the noun]." instead;
-	if from-number of noun is -4, say "Nothing comes up. You've changed [the noun] as much as you needed to." instead;
-	if to-number of noun is 0:
-		show-readings (from-number of noun) and (to-number of location of player);
-	else:
-		show-readings (from-number of noun) and (to-number of noun);
-	the rule succeeds;
-
-to show-readings (nfrom - a number) and (nto - a number):
-	if nfrom is 0:
-		say "Nothing comes up.";
-		continue the action;
-	let optionals be false;
-	if nto < 0:
-		if nto > -5:
-			say "UH OH! This should have been caught before.";
-			continue the action;
-		now nto is 0 - nto;
-		now optionals is true;
-	let name-length be nfrom / 5000;
-	let puz-length be nto / 5000;
-	let name-1 be the remainder after dividing (nfrom / 100) by 50; [hundreds digit = first word # of letters]
-	let puz-1 be the remainder after dividing (nto / 100) by 50;
-	let name-2 be the remainder after dividing nfrom by 100; [ones digit = second word # of letters]
-	let puz-2 be the remainder after dividing nto by 100;
-[	say "[name-length] [puz-length] [name-1] [name-2] [puz-1] [puz-2].";]
-	let numerator be (name-length * puz-1) - (puz-length * name-1);
-	let denominator be (name-length * puz-length);
-	say "The [learner]'s display lights up and scrolls through LCD numbers which settle on the pair ([floatfrac of numerator and denominator], ";
-	now numerator is (name-length * puz-2) - (puz-length * name-2);
-	now denominator is (name-length * puz-length);
-	say "[floatfrac of numerator and denominator].)";
-	if optionals is true, say "[line break]However, it's really dim, as if you don't need to do or think whatever there is to do or think.";
 
 section unscannables
 
