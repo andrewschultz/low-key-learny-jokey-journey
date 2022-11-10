@@ -1,8 +1,7 @@
-# reg-lljj-lone-jjthru.txt
+## reg-lljj-lone-mad-monk.txt
 
-## reg-lljj-lone-jjthru.txt
-## NO GENERATOR FILE, THOUGH I ORIGINALLY GOT THIS FROM THE FULL WALKTHROUGHT.
-## it roughly corresponds to reg-lljj-min-thru.txt.
+## NO GENERATOR FILE, THOUGH I ORIGINALLY GOT THIS FROM THE FULL WALKTHROUGH.
+## it tests the different ways to get through or delay the mad monk.
 
 ## walkthrough with no bonus points, jumping everywhere
 ** game: /home/andrew/prt/debug-low-key-learny-jokey-journey.z8

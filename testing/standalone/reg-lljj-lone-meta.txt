@@ -1,7 +1,6 @@
-## reg-lljj-thru-all.txt
-## GENERATOR FILE: rbr-lljj-thru.txt
+## reg-lljj-lone-meta.txt
 
-## walkthrough with all points
+## tests various meta commands (may be superseded by VERBS)
 
 ** game: /home/andrew/prt/debug-low-key-learny-jokey-journey.z8
 ** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
