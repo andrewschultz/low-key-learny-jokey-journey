@@ -22,6 +22,7 @@ def show_examples():
     print("mrc.py r=mad-most-cad-coast `bad-boast =rad-roast would scrub the VCAL for rad-roast and VCP for bad-boast.")
     print("mrc.py r=bane-be-sane-see 0plain-plea =`jane-g =`wayne-whee =`dane-d is the opening, 0=LLP.")
     print("mrc.py r=rare-reach bare-beach reap-rune would establish the Bare Beach and Reap Rune points.")
+    print("mrc.py 2gl r=rare-reach bare-beach reap-rune would establish the Bare Beach and Reap Rune points and add the code to the global file.")
     sys.exit()
 
 def usage(my_word = ""):
@@ -30,8 +31,9 @@ def usage(my_word = ""):
             print("WARNING: {} had too many dashes. Use a slash for topics.".format(my_word))
         else:
             print("WARNING: {} was not a valid word. You need something of the form letters-letters.".format(my_word))
-    print("Options:")
+    print("Prime Pro-Rhyme Row code generation options:")
     print("f / nf / fn specify exporting to a file. NF/FN means don't open post-run.")
+    print("2gl exports global code specifically to the globals file.")
     print()
     print("Parameters:")
     print("r= specifies the room name, which is THISROOM by default.")
@@ -45,21 +47,30 @@ def usage(my_word = ""):
 def add_var_defs(this_file, these_vars):
     lines_to_write = []
     got_here = False
-    with open(this_file) as file:
-        for (line_count, line) in enumerate (file, 1):
-            if line.strip().lower().endswith("ends here."):
-                got_here = True
-                for v in these_vars:
-                    lines_to_write.append(v + "\n")
-                lines_to_write.append("\n")
-            lines_to_write.append(line)
+    next_populated_line = False
+    f = open(this_file, 'r')
+    my_lines = f.readlines()
+    insert_line = -1
+    full_string = "\n".join([x for x in these_vars if x.strip()]) + "\n\n"
+    for x in range(0, len(my_lines)):
+        if my_lines[x].startswith("sco-"):
+            next_populated_line = True
+            got_here = True
+        elif insert_line == -1 and my_lines[x].lower().strip().endswith('ends here.'):
+            insert_line = x
+        elif next_populated_line and my_lines[x].strip():
+            insert_line = x
+            next_populated_line = False
     if not got_here:
-        sys.stderr.write(colorama.Fore.YELLOW + "WARNING: GLOBAL DEFINITIONS NOT ADDED TO GLOBAL FILE.\n" + mt.WTXT)
+        sys.stderr.write(colorama.Fore.YELLOW + "WARNING: NO SCO- FOUND, SO GOING WITH END OF FILE.\n" + mt.WTXT)
         return
+    if insert_line == -1:
+        sys.exit(colorama.Fore.RED + "There was no line starting with sco- and no ends here line, so you have a malformed header file." + mt.WTXT)
+    my_lines.insert(insert_line, full_string)
     temp = 'c:/writing/temp/mrc-temp-file.txt'
     f = open(temp, 'w')
-    for l in lines_to_write:
-        f.write(l)
+    for m in my_lines:
+        f.write(m)
     f.close()
     copy(temp, this_file)
 
