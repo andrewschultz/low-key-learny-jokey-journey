@@ -8,6 +8,9 @@ import sys
 from collections import defaultdict
 import mytools as mt
 import ljver
+import i7
+import colorama
+from shutil import copy
 
 out_file = "mrc.txt"
 
@@ -38,6 +41,27 @@ def usage(my_word = ""):
     print("The default is to allow all rules.")
     print("?? shows examples")
     sys.exit()
+
+def add_var_defs(this_file, these_vars):
+    lines_to_write = []
+    got_here = False
+    with open(this_file) as file:
+        for (line_count, line) in enumerate (file, 1):
+            if line.strip().lower().endswith("ends here."):
+                got_here = True
+                for v in these_vars:
+                    lines_to_write.append(v + "\n")
+                lines_to_write.append("\n")
+            lines_to_write.append(line)
+    if not got_here:
+        sys.stderr.write(colorama.Fore.YELLOW + "WARNING: GLOBAL DEFINITIONS NOT ADDED TO GLOBAL FILE.\n" + mt.WTXT)
+        return
+    temp = 'c:/writing/temp/mrc-temp-file.txt'
+    f = open(temp, 'w')
+    for l in lines_to_write:
+        f.write(l)
+    f.close()
+    copy(temp, this_file)
 
 def valid_word_clump(arg):
     return re.search("^[a-z/]+[/. -][a-z/]+$", arg)
@@ -79,10 +103,13 @@ this_vcal = True
 this_vcp = True
 this_core = True
 not_yet_text = True
+add_to_global = False
 
 add_vcal = defaultdict(bool)
 add_vcp = defaultdict(bool)
 add_core = defaultdict(bool)
+
+this_proj = i7.dir2proj()
 
 while cmd_count < len(sys.argv):
     argr = sys.argv[cmd_count]
@@ -123,6 +150,8 @@ while cmd_count < len(sys.argv):
         this_vcal = this_vcp = this_core = True
         cmd_count += 2
         continue
+    elif arg == '2gl':
+        add_to_global = True
     elif arg == 'v':
         verify_code = True
     elif arg in ( 'nv', 'vn' ):
@@ -163,11 +192,15 @@ for w in words_to_proc:
     add_basic_rules(w.replace('|', '-'))
 
 if len(words_to_proc):
-    print("===============definitions for global file / main story.ni file===============")
-    print()
-
-for w in words_to_proc:
-    print("sco-{} is a truth state that varies.".format(w.replace('|', '-')))
+    global_stuff = [ "sco-{} is a truth state that varies.".format(w.replace('|', '-')) for w in words_to_proc ]
+    if add_to_global:
+        my_file = i7.hdr(this_proj, 'glo')
+        add_var_defs(my_file, global_stuff)
+    else:
+        print("===============definitions for global file / main story.ni file (2gl puts it in the global file)===============")
+        print()
+        for g in global_stuff:
+            print(g)
 
 if direct_to_file:
     sys.stdout.close()
