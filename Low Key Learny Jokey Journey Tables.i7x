@@ -713,7 +713,7 @@ this is the vr-lore-lols rule:
 	now sco-lore-lols is true;
 	say "Why, yes, this place could use myths of creation and so forth[if sco-shore-shoals is false] for when it becomes habitable[end if].";
 	if to-number of gore goals is -5404:
-		now from-number of gore goals is -3;
+		now to-number of gore goals is -3;
 
 a goodrhyme rule (this is the vc-night-newt rule):
 	now current-shoal-summon is night newt;
@@ -774,7 +774,7 @@ this is the vr-go-goo rule:
 	now sco-go-goo is true;
 	say "A huge pile of weird 'energy burst' snacks appears at your feet. You have no idea whether or not they're nutritious, but with that colorful packaging, they can be sold for a markup [if sco-throw-through is false]during and after the performance[else]at future performances[end if], to ensure the viability of the [show shoe]. Yay, commerce[if shoe-storage < 2], and you don't even need any climate-controlled storage[end if]![paragraph break]You put them off to the side. They'll be useful once the show gets rocking.";
 	if sco-throw-through is true:
-		now from-number of show shoe is -3;
+		now to-number of show shoe is -3;
 
 a goodrhyme rule (this is the vc-bro-brew rule):
 	if player is not in show shoe, unavailable;
@@ -1528,7 +1528,7 @@ to check-red-rose:
 		if sco-lore-lols is false:
 			now to-number of gore goals is -5404;
 		else:
-			now from-number of gore goals is -3;
+			now to-number of gore goals is -3;
 		remove-spoke 5805; [SHOCKING SHIFT done]
 		cheap-poem-cue red rose;
 	else:
@@ -1578,7 +1578,7 @@ to lose-gold-string (nu - a number):
 	if to-number of light lute is 0:
 		if sco-night-newt is false, decrease to-number of light lute by 5504;
 		if sco-kite-coot is false, decrease to-number of light lute by 5404;
-		if to-number of light lute is 0, now from-number of light lute is -4;
+		if to-number of light lute is 0, now to-number of light lute is -4;
 
 to lose-silver-string: say "[line break]A[one of][or]nother[stopping] silver[twang]."
 
@@ -1587,7 +1587,7 @@ to say twang: say " string twangs on the light lute. When you look again, it's a
 to light-lute-llp (nu - a number):
 	if to-number of light lute < 0:
 		increase to-number of light lute by nu;
-		if to-number of light lute is 0, now from-number of light lute is -4;
+		if to-number of light lute is 0, now to-number of light lute is -4;
 
 [hub 2a. got lute]
 

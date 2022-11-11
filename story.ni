@@ -6,6 +6,8 @@ the story description is "Am (Oh!) Sham-Show".
 
 the story headline is "Prime Pro-Rhyme Row entry 3".
 
+Use memory economy.
+
 release along with cover art.
 
 release along with a website.
@@ -941,36 +943,7 @@ hoohehing is leetsetting.
 
 before leetsetting when player does not have the leet learner: say "You don't have the Leet Learner yet, so you can't set this option." instead;
 
-volume room restrictions
-
-this is the nothing-left gong rule: completed;
-
-[this may be moved to PPRR common later]
-
-the gong rules are a rulebook. the gong rules have outcomes completed, llp-remaining, and uncompleted.
-
-a room has a rule called this-gong-rule. this-gong-rule of a room is usually the nothing-left gong rule.
-
-a room-hint-state is a kind of value. The room-hint-states are points-left, bonus-left, and nothing-left.
-
-player-room-allow-threshold is a room-hint-state that varies. player-room-allow-threshold is nothing-left.
-
-[temporary rule to test that, indeed, pride-prong does work!]
-[roomblocking when room gone to is trust track:
-	llp-remaining;]
-
-to reset-go-check:
-	now all rooms are not go-checked;
-	now location of player is go-checked;
-
-check going when player-room-allow-threshold is not nothing-left:
-	if the room gone to is nothing, continue the action;
-	now hunt-bonus-points is false;
-	reset-go-check;
-	if the room gone to is overall-go-useful, continue the action;
-	say "[one of]A guide gong[or]That guide gong, again,[stopping] rings to notify you that you don't need to go back through [room gone to]." instead;
-
-a room can be go-checked. a room is usually not go-checked.
+volume gong rules and verbs ( see common file for gong core code)
 
 chapter gong rules pre-hub
 
@@ -1103,53 +1076,6 @@ this is the gong-vain-vat rule:
 
 this is the gong-threat-three rule:
 	uncompleted;
-
-chapter guide-gonging
-
-guide-gonging is an action out of world.
-
-understand the command "guide gong" as something new.
-
-understand "guide gong" as guide-gonging.
-
-carry out guide-gonging:
-	follow the know-ide-ong rule;
-	say "You are [if player-room-allow-threshold is points-left]already[else]now[end if] repelled by a guide gong if you try to go down a path where you have nothing game-critical to do in any branches.";
-	now player-room-allow-threshold is points-left;
-	the rule succeeds;
-
-this is the know-ide-ong rule:
-	if guide-gong-warn is false:
-		now guide-gong-warn is true;
-		say "(disabling later explanation of [b]GUIDE GONG[r], etc., but it will still be in [b]VERBS[r])[paragraph break]";
-
-chapter stride-stronging
-
-stride-stronging is an action out of world.
-
-understand the command "stride strong" as something new.
-
-understand "stride strong" as stride-stronging.
-
-carry out stride-stronging:
-	follow the know-ide-ong rule;
-	say "You are [if player-room-allow-threshold is nothing-left]already[else]now[end if] able to move freely between locations, even ones with nothing left to do.";
-	now player-room-allow-threshold is nothing-left;
-	the rule succeeds;
-
-chapter pride-pronging
-
-pride-pronging is an action out of world.
-
-understand the command "pride prong" as something new.
-
-understand "pride prong" as pride-pronging.
-
-carry out pride-pronging:
-	follow the know-ide-ong rule;
-	say "You are [if player-room-allow-threshold is bonus-left]already[else]now[end if] blocked from paths where no branches contain any point-scoring activities, critical or bonus.";
-	now player-room-allow-threshold is bonus-left;
-	the rule succeeds;
 
 volume hinting
 
@@ -1539,31 +1465,6 @@ carry out xyzzying:
 	say "A hollow voice booms incredulously, 'Easter egg bestir-beg?!'";
 	the rule succeeds;
 
-volume parser errors
-
-rule for printing a parser error when the latest parser error is the noun did not make sense in that context error (this is the goto reject rule):
-	if action-to-be is the gotothinging action or action-to-be is the gotoing action:
-		say "That location or thing doesn't exist or isn't known to you yet.";
-		the rule succeeds;
-	continue the action;
-
-the goto reject rule is listed after the clue half right words rule in the for printing a parser error rulebook.
-
-rule for printing a parser error (this is the default parser error notification rule):
-	if action-to-be is the examining action or action-to-be is the reading action or action-to-be is the taking action or action-to-be is the talktoing action:
-		say "You see nothing here like that. Or there may be, but it's a small part of something more prominent. [this-game] tries not to force you to look into any items too much.";
-		the rule succeeds;
-	if number of words in the player's command is 1:
-		say "Most special commands are more than one word[if roaring rocks is visited], because of the rhyme-pairs involved[end if]";
-	else if number of words in the player's command is 0:
-		say "You think a bit";
-	else if number of words in the player's command is 2 and boring box is not off-stage:
-		say "Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, [this-game] has eliminated a lot of them, so you can focus on the puzzle verbs";
-	else:
-		say "I couldn't parse that command. You don't need any more than two words long";
-	say ". [b]VERBS[r] will give a list of useful, non-puzzle-solving verbs.";
-	the rule succeeds;
-
 volume start of game
 
 when play begins:
@@ -1590,7 +1491,7 @@ to win-the-game:
 			if idid entry is false:
 				say "[w1 entry] [w2 entry] undone.";]
 	increment core-score;
-	if cur-max-bonus is max-bonus:
+	if cur-bonus is max-bonus:
 		choose row with final response rule of show-misses rule in the Table of Final Question Options;
 		blank out the whole row; [don't let the player see MISSED if they got everything]
 	follow the score and thinking changes rule;

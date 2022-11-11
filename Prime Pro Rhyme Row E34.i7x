@@ -1,5 +1,7 @@
 Version 1/220910 of Prime Pro Rhyme Row E34 by Andrew Schultz begins here.
 
+include Prime Pro Rhyme Row Leet Learner by Andrew Schultz.
+
 volume cheat types and states
 
 book definitions
@@ -16,6 +18,10 @@ to declue-here:
 
 to declue (th - a thing):
 	now to-number of th is -4;
+
+book common printables
+
+to print-the-loc: say "[line break][b][location of player][r][line break]" [?? move to universal?]
 
 book deciphering mistakes
 
@@ -41,9 +47,9 @@ a rhymeguess rule for a table name (called tn) (this is the rhyme-guess-checker 
 		now got-yet entry is true;
 		if gyw is false:
 			increment total-good-guesses;
-			if less-lo-warn is false and guess-go is false:
-				say "[i][bracket][b]NOTE:[r][i] to switch on the option that shows how many similar rhyme pairs you have left in this area, you can type [b]YES YO[r][i]. This option is off by default as it may distract people from the main game.[close bracket][r]";
-				now less-lo-warn is true;
+			if press-pro-warn is false:
+				say "[i][bracket][b]NOTE:[r][i] to switch on the option that shows how many similar rhyme pairs you have left in this area, you can type [b]YO YES[r][i] or, to recall what you found, [b]MO MESS[r][i]. This option is curtailed by default as it may distract people from the main game.[close bracket][r]";
+				now press-pro-warn is true;
 			current-table-note-x tn; [the -x is for special cases like the mad monk, even though table-note is in the universal file]
 			check-lump-progress;
 		the rule succeeds;
@@ -131,6 +137,49 @@ this is the general-ll-locations rule:
 	if to-number of location of player is -3, say "Nothing comes up. The general area here has been changed enough." instead;
 	if to-number of location of player is -5, say "[ll-later]a bit later." instead;
 	show-readings (from-number of location of player) and (to-number of location of player);
+
+volume parser errors
+
+hint-trip-room is a room that varies.
+
+rule for printing a parser error when the latest parser error is the noun did not make sense in that context error (this is the goto reject rule):
+	if action-to-be is the gotothinging action or action-to-be is the gotoing action:
+		say "That location or thing doesn't exist or isn't known to you yet.";
+		the rule succeeds;
+	continue the action;
+
+the goto reject rule is listed after the clue half right words rule in the for printing a parser error rulebook.
+
+rule for printing a parser error (this is the default parser error notification rule):
+	if action-to-be is the examining action or action-to-be is the reading action or action-to-be is the taking action or action-to-be is the talktoing action:
+		say "You see nothing here like that. Or there may be, but it's a small part of something more prominent. [this-game] tries not to force you to look into any items too much.";
+		the rule succeeds;
+	if number of words in the player's command is 1:
+		say "Most special commands are more than one word[if hint-trip-room is visited], because of the rhyme-pairs involved[end if]";
+	else if number of words in the player's command is 0:
+		say "You think a bit";
+	else if number of words in the player's command is 2 and rhyme-mechanism-known:
+		say "Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, [this-game] has eliminated a lot of them, so you can focus on the puzzle verbs";
+	else:
+		say "I couldn't parse that command. You don't need any more than two words long";
+	say ". [b]VERBS[r] will give a list of useful, non-puzzle-solving verbs.";
+	the rule succeeds;
+
+volume testing - not for release
+
+chapter missesing
+
+missesing is an action out of world.
+
+understand the command "misses" as something new.
+understand the command "missed" as something new.
+
+understand "misses" as missesing.
+understand "missed" as missesing.
+
+carry out missesing:
+	process the show-misses rule;
+	the rule succeeds;
 
 Prime Pro Rhyme Row E34 ends here.
 

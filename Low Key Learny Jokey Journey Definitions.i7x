@@ -79,11 +79,18 @@ volume Common or Universal file lead-ins
 
 this is the disable-learner-options rule: if player does not have leet learner, say "You've tried an option you can't exercise until you get a hint item. You should, shortly." instead;
 
-to decide whether good-say-guess: ["SAY" generally wipes out the starting say, but for some good , it plays straight-up]
+to decide whether (r1 - a room) and (r2 - a room) are gong-adjacent:
+	if r1 is adjacent to r2, yes;
+	if r1 is a liftroom and r2 is high hub, yes;
+	if r2 is a liftroom and r1 is high hub, yes;
+	no;
+
+to decide whether good-say-guess: ["SAY" generally wipes out the starting say, but for some good guesses, it plays straight-up]
 	if player is in nay nope slay slope and the player's command includes "say soap", yes;
 	no;
 
-to decide whether force-partminus of (th - a thing): [whether to force certain leet learner readings]
+to decide whether rhyme-mechanism-known:
+	if boring box is not off-stage, yes;
 	no;
 
 this is the game-specific-ll-direction rule: [point to specific objects with the Leet Learner]
@@ -139,33 +146,6 @@ definition: a room (called rm) is available-from-here:
 	if rm is jotty jail and player is not in jotty jail, no;
 	yes;
 
-definition: a room (called rm) is overall-go-useful:
-	now hunt-bonus-points is false;
-	reset-go-check;
-	if rm is go-useful, yes;
-	if player-room-allow-threshold is nothing-left, yes;
-	if player-room-allow-threshold is bonus-left:
-		now hunt-bonus-points is true;
-		reset-go-check;
-		if rm is go-useful:
-			vcal "The pride-prong you summoned earlier pokes you to go and see what's ahead, even if it might not be critical to your quest.";
-			yes;
-	no;
-
-definition: a room (called rm) is go-useful:
-	if rm is location of player, no;
-	now rm is go-checked;
-	process the this-gong-rule of rm;
-	let room-done be the outcome of the rulebook;
-	if room-done is the uncompleted outcome, yes;
-	if room-done is the llp-remaining outcome and hunt-bonus-points is true, yes;
-	repeat with R2 running through rooms:
-		if R2 is not adjacent to rm:
-			unless (rm is a liftroom and r2 is high hub) or (r2 is a liftroom and rm is high hub), next;
-		if R2 is go-checked, next;
-		if R2 is go-useful, yes;
-	no;
-
 to decide whether (di - a direction) is blocked:
 	if player is in NNSS and sco-grow-grudge is false:
 		if di is north or di is south or di is east, yes;
@@ -190,7 +170,6 @@ this is the stuck-right-now rule:
 	if player is in Vain Vat and pred pros are not moot, say "You're in a bit of a pickle. Too much to get up and go anywhere." instead;
 
 this is the flag bad goto from rule:
-	abide by the stuck-right-now rule;
 	if mrlp is Poppin' Part:
 		let mrgo be map region of noun;
 		if mrgo is Poppin' Part and spokeval of noun is not spokeval of location of player, say "Here around the high hub, you need to use the lift." instead;
