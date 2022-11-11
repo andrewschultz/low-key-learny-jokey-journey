@@ -13,7 +13,7 @@ mist-cmd(topic)	mist-rule	got-yet	leet-rule	mist-txt
 "mopping mart"	--	false	--	"Surely this is more exciting than a trip for cleaning supplies."
 "earning right"	--	false	lose-the-game rule	"Well, that's what you hope to find!"
 "ferning fright"	--	false	--	"There are no terrorist plants worth summoning in [this-game]."
-"ride wrong"	--	false	--	"There is no fourth option for the guide gone, but you do have a chance for a heel turn at game's end."
+"ride wrong"	--	false	--	"There is no fourth option for the guide gong, but you do have a chance for a heel turn at game's end."
 "side song"	--	false	--	"This is a no-frills text adventure. No music, no graphics, besides the middling-at-best cover art."
 
 this is the lose-the-game rule:
@@ -180,7 +180,7 @@ mist-cmd(topic)	mist-rule	got-yet	leet-rule	mist-txt
 "gray grope"	--	false	--	"[no-mope-grope]."
 "lay lope"	--	false	--	"You make rudimentary plans to ambush something, even though there's nothing to ambush."
 "may mope"	--	false	--	"[no-mope-grope]."
-"pay pope"	--	false	--	"Oh dear no. The proper way to surrender to religious corruption these days is to chuck money at televangelists. Get with the times!"
+"pay pope"	--	false	--	"Oh dear no. Get with the times! In these enlightened days, we chuck money at prosperity-gospel televangelists."
 "ray rope"	--	false	--	"The right sort of ray? Yes. Rope to pull you back? No."
 "say soap"	--	false	--	"I suppose I should put in a cliche about cleansing one's soul here."
 "stay stope"	--	false	--	"Building a long-lasting mine here would not make or keep things happier."
@@ -475,12 +475,12 @@ to say act-att: say ", but you need the right actions and attitude"
 table of miss more diss door guesses
 mist-cmd(topic)	mist-rule	got-yet	leet-rule	mist-txt
 "chiz chore"	--	false	--	"You briefly get your Nigel Molesworth on."
-"his/hiss whore"	--	false	--	"No, nothing tasteless."
+"his/hiss whore"	--	false	--	"No, nothing that tasteless."
 "is or"	--	false	--	"Too simple."
 "kiss cor/core"	--	false	--	"Potentially scandalous, but there's 'better.'"
 "sis soar/sore"	--	false	--	"No, family praise or squabbles aren't it."
 "this thor"	--	false	--	"Thor is more about actions than words."
-"tis tore"	--	false	--	"The [diss door] remains intact."
+"tis tore"	--	false	--	"The [diss door] remains intact. Perhaps an insult would work better."
 "wiz war"	--	false	--	"No lightning bolt spell blasts the door."
 
 table of red rose guesses
