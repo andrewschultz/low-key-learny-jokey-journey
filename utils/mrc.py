@@ -56,6 +56,8 @@ def add_var_defs(this_file, these_vars):
         if my_lines[x].startswith("sco-"):
             next_populated_line = True
             got_here = True
+            if my_lines[x].strip() in these_vars:
+                print(colorama.Fore.YELLOW + "WARNING line {} duplicated: line {}.".format(my_lines[x].strip(), x) + mt.WTXT)
         elif insert_line == -1 and my_lines[x].lower().strip().endswith('ends here.'):
             insert_line = x
         elif next_populated_line and my_lines[x].strip():
