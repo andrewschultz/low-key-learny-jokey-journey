@@ -2,47 +2,6 @@ Version 1/220924 of Low Key Learny Jokey Journey Hints by Andrew Schultz begins 
 
 "This module is spun off to keep the debug version of LLJJ in z8. There should not be many use cases that require testing for Zarf's scripts."
 
-volume end-notation
-
-plus-noted is a truth state that varies.
-
-plus-after is a truth state that varies.
-
-minus-noted is a truth state that varies.
-
-minus-after is a truth state that varies.
-
-check hintobjing:
-	now plus-after is false;
-	now minus-after is false;
-
-to say pplus:
-	say ". (+)[paragraph break]";
-	now plus-after is true;
-
-to say qplus:
-	say "? (+)[paragraph break]";
-	now plus-after is true;
-
-to say xplus:
-	say "! (+)[paragraph break]";
-	now plus-after is true;
-
-to say pminus:
-	say ". (-)[paragraph break]";
-	now minus-after is true;
-
-report hintobjing:
-	check-minus-and-plus;
-
-report hinting:
-	check-minus-and-plus;
-
-to check-minus-and-plus:
-	if minus-after is true and minus-noted is false:
-		ital-say "a minus sign means you've reached the end of a hint loop. You can cycle through them again, though.";
-		now minus-noted is true;
-
 volume definitions
 
 lift-hint-warn is a truth state that varies.
@@ -52,8 +11,6 @@ volume thing hints
 this is the hint-player rule:
 	if current-score > 0, say "Your magic power is being able to construct parallel rhymes, as the game title suggests." instead;
 	say "[one of]Look at the location names and title of the story[pplus][or]Read the train tree[pplus][or]Note that there are a lot of rhyme pairs floating around[pplus][or]Your job in this game is to manufacture parallel rhyme pairs[pminus][stopping]" instead;
-
-this is the hint-learner-part rule: say "The leet learner and its parts only give hints. You can [b]LL[r] alone to scan a room, [b]LL[r] any thing or person, or [b]READ[r] the leet learner to see its option." instead;
 
 this is the hint-lurking-lump rule: say "You can say [b]LL[r] for the lurking lump to push you through a puzzle at the right time. It can solve any rhyme you wish but has limited charges." instead;
 

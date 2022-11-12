@@ -5,6 +5,7 @@ Version 1/220704 of Low Key Learny Jokey Journey Tables by Andrew Schultz begins
 [UTILITIES:
 rhyru.py checks to make sure the rhyme-rules have the right print stubs.
 notyet.py checks to make sure every "not yet" has a "think" associated with it
+rorg.py organizes rules as they are in table
 ]
 
 volume core tables

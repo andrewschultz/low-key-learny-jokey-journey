@@ -2,6 +2,8 @@ Version 1/220910 of Prime Pro Rhyme Row E34 by Andrew Schultz begins here.
 
 include Prime Pro Rhyme Row Leet Learner by Andrew Schultz.
 
+include Prime Pro Rhyme Row Hints by Andrew Schultz.
+
 volume cheat types and states
 
 book definitions
@@ -18,6 +20,9 @@ to declue-here:
 
 to declue (th - a thing):
 	now to-number of th is -4;
+
+to declue-unchanged (th - a thing):
+	now to-number of th is -2;
 
 book common printables
 
@@ -59,7 +64,7 @@ compare-item is a thing that varies.
 to print-my-clue:
 	let from-num be 0;
 	let to-num be 0;
-	let from-num be 5000 + (100 * number of characters in word number 1 in the player's command) + (number of characters in word number 2 in the player's command);
+	let from-num be 2500 + (50 * number of characters in word number 1 in the player's command) + (number of characters in word number 2 in the player's command);
 	if compare-item is not the player:
 		now to-num is to-number of compare-item;
 	if to-num is 0, now to-num is to-number of location of player;
@@ -106,12 +111,18 @@ to show-readings (nfrom - a number) and (nto - a number):
 			continue the action;
 		now nto is 0 - nto;
 		now optionals is true;
-	let name-length be nfrom / 5000;
-	let puz-length be nto / 5000;
-	let name-1 be the remainder after dividing (nfrom / 100) by 50; [hundreds digit = first word # of letters]
-	let puz-1 be the remainder after dividing (nto / 100) by 50;
-	let name-2 be the remainder after dividing nfrom by 100; [ones digit = second word # of letters]
-	let puz-2 be the remainder after dividing nto by 100;
+	let dots be nto / 2500;
+	say "You notice [if nto is 0]no[else][nto / 2500 in words][end if] dot[if dots > 1]s[end if] in the corner.";
+	if press-pro-level is 0:
+		continue the action;
+	else:
+		say "[line break]";
+	let name-length be nfrom / 2500;
+	let puz-length be nto / 2500;
+	let name-1 be the remainder after dividing (nfrom / 50) by 50; [the from- and to- numbers are in base 50, sort of. 2500 = number left, 50 = first word, 1 = second word. digit = first word # of letters]
+	let puz-1 be the remainder after dividing (nto / 50) by 50;
+	let name-2 be the remainder after dividing nfrom by 50; [ones digit = second word # of letters]
+	let puz-2 be the remainder after dividing nto by 50;
 [	say "[name-length] [puz-length] [name-1] [name-2] [puz-1] [puz-2].";]
 [	say "[nfrom] [nto] reading...";]
 	let numerator be (name-length * puz-1) - (puz-length * name-1);
@@ -121,6 +132,14 @@ to show-readings (nfrom - a number) and (nto - a number):
 	now denominator is (name-length * puz-length);
 	say "[floatfrac of numerator and denominator].)";
 	if optionals is true, say "[line break]However, it's really dim, as if you don't need to do or think whatever there is to do or think.";
+
+last-notelearner-score is a number that varies.
+
+this is the note learner changes rule:
+	if press-pro-level > 0 and note-learner-dots is false and current-score > last-notelearner-score:
+		now note-learner-dots is true;
+		say "[line break]You note a dot winks out on the Leet Learner.";
+	now last-notelearner-score is current-score;
 
 book basic LL cross-game stuff
 
@@ -137,6 +156,16 @@ this is the general-ll-locations rule:
 	if to-number of location of player is -3, say "Nothing comes up. The general area here has been changed enough." instead;
 	if to-number of location of player is -5, say "[ll-later]a bit later." instead;
 	show-readings (from-number of location of player) and (to-number of location of player);
+
+thing-hint-rule of leet learner is the hint-learner-part rule.
+
+any-leet-hint is a truth state that varies.
+
+this is the hint-learner-part rule:
+	if any-leet-hint is false:
+		now any-leet-hint is true;
+		say "The leet learner and its parts only give hints. You can [b]LL[r] alone to scan a room, [b]LL[r] any thing or person, or [b]READ[r] the leet learner to see its option." instead;
+	say "[one of]Unless the Leet Learner is set to [b]GO GUESS[r], the number of dots shows how many phrases you can find parallel with whatever you scanned.[pplus][or]The numbers for the Leet Learner are a bit trickier. First, if the reading is dim, that's a sign it's an optional puzzle.[pplus][or]Sometimes the numbers you get will not be integers, but they will always be a fraction with a relatively low denominator. Sometimes they're negative, too. The question may be, why?[pplus][or]There are two reasons. Let's say you are in ABCDE FGHI JKLM NOP and you need to find QRST UVWX, the reading will be (-0.50, 0.50) since the average of the first words is 4.5, the average of the second is 3.5, and you need a 4-letter solution for each. 4.5 - 4 = -.5, and 3.5 - 4 = -.5.[pplus][or]Similarly, if you are in ABCD EFGH, and you need to find IJK LMN and OPQR STUV, the reading would be (-0.50, -0.50).[pminus][stopping]";
 
 volume parser errors
 
