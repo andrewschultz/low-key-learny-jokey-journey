@@ -660,7 +660,7 @@ by one point
 
 #ttc-table-of-high-hub-guesses-cly-club
 >cly club
-You try to go old-school finding an so-old-school-schools-didn't-exist weapon, but alas, it doesn't work.
+You try to go old-school finding a so-old-school-schools-didn't-exist weapon, but alas, it doesn't work.
 
 #ttc-table-of-high-hub-guesses-die-dye-dub
 >dye dub

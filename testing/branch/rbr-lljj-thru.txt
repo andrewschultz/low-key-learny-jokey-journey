@@ -3111,7 +3111,7 @@ You've completed zero areas beyond the High Hub.
 ====alphabetize on
 #ttc-table-of-high-hub-guesses-cly-club
 >cly club
-You try to go old-school finding an so-old-school-schools-didn't-exist weapon, but alas, it doesn't work.
+You try to go old-school finding a so-old-school-schools-didn't-exist weapon, but alas, it doesn't work.
 \\
 #ttc-table-of-high-hub-guesses-die-dye-dub
 >dye dub
@@ -4801,7 +4801,7 @@ by one point
 
 @hin
 >ll rose
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.33, 0.66.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.33, 0.67.)
 
 @rej
 #testcase-postreject-table-of-verb-checks-vc-said-sos-rule
@@ -5929,7 +5929,7 @@ The Leet Learner shakes back and forth. Something you said sounded right, but it
 
 @hin
 >ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.33, -0.66.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.33, -0.67.)
 
 @hfull
 #testcase-rules-hint-trite-trail-rule-if-sco-sight-sail-is-false
@@ -5949,7 +5949,7 @@ by one point
 @hin
 # nothing changes after Sight Sail, because Right Rail is opened
 >ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.33, -0.66.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.33, -0.67.)
 
 @hfull
 #testcase-rules-hint-trite-trail-rule-if-sco-might-mail-is-false
@@ -7050,7 +7050,7 @@ by one point
 
 @hin
 >ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-2.66, -4.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-2.67, -4.00.)
 
 >fret free
 by one point

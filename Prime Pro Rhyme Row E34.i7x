@@ -78,16 +78,15 @@ to decide whether (nf - a number) is unscannable:
 book reading the Leet Learner
 
 to say floatfrac of (x - a number) and (y - a number):
-	if remainder after dividing x by y is 0:
-		say "[x / y].00";
-		continue the action;
 	if x < 0:
 		say "-";
 		now x is 0 - x;
-	let temp be (x * 100) / y;
-	say "[temp / 100]";
+	let numerator be x * 100;
+	if y > 2, increase numerator by (y / 2);
+	let digit be numerator / (y * 100);
+	say "[digit]";
 	say ".[run paragraph on]";
-	let decimal be the remainder after dividing ((x * 100) / y) by 100;
+	let decimal be the remainder after dividing (numerator / y) by 100;
 	if decimal < 10, say "0";
 	say "[decimal]";
 

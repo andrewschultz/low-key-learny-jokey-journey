@@ -588,7 +588,7 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 by one point
 
 >ll rose
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.33, 0.66.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.33, 0.67.)
 
 >umm out
 by one point
@@ -731,14 +731,14 @@ Nothing comes up. The general area here has been changed enough.
 >w
 
 >ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.33, -0.66.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.33, -0.67.)
 
 >sight sail
 by one point
 
 # nothing changes after Sight Sail, because Right Rail is opened
 >ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.33, -0.66.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.33, -0.67.)
 
 >might mail
 by one point
@@ -908,7 +908,7 @@ I couldn't parse that command. You don't need any more than two words long. VERB
 <Hint-threat-three>.
 
 >ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-2.66, -4.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-2.67, -4.00.)
 
 >fret free
 by one point
