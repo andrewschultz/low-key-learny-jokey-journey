@@ -18,6 +18,9 @@ verify_code = True
 
 # "word 1"	"word 2"	--	--	false	true	true	false	(Room where action happens)	checking rule	running rule	specific topic, if needed e.g. "a/b" "c/d" can only be a c or b d 	THINK text (probably blank)
 
+check_prefix = 'vc'
+run_prefix = 'vr'
+
 def show_examples():
     print("mrc.py r=mad-most-cad-coast `bad-boast =rad-roast would scrub the VCAL for rad-roast and VCP for bad-boast.")
     print("mrc.py r=bane-be-sane-see 0plain-plea =`jane-g =`wayne-whee =`dane-d is the opening, 0=LLP.")
@@ -81,7 +84,7 @@ def valid_word_clump(arg):
     return re.search("^[a-z/]+[/. -][a-z/]+$", arg)
 
 def add_basic_rules(w):
-    print("a goodrhyme rule (this is the vc-{} rule):".format(w))
+    print("a goodrhyme rule (this is the {}-{} rule):".format(check_prefix, w))
     print("\tif player is not in {}, unavailable;".format(this_room))
     if w in add_vcal and add_vcal[w]:
         print("\tif sco-{} is false:".format(w))
@@ -92,7 +95,7 @@ def add_basic_rules(w):
     print("\t\talready-done;")
     print("\tready;")
     print()
-    print("this is the vr-{} rule:".format(w))
+    print("this is the {}-{} rule:".format(run_prefix, w))
     print("\tnow sco-{} is true;".format(w))
     print("\tsay \"Hooray! You figured what to do! You get a point!\";")
     print()
@@ -103,8 +106,8 @@ def print_verbcheck_line(my_word_pair):
     default_verb_check = [ '""', '""', '--', '--', 'false', 'true', 'true' if add_core[my_word_pair] else 'false', 'false', this_room, 'vc rule', 'vr rule', '--', '--' ]
     default_verb_check[0] = '"{}"'.format(word_pair_array[0])
     default_verb_check[1] = '"{}"'.format(word_pair_array[1])
-    default_verb_check[9] = 'vc-{} rule'.format(word_dashed)
-    default_verb_check[10] = 'vr-{} rule'.format(word_dashed)
+    default_verb_check[9] = '{}-{} rule'.format(check_prefix, word_dashed)
+    default_verb_check[10] = '{}-{} rule'.format(run_prefix, word_dashed)
     default_verb_line = '\t'.join(default_verb_check)
     print(default_verb_line)
 
@@ -166,6 +169,9 @@ while cmd_count < len(sys.argv):
         continue
     elif arg == '2gl':
         add_to_global = True
+    elif arg in ( 'g', 'x'):
+        check_prefix = 'pre'
+        run_prefix = 'post'
     elif arg == 'v':
         verify_code = True
     elif arg in ( 'nv', 'vn' ):
