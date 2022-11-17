@@ -137,7 +137,7 @@ to say nkhh: say "[i]Now Know How, Ho![run paragraph on][r]"
 
 volume game meaningful constants
 
-froms-list is a list of numbers variable. froms-list is { 5401, 5403, 5401, 5403, 5403, 5504 }.
+froms-list is a list of numbers variable. froms-list is { 2701, 2703, 2701, 2703, 2703, 2754 }.
 
 firstpoint-list is a list of text variable. firstpoint-list is { "DANE D", "DANE DEE", "JANE G", "JANE GEE", "LANE LEE", "WAYNE WHEE" }.
 
@@ -174,4 +174,3 @@ chapter options roving (was not empty before I moved gong variables to Universal
 Low Key Learny Jokey Journey Globals ends here.
 
 ---- DOCUMENTATION ----
-guessed-pear-peach is a truth state that varies.

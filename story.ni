@@ -22,6 +22,8 @@ include Prime Pro Rhyme Row Universal by Andrew Schultz.
 
 include Prime Pro Rhyme Row Common by Andrew Schultz.
 
+include Prime Pro Rhyme Row Leet Learner by Andrew Schultz.
+
 include Prime Pro Rhyme Row E34 by Andrew Schultz.
 
 section game specific modules
@@ -121,7 +123,7 @@ book Roaring Rocks
 
 Roaring Rocks is a room in Stoppin' Start. "This is a dead end. The only passage out is north. [if sco-boring-box is false]The roaring is too loud right now, though. You feel as if you'd be chased down if you ran away. And yet you feel the rocks would offer a gift, if you asked right[else]Things are quieter now. You doubt the rocks/stocks hold any more great secrets[end if].". printed name of Roaring Rocks is "[if sco-boring-box is true]Storing Stocks[else]Roaring Rocks[end if]"
 
-from-number of roaring rocks is 5706. to-number of roaring rocks is 5603. [ the name is roaring rocks, but it becomes storing stocks before you find the learner. ]
+from-number of roaring rocks is 2856. to-number of roaring rocks is 2803. [ the name is roaring rocks, but it becomes storing stocks before you find the learner. ]
 
 guess-table of Roaring Rocks is table of Roaring Rocks guesses.
 
@@ -145,8 +147,8 @@ check going up in roaring rocks when player has leet learner:
 		say "Climbing up a bit, scanning the roaring rocks gets you a readout of (-1.00, -2.00.)";
 		increment learner-up-rocks;
 		the rule succeeds;
-	let my-from be 5504;
-	let my-to be 21709;
+	let my-from be 2754;
+	let my-to be 10859;
 	say "Climbing up a bit, you see the tubes that led from where you started. Readings! Yay! You note ";
 	if learner-up-rocks is 1 or learner-up-rocks is 2:
 		say "your choice [entry name-choice-index in firstpoint-list]";
@@ -158,7 +160,7 @@ check going up in roaring rocks when player has leet learner:
 		say "[b]TRAIN TREE[r]";
 	 else:
 		say "[b]BANE BE SANE, SEE[r]";
-		now my-from is 10805;
+		now my-from is 5405;
 	say " is mentioned beneath each tube. The leet learner pulses!";
 	show-readings my-from and my-to;
 	increment learner-up-rocks;
@@ -184,7 +186,7 @@ book No Nudge Slow Sludge
 
 NNSS is north of Roaring Rocks. it is in Hoppin' Heart. printed name is "No-Nudge Slow Sludge". "[if sco-grow-grudge is false]Some [sludge] bubbles almost all around, blocking passage all ways back south[else]Paths have been cut through the [sludge] to the west, north and east, which has stopped bubbling[end if][if sturdy stalk is in NNSS]. The sturdy stalk leads back up to High Hub, as well[end if][one of].[paragraph break]You hear cursing from far above. 'Threat one.' It's [the sprite]. 'That mad monk could've taught you something! No, really! But you're just concerned about scoring points and winning arguments and such. Goodness knows, I'm above that sort of thing.'[or].[stopping]"
 
-from-number of nnss is 10611. to-number of nnss is 5406.
+from-number of nnss is 5311. to-number of nnss is 2706.
 
 guess-table of NNSS is table of no nudge slow sludge guesses.
 
@@ -200,7 +202,7 @@ chapter no nudge slow sludge (scenery)
 
 there is thing called no nudge slow sludge. It is scenery. It is in NNSS. printed name is "no-nudge slow sludge". "[if sco-grow-grudge is false]It sure is icky! Just looking at it makes you too mad, too fast. You need the right way to be[else]It's icky, but since it's out of the way, you're no longer[end if] disgusted by [the sludge]."
 
-from-number of slow sludge is 5406.
+from-number of slow sludge is 2706.
 
 after printing the locale description for NNSS when NNSS is unvisited:
 	if guide-gong-warn is false:
@@ -212,7 +214,7 @@ chapter sturdy stalk
 
 the sturdy stalk is a rhymable. it is scenery. "You can climb back up it. Apparently, it's artificial, and its creator inscribed their name: Ferdie Falk.".
 
-from-number of sturdy stalk is 5605. to-number of sturdy stalk is -5504.
+from-number of sturdy stalk is 2805. to-number of sturdy stalk is -2754.
 
 guess-table of sturdy stalk is the table of sturdy stalk guesses.
 
@@ -220,7 +222,7 @@ book Hun Harm Fun Farm
 
 Hun Harm Fun Farm is west of NNSS. it is in Hoppin' Heart. "The way bends north here[if sco-un-arm is false]. You hear the clash of weapons that way, though, so it feels unsafe. Maybe you can cut a way through with a surprisingly simple idea[end if]. There's also passage back east."
 
-from-number of hun harm fun farm is 10608. to-number of hun harm fun farm is 5203.
+from-number of hun harm fun farm is 5308. to-number of hun harm fun farm is 2603.
 
 check going north in hun harm fun farm when sco-un-arm is false: say "Unfortunately, you hear aggressive voices threatening to attack you. They have weapons, and you don't. You're not sure how to change this." instead;
 
@@ -232,7 +234,7 @@ the Mad Monk is a himher rhymable. "A mad monk raves here, blocking your way nor
 
 guess-table of mad monk is the table of mad monk guesses.
 
-from-number of mad monk is 5304. to-number of mad monk is 5304.
+from-number of mad monk is 2654. to-number of mad monk is 2654.
 
 book No Noon
 
@@ -254,7 +256,7 @@ understand "no/noon" and "no noon" as NoNoon.
 
 guess-table of nonoon is the table of nonoon guesses.
 
-from-number of nonoon is 5204. to-number of nonoon is 5204.
+from-number of nonoon is 2604. to-number of nonoon is 2604.
 
 understand "no/noon" and "no noon" as NoNoon.
 understand "show/shewn" and "show shewn" as NoNoon when cocoon is moot.
@@ -268,13 +270,13 @@ chapter cocoon
 
 the cocoon is a boring thing. "The cocoon you summoned still lies here.". description is "It's lying here, ready to open, if enough time passes."
 
-from-number of cocoon is 5204.
+from-number of cocoon is 2604.
 
 book One Warm Stun Storm
 
 there is a room called One Warm Stun Storm in Hoppin' Heart. It is north of NNSS. "[if sco-fun-form is true]It's calm here now. You can go north and south[else]A storm is raging ahead to the north, though it's all very calm to the south[end if]. [if sco-done-dorm is false]And you don't even have a prospect of shelter. Yet[else if sco-fun-form is false]At least the done dorm you summoned could give shelter[else]You also note the done dorm that helped you stay out the storm[end if].". printed name is "One Warm Stun-Storm".
 
-from-number of one warm stun storm is 10709. to-number of one warm stun storm is 5404.
+from-number of one warm stun storm is 5359. to-number of one warm stun storm is 2704.
 
 check going north in One Warm Stun Storm:
 	if sco-fun-form is false, say "You feel your will sapped as you attempt to go north. You'll need to sit out the storm first." instead;
@@ -285,7 +287,7 @@ chapter done dorm
 
 the done dorm is scenery. "[if sco-fun-form is true]You have good memories of your stay in the done dorm, but that part of your adventure's over now.[else]It looks like such a nice place to spend time. You wonder if you are exciting or interesting enough to. How would you apply for residence correctly?[end if]"
 
-from-number of done dorm is 5404. [to-number folds into OWSS once done dorm appears]
+from-number of done dorm is 2704. [to-number folds into OWSS once done dorm appears]
 
 book Tree Trunk
 
@@ -294,7 +296,7 @@ carry out going to TTTT when TTTT is unvisited:
 
 TTTT is north of One Warm Stun Storm. printed name is "The (Thunk!) Tree Trunk". it is in Hoppin' Heart. "Passage any way except back south is too dense here. The tree trunk you ran into still stands here, [if sco-see-sunk is false]and you wish you could cut it down to size as revenge for running into it[else if sco-gee-junk is false]and now you cut it down to size, there's got to be something in it, if you just look right[else if sco-pear-peach is true]and maybe you can figure what [fruit] to get[else]completely looted[end if]."
 
-from-number of TTTT is 10710. to-number of TTTT is 5304.
+from-number of TTTT is 5360. to-number of TTTT is 2654.
 
 guess-table of TTTT is table of Thunk Tree Trunk guesses.
 
@@ -302,7 +304,7 @@ chapter Tree Trunk
 
 the Thunk Tree Trunk is climbable scenery in TTTT. "[if sco-gee-junk is true]Nothing besides the [FRUIT] is in the tree trunk[else if sco-see-sunk is true]You get the feeling something semi-valuable could be in the tree trunk, if you just asked right[else]The tree trunk is tough to climb, but it's wide. Perhaps you could make it a little less intimidating[end if].". printed name of Thunk Tree Trunk is "(thunk) tree trunk".
 
-from-number of Thunk Tree Trunk is 10710.
+from-number of Thunk Tree Trunk is 5360.
 
 chapter Free Fruit
 
@@ -312,7 +314,7 @@ check taking free fruit: say "Best to figure out what's in it, or what it can pr
 
 guess-table of free fruit is the table of free fruit guesses.
 
-from-number of free fruit is 5405. to-number of free fruit is 5404.
+from-number of free fruit is 2705. to-number of free fruit is 2704.
 
 chapter pear peach
 
@@ -320,7 +322,7 @@ the pear peach is a thing. description is "It looks like a cross between a pear 
 
 understand "fruit" as pear peach when player has pear peach.
 
-from-number of pear peach is 5405. to-number of pear peach is 5405.
+from-number of pear peach is 2705. to-number of pear peach is 2705.
 
 book Trust Track
 
@@ -328,13 +330,13 @@ Trust Track is east of NNSS. it is in Hoppin' Heart. "You're in a sort of earthy
 
 guess-table of trust track is table of trust track guesses.
 
-from-number of trust track is 5505. to-number of trust track is 5604.
+from-number of trust track is 2755. to-number of trust track is 2804.
 
 chapter Just Jack
 
 Just Jack is a thing in Trust Track. "[one of]'Hi! I'm Just Jack. you can totally trust me that there are no other passages here. In fact, I'd be offended if you looked for them while I was still here. Not that you're getting rid of me.'[or]Just Jack waits here, making sure you trust his 'advice' enough not to look for any other passages.[stopping]".
 
-from-number of just jack is 5404.
+from-number of just jack is 2704.
 
 description of Just Jack is "He is just sitting around here with no better place to be. Or no less awful place. He's not going to go anywhere on his own, that's for sure.".
 
@@ -344,7 +346,7 @@ the sus sack is a rhymable. description is "What could be in the sus sack? It fe
 
 guess-table of sus sack is table of sus sack guesses.
 
-from-number of sus sack is 5304. to-number of sus sack is 5406.
+from-number of sus sack is 2654. to-number of sus sack is 2706.
 
 check opening sus sack: say "This far into [this-game], you suspect you have to figure what's in the sack to get it to open right." instead;
 
@@ -356,7 +358,7 @@ understand "bare beach" and "bare/beach" as rare reach when sco-bare-beach is tr
 
 guess-table of rare reach is the table of rare reach guesses.
 
-from-number of rare reach is 5405. to-number of rare reach is 5405.
+from-number of rare reach is 2705. to-number of rare reach is 2705.
 
 after going to Rare Reach when sco-seep-soon is true and flag-reap-rune is false:
 	now flag-reap-rune is true;
@@ -367,7 +369,7 @@ chapter deep dune
 
 the deep dune is a climbable rhymable. it is scenery. "[if rho rune is off-stage]Man! It's so big, you figure something must be hidden in it[else]The deep dune gave you the Rho Rune, and you can't think of anything else to look for[end if].". guess-table of deep dune is table of deep dune guesses.
 
-from-number of deep dune is 5404. to-number of deep dune is 5404.
+from-number of deep dune is 2704. to-number of deep dune is 2704.
 
 chapter Rho Rune
 
@@ -375,13 +377,13 @@ the Rho Rune is a rhymable. description is "It's shaped like the Greek letter Rh
 
 guess-table of Rho Rune is table of nonoon guesses.
 
-from-number of rho rune is 5304.
+from-number of rho rune is 2654.
 
 book Jotty Jail
 
 Jotty Jail is a room in Hoppin' Heart. "Well, the walls are scribbled-over here. The way out is blocked by a large snotty snail. It looks pretty well-kept-up here, so it's tricky to get out, unless you know what to look for. [jotty-bonus]."
 
-from-number of jotty jail is 5504. to-number of jotty jail is 5604.
+from-number of jotty jail is 2754. to-number of jotty jail is 2804.
 
 guess-table of jotty jail is the table of jotty jail guesses.
 
@@ -420,7 +422,7 @@ High Hub is a room in Poppin' Part. "A locking lift offers transport, but to whe
 
 guess-table of High Hub is the table of High Hub guesses.
 
-from-number of high hub is 5403. to-number of high hub is -5303.
+from-number of high hub is 2703. to-number of high hub is -2653.
 
 chapter locking lift
 
@@ -430,7 +432,7 @@ check going inside when locking lift is in location of player: try entering lift
 
 guess-table of locking lift is the table of locking lift guesses.
 
-from-number of locking lift is 5704. to-number of locking lift is 28724.
+from-number of locking lift is 2854. to-number of locking lift is 14374.
 
 chapter delight dilute
 
@@ -438,7 +440,7 @@ the can of DELIGHT DILUTE is a boring rhymable. description is "Just staring at 
 
 guess-table of DELIGHT DILUTE is table of light lute guesses.
 
-from-number of delight dilute is 5706. to-number of delight dilute is -5707.
+from-number of delight dilute is 2856. to-number of delight dilute is -2857.
 
 bore-text of delight dilute is "You'll need something slightly esoteric to get rid of it.".
 
@@ -448,7 +450,7 @@ part Sore Souls Gore Goals
 
 Sore Souls Gore Goals is a liftroom in Poppin' Part. "[if sco-shore-shoals is false]It's very desolate here. No life or community of animals could last for long. Perhaps any spark of nature could change things[else]The shore shoals are a more comforting place to be than before. You've [shoal-so-far][end if]. You sense you would [if sco-shore-shoals is true]fade into the nothingness[else]violate something sacred[end if] if you explored further.". printed name is "[if sco-shore-shoals is false]Sore Souls['] Gore Goals[else]Shore Shoals[end if]". understand "shore/shoals" and "shore shoals" as Gore Goals when sco-shore-shoals is true. spokeval of Sore Souls is 0.
 
-from-number of sore souls gore goals is 10810. to-number of sore souls gore goals is 5506.
+from-number of sore souls gore goals is 5410. to-number of sore souls gore goals is 2756.
 
 to say shoal-so-far:
 	let shoal-total be shoal-extra-animals + shoal-core-score;
@@ -479,7 +481,7 @@ chapter red rose
 
 a red rose is a multrhymable. description is "It's a simple red rose. Just looking at it leaves you feeling protected and inspired."
 
-from-number of red rose is 5304. to-number of red rose is 21717.
+from-number of red rose is 2654. to-number of red rose is 10867.
 
 to decide what number is rose-petals-remaining:
 	decide on 4 - (boolval of sco-said-sos + boolval of sco-fed-foes + boolval of sco-thread-throws);
@@ -498,7 +500,7 @@ There is a liftroom called No New Show Shoe in Poppin' Part. "This isn't actuall
 
 guess-table of Show Shoe is table of no new show shoe guesses.
 
-from-number of no new show shoe is 10607. to-number of no new show shoe is 10808. [ start with flow flue/glow glue ]
+from-number of no new show shoe is 5307. to-number of no new show shoe is 5408. [ start with flow flue/glow glue ]
 
 understand "whoah/woo show/shoe" and "whoah/woo show shoe" and "whoah/woo" and "whoah woo show/shoe" and "whoah woo show shoe" as show shoe when sco-crow-crew is true.
 
@@ -537,7 +539,7 @@ chapter Crow Crew
 
 the Crow Crew is a thing. "The Crow Crew waits in the, um, wings to be properly introduced.". description is "They are high-fiving and discussing their dopest moves for whatever performance they're aiming to give."
 
-from-number of crow crew is 5404. to-number of crow crew is 5507.
+from-number of crow crew is 2704. to-number of crow crew is 2757.
 
 chapter light lute
 
@@ -545,7 +547,7 @@ the light lute is a multrhymable. description is "You have no clue how to play i
 
 guess-table of light lute is the table of light lute guesses.
 
-from-number of light lute is 5504. to-number of light lute is 11109.
+from-number of light lute is 2754. to-number of light lute is 5559.
 
 section in-depth lute descriptions
 
@@ -568,7 +570,7 @@ to say sstt: if slay slope is visited, say " this time"
 
 guess-table of Bum Bout Rum Route is the table of bum bout rum route guesses.
 
-from-number of bum bout rum route is 10609. to-number of bum bout rum route is 5405.
+from-number of bum bout rum route is 5309. to-number of bum bout rum route is 2705.
 
 part Nay Nope Slay Slope
 
@@ -578,7 +580,7 @@ Rum Route is mapped above Slay Slope. nowhere is mapped below Rum Route.
 
 guess-table of nay nope slay slope is the table of nay nope slay slope guesses.
 
-from-number of nay nope slay slope is 10709. to-number of nay nope slay slope is 5304.
+from-number of nay nope slay slope is 5359. to-number of nay nope slay slope is 2654.
 
 book spoke 3 / Grokking Grift
 
@@ -588,13 +590,13 @@ Slight Sleaze is a liftroom in Poppin' Part. "[if sco-bright-breeze is false]You
 
 guess-table of slight sleaze is the table of slight sleaze guesses.
 
-from-number of slight sleaze is 5606. to-number of slight sleaze is 5606.
+from-number of slight sleaze is 2806. to-number of slight sleaze is 2806.
 
 chapter fright freeze
 
 the fright freeze is boring scenery in slight sleaze. "You can't describe it, but it stops you from going anywhere.".
 
-from-number of fright freeze is 5606.
+from-number of fright freeze is 2806.
 
 the trite trees are boring scenery. "Not perfect, but not sleazy, either. They surround you on all sides except to the south."
 
@@ -606,7 +608,7 @@ Freak Framing Seek Sameing is a liftroom in Poppin' Part. printed name is "[if s
 
 guess-table of freak framing seek sameing is the table of freak framing seek sameing guesses.
 
-from-number of freak framing seek sameing is 10914. to-number of freak framing seek sameing is 5507.
+from-number of freak framing seek sameing is 5464. to-number of freak framing seek sameing is 2757.
 
 Slight Sleaze is mapped north of Seek Sameing. Nowhere is mapped south of Slight Sleaze.
 
@@ -626,7 +628,7 @@ check going west in Mad Most Cad Coast: if sco-rad-roast is false, say "You can'
 
 guess-table of mad most cad coast is the table of mad most cad coast guesses.
 
-from-number of mad most cad coast is 10609. to-number of mad most cad coast is 5305.
+from-number of mad most cad coast is 5309. to-number of mad most cad coast is 2655.
 
 part Trite Trail
 
@@ -636,11 +638,11 @@ Mad Most Cad Coast is mapped east of Trite Trail. nowhere is mapped west of Mad 
 
 guess-table of Trite Trail is table of trite trail guesses.
 
-from-number of trite trail is 5505. to-number of trite trail is 16613.
+from-number of trite trail is 2755. to-number of trite trail is 8313.
 
 the tight tail white whale is scenery in Trite Trail. printed name is "tight-tail white whale". "It splashes out of the water sometimes, glaring at you as if to say you're lucky it can't swim in shallow water. You don't know why you're supposed to defeat it, but you know you are."
 
-from-number of white whale is 11009.
+from-number of white whale is 5509.
 
 after printing the locale description for trite trail when whale-score > 0 and sco-thread-throws is false:
 	if whale-stuff is 0:
@@ -707,11 +709,11 @@ check going in Old End:
 
 guess-table of old end is the table of old end guesses.
 
-from-number of old end is 5303. to-number of old end is 5404.
+from-number of old end is 2653. to-number of old end is 2704.
 
 part Drain Drat Vain Vat
 
-Old End is north of Drain Drat Vain Vat. Drain Drat Vain Vat is in Poppin' Part. printed name of Vain Vat is "[if sco-splain-splat is false]Drain (Drat!) Vain Vat[else]Main Mat[end if]". understand "main mat" as Drain Drat Vain Vat when sco-splain-splat is true. description of Vain Vat is "[if sco-bane-bat is false]You seem stuck here, and that's that. Maybe if you had something to help bash your way out[else if sco-flain-flat is false]You're still stuck in the vat for now. You're not sure how to get out, but once you are, you suspect your bane bat will do the trick[else if sco-splain-splat is false]The walls look shaky, but you can't find a weak point. Perhaps a taunt would bring enemy henchmen busting said weak spot[else]The way south is open now, thanks to the Pred Pros[end if].". spokeval of Vain Vat is 5. south of Old End is nowhere.
+Old End is north of Drain Drat Vain Vat. Drain Drat Vain Vat is in Poppin' Part. printed name of Vain Vat is "[if sco-splain-splat is false]Drain (Drat!) Vain Vat[else]Main Mat[end if]". understand "main mat" as Drain Drat Vain Vat when sco-splain-splat is true. description of Vain Vat is "[if sco-bane-bat is false]You seem stuck here, and that's that. Maybe if you had something to help bash your way out[else if sco-flain-flat is false]You're still stuck in the vat for now. You feel as though your bane bat will help you get medieval on the vat, but the details aren't in place, yet[else if sco-splain-splat is false]The walls look shaky, but you can't find a weak point. Perhaps a taunt would bring enemy henchmen busting said weak spot[else]The way south is open now, thanks to the Pred Pros[end if].". spokeval of Vain Vat is 5. south of Old End is nowhere.
 
 check going in Vain Vat:
 	if sco-flain-flat is false and noun is up, say "It's too high to climb out!" instead;
@@ -723,7 +725,7 @@ check going in Vain Vat:
 
 guess-table of drain drat vain vat is the table of drain drat vain vat guesses.
 
-from-number of drain drat vain vat is 10907. to-number of drain drat vain vat is 5403.
+from-number of drain drat vain vat is 5457. to-number of drain drat vain vat is 2703.
 
 chapter bane bat
 
@@ -733,17 +735,17 @@ chapter Pred Pros
 
 the Pred Pros are a plural-named rhymable. guess-table of Pred Pros is table of red rose guesses. "Unfortunately, the Pred Pros also block the way south, their faces encased in head hose. The aura from your erstwhile red rose still protects you.". description is "They haven't attacked you yet. They aren't, like, obviously snarling under the head hose. Maybe you can do something for them to make peace."
 
-from-number of Pred Pros is 5404. to-number of Pred Pros is 5304.
+from-number of Pred Pros is 2704. to-number of Pred Pros is 2654.
 
 the head hose is scenery. "It obscures the Pred Pros['] faces, but they can still breathe."
 
-from-number of head hose is 5404. to-number of head hose is 5304.
+from-number of head hose is 2704. to-number of head hose is 2654.
 
 part Threat Three Met ME
 
 Threat Three Met Me is in Poppin' Part. printed name is "[if marquee-score < 3]Market Marquee[else]Threat Three Met Me[end if]". "[if marquee is moot]The marquee has crumbled, its rubble blocking the way back north. This is it[else]A market marquee stands here, maybe giving you some clues as to how to do things[end if]. [if sprite is off-stage]You could go back north if you really wanted, but perhaps you'll want to finish things here[else]You feel stuck here in the final encounter[end if][if plus plaque is in threat three].[paragraph break]That plus plaque you summoned is waiting for an inscription[end if].". spokeval of Threat Three is 5.
 
-from-number of threat three met me is 5607. to-number of threat three met me is 16009.
+from-number of threat three met me is 2807. to-number of threat three met me is 8009.
 
 Drain Drat Vain Vat is mapped north of Threat Three Met Me. nowhere is mapped south of Drain Drat Vain Vat.
 
@@ -757,7 +759,7 @@ the market marquee is a rhymable in Threat Three Met Me. "It seems to offer some
 
 guess-table of market marquee is table of market marquee guesses.
 
-from-number of market marquee is 5607.
+from-number of market marquee is 2807.
 
 to say marquee-clues:
 	say "[if sco-fret-free is true]----[line break][else]GLEE?[end if]";
@@ -777,7 +779,7 @@ there is a himher thing called the Burning Bright Spurning Sprite. "The [sprite]
 
 [the Frightfully Bright Bully is a himher thing. description is "The [bully] doesn't look especially mean or conniving or thuggish. But you know they just can't stand you. It's time to face up to them.". "The Frightfully Bright Bully continues a combination of rolling their eyes and looking away from you."]
 
-from-number of spurning sprite is 11512. to-number of spurning sprite is 5705.
+from-number of spurning sprite is 5762. to-number of spurning sprite is 2855.
 
 after doing something with a himher thing (called th):
 	set the pronoun them to th;
@@ -938,8 +940,6 @@ hahalfing is leetsetting.
 nahnaffing is leetsetting.
 helphowing is leetsetting.
 welpwowing is leetsetting.
-bluebleahing is leetsetting.
-hoohehing is leetsetting.
 
 before leetsetting when player does not have the leet learner: say "You don't have the Leet Learner yet, so you can't set this option." instead;
 
@@ -947,12 +947,12 @@ volume gong rules and verbs ( see common file for gong core code)
 
 chapter gong rules pre-hub
 
-[ trivially completed rooms: Bane Be Sane See, Jotty Jail (both have LLPs but can't go back), Roaring Rocks. Note Roaring Rocks chould have "if sco-boring-box is true" but if you are out, you got the boring box. ]
+[ trivially completed rooms: Bane Be Sane See, Jotty Jail (both have LLPs but can't go back) ]
 
 [ LLPs not llp-remaining are Go Goo and Gad Gunk because it disappears when the monk does ]
 
 [bane be sane see needs no rules, with the one-way passage out]
-[this-gong-rule of Roaring Rocks is the gong-roaring-rocks rule.]
+this-gong-rule of Roaring Rocks is the gong-roaring-rocks rule.
 this-gong-rule of nnss is the gong-nnss rule.
 
 this-gong-rule of warm stun storm is the gong-one-warm-stun-storm rule. [north branch first]
@@ -966,9 +966,9 @@ this-gong-rule of NoNoon is the gong-nonoon rule.
 
 section actual rules
 
-[this is the gong-roaring-rocks rule:
+this is the gong-roaring-rocks rule:
 	if sco-boring-box is false, uncompleted;
-	completed;]
+	completed;
 
 this is the gong-nnss rule:
 	if sco-grow-grudge is false, uncompleted;
@@ -1134,7 +1134,6 @@ chapter thing hints
 
 thing-hint-rule of the player is the hint-player rule.
 
-thing-hint-rule of leet learner is the hint-learner-part rule.
 thing-hint-rule of ha half nah naff is the hint-learner-part rule.
 
 thing-hint-rule of train tree is the hint-bane-be-sane-see rule.
@@ -1320,7 +1319,7 @@ after printing the locale description:
 
 the miss more diss door is a rhymable. it is scenery. printed name is "miss-more-diss door". description is "It seems to be inviting you in, and yet, at the same time, pushing you away for not being quite good enough. Yet."
 
-from-number of miss more diss door is 5404. to-number of miss more diss door is -5404.
+from-number of miss more diss door is 2704. to-number of miss more diss door is -2704.
 
 guess-table of miss more diss door is table of miss more diss door guesses.
 
@@ -1395,15 +1394,17 @@ carry out abouting:
 book creditsing
 
 carry out creditsing:
-	say "Thanks to DrkStarr, Peter M. J. Gross, Beau Sorrell and <check other name(s)> for testing.";
+	say "Thanks to DrkStarr, Robert Goodwin Peter M. J. Gross, and Beau Sorrell for pre-comp testing and <check other name(s)> for testing.";
 	say "Thanks to many people on the I7 board at Intfiction.org. This includes, in alphabetical order, Draconis, otistdog, Zarf and ZedLopez.";
-	say "[line break]Thanks to all involved in IFComp, whether administering, programming, judging, or reviewing.";
+	say "Thanks to Wade Clarke and Mike Russo for mid-comp transcripts.";
+	say "Thanks to jaclynlibrarian for reporting an in-comp bug.";
+	say "[line break]More generally, thanks to all involved in IFComp, whether administering, programming, judging, or reviewing.";
 	say "Thanks to GitHub for allowing free hosting, public or private.";
-	say "The cover art contains free-attribution vector images:";
+	say "[line break]The cover art contains free-attribution vector images:";
 	say "[paragraph break]  Red rose: https://www.vecteezy.com/vector-art/3605050-illustrations-red-roses-rose-floral-romantic-artwork";
 	say "[line break]  Flames: https://www.vecteezy.com/vector-art/552364-flame-vector-icon";
 	say "[line break]  Amphitheater: https://www.flaticon.com/free-icon/amphitheatre_82266";
-	say "[line break]Thanks to you for playing.";
+	say "[line break]Finally, thanks to you for playing.";
 	the rule succeeds;
 
 book exitsing
@@ -1500,7 +1501,7 @@ to win-the-game:
 	follow the shutdown rules;
 
 Table of Final Question Options (continued)
-final question wording	only if victorious	topic		final response rule		final response activity
+final question wording	only if victorious	topic	final response rule	final response activity
 "see the points you [b]MISSED[r]"	true	"missed"	show-misses rule	--
 
 this is the show-misses rule:

@@ -233,7 +233,7 @@ this is the vr-done-dorm rule:
 	say "A done dorm pops up out of nowhere! You probably can't just go entering it, though. A nice, exclusive place like that probably requires documentation of worth and being an interesting person to hang around and stuff. All sorts of bureaucracy, don't you know.";
 	now sco-done-dorm is true;
 	move done dorm to One Warm Stun Storm;
-	now to-number of One Warm Stun Storm is 5304;
+	now to-number of One Warm Stun Storm is 2654;
 
 a goodrhyme rule (this is the vc-fun-form rule):
 	if player is not in One Warm Stun Storm, unavailable;
@@ -326,7 +326,7 @@ this is the vr-bussed-back rule:
 	now sco-bussed-back is true;
 	moot Just Jack;
 	now player has sus sack;
-	now to-number of trust track is 5505;
+	now to-number of trust track is 2755;
 
 a goodrhyme rule (this is the vc-crust-crack rule):
 	if player is not in trust track, unavailable;
@@ -464,7 +464,7 @@ a goodrhyme rule (this is the vc-so-soon rule):
 this is the vr-so-soon rule:
 	now sco-so-soon is true;
 	say "You sensed time speeding up. The cocoon rustles. Perhaps one more sign signifying daytime will cause it to bust out.";
-	now to-number of nonoon is 5405;
+	now to-number of nonoon is 2705;
 
 a goodrhyme rule (this is the vc-crow-croon rule):
 	if player is not in NoNoon, unavailable;
@@ -569,7 +569,7 @@ a goodrhyme rule (this is the vc-shocking-shift rule):
 	ready;
 
 this is the vr-shocking-shift rule:
-	if sco-shocking-shift is false, lift-adjust 5805;
+	if sco-shocking-shift is false, lift-adjust 2905;
 	abide by the lift won't budge rule for gore goals;
 	now sco-shocking-shift is true;
 	take-lift Sore Souls Gore Goals;
@@ -584,7 +584,7 @@ a goodrhyme rule (this is the vc-rocking-rift rule):
 	ready;
 
 this is the vr-rocking-rift rule:
-	if sco-rocking-rift is false, lift-adjust 5704;
+	if sco-rocking-rift is false, lift-adjust 2854;
 	abide by the lift won't budge rule for show shoe;
 	now sco-rocking-rift is true;
 	take-lift Show Shoe;
@@ -599,7 +599,7 @@ a goodrhyme rule (this is the vc-gawking-gift rule):
 	ready;
 
 this is the vr-gawking-gift rule:
-	if sco-gawking-gift is false, lift-adjust 5704;
+	if sco-gawking-gift is false, lift-adjust 2854;
 	abide by the lift won't budge rule for rum route;
 	now sco-gawking-gift is true;
 	take-lift Rum Route;
@@ -614,7 +614,7 @@ a goodrhyme rule (this is the vc-grokking-grift rule):
 	ready;
 
 this is the vr-grokking-grift rule:
-	if sco-grokking-grift is false, lift-adjust 5805;
+	if sco-grokking-grift is false, lift-adjust 2905;
 	abide by the lift won't budge rule for slight sleaze;
 	now sco-grokking-grift is true;
 	take-lift Slight Sleaze;
@@ -629,7 +629,7 @@ a goodrhyme rule (this is the vc-docking-diffed rule):
 	ready;
 
 this is the vr-docking-diffed rule:
-	if sco-docking-diffed is false, lift-adjust 5706;
+	if sco-docking-diffed is false, lift-adjust 2856;
 	abide by the lift won't budge rule for mad most cad coast;
 	now sco-docking-diffed is true;
 	take-lift mad most cad coast;
@@ -674,8 +674,8 @@ this is the vr-shore-shoals rule:
 	now sco-shore-shoals is true;
 	say "The area is much less desolate now. It feels like it could be inhabited.";
 	print-the-loc;
-	now from-number of sore souls gore goals is 5506;
-	now to-number of sore souls gore goals is 5405;
+	now from-number of sore souls gore goals is 2756;
+	now to-number of sore souls gore goals is 2705;
 
 a goodrhyme rule (this is the vc-four-foals rule):
 	if player is not in sore souls gore goals, unavailable;
@@ -713,7 +713,7 @@ a goodrhyme rule (this is the vc-lore-lols rule):
 this is the vr-lore-lols rule:
 	now sco-lore-lols is true;
 	say "Why, yes, this place could use myths of creation and so forth[if sco-shore-shoals is false] for when it becomes habitable[end if].";
-	if to-number of gore goals is -5404:
+	if to-number of gore goals is -2704:
 		now to-number of gore goals is -3;
 
 a goodrhyme rule (this is the vc-night-newt rule):
@@ -726,7 +726,7 @@ this is the vr-night-newt rule:
 	say "A night newt appears and scurries around. You lose it in the scenery, but the place feels livelier now.";
 	move night newt to gore goals;
 	lose-silver-string;
-	light-lute-llp 5504;
+	light-lute-llp 2754;
 
 a goodrhyme rule (this is the vc-kite-coot rule):
 	now current-shoal-summon is kite coot;
@@ -738,7 +738,7 @@ this is the vr-kite-coot rule:
 	say "The kite coot is an odd animal for sure but a worthy addition to the menagerie here.";
 	move kite coot to gore goals;
 	lose-silver-string;
-	light-lute-llp 5404;
+	light-lute-llp 2704;
 
 a goodrhyme rule (this is the vc-flow-flue rule):
 	if player is not in show shoe, unavailable;
@@ -832,8 +832,8 @@ a goodrhyme rule (this is the vc-yo-you rule):
 this is the vr-yo-you rule:
 	now sco-yo-you is true;
 	say "'Yo! YOU!' you cry, and there's a slightly undignified call-and-response, featuring both you and the crowd asking 'Ho! Who?' and responding. It's not brilliant discourse, but everyone's all jazzed for a bigger show now.";
-	now from-number of show shoe is 10907;
-	change-shoe-number 5203;
+	now from-number of show shoe is 5457;
+	change-shoe-number 2603;
 	print-the-loc;
 
 a goodrhyme rule (this is the vc-crow-crew rule):
@@ -850,7 +850,7 @@ this is the vr-crow-crew rule:
 	now sco-crow-crew is true;
 	say "The Crow Crew appears! They look ready to give a performance replete with humor, wit, song, pyrotechnics, and so forth. You just need to find a way to facilitate a grand entrance.";
 	move crow crew to show shoe;
-	change-shoe-number 5404;
+	change-shoe-number 2704;
 
 a goodrhyme rule (this is the vc-throw-through rule):
 	if player is not in show shoe, unavailable;
@@ -868,11 +868,11 @@ a goodrhyme rule (this is the vc-throw-through rule):
 this is the vr-throw-through rule:
 	now sco-throw-through is true;
 	say "The Crow Crew makes a dramatic entrance, thanks to your planning! The show is a financial and emotional success. Everyone congratulates you. Surely, you must take a reward! Something![paragraph break]You can't think of anything you really need. Then, something that just wasn't used in the concert. A light lute! It's, well, something. If you were resourceful enough to get things working here, who knows what you can do with it?[paragraph break]Your job here done, you return back...";
-	remove-spoke 5704; [ ROCKING RIFT done ]
+	remove-spoke 2854; [ ROCKING RIFT done ]
 	if sco-go-goo is true:
 		now to-number of show shoe is -3;
 	else:
-		now to-number of show shoe is -5203;
+		now to-number of show shoe is -2603;
 	moot lazy loud crazy crowd;
 	cheap-poem-cue light lute;
 
@@ -887,7 +887,7 @@ a goodrhyme rule (this is the vc-dumb-doubt rule):
 this is the vr-dumb-doubt rule:
 	now sco-dumb-doubt is true;
 	say "You create dumb doubt in the mind of your adversaries. This would be rude if they weren't mean, but they are, so it all feels creative and appropriate. How to expand that doubt, now?";
-	now to-number of bum bout rum route is 5303;
+	now to-number of bum bout rum route is 2653;
 
 a goodrhyme rule (this is the vc-said-sos rule):
 	if player does not have red rose, unavailable;
@@ -905,7 +905,7 @@ a goodrhyme rule (this is the vc-said-sos rule):
 this is the vr-said-sos rule:
 	now sco-said-sos is true;
 	say "Your said-sos make sense. You're ready for the crescendo.";
-	decrease to-number of red rose by 5403;
+	decrease to-number of red rose by 2703;
 	lose-rose-petal;
 
 a goodrhyme rule (this is the vc-umm-out rule):
@@ -938,7 +938,7 @@ this is the vr-hey-hope rule:
 	now sco-hey-hope is true;
 	say "How exhilarating! The hope is real! With that, a pall lifts over your depression. But not enough. Yet. You must finish the job.";
 	print-the-loc;
-	now to-number of nay nope slay slope is 5104;
+	now to-number of nay nope slay slope is 2554;
 
 a goodrhyme rule (this is the vc-k-cope rule):
 	if player is not in Nay Nope Slay Slope, unavailable;
@@ -951,7 +951,7 @@ a goodrhyme rule (this is the vc-k-cope rule):
 this is the vr-k-cope rule:
 	now sco-k-cope is true;
 	say "The hope that started turns into coping, with a bit of slang. You feel spiritually refreshed. You take the lift back to the [hub].";
-	remove-spoke 5704; [ GAWKING GIFT done ]
+	remove-spoke 2854; [ GAWKING GIFT done ]
 
 a goodrhyme rule (this is the vc-tight-tease rule):
 	if player is not in slight sleaze, unavailable;
@@ -994,7 +994,7 @@ this is the vr-plight-please rule:
 	if sco-right-root is true:
 		declue-here;
 	else:
-		now to-number of Slight Sleaze is -5504;
+		now to-number of Slight Sleaze is -2754;
 
 a goodrhyme rule (this is the vc-right-root rule):
 	if player does not have light lute, unavailable;
@@ -1009,7 +1009,7 @@ this is the vr-right-root rule:
 	say "The right root takes hold in the ground, and out bloom ... trite trees! No, it's not picturesque, but it's better than what was there before. The trees bloom on all sides except one ... which cuts out a clear passage!";
 	now Freak Framing is mapped south of Slight Sleaze;
 	move trite trees to Slight Sleaze;
-	lose-gold-string 5504;
+	lose-gold-string 2754;
 
 a goodrhyme rule (this is the vc-bleak-blaming rule):
 	if player is not in freak framing seek sameing, unavailable;
@@ -1022,7 +1022,7 @@ a goodrhyme rule (this is the vc-bleak-blaming rule):
 this is the vr-bleak-blaming rule:
 	now sco-bleak-blaming is true;
 	say "You get into the groove with some general complaining.";
-	now to-number of seek sameing is 5407;
+	now to-number of seek sameing is 2707;
 
 a goodrhyme rule (this is the vc-chic-shaming rule):
 	if player is not in freak framing seek sameing, unavailable;
@@ -1035,11 +1035,11 @@ a goodrhyme rule (this is the vc-chic-shaming rule):
 this is the vr-chic-shaming rule:
 	now sco-chic-shaming is true;
 	say "You segue from bleak blaming to an effortless, unavoidable, flowing conclusion, your voice rising to a crescendo for your main point. Bam!";
-	now from-number of freak framing is 5306;
+	now from-number of freak framing is 2656;
 	if sco-clique-claiming is true:
 		declue-here;
 	else:
-		now to-number of Freak Framing is -5607;
+		now to-number of Freak Framing is -2807;
 	print-the-loc;
 
 a goodrhyme rule (this is the vc-clique-claiming rule):
@@ -1071,8 +1071,8 @@ this is the vr-bred-bros rule:
 	now sco-bred-bros is true;
 	say "Some bred Bros, more charismatic than you, arrive to disperse your message more charismatically. You engage in a ton of delegation, and stuff. They seem pleased, though with their charisma, it's possible they might secretly have contempt for you. Still, they're on board with your mission. Your work is done here.";
 	move bred bros to seek sameing;
-	remove-spoke 5805; [ GROKKING GRIFT done ]
-	decrease to-number of red rose by 5404;
+	remove-spoke 2905; [ GROKKING GRIFT done ]
+	decrease to-number of red rose by 2704;
 	lose-rose-petal;
 
 a goodrhyme rule (this is the vc-bad-boast rule):
@@ -1126,7 +1126,7 @@ this is the vr-might-mail rule:
 	now sco-might-mail is true;
 	say "A suit of armor appears nearby! You don't want to put it on until you fight [the whale], but it's there when you need it.";
 	move might mail to trite trail;
-	adjust-trail 5504;
+	adjust-trail 2754;
 	follow the notify-final-whale rule;
 
 a goodrhyme rule (this is the vc-flight-flail rule):
@@ -1140,7 +1140,7 @@ this is the vr-flight-flail rule:
 	now sco-flight-flail is true;
 	say "A translucent flail appears. You grab it, worrying it is too heavy. But as you do, it is easy to swing, and you feel faster. It will be a good weapon to use against the white whale.";
 	move flight flail to trite trail;
-	adjust-trail 5605;
+	adjust-trail 2805;
 	follow the notify-final-whale rule;
 
 a goodrhyme rule (this is the vc-right-rail rule):
@@ -1156,7 +1156,7 @@ a goodrhyme rule (this is the vc-right-rail rule):
 this is the vr-right-rail rule:
 	now sco-right-rail is true;
 	say "You inspect the sight sail, and you realize that, yes, there are rails to help you keep your balance and gain your sea legs as you hunt [the whale].";
-	adjust-trail 5504;
+	adjust-trail 2754;
 	follow the notify-final-whale rule;
 
 a goodrhyme rule (this is the vc-bright-brute rule):
@@ -1179,7 +1179,7 @@ this is the vr-bright-brute rule:
 	now sco-bright-brute is true;
 	say "You call on a bright brute, who hides in the shadows to practice their fighting moves until such time as you're ready to attack the white whale. You'll need the muscle in case the whale somehow gets on board.";
 	move bright brute to trite trail;
-	lose-gold-string 5605;
+	lose-gold-string 2805;
 	follow the notify-final-whale rule;
 
 a goodrhyme rule (this is the vc-excite-exhale rule):
@@ -1214,8 +1214,8 @@ a goodrhyme rule (this is the vc-thread-throws rule):
 this is the vr-thread-throws rule:
 	now sco-thread-throws is true;
 	say "Everything is prepped! You throw out some nets. You're armed with the flight flail, protected by the might mail, supported by the bright brute, and holding the right rail in your sight sail. And you've mentally prepped.[paragraph break]Anyway, there's a lot of drama and stuff, but you defeat [the whale].";
-	remove-spoke 5706; [ DOCKING DIFFED done ]
-	decrease to-number of red rose by 5606;
+	remove-spoke 2856; [ DOCKING DIFFED done ]
+	decrease to-number of red rose by 2806;
 	lose-rose-petal;
 	moot sight sail;
 	moot flight flail;
@@ -1233,8 +1233,8 @@ this is the vr-bold-bend rule:
 	now sco-bold-bend is true;
 	say "Of course the old end was too simplistic. You feel a bit of courage now. But the question is: courage to face what? It's probably something abstract.";
 	print-the-loc;
-	now from-number of old end is 5404;
-	now to-number of old end is 5705;
+	now from-number of old end is 2704;
+	now to-number of old end is 2855;
 
 a goodrhyme rule (this is the vc-trolled-trend rule):
 	if player is not in old end, unavailable;
@@ -1250,7 +1250,7 @@ this is the vr-trolled-trend rule:
 	now sco-trolled-trend is true;
 	say "You feel malevolence from the south. It is where you must go next, you are pretty sure. You're also pretty sure there'll be no way back. The thought depresses you a bit. You need a way to pull out of your doldrums.";
 	now Drain Drat Vain Vat is mapped south of Old End;
-	now to-number of old end is 5404;
+	now to-number of old end is 2704;
 
 a goodrhyme rule (this is the vc-mold-mend rule):
 	if player is not in old end, unavailable;
@@ -1276,8 +1276,8 @@ a goodrhyme rule (this is the vc-bane-bat rule):
 
 this is the vr-bane-bat rule:
 	now sco-bane-bat is true;
-	say "A particularly lethal bat appears in your hands! It looks like it could really destroy stuff. In particular, this vat. But how?";
-	now to-number of vain vat is 5504;
+	say "A particularly lethal bat appears in your hands! It looks like it could really destroy stuff. In particular, this vat. But how to go medieval on it?";
+	now to-number of vain vat is 2754;
 	now player has bane bat;
 
 a goodrhyme rule (this is the vc-flain-flat rule):
@@ -1294,7 +1294,7 @@ this is the vr-flain-flat rule:
 	now sco-flain-flat is true;
 	say "Wham! Wham! You take the bane bat to the vat, and it makes all kinds of dents. You strike a final blow, and as the vat falls over, both it and the bat disintegrate.[paragraph break]You're left standing on a main mat, which also feels welcoming. But you have a feeling you still need to give a reason to enter.";
 	moot bane bat;
-	now to-number of vain vat is 5605;
+	now to-number of vain vat is 2805;
 
 a goodrhyme rule (this is the vc-splain-splat rule):
 	if player is not in drain drat vain vat, unavailable;
@@ -1343,7 +1343,7 @@ a goodrhyme rule (this is the vc-fret-free rule):
 this is the vr-fret-free rule:
 	now sco-fret-free is true;
 	say "You feel cheerier. Perhaps there is stuff to fret about, but you recognize it'd be a waste of energy, and you're pleased you got this far.";
-	decrease to-number of Threat Three by 5404;
+	decrease to-number of Threat Three by 2704;
 	abide by the marquee-change rule;
 
 a goodrhyme rule (this is the vc-set-see rule):
@@ -1357,7 +1357,7 @@ a goodrhyme rule (this is the vc-set-see rule):
 this is the vr-set-see rule:
 	now sco-set-see is true;
 	say "You stand tall and confident. You won't be easily pushed around!";
-	decrease to-number of Threat Three by 5303;
+	decrease to-number of Threat Three by 2653;
 	abide by the marquee-change rule;
 
 a goodrhyme rule (this is the vc-yet-ye rule):
@@ -1371,7 +1371,7 @@ a goodrhyme rule (this is the vc-yet-ye rule):
 this is the vr-yet-ye rule:
 	now sco-yet-ye is true;
 	say "You think back to people who helped you in bad faith and realize you have a right to reject 'help' or 'advice' with strings attached and, yes, get under the nerves of people offering said 'services.'";
-	decrease to-number of Threat Three by 5302;
+	decrease to-number of Threat Three by 2652;
 	abide by the marquee-change rule;
 
 a goodrhyme rule (this is the vc-plus-plaque rule):
@@ -1502,7 +1502,7 @@ to remove-spoke (nu - a number):
 
 to lift-adjust (nu - a number):
 	decrease to-number of locking lift by nu;
-	if to-number of locking lift is 0, now to-number of locking lift is 5606;
+	if to-number of locking lift is 0, now to-number of locking lift is 2806;
 
 the liftsummon rules are a room based rulebook.
 
@@ -1527,10 +1527,10 @@ to check-red-rose:
 	if shoal-core-score is 2:
 		say "Things are livelier now. Plants come into bloom, etc. Of course, there is a red rose, because there always is one during such a quick transformation. You take it.";
 		if sco-lore-lols is false:
-			now to-number of gore goals is -5404;
+			now to-number of gore goals is -2704;
 		else:
 			now to-number of gore goals is -3;
-		remove-spoke 5805; [SHOCKING SHIFT done]
+		remove-spoke 2905; [SHOCKING SHIFT done]
 		cheap-poem-cue red rose;
 	else:
 		say "You've almost filled this area's potential. Just a little more life...";
@@ -1550,18 +1550,18 @@ to say somewhere-hospitable: say "you're somewhere hospitable to animals"
 
 to change-shoe-number (nu - a number):
 	decrease to-number of show shoe by nu;
-	if to-number of show shoe is 0, now to-number of show shoe is 5507;
+	if to-number of show shoe is 0, now to-number of show shoe is 2757;
 
 this is the flue-and-glue rule:
 	if shoe-storage is 2:
 		say "With the Glow Glue, you patch up the flow flue as best you can. Surprisingly, you find some hoses to rinse them so they're clean enough that food and drink can go through them.";
-		now to-number of show shoe is 10708;
+		now to-number of show shoe is 5358;
 
 this is the stew-and-brew rule:
 	if shoe-concessions is 2:
 		say "With a reliable source of food and drink (which, man, they smell pretty good) a crowd starts to gather. You can't do any rhyming stuff to them directly, but perhaps there's some general stuff you can shout.";
 		move lazy loud crazy crowd to show shoe;
-		now to-number of show shoe is 10607;
+		now to-number of show shoe is 5307;
 
 a goodrhyme rule (this is the shoe-crowd-yet rule):
 	if not shoe-food-drink:
@@ -1577,8 +1577,8 @@ to lose-gold-string (nu - a number):
 	say "[line break]A[one of][or]nother[stopping] gold[twang].";
 	decrease to-number of light lute by nu;
 	if to-number of light lute is 0:
-		if sco-night-newt is false, decrease to-number of light lute by 5504;
-		if sco-kite-coot is false, decrease to-number of light lute by 5404;
+		if sco-night-newt is false, decrease to-number of light lute by 2754;
+		if sco-kite-coot is false, decrease to-number of light lute by 2704;
 		if to-number of light lute is 0, now to-number of light lute is -4;
 
 to lose-silver-string: say "[line break]A[one of][or]nother[stopping] silver[twang]."
@@ -1652,7 +1652,7 @@ to decide what number is whale-stuff:
 
 to adjust-trail (nu - a number):
 	decrease to-number of trite trail by nu;
-	if to-number of trite trail is 0, now to-number of trite trail is 5606;
+	if to-number of trite trail is 0, now to-number of trite trail is 2806;
 
 [ending sequence]
 
