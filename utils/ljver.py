@@ -17,17 +17,20 @@ mistake_strings = { 'CLEVER REJECT TEXT': 'You need a clever reject for a good g
 def verify_header(the_file, the_strings, show_success = True):
     bn = os.path.basename(the_file)
     got_warning = False
+    if not os.path.exists(the_file):
+        sys.stderr.write("Skipping test for nonexistent file {}".format(the_file))
+        return
     with open(the_file) as file:
         for (line_count, line) in enumerate (file, 1):
             for bad_str in the_strings:
                 if bad_str in line:
                     if not got_warning:
-                        print(colorama.Fore.CYAN + "    GENERIC CODE TO BE REPLACED" + mt.WTXT)
+                        sys.stderr.write(colorama.Fore.CYAN + "    GENERIC CODE TO BE REPLACED" + mt.WTXT + "\n")
                     got_warning = True
                     sys.stderr.write(colorama.Fore.YELLOW + the_strings[bad_str].format(line_count, bn) + "\n" + mt.WTXT)
                     mt.add_postopen(the_file, line_count)
     if show_success and not got_warning:
-        print(colorama.Fore.GREEN + "All code for {} is changed from the default.".format(bn) + mt.WTXT)
+        sys.stderr.write(colorama.Fore.GREEN + "All code for {} is changed from the default.".format(bn) + mt.WTXT + "\n")
 
 def verify_both():
     this_proj = i7.dir2proj()
