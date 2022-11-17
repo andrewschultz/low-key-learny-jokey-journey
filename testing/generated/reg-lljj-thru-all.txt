@@ -9,7 +9,7 @@
 * main-thru
 
 #testcase-room-names-bane-be-sane-see
-/^Bane Be Sane, See\?
+`Bane Be Sane, See?
 
 >au 2
 
@@ -20,13 +20,13 @@ by one point
 by one point
 
 #testcase-room-names-roaring-rocks
-/^Roaring Rocks
+`Roaring Rocks
 
 >boring box
 by one point
 
 #+testcase-room-names-roaring-rocks
-/^Storing Stocks
+`Storing Stocks
 
 >open box
 You open the boring box, and you see a metal gadget that doesn't look very interesting at first.
@@ -45,7 +45,7 @@ by one point
 >n
 
 #testcase-room-names-no-nudge-slow-sludge
-/^No-Nudge Slow Sludge
+`No-Nudge Slow Sludge
 
 >grow grudge
 by one point
@@ -53,7 +53,7 @@ by one point
 >n
 
 #testcase-room-names-one-warm-stun-storm
-/^One Warm Stun-Storm
+`One Warm Stun-Storm
 
 >bother
 You hear a whooshing as a door swings in from nowhere. It doesn't seem to lead anywhere. Voices from behind it, though, assure you you are missing something. Using your logical skills, you deduce it is a miss-more-diss door. While it's not going to jump you if your back is turned, it might be nice to get rid of.
@@ -70,7 +70,7 @@ by one point
 >n
 
 #testcase-room-names-the-thunk-tree-trunk
-/^The \(Thunk!\) Tree Trunk
+`The (Thunk!) Tree Trunk
 
 >see sunk
 by one point
@@ -91,7 +91,7 @@ by one point
 >e
 
 #testcase-room-names-trust-track
-/^Trust Track
+`Trust Track
 
 >bussed back
 by one point
@@ -102,13 +102,13 @@ by one point
 >n
 
 #testcase-room-names-rare-reach
-/^Rare Reach
+`Rare Reach
 
 >bare beach
 by one point
 
 #+testcase-room-names-rare-reach
-/^Bare Beach
+`Bare Beach
 
 >seep soon
 by one point
@@ -128,7 +128,7 @@ by one point
 >w
 
 #testcase-room-names-hun-harm-fun-farm
-/^Hun Harm Fun Farm
+`Hun Harm Fun Farm
 
 >unarm
 by one point
@@ -136,7 +136,7 @@ by one point
 >n
 
 #testcase-room-names-no-noon
-/^No Noon
+`No Noon
 
 >go goon
 by one point
@@ -154,7 +154,7 @@ by one point
 by one point
 
 #testcase-room-names-jotty-jail
-/^Jotty Jail
+`Jotty Jail
 
 >grotty grail
 by one point
@@ -166,7 +166,7 @@ by one point
 by one point
 
 #testcase-room-names-high-hub
-/^High Hub
+`High Hub
 
 >bye bub
 
@@ -175,7 +175,7 @@ by one point
 ##BALANCE UNDOS
 #+testcase-room-names-no-noon
 >gonear no noon
-/^Ho, HEWN
+`Ho, HEWN
 
 >undo
 
@@ -190,7 +190,7 @@ by one point
 You wonder if a concert will really take your mind off things. You wonder what things there are to take your mind off. Before you finish wondering, the locking lift drops you by a large amphitheater. Empty, but big enough for a good show.
 
 #testcase-room-names-no-new-show-shoe
-/^No-New-Show Shoe
+`No-New-Show Shoe
 
 >go goo
 by one point
@@ -217,7 +217,7 @@ by one point
 by one point
 
 #+testcase-room-names-no-new-show-shoe
-/^Whoah-Woo-Show Shoe
+`Whoah-Woo-Show Shoe
 
 >throw through
 by one point
@@ -232,13 +232,13 @@ by one point
 You reflect on how we all want big changes, but we're uncomfortable with them happening just this way.
 
 #testcase-room-names-sore-souls-gore-goals
-/^Sore Souls' Gore Goals
+`Sore Souls' Gore Goals
 
 >shore shoals
 by one point
 
 #+testcase-room-names-sore-souls-gore-goals
-/^Shore Shoals
+`Shore Shoals
 
 ##RBRS-SHUFFLECONDITION=1>0
 
@@ -269,7 +269,7 @@ by one point
 You think back to the bad gifts you've received when people said you should be grateful for their consideration. Then you think back to favors people did, just because, and how much they meant. Gawking in each case. You dare to ask for another gift that will make you gawk the right way...
 
 #testcase-room-names-rum-route
-/^Bum-'Bout Rum Route
+`Bum-'Bout Rum Route
 
 >dumb doubt
 by one point
@@ -281,12 +281,12 @@ by one point
 by one point
 
 #+testcase-room-names-rum-route
-/^Numb\? NOWT!
+`Numb? NOWT!
 
 >d
 
 #testcase-room-names-nay-nope-slay-slope
-/^Nay-Nope-Slay Slope
+`Nay-Nope-Slay Slope
 
 >hey hope
 by one point
@@ -304,7 +304,7 @@ by one point
 You wonder there is a way to understand con artistry without becoming one. As you enter the lift, you reflect that you seem to know when someone is pulling your leg, but they always talk you into believing them. How to break that cycle?
 
 #testcase-room-names-slight-sleaze
-/^Slight Sleaze
+`Slight Sleaze
 
 >tight tees
 by one point
@@ -321,7 +321,7 @@ by one point
 >s
 
 #testcase-room-names-freak-framing-seek-saming
-/^Freak-Framing Seek-Sameing
+`Freak-Framing Seek-Sameing
 
 >clique claiming
 by one point
@@ -333,7 +333,7 @@ by one point
 by one point
 
 #+testcase-room-names-freak-framing-seek-saming
-/^Eek! Aiming!
+`Eek! Aiming!
 
 >bred bros
 by one point
@@ -348,7 +348,7 @@ by one point
 The locking lift leads you to a shore where you'd expect a watercraft, but there is none.
 
 #testcase-room-names-mad-most-cad-coast
-/^Mad-Most-Cad Coast
+	Mad-Most-Cad Coast
 
 >bad boast
 by one point
@@ -357,11 +357,11 @@ by one point
 by one point
 
 #+testcase-room-names-mad-most-cad-coast
-/^Pad Post-Had-Host
+`Pad Post-Had-Host
 
 >w
 
-/^Trite Trail
+`Trite Trail
 
 >sight sail
 by one point
@@ -413,13 +413,13 @@ The locking lift lurches again with a shift shocking enough even though you know
 by one point
 
 #testcase-room-names-old-end
-/^Old End
+`Old End
 
 >bold bend
 by one point
 
 #+testcase-room-names-old-end
-/^Bold Bend
+`Bold Bend
 
 >trolled trend
 by one point
@@ -430,7 +430,7 @@ by one point
 >s
 
 #testcase-room-names-drain-drat-vain-vat
-/^Drain \(Drat!\) Vain Vat
+`Drain (Drat!) Vain Vat
 
 >bane bat
 by one point
@@ -442,7 +442,7 @@ by one point
 by one point
 
 #+testcase-room-names-drain-drat-vain-vat
-/^Main Mat
+`Main Mat
 
 >fed foes
 by one point
@@ -450,7 +450,7 @@ by one point
 >s
 
 #testcase-room-names-threat-three-met-me
-/^Market Marquee
+`Market Marquee
 
 >fret free
 by one point
@@ -461,7 +461,7 @@ by one point
 >set see
 by one point
 
-/^Threat Three Met Me
+`Threat Three Met Me
 
 >plus plaque
 by one point

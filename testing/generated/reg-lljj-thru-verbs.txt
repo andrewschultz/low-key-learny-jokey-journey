@@ -75,7 +75,9 @@ You open the boring box, and you see a metal gadget that doesn't look very inter
 
 #testcase-common-readables-table-of-readables-leet-learner
 >read leet learner
-The leet learner has three toggles: HA HALF (on) and NAH NAFF (off) to note when you are half right. It's currently on. TWO TOO (on) and DO DUE (off) is for homonym detection, and a GUESS GO toggle has YES YO and LESS LO, which seems to track how many good guesses you've found so far.
+The leet learner has three toggles: HA HALF (on) and NAH NAFF (off) to note when you are half right. It's currently on. TWO TOO (on) and DO DUE (off) is for homonym detection.
+One slider setting has a range of values: GO GUESS to LO LESS to YO YES to the most information-giving entry, MO MESS. It's currently set to LO LESS, which means you'll only get information on how many things you need to sort out with the current double-rhyme.
+You can HINT LL to see what they all mean.
 
 >n
 

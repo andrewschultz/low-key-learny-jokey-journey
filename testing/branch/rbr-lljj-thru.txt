@@ -73,7 +73,7 @@ TSV:## minimum walkthrough	## walkthrough with all points	## walkthrough with al
 
 @all
 #testcase-room-names-bane-be-sane-see
-/^Bane Be Sane, See\?
+`Bane Be Sane, See?
 
 >au 2
 
@@ -196,7 +196,7 @@ lurking lump
 \\
 #ttc-table-of-general-good-guesses-ride-wrong
 >ride wrong
-There is no fourth option for the guide gone, but you do have a chance for a heel turn at game's end.
+There is no fourth option for the guide gong, but you do have a chance for a heel turn at game's end.
 !learner
 !lurking lump
 \\
@@ -651,7 +651,7 @@ by one point
 
 @all
 #testcase-room-names-roaring-rocks
-/^Roaring Rocks
+`Roaring Rocks
 
 @hfull
 #testcase-rules-hint-roaring-rocks-rule-if-sco-boring-box-is-false
@@ -735,7 +735,7 @@ You can LL and try going UP to look around and get clues about the leet learner 
 
 @all
 #+testcase-room-names-roaring-rocks
-/^Storing Stocks
+`Storing Stocks
 
 @rej
 #testcase-postreject-table-of-verb-checks-vc-boring-box-rule
@@ -774,7 +774,9 @@ You open the boring box, and you see a metal gadget that doesn't look very inter
 @ver
 #testcase-common-readables-table-of-readables-leet-learner
 >read leet learner
-The leet learner has three toggles: HA HALF (on) and NAH NAFF (off) to note when you are half right. It's currently on. TWO TOO (on) and DO DUE (off) is for homonym detection, and a GUESS GO toggle has YES YO and LESS LO, which seems to track how many good guesses you've found so far.
+The leet learner has three toggles: HA HALF (on) and NAH NAFF (off) to note when you are half right. It's currently on. TWO TOO (on) and DO DUE (off) is for homonym detection.
+One slider setting has a range of values: GO GUESS to LO LESS to YO YES to the most information-giving entry, MO MESS. It's currently set to LO LESS, which means you'll only get information on how many things you need to sort out with the current double-rhyme.
+You can HINT LL to see what they all mean.
 
 @hfull
 #hint learner
@@ -1136,7 +1138,7 @@ NOTE: Low-Key Learny Jokey Journey should indicate whenever you find the right r
 
 @all
 #testcase-room-names-no-nudge-slow-sludge
-/^No-Nudge Slow Sludge
+`No-Nudge Slow Sludge
 
 @verbs
 #testcase-mainverbs-check-listening-fallthrough
@@ -1306,7 +1308,7 @@ You already neutralized the no-nudge slow sludge.
 
 @all
 #testcase-room-names-one-warm-stun-storm
-/^One Warm Stun-Storm
+`One Warm Stun-Storm
 
 @hfull
 #testcase-rules-hint-stun-storm-rule-if-sco-done-dorm-is-false
@@ -1397,7 +1399,7 @@ You briefly get your Nigel Molesworth on.
 \\
 #ttc-table-of-miss-more-diss-door-guesses-his-hiss-whore
 >his whore
-No, nothing tasteless.
+No, nothing that tasteless.
 \\
 #ttc-table-of-miss-more-diss-door-guesses-is-or
 >is or
@@ -1578,7 +1580,7 @@ You already filled out the fun form.
 
 @all
 #testcase-room-names-the-thunk-tree-trunk
-/^The \(Thunk!\) Tree Trunk
+`The (Thunk!) Tree Trunk
 
 @verbs
 #testcase-mainverbs-check-climbing-if-noun-is-tree-trunk
@@ -1978,7 +1980,7 @@ That guide gong, again, rings to notify you that you don't need to go back throu
 
 @all
 #testcase-room-names-trust-track
-/^Trust Track
+`Trust Track
 
 @hom
 #ttc-table-of-room-homonyms-trust-track-trussed
@@ -2198,7 +2200,7 @@ The track now runs west-north but not east.
 
 @all
 #testcase-room-names-rare-reach
-/^Rare Reach
+`Rare Reach
 
 @gt
 #ttc-table-of-noways-rare-reach
@@ -2315,7 +2317,7 @@ You need the deep dune to start getting smaller. (+)
 
 @all
 #+testcase-room-names-rare-reach
-/^Bare Beach
+`Bare Beach
 
 @gt
 #+ttc-table-of-noways-rare-reach
@@ -2498,7 +2500,7 @@ That guide gong, again, rings to notify you that you don't need to go back throu
 
 @all
 #testcase-room-names-hun-harm-fun-farm
-/^Hun Harm Fun Farm
+`Hun Harm Fun Farm
 
 @gong,prong
 >e
@@ -2588,7 +2590,7 @@ You already unarmed the Hun Harm Fun Farm!
 
 @all
 #testcase-room-names-no-noon
-/^No Noon
+`No Noon
 
 @hfull
 #+testcase-rules-hint-rho-rune-rule-default
@@ -2880,7 +2882,7 @@ by one point
 
 @all
 #testcase-room-names-jotty-jail
-/^Jotty Jail
+`Jotty Jail
 
 @verbs
 #testcase-mainverbs-check-climbing-if-noun-is-snotty-snail
@@ -3034,7 +3036,7 @@ by one point
 
 @all
 #testcase-room-names-high-hub
-/^High Hub
+`High Hub
 
 @verbs
 #testcase-mainverbs-check-climbing-if-noun-is-locking-lift
@@ -3370,7 +3372,7 @@ Nothing comes up. You've changed the sturdy stalk as much as you needed to.
 ##BALANCE UNDOS
 #+testcase-room-names-no-noon
 >gonear no noon
-/^Ho, HEWN
+`Ho, HEWN
 \\
 >undo
 
@@ -3469,7 +3471,7 @@ by one point
 You wonder if a concert will really take your mind off things. You wonder what things there are to take your mind off. Before you finish wondering, the locking lift drops you by a large amphitheater. Empty, but big enough for a good show.
 \\
 #testcase-room-names-no-new-show-shoe
-/^No-New-Show Shoe
+`No-New-Show Shoe
 
 @rej
 >rocking rift
@@ -3888,7 +3890,7 @@ by one point
 
 @all
 #+testcase-room-names-no-new-show-shoe
-/^Whoah-Woo-Show Shoe
+`Whoah-Woo-Show Shoe
 
 @verbs
 #+testcase-mainverbs-carry-out-talktoing-if-noun-is-crow-crew
@@ -4106,7 +4108,7 @@ by one point
 You reflect on how we all want big changes, but we're uncomfortable with them happening just this way.
 \\
 #testcase-room-names-sore-souls-gore-goals
-/^Sore Souls' Gore Goals
+`Sore Souls' Gore Goals
 
 @rej
 >shocking shift
@@ -4335,7 +4337,7 @@ You have already rehabilitated the sore souls' gore goals!
 
 @all
 #+testcase-room-names-sore-souls-gore-goals
-/^Shore Shoals
+`Shore Shoals
 
 ##RBRS-SHUFFLECONDITION=1>0
 
@@ -4604,7 +4606,7 @@ by one point
 You think back to the bad gifts you've received when people said you should be grateful for their consideration. Then you think back to favors people did, just because, and how much they meant. Gawking in each case. You dare to ask for another gift that will make you gawk the right way...
 \\
 #testcase-room-names-rum-route
-/^Bum-'Bout Rum Route
+`Bum-'Bout Rum Route
 
 @hin
 #testcase-rulestubs-hint-rum-route-rule-default
@@ -4827,7 +4829,7 @@ Nothing comes up. The general area here has been changed enough.
 
 @all
 #+testcase-room-names-rum-route
-/^Numb\? NOWT!
+`Numb? NOWT!
 
 @gt
 #+ttc-table-of-noways-rum-route
@@ -4849,7 +4851,7 @@ You've cleared the Rum Route. No need to overdo things.
 
 @all
 #testcase-room-names-nay-nope-slay-slope
-/^Nay-Nope-Slay Slope
+`Nay-Nope-Slay Slope
 
 @hin
 #testcase-rulestubs-hint-slay-slope-rule-default
@@ -4888,7 +4890,7 @@ The object is not to be consumed by depression but to reduce its influence.
 \\
 #ttc-table-of-nay-nope-slay-slope-guesses-pay-pope
 >pay pope
-Oh dear no. The proper way to surrender to religious corruption these days is to chuck money at televangelists. Get with the times!
+Oh dear no. Get with the times! In these enlightened days, we chuck money at prosperity-gospel televangelists.
 \\
 #ttc-table-of-nay-nope-slay-slope-guesses-ray-rope
 >ray rope
@@ -5053,7 +5055,7 @@ by one point
 You wonder there is a way to understand con artistry without becoming one. As you enter the lift, you reflect that you seem to know when someone is pulling your leg, but they always talk you into believing them. How to break that cycle?
 \\
 #testcase-room-names-slight-sleaze
-/^Slight Sleaze
+`Slight Sleaze
 
 @hfull
 #testcase-rules-hint-light-lute-rule-if-player-is-in-slight-sleaze-if-sco-plight-please-is-false
@@ -5311,7 +5313,7 @@ You already planted the right root to make trite trees. Nothing more to do here.
 
 @all
 #testcase-room-names-freak-framing-seek-saming
-/^Freak-Framing Seek-Sameing
+`Freak-Framing Seek-Sameing
 
 @hin
 #testcase-rulestubs-hint-seek-sameing-rule-default
@@ -5478,7 +5480,7 @@ Nothing comes up. The general area here has been changed enough.
 
 @all
 #+testcase-room-names-freak-framing-seek-saming
-/^Eek! Aiming!
+`Eek! Aiming!
 
 @rej
 #testcase-postreject-table-of-verb-checks-vc-bleak-blaming-rule
@@ -5608,7 +5610,7 @@ DOCKING DIFFED is the recommended lift setting to complete.
 The locking lift leads you to a shore where you'd expect a watercraft, but there is none.
 \\
 #testcase-room-names-mad-most-cad-coast
-/^Mad-Most-Cad Coast
+	Mad-Most-Cad Coast
 
 @hin
 #testcase-rulestubs-hint-mad-most-cad-coast-rule-default
@@ -5757,7 +5759,7 @@ Nothing comes up. The general area here has been changed enough.
 
 @all
 #+testcase-room-names-mad-most-cad-coast
-/^Pad Post-Had-Host
+`Pad Post-Had-Host
 
 @gt
 #+ttc-table-of-noways-mad-most-cad-coast
@@ -5788,7 +5790,7 @@ You fail to scare anyone with this, not that you need to, any more.
 >w
 
 @all
-/^Trite Trail
+`Trite Trail
 
 @verbs
 #testcase-mainverbs-carry-out-talktoing-if-noun-is-white-whale
@@ -6317,7 +6319,7 @@ You've figured out the locking lift completely.
 
 @all
 #testcase-room-names-old-end
-/^Old End
+`Old End
 
 @hin
 #testcase-rulestubs-hint-old-end-rule-default
@@ -6440,7 +6442,7 @@ by one point
 
 @all
 #+testcase-room-names-old-end
-/^Bold Bend
+`Bold Bend
 
 @gt
 #+testcase-exits-old-end
@@ -6542,7 +6544,7 @@ You can only deal with so much trolling!
 
 @all
 #testcase-room-names-drain-drat-vain-vat
-/^Drain \(Drat!\) Vain Vat
+`Drain (Drat!) Vain Vat
 
 @gong,prong
 >n
@@ -6772,7 +6774,7 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 
 @all
 #+testcase-room-names-drain-drat-vain-vat
-/^Main Mat
+`Main Mat
 
 @gt
 #+ttc-table-of-noways-vain-vat
@@ -6880,7 +6882,7 @@ I couldn't parse that command. You don't need any more than two words long. VERB
 
 @all
 #testcase-room-names-threat-three-met-me
-/^Market Marquee
+`Market Marquee
 
 @hin
 #testcase-rulestubs-hint-market-marquee-rule-default
@@ -7097,7 +7099,7 @@ You already prepped yourself for the final fight. Now it is upon you.
 You already prepped yourself for the final fight. Now it is upon you.
 
 @all
-/^Threat Three Met Me
+`Threat Three Met Me
 
 @verbs
 #testcase-mainverbs-check-attacking-if-noun-is-spurning-sprite

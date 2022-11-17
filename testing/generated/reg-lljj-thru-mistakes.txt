@@ -38,7 +38,7 @@ lurking lump
 
 #ttc-table-of-general-good-guesses-ride-wrong
 >ride wrong
-There is no fourth option for the guide gone, but you do have a chance for a heel turn at game's end.
+There is no fourth option for the guide gong, but you do have a chance for a heel turn at game's end.
 !learner
 !lurking lump
 
@@ -246,7 +246,7 @@ You briefly get your Nigel Molesworth on.
 
 #ttc-table-of-miss-more-diss-door-guesses-his-hiss-whore
 >his whore
-No, nothing tasteless.
+No, nothing that tasteless.
 
 #ttc-table-of-miss-more-diss-door-guesses-is-or
 >is or
@@ -1194,7 +1194,7 @@ The object is not to be consumed by depression but to reduce its influence.
 
 #ttc-table-of-nay-nope-slay-slope-guesses-pay-pope
 >pay pope
-Oh dear no. The proper way to surrender to religious corruption these days is to chuck money at televangelists. Get with the times!
+Oh dear no. Get with the times! In these enlightened days, we chuck money at prosperity-gospel televangelists.
 
 #ttc-table-of-nay-nope-slay-slope-guesses-ray-rope
 >ray rope
