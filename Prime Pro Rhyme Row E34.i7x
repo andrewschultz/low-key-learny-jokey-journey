@@ -32,12 +32,29 @@ book deciphering mistakes
 
 [to decide which number is variable-scan-length of (mynum - a number):] [keep this in the main file]
 
+got-half-match is a truth state that varies.
+
 a rhymeguess rule for a table name (called tn) (this is the rhyme-guess-checker rule):
+	let temp be 0;
 	repeat through tn:
-		if there is a mist-cmd entry:
+		if there is a mist-cmd entry: [try and match topic: very old way, faster but takes more memory, can't print good guesses]
 			unless the player's command matches mist-cmd entry, next;
-		if there is a mist-regex entry:
-			unless the player's command matches the regular expression "^[mist-regex entry]$", next;
+		else if there is a mist-regex entry: [2nd stage: we can print good guesses, but we can't give individual words right]
+			unless the player's command matches the regular expression "^([mist-regex entry])$", next;
+		else if there is a mist-1 entry:
+			if press-pro-level < 4:
+				unless the player's command matches the regular expression "^([mist-1 entry]) ([mist-2 entry])$", next;
+			if the player's command matches the regular expression "^([mist-1 entry])":
+				increment temp;
+			if the player's command matches the regular expression "([mist-2 entry])$":
+				increment temp;
+			if temp is 2:
+				unless the player's command matches the regular expression "^([mist-1 entry]) ([mist-2 entry])$", next;
+			else if temp is 1:
+				now got-half-match is true;
+				next;
+			else:
+				next;
 		if there is a mist-rule entry:
 			process the mist-rule entry;
 			unless the rule succeeded, continue the action;
@@ -53,7 +70,7 @@ a rhymeguess rule for a table name (called tn) (this is the rhyme-guess-checker 
 		if gyw is false:
 			increment total-good-guesses;
 			if press-pro-warn is false:
-				say "[i][bracket][b]NOTE:[r][i] to switch on the option that shows how many similar rhyme pairs you have left in this area, you can type [b]YO YES[r][i] or, to recall what you found, [b]MO MESS[r][i]. This option is curtailed by default as it may distract people from the main game.[close bracket][r]";
+				say "[i][bracket][b]NOTE:[r][i] to switch on the option that shows how many similar rhyme pairs you have left in this area, you can type [b]YO YES[r][i]. To be able to recall what you found, [b]MO MESS[r][i]. To get hints if one letter is wrong for a good guess, [b]PRO PRESS[r][i]. This option is curtailed by default as it may distract people from the main game.[close bracket][r]";
 				now press-pro-warn is true;
 			current-table-note-x tn; [the -x is for special cases like the mad monk, even though table-note is in the universal file]
 			check-lump-progress;
