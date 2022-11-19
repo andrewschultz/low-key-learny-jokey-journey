@@ -54,47 +54,20 @@ You open the boring box, and you see a metal gadget that doesn't look very inter
 >hint learner
 <Hint-learner-part>.
 
->ll
-You scan the area.
-Hmm. There's a reading. It must relate "Storing Stocks" to the erstwhile boring box.
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -3.00.)
-The leet learner is giving a funny readout. You could maybe climb UP to the old rocks and get another reading.
-
 >n
 
 #testcase-rulestubs-hint-mad-monk-rule-default
 >hint monk
 <Hint-mad-monk>.
 
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -3.00.)
-!You could maybe climb UP to the old rocks and get another reading.
-
->ll mad monk
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
-
 >gad gunk
 by one point
-
->sad sunk
-
->ll mad monk
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
-
->undo
->undo
 
 >bad bunk
 by one point
 
->ll mad monk
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
-
 >sad sunk
 by one point
-
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -3.00.)
 
 >n
 
@@ -105,9 +78,6 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 #+testcase-rulestubs-hint-nnss-rule-default
 >hint sludge
 <Hint-nnss>.
-
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.50.)
 
 >grow grudge
 by one point
@@ -120,19 +90,12 @@ Nothing comes up. The general area here has been changed enough.
 >bother
 You hear a whooshing as a door swings in from nowhere. It doesn't seem to lead anywhere. Voices from behind it, though, assure you you are missing something. Using your logical skills, you deduce it is a miss-more-diss door. While it's not going to jump you if your back is turned, it might be nice to get rid of.
 
->ll door
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
-However, it's really dim, as if you don't need to do or think whatever there is to do or think.
-
 #testcase-rulestubs-hint-diss-door-rule-default
 >hint diss door
 <Hint-diss-door>.
 
 >piss poor
 by one point
-
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, -0.50.)
 
 >done dorm
 by one point
@@ -144,12 +107,6 @@ by one point
 #+testcase-rulestubs-hint-stun-storm-rule-default
 >hint dorm
 <Hint-stun-storm>.
-
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, -0.50.)
-
->ll done dorm
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 0.00.)
 
 >fun form
 by one point
@@ -167,14 +124,8 @@ Nothing comes up. The general area here has been changed enough.
 >hint trunk
 <Hint-tree-trunk>.
 
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, -1.00.)
-
 >see sunk
 by one point
-
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, -1.00.)
 
 >gee junk
 by one point
@@ -185,9 +136,6 @@ by one point
 
 >ll
 Nothing comes up. The general area here has been changed enough.
-
->ll fruit
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
 
 #testcase-rulestubs-hint-free-fruit-rule-default
 >hint free fruit
@@ -206,9 +154,6 @@ by one point
 >hint peach
 <Hint-pear-peach>.
 
->ll pear peach
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
-
 >s
 
 >s
@@ -223,21 +168,12 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >hint jack
 <Hint-just-jack>.
 
->ll jack
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (2.00, 0.00.)
-
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, -1.00.)
-
 >bussed back
 by one point
 
 #testcase-rulestubs-hint-sus-sack-rule-default
 >hint sus sack
 <Hint-sus-sack>.
-
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >crust crack
 by one point
@@ -246,9 +182,6 @@ by one point
 Nothing comes up. The general area here has been changed enough.
 
 >n
-
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >bare beach
 by one point
@@ -264,20 +197,11 @@ by one point
 >ll
 Nothing comes up. The general area here has been changed enough.
 
->ll dune
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
-
 >seep soon
 by one point
 
->ll dune
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
-
 >s
 >n
-
->ll dune
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >reap rune
 by one point
@@ -302,9 +226,6 @@ Nothing comes up. The general area here has been changed enough.
 >hint 
 <Hint-fun-farm>.
 
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
-
 >unarm
 by one point
 
@@ -313,14 +234,8 @@ Nothing comes up. The general area here has been changed enough.
 
 >n
 
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
-
 >go goon
 by one point
-
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >cocoon
 by one point
@@ -333,20 +248,11 @@ by one point
 >hint cocoon
 <Hint-cocoon>.
 
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
-
 >mo moon
 by one point
 
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
-
 >so soon
 by one point
-
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (2.00, 1.00.)
 
 >crow croon
 by one point
@@ -365,9 +271,6 @@ by one point
 >hint lurking lump
 <Hint-lurking-lump>.
 
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.00.)
-
 >knotty nail
 by one point
 
@@ -379,19 +282,11 @@ by one point
 >hint lift
 <Hint-locking-lift>.
 
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 0.00.)
-However, it's really dim, as if you don't need to do or think whatever there is to do or think.
-
 >bye bub
 
 #testcase-rulestubs-hint-sturdy-stalk-rule-default
 >hint stalk
 <Hint-sturdy-stalk>.
-
->ll stalk
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
-However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 
 >wordy walk
 
@@ -411,73 +306,29 @@ Nothing comes up. The general area here has been changed enough.
 
 ##RBRS-SHUFFLESTART=0
 
->ll
-Nothing comes up. The general area here has been changed enough.
-
->ll lift
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.40, 0.80.)
-
 >rocking rift
 by one point
 
 >go goo
 by one point
 
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.50.)
-
->glow glue
-by one point
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.50.)
-
->undo
->undo
-
 >flow flue
 by one point
 
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.50.)
-
 >glow glue
 by one point
-
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
-
->stow stew
-by one point
-
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
-
->undo
->undo
 
 >bro brew
 by one point
 
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
-
 >stow stew
 by one point
-
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >crow crew
 by one point
 
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -0.50.)
-
 >ho who
 by one point
-
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -0.50.)
 
 >yo you
 by one point
@@ -486,15 +337,9 @@ by one point
 >hint
 <Hint-no-new-show-shoe>.
 
->hint crowd
-You summoned the lazy loud crazy crowd into existence, which is enough. You'll want to look elsewhere for double-rhymes.
-
 #testcase-rulestubs-hint-crow-crew-rule-default
 >hint crow crew
 <Hint-crow-crew>.
-
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 3.50.)
 
 >throw through
 by one point
@@ -506,20 +351,11 @@ by one point
 ##RBRS-SHUFFLEEND=0
 ##RBRS-SHUFFLESTART=1
 
->ll lift
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 1.00.)
-
 >shocking shift
 by one point
 
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
-
 >shore shoals
 by one point
-
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
 
 ##RBRS-SHUFFLECONDITION=1>0
 
@@ -549,9 +385,6 @@ by one point
 >four foals
 by one point
 
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
-
 >more moles
 by one point
 
@@ -562,9 +395,6 @@ by one point
 ##RBRS-SHUFFLEEND=1
 ##RBRS-SHUFFLESTART=2
 
->ll lift
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.33, 1.00.)
-
 >gawking gift
 by one point
 
@@ -572,23 +402,11 @@ by one point
 >hint
 <Hint-rum-route>.
 
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.50.)
-
 >dumb doubt
 by one point
 
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.50.)
-
->ll rose
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.25, 0.25.)
-
 >said sos
 by one point
-
->ll rose
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.33, 0.67.)
 
 >umm out
 by one point
@@ -602,14 +420,8 @@ Nothing comes up. The general area here has been changed enough.
 >hint
 <Hint-slay-slope>.
 
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, -0.50.)
-
 >hey hope
 by one point
-
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-2.50, -0.50.)
 
 >k cope
 by one point
@@ -617,33 +429,14 @@ by one point
 ##RBRS-SHUFFLEEND=2
 ##RBRS-SHUFFLESTART=3
 
->ll lift
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 1.50.)
-
 >grokking grift
 by one point
-
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >bright breeze
 by one point
 
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
-
 >plight please
 by one point
-
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -2.00.)
-However, it's really dim, as if you don't need to do or think whatever there is to do or think.
-
->tight tees
-by one point
-
->ll light lute
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 
 >right root
 by one point
@@ -652,43 +445,17 @@ by one point
 >hint
 <Hint-slight-sleaze>.
 
->hint trite trees
-You summoned the trite trees into existence, which is enough. You'll want to look elsewhere for double-rhymes.
-
->ll light lute
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
-
->ll
-You scan the area.
-Nothing comes up. The general area here has been changed enough.
-
 >s
 
 #testcase-rulestubs-hint-seek-sameing-rule-default
 >hint
 <Hint-seek-sameing>.
 
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.00.)
-
 >bleak blaming
 by one point
 
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, 0.00.)
-
 >chic shaming
 by one point
-
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (3.00, 1.00.)
-However, it's really dim, as if you don't need to do or think whatever there is to do or think.
-
->clique claiming
-by one point
-
->ll
-Nothing comes up. The general area here has been changed enough.
 
 >bred bros
 by one point
@@ -703,9 +470,6 @@ by one point
 ##RBRS-SHUFFLEEND=3
 ##RBRS-SHUFFLESTART=4
 
->ll lift
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 2.00.)
-
 >docking diffed
 by one point
 
@@ -713,14 +477,8 @@ by one point
 >hint
 <Hint-mad-most-cad-coast>.
 
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.50.)
-
 >bad boast
 by one point
-
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.50.)
 
 >rad roast
 by one point
@@ -730,36 +488,17 @@ Nothing comes up. The general area here has been changed enough.
 
 >w
 
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.33, -0.67.)
-
 >sight sail
 by one point
-
-# nothing changes after Sight Sail, because Right Rail is opened
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.33, -0.67.)
 
 >might mail
 by one point
 
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, -0.50.)
-
 >flight flail
 by one point
 
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
-
 >right rail
 by one point
-
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
-
->ll light lute
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 
 >bright brute
 by one point
@@ -769,12 +508,6 @@ Nothing comes up. You've changed the light lute as much as you needed to.
 
 >excite exhale
 by one point
-
->ll red rose
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.50, 1.00.)
-
->ll
-Nothing comes up. The general area here has been changed enough.
 
 #testcase-rulestubs-hint-sight-sail-rule-default
 >hint sight sail
@@ -803,14 +536,7 @@ Nothing comes up. The general area here has been changed enough.
 >thread throws
 by one point
 
->ll red rose
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
-
 ##RBRS-SHUFFLEEND=4
-
->ll delight dilute
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
-However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 
 #testcase-rulestubs-hint-delight-dilute-rule-default
 >hint delight dilute
@@ -819,9 +545,6 @@ However, it's really dim, as if you don't need to do or think whatever there is 
 >despite dispute
 by one point
 
->ll lift
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
-
 >mocking miffed
 by one point
 
@@ -829,20 +552,11 @@ by one point
 >hint
 <Hint-old-end>.
 
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
-
 >bold bend
 by one point
 
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (3.00, 1.00.)
-
 >trolled trend
 by one point
-
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >mold mend
 by one point
@@ -852,14 +566,8 @@ Nothing comes up. The general area here has been changed enough.
 
 >s
 
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, -0.50.)
-
 >bane bat
 by one point
-
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 
 #testcase-rulestubs-hint-bane-bat-rule-default
 >hint bane bat
@@ -872,9 +580,6 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >flain flat
 by one point
 
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.50, 1.50.)
-
 >splain splat
 by one point
 
@@ -883,9 +588,6 @@ Nothing comes up. The general area here has been changed enough.
 
 >ll red rose
 I couldn't parse that command. You don't need any more than two words long. VERBS will give a list of useful, non-puzzle-solving verbs.
-
->ll pred pros
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 0.00.)
 
 #testcase-rulestubs-hint-pred-pros-rule-default
 >hint pred pros
@@ -907,29 +609,17 @@ I couldn't parse that command. You don't need any more than two words long. VERB
 >hint
 <Hint-threat-three>.
 
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-2.67, -4.00.)
-
 >fret free
 by one point
 
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-3.00, -4.50.)
-
 >yet ye
 by one point
-
->ll
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-3.00, -4.00.)
 
 >set see
 by one point
 
 >ll
 Nothing comes up. The general area here has been changed enough.
-
->ll sack
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 2.00.)
 
 >plus plaque
 by one point
@@ -941,9 +631,6 @@ by one point
 #testcase-rulestubs-hint-plus-plaque-rule-default
 >hint plus plaque
 <Hint-plus-plaque>.
-
->ll spurning sprite
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, -1.00.)
 
 >score
 
