@@ -6,15 +6,15 @@ volume all kinds of guesses
 
 table of general good guesses
 mist-regex (text)	mist-rule	got-yet	leet-rule	mist-txt
-"okie (ernie|earnie|earny)"	--	false	--	"No stereotypical rural fellow pops up with down-home advice."
-"tokey tourney"	--	false	--	"That could potentially be very relaxed and low-key, indeed. I guess."
-"coppin cart"	--	false	--	"No policemen drive by. They might be corrupt, anyway."
-"choppin chart"	--	false	--	"There are only three regions, and the name isn't really important."
-"mopping mart"	--	false	--	"Surely this is more exciting than a trip for cleaning supplies."
+"okie (ernie|earnie|earny)"	--	false	trivially false rule	"No stereotypical rural fellow pops up with down-home advice."
+"tokey tourney"	--	false	trivially false rule	"That could potentially be very relaxed and low-key, indeed. I guess."
+"coppin cart"	--	false	trivially false rule	"No policemen drive by. They might be corrupt, anyway."
+"choppin chart"	--	false	trivially false rule	"There are only three regions, and the name isn't really important."
+"mopping mart"	--	false	trivially false rule	"Surely this is more exciting than a trip for cleaning supplies."
 "earning right"	--	false	lose-the-game rule	"Well, that's what you hope to find!"
-"ferning fright"	--	false	--	"There are no terrorist plants worth summoning in [this-game]."
-"ride wrong"	--	false	--	"There is no fourth option for the guide gong, but you do have a chance for a heel turn at game's end."
-"side song"	--	false	--	"This is a no-frills text adventure. No music, no graphics, besides the middling-at-best cover art."
+"ferning fright"	--	false	trivially false rule	"There are no terrorist plants worth summoning in [this-game]."
+"ride wrong"	--	false	trivially false rule	"There is no fourth option for the guide gong, but you do have a chance for a heel turn at game's end."
+"side song"	--	false	trivially false rule	"This is a no-frills text adventure. No music, no graphics, besides the middling-at-best cover art."
 
 this is the lose-the-game rule:
 	if player is in threat three and spurning sprite is in threat three:
@@ -85,7 +85,7 @@ to say no-anim: say "This isn't the place to summon animals"
 
 table of drain drat vain vat guesses
 mist-regex (text)	mist-rule	got-yet	leet-rule	mist-txt
-"attain a tat"	--	false	splat-splained rule	"Oh, your parents warned you that text adventures and D&D would lead to darker desires, but did you listen? Oh, no, you did not."
+"attain tat"	--	false	splat-splained rule	"Oh, your parents warned you that text adventures and D&D would lead to darker desires, but did you listen? Oh, no, you did not."
 "brain brat"	--	false	splat-splained rule	"You don't want to fight annoying people with violence. Inanimate obstacles, yes. People, no."
 "cane cat"	--	false	splat-splained rule	"Cats don't deserve to be caned. Dogs don't, either."
 "chain chat"	--	false	splat-splained rule	"More forceful talking [is-was of sco-splain-splat] necessary here."
@@ -534,8 +534,8 @@ book miscellaneous guesses
 [this is for cases that may conflict with actual puzzles. Homonyms may apply as well.]
 
 table of first check rhymes
-mist-cmd(topic)	mist-rule	got-yet	leet-rule	mist-txt
-a topic	a rule	a truth state	a rule	text
+mist-1	mist-2	mist-cmd(topic)	mist-rule	got-yet	leet-rule	mist-txt
+text	text	a topic	a rule	a truth state	a rule	text
 
 table of future feature bookmarks
 mist-regex (text)
