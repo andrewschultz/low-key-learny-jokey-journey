@@ -32,8 +32,6 @@ book deciphering mistakes
 
 [to decide which number is variable-scan-length of (mynum - a number):] [keep this in the main file]
 
-got-half-match is a truth state that varies.
-
 a rhymeguess rule for a table name (called tn) (this is the rhyme-guess-checker rule):
 	let temp be 0;
 	repeat through tn:
@@ -44,12 +42,12 @@ a rhymeguess rule for a table name (called tn) (this is the rhyme-guess-checker 
 		else if there is a mist-1 entry:
 			if press-pro-level < 4:
 				unless the player's command matches the regular expression "^([mist-1 entry]) ([mist-2 entry])$", next;
-			if the player's command matches the regular expression "^([mist-1 entry])":
+			if the player's command matches the regular expression "^([mist-1 entry])\b":
 				increment temp;
-			if the player's command matches the regular expression "([mist-2 entry])$":
+			if the player's command matches the regular expression "\b([mist-2 entry])$":
 				increment temp;
 			if temp is 2:
-				unless the player's command matches the regular expression "^([mist-1 entry]) ([mist-2 entry])$", next;
+				unless the player's command matches the regular expression "^([mist-1 entry]) +([mist-2 entry])$", next;
 			else if temp is 1:
 				now got-half-match is true;
 				next;
@@ -75,8 +73,6 @@ a rhymeguess rule for a table name (called tn) (this is the rhyme-guess-checker 
 			current-table-note-x tn; [the -x is for special cases like the mad monk, even though table-note is in the universal file]
 			check-lump-progress;
 		the rule succeeds;
-
-compare-item is a thing that varies.
 
 to print-my-clue:
 	let from-num be 0;
