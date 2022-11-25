@@ -10,89 +10,89 @@
 
 >au 2
 
-#ttc-table-of-general-good-guesses-choppin-chart
+#testcase-mistakes-table-of-general-good-guesses-choppin-chart
 >choppin chart
 There are only three regions, and the name isn't really important.
 !learner
 
-#ttc-table-of-general-good-guesses-coppin-cart
+#testcase-mistakes-table-of-general-good-guesses-coppin-cart
 >coppin cart
 No policemen drive by. They might be corrupt, anyway.
 !learner
 
-#ttc-table-of-general-good-guesses-earning-right
+#testcase-mistakes-table-of-general-good-guesses-earning-right
 >earning right
 Well, that's what you hope to find!
 !learner
 
-#ttc-table-of-general-good-guesses-ferning-fright
+#testcase-mistakes-table-of-general-good-guesses-ferning-fright
 >ferning fright
 There are no terrorist plants worth summoning in Low-Key Learny Jokey Journey.
 !learner
 
-#ttc-table-of-general-good-guesses-mopping-mart
+#testcase-mistakes-table-of-general-good-guesses-mopping-mart
 >mopping mart
 Surely this is more exciting than a trip for cleaning supplies.
 lurking lump
 !learner
 
-#ttc-table-of-general-good-guesses-ride-wrong
+#testcase-mistakes-table-of-general-good-guesses-ride-wrong
 >ride wrong
 There is no fourth option for the guide gong, but you do have a chance for a heel turn at game's end.
 !learner
 !lurking lump
 
-#ttc-table-of-general-good-guesses-side-song
+#testcase-mistakes-table-of-general-good-guesses-side-song
 >side song
 This is a no-frills text adventure. No music, no graphics, besides the middling-at-best cover art.
 !learner
 
-#ttc-table-of-bane-be-sane-see-guesses-cane-key
+#testcase-mistakes-table-of-bane-be-sane-see-guesses-cane-key
 >cane key
 You don't need any key to unlock the tree.
 !learner
 
-#ttc-table-of-bane-be-sane-see-guesses-feign-fee
+#testcase-mistakes-table-of-bane-be-sane-see-guesses-feign-fee
 >feign fee
 You whine about how Low-Key Learny Jokey Journey costs money on top of being a waste of time. Nobody listens.
 !learner
 
-#ttc-table-of-bane-be-sane-see-guesses-main-me
+#testcase-mistakes-table-of-bane-be-sane-see-guesses-main-me
 >main me
 You are the main character in this adventure, but don't let it go to your head.
 !learner
 
-#ttc-table-of-bane-be-sane-see-guesses-pain-p-pee
+#testcase-mistakes-table-of-bane-be-sane-see-guesses-pain-p-pee
 >pain p
 Low-Key Learny Jokey Journey is nonviolent and hopefully devoid of bathroom humor.
 !learner
 
-#ttc-table-of-bane-be-sane-see-guesses-sprain-spree
+#testcase-mistakes-table-of-bane-be-sane-see-guesses-sprain-spree
 >sprain spree
 While this is technically correct, you don't want to injure yourself or others.
 !learner
 
-#ttc-table-of-bane-be-sane-see-guesses-vain-v
+#testcase-mistakes-table-of-bane-be-sane-see-guesses-vain-v
 >vain v
 You come to grips with how you are not as humble as you should be.
 !learner
 
-#ttc-table-of-general-good-guesses-okie-ernie-earnie-earny
+#testcase-mistakes-table-of-general-good-guesses-okie-ernie-earnie-earny
 >okie ernie
 No stereotypical rural fellow pops up with down-home advice.
 !learner
 
-#ttc-table-of-general-good-guesses-tokey-tourney
+#testcase-mistakes-table-of-general-good-guesses-tokey-tourney
 >tokey tourney
 That could potentially be very relaxed and low-key, indeed. I guess.
 !learner
 
-#ttc-table-of-lurking-lump-guesses-clerking-clump
+#testcase-mistakes-table-of-lurking-lump-guesses-clerking-clump
 >clerking clump
 The lump can't keep track of things. That would be the Leet Learner.
 !learner
 
-#ttc-table-of-lurking-lump-guesses-perking-pump
+#testcase-mistakes-table-of-lurking-lump-guesses-perking-pump
 >perking pump
 I don't want to know.
 
@@ -102,26 +102,26 @@ by one point
 >jane g
 by one point
 
-#ttc-table-of-roaring-rocks-guesses-flooring-flocks
+#testcase-mistakes-table-of-roaring-rocks-guesses-flooring-flocks
 >flooring flocks
 You don't need to be dive-bombed by aerial predators. And I don't have the artistic ability to show you majestic birds, either. Sorry.
 
-#ttc-table-of-roaring-rocks-guesses-poring-pouring-pox
+#testcase-mistakes-table-of-roaring-rocks-guesses-poring-pouring-pox
 >pouring pox
 You don't need to catch anything, and denting the rocks would not reveal anything.
 
-#ttc-table-of-roaring-rocks-guesses-storing-stocks
+#testcase-mistakes-table-of-roaring-rocks-guesses-storing-stocks
 >storing stocks
 That's what the rocks will become, but you want something simpler and smaller and shorter.
 
 >boring box
 by one point
 
-#+ttc-table-of-roaring-rocks-guesses-poring-pouring-pox
+#+testcase-mistakes-table-of-roaring-rocks-guesses-poring-pouring-pox
 >poring pox
 You don't need to catch anything, and denting the rocks would not reveal anything further.
 
-#+ttc-table-of-roaring-rocks-guesses-storing-stocks
+#+testcase-mistakes-table-of-roaring-rocks-guesses-storing-stocks
 >storing stocks
 riff
 !rocks will become
@@ -129,57 +129,57 @@ riff
 >open box
 You open the boring box, and you see a metal gadget that doesn't look very interesting at first.
 
-#ttc-table-of-leet-learner-guesses-yeet-yearner
+#testcase-mistakes-table-of-leet-learner-guesses-yeet-yearner
 >yeet yearner
 Yes, with such a device, you can reach for the skies.
 
 >n
 
-#ttc-table-of-mad-monk-guesses-brad-brunk
+#testcase-mistakes-table-of-mad-monk-guesses-brad-brunk
 >brad brunk
 The mad monk needs no name, proper or familiar.
 
-#ttc-table-of-mad-monk-guesses-chad-chunk
+#testcase-mistakes-table-of-mad-monk-guesses-chad-chunk
 >chad chunk
 You find no ballot or part thereof.
 
-#ttc-table-of-mad-monk-guesses-clad-clunk
+#testcase-mistakes-table-of-mad-monk-guesses-clad-clunk
 >clad clunk
 You disparage the mad monk's outfit. They roll their eyes. Something more spiritual is the way to go, here.
 
-#ttc-table-of-mad-monk-guesses-dad-dunk
+#testcase-mistakes-table-of-mad-monk-guesses-dad-dunk
 >dad dunk
 Alas, no middle-aged man soars into the air, basketball in hand, to posterize the mad monk.
 
-#ttc-table-of-mad-monk-guesses-fad-funk
+#testcase-mistakes-table-of-mad-monk-guesses-fad-funk
 >fad funk
 Falling prey to fashion is not one of the mad monk's vices. They're more about violence and intimidation.
 
-#ttc-table-of-mad-monk-guesses-grad-grunk
+#testcase-mistakes-table-of-mad-monk-guesses-grad-grunk
 >grad grunk
 The mad monk fails to look for a lost pig or learn anything.
 
-#ttc-table-of-mad-monk-guesses-had-hunk
+#testcase-mistakes-table-of-mad-monk-guesses-had-hunk
 >had hunk
 You try to claim the mad monk has lost muscle, but the insult doesn't really land, because with age comes wisdom, and stuff.
 
-#ttc-table-of-mad-monk-guesses-lad-lunk
+#testcase-mistakes-table-of-mad-monk-guesses-lad-lunk
 >lad lunk
 Both insults are a bit too trivial to land.
 
-#ttc-table-of-mad-monk-guesses-pad-punk
+#testcase-mistakes-table-of-mad-monk-guesses-pad-punk
 >pad punk
 No mercenary hoodlum walks by, which might actually be a good thing for the hoodlum.
 
-#ttc-table-of-mad-monk-guesses-plaid-plunk
+#testcase-mistakes-table-of-mad-monk-guesses-plaid-plunk
 >plaid plunk
 The mad monk's fashion choice will not change.
 
-#ttc-table-of-mad-monk-guesses-scad-skunk
+#testcase-mistakes-table-of-mad-monk-guesses-scad-skunk
 >scad skunk
 Alas, a bunch of skunks fail to assault the mad monk.
 
-#ttc-table-of-mad-monk-guesses-thad-thunk
+#testcase-mistakes-table-of-mad-monk-guesses-thad-thunk
 >thad thunk
 The mad monk needs no name, proper or familiar.
 
@@ -194,11 +194,11 @@ by one point
 
 >gonear rare reach
 
-#ttc-table-of-rare-reach-guesses-pear-peach
+#testcase-mistakes-table-of-rare-reach-guesses-pear-peach
 >pear peach
 Very interesting! If you are ever in a position to ask for fruit, that might be helpful indeed.
 
-#ttc-table-of-rare-reach-guesses-spare-speech
+#testcase-mistakes-table-of-rare-reach-guesses-spare-speech
 >spare speech
 You know, something even more spare than that might work, in the right place.
 
@@ -208,23 +208,23 @@ You know, something even more spare than that might work, in the right place.
 
 >n
 
-#ttc-table-of-no-nudge-slow-sludge-guesses-fo-foe-fudge
+#testcase-mistakes-table-of-no-nudge-slow-sludge-guesses-fo-foe-fudge
 >foe fudge
 This isn't Willy Wonka's Chocolate Factory. Err, Charlie's.
 
-#ttc-table-of-no-nudge-slow-sludge-guesses-joe-judge
+#testcase-mistakes-table-of-no-nudge-slow-sludge-guesses-joe-judge
 >joe judge
 No former New York Giants head football coach appears.
 
-#ttc-table-of-no-nudge-slow-sludge-guesses-po-poe-pudge
+#testcase-mistakes-table-of-no-nudge-slow-sludge-guesses-po-poe-pudge
 >po pudge
 Weight gain won't help here.
 
-#ttc-table-of-no-nudge-slow-sludge-guesses-stow-studge
+#testcase-mistakes-table-of-no-nudge-slow-sludge-guesses-stow-studge
 >stow studge
 No ghost of Saki arrives to tell you to eat your Filboid Studge and don't let it sit.
 
-#ttc-table-of-no-nudge-slow-sludge-guesses-trow-trudge
+#testcase-mistakes-table-of-no-nudge-slow-sludge-guesses-trow-trudge
 >trow trudge
 No need for Middle English here.
 
@@ -233,42 +233,42 @@ by one point
 
 >n
 
-#ttc-table-of-one-warm-stun-storm-guesses-none-nun-norm
+#testcase-mistakes-table-of-one-warm-stun-storm-guesses-none-nun-norm
 >none norm
 You wouldn't want to instill strict morals on this place. Or deny Mr. Peterson an extension of his bar tab.
 
 >bother
 You hear a whooshing as a door swings in from nowhere. It doesn't seem to lead anywhere. Voices from behind it, though, assure you you are missing something. Using your logical skills, you deduce it is a miss-more-diss door. While it's not going to jump you if your back is turned, it might be nice to get rid of.
 
-#ttc-table-of-miss-more-diss-door-guesses-chiz-chore
+#testcase-mistakes-table-of-miss-more-diss-door-guesses-chiz-chore
 >chiz chore
 You briefly get your Nigel Molesworth on.
 
-#ttc-table-of-miss-more-diss-door-guesses-his-hiss-whore
+#testcase-mistakes-table-of-miss-more-diss-door-guesses-his-hiss-whore
 >his whore
 No, nothing that tasteless.
 
-#ttc-table-of-miss-more-diss-door-guesses-is-or
+#testcase-mistakes-table-of-miss-more-diss-door-guesses-is-or
 >is or
 Too simple.
 
-#ttc-table-of-miss-more-diss-door-guesses-kiss-cor-core
+#testcase-mistakes-table-of-miss-more-diss-door-guesses-kiss-cor-core
 >kiss cor
 Potentially scandalous, but there's "better."
 
-#ttc-table-of-miss-more-diss-door-guesses-sis-soar-sore
+#testcase-mistakes-table-of-miss-more-diss-door-guesses-sis-soar-sore
 >sis soar
 No, family praise or squabbles aren't it.
 
-#ttc-table-of-miss-more-diss-door-guesses-this-thor
+#testcase-mistakes-table-of-miss-more-diss-door-guesses-this-thor
 >this thor
 Thor is more about actions than words.
 
-#ttc-table-of-miss-more-diss-door-guesses-tis-tore
+#testcase-mistakes-table-of-miss-more-diss-door-guesses-tis-tore
 >tis tore
 The miss-more-diss door remains intact.
 
-#ttc-table-of-miss-more-diss-door-guesses-wiz-war
+#testcase-mistakes-table-of-miss-more-diss-door-guesses-wiz-war
 >wiz war
 No lightning bolt spell blasts the door.
 
@@ -283,45 +283,45 @@ by one point
 
 >n
 
-#ttc-table-of-thunk-tree-trunk-guesses-be-bunk
+#testcase-mistakes-table-of-thunk-tree-trunk-guesses-be-bunk
 >be bunk
 You crave neither a tall bed nor outright lies.
 
-#ttc-table-of-thunk-tree-trunk-guesses-de-dunk
+#testcase-mistakes-table-of-thunk-tree-trunk-guesses-de-dunk
 >de dunk
 Your mind flashes back to an 80s-era DePaul basketball commercial. Okay, maybe it doesn't, but mine did when I thought of this.
 
-#ttc-table-of-thunk-tree-trunk-guesses-fee-phi-funk
+#testcase-mistakes-table-of-thunk-tree-trunk-guesses-fee-phi-funk
 >fee funk
 You try to monetize or formulate olfactory and/or musical funkiness but fail.
 
-#ttc-table-of-thunk-tree-trunk-guesses-flee-flunk
+#testcase-mistakes-table-of-thunk-tree-trunk-guesses-flee-flunk
 >flee flunk
 Aw, c'mon, you've gotten pretty far. You shouldn't need to run in shame.
 
-#ttc-table-of-thunk-tree-trunk-guesses-klee-clunk-klunk
+#testcase-mistakes-table-of-thunk-tree-trunk-guesses-klee-clunk-klunk
 >klee klunk
 The landscape stays its own form of surreal.
 
-#ttc-table-of-thunk-tree-trunk-guesses-me-monk
+#testcase-mistakes-table-of-thunk-tree-trunk-guesses-me-monk
 >me monk
 Alas, there is no monastery nearby to retreat to.
 
-#ttc-table-of-thunk-tree-trunk-guesses-pee-punk
+#testcase-mistakes-table-of-thunk-tree-trunk-guesses-pee-punk
 >pee punk
 Micturation is unnecessary to complete Low-Key Learny Jokey Journey.
 
 # possible extra LLP if no plain plea, then visit here -- this would be at the very end, in a non-main-thru script ??
 
-#ttc-table-of-thunk-tree-trunk-guesses-plea-plunk
+#testcase-mistakes-table-of-thunk-tree-trunk-guesses-plea-plunk
 >plea plunk
 The time for a plea that landed for a bonus point is passed, and you took it.
 
-#ttc-table-of-thunk-tree-trunk-guesses-ski-skunk
+#testcase-mistakes-table-of-thunk-tree-trunk-guesses-ski-skunk
 >ski skunk
 The weather is not cold enough, and there's no snow.
 
-#ttc-table-of-thunk-tree-trunk-guesses-whee-whunk
+#testcase-mistakes-table-of-thunk-tree-trunk-guesses-whee-whunk
 >whee whunk
 You shouldn't be thrilled to go around socking stuff.
 
@@ -331,55 +331,55 @@ by one point
 >gee junk
 by one point
 
-#ttc-table-of-free-fruit-guesses-be-bee-boot
+#testcase-mistakes-table-of-free-fruit-guesses-be-bee-boot
 >be boot
 The free fruit does not change into footwear.
 
-#ttc-table-of-free-fruit-guesses-flee-flea-flute
+#testcase-mistakes-table-of-free-fruit-guesses-flee-flea-flute
 >flee flute
 There is no need to chase animals away with music.
 
-#ttc-table-of-free-fruit-guesses-gee-jute
+#testcase-mistakes-table-of-free-fruit-guesses-gee-jute
 >gee jute
 No, there's actual fruit inside.
 
-#ttc-table-of-free-fruit-guesses-glee-glute
+#testcase-mistakes-table-of-free-fruit-guesses-glee-glute
 >glee glute
 You pat yourself on the back for eating so much fruit to keep your stomach in shape.
 
-#ttc-table-of-free-fruit-guesses-he-hee-hoot
+#testcase-mistakes-table-of-free-fruit-guesses-he-hee-hoot
 >hee hoot
 You make a small show of being grateful for the prospect of free fruit. But you may need to be more demonstrative.
 
-#ttc-table-of-free-fruit-guesses-key-coot
+#testcase-mistakes-table-of-free-fruit-guesses-key-coot
 >key coot
 No animal appears to unlock the free fruit.
 
-#ttc-table-of-free-fruit-guesses-me-moot
+#testcase-mistakes-table-of-free-fruit-guesses-me-moot
 >me moot
 Do not dismiss your importance.
 
-#ttc-table-of-free-fruit-guesses-pee-poot
+#testcase-mistakes-table-of-free-fruit-guesses-pee-poot
 >pee poot
 A good guess, technically, I suppose.
 
-#ttc-table-of-free-fruit-guesses-re-root
+#testcase-mistakes-table-of-free-fruit-guesses-re-root-reroot-reroute
 >re root
 The free fruit dispenser is not broken. No need to start it up again.
 
-#ttc-table-of-free-fruit-guesses-see-soot-suit
+#testcase-mistakes-table-of-free-fruit-guesses-see-soot-suit
 >see soot
 The free fruit dispenses fruit, not clothes or coal.
 
-#ttc-table-of-free-fruit-guesses-she-shee-chute-shoot
+#testcase-mistakes-table-of-free-fruit-guesses-she-shee-chute-shoot
 >shee shoot
 No gun or passage down appears.
 
-#ttc-table-of-free-fruit-guesses-ski-scoot
+#testcase-mistakes-table-of-free-fruit-guesses-ski-scoot
 >ski scoot
 You can just walk to get around.
 
-#ttc-table-of-free-fruit-guesses-tea-toot-tout
+#testcase-mistakes-table-of-free-fruit-guesses-tea-toot-tout
 >tea tout
 Perhaps the tea would be fruit-flavored and refreshing, but it wouldn't be useful.
 You probably want to figure what free fruit there is now. Perhaps traveling some more will suggest something.
@@ -396,7 +396,7 @@ In fact, it looks like you already guessed what the hybrid free fruit is elsewhe
 >whee woot
 by one point
 
-#+ttc-table-of-free-fruit-guesses-he-hee-hoot
+#+testcase-mistakes-table-of-free-fruit-guesses-he-hee-hoot
 >hee hoot
 You make a small show of being grateful for the prospect of free fruit. But you already did enough.
 
@@ -409,110 +409,110 @@ by one point
 
 >e
 
-#ttc-table-of-trust-track-guesses-cussed-cack
+#testcase-mistakes-table-of-trust-track-guesses-cussed-cack
 >cussed cack
 There's a useful item to discover here. More useful than such words!
 
-#ttc-table-of-trust-track-guesses-gust-gack
+#testcase-mistakes-table-of-trust-track-guesses-gust-gack
 >gust gack
 No stinky cloud rumbles in to push Jack away.
 
-#ttc-table-of-trust-track-guesses-lust-lack
+#testcase-mistakes-table-of-trust-track-guesses-lust-lack
 >lust lack
 You make sure to put impure thoughts aside so you're really focused on a totally cool text adventure. Yay, you!
 
-#ttc-table-of-trust-track-guesses-rust-rack
+#testcase-mistakes-table-of-trust-track-guesses-rust-rack
 >rust rack
 That would be a useless item.
 
 >bussed back
 by one point
 
-#+ttc-table-of-trust-track-guesses-cussed-cack
+#+testcase-mistakes-table-of-trust-track-guesses-cussed-cack
 >cussed cack
 No, the sack will be worthwhile.
 
-#+ttc-table-of-trust-track-guesses-gust-gack
+#+testcase-mistakes-table-of-trust-track-guesses-gust-gack
 >gust gack
 No stinky cloud rumbles in.
 
-#ttc-table-of-trust-track-guesses-must-mack
+#testcase-mistakes-table-of-trust-track-guesses-must-mack
 >must mack
 This is a comedy puzzle game, not a romance game.
 
 >crust crack
 by one point
 
-#ttc-table-of-sus-sack-guesses-pus-puss-pack
+#testcase-mistakes-table-of-sus-sack-guesses-pus-puss-pack
 >pus pack
 You don't need a cat, or a mound of pus. Think more positive!
 
-#ttc-table-of-sus-sack-guesses-wuss-wack-whack
+#testcase-mistakes-table-of-sus-sack-guesses-wuss-wack-whack
 >wuss wack
 No, something more positive and flattering is inside.
 
 >n
 
-#ttc-table-of-rare-reach-guesses-air-ere-err-each
+#testcase-mistakes-table-of-rare-reach-guesses-air-ere-err-each
 >err each
 There aren't enough things to be each-worthy here.
 
-#ttc-table-of-rare-reach-guesses-blair-blare-bleach
+#testcase-mistakes-table-of-rare-reach-guesses-blair-blare-bleach
 >blare bleach
 But this area is sparse enough already.
 
-#ttc-table-of-rare-reach-guesses-chair-cher-cheech
+#testcase-mistakes-table-of-rare-reach-guesses-chair-cher-cheech
 >cher cheech
 Celebrities from the '80s can't help you here, even though they're more worth celebrity than celebrities these days, when text adventures aren't properly respected.
 
-#ttc-table-of-rare-reach-guesses-lair-leech-leach
+#testcase-mistakes-table-of-rare-reach-guesses-lair-leech-leach
 >lair leech
 You don't need to summon enemies or drain anything here.
 
-#ttc-table-of-rare-reach-guesses-prayer-preach
+#testcase-mistakes-table-of-rare-reach-guesses-prayer-preach
 >prayer preach
 The goal of Low-Key Learny Jokey Journey is not to become some televangelist.
 
-#ttc-table-of-rare-reach-guesses-snare-sneech-sneetch
+#testcase-mistakes-table-of-rare-reach-guesses-snare-sneech-sneetch
 >snare sneetch
 You consider the possibility, but then you're not sure whether you want to snare a star-bellied one. So much for that.
 
-#ttc-table-of-rare-reach-guesses-tear-tare-teach
+#testcase-mistakes-table-of-rare-reach-guesses-tear-tare-teach
 >tear teach
 There is nobody to teach, much less verbally tear while you do so.
 
 >bare beach
 by one point
 
-#ttc-table-of-deep-dune-guesses-beep-boon
+#testcase-mistakes-table-of-deep-dune-guesses-beep-boon
 >beep boon
 No, you don't need a Geiger counter to search through the dune.
 
-#ttc-table-of-deep-dune-guesses-creep-croon
+#testcase-mistakes-table-of-deep-dune-guesses-creep-croon
 >creep croon
 I couldn't get R. Kelly or Robin Thicke to appear here. Sorry!
 
-#ttc-table-of-deep-dune-guesses-keep-coon
+#testcase-mistakes-table-of-deep-dune-guesses-keep-coon
 >keep coon
 The dune would not be stable enough for wild animals like that to make a home.
 
-#ttc-table-of-deep-dune-guesses-leap-loon
+#testcase-mistakes-table-of-deep-dune-guesses-leap-loon
 >leap loon
 Alas, nobody odd comes by and dives into the deep dune to help you find what's there. Nobody at all.
 
-#ttc-table-of-deep-dune-guesses-peep-poon
+#testcase-mistakes-table-of-deep-dune-guesses-peep-poon
 >peep poon
 Low-Key Learny Jokey Journey is the wrong environment for that, and not just because it's text-based.
 
-#ttc-table-of-deep-dune-guesses-streep-strewn
+#testcase-mistakes-table-of-deep-dune-guesses-streep-strewn
 >streep strewn
 Honestly! Her acting style goes well beyond just lazing about.
 
-#ttc-table-of-deep-dune-guesses-sweep-swoon
+#testcase-mistakes-table-of-deep-dune-guesses-sweep-swoon
 >sweep swoon
 You have neither a broom nor a favorite team who overpowers all playoff foes.
 
-#+ttc-table-of-rare-reach-guesses-spare-speech
+#+testcase-mistakes-table-of-rare-reach-guesses-spare-speech
 >spare speech
 But that is less spare than a pear peach.
 
@@ -525,7 +525,7 @@ by one point
 >reap rune
 by one point
 
-#+ttc-table-of-deep-dune-guesses-beep-boon
+#+testcase-mistakes-table-of-deep-dune-guesses-beep-boon
 >beep boon
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
@@ -535,11 +535,11 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 
 >w
 
-#ttc-table-of-hun-harm-fun-farm-guesses-one-worm-warm
+#testcase-mistakes-table-of-hun-harm-fun-farm-guesses-one-worm-warm
 >one worm
 That doesn't quite work. Maybe the farm needs worms or warm weather, but its survival isn't as important to you as passage north.
 
-#+ttc-table-of-hun-harm-fun-farm-guesses-one-worm-warm
+#+testcase-mistakes-table-of-hun-harm-fun-farm-guesses-one-worm-warm
 >one worm
 That doesn't quite work. Maybe the farm needs worms or warm weather, but its survival isn't as important to you as passage north.
 
@@ -550,43 +550,43 @@ by one point
 
 # many "what if we come back later" test cases ??
 
-#ttc-table-of-nonoon-guesses-beau-bow-boon
+#testcase-mistakes-table-of-nonoon-guesses-beau-bow-boon
 >bow boon
 You require no ranged weapon or physical attractiveness.
 
-#ttc-table-of-nonoon-guesses-blow-balloon
+#testcase-mistakes-table-of-nonoon-guesses-blow-balloon
 >blow balloon
 This ... this is worth a nudge-point, if not strictly a rhyming pair. But the whole procedure is a bit more mystical.
 
-#ttc-table-of-nonoon-guesses-doe-doh-dough-dune
+#testcase-mistakes-table-of-nonoon-guesses-doe-doh-dough-dune
 >doh dune
 The dune is elsewhere in this game.
 
-#ttc-table-of-nonoon-guesses-ho-hewn
+#testcase-mistakes-table-of-nonoon-guesses-ho-hewn
 >ho hewn
 This is what to intone once things are all right. They are not, yet.
 
-#ttc-table-of-nonoon-guesses-jo-joe-june
+#testcase-mistakes-table-of-nonoon-guesses-jo-joe-june
 >joe june
 You call for old or new friends, who do not appear.
 
-#ttc-table-of-nonoon-guesses-lo-low-loon
+#testcase-mistakes-table-of-nonoon-guesses-lo-low-loon
 >lo loon
 That is the wrong sort of bird.
 
-#ttc-table-of-nonoon-guesses-po-poon
+#testcase-mistakes-table-of-nonoon-guesses-po-poon
 >po poon
 The only thing po' is your dirty mind. This is a family game!
 
-#ttc-table-of-nonoon-guesses-pro-prune
+#testcase-mistakes-table-of-nonoon-guesses-pro-prune
 >pro prune
 You come out mentally in favor of a high-fiber diet.
 
-#ttc-table-of-nonoon-guesses-row-rho-ruin-rune
+#testcase-mistakes-table-of-nonoon-guesses-row-rho-ruin-rune
 >rho rune
 But you already have the rune.
 
-#ttc-table-of-nonoon-guesses-toe-tow-toon-tune
+#testcase-mistakes-table-of-nonoon-guesses-toe-tow-toon-tune
 >toe tune
 Nothing toe-tapping starts playing, nor are any cartoon characters dragged across the landscape.
 
@@ -607,45 +607,45 @@ by one point
 >crow croon
 by one point
 
-#ttc-table-of-jotty-jail-guesses-botty-bawdy-bail-bale
+#testcase-mistakes-table-of-jotty-jail-guesses-botty-bawdy-bail-bale
 >bawdy bale
 You don't need a dirty story, and money won't get you out of here.
 
 >botty bail
 You don't need a dirty story, and money won't get you out of here.
 
-#ttc-table-of-jotty-jail-guesses-dotty-doughty-dale
+#testcase-mistakes-table-of-jotty-jail-guesses-dotty-doughty-dale
 >dotty dale
 Perhaps there is a dale beyond, but going dotty or staying doughty isn't the way to go find it.
 
-#ttc-table-of-jotty-jail-guesses-foughty-fail
+#testcase-mistakes-table-of-jotty-jail-guesses-foughty-fail
 >foughty fail
 Don't give up! I believe in you!
 
-#ttc-table-of-jotty-jail-guesses-hottie-hotty-hail-hale
+#testcase-mistakes-table-of-jotty-jail-guesses-hottie-hotty-hail-hale
 >hottie hale
 Such useless thoughts at a time like this! Less escapism, more escape!
 
 >hotty hail
 Such useless thoughts at a time like this! Less escapism, more escape!
 
-#ttc-table-of-jotty-jail-guesses-scotty-scale
+#testcase-mistakes-table-of-jotty-jail-guesses-scotty-scale
 >scotty scale
 No spaceship engineer comes to rescue you.
 
-#ttc-table-of-jotty-jail-guesses-soddy-sail
+#testcase-mistakes-table-of-jotty-jail-guesses-soddy-sail
 >soddy sail
 Having a sail of any material wouldn't help. You're landlocked.
 
-#ttc-table-of-jotty-jail-guesses-stottie-stale
+#testcase-mistakes-table-of-jotty-jail-guesses-stottie-stale
 >stottie stale
 Stale bread won't help you here.
 
-#ttc-table-of-jotty-jail-guesses-swotty-swale
+#testcase-mistakes-table-of-jotty-jail-guesses-swotty-swale
 >swotty swale
 You focus on what sort of land is outside, ignoring how you might actually get out.
 
-#ttc-table-of-jotty-jail-guesses-trotty-trail
+#testcase-mistakes-table-of-jotty-jail-guesses-trotty-trail
 >trotty trail
 No trail opens up, but even if it did, the snotty snail would push you back from it.
 
@@ -658,113 +658,113 @@ by one point
 >knotty nail
 by one point
 
-#ttc-table-of-high-hub-guesses-cly-club
+#testcase-mistakes-table-of-high-hub-guesses-cly-club
 >cly club
 You try to go old-school finding a so-old-school-schools-didn't-exist weapon, but alas, it doesn't work.
 
-#ttc-table-of-high-hub-guesses-die-dye-dub
+#testcase-mistakes-table-of-high-hub-guesses-die-dye-dub
 >dye dub
 Whether you want to die or dye for a win or just for a double something, you consider the possibilities. Hey, you may need all the clue points you can get, here.
 
-#ttc-table-of-high-hub-guesses-dry-drub
+#testcase-mistakes-table-of-high-hub-guesses-dry-drub
 >dry drub
 You mentally make fun of someone you disliked, using phrases like "I won't even raise my voice" or "I'm sure you're nice and all."
 
-#ttc-table-of-high-hub-guesses-fly-flub
+#testcase-mistakes-table-of-high-hub-guesses-fly-flub
 >fly flub
 You consider making a mistake to impress someone. After all, being too perfect makes you dislikable. Then you realize there is nobody to impress.
 
-#ttc-table-of-high-hub-guesses-nigh-nub
+#testcase-mistakes-table-of-high-hub-guesses-nigh-nub
 >nigh nub
 You suspect some small stuff or other is around.
 
-#ttc-table-of-high-hub-guesses-pie-pub
+#testcase-mistakes-table-of-high-hub-guesses-pie-pub
 >pie pub
 Alas, the high hub is not expansive enough to fit such an establishment.
 
-#ttc-table-of-high-hub-guesses-rye-wry-rub
+#testcase-mistakes-table-of-high-hub-guesses-rye-wry-rub
 >rye rub
 You aren't sure whether you mean a rub of alcohol or bread. You're not sure what it will do. But you consider the possibility.
 
-#ttc-table-of-high-hub-guesses-scry-scrub
+#testcase-mistakes-table-of-high-hub-guesses-scry-scrub
 >scry scrub
 As good-looking as ever.
 
-#ttc-table-of-high-hub-guesses-sigh-sub
+#testcase-mistakes-table-of-high-hub-guesses-sigh-sub
 >sigh sub
 You sigh at what you did down below, wondering if you can go back.
 
-#ttc-table-of-high-hub-guesses-sly-slub
+#testcase-mistakes-table-of-high-hub-guesses-sly-slub
 >sly slub
 You have no need to spin yarn out or be sneaky doing so.
 
-#ttc-table-of-high-hub-guesses-sty-stub
+#testcase-mistakes-table-of-high-hub-guesses-sty-stub
 >sty stub
 You search for a ticket that would admit you to a barn. There is none.
 
-#ttc-table-of-high-hub-guesses-tie-tub
+#testcase-mistakes-table-of-high-hub-guesses-tie-tub
 >tie tub
 Alas, there is no tub to tie.
 
-#ttc-table-of-high-hub-guesses-try-trub
+#testcase-mistakes-table-of-high-hub-guesses-try-trub
 >try trub
 You'll have to look harder than that to find trouble. But it is close.
 
-#ttc-table-of-high-hub-guesses-why-wub
+#testcase-mistakes-table-of-high-hub-guesses-why-wub
 >why wub
 You think back to a Philip K. Dick short story.
 
-#ttc-table-of-locking-lift-guesses-balking-biffed
+#testcase-mistakes-table-of-locking-lift-guesses-balking-biffed
 >balking biffed
 You don't want to go somewhere you might get punched with no response.
 
-#ttc-table-of-locking-lift-guesses-clocking-clift-cliffed
+#testcase-mistakes-table-of-locking-lift-guesses-clocking-clift-cliffed
 >clocking cliffed
 You're already way above ground, clocking mad rhymes.
 
-#ttc-table-of-locking-lift-guesses-knocking-niffed
+#testcase-mistakes-table-of-locking-lift-guesses-knocking-niffed
 >knocking niffed
 Smells and knocking aren't the way to go here.
 
-#ttc-table-of-locking-lift-guesses-socking-sift
+#testcase-mistakes-table-of-locking-lift-guesses-socking-sift
 >socking sift
 Sifting through punches thrown at you would be a bit too violent, here.
 
-#ttc-table-of-locking-lift-guesses-spocking-spiffed
+#testcase-mistakes-table-of-locking-lift-guesses-spocking-spiffed
 >spocking spiffed
 Alas, not even one famous fictitious spaceman takes you to adventurous parts unknown.
 
-#ttc-table-of-locking-lift-guesses-whocking-whiffed
+#testcase-mistakes-table-of-locking-lift-guesses-whocking-whiffed
 >whocking whiffed
 You wouldn't want to attack someone and miss.
 
-#ttc-table-of-lurking-lump-guesses-working-whump-wump
+#testcase-mistakes-table-of-lurking-lump-guesses-working-whump-wump
 >working whump
 The lump will act with whatever sound effects it chooses.
 
 >bye bub
 
-#ttc-table-of-sturdy-stalk-guesses-birdy-balk
+#testcase-mistakes-table-of-sturdy-stalk-guesses-birdy-balk
 >birdy balk
 No bird makes loud noises.
 
-#ttc-table-of-sturdy-stalk-guesses-curdy-caulk-calk
+#testcase-mistakes-table-of-sturdy-stalk-guesses-curdy-caulk-calk
 >curdy caulk
 You don't need to do any construction.
 
-#ttc-table-of-sturdy-stalk-guesses-dirty-doc
+#testcase-mistakes-table-of-sturdy-stalk-guesses-dirty-doc
 >dirty doc
 Whether it's a dirty document or people, no.
 
-#ttc-table-of-sturdy-stalk-guesses-herdy-hawk
+#testcase-mistakes-table-of-sturdy-stalk-guesses-herdy-hawk
 >herdy hawk
 You wouldn't want a bunch of hawks to swarm.
 
-#ttc-table-of-sturdy-stalk-guesses-nerdy-knock
+#testcase-mistakes-table-of-sturdy-stalk-guesses-nerdy-knock
 >nerdy knock
 A nerdy knock, whatever it is, wouldn't get a favorable response.
 
-#ttc-table-of-sturdy-stalk-guesses-purdy-pock
+#testcase-mistakes-table-of-sturdy-stalk-guesses-purdy-pock
 >purdy pock
 No, pock marks wouldn't make the stalk look better.
 
@@ -772,7 +772,7 @@ No, pock marks wouldn't make the stalk look better.
 
 >u
 
-#+ttc-table-of-high-hub-guesses-sigh-sub
+#+testcase-mistakes-table-of-high-hub-guesses-sigh-sub
 >sigh sub
 You sigh at what you did down below, wondering if you should go back.
 
@@ -781,79 +781,79 @@ You sigh at what you did down below, wondering if you should go back.
 >rocking rift
 by one point
 
-#ttc-table-of-no-new-show-shoe-guesses-blow-blew-blue
+#testcase-mistakes-table-of-no-new-show-shoe-guesses-blow-blew-blue
 >blow blue
 You blow off steam that you haven't quite revitalized the No-New-Show Shoe yet.
 
-#ttc-table-of-no-new-show-shoe-guesses-cocu
+#testcase-mistakes-table-of-no-new-show-shoe-guesses-cocu
 >cocu
 Your knowledge of former footballers is impressive. (So is mine, since I caught this, eh?)
 
-#ttc-table-of-no-new-show-shoe-guesses-doh-dough-doe-do-due-dew
+#testcase-mistakes-table-of-no-new-show-shoe-guesses-doh-dough-doe-do-due-dew
 >doe dew
 This isn't a nature park. Other places need animals, though.
 
-#+ttc-table-of-no-new-show-shoe-guesses-doh-dough-doe-do-due-dew
+#+testcase-mistakes-table-of-no-new-show-shoe-guesses-doh-dough-doe-do-due-dew
 >doh due
 No need for regrets.
 
-#+ttc-table-of-no-new-show-shoe-guesses-doh-dough-doe-do-due-dew
+#+testcase-mistakes-table-of-no-new-show-shoe-guesses-doh-dough-doe-do-due-dew
 >dough dew
 Bread isn't quite the right food for a concert.
 
-#ttc-table-of-no-new-show-shoe-guesses-fo-foe-foo-phoo
+#testcase-mistakes-table-of-no-new-show-shoe-guesses-fo-foe-foo-phoo
 >fo foo
 You don't need to be expressing contempt here.
 
-#ttc-table-of-no-new-show-shoe-guesses-grow-grue
+#testcase-mistakes-table-of-no-new-show-shoe-guesses-grow-grue
 >grow grue
 You want entertainers who crave the spotlight, not avoid it. Also, you'd prefer them less predatory.
 
-#ttc-table-of-no-new-show-shoe-guesses-lo-low-loo-lew-lou
+#testcase-mistakes-table-of-no-new-show-shoe-guesses-lo-low-loo-lew-lou
 >lo lew
 You don't need to call out anyone by name.
 
-#+ttc-table-of-no-new-show-shoe-guesses-lo-low-loo-lew-lou
+#+testcase-mistakes-table-of-no-new-show-shoe-guesses-lo-low-loo-lew-lou
 >lo loo
 The No-New-Show Shoe is already equipped with those, out of sight.
 
-#ttc-table-of-no-new-show-shoe-guesses-mo-moo
+#testcase-mistakes-table-of-no-new-show-shoe-guesses-mo-moo
 >mo moo
 Cows would not make very exciting performers, but another animal, or people named after them, might.
 
-#ttc-table-of-no-new-show-shoe-guesses-no-know-knew-new
+#testcase-mistakes-table-of-no-new-show-shoe-guesses-no-know-knew-new
 >know knew
 The last thing people want to be thinking about is knowledge, or how cliched a show might be if you think about it too much.
 
-#ttc-table-of-no-new-show-shoe-guesses-oh-oo-ooh
+#testcase-mistakes-table-of-no-new-show-shoe-guesses-oh-oo-ooh
 >oh ooh
 That's a bit too generic a sound to make, but it gives you ideas.
 
-#ttc-table-of-no-new-show-shoe-guesses-po-pew
+#testcase-mistakes-table-of-no-new-show-shoe-guesses-po-pew
 >po pew
 The show ahead is not particularly religious.
 
-#ttc-table-of-no-new-show-shoe-guesses-po-poo-pooh
+#testcase-mistakes-table-of-no-new-show-shoe-guesses-po-poo-pooh
 >po pooh
 There is under-promising and over-delivering, but that's a bit too much. Way too much.
 
-#ttc-table-of-no-new-show-shoe-guesses-row-rue
+#testcase-mistakes-table-of-no-new-show-shoe-guesses-row-rue
 >row rue
 No, we want a positive environment, here.
 
-#ttc-table-of-no-new-show-shoe-guesses-slow-slue-slew
+#testcase-mistakes-table-of-no-new-show-shoe-guesses-slow-slue-slew
 >slow slue
 But we want to make this place less of a backwater. Gotta speed things up so the performance starts!
 
-#ttc-table-of-no-new-show-shoe-guesses-so-sue
+#testcase-mistakes-table-of-no-new-show-shoe-guesses-so-sue
 >so sue
 You don't want to either take or face legal action, which is a lot less exciting than how it's presented in most TV dramas.
 
-#ttc-table-of-no-new-show-shoe-guesses-toe-two-too
+#testcase-mistakes-table-of-no-new-show-shoe-guesses-toe-two-too
 >toe two
 Counting your digits would be exciting for nobody.
 
-#ttc-table-of-no-new-show-shoe-guesses-woe-whoah-whoa-woo
+#testcase-mistakes-table-of-no-new-show-shoe-guesses-woe-whoah-whoa-woo
 >whoah woo
 That's a bit too generic a sound to make, but it gives you ideas.
 
@@ -881,65 +881,65 @@ by one point
 >yo you
 by one point
 
-#+ttc-table-of-no-new-show-shoe-guesses-blow-blew-blue
+#+testcase-mistakes-table-of-no-new-show-shoe-guesses-blow-blew-blue
 >blow blue
 You blow off steam that you haven't quite revitalized the Whoah-Woo-Show Shoe yet.
 
-#+ttc-table-of-no-new-show-shoe-guesses-mo-moo
+#+testcase-mistakes-table-of-no-new-show-shoe-guesses-mo-moo
 >mo moo
 Cows would not make very exciting performers, unlike the Crow Crew.
 
-#+ttc-table-of-no-new-show-shoe-guesses-oh-oo-ooh
+#+testcase-mistakes-table-of-no-new-show-shoe-guesses-oh-oo-ooh
 >oh ooh
 That's a bit too generic a sound to make, and you've already made the right ones, anyway.
 
 >throw through
 by one point
 
-#ttc-table-of-light-lute-guesses-bite-boot
+#testcase-mistakes-table-of-light-lute-guesses-bite-boot
 >bite boot
 That would be no fun.
 
-#ttc-table-of-light-lute-guesses-flight-flute
+#testcase-mistakes-table-of-light-lute-guesses-flight-flute
 >flight flute
 No, you can't run from your problems.
 
-#ttc-table-of-light-lute-guesses-fright-fruit
+#testcase-mistakes-table-of-light-lute-guesses-fright-fruit
 >fright fruit
 You already made some fruit for good. You don't need that.
 
-#ttc-table-of-light-lute-guesses-height-hoot
+#testcase-mistakes-table-of-light-lute-guesses-height-hoot
 >height hoot
 Not useful, not even in the High Hub.
 
-#ttc-table-of-light-lute-guesses-mite-might-moot
+#testcase-mistakes-table-of-light-lute-guesses-mite-might-moot
 >mite moot
 You aren't powerful enough to cut anything that far down to size.
 
-#ttc-table-of-light-lute-guesses-plight-plute
+#testcase-mistakes-table-of-light-lute-guesses-plight-plute
 >plight plute
 No, we don't need a potential nuclear disaster on our hands.
 
-#ttc-table-of-light-lute-guesses-polite-pollute
+#testcase-mistakes-table-of-light-lute-guesses-polite-pollute
 >polite pollute
 Polite polluters are the worst kind, because they're harder to point out.
 
-#ttc-table-of-light-lute-guesses-shite-shoot-chute
+#testcase-mistakes-table-of-light-lute-guesses-shite-shoot-chute
 >shite chute
 Creative, but not terribly helpful.
 
-#ttc-table-of-light-lute-guesses-sight-cite-site-suit
+#testcase-mistakes-table-of-light-lute-guesses-sight-cite-site-suit
 >sight suit
 The light lute is too artsy to beget a business suit or a lawsuit.
 
 >cite suit
 The light lute is too artsy to beget a business suit or a lawsuit.
 
-#ttc-table-of-light-lute-guesses-tight-toot
+#testcase-mistakes-table-of-light-lute-guesses-tight-toot
 >tight toot
 You fail to drag that sort of noise from the lute.
 
-#ttc-table-of-light-lute-guesses-white-woot
+#testcase-mistakes-table-of-light-lute-guesses-white-woot
 >white woot
 While it's okay to be white, it's not okay to be all IT'S OKAY TO BE WHITE.
 
@@ -949,50 +949,50 @@ While it's okay to be white, it's not okay to be all IT'S OKAY TO BE WHITE.
 >shocking shift
 by one point
 
-#ttc-table-of-sore-souls-gore-goals-guesses-boar-bowls
+#testcase-mistakes-table-of-sore-souls-gore-goals-guesses-boar-bowls
 >boar bowls
 Boars would be too rowdy for here.
 
-#ttc-table-of-sore-souls-gore-goals-guesses-bore-bowls
+#testcase-mistakes-table-of-sore-souls-gore-goals-guesses-bore-bowls
 >bore bowls
 You're trying to bring life here, not drain it.
 
-#ttc-table-of-sore-souls-gore-goals-guesses-cor-core-coals
+#testcase-mistakes-table-of-sore-souls-gore-goals-guesses-cor-core-coals
 >core coals
 Coal would not enliven such a place.
 
-#ttc-table-of-sore-souls-gore-goals-guesses-door-doles
+#testcase-mistakes-table-of-sore-souls-gore-goals-guesses-door-doles
 >door doles
 No, this place doesn't need more doors.
 
-#ttc-table-of-sore-souls-gore-goals-guesses-nor-knolls
+#testcase-mistakes-table-of-sore-souls-gore-goals-guesses-nor-knolls
 >nor knolls
 You don't need to deprive this place of landscape.
 
-#ttc-table-of-sore-souls-gore-goals-guesses-poor-pour-pore-polls-poles
+#testcase-mistakes-table-of-sore-souls-gore-goals-guesses-poor-pour-pore-polls-poles
 >pour poles
 Polls, poles ... neither would make a place less dreary.
 
-#ttc-table-of-sore-souls-gore-goals-guesses-roar-rolls-roles
+#testcase-mistakes-table-of-sore-souls-gore-goals-guesses-roar-rolls-roles
 >roar rolls
 Perhaps the roaring would be lively. Perhaps it wouldn't. But it might not add anything.
 
-#ttc-table-of-sore-souls-gore-goals-guesses-score-skols
+#testcase-mistakes-table-of-sore-souls-gore-goals-guesses-score-skols
 >score skols
 Perhaps Vikings will discover this land and conquer it some day. But why speed things up?
 
-#ttc-table-of-sore-souls-gore-goals-guesses-store-stoles
+#testcase-mistakes-table-of-sore-souls-gore-goals-guesses-store-stoles
 >store stoles
 Bringing animal pelts into a place coming to life doesn't quite work.
 
-#ttc-table-of-sore-souls-gore-goals-guesses-whore-holes
+#testcase-mistakes-table-of-sore-souls-gore-goals-guesses-whore-holes
 >whore holes
 Now, now, this isn't that sort of game.
 
 >shore shoals
 by one point
 
-#+ttc-table-of-sore-souls-gore-goals-guesses-poor-pour-pore-polls-poles
+#+testcase-mistakes-table-of-sore-souls-gore-goals-guesses-poor-pour-pore-polls-poles
 >poor polls
 Polls, poles ... neither would make a place cheerier.
 
@@ -1012,11 +1012,11 @@ by one point
 >four foals
 by one point
 
-#+ttc-table-of-sore-souls-gore-goals-guesses-cor-core-coals
+#+testcase-mistakes-table-of-sore-souls-gore-goals-guesses-cor-core-coals
 >core coals
 Coal would not enliven such a place further.
 
-#+ttc-table-of-sore-souls-gore-goals-guesses-store-stoles
+#+testcase-mistakes-table-of-sore-souls-gore-goals-guesses-store-stoles
 >store stoles
 Bringing animal pelts into a place coming to life doesn't quite work.
 
@@ -1025,66 +1025,66 @@ by one point
 
 #this is back at High Hub after we got the red rose
 
-#ttc-table-of-red-rose-guesses-bed-beaus-bows
+#testcase-mistakes-table-of-red-rose-guesses-bed-beaus-bows
 >bed beaus
 Yeah, roses are romantic and all, but by now, you may guess this game's shtick is corny jokes.
 
 >bed bows
 You need no fancy place to sleep.
 
-#ttc-table-of-red-rose-guesses-bled-blows
+#testcase-mistakes-table-of-red-rose-guesses-bled-blows
 >bled blows
 You do not need to incite violence.
 
-#ttc-table-of-red-rose-guesses-cred-crows
+#testcase-mistakes-table-of-red-rose-guesses-cred-crows
 >cred crows
 You don't need to brag about street cred, real or imagined.
 
-#ttc-table-of-red-rose-guesses-dead-does-dohs-doze
+#testcase-mistakes-table-of-red-rose-guesses-dead-does-dohs-doze
 >dead dohs
 You aren't here to kill helpless animals or utter a Simpsonesque epithet. Or sleep on the job.
 
-#ttc-table-of-red-rose-guesses-ed-ohs-os
+#testcase-mistakes-table-of-red-rose-guesses-ed-ohs-os
 >ed ohs
 No larger-than-life football coach with a thick Cajun accent appears. He is probably out driving that Hummer he bought in that one commercial.
 
-#ttc-table-of-red-rose-guesses-fled-flows
+#testcase-mistakes-table-of-red-rose-guesses-fled-flows
 >fled flows
 Nobody and nothing flees at your proclamation.
 
-#ttc-table-of-red-rose-guesses-fred-froze
+#testcase-mistakes-table-of-red-rose-guesses-fred-froze
 >fred froze
 A sad, succinct tale, indeed.
 
-#ttc-table-of-red-rose-guesses-head-hos-hoes-hose
+#testcase-mistakes-table-of-red-rose-guesses-head-hos-hoes-hose
 >head hose
 You have no need to disguise your face with hose.
 
-#ttc-table-of-red-rose-guesses-jed-joes
+#testcase-mistakes-table-of-red-rose-guesses-jed-joes
 >jed joes
 No "charmingly-named" rustic diner appears.
 
-#ttc-table-of-red-rose-guesses-led-lead-lows
+#testcase-mistakes-table-of-red-rose-guesses-led-lead-lows
 >led lows
 You have no need to go low or be laid low.
 
-#ttc-table-of-red-rose-guesses-ned-knows
+#testcase-mistakes-table-of-red-rose-guesses-ned-knows
 >ned knows
 There is nobody named Ned around.
 
-#ttc-table-of-red-rose-guesses-shed-shows
+#testcase-mistakes-table-of-red-rose-guesses-shed-shows
 >shed shows
 There are no sheds that need showing.
 
-#ttc-table-of-red-rose-guesses-sled-slows
+#testcase-mistakes-table-of-red-rose-guesses-sled-slows
 >sled slows
 There are no sleds that need slowing.
 
-#ttc-table-of-red-rose-guesses-ted-tows-toes
+#testcase-mistakes-table-of-red-rose-guesses-ted-tows-toes
 >ted tows
 You recall an ad for a towing service.
 
-#ttc-table-of-red-rose-guesses-wed-woes
+#testcase-mistakes-table-of-red-rose-guesses-wed-woes
 >wed woes
 A sad, succinct tale, indeed.
 
@@ -1094,71 +1094,74 @@ A sad, succinct tale, indeed.
 >gawking gift
 by one point
 
-#ttc-table-of-bum-bout-rum-route-guesses-bum-boot
+#testcase-mistakes-table-of-bum-bout-rum-route-guesses-crumb-kraut
+>crumb kraut
+You don't need a plate of food. You need spiritual nourishment.
+
+#testcase-mistakes-table-of-bum-bout-rum-route-guesses-drum-drought
+>drum drought
+Thankfully, there's no percussion in the background.
+
+#testcase-mistakes-table-of-bum-bout-rum-route-guesses-gum-gout
+>gum gout
+But gout is in the toes, not the mouth.
+
+#testcase-mistakes-table-of-bum-bout-rum-route-guesses-numb-nowt
+>numb nowt
+Once you're more confident, you won't want to feel numb any more, and it'll just happen.
+
+#testcase-mistakes-table-of-bum-bout-rum-route-guesses-pum-pout-pump-out
+>pump out
+Clever sleight-of-mouth, but I can't quite allow it.
+
+>pum pout
+Clever sleight-of-mouth, but I can't quite allow it.
+
+#testcase-mistakes-table-of-bum-bout-rum-route-guesses-scum-scout
+>scum scout
+You don't want to call up an antagonist face-to-face.
+
+#testcase-mistakes-table-of-bbrr-guesses-bum-boot
 >bum boot
 While 'Bout should indicate Route is pronounced with a long o, I'll let you have fun guessing.
 What would you do with only one boot?
 
-#ttc-table-of-bum-bout-rum-route-guesses-chum-chute
+#testcase-mistakes-table-of-bbrr-guesses-chum-chute
 >chum chute
 While 'Bout should indicate Route is pronounced with a long o, I'll let you have fun guessing.
 Misery loves company, but company doesn't love misery.
 
-#ttc-table-of-bum-bout-rum-route-guesses-come-coot
+#testcase-mistakes-table-of-bbrr-guesses-come-coot
 >come coot
 While 'Bout should indicate Route is pronounced with a long o, I'll let you have fun guessing.
 This isn't the place to summon animals.
 
-#ttc-table-of-bum-bout-rum-route-guesses-crumb-kraut
->crumb kraut
-You don't need a plate of food. You need spiritual nourishment.
-
-#ttc-table-of-bum-bout-rum-route-guesses-drum-drought
->drum drought
-Thankfully, there's no percussion in the background.
-
-#ttc-table-of-bum-bout-rum-route-guesses-from-fruit
+#testcase-mistakes-table-of-bbrr-guesses-from-fruit
 >from fruit
 While 'Bout should indicate Route is pronounced with a long o, I'll let you have fun guessing.
 We already did stuff with fruit.
 
-#ttc-table-of-bum-bout-rum-route-guesses-gum-gout
->gum gout
-But gout is in the toes, not the mouth.
-
-#ttc-table-of-bum-bout-rum-route-guesses-hum-hoot
+#testcase-mistakes-table-of-bbrr-guesses-hum-hoot
 >hum hoot
 While 'Bout should indicate Route is pronounced with a long o, I'll let you have fun guessing.
 You try to scrounge up a tune. It's very bluesy!
 
-#ttc-table-of-bum-bout-rum-route-guesses-mum-moot
+#testcase-mistakes-table-of-bbrr-guesses-mum-moot
 >mum moot
 While 'Bout should indicate Route is pronounced with a long o, I'll let you have fun guessing.
 No matter how quiet things are, that won't stop negative voices in one's head.
 
-#ttc-table-of-bum-bout-rum-route-guesses-numb-newt
+#testcase-mistakes-table-of-bbrr-guesses-numb-newt
 >numb newt
 While 'Bout should indicate Route is pronounced with a long o, I'll let you have fun guessing.
 This isn't the place to summon animals.
 
-#ttc-table-of-bum-bout-rum-route-guesses-numb-nowt
->numb nowt
-Once you're more confident, you won't want to feel numb any more, and it'll just happen.
-
-#ttc-table-of-bum-bout-rum-route-guesses-pum-pout
->pump out
-Clever sleight-of-mouth, but I can't quite allow it.
-
-#ttc-table-of-bum-bout-rum-route-guesses-scum-scoot
+#testcase-mistakes-table-of-bbrr-guesses-scum-scoot
 >scum scoot
 While 'Bout should indicate Route is pronounced with a long o, I'll let you have fun guessing.
 There are no scum here, just thoughts that make you feel negative.
 
-#ttc-table-of-bum-bout-rum-route-guesses-scum-scout
->scum scout
-You don't want to call up an antagonist face-to-face.
-
-#ttc-table-of-bum-bout-rum-route-guesses-some-suit
+#testcase-mistakes-table-of-bbrr-guesses-some-suit
 >some suit
 While 'Bout should indicate Route is pronounced with a long o, I'll let you have fun guessing.
 A better wardrobe would only help things look better, not be better.
@@ -1176,39 +1179,39 @@ by one point
 
 # could be tested once not automatically kicked back to lift ?? did/can do
 
-#ttc-table-of-nay-nope-slay-slope-guesses-day-dope
+#testcase-mistakes-table-of-nay-nope-slay-slope-guesses-day-dope
 >day dope
 Reaffirming every day is dope is pretty positive and all, but you can do better.
 
-#ttc-table-of-nay-nope-slay-slope-guesses-gray-grope
+#testcase-mistakes-table-of-nay-nope-slay-slope-guesses-gray-grope
 >gray grope
 The object is not to be consumed by depression but to reduce its influence.
 
-#ttc-table-of-nay-nope-slay-slope-guesses-lay-lope
+#testcase-mistakes-table-of-nay-nope-slay-slope-guesses-lay-lope
 >lay lope
 You make rudimentary plans to ambush something, even though there's nothing to ambush.
 
-#ttc-table-of-nay-nope-slay-slope-guesses-may-mope
+#testcase-mistakes-table-of-nay-nope-slay-slope-guesses-may-mope
 >may mope
 The object is not to be consumed by depression but to reduce its influence.
 
-#ttc-table-of-nay-nope-slay-slope-guesses-pay-pope
+#testcase-mistakes-table-of-nay-nope-slay-slope-guesses-pay-pope
 >pay pope
 Oh dear no. Get with the times! In these enlightened days, we chuck money at prosperity-gospel televangelists.
 
-#ttc-table-of-nay-nope-slay-slope-guesses-ray-rope
+#testcase-mistakes-table-of-nay-nope-slay-slope-guesses-ray-rope
 >ray rope
 The right sort of ray? Yes. Rope to pull you back? No.
 
-#ttc-table-of-nay-nope-slay-slope-guesses-say-soap
+#testcase-mistakes-table-of-nay-nope-slay-slope-guesses-say-soap
 >say soap
 I suppose I should put in a cliche about cleansing one's soul here.
 
-#ttc-table-of-nay-nope-slay-slope-guesses-stay-stope
+#testcase-mistakes-table-of-nay-nope-slay-slope-guesses-stay-stope
 >stay stope
 Building a long-lasting mine here would not make or keep things happier.
 
-#ttc-table-of-nay-nope-slay-slope-guesses-tray-tres-trope
+#testcase-mistakes-table-of-nay-nope-slay-slope-guesses-tray-tres-trope
 >tray trope
 You recognize a trope or twelve at play during your journeys.
 
@@ -1224,55 +1227,55 @@ by one point
 >grokking grift
 by one point
 
-#ttc-table-of-slight-sleaze-guesses-bite-bees
+#testcase-mistakes-table-of-slight-sleaze-guesses-bite-bees
 >bite bees
 Those wouldn't taste very good.
 
-#ttc-table-of-slight-sleaze-guesses-fight-fees
+#testcase-mistakes-table-of-slight-sleaze-guesses-fight-fees
 >fight fees
 Yes, it's important to fight unfairly sleazy fees, but not here and now.
 
-#ttc-table-of-slight-sleaze-guesses-flight-flees-fleas
+#testcase-mistakes-table-of-slight-sleaze-guesses-flight-flees-fleas
 >flight flees
 You need to feel less scared, not more.
 
-#ttc-table-of-slight-sleaze-guesses-fright-frees-freeze
+#testcase-mistakes-table-of-slight-sleaze-guesses-fright-frees-freeze
 >fright frees
 You need to feel more active, not less.
 
-#ttc-table-of-slight-sleaze-guesses-kite-keys
+#testcase-mistakes-table-of-slight-sleaze-guesses-kite-keys
 >kite keys
 That would be electrifying if it were possible.
 
-#ttc-table-of-slight-sleaze-guesses-knight-night-knees-nis
+#testcase-mistakes-table-of-slight-sleaze-guesses-knight-night-knees-nis
 >knight nis
 This rhyme was accidental, but since you found it, I'll say Life of Brian was a better movie. And I'll die on that hill.
 
-#ttc-table-of-slight-sleaze-guesses-light-lease-lees
+#testcase-mistakes-table-of-slight-sleaze-guesses-light-lease-lees
 >light lease
 Lees may be sleazy in their own way.
 
-#ttc-table-of-slight-sleaze-guesses-might-mes
+#testcase-mistakes-table-of-slight-sleaze-guesses-might-mes
 >might mes
 Bad grammar is pretty neutral on the sleaze scale.
 
-#ttc-table-of-slight-sleaze-guesses-sight-sees-seize
+#testcase-mistakes-table-of-slight-sleaze-guesses-sight-sees-seize
 >sight seize
 There is enough to see, and seizing anything would be, uh, sleazy.
 
-#ttc-table-of-slight-sleaze-guesses-smite-smees
+#testcase-mistakes-table-of-slight-sleaze-guesses-smite-smees
 >smite smees
 I'm afraid Never-Never Land is a few universes over.
 
-#ttc-table-of-slight-sleaze-guesses-sprite-sprees
+#testcase-mistakes-table-of-slight-sleaze-guesses-sprite-sprees
 >sprite sprees
 Well, guzzling a two-liter pop bottle is less sleazy than doing the same with alcohol.
 
-#ttc-table-of-slight-sleaze-guesses-trite-trees
+#testcase-mistakes-table-of-slight-sleaze-guesses-trite-trees
 >trite trees
 They will pop up once you've removed the sleaze.
 
-#ttc-table-of-slight-sleaze-guesses-white-whees-wheeze
+#testcase-mistakes-table-of-slight-sleaze-guesses-white-whees-wheeze
 >white wheeze
 You imagine yourself reciting Philip Larkin's fine poem Sympathy in White Major to great applause. Unfortunately, the speaker in the poem being sleazy doesn't help your cause, here.
 
@@ -1290,23 +1293,23 @@ by one point
 
 >s
 
-#ttc-table-of-freak-framing-seek-sameing-guesses-eek-aiming
+#testcase-mistakes-table-of-freak-framing-seek-sameing-guesses-eek-aiming
 >eek aiming
 Yes, you do need to aim barbs at people.
 
-#ttc-table-of-freak-framing-seek-sameing-guesses-geek-gaming
+#testcase-mistakes-table-of-freak-framing-seek-sameing-guesses-geek-gaming
 >geek gaming
 Geek gaming, I suppose, has its own brand of conformism and conventions, so you can't quite use it as a shelter.
 
-#ttc-table-of-freak-framing-seek-sameing-guesses-leek-laming
+#testcase-mistakes-table-of-freak-framing-seek-sameing-guesses-leek-laming
 >leek laming
 Mangling plants is sort of nonconformist in its own way, I guess.
 
-#ttc-table-of-freak-framing-seek-sameing-guesses-meek-maiming-mameing-maming
+#testcase-mistakes-table-of-freak-framing-seek-sameing-guesses-meek-maiming-mameing-maming
 >meek maiming
 Sure, go ahead, sneak a few of your favorite arcade games in on MAME. I'll wait.
 
-#ttc-table-of-freak-framing-seek-sameing-guesses-teak-tique-taming
+#testcase-mistakes-table-of-freak-framing-seek-sameing-guesses-teak-tique-taming
 >teak taming
 You need neither wood nor a boutique nor a critique.
 
@@ -1328,23 +1331,23 @@ by one point
 >docking diffed
 by one point
 
-#ttc-table-of-mad-most-cad-coast-guesses-gad-ghost
+#testcase-mistakes-table-of-mad-most-cad-coast-guesses-gad-ghost
 >gad ghost
 You fail to scare anyone with this.
 
-#ttc-table-of-mad-most-cad-coast-guesses-grad-grossed
+#testcase-mistakes-table-of-mad-most-cad-coast-guesses-grad-grossed
 >grad grossed
 You think of the most sophisticated disgusting joke you've ever heard.
 
-#ttc-table-of-mad-most-cad-coast-guesses-had-host
+#testcase-mistakes-table-of-mad-most-cad-coast-guesses-had-host
 >had host
 Once the insults are gone, this will be true.
 
-#ttc-table-of-mad-most-cad-coast-guesses-pad-post
+#testcase-mistakes-table-of-mad-most-cad-coast-guesses-pad-post
 >pad post
 A post would offer scant protection against insults.
 
-#ttc-table-of-mad-most-cad-coast-guesses-tad-toast
+#testcase-mistakes-table-of-mad-most-cad-coast-guesses-tad-toast
 >tad toast
 There's no such thing as toasting someone with an insult halfway.
 
@@ -1354,7 +1357,7 @@ by one point
 >rad roast
 by one point
 
-#+ttc-table-of-mad-most-cad-coast-guesses-gad-ghost
+#+testcase-mistakes-table-of-mad-most-cad-coast-guesses-gad-ghost
 >gad ghost
 You fail to scare anyone with this, not that you need to, any more.
 
@@ -1362,39 +1365,39 @@ You fail to scare anyone with this, not that you need to, any more.
 
 # some test cases are wobbly here! This is before I allowed you to come back to the trail after beating the whale, for whatever reason you wanted to
 
-#ttc-table-of-trite-trail-guesses-aight-ail
+#testcase-mistakes-table-of-trite-trail-guesses-aight-ail
 >aight ail
 You resort to the vernacular to express your displeasure with enemies, real or imagined.
 
-#ttc-table-of-trite-trail-guesses-bite-bail-bale
+#testcase-mistakes-table-of-trite-trail-guesses-bite-bail-bale
 >bite bale
 There is no bale to bite, and if you want to bail, you can just go back east.
 
-#ttc-table-of-trite-trail-guesses-bright-braille
+#testcase-mistakes-table-of-trite-trail-guesses-bright-braille
 >bright braille
 There is no braille here.
 
-#ttc-table-of-trite-trail-guesses-fight-fail
+#testcase-mistakes-table-of-trite-trail-guesses-fight-fail
 >fight fail
 Don't despair!
 
-#ttc-table-of-trite-trail-guesses-fright-frail
+#testcase-mistakes-table-of-trite-trail-guesses-fright-frail
 >fright frail
 Don't despair!
 
-#ttc-table-of-trite-trail-guesses-height-hail-hale
+#testcase-mistakes-table-of-trite-trail-guesses-height-hail-hale
 >height hale
 Alas, no airplane appears to destroy the tight-tail white whale.
 
-#ttc-table-of-trite-trail-guesses-kite-kale
+#testcase-mistakes-table-of-trite-trail-guesses-kite-kale
 >kite kale
 No nutritious green kite appears.
 
-#ttc-table-of-trite-trail-guesses-quite-quail
+#testcase-mistakes-table-of-trite-trail-guesses-quite-quail
 >quite quail
 A quail would not help much against the tight-tail white whale.
 
-#ttc-table-of-trite-trail-guesses-shite-shale
+#testcase-mistakes-table-of-trite-trail-guesses-shite-shale
 >shite shale
 Well, that would certainly make the trite trail less trite, in its own way.
 
@@ -1427,23 +1430,23 @@ by one point
 >mocking miffed
 by one point
 
-#ttc-table-of-old-end-guesses-fold-fend
+#testcase-mistakes-table-of-old-end-guesses-fold-fend
 >fold fend
 Folding and fending are contradictory.
 
-#ttc-table-of-old-end-guesses-polled-penned
+#testcase-mistakes-table-of-old-end-guesses-polled-penned
 >polled penned
 Someone rushes by and ropes you into a corner you didn't know existed. They hand you a pen and a push-poll about how much you're enjoying Low-Key Learny Jokey Journey. Super-Great, Extra-Great, and ten other options. You feel compelled to check them all! Then you try to keep the pen they loaned you, but they remind you that if you're having so much fun, it'd just be wack to steal a pen in the process.
 
-#ttc-table-of-old-end-guesses-rolled-rend
+#testcase-mistakes-table-of-old-end-guesses-rolled-rend
 >rolled rend
 But if you got rolled, you wouldn't be able to rend.
 
-#ttc-table-of-old-end-guesses-sold-send
+#testcase-mistakes-table-of-old-end-guesses-sold-send
 >sold send
 Not quite. Commerce isn't at the end of all this.
 
-#ttc-table-of-old-end-guesses-told-tend
+#testcase-mistakes-table-of-old-end-guesses-told-tend
 >told tend
 Not quite. You weren't given instructions how to take care of things, and you probably can't pass them on.
 
@@ -1458,71 +1461,71 @@ by one point
 
 >s
 
-#ttc-table-of-drain-drat-vain-vat-guesses-attain-a-tat
+#testcase-mistakes-table-of-drain-drat-vain-vat-guesses-attain-tat
 >attain a tat
 Oh, your parents warned you that text adventures and D&D would lead to darker desires, but did you listen? Oh, no, you did not.
 
-#ttc-table-of-drain-drat-vain-vat-guesses-brain-brat
+#testcase-mistakes-table-of-drain-drat-vain-vat-guesses-brain-brat
 >brain brat
 You don't want to fight annoying people with violence. Inanimate obstacles, yes. People, no.
 
-#ttc-table-of-drain-drat-vain-vat-guesses-cane-cat
+#testcase-mistakes-table-of-drain-drat-vain-vat-guesses-cane-cat
 >cane cat
 Cats don't deserve to be caned. Dogs don't, either.
 
-#ttc-table-of-drain-drat-vain-vat-guesses-chain-chat
+#testcase-mistakes-table-of-drain-drat-vain-vat-guesses-chain-chat
 >chain chat
 More forceful talking is necessary here.
 
-#ttc-table-of-drain-drat-vain-vat-guesses-feign-fat
+#testcase-mistakes-table-of-drain-drat-vain-vat-guesses-feign-fat
 >feign fat
 You don't need to cry about being a few pounds overweight.
 
-#ttc-table-of-drain-drat-vain-vat-guesses-gain-gat
+#testcase-mistakes-table-of-drain-drat-vain-vat-guesses-gain-gat
 >gain gat
 A gun would be too much here.
 
-#ttc-table-of-drain-drat-vain-vat-guesses-main-mat
+#testcase-mistakes-table-of-drain-drat-vain-vat-guesses-main-mat
 >main mat
 Perhaps that will be laid out once you have figured how to get out of the vat.
 
-#ttc-table-of-drain-drat-vain-vat-guesses-pain-pat
+#testcase-mistakes-table-of-drain-drat-vain-vat-guesses-pain-pat
 >pain pat
 Not being Patrick Swayze's character in Road House, you admit the truism that pain, indeed, does hurt. And you grab where it hurts, briefly.
 
-#ttc-table-of-drain-drat-vain-vat-guesses-plain-plat
+#testcase-mistakes-table-of-drain-drat-vain-vat-guesses-plain-plat
 >plain plat
 The terrain is already pretty flat.
 
-#ttc-table-of-drain-drat-vain-vat-guesses-rain-rat
+#testcase-mistakes-table-of-drain-drat-vain-vat-guesses-rain-rat
 >rain rat
 But you'd have no way to make it rain cats and dogs to catch the rat(s) after.
 
-#ttc-table-of-drain-drat-vain-vat-guesses-rain-reign-rat
+#testcase-mistakes-table-of-drain-drat-vain-vat-guesses-rain-reign-rat
 >reign rat
 You don't need an animal overlord.
 
-#ttc-table-of-drain-drat-vain-vat-guesses-sane-sat
+#testcase-mistakes-table-of-drain-drat-vain-vat-guesses-sane-sat
 >sane sat
 You convince yourself the vain vat is a great place to sort out your emotions.
 
-#ttc-table-of-drain-drat-vain-vat-guesses-slain-slat
+#testcase-mistakes-table-of-drain-drat-vain-vat-guesses-slain-slat
 >slain slat
 There is no slat to slay, alas.
 
-#ttc-table-of-drain-drat-vain-vat-guesses-spain-spat
+#testcase-mistakes-table-of-drain-drat-vain-vat-guesses-spain-spat
 >spain spat
 You make up reasons to complain about Spain, for whatever good that does.
 
-#ttc-table-of-drain-drat-vain-vat-guesses-sprain-sprat
+#testcase-mistakes-table-of-drain-drat-vain-vat-guesses-sprain-sprat
 >sprain sprat
 You find no fish to torment.
 
-#ttc-table-of-drain-drat-vain-vat-guesses-stain-stat
+#testcase-mistakes-table-of-drain-drat-vain-vat-guesses-stain-stat
 >stain stat
 Alas, you have nothing to vandalize the premises with.
 
-#ttc-table-of-drain-drat-vain-vat-guesses-strain-strat
+#testcase-mistakes-table-of-drain-drat-vain-vat-guesses-strain-strat
 >strain strat
 You contemplate a way to put your ultimate enemy under pressure.
 
@@ -1535,17 +1538,17 @@ by one point
 >splain splat
 by one point
 
-#+ttc-table-of-drain-drat-vain-vat-guesses-chain-chat
+#+testcase-mistakes-table-of-drain-drat-vain-vat-guesses-chain-chat
 >chain chat
 More forceful talking was necessary here.
 
 # we want to make sure we fall through to the generic error here now the room name changed
 
-#+ttc-table-of-drain-drat-vain-vat-guesses-main-mat
+#+testcase-mistakes-table-of-drain-drat-vain-vat-guesses-main-mat
 >main mat
 It looks like you may have tried to refer to the room name, or part of it. You often need to riff on the room name, but you never need to use the room name directly.
 
-#+ttc-table-of-drain-drat-vain-vat-guesses-sane-sat
+#+testcase-mistakes-table-of-drain-drat-vain-vat-guesses-sane-sat
 >sane sat
 You convince yourself the vain vat was a great place to sort out your emotions.
 
@@ -1556,39 +1559,39 @@ by one point
 
 #these become the name of the location later, so they are only available when the market marquee is
 
-#ttc-table-of-market-marquee-guesses-met-me
+#testcase-mistakes-table-of-market-marquee-guesses-met-me
 >met me
 You will be met, but you need the right actions and attitude.
 
-#ttc-table-of-market-marquee-guesses-threat-three
+#testcase-mistakes-table-of-market-marquee-guesses-threat-three
 >threat three
 Threat three will appear, but you need the right actions and attitude.
 
-#ttc-table-of-threat-three-met-me-guesses-bet-be-bee
+#testcase-mistakes-table-of-threat-three-met-me-guesses-bet-be-bee
 >bet bee
 You don't need to gamble or bluff right now.
 
-#ttc-table-of-threat-three-met-me-guesses-het-he-hee
+#testcase-mistakes-table-of-threat-three-met-me-guesses-het-he-hee
 >het hee
 Discussions of sexual orientation won't go over well.
 
-#ttc-table-of-threat-three-met-me-guesses-jet-gee
+#testcase-mistakes-table-of-threat-three-met-me-guesses-jet-gee
 >jet gee
 You let wack punks and suckers know they'd best get to stepping, which is slightly cathartic.
 
-#ttc-table-of-threat-three-met-me-guesses-let-lee
+#testcase-mistakes-table-of-threat-three-met-me-guesses-let-lee
 >let lee
 Whoever Lee is, they're not better-equipped to deal, here.
 
-#ttc-table-of-threat-three-met-me-guesses-net-knee-ni
+#testcase-mistakes-table-of-threat-three-met-me-guesses-net-knee-ni
 >net ni
 No knights appear to say a paralyzing two-letter word.
 
-#ttc-table-of-threat-three-met-me-guesses-pet-pee
+#testcase-mistakes-table-of-threat-three-met-me-guesses-pet-pee
 >pet pee
 No, you don't need to mess things up that way, here.
 
-#ttc-table-of-threat-three-met-me-guesses-wet-wee-whee
+#testcase-mistakes-table-of-threat-three-met-me-guesses-wet-wee-whee
 >wet whee
 No cool waterslide or pool appears. You still have business!
 
@@ -1609,7 +1612,7 @@ by one point
 #technically "all" but it is in the mistake tables
 85 out of 86
 
-#+ttc-table-of-general-good-guesses-earning-right
+#+testcase-mistakes-table-of-general-good-guesses-earning-right
 >earning right
 Suck-Soul: Stuck! Stole!
 Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?

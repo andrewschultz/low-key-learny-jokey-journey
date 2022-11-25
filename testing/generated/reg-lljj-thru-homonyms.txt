@@ -57,7 +57,8 @@ by one point
 >bother
 You hear a whooshing as a door swings in from nowhere. It doesn't seem to lead anywhere. Voices from behind it, though, assure you you are missing something. Using your logical skills, you deduce it is a miss-more-diss door. While it's not going to jump you if your back is turned, it might be nice to get rid of.
 
-#testcase-homonym-table-of-verb-checks-vh-piss-poor-rule-pore
+#testcase-homonym-reject-table-of-verb-checks-vh-piss-poor-rule-pore
+#testcase-homonym-detail-vh-piss-poor-rule-default
 >piss pore
 A crude insult, not a crude image.
 
@@ -78,14 +79,15 @@ by one point
 >gee junk
 by one point
 
-#testcase-homonym-table-of-verb-checks-vh-whee-woot-rule-wee
+#testcase-homonym-reject-table-of-verb-checks-vh-whee-woot-rule-wee
+#testcase-homonym-detail-vh-whee-woot-rule-default
 >wee woot
 You're thinking small. Be more enthusiastic!
 
 >whee woot
 by one point
 
-#testcase-homonym-table-of-verb-checks-pair-pare
+#testcase-homonym-reject-table-of-verb-checks-pair-pare
 >pair peech
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right.
 
@@ -106,7 +108,8 @@ You don't need to reduce or duplicate the pear peach. It has a much bigger purpo
 >trussed
 You don't need to restrict things here but open them up.
 
-#testcase-homonym-table-of-verb-checks-vh-bust-back-rule-bust
+#testcase-homonym-reject-table-of-verb-checks-vh-bust-back-rule-bust
+#testcase-homonym-detail-vh-bust-back-rule-default
 >bust back
 Violence isn't the answer, here, though you're close. You may wish to think of Jack differently.
 
@@ -118,7 +121,7 @@ by one point
 
 >n
 
-#testcase-homonym-table-of-verb-checks-bear
+#testcase-homonym-reject-table-of-verb-checks-bear
 >bear beach
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right.
 
@@ -151,14 +154,14 @@ by one point
 >cocoon
 by one point
 
-#testcase-homonym-table-of-verb-checks-mow
+#testcase-homonym-reject-table-of-verb-checks-mow
 >mow moon
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
 >mo moon
 by one point
 
-#testcase-homonym-table-of-verb-checks-sew-sow
+#testcase-homonym-reject-table-of-verb-checks-sew-sow
 >sew soon
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
@@ -174,14 +177,14 @@ by one point
 >potty pail
 by one point
 
-#testcase-homonym-table-of-verb-checks-naughty
+#testcase-homonym-reject-table-of-verb-checks-naughty
 >naughty nail
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
 >knotty nail
 by one point
 
-#testcase-homonym-table-of-verb-checks-buy-by
+#testcase-homonym-reject-table-of-verb-checks-buy-by
 >buy bub
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
@@ -199,7 +202,7 @@ by one point
 >go goo
 by one point
 
-#testcase-homonym-table-of-verb-checks-flu-flew
+#testcase-homonym-reject-table-of-verb-checks-flu-flew
 >flow flew
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
@@ -218,21 +221,21 @@ by one point
 >crow crew
 by one point
 
-#testcase-homonym-table-of-verb-checks-hoe
+#testcase-homonym-reject-table-of-verb-checks-hoe
 >hoe who
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
 >ho who
 by one point
 
-#testcase-homonym-table-of-verb-checks-yew
+#testcase-homonym-reject-table-of-verb-checks-yew
 >yo yew
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
 >yo you
 by one point
 
-#testcase-homonym-table-of-verb-checks-threw
+#testcase-homonym-reject-table-of-verb-checks-threw
 >throw threw
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
@@ -261,7 +264,7 @@ by one point
 >lore lols
 by one point
 
-#testcase-homonym-table-of-verb-checks-fore
+#testcase-homonym-reject-table-of-verb-checks-fore
 >fore foals
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
@@ -288,7 +291,7 @@ by one point
 
 >d
 
-#testcase-homonym-table-of-verb-checks-hay
+#testcase-homonym-reject-table-of-verb-checks-hay
 >hay hope
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
@@ -313,7 +316,7 @@ by one point
 >plight please
 by one point
 
-#testcase-homonym-table-of-verb-checks-write-route
+#testcase-homonym-reject-table-of-verb-checks-write-route
 >write route
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
@@ -328,14 +331,14 @@ by one point
 >bleak blaming
 by one point
 
-#testcase-homonym-table-of-verb-checks-shiek-sheik
+#testcase-homonym-reject-table-of-verb-checks-shiek-sheik
 >shiek shaming
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
 >chic shaming
 by one point
 
-#testcase-homonym-table-of-verb-checks-bread
+#testcase-homonym-reject-table-of-verb-checks-bread
 >bread bros
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
@@ -356,14 +359,14 @@ by one point
 
 >w
 
-#testcase-homonym-table-of-verb-checks-site-sale
+#testcase-homonym-reject-table-of-verb-checks-site-sale
 >site sale
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
 >sight sail
 by one point
 
-#testcase-homonym-table-of-verb-checks-mite-male
+#testcase-homonym-reject-table-of-verb-checks-mite-male
 >mite male
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
@@ -373,7 +376,7 @@ by one point
 >flight flail
 by one point
 
-#testcase-homonym-table-of-verb-checks-write-rale
+#testcase-homonym-reject-table-of-verb-checks-write-rale
 >write rale
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 
@@ -417,7 +420,7 @@ by one point
 >splain splat
 by one point
 
-#testcase-homonym-table-of-verb-checks-phos
+#testcase-homonym-reject-table-of-verb-checks-phos
 >fed phos
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right
 

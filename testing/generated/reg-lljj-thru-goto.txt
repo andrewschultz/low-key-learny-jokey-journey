@@ -20,7 +20,7 @@ You're already there! Well, here.
 >gt bane
 You're already there! Well, here.
 
-#ttc-table-of-noways-bane-be-sane-see
+#testcase-goto-table-of-noways-bane-be-sane-see
 >n
 Cardinal directions don't mean much here, yet. Besides, there's no way back. You can only just enter the Train Tree one of three ways.
 
@@ -39,7 +39,7 @@ north: (unvisited.)
 >n
 The roaring seems to pull you back.
 
-#ttc-table-of-noways-roaring-rocks
+#testcase-goto-table-of-noways-roaring-rocks
 >s
 The rocks block every way except north.
 
@@ -92,7 +92,7 @@ west: (unvisited.)
 >s
 >s
 
-#+ttc-table-of-noways-roaring-rocks
+#+testcase-goto-table-of-noways-roaring-rocks
 The rocks block every way except back north.
 
 #+testcase-exits-roaring-rocks
@@ -132,7 +132,7 @@ west: (unvisited.)
 
 >n
 
-#ttc-table-of-noways-warm-stun-storm
+#testcase-goto-table-of-noways-warm-stun-storm
 >w
 The passage here is north-south.
 
@@ -157,7 +157,7 @@ by one point
 >done dorm
 by one point
 
-#ttc-table-of-noways-tttt
+#testcase-goto-table-of-noways-tttt
 >n
 You feel your will sapped as you attempt to go north. You'll need to sit out the storm first.
 
@@ -201,7 +201,7 @@ by one point
 >bussed back
 by one point
 
-#ttc-table-of-noways-trust-track
+#testcase-goto-table-of-noways-trust-track
 >n
 The track seems to end here. You can really only go back west, unless you figure something out.
 >e
@@ -223,7 +223,7 @@ EXIT LIST:
 north: (unvisited.)
 west: No-Nudge Slow Sludge.
 
-#+ttc-table-of-noways-trust-track
+#+testcase-goto-table-of-noways-trust-track
 >s
 The track now runs west-north but not south.
 >e
@@ -231,7 +231,7 @@ The track now runs west-north but not east.
 
 >n
 
-#ttc-table-of-noways-rare-reach
+#testcase-goto-table-of-noways-rare-reach
 >n
 The darkness encompasses you every way except back south.
 
@@ -243,7 +243,7 @@ south: Trust Track.
 >bare beach
 by one point
 
-#+ttc-table-of-noways-rare-reach
+#+testcase-goto-table-of-noways-rare-reach
 >n
 The water encompasses you every way except back south.
 
@@ -265,7 +265,7 @@ by one point
 >n
 Unfortunately, you hear aggressive voices threatening to attack you. They have weapons, and you don't. You're not sure how to change this.
 
-#ttc-table-of-noways-hun-harm-fun-farm
+#testcase-goto-table-of-noways-hun-harm-fun-farm
 >w
 If you left the north/east passage, you'd probably get lost.
 
@@ -289,7 +289,7 @@ east: No-Nudge Slow Sludge.
 
 >n
 
-#ttc-table-of-noways-nonoon
+#testcase-goto-table-of-noways-nonoon
 >n
 Any way but back south might get you lost in this darkness.
 
@@ -313,7 +313,7 @@ by one point
 >crow croon
 by one point
 
-#ttc-table-of-noways-jotty-jail
+#testcase-goto-table-of-noways-jotty-jail
 >n
 This being a jail, you can't walk out. You have to find a weak link or something.
 
@@ -330,7 +330,7 @@ by one point
 >knotty nail
 by one point
 
-#ttc-table-of-noways-high-hub
+#testcase-goto-table-of-noways-high-hub
 >n
 The only way out of the High Hub (well, currently,) is telling the locking lift where you want to go. Okay, the only non-lethal way.
 
@@ -345,7 +345,7 @@ The locking lift is the main way out of here, but there is a way to revisit what
 >w
 >n
 
-#+ttc-table-of-noways-nonoon
+#+testcase-goto-table-of-noways-nonoon
 >n
 In this quasi-sacred valley, the only way out is back south.
 
@@ -354,7 +354,7 @@ In this quasi-sacred valley, the only way out is back south.
 
 >u
 
-#+ttc-table-of-noways-high-hub
+#+testcase-goto-table-of-noways-high-hub
 >n
 The only way out of the High Hub, besides going back down the sturdy stalk, is telling the locking lift where you want to go. Okay, the only non-lethal way.
 
@@ -367,7 +367,7 @@ The locking lift is the main way out of here, but you can go back DOWN the stalk
 >rocking rift
 by one point
 
-#ttc-table-of-noways-new-show-shoe
+#testcase-goto-table-of-noways-new-show-shoe
 >n
 The expanses beyond No-New-Show Shoe seem daunting indeed. You're the only person to bring together a successful show, though you can take the lift elsewhere if you're stuck here.
 
@@ -408,7 +408,7 @@ by one point
 >shocking shift
 by one point
 
-#ttc-table-of-noways-gore-goals
+#testcase-goto-table-of-noways-gore-goals
 >n
 Exploring the darkness would be unwise. The only way out is entering the lift.
 
@@ -419,7 +419,7 @@ You can't go in any direction, but you can ENTER the locking lift to go back to 
 >shore shoals
 by one point
 
-#+ttc-table-of-noways-gore-goals
+#+testcase-goto-table-of-noways-gore-goals
 >n
 Exploring the animal sanctuary you hope to build would feel invasive. The only way out is entering the lift.
 
@@ -448,7 +448,7 @@ by one point
 >gawking gift
 by one point
 
-#ttc-table-of-noways-rum-route
+#testcase-goto-table-of-noways-rum-route
 >n
 Directions seem meaningless here, though you can always enter the lift. You suspect the route leads somewhere, once you're focused right.
 
@@ -468,7 +468,7 @@ by one point
 >umm out
 by one point
 
-#+ttc-table-of-noways-rum-route
+#+testcase-goto-table-of-noways-rum-route
 >n
 Directions seem meaningless here, though you can always enter the lift. You can, however, go down now.
 
@@ -480,7 +480,7 @@ You can also ENTER the locking lift to go back to High Hub.
 
 >d
 
-#ttc-table-of-noways-nay-nope-slay-slope
+#testcase-goto-table-of-noways-nay-nope-slay-slope
 >n
 The only physical way out of these depths is up, though you can pull yourself out of mental depths with the right words.
 
@@ -501,7 +501,7 @@ by one point
 >grokking grift
 by one point
 
-#ttc-table-of-noways-slight-sleaze
+#testcase-goto-table-of-noways-slight-sleaze
 >e
 You can only enter the lift or try to dispel the fright freeze and find a passage.
 
@@ -524,7 +524,7 @@ by one point
 >right root
 by one point
 
-#+ttc-table-of-noways-slight-sleaze
+#+testcase-goto-table-of-noways-slight-sleaze
 >e
 You can only enter the lift or go south through the path you forged.
 
@@ -537,7 +537,7 @@ You can also ENTER the locking lift to go back to High Hub.
 
 >s
 
-#ttc-table-of-noways-seek-sameing
+#testcase-goto-table-of-noways-seek-sameing
 >w
 This is a hideout think-tank. If there's a more secret place, it's beyond you. So, back north it is, when you want to leave.
 
@@ -564,7 +564,7 @@ by one point
 >docking diffed
 by one point
 
-#ttc-table-of-noways-mad-most-cad-coast
+#testcase-goto-table-of-noways-mad-most-cad-coast
 >n
 West is the only way out, other than the lift. You don't yet have the confidence to go west.
 
@@ -578,7 +578,7 @@ by one point
 >rad roast
 by one point
 
-#+ttc-table-of-noways-mad-most-cad-coast
+#+testcase-goto-table-of-noways-mad-most-cad-coast
 >n
 West is the only way out, other than the lift. You have the confidence to go west.
 
@@ -591,7 +591,7 @@ You can also ENTER the locking lift to go back to High Hub.
 
 >w
 
-#ttc-table-of-noways-trite-trail
+#testcase-goto-table-of-noways-trite-trail
 >n
 Although the trite trail extends in all directions except, well, where the whale is, you'd get lost everywhere except back east.
 
@@ -624,7 +624,7 @@ by one point
 >mocking miffed
 by one point
 
-#ttc-table-of-noways-old-end
+#testcase-goto-table-of-noways-old-end
 >e
 But this is a dead end. For now.
 
@@ -639,7 +639,7 @@ by one point
 >exits
 You can't go in any direction yet, but you can ENTER the locking lift to go back to High Hub.
 
-#+ttc-table-of-noways-old-end
+#+testcase-goto-table-of-noways-old-end
 >n
 The bold bend you created goes south-to-east. You need to figure which of these ways is right.
 
@@ -649,7 +649,7 @@ You can't tell which way is right. You need to listen for some source of meannes
 >trolled trend
 by one point
 
-#+ttc-table-of-noways-old-end
+#+testcase-goto-table-of-noways-old-end
 >e
 You can't run away from the trolling! Somehow, you need to restore your psyche and go east.
 
@@ -667,7 +667,7 @@ south: (unvisited.)
 >mold mend
 by one point
 
-#+ttc-table-of-noways-old-end
+#+testcase-goto-table-of-noways-old-end
 >e
 No. South is the way.
 
@@ -676,7 +676,7 @@ You are ready to go south now. No turning away.
 
 >s
 
-#ttc-table-of-noways-vain-vat
+#testcase-goto-table-of-noways-vain-vat
 >w
 You'd injure yourself trying to run through the vat. It's sturdy.
 
@@ -694,7 +694,7 @@ You'd need to destroy the vat with your bat first. But how?
 >flain flat
 by one point
 
-#+ttc-table-of-noways-vain-vat
+#+testcase-goto-table-of-noways-vain-vat
 >w
 While you could go back north, there must be enemies hidden behind some secret wall. How to draw attention to yourself to bring them out?
 
@@ -706,7 +706,7 @@ north: Bold Bend.
 >splain splat
 by one point
 
-#+ttc-table-of-noways-vain-vat
+#+testcase-goto-table-of-noways-vain-vat
 >n
 Running from the Pred Pros would be unwise. Your rose's protection would wear off.
 
@@ -724,7 +724,7 @@ by one point
 
 >s
 
-#ttc-table-of-noways-threat-three
+#testcase-goto-table-of-noways-threat-three
 >w
 You're at the final confrontation. There are no secret passages, just an exit back north.
 
@@ -742,7 +742,7 @@ by one point
 >set see
 by one point
 
-#+ttc-table-of-noways-threat-three
+#+testcase-goto-table-of-noways-threat-three
 >w
 You're at the final confrontation. There are no secret passages, and you can't even exit back north.
 
