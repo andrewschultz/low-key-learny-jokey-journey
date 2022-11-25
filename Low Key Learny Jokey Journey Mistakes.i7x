@@ -37,8 +37,6 @@ to current-table-note-x (tn - a table name):
 		say "[monk-count].";
 		continue the action;
 	current-table-note tn;
-	if tn is table of bum bout rum route guesses:
-		say "[line break][bracket][b][i]NOTE:[r][i] there's an alternate rhyme for route which can get you more guesses, thus the high number possible.[close bracket][r]"
 
 to say monk-count:
 	say "You've discovered [nudge-points of table of mad monk guesses] of [number of rows in table of mad monk guesses] good guesses available from the Mad Monk, and you have [if sco-gad-gunk is false]not [end if]found the Last Lousy Point. If that's good enough, [monk-move-on]";
@@ -66,22 +64,6 @@ mist-regex (text)	mist-rule	got-yet	leet-rule	mist-txt
 this is the no-umm-out rule:
 	if sco-umm-out is false, the rule succeeds;
 	the rule fails;
-
-table of bum bout rum route guesses (continued)
-mist-regex (text)	mist-rule	got-yet	leet-rule	mist-txt
-"bum boot"	--	false	no-umm-out rule	"[route-not-root]What would you do with only one boot?"
-"chum chute"	--	false	no-umm-out rule	"[route-not-root]Misery loves company, but company doesn't love misery."
-"come coot"	--	false	no-umm-out rule	"[route-not-root][no-anim]."
-"from fruit"	--	false	no-umm-out rule	"[route-not-root]We already did stuff with fruit."
-"hum hoot"	--	false	no-umm-out rule	"[route-not-root]You try to scrounge up a tune. It's very bluesy!"
-"mum moot"	--	false	no-umm-out rule	"[route-not-root]No matter how quiet things are, that won't stop negative voices in one's head."
-"numb newt"	--	false	no-umm-out rule	"[route-not-root][no-anim]."
-"scum scoot"	--	false	no-umm-out rule	"[route-not-root]There are no scum here, just thoughts that make you feel negative."
-"some suit"	--	false	no-umm-out rule	"[route-not-root]A better wardrobe would only help things look better, not be better."
-
-to say route-not-root: say "While [']Bout should indicate Route is pronounced with a long o, I'll let you have fun guessing.[paragraph break]"
-
-to say no-anim: say "This isn't the place to summon animals"
 
 table of drain drat vain vat guesses
 mist-regex (text)	mist-rule	got-yet	leet-rule	mist-txt
@@ -393,6 +375,22 @@ this is the in-trust-track rule:
 book guesses by item, alphabetical
 
 to say furthers of (ts - a truth state): if ts is true, say " further"
+
+table of bbrr guesses
+mist-regex (text)	mist-rule	got-yet	leet-rule	mist-txt
+"bum boot"	--	false	no-umm-out rule	"[route-not-root]What would you do with only one boot?"
+"chum chute"	--	false	no-umm-out rule	"[route-not-root]Misery loves company, but company doesn't love misery."
+"come coot"	--	false	no-umm-out rule	"[route-not-root][no-anim]."
+"from fruit"	--	false	no-umm-out rule	"[route-not-root]We already did stuff with fruit."
+"hum hoot"	--	false	no-umm-out rule	"[route-not-root]You try to scrounge up a tune. It's very bluesy!"
+"mum moot"	--	false	no-umm-out rule	"[route-not-root]No matter how quiet things are, that won't stop negative voices in one's head."
+"numb newt"	--	false	no-umm-out rule	"[route-not-root][no-anim]."
+"scum scoot"	--	false	no-umm-out rule	"[route-not-root]There are no scum here, just thoughts that make you feel negative."
+"some suit"	--	false	no-umm-out rule	"[route-not-root]A better wardrobe would only help things look better, not be better."
+
+to say route-not-root: say "While [']Bout should indicate Route is pronounced with a long o, I'll let you have fun guessing.[paragraph break]"
+
+to say no-anim: say "This isn't the place to summon animals"
 
 table of deep dune guesses
 mist-regex (text)	mist-rule	got-yet	leet-rule	mist-txt

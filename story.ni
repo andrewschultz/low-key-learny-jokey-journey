@@ -572,6 +572,10 @@ guess-table of Bum Bout Rum Route is the table of bum bout rum route guesses.
 
 from-number of bum bout rum route is 5309. to-number of bum bout rum route is 2705.
 
+chapter bbrr
+
+the bbrr is a privately-named rhymable in Bum Bout Rum Route. printed name is "alternate Rum Route pronunciation".
+
 part Nay Nope Slay Slope
 
 Nay Nope Slay Slope is a liftroom in Poppin' Part. printed name is "[if sco-hey-hope is false]Nay-Nope-Slay Slope[else]Eh-[']Ope Day, Dope![end if]". "Thoughts of being against negativity swirl around here. Why, if you don't have positivity, you've had it! [if sco-hey-hope is false]They seem directed at you, as if to say you're the least positive person ever[else if sco-k-cope is false]Yet you see they can't totally be true, and you've boosted yourself a bit, and maybe you can boost yourself a bit more[else]But you see through them now. You can move on. There is passage down[end if].". spokeval of Slay Slope is 2.
