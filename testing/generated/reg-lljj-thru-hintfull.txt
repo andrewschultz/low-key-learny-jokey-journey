@@ -40,6 +40,9 @@ by one point
 >hint me
 Your magic power is being able to construct parallel rhymes, as the game title suggests.
 
+>ll
+Most special commands are more than one word. VERBS will give a list of useful, non-puzzle-solving verbs.
+
 >jane g
 by one point
 
@@ -53,8 +56,14 @@ The container itself may not look interesting. (+)
 >hint
 BORING BOX. (-)
 
+>ll
+Most special commands are more than one word, because of the rhyme-pairs involved. VERBS will give a list of useful, non-puzzle-solving verbs.
+
 >boring box
 by one point
+
+>ll
+Most special commands are more than one word, because of the rhyme-pairs involved. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-rules-hint-roaring-rocks-rule-fallthrough
 >hint
@@ -67,11 +76,24 @@ You can really only OPEN the boring box.
 >open box
 You open the boring box, and you see a metal gadget that doesn't look very interesting at first.
 
+#testcase-values-from-number-of-yourself-is--2
+>ll me
+WRONG
+
+#testcase-values-from-number-of-leet-learner-is--2
+>ll learner
+WRONG
+
+#testcase-values-from-number-of-ha-half-nah-naff-button-is--2
+>ll ha half
+WRONG
+
 #hint learner
 #testcase-rules-hint-learner-part-rule-default
 >hint leet learner
 The leet learner and its parts only give hints. You can LL alone to scan a room, LL any thing or person, or READ the leet learner to see its option.
 
+#testcase-values-from-number-of-roaring-rocks-is-2856
 >ll
 You scan the area.
 Hmm. There's a reading. It must relate "Storing Stocks" to the erstwhile boring box.
@@ -163,8 +185,19 @@ You already know both BAD BUNK and SAD SUNK. Repeat BAD BUNK to get by.
 >bad bunk
 by one point
 
+#testcase-values-from-number-of-mad-monk-is-2654
 >ll mad monk
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
+>bad bunk
+by one point
+
+#+testcase-values-from-number-of-mad-monk-is-2654
+>ll mad monk
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
+>undo
+>undo
 
 >sad sunk
 by one point
@@ -172,10 +205,19 @@ by one point
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -3.00.)
 
+#+testcase-values-from-number-of-mad-monk-is-2654
+>ll mad monk
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
 >n
 
+#testcase-values-from-number-of-slow-sludge-is-2706
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.50.)
+
+#testcase-values-from-number-of-nnss-is-5311
+>ll
+WRONG
 
 #testcase-rules-hint-nnss-rule-if-sco-grow-grudge-is-false
 >hint
@@ -193,6 +235,9 @@ by one point
 >hint
 You're done here in No-Nudge Slow Sludge.
 
+>ll
+Nothing comes up. The general area here has been changed enough.
+
 >n
 
 #testcase-rules-hint-stun-storm-rule-if-sco-done-dorm-is-false
@@ -208,6 +253,7 @@ DONE DORM. (-)
 >bother
 You hear a whooshing as a door swings in from nowhere. It doesn't seem to lead anywhere. Voices from behind it, though, assure you you are missing something. Using your logical skills, you deduce it is a miss-more-diss door. While it's not going to jump you if your back is turned, it might be nice to get rid of.
 
+#testcase-values-from-number-of-miss-more-diss-door-is-2704
 >ll door
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 However, it's really dim, as if you don't need to do or think whatever there is to do or think.
@@ -231,6 +277,7 @@ SWEAR SWAMP WHERE WOMP. (-)
 >piss poor
 by one point
 
+#testcase-values-from-number-of-one-warm-stun-storm-is-5359
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, -0.50.)
 
@@ -244,9 +291,11 @@ You need certification you're the sort of person welcome in a done dorm. How to 
 >hint
 FUN FORM. (-)
 
+#+testcase-values-from-number-of-one-warm-stun-storm-is-5359
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, -0.50.)
 
+#testcase-values-from-number-of-done-dorm-is-2704
 >ll done dorm
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 0.00.)
 
@@ -257,6 +306,9 @@ by one point
 >hint
 You're done here in One Warm Stun-Storm.
 
+>ll
+Nothing comes up. The general area here has been changed enough.
+
 >n
 
 >hint
@@ -264,7 +316,12 @@ The tree trunk, or a place in it you can look, is too high up. (+)
 
 >undo
 
+#testcase-values-from-number-of-tttt-is-5360
 >ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, -1.00.)
+
+#testcase-values-from-number-of-thunk-tree-trunk-is-5360
+>ll tree trunk
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, -1.00.)
 
 >hint
@@ -285,6 +342,7 @@ SEE SUNK brings the tree trunk down. (-)
 >see sunk
 by one point
 
+#+testcase-values-from-number-of-tttt-is-5360
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, -1.00.)
 
@@ -311,6 +369,10 @@ by one point
 >hint tree trunk
 You saw what was in the tree trunk, and that's all you need to do with it.
 
+>ll
+Nothing comes up. The general area here has been changed enough.
+
+#testcase-values-from-number-of-free-fruit-is-2705
 >ll fruit
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
 
@@ -351,6 +413,9 @@ I won't spoil this until you've been the other place. (+)
 >hint free fruit
 It's a combination of two fruits, but I won't spoil it until you've been where you need to be. (-)
 
+>ll fruit
+Nothing comes up. You've changed FREE FRUIT as much as you needed to.
+
 >pear peach
 by one point
 
@@ -371,9 +436,11 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 
 >e
 
+#testcase-values-from-number-of-just-jack-is-2704
 >ll jack
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (2.00, 0.00.)
 
+#testcase-values-from-number-of-trust-track-is-2755
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, -1.00.)
 
@@ -416,6 +483,7 @@ You don't need that something in the sus sack for yourself, but it is a nice gif
 >hint sus sack
 PLUS PLAQUE. (-)
 
+#+testcase-values-from-number-of-trust-track-is-2755
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
@@ -426,8 +494,16 @@ by one point
 >hint
 You're done here in Trust Track.
 
+>ll
+Nothing comes up. The general area here has been changed enough.
+
 >n
 
+#testcase-values-from-number-of-pear-peach-is-2705
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
+#testcase-values-from-number-of-rare-reach-is-2705
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
@@ -459,12 +535,16 @@ Make a BARE BEACH. (-)
 >bare beach
 by one point
 
+>ll
+Nothing comes up. The general area here has been changed enough.
+
 #testcase-rules-hint-rare-reach-rule-if-sco-bare-beach-is-true
 >hint
 You need the deep dune to start getting smaller. (+)
 
 >undo
 
+#testcase-values-from-number-of-deep-dune-is-2704
 >ll dune
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
@@ -490,6 +570,7 @@ by one point
 >hint deep dune
 Leave and come back before making further progress with the deep dune.
 
+#+testcase-values-from-number-of-deep-dune-is-2704
 >ll dune
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
@@ -520,12 +601,23 @@ You're done here in Bare Beach.
 >hint rho rune
 The Rho Rune is useful somewhere you haven't been.
 
+>ll dune
+!deep dune
+
+>ll
+Nothing comes up. The general area here has been changed enough.
+
+#testcase-values-from-number-of-rho-rune-is-2654
+>ll rho rune
+WRONG
+
 >s
 
 >w
 
 >w
 
+#testcase-values-from-number-of-hun-harm-fun-farm-is-5308
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
 
@@ -546,6 +638,9 @@ by one point
 >hint
 You're done here in Hun Harm Fun Farm.
 
+>ll
+Nothing comes up. The general area here has been changed enough.
+
 >n
 
 #+testcase-rules-hint-rho-rune-rule-default
@@ -561,6 +656,7 @@ The Rho Rune is useful somewhere you've been.
 >undo
 >undo
 
+#testcase-values-from-number-of-nonoon-is-2604
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
@@ -577,6 +673,7 @@ GO GOON. (-)
 >go goon
 by one point
 
+#+testcase-values-from-number-of-nonoon-is-2604
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
@@ -593,8 +690,13 @@ COCOON, with or without a space. (-)
 >cocoon
 by one point
 
+#+testcase-values-from-number-of-nonoon-is-2604
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
+#testcase-values-from-number-of-cocoon-is-2604
+>ll cocoon
+WRONG
 
 >hint
 You need some light to appear in the night sky. (+)
@@ -614,6 +716,7 @@ MO MOON. (-)
 >mo moon
 by one point
 
+#+testcase-values-from-number-of-nonoon-is-2604
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
@@ -630,6 +733,7 @@ SO SOON. (-)
 >so soon
 by one point
 
+#+testcase-values-from-number-of-nonoon-is-2604
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (2.00, 1.00.)
 
@@ -654,6 +758,10 @@ by one point
 >hint snail
 You don't have to worry about the snotty snail, which is just scenery to provide clues or atmosphere.
 
+#testcase-values-from-number-of-snotty-snail-is-5511
+>ll snail
+WRONG
+
 >grotty grail
 by one point
 
@@ -665,6 +773,7 @@ by one point
 >hint lurking lump
 You can say LL for the lurking lump to push you through a puzzle at the right time. It can solve any rhyme you wish but has limited charges.
 
+#testcase-values-from-number-of-jotty-jail-is-2754
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.00.)
 
@@ -680,6 +789,11 @@ KNOTTY NAIL. (-)
 
 >knotty nail
 by one point
+
+#testcase-values-from-number-of-high-hub-is-2703
+
+>ll
+WRONG
 
 #testcase-rules-hint-locking-lift-rule-if-sco-rocking-rift-is-false
 >hint locking lift
@@ -726,6 +840,7 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 >undo
 >undo
 
+#testcase-values-from-number-of-sturdy-stalk-is-2805
 >ll stalk
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
 However, it's really dim, as if you don't need to do or think whatever there is to do or think.
@@ -741,6 +856,9 @@ Look at the stalk the right way, and you get inspiration. (+)
 Have a WORDY WALK. (-)
 
 >wordy walk
+
+>ll stalk
+Nothing comes up. You've changed the sturdy stalk as much as you needed to.
 
 #testcase-rules-hint-sturdy-stalk-rule-if-sco-wordy-walk-is-true
 >hint sturdy stalk
@@ -763,6 +881,16 @@ You're done here in Ho, HEWN.
 >undo
 >undo
 >undo
+>undo
+
+>w
+>n
+>ll
+Nothing comes up. The general area here has been changed enough.
+
+>undo
+>undo
+>undo
 
 >u
 
@@ -775,6 +903,7 @@ The only thing to do here is to operate the locking lift.
 >ll
 Nothing comes up. The general area here has been changed enough.
 
+#testcase-values-from-number-of-locking-lift-is-2854
 >ll lift
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.40, 0.80.)
 
@@ -784,6 +913,7 @@ by one point
 >go goo
 by one point
 
+#testcase-values-from-number-of-no-new-show-shoe-is-5307
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.50.)
 
@@ -871,6 +1001,10 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >crow crew
 by one point
 
+#testcase-values-from-number-of-crow-crew-is-2704
+>ll crow crew
+WRONG
+
 #testcase-rules-hint-crow-crew-rule-if-sco-yo-you-is-false
 >hint crow crew
 You need to hype up the crowd before the crow crew makes their big entrance. HINT the general area for that.
@@ -936,6 +1070,10 @@ by one point
 >hint light lute
 The light lute is useful but not here.
 
+#testcase-values-from-number-of-light-lute-is-2754
+>ll lute
+WRONG
+
 ##RBRS-SHUFFLEEND=0
 ##RBRS-SHUFFLESTART=1
 
@@ -949,6 +1087,7 @@ The background itself will change, and you'll be amazed. (+)
 >hint locking lift
 SHOCKING SHIFT. (-)
 
+#testcase-values-from-number-of-locking-lift-is-2854
 >ll lift
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 1.00.)
 
@@ -964,6 +1103,7 @@ You're done here in Whoah-Woo-Show Shoe.
 >shocking shift
 by one point
 
+#testcase-values-from-number-of-sore-souls-gore-goals-is-5410
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 
@@ -1027,6 +1167,20 @@ by one point
 >kite coot
 by one point
 
+#testcase-values--from-number-of-kite-coot-is--4
+>ll kite coot
+WRONG
+
+#testcase-values--from-number-of-night-newt-is--4
+>ll night newt
+WRONG
+
+>hint kite coot
+You summoned the kite coot into existence, which is enough. You'll want to look elsewhere for double-rhymes.
+
+>hint night newt
+You summoned the night newt into existence, which is enough. You'll want to look elsewhere for double-rhymes.
+
 ##RBRS-SHUFFLECONDITION=
 
 >lore lols
@@ -1061,6 +1215,10 @@ MORE MOLES. (-)
 >more moles
 by one point
 
+#testcase-values-from-number-of-red-rose-is-2654
+>ll red rose
+WRONG
+
 >shocking shift
 
 #testcase-rules-hint-gore-goals-rule-fallthrough
@@ -1073,6 +1231,7 @@ You're done here in Shore Shoals.
 ##RBRS-SHUFFLEEND=1
 ##RBRS-SHUFFLESTART=2
 
+#testcase-values-from-number-of-locking-lift-is-2854
 >ll lift
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.33, 1.00.)
 
@@ -1093,6 +1252,7 @@ by one point
 >hint red rose
 You can use the red rose after making progress with the general area here.
 
+#testcase-values-from-number-of-bum-bout-rum-route-is-5309
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.50.)
 
@@ -1150,7 +1310,14 @@ UMM OUT. (-)
 >umm out
 by one point
 
+>ll
+Nothing comes up. The general area here has been changed enough.
+
 >d
+
+#testcase-values-from-number-of-nay-nope-slay-slope-is-5359
+>ll
+WRONG
 
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, -0.50.)
@@ -1168,6 +1335,7 @@ HEY HOPE. (-)
 >hey hope
 by one point
 
+#+testcase-values-from-number-of-nay-nope-slay-slope-is-5359
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-2.50, -0.50.)
 
@@ -1206,6 +1374,7 @@ You're done here in Eh-'Ope Day, Dope!
 ##RBRS-SHUFFLEEND=2
 ##RBRS-SHUFFLESTART=3
 
+#testcase-values-from-number-of-locking-lift-is-2854
 >ll lift
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 1.50.)
 
@@ -1226,6 +1395,14 @@ by one point
 >hint light lute
 You can use the light lute after making progress with the general area here.
 
+#testcase-values-from-number-of-fright-freeze-is-2806
+>ll fright freeze
+WRONG
+
+#testcase-values-from-number-of-slight-sleaze-is-2806
+>ll
+WRONG
+
 >tight tees
 by one point
 
@@ -1245,6 +1422,11 @@ BRIGHT BREEZE. (-)
 >bright breeze
 by one point
 
+#testcase-values-from-number-of-fright-freeze-is-2806
+>ll fright freeze
+WRONG
+
+#testcase-values-from-number-of-slight-sleaze-is-2806
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
@@ -1311,6 +1493,7 @@ You can use the red rose after making progress with the general area here.
 >clique claiming
 by one point
 
+#testcase-values-from-number-of-freak-framing-seek-sameing-is-5464
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.00.)
 
@@ -1392,6 +1575,7 @@ You're done here in Eek! Aiming!
 ##RBRS-SHUFFLEEND=3
 ##RBRS-SHUFFLESTART=4
 
+#testcase-values-from-number-of-locking-lift-is-2854
 >ll lift
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 2.00.)
 
@@ -1407,6 +1591,10 @@ by one point
 
 >hint locking lift
 DOCKING DIFFED is the recommended lift setting to complete.
+
+#testcase-values-from-number-of-mad-most-cad-coast-is-5309
+>ll
+WRONG
 
 #testcase-rules-hint-red-rose-rule-fallthrough
 >hint red rose
@@ -1448,6 +1636,9 @@ by one point
 >hint
 You're done here in Pad Post-Had-Host.
 
+>ll
+Nothing comes up. The general area here has been changed enough.
+
 >w
 
 #testcase-rules-hint-red-rose-rule-if-player-is-in-trite-trail-if-whale-score-<-5
@@ -1455,6 +1646,11 @@ You're done here in Pad Post-Had-Host.
 >hint red rose
 You can use the red rose after making progress with the general area here.
 
+#testcase-values-from-number-of-white-whale-is-5509
+>ll white whale
+WRONG
+
+#testcase-values-from-number-of-trite-trail-is-2755
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.33, -0.67.)
 
@@ -1554,6 +1750,9 @@ by one point
 >hint light lute
 You've done all you can with the light lute.
 
+>ll light lute
+Nothing comes up. You've changed the light lute as much as you needed to.
+
 #testcase-rules-hint-trite-trail-rule-if-sco-excite-exhale-is-false
 >hint
 You really need a big mental boost, but then you need to relax. (+)
@@ -1627,6 +1826,7 @@ You're done here in Trite Trail.
 
 ##RBRS-SHUFFLEEND=4
 
+#testcase-values-from-number-of-delight-dilute-is-2856
 >ll delight dilute
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
 However, it's really dim, as if you don't need to do or think whatever there is to do or think.
@@ -1644,6 +1844,7 @@ DESPITE DISPUTE. (-)
 >despite dispute
 by one point
 
+#testcase-values-from-number-of-locking-lift-is-2854
 >ll lift
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 2.00.)
 
@@ -1670,6 +1871,7 @@ You've figured out the locking lift completely.
 >undo
 >undo
 
+#testcase-values-from-number-of-old-end-is-2653
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 
@@ -1686,6 +1888,7 @@ BOLD BEND. (-)
 >bold bend
 by one point
 
+#+testcase-values-from-number-of-old-end-is-2653
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (3.00, 1.00.)
 
@@ -1702,6 +1905,7 @@ TROLLED TREND. (-)
 >trolled trend
 by one point
 
+#+testcase-values-from-number-of-old-end-is-2653
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
@@ -1722,8 +1926,12 @@ by one point
 >hint
 You're done here in Bold Bend.
 
+>ll
+Nothing comes up. The general area here has been changed enough.
+
 >s
 
+#testcase-values-from-number-of-drain-drat-vain-vat-is-5457
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, -0.50.)
 
@@ -1756,12 +1964,14 @@ There's a specific way to bring the walls of the vat down. (+)
 >hint bane bat
 FLAIN FLAT. (-)
 
+#+testcase-values-from-number-of-drain-drat-vain-vat-is-5457
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 
 >flain flat
 by one point
 
+#+testcase-values-from-number-of-drain-drat-vain-vat-is-5457
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.50, 1.50.)
 
@@ -1778,7 +1988,18 @@ SPLAIN SPLAT. (-)
 >splain splat
 by one point
 
+>ll
+Nothing comes up. The general area here has been changed enough.
+
+>ll red rose
+I couldn't parse that command. You don't need any more than two words long. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-values-from-number-of-pred-pros-is-2704
 >ll pred pros
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 0.00.)
+
+#testcase-values-from-number-of-head-hose-is-2704
+>ll head hose
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 0.00.)
 
 #testcase-rules-hint-pred-pros-rule-default
@@ -1804,7 +2025,18 @@ by one point
 >hint
 You're done here in Main Mat.
 
+>ll pred pros
+I couldn't parse that command. You don't need any more than two words long. VERBS will give a list of useful, non-puzzle-solving verbs.
+
 >s
+
+#testcase-values-from-number-of-threat-three-met-me-is-2807
+>ll
+WRONG
+
+#testcase-values-from-number-of-market-marquee-is-2807
+>ll market marquee
+WRONG
 
 >hint
 You need to figure the three settings of the marquee. (+)
@@ -1862,6 +2094,10 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >set see
 by one point
 
+>ll
+Nothing comes up. The general area here has been changed enough.
+
+#testcase-values-from-number-of-sus-sack-is-2654
 >ll sack
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 2.00.)
 
@@ -1877,6 +2113,10 @@ You need a gift for the Burning Bright Spurning Sprite first. Check your invento
 
 >plus plaque
 by one point
+
+#testcase-values-from-number-of-lurking-lump-is--2
+>ll lurking lump
+WRONG
 
 #testcase-rules-hint-threat-three-rule-abide-by-the-hint-spurning-sprite-rule
 >hint
@@ -1898,6 +2138,7 @@ TURNING TRITE. (-)
 >hint spurning sprite
 You need to label the plus plaque now. Something that describes the Burning Bright Spurning Sprite. (+)
 
+#testcase-values-from-number-of-spurning-sprite-is-5762
 >ll spurning sprite
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, -1.00.)
 

@@ -24,20 +24,11 @@
 >plain plea
 by one point
 
->ll
-Most special commands are more than one word. VERBS will give a list of useful, non-puzzle-solving verbs.
-
 >jane g
 by one point
 
->ll
-Most special commands are more than one word, because of the rhyme-pairs involved. VERBS will give a list of useful, non-puzzle-solving verbs.
-
 >boring box
 by one point
-
->ll
-Most special commands are more than one word, because of the rhyme-pairs involved. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-rulestubs-hint-roaring-rocks-rule-default
 >hint
@@ -82,9 +73,6 @@ by one point
 >grow grudge
 by one point
 
->ll
-Nothing comes up. The general area here has been changed enough.
-
 >n
 
 >bother
@@ -111,9 +99,6 @@ by one point
 >fun form
 by one point
 
->ll
-Nothing comes up. The general area here has been changed enough.
-
 >n
 
 #testcase-rulestubs-hint-tree-trunk-rule-default
@@ -134,18 +119,12 @@ by one point
 >hint
 <Hint-tttt>.
 
->ll
-Nothing comes up. The general area here has been changed enough.
-
 #testcase-rulestubs-hint-free-fruit-rule-default
 >hint free fruit
 <Hint-free-fruit>.
 
 >whee woot
 by one point
-
->ll fruit
-Nothing comes up. You've changed FREE FRUIT as much as you needed to.
 
 >pear peach
 by one point
@@ -178,9 +157,6 @@ by one point
 >crust crack
 by one point
 
->ll
-Nothing comes up. The general area here has been changed enough.
-
 >n
 
 >bare beach
@@ -194,9 +170,6 @@ by one point
 >hint dune
 <Hint-deep-dune>.
 
->ll
-Nothing comes up. The general area here has been changed enough.
-
 >seep soon
 by one point
 
@@ -205,12 +178,6 @@ by one point
 
 >reap rune
 by one point
-
->ll dune
-!deep dune
-
->ll
-Nothing comes up. The general area here has been changed enough.
 
 #testcase-rulestubs-hint-rho-rune-rule-default
 >hint rho rune
@@ -228,9 +195,6 @@ Nothing comes up. The general area here has been changed enough.
 
 >unarm
 by one point
-
->ll
-Nothing comes up. The general area here has been changed enough.
 
 >n
 
@@ -289,18 +253,6 @@ by one point
 <Hint-sturdy-stalk>.
 
 >wordy walk
-
->ll stalk
-Nothing comes up. You've changed the sturdy stalk as much as you needed to.
-
->w
->n
->ll
-Nothing comes up. The general area here has been changed enough.
-
->undo
->undo
->undo
 
 >u
 
@@ -369,12 +321,6 @@ by one point
 >hint
 <Hint-gore-goals>.
 
->hint kite coot
-You summoned the kite coot into existence, which is enough. You'll want to look elsewhere for double-rhymes.
-
->hint night newt
-You summoned the night newt into existence, which is enough. You'll want to look elsewhere for double-rhymes.
-
 ##RBRS-SHUFFLECONDITION=
 
 ##?? note to test after -- if only LLPs remain
@@ -410,9 +356,6 @@ by one point
 
 >umm out
 by one point
-
->ll
-Nothing comes up. The general area here has been changed enough.
 
 >d
 
@@ -483,9 +426,6 @@ by one point
 >rad roast
 by one point
 
->ll
-Nothing comes up. The general area here has been changed enough.
-
 >w
 
 >sight sail
@@ -502,9 +442,6 @@ by one point
 
 >bright brute
 by one point
-
->ll light lute
-Nothing comes up. You've changed the light lute as much as you needed to.
 
 >excite exhale
 by one point
@@ -561,9 +498,6 @@ by one point
 >mold mend
 by one point
 
->ll
-Nothing comes up. The general area here has been changed enough.
-
 >s
 
 >bane bat
@@ -583,21 +517,12 @@ by one point
 >splain splat
 by one point
 
->ll
-Nothing comes up. The general area here has been changed enough.
-
->ll red rose
-I couldn't parse that command. You don't need any more than two words long. VERBS will give a list of useful, non-puzzle-solving verbs.
-
 #testcase-rulestubs-hint-pred-pros-rule-default
 >hint pred pros
 <Hint-pred-pros>.
 
 >fed foes
 by one point
-
->ll pred pros
-I couldn't parse that command. You don't need any more than two words long. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 >s
 
@@ -617,9 +542,6 @@ by one point
 
 >set see
 by one point
-
->ll
-Nothing comes up. The general area here has been changed enough.
 
 >plus plaque
 by one point

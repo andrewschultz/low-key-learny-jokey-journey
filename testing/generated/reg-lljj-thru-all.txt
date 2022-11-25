@@ -348,7 +348,7 @@ by one point
 The locking lift leads you to a shore where you'd expect a watercraft, but there is none.
 
 #testcase-room-names-mad-most-cad-coast
-	Mad-Most-Cad Coast
+`Mad-Most-Cad Coast
 
 >bad boast
 by one point
