@@ -10,356 +10,438 @@
 
 >au 2
 
-#testcase-unavailable-table-of-verb-checks-vc-bad-boast-rule
+#testcase-reject-start-table-of-verb-checks-vc-bad-boast-rule
+#testcase-check-vc-bad-boast-rule-if-player-is-not-in-mad-most-cad-coast
 >bad boast
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-bad-bunk-rule
+#testcase-reject-start-table-of-verb-checks-vc-bad-bunk-rule
+#testcase-check-vc-bad-bunk-rule-if-mad-monk-is-not-fungible
 >bad bunk
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-bare-beach-rule
+#testcase-reject-start-table-of-verb-checks-vc-bare-beach-rule
+#testcase-check-vc-bare-beach-rule-if-player-is-not-in-rare-reach-and-player-does-not-have-pear-peach
 >bare beach
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-bleak-blaming-rule
+#testcase-reject-start-table-of-verb-checks-vc-bleak-blaming-rule
+#testcase-check-vc-bleak-blaming-rule-if-player-is-not-in-freak-framing-seek-sameing
 >bleak blaming
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-bold-bend-rule
+#testcase-reject-start-table-of-verb-checks-vc-bold-bend-rule
+#testcase-check-vc-bold-bend-rule-if-player-is-not-in-old-end
 >bold bend
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-boring-box-rule
+#testcase-reject-start-table-of-verb-checks-vc-boring-box-rule
+#testcase-check-vc-boring-box-rule-if-player-is-not-in-roaring-rocks
 >boring box
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-bred-bros-rule
+#testcase-reject-start-table-of-verb-checks-vc-bred-bros-rule
+#testcase-check-vc-bred-bros-rule-if-player-does-not-have-red-rose
 >bred bros
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-bright-breeze-rule
+#testcase-reject-start-table-of-verb-checks-vc-bright-breeze-rule
+#testcase-check-vc-bright-breeze-rule-if-player-is-not-in-slight-sleaze
 >bright breeze
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-bright-brute-rule
+#testcase-reject-start-table-of-verb-checks-vc-bright-brute-rule
+#testcase-check-vc-bright-brute-rule-if-player-does-not-have-light-lute
 >bright brute
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-bro-brew-rule
+#testcase-reject-start-table-of-verb-checks-vc-bro-brew-rule
+#testcase-check-vc-bro-brew-rule-if-player-is-not-in-show-shoe
 >bro brew
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-bussed-back-rule
+#testcase-reject-start-table-of-verb-checks-vc-bussed-back-rule
+#testcase-check-vc-bussed-back-rule-if-location-of-player-is-not-trust-track
 >bussed back
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-bye-bub-rule
+#testcase-reject-start-table-of-verb-checks-vc-bye-bub-rule
 >bye bub
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-chic-shaming-rule
+#testcase-reject-start-table-of-verb-checks-vc-chic-shaming-rule
+#testcase-check-vc-chic-shaming-rule-if-player-is-not-in-freak-framing-seek-sameing
 >chic shaming
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-clique-claiming-rule
+#testcase-reject-start-table-of-verb-checks-vc-clique-claiming-rule
+#testcase-check-vc-clique-claiming-rule-if-player-is-not-in-freak-framing-seek-sameing
 >clique claiming
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-co-coon-rule
->co coon
+#testcase-reject-start-table-of-verb-checks-vc-co-coon-rule
+>cocoon
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-crow-crew-rule
+#testcase-reject-start-table-of-verb-checks-vc-crow-crew-rule
+#testcase-check-vc-crow-crew-rule-if-player-is-not-in-show-shoe
 >crow crew
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-crow-croon-rule
+#testcase-reject-start-table-of-verb-checks-vc-crow-croon-rule
 >crow croon
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-crust-crack-rule
+#testcase-reject-start-table-of-verb-checks-vc-crust-crack-rule
+#testcase-check-vc-crust-crack-rule-if-player-is-not-in-trust-track
 >crust crack
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-despite-dispute-rule
+#testcase-reject-start-table-of-verb-checks-vc-despite-dispute-rule
+#testcase-check-vc-despite-dispute-rule-if-delight-dilute-is-not-in-location-of-player-and-player-does-not-have-light-lute
 >despite dispute
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-docking-diffed-rule
+#testcase-reject-start-table-of-verb-checks-vc-docking-diffed-rule
+#testcase-check-vc-docking-diffed-rule-if-locking-lift-is-not-fungible
 >docking diffed
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-done-dorm-rule
+#testcase-reject-start-table-of-verb-checks-vc-done-dorm-rule
+#testcase-check-vc-done-dorm-rule-if-player-is-not-in-one-warm-stun-storm
 >done dorm
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-dumb-doubt-rule
+#testcase-reject-start-table-of-verb-checks-vc-dumb-doubt-rule
+#testcase-check-vc-dumb-doubt-rule-if-player-is-not-in-rum-route
 >dumb doubt
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-excite-exhale-rule
+#testcase-reject-start-table-of-verb-checks-vc-excite-exhale-rule
+#testcase-check-vc-excite-exhale-rule-if-player-is-not-in-trite-trail
 >excite exhale
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-fed-foes-rule
+#testcase-reject-start-table-of-verb-checks-vc-fed-foes-rule
+#testcase-check-vc-fed-foes-rule-if-red-rose-is-off-stage-or-pred-pros-are-moot
 >fed foes
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-flain-flat-rule
+#testcase-reject-start-table-of-verb-checks-vc-flain-flat-rule
+#testcase-check-vc-flain-flat-rule-if-player-is-not-in-drain-drat-vain-vat
 >flain flat
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-flight-flail-rule
+#testcase-reject-start-table-of-verb-checks-vc-flight-flail-rule
+#testcase-check-vc-flight-flail-rule-if-player-is-not-in-trite-trail
 >flight flail
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-flow-flue-rule
+#testcase-reject-start-table-of-verb-checks-vc-flow-flue-rule
+#testcase-check-vc-flow-flue-rule-if-player-is-not-in-show-shoe
 >flow flue
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-four-foals-rule
+#testcase-reject-start-table-of-verb-checks-vc-four-foals-rule
+#testcase-check-vc-four-foals-rule-if-player-is-not-in-sore-souls-gore-goals
 >four foals
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-fret-free-rule
+#testcase-reject-start-table-of-verb-checks-vc-fret-free-rule
+#testcase-check-vc-fret-free-rule-if-player-is-not-in-threat-three-met-me
 >fret free
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-fun-form-rule
+#testcase-reject-start-table-of-verb-checks-vc-fun-form-rule
+#testcase-check-vc-fun-form-rule-if-player-is-not-in-one-warm-stun-storm
 >fun form
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-gad-gunk-rule
+#testcase-reject-start-table-of-verb-checks-vc-gad-gunk-rule
+#testcase-check-vc-gad-gunk-rule-if-mad-monk-is-not-in-location-of-player
 >gad gunk
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-gawking-gift-rule
+#testcase-reject-start-table-of-verb-checks-vc-gawking-gift-rule
+#testcase-check-vc-gawking-gift-rule-if-locking-lift-is-not-fungible
 >gawking gift
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-gee-junk-rule
+#testcase-reject-start-table-of-verb-checks-vc-gee-junk-rule
+#testcase-check-vc-gee-junk-rule-if-player-is-not-in-tttt
 >gee junk
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-glow-glue-rule
+#testcase-reject-start-table-of-verb-checks-vc-glow-glue-rule
+#testcase-check-vc-glow-glue-rule-if-player-is-not-in-show-shoe
 >glow glue
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-go-goo-rule
+#testcase-reject-start-table-of-verb-checks-vc-go-goo-rule
+#testcase-check-vc-go-goo-rule-if-player-is-not-in-show-shoe
 >go goo
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-go-goon-rule
+#testcase-reject-start-table-of-verb-checks-vc-go-goon-rule
+#testcase-check-vc-go-goon-rule-if-player-is-not-in-nonoon
+#testcase-check-vc-go-goon-rule-if-rho-rune-is-off-stage
+#testcase-check-vc-go-goon-rule-if-sco-go-goon-is-true
 >go goon
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-grokking-grift-rule
+#testcase-reject-start-table-of-verb-checks-vc-grokking-grift-rule
+#testcase-check-vc-grokking-grift-rule-if-locking-lift-is-not-fungible
 >grokking grift
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-grotty-grail-rule
+#testcase-check-vc-grotty-grail-rule-if-sco-grotty-grail-is-true
 >grotty grail
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-grow-grudge-rule
+#testcase-reject-start-table-of-verb-checks-vc-grow-grudge-rule
+#testcase-check-vc-grow-grudge-rule-if-player-is-not-in-nnss
 >grow grudge
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-hey-hope-rule
+#testcase-reject-start-table-of-verb-checks-vc-hey-hope-rule
+#testcase-check-vc-hey-hope-rule-if-player-is-not-in-nay-nope-slay-slope
 >hey hope
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-ho-who-rule
+#testcase-reject-start-table-of-verb-checks-vc-ho-who-rule
+#testcase-check-vc-ho-who-rule-if-player-is-not-in-show-shoe
 >ho who
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-k-cope-rule
+#testcase-reject-start-table-of-verb-checks-vc-k-cope-rule
+#testcase-check-vc-k-cope-rule-if-player-is-not-in-nay-nope-slay-slope
 >k cope
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-kite-coot-rule
+#testcase-reject-start-table-of-verb-checks-vc-kite-coot-rule
 >kite coot
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-knotty-nail-rule
+#testcase-reject-start-table-of-verb-checks-vc-knotty-nail-rule
+#testcase-check-vc-knotty-nail-rule-if-player-is-not-in-jotty-jail
 >knotty nail
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-lore-lols-rule
+#testcase-reject-start-table-of-verb-checks-vc-lore-lols-rule
+#testcase-check-vc-lore-lols-rule-if-player-is-not-in-sore-souls-gore-goals
 >lore lols
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-might-mail-rule
+#testcase-reject-start-table-of-verb-checks-vc-might-mail-rule
+#testcase-check-vc-might-mail-rule-if-player-is-not-in-trite-trail
 >might mail
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-mo-moon-rule
+#testcase-reject-start-table-of-verb-checks-vc-mo-moon-rule
+#testcase-check-vc-mo-moon-rule-if-player-is-not-in-nonoon
 >mo moon
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-mocking-miffed-rule
+#testcase-reject-start-table-of-verb-checks-vc-mocking-miffed-rule
+#testcase-check-vc-mocking-miffed-rule-if-locking-lift-is-not-fungible
 >mocking miffed
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-mold-mend-rule
+#testcase-reject-start-table-of-verb-checks-vc-mold-mend-rule
+#testcase-check-vc-mold-mend-rule-if-player-is-not-in-old-end
 >mold mend
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-more-moles-rule
+#testcase-reject-start-table-of-verb-checks-vc-more-moles-rule
+#testcase-check-vc-more-moles-rule-if-player-is-not-in-sore-souls-gore-goals
 >more moles
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-night-newt-rule
+#testcase-reject-start-table-of-verb-checks-vc-night-newt-rule
 >night newt
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-pear-peach-rule
+#testcase-reject-start-table-of-verb-checks-vc-pear-peach-rule
+#testcase-check-vc-pear-peach-rule-if-player-is-not-in-tttt-or-pear-peach-is-moot
 >pear peach
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-piss-poor-rule
+#testcase-reject-start-table-of-verb-checks-vc-piss-poor-rule
+#testcase-check-vc-piss-poor-rule-if-miss-more-diss-door-is-off-stage-or-miss-more-diss-door-is-moot
 >piss poor
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-plight-please-rule
+#testcase-reject-start-table-of-verb-checks-vc-plight-please-rule
+#testcase-check-vc-plight-please-rule-if-player-is-not-in-slight-sleaze
 >plight please
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-plus-plaque-rule
+#testcase-reject-start-table-of-verb-checks-vc-plus-plaque-rule
+#testcase-check-vc-plus-plaque-rule-if-player-does-not-have-sus-sack-and-plus-plaque-is-not-fungible
 >plus plaque
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-potty-pail-rule
+#testcase-reject-start-table-of-verb-checks-vc-potty-pail-rule
+#testcase-check-vc-potty-pail-rule-if-player-is-not-in-jotty-jail
 >potty pail
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-rad-roast-rule
+#testcase-reject-start-table-of-verb-checks-vc-rad-roast-rule
+#testcase-check-vc-rad-roast-rule-if-player-is-not-in-mad-most-cad-coast
 >rad roast
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-reap-rune-rule
+#testcase-reject-start-table-of-verb-checks-vc-reap-rune-rule
+#testcase-check-vc-reap-rune-rule-if-player-is-not-in-rare-reach-or-sco-bare-beach-is-false
 >reap rune
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-right-rail-rule
+#testcase-reject-start-table-of-verb-checks-vc-right-rail-rule
+#testcase-check-vc-right-rail-rule-if-player-is-not-in-trite-trail
 >right rail
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-right-root-rule
+#testcase-reject-start-table-of-verb-checks-vc-right-root-rule
+#testcase-check-vc-right-root-rule-if-player-does-not-have-light-lute
 >right root
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-rocking-rift-rule
+#testcase-reject-start-table-of-verb-checks-vc-rocking-rift-rule
+#testcase-check-vc-rocking-rift-rule-if-locking-lift-is-not-fungible
 >rocking rift
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-sad-sunk-rule
+#testcase-reject-start-table-of-verb-checks-vc-sad-sunk-rule
+#testcase-check-vc-sad-sunk-rule-if-mad-monk-is-not-fungible
 >sad sunk
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-said-sos-rule
+#testcase-reject-start-table-of-verb-checks-vc-said-sos-rule
+#testcase-check-vc-said-sos-rule-if-player-does-not-have-red-rose
 >said sos
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-see-sunk-rule
+#testcase-reject-start-table-of-verb-checks-vc-see-sunk-rule
+#testcase-check-vc-see-sunk-rule-if-player-is-not-in-tttt
 >see sunk
 It looks like you may have tried to refer to the room name, or part of it. You often need to riff on the room name, but you never need to use the room name directly.
 
-#testcase-unavailable-table-of-verb-checks-vc-seep-soon-rule
+#testcase-reject-start-table-of-verb-checks-vc-seep-soon-rule
+#testcase-check-vc-seep-soon-rule-if-player-is-not-in-rare-reach-or-sco-bare-beach-is-false
 >seep soon
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-shocking-shift-rule
+#testcase-reject-start-table-of-verb-checks-vc-shocking-shift-rule
+#testcase-check-vc-shocking-shift-rule-if-locking-lift-is-not-fungible
 >shocking shift
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-shore-shoals-rule
+#testcase-reject-start-table-of-verb-checks-vc-shore-shoals-rule
+#testcase-check-vc-shore-shoals-rule-if-player-is-not-in-sore-souls-gore-goals
 >shore shoals
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-sight-sail-rule
+#testcase-reject-start-table-of-verb-checks-vc-sight-sail-rule
+#testcase-check-vc-sight-sail-rule-if-player-is-not-in-trite-trail
 >sight sail
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-so-soon-rule
+#testcase-reject-start-table-of-verb-checks-vc-so-soon-rule
+#testcase-check-vc-so-soon-rule-if-player-is-not-in-nonoon
 >so soon
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-splain-splat-rule
+#testcase-reject-start-table-of-verb-checks-vc-splain-splat-rule
+#testcase-check-vc-splain-splat-rule-if-player-is-not-in-drain-drat-vain-vat
 >splain splat
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-stow-stew-rule
+#testcase-reject-start-table-of-verb-checks-vc-stow-stew-rule
+#testcase-check-vc-stow-stew-rule-if-player-is-not-in-show-shoe
 >stow stew
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-thread-throws-rule
+#testcase-reject-start-table-of-verb-checks-vc-thread-throws-rule
+#testcase-check-vc-thread-throws-rule-if-player-does-not-have-red-rose
 >thread throws
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-throw-through-rule
+#testcase-reject-start-table-of-verb-checks-vc-throw-through-rule
+#testcase-check-vc-throw-through-rule-if-player-is-not-in-show-shoe
 >throw through
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-tight-tease-rule
+#testcase-reject-start-table-of-verb-checks-vc-tight-tease-rule
+#testcase-check-vc-tight-tease-rule-if-player-is-not-in-slight-sleaze
 >tight tease
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-trolled-trend-rule
+#testcase-reject-start-table-of-verb-checks-vc-trolled-trend-rule
+#testcase-check-vc-trolled-trend-rule-if-player-is-not-in-old-end
 >trolled trend
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-turning-trite-rule
+#testcase-reject-start-table-of-verb-checks-vc-turning-trite-rule
+#testcase-check-vc-turning-trite-rule-if-player-is-not-in-threat-three-met-me
 >turning trite
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-umm-out-rule
+#testcase-reject-start-table-of-verb-checks-vc-umm-out-rule
+#testcase-check-vc-umm-out-rule-if-player-is-not-in-rum-route
 >umm out
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-un-arm-rule
->un arm
+#testcase-reject-start-table-of-verb-checks-vc-un-arm-rule
+#testcase-check-vc-un-arm-rule-if-player-is-not-in-hun-harm-fun-farm
+>unarm
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-whee-woot-rule
+#testcase-reject-start-table-of-verb-checks-vc-whee-woot-rule
+#testcase-check-vc-whee-woot-rule-if-player-is-not-in-tttt-and-free-fruit-is-not-in-tttt
 >whee woot
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-wordy-walk-rule
+#testcase-reject-start-table-of-verb-checks-vc-wordy-walk-rule
+#testcase-check-vc-wordy-walk-rule-if-player-is-not-in-nnss
 >wordy walk
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-yet-ye-rule
+#testcase-reject-start-table-of-verb-checks-vc-yet-ye-rule
+#testcase-check-vc-yet-ye-rule-if-player-is-not-in-threat-three-met-me
 >yet ye
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-yo-you-rule
+#testcase-reject-start-table-of-verb-checks-vc-yo-you-rule
+#testcase-check-vc-yo-you-rule-if-player-is-not-in-show-shoe
 >yo you
 I couldn't parse that command. You don't need any more than two words long.
 
 >plain plea
 by one point
 
-#testcase-postreject-table-of-verb-checks-vc-plain-plea-rule
+#testcase-check-vc-plain-plea-rule-if-sco-plain-plea-is-true
 >plain plea
 You already made a plain plea.
 
 >jane g
 by one point
 
-#testcase-unavailable-table-of-verb-checks-vc-bane-bat-rule
+#bane bat must be here or it clashes with the room name. Same with set see.
+
+#testcase-reject-start-table-of-verb-checks-vc-bane-bat-rule
+#testcase-check-vc-bane-bat-rule-if-player-is-not-in-drain-drat-vain-vat
 >bane bat
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-unavailable-table-of-verb-checks-vc-set-see-rule
+#testcase-reject-start-table-of-verb-checks-vc-set-see-rule
+#testcase-check-vc-set-see-rule-if-player-is-not-in-threat-three-met-me
 >set see
 I couldn't parse that command. You don't need any more than two words long.
 
 >boring box
 by one point
 
-#testcase-postreject-table-of-verb-checks-vc-boring-box-rule
+#testcase-check-vc-boring-box-rule-if-sco-boring-box-is-true
 >boring box
 You already uncovered the boring box.
 
@@ -368,10 +450,20 @@ You open the boring box, and you see a metal gadget that doesn't look very inter
 
 >n
 
+>sad sunk
+by one point
+
+#testcase-check-vc-sad-sunk-rule-if-sco-sad-sunk-is-true
+>sad sunk
+WRONG
+
+>undo
+>undo
+
 >gad gunk
 by one point
 
-#testcase-postreject-table-of-verb-checks-vc-gad-gunk-rule
+#testcase-check-vc-gad-gunk-rule-if-sco-gad-gunk-is-true
 >gad gunk
 You already insulted the mad monk's cleanliness.
 !by one point
@@ -418,7 +510,7 @@ Whenever you're ready, just type SAD SUNK to move on.
 >bad bunk
 by one point
 
-#testcase-postreject-table-of-verb-checks-vc-bad-bunk-rule
+#testcase-check-vc-bad-bunk-rule-if-sco-bad-bunk-is-true
 >bad bunk
 You already insulted the mad monk's truthfulness.
 !by one point
@@ -433,7 +525,7 @@ door
 
 >n
 
-#testcase-prereject-table-of-verb-checks-vc-piss-poor-rule
+#testcase-check-vc-piss-poor-rule-if-miss-more-diss-door-is-not-fungible
 >piss poor
 You'll need to summon the miss-more-diss door, with or without profanity.
 NOTE: this command will be useful later, but you aren't ready to use it, yet. You can track commands like this by typing THINK, which will also clue you if they now work.
@@ -463,7 +555,7 @@ You can say GO GOON to dispel an enemy once you have a token of power.
 >undo
 >gonear rare reach
 
-#testcase-prereject-table-of-verb-checks-vc-bare-beach-rule
+#testcase-check-vc-bare-beach-rule-if-player-does-not-have-pear-peach-and-player-is-in-rare-reach
 >bare beach
 You should be able to do that, but you lack the necessary implement.
 
@@ -477,7 +569,7 @@ You can change the Rare Reach to a BARE BEACH once you have a life-generating it
 >grow grudge
 by one point
 
-#testcase-postreject-table-of-verb-checks-vc-grow-grudge-rule
+#testcase-check-vc-grow-grudge-rule-if-sco-grow-grudge-is-true
 >grow grudge
 You already neutralized the no-nudge slow sludge.
 
@@ -489,7 +581,7 @@ You hear a whooshing as a door swings in from nowhere. It doesn't seem to lead a
 >piss poor
 by one point
 
-#testcase-prereject-table-of-verb-checks-vc-fun-form-rule
+#testcase-check-vc-fun-form-rule-if-sco-done-dorm-is-false
 >fun form
 Perhaps you will need a fun form in a bit. But no entity requires it right now.
 
@@ -500,20 +592,20 @@ You can fill out a FUN FORM once you have somewhere to enter.
 >done dorm
 by one point
 
-#testcase-postreject-table-of-verb-checks-vc-done-dorm-rule
+#testcase-check-vc-done-dorm-rule-if-sco-done-dorm-is-true
 >done dorm
 You already summoned the done dorm.
 
 >fun form
 by one point
 
-#testcase-postreject-table-of-verb-checks-vc-fun-form-rule
+#testcase-check-vc-fun-form-rule-if-sco-fun-form-is-true
 >fun form
 You already filled out the fun form.
 
 >n
 
-#testcase-prereject-table-of-verb-checks-vc-gee-junk-rule
+#testcase-check-vc-gee-junk-rule-if-sco-see-sunk-is-false
 >gee junk
 If there were junk in the tree trunk, you couldn't see it. It's way too tall!
 
@@ -524,18 +616,18 @@ You can say GEE JUNK once more of the trunk is visible.
 >see sunk
 by one point
 
-#testcase-postreject-table-of-verb-checks-vc-see-sunk-rule
+#testcase-check-vc-see-sunk-rule-if-sco-see-sunk-is-true
 >see sunk
 You already sunk the tree trunk!
 
 >gee junk
 by one point
 
-#testcase-postreject-table-of-verb-checks-vc-gee-junk-rule
+#testcase-check-vc-gee-junk-rule-if-sco-gee-junk-is-true
 >gee junk
 You already discovered useful junk in the form of FREE FRUIT.
 
-#testcase-prereject-table-of-verb-checks-vc-pear-peach-rule
+#testcase-check-vc-pear-peach-rule-if-sco-whee-woot-is-false
 >pear peach
 The FREE FRUIT sputters a bit, almost as if it sticks its tongue out at you. Weird as it sounds, you may have to show appreciation for it.
 
@@ -546,14 +638,14 @@ You can make a PEAR PEACH once you're happy enough to receive free fruit.
 >whee woot
 by one point
 
-#testcase-postreject-table-of-verb-checks-vc-whee-woot-rule
+#testcase-check-vc-whee-woot-rule-if-sco-whee-woot-is-true
 >whee woot
 You already appreciated the free fruit sufficiently.
 
 >pear peach
 by one point
 
-#testcase-postreject-table-of-verb-checks-vc-pear-peach-rule
+#testcase-check-vc-pear-peach-rule-if-sco-pear-peach-is-true
 >pear peach
 But you already have the pear peach.
 
@@ -565,7 +657,7 @@ But you already have the pear peach.
 
 #testcase-postreject-table-of-verb-checks-vc-crust-crack-rule
 
-#testcase-prereject-table-of-verb-checks-vc-crust-crack-rule
+#testcase-check-vc-crust-crack-rule-if-sco-bussed-back-is-false
 >crust crack
 Under Just Jack's watchful eye, you don't feel like you could precipitate such changes. How to get rid of him?
 
@@ -580,18 +672,22 @@ You can make the CRUST CRACK once Just Jack is gone.
 >bussed back
 by one point
 
-#testcase-postreject-table-of-verb-checks-vc-bussed-back-rule
+#testcase-check-vc-bussed-back-rule-if-sco-bussed-back-is-true
 >bussed back
 Just Jack has already been bussed back.
 
 >crust crack
 by one point
 
+#testcase-check-vc-crust-crack-rule-if-sco-crust-crack-is-true
+>crust crack
+WRONG
+
 # generic test case if you have no leads
 >think
 You think about more specific challenges you've encountered and not solved, and what you've done and tried, and what you can do.
 
-#testcase-prereject-table-of-verb-checks-vc-plus-plaque-rule
+#testcase-check-vc-plus-plaque-rule-if-spurning-sprite-is-not-fungible
 >plus plaque
 You consider conjuring up a gaudy, flattering plus-plaque. But you have nobody to give it to, and you'd hate to have to carry it around. Maybe elsewhere.
 
@@ -604,11 +700,11 @@ You can make a heavy PLUS PLAQUE once you have someone to dump it off on right a
 >bare beach
 by one point
 
-#testcase-postreject-table-of-verb-checks-vc-bare-beach-rule
+#testcase-check-vc-bare-beach-rule-if-sco-bare-beach-is-true
 >bare beach
 You already changed the Rare Reach.
 
-#testcase-prereject-table-of-verb-checks-vc-reap-rune-rule
+#testcase-check-vc-reap-rune-rule-if-sco-seep-soon-is-false
 >reap rune
 The dune is a bit too big now. Maybe you could find a way to reduce it, over time.
 
@@ -619,9 +715,13 @@ You can REAP RUNE once you have spent time adventuring.
 >seep soon
 by one point
 
-#testcase-postreject-table-of-verb-checks-vc-seep-soon-rule
+#testcase-check-vc-seep-soon-rule-if-sco-seep-soon-is-true
 >seep soon
 You already doomed the dune to collapsing slightly.
+
+#testcase-check-vc-reap-rune-rule-if-flag-reap-rune-is-false
+>reap rune
+WRONG
 
 >s
 >n
@@ -630,6 +730,7 @@ You already doomed the dune to collapsing slightly.
 by one point
 
 #testcase-postreject-table-of-verb-checks-vc-reap-rune-rule
+#testcase-check-vc-reap-rune-rule-if-sco-reap-rune-is-true
 >reap rune
 You already reaped a rune.
 
@@ -642,25 +743,25 @@ You already reaped a rune.
 >unarm
 by one point
 
-#testcase-postreject-table-of-verb-checks-vc-un-arm-rule
+#testcase-check-vc-un-arm-rule-if-sco-un-arm-is-true
 >unarm
 You already unarmed the Hun Harm Fun Farm!
 
 >n
 
-#testcase-prereject-table-of-verb-checks-vc-co-coon-rule
+#testcase-check-vc-co-coon-rule-if-sco-go-goon-is-false
 >cocoon
 You can't do anything while oppressed by enemies. You need to call them off.
 
-#testcase-prereject-table-of-verb-checks-vc-crow-croon-rule
+#testcase-check-vc-crow-croon-rule-if-sco-co-coon-is-false
 >crow croon
 The crow can't croon until it's ready. And it's not time yet. How could you make time advance, right here, right now?
 
-#testcase-prereject-table-of-verb-checks-vc-mo-moon-rule
+#testcase-check-vc-mo-moon-rule-if-sco-co-coon-is-false
 >mo moon
 It's scary the sky's so dark, but you sense someone, or something, might need the moon and such to reach its potential. But what, or who?
 
-#testcase-prereject-table-of-verb-checks-vc-so-soon-rule
+#testcase-check-vc-so-soon-rule-if-sco-mo-moon-is-false
 >so soon
 You would like time to speed up and dawn to break. But something's missing from the sky.
 
@@ -680,6 +781,10 @@ by one point
 >cocoon
 by one point
 
+#testcase-check-vc-co-coon-rule-if-sco-co-coon-is-true
+>cocoon
+WRONG
+
 >mo moon
 by one point
 
@@ -694,11 +799,11 @@ You already placed the cocoon.
 >go goon
 You already dispelled the goon!
 
-#testcase-postreject-table-of-verb-checks-vc-mo-moon-rule
+#testcase-check-vc-mo-moon-rule-if-sco-mo-moon-is-true
 >mo moon
 The moon has already appeared!
 
-#testcase-postreject-table-of-verb-checks-vc-so-soon-rule
+#testcase-check-vc-so-soon-rule-if-sco-so-soon-is-true
 >so soon
 You already sped time up.
 
@@ -711,18 +816,18 @@ by one point
 >potty pail
 by one point
 
-#testcase-postreject-table-of-verb-checks-vc-grotty-grail-rule
+#testcase-check-vc-grotty-grail-rule-if-player-is-not-in-jotty-jail
 >grotty grail
 No. The grotty grail was nice to find, but enough of past discoveries. You need to get out of here.
 
-#testcase-postreject-table-of-verb-checks-vc-potty-pail-rule
+#testcase-check-vc-potty-pail-rule-if-sco-potty-pail-is-true
 >potty pail
 No. The potty pail was a relief to find, but enough of past discoveries. You need to get out of here.
 
 >knotty nail
 by one point
 
-#testcase-prereject-table-of-verb-checks-vc-mocking-miffed-rule
+#testcase-check-vc-mocking-miffed-rule-if-hub-score-<-5
 >mocking miffed
 The mocking, miffed--well, it is there, but you don't quite have the confidence yet to face it. You've only fully tackled none of the other five areas the locking lift can access.
 
@@ -734,14 +839,14 @@ You can search for MOCKING MIFFED once you've solved all the other hub areas.
 
 >wordy walk
 
-#testcase-postreject-table-of-verb-checks-vc-wordy-walk-rule
+#testcase-check-vc-wordy-walk-rule-if-sco-wordy-walk-is-true
 >wordy walk
 You have another wordy walk, but it isn't as effective as the first.
 
 >w
 >n
 
-#testcase-postreject-table-of-verb-checks-vc-crow-croon-rule
+#testcase-check-vc-crow-croon-rule-if-sco-crow-croon-is-true
 >crow croon
 You already had the crow croon!
 
@@ -750,7 +855,7 @@ You already had the crow croon!
 
 >u
 
-#testcase-postreject-table-of-verb-checks-vc-bye-bub-rule
+#testcase-check-vc-bye-bub-rule-if-sco-bye-bub-is-true
 >bye bub
 No need to say good-bye twice. That's just awkward, besides, just typing DOWN or D saves emotional energy and keystrokes.
 
@@ -762,11 +867,11 @@ by one point
 >rocking rift
 The lift doesn't move, since those words are what got you here.
 
-#testcase-prereject-table-of-verb-checks-vc-bro-brew-rule
+#testcase-check-vc-bro-brew-rule-if-shoe-storage-<-2
 >bro brew
 That's a good idea, but you have nowhere reliable to store such a beverage! Well, not yet.
 
-#testcase-prereject-table-of-verb-checks-vc-crow-crew-rule
+#testcase-check-vc-crow-crew-rule-unless-shoe-food-drink
 >crow crew
 Without reliable food and drink to support the Crow Crew, who would be ideal performers here, it's a no-go. So you need to do a bit more.
 
@@ -774,11 +879,11 @@ Without reliable food and drink to support the Crow Crew, who would be ideal per
 >ho who
 There's no crowd to call out to to get them hyped, but if there were, that'd be great!
 
-#testcase-prereject-table-of-verb-checks-vc-stow-stew-rule
+#testcase-check-vc-stow-stew-rule-if-shoe-storage-<-2
 >stow stew
 That's a good idea, but you have nowhere reliable to store something to eat! Well, not yet.
 
-#testcase-prereject-table-of-verb-checks-vc-throw-through-rule
+#testcase-check-vc-throw-through-rule-if-sco-crow-crew-is-false
 >throw through
 You have no performers to (figuratively) throw through and present to a crowd! Well, not yet.
 
@@ -803,51 +908,60 @@ You can call the CROW CREW as performers once you have food and drink for a crow
 >go goo
 by one point
 
-#testcase-postreject-table-of-verb-checks-vc-go-goo-rule
+#testcase-check-vc-go-goo-rule-if-sco-go-goo-is-true
 >go goo
 There's more than enough Go Goo for whoever actually wants it or just fools themselves into thinking they want it.
 
 >flow flue
 by one point
 
-#testcase-postreject-table-of-verb-checks-vc-flow-flue-rule
+#testcase-check-vc-flow-flue-rule-if-sco-flow-flue-is-true
 >flow flue
 The flow flue is already present!
 
 >glow glue
 by one point
 
-#testcase-postreject-table-of-verb-checks-vc-glow-glue-rule
+#testcase-check-vc-glow-glue-rule-if-sco-glow-glue-is-true
 >glow glue
 You already acquired Glow Glue.
 
 >bro brew
 by one point
 
-#testcase-postreject-table-of-verb-checks-vc-bro-brew-rule
+#testcase-check-vc-bro-brew-rule-if-sco-bro-brew-is-true
 >bro brew
 You already have a nice store of Bro Brew.
 
 >stow stew
 by one point
 
-#testcase-postreject-table-of-verb-checks-vc-stow-stew-rule
+#testcase-check-vc-stow-stew-rule-if-sco-stow-stew-is-true
 >stow stew
 You already put stew in the flue.
 
 >crow crew
 by one point
 
-#testcase-postreject-table-of-verb-checks-vc-crow-crew-rule
+#testcase-check-vc-crow-crew-rule-if-sco-crow-crew-is-true
 >crow crew
 You already summoned the Crow Crew!
+
+#testcase-check-vc-yo-you-rule-if-sco-ho-who-is-false
+>yo you
+WRONG
 
 >ho who
 by one point
 
 #testcase-postreject-table-of-verb-checks-vc-ho-who-rule
+#testcase-check-vc-ho-who-rule-if-sco-ho-who-is-true
 >ho who
 You already started to hype up the crowd.
+
+>throw through
+#testcase-check-vc-throw-through-rule-if-sco-yo-you-is-false
+WRONG
 
 >yo you
 by one point
@@ -862,16 +976,21 @@ by one point
 >rocking rift
 Show Shoe
 
+#testcase-check-vc-throw-through-rule-if-sco-throw-through-is-true
+>throw through
+WRONG
+
+>undo
 >undo
 
 >guide gong
 You are now repelled by a guide gong if you try to go down a path where you have nothing game-critical to do in any branches.
 
-#testcase-prereject-table-of-verb-checks-vc-bright-brute-rule
+#testcase-check-vc-bright-brute-rule-if-player-is-not-in-trite-trail
 >bright brute
 Good idea, but there's no huge foe for a bright brute to help you with here.
 
-#testcase-prereject-table-of-verb-checks-vc-despite-dispute-rule
+#testcase-check-vc-despite-dispute-rule-if-player-has-light-lute
 >despite dispute
 That's interesting and tricky, and it'll come in handy later. Trust me.
 
@@ -929,7 +1048,7 @@ You can summon MORE MOLES once Sore Souls' Gore Goals is more hospitable.
 >shore shoals
 by one point
 
-#testcase-postreject-table-of-verb-checks-vc-shore-shoals-rule
+#testcase-check-vc-shore-shoals-rule-if-sco-shore-shoals-is-true
 >shore shoals
 You have already rehabilitated the sore souls' gore goals!
 
@@ -954,7 +1073,7 @@ You already populated this area with night newts!
 >kite coot
 You already populated this area with kite coots!
 
-#testcase-postreject-table-of-verb-checks-vc-lore-lols-rule
+#testcase-check-vc-lore-lols-rule-if-sco-lore-lols-is-true
 >lore lols
 You recount the myths you started to create, just to make sure they're not lost.
 
@@ -971,7 +1090,7 @@ You don't need even more moles!
 >four foals
 by one point
 
-#testcase-postreject-table-of-verb-checks-vc-four-foals-rule
+#testcase-check-vc-four-foals-rule-if-sco-four-foals-is-true
 >four foals
 You already populated the area with foals!
 
@@ -986,6 +1105,16 @@ You wouldn't want to move the kite coots from their comfortable habitat in Shore
 >night newt
 You wouldn't want to move the night newts from their comfortable habitat in Shore Shoals!
 
+>shocking shift
+!by one point
+
+#testcase-check-vc-more-moles-rule-if-sco-more-moles-is-true
+>more moles
+WRONG
+
+>undo
+>undo
+
 #testcase-postreject-table-of-verb-checks-vc-shocking-shift-rule
 >shocking shift
 You already took care of the shocking shift!
@@ -993,17 +1122,21 @@ You already took care of the shocking shift!
 ##RBRS-SHUFFLEEND=1
 ##RBRS-SHUFFLESTART=2
 
+#testcase-check-vc-said-sos-rule-if-player-is-not-in-rum-route
+>said sos
+WRONG
+
 >gawking gift
 by one point
 
 >gawking gift
 The lift doesn't move, since those words are what got you here.
 
-#testcase-prereject-table-of-verb-checks-vc-umm-out-rule
+#testcase-check-vc-umm-out-rule-if-sco-dumb-doubt-is-false
 >umm out
 You can't just come in here cold like that! Maybe with the right preparation, an "umm, out" would be more forceful.
 
-#testcase-prereject-table-of-verb-checks-vc-said-sos-rule
+#testcase-check-vc-said-sos-rule-if-sco-dumb-doubt-is-false
 >said sos
 Your said-sos won't work cold. You need to show confidence and be persuasive.
 
@@ -1016,14 +1149,18 @@ You can say SAID SOS once you've got a foothold in an argument.
 >dumb doubt
 by one point
 
-#testcase-postreject-table-of-verb-checks-vc-dumb-doubt-rule
+#testcase-check-vc-dumb-doubt-rule-if-sco-dumb-doubt-is-true
 >dumb doubt
 You already spread dumb doubt! If you try to spread more, you may wind up believing it yourself.
+
+#testcase-check-vc-umm-out-rule-if-sco-said-sos-is-false
+>umm out
+WRONG
 
 >said sos
 by one point
 
-#testcase-postreject-table-of-verb-checks-vc-said-sos-rule
+#testcase-check-vc-said-sos-rule-if-sco-said-sos-is-true
 >said sos
 You already gave said-sos here, and that's something you don't want to overdo.
 
@@ -1052,12 +1189,16 @@ You can say K COPE once you're able to cope fully.
 >hey hope
 by one point
 
-#testcase-postreject-table-of-verb-checks-vc-hey-hope-rule
+#testcase-check-vc-hey-hope-rule-if-sco-hey-hope-is-true
 >hey hope
 You already got hope started! Now to adjust fully.
 
 >k cope
 by one point
+
+#testcase-check-vc-k-cope-rule-if-sco-hey-hope-is-false
+>k cope
+WRONG
 
 #testcase-postreject-table-of-verb-checks-vc-gawking-gift-rule
 >gawking gift
@@ -1072,7 +1213,11 @@ by one point
 >grokking grift
 The lift doesn't move, since those words are what got you here.
 
-#testcase-prereject-table-of-verb-checks-vc-plight-please-rule
+#testcase-check-vc-right-root-rule-if-sleaze-score-<-2
+>right root
+WRONG
+
+#testcase-check-vc-plight-please-rule-if-sco-bright-breeze-is-false
 >plight please
 You'd like to be that dismissive ("Plight? PLEASE!") but you aren't feeling positive enough for that. Perhaps a slight change in the weather...
 
@@ -1086,13 +1231,21 @@ by one point
 >bright breeze
 by one point
 
+#testcase-check-vc-bright-breeze-rule-if-sco-bright-breeze-is-true
+>bright breeze
+WRONG
+
 >plight please
 by one point
+
+#testcase-check-vc-plight-please-rule-if-sco-plight-please-is-true
+>plight please
+WRONG
 
 >right root
 by one point
 
-#testcase-postreject-table-of-verb-checks-vc-tight-tease-rule
+#testcase-check-vc-tight-tease-rule-if-sco-tight-tease-is-true
 >tight tees
 You already poked the slight sleaze back. You don't get double credit for that.
 
@@ -1114,7 +1267,7 @@ You already planted the right root to make trite trees. Nothing more to do here.
 >right root
 You already planted the right root where it should be.
 
-#testcase-prereject-table-of-verb-checks-vc-chic-shaming-rule
+#testcase-check-vc-chic-shaming-rule-if-sco-bleak-blaming-is-false
 >chic shaming
 You can't jump into such cleverness. You have to bring people down so that they will be glad you picked them up.
 
@@ -1131,17 +1284,29 @@ You can go full-in for CHIC SHAMING once you've re-framed the freak framing.
 >clique claiming
 by one point
 
+#testcase-check-vc-clique-claiming-rule-if-sco-clique-claiming-is-true
+>clique claiming
+WRONG
+
 >bleak blaming
 by one point
+
+#testcase-check-vc-bleak-blaming-rule-if-sco-bleak-blaming-is-true
+>bleak blaming
+WRONG
+
+#testcase-check-vc-bred-bros-rule-if-sco-bred-bros-is-true
+>bred bros
+WRONG
 
 >chic shaming
 by one point
 
-#testcase-postreject-table-of-verb-checks-vc-bleak-blaming-rule
+#testcase-check-vc-bleak-blaming-rule-abide-by-the-did-i-shame-rule
 >bleak blaming
 The chic shaming complete, you're done here. No need to repeat what you did.
 
-#testcase-postreject-table-of-verb-checks-vc-chic-shaming-rule
+#testcase-check-vc-chic-shaming-rule-abide-by-the-did-i-shame-rule
 >chic shaming
 The chic shaming complete, you're done here. No need to repeat what you did.
 
@@ -1165,7 +1330,7 @@ by one point
 >docking diffed
 The lift doesn't move, since those words are what got you here.
 
-#testcase-prereject-table-of-verb-checks-vc-thread-throws-rule
+#testcase-check-vc-thread-throws-rule-if-player-is-not-in-trite-trail-or-sco-excite-exhale-is-false
 >thread throws
 The rose probably only has so much thread. You should only use it to capture a big predator.
 
@@ -1173,7 +1338,7 @@ The rose probably only has so much thread. You should only use it to capture a b
 >think
 You can execute THREAD THROWS to make a net to catch the tight-tail white whale once you've prepped fully.
 
-#testcase-prereject-table-of-verb-checks-vc-rad-roast-rule
+#testcase-check-vc-rad-roast-rule-if-sco-bad-boast-is-false
 >rad roast
 You need to put the current insults in check before doing that.
 
@@ -1194,11 +1359,11 @@ You can try a RAD ROAST now you've hit back a bit against the madness.
 >rad roast
 by one point
 
-#testcase-postreject-table-of-verb-checks-vc-bad-boast-rule
+#testcase-check-vc-bad-boast-rule-if-sco-bad-boast-is-true
 >bad boast
 But you already cut the voice down to size.
 
-#testcase-postreject-table-of-verb-checks-vc-rad-roast-rule
+#testcase-check-vc-rad-roast-rule-if-sco-rad-roast-is-true
 >rad roast
 You already won the insult war!
 
@@ -1212,11 +1377,11 @@ You can execute THREAD THROWS to make a net to catch the tight-tail white whale 
 >thread throws
 The rose probably only has so much thread. You should only use it once you're fully prepared to make a net and catch the tight-tail white whale.
 
-#testcase-prereject-table-of-verb-checks-vc-right-rail-rule
+#testcase-check-vc-right-rail-rule-if-sco-sight-sail-is-false
 >right rail
 You might need a rail to grab, but not out here. Maybe if you've got some sort of vessel.
 
-#testcase-prereject-table-of-verb-checks-vc-excite-exhale-rule
+#testcase-check-vc-excite-exhale-rule-unless-whale-hunt-ready
 >excite exhale
 Man! That'd be a good idea, but you aren't quite ready to hunt the whale, yet.
 
@@ -1241,39 +1406,45 @@ by one point
 >bright brute
 by one point
 
-#testcase-postreject-table-of-verb-checks-vc-bright-brute-rule
+#testcase-check-vc-bright-brute-rule-if-sco-bright-brute-is-true
 >bright brute
 Two bright brutes might be smart enough to understand the prestige of beating a white whale and beat each other up before the hunt began.
 
-#testcase-postreject-table-of-verb-checks-vc-flight-flail-rule
+#testcase-check-vc-flight-flail-rule-if-sco-flight-flail-is-true
 >flight flail
 You already found a weapon that will be useful to fight the tight-tail white whale!
 
-#testcase-postreject-table-of-verb-checks-vc-might-mail-rule
+#testcase-check-vc-might-mail-rule-if-sco-might-mail-is-true
 >might mail
 You already found armor to wear to fight the tight-tail white whale!
 
-#testcase-postreject-table-of-verb-checks-vc-right-rail-rule
+#testcase-check-vc-right-rail-rule-if-sco-right-rail-is-true
 >right rail
 You already figured the right rail to grab to be stable on the sight sail.
 
-#testcase-postreject-table-of-verb-checks-vc-sight-sail-rule
+#testcase-check-vc-sight-sail-rule-if-sco-sight-sail-is-true
 >sight sail
 You already summoned the sight sail. It's not going anywhere.
 
 >excite exhale
 by one point
 
+#testcase-check-vc-excite-exhale-rule-if-sco-excite-exhale-is-true
+>excite exhale
+WRONG
+
 >thread throws
 by one point
 
-#+testcase-postreject-table-of-verb-checks-vc-thread-throws-rule
+#testcase-check-vc-thread-throws-rule-if-sco-thread-throws-is-true
 >thread throws
 You already tackled the tight-tail white whale!
 
 # the "undo" hack here is because i can't quite undo a long trip through to get the whale
 #+testcase-postreject-table-of-verb-checks-vc-bright-brute-rule
 >purloin lute
+
+#testcase-check-vc-bright-brute-rule-if-sco-thread-throws-is-true
 >bright brute
 The bright brute is hibernating now. You won't need it again!
 
@@ -1288,6 +1459,10 @@ You already conquered the tight-tail white whale. No need to go back.
 
 >despite dispute
 by one point
+
+#testcase-check-vc-bred-bros-rule-if-player-is-not-in-freak-framing
+>bred bros
+WRONG
 
 >mocking miffed
 by one point
@@ -1307,11 +1482,11 @@ The lift wheezes. You could ENTER it to return to High Hub, but your destiny's a
 >shocking shift
 The lift wheezes. You could ENTER it to return to High Hub, but your destiny's ahead.
 
-#testcase-prereject-table-of-verb-checks-vc-mold-mend-rule
+#testcase-check-vc-mold-mend-rule-if-sco-trolled-trend-is-false
 >mold mend
 That might be good later, but currently, you have nothing to mend from and to mold a future mindset.
 
-#testcase-prereject-table-of-verb-checks-vc-trolled-trend-rule
+#testcase-check-vc-trolled-trend-rule-if-sco-bold-bend-is-false
 >trolled trend
 But you have nowhere to go if trolling would trend. Fortunately, that's the easier of your two tasks here, compared to this.
 
@@ -1330,29 +1505,29 @@ by one point
 >mold mend
 by one point
 
-#testcase-postreject-table-of-verb-checks-vc-bold-bend-rule
+#testcase-check-vc-bold-bend-rule-if-sco-bold-bend-is-true
 >bold bend
 You already changed the old end into something more navigable.
 
-#testcase-postreject-table-of-verb-checks-vc-mold-mend-rule
+#testcase-check-vc-mold-mend-rule-if-sco-mold-mend-is-true
 >mold mend
 You already set your mind straight. You're able to move on.
 
-#testcase-postreject-table-of-verb-checks-vc-trolled-trend-rule
+#testcase-check-vc-trolled-trend-rule-if-sco-trolled-trend-is-true
 >trolled trend
 You can only deal with so much trolling!
 
 >s
 
-#testcase-prereject-table-of-verb-checks-vc-fed-foes-rule
+#testcase-check-vc-fed-foes-rule-if-pred-pros-are-not-fungible
 >fed foes
 But there are no foes to feed and mollify, yet!
 
-#testcase-prereject-table-of-verb-checks-vc-flain-flat-rule
+#testcase-check-vc-flain-flat-rule-if-sco-bane-bat-is-false
 >flain flat
 You have nothing to render the vat flain flat with. Well, not yet.
 
-#testcase-prereject-table-of-verb-checks-vc-splain-splat-rule
+#testcase-check-vc-splain-splat-rule-if-sco-flain-flat-is-false
 >splain splat
 You're not in a position to explain yourself. Well, not a position of enough power.
 
@@ -1373,15 +1548,15 @@ by one point
 >splain splat
 by one point
 
-#testcase-postreject-table-of-verb-checks-vc-bane-bat-rule
+#testcase-check-vc-bane-bat-rule-if-sco-bane-bat-is-true
 >bane bat
 No, you don't need additional firepower.
 
-#testcase-postreject-table-of-verb-checks-vc-flain-flat-rule
+#testcase-check-vc-flain-flat-rule-if-sco-flain-flat-is-true
 >flain flat
 No, you already trashed the (ex-)vat.
 
-#testcase-postreject-table-of-verb-checks-vc-splain-splat-rule
+#testcase-check-vc-splain-splat-rule-if-sco-splain-splat-is-true
 >splain splat
 With the splaining you do, you're ready to move on.
 
@@ -1389,6 +1564,10 @@ With the splaining you do, you're ready to move on.
 by one point
 
 >s
+
+#testcase-check-vc-turning-trite-rule-if-spurning-sprite-is-off-stage
+>turning trite
+WRONG
 
 >stride strong
 You are now able to move freely between locations, even ones with nothing left to do.
@@ -1398,7 +1577,7 @@ by one point
 
 >n
 
-#testcase-moot-table-of-verb-checks-vc-set-see-rule
+#testcase-reject-end-table-of-verb-checks-vc-set-see-rule
 >set see
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
@@ -1409,16 +1588,24 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 >fret free
 by one point
 
+#testcase-check-vc-fret-free-rule-if-sco-fret-free-is-true
+>fret free
+WRONG
+
 >yet ye
 by one point
 
+#testcase-check-vc-yet-ye-rule-if-sco-yet-ye-is-true
+>yet ye
+WRONG
+
 >n
 
-#testcase-moot-table-of-verb-checks-vc-yet-ye-rule
+#testcase-reject-end-table-of-verb-checks-vc-yet-ye-rule
 >yet ye
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-fret-free-rule
+#testcase-reject-end-table-of-verb-checks-vc-fret-free-rule
 >fret free
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
@@ -1439,7 +1626,7 @@ You already prepped yourself for the final fight. Now it is upon you.
 >yet ye
 You already prepped yourself for the final fight. Now it is upon you.
 
-#testcase-prereject-table-of-verb-checks-vc-turning-trite-rule
+#testcase-check-vc-turning-trite-rule-if-sco-plus-plaque-is-false
 >turning trite
 That is just talk, until you have something physical to notarize that this might, indeed, apply to the Burning Bright Spurning Sprite.
 
@@ -1450,331 +1637,333 @@ You can label the Burning Bright Spurning Sprite once they have an "award" of so
 >plus plaque
 by one point
 
-#testcase-postreject-table-of-verb-checks-vc-plus-plaque-rule
+#testcase-check-vc-plus-plaque-rule-if-sco-plus-plaque-is-true
 >plus plaque
 You already made and gave the plus plaque to the Burning Bright Spurning Sprite! Now you just have to figure what belongs on the plus plaque!
 
-#testcase-moot-table-of-verb-checks-vc-bad-boast-rule
+#testcase-reject-end-table-of-verb-checks-vc-bad-boast-rule
 >bad boast
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-bad-bunk-rule
+#testcase-reject-end-table-of-verb-checks-vc-bad-bunk-rule
 >bad bunk
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-bane-bat-rule
+#testcase-reject-end-table-of-verb-checks-vc-bane-bat-rule
 >bane bat
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-bare-beach-rule
+#testcase-reject-end-table-of-verb-checks-vc-bare-beach-rule
 >bare beach
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-bleak-blaming-rule
+#testcase-reject-end-table-of-verb-checks-vc-bleak-blaming-rule
 >bleak blaming
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-bold-bend-rule
+#testcase-reject-end-table-of-verb-checks-vc-bold-bend-rule
 >bold bend
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-boring-box-rule
+#testcase-reject-end-table-of-verb-checks-vc-boring-box-rule
 >boring box
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-bred-bros-rule
+#testcase-reject-end-table-of-verb-checks-vc-bred-bros-rule
 >bred bros
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-bright-breeze-rule
+#testcase-reject-end-table-of-verb-checks-vc-bright-breeze-rule
 >bright breeze
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-bright-brute-rule
+#testcase-reject-end-table-of-verb-checks-vc-bright-brute-rule
 >bright brute
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-bro-brew-rule
+#testcase-reject-end-table-of-verb-checks-vc-bro-brew-rule
 >bro brew
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-bussed-back-rule
+#testcase-reject-end-table-of-verb-checks-vc-bussed-back-rule
 >bussed back
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-bye-bub-rule
+#testcase-reject-end-table-of-verb-checks-vc-bye-bub-rule
+#testcase-check-vc-bye-bub-rule-if-player-is-not-in-high-hub
 >bye bub
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-chic-shaming-rule
+#testcase-reject-end-table-of-verb-checks-vc-chic-shaming-rule
 >chic shaming
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-clique-claiming-rule
+#testcase-reject-end-table-of-verb-checks-vc-clique-claiming-rule
 >clique claiming
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-co-coon-rule
+#testcase-reject-end-table-of-verb-checks-vc-co-coon-rule
 >co coon
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-crow-crew-rule
+#testcase-reject-end-table-of-verb-checks-vc-crow-crew-rule
 >crow crew
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-crow-croon-rule
+#testcase-reject-end-table-of-verb-checks-vc-crow-croon-rule
 >crow croon
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-crust-crack-rule
+#testcase-reject-end-table-of-verb-checks-vc-crust-crack-rule
 >crust crack
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-despite-dispute-rule
+#testcase-reject-end-table-of-verb-checks-vc-despite-dispute-rule
 >despite dispute
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-docking-diffed-rule
+#testcase-reject-end-table-of-verb-checks-vc-docking-diffed-rule
 >docking diffed
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-done-dorm-rule
+#testcase-reject-end-table-of-verb-checks-vc-done-dorm-rule
 >done dorm
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-dumb-doubt-rule
+#testcase-reject-end-table-of-verb-checks-vc-dumb-doubt-rule
 >dumb doubt
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-excite-exhale-rule
+#testcase-reject-end-table-of-verb-checks-vc-excite-exhale-rule
 >excite exhale
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-fed-foes-rule
+#testcase-reject-end-table-of-verb-checks-vc-fed-foes-rule
 >fed foes
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-flain-flat-rule
+#testcase-reject-end-table-of-verb-checks-vc-flain-flat-rule
 >flain flat
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-flight-flail-rule
+#testcase-reject-end-table-of-verb-checks-vc-flight-flail-rule
 >flight flail
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-flow-flue-rule
+#testcase-reject-end-table-of-verb-checks-vc-flow-flue-rule
 >flow flue
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-four-foals-rule
+#testcase-reject-end-table-of-verb-checks-vc-four-foals-rule
 >four foals
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-fun-form-rule
+#testcase-reject-end-table-of-verb-checks-vc-fun-form-rule
 >fun form
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-gad-gunk-rule
+#testcase-reject-end-table-of-verb-checks-vc-gad-gunk-rule
 >gad gunk
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-gawking-gift-rule
+#testcase-reject-end-table-of-verb-checks-vc-gawking-gift-rule
 >gawking gift
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-gee-junk-rule
+#testcase-reject-end-table-of-verb-checks-vc-gee-junk-rule
 >gee junk
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-glow-glue-rule
+#testcase-reject-end-table-of-verb-checks-vc-glow-glue-rule
 >glow glue
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-go-goo-rule
+#testcase-reject-end-table-of-verb-checks-vc-go-goo-rule
 >go goo
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-go-goon-rule
+#testcase-reject-end-table-of-verb-checks-vc-go-goon-rule
 >go goon
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-grokking-grift-rule
+#testcase-reject-end-table-of-verb-checks-vc-grokking-grift-rule
 >grokking grift
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-grotty-grail-rule
+#testcase-reject-end-table-of-verb-checks-vc-grotty-grail-rule
 >grotty grail
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-grow-grudge-rule
+#testcase-reject-end-table-of-verb-checks-vc-grow-grudge-rule
 >grow grudge
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-hey-hope-rule
+#testcase-reject-end-table-of-verb-checks-vc-hey-hope-rule
 >hey hope
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-ho-who-rule
+#testcase-reject-end-table-of-verb-checks-vc-ho-who-rule
 >ho who
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-in-bane-rule
+#testcase-reject-end-table-of-verb-checks-vc-in-bane-rule
 >dane d
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-k-cope-rule
+#testcase-reject-end-table-of-verb-checks-vc-k-cope-rule
 >k cope
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-kite-coot-rule
+#testcase-reject-end-table-of-verb-checks-vc-kite-coot-rule
 >kite coot
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-knotty-nail-rule
+#testcase-reject-end-table-of-verb-checks-vc-knotty-nail-rule
 >knotty nail
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-lore-lols-rule
+#testcase-reject-end-table-of-verb-checks-vc-lore-lols-rule
 >lore lols
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-might-mail-rule
+#testcase-reject-end-table-of-verb-checks-vc-might-mail-rule
 >might mail
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-mo-moon-rule
+#testcase-reject-end-table-of-verb-checks-vc-mo-moon-rule
 >mo moon
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-mocking-miffed-rule
+#testcase-reject-end-table-of-verb-checks-vc-mocking-miffed-rule
 >mocking miffed
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-mold-mend-rule
+#testcase-reject-end-table-of-verb-checks-vc-mold-mend-rule
 >mold mend
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-more-moles-rule
+#testcase-reject-end-table-of-verb-checks-vc-more-moles-rule
 >more moles
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-night-newt-rule
+#testcase-reject-end-table-of-verb-checks-vc-night-newt-rule
 >night newt
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-pear-peach-rule
+#testcase-reject-end-table-of-verb-checks-vc-pear-peach-rule
 >pear peach
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-piss-poor-rule
+#testcase-reject-end-table-of-verb-checks-vc-piss-poor-rule
 >piss poor
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-plain-plea-rule
+#testcase-reject-end-table-of-verb-checks-vc-plain-plea-rule
+#testcase-check-vc-plain-plea-rule-if-player-is-not-in-bane-be-sane-see
 >plain plea
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-plight-please-rule
+#testcase-reject-end-table-of-verb-checks-vc-plight-please-rule
 >plight please
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-potty-pail-rule
+#testcase-reject-end-table-of-verb-checks-vc-potty-pail-rule
 >potty pail
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-rad-roast-rule
+#testcase-reject-end-table-of-verb-checks-vc-rad-roast-rule
 >rad roast
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-reap-rune-rule
+#testcase-reject-end-table-of-verb-checks-vc-reap-rune-rule
 >reap rune
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-right-rail-rule
+#testcase-reject-end-table-of-verb-checks-vc-right-rail-rule
 >right rail
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-right-root-rule
+#testcase-reject-end-table-of-verb-checks-vc-right-root-rule
 >right root
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-rocking-rift-rule
+#testcase-reject-end-table-of-verb-checks-vc-rocking-rift-rule
 >rocking rift
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-sad-sunk-rule
+#testcase-reject-end-table-of-verb-checks-vc-sad-sunk-rule
 >sad sunk
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-said-sos-rule
+#testcase-reject-end-table-of-verb-checks-vc-said-sos-rule
 >said sos
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-see-sunk-rule
+#testcase-reject-end-table-of-verb-checks-vc-see-sunk-rule
 >see sunk
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-seep-soon-rule
+#testcase-reject-end-table-of-verb-checks-vc-seep-soon-rule
 >seep soon
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-shocking-shift-rule
+#testcase-reject-end-table-of-verb-checks-vc-shocking-shift-rule
 >shocking shift
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-shore-shoals-rule
+#testcase-reject-end-table-of-verb-checks-vc-shore-shoals-rule
 >shore shoals
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-sight-sail-rule
+#testcase-reject-end-table-of-verb-checks-vc-sight-sail-rule
 >sight sail
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-so-soon-rule
+#testcase-reject-end-table-of-verb-checks-vc-so-soon-rule
 >so soon
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-splain-splat-rule
+#testcase-reject-end-table-of-verb-checks-vc-splain-splat-rule
 >splain splat
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-stow-stew-rule
+#testcase-reject-end-table-of-verb-checks-vc-stow-stew-rule
 >stow stew
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-thread-throws-rule
+#testcase-reject-end-table-of-verb-checks-vc-thread-throws-rule
 >thread throws
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-throw-through-rule
+#testcase-reject-end-table-of-verb-checks-vc-throw-through-rule
 >throw through
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-tight-tease-rule
+#testcase-reject-end-table-of-verb-checks-vc-tight-tease-rule
 >tight tease
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-trolled-trend-rule
+#testcase-reject-end-table-of-verb-checks-vc-trolled-trend-rule
 >trolled trend
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-umm-out-rule
+#testcase-reject-end-table-of-verb-checks-vc-umm-out-rule
 >umm out
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-un-arm-rule
+#testcase-reject-end-table-of-verb-checks-vc-un-arm-rule
 >un arm
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-whee-woot-rule
+#testcase-reject-end-table-of-verb-checks-vc-whee-woot-rule
 >whee woot
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-wordy-walk-rule
+#testcase-reject-end-table-of-verb-checks-vc-wordy-walk-rule
 >wordy walk
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-moot-table-of-verb-checks-vc-yo-you-rule
+#testcase-reject-end-table-of-verb-checks-vc-yo-you-rule
 >yo you
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Low-Key Learny Jokey Journey has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
