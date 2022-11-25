@@ -828,20 +828,19 @@ this is the verb-checker rule:
 				increment my-count;
 		if my-count >= 2:
 [			if debug-state is true, say "DEBUG: processing [check-rule entry], outcome [if rb-out is unavailable outcome]UA[else if rb-out is not-yet outcome]NOT YET[else if rb-out is already-done outcome]already done[else]rady[end if].";]
-			process the check-rule entry; [necessary to catch the mad monk--perhaps we could have an extra "inconclusive" state]
+			process the check-rule entry;
 			let rb-out be the outcome of the rulebook;
 			if rb-out is the already-done outcome, the rule succeeds;
 			if rb-out is the not-yet outcome:
 				let exact-cmd be whether or not the player's command matches the text "[first-of-ors of w1 entry][if there is a w2 entry] [first-of-ors of w2 entry][end if]", case insensitively;
-				if check-rule entry is vc-sad-sunk rule or check-rule entry is vc-bad-bunk rule:
-					say "Whenever you're ready, just type [b][the player's command in upper case][r] to move on.";
-					now think-cue entry is true;
-					the rule succeeds;
 				if think-cue entry is false:
 					say "[line break][one of][b]NOTE[r]: this command[if exact-cmd is false] (well, an equivalent, as there were alternate solutions)[end if] will be useful later, but you aren't ready to use it, yet. You can track commands like this by typing [b]THINK[r], which will also clue you if they now work.[or](useful command[if exact-cmd is false] (or a functionally equivalent alternate solution)[end if] again saved to [b]THINK[r] for later reference.)[stopping]";
 					now think-cue entry is true;
 				else:
 					say "[line break]Hmph. That [if exact-cmd is false](or a functionally equivalent alternate solution) [end if]still doesn't quite work! You'll figure out the how and when and where, though.";
+				the rule succeeds;
+			if rb-out is semi-pass outcome:
+				now think-cue entry is true;
 				the rule succeeds;
 			if okflip entry is false:
 				unless my-count is 4 or there is no w2 entry or the player's command matches the regular expression "^([w1 entry])\W": [using only w1 is for the DIM'D test case... and "my-count is 4" is a hack for FLIMFLAM]
@@ -882,8 +881,8 @@ this is the verb-checker rule:
 			process the check-rule entry;
 			let rb-out be the outcome of the rulebook;
 			now vc-dont-print is false;
-			unless rb-out is the not-yet outcome or rb-out is the ready outcome, next;
-			if rb-out is ready outcome:
+			unless rb-out is the not-yet outcome or rb-out is the ready outcome or rb-out is semi-pass outcome, next;
+			if rb-out is ready outcome or rb-out is semi-pass outcome:
 				now local-ha-half-level is 2;
 			else if local-ha-half-level < 2:
 				now local-ha-half-level is 1;
@@ -910,6 +909,7 @@ volume parser rules
 
 Rule for printing a parser error (this is the clue half right words rule):
 	now compare-item is the player;
+	now got-half-match is false;
 	abide by the rhyme-guess-checker rule for the table of first check rhymes;
 	abide by the game-specific-backdrop-check rule;
 	unless guess-table of location of player is table of no good guesses:
@@ -930,6 +930,7 @@ Rule for printing a parser error (this is the clue half right words rule):
 		abide by the rhyme-guess-checker rule for gtt;
 	abide by the verb-checker rule;
 	abide by the rhyme-guess-checker rule for table of general good guesses;
+	if press-pro-level is 4 and got-half-match is true, say "The leet learner beeps weirdly. You had one word guessed right." instead;
 	continue the action;
 
 the clue half right words rule is listed first in the for printing a parser error rulebook. [note: this caused a speedup when I first tried it. I'm not sure if this would last, so I'll need to do testing with this line vs with it commented out. ?? ]
