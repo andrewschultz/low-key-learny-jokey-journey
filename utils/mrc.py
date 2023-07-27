@@ -1,7 +1,11 @@
 #
-# mrc.py: make rhyme code for CSDD-ish games
+# mrc.py: make rhyme code for CSDD-ish games as well as IHHA
 #
-# it prints a table of verbchecker line, prints the vc- and vr- rules, and guesses at the boolearn variable.
+# it prints a table of verbchecker line, prints the vc- and vr- rules, and guesses at the boolean variable.
+#
+# rough format:
+# "word 1"	"word 2"	--	--	false	true	true	false	(Room where action happens)	checking rule	running rule	specific topic, if needed e.g. "a/b" "c/d" can only be a c or b d 	THINK text (probably blank)
+
 
 import sys
 import os
@@ -37,14 +41,15 @@ try:
 except:
     pass
 
-# "word 1"	"word 2"	--	--	false	true	true	false	(Room where action happens)	checking rule	running rule	specific topic, if needed e.g. "a/b" "c/d" can only be a c or b d 	THINK text (probably blank)
-
-
 def show_examples():
-    print("mrc.py r=mad-most-cad-coast `bad-boast =rad-roast would scrub the VCAL for rad-roast and VCP for bad-boast.")
-    print("mrc.py r=bane-be-sane-see 0plain-plea =`jane-g =`wayne-whee =`dane-d is the opening, 0=LLP.")
-    print("mrc.py r=rare-reach bare-beach reap-rune would establish the Bare Beach and Reap Rune points.")
-    print("mrc.py 2gl r=rare-reach bare-beach reap-rune would establish the Bare Beach and Reap Rune points and add the code to the global file.")
+    print("Scrub the VCAL for rad-roast and VCP for bad-boast in LLJJ:")
+    mt.okay("    mrc.py r=mad-most-cad-coast `bad-boast =rad-roast{}")
+    print("Opening bonus point for LLJJ:")
+    mt.okay("    mrc.py r=bane-be-sane-see 0plain-plea =`jane-g =`wayne-whee =`dane-d")
+    print("LLJ establishing the Bare Beach and Reap Rune points:")
+    mt.okay("    mrc.py r=rare-reach bare-beach reap-rune")
+    print("LLJJ establishing the Bare Beach and Reap Rune points and add the code to the global file:")
+    mt.okay("    mrc.py 2gl r=rare-reach bare-beach reap-rune")
     sys.exit()
 
 def usage(my_word = ""):
@@ -53,7 +58,7 @@ def usage(my_word = ""):
             print("WARNING: {} had too many dashes. Use a slash for topics.".format(my_word))
         else:
             print("WARNING: {} was not a valid word. You need something of the form letters-letters.".format(my_word))
-    print("Prime Pro-Rhyme Row code generation options:")
+    print("Prime Pro-Rhyme Row/I Heart High Art code generation options:")
     print("f / nf / fn specify exporting to a file. NF/FN means don't open post-run.")
     print("2gl exports global code specifically to the globals file.")
     print()
@@ -64,6 +69,7 @@ def usage(my_word = ""):
     print("= at the start disabled vcal (already-done check) and ` disables vcp (not-ready) and 0 means a not-core point.")
     print("The default is to allow all rules.")
     print("?? shows examples")
+    print("Note that this automatically detects if you are in an IHHA or PPRR directory and adjusts the code accordingly.")
     sys.exit()
 
 def add_var_defs(this_file, these_vars, add_duplicates = False):
@@ -79,7 +85,7 @@ def add_var_defs(this_file, these_vars, add_duplicates = False):
             next_populated_line = True
             got_here = True
             if my_lines[x].strip() in these_vars:
-                print(colorama.Fore.YELLOW + "WARNING line {} duplicated: line {}.".format(my_lines[x].strip(), x) + mt.WTXT)
+                mt.ew("WARNING line {} duplicated: line {}.".format(my_lines[x].strip(), x), colorama.Fore.YELLOW)
                 if not add_duplicates:
                     these_vars.remove(my_lines[x].strip())
                     continue
@@ -90,10 +96,10 @@ def add_var_defs(this_file, these_vars, add_duplicates = False):
             insert_line = x
             next_populated_line = False
     if not got_here:
-        sys.stderr.write(colorama.Fore.YELLOW + "WARNING: NO SCO- FOUND, SO GOING WITH END OF FILE.\n" + mt.WTXT)
+        mt.ew("WARNING: NO SCO- FOUND, SO GOING WITH END OF FILE.", colorama.Fore.YELLOW)
         return
     if insert_line == -1:
-        sys.exit(colorama.Fore.RED + "There was no line starting with sco- and no ends here line, so you have a malformed header file." + mt.WTXT)
+        mt.ew("There was no line starting with sco- and no ends here line, so you have a malformed header file.", colorama.Fore.RED)
     my_lines.insert(insert_line, full_string)
     temp = 'c:/writing/temp/mrc-temp-file.txt'
     f = open(temp, 'w')
@@ -255,3 +261,5 @@ if open_file_after:
 
 if verify_code:
     ljver.verify_both()
+else:
+    print("Remember ljver.py verifies the code if you wish to check after adding the above code in.")
