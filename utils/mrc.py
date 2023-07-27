@@ -3,8 +3,9 @@
 #
 # it prints a table of verbchecker line, prints the vc- and vr- rules, and guesses at the boolearn variable.
 
-import re
 import sys
+import os
+import re
 from collections import defaultdict
 import mytools as mt
 import ljver
@@ -15,11 +16,21 @@ from shutil import copy
 out_file = "mrc.txt"
 
 verify_code = True
+rule_type = 'goodrhyme'
+check_prefix = 'vc'
+run_prefix = 'vr'
+
+try:
+    temp = i7.i7comr[i7.dir2proj()]
+    if temp == 'i-heart-high-art':
+        rule_type = 'spoonerism'
+        check_prefix = 'pre'
+        run_prefix = 'post'
+except:
+    pass
 
 # "word 1"	"word 2"	--	--	false	true	true	false	(Room where action happens)	checking rule	running rule	specific topic, if needed e.g. "a/b" "c/d" can only be a c or b d 	THINK text (probably blank)
 
-check_prefix = 'vc'
-run_prefix = 'vr'
 
 def show_examples():
     print("mrc.py r=mad-most-cad-coast `bad-boast =rad-roast would scrub the VCAL for rad-roast and VCP for bad-boast.")
@@ -84,7 +95,7 @@ def valid_word_clump(arg):
     return re.search("^[a-z/]+[/. -][a-z/]+$", arg)
 
 def add_basic_rules(w):
-    print("a goodrhyme rule (this is the {}-{} rule):".format(check_prefix, w))
+    print("a {} rule (this is the {}-{} rule):".format(rule_type, check_prefix, w))
     print("\tif player is not in {}, unavailable;".format(this_room))
     if w in add_vcal and add_vcal[w]:
         print("\tif sco-{} is false:".format(w))
