@@ -13,9 +13,17 @@ import i7
 import colorama
 from shutil import copy
 
+# constants
+
 out_file = "mrc.txt"
 
+# options
+
+add_duplicates = False
 verify_code = True
+
+# variables
+
 rule_type = 'goodrhyme'
 check_prefix = 'vc'
 run_prefix = 'vr'
@@ -58,7 +66,7 @@ def usage(my_word = ""):
     print("?? shows examples")
     sys.exit()
 
-def add_var_defs(this_file, these_vars):
+def add_var_defs(this_file, these_vars, add_duplicates = False):
     lines_to_write = []
     got_here = False
     next_populated_line = False
@@ -72,6 +80,9 @@ def add_var_defs(this_file, these_vars):
             got_here = True
             if my_lines[x].strip() in these_vars:
                 print(colorama.Fore.YELLOW + "WARNING line {} duplicated: line {}.".format(my_lines[x].strip(), x) + mt.WTXT)
+                if not add_duplicates:
+                    these_vars.remove(my_lines[x].strip())
+                    continue
         elif insert_line == -1 and my_lines[x].lower().strip().endswith('ends here.'):
             insert_line = x
             next_populated_line = False
@@ -162,6 +173,8 @@ while cmd_count < len(sys.argv):
         this_room = argr[2:].replace('.', ' ').replace('-', ' ')
     elif arg == '/':
         pass
+    elif arg in ( 'ad', 'da' ):
+        add_duplicates = True
     elif arg == 'f':
         direct_to_file = True
         open_file_after = True
@@ -226,7 +239,7 @@ if len(words_to_proc):
     global_stuff = [ "sco-{} is a truth state that varies.".format(w.replace('|', '-')) for w in words_to_proc ]
     if add_to_global:
         my_file = i7.hdr(this_proj, 'glo')
-        add_var_defs(my_file, global_stuff)
+        add_var_defs(my_file, global_stuff, add_duplicates)
     else:
         print("===============definitions for global file / main story.ni file (2gl puts it in the global file)===============")
         print()
