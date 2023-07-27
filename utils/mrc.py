@@ -77,9 +77,9 @@ def add_var_defs(this_file, these_vars, add_duplicates = False):
     got_here = False
     next_populated_line = False
     f = open(this_file, 'r')
+    fb = os.path.basename(this_file)
     my_lines = f.readlines()
     insert_line = -1
-    full_string = "\n".join([x for x in these_vars if x.strip()]) + "\n\n"
     for x in range(0, len(my_lines)):
         if my_lines[x].startswith("sco-"):
             next_populated_line = True
@@ -100,6 +100,11 @@ def add_var_defs(this_file, these_vars, add_duplicates = False):
         return
     if insert_line == -1:
         mt.ew("There was no line starting with sco- and no ends here line, so you have a malformed header file.", colorama.Fore.RED)
+    if len(these_vars):
+        full_string = "\n".join([x for x in these_vars if x.strip()]) + "\n\n"
+    else:
+        mt.ew("Every candidate for adding was a duplicate. Therefore, we will not modify the file {}.".format(fb), colorama.Fore.RED)
+        return
     my_lines.insert(insert_line, full_string)
     temp = 'c:/writing/temp/mrc-temp-file.txt'
     f = open(temp, 'w')
