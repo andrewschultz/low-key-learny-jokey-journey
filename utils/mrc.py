@@ -32,6 +32,8 @@ rule_type = 'goodrhyme'
 check_prefix = 'vc'
 run_prefix = 'vr'
 
+table_rules = defaultdict(bool)
+
 try:
     temp = i7.i7comr[i7.dir2proj()]
     if temp == 'i-heart-high-art':
@@ -117,21 +119,43 @@ def valid_word_clump(arg):
     return re.search("^[a-z/]+[/. -][a-z/]+$", arg)
 
 def add_basic_rules(w):
-    print("a {} rule (this is the {}-{} rule):".format(rule_type, check_prefix, w))
-    print("\tif player is not in {}, unavailable;".format(this_room))
-    if w in add_vcal and add_vcal[w]:
-        print("\tif sco-{} is false:".format(w))
-        print("\t\tvcp \"You still need to do something!\";")
-        print("\t\tnot-yet;")
-    print("\tif sco-{} is true:".format(w))
-    print("\t\tvcal \"You already did this!\";")
-    print("\t\talready-done;")
-    print("\tready;")
-    print()
-    print("this is the {}-{} rule:".format(run_prefix, w))
-    print("\tnow sco-{} is true;".format(w))
-    print("\tsay \"Hooray! You figured what to do! You get a point!\";")
-    print()
+    global table_rules
+    pre_rule_to_print = "a {} rule (this is the {}-{} rule):".format(rule_type, check_prefix, w)
+    if pre_rule_to_print in table_rules:
+        mt.errwrite("Skipping {}, already in table file".format(pre_rule_to_print), mt.WARN)
+    else:
+        mt.errwrite("Going with {}".format(pre_rule_to_print), mt.WARN)
+        print(pre_rule_to_print)
+        print("\tif player is not in {}, unavailable;".format(this_room))
+        if w in add_vcal and add_vcal[w]:
+            print("\tif sco-{} is false:".format(w))
+            print("\t\tvcp \"You still need to do something!\";")
+            print("\t\tnot-yet;")
+        print("\tif sco-{} is true:".format(w))
+        print("\t\tvcal \"You already did this!\";")
+        print("\t\talready-done;")
+        print("\tready;")
+        print()
+    post_rule_to_print = "this is the {}-{} rule:".format(run_prefix, w)
+    if post_rule_to_print in table_rules:
+        mt.errwrite("Skipping {}, already in table file".format(post_rule_to_print), mt.WARN)
+    else:
+        mt.errwrite("Going with {}".format(post_rule_to_print), mt.WARN)
+        print(post_rule_to_print)
+        print("\tnow sco-{} is true;".format(w))
+        print("\tsay \"Hooray! You figured what to do! You get a point!\";")
+        print()
+
+def get_table_rules():
+    global table_rules
+    f = i7.hdr(this_proj, 'ta')
+    with open(f) as file:
+        for (line_count, line) in enumerate(file, 1):
+            if line.startswith('\n'):
+                continue
+            if not 'this is the' in line:
+                continue
+            table_rules[line.strip().lower()] = True
 
 def print_verbcheck_line(my_word_pair):
     word_dashed = my_word_pair.replace('|', '-')
@@ -244,6 +268,8 @@ if len(words_to_proc):
     print()
     print("section {} scoring".format(this_room))
     print()
+
+get_table_rules()
 
 for w in words_to_proc:
     add_basic_rules(w.replace('|', '-'))
