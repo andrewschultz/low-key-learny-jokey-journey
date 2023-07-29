@@ -81,7 +81,7 @@ def add_var_defs(this_file, these_vars, add_duplicates = False):
     my_lines = f.readlines()
     insert_line = -1
     for x in range(0, len(my_lines)):
-        if my_lines[x].startswith("sco-"):
+        if my_lines[x].startswith("sco-") or 'unsorted globals' in my_lines[x]:
             next_populated_line = True
             got_here = True
             if my_lines[x].strip() in these_vars:
@@ -241,6 +241,8 @@ for w in words_to_proc:
     print_verbcheck_line(w)
 
 if len(words_to_proc):
+    print()
+    print("section {} scoring".format(this_room))
     print()
 
 for w in words_to_proc:
