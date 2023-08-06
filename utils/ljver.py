@@ -4,6 +4,7 @@
 import i7
 import os
 import sys
+import re
 import mytools as mt
 import colorama
 
@@ -34,10 +35,27 @@ def verify_header(the_file, the_strings, show_success = True):
     if show_success and not got_warning:
         sys.stderr.write(colorama.Fore.GREEN + "All code for {} is changed from the default.".format(bn) + mt.WTXT + "\n")
 
+def verify_right_text(my_file):
+    rule_name = '<no rule>'
+    in_vc_rule = False
+    with open(my_file) as file:
+        for (line_count, line) in enumerate (file, 1):
+            if not line.strip():
+                in_vc_rule = False
+            if 'this is the vc-' in line:
+                in_vc_rule = True
+                rule_name = re.sub(".*this is", "this is", line.strip())
+                rule_name = re.sub("\).*", "", rule_name)
+                continue
+            if in_vc_rule and '\tsay' in line:
+                mt.add_postopen(my_file, line_count, priority=11)
+                mt.fail("Errant SAY in rule {}.".format(rule_name))
+
 def verify_both():
     this_proj = i7.dir2proj()
     verify_header(i7.hdr(this_proj, "ta"), error_strings)
     verify_header(i7.hdr(this_proj, "mi"), mistake_strings)
+    verify_right_text(i7.hdr(this_proj, "ta"))
     mt.post_open()
     mt.ew("No stray text from previous TGG/MRC runs in {}.\n".format(this_proj), colorama.Fore.GREEN)
 
