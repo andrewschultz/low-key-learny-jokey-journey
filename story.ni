@@ -224,7 +224,9 @@ Hun Harm Fun Farm is west of NNSS. it is in Hoppin' Heart. "The way bends north 
 
 from-number of hun harm fun farm is 5308. to-number of hun harm fun farm is 2603.
 
-check going north in hun harm fun farm when sco-un-arm is false: say "Unfortunately, you hear aggressive voices threatening to attack you. They have weapons, and you don't. You're not sure how to change this." instead;
+check going north in hun harm fun farm:
+	if sco-un-arm is false, say "Unfortunately, you hear aggressive voices threatening to attack you. They have weapons, and you don't. You're not sure how to change this." instead;
+	if no-noon-block is true, say "You remember trying a sort of incantation to the north. You had no mystic relic to protect you, and you still don't, yet, and until then, you don't dare return." instead;
 
 guess-table of Hun Harm Fun Farm is table of hun harm fun farm guesses.
 

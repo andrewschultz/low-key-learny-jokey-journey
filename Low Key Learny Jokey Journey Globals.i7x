@@ -145,7 +145,7 @@ volume variables for cluing and such
 
 hint-trip-room is Roaring Rocks.
 
-volume game flags
+volume game state flags
 
 name-choice-index is a number that varies. name-choice-index is 0. [1st room, which of firstpoint-list?]
 
@@ -154,6 +154,8 @@ boring-box-check is a truth state that varies. [this is to note if the player ha
 learner-up-rocks is a number that varies.
 
 monk-bad-cue is a truth state that varies. [bad bunk or sad sunk cued if you run up the score?]
+
+no-noon-block is a truth state that varies. [if you guess one part of No Noon, it boots you. So it doesn't spoil things otherwise!]
 
 gong-hub-warn is a truth state that varies. [nudges you to set the gong or prong if you haven't, in the hub]
 

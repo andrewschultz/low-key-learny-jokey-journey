@@ -398,6 +398,9 @@ this is the vr-reap-rune rule:
 	say "What do you know? You totally believe in yourself as you reach into the deep dune, and a rune turns up! It is in the shape of the Greek letter Rho. The deep dune, having served its purpose, sinks into the general landscape.";
 	now player has Rho Rune;
 	now sco-reap-rune is true;
+	if no-noon-block is true:
+		say "[line break]The Rho Rune leaves you less scared of what scared you to the west. Maybe now's a time to revisit things. Your ideas may work better now!";
+		now no-noon-block is false;
 	moot deep dune;
 
 a goodrhyme rule (this is the vc-un-arm rule):
@@ -1487,13 +1490,17 @@ to say gpp: now guessed-pear-peach is true;
 this is the no-noon-or-rune rule:
 	if player is not in NoNoon and player does not have rho rune, unavailable;
 	if Rho Rune is off-stage:
-		vcp "You try to form the words, but you don't feel brave enough. Perhaps the right sort of relic would help you.[rune-cue]";
+		vcp "You try to form the words, but you don't feel brave enough. In fact, you feel downright scared! So scared, you flee south from the darkness. There's something mystic about it. You'll need a powerful relic, and you don't have one, yet[rune-cue].";
+		if vc-dont-print is false:
+			now no-noon-block is true;
+			move player to Fun Farm, without printing a room description;
+			say "[b]Hun Harm Fun Farm[r][line break]";
 		not-yet;
 	if player is not in NoNoon:
 		vcp "The Rho Rune seems to grow colder in your hands. Perhaps here is not the place.";
 		not-yet;
 
-to say rune-cue: if player does not have rho rune, say "[run paragraph on] You feel as though you're missing something basic and fundamental as well, an emblem to start whatever ritual you need to perform here[one of].[paragraph break]Also, more fourth-wallishly, the solution may be anticlimactic if you figure everything out here before finding said magic item. A few testers said so[or][stopping].[run paragraph on]"
+to say rune-cue: if player does not have rho rune, say ". You feel as though you're missing something basic and fundamental as well, an emblem to start whatever ritual you need to perform here[one of].[paragraph break]Also, more fourth-wallishly, the solution may be anticlimactic if you figure everything out here before finding said magic item. A few testers said so[or][stopping]"
 
 [in the jail]
 
