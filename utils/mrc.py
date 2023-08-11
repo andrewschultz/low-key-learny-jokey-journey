@@ -25,6 +25,7 @@ out_file = "mrc.txt"
 
 add_duplicates = False
 verify_code = True
+boolean_roll_up = False
 
 # variables
 
@@ -52,6 +53,7 @@ def show_examples():
     mt.okay("    mrc.py r=rare-reach bare-beach reap-rune")
     print("LLJJ establishing the Bare Beach and Reap Rune points and add the code to the global file:")
     mt.okay("    mrc.py 2gl r=rare-reach bare-beach reap-rune")
+    print("Also note that the MRC.BAT batch file can run things, and the SCO option provides code for a boolean roll-up score.")
     sys.exit()
 
 def usage(my_word = ""):
@@ -231,6 +233,8 @@ while cmd_count < len(sys.argv):
     elif arg in ( 'g', 'x'):
         check_prefix = 'pre'
         run_prefix = 'post'
+    elif arg == 'sco':
+        boolean_roll_up = True
     elif arg == 'v':
         verify_code = True
     elif arg in ( 'nv', 'vn' ):
@@ -260,6 +264,15 @@ if direct_to_file:
     sys.stdout = open(out_file, "w")
 
 words_to_proc = [ x.replace("/", "|") for x in words_to_proc ]
+
+if boolean_roll_up:
+    short_name = re.sub(".* ", "", this_room)
+    print("section {} score".format(short_name))
+    print()
+    print("to decide what number is {}-score:".format(short_name))
+    joined_bools = " + ".join(['(boolval of sco-{})'.format(x) for x in words_to_proc])
+    print("\tdecide on {}".format(joined_bools))
+    print()
 
 for w in words_to_proc:
     print_verbcheck_line(w)
