@@ -28,9 +28,9 @@ alphabetize = True
 
 magic_num_column = False
 
-mist_txt_index = False
+mist_txt_index = 2 # magic numbers here
 
-mist_txt_hdr = [ 'mist-regex', 'mist-cmd(topic)' ]
+mist_txt_hdr = [ 'mist-regex', 'mist-cmd(topic)', 'mist-1 (text)\tmist-2 (text)' ]
 
 def usage(header = '====usage===='):
     print(header)
@@ -64,6 +64,23 @@ def to_topic(my_string):
     temp = temp.replace('/', '|')
     return temp
 
+def to_regex(my_string):
+    temp = my_string.replace('-', ' ')
+    temp = temp.replace('/', '|')
+    tary = temp.split(' ')
+    for t in tary:
+        if '|' in t:
+            t = '(' + t + ')'
+    temp = ' '.join(tary)
+    return temp
+
+def to_word1word2(my_string):
+    temp = my_string.replace('-', ' ')
+    temp = temp.replace('/', '|')
+    tary = temp.split(' ')
+    temp = '\t'.join([ '"{}"'.format(t) for t in tary])
+    return temp
+
 while cmd_count < len(sys.argv):
     arg = sys.argv[cmd_count]
     if arg == 'a':
@@ -74,8 +91,12 @@ while cmd_count < len(sys.argv):
         verify_code = True
     elif arg in ( 'nv', 'vn' ):
         verify_code = False
+    elif arg == '12':
+        mist_txt_index = 2
     elif arg == 'r':
-        mist_txt_index = True
+        mist_txt_index = 1
+    elif arg == 'c':
+        mist_txt_index = 0
     elif arg.startswith("c="):
         condition = strip_equals(arg, " is true")
     elif arg.startswith("cf=") or arg.startswith("fc="):
@@ -103,12 +124,19 @@ while cmd_count < len(sys.argv):
     elif '-' not in arg or '=' in arg:
         usage('BAD ARGUMENT: {}'.format(arg))
     else:
-        ttarg = to_topic(arg)
+        if mist_txt_index == 0:
+            ttarg = to_topic(arg)
+        elif mist_txt_index == 1:
+            ttarg = to_regex(arg)
+        elif mist_txt_index == 2:
+            ttarg = to_word1word2(arg)
+        if not ttarg.startswith('"'):
+            ttarg = '"' + ttarg + '"'
         if ttarg in base_string_array:
             print("WARNING duplicate string specified:", ttarg)
         else:
             base_string_array.append(ttarg)
-            out_string_array.append('"{}"\t{}\tfalse{}\t{}\t"<CLEVER REJECT TEXT>"'.format(ttarg, this_general_rule, '\t' + magic_num_columnber if magic_num_column else '', this_leet_rule))
+            out_string_array.append('{}\t{}\tfalse{}\t{}\t"<CLEVER REJECT TEXT>"'.format(ttarg, this_general_rule, '\t' + magic_num_columnber if magic_num_column else '', this_leet_rule))
     cmd_count += 1
 
 if not len(base_string_array):
