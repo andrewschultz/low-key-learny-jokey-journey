@@ -350,11 +350,11 @@ this is the vr-crust-crack rule:
 	declue-here;
 
 this is the vc-bare-beach rule:
-	if player is not in rare reach, unavailable;
+	if player is not in rare reach and player does not have pear peach, unavailable;
 	if sco-bare-beach is true:
 		vcal "You already changed the Rare Reach.";
 		already-done;
-	if player does not have pear peach:
+	if player does not have pear peach and player is in rare reach:
 		vcp "You should be able to do that, but you lack the necessary implement.";
 		not-yet;
 	if player has pear peach and player is not in rare reach:
@@ -414,10 +414,7 @@ this is the vr-un-arm rule:
 	declue-here;
 
 a goodrhyme rule (this is the vc-go-goon rule):
-	if player is not in NoNoon, unavailable;
-	if Rho Rune is off-stage:
-		vcp "You try to form the words, but you don't feel brave enough. Perhaps the right sort of relic would help you.[rune-cue]";
-		not-yet;
+	abide by the no-noon-or-rune rule;
 	if sco-go-goon is true:
 		vcal "You already dispelled the goon!";
 		already-done;
@@ -428,7 +425,7 @@ this is the vr-go-goon rule:
 	say "The Rho Rune glows, and you feel confidence as at least the first of the enemies fled. But it's so empty here. What could grow?";
 
 a goodrhyme rule (this is the vc-co-coon rule):
-	if player is not in NoNoon, unavailable;
+	abide by the no-noon-or-rune rule;
 	if sco-co-coon is true:
 		vcal "You already placed the cocoon.";
 		already-done;
@@ -443,7 +440,7 @@ this is the vr-co-coon rule:
 	move cocoon to NoNoon;
 
 a goodrhyme rule (this is the vc-mo-moon rule):
-	if player is not in NoNoon, unavailable;
+	abide by the no-noon-or-rune rule;
 	if sco-mo-moon is true:
 		vcal "The moon has already appeared!";
 		already-done;
@@ -457,7 +454,7 @@ this is the vr-mo-moon rule:
 	say "A moon appears in the night-ish sky.";
 
 a goodrhyme rule (this is the vc-so-soon rule):
-	if player is not in NoNoon, unavailable;
+	abide by the no-noon-or-rune rule;
 	if sco-so-soon is true:
 		vcal "You already sped time up.";
 		already-done;
@@ -472,7 +469,7 @@ this is the vr-so-soon rule:
 	now to-number of nonoon is 2705;
 
 a goodrhyme rule (this is the vc-crow-croon rule):
-	if player is not in NoNoon, unavailable;
+	abide by the no-noon-or-rune rule;
 	if sco-crow-croon is true:
 		vcal "You already had the crow croon!";
 		already-done;
@@ -587,8 +584,9 @@ this is the vr-shocking-shift rule:
 a goodrhyme rule (this is the vc-rocking-rift rule):
 	if locking lift is not fungible, unavailable;
 	if sco-throw-through is true:
-		if show shoe is overall-go-useful, ready;
-		vcal "You already brought a performance back to the [show shoe]. You don't need to go back.";
+		unless show shoe is overall-go-useful:
+			vcal "You already brought a performance back to the [show shoe]. You don't need to go back.";
+			ready;
 		already-done;
 	abide-nlb the lift-jump-pass rule;
 	ready;
@@ -1485,6 +1483,15 @@ to say poke-mad-monk:
 to say gpp: now guessed-pear-peach is true;
 
 [no noon]
+
+this is the no-noon-or-rune rule:
+	if player is not in NoNoon and player does not have rho rune, unavailable;
+	if Rho Rune is off-stage:
+		vcp "You try to form the words, but you don't feel brave enough. Perhaps the right sort of relic would help you.[rune-cue]";
+		not-yet;
+	if player is not in NoNoon:
+		vcp "The Rho Rune seems to grow colder in your hands. Perhaps here is not the place.";
+		not-yet;
 
 to say rune-cue: if player does not have rho rune, say "[run paragraph on] You feel as though you're missing something basic and fundamental as well, an emblem to start whatever ritual you need to perform here[one of].[paragraph break]Also, more fourth-wallishly, the solution may be anticlimactic if you figure everything out here before finding said magic item. A few testers said so[or][stopping].[run paragraph on]"
 
