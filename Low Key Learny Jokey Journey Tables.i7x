@@ -123,7 +123,9 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "turning"	"trite"	--	--	false	true	true	false	threat three met me	vc-turning-trite rule	vr-turning-trite rule	--	"[if sprite is off-stage]Perhaps one day you can label the whole adventure [b]TURNING TRITE[r][else]You can label [the sprite] [once-now of vc-turning-trite rule] they have an 'award' of sorts to write their name on[end if]."
 
 a goodrhyme rule (this is the vc-in-bane rule):
-	if player is not in Bane Be Sane See, unavailable;
+	if player is not in Bane Be Sane See:
+		vcal "You already chose your name. It has no effect on game mechanics.";
+		already-done;
 	ready;
 
 this is the vr-choose-name rule:
@@ -637,7 +639,7 @@ this is the vr-docking-diffed rule:
 a goodrhyme rule (this is the vc-despite-dispute rule):
 	if delight dilute is not in location of player and player does not have light lute, unavailable;
 	if sco-despite-dispute is true:
-		vcal "You already dispersed the can of DELIGHT-DILUTE!";
+		vcal "You already dispersed the can of DELIGHT-DILUTE! Also, this message should not be reachable.";
 		already-done;
 	if player has light lute:
 		vcp "That's interesting and tricky, and it'll come in handy later. Trust me.";
@@ -773,8 +775,10 @@ a goodrhyme rule (this is the vc-go-goo rule):
 
 this is the vr-go-goo rule:
 	now sco-go-goo is true;
-	say "A huge pile of weird 'energy burst' snacks appears at your feet. You have no idea whether or not they're nutritious, but with that colorful packaging, they can be sold for a markup [if sco-throw-through is false]during and after the performance[else]at future performances[end if], to ensure the viability of the [show shoe]. Yay, commerce[if shoe-storage < 2], and you don't even need any climate-controlled storage[end if]![paragraph break]You put them off to the side. They'll be useful once the show gets rocking.";
-	if sco-throw-through is true:
+	say "A huge pile of weird 'energy burst' snacks appears at your feet. You have no idea whether or not they're nutritious, but with that colorful packaging, they can be sold for a markup [if sco-throw-through is false]during and after the performance[else]at future performances[end if], to ensure the viability of the [show shoe]. Yay, commerce[if shoe-storage < 2], and you don't even need any climate-controlled storage[end if]!";
+	if sco-throw-through is false:
+		say "[line break]You put them off to the side. They'll be useful once the show gets rocking.";
+	else:
 		now to-number of show shoe is -3;
 
 a goodrhyme rule (this is the vc-bro-brew rule):
@@ -1206,9 +1210,11 @@ a goodrhyme rule (this is the vc-thread-throws rule):
 	if sco-thread-throws is true:
 		vcal "You already tackled [the whale]!";
 		already-done;
-	if player is not in trite trail or sco-excite-exhale is false:
-		vcp "The rose probably only has so much thread. You should only use it [if player is not in trite trail]to capture a big predator[else]once you're fully prepared to make a net and catch [the whale][end if].";
+	if player is not in trite trail:
+		vcp "The rose probably only has so much thread. You should only use it to capture a big predator.";
 		not-yet;
+	if sco-excite-exhale is false:
+		vcp "Yes, you could use a big net to trap [the whale]. You don't feel confident you could throw it well, yet, though.";
 	ready;
 
 this is the vr-thread-throws rule:
@@ -1276,7 +1282,7 @@ a goodrhyme rule (this is the vc-bane-bat rule):
 
 this is the vr-bane-bat rule:
 	now sco-bane-bat is true;
-	say "A particularly lethal bat appears in your hands! It looks like it could really destroy stuff. In particular, this vat. But how to go medieval on it?";
+	say "A particularly lethal bat appears in your hands! It looks like it could really destroy stuff. In particular, this vat. You may need something special or, at leasxt, half-special. But how to go medieval on it?";
 	now to-number of vain vat is 2754;
 	now player has bane bat;
 

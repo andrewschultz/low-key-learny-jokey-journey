@@ -72,7 +72,7 @@ a rhymeguess rule for a table name (called tn) (this is the rhyme-guess-checker 
 		if gyw is false:
 			increment total-good-guesses;
 			if press-pro-warn is false:
-				say "[i][bracket][b]NOTE:[r][i] to switch on the option that shows how many similar rhyme pairs you have left in this area, you can type [b]YO YES[r][i]. To be able to recall what you found, [b]MO MESS[r][i]. To get hints if one letter is wrong for a good guess, [b]PRO PRESS[r][i]. This option is curtailed by default as it may distract people from the main game.[close bracket][r]";
+				say "[i][bracket][b]NOTE:[r][i] to switch on the option that shows how many similar rhyme pairs you have left in this area, you can type [b]GO GUESS[r][i]. To see more detailed guess information with [b]THINK[r][i], type [b]MO MESS[r][i]. To be told if you have one word of a good non-point-scoring good guess, [b]YO YES[r][i]. These all also incorporate the [b]LO LESS[r][i] option, where the leet learner tells you how many rhymes are left to solve. [b]NO NESS[r][i] turns everything.[close bracket][r]";
 				now press-pro-warn is true;
 			current-table-note-x tn; [the -x is for special cases like the mad monk, even though table-note is in the universal file]
 			check-lump-progress;

@@ -6,7 +6,7 @@ volume scoring flags
 
 chapter metadata values
 
-the release number is 1.
+the release number is 2.
 
 entry-in-series is 3.
 
