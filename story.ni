@@ -394,13 +394,25 @@ to say jotty-bonus:
 		say "Maybe there's something else neat, but maybe you can discover something else";
 	else:
 		say "You bet there's some stuff to find that doesn't help you, but it might be good for practice";
+	if Pane P is in jotty jail:
+		say ". Also, with the knotty nail's collapse, a pane to the outside world has appeared. Pane P. Perhaps it will help you remember non-critical things you could have cleaned up"
 
 to decide what number is jail-bonus:
 	decide on boolval of sco-potty-pail + boolval of sco-grotty-grail;
 
+chapter Pane P
+
+Pane P is a rhymable. it is scenery. "Looking through Pane P, you see ... the past, and you feel a bit of regret at the thought of not cleaning up unfinished business by the train tree. There's something more you could do, if you want.".
+
+from-number of Pane P is 2701. to-number of Pane P is 2754.
+
+guess-table of Pane P is table of Bane Be Sane See guesses.
+
 chapter snotty snail
 
 the snotty snail is climbable scenery in Jotty Jail. "There's no way past it. It pretty much blocks the exit. But it doesn't seem to be paying any attention to you at all."
+
+from-number of snotty snail is 5511. to-number of snotty snail is 2804.
 
 volume rooms (end)
 
@@ -418,7 +430,7 @@ carry out lifttaking:
 
 part High Hub
 
-High Hub is a room in Poppin' Part. "A locking lift offers transport, but to where? Well, you have to ask it. [if sco-bye-bub is true]You can, if you want, go back [b]DOWN[r] to[else]At first glance, you seem stuck here with the lift, which may or may not be too cryptic. Or are you? Perhaps there's a way to go back down and[end if] make more good guesses and scrounge for more clues[if delight dilute is in high hub].[paragraph break]Oh yes, that can of Delight-Dilute is still leaking slowly here. You don't need to take care of it[end if]."
+High Hub is a room in Poppin' Part. "A locking lift offers transport, but to where? Well, you have to ask it. [if sco-bye-bub is true]You can, if you want, go back [b]DOWN[r] to[else]At first glance, you seem stuck here with the lift, which may or may not be too cryptic. Or are you? Perhaps there's a way to go back down and[end if] make more good guesses and scrounge for more clues[if delight dilute is in high hub].[paragraph break]Oh yes, that can of Delight-Dilute is still leaking slowly here. You don't need to take care of it[end if]. You could also go back up to the Jotty Jail if you really wanted."
 
 guess-table of High Hub is the table of High Hub guesses.
 
@@ -574,7 +586,9 @@ from-number of bum bout rum route is 5309. to-number of bum bout rum route is 27
 
 chapter bbrr
 
-the bbrr is a privately-named rhymable in Bum Bout Rum Route. printed name is "alternate Rum Route pronunciation".
+the bbrr is a privately-named rhymable in Bum Bout Rum Route. it is scenery. printed name is "Rum Route's alternate pronunciation".
+
+guess-table of bbrr is table of bbrr guesses.
 
 part Nay Nope Slay Slope
 
@@ -717,7 +731,7 @@ from-number of old end is 2653. to-number of old end is 2704.
 
 part Drain Drat Vain Vat
 
-Old End is north of Drain Drat Vain Vat. Drain Drat Vain Vat is in Poppin' Part. printed name of Vain Vat is "[if sco-splain-splat is false]Drain (Drat!) Vain Vat[else]Main Mat[end if]". understand "main mat" as Drain Drat Vain Vat when sco-splain-splat is true. description of Vain Vat is "[if sco-bane-bat is false]You seem stuck here, and that's that. Maybe if you had something to help bash your way out[else if sco-flain-flat is false]You're still stuck in the vat for now. You feel as though your bane bat will help you get medieval on the vat, but the details aren't in place, yet[else if sco-splain-splat is false]The walls look shaky, but you can't find a weak point. Perhaps a taunt would bring enemy henchmen busting said weak spot[else]The way south is open now, thanks to the Pred Pros[end if].". spokeval of Vain Vat is 5. south of Old End is nowhere.
+Old End is north of Drain Drat Vain Vat. Drain Drat Vain Vat is in Poppin' Part. printed name of Vain Vat is "[if sco-splain-splat is false]Drain (Drat!) Vain Vat[else]Main Mat[end if]". understand "main mat" as Drain Drat Vain Vat when sco-splain-splat is true. description of Vain Vat is "[if sco-bane-bat is false]You seem stuck here, and that's that. Maybe if you had something to help bash your way out[else if sco-flain-flat is false]You're still stuck in the vat for now. You feel as though your bane bat will help you get medieval on the vat with some special action, but the details aren't in place, yet[else if sco-splain-splat is false]The walls look shaky, but you can't find a weak point. Perhaps a taunt would bring enemy henchmen busting said weak spot[else]The way south is open now, thanks to the Pred Pros[end if].". spokeval of Vain Vat is 5. south of Old End is nowhere.
 
 check going in Vain Vat:
 	if sco-flain-flat is false and noun is up, say "It's too high to climb out!" instead;
@@ -907,34 +921,6 @@ volume unsorted locations
 
 volume parser rules
 
-Rule for printing a parser error (this is the clue half right words rule):
-	now compare-item is the player;
-	now got-half-match is false;
-	abide by the rhyme-guess-checker rule for the table of first check rhymes;
-	abide by the game-specific-backdrop-check rule;
-	unless guess-table of location of player is table of no good guesses:
-		[if debug-state is true, say "DEBUG location guesses: [location of player], [guess-table of location of player].";]
-		abide by the rhyme-guess-checker rule for guess-table of location of player;
-	let table-list be a list of table names;
-	repeat with fun running through fungible rhymables:
-		let gtt be guess-table of fun;
-		if gtt is table of no good guesses or gtt is listed in table-list, next;
-		add gtt to table-list;
-		now compare-item is fun;
-		abide by the rhyme-guess-checker rule for gtt;
-	repeat with fun running through fungible people:
-		let gtt be guess-table of fun;
-		if gtt is table of no good guesses or gtt is listed in table-list, next;
-		add gtt to table-list;
-		now compare-item is fun;
-		abide by the rhyme-guess-checker rule for gtt;
-	abide by the verb-checker rule;
-	abide by the rhyme-guess-checker rule for table of general good guesses;
-	if press-pro-level is 4 and got-half-match is true, say "The leet learner beeps weirdly. You had one word guessed right." instead;
-	continue the action;
-
-the clue half right words rule is listed first in the for printing a parser error rulebook. [note: this caused a speedup when I first tried it. I'm not sure if this would last, so I'll need to do testing with this line vs with it commented out. ?? ]
-
 volume options
 
 book leet learner options
@@ -948,7 +934,7 @@ welpwowing is leetsetting.
 
 before leetsetting when player does not have the leet learner: say "You don't have the Leet Learner yet, so you can't set this option." instead;
 
-volume gong rules and verbs ( see common file for gong core code)
+volume gong rules and verbs ( see common file for gong core code )
 
 chapter gong rules pre-hub
 
@@ -968,6 +954,8 @@ this-gong-rule of rare reach is the gong-rare-reach rule.
 
 this-gong-rule of hun harm fun farm is the gong-hun-harm-fun-farm rule. [west branch last]
 this-gong-rule of NoNoon is the gong-nonoon rule.
+
+this-gong-rule of jotty jail is gong-jotty-jail rule.
 
 section actual rules
 
@@ -1003,6 +991,12 @@ this is the gong-hun-harm-fun-farm rule:
 
 this is the gong-nonoon rule:
 	if sco-crow-croon is false, uncompleted;
+	completed;
+
+this is the gong-jotty-jail rule:
+	if sco-knotty-nail is false, uncompleted;
+	if sco-grotty-grail is false or sco-potty-pail is false, llp-remaining;
+	if sco-plain-plea is false, llp-remaining;
 	completed;
 
 chapter gong rules post-hub
@@ -1464,6 +1458,7 @@ book versioning
 
 carry out versioning:
 	say "[this-game] received its first code commit on July 3, 2022. The first release to the public was for IFComp 2022, on October 1.";
+	say "[line break]Release 2 occurred 12/12/22. It linked the Jail with the Hub and also allowed for noting if the player had half of a good guess right.";
 
 book xyzzying
 
