@@ -148,18 +148,21 @@ this is the vr-choose-name rule:
 		now the player is neuter;
 	now sco-choose-name is true;
 	say "You walk through the door and tumble down to...";
-	move the player to Roaring Rocks;
-	if sco-plain-plea is false, max-down; [no way back to PLAIN PLEA]
+	move the player to Roaring Rocks; [since Pane P appears in Jotty Jail this doesn't matter any more ]
 
 a goodrhyme rule (this is the vc-plain-plea rule):
-	if player is not in Bane Be Sane See, unavailable;
+	if player is not in Bane Be Sane See and pane p is not fungible, unavailable;
 	if sco-plain-plea is true:
 		vcal "You already made a plain plea.";
 		already-done;
 	ready;
 
 this is the vr-plain-plea rule:
-	say "Your plain plea seems perfect for the situation. The train tree grows brighter. It pervades the air for a bit, then dissipates.";
+	if player is in bane be sane see:
+		say "Your plain plea seems perfect for the situation. The train tree grows brighter. It pervades the air for a bit, then dissipates.";
+	else:
+		say "Pane P vanishes as you look through it and express sorrow for time lost, even though you've made it this far.";
+		moot Pane P;
 	now sco-plain-plea is true;
 
 a goodrhyme rule (this is the vc-boring-box rule):
@@ -500,7 +503,7 @@ this is the vr-grotty-grail rule:
 a goodrhyme rule (this is the vc-potty-pail rule):
 	if player is not in jotty jail, unavailable;
 	if sco-potty-pail is true:
-		vcal "No. The potty pail was a relief to find, but enough of past discoveries. You need to get out of here.";
+		vcal "No. The potty pail was a relief to find, and now you need to look for [jail-out] this jail.";
 		already-done;
 	ready;
 
@@ -510,13 +513,18 @@ this is the vr-potty-pail rule:
 
 a goodrhyme rule (this is the vc-knotty-nail rule):
 	if player is not in jotty jail, unavailable;
+	if sco-knotty-nail is true:
+		vcal "You don't need to re-locate the knotty nail. You can just go [b]OUT[r].";
+		already-done;
 	ready;
 
 this is the vr-knotty-nail rule:
 	now sco-knotty-nail is true;
-	say "Aha! There's something flawed. A knotty nail. You pull at it, and slowly it comes loose. It's surprisingly sharp. Then you start chipping away at various cracks until they grow bigger and crumble. The snotty snail is alerted, but by then you've got enough debris in your cell to fend it off. You flee, not caring where you're going...";
-	if sco-potty-pail is false, max-down;
-	if sco-grotty-grail is false, max-down;
+	say "Aha! There's something flawed. A knotty nail. You pull at it, and slowly it comes loose. It's surprisingly sharp. Then you start chipping away at various cracks until they grow bigger and crumble. The snotty snail is alerted, but by then you've got enough debris in your cell to fend it off. And it's not far down...";
+	now high hub is mapped below jotty jail;
+	now jotty jail is mapped above high hub;
+	if sco-plain-plea is false:
+		move Pane P to jotty jail;
 	take-lift High Hub;
 
 this is the vh-piss-poor rule: say "A crude insult, not a crude image.";
@@ -1479,6 +1487,14 @@ to say gpp: now guessed-pear-peach is true;
 [no noon]
 
 to say rune-cue: if player does not have rho rune, say "[run paragraph on] You feel as though you're missing something basic and fundamental as well, an emblem to start whatever ritual you need to perform here[one of].[paragraph break]Also, more fourth-wallishly, the solution may be anticlimactic if you figure everything out here before finding said magic item. A few testers said so[or][stopping].[run paragraph on]"
+
+[in the jail]
+
+to say jail-out:
+	if sco-knotty-nail is false:
+		say "a way out of";
+	else:
+		say "more beyond";
 
 [hub 0. lift and transport]
 
