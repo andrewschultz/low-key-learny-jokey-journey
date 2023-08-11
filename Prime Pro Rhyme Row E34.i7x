@@ -41,16 +41,20 @@ a rhymeguess rule for a table name (called tn) (this is the rhyme-guess-checker 
 			unless the player's command matches the regular expression "^([mist-regex entry])$", next;
 		else if there is a mist-1 entry:
 			if press-pro-level < 4:
-				unless the player's command matches the regular expression "^([mist-1 entry]) ([mist-2 entry])$", next;
+				if there is a mist-2 entry:
+					unless the player's command matches the regular expression "^([mist-1 entry]) ([mist-2 entry])$", next;
+				else:
+					unless the player's command matches the regular expression "^([mist-1 entry])$", next;
 			if the player's command matches the regular expression "^([mist-1 entry])\b":
 				increment temp;
-			if the player's command matches the regular expression "\b([mist-2 entry])$":
+			if there is a mist-2 entry and the player's command matches the regular expression "\b([mist-2 entry])$":
 				increment temp;
 			if temp is 2:
 				unless the player's command matches the regular expression "^([mist-1 entry]) +([mist-2 entry])$", next;
 			else if temp is 1:
-				now got-half-match is true;
-				next;
+				if there is a mist-2 entry:
+					now got-half-match is true;
+					next;
 			else:
 				next;
 		if there is a mist-rule entry:
