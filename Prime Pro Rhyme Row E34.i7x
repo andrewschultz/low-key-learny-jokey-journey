@@ -193,7 +193,7 @@ rule for printing a parser error when the latest parser error is the noun did no
 		the rule succeeds;
 	continue the action;
 
-the goto reject rule is listed after the clue half right words rule in the for printing a parser error rulebook.
+the goto reject rule is listed after the look through good guess tables rule in the for printing a parser error rulebook.
 
 rule for printing a parser error (this is the default parser error notification rule):
 	if action-to-be is the examining action or action-to-be is the reading action or action-to-be is the taking action or action-to-be is the talktoing action:
