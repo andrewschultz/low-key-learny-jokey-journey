@@ -165,7 +165,7 @@ You are now repelled by a guide gong if you try to go down a path where you have
 
 @prong
 >pride prong
-You are now blocked from paths where no branches contain any point-scoring activities, critical or bonus.
+You are now blocked from paths with no points, critical or bonus, available in any branches.
 
 @hom
 >two too
@@ -693,6 +693,11 @@ by one point
 }}CURMIN++
 }}CURMINBONUS++
 
+@all,rej
+{--all}#testcase-run-vr-plain-plea-rule-default
+{--rej}#testcase-check-vc-plain-plea-rule-fallthrough
+Your plain plea seems perfect for the situation. The train tree grows brighter. It pervades the air for a bit, then dissipates.
+
 @hfull
 #testcase-rules-hint-player-rule-if-current-score->-0
 >hint me
@@ -731,6 +736,11 @@ Most special commands are more than one word. VERBS will give a list of useful, 
 >jane g
 by one point
 }}SCORE++
+
+@all,rej
+{--rej}#testcase-check-vc-in-bane-rule-fallthrough
+{--all}#testcase-run-vr-choose-name-rule-fallthrough
+You walk through the door and tumble down to...
 
 @all
 #testcase-room-names-roaring-rocks
@@ -810,6 +820,11 @@ There's no way back to where you started.
 >boring box
 by one point
 }}SCORE++
+
+@all,rej
+{--all}#testcase-run-vr-boring-box-rule-default
+{--rej}#testcase-check-vc-boring-box-rule-fallthrough
+You know nice things come in humble packages, and anyway, anything too garish might've gotten confiscated. The roaring rocks crumble, leaving behind storing stocks and ... the boring box you'd hoped for. You totally want to OPEN it!
 
 @hfull
 >ll
@@ -922,9 +937,9 @@ The mad monk is blocking you right now.
 >sad sunk
 by one point
 \\
-#testcase-check-vc-sad-sunk-rule-if-sco-sad-sunk-is-true
+#+testcase-check-vc-sad-sunk-rule-if-sco-sad-sunk-is-true
 >sad sunk
-WRONG
+You already insulted the mad monk's serenity.
 \\
 >undo
 >undo
@@ -1030,6 +1045,11 @@ by one point
 }}SCORE++
 }}CURMIN++
 }}CURMINBONUS++
+
+@all,rej
+{--all}#testcase-run-vr-gad-gunk-rule-default
+{--rej}#testcase-check-vc-gad-gunk-rule-fallthrough
+Chiding the monk's cleanliness, groundless or otherwise, is an effective insult, though it doesn't win the war. Have a bonus point.
 
 @verbs
 #testcase-mainverbs-check-attacking-if-noun-is-mad-monk
@@ -1188,6 +1208,11 @@ by one point
 by one point
 }}SCORE++
 
+@all,rej
+{--all}#testcase-run-vr-bad-bunk-rule-fallthrough
+{--rej}#testcase-check-vc-bad-bunk-rule-fallthrough
+The mad monk blinks a bit. That one hurt. Your attack was simple but effective. Maybe one more...
+
 @hfull
 #testcase-values-from-number-of-mad-monk-is-2654
 >ll mad monk
@@ -1213,6 +1238,10 @@ You already insulted the mad monk's truthfulness.
 >sad sunk
 by one point
 }}SCORE++
+
+@all,rej
+{--all}#testcase-run-vr-sad-sunk-rule-fallthrough
+{--rej}#testcase-check-vc-sad-sunk-rule-fallthrough
 
 @hfull
 >ll
@@ -1415,6 +1444,11 @@ GROW GRUDGE. (-)
 by one point
 }}SCORE++
 
+@all,rej
+{--all}#testcase-run-vr-grow-grudge-rule-default
+{--rej}#testcase-check-vc-grow-grudge-rule-fallthrough
+As your mood hardens, so does the sludge! But you don't see that right away. You're busy accepting you're not perfect and realizing you don't have to be and recognizing sometimes stewing is better than lashing out. The sludge even recedes a bit. You can go any of the four directions now.
+
 @hfull
 >hint
 You're done here in No-Nudge Slow Sludge.
@@ -1599,6 +1633,11 @@ by one point
 }}CURMIN++
 }}CURMINBONUS++
 
+@all,rej
+{--all}#testcase-run-vr-piss-poor-rule-default
+{--rej}#testcase-check-vc-piss-poor-rule-fallthrough
+The wood grains in the door almost seem to frown, and it morphs into an almost human form before shambling away at such an apt blow-off. Not really vulgar, but showing you can hang around, and you don't need to waste the really spicy stuff on it. Go, you!
+
 @verbs
 #testcase-mainverbs-check-swearing-obscenely-if-miss-more-diss-door-is-moot
 >bother
@@ -1634,6 +1673,11 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >done dorm
 by one point
 }}SCORE++
+
+@all,rej
+{--all}#testcase-run-vr-done-dorm-rule-default
+{--rej}#testcase-check-vc-done-dorm-rule-fallthrough
+A done dorm pops up out of nowhere! You probably can't just go entering it, though. A nice, exclusive place like that probably requires documentation of worth and being an interesting person to hang around and stuff. All sorts of bureaucracy, don't you know.
 
 @hfull
 #testcase-rules-hint-stun-storm-rule-if-sco-fun-form-is-false
@@ -1688,6 +1732,11 @@ You must apply correctly to enter.
 >fun form
 by one point
 }}SCORE++
+
+@all,rej
+{--all}#testcase-run-vr-fun-form-rule-default
+{--rej}#testcase-check-vc-fun-form-rule-fallthrough
+You actually, well, have fun saying why you should be certified to stay in the done dorm until enough time has passed.
 
 @verbs
 #+testcase-mainverbs-check-entering-done-dorm-default
@@ -1840,6 +1889,11 @@ SEE SUNK brings the tree trunk down. (-)
 by one point
 }}SCORE++
 
+@all,rej
+{--all}#testcase-run-vr-see-sunk-rule-default
+{--rej}#testcase-check-vc-see-sunk-rule-fallthrough
+The tree trunk recedes slightly. It seems to be hollow on top. Perhaps there is something in the tree trunk. But what?
+
 @hfull
 #+testcase-values-from-number-of-tttt-is-5360
 >ll
@@ -1879,6 +1933,11 @@ GEE JUNK reveals what's in the tree trunk. (-)
 >gee junk
 by one point
 }}SCORE++
+
+@all,rej
+{--all}#testcase-run-vr-gee-junk-rule-default
+{--rej}#testcase-check-vc-gee-junk-rule-fallthrough
+My goodness, yes! There is something in the tree trunk! It's marked FREE FRUIT.
 
 @hfull
 #testcase-rules-hint-tree-trunk-rule-fallthrough
@@ -2021,6 +2080,11 @@ It reveals nothing of the free fruit inside. You feel like you just banged on a 
 by one point
 }}SCORE++
 
+@all,rej
+{--all}#testcase-run-vr-whee-woot-rule-default
+{--rej}#testcase-check-vc-whee-woot-rule-fallthrough
+The FREE FRUIT seems to glow a bit from your praise.
+
 @hfull
 #testcase-rules-hint-tttt-rule-if-free-fruit-is-not-moot
 #testcase-rules-hint-free-fruit-rule-fallthrough
@@ -2071,6 +2135,11 @@ The Leet Learner shakes back and forth. Something you said sounded right, but it
 >pear peach
 by one point
 }}SCORE++
+
+@all,rej
+{--all}#testcase-run-vr-pear-peach-rule-default
+{--rej}#testcase-check-vc-pear-peach-rule-fallthrough
+A weird fruit you haven't quite seen before pops into your hand as the FREE FRUIT vanishes. Hooray!
 
 @verbs
 #testcase-mainverbs-check-eating-if-noun-is-pear-peach
@@ -2218,6 +2287,11 @@ Make Just Jack BUSSED BACK. (-)
 by one point
 }}SCORE++
 
+@all,rej
+{--all}#testcase-run-vr-bussed-back-rule-default
+{--rej}#testcase-check-vc-bussed-back-rule-fallthrough
+Just Jack knows his time is up. He takes off. Behind them, you find something ... a sussed sack! Though looking at it, it's also sus. It's both light and heavy, useful and useless. Perhaps you'll know what to do with it when the time comes.
+
 @hin
 #testcase-rulestubs-hint-sus-sack-rule-default
 >hint sus sack
@@ -2291,6 +2365,11 @@ The track seems to end here. You can really only go back west, unless you figure
 >exits
 EXIT LIST:
 west: No-Nudge Slow Sludge.
+
+@all,rej
+{--all}#testcase-run-vr-crust-crack-rule-default
+{--rej}#testcase-check-vc-crust-crack-rule-fallthrough
+A rumbling. Passage opens to the north.
 
 >crust crack
 by one point
@@ -2446,6 +2525,11 @@ Make a BARE BEACH. (-)
 by one point
 }}SCORE++
 
+@all,rej
+{--all}#testcase-run-vr-bare-beach-rule-default
+{--rej}#testcase-check-vc-bare-beach-rule-fallthrough
+The rare reach fills out a bit, sucking the pear peach into it. There is now a bare beach. But it's not completely bare! You see a deep dune rise up.
+
 @verbs
 #testcase-mainverbs-check-climbing-if-noun-is-deep-dune
 >climb deep dune
@@ -2561,6 +2645,11 @@ Make the deep dune SEEP SOON. (-)
 by one point
 }}SCORE++
 
+@all,rej
+{--all}#testcase-run-vr-seep-soon-rule-default
+{--rej}#testcase-check-vc-seep-soon-rule-fallthrough
+The deep dune shifts a bit. Sand starts leaking a bit. Not enough for you to sit and wait and watch. You have other stuff to do.
+
 @hfull
 #testcase-rules-hint-deep-dune-rule-if-flag-reap-rune-is-false
 >hint deep dune
@@ -2611,6 +2700,11 @@ REAP RUNE. (-)
 >reap rune
 by one point
 }}SCORE++
+
+@all,rej
+{--all}#testcase-run-vr-reap-rune-rule-default
+{--rej}#testcase-check-vc-reap-rune-rule-fallthrough
+What do you know? You totally believe in yourself as you reach into the deep dune, and a rune turns up! It is in the shape of the Greek letter Rho. The deep dune, having served its purpose, sinks into the general landscape.
 
 @hfull
 #testcase-rules-hint-rare-reach-rule-if-sco-reap-rune-is-true
@@ -2728,6 +2822,11 @@ UN ARM or UNARM. (-)
 >unarm
 by one point
 }}SCORE++
+
+@all,rej
+{--all}#testcase-run-vr-un-arm-rule-default
+{--rej}#testcase-check-vc-un-arm-rule-fallthrough
+That wasn't too bad. Whoever it was guarding the way north sounds very disappointed that their oppression may now take actual effort!
 
 @hfull
 #testcase-rules-hint-fun-farm-rule-fallthrough
@@ -2887,6 +2986,11 @@ GO GOON. (-)
 by one point
 }}SCORE++
 
+@all,rej
+{--all}#testcase-run-vr-go-goon-rule-default
+{--rej}#testcase-check-vc-go-goon-rule-fallthrough
+The Rho Rune glows, and you feel confidence as at least the first of the enemies fled. But it's so empty here. What could grow?
+
 @hfull
 #+testcase-values-from-number-of-nonoon-is-2604
 >ll
@@ -2915,6 +3019,11 @@ COCOON, with or without a space. (-)
 >cocoon
 by one point
 }}SCORE++
+
+@all,rej
+{--all}#testcase-run-vr-co-coon-rule-default
+{--rej}#testcase-check-vc-co-coon-rule-fallthrough
+A cocoon appears! It's not ready to hatch yet. Maybe not for a while. Perhaps you could get time to move in weird ways.
 
 @hin
 #testcase-rulestubs-hint-nonoon-rule-default
@@ -2973,6 +3082,11 @@ MO MOON. (-)
 by one point
 }}SCORE++
 
+@all,rej
+{--all}#testcase-run-vr-mo-moon-rule-default
+{--rej}#testcase-check-vc-mo-moon-rule-fallthrough
+A moon appears in the night-ish sky.
+
 @hfull
 #+testcase-values-from-number-of-nonoon-is-2604
 >ll
@@ -3006,6 +3120,11 @@ SO SOON. (-)
 >so soon
 by one point
 }}SCORE++
+
+@all,rej
+{--all}#testcase-run-vr-so-soon-rule-default
+{--rej}#testcase-check-vc-so-soon-rule-fallthrough
+You sensed time speeding up. The cocoon rustles. Perhaps one more sign signifying daytime will cause it to bust out.
 
 @hfull
 #+testcase-values-from-number-of-nonoon-is-2604
@@ -3057,6 +3176,13 @@ CROW CROON. (-)
 >crow croon
 by one point
 }}SCORE++
+
+@all,rej
+{--all}#testcase-run-vr-crow-croon-rule-default
+{--rej}#testcase-check-vc-crow-croon-rule-fallthrough
+The crow croons! Your Rho Rune glows, then bursts in unison with the cocoon. A ... well, not quite a monster, but no animal you've seen before ... flies out into the sky.
+It is met by the Burning Bright Spurning Sprite! "Threat two!" screeches the Burning Bright Spurning Sprite. A fight ensues, and the beast you've created gets away.
+"Now you've done it!" says the Burning Bright Spurning Sprite. "That wasn't supposed to happen. Trust me. And no offense, you've learned the rules to get by, but you haven't learned the REAL rules. Maybe a spell in jail will help you."
 
 @all
 #testcase-room-names-jotty-jail
@@ -3159,18 +3285,83 @@ No trail opens up, but even if it did, the snotty snail would push you back from
 >zknotty nail
 {$GREENCORE}
 
+@gong
+##balance undos
+>knotty nail
+by one point
+\\
+>u
+That guide gong, again, rings to notify you that you don't need to go back through Jotty Jail.
+\\
+>undo
+>undo
+
+@prong
+##balance undos
+>knotty nail
+by one point
+\\
+>u
+`Jotty Jail
+\\
+>undo
+>undo
+\\
+>potty pail
+by one point
+\\
+>knotty nail
+by one point
+\\
+>d
+\\
+>u
+`Jotty Jail
+\\
+>undo
+>undo
+>undo
+>undo
+\\
+>grotty grail
+by one point
+\\
+>knotty nail
+by one point
+\\
+>d
+\\
+>u
+`Jotty Jail
+\\
+>undo
+>undo
+>undo
+>undo
+
 @!min
 >grotty grail
 by one point
 }}SCORE++
 }}CURMIN++
 }}CURMINBONUS++
-\\
+
+@all,rej
+{--all}#testcase-run-vr-grotty-grail-rule-default
+{--rej}#testcase-check-vc-grotty-grail-rule-fallthrough
+My goodness! Look what you uncovered! A grail is useless in your current reduced circumstances, but it's a morale boost, because everyone knows bad guys just don't go finding grails. Well, maybe they find obscenely rich cursed ones, but this is about as ordinary as a grail can be. Still, yay grails.
+
+@!min
 >potty pail
 by one point
 }}SCORE++
 }}CURMIN++
 }}CURMINBONUS++
+
+@all,rej
+{--all}#testcase-run-vr-potty-pail-rule-default
+{--rej}#testcase-check-vc-potty-pail-rule-fallthrough
+While you don't plan to be here long enough to use the pail, you're glad to have found it and proven your, uh, emergency preparedness. Perhaps the next soul stuck in here, without your abilities, will appreciate it. Or perhaps you'll figure what to do so nobody is stuck here again.
 
 @hin
 #testcase-rulestubs-hint-lurking-lump-rule-default
@@ -3215,6 +3406,12 @@ KNOTTY NAIL. (-)
 >knotty nail
 by one point
 }}SCORE++
+
+@all,rej
+{--all}#testcase-run-vr-knotty-nail-rule-default
+{--rej}#testcase-check-vc-knotty-nail-rule-fallthrough
+{--all}#testcase-run-vr-knotty-nail-rule-fallthrough
+Aha! There's something flawed. A knotty nail. You pull at it, and slowly it comes loose. It's surprisingly sharp. Then you start chipping away at various cracks until they grow bigger and crumble. The snotty snail is alerted, but by then you've got enough debris in your cell to fend it off. You flee, not caring where you're going...
 
 @all
 #testcase-room-names-high-hub
@@ -3412,6 +3609,11 @@ BYE BUB. (-)
 }}CURMIN++
 }}CURMINBONUS++
 
+@all,rej
+{--all}#testcase-run-vr-bye-bub-rule-default
+{--rej}#testcase-check-vc-bye-bub-rule-fallthrough
+And just like that, you find the way down. You want to leave, and that's that. You hope something new is below ... and it is! A sturdy stalk pops through for you to climb down, and you do, back to [nnss]. Perhaps you will find additional inspiration.
+
 @hfull
 >w
 >n
@@ -3528,6 +3730,11 @@ Have a WORDY WALK. (-)
 }}SCORE++
 }}CURMIN++
 }}CURMINBONUS++
+
+@all,rej
+{--all}#testcase-run-vr-wordy-walk-rule-default
+{--rej}#testcase-check-vc-wordy-walk-rule-fallthrough
+You take a nice long wordy walk, and it fills you with ideas and things to try when you go back to [high hub].
 
 @hfull
 >ll stalk
@@ -3656,12 +3863,22 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 by one point
 }}SCORE++
 
+@all,rej
+{--all}#testcase-run-vr-rocking-rift-rule-fallthrough
+{--rej}#testcase-check-vc-rocking-rift-rule-fallthrough
+
 @all
 #testcase-lift-before-table-of-lift-texts-show-shoe
 You wonder if a concert will really take your mind off things. You wonder what things there are to take your mind off. Before you finish wondering, the locking lift drops you by a large amphitheater. Empty, but big enough for a good show.
 \\
 #testcase-room-names-no-new-show-shoe
 `No-New-Show Shoe
+
+@all
+#+testcase-run-vr-go-goo-rule-default
+>go goo
+A huge pile of weird "energy burst" snacks appears at your feet. You have no idea whether or not they're nutritious, but with that colorful packaging, they can be sold for a markup during and after the performanceat future performances, to ensure the viability of the No-New-Show Shoe. Yay, commerce!
+You put them off to the side. They'll be useful once the show gets rocking.
 
 @rej
 >rocking rift
@@ -3875,6 +4092,18 @@ by one point
 }}CURMIN++
 }}CURMINBONUS++
 
+@all,rej
+{--all}#testcase-run-vr-go-goo-rule-default
+{--rej}#testcase-check-vc-go-goo-rule-fallthrough
+A huge pile of weird 'energy burst' snacks appears at your feet. You have no idea whether or not they're nutritious, but with that colorful packaging, they can be sold for a markup [if sco-throw-through is false]during and after the performance[else]at future performances[end if], to ensure the viability of the Whoah-Woo-Show Shoe. Yay, commerce[if shoe-storage < 2], and you don't even need any climate-controlled storage[end if]!
+You put them off to the side. They'll be useful once the show gets rocking.
+
+@all,rej
+{--all}#testcase-run-vr-go-goo-rule-default
+{--rej}#testcase-check-vc-go-goo-rule-fallthrough
+A huge pile of weird 'energy burst' snacks appears at your feet. You have no idea whether or not they're nutritious, but with that colorful packaging, they can be sold for a markup at future performances, to ensure the viability of the Whoah-Woo-Show Shoe. Yay, commerce, and you don't even need any climate-controlled storage!
+!You put them off to the side. They'll be useful once the show gets rocking.
+
 @rej
 #testcase-check-vc-go-goo-rule-if-sco-go-goo-is-true
 >go goo
@@ -3915,6 +4144,11 @@ FLOW FLUE. (-)
 by one point
 }}SCORE++
 
+@all,rej
+{--all}#testcase-run-vr-flow-flue-rule-default
+{--rej}#testcase-check-vc-flow-flue-rule-fallthrough
+A whole mess of tubes appears! Stuff could totally zoom through it. But many of them look badly damaged.
+
 @rej
 #testcase-check-vc-flow-flue-rule-if-sco-flow-flue-is-true
 >flow flue
@@ -3937,6 +4171,11 @@ GLOW GLUE. (-)
 >glow glue
 by one point
 }}SCORE++
+
+@all,rej
+{--all}#testcase-run-vr-glow-glue-rule-default
+{--rej}#testcase-check-vc-glow-glue-rule-fallthrough
+A rather large tube of Glow Glue drops by near you.
 
 @rej
 #testcase-check-vc-glow-glue-rule-if-sco-glow-glue-is-true
@@ -3973,6 +4212,11 @@ BRO BREW. (-)
 by one point
 }}SCORE++
 
+@all,rej
+{--all}#testcase-run-vr-bro-brew-rule-default
+{--rej}#testcase-check-vc-bro-brew-rule-fallthrough
+Through half of the Flow Flue, you watch as Bro Brew is pumped in.
+
 @rej
 #testcase-check-vc-bro-brew-rule-if-sco-bro-brew-is-true
 >bro brew
@@ -3996,6 +4240,11 @@ STOW STEW. (-)
 by one point
 }}SCORE++
 
+@all,rej
+{--all}#testcase-run-vr-stow-stew-rule-default
+{--rej}#testcase-check-vc-stow-stew-rule-fallthrough
+Some stew starts flowing through some of the flues.
+
 @rej
 #testcase-check-vc-stow-stew-rule-if-sco-stow-stew-is-true
 >stow stew
@@ -4008,6 +4257,11 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >crow crew
 by one point
 }}SCORE++
+
+@all,rej
+{--all}#testcase-run-vr-crow-crew-rule-default
+{--rej}#testcase-check-vc-crow-crew-rule-fallthrough
+The Crow Crew appears! They look ready to give a performance replete with humor, wit, song, pyrotechnics, and so forth. You just need to find a way to facilitate a grand entrance.
 
 @hfull
 #testcase-values-from-number-of-crow-crew-is-2704
@@ -4060,6 +4314,11 @@ WRONG
 by one point
 }}SCORE++
 
+@all,rej
+{--all}#testcase-run-vr-ho-who-rule-default
+{--rej}#testcase-check-vc-ho-who-rule-fallthrough
+"Ho! WHO?" you call out. The crowd seems to react favorably, waiting for the right phrase to go totally crazy.
+
 @rej
 #testcase-postreject-table-of-verb-checks-vc-ho-who-rule
 #testcase-check-vc-ho-who-rule-if-sco-ho-who-is-true
@@ -4093,6 +4352,11 @@ WRONG
 >yo you
 by one point
 }}SCORE++
+
+@all,rej
+{--all}#testcase-run-vr-yo-you-rule-default
+{--rej}#testcase-check-vc-yo-you-rule-fallthrough
+"Yo! YOU!" you cry, and there's a slightly undignified call-and-response, featuring both you and the crowd asking 'Ho! Who?' and responding. It's not brilliant discourse, but everyone's all jazzed for a bigger show now.
 
 @all
 #+testcase-room-names-no-new-show-shoe
@@ -4167,6 +4431,14 @@ THROW THROUGH. (-)
 >throw through
 by one point
 }}SCORE++
+
+@all,rej
+{--all}#testcase-run-vr-throw-through-rule-default
+{--all}#testcase-run-vr-throw-through-rule-fallthrough
+{--rej}#testcase-check-vc-throw-through-rule-fallthrough
+The Crow Crew makes a dramatic entrance, thanks to your planning! The show is a financial and emotional success. Everyone congratulates you. Surely, you must take a reward! Something!
+You can't think of anything you really need. Then, something that just wasn't used in the concert. A light lute! It's, well, something. If you were resourceful enough to get things working here, who knows what you can do with it?
+Your job here done, you return back...
 
 @hin
 #testcase-rulestubs-hint-light-lute-rule-default
@@ -4316,6 +4588,11 @@ You're done here in Whoah-Woo-Show Shoe.
 >shocking shift
 by one point
 }}SCORE++
+
+@all,rej
+{--all}#testcase-run-vr-shocking-shift-rule-fallthrough
+{--rej}#testcase-check-vc-shocking-shift-rule-fallthrough
+WRONG
 
 @all
 #testcase-lift-before-table-of-lift-texts-sore-souls
@@ -4479,6 +4756,11 @@ SHORE SHOALS. (-)
 by one point
 }}SCORE++
 
+@all,rej
+{--all}#testcase-run-vr-shore-shoals-rule-default
+{--rej}#testcase-check-vc-shore-shoals-rule-fallthrough
+The area is much less desolate now. It feels like it could be inhabited.
+
 @mis
 #+testcase-mistakes-table-of-sore-souls-gore-goals-guesses-poor-pour-pore-polls-poles
 >poor polls
@@ -4553,6 +4835,18 @@ You have already rehabilitated the sore souls' gore goals!
 #+testcase-room-names-sore-souls-gore-goals
 `Shore Shoals
 
+@rej
+##balance undos
+>shore shoals
+by one point
+\\
+>lore lols
+#+testcase-run-vr-lore-lols-rule-default
+Why, yes, this place could use myths of creation and so forth.
+\\
+>undo
+>undo
+
 ##RBRS-SHUFFLECONDITION=1>0
 
 @!min
@@ -4561,19 +4855,30 @@ by one point
 }}SCORE++
 }}CURMIN++
 }}CURMINBONUS++
-\\
+
+@all,rej
+{--all}#testcase-run-vr-night-newt-rule-default
+{--rej}#testcase-check-vc-night-newt-rule-fallthrough
+A night newt appears and scurries around. You lose it in the scenery, but the place feels livelier now.
+
+@!min
 >kite coot
 by one point
 }}SCORE++
 }}CURMIN++
 }}CURMINBONUS++
 
+@all,rej
+{--all}#testcase-run-vr-kite-coot-rule-default
+{--rej}#testcase-check-vc-kite-coot-rule-fallthrough
+The kite coot is an odd animal for sure but a worthy addition to the menagerie here.
+
 @hfull
-#testcase-values--from-number-of-kite-coot-is--4
+#testcase-values-from-number-of-kite-coot-is--4
 >ll kite coot
 WRONG
 \\
-#testcase-values--from-number-of-night-newt-is--4
+#testcase-values-from-number-of-night-newt-is--4
 >ll night newt
 WRONG
 
@@ -4600,6 +4905,11 @@ by one point
 }}SCORE++
 }}CURMIN++
 }}CURMINBONUS++
+
+@all,rej
+{--all}#testcase-run-vr-lore-lols-rule-default
+{--rej}#testcase-check-vc-lore-lols-rule-fallthrough
+Why, yes, this place could use myths of creation and so forth for when it becomes habitable.
 
 @rej
 #testcase-postreject-table-of-verb-checks-vc-night-newt-rule
@@ -4644,6 +4954,11 @@ FOUR FOALS. (-)
 >four foals
 by one point
 }}SCORE++
+
+@all,rej
+{--all}#testcase-run-vr-four-foals-rule-default
+{--rej}#testcase-check-vc-four-foals-rule-fallthrough
+Four foals begin frolicking! They thank you briefly before running away. They've made things a big cheerier.
 
 @verbs
 #testcase-mainverbs-check-attacking-if-player-is-in-gore-goals
@@ -4691,6 +5006,11 @@ MORE MOLES. (-)
 >more moles
 by one point
 }}SCORE++
+
+@all,rej
+{--all}#testcase-run-vr-more-moles-rule-default
+{--rej}#testcase-check-vc-more-moles-rule-fallthrough
+Since the ground's slightly holey here, you surmise the existence of moles and suggest there should be more.
 
 @hin
 #testcase-rulestubs-hint-red-rose-rule-default
@@ -4845,6 +5165,11 @@ WRONG
 >gawking gift
 by one point
 }}SCORE++
+
+@all,rej
+{--all}#testcase-run-vr-gawking-gift-rule-fallthrough
+{--rej}#testcase-check-vc-gawking-gift-rule-fallthrough
+WRONG
 
 @all
 #testcase-lift-before-table-of-lift-texts-rum-route
@@ -5015,6 +5340,11 @@ DUMB DOUBT. (-)
 by one point
 }}SCORE++
 
+@all,rej
+{--all}#testcase-run-vr-dumb-doubt-rule-default
+{--rej}#testcase-check-vc-dumb-doubt-rule-fallthrough
+You create dumb doubt in the mind of your adversaries. This would be rude if they weren't mean, but they are, so it all feels creative and appropriate. How to expand that doubt, now?
+
 @hfull
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.50.)
@@ -5052,6 +5382,11 @@ The red rose can generate SAID SOS. (-)
 by one point
 }}SCORE++
 
+@all,rej
+{--all}#testcase-run-vr-said-sos-rule-default
+{--rej}#testcase-check-vc-said-sos-rule-fallthrough
+Your said-sos make sense. You're ready for the crescendo.
+
 @hfull
 >ll rose
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.33, 0.67.)
@@ -5075,6 +5410,11 @@ UMM OUT. (-)
 >umm out
 by one point
 }}SCORE++
+
+@all,rej
+{--all}#testcase-run-vr-umm-out-rule-default
+{--rej}#testcase-check-vc-umm-out-rule-fallthrough
+With the confidence instilled by instilling dumb doubt, you finish the deal. You notice a valley below. You should go down when you are ready.
 
 @hfull
 >ll
@@ -5213,6 +5553,11 @@ HEY HOPE. (-)
 by one point
 }}SCORE++
 
+@all,rej
+{--all}#testcase-run-vr-hey-hope-rule-default
+{--rej}#testcase-check-vc-hey-hope-rule-fallthrough
+How exhilarating! The hope is real! With that, a pall lifts over your depression. But not enough. Yet. You must finish the job.
+
 @hfull
 #+testcase-values-from-number-of-nay-nope-slay-slope-is-5359
 >ll
@@ -5246,6 +5591,11 @@ K COPE. (-)
 >k cope
 by one point
 }}SCORE++
+
+@all,rej
+{--all}#testcase-run-vr-k-cope-rule-default
+{--rej}#testcase-check-vc-k-cope-rule-fallthrough
+The hope that started turns into coping, with a bit of slang. You feel spiritually refreshed. You take the lift back to the [hub].
 
 @rej
 #testcase-check-vc-k-cope-rule-if-sco-hey-hope-is-false
@@ -5312,6 +5662,11 @@ GROKKING GRIFT. (-)
 >grokking grift
 by one point
 }}SCORE++
+
+@all,rej
+{--all}#testcase-run-vr-grokking-grift-rule-fallthrough
+{--rej}#testcase-check-vc-grokking-grift-rule-fallthrough
+WRONG
 
 @all
 #testcase-lift-before-table-of-lift-texts-slight-sleaze
@@ -5457,6 +5812,12 @@ by one point
 }}CURMIN++
 }}CURMINBONUS++
 
+@all,rej
+{--all}#testcase-run-vr-tight-tease-rule-default
+{--rej}#testcase-check-vc-tight-tease-rule-fallthrough
+You figure, if you can't beat 'em, join 'em, or just pretend to. You demand something more risque, which the slight sleaze is unable to provide. This doesn't win the war, but it wins a small, satisfying pointless side battle.
+Okay, yeah, I may've said this isn't that sort of game, but you're only getting a bonus point here, and this one just fit too well.
+
 @hfull
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
@@ -5474,6 +5835,11 @@ BRIGHT BREEZE. (-)
 >bright breeze
 by one point
 }}SCORE++
+
+@all,rej
+{--all}#testcase-run-vr-bright-breeze-rule-default
+{--rej}#testcase-check-vc-bright-breeze-rule-fallthrough
+The local weather shifts slightly but for the better. You feel cheerier and more open to foisting sarcasm on those that deserve it.
 
 @rej
 #testcase-check-vc-bright-breeze-rule-if-sco-bright-breeze-is-true
@@ -5502,6 +5868,11 @@ PLIGHT PLEASE. (-)
 >plight please
 by one point
 }}SCORE++
+
+@all,rej
+{--all}#testcase-run-vr-plight-please-rule-default
+{--rej}#testcase-check-vc-plight-please-rule-fallthrough
+"Plight? PLEASE!" you laugh. The sleaze lessens. The flight-flees you feel disappear.
 
 @hfull
 #testcase-rules-hint-slight-sleaze-rule-if-sco-right-root-is-false
@@ -5545,6 +5916,11 @@ WRONG
 >right root
 by one point
 }}SCORE++
+
+@all,rej
+{--all}#testcase-run-vr-right-root-rule-default
+{--rej}#testcase-check-vc-right-root-rule-fallthrough
+The right root takes hold in the ground, and out bloom ... trite trees! No, it's not picturesque, but it's better than what was there before. The trees bloom on all sides except one ... which cuts out a clear passage!
 
 @hin
 #testcase-rulestubs-hint-slight-sleaze-rule-default
@@ -5707,6 +6083,11 @@ by one point
 }}CURMIN++
 }}CURMINBONUS++
 
+@all,rej
+{--all}#testcase-run-vr-clique-claiming-rule-default
+{--rej}#testcase-check-vc-clique-claiming-rule-fallthrough
+Well, claiming that cliques exist and we aren't in it always works, even though we deserve to be, and even if we don't really want to be in good with the leaders. It's not practical, but boy, is it cathartic!
+
 @rej
 #testcase-check-vc-clique-claiming-rule-if-sco-clique-claiming-is-true
 >clique claiming
@@ -5730,6 +6111,11 @@ BLEAK BLAMING. (-)
 >bleak blaming
 by one point
 }}SCORE++
+
+@all,rej
+{--all}#testcase-run-vr-bleak-blaming-rule-default
+{--rej}#testcase-check-vc-bleak-blaming-rule-fallthrough
+You get into the groove with some general complaining.
 
 @hfull
 >ll
@@ -5764,6 +6150,12 @@ WRONG
 >chic shaming
 by one point
 }}SCORE++
+
+@all,rej
+{--all}#testcase-run-vr-chic-shaming-rule-default
+{--all}#testcase-run-vr-chic-shaming-rule-fallthrough
+{--rej}#testcase-check-vc-chic-shaming-rule-fallthrough
+You segue from bleak blaming to an effortless, unavoidable, flowing conclusion, your voice rising to a crescendo for your main point. Bam!
 
 @hfull
 >ll
@@ -5821,6 +6213,11 @@ BRED BROS. (-)
 >bred bros
 by one point
 }}SCORE++
+
+@all,rej
+{--all}#testcase-run-vr-bred-bros-rule-default
+{--rej}#testcase-check-vc-bred-bros-rule-fallthrough
+Some bred Bros, more charismatic than you, arrive to disperse your message more charismatically. You engage in a ton of delegation, and stuff. They seem pleased, though with their charisma, it's possible they might secretly have contempt for you. Still, they're on board with your mission. Your work is done here.
 
 @verbs
 ##balance undos
@@ -5901,6 +6298,11 @@ DOCKING DIFFED. (-)
 >docking diffed
 by one point
 }}SCORE++
+
+@all,rej
+{--all}#testcase-run-vr-docking-diffed-rule-fallthrough
+{--rej}#testcase-check-vc-docking-diffed-rule-fallthrough
+WRONG
 
 @hfull
 >hint locking lift
@@ -6025,6 +6427,11 @@ BAD BOAST. (-)
 by one point
 }}SCORE++
 
+@all,rej
+{--all}#testcase-run-vr-bad-boast-rule-default
+{--rej}#testcase-check-vc-bad-boast-rule-fallthrough
+The voice grows softer as you note the insult is not effective. Perhaps you just need to go on the offensive now.
+
 @hfull
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.50.)
@@ -6051,6 +6458,11 @@ RAD ROAST. (-)
 >rad roast
 by one point
 }}SCORE++
+
+@all,rej
+{--all}#testcase-run-vr-rad-roast-rule-default
+{--rej}#testcase-check-vc-rad-roast-rule-fallthrough
+You strike back to show you know what's what. The voice goes away!
 
 @hfull
 #testcase-rules-hint-mad-most-cad-coast-rule-fallthrough
@@ -6253,6 +6665,11 @@ SIGHT SAIL. (-)
 by one point
 }}SCORE++
 
+@all,rej
+{--all}#testcase-run-vr-sight-sail-rule-default
+{--rej}#testcase-check-vc-sight-sail-rule-fallthrough
+A watercraft drifts into view. Yes, indeed, it is the sight sail. It should help you track down [the whale] very nicely, when you're prepared.
+
 @hfull
 # nothing changes after Sight Sail, because Right Rail is opened
 >ll
@@ -6277,6 +6694,11 @@ The Leet Learner shakes back and forth. Something you said sounded right, but it
 by one point
 }}SCORE++
 
+@all,rej
+{--all}#testcase-run-vr-might-mail-rule-default
+{--rej}#testcase-check-vc-might-mail-rule-fallthrough
+A suit of armor appears nearby! You don't want to put it on until you fight [the whale], but it's there when you need it.
+
 @hfull
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, -0.50.)
@@ -6294,6 +6716,11 @@ FLIGHT FLAIL. (-)
 >flight flail
 by one point
 }}SCORE++
+
+@all,rej
+{--all}#testcase-run-vr-flight-flail-rule-default
+{--rej}#testcase-check-vc-flight-flail-rule-fallthrough
+A translucent flail appears. You grab it, worrying it is too heavy. But as you do, it is easy to swing, and you feel faster. It will be a good weapon to use against the white whale.
 
 @hfull
 >ll
@@ -6325,6 +6752,11 @@ Find the RIGHT RAIL. (-)
 by one point
 }}SCORE++
 
+@all,rej
+{--all}#testcase-run-vr-right-rail-rule-default
+{--rej}#testcase-check-vc-right-rail-rule-fallthrough
+You inspect the sight sail, and you realize that, yes, there are rails to help you keep your balance and gain your sea legs as you hunt [the whale].
+
 @hfull
 #testcase-rules-hint-sight-sail-rule-fallthrough
 >hint sight sail
@@ -6350,6 +6782,11 @@ Summon a BRIGHT BRUTE. (-)
 >bright brute
 by one point
 }}SCORE++
+
+@all,rej
+{--all}#testcase-run-vr-bright-brute-rule-default
+{--rej}#testcase-check-vc-bright-brute-rule-fallthrough
+You call on a bright brute, who hides in the shadows to practice their fighting moves until such time as you're ready to attack the white whale. You'll need the muscle in case the whale somehow gets on board.
 
 @verbs
 #testcase-mainverbs-carry-out-talktoing-if-noun-is-bright-brute
@@ -6407,6 +6844,11 @@ EXCITE EXHALE. (-)
 >excite exhale
 by one point
 }}SCORE++
+
+@all,rej
+{--all}#testcase-run-vr-excite-exhale-rule-default
+{--rej}#testcase-check-vc-excite-exhale-rule-fallthrough
+You get all jazzed up to fight [the whale], believing you can do it. Then you calm down and figure strategy. You're pretty confident. You just need something to restrict or capture [the white whale].
 
 @rej
 #testcase-check-vc-excite-exhale-rule-if-sco-excite-exhale-is-true
@@ -6482,6 +6924,12 @@ THREAD THROWS. (-)
 >thread throws
 by one point
 }}SCORE++
+
+@all,rej
+{--all}#testcase-run-vr-thread-throws-rule-default
+{--rej}#testcase-check-vc-thread-throws-rule-fallthrough
+Everything is prepped! You throw out some nets. You're armed with the flight flail, protected by the might mail, supported by the bright brute, and holding the right rail in your sight sail. And you've mentally prepped.
+Anyway, there's a lot of drama and stuff, but you defeat the tight-tail white whale.
 
 @hfull
 >ll red rose
@@ -6566,6 +7014,11 @@ by one point
 }}CURMIN++
 }}CURMINBONUS++
 
+@all,rej
+{--all}#testcase-run-vr-despite-dispute-rule-default
+{--rej}#testcase-check-vc-despite-dispute-rule-fallthrough
+The DELIGHT-DILUTE dissolves quickly, and you are back to your old confidence.
+
 @ha
 #testcase-ha-half-table-of-verb-checks-37-mocking
 >mocking zmiffed
@@ -6621,6 +7074,12 @@ MOCKING MIFFED. (-)
 by one point
 }}SCORE++
 
+@all,rej
+{--all}#testcase-run-vr-mocking-miffed-rule-default
+{--rej}#testcase-check-vc-mocking-miffed-rule-fallthrough
+#+testcase-run-vr-mocking-miffed-rule-default
+Facing any sort of laughter is tough, but you know you have to do it.
+
 @hfull
 ##balance undos
 >enter lift
@@ -6636,6 +7095,13 @@ You've figured out the locking lift completely.
 @all
 #testcase-room-names-old-end
 `Old End
+
+@all+
+>enter lift
+High Hub
+\\
+>mocking miffed
+You pick yourself up mentally again. This time, you'll tackle the source of the mocking, miffed.
 
 @hin
 #testcase-rulestubs-hint-old-end-rule-default
@@ -6756,6 +7222,11 @@ You take the lift back to High Hub...
 by one point
 }}SCORE++
 
+@all,rej
+{--all}#testcase-run-vr-bold-bend-rule-default
+{--rej}#testcase-check-vc-bold-bend-rule-fallthrough
+Of course the old end was too simplistic. You feel a bit of courage now. But the question is: courage to face what? It's probably something abstract.
+
 @all
 #+testcase-room-names-old-end
 `Bold Bend
@@ -6790,6 +7261,11 @@ TROLLED TREND. (-)
 >trolled trend
 by one point
 }}SCORE++
+
+@all,rej
+{--all}#testcase-run-vr-trolled-trend-rule-default
+{--rej}#testcase-check-vc-trolled-trend-rule-fallthrough
+You feel malevolence from the south. It is where you must go next, you are pretty sure. You're also pretty sure there'll be no way back. The thought depresses you a bit. You need a way to pull out of your doldrums.
 
 @hfull
 #+testcase-values-from-number-of-old-end-is-2653
@@ -6826,6 +7302,11 @@ MOLD MEND. (-)
 >mold mend
 by one point
 }}SCORE++
+
+@all,rej
+{--all}#testcase-run-vr-mold-mend-rule-default
+{--rej}#testcase-check-vc-mold-mend-rule-fallthrough
+You feel emotionally ready to go forward, and what's more, you feel robust enough to push back against any temporary setbacks.
 
 @hfull
 #testcase-rules-hint-old-end-rule-fallthrough
@@ -7012,6 +7493,11 @@ BANE BAT. (-)
 by one point
 }}SCORE++
 
+@all,rej
+{--all}#testcase-run-vr-bane-bat-rule-default
+{--rej}#testcase-check-vc-bane-bat-rule-fallthrough
+A particularly lethal bat appears in your hands! It looks like it could really destroy stuff. In particular, this vat. But how to go medieval on it?
+
 @hfull
 #testcase-rules-hint-vain-vat-rule-if-sco-flain-flat-is-false
 >hint
@@ -7050,6 +7536,11 @@ You'd need to destroy the vat with your bat first. But how?
 by one point
 }}SCORE++
 
+@all,rej
+{--all}#testcase-run-vr-flain-flat-rule-default
+{--rej}#testcase-check-vc-flain-flat-rule-fallthrough
+Wham! Wham! You take the bane bat to the vat, and it makes all kinds of dents. You strike a final blow, and as the vat falls over, both it and the bat disintegrate.[paragraph break]You're left standing on a main mat, which also feels welcoming. But you have a feeling you still need to give a reason to enter.
+
 @hfull
 #+testcase-values-from-number-of-drain-drat-vain-vat-is-5457
 >ll
@@ -7079,6 +7570,11 @@ SPLAIN SPLAT. (-)
 >splain splat
 by one point
 }}SCORE++
+
+@all,rej
+{--all}#testcase-run-vr-splain-splat-rule-default
+{--rej}#testcase-check-vc-splain-splat-rule-fallthrough
+Now that you've busted out of the vain vat, you announce yourself! You wonder if this was a fit of pride, but it's too late. A bunch of Pred Pros jump and ambush you. Your red rose, in a final blaze of glory, puts up a protective shield. But the Pros still guard the way south.
 
 @hfull
 >ll
@@ -7191,6 +7687,11 @@ Direct negotiations won't work. You can give them something, though.
 >fed foes
 by one point
 }}SCORE++
+
+@all,rej
+{--all}#testcase-run-vr-fed-foes-rule-default
+{--rej}#testcase-check-vc-fed-foes-rule-fallthrough
+What a feast appears! It looks like the red rose had a bit more something to give. And it keeps giving, until the Fed Foes are full. They nod, gratefully, still wary of the red rose's shield, before heading away. Your destiny awaits!
 
 @hfull
 #testcase-rules-hint-vain-vat-rule-fallthrough
@@ -7391,6 +7892,11 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 by one point
 }}SCORE++
 
+@all,rej
+{--all}#testcase-run-vr-fret-free-rule-default
+{--rej}#testcase-check-vc-fret-free-rule-fallthrough
+You feel cheerier. Perhaps there is stuff to fret about, but you recognize it'd be a waste of energy, and you're pleased you got this far.
+
 @hfull
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-3.00, -4.50.)
@@ -7403,6 +7909,11 @@ WRONG
 >yet ye
 by one point
 }}SCORE++
+
+@all,rej
+{--all}#testcase-run-vr-yet-ye-rule-default
+{--rej}#testcase-check-vc-yet-ye-rule-fallthrough
+You think back to people who helped you in bad faith and realize you have a right to reject 'help' or 'advice' with strings attached and, yes, get under the nerves of people offering said 'services.'
 
 @hfull
 >ll
@@ -7429,6 +7940,11 @@ WRONG
 >set see
 by one point
 }}SCORE++
+
+@all,rej
+{--all}#testcase-run-vr-set-see-rule-default
+{--rej}#testcase-check-vc-set-see-rule-fallthrough
+You stand tall and confident. You won't be easily pushed around!
 
 @rej
 #testcase-postreject-table-of-verb-checks-vc-set-see-rule
@@ -7503,6 +8019,11 @@ You need a gift for the Burning Bright Spurning Sprite first. Check your invento
 >plus plaque
 by one point
 }}SCORE++
+
+@all,rej
+{--all}#testcase-run-vr-plus-plaque-rule-default
+{--rej}#testcase-check-vc-plus-plaque-rule-fallthrough
+You have summoned a plus plaque! The [sprite] accepts it before you can offer it. But then they are upset ... there's no name on it! What could their name be?
 
 @verbs
 #+testcase-mainverbs-carry-out-talktoing-if-noun-is-sprite
@@ -7901,3 +8422,11 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
 >turning trite
 by one point
 }}SCORE++
+
+@all,rej
+{--all}#testcase-run-vr-turning-trite-rule-default
+{--rej}#testcase-check-vc-turning-trite-rule-fallthrough
+An invisible pen begins to fill the blank space in the plus plaque. The [sprite] smirks, at first, but then frowns once they see what's really there. 'That's a cheap shot! No! It's too obvious! Why would you? I ... I just get cleverer and cleverer! Or I would, if not for afterlife intrigue and backstabbing and the man keeping down the people with real ideas.' It waves its hand, and you are blown away to shouts of 'Ingrate' and 'Smart-aleck' and so forth.
+You tumble down on the sidewalk where you first met the Burning Bright Spurning Sprite. You feel like you learned nothing, and yet, at the same time, you think back to what made you say 'Wow, whoah,' trying to reconstruct that magic moment before you were interrupted. You feel as though your journeys helped piece together parts of it, and there will be other experiences that put a bit more together. You are confident that anything reminding you of [nkhh] will be worth checking out, and you will chip away pieces of the vision you had, and that will be good enough.
+
+

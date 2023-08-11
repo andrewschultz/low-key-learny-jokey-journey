@@ -16,14 +16,23 @@
 >plain plea
 by one point
 
+#testcase-run-vr-plain-plea-rule-default
+Your plain plea seems perfect for the situation. The train tree grows brighter. It pervades the air for a bit, then dissipates.
+
 >jane g
 by one point
+
+#testcase-run-vr-choose-name-rule-fallthrough
+You walk through the door and tumble down to...
 
 #testcase-room-names-roaring-rocks
 `Roaring Rocks
 
 >boring box
 by one point
+
+#testcase-run-vr-boring-box-rule-default
+You know nice things come in humble packages, and anyway, anything too garish might've gotten confiscated. The roaring rocks crumble, leaving behind storing stocks and ... the boring box you'd hoped for. You totally want to OPEN it!
 
 #+testcase-room-names-roaring-rocks
 `Storing Stocks
@@ -36,11 +45,19 @@ You open the boring box, and you see a metal gadget that doesn't look very inter
 >gad gunk
 by one point
 
+#testcase-run-vr-gad-gunk-rule-default
+Chiding the monk's cleanliness, groundless or otherwise, is an effective insult, though it doesn't win the war. Have a bonus point.
+
 >bad bunk
 by one point
 
+#testcase-run-vr-bad-bunk-rule-fallthrough
+The mad monk blinks a bit. That one hurt. Your attack was simple but effective. Maybe one more...
+
 >sad sunk
 by one point
+
+#testcase-run-vr-sad-sunk-rule-fallthrough
 
 >n
 
@@ -49,6 +66,9 @@ by one point
 
 >grow grudge
 by one point
+
+#testcase-run-vr-grow-grudge-rule-default
+As your mood hardens, so does the sludge! But you don't see that right away. You're busy accepting you're not perfect and realizing you don't have to be and recognizing sometimes stewing is better than lashing out. The sludge even recedes a bit. You can go any of the four directions now.
 
 >n
 
@@ -61,11 +81,20 @@ You hear a whooshing as a door swings in from nowhere. It doesn't seem to lead a
 >piss poor
 by one point
 
+#testcase-run-vr-piss-poor-rule-default
+The wood grains in the door almost seem to frown, and it morphs into an almost human form before shambling away at such an apt blow-off. Not really vulgar, but showing you can hang around, and you don't need to waste the really spicy stuff on it. Go, you!
+
 >done dorm
 by one point
 
+#testcase-run-vr-done-dorm-rule-default
+A done dorm pops up out of nowhere! You probably can't just go entering it, though. A nice, exclusive place like that probably requires documentation of worth and being an interesting person to hang around and stuff. All sorts of bureaucracy, don't you know.
+
 >fun form
 by one point
+
+#testcase-run-vr-fun-form-rule-default
+You actually, well, have fun saying why you should be certified to stay in the done dorm until enough time has passed.
 
 >n
 
@@ -75,14 +104,26 @@ by one point
 >see sunk
 by one point
 
+#testcase-run-vr-see-sunk-rule-default
+The tree trunk recedes slightly. It seems to be hollow on top. Perhaps there is something in the tree trunk. But what?
+
 >gee junk
 by one point
+
+#testcase-run-vr-gee-junk-rule-default
+My goodness, yes! There is something in the tree trunk! It's marked FREE FRUIT.
 
 >whee woot
 by one point
 
+#testcase-run-vr-whee-woot-rule-default
+The FREE FRUIT seems to glow a bit from your praise.
+
 >pear peach
 by one point
+
+#testcase-run-vr-pear-peach-rule-default
+A weird fruit you haven't quite seen before pops into your hand as the FREE FRUIT vanishes. Hooray!
 
 >s
 
@@ -96,6 +137,12 @@ by one point
 >bussed back
 by one point
 
+#testcase-run-vr-bussed-back-rule-default
+Just Jack knows his time is up. He takes off. Behind them, you find something ... a sussed sack! Though looking at it, it's also sus. It's both light and heavy, useful and useless. Perhaps you'll know what to do with it when the time comes.
+
+#testcase-run-vr-crust-crack-rule-default
+A rumbling. Passage opens to the north.
+
 >crust crack
 by one point
 
@@ -107,11 +154,17 @@ by one point
 >bare beach
 by one point
 
+#testcase-run-vr-bare-beach-rule-default
+The rare reach fills out a bit, sucking the pear peach into it. There is now a bare beach. But it's not completely bare! You see a deep dune rise up.
+
 #+testcase-room-names-rare-reach
 `Bare Beach
 
 >seep soon
 by one point
+
+#testcase-run-vr-seep-soon-rule-default
+The deep dune shifts a bit. Sand starts leaking a bit. Not enough for you to sit and wait and watch. You have other stuff to do.
 
 >s
 >n
@@ -120,6 +173,9 @@ The deep dune seems to have shifted a bit. Maybe you can find something in the m
 
 >reap rune
 by one point
+
+#testcase-run-vr-reap-rune-rule-default
+What do you know? You totally believe in yourself as you reach into the deep dune, and a rune turns up! It is in the shape of the Greek letter Rho. The deep dune, having served its purpose, sinks into the general landscape.
 
 >s
 
@@ -133,6 +189,9 @@ by one point
 >unarm
 by one point
 
+#testcase-run-vr-un-arm-rule-default
+That wasn't too bad. Whoever it was guarding the way north sounds very disappointed that their oppression may now take actual effort!
+
 >n
 
 #testcase-room-names-no-noon
@@ -141,17 +200,34 @@ by one point
 >go goon
 by one point
 
+#testcase-run-vr-go-goon-rule-default
+The Rho Rune glows, and you feel confidence as at least the first of the enemies fled. But it's so empty here. What could grow?
+
 >cocoon
 by one point
+
+#testcase-run-vr-co-coon-rule-default
+A cocoon appears! It's not ready to hatch yet. Maybe not for a while. Perhaps you could get time to move in weird ways.
 
 >mo moon
 by one point
 
+#testcase-run-vr-mo-moon-rule-default
+A moon appears in the night-ish sky.
+
 >so soon
 by one point
 
+#testcase-run-vr-so-soon-rule-default
+You sensed time speeding up. The cocoon rustles. Perhaps one more sign signifying daytime will cause it to bust out.
+
 >crow croon
 by one point
+
+#testcase-run-vr-crow-croon-rule-default
+The crow croons! Your Rho Rune glows, then bursts in unison with the cocoon. A ... well, not quite a monster, but no animal you've seen before ... flies out into the sky.
+It is met by the Burning Bright Spurning Sprite! "Threat two!" screeches the Burning Bright Spurning Sprite. A fight ensues, and the beast you've created gets away.
+"Now you've done it!" says the Burning Bright Spurning Sprite. "That wasn't supposed to happen. Trust me. And no offense, you've learned the rules to get by, but you haven't learned the REAL rules. Maybe a spell in jail will help you."
 
 #testcase-room-names-jotty-jail
 `Jotty Jail
@@ -159,18 +235,34 @@ by one point
 >grotty grail
 by one point
 
+#testcase-run-vr-grotty-grail-rule-default
+My goodness! Look what you uncovered! A grail is useless in your current reduced circumstances, but it's a morale boost, because everyone knows bad guys just don't go finding grails. Well, maybe they find obscenely rich cursed ones, but this is about as ordinary as a grail can be. Still, yay grails.
+
 >potty pail
 by one point
 
+#testcase-run-vr-potty-pail-rule-default
+While you don't plan to be here long enough to use the pail, you're glad to have found it and proven your, uh, emergency preparedness. Perhaps the next soul stuck in here, without your abilities, will appreciate it. Or perhaps you'll figure what to do so nobody is stuck here again.
+
 >knotty nail
 by one point
+
+#testcase-run-vr-knotty-nail-rule-default
+#testcase-run-vr-knotty-nail-rule-fallthrough
+Aha! There's something flawed. A knotty nail. You pull at it, and slowly it comes loose. It's surprisingly sharp. Then you start chipping away at various cracks until they grow bigger and crumble. The snotty snail is alerted, but by then you've got enough debris in your cell to fend it off. You flee, not caring where you're going...
 
 #testcase-room-names-high-hub
 `High Hub
 
 >bye bub
 
+#testcase-run-vr-bye-bub-rule-default
+And just like that, you find the way down. You want to leave, and that's that. You hope something new is below ... and it is! A sturdy stalk pops through for you to climb down, and you do, back to [nnss]. Perhaps you will find additional inspiration.
+
 >wordy walk
+
+#testcase-run-vr-wordy-walk-rule-default
+You take a nice long wordy walk, and it fills you with ideas and things to try when you go back to [high hub].
 
 ##BALANCE UNDOS
 #+testcase-room-names-no-noon
@@ -186,35 +278,71 @@ by one point
 >rocking rift
 by one point
 
+#testcase-run-vr-rocking-rift-rule-fallthrough
+
 #testcase-lift-before-table-of-lift-texts-show-shoe
 You wonder if a concert will really take your mind off things. You wonder what things there are to take your mind off. Before you finish wondering, the locking lift drops you by a large amphitheater. Empty, but big enough for a good show.
 
 #testcase-room-names-no-new-show-shoe
 `No-New-Show Shoe
 
+#+testcase-run-vr-go-goo-rule-default
+>go goo
+A huge pile of weird "energy burst" snacks appears at your feet. You have no idea whether or not they're nutritious, but with that colorful packaging, they can be sold for a markup during and after the performanceat future performances, to ensure the viability of the No-New-Show Shoe. Yay, commerce!
+You put them off to the side. They'll be useful once the show gets rocking.
+
 >go goo
 by one point
+
+#testcase-run-vr-go-goo-rule-default
+A huge pile of weird 'energy burst' snacks appears at your feet. You have no idea whether or not they're nutritious, but with that colorful packaging, they can be sold for a markup [if sco-throw-through is false]during and after the performance[else]at future performances[end if], to ensure the viability of the Whoah-Woo-Show Shoe. Yay, commerce[if shoe-storage < 2], and you don't even need any climate-controlled storage[end if]!
+You put them off to the side. They'll be useful once the show gets rocking.
+
+#testcase-run-vr-go-goo-rule-default
+A huge pile of weird 'energy burst' snacks appears at your feet. You have no idea whether or not they're nutritious, but with that colorful packaging, they can be sold for a markup at future performances, to ensure the viability of the Whoah-Woo-Show Shoe. Yay, commerce, and you don't even need any climate-controlled storage!
+!You put them off to the side. They'll be useful once the show gets rocking.
 
 >flow flue
 by one point
 
+#testcase-run-vr-flow-flue-rule-default
+A whole mess of tubes appears! Stuff could totally zoom through it. But many of them look badly damaged.
+
 >glow glue
 by one point
+
+#testcase-run-vr-glow-glue-rule-default
+A rather large tube of Glow Glue drops by near you.
 
 >bro brew
 by one point
 
+#testcase-run-vr-bro-brew-rule-default
+Through half of the Flow Flue, you watch as Bro Brew is pumped in.
+
 >stow stew
 by one point
+
+#testcase-run-vr-stow-stew-rule-default
+Some stew starts flowing through some of the flues.
 
 >crow crew
 by one point
 
+#testcase-run-vr-crow-crew-rule-default
+The Crow Crew appears! They look ready to give a performance replete with humor, wit, song, pyrotechnics, and so forth. You just need to find a way to facilitate a grand entrance.
+
 >ho who
 by one point
 
+#testcase-run-vr-ho-who-rule-default
+"Ho! WHO?" you call out. The crowd seems to react favorably, waiting for the right phrase to go totally crazy.
+
 >yo you
 by one point
+
+#testcase-run-vr-yo-you-rule-default
+"Yo! YOU!" you cry, and there's a slightly undignified call-and-response, featuring both you and the crowd asking 'Ho! Who?' and responding. It's not brilliant discourse, but everyone's all jazzed for a bigger show now.
 
 #+testcase-room-names-no-new-show-shoe
 `Whoah-Woo-Show Shoe
@@ -222,11 +350,20 @@ by one point
 >throw through
 by one point
 
+#testcase-run-vr-throw-through-rule-default
+#testcase-run-vr-throw-through-rule-fallthrough
+The Crow Crew makes a dramatic entrance, thanks to your planning! The show is a financial and emotional success. Everyone congratulates you. Surely, you must take a reward! Something!
+You can't think of anything you really need. Then, something that just wasn't used in the concert. A light lute! It's, well, something. If you were resourceful enough to get things working here, who knows what you can do with it?
+Your job here done, you return back...
+
 ##RBRS-SHUFFLEEND=0
 ##RBRS-SHUFFLESTART=1
 
 >shocking shift
 by one point
+
+#testcase-run-vr-shocking-shift-rule-fallthrough
+WRONG
 
 #testcase-lift-before-table-of-lift-texts-sore-souls
 You reflect on how we all want big changes, but we're uncomfortable with them happening just this way.
@@ -237,6 +374,9 @@ You reflect on how we all want big changes, but we're uncomfortable with them ha
 >shore shoals
 by one point
 
+#testcase-run-vr-shore-shoals-rule-default
+The area is much less desolate now. It feels like it could be inhabited.
+
 #+testcase-room-names-sore-souls-gore-goals
 `Shore Shoals
 
@@ -245,25 +385,43 @@ by one point
 >night newt
 by one point
 
+#testcase-run-vr-night-newt-rule-default
+A night newt appears and scurries around. You lose it in the scenery, but the place feels livelier now.
+
 >kite coot
 by one point
+
+#testcase-run-vr-kite-coot-rule-default
+The kite coot is an odd animal for sure but a worthy addition to the menagerie here.
 
 ##RBRS-SHUFFLECONDITION=
 
 >lore lols
 by one point
 
+#testcase-run-vr-lore-lols-rule-default
+Why, yes, this place could use myths of creation and so forth for when it becomes habitable.
+
 >four foals
 by one point
 
+#testcase-run-vr-four-foals-rule-default
+Four foals begin frolicking! They thank you briefly before running away. They've made things a big cheerier.
+
 >more moles
 by one point
+
+#testcase-run-vr-more-moles-rule-default
+Since the ground's slightly holey here, you surmise the existence of moles and suggest there should be more.
 
 ##RBRS-SHUFFLEEND=1
 ##RBRS-SHUFFLESTART=2
 
 >gawking gift
 by one point
+
+#testcase-run-vr-gawking-gift-rule-fallthrough
+WRONG
 
 #testcase-lift-before-table-of-lift-texts-rum-route
 You think back to the bad gifts you've received when people said you should be grateful for their consideration. Then you think back to favors people did, just because, and how much they meant. Gawking in each case. You dare to ask for another gift that will make you gawk the right way...
@@ -274,11 +432,20 @@ You think back to the bad gifts you've received when people said you should be g
 >dumb doubt
 by one point
 
+#testcase-run-vr-dumb-doubt-rule-default
+You create dumb doubt in the mind of your adversaries. This would be rude if they weren't mean, but they are, so it all feels creative and appropriate. How to expand that doubt, now?
+
 >said sos
 by one point
 
+#testcase-run-vr-said-sos-rule-default
+Your said-sos make sense. You're ready for the crescendo.
+
 >umm out
 by one point
+
+#testcase-run-vr-umm-out-rule-default
+With the confidence instilled by instilling dumb doubt, you finish the deal. You notice a valley below. You should go down when you are ready.
 
 #+testcase-room-names-rum-route
 `Numb? NOWT!
@@ -291,14 +458,23 @@ by one point
 >hey hope
 by one point
 
+#testcase-run-vr-hey-hope-rule-default
+How exhilarating! The hope is real! With that, a pall lifts over your depression. But not enough. Yet. You must finish the job.
+
 >k cope
 by one point
+
+#testcase-run-vr-k-cope-rule-default
+The hope that started turns into coping, with a bit of slang. You feel spiritually refreshed. You take the lift back to the [hub].
 
 ##RBRS-SHUFFLEEND=2
 ##RBRS-SHUFFLESTART=3
 
 >grokking grift
 by one point
+
+#testcase-run-vr-grokking-grift-rule-fallthrough
+WRONG
 
 #testcase-lift-before-table-of-lift-texts-slight-sleaze
 You wonder there is a way to understand con artistry without becoming one. As you enter the lift, you reflect that you seem to know when someone is pulling your leg, but they always talk you into believing them. How to break that cycle?
@@ -309,14 +485,27 @@ You wonder there is a way to understand con artistry without becoming one. As yo
 >tight tees
 by one point
 
+#testcase-run-vr-tight-tease-rule-default
+You figure, if you can't beat 'em, join 'em, or just pretend to. You demand something more risque, which the slight sleaze is unable to provide. This doesn't win the war, but it wins a small, satisfying pointless side battle.
+Okay, yeah, I may've said this isn't that sort of game, but you're only getting a bonus point here, and this one just fit too well.
+
 >bright breeze
 by one point
+
+#testcase-run-vr-bright-breeze-rule-default
+The local weather shifts slightly but for the better. You feel cheerier and more open to foisting sarcasm on those that deserve it.
 
 >plight please
 by one point
 
+#testcase-run-vr-plight-please-rule-default
+"Plight? PLEASE!" you laugh. The sleaze lessens. The flight-flees you feel disappear.
+
 >right root
 by one point
+
+#testcase-run-vr-right-root-rule-default
+The right root takes hold in the ground, and out bloom ... trite trees! No, it's not picturesque, but it's better than what was there before. The trees bloom on all sides except one ... which cuts out a clear passage!
 
 >s
 
@@ -326,11 +515,21 @@ by one point
 >clique claiming
 by one point
 
+#testcase-run-vr-clique-claiming-rule-default
+Well, claiming that cliques exist and we aren't in it always works, even though we deserve to be, and even if we don't really want to be in good with the leaders. It's not practical, but boy, is it cathartic!
+
 >bleak blaming
 by one point
 
+#testcase-run-vr-bleak-blaming-rule-default
+You get into the groove with some general complaining.
+
 >chic shaming
 by one point
+
+#testcase-run-vr-chic-shaming-rule-default
+#testcase-run-vr-chic-shaming-rule-fallthrough
+You segue from bleak blaming to an effortless, unavoidable, flowing conclusion, your voice rising to a crescendo for your main point. Bam!
 
 #+testcase-room-names-freak-framing-seek-saming
 `Eek! Aiming!
@@ -338,11 +537,17 @@ by one point
 >bred bros
 by one point
 
+#testcase-run-vr-bred-bros-rule-default
+Some bred Bros, more charismatic than you, arrive to disperse your message more charismatically. You engage in a ton of delegation, and stuff. They seem pleased, though with their charisma, it's possible they might secretly have contempt for you. Still, they're on board with your mission. Your work is done here.
+
 ##RBRS-SHUFFLEEND=3
 ##RBRS-SHUFFLESTART=4
 
 >docking diffed
 by one point
+
+#testcase-run-vr-docking-diffed-rule-fallthrough
+WRONG
 
 #testcase-lift-before-table-of-lift-texts-mad-most-cad-coast
 The locking lift leads you to a shore where you'd expect a watercraft, but there is none.
@@ -353,8 +558,14 @@ The locking lift leads you to a shore where you'd expect a watercraft, but there
 >bad boast
 by one point
 
+#testcase-run-vr-bad-boast-rule-default
+The voice grows softer as you note the insult is not effective. Perhaps you just need to go on the offensive now.
+
 >rad roast
 by one point
+
+#testcase-run-vr-rad-roast-rule-default
+You strike back to show you know what's what. The voice goes away!
 
 #+testcase-room-names-mad-most-cad-coast
 `Pad Post-Had-Host
@@ -366,28 +577,53 @@ by one point
 >sight sail
 by one point
 
+#testcase-run-vr-sight-sail-rule-default
+A watercraft drifts into view. Yes, indeed, it is the sight sail. It should help you track down [the whale] very nicely, when you're prepared.
+
 >might mail
 by one point
+
+#testcase-run-vr-might-mail-rule-default
+A suit of armor appears nearby! You don't want to put it on until you fight [the whale], but it's there when you need it.
 
 >flight flail
 by one point
 
+#testcase-run-vr-flight-flail-rule-default
+A translucent flail appears. You grab it, worrying it is too heavy. But as you do, it is easy to swing, and you feel faster. It will be a good weapon to use against the white whale.
+
 >right rail
 by one point
+
+#testcase-run-vr-right-rail-rule-default
+You inspect the sight sail, and you realize that, yes, there are rails to help you keep your balance and gain your sea legs as you hunt [the whale].
 
 >bright brute
 by one point
 
+#testcase-run-vr-bright-brute-rule-default
+You call on a bright brute, who hides in the shadows to practice their fighting moves until such time as you're ready to attack the white whale. You'll need the muscle in case the whale somehow gets on board.
+
 >excite exhale
 by one point
 
+#testcase-run-vr-excite-exhale-rule-default
+You get all jazzed up to fight [the whale], believing you can do it. Then you calm down and figure strategy. You're pretty confident. You just need something to restrict or capture [the white whale].
+
 >thread throws
 by one point
+
+#testcase-run-vr-thread-throws-rule-default
+Everything is prepped! You throw out some nets. You're armed with the flight flail, protected by the might mail, supported by the bright brute, and holding the right rail in your sight sail. And you've mentally prepped.
+Anyway, there's a lot of drama and stuff, but you defeat the tight-tail white whale.
 
 ##RBRS-SHUFFLEEND=4
 
 >despite dispute
 by one point
+
+#testcase-run-vr-despite-dispute-rule-default
+The DELIGHT-DILUTE dissolves quickly, and you are back to your old confidence.
 
 #testcase-lift-after-table-of-lift-texts-rum-route
 >gawking gift
@@ -412,11 +648,24 @@ The locking lift lurches again with a shift shocking enough even though you know
 >mocking miffed
 by one point
 
+#testcase-run-vr-mocking-miffed-rule-default
+#+testcase-run-vr-mocking-miffed-rule-default
+Facing any sort of laughter is tough, but you know you have to do it.
+
 #testcase-room-names-old-end
 `Old End
 
+>enter lift
+High Hub
+
+>mocking miffed
+You pick yourself up mentally again. This time, you'll tackle the source of the mocking, miffed.
+
 >bold bend
 by one point
+
+#testcase-run-vr-bold-bend-rule-default
+Of course the old end was too simplistic. You feel a bit of courage now. But the question is: courage to face what? It's probably something abstract.
 
 #+testcase-room-names-old-end
 `Bold Bend
@@ -424,8 +673,14 @@ by one point
 >trolled trend
 by one point
 
+#testcase-run-vr-trolled-trend-rule-default
+You feel malevolence from the south. It is where you must go next, you are pretty sure. You're also pretty sure there'll be no way back. The thought depresses you a bit. You need a way to pull out of your doldrums.
+
 >mold mend
 by one point
+
+#testcase-run-vr-mold-mend-rule-default
+You feel emotionally ready to go forward, and what's more, you feel robust enough to push back against any temporary setbacks.
 
 >s
 
@@ -435,17 +690,29 @@ by one point
 >bane bat
 by one point
 
+#testcase-run-vr-bane-bat-rule-default
+A particularly lethal bat appears in your hands! It looks like it could really destroy stuff. In particular, this vat. But how to go medieval on it?
+
 >flain flat
 by one point
 
+#testcase-run-vr-flain-flat-rule-default
+Wham! Wham! You take the bane bat to the vat, and it makes all kinds of dents. You strike a final blow, and as the vat falls over, both it and the bat disintegrate.[paragraph break]You're left standing on a main mat, which also feels welcoming. But you have a feeling you still need to give a reason to enter.
+
 >splain splat
 by one point
+
+#testcase-run-vr-splain-splat-rule-default
+Now that you've busted out of the vain vat, you announce yourself! You wonder if this was a fit of pride, but it's too late. A bunch of Pred Pros jump and ambush you. Your red rose, in a final blaze of glory, puts up a protective shield. But the Pros still guard the way south.
 
 #+testcase-room-names-drain-drat-vain-vat
 `Main Mat
 
 >fed foes
 by one point
+
+#testcase-run-vr-fed-foes-rule-default
+What a feast appears! It looks like the red rose had a bit more something to give. And it keeps giving, until the Fed Foes are full. They nod, gratefully, still wary of the red rose's shield, before heading away. Your destiny awaits!
 
 >s
 
@@ -455,18 +722,35 @@ by one point
 >fret free
 by one point
 
+#testcase-run-vr-fret-free-rule-default
+You feel cheerier. Perhaps there is stuff to fret about, but you recognize it'd be a waste of energy, and you're pleased you got this far.
+
 >yet ye
 by one point
 
+#testcase-run-vr-yet-ye-rule-default
+You think back to people who helped you in bad faith and realize you have a right to reject 'help' or 'advice' with strings attached and, yes, get under the nerves of people offering said 'services.'
+
 >set see
 by one point
+
+#testcase-run-vr-set-see-rule-default
+You stand tall and confident. You won't be easily pushed around!
 
 `Threat Three Met Me
 
 >plus plaque
 by one point
 
+#testcase-run-vr-plus-plaque-rule-default
+You have summoned a plus plaque! The [sprite] accepts it before you can offer it. But then they are upset ... there's no name on it! What could their name be?
+
 >score
 
 >turning trite
 by one point
+
+#testcase-run-vr-turning-trite-rule-default
+An invisible pen begins to fill the blank space in the plus plaque. The [sprite] smirks, at first, but then frowns once they see what's really there. 'That's a cheap shot! No! It's too obvious! Why would you? I ... I just get cleverer and cleverer! Or I would, if not for afterlife intrigue and backstabbing and the man keeping down the people with real ideas.' It waves its hand, and you are blown away to shouts of 'Ingrate' and 'Smart-aleck' and so forth.
+You tumble down on the sidewalk where you first met the Burning Bright Spurning Sprite. You feel like you learned nothing, and yet, at the same time, you think back to what made you say 'Wow, whoah,' trying to reconstruct that magic moment before you were interrupted. You feel as though your journeys helped piece together parts of it, and there will be other experiences that put a bit more together. You are confident that anything reminding you of [nkhh] will be worth checking out, and you will chip away pieces of the vision you had, and that will be good enough.
+

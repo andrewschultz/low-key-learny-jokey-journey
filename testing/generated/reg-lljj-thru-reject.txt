@@ -419,12 +419,18 @@ I couldn't parse that command. You don't need any more than two words long.
 >plain plea
 by one point
 
+#testcase-check-vc-plain-plea-rule-fallthrough
+Your plain plea seems perfect for the situation. The train tree grows brighter. It pervades the air for a bit, then dissipates.
+
 #testcase-check-vc-plain-plea-rule-if-sco-plain-plea-is-true
 >plain plea
 You already made a plain plea.
 
 >jane g
 by one point
+
+#testcase-check-vc-in-bane-rule-fallthrough
+You walk through the door and tumble down to...
 
 #bane bat must be here or it clashes with the room name. Same with set see.
 
@@ -441,6 +447,9 @@ I couldn't parse that command. You don't need any more than two words long.
 >boring box
 by one point
 
+#testcase-check-vc-boring-box-rule-fallthrough
+You know nice things come in humble packages, and anyway, anything too garish might've gotten confiscated. The roaring rocks crumble, leaving behind storing stocks and ... the boring box you'd hoped for. You totally want to OPEN it!
+
 #testcase-check-vc-boring-box-rule-if-sco-boring-box-is-true
 >boring box
 You already uncovered the boring box.
@@ -453,15 +462,18 @@ You open the boring box, and you see a metal gadget that doesn't look very inter
 >sad sunk
 by one point
 
-#testcase-check-vc-sad-sunk-rule-if-sco-sad-sunk-is-true
+#+testcase-check-vc-sad-sunk-rule-if-sco-sad-sunk-is-true
 >sad sunk
-WRONG
+You already insulted the mad monk's serenity.
 
 >undo
 >undo
 
 >gad gunk
 by one point
+
+#testcase-check-vc-gad-gunk-rule-fallthrough
+Chiding the monk's cleanliness, groundless or otherwise, is an effective insult, though it doesn't win the war. Have a bonus point.
 
 #testcase-check-vc-gad-gunk-rule-if-sco-gad-gunk-is-true
 >gad gunk
@@ -510,6 +522,9 @@ Whenever you're ready, just type SAD SUNK to move on.
 >bad bunk
 by one point
 
+#testcase-check-vc-bad-bunk-rule-fallthrough
+The mad monk blinks a bit. That one hurt. Your attack was simple but effective. Maybe one more...
+
 #testcase-check-vc-bad-bunk-rule-if-sco-bad-bunk-is-true
 >bad bunk
 You already insulted the mad monk's truthfulness.
@@ -517,6 +532,8 @@ You already insulted the mad monk's truthfulness.
 
 >sad sunk
 by one point
+
+#testcase-check-vc-sad-sunk-rule-fallthrough
 
 ##BALANCE UNDOS
 # this is to place a pre-reject command
@@ -569,6 +586,9 @@ You can change the Rare Reach to a BARE BEACH once you have a life-generating it
 >grow grudge
 by one point
 
+#testcase-check-vc-grow-grudge-rule-fallthrough
+As your mood hardens, so does the sludge! But you don't see that right away. You're busy accepting you're not perfect and realizing you don't have to be and recognizing sometimes stewing is better than lashing out. The sludge even recedes a bit. You can go any of the four directions now.
+
 #testcase-check-vc-grow-grudge-rule-if-sco-grow-grudge-is-true
 >grow grudge
 You already neutralized the no-nudge slow sludge.
@@ -581,6 +601,9 @@ You hear a whooshing as a door swings in from nowhere. It doesn't seem to lead a
 >piss poor
 by one point
 
+#testcase-check-vc-piss-poor-rule-fallthrough
+The wood grains in the door almost seem to frown, and it morphs into an almost human form before shambling away at such an apt blow-off. Not really vulgar, but showing you can hang around, and you don't need to waste the really spicy stuff on it. Go, you!
+
 #testcase-check-vc-fun-form-rule-if-sco-done-dorm-is-false
 >fun form
 Perhaps you will need a fun form in a bit. But no entity requires it right now.
@@ -592,12 +615,18 @@ You can fill out a FUN FORM once you have somewhere to enter.
 >done dorm
 by one point
 
+#testcase-check-vc-done-dorm-rule-fallthrough
+A done dorm pops up out of nowhere! You probably can't just go entering it, though. A nice, exclusive place like that probably requires documentation of worth and being an interesting person to hang around and stuff. All sorts of bureaucracy, don't you know.
+
 #testcase-check-vc-done-dorm-rule-if-sco-done-dorm-is-true
 >done dorm
 You already summoned the done dorm.
 
 >fun form
 by one point
+
+#testcase-check-vc-fun-form-rule-fallthrough
+You actually, well, have fun saying why you should be certified to stay in the done dorm until enough time has passed.
 
 #testcase-check-vc-fun-form-rule-if-sco-fun-form-is-true
 >fun form
@@ -616,12 +645,18 @@ You can say GEE JUNK once more of the trunk is visible.
 >see sunk
 by one point
 
+#testcase-check-vc-see-sunk-rule-fallthrough
+The tree trunk recedes slightly. It seems to be hollow on top. Perhaps there is something in the tree trunk. But what?
+
 #testcase-check-vc-see-sunk-rule-if-sco-see-sunk-is-true
 >see sunk
 You already sunk the tree trunk!
 
 >gee junk
 by one point
+
+#testcase-check-vc-gee-junk-rule-fallthrough
+My goodness, yes! There is something in the tree trunk! It's marked FREE FRUIT.
 
 #testcase-check-vc-gee-junk-rule-if-sco-gee-junk-is-true
 >gee junk
@@ -638,12 +673,18 @@ You can make a PEAR PEACH once you're happy enough to receive free fruit.
 >whee woot
 by one point
 
+#testcase-check-vc-whee-woot-rule-fallthrough
+The FREE FRUIT seems to glow a bit from your praise.
+
 #testcase-check-vc-whee-woot-rule-if-sco-whee-woot-is-true
 >whee woot
 You already appreciated the free fruit sufficiently.
 
 >pear peach
 by one point
+
+#testcase-check-vc-pear-peach-rule-fallthrough
+A weird fruit you haven't quite seen before pops into your hand as the FREE FRUIT vanishes. Hooray!
 
 #testcase-check-vc-pear-peach-rule-if-sco-pear-peach-is-true
 >pear peach
@@ -672,9 +713,15 @@ You can make the CRUST CRACK once Just Jack is gone.
 >bussed back
 by one point
 
+#testcase-check-vc-bussed-back-rule-fallthrough
+Just Jack knows his time is up. He takes off. Behind them, you find something ... a sussed sack! Though looking at it, it's also sus. It's both light and heavy, useful and useless. Perhaps you'll know what to do with it when the time comes.
+
 #testcase-check-vc-bussed-back-rule-if-sco-bussed-back-is-true
 >bussed back
 Just Jack has already been bussed back.
+
+#testcase-check-vc-crust-crack-rule-fallthrough
+A rumbling. Passage opens to the north.
 
 >crust crack
 by one point
@@ -700,6 +747,9 @@ You can make a heavy PLUS PLAQUE once you have someone to dump it off on right a
 >bare beach
 by one point
 
+#testcase-check-vc-bare-beach-rule-fallthrough
+The rare reach fills out a bit, sucking the pear peach into it. There is now a bare beach. But it's not completely bare! You see a deep dune rise up.
+
 #testcase-check-vc-bare-beach-rule-if-sco-bare-beach-is-true
 >bare beach
 You already changed the Rare Reach.
@@ -715,6 +765,9 @@ You can REAP RUNE once you have spent time adventuring.
 >seep soon
 by one point
 
+#testcase-check-vc-seep-soon-rule-fallthrough
+The deep dune shifts a bit. Sand starts leaking a bit. Not enough for you to sit and wait and watch. You have other stuff to do.
+
 #testcase-check-vc-seep-soon-rule-if-sco-seep-soon-is-true
 >seep soon
 You already doomed the dune to collapsing slightly.
@@ -729,6 +782,9 @@ WRONG
 >reap rune
 by one point
 
+#testcase-check-vc-reap-rune-rule-fallthrough
+What do you know? You totally believe in yourself as you reach into the deep dune, and a rune turns up! It is in the shape of the Greek letter Rho. The deep dune, having served its purpose, sinks into the general landscape.
+
 #testcase-postreject-table-of-verb-checks-vc-reap-rune-rule
 #testcase-check-vc-reap-rune-rule-if-sco-reap-rune-is-true
 >reap rune
@@ -742,6 +798,9 @@ You already reaped a rune.
 
 >unarm
 by one point
+
+#testcase-check-vc-un-arm-rule-fallthrough
+That wasn't too bad. Whoever it was guarding the way north sounds very disappointed that their oppression may now take actual effort!
 
 #testcase-check-vc-un-arm-rule-if-sco-un-arm-is-true
 >unarm
@@ -778,8 +837,14 @@ You can call for MO MOON once you have something else that needs light.
 >go goon
 by one point
 
+#testcase-check-vc-go-goon-rule-fallthrough
+The Rho Rune glows, and you feel confidence as at least the first of the enemies fled. But it's so empty here. What could grow?
+
 >cocoon
 by one point
+
+#testcase-check-vc-co-coon-rule-fallthrough
+A cocoon appears! It's not ready to hatch yet. Maybe not for a while. Perhaps you could get time to move in weird ways.
 
 #testcase-check-vc-co-coon-rule-if-sco-co-coon-is-true
 >cocoon
@@ -788,8 +853,14 @@ WRONG
 >mo moon
 by one point
 
+#testcase-check-vc-mo-moon-rule-fallthrough
+A moon appears in the night-ish sky.
+
 >so soon
 by one point
+
+#testcase-check-vc-so-soon-rule-fallthrough
+You sensed time speeding up. The cocoon rustles. Perhaps one more sign signifying daytime will cause it to bust out.
 
 #testcase-postreject-table-of-verb-checks-vc-co-coon-rule
 >co coon
@@ -810,11 +881,22 @@ You already sped time up.
 >crow croon
 by one point
 
+#testcase-check-vc-crow-croon-rule-fallthrough
+The crow croons! Your Rho Rune glows, then bursts in unison with the cocoon. A ... well, not quite a monster, but no animal you've seen before ... flies out into the sky.
+It is met by the Burning Bright Spurning Sprite! "Threat two!" screeches the Burning Bright Spurning Sprite. A fight ensues, and the beast you've created gets away.
+"Now you've done it!" says the Burning Bright Spurning Sprite. "That wasn't supposed to happen. Trust me. And no offense, you've learned the rules to get by, but you haven't learned the REAL rules. Maybe a spell in jail will help you."
+
 >grotty grail
 by one point
 
+#testcase-check-vc-grotty-grail-rule-fallthrough
+My goodness! Look what you uncovered! A grail is useless in your current reduced circumstances, but it's a morale boost, because everyone knows bad guys just don't go finding grails. Well, maybe they find obscenely rich cursed ones, but this is about as ordinary as a grail can be. Still, yay grails.
+
 >potty pail
 by one point
+
+#testcase-check-vc-potty-pail-rule-fallthrough
+While you don't plan to be here long enough to use the pail, you're glad to have found it and proven your, uh, emergency preparedness. Perhaps the next soul stuck in here, without your abilities, will appreciate it. Or perhaps you'll figure what to do so nobody is stuck here again.
 
 #testcase-check-vc-grotty-grail-rule-if-player-is-not-in-jotty-jail
 >grotty grail
@@ -827,6 +909,9 @@ No. The potty pail was a relief to find, but enough of past discoveries. You nee
 >knotty nail
 by one point
 
+#testcase-check-vc-knotty-nail-rule-fallthrough
+Aha! There's something flawed. A knotty nail. You pull at it, and slowly it comes loose. It's surprisingly sharp. Then you start chipping away at various cracks until they grow bigger and crumble. The snotty snail is alerted, but by then you've got enough debris in your cell to fend it off. You flee, not caring where you're going...
+
 #testcase-check-vc-mocking-miffed-rule-if-hub-score-<-5
 >mocking miffed
 The mocking, miffed--well, it is there, but you don't quite have the confidence yet to face it. You've only fully tackled none of the other five areas the locking lift can access.
@@ -837,7 +922,13 @@ You can search for MOCKING MIFFED once you've solved all the other hub areas.
 
 >bye bub
 
+#testcase-check-vc-bye-bub-rule-fallthrough
+And just like that, you find the way down. You want to leave, and that's that. You hope something new is below ... and it is! A sturdy stalk pops through for you to climb down, and you do, back to [nnss]. Perhaps you will find additional inspiration.
+
 >wordy walk
+
+#testcase-check-vc-wordy-walk-rule-fallthrough
+You take a nice long wordy walk, and it fills you with ideas and things to try when you go back to [high hub].
 
 #testcase-check-vc-wordy-walk-rule-if-sco-wordy-walk-is-true
 >wordy walk
@@ -863,6 +954,8 @@ No need to say good-bye twice. That's just awkward, besides, just typing DOWN or
 
 >rocking rift
 by one point
+
+#testcase-check-vc-rocking-rift-rule-fallthrough
 
 >rocking rift
 The lift doesn't move, since those words are what got you here.
@@ -908,12 +1001,23 @@ You can call the CROW CREW as performers once you have food and drink for a crow
 >go goo
 by one point
 
+#testcase-check-vc-go-goo-rule-fallthrough
+A huge pile of weird 'energy burst' snacks appears at your feet. You have no idea whether or not they're nutritious, but with that colorful packaging, they can be sold for a markup [if sco-throw-through is false]during and after the performance[else]at future performances[end if], to ensure the viability of the Whoah-Woo-Show Shoe. Yay, commerce[if shoe-storage < 2], and you don't even need any climate-controlled storage[end if]!
+You put them off to the side. They'll be useful once the show gets rocking.
+
+#testcase-check-vc-go-goo-rule-fallthrough
+A huge pile of weird 'energy burst' snacks appears at your feet. You have no idea whether or not they're nutritious, but with that colorful packaging, they can be sold for a markup at future performances, to ensure the viability of the Whoah-Woo-Show Shoe. Yay, commerce, and you don't even need any climate-controlled storage!
+!You put them off to the side. They'll be useful once the show gets rocking.
+
 #testcase-check-vc-go-goo-rule-if-sco-go-goo-is-true
 >go goo
 There's more than enough Go Goo for whoever actually wants it or just fools themselves into thinking they want it.
 
 >flow flue
 by one point
+
+#testcase-check-vc-flow-flue-rule-fallthrough
+A whole mess of tubes appears! Stuff could totally zoom through it. But many of them look badly damaged.
 
 #testcase-check-vc-flow-flue-rule-if-sco-flow-flue-is-true
 >flow flue
@@ -922,12 +1026,18 @@ The flow flue is already present!
 >glow glue
 by one point
 
+#testcase-check-vc-glow-glue-rule-fallthrough
+A rather large tube of Glow Glue drops by near you.
+
 #testcase-check-vc-glow-glue-rule-if-sco-glow-glue-is-true
 >glow glue
 You already acquired Glow Glue.
 
 >bro brew
 by one point
+
+#testcase-check-vc-bro-brew-rule-fallthrough
+Through half of the Flow Flue, you watch as Bro Brew is pumped in.
 
 #testcase-check-vc-bro-brew-rule-if-sco-bro-brew-is-true
 >bro brew
@@ -936,12 +1046,18 @@ You already have a nice store of Bro Brew.
 >stow stew
 by one point
 
+#testcase-check-vc-stow-stew-rule-fallthrough
+Some stew starts flowing through some of the flues.
+
 #testcase-check-vc-stow-stew-rule-if-sco-stow-stew-is-true
 >stow stew
 You already put stew in the flue.
 
 >crow crew
 by one point
+
+#testcase-check-vc-crow-crew-rule-fallthrough
+The Crow Crew appears! They look ready to give a performance replete with humor, wit, song, pyrotechnics, and so forth. You just need to find a way to facilitate a grand entrance.
 
 #testcase-check-vc-crow-crew-rule-if-sco-crow-crew-is-true
 >crow crew
@@ -953,6 +1069,9 @@ WRONG
 
 >ho who
 by one point
+
+#testcase-check-vc-ho-who-rule-fallthrough
+"Ho! WHO?" you call out. The crowd seems to react favorably, waiting for the right phrase to go totally crazy.
 
 #testcase-postreject-table-of-verb-checks-vc-ho-who-rule
 #testcase-check-vc-ho-who-rule-if-sco-ho-who-is-true
@@ -966,12 +1085,20 @@ WRONG
 >yo you
 by one point
 
+#testcase-check-vc-yo-you-rule-fallthrough
+"Yo! YOU!" you cry, and there's a slightly undignified call-and-response, featuring both you and the crowd asking 'Ho! Who?' and responding. It's not brilliant discourse, but everyone's all jazzed for a bigger show now.
+
 #testcase-postreject-table-of-verb-checks-vc-yo-you-rule
 >yo you
 You already hyped the crowd up completely. Time to give them a show!
 
 >throw through
 by one point
+
+#testcase-check-vc-throw-through-rule-fallthrough
+The Crow Crew makes a dramatic entrance, thanks to your planning! The show is a financial and emotional success. Everyone congratulates you. Surely, you must take a reward! Something!
+You can't think of anything you really need. Then, something that just wasn't used in the concert. A light lute! It's, well, something. If you were resourceful enough to get things working here, who knows what you can do with it?
+Your job here done, you return back...
 
 >rocking rift
 Show Shoe
@@ -1016,6 +1143,9 @@ You already brought a performance back to the Whoah-Woo-Show Shoe. You don't nee
 >shocking shift
 by one point
 
+#testcase-check-vc-shocking-shift-rule-fallthrough
+WRONG
+
 >shocking shift
 The lift doesn't move, since those words are what got you here.
 
@@ -1048,22 +1178,44 @@ You can summon MORE MOLES once Sore Souls' Gore Goals is more hospitable.
 >shore shoals
 by one point
 
+#testcase-check-vc-shore-shoals-rule-fallthrough
+The area is much less desolate now. It feels like it could be inhabited.
+
 #testcase-check-vc-shore-shoals-rule-if-sco-shore-shoals-is-true
 >shore shoals
 You have already rehabilitated the sore souls' gore goals!
+
+>shore shoals
+by one point
+
+>lore lols
+#+testcase-run-vr-lore-lols-rule-default
+Why, yes, this place could use myths of creation and so forth.
+
+>undo
+>undo
 
 ##RBRS-SHUFFLECONDITION=1>0
 
 >night newt
 by one point
 
+#testcase-check-vc-night-newt-rule-fallthrough
+A night newt appears and scurries around. You lose it in the scenery, but the place feels livelier now.
+
 >kite coot
 by one point
+
+#testcase-check-vc-kite-coot-rule-fallthrough
+The kite coot is an odd animal for sure but a worthy addition to the menagerie here.
 
 ##RBRS-SHUFFLECONDITION=
 
 >lore lols
 by one point
+
+#testcase-check-vc-lore-lols-rule-fallthrough
+Why, yes, this place could use myths of creation and so forth for when it becomes habitable.
 
 #testcase-postreject-table-of-verb-checks-vc-night-newt-rule
 >night newt
@@ -1090,12 +1242,18 @@ You don't need even more moles!
 >four foals
 by one point
 
+#testcase-check-vc-four-foals-rule-fallthrough
+Four foals begin frolicking! They thank you briefly before running away. They've made things a big cheerier.
+
 #testcase-check-vc-four-foals-rule-if-sco-four-foals-is-true
 >four foals
 You already populated the area with foals!
 
 >more moles
 by one point
+
+#testcase-check-vc-more-moles-rule-fallthrough
+Since the ground's slightly holey here, you surmise the existence of moles and suggest there should be more.
 
 #+testcase-prereject-table-of-verb-checks-vc-kite-coot-rule
 >kite coot
@@ -1129,6 +1287,9 @@ WRONG
 >gawking gift
 by one point
 
+#testcase-check-vc-gawking-gift-rule-fallthrough
+WRONG
+
 >gawking gift
 The lift doesn't move, since those words are what got you here.
 
@@ -1149,6 +1310,9 @@ You can say SAID SOS once you've got a foothold in an argument.
 >dumb doubt
 by one point
 
+#testcase-check-vc-dumb-doubt-rule-fallthrough
+You create dumb doubt in the mind of your adversaries. This would be rude if they weren't mean, but they are, so it all feels creative and appropriate. How to expand that doubt, now?
+
 #testcase-check-vc-dumb-doubt-rule-if-sco-dumb-doubt-is-true
 >dumb doubt
 You already spread dumb doubt! If you try to spread more, you may wind up believing it yourself.
@@ -1160,12 +1324,18 @@ WRONG
 >said sos
 by one point
 
+#testcase-check-vc-said-sos-rule-fallthrough
+Your said-sos make sense. You're ready for the crescendo.
+
 #testcase-check-vc-said-sos-rule-if-sco-said-sos-is-true
 >said sos
 You already gave said-sos here, and that's something you don't want to overdo.
 
 >umm out
 by one point
+
+#testcase-check-vc-umm-out-rule-fallthrough
+With the confidence instilled by instilling dumb doubt, you finish the deal. You notice a valley below. You should go down when you are ready.
 
 #testcase-postreject-table-of-verb-checks-vc-umm-out-rule
 >umm out
@@ -1189,12 +1359,18 @@ You can say K COPE once you're able to cope fully.
 >hey hope
 by one point
 
+#testcase-check-vc-hey-hope-rule-fallthrough
+How exhilarating! The hope is real! With that, a pall lifts over your depression. But not enough. Yet. You must finish the job.
+
 #testcase-check-vc-hey-hope-rule-if-sco-hey-hope-is-true
 >hey hope
 You already got hope started! Now to adjust fully.
 
 >k cope
 by one point
+
+#testcase-check-vc-k-cope-rule-fallthrough
+The hope that started turns into coping, with a bit of slang. You feel spiritually refreshed. You take the lift back to the [hub].
 
 #testcase-check-vc-k-cope-rule-if-sco-hey-hope-is-false
 >k cope
@@ -1209,6 +1385,9 @@ You already took care of the Rum Route!
 
 >grokking grift
 by one point
+
+#testcase-check-vc-grokking-grift-rule-fallthrough
+WRONG
 
 >grokking grift
 The lift doesn't move, since those words are what got you here.
@@ -1228,8 +1407,15 @@ You can explain PLIGHT PLEASE once you've started to chip away at the slight sle
 >tight tees
 by one point
 
+#testcase-check-vc-tight-tease-rule-fallthrough
+You figure, if you can't beat 'em, join 'em, or just pretend to. You demand something more risque, which the slight sleaze is unable to provide. This doesn't win the war, but it wins a small, satisfying pointless side battle.
+Okay, yeah, I may've said this isn't that sort of game, but you're only getting a bonus point here, and this one just fit too well.
+
 >bright breeze
 by one point
+
+#testcase-check-vc-bright-breeze-rule-fallthrough
+The local weather shifts slightly but for the better. You feel cheerier and more open to foisting sarcasm on those that deserve it.
 
 #testcase-check-vc-bright-breeze-rule-if-sco-bright-breeze-is-true
 >bright breeze
@@ -1238,12 +1424,18 @@ WRONG
 >plight please
 by one point
 
+#testcase-check-vc-plight-please-rule-fallthrough
+"Plight? PLEASE!" you laugh. The sleaze lessens. The flight-flees you feel disappear.
+
 #testcase-check-vc-plight-please-rule-if-sco-plight-please-is-true
 >plight please
 WRONG
 
 >right root
 by one point
+
+#testcase-check-vc-right-root-rule-fallthrough
+The right root takes hold in the ground, and out bloom ... trite trees! No, it's not picturesque, but it's better than what was there before. The trees bloom on all sides except one ... which cuts out a clear passage!
 
 #testcase-check-vc-tight-tease-rule-if-sco-tight-tease-is-true
 >tight tees
@@ -1284,12 +1476,18 @@ You can go full-in for CHIC SHAMING once you've re-framed the freak framing.
 >clique claiming
 by one point
 
+#testcase-check-vc-clique-claiming-rule-fallthrough
+Well, claiming that cliques exist and we aren't in it always works, even though we deserve to be, and even if we don't really want to be in good with the leaders. It's not practical, but boy, is it cathartic!
+
 #testcase-check-vc-clique-claiming-rule-if-sco-clique-claiming-is-true
 >clique claiming
 WRONG
 
 >bleak blaming
 by one point
+
+#testcase-check-vc-bleak-blaming-rule-fallthrough
+You get into the groove with some general complaining.
 
 #testcase-check-vc-bleak-blaming-rule-if-sco-bleak-blaming-is-true
 >bleak blaming
@@ -1301,6 +1499,9 @@ WRONG
 
 >chic shaming
 by one point
+
+#testcase-check-vc-chic-shaming-rule-fallthrough
+You segue from bleak blaming to an effortless, unavoidable, flowing conclusion, your voice rising to a crescendo for your main point. Bam!
 
 #testcase-check-vc-bleak-blaming-rule-abide-by-the-did-i-shame-rule
 >bleak blaming
@@ -1317,6 +1518,9 @@ Clique claiming would not have nearly as much mileage the second time around.
 >bred bros
 by one point
 
+#testcase-check-vc-bred-bros-rule-fallthrough
+Some bred Bros, more charismatic than you, arrive to disperse your message more charismatically. You engage in a ton of delegation, and stuff. They seem pleased, though with their charisma, it's possible they might secretly have contempt for you. Still, they're on board with your mission. Your work is done here.
+
 #testcase-postreject-table-of-verb-checks-vc-grokking-grift-rule
 >grokking grift
 You already gained insight into grokking grift.
@@ -1326,6 +1530,9 @@ You already gained insight into grokking grift.
 
 >docking diffed
 by one point
+
+#testcase-check-vc-docking-diffed-rule-fallthrough
+WRONG
 
 >docking diffed
 The lift doesn't move, since those words are what got you here.
@@ -1349,6 +1556,9 @@ You can try a RAD ROAST once you've hit back a bit against the madness.
 >bad boast
 by one point
 
+#testcase-check-vc-bad-boast-rule-fallthrough
+The voice grows softer as you note the insult is not effective. Perhaps you just need to go on the offensive now.
+
 #+testcase-think-table-of-verb-checks-vc-rad-roast-rule
 >think
 You can try a RAD ROAST now you've hit back a bit against the madness.
@@ -1358,6 +1568,9 @@ You can try a RAD ROAST now you've hit back a bit against the madness.
 
 >rad roast
 by one point
+
+#testcase-check-vc-rad-roast-rule-fallthrough
+You strike back to show you know what's what. The voice goes away!
 
 #testcase-check-vc-bad-boast-rule-if-sco-bad-boast-is-true
 >bad boast
@@ -1394,17 +1607,32 @@ You can EXCITE EXHALE to prep yourself once you have an ally, fighting equipment
 >sight sail
 by one point
 
+#testcase-check-vc-sight-sail-rule-fallthrough
+A watercraft drifts into view. Yes, indeed, it is the sight sail. It should help you track down [the whale] very nicely, when you're prepared.
+
 >might mail
 by one point
+
+#testcase-check-vc-might-mail-rule-fallthrough
+A suit of armor appears nearby! You don't want to put it on until you fight [the whale], but it's there when you need it.
 
 >flight flail
 by one point
 
+#testcase-check-vc-flight-flail-rule-fallthrough
+A translucent flail appears. You grab it, worrying it is too heavy. But as you do, it is easy to swing, and you feel faster. It will be a good weapon to use against the white whale.
+
 >right rail
 by one point
 
+#testcase-check-vc-right-rail-rule-fallthrough
+You inspect the sight sail, and you realize that, yes, there are rails to help you keep your balance and gain your sea legs as you hunt [the whale].
+
 >bright brute
 by one point
+
+#testcase-check-vc-bright-brute-rule-fallthrough
+You call on a bright brute, who hides in the shadows to practice their fighting moves until such time as you're ready to attack the white whale. You'll need the muscle in case the whale somehow gets on board.
 
 #testcase-check-vc-bright-brute-rule-if-sco-bright-brute-is-true
 >bright brute
@@ -1429,12 +1657,19 @@ You already summoned the sight sail. It's not going anywhere.
 >excite exhale
 by one point
 
+#testcase-check-vc-excite-exhale-rule-fallthrough
+You get all jazzed up to fight [the whale], believing you can do it. Then you calm down and figure strategy. You're pretty confident. You just need something to restrict or capture [the white whale].
+
 #testcase-check-vc-excite-exhale-rule-if-sco-excite-exhale-is-true
 >excite exhale
 WRONG
 
 >thread throws
 by one point
+
+#testcase-check-vc-thread-throws-rule-fallthrough
+Everything is prepped! You throw out some nets. You're armed with the flight flail, protected by the might mail, supported by the bright brute, and holding the right rail in your sight sail. And you've mentally prepped.
+Anyway, there's a lot of drama and stuff, but you defeat the tight-tail white whale.
 
 #testcase-check-vc-thread-throws-rule-if-sco-thread-throws-is-true
 >thread throws
@@ -1460,12 +1695,19 @@ You already conquered the tight-tail white whale. No need to go back.
 >despite dispute
 by one point
 
+#testcase-check-vc-despite-dispute-rule-fallthrough
+The DELIGHT-DILUTE dissolves quickly, and you are back to your old confidence.
+
 #testcase-check-vc-bred-bros-rule-if-player-is-not-in-freak-framing
 >bred bros
 WRONG
 
 >mocking miffed
 by one point
+
+#testcase-check-vc-mocking-miffed-rule-fallthrough
+#+testcase-run-vr-mocking-miffed-rule-default
+Facing any sort of laughter is tough, but you know you have to do it.
 
 >docking diffed
 The lift wheezes. You could ENTER it to return to High Hub, but your destiny's ahead.
@@ -1499,11 +1741,20 @@ You can find a TROLLED TREND once the Old End is revealed as something more.
 >bold bend
 by one point
 
+#testcase-check-vc-bold-bend-rule-fallthrough
+Of course the old end was too simplistic. You feel a bit of courage now. But the question is: courage to face what? It's probably something abstract.
+
 >trolled trend
 by one point
 
+#testcase-check-vc-trolled-trend-rule-fallthrough
+You feel malevolence from the south. It is where you must go next, you are pretty sure. You're also pretty sure there'll be no way back. The thought depresses you a bit. You need a way to pull out of your doldrums.
+
 >mold mend
 by one point
+
+#testcase-check-vc-mold-mend-rule-fallthrough
+You feel emotionally ready to go forward, and what's more, you feel robust enough to push back against any temporary setbacks.
 
 #testcase-check-vc-bold-bend-rule-if-sco-bold-bend-is-true
 >bold bend
@@ -1542,11 +1793,20 @@ You can SPLAIN SPLAT once you're free of the vat.
 >bane bat
 by one point
 
+#testcase-check-vc-bane-bat-rule-fallthrough
+A particularly lethal bat appears in your hands! It looks like it could really destroy stuff. In particular, this vat. But how to go medieval on it?
+
 >flain flat
 by one point
 
+#testcase-check-vc-flain-flat-rule-fallthrough
+Wham! Wham! You take the bane bat to the vat, and it makes all kinds of dents. You strike a final blow, and as the vat falls over, both it and the bat disintegrate.[paragraph break]You're left standing on a main mat, which also feels welcoming. But you have a feeling you still need to give a reason to enter.
+
 >splain splat
 by one point
+
+#testcase-check-vc-splain-splat-rule-fallthrough
+Now that you've busted out of the vain vat, you announce yourself! You wonder if this was a fit of pride, but it's too late. A bunch of Pred Pros jump and ambush you. Your red rose, in a final blaze of glory, puts up a protective shield. But the Pros still guard the way south.
 
 #testcase-check-vc-bane-bat-rule-if-sco-bane-bat-is-true
 >bane bat
@@ -1562,6 +1822,9 @@ With the splaining you do, you're ready to move on.
 
 >fed foes
 by one point
+
+#testcase-check-vc-fed-foes-rule-fallthrough
+What a feast appears! It looks like the red rose had a bit more something to give. And it keeps giving, until the Fed Foes are full. They nod, gratefully, still wary of the red rose's shield, before heading away. Your destiny awaits!
 
 >s
 
@@ -1588,12 +1851,18 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 >fret free
 by one point
 
+#testcase-check-vc-fret-free-rule-fallthrough
+You feel cheerier. Perhaps there is stuff to fret about, but you recognize it'd be a waste of energy, and you're pleased you got this far.
+
 #testcase-check-vc-fret-free-rule-if-sco-fret-free-is-true
 >fret free
 WRONG
 
 >yet ye
 by one point
+
+#testcase-check-vc-yet-ye-rule-fallthrough
+You think back to people who helped you in bad faith and realize you have a right to reject 'help' or 'advice' with strings attached and, yes, get under the nerves of people offering said 'services.'
 
 #testcase-check-vc-yet-ye-rule-if-sco-yet-ye-is-true
 >yet ye
@@ -1613,6 +1882,9 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 
 >set see
 by one point
+
+#testcase-check-vc-set-see-rule-fallthrough
+You stand tall and confident. You won't be easily pushed around!
 
 #testcase-postreject-table-of-verb-checks-vc-set-see-rule
 >set see
@@ -1636,6 +1908,9 @@ You can label the Burning Bright Spurning Sprite once they have an "award" of so
 
 >plus plaque
 by one point
+
+#testcase-check-vc-plus-plaque-rule-fallthrough
+You have summoned a plus plaque! The [sprite] accepts it before you can offer it. But then they are upset ... there's no name on it! What could their name be?
 
 #testcase-check-vc-plus-plaque-rule-if-sco-plus-plaque-is-true
 >plus plaque
@@ -1971,3 +2246,8 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 
 >turning trite
 by one point
+
+#testcase-check-vc-turning-trite-rule-fallthrough
+An invisible pen begins to fill the blank space in the plus plaque. The [sprite] smirks, at first, but then frowns once they see what's really there. 'That's a cheap shot! No! It's too obvious! Why would you? I ... I just get cleverer and cleverer! Or I would, if not for afterlife intrigue and backstabbing and the man keeping down the people with real ideas.' It waves its hand, and you are blown away to shouts of 'Ingrate' and 'Smart-aleck' and so forth.
+You tumble down on the sidewalk where you first met the Burning Bright Spurning Sprite. You feel like you learned nothing, and yet, at the same time, you think back to what made you say 'Wow, whoah,' trying to reconstruct that magic moment before you were interrupted. You feel as though your journeys helped piece together parts of it, and there will be other experiences that put a bit more together. You are confident that anything reminding you of [nkhh] will be worth checking out, and you will chip away pieces of the vision you had, and that will be good enough.
+

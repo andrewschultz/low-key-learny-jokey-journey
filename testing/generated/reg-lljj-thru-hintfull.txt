@@ -1167,11 +1167,11 @@ by one point
 >kite coot
 by one point
 
-#testcase-values--from-number-of-kite-coot-is--4
+#testcase-values-from-number-of-kite-coot-is--4
 >ll kite coot
 WRONG
 
-#testcase-values--from-number-of-night-newt-is--4
+#testcase-values-from-number-of-night-newt-is--4
 >ll night newt
 WRONG
 
@@ -2146,3 +2146,4 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 
 >turning trite
 by one point
+

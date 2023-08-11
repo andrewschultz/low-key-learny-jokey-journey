@@ -11,7 +11,7 @@
 >au 2
 
 >pride prong
-You are now blocked from paths where no branches contain any point-scoring activities, critical or bonus.
+You are now blocked from paths with no points, critical or bonus, available in any branches.
 
 >plain plea
 by one point
@@ -141,6 +141,47 @@ by one point
 
 >crow croon
 by one point
+
+>knotty nail
+by one point
+
+>u
+`Jotty Jail
+
+>undo
+>undo
+
+>potty pail
+by one point
+
+>knotty nail
+by one point
+
+>d
+
+>u
+`Jotty Jail
+
+>undo
+>undo
+>undo
+>undo
+
+>grotty grail
+by one point
+
+>knotty nail
+by one point
+
+>d
+
+>u
+`Jotty Jail
+
+>undo
+>undo
+>undo
+>undo
 
 >grotty grail
 by one point
@@ -408,3 +449,4 @@ by one point
 
 >turning trite
 by one point
+
