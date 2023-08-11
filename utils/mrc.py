@@ -6,7 +6,6 @@
 # rough format:
 # "word 1"	"word 2"	--	--	false	true	true	false	(Room where action happens)	checking rule	running rule	specific topic, if needed e.g. "a/b" "c/d" can only be a c or b d 	THINK text (probably blank)
 
-
 import sys
 import os
 import re
@@ -104,6 +103,8 @@ def add_var_defs(this_file, these_vars, add_duplicates = False):
         return
     if insert_line == -1:
         mt.ew("There was no line starting with sco- and no ends here line, so you have a malformed header file.", colorama.Fore.RED)
+    else:
+        mt.add_post(this_file, insert_line + 1)
     if len(these_vars):
         full_string = "\n".join([x for x in these_vars if x.strip()]) + "\n\n"
     else:
@@ -228,9 +229,9 @@ while cmd_count < len(sys.argv):
         this_vcal = this_vcp = this_core = True
         cmd_count += 2
         continue
-    elif arg == '2gl':
+    elif arg in ( '2gl', '2go' ):
         add_to_global = True
-    elif arg in ( 'g', 'x'):
+    elif arg in ( 'g', 'x' ):
         check_prefix = 'pre'
         run_prefix = 'post'
     elif arg == 'sco':
@@ -293,7 +294,7 @@ if len(words_to_proc):
         my_file = i7.hdr(this_proj, 'glo')
         add_var_defs(my_file, global_stuff, add_duplicates)
     else:
-        print("===============definitions for global file / main story.ni file (2gl puts it in the global file)===============")
+        print("===============definitions for global file / main story.ni file (2gl/2go puts it in the global file)===============")
         print()
         for g in global_stuff:
             print(g)
@@ -303,7 +304,9 @@ if direct_to_file:
 
 if open_file_after:
     sys.stdout = old_stdout
-    mt.npo(out_file)
+    mt.npo(out_file, bail=False)
+
+mt.open_post(bail_after = False)
 
 if verify_code:
     ljver.verify_both()
