@@ -162,16 +162,23 @@ def get_table_rules():
                 continue
             table_rules[line.strip().lower()] = True
 
-def print_verbcheck_line(my_word_pair):
+def print_verbcheck_line(my_word_pair, default_verb_check = []):
+    if not default_verb_check:
+        default_verb_check = [ '"WP1"', '"WP2"', '--', '--', 'false', 'true', 'ADDCORE', 'false', this_room, 'CP-W1-W2 rule', 'RP-W1-W2 rule', '--', '--' ]
     word_dashed = my_word_pair.replace('|', '-')
     word_pair_array = my_word_pair.split('-')
-    default_verb_check = [ '""', '""', '--', '--', 'false', 'true', 'true' if add_core[my_word_pair] else 'false', 'false', this_room, 'vc rule', 'vr rule', '--', '--' ]
-    default_verb_check[0] = '"{}"'.format(word_pair_array[0])
-    default_verb_check[1] = '"{}"'.format(word_pair_array[1])
-    default_verb_check[9] = '{}-{} rule'.format(check_prefix, word_dashed)
-    default_verb_check[10] = '{}-{} rule'.format(run_prefix, word_dashed)
+    first_words = [ re.sub("\|.*", "", x) for x in word_pair_array ]
     default_verb_line = '\t'.join(default_verb_check)
+    default_verb_line = default_verb_line.replace('WP1', word_pair_array[0])
+    default_verb_line = default_verb_line.replace('WP2', word_pair_array[1])
+    default_verb_line = default_verb_line.replace('W1', first_words[0])
+    default_verb_line = default_verb_line.replace('W2', first_words[1])
+    default_verb_line = default_verb_line.replace('CP', check_prefix)
+    default_verb_line = default_verb_line.replace('RP', run_prefix)
+    default_verb_line = default_verb_line.replace('ADDCORE', 'true' if add_core[my_word_pair] else 'false')
     print(default_verb_line)
+    print(add_core)
+    sys.exit()
 
 cmd_count = 1
 words_to_proc = []
@@ -227,7 +234,7 @@ while cmd_count < len(sys.argv):
         if not_yet_text:
             add_vcal[my_words] = this_vcal
         add_vcp[my_words] = this_vcp
-        add_core[my_words] = this_core
+        add_core[my_words.replace('/', '|')] = this_core
         this_vcal = this_vcp = this_core = True
         cmd_count += 2
         continue
@@ -256,7 +263,7 @@ while cmd_count < len(sys.argv):
         if not_yet_text:
             add_vcal[arg] = this_vcal
         add_vcp[arg] = this_vcp
-        add_core[arg] = this_core
+        add_core[arg.replace('/', '|')] = this_core
         this_vcal = this_vcp = this_core = True
     cmd_count += 1
 
