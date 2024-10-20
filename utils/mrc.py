@@ -52,6 +52,8 @@ def show_examples():
     mt.okay("    mrc.py r=rare-reach bare-beach reap-rune")
     print("LLJJ establishing the Bare Beach and Reap Rune points and add the code to the global file:")
     mt.okay("    mrc.py 2gl r=rare-reach bare-beach reap-rune")
+    print("RoL will detect new rules automatically.")
+    mt.okay("    mrc.py 2gl r=rare-reach bare-beach reap-rune")
     print("Also note that the MRC.BAT batch file can run things, and the SCO option provides code for a boolean roll-up score.")
     sys.exit()
 
@@ -88,7 +90,7 @@ def add_var_defs(this_file, these_vars, add_duplicates = False):
             next_populated_line = True
             got_here = True
             if my_lines[x].strip() in these_vars:
-                mt.ew("WARNING line {} duplicated: line {}.".format(my_lines[x].strip(), x), colorama.Fore.YELLOW)
+                mt.warn("WARNING line {} duplicated: line {}.".format(my_lines[x].strip(), x))
                 if not add_duplicates:
                     these_vars.remove(my_lines[x].strip())
                     continue
@@ -99,16 +101,16 @@ def add_var_defs(this_file, these_vars, add_duplicates = False):
             insert_line = x
             next_populated_line = False
     if not got_here:
-        mt.ew("WARNING: NO SCO- FOUND, SO GOING WITH END OF FILE.", colorama.Fore.YELLOW)
+        mt.warn("WARNING: NO SCO- VARIABLE OR UNSORTED GLOBALS SECTION, SO I'M NOT WRITING ANYTHING IN.")
         return
     if insert_line == -1:
-        mt.ew("There was no line starting with sco- and no ends here line, so you have a malformed header file.", colorama.Fore.RED)
+        mt.fail("There was no line starting with sco- and no ends here line, so you have a malformed header file.", colorama.Fore.RED)
     else:
         mt.add_post(this_file, insert_line + 1)
     if len(these_vars):
         full_string = "\n".join([x for x in these_vars if x.strip()]) + "\n\n"
     else:
-        mt.ew("Every candidate for adding was a duplicate. Therefore, we will not modify the file {}.".format(fb), colorama.Fore.RED)
+        mt.fail("Every candidate for adding was a duplicate. Therefore, we will not modify the file {}.".format(fb))
         return
     my_lines.insert(insert_line, full_string)
     temp = 'c:/writing/temp/mrc-temp-file.txt'
@@ -231,6 +233,8 @@ while cmd_count < len(sys.argv):
         continue
     elif arg in ( '2gl', '2go' ):
         add_to_global = True
+    elif arg.startswith('2g'):
+        mt.warn("2GL or 2GO sends stuff to the global file.")
     elif arg in ( 'g', 'x' ):
         check_prefix = 'pre'
         run_prefix = 'post'
