@@ -37,7 +37,7 @@ table_rules = defaultdict(bool)
 try:
     temp = i7.i7comr[i7.dir2proj()]
     if temp == 'i-heart-high-art':
-        rule_type = 'spoonerism'
+        rule_type = 'wordtwisting'
         check_prefix = 'pre'
         run_prefix = 'post'
 except:
@@ -279,7 +279,7 @@ words_to_proc = [ x.replace("/", "|") for x in words_to_proc ]
 
 if boolean_roll_up:
     short_name = re.sub(".* ", "", this_room)
-    print("section {} score".format(short_name))
+    print("chapter {} score".format(short_name))
     print()
     print("to decide what number is {}-score:".format(short_name))
     joined_bools = " + ".join(['(boolval of sco-{})'.format(x) for x in words_to_proc])
@@ -291,8 +291,12 @@ for w in words_to_proc:
 
 if len(words_to_proc):
     print()
-    print("section {} scoring".format(this_room))
+    print("chapter {} scoring".format(this_room))
     print()
+
+if not this_proj:
+    print("Going with default project {}.".format(i7.curdef))
+    this_proj = i7.curdef
 
 get_table_rules()
 
@@ -320,6 +324,6 @@ if open_file_after:
 mt.open_post(bail_after = False)
 
 if verify_code:
-    ljver.verify_both()
+    ljver.verify_all(this_proj)
 else:
     print("Remember ljver.py verifies the code if you wish to check after adding the above code in.")
