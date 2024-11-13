@@ -1,7 +1,7 @@
 #
 # mrc.py: make rhyme code for CSDD-ish games as well as IHHA
 #
-# it prints a table of verbchecker line, prints the vc- and vr- rules, and guesses at the boolean variable.
+# it prints a table of verbchecker line, prints the vc- and vr- (or pre- and post-) rules, and guesses at the boolean variable.
 #
 # rough format:
 # "word 1"	"word 2"	--	--	false	true	true	false	(Room where action happens)	checking rule	running rule	specific topic, if needed e.g. "a/b" "c/d" can only be a c or b d 	THINK text (probably blank)
@@ -19,6 +19,33 @@ from shutil import copy
 # constants
 
 out_file = "mrc.txt"
+cfg_file = "c:/writing/scripts/mrc-cfg.txt"
+
+# classes
+
+class CodeCreator:
+
+    def __init__(self, data_list = [], copy_from = ''):
+        if copy_from:
+            self.format_string = creators[copy_from].format_string
+            self.rule_string = creators[copy_from].rule_string
+            self.pre_string = creators[copy_from].pre_string
+            self.post_string = creators[copy_from].post_string
+        else:
+            self.format_string = '\t'.join(data_list[3:])
+            self.rule_string = data_list[0]
+            self.pre_string = data_list[1]
+            self.post_string = data_list[2]
+
+    def prerule(self, first_words):
+        return '{}-{}-{} rule'.format(self.pre_string, first_words[0], first_words[1])
+
+    def postrule(self, first_words):
+        return '{}-{}-{} rule'.format(self.pre_string, first_words[0], first_words[1])
+
+# variables
+
+creators = defaultdict(lambda: defaultdict(CodeCreator))
 
 # options
 
@@ -28,20 +55,39 @@ boolean_roll_up = False
 
 # variables
 
-rule_type = 'goodrhyme'
-check_prefix = 'vc'
-run_prefix = 'vr'
-
-table_rules = defaultdict(bool)
+with open(cfg_file) as file:
+    for (line_count, line) in enumerate (file, 1):
+        if line.startswith(';'):
+            break
+        if line.startswith('#'):
+            continue
+        ls = line.strip()
+        if '~' in line:
+            ary = ls.split('~')
+            creators[ary[0]] = CodeCreator(copy_from = ary[1])
+            if len(ary) > 2:
+                mt.warn("Line {} {} needs only one tilde.".format(line_count, ls))
+            continue
+        ary = ls.split(',')
+        if len(ary) == 1:
+            mt.warn("CFG file needs commas in it.")
+        creators[ary[0]] = CodeCreator(data_list = ary[1:])
 
 try:
-    temp = i7.i7comr[i7.dir2proj()]
-    if temp == 'i-heart-high-art':
-        rule_type = 'wordtwisting'
-        check_prefix = 'pre'
-        run_prefix = 'post'
+    my_proj = i7.i7comr[i7.dir2proj()]
 except:
-    pass
+    print("Can't derive project from current directory. Going with default.")
+    my_proj = 'default'
+
+if my_proj not in creators:
+    mt.warn("Current umbrella project {} not in {}. Going with default.")
+    my_proj = 'default'
+
+rule_type = creators[my_proj].rule_string
+check_prefix = creators[my_proj].pre_string
+run_prefix = creators[my_proj].post_string
+
+table_rules = defaultdict(bool)
 
 def show_examples():
     print("Scrub the VCAL for rad-roast and VCP for bad-boast in LLJJ:")
@@ -101,7 +147,7 @@ def add_var_defs(this_file, these_vars, add_duplicates = False):
             insert_line = x
             next_populated_line = False
     if not got_here:
-        mt.warn("WARNING: NO SCO- VARIABLE OR UNSORTED GLOBALS SECTION, SO I'M NOT WRITING ANYTHING IN.")
+        mt.errwrite("WARNING: NO SCO- VARIABLE OR UNSORTED GLOBALS SECTION, SO I'M NOT WRITING ANYTHING IN.")
         return
     if insert_line == -1:
         mt.fail("There was no line starting with sco- and no ends here line, so you have a malformed header file.", colorama.Fore.RED)
@@ -162,23 +208,19 @@ def get_table_rules():
                 continue
             table_rules[line.strip().lower()] = True
 
-def print_verbcheck_line(my_word_pair, default_verb_check = []):
-    if not default_verb_check:
-        default_verb_check = [ '"WP1"', '"WP2"', '--', '--', 'false', 'true', 'ADDCORE', 'false', this_room, 'CP-W1-W2 rule', 'RP-W1-W2 rule', '--', '--' ]
+def print_verbcheck_line(my_word_pair):
+    full_array = my_word_pair.split('-')
     word_dashed = my_word_pair.replace('|', '-')
-    word_pair_array = my_word_pair.split('-')
-    first_words = [ re.sub("\|.*", "", x) for x in word_pair_array ]
-    default_verb_line = '\t'.join(default_verb_check)
-    default_verb_line = default_verb_line.replace('WP1', word_pair_array[0])
-    default_verb_line = default_verb_line.replace('WP2', word_pair_array[1])
-    default_verb_line = default_verb_line.replace('W1', first_words[0])
-    default_verb_line = default_verb_line.replace('W2', first_words[1])
-    default_verb_line = default_verb_line.replace('CP', check_prefix)
-    default_verb_line = default_verb_line.replace('RP', run_prefix)
-    default_verb_line = default_verb_line.replace('ADDCORE', 'true' if add_core[my_word_pair] else 'false')
-    print(default_verb_line)
-    print(add_core)
-    sys.exit()
+    first_words = [ re.sub("\|.*", "", x) for x in full_array ]
+    line_to_print = creators[my_proj].format_string
+    line_to_print = line_to_print.replace('WORD1', full_array[0])
+    line_to_print = line_to_print.replace('WORD2', full_array[1])
+    line_to_print = line_to_print.replace('ROOM', this_room)
+    line_to_print = line_to_print.replace('PRERULE', creators[my_proj].prerule(first_words))
+    line_to_print = line_to_print.replace('POSTRULE', creators[my_proj].postrule(first_words))
+    line_to_print = line_to_print.replace('POSTRULE', '{}-{}-{} rule'.format(creators[my_proj].post_string, first_words[0], first_words[1]))
+    line_to_print = line_to_print.replace('ADDCORE', 'true' if add_core[my_word_pair] else 'false')
+    print(line_to_print)
 
 cmd_count = 1
 words_to_proc = []
@@ -274,6 +316,7 @@ if not len(words_to_proc):
 if direct_to_file:
     old_stdout = sys.stdout
     sys.stdout = open(out_file, "w")
+    mt.okay("Writing to", os.path.abspath(out_file))
 
 words_to_proc = [ x.replace("/", "|") for x in words_to_proc ]
 
@@ -300,11 +343,13 @@ if not this_proj:
 
 get_table_rules()
 
-for w in words_to_proc:
+words_short = [ re.sub("\|[a-z]+", "", w) for w in words_to_proc ]
+
+for w in words_short:
     add_basic_rules(w.replace('|', '-'))
 
 if len(words_to_proc):
-    global_stuff = [ "sco-{} is a truth state that varies.".format(w.replace('|', '-')) for w in words_to_proc ]
+    global_stuff = [ "sco-{} is a truth state that varies.".format(w.replace('|', '-')) for w in words_short ]
     if add_to_global:
         my_file = i7.hdr(this_proj, 'glo')
         add_var_defs(my_file, global_stuff, add_duplicates)
